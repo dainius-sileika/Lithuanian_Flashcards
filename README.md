@@ -1,5 +1,5 @@
 # Lithuanian_Flashcards
-A Lithuanian Flashcard deck, for [Anki](https://apps.ankiweb.net/), based on Fluent-Forever's 625 basic vocabulary items.  
+A Lithuanian Flashcard deck, for [Anki](https://apps.ankiweb.net/), based on Fluent-Forever's 625 basic vocabulary items. Get the latest release [HERE](https://github.com/dainius-sileika/Lithuanian_Flashcards/releases).
 
 The goal of this project is to create a vocabulary deck with good pictures on the front side, and audio and text on the back. For nouns, where relevent, there should be the masculine and feminine forms, as well as the nominative and genitive cases; for verbs, the infintive, third person singular, and past tense should be included.  
 
