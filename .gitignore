@@ -1,0 +1,29 @@
+# secrets — never commit
+.openai_key.txt
+*.key
+.env
+
+# python cache
+__pycache__/
+*.pyc
+
+# transient working dirs / scratch
+out_par/
+out_fix/
+out_sample_1.7.1/
+qa_sheets/
+probe.log
+
+# os cruft
+.DS_Store
+**/.DS_Store
+
+# local download bundles (distribute image sets via Releases instead)
+*.zip
+
+# card images are distributed via GitHub Releases, not committed to the repo.
+# The text ledgers (ledger.csv / prompts, cards.csv / Anki fields) ARE kept.
+out_deck/*.png
+deprecated/card_images_pre_1.7/
+
+qa_crop*.png
