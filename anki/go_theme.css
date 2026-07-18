@@ -1,0 +1,76 @@
+/* ===========================================================================
+   Lietuvių Flashcards — Anki card theme  "Grazhdanskaya Oborona"
+   Cream offset-print paper, dark-red bars, deadpan civic-manual feel.
+   Paste into the note type's "Styling" box. Field names must match cards.csv:
+   Lithuanian, English, Pronunciation, Gender, Number, Category, Image
+   =========================================================================== */
+
+:root{
+  --paper:   #e7ddc6;   /* cream ground            */
+  --paper-2: #efe7d4;   /* lighter card face       */
+  --red:     #97301f;   /* dark brick-red bars     */
+  --red-ink: #b5482f;   /* brick accent            */
+  --ink:     #2c2620;   /* charcoal linework/text  */
+  --teal:    #3c5e5a;   /* institutional accent    */
+  --dun:     #8a7d61;   /* tan / kraft             */
+}
+
+/* whole card = a page torn from the manual */
+.card{
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  color: var(--ink);
+  background: var(--paper);
+  /* faint four-colour-offset halftone dot + paper mottle */
+  background-image:
+    radial-gradient(rgba(44,38,32,.05) 1px, transparent 1.2px),
+    radial-gradient(rgba(151,48,31,.04) 1px, transparent 1.2px);
+  background-size: 6px 6px, 9px 9px;
+  background-position: 0 0, 3px 4px;
+  margin:0; padding:0;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* the framed page: thin red border, red bar top and bottom */
+.page{
+  max-width: 720px; margin: 14px auto; background: var(--paper-2);
+  border: 2px solid var(--red);
+  box-shadow: 0 1px 0 rgba(0,0,0,.15), inset 0 0 0 1px rgba(151,48,31,.25);
+}
+.bar{
+  background: var(--red); color: var(--paper);
+  font-variant: small-caps; letter-spacing: .14em; font-weight: 700;
+  font-size: .82rem; padding: 5px 12px; display:flex; justify-content:space-between;
+}
+.bar.bottom{ font-size:.72rem; }
+
+/* the image (front question + shown again on the answer) */
+.art{ display:block; width:100%; height:auto; border-bottom:1px solid rgba(151,48,31,.3); }
+
+/* answer block */
+.answer{ padding: 14px 18px 18px; text-align:center; }
+
+.word{
+  font-size: 2.5rem; font-weight: 700; line-height:1.05; color: var(--ink);
+  letter-spacing:.01em;
+}
+.pron{ font-style:italic; color: var(--teal); font-size:1.05rem; margin-top:2px; }
+
+/* gender chip, colour-coded */
+.gender{
+  display:inline-block; margin-top:8px; padding:2px 10px; border-radius:2px;
+  font-variant: small-caps; letter-spacing:.1em; font-size:.72rem; font-weight:700;
+  color:#fff;
+}
+.gender.m{ background:#3c5e5a; }   /* vyr. giminė   */
+.gender.f{ background:#97301f; }   /* mot. giminė   */
+.gender.n,.gender.none{ background:#8a7d61; }  /* bevardė / n/a */
+
+.gloss{ margin-top:12px; font-size:1.15rem; color:#4a4238; }
+.gloss:before{ content:"— "; color: var(--red-ink); }
+
+hr#answer{ border:0; border-top:1px dashed rgba(151,48,31,.45); margin:12px 0; }
+
+/* corner "page number", like a manual plate */
+.plate{ font-family: Georgia, serif; font-weight:700; color: var(--paper); }
+
+.night_mode .card{ filter:none; }  /* keep the paper look even in night mode */
