@@ -27,7 +27,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 026_butas,butas,apartment,M,buto,,,,26,Location,026_butas.webp,forms machine-generated — VERIFY (accents & irregulars),bùtas,wiktionary
 027_gatve,gatvė,street,F,gatvės,,,,27,Location,027_gatve.webp,forms machine-generated — VERIFY (accents & irregulars),gãtvė,wiktionary
 028_kelias,kelias,road,M,kelio,,,,28,Location,028_kelias.webp,forms machine-generated — VERIFY (accents & irregulars),kẽlias,wiktionary
-029_oro_uostas,oro uostas,airport,M,oro uosto,,,,29,Location,029_oro_uostas.webp,forms machine-generated — VERIFY (accents & irregulars),,
+029_oro_uostas,oro uostas,airport,M,oro uosto,,,,29,Location,029_oro_uostas.webp,forms machine-generated — VERIFY (accents & irregulars),óro úostas,kirtis.info
 030_stotis,stotis,train station,F,stoties,,,,30,Location,030_stotis.webp,forms machine-generated — VERIFY (accents & irregulars),stotìs,wiktionary
 031_tiltas,tiltas,bridge,M,tilto,,,,31,Location,031_tiltas.webp,forms machine-generated — VERIFY (accents & irregulars),tìltas,wiktionary
 032_viesbutis,viešbutis,hotel,M,viešbučio,,,,32,Location,032_viesbutis.webp,forms machine-generated — VERIFY (accents & irregulars),viẽšbutis,wiktionary
@@ -247,11 +247,11 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 246_laikrodis,laikrodis,clock,M,laikrodžio,,,,246,Electronics,246_laikrodis.webp,forms machine-generated — VERIFY (accents & irregulars),laĩkrodis,wiktionary
 247_lempa,lempa,lamp,F,lempos,,,,247,Electronics,247_lempa.webp,forms machine-generated — VERIFY (accents & irregulars),lémpa,wiktionary
 248_ventiliatorius,ventiliatorius,fan (electric),M,ventiliatoriaus,,,,248,Electronics,248_ventiliatorius.webp,forms machine-generated — VERIFY (accents & irregulars),ventiliãtorius,kirtis.info
-249_mobilusis_telefonas,mobilusis telefonas,cell phone,M,mobilusis telefono,,,,249,Electronics,249_mobilusis_telefonas.webp,forms machine-generated — VERIFY (accents & irregulars),,
+249_mobilusis_telefonas,mobilusis telefonas,cell phone,M,mobilusis telefono,,,,249,Electronics,249_mobilusis_telefonas.webp,forms machine-generated — VERIFY (accents & irregulars),mobilùsis telefònas,kirtis.info
 250_tinklas,tinklas,network,,tinklo,,,,250,Electronics,250_tinklas.webp,forms machine-generated — VERIFY (accents & irregulars),tiñklas,wiktionary
 251_kompiuteris,kompiuteris,computer,M,kompiuterio,,,,251,Electronics,251_kompiuteris.webp,forms machine-generated — VERIFY (accents & irregulars),kompiùteris,wiktionary
 252_programa,programa,program,,programos,,,,252,Electronics,252_programa.webp,forms machine-generated — VERIFY (accents & irregulars),programà,wiktionary
-253_nesiojamasis_kompiuteris,nešiojamasis kompiuteris,laptop,M,nešiojamojo kompiuterio,,,,253,Electronics,253_nesiojamasis_kompiuteris.webp,forms machine-generated — VERIFY (accents & irregulars),,
+253_nesiojamasis_kompiuteris,nešiojamasis kompiuteris,laptop,M,nešiojamojo kompiuterio,,,,253,Electronics,253_nesiojamasis_kompiuteris.webp,forms machine-generated — VERIFY (accents & irregulars),nešiójamasis kompiùteris,kirtis.info
 254_ekranas,ekranas,screen,M,ekrano,,,,254,Electronics,254_ekranas.webp,forms machine-generated — VERIFY (accents & irregulars),ekrãnas,wiktionary
 255_fotoaparatas,fotoaparatas,camera,M,fotoaparato,,,,255,Electronics,255_fotoaparatas.webp,forms machine-generated — VERIFY (accents & irregulars),fotoaparãtas,wiktionary
 256_televizorius,televizorius,television,M,televizoriaus,,,,256,Electronics,256_televizorius.webp,forms machine-generated — VERIFY (accents & irregulars),televìzorius,wiktionary
@@ -270,7 +270,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 269_asara,ašara,tear,F,ašaros,,,,269,Body,269_asara.webp,forms machine-generated — VERIFY (accents & irregulars),ãšara,wiktionary
 270_liezuvis,liežuvis,tongue,M,liežuvio,,,,270,Body,270_liezuvis.webp,forms machine-generated — VERIFY (accents & irregulars),liežùvis,wiktionary
 271_nugara,nugara,back,F,nugaros,,,,271,Body,271_nugara.webp,forms machine-generated — VERIFY (accents & irregulars),nùgara,wiktionary
-272_kojos_pirstas,kojos pirštas,toe,,kojos piršto,,,,272,Body,272_kojos_pirstas.webp,forms machine-generated — VERIFY (accents & irregulars),,
+272_kojos_pirstas,kojos pirštas,toe,,kojos piršto,,,,272,Body,272_kojos_pirstas.webp,forms machine-generated — VERIFY (accents & irregulars),kójos pir̃štas,kirtis.info
 273_pirstas,pirštas,finger,M,piršto,,,,273,Body,273_pirstas.webp,forms machine-generated — VERIFY (accents & irregulars),pir̃štas,wiktionary
 274_peda,pėda,foot,F,pėdos,,,,274,Body,274_peda.webp,forms machine-generated — VERIFY (accents & irregulars),pėdà,wiktionary
 275_plastaka,plaštaka,hand,F,plaštakos,,,,275,Body,275_plastaka.webp,forms machine-generated — VERIFY (accents & irregulars),plãštaka,kirtis.info
