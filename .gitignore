@@ -39,3 +39,6 @@ audio_test/
 
 # accent-fetch working caches
 _accents_*.tsv
+
+# transient apkg media (transcoded jpg)
+_apkg_media/
