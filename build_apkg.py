@@ -17,7 +17,8 @@ FRONT = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA
          '<div class="bar bottom"><span>{{category}}</span><span>?</span></div></div>')
 BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA</span>'
         '<span class="plate">{{number}}</span></div><img class="art" src="{{image}}">'
-        '<div class="answer"><div class="word">{{lithuanian}}</div>{{audio}}'
+        '<div class="answer"><div class="word">{{lithuanian}}</div>'
+        '{{#pron}}<div class="pron">{{pron}}</div>{{/pron}}{{audio}}'
         '{{#gender}}<div class="gender {{gender}}">{{gender}}</div>{{/gender}}'
         '{{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}'
         '{{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}'
@@ -28,7 +29,7 @@ BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA<
 model = genanki.Model(
     1607392913, "Lietuvių GO",
     fields=[{'name': n} for n in ['key', 'lithuanian', 'english', 'gender', 'gen_sg',
-            'pres3', 'past3', 'fem', 'number', 'category', 'image', 'audio']],
+            'pres3', 'past3', 'fem', 'number', 'category', 'image', 'audio', 'pron']],
     templates=[{'name': 'Card', 'qfmt': FRONT, 'afmt': BACK}], css=CSS)
 
 deck = genanki.Deck(2059400111, "Lietuvių Flashcards")
@@ -38,9 +39,15 @@ for r in csv.DictReader(open("cards_anki.csv")):
     if not os.path.exists(img):
         continue
     audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
-    deck.add_note(genanki.Note(model=model, fields=[
-        k, r['lithuanian'], r['english'], r['gender'], r['gen_sg'], r['pres3'],
-        r['past3'], r['fem'], r['number'], r['category'], f"{k}.webp", audf]))
+    deck.add_note(genanki.Note(
+        model=model,
+        # STABLE identity: guid derived from the card key, never random, so
+        # re-importing an updated deck updates cards in place (keeps study
+        # history / scheduling) instead of creating duplicates.
+        guid=genanki.guid_for(k),
+        fields=[k, r['lithuanian'], r['english'], r['gender'], r['gen_sg'],
+                r['pres3'], r['past3'], r['fem'], r['number'], r['category'],
+                f"{k}.webp", audf, r.get('pron', '')]))
     media.append(img)
     if os.path.exists(aud):
         media.append(aud)

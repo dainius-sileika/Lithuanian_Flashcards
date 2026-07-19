@@ -36,3 +36,6 @@ qa_crop*.png
 *.apkg
 audio_test/
 .azure_key*
+
+# accent-fetch working caches
+_accents_*.tsv

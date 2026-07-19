@@ -37,8 +37,12 @@ gender, genitive/principal-parts/feminine forms, image, number); pronunciation
 audio (one mp3 per card) is in `audio/`; the styling is `anki/go_theme.css`
 (see `anki/templates.md` for the note-type layout).
 
-> Grammar forms and stress accents are machine-generated and being verified by a
-> native speaker — treat the current beta's forms as provisional.
+> **Stress accents** in the pronunciation field are sourced from Wiktionary's
+> stress-marked headwords, not generated — each is accepted only if stripping its
+> accent marks exactly reproduces the plain headword (so a wrong-word match is
+> impossible). 93% of cards are covered; the rest are left blank rather than
+> guessed, pending a top-up/native pass. Grammar forms (genitive, principal parts,
+> feminine) are still being verified by a native speaker — treat as provisional.
 
 ## The idea
 
