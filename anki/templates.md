@@ -3,9 +3,15 @@
 Paste these into a new **Note Type** (Tools → Manage Note Types → Add → Clone "Basic",
 then Cards…). Fields must match the columns in `out_deck/cards.csv`.
 
-## Fields
-`Lithuanian`, `English`, `Pronunciation`, `Gender`, `Number`, `Category`, `Image`
-— optional verb fields: `Form3sg`, `FormPast` (see below).
+## Fields  (import from `cards_anki.csv` in the repo root)
+`key`, `lithuanian`, `english`, `gender`, `gen_sg`, `pres3`, `past3`, `fem`,
+`number`, `category`, `image_file`
+
+- **nouns** carry `gen_sg` (genitive singular → shows declension): *namas · namo · m.*
+- **verbs** carry `pres3` · `past3` (principal parts): *šokti · šoka · šoko*
+- **adjectives** carry `fem` (feminine): *geras · gera*
+- Forms are machine-generated and **flagged VERIFY** — accents and irregulars
+  (esp. the 88 blank -is/-uo/irregular noun genitives) need a native pass.
 
 > **Image field**: put the media filename, e.g. `001_suo.webp`, and copy the
 > `images/` webp files into your Anki `collection.media` folder. In the CSV the
@@ -17,26 +23,27 @@ then Cards…). Fields must match the columns in `out_deck/cards.csv`.
 ## Front template (question = image)
 ```html
 <div class="page">
-  <div class="bar"><span class="plate">LIETUVIŲ KALBA</span><span class="plate">{{Number}}</span></div>
-  <img class="art" src="{{Image}}">
-  <div class="bar bottom"><span>{{Category}}</span><span>?</span></div>
+  <div class="bar"><span class="plate">LIETUVIŲ KALBA</span><span class="plate">{{number}}</span></div>
+  <img class="art" src="{{image_file}}">
+  <div class="bar bottom"><span>{{category}}</span><span>?</span></div>
 </div>
 ```
 
 ## Back template (answer = word + details)
 ```html
 <div class="page">
-  <div class="bar"><span class="plate">LIETUVIŲ KALBA</span><span class="plate">{{Number}}</span></div>
-  <img class="art" src="{{Image}}">
+  <div class="bar"><span class="plate">LIETUVIŲ KALBA</span><span class="plate">{{number}}</span></div>
+  <img class="art" src="{{image_file}}">
   <div class="answer">
-    <div class="word">{{Lithuanian}}</div>
-    <div class="pron">{{Pronunciation}}</div>
-    {{#Gender}}<div class="gender {{Gender}}">{{Gender}}</div>{{/Gender}}
-    {{#Form3sg}}<div class="forms">{{Lithuanian}} · {{Form3sg}} · {{FormPast}}</div>{{/Form3sg}}
+    <div class="word">{{lithuanian}}</div>
+    {{#gender}}<div class="gender {{gender}}">{{gender}}</div>{{/gender}}
+    {{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}
+    {{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}
+    {{#fem}}<div class="forms">{{lithuanian}} · {{fem}}</div>{{/fem}}
     <hr id="answer">
-    <div class="gloss">{{English}}</div>
+    <div class="gloss">{{english}}</div>
   </div>
-  <div class="bar bottom"><span>{{Category}}</span><span>{{Number}}</span></div>
+  <div class="bar bottom"><span>{{category}}</span><span>{{number}}</span></div>
 </div>
 ```
 

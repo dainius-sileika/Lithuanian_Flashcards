@@ -35,6 +35,20 @@
 - Still pending (separate pass): re-roll the ~105 pre-1.7.1 original cards
   (#1–231) whose insets were made under the old worker default → civilian.
 
+## Grammatical forms + tidy (files 1.7.5)
+- **`cards_anki.csv`** — clean, deduplicated Anki data (519 rows) with new fields:
+  `gen_sg` (noun genitive → declension), `pres3`/`past3` (verb principal parts,
+  accented), `fem` (adjective feminine). 85 verb triples + 61 adj feminines
+  authored; 274 regular noun genitives rule-based; **88 tricky noun genitives
+  (-is/-uo/irregular) left blank** + all forms flagged VERIFY (accents/irregulars
+  need a native pass). Anki template + `.forms` CSS updated to show them.
+- Recommendation implemented per grammar advice: verbs = inf·3sg·past, nouns =
+  nom·gen·gender, adjectives = masc·fem.
+- Folder tidied: working `*.bak*` → `deprecated/backups/`; scratch (out_fix,
+  out_sample, qa_crop, stale logs) → `_scratch/` (gitignored).
+- TODO: full headword accents on nouns; audio (Azure TTS — needs key); build the
+  importable `.apkg`.
+
 ## Abstract cards + Anki theme (files 1.7.4 / wordlist 2.7)
 - **All 88 abstract/"unfinished" words + 2 new feed verbs generated** — deck is
   now **519/519**. Engine: `go_generator` flag variants (EU flag for metric,

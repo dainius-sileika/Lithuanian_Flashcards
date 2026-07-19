@@ -65,6 +65,7 @@
 .gender.f{ background:#97301f; }   /* mot. giminė   */
 .gender.n,.gender.none{ background:#8a7d61; }  /* bevardė / n/a */
 
+.forms{ margin-top:6px; font-size:1rem; color: var(--teal); font-variant: small-caps; letter-spacing:.04em; }
 .gloss{ margin-top:12px; font-size:1.15rem; color:#4a4238; }
 .gloss:before{ content:"— "; color: var(--red-ink); }
 
