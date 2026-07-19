@@ -1,6 +1,11 @@
-# VERSIONS — Lietuvių 625 deck
+# VERSIONS — Lietuvių Flashcards
 
-**Current: files 1.7.1 / wordlist 2.3** (working files in this folder root).
+**Current: 519-card beta — engine files 1.7.1 / wordlist 2.7, plus audio +
+stress-accented pronunciation + importable `.apkg` (see the dated sections
+below).** The image *engine* has been stable since 1.7.1; work since then has
+been content and packaging (abstract cards, grammar forms, audio, accents, the
+genanki build), tracked in the sections further down rather than as engine
+version bumps.
 
 | version | what | where |
 |---------|------|-------|
@@ -15,15 +20,16 @@
 - `deck_builder.py` — production runner; reads `master_wordlist.csv`.
 - `driver.py` — parallel batch/reroll runner (merges into `out_deck/`).
 - `verb_flashcards.py`, `noun_flashcards.py` — verb production staging / noun demo.
-- `master_wordlist.csv` — wordlist 2.3 (429 generable rows).
+- `master_wordlist.csv` — wordlist 2.7 (529 rows → 519 generable cards).
+- `cards_anki.csv` — the curated 519-row Anki dataset (forms + accents). `build_apkg.py` builds the deck from it.
 - `GO_STYLE_SPEC_files_1_7_1.md` — canonical spec + changelog.
 - `files_1_7_DIFF.md`, `files_1_7_1_DIFF.md` — per-release sign-off diffs.
-- `out_deck/` — generated card PNGs + `ledger.csv` + `cards.csv` (190 cards done, #1–231 except #227).
+- `out_deck/` — generated card PNGs + `ledger.csv` (prompts) + `cards.csv` (raw per-generation log; the clean Anki source is `cards_anki.csv`).
 - `out_par/` — transient per-card working dirs (safe to ignore).
 - `deprecated/` — frozen older versions (see `deprecated/README.md`).
 
 ## Generation status
-- **COMPLETE: 429 / 429 eligible cards generated** (out_deck), all QA'd.
+- **COMPLETE: 519 / 519 eligible cards generated** (out_deck), all QA'd.
 - Full forward run done under 1.7.1 / wordlist 2.4: Home, Electronics, Body,
   Nature, Materials, Misc (incl. 3 glyph cards via the single-glyph exception),
   Verbs (#363–445), Adjectives (#446–507).

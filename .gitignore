@@ -2,6 +2,7 @@
 .openai_key.txt
 *.key
 .env
+.github_token
 
 # python cache
 __pycache__/

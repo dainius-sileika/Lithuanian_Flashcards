@@ -1,41 +1,47 @@
 # Anki note type — "Lietuvių GO"
 
-Paste these into a new **Note Type** (Tools → Manage Note Types → Add → Clone "Basic",
-then Cards…). Fields must match the columns in `out_deck/cards.csv`.
+**You normally don't need this.** `build_apkg.py` creates this note type
+automatically and bundles it into `Lietuviu_Flashcards.apkg`. This file documents
+the layout for anyone who wants to rebuild it by hand or tweak the design.
 
-## Fields  (import from `cards_anki.csv` in the repo root)
+## Fields
+
+Imported from `cards_anki.csv` (repo root). The note type has these fields, in
+order:
+
 `key`, `lithuanian`, `english`, `gender`, `gen_sg`, `pres3`, `past3`, `fem`,
-`number`, `category`, `image_file`
+`number`, `category`, `image`, `audio`, `pron`
 
-- **nouns** carry `gen_sg` (genitive singular → shows declension): *namas · namo · m.*
+- **nouns** carry `gen_sg` (genitive singular → shows declension): *namas · namo*
 - **verbs** carry `pres3` · `past3` (principal parts): *šokti · šoka · šoko*
 - **adjectives** carry `fem` (feminine): *geras · gera*
-- Forms are machine-generated and **flagged VERIFY** — accents and irregulars
-  (esp. the 88 blank -is/-uo/irregular noun genitives) need a native pass.
+- `pron` is the stress-accented headword (e.g. *šuõ*), shown as a pronunciation line
+- `image` holds a full media tag, e.g. `<img class="art" src="001_suo.jpg">`, and
+  `audio` holds `[sound:001_suo.mp3]`. Embedding the tags in the field (rather than
+  building them from the filename in the template) lets Anki's *Check Media* see the
+  files as used, so they render everywhere and aren't flagged as unused.
 
-> **Image field**: put the media filename, e.g. `001_suo.webp`, and copy the
-> `images/` webp files into your Anki `collection.media` folder. In the CSV the
-> `image_file` column already holds `NNN_slug.png` — bulk-rename the reference to
-> `.webp` (or re-export cards.csv pointing at the webp).
->
-> **Gender field** should be `m`, `f`, `n`, or empty — the CSS colour-codes the chip.
+> The build transcodes the repo's WebP images to **JPEG** for the `.apkg`, because
+> some Anki clients don't render WebP inside cards. Set `IMG_FMT=webp` to override.
 
 ## Front template (question = image)
 ```html
 <div class="page">
   <div class="bar"><span class="plate">LIETUVIŲ KALBA</span><span class="plate">{{number}}</span></div>
-  <img class="art" src="{{image_file}}">
+  {{image}}
   <div class="bar bottom"><span>{{category}}</span><span>?</span></div>
 </div>
 ```
 
-## Back template (answer = word + details)
+## Back template (answer = word + audio + forms + gloss)
 ```html
 <div class="page">
   <div class="bar"><span class="plate">LIETUVIŲ KALBA</span><span class="plate">{{number}}</span></div>
-  <img class="art" src="{{image_file}}">
+  {{image}}
   <div class="answer">
     <div class="word">{{lithuanian}}</div>
+    {{#pron}}<div class="pron">{{pron}}</div>{{/pron}}
+    {{audio}}
     {{#gender}}<div class="gender {{gender}}">{{gender}}</div>{{/gender}}
     {{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}
     {{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}
@@ -50,9 +56,7 @@ then Cards…). Fields must match the columns in `out_deck/cards.csv`.
 ## Styling
 Paste the contents of `go_theme.css` into the **Styling** box (shared by front & back).
 
-## Verb forms (your note)
-Add two fields `Form3sg` and `FormPast` and populate the conjugation triple
-(infinitive · 3rd-person singular · past), e.g. **šokti · šoka · šoko**. The back
-template above shows the line only when `Form3sg` is filled, so nouns are
-unaffected. I can auto-populate these for all ~78 verbs (see chat) — they follow
-regular patterns but need a native check.
+## Note on data quality
+Grammar forms (genitive, principal parts, feminine) and stress accents are
+sourced/machine-assembled and are being verified by a native speaker — treat them
+as provisional in this beta.

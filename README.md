@@ -1,6 +1,6 @@
 # Lietuvių Flashcards
 
-**A 429-card illustrated Lithuanian vocabulary deck, drawn in the deadpan style of a 1980s Soviet civil-defence training manual.**
+**A 519-card illustrated Lithuanian vocabulary deck, drawn in the deadpan style of a 1980s Soviet civil-defence training manual.**
 
 Every card teaches one Lithuanian word through a single, *guessable* illustration — no text is baked into the art. The vocabulary lives in a companion CSV so the words render as clean Anki fields. The art is deliberately, sincerely flat: calm instructional wall-chart illustration, muted offset-print colour, anonymous everyperson figures, the occasional small tricolor. The result reads like scanned pages from one fictional publication.
 
@@ -57,16 +57,20 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 
 | Path | What |
 |------|------|
-| `images/` | The 429 finished cards as WebP (1536×1024, ~100 MB) — the distributed set. |
-| `master_wordlist.csv` | The wordlist (v2.5): 429 generable rows — target word, gloss, gender, pronunciation, per-card notes. |
+| `cards_anki.csv` | **The Anki data** (519 rows): word, gloss, gender, grammar forms (`gen_sg`/`pres3`/`past3`/`fem`), stress-accented `pron`, image + number. This is what `build_apkg.py` reads. |
+| `build_apkg.py` | Builds the importable `Lietuviu_Flashcards.apkg` from `cards_anki.csv` + `images/` + `audio/` + the theme. |
+| `images/` | The 519 finished cards as WebP (1536×1024, ~120 MB) — the distributed set. |
+| `audio/` | One pronunciation MP3 per card (Lithuanian neural voice). |
+| `anki/` | `go_theme.css` (card styling) + `templates.md` (note-type reference). |
+| `master_wordlist.csv` | The source wordlist (v2.7): 529 rows → 519 generable cards — target word, gloss, gender, pronunciation, per-card notes. |
 | `out_deck/ledger.csv` | The exact prompt + settings behind every card (full reproducibility). |
-| `out_deck/cards.csv` | The Anki fields (Lithuanian, English, pronunciation, gender, category, image). |
+| `out_deck/cards.csv` | Raw per-generation log (includes re-rolls; **not** the clean Anki source — use `cards_anki.csv`). |
 | `go_generator.py` | The "GO" image engine — house style, palette, prompt assembly. Backend: OpenAI gpt-image-1.5. |
 | `go_grammars.py` | Per-category visual grammars (the executable design bible). |
 | `deck_builder.py` | Production runner: routes every wordlist row, applies per-card staging overrides. |
 | `driver.py` | Parallel/batch runner; resumable; merges into `out_deck/`. |
-| `GO_STYLE_SPEC_files_1_7_1.md` | The canonical art specification + full changelog (v0.1 → v1.7.2). |
-| `VERSIONS.md` | Version index. Current: **files 1.7.2 / wordlist 2.5**. |
+| `GO_STYLE_SPEC_files_1_7_1.md` | The canonical art specification + full changelog. |
+| `VERSIONS.md` | Version index and changelog. |
 | `deprecated/` | Frozen older code/wordlist/spec versions for rollback. |
 
 ## Categories
@@ -94,4 +98,4 @@ The engine is model-independent by design: the grammars and staging survive a ba
 
 ## Status
 
-**Complete** — 429/429 cards generated and QA'd under files 1.7.2 / wordlist 2.5. Full-resolution PNG masters are kept locally; this repo carries the compressed WebP set.
+**Beta — complete deck.** 519/519 cards generated and QA'd (wordlist v2.7), each with audio and a stress-accented pronunciation. Grammar forms and accents are sourced (Wiktionary + kirtis.info) and being verified by a native speaker — treat them as provisional. Full-resolution PNG masters are kept locally; this repo carries the compressed WebP set, and the importable `.apkg` (JPEG images, for universal Anki compatibility) is distributed via Releases.
