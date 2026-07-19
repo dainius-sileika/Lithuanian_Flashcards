@@ -35,6 +35,16 @@
 - Still pending (separate pass): re-roll the ~105 pre-1.7.1 original cards
   (#1–231) whose insets were made under the old worker default → civilian.
 
+## Audio + importable deck (files 1.7.6)
+- **Audio:** all 519 words voiced with Azure neural **lt-LT-LeonasNeural** (male);
+  one mp3 per card key in `audio/` (committed, ~6 MB).
+- **Importable Anki deck:** `build_apkg.py` (genanki) bundles cards + images +
+  audio + GO theme → `Lietuviu_Flashcards.apkg` (519 cards, ~126 MB) — distributed
+  via GitHub **Release** (too big for the repo). README documents download + local
+  build.
+- TODO (in progress): stress-accented pronunciation column + finish the 88
+  irregular noun genitives (native-quality pass).
+
 ## Grammatical forms + tidy (files 1.7.5)
 - **`cards_anki.csv`** — clean, deduplicated Anki data (519 rows) with new fields:
   `gen_sg` (noun genitive → declension), `pres3`/`past3` (verb principal parts,

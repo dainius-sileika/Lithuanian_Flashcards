@@ -20,6 +20,26 @@ Every card teaches one Lithuanian word through a single, *guessable* illustratio
   <img src="images/227_raide.webp"    width="240" alt="raidė — letter">
 </p>
 
+## Get the deck
+
+**Ready-made:** download **`Lietuviu_Flashcards.apkg`** from the
+[Releases](https://github.com/dainius-sileika/Lithuanian_Flashcards/releases) page
+and double-click it (or File → Import in Anki). It bundles all 519 illustrated
+cards, the GO theme, and Lithuanian audio (Azure neural voice).
+
+**Build it yourself** from the source in this repo:
+```bash
+pip install genanki
+python3 build_apkg.py      # reads cards_anki.csv + images/ + audio/ + anki/go_theme.css
+```
+This writes `Lietuviu_Flashcards.apkg`. Card data is `cards_anki.csv` (word, gloss,
+gender, genitive/principal-parts/feminine forms, image, number); pronunciation
+audio (one mp3 per card) is in `audio/`; the styling is `anki/go_theme.css`
+(see `anki/templates.md` for the note-type layout).
+
+> Grammar forms and stress accents are machine-generated and being verified by a
+> native speaker — treat the current beta's forms as provisional.
+
 ## The idea
 
 The deck follows the [Fluent Forever](https://fluent-forever.com/) principle: learn words from **images**, not translations, so the foreign word attaches directly to a concept. Two design rules keep the images doing the teaching:

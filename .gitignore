@@ -31,3 +31,8 @@ qa_crop*.png
 # working backups
 *.bak
 *.bak[0-9]*
+
+# built deck (distribute via Releases) + audio test + azure key
+*.apkg
+audio_test/
+.azure_key*
