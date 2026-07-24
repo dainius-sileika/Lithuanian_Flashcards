@@ -105,6 +105,192 @@ FLAG_OVERRIDE = {334: "eu", 335: "eu", 336: "eu",
 # Insets must SUPPORT the target word or at least not vote for a wrong one.
 # ---------------------------------------------------------------------------
 NOUN_STAGING = {
+    # -- attribute-routed verbs and the vowel card (1.7.7 owner QA) --
+    403: {"subject": "to love", "main": ("two people embracing each other warmly "
+          "and closely, face to face, with one single clean red heart symbol "
+          "floating clearly above and between them against open paper. Draw NO "
+          "arrow anywhere; nothing may overlap or cross the heart, which must be "
+          "drawn whole, unbroken and complete")},
+    374: {"subject": "to think", "insets": True,
+          "main": ("a person seated with one hand to their chin in thought, a "
+          "clean empty thought-bubble rising above their head"),
+          "inset_note": ("Include 2 small supporting insets: Rodin's statue "
+          "'The Thinker' seated on its plinth, chin on hand; a person at a desk "
+          "frowning in concentration over a problem.")},
+    351: {"subject": "the vowels of the alphabet",
+          "main": ("the five vowel letters A E I O U standing in one neat "
+          "evenly-spaced row across the middle of the card, drawn as bold clean "
+          "display letterforms on plain paper, with nothing else in the scene")},
+    # ===== 1.7.7 owner QA round 4 =====
+    # -- pronouns: the arrow marks the referent, never the speaker --
+    516: {"subject": "a speaker addressing a group of several people (the pronoun 'you', plural)", "main": ("a speaker standing to one side with open arms, addressing a "
+          "facing GROUP of several people; exactly one bold arrow runs from the "
+          "speaker to the GROUP, marking the group as the ones addressed")},
+    514: {"subject": "a person indicating one inanimate object (the pronoun 'it')", "main": ("a person pointing down at one plain inanimate object — a ball "
+          "on the ground — exactly one bold arrow from the pointing hand to the "
+          "BALL; the person looks at the ball, not out of the card")},
+    512: {"subject": "a speaker indicating one other man (the pronoun 'he')", "main": ("a speaker on one side turned toward a single man standing "
+          "apart from them; exactly one bold arrow runs from the speaker across "
+          "to THAT MAN. No arrow touches or overlays the man's body")},
+    511: {"subject": "one person addressing one other person face to face (the pronoun 'you', singular)", "main": ("one person facing and pointing a finger directly at one other "
+          "person who stands opposite them, close and face to face. Draw NO arrow "
+          "anywhere; the pointing finger alone carries the meaning")},
+    510: {"subject": "a person indicating their own self (the pronoun 'I')", "main": ("a person pointing their THUMB back at their own chest, the "
+          "thumb clearly touching their own breastbone, head slightly inclined "
+          "toward themselves; exactly one bold short arrow curves from the thumb "
+          "to that same person's chest")},
+    # -- adjectives with owner-specified staging (override the pair base) --
+    477: {"main": ("a blind person with dark glasses sweeping a white cane at a "
+          "street crossing; exactly one bold arrow points at THE PERSON, and a "
+          "second short arrow points at their unseeing eyes behind the dark "
+          "glasses"), "insets": True},
+    466: {"main": ("two shirts hanging side by side on the same washing line, one "
+          "soaking WET and dripping, one bone DRY; exactly one bold arrow points "
+          "directly AT THE WET SHIRT itself"), "insets": True},
+    # -- nouns --
+    362: {"insets": True, "subject": 'a repeating ornamental pattern', "main": ("a flat rectangular panel filling the card, covered edge to "
+          "edge with one bold repeating geometric ornament — the same motif "
+          "tiled over and over in a regular grid — shown as a pure flat design "
+          "sample, NOT as cloth, knitting, wool or any garment"),
+          "inset_note": ("Include 2 small supporting insets showing the SAME "
+          "repeating ornament applied elsewhere: a tiled floor laid in a "
+          "repeating pattern; a wallpaper strip with the motif repeating.")},
+    361: {"subject": 'a picture, a depicted image', "main": ("a framed painted picture standing upright on an easel in the "
+          "middle of a plain room, the painted image inside the frame clearly "
+          "visible as a depicted landscape scene, the frame resting on the easel "
+          "and NOT hanging on any wall"),
+          "inset_note": ("Include 2 small supporting insets: a photograph lying "
+          "on a table; a portrait picture propped on a shelf.")},
+    356: {"main": ("a bar of chocolate with one single square clearly broken off "
+          "and set apart on the table beside the rest of the bar; exactly one "
+          "bold arrow points directly at THAT ONE BROKEN-OFF SQUARE")},
+    354: {"main": ("a man smiling and giving a clear thumbs-up with one hand, and "
+          "beside him a single large bold green tick check-mark")},
+    352: {"main": ("a flashlight lying on its side casting one bright widening "
+          "beam across a dark room, the beam clearly the brightest thing on the "
+          "card. Draw NO arrow anywhere")},
+    346: {"insets": True, "subject": 'the edge of a cliff, where solid ground ends', "main": ("a person standing well back from the EDGE of a high cliff, "
+          "the cliff edge running across the card where solid ground stops and "
+          "empty air and sea begin far below; exactly one bold arrow points at "
+          "the cliff EDGE itself"),
+          "inset_note": ("Include 2 small supporting insets: the overhanging "
+          "edge of a table seen from the side; the rim edge of a flat roof with "
+          "a low parapet.")},
+    345: {"insets": True, "subject": 'a heavy iron weight', "main": ("a single heavy cast-iron weight sitting solidly on a plain "
+          "table, its compact mass and carrying ring clearly drawn. Draw NO "
+          "arrow anywhere"),
+          "inset_note": ("Include 2 small supporting insets: a stack of similar "
+          "iron weights; a balance scale pan sitting low under a heavy load.")},
+    344: {"insets": True, "subject": 'a calendar grid of days', "main": ("a wall calendar page filling the card, drawn as a clean "
+          "empty grid of seven columns and five rows of day squares, with one "
+          "single square boldly ringed in red. Leave every square blank"),
+          "inset_note": ("Include 2 small supporting insets: a desk day-block "
+          "calendar with one leaf being torn off; a pocket diary lying open at "
+          "a ruled empty page.")},
+    343: {"insets": True, "subject": 'a thermometer measuring temperature', "main": ("a large upright thermometer with a clearly marked mercury "
+          "column standing at mid height, drawn plainly against a neutral "
+          "background. Draw NO sun, NO fire and NO arrow anywhere"),
+          "inset_note": ("Include 2 small supporting insets: a frozen winter "
+          "scene with icicles and a thermometer reading very low; a blazing "
+          "summer scene with a thermometer reading very high.")},
+    340: {"insets": True, "main": ("a round loaf of bread cut cleanly through the middle into "
+          "two equal halves lying side by side, the flat cut faces turned to the "
+          "viewer; exactly one bold arrow points at ONE of the two halves"),
+          "inset_note": ("Include 2 small supporting insets: an apple cut into "
+          "two equal halves; a piece of meat cut into two equal halves.")},
+    333: {"insets": True, "subject": 'raw building materials', "main": ("a builder's yard laid out as a materials store: a stack of "
+          "sawn timber planks, a heap of rough stones, a pile of stacked bricks, "
+          "and rolled bolts of cloth standing together in one plain scene, each "
+          "kind clearly distinct as raw stuff waiting to be made into something"),
+          "inset_note": ("Include 2 small supporting insets: a roll of sheet "
+          "metal; a sack of cement standing open.")},
+    301: {"inset_note": ("Include 2 small supporting insets: a NIGHT sky, dark "
+          "with a moon and scattered stars; a stormy overcast sky with heavy "
+          "grey cloud.")},
+    298: {"main": ("a globe of the Earth on a small stand, the continents and "
+          "oceans clearly drawn across its face. Draw NO arrow anywhere")},
+    285: {"inset_note": ("Include 2 small supporting insets: a whole human "
+          "skeleton standing complete; a dog gnawing a bone.")},
+    265: {"inset_note": ("Include 2 small supporting insets: two people kissing, "
+          "lips meeting; a woman applying lipstick to her lips before a mirror.")},
+    252: {"insets": True, "subject": 'a computer program', "main": ("a desktop computer of the period standing on a desk, its "
+          "screen filled with a neat grid of small application icons, the "
+          "machine drawn plainly and squarely facing the viewer"),
+          "inset_note": ("Include 2 small supporting insets: a printed program "
+          "flowchart diagram with boxes and arrows beside a punched card; a "
+          "computer screen filled with columns of falling code characters.")},
+    224: {"main": ("one single door key lying flat and alone on a plain table, "
+          "its bit and bow clearly shaped, drawn cleanly with nothing else on "
+          "the table"),
+          "inset_note": ("Include 2 small supporting insets: a hand turning a "
+          "key in a door lock; a key hanging alone on a hook.")},
+    199: {"main": ("one single table fork lying flat and alone on a plain "
+          "surface, its four tines clearly separated and evenly drawn, nothing "
+          "else anywhere in the frame"),
+          "inset_note": ("Include 2 small supporting insets: a hand holding a "
+          "fork over a plate; a fork resting beside a plate at a place setting.")},
+    198: {"main": ("one single soup spoon lying flat and alone on a plain "
+          "surface, its bowl and handle clearly drawn, and NO other spoon "
+          "anywhere in the frame"),
+          "inset_note": ("Include 2 small supporting insets: a hand lifting a "
+          "spoonful of soup from a bowl; a spoon resting in a cup.")},
+    189: {"main": ("two bananas on a plain surface: one whole unpeeled banana "
+          "and beside it one banana half peeled with the skin folded down, both "
+          "drawn cleanly and anatomically correctly"),
+          "inset_note": ("Include 2 small supporting insets: a bunch of bananas "
+          "still joined at the stem; a banana sliced into round coins on a "
+          "plate.")},
+    188: {"main": ("one whole red apple with a short stem and one leaf, and "
+          "beside it the same apple cut in half showing the core and pips, both "
+          "drawn cleanly and correctly"),
+          "inset_note": ("Include 2 small supporting insets: apples growing on "
+          "a laden branch; a basket of picked apples.")},
+    157: {"subject": 'physical exercise in a gym', "main": ("a plain gym hall where one man does star-jump jumping jacks "
+          "mid-motion and another man does press-ups on the floor, while a coach "
+          "with a whistle at his lips stands beside them directing the exercise")},
+    156: {"main": ("three runners sprinting hard down a running track, the "
+          "leading runner breasting the finishing tape; exactly one bold arrow "
+          "runs forward along the track in the direction of the race, marking "
+          "the contest itself")},
+    154: {"insets": True, "subject": 'an assortment of weapons', "main": ("a plain wall rack in a hunting lodge displaying an assortment "
+          "of weapons together: a wooden-stocked hunting rifle, a sheathed sword, "
+          "a spear and a bow with arrows, arranged as an orderly museum display"),
+          "inset_note": ("Include 2 small supporting insets: a medieval axe and "
+          "shield mounted on a wall; an archer's quiver of arrows standing "
+          "upright.")},
+    149: {"main": ("a sergeant in military uniform standing and gesturing his "
+          "squad forward; the advancing figures storming the bunker are all "
+          "helmeted SOLDIERS in uniform carrying packs — no civilians anywhere "
+          "in the scene"), "people": "worker"},
+    138: {"main": ("a sports team of players in matching kit lined up together "
+          "in a row on the pitch, with a coach in a tracksuit standing at each "
+          "end of the line; every figure is either a kitted player or a coach — "
+          "no ordinary civilians anywhere")},
+    109: {"insets": True, "subject": 'one individual person singled out from others', "main": ("a row of plain dark faceless silhouette figures standing "
+          "shoulder to shoulder across the card, and in the middle of the row "
+          "ONE fully drawn real individual person with face, clothes and detail, "
+          "standing out clearly from the silhouettes on either side"),
+          "inset_note": ("Include 2 small supporting insets: a dense crowd of "
+          "silhouetted people with exactly one bold arrow singling out one "
+          "individual within it; a single identity card portrait photograph.")},
+    103: {"main": ("one ordinary person standing upright and facing the "
+          "viewer, FULLY CLOTHED in plain modest everyday clothes — shirt, "
+          "trousers and shoes — drawn simply and completely from head to foot "
+          "as the plain example of a human being, in the calm manner of a "
+          "civic handbook figure"),
+          "inset_note": ("Include 2 small supporting insets: a human figure "
+          "beside a horse and a dog, the human clearly distinct from the "
+          "animals; the outline of a human body drawn as a simple diagram.")},
+    102: {"main": ("a man and a woman standing side by side with a small child "
+          "beside them, all three on the same ground; exactly one bold arrow "
+          "points at the two GROWN-UP adults, and no arrow touches the child")},
+    51: {"subject": 'one country among its neighbours', "main": ("a wall map showing one whole country with its national border "
+          "drawn as a bold continuous line and its territory shaded, SURROUNDED "
+          "on every side by the outlines of the neighbouring countries drawn in "
+          "plain unshaded outline so the one country stands out among them")},
+    46: {"subject": 'a theatre stage with a performance in progress', "main": ("the inside of a theatre seen from the audience: a lit "
+          "proscenium STAGE with open curtains drawn back and actors performing "
+          "upon it, the dark rows of seated audience heads in the foreground")},
     # ===== 1.7.4 abstract/unfinished cards needing insets (attribute class is
     # inset-free by default, so turn insets back on here) =====
     162: {"insets": True, "inset_note": ("Include 2 small supporting insets: a "
@@ -119,9 +305,6 @@ NOUN_STAGING = {
     148: {"insets": True, "inset_note": ("Include 2 small supporting insets: a "
           "round peace symbol (CND) drawn in the muted GO style; a white dove "
           "carrying an olive branch.")},
-    149: {"insets": True, "inset_note": ("Include 2 small supporting insets: a "
-          "medieval catapult flinging a boulder at a castle wall; warplanes "
-          "dropping bombs on a factory.")},
     129: {"insets": True, "inset_note": ("Include 2 small supporting insets: "
           "GO-style winged angels with haloes; a golden harp.")},
     130: {"insets": True, "inset_note": ("Include 2 small supporting insets: a "
@@ -144,9 +327,6 @@ NOUN_STAGING = {
     528: {"people": "worker"},   # šerti: feeding livestock is farm work
     # ginklas (gun): a bare rifle tripped output moderation; frame it as a calm
     # hunting-lodge display to keep the sense without the flag.
-    154: {"main": ("a hunting rifle and a double-barrelled shotgun mounted on a "
-                   "wooden wall rack in a hunter's lodge, unloaded and on quiet "
-                   "display beside a mounted deer trophy — a calm sporting scene.")},
     # ===== 1.7.3 QA round 3 (owner full-deck review) =====
     187: {"inset_note": ("Include 2 to 3 small supporting insets: a slice of raw "
                          "red beef; a cooked beef dish; a live COW in a field to "
@@ -193,10 +373,6 @@ NOUN_STAGING = {
     283: {"main": ("Draw a man mopping heavy SWEAT from his brow with a cloth, "
                    "beads of sweat on his face and damp patches on his shirt, "
                    "under a blazing hot SUN glaring in the background sky.")},
-    301: {"main": ("Draw a wide expanse of open blue SKY filling the whole card, "
-                   "the sun shining and only a few small wisps of cloud, a low "
-                   "horizon of fields at the very bottom — the vast open sky "
-                   "itself is the subject, not the clouds.")},
     # ===== (earlier rounds below) =====
     # sparnas: creature grammar forces a full-body bird; the word is WING.
     9: {"main": ("Draw the single outstretched wing alone, detached and "
@@ -427,7 +603,9 @@ NOUN_STAGING = {
 }
 
 # rows generated with the engine's single-glyph exception (decision Q2)
-GLYPH_ROWS = {227, 350, 351}
+# 1.7.7: 351 balsis moves OFF the single-glyph exception — its lone "A"
+# collided with 227 raidė. It now renders the vowel set via TEXT_EXCEPTION.
+GLYPH_ROWS = {227, 350}
 
 # ---------------------------------------------------------------------------
 # Per-verb staging: row# -> (people, setting, arrow, emphasis, consequence).
@@ -437,7 +615,18 @@ GLYPH_ROWS = {227, 350, 351}
 # ---------------------------------------------------------------------------
 W, P, C = "worker", "professional", "civilian"
 VERB_STAGING = {
-    363: (W, "a workshop with a workbench", "", "", ""),
+    # 1.7.7: transitive "melt" — a foundry, so it reads as melting SOMETHING
+    # (contrast 398 tirpti, ice melting by itself).
+    530: (W, "a foundry floor with a furnace",
+          "", "A foundry worker in heavy apron, gloves and face shield tips a "
+          "crucible of glowing white-hot molten metal, which pours as a bright "
+          "liquid stream into a mould; solid metal ingots wait in a stack "
+          "beside the furnace.", "the finished cast metal ingot cooling in its mould"),
+    363: (W, "a stretch of public road under repair, with striped barriers, "
+          "a warning sign on a tripod and a heap of gravel",
+          "", "Several workmen in overalls and caps are at work together on the "
+          "road surface — one swinging a pick, one shovelling, one tamping — "
+          "plainly labouring rather than mending one single broken object.", ""),
     364: (C, "a courtyard with simple play equipment", "", "", ""),
     365: (C, "a small club stage or rehearsal room", "", "", ""),
     366: (W, "a long institutional corridor, the figure walking to the right",
@@ -550,7 +739,8 @@ VERB_STAGING = {
     419: (W, "a tiled factory or institutional washroom", "", "", ""),
     420: (P, "a canteen kitchen stove", "", "", ""),
     421: (W, "a plain interior door",
-          "an arc arrow showing the door swinging open", "",
+          "an arc arrow that curves from the door back TOWARD the person, showing "
+          "the door being pulled OPEN toward them, the door already standing ajar", "",
           "the door standing open"),
     422: (W, "a plain interior door",
           "an arc arrow showing the door swinging shut", "",
@@ -653,6 +843,208 @@ def slug(lt: str) -> str:
     return "".join(c if c.isalnum() else "_" for c in ascii_).strip("_")
 
 
+# ===========================================================================
+# 1.7.7 — ADJECTIVE RULESET (owner QA: "adjectives don't have a ruleset")
+#
+# Two rules, both applied automatically to every Adjectives row:
+#
+#  (1) PAIRED OPPOSITES SHARE ONE BASE SCENE. An adjective is only legible
+#      against its opposite, so each pair is staged as ONE composition drawn
+#      identically for both cards; only the marking arrow moves to the other
+#      pole. ADJ_PAIR_BASE holds the shared scene, ADJ_PAIR says which pole
+#      this row marks.
+#  (2) ADJECTIVES GET INSETS. The attribute class is inset-free by default;
+#      adjectives now carry 2 insets showing the SAME quality in other
+#      everyday objects, which is what makes the quality (not the object)
+#      read as the target. Per-card NOUN_STAGING inset_note still wins.
+# ===========================================================================
+ADJ_PAIR_BASE = {
+    "length":   ("One single scene: two otherwise identical ropes lying side by "
+                 "side on the same plain ground, one clearly LONG and one clearly "
+                 "SHORT, drawn to the same scale."),
+    "height":   ("One single scene: two people of the same build standing side by "
+                 "side on the same floor, one clearly TALL and one clearly SHORT."),
+    "width":    ("One single scene: two doorways in the same wall, one clearly WIDE "
+                 "and one clearly NARROW, drawn to the same scale."),
+    "size":     ("One single scene: two otherwise identical suitcases side by side "
+                 "on the same floor, one clearly BIG and one clearly SMALL."),
+    "speed":    ("One single scene: on one side a tortoise plodding slowly, on the "
+                 "other a hare bounding fast, both on the same stretch of road, "
+                 "speed-lines only behind the fast one."),
+    "temp_hi":  ("One single scene: two identical mugs side by side on the same "
+                 "table, one steaming HOT with rising steam, one frosted COLD with "
+                 "ice, drawn to the same scale."),
+    "temp_mid": ("One single scene: two identical rooms side by side, one WARM with "
+                 "a lit stove and a person in shirtsleeves, one COOL with an open "
+                 "window and a person in a light jacket."),
+    "age_obj":  ("One single scene: two of the same object side by side, one BRAND "
+                 "NEW and clean, one OLD, worn and battered, drawn to the same scale."),
+    "age_人":   ("One single scene: a YOUNG person and an OLD person of the same "
+                 "family standing side by side in the same plain room."),
+    "quality":  ("One single scene: two identical baskets of apples side by side, one "
+                 "full of GOOD sound fruit, one full of BAD rotten spotted fruit."),
+    "wet":      ("One single scene: two identical shirts hanging side by side on the "
+                 "same washing line, one soaking WET and dripping, one bone DRY."),
+    "health":   ("One single scene: two people side by side in the same plain room, "
+                 "one SICK in bed with a thermometer and a flushed face, one HEALTHY "
+                 "standing upright and well."),
+    "volume":   ("One single scene: on one side a loud clanging alarm bell with bold "
+                 "radiating sound-lines, on the other the same room hushed and still "
+                 "with a person holding one finger to their lips."),
+    "mood":     ("One single scene: two people of the same build side by side in the "
+                 "same plain room, one plainly HAPPY and smiling, one plainly SAD "
+                 "with downturned mouth and slumped shoulders."),
+    "beauty":   ("One single scene: two flower arrangements side by side in identical "
+                 "vases, one BEAUTIFUL and fresh in full bloom, one UGLY, wilted, "
+                 "brown and drooping."),
+    "kindness": ("One single scene: on one side a KIND person gently helping a frail "
+                 "old lady across the street; on the other a MEAN scowling man "
+                 "sneering and roughly shoving a smaller person aside."),
+    "wealth":   ("One single scene: two houses side by side on the same street, one "
+                 "RICH and grand with a fine motor car, one POOR and shabby with a "
+                 "patched roof."),
+    "thick":    ("One single scene: two books side by side on the same table, one "
+                 "very THICK and one very THIN, drawn to the same scale."),
+    "price":    ("One single scene: a shop counter with two identical-looking goods "
+                 "side by side, one marked with a very high price and one marked with "
+                 "a very low price, a fat wad of banknotes beside the dear one and a "
+                 "single small coin beside the cheap one."),
+    "curve":    ("One single scene: two metal bars side by side against the same "
+                 "plain wall, one perfectly FLAT and straight, one strongly CURVED "
+                 "into an arc."),
+    "sex":      ("One single scene: a woman teacher standing before a class, pointing "
+                 "her long pointer stick at a blackboard. The blackboard carries ONE "
+                 "single large plain lavatory-door pictogram silhouette and nothing "
+                 "else."),
+    "fit":      ("One single scene: the same man twice side by side, wearing the same "
+                 "suit — on one side the suit is far too TIGHT and straining at the "
+                 "buttons, on the other it is far too LOOSE and baggy."),
+    "level":    ("One single scene: two shelves on the same wall, one mounted very "
+                 "HIGH near the ceiling and one mounted very LOW near the floor, a "
+                 "person standing beside them for scale."),
+    "hardness": ("One single scene: two identical cubes side by side on the same "
+                 "table, one SOFT (a squashed pillow-like cube denting under a "
+                 "pressing finger) and one HARD (a solid stone cube unmoved by the "
+                 "same finger)."),
+    "depth":    ("One single scene: a cross-section of one swimming pool, the SHALLOW "
+                 "end on one side where the water reaches a standing child's knees, "
+                 "the DEEP end on the other where the water is far over an adult's "
+                 "head, the sloping floor joining them."),
+    "clean":    ("One single scene: two boys of the same age standing side by side in "
+                 "the same plain room, one perfectly CLEAN and neat, one thoroughly "
+                 "DIRTY with mud on his face, hands and clothes."),
+    "strength": ("One single scene: two men side by side lifting the same heavy "
+                 "barbell, one STRONG and raising it easily overhead, one WEAK and "
+                 "straining, unable to lift it off the ground."),
+    "life":     ("One single scene: two potted plants side by side on the same sill, "
+                 "one ALIVE, green and upright, one DEAD, brown, shrivelled and bare."),
+    "weight":   ("One single scene: a balance scale on a table with an anvil on one "
+                 "pan sinking heavily down and a single feather on the other pan "
+                 "riding high."),
+    "light":    ("One single scene: the SAME room drawn twice side by side — on one "
+                 "side brightly lit by a lamp with clear light falling across the "
+                 "floor, on the other the identical room dark and unlit in deep "
+                 "shadow. Both halves must show the same furniture in the same "
+                 "positions."),
+}
+
+# row -> (base key, the pole this card marks)
+ADJ_PAIR = {
+    446: ("length", "the LONG rope"),        447: ("length", "the SHORT rope"),
+    448: ("height", "the TALL person"),      449: ("height", "the SHORT person"),
+    450: ("width", "the WIDE doorway"),      451: ("width", "the NARROW doorway"),
+    452: ("size", "the BIG suitcase"),       453: ("size", "the SMALL suitcase"),
+    454: ("speed", "the SLOW tortoise"),     455: ("speed", "the FAST hare"),
+    456: ("temp_hi", "the HOT steaming mug"), 457: ("temp_hi", "the COLD iced mug"),
+    458: ("temp_mid", "the WARM room"),      459: ("temp_mid", "the COOL room"),
+    460: ("age_obj", "the NEW object"),      461: ("age_obj", "the OLD worn object"),
+    462: ("age_人", "the YOUNG person"),     463: ("age_人", "the OLD person"),
+    464: ("quality", "the GOOD sound fruit"), 465: ("quality", "the BAD rotten fruit"),
+    466: ("wet", "the WET dripping shirt"),  467: ("wet", "the DRY shirt"),
+    468: ("health", "the SICK person in bed"), 469: ("health", "the HEALTHY person"),
+    470: ("volume", "the LOUD clanging bell"), 471: ("volume", "the QUIET hushed side"),
+    472: ("mood", "the HAPPY smiling person"), 473: ("mood", "the SAD person"),
+    474: ("beauty", "the BEAUTIFUL fresh arrangement"),
+    475: ("beauty", "the UGLY wilted arrangement"),
+    478: ("kindness", "the KIND person helping the old lady"),
+    479: ("kindness", "the MEAN man shoving the smaller person"),
+    480: ("wealth", "the RICH grand house"), 481: ("wealth", "the POOR shabby house"),
+    482: ("thick", "the THICK book"),        483: ("thick", "the THIN book"),
+    484: ("price", "the EXPENSIVE item with the high price"),
+    485: ("price", "the CHEAP item with the low price"),
+    486: ("curve", "the FLAT straight bar"), 487: ("curve", "the CURVED bar"),
+    490: ("fit", "the TIGHT straining suit"), 491: ("fit", "the LOOSE baggy suit"),
+    492: ("level", "the HIGH shelf"),        493: ("level", "the LOW shelf"),
+    494: ("hardness", "the SOFT denting cube"), 495: ("hardness", "the HARD stone cube"),
+    496: ("depth", "the DEEP end"),          497: ("depth", "the SHALLOW end"),
+    498: ("clean", "the CLEAN boy"),         499: ("clean", "the DIRTY boy"),
+    500: ("strength", "the STRONG man lifting easily"),
+    501: ("strength", "the WEAK straining man"),
+    502: ("life", "the DEAD shrivelled plant"), 503: ("life", "the ALIVE green plant"),
+    504: ("weight", "the HEAVY anvil"),      505: ("weight", "the LIGHT feather"),
+    506: ("light", "the DARK unlit half"),   507: ("light", "the BRIGHTLY LIT half"),
+}
+
+# 488/489 differ by what is ON the blackboard, not by an arrow, so they carry
+# their own tail rather than the generic "mark this pole" clause.
+ADJ_PAIR_TAIL = {
+    479: (" Mark the scowling MEAN man who is doing the shoving with exactly one "
+          "bold arrow placed directly ABOVE HIS HEAD and pointing straight DOWN "
+          "onto him. The arrowhead must touch that man and no one else — it must "
+          "not point at the person being shoved, and no other arrow appears."),
+    478: (" Mark the KIND person who is helping the old lady with exactly one "
+          "bold arrow placed directly ABOVE THAT HELPER and pointing straight "
+          "DOWN onto them. The arrowhead must touch the helper and no one else, "
+          "and no other arrow appears."),
+    488: (" The pictogram on the blackboard is the plain MALE lavatory-door "
+          "figure (straight-sided body, trousers). The teacher's pointer touches it."),
+    489: (" The pictogram on the blackboard is the plain FEMALE lavatory-door "
+          "figure (triangular skirted body). The teacher's pointer touches it."),
+}
+ADJ_PAIR[488] = ("sex", "")
+ADJ_PAIR[489] = ("sex", "")
+
+ADJ_MARK = (" Mark {target} with exactly one bold clear arrow whose HEAD lands "
+            "directly on {target} and nothing else. The arrow must point INTO "
+            "the marked side and must never point away from it toward the "
+            "opposite side — if the marked side is on the left the arrow points "
+            "leftward, if it is on the right the arrow points rightward. Place "
+            "the arrow beside the marked side, not in the gap between the two "
+            "sides, and draw no other arrow anywhere.")
+
+
+def adj_inset_note(english):
+    """1.7.7 default adjective insets: the same quality, other objects."""
+    q = (english or "").split("-")[0].strip()
+    return ("Include 2 small supporting insets, each showing the SAME quality "
+            f"— {q} — in a different everyday object or situation, so that the "
+            "insets reinforce this one quality and never suggest a neighbouring "
+            "word. Do not repeat the main scene's objects in the insets.")
+
+
+# ===========================================================================
+# 1.7.7 — TEXT EXCEPTION rows (owner QA). A handful of cards cannot teach
+# their word without a little lettering. Each value names EXACTLY what may be
+# written; everything else on the card stays wordless.
+# ===========================================================================
+TEXT_EXCEPTION = {
+    334: ('the unit mark "m" written once beside the metre-stick, and the '
+          'number "100" with "cm" written once beneath it to show that one '
+          'metre is a hundred centimetres.'),
+    335: ('the unit mark "cm" written once beside the marked centimetre '
+          'division on the ruler.'),
+    337: ('the unit mark "in" written once beside the marked inch division on '
+          'the ruler.'),
+    110: ('the letters "ABC" written once on the blackboard with the numbers '
+          '"123" written once beneath them.'),
+    160: ('the price "5 Lt." written once on the large hand-written price tag.'),
+    151: ('the magazine masthead "NAUJOJI ROMUVA" written once across the top '
+          'of the magazine cover.'),
+    351: ('the five vowel letters "A E I O U" written once in a single neat '
+          'row as the subject of the card.'),
+}
+
+
 def load_rows(path):
     with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
@@ -702,7 +1094,27 @@ def build_call(key, r, cls):
                     text=False, people=people, glyph=False,
                     filename=f"{key}.png")
     scene, inset_note, _, people, insets = compose_class(cls, r["category"])
-    st = NOUN_STAGING.get(int(r["#"]), {})
+    n = int(r["#"])
+
+    # --- 1.7.7 adjective ruleset: shared base scene per opposite-pair, and
+    # insets on (both are overridable per row by NOUN_STAGING below).
+    if n in ADJ_PAIR:
+        base_key, target = ADJ_PAIR[n]
+        scene = ADJ_PAIR_BASE[base_key]
+        scene += ADJ_PAIR_TAIL.get(n, ADJ_MARK.format(target=target) if target else "")
+        scene += SCENE_TAIL
+        insets = True
+        inset_note = adj_inset_note(r["english"])
+        # the pair base IS the composition, so the subject must be the quality
+        # itself — the row's old scene-phrase would contradict the new staging.
+        subject = "the quality " + r["english"].split("-")[0].strip().upper()
+    elif r["category"] == "Adjectives" and r["type"] == "A":
+        insets = True                       # unpaired adjectives still get insets
+        inset_note = adj_inset_note(r["english"])
+
+    st = NOUN_STAGING.get(n, {})
+    if "subject" in st:          # 1.7.7: keep phrase and re-staged scene in step
+        subject = st["subject"]
     if "main" in st:
         scene = st["main"] + SCENE_TAIL
     people = st.get("people", people)
@@ -711,8 +1123,9 @@ def build_call(key, r, cls):
     insets = st.get("insets", insets)   # 1.7.4: per-card inset toggle
     return dict(subject=subject, scene=scene, inset_note=inset_note,
                 insets=insets, text=False, people=people,
-                glyph=int(r["#"]) in GLYPH_ROWS,
-                flag=FLAG_OVERRIDE.get(int(r["#"]), "lt"),
+                glyph=n in GLYPH_ROWS,
+                exact_text=TEXT_EXCEPTION.get(n, ""),
+                flag=FLAG_OVERRIDE.get(n, "lt"),
                 filename=f"{key}.png")
 
 

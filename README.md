@@ -1,6 +1,6 @@
 # Lietuvių Flashcards
 
-**A 519-card illustrated Lithuanian vocabulary deck, drawn in the deadpan style of a 1980s Soviet civil-defence training manual.**
+**A 520-card illustrated Lithuanian vocabulary deck, drawn in the deadpan style of a 1980s Soviet civil-defence training manual.**
 
 Every card teaches one Lithuanian word through a single, *guessable* illustration — no text is baked into the art. The vocabulary lives in a companion CSV so the words render as clean Anki fields. The art is deliberately, sincerely flat: calm instructional wall-chart illustration, muted offset-print colour, anonymous everyperson figures, the occasional small tricolor. The result reads like scanned pages from one fictional publication.
 
@@ -24,7 +24,7 @@ Every card teaches one Lithuanian word through a single, *guessable* illustratio
 
 **Ready-made:** download **`Lietuviu_Flashcards.apkg`** from the
 [Releases](https://github.com/dainius-sileika/Lithuanian_Flashcards/releases) page
-and double-click it (or File → Import in Anki). It bundles all 519 illustrated
+and double-click it (or File → Import in Anki). It bundles all 520 illustrated
 cards, the GO theme, and Lithuanian audio (Azure neural voice).
 
 **Build it yourself** from the source in this repo:
@@ -41,7 +41,7 @@ audio (one mp3 per card) is in `audio/`; the styling is `anki/go_theme.css`
 > primarily from Wiktionary's stress-marked headwords, with the remainder from
 > [kirtis.info](https://kirtis.info). Each is accepted only if stripping its accent
 > marks exactly reproduces the plain headword, so a wrong-word match is impossible.
-> Coverage is 519/519. Grammar forms (genitive, principal parts, feminine) are
+> Coverage is 520/520. Grammar forms (genitive, principal parts, feminine) are
 > still being verified by a native speaker — treat those as provisional.
 
 ## The idea
@@ -57,12 +57,12 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 
 | Path | What |
 |------|------|
-| `cards_anki.csv` | **The Anki data** (519 rows): word, gloss, gender, grammar forms (`gen_sg`/`pres3`/`past3`/`fem`), stress-accented `pron`, image + number. This is what `build_apkg.py` reads. |
+| `cards_anki.csv` | **The Anki data** (520 rows): word, gloss, gender, grammar forms (`gen_sg`/`pres3`/`past3`/`fem`), stress-accented `pron`, image + number. This is what `build_apkg.py` reads. |
 | `build_apkg.py` | Builds the importable `Lietuviu_Flashcards.apkg` from `cards_anki.csv` + `images/` + `audio/` + the theme. |
-| `images/` | The 519 finished cards as WebP (1536×1024, ~120 MB) — the distributed set. |
+| `images/` | The 520 finished cards as WebP (1536×1024, ~120 MB) — the distributed set. |
 | `audio/` | One pronunciation MP3 per card (Lithuanian neural voice). |
 | `anki/` | `go_theme.css` (card styling) + `templates.md` (note-type reference). |
-| `master_wordlist.csv` | The source wordlist (v2.7): 529 rows → 519 generable cards — target word, gloss, gender, pronunciation, per-card notes. |
+| `master_wordlist.csv` | The source wordlist (v2.8): 530 rows → 520 generable cards — target word, gloss, gender, pronunciation, per-card notes. |
 | `out_deck/ledger.csv` | The exact prompt + settings behind every card (full reproducibility). |
 | `out_deck/cards.csv` | Raw per-generation log (includes re-rolls; **not** the clean Anki source — use `cards_anki.csv`). |
 | `go_generator.py` | The "GO" image engine — house style, palette, prompt assembly. Backend: OpenAI gpt-image-1.5. |
@@ -98,4 +98,4 @@ The engine is model-independent by design: the grammars and staging survive a ba
 
 ## Status
 
-**Beta — complete deck.** 519/519 cards generated and QA'd (wordlist v2.7), each with audio and a stress-accented pronunciation. Grammar forms and accents are sourced (Wiktionary + kirtis.info) and being verified by a native speaker — treat them as provisional. Full-resolution PNG masters are kept locally; this repo carries the compressed WebP set, and the importable `.apkg` (JPEG images, for universal Anki compatibility) is distributed via Releases.
+**Beta — complete deck.** 520/520 cards generated and QA'd (wordlist v2.8), each with audio and a stress-accented pronunciation. Grammar forms and accents are sourced (Wiktionary + kirtis.info) and being verified by a native speaker — treat them as provisional. Full-resolution PNG masters are kept locally; this repo carries the compressed WebP set, and the importable `.apkg` (JPEG images, for universal Anki compatibility) is distributed via Releases.

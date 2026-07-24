@@ -154,6 +154,20 @@ GLYPH_RULE = (
     "Render NO other text, lettering, numbers, words, labels or captions "
     "anywhere else in the image, and none in the header or footer bands."
 )
+def _exact_text_rule(spec):
+    """1.7.7 text exception. A few cards are unteachable without a little
+    lettering (unit marks on a ruler, ABC/123 on a blackboard, a price, a
+    masthead, the vowel set). This permits EXACTLY the specified lettering and
+    nothing else — the no-text rule still governs the rest of the card."""
+    return ("TEXT EXCEPTION for this card: the only lettering permitted "
+            f"anywhere in the image is {spec} Draw it cleanly and correctly "
+            "spelled in the muted period print style, large enough to read. "
+            "Render NO other text, lettering, numbers, words, labels or "
+            "captions anywhere else in the image — no leader-line labels, no "
+            "writing on any other object, sign or flag — and none in the "
+            "header or footer bands.")
+
+
 BARS_RULE = (
     "Frame the card with a plain solid dark-red horizontal band across the very "
     "top and another across the very bottom, plus a thin dark-red border around "
@@ -179,7 +193,7 @@ def _label_clause(labels, exclude=""):
 
 def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
                    inset_note="", text=False, people="worker", extra="",
-                   glyph=False, flag="lt"):
+                   glyph=False, flag="lt", exact_text=""):
     segs = [CONCEPT_LEAD, f"Subject: {subject}."]
     if scene:
         segs.append(scene)
@@ -191,6 +205,9 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
         segs.append(NO_CUTAWAY_RULE)
     if glyph:
         segs.append(GLYPH_RULE)
+        segs.append(BARS_RULE)
+    elif exact_text:
+        segs.append(_exact_text_rule(exact_text))
         segs.append(BARS_RULE)
     elif text:
         lc = _label_clause(labels, exclude)
@@ -243,11 +260,11 @@ def _prompt_zimage(subject, scene="", overlays=None, extra=""):
 def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
                  inset_note="", text=False, people="worker", overlays=None,
                  glyph=False,
-                 extra="", backend="openai", flag="lt"):
+                 extra="", backend="openai", flag="lt", exact_text=""):
     if backend == "openai":
         return _prompt_openai(subject, scene, labels, exclude, insets,
                               inset_note, text, people, extra, glyph=glyph,
-                              flag=flag)
+                              flag=flag, exact_text=exact_text)
     return _prompt_zimage(subject, scene, overlays, extra)
 
 
@@ -338,12 +355,12 @@ class GOGenerator:
     def generate(self, subject, scene="", labels=None, exclude="", insets=True,
                  inset_note="", text=False, people="worker", overlays=None,
                  glyph=False,
-                 extra="", out_dir=".", filename=None, flag="lt"):
+                 extra="", out_dir=".", filename=None, flag="lt", exact_text=""):
         prompt = build_prompt(subject, scene=scene, labels=labels,
                               exclude=exclude, insets=insets, inset_note=inset_note,
                               text=text, people=people, overlays=overlays,
                               glyph=glyph, extra=extra, backend=self.backend,
-                              flag=flag)
+                              flag=flag, exact_text=exact_text)
         os.makedirs(out_dir, exist_ok=True)
         if filename is None:
             filename = "go_" + hashlib.md5(subject.encode()).hexdigest()[:8] + ".png"

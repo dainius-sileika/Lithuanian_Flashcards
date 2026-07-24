@@ -149,7 +149,7 @@
 148,Society,peace,N,,yes,"a fictional 1981 Soviet 'Woodstock' — a field gathering of GO-style long-haired hippies with guitars, flowers and peace banners, calm and happy",taika,,,"LT machine-translated, verify"
 149,Society,attack,N,,yes,a sergeant standing and gesturing his squad forward to storm a low concrete pillbox bunker,puolimas,,,"LT machine-translated, verify"
 150,Society,election,N,,yes,"a hand dropping a folded ballot paper into a sealed ballot box, a queue of voters waiting behind",rinkimai,,,"LT machine-translated, verify"
-151,Society,magazine,N,,yes,"a copy of the interwar Lithuanian cultural magazine 'Naujoji Romuva' lying open on a table, its illustrated cover showing",žurnalas,,,"LT machine-translated, verify"
+151,Society,magazine,N,,yes,"the printed front COVER of the Lithuanian cultural magazine 'Naujoji Romuva', lying closed on a table",žurnalas,,,"LT machine-translated, verify"
 152,Society,newspaper,N,,yes,"a folded copy of the interwar Lithuanian newspaper 'Lietuvos Aidas' with its masthead and grey newsprint columns, on a table",laikraštis,,,"LT machine-translated, verify"
 153,Society,poison,N,,yes,"a dark glass bottle with a skull-and-crossbones poison label, set apart on a shelf",nuodai,,,"LT machine-translated, verify"
 154,Society,gun,N,,yes,a plain wooden-stocked hunting rifle laid flat on a table,ginklas,,,"LT machine-translated, verify"
@@ -361,7 +361,7 @@
 360,Misc,hole,N,,yes,a round hole in a wooden board,skylė,skylė́,F,skylė=hole in an object; duobė=pit in ground (maybe separate card)
 361,Misc,image,N,,yes,a framed picture hanging on a wall,vaizdas,vaízdas,M,vaizdas/paveikslas — fairly abstract
 362,Misc,pattern,N,,yes,a swatch of repeating Lithuanian folk-knit geometric pattern filling the panel,raštas,,,"LT machine-translated, verify"
-363,Verbs,work,V,,yes,a worker assembling parts at a workbench,dirbti,dírbti,,
+363,Verbs,work,V,,yes,"a road-repair gang of workmen labouring together on a street, digging and shovelling",dirbti,dírbti,,
 364,Verbs,play (a game),V,,yes,two children playing with a ball,žaisti,žaísti,V,games/sport
 365,Verbs,play (an instrument),V,,yes,a musician playing an accordion,groti,gróti,V,musical instrument
 366,Verbs,walk,V,,yes,a worker walking forward in mid-stride,eiti,eíti,,
@@ -528,3 +528,4 @@
 527,Adjectives,gray,A,,superseded,"a group of plain gray objects — a mouse, a woolen sock, an overcast cloud",pilkas/pilka,pílkas/pilká,M/F,"superseded by Color row 78 (decision Q1, files 1.6.1)"
 528,Verbs,feed (animals),V,,yes,a farm worker tipping feed from a bucket into a trough as pigs and cattle eat,šerti,SHER-ti,,new
 529,Verbs,feed (birds),V,,yes,a woman scattering grain from her apron to hens and chickens pecking at her feet in a farmyard,lesinti,LE-sin-ti,,new
+530,Verbs,melt (something),V,,yes,a foundry worker melting solid metal into glowing molten liquid,lydyti,lýdyti,,transitive counterpart of 398 tirpti (intransitive melt); owner-requested 1.7.7

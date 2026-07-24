@@ -1,6 +1,6 @@
 # VERSIONS — Lietuvių Flashcards
 
-**Current: 519-card beta — engine files 1.7.1 / wordlist 2.7, plus audio +
+**Current: 520-card beta — engine files 1.7.7 / wordlist 2.8, plus audio +
 stress-accented pronunciation + importable `.apkg` (see the dated sections
 below).** The image *engine* has been stable since 1.7.1; work since then has
 been content and packaging (abstract cards, grammar forms, audio, accents, the
@@ -20,8 +20,8 @@ version bumps.
 - `deck_builder.py` — production runner; reads `master_wordlist.csv`.
 - `driver.py` — parallel batch/reroll runner (merges into `out_deck/`).
 - `verb_flashcards.py`, `noun_flashcards.py` — verb production staging / noun demo.
-- `master_wordlist.csv` — wordlist 2.7 (529 rows → 519 generable cards).
-- `cards_anki.csv` — the curated 519-row Anki dataset (forms + accents). `build_apkg.py` builds the deck from it.
+- `master_wordlist.csv` — wordlist 2.8 (530 rows → 520 generable cards).
+- `cards_anki.csv` — the curated 520-row Anki dataset (forms + accents). `build_apkg.py` builds the deck from it.
 - `GO_STYLE_SPEC_files_1_7_1.md` — canonical spec + changelog.
 - `files_1_7_DIFF.md`, `files_1_7_1_DIFF.md` — per-release sign-off diffs.
 - `out_deck/` — generated card PNGs + `ledger.csv` (prompts) + `cards.csv` (raw per-generation log; the clean Anki source is `cards_anki.csv`).
@@ -29,17 +29,61 @@ version bumps.
 - `deprecated/` — frozen older versions (see `deprecated/README.md`).
 
 ## Generation status
-- **COMPLETE: 519 / 519 eligible cards generated** (out_deck), all QA'd.
+- **COMPLETE: 520 / 520 eligible cards generated** (out_deck), all QA'd.
 - Full forward run done under 1.7.1 / wordlist 2.4: Home, Electronics, Body,
   Nature, Materials, Misc (incl. 3 glyph cards via the single-glyph exception),
   Verbs (#363–445), Adjectives (#446–507).
 - #227 raidė now generated (glyph exception renders a clean letterform).
 - Known weak spots (inherent concept difficulty, flagged not re-rolled):
-  #350 priebalsis / #351 balsis (consonant/vowel glyphs read as "a letter";
-  #351's "A" collides with #227 letter); #440 dėvėti (wear) reads closer to
+  #350 priebalsis (still a lone glyph; #351 balsis FIXED in 1.7.7 via the
+  vowel-set text exception); #440 dėvėti (wear) reads closer to
   "protective gear". All rely partly on the Anki text field.
 - Still pending (separate pass): re-roll the ~105 pre-1.7.1 original cards
   (#1–231) whose insets were made under the old worker default → civilian.
+
+## QA round 4 + adjective ruleset (files 1.7.7 / wordlist 2.8)
+
+Owner full-deck QA -> 58 cards re-rolled, 1 card added, 2 engine rules added.
+
+**New: the adjective ruleset** (previously adjectives had none).
+- `ADJ_PAIR` / `ADJ_PAIR_BASE`: all 30 opposite pairs now share ONE base scene,
+  drawn identically for both cards, with only the marking arrow moving to the
+  other pole (owner: "every adjective pair of opposites should use the same base
+  image, but opposite"). `ADJ_MARK` forces the arrowhead onto the marked side and
+  forbids it pointing away.
+- Adjectives now get INSETS (the attribute class is inset-free by default):
+  2 insets showing the SAME quality in other everyday objects.
+- Owner-specified pair staging: clean/dirty = two boys; deep/shallow = pool ends;
+  male/female = woman teacher pointing at a lavatory pictogram on a blackboard;
+  dark/light = the same room lit and unlit.
+- ADJ_PAIR rows now override the row's subject phrase with the quality itself,
+  so the old phrase can't contradict the new staging.
+
+**New: `TEXT_EXCEPTION`** (`go_generator._exact_text_rule`). A few cards can't
+teach their word wordless, so named lettering is permitted and nothing else:
+334 "m"/100 cm, 335 "cm", 337 "in", 110 ABC+123, 160 "5 Lt.", 151 masthead
+"NAUJOJI ROMUVA", 351 "A E I O U". 351 balsis leaves GLYPH_ROWS (its lone "A"
+collided with 227 raide).
+
+**New card:** 530 lydyti (transitive melt, foundry) beside 398 tirpti.
+
+**Fixed:** pronouns 510-516 (arrow marks the referent, never the speaker);
+46 teatras (stage), 51 salis (neighbours), 102/103/109 (adult marking, clothed
+human, individual-among-silhouettes), 110, 138 (coaches), 149 (soldiers not
+civilians), 151, 154 (weapon variety), 156, 157 (coach + press-ups), 160,
+188/189/198/199/224 (AI artefacts re-rolled clean), 252, 265 (kiss + lipstick),
+285 (skeleton), 298, 301 (night-sky inset), 333, 340, 343, 344, 345, 346 (cliff
+edge, not knife), 351, 352, 354, 356, 361, 362 (pattern, not knitting),
+363 dirbti (roadworks, no longer reads "fix"), 374 (Thinker inset), 403 (clean
+heart, no corrupt arrow), 421, 466, 477, 478/479 (arrow lands on the right man).
+
+**Two bugs found and fixed during QA:**
+- duplicate NOUN_STAGING keys (149/154/301) meant older entries silently
+  overrode the new staging - stale duplicates removed.
+- rows given an `inset_note` while routed to an inset-free class had their
+  inset spec silently ignored - `insets: True` added to all 10 such rows.
+- 103 zmogus tripped the image-safety filter ("the general human form" read as a
+  nude study); restaged as an explicitly clothed civic-handbook figure.
 
 ## Audio + importable deck (files 1.7.6)
 - **Audio:** all 519 words voiced with Azure neural **lt-LT-LeonasNeural** (male);
