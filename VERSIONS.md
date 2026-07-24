@@ -1,6 +1,6 @@
 # VERSIONS — Lietuvių Flashcards
 
-**Current: 520-card beta — engine files 1.7.7 / wordlist 2.8, plus audio +
+**Current: 520-card beta — engine files 1.7.8 / wordlist 2.9, plus audio +
 stress-accented pronunciation + importable `.apkg` (see the dated sections
 below).** The image *engine* has been stable since 1.7.1; work since then has
 been content and packaging (abstract cards, grammar forms, audio, accents, the
@@ -9,7 +9,7 @@ version bumps.
 
 | version | what | where |
 |---------|------|-------|
-| **1.7.1** (current) | noun-inset dress follows setting (civilian default; Materials + tool/industry = worker); inset-meaning gate baked into the prompt | root: `go_grammars.py`, `go_generator.py`, `deck_builder.py`; `files_1_7_1_DIFF.md`; `GO_STYLE_SPEC_files_1_7_1.md` |
+| **1.7.1** | noun-inset dress follows setting (civilian default; Materials + tool/industry = worker); inset-meaning gate baked into the prompt | root: `go_grammars.py`, `go_generator.py`, `deck_builder.py`; `files_1_7_1_DIFF.md`; `GO_STYLE_SPEC_files_1_7_1.md` |
 | 1.7 | guessability pass: QA gate, NOUN_STAGING (22 rows), OVERRIDE_CLASS reroutes, wordlist 2.3 (22 phrases) | `deprecated/code_1.7/`; `files_1_7_DIFF.md` (corrected record) |
 | 1.6.1 | 8 open design decisions implemented; glyph exception; wordlist 2.2 | `deprecated/code_1.6.1/`, `deprecated/spec_1.6.1/`, `deprecated/wordlist_2.2/` |
 | ≤1.6 | full narrative history (0.1 → 1.6) | "File batches ledger" in `GO_STYLE_SPEC_files_1_7_1.md` |
@@ -20,7 +20,7 @@ version bumps.
 - `deck_builder.py` — production runner; reads `master_wordlist.csv`.
 - `driver.py` — parallel batch/reroll runner (merges into `out_deck/`).
 - `verb_flashcards.py`, `noun_flashcards.py` — verb production staging / noun demo.
-- `master_wordlist.csv` — wordlist 2.8 (530 rows → 520 generable cards).
+- `master_wordlist.csv` — wordlist 2.9 (530 rows → 520 generable cards).
 - `cards_anki.csv` — the curated 520-row Anki dataset (forms + accents). `build_apkg.py` builds the deck from it.
 - `GO_STYLE_SPEC_files_1_7_1.md` — canonical spec + changelog.
 - `files_1_7_DIFF.md`, `files_1_7_1_DIFF.md` — per-release sign-off diffs.
@@ -35,11 +35,28 @@ version bumps.
   Verbs (#363–445), Adjectives (#446–507).
 - #227 raidė now generated (glyph exception renders a clean letterform).
 - Known weak spots (inherent concept difficulty, flagged not re-rolled):
-  #350 priebalsis (still a lone glyph; #351 balsis FIXED in 1.7.7 via the
-  vowel-set text exception); #440 dėvėti (wear) reads closer to
+  #440 dėvėti (wear) reads closer to
   "protective gear". All rely partly on the Anki text field.
 - Still pending (separate pass): re-roll the ~105 pre-1.7.1 original cards
   (#1–231) whose insets were made under the old worker default → civilian.
+
+## QA round 5 (files 1.7.8 / wordlist 2.9)
+
+- **334/335/337** regenerated — the 1.7.7 text exceptions were correct but the
+  three rows were left out of the generation batch, so the old wordless art was
+  still shipping. Now carry `m`+`100 cm`, `1 cm`, `1 in`.
+- **507/506** — arrows no longer run off the card edge; both now sit inside the
+  marked half pointing down into it, and the pair was re-rolled together so the
+  two halves stay symmetric.
+- **350 priebalsis** — `B C D F G` row, staged like 351; its wordlist phrase had
+  been forcing a single giant "B" on a stand, which kept colliding with 227.
+- **362 raštas** re-pointed from *pattern* to **writing/script** (its primary
+  sense; the "pattern" gloss was machine-matched to the word's last sense and was
+  why the art kept drawing knitting). New staging: a hand writing on a page,
+  manuscript + typewriter insets, text exception for generic handwriting.
+- **Owner verification**: 530 lydyti forms (lýdo/lýdė) and the 1.7.4 abstract
+  glosses confirmed; every `verify` flag cleared from the wordlist.
+- **`CHANGELOG.md` added** and linked from the README — published release notes.
 
 ## QA round 4 + adjective ruleset (files 1.7.7 / wordlist 2.8)
 

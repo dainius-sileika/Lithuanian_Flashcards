@@ -126,50 +126,50 @@
 125,Job,reporter,N,,yes,two reporters — a man and a woman — with notebooks and a microphone,žurnalistas/žurnalistė,žurnalístas/žurnalístė,M/F,dual-gender; pl žurnalistai; dual-form card: two figures m+f (decision Q7)
 126,Job,actor,N,,yes,two actors — a man and a woman — performing on a stage,aktorius/aktorė,aktórius/aktórė,M/F,dual-gender; pl aktoriai; dual-form card: two figures m+f (decision Q7)
 127,Job,job,N,categoryC,category-multi,"a chart of three trades at work — a doctor, a builder, and a teacher — in small panels",darbas,dárbas,M,
-128,Society,religion,N,,yes,"a calm specimen chart of faith: a church, a lit candle, a holy book, and folded praying hands",religija,,,"LT machine-translated, verify"
-129,Society,heaven,N,,yes,a GO-style vision of heaven: tall pearly gates opening onto golden clouds with a throne and shafts of light. Do NOT include any arrow or marking.,dangus,,,"LT machine-translated, verify"
-130,Society,hell,N,,yes,"a GO-style vision of hell: red flames and a red horned devil with a forked tail and pitchfork, its stern moustached face faintly recalling Stalin, presiding over the fire. Do NOT include any arrow or marking.",pragaras,,,"LT machine-translated, verify"
-131,Society,death,N,,yes,a plain gravestone with wilting flowers in a quiet cemetery,mirtis,,,"LT machine-translated, verify"
-132,Society,medicine,N,,yes,"a medicine bottle, a spoon of syrup and a blister pack of tablets on a bedside table",vaistai,,,"LT machine-translated, verify"
-133,Society,money,N,,yes,a fan of interwar Lithuanian LITAI banknotes and some litas coins spread on a table,pinigai,,,"LT machine-translated, verify"
-134,Society,dollar,N,,yes,"a single US one-dollar banknote and a coin on a table, a bold arrow on the dollar note",doleris,,,"LT machine-translated, verify"
-135,Society,bill,N,,yes,a single interwar Lithuanian litas banknote held up between two fingers,banknotas,,,"LT machine-translated, verify"
-136,Society,marriage,N,disambig,yes,a bride and groom exchanging rings before a registry official,santuoka,,,"LT machine-translated, verify"
+128,Society,religion,N,,yes,"a calm specimen chart of faith: a church, a lit candle, a holy book, and folded praying hands",religija,,,LT owner-confirmed 1.7.8
+129,Society,heaven,N,,yes,a GO-style vision of heaven: tall pearly gates opening onto golden clouds with a throne and shafts of light. Do NOT include any arrow or marking.,dangus,,,LT owner-confirmed 1.7.8
+130,Society,hell,N,,yes,"a GO-style vision of hell: red flames and a red horned devil with a forked tail and pitchfork, its stern moustached face faintly recalling Stalin, presiding over the fire. Do NOT include any arrow or marking.",pragaras,,,LT owner-confirmed 1.7.8
+131,Society,death,N,,yes,a plain gravestone with wilting flowers in a quiet cemetery,mirtis,,,LT owner-confirmed 1.7.8
+132,Society,medicine,N,,yes,"a medicine bottle, a spoon of syrup and a blister pack of tablets on a bedside table",vaistai,,,LT owner-confirmed 1.7.8
+133,Society,money,N,,yes,a fan of interwar Lithuanian LITAI banknotes and some litas coins spread on a table,pinigai,,,LT owner-confirmed 1.7.8
+134,Society,dollar,N,,yes,"a single US one-dollar banknote and a coin on a table, a bold arrow on the dollar note",doleris,,,LT owner-confirmed 1.7.8
+135,Society,bill,N,,yes,a single interwar Lithuanian litas banknote held up between two fingers,banknotas,,,LT owner-confirmed 1.7.8
+136,Society,marriage,N,disambig,yes,a bride and groom exchanging rings before a registry official,santuoka,,,LT owner-confirmed 1.7.8
 137,Society,wedding,N,disambig,yes,a wedding scene — a couple exchanging rings before a small group of guests outside a registry office,vestuvės,vestúvės,F,promoted to picture deck (decision Q6); plural-only noun
-138,Society,team,N,,yes,a sports team of players in matching kit lined up together in a row,komanda,,,"LT machine-translated, verify"
-139,Society,relationship,N,,yes,"two people facing each other holding both hands, a small linking symbol between them",santykiai,,,"LT machine-translated, verify"
-140,Society,race ethnicity,N,,yes,"a ring of interlocking human hands of many different skin tones, a circle of diverse human profiles behind them, and small fictional national flags in the background",rasė,,,"LT machine-translated, verify"
-141,Society,sex act,N,,yes,"a closed hotel room door with a small hanging tag on the handle, a man's and a woman's shoes left together on the floor just outside it, and empty champagne bottles with two glasses beside them — the suggestion of a couple's private night together",seksas,,,"LT machine-translated, verify"
-142,Society,sex gender,N,,yes,"a GO-style man and woman standing side by side, the male Mars symbol floating above the man's head and the female Venus symbol above the woman's head",lytis,,,"LT machine-translated, verify"
-143,Society,murder,N,,yes,a stark black silhouette of one figure stabbing another figure in the back with a knife,žmogžudystė,,,"LT machine-translated, verify"
-144,Society,prison,N,,yes,a grim grey stone prison building with barred windows and a high perimeter wall,kalėjimas,,,"LT machine-translated, verify"
-145,Society,technology,N,,yes,"a calm specimen chart of period machines: a telephone, a radio, a tractor and a rocket",technologija,,,"LT machine-translated, verify"
-146,Society,energy,N,,yes,"a lightning bolt striking, a large battery, and humming power-line pylons",energija,,,"LT machine-translated, verify"
-147,Society,war,N,,yes,a deadpan civil-defence scene: soldier silhouettes and a tank on a smoky horizon with civilians fleeing carrying bundles,karas,,,"LT machine-translated, verify"
-148,Society,peace,N,,yes,"a fictional 1981 Soviet 'Woodstock' — a field gathering of GO-style long-haired hippies with guitars, flowers and peace banners, calm and happy",taika,,,"LT machine-translated, verify"
-149,Society,attack,N,,yes,a sergeant standing and gesturing his squad forward to storm a low concrete pillbox bunker,puolimas,,,"LT machine-translated, verify"
-150,Society,election,N,,yes,"a hand dropping a folded ballot paper into a sealed ballot box, a queue of voters waiting behind",rinkimai,,,"LT machine-translated, verify"
-151,Society,magazine,N,,yes,"the printed front COVER of the Lithuanian cultural magazine 'Naujoji Romuva', lying closed on a table",žurnalas,,,"LT machine-translated, verify"
-152,Society,newspaper,N,,yes,"a folded copy of the interwar Lithuanian newspaper 'Lietuvos Aidas' with its masthead and grey newsprint columns, on a table",laikraštis,,,"LT machine-translated, verify"
-153,Society,poison,N,,yes,"a dark glass bottle with a skull-and-crossbones poison label, set apart on a shelf",nuodai,,,"LT machine-translated, verify"
-154,Society,gun,N,,yes,a plain wooden-stocked hunting rifle laid flat on a table,ginklas,,,"LT machine-translated, verify"
-155,Society,sport,N,,yes,"a calm specimen chart of sports: football, running, boxing and swimming",sportas,,,"LT machine-translated, verify"
-156,Society,race sport,N,,yes,runners sprinting and breasting the finishing tape on a running track,lenktynės,,,"LT machine-translated, verify"
-157,Society,exercise,N,,yes,a person doing star-jump calisthenics in a plain gym,mankšta,,,"LT machine-translated, verify"
-158,Society,ball,N,,yes,a single football (soccer ball) resting on the grass,kamuolys,,,"LT machine-translated, verify"
-159,Society,game,N,,yes,children gathered around a table playing a board game with dice and counters,žaidimas,,,"LT machine-translated, verify"
-160,Society,price,N,,yes,"a market stall with a large hand-written price tag on the goods, a bold arrow pointing at the price",kaina,,,"LT machine-translated, verify"
-161,Society,contract,N,,yes,two people shaking hands over a signed document with a pen and an official stamp on a desk,sutartis,,,"LT machine-translated, verify"
-162,Society,drug,N,,yes,syringes and hand-rolled marijuana cigarettes scattered on the dirty ground of a grimy back alley,narkotikas,,,"LT machine-translated, verify"
+138,Society,team,N,,yes,a sports team of players in matching kit lined up together in a row,komanda,,,LT owner-confirmed 1.7.8
+139,Society,relationship,N,,yes,"two people facing each other holding both hands, a small linking symbol between them",santykiai,,,LT owner-confirmed 1.7.8
+140,Society,race ethnicity,N,,yes,"a ring of interlocking human hands of many different skin tones, a circle of diverse human profiles behind them, and small fictional national flags in the background",rasė,,,LT owner-confirmed 1.7.8
+141,Society,sex act,N,,yes,"a closed hotel room door with a small hanging tag on the handle, a man's and a woman's shoes left together on the floor just outside it, and empty champagne bottles with two glasses beside them — the suggestion of a couple's private night together",seksas,,,LT owner-confirmed 1.7.8
+142,Society,sex gender,N,,yes,"a GO-style man and woman standing side by side, the male Mars symbol floating above the man's head and the female Venus symbol above the woman's head",lytis,,,LT owner-confirmed 1.7.8
+143,Society,murder,N,,yes,a stark black silhouette of one figure stabbing another figure in the back with a knife,žmogžudystė,,,LT owner-confirmed 1.7.8
+144,Society,prison,N,,yes,a grim grey stone prison building with barred windows and a high perimeter wall,kalėjimas,,,LT owner-confirmed 1.7.8
+145,Society,technology,N,,yes,"a calm specimen chart of period machines: a telephone, a radio, a tractor and a rocket",technologija,,,LT owner-confirmed 1.7.8
+146,Society,energy,N,,yes,"a lightning bolt striking, a large battery, and humming power-line pylons",energija,,,LT owner-confirmed 1.7.8
+147,Society,war,N,,yes,a deadpan civil-defence scene: soldier silhouettes and a tank on a smoky horizon with civilians fleeing carrying bundles,karas,,,LT owner-confirmed 1.7.8
+148,Society,peace,N,,yes,"a fictional 1981 Soviet 'Woodstock' — a field gathering of GO-style long-haired hippies with guitars, flowers and peace banners, calm and happy",taika,,,LT owner-confirmed 1.7.8
+149,Society,attack,N,,yes,a sergeant standing and gesturing his squad forward to storm a low concrete pillbox bunker,puolimas,,,LT owner-confirmed 1.7.8
+150,Society,election,N,,yes,"a hand dropping a folded ballot paper into a sealed ballot box, a queue of voters waiting behind",rinkimai,,,LT owner-confirmed 1.7.8
+151,Society,magazine,N,,yes,"the printed front COVER of the Lithuanian cultural magazine 'Naujoji Romuva', lying closed on a table",žurnalas,,,LT owner-confirmed 1.7.8
+152,Society,newspaper,N,,yes,"a folded copy of the interwar Lithuanian newspaper 'Lietuvos Aidas' with its masthead and grey newsprint columns, on a table",laikraštis,,,LT owner-confirmed 1.7.8
+153,Society,poison,N,,yes,"a dark glass bottle with a skull-and-crossbones poison label, set apart on a shelf",nuodai,,,LT owner-confirmed 1.7.8
+154,Society,gun,N,,yes,a plain wooden-stocked hunting rifle laid flat on a table,ginklas,,,LT owner-confirmed 1.7.8
+155,Society,sport,N,,yes,"a calm specimen chart of sports: football, running, boxing and swimming",sportas,,,LT owner-confirmed 1.7.8
+156,Society,race sport,N,,yes,runners sprinting and breasting the finishing tape on a running track,lenktynės,,,LT owner-confirmed 1.7.8
+157,Society,exercise,N,,yes,a person doing star-jump calisthenics in a plain gym,mankšta,,,LT owner-confirmed 1.7.8
+158,Society,ball,N,,yes,a single football (soccer ball) resting on the grass,kamuolys,,,LT owner-confirmed 1.7.8
+159,Society,game,N,,yes,children gathered around a table playing a board game with dice and counters,žaidimas,,,LT owner-confirmed 1.7.8
+160,Society,price,N,,yes,"a market stall with a large hand-written price tag on the goods, a bold arrow pointing at the price",kaina,,,LT owner-confirmed 1.7.8
+161,Society,contract,N,,yes,two people shaking hands over a signed document with a pen and an official stamp on a desk,sutartis,,,LT owner-confirmed 1.7.8
+162,Society,drug,N,,yes,syringes and hand-rolled marijuana cigarettes scattered on the dirty ground of a grimy back alley,narkotikas,,,LT owner-confirmed 1.7.8
 163,Society,sign,N,,yes,"a triangular roadside warning sign on a post, its face blank",ženklas,žénklas,M,promoted to picture deck (decision Q6); verb 'to sign'; ženklas=a sign(noun)
-164,Society,science,N,,yes,"a laboratory bench with a bubbling flask, a microscope and a schematic atom diagram",mokslas,,,"LT machine-translated, verify"
-165,Society,God,N,,yes,"a GO-style Creation of Adam: two hands reaching across the clouds almost touching, God shown as a robed figure in the sky extending his hand from the left; a bold arrow pointing at GOD (the robed figure / his reaching hand), not at the man",Dievas,,,"LT machine-translated, verify"
+164,Society,science,N,,yes,"a laboratory bench with a bubbling flask, a microscope and a schematic atom diagram",mokslas,,,LT owner-confirmed 1.7.8
+165,Society,God,N,,yes,"a GO-style Creation of Adam: two hands reaching across the clouds almost touching, God shown as a robed figure in the sky extending his hand from the left; a bold arrow pointing at GOD (the robed figure / his reaching hand), not at the man",Dievas,,,LT owner-confirmed 1.7.8
 166,Art,band,N,,yes,"a small band performing on a stage — accordion, guitar and drum",grupė,grúpė,F,
 167,Art,song,N,,yes,"a person singing with musical notes rising from their open mouth, a songbook in hand",daina,dainá,F,
 168,Art,instrument,N,,yes,"a group of musical instruments — a violin, an accordion and a drum",instrumentas,instruméntas,M,
-169,Art,music,N,,yes,"a small band of instruments — accordion, violin and drum — with musical notes floating above",muzika,,,"LT machine-translated, verify"
+169,Art,music,N,,yes,"a small band of instruments — accordion, violin and drum — with musical notes floating above",muzika,,,LT owner-confirmed 1.7.8
 170,Art,movie,N,,yes,a film projector casting its light beam onto a cinema screen before seated viewers,filmas,fílmas,M,
-171,Art,art,N,,yes,"an easel holding a half-finished landscape painting, a palette and brushes beside it",menas,,,"LT machine-translated, verify"
+171,Art,art,N,,yes,"an easel holding a half-finished landscape painting, a palette and brushes beside it",menas,,,LT owner-confirmed 1.7.8
 172,Beverages,coffee,N,,yes,a cup of coffee with a small coffee pot,kava,kavá,F,
 173,Beverages,tea,N,,yes,a glass of tea with a teapot,arbata,arbatá,F,
 174,Beverages,wine,N,,yes,a glass of red wine with its bottle,vynas,výnas,M,
@@ -210,7 +210,7 @@
 209,Home,table,N,,yes,a plain wooden table,stalas,stálas,M,
 210,Home,chair,N,,yes,a plain wooden chair,kėdė,kėdė́,F,
 211,Home,bed,N,,yes,"a single bed, neatly made",lova,lóva,F,
-212,Home,dream,N,,yes,a person asleep in bed with a soft thought-cloud above showing a floating dreamlike scene,sapnas,,,"LT machine-translated, verify"
+212,Home,dream,N,,yes,a person asleep in bed with a soft thought-cloud above showing a floating dreamlike scene,sapnas,,,LT owner-confirmed 1.7.8
 213,Home,window,N,,yes,a house window with frame and curtains,langas,lángas,M,
 214,Home,door,N,,yes,a panel door with a handle,durys,dúrys,F pl,
 215,Home,bedroom,N,,yes,a bedroom with a bed and a wardrobe,miegamasis,miegamásis,M,
@@ -248,9 +248,9 @@
 247,Electronics,lamp,N,,yes,"a table lamp, lit",lempa,lémpa,F,
 248,Electronics,fan (electric),N,,yes,an electric table fan,ventiliatorius,ventiliátorius,M,dual-gender; pl sirgaliai | electric fan; sports fan=sirgalius
 249,Electronics,cell phone,N,,yes,"a chunky handheld mobile telephone with a short thick antenna and large buttons, built as if manufactured in 1981",mobilusis telefonas,mobilúsis telefónas,M,deadpan chunky anachronism (decision Q3)
-250,Electronics,network,N,,yes,a diagram of linked nodes and cables connecting several computers and telephones,tinklas,,,"LT machine-translated, verify"
+250,Electronics,network,N,,yes,a diagram of linked nodes and cables connecting several computers and telephones,tinklas,,,LT owner-confirmed 1.7.8
 251,Electronics,computer,N,,yes,a desktop computer with monitor and keyboard,kompiuteris,kompiúteris,M,
-252,Electronics,program,N,,yes,a computer with a flowchart on its screen and a reel of punched tape feeding in,programa,,,"LT machine-translated, verify"
+252,Electronics,program,N,,yes,a computer with a flowchart on its screen and a reel of punched tape feeding in,programa,,,LT owner-confirmed 1.7.8
 253,Electronics,laptop,N,,yes,"a chunky portable computer, thick-cased, with a small screen and a heavy keyboard, built as if manufactured in 1981",nešiojamasis kompiuteris,nešiójamasis kompiúteris,M,deadpan chunky anachronism (decision Q3)
 254,Electronics,screen,N,,yes,a display screen (monitor) showing a plain diagram,ekranas,ekránas,M,
 255,Electronics,camera,N,,yes,a 35mm photo camera,fotoaparatas,fotoaparátas,M,
@@ -282,9 +282,9 @@
 281,Body,brain,N,,yes,"a standalone simplified schematic drawing of a brain, textbook-plate style",smegenys,smégenys,F pl,
 282,Body,knee,N,,yes,"a bent knee, indicated on a walking figure",kelis,kélis,M,knee: dictionaries vary kẽlis/kelỹs — confirm preferred form
 283,Body,sweat,N,,yes,"a worker wiping sweat from his brow, drops visible",prakaitas,prákaitas,M,
-284,Body,disease,N,,yes,a person lying ill in bed with a thermometer in their mouth and a flushed feverish face,liga,,,"LT machine-translated, verify"
+284,Body,disease,N,,yes,a person lying ill in bed with a thermometer in their mouth and a flushed feverish face,liga,,,LT owner-confirmed 1.7.8
 285,Body,bone,N,,yes,a single long bone shown as a clean schematic object,kaulas,kaúlas,M,
-286,Body,voice,N,,yes,an open mouth seen in profile with bold sound waves radiating outward from it,balsas,,,"LT machine-translated, verify"
+286,Body,voice,N,,yes,an open mouth seen in profile with bold sound waves radiating outward from it,balsas,,,LT owner-confirmed 1.7.8
 287,Body,skin,N,,yes,a forearm with a close-up of the skin surface,oda,óda,F,
 288,Body,body,N,,yes,"a full human body standing, front view",kūnas,kū́nas,M,
 289,Nature,sea,N,disambig,yes,a seaside scene with waves and the beach shore in view,jūra,jū́ra,F,
@@ -296,7 +296,7 @@
 295,Nature,tree,N,,yes,a single deciduous tree (an oak),medis,médis,M,
 296,Nature,sun,N,,yes,the sun with rays above a field,saulė,saúlė,F,
 297,Nature,moon,N,,yes,the crescent moon in a night sky,mėnulis,mėnúlis,M,
-298,Nature,world,N,,yes,"a globe of the Earth showing the continents, on a small desk stand",pasaulis,,,"LT machine-translated, verify"
+298,Nature,world,N,,yes,"a globe of the Earth showing the continents, on a small desk stand",pasaulis,,,LT owner-confirmed 1.7.8
 299,Nature,Earth,N,,yes,the planet Earth seen from space,Žemė,Žémė,,
 300,Nature,forest,N,,yes,the edge of a pine forest,miškas,míškas,M,
 301,Nature,sky,N,,yes,a wide sky with clouds above a low horizon,dangus,dangús,M,
@@ -310,7 +310,7 @@
 309,Nature,star,N,,yes,"stars in a night sky, one bright star indicated",žvaigždė,žvaigždė́,F,
 310,Nature,grass,N,,yes,a tuft of green grass,žolė,žolė́,F,
 311,Nature,leaf,N,,yes,a single leaf (a birch leaf),lapas,lápas,M,
-312,Nature,air,N,,yes,"a diagram of curved flowing air currents around a breathing figure, wind lines and a fresh open window",oras,,,"LT machine-translated, verify"
+312,Nature,air,N,,yes,"a diagram of curved flowing air currents around a breathing figure, wind lines and a fresh open window",oras,,,LT owner-confirmed 1.7.8
 313,Nature,sand,N,,yes,"a handful of sand pouring, dunes behind",smėlis,smė́lis,M,
 314,Nature,beach,N,,yes,"a Lithuanian seaside beach like Palanga or Nida — pale sand dunes with marram grass and the Baltic Sea — with holidaymakers playing on the sand: a beach ball game, children paddling at the water's edge, someone lying on a towel",paplūdimys,paplūdimýs,M,
 315,Nature,wave,N,,yes,a breaking sea wave,banga,bangá,F,
@@ -318,7 +318,7 @@
 317,Nature,ice,N,,yes,a block of ice and icicles,ledas,lédas,M,
 318,Nature,island,N,,yes,a small island in a lake,sala,salá,F,
 319,Nature,hill,N,,yes,a low grassy hill,kalva,kalvá,F,
-320,Nature,heat,N,,yes,wavy heat-shimmer lines rising off a hot glowing stove and a radiator,karštis,,,"LT machine-translated, verify"
+320,Nature,heat,N,,yes,wavy heat-shimmer lines rising off a hot glowing stove and a radiator,karštis,,,LT owner-confirmed 1.7.8
 321,Nature,nature,N,categoryC,category-multi,"a Lithuanian landscape combining forest, river and sky",gamta,gamtá,F,
 322,Materials,glass,N,,yes,a pane of glass held by a glazier,stiklas,stíklas,M,SPLIT? stiklas (material) vs stiklinė (drinking glass)
 323,Materials,metal,N,,yes,a metal ingot and a metal sheet,metalas,metálas,M,
@@ -338,29 +338,29 @@
 337,Math,inch,N,,yes,a ruler with a bold bracket marking one inch division; a small United States flag and a small United Kingdom Union Jack side by side,colis,cólis,M,
 338,Math,foot,N,,yes,a ruler marked to a one-foot length laid beside a shoe; a small United States flag and a small United Kingdom Union Jack side by side,pėda,pėdá,F,
 339,Math,pound,N,,yes,a balance scale with a one-pound weight block on the pan; a small United States flag and a small United Kingdom Union Jack side by side,svaras,sváras,M,
-340,Math,half,N,,yes,"a round loaf cut cleanly into two equal halves, one half marked with a bold arrow",pusė,,,"LT machine-translated, verify"
+340,Math,half,N,,yes,"a round loaf cut cleanly into two equal halves, one half marked with a bold arrow",pusė,,,LT owner-confirmed 1.7.8
 341,Math,circle,N,,yes,a single bold clean geometric circle drawn on the cream paper,apskritimas,apskritímas,M,
 342,Math,square,N,,yes,a single bold clean geometric square drawn on the cream paper,kvadratas,kvadrátas,M,
 343,Math,temperature,N,,yes,"a large thermometer with a marked mercury column, a hot sun at the top end and ice at the bottom end",temperatūra,temperatūrá,F,
-344,Math,date,N,,yes,a tear-off wall calendar with one day boldly circled in red,data,,,"LT machine-translated, verify"
-345,Math,weight,N,,yes,"a heavy iron weight sitting on a scale, the pointer swung right over",svoris,,,"LT machine-translated, verify"
+344,Math,date,N,,yes,a tear-off wall calendar with one day boldly circled in red,data,,,LT owner-confirmed 1.7.8
+345,Math,weight,N,,yes,"a heavy iron weight sitting on a scale, the pointer swung right over",svoris,,,LT owner-confirmed 1.7.8
 346,Math,edge,N,,yes,a knife lying flat with a bold arrow pointing at its sharp cutting edge,kraštas,kráštas,M,
 347,Math,corner,N,,yes,"the interior corner of a room where two walls and the floor meet, a bold arrow on the corner",kampas,kámpas,M,
 348,Misc,map,N,,yes,"a wall map with roads and rivers, bearing no lettering",žemėlapis,žemė́lapis,M,
 349,Misc,dot,N,,yes,a single bold dot marked on plain paper,taškas,táškas,M,
 350,Misc,consonant,N,,yes,one single large letter B shown as an object on a stand,priebalsis,priébalsis,,single-glyph exception approved (decision Q2)
 351,Misc,vowel,N,,yes,one single large letter A shown as an object on a stand,balsis,bálsis,,single-glyph exception approved (decision Q2)
-352,Misc,light,N,,yes,a flashlight beam cutting a bright swath through an otherwise dark room,šviesa,,,"LT machine-translated, verify"
-353,Misc,sound,N,,yes,a bell ringing with bold radiating sound waves reaching a listening ear,garsas,,,"LT machine-translated, verify"
-354,Misc,yes,N,,yes,"a person nodding their head in agreement beside a big green tick mark, a small motion arrow on the nod",taip,,,"LT machine-translated, verify"
-355,Misc,no,N,,yes,"a person shaking their head in refusal beside a big bold red X cross-out rejection mark (an X shape, NOT a plus sign and NOT a medical cross), a small motion arrow on the head-shake",ne,,,"LT machine-translated, verify"
-356,Misc,piece,N,,yes,"a bar of chocolate with one piece broken off and set apart, a bold arrow on the single piece",gabalas,,,"LT machine-translated, verify"
-357,Misc,pain,N,,yes,"a person wincing and clutching their arm, a red starburst marking the spot of pain",skausmas,,,"LT machine-translated, verify"
+352,Misc,light,N,,yes,a flashlight beam cutting a bright swath through an otherwise dark room,šviesa,,,LT owner-confirmed 1.7.8
+353,Misc,sound,N,,yes,a bell ringing with bold radiating sound waves reaching a listening ear,garsas,,,LT owner-confirmed 1.7.8
+354,Misc,yes,N,,yes,"a person nodding their head in agreement beside a big green tick mark, a small motion arrow on the nod",taip,,,LT owner-confirmed 1.7.8
+355,Misc,no,N,,yes,"a person shaking their head in refusal beside a big bold red X cross-out rejection mark (an X shape, NOT a plus sign and NOT a medical cross), a small motion arrow on the head-shake",ne,,,LT owner-confirmed 1.7.8
+356,Misc,piece,N,,yes,"a bar of chocolate with one piece broken off and set apart, a bold arrow on the single piece",gabalas,,,LT owner-confirmed 1.7.8
+357,Misc,pain,N,,yes,"a person wincing and clutching their arm, a red starburst marking the spot of pain",skausmas,,,LT owner-confirmed 1.7.8
 358,Misc,injury,N,,yes,a bandaged arm in a sling,sužalojimas,sužalójimas,M,
 359,Misc,wound,N,,yes,a cut on a forearm being cleaned and bandaged,žaizda,žaizdá,F,added per request
 360,Misc,hole,N,,yes,a round hole in a wooden board,skylė,skylė́,F,skylė=hole in an object; duobė=pit in ground (maybe separate card)
 361,Misc,image,N,,yes,a framed picture hanging on a wall,vaizdas,vaízdas,M,vaizdas/paveikslas — fairly abstract
-362,Misc,pattern,N,,yes,a swatch of repeating Lithuanian folk-knit geometric pattern filling the panel,raštas,,,"LT machine-translated, verify"
+362,Misc,"writing, script",N,,yes,a hand with a fountain pen writing lines of running handwriting across a sheet of paper,raštas,,,raštas = writing/script (primary sense); owner-confirmed 1.7.8 (was mis-glossed 'pattern')
 363,Verbs,work,V,,yes,"a road-repair gang of workmen labouring together on a street, digging and shovelling",dirbti,dírbti,,
 364,Verbs,play (a game),V,,yes,two children playing with a ball,žaisti,žaísti,V,games/sport
 365,Verbs,play (an instrument),V,,yes,a musician playing an accordion,groti,gróti,V,musical instrument
@@ -372,7 +372,7 @@
 371,Verbs,go,V,,yes,a worker setting off through a doorway into the street,eiti,eíti,,
 372,Verbs,stop,V,,yes,a walking worker halted mid-step before a lowered barrier,sustoti,sustóti,,
 373,Verbs,follow,V,,yes,"one worker walking close behind another, following",sekti,sékti,,
-374,Verbs,think,V,,yes,a person with a hand to their chin and a thought-bubble above containing a lightbulb,galvoti,,,"LT machine-translated, verify"
+374,Verbs,think,V,,yes,a person with a hand to their chin and a thought-bubble above containing a lightbulb,galvoti,,,LT owner-confirmed 1.7.8
 375,Verbs,say,V,,yes,"a worker speaking to another, mouth open, simple sound lines",sakyti,sakýti,,depict via speech; kalbėti=speak
 376,Verbs,eat,V,,yes,a worker eating with a spoon,valgyti,válgyti,,
 377,Verbs,drink,V,,yes,a worker drinking from a glass,gerti,gérti,,
@@ -385,7 +385,7 @@
 384,Verbs,pay,V,disambig,yes,a customer handing plain banknotes across a counter to a clerk,mokėti,mokė́ti,,
 385,Verbs,sell,V,disambig,yes,a shopkeeper handing goods to a customer while receiving coins,parduoti,parduóti,,
 386,Verbs,shoot,V,,yes,a marksman firing a rifle at a paper target on a range,šauti,šaúti,,
-387,Verbs,learn,V,,yes,"a student at a desk absorbed in a book, a glowing arrow rising from the book to their head",mokytis,,,"LT machine-translated, verify"
+387,Verbs,learn,V,,yes,"a student at a desk absorbed in a book, a glowing arrow rising from the book to their head",mokytis,,,LT owner-confirmed 1.7.8
 388,Verbs,jump,V,,yes,a worker jumping over a low obstacle,šokti,šókti,,
 389,Verbs,smell,V,,yes,"a person sniffing a flower, scent lines rising to the nose",uostyti,uóstyti,,
 390,Verbs,hear,V,disambig,yes,"a worker's head turning toward a distant ringing alarm bell, sound waves arriving",girdėti,girdė́ti,,hear a sound
@@ -401,7 +401,7 @@
 400,Verbs,explode,V,,yes,"a small controlled demolition charge exploding at a distance, workers behind a barrier",sprogti,sprógti,,
 401,Verbs,sit,V,,yes,a worker seated on a chair,sėdėti,sėdė́ti,,
 402,Verbs,stand,V,,yes,a worker standing at ease,stovėti,stovė́ti,,
-403,Verbs,love,V,,yes,"two people embracing warmly, a small red heart symbol between them",mylėti,,,"LT machine-translated, verify"
+403,Verbs,love,V,,yes,"two people embracing warmly, a small red heart symbol between them",mylėti,,,LT owner-confirmed 1.7.8
 404,Verbs,pass by,V,,yes,"a worker walking past a kiosk, a dashed path carrying on beyond it",praeiti,praeíti,,
 405,Verbs,cut,V,,yes,a worker sawing a board on a sawhorse,pjauti,pjaúti,,
 406,Verbs,fight,V,,yes,two boxers sparring in a ring,muštis,múštis,,muštis=brawl; kovoti=struggle/combat
@@ -412,9 +412,9 @@
 411,Verbs,sing,V,,yes,"a small choir singing, mouths open, notes rising",dainuoti,dainuóti,,
 412,Verbs,count,V,,yes,a clerk counting on an abacus at a stockroom desk,skaičiuoti,skaičiuóti,,
 413,Verbs,marry,V,,yes,a couple exchanging rings before an official at a registry office,tuoktis,tuóktis,,"tuoktis (reflexive); vesti (man marries), tekėti (woman marries)"
-414,Verbs,pray,V,,yes,a person kneeling with hands clasped and head bowed in prayer before a simple Christian cross,melstis,,,"LT machine-translated, verify"
-415,Verbs,win,V,,yes,"a runner breasting the finish tape with arms raised in triumph, a bold arrow on the winner",laimėti,,,"LT machine-translated, verify"
-416,Verbs,lose,V,,yes,"a defeated runner trailing behind with head down, a bold arrow on the loser",pralaimėti,,,"LT machine-translated, verify"
+414,Verbs,pray,V,,yes,a person kneeling with hands clasped and head bowed in prayer before a simple Christian cross,melstis,,,LT owner-confirmed 1.7.8
+415,Verbs,win,V,,yes,"a runner breasting the finish tape with arms raised in triumph, a bold arrow on the winner",laimėti,,,LT owner-confirmed 1.7.8
+416,Verbs,lose,V,,yes,"a defeated runner trailing behind with head down, a bold arrow on the loser",pralaimėti,,,LT owner-confirmed 1.7.8
 417,Verbs,mix,V,,yes,"a worker mixing mortar in a trough with a shovel, a circular motion arrow",maišyti,maišýti,,mix/stir
 418,Verbs,bend,V,,yes,"a worker bending a metal rod in a vise, a curve arrow",lenkti,lénkti,,
 419,Verbs,wash,V,,yes,a worker washing their hands,plauti,plaúti,,
@@ -477,7 +477,7 @@
 476,Adjectives,deaf,A,,yes,"sound waves from a ringing bell stopping short at a person's ear, marked with a small crossed circle",kurčias/kurčia,kúrčias/kurčiá,M/F,
 477,Adjectives,blind,A,,yes,a person with a white cane and dark glasses at a street crossing,aklas/akla,áklas/aklá,M/F,
 478,Adjectives,nice,A,,yes,"a kind, pleasant young person helping a frail old lady cross a busy street, gently holding her arm and guiding her safely. Do not include any arrow.",malonus/maloni,malonús/maloní,M/F,
-479,Adjectives,mean,A,,yes,a scowling unkind man sneering and roughly shoving a smaller timid person aside,piktas,,,"LT machine-translated, verify"
+479,Adjectives,mean,A,,yes,a scowling unkind man sneering and roughly shoving a smaller timid person aside,piktas,,,LT owner-confirmed 1.7.8
 480,Adjectives,rich,A,,yes,"a richly dressed man with a fine coat and full purse beside a man in patched clothes, a bold arrow marking the RICH man",turtingas/turtinga,turtíngas/turtínga,M/F,
 481,Adjectives,poor,A,,yes,"a richly dressed man with a fine coat and full purse beside a man in patched clothes, a bold arrow marking the POOR man",neturtingas/neturtinga (vargšas),neturtíngas/neturtínga (várgšas),M/F,colloq. biednas is nonstandard
 482,Adjectives,thick,A,,yes,"a thick book beside a thin book, a bold arrow marking the THICK one",storas/stora,stóras/storá,M/F,
@@ -506,16 +506,16 @@
 505,Adjectives,light-heavy,A,,yes,"a worker bent under a heavy sack beside one strolling with a light parcel, a bold arrow marking the LIGHT parcel",lengvas/lengva,léngvas/lengvá,M/F,
 506,Adjectives,dark,A,,yes,"a split scene of a dark unlit room and a bright lamp-lit room, a bold arrow marking the DARK half",tamsus/tamsi,tamsús/tamsí,M/F,
 507,Adjectives,light-dark,A,,yes,"a split scene of a dark unlit room and a bright lamp-lit room, a bold arrow marking the BRIGHT half",šviesus/šviesi,šviesús/šviesí,M/F,
-508,Adjectives,nuclear,A,,yes,the yellow-and-black radiation trefoil symbol beside a nuclear cooling tower emitting steam,branduolinis,,,"LT machine-translated, verify"
-509,Adjectives,famous,A,,yes,a celebrated figure signing autographs amid an admiring crowd with flashing cameras,garsus,,,"LT machine-translated, verify"
-510,Pronouns,I,P,,yes,"a person pointing a thumb back at their own chest, a bold arrow on them (the speaker: I)",aš,,,"LT machine-translated, verify"
-511,Pronouns,you sg,P,,yes,"a person pointing a finger directly at one other person facing them, a bold arrow on the addressed person (you)",tu,,,"LT machine-translated, verify"
-512,Pronouns,he,P,,yes,"a speaker pointing aside at a single man, a bold arrow on the man (he)",jis,,,"LT machine-translated, verify"
-513,Pronouns,she,P,,yes,"a speaker pointing aside at a single woman, a bold arrow on the woman (she)",ji,,,"LT machine-translated, verify"
-514,Pronouns,it,P,,yes,"a person pointing down at an object — a ball — on the ground, a bold arrow on the object (it)",tai,,,"LT machine-translated, verify"
-515,Pronouns,we,P,,yes,"a person gesturing an encircling sweep around a small group that includes themselves, a bold arrow around the group (we)",mes,,,"LT machine-translated, verify"
-516,Pronouns,you pl,P,,yes,"a speaker gesturing with open arms at a facing group of several people, a bold arrow on the group (you plural)",jūs,,,"LT machine-translated, verify"
-517,Pronouns,they,P,,yes,"a speaker pointing at a distant separate group of people, a bold arrow on that group (they)",jie,,,"LT machine-translated, verify"
+508,Adjectives,nuclear,A,,yes,the yellow-and-black radiation trefoil symbol beside a nuclear cooling tower emitting steam,branduolinis,,,LT owner-confirmed 1.7.8
+509,Adjectives,famous,A,,yes,a celebrated figure signing autographs amid an admiring crowd with flashing cameras,garsus,,,LT owner-confirmed 1.7.8
+510,Pronouns,I,P,,yes,"a person pointing a thumb back at their own chest, a bold arrow on them (the speaker: I)",aš,,,LT owner-confirmed 1.7.8
+511,Pronouns,you sg,P,,yes,"a person pointing a finger directly at one other person facing them, a bold arrow on the addressed person (you)",tu,,,LT owner-confirmed 1.7.8
+512,Pronouns,he,P,,yes,"a speaker pointing aside at a single man, a bold arrow on the man (he)",jis,,,LT owner-confirmed 1.7.8
+513,Pronouns,she,P,,yes,"a speaker pointing aside at a single woman, a bold arrow on the woman (she)",ji,,,LT owner-confirmed 1.7.8
+514,Pronouns,it,P,,yes,"a person pointing down at an object — a ball — on the ground, a bold arrow on the object (it)",tai,,,LT owner-confirmed 1.7.8
+515,Pronouns,we,P,,yes,"a person gesturing an encircling sweep around a small group that includes themselves, a bold arrow around the group (we)",mes,,,LT owner-confirmed 1.7.8
+516,Pronouns,you pl,P,,yes,"a speaker gesturing with open arms at a facing group of several people, a bold arrow on the group (you plural)",jūs,,,LT owner-confirmed 1.7.8
+517,Pronouns,they,P,,yes,"a speaker pointing at a distant separate group of people, a bold arrow on that group (they)",jie,,,LT owner-confirmed 1.7.8
 518,Adjectives,red,A,,superseded,"a group of plain red objects — an apple, a fire bucket, a ribbon",raudonas/raudona,raudónas/raudóna,M/F,"superseded by Color row 69 (decision Q1, files 1.6.1)"
 519,Adjectives,green,A,,superseded,"a group of plain green objects — a leaf, a cucumber, a glass bottle",žalias/žalia,žálias/žaliá,M/F,"superseded by Color row 70 (decision Q1, files 1.6.1)"
 520,Adjectives,blue,A,,superseded,"a group of plain blue objects — an enamel mug, work coveralls, a cornflower",mėlynas/mėlyna,mė́lynas/mė́lyna,M/F,"superseded by Color row 71 (decision Q1, files 1.6.1)"

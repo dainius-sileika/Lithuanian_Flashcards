@@ -41,8 +41,9 @@ audio (one mp3 per card) is in `audio/`; the styling is `anki/go_theme.css`
 > primarily from Wiktionary's stress-marked headwords, with the remainder from
 > [kirtis.info](https://kirtis.info). Each is accepted only if stripping its accent
 > marks exactly reproduces the plain headword, so a wrong-word match is impossible.
-> Coverage is 520/520. Grammar forms (genitive, principal parts, feminine) are
-> still being verified by a native speaker — treat those as provisional.
+> Coverage is 520/520. Vocabulary glosses and the verb principal parts have been
+> checked by a native speaker; the bulk noun genitives and adjective feminines
+> are rule-derived and still being spot-checked. See [CHANGELOG.md](CHANGELOG.md).
 
 ## The idea
 
@@ -62,7 +63,7 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 | `images/` | The 520 finished cards as WebP (1536×1024, ~120 MB) — the distributed set. |
 | `audio/` | One pronunciation MP3 per card (Lithuanian neural voice). |
 | `anki/` | `go_theme.css` (card styling) + `templates.md` (note-type reference). |
-| `master_wordlist.csv` | The source wordlist (v2.8): 530 rows → 520 generable cards — target word, gloss, gender, pronunciation, per-card notes. |
+| `master_wordlist.csv` | The source wordlist (v2.9): 530 rows → 520 generable cards — target word, gloss, gender, pronunciation, per-card notes. |
 | `out_deck/ledger.csv` | The exact prompt + settings behind every card (full reproducibility). |
 | `out_deck/cards.csv` | Raw per-generation log (includes re-rolls; **not** the clean Anki source — use `cards_anki.csv`). |
 | `go_generator.py` | The "GO" image engine — house style, palette, prompt assembly. Backend: OpenAI gpt-image-1.5. |
@@ -70,7 +71,8 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 | `deck_builder.py` | Production runner: routes every wordlist row, applies per-card staging overrides. |
 | `driver.py` | Parallel/batch runner; resumable; merges into `out_deck/`. |
 | `GO_STYLE_SPEC_files_1_7_1.md` | The canonical art specification + full changelog. |
-| `VERSIONS.md` | Version index and changelog. |
+| `CHANGELOG.md` | **Release changelog** — what changed in each version. |
+| `VERSIONS.md` | Long-form production notes behind each release. |
 | `deprecated/` | Frozen older code/wordlist/spec versions for rollback. |
 
 ## Categories
@@ -98,4 +100,4 @@ The engine is model-independent by design: the grammars and staging survive a ba
 
 ## Status
 
-**Beta — complete deck.** 520/520 cards generated and QA'd (wordlist v2.8), each with audio and a stress-accented pronunciation. Grammar forms and accents are sourced (Wiktionary + kirtis.info) and being verified by a native speaker — treat them as provisional. Full-resolution PNG masters are kept locally; this repo carries the compressed WebP set, and the importable `.apkg` (JPEG images, for universal Anki compatibility) is distributed via Releases.
+**Beta — complete deck.** 520/520 cards generated and QA'd (wordlist v2.9), each with audio and a stress-accented pronunciation. Accents are sourced (Wiktionary + kirtis.info), and the glosses and verb principal parts have been checked by a native speaker; rule-derived noun genitives and adjective feminines are still being spot-checked. Full-resolution PNG masters are kept locally; this repo carries the compressed WebP set, and the importable `.apkg` (JPEG images, for universal Anki compatibility) is distributed via Releases.

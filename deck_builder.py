@@ -105,6 +105,12 @@ FLAG_OVERRIDE = {334: "eu", 335: "eu", 336: "eu",
 # Insets must SUPPORT the target word or at least not vote for a wrong one.
 # ---------------------------------------------------------------------------
 NOUN_STAGING = {
+    350: {"subject": "the consonants of the alphabet",
+          "main": ("the five consonant letters B C D F G standing in one neat "
+          "evenly-spaced row across the middle of the card, drawn as bold clean "
+          "display letterforms on plain paper, all five the same size, with "
+          "nothing else in the scene and NO single letter singled out, enlarged, "
+          "sculpted, mounted on a stand or marked with an arrow")},
     # -- attribute-routed verbs and the vowel card (1.7.7 owner QA) --
     403: {"subject": "to love", "main": ("two people embracing each other warmly "
           "and closely, face to face, with one single clean red heart symbol "
@@ -148,13 +154,15 @@ NOUN_STAGING = {
           "soaking WET and dripping, one bone DRY; exactly one bold arrow points "
           "directly AT THE WET SHIRT itself"), "insets": True},
     # -- nouns --
-    362: {"insets": True, "subject": 'a repeating ornamental pattern', "main": ("a flat rectangular panel filling the card, covered edge to "
-          "edge with one bold repeating geometric ornament — the same motif "
-          "tiled over and over in a regular grid — shown as a pure flat design "
-          "sample, NOT as cloth, knitting, wool or any garment"),
-          "inset_note": ("Include 2 small supporting insets showing the SAME "
-          "repeating ornament applied elsewhere: a tiled floor laid in a "
-          "repeating pattern; a wallpaper strip with the motif repeating.")},
+    362: {"subject": "handwriting, written script",
+          "main": ("a sheet of writing paper on a plain desk, a hand holding a "
+          "fountain pen part-way down the page, the upper half already covered "
+          "in even lines of flowing running handwriting and the lower half still "
+          "blank, the pen nib touching the paper mid-word"),
+          "insets": True,
+          "inset_note": ("Include 2 small supporting insets: an old handwritten "
+          "manuscript page with a wax seal; a sheet fed into a typewriter with "
+          "typed lines on it.")},
     361: {"subject": 'a picture, a depicted image', "main": ("a framed painted picture standing upright on an easel in the "
           "middle of a plain room, the painted image inside the frame clearly "
           "visible as a depicted landscape scene, the frame resting on the easel "
@@ -605,7 +613,7 @@ NOUN_STAGING = {
 # rows generated with the engine's single-glyph exception (decision Q2)
 # 1.7.7: 351 balsis moves OFF the single-glyph exception — its lone "A"
 # collided with 227 raidė. It now renders the vowel set via TEXT_EXCEPTION.
-GLYPH_ROWS = {227, 350}
+GLYPH_ROWS = {227}
 
 # ---------------------------------------------------------------------------
 # Per-verb staging: row# -> (people, setting, arrow, emphasis, consequence).
@@ -988,6 +996,16 @@ ADJ_PAIR = {
 # 488/489 differ by what is ON the blackboard, not by an arrow, so they carry
 # their own tail rather than the generic "mark this pole" clause.
 ADJ_PAIR_TAIL = {
+    507: (" Mark the BRIGHTLY LIT half with exactly one bold arrow placed "
+          "INSIDE that lit half, above the lit room and pointing straight DOWN "
+          "into it. The arrow must sit wholly within the picture and must never "
+          "point outward off the edge of the card or toward the dark half. Draw "
+          "no other arrow anywhere."),
+    506: (" Mark the DARK unlit half with exactly one bold arrow placed INSIDE "
+          "that dark half, above the dark room and pointing straight DOWN into "
+          "it. The arrow must sit wholly within the picture and must never point "
+          "outward off the edge of the card or toward the lit half. Draw no "
+          "other arrow anywhere."),
     479: (" Mark the scowling MEAN man who is doing the shoving with exactly one "
           "bold arrow placed directly ABOVE HIS HEAD and pointing straight DOWN "
           "onto him. The arrowhead must touch that man and no one else — it must "
@@ -1010,7 +1028,9 @@ ADJ_MARK = (" Mark {target} with exactly one bold clear arrow whose HEAD lands "
             "opposite side — if the marked side is on the left the arrow points "
             "leftward, if it is on the right the arrow points rightward. Place "
             "the arrow beside the marked side, not in the gap between the two "
-            "sides, and draw no other arrow anywhere.")
+            "sides. Every arrow must lie wholly inside the picture and must "
+            "never point outward off the edge of the card. Draw no other "
+            "arrow anywhere.")
 
 
 def adj_inset_note(english):
@@ -1028,6 +1048,11 @@ def adj_inset_note(english):
 # written; everything else on the card stays wordless.
 # ===========================================================================
 TEXT_EXCEPTION = {
+    362: ('the flowing handwritten script on the page itself, drawn as ordinary '
+          'running handwriting in even lines; the individual words need not be '
+          'legible. No other lettering, label or caption anywhere.'),
+    350: ('the five consonant letters "B C D F G" written once in a single '
+          'neat row as the subject of the card.'),
     334: ('the unit mark "m" written once beside the metre-stick, and the '
           'number "100" with "cm" written once beneath it to show that one '
           'metre is a hundred centimetres.'),
