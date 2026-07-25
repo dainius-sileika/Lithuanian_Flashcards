@@ -7,6 +7,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 
 ## [1.7.8] — 2026-07-24
 
+### Added
+- **`recorder.html`** — a self-contained offline browser recorder for capturing
+  human audio (one clip per card key, resumable via IndexedDB, exports a zip that
+  drops straight into `audio/`). `build_recorder.py` now reads `cards_anki.csv`
+  directly rather than a one-off snapshot, so the recorder cannot drift out of
+  step with the deck; re-run it after any wordlist change.
+
 ### Fixed
 - **334 metras / 335 centimetras / 337 colis** now actually carry their unit
   marks (`m` + `100 cm`, `1 cm`, `1 in`). The text exceptions were written in
