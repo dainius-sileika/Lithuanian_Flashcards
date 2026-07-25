@@ -5,6 +5,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 `files X.Y.Z / wordlist N.M` versioning (art engine / vocabulary data).
 `VERSIONS.md` holds the long-form production notes behind each entry.
 
+## [Unreleased] — planning
+
+### Added
+- **`ROADMAP.md`** — the plan of record for reaching CEFR **A2**. Includes a gap
+  audit of the current deck (which found it contains *no* numbers, calendar words,
+  question words, prepositions, conjunctions, adverbs, possessives or modal verbs
+  — a systematic consequence of the picture-only method), the phased build to
+  ~900 cards, the engine work each phase needs, and the outstanding non-vocabulary
+  work (human audio, native verification, the pre-1.7.1 image backlog).
+- **`wordlist_a2_pending.csv`** — the A2 queue: 402 proposed rows (376 net new,
+  26 flagged as already covered) across five phases — A1 completion, function
+  words, A2 topical vocabulary, phrases, and grammar patterns. Every Lithuanian
+  target is marked `LT proposed — verify`.
+
 ## [1.7.8] — 2026-07-24
 
 ### Added

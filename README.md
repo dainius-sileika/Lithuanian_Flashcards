@@ -71,6 +71,8 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 | `deck_builder.py` | Production runner: routes every wordlist row, applies per-card staging overrides. |
 | `driver.py` | Parallel/batch runner; resumable; merges into `out_deck/`. |
 | `GO_STYLE_SPEC_files_1_7_1.md` | The canonical art specification + full changelog. |
+| `ROADMAP.md` | **The plan to A2** — gap analysis, phased build, outstanding work. |
+| `wordlist_a2_pending.csv` | The A2 queue: 402 proposed words/phrases/patterns, phased. |
 | `CHANGELOG.md` | **Release changelog** — what changed in each version. |
 | `VERSIONS.md` | Long-form production notes behind each release. |
 | `deprecated/` | Frozen older code/wordlist/spec versions for rollback. |
