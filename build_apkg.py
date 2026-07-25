@@ -51,7 +51,14 @@ def media_image(k):
         Image.open(src).convert("RGB").save(dst, "JPEG", quality=86, optimize=True)
     return dst, f"{k}.jpg"
 
-deck = genanki.Deck(2059400111, "Lietuvių Flashcards")
+# 1.7.9 — one deck, split into CEFR subdecks. Studying the parent studies
+# everything; clicking A1 or A2 studies just that level. Cards also carry an
+# A1/A2 tag so custom filtered decks stay possible.
+DECKS = {
+    "A1": genanki.Deck(2059400112, "Lietuvių Flashcards::A1"),
+    "A2": genanki.Deck(2059400113, "Lietuvių Flashcards::A2"),
+}
+deck = DECKS["A1"]   # default for rows with no level set
 media = []
 for r in csv.DictReader(open("cards_anki.csv")):
     k = r['key']; aud = f"audio/{k}.mp3"
@@ -59,8 +66,11 @@ for r in csv.DictReader(open("cards_anki.csv")):
     if not img_path:
         continue
     audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
-    deck.add_note(genanki.Note(
+    level = (r.get("level") or "A1").strip() or "A1"
+    target = DECKS.get(level, DECKS["A1"])
+    target.add_note(genanki.Note(
         model=model,
+        tags=[level],
         # STABLE identity: guid derived from the card key, never random, so
         # re-importing an updated deck updates cards in place (keeps study
         # history / scheduling) instead of creating duplicates.
@@ -72,6 +82,8 @@ for r in csv.DictReader(open("cards_anki.csv")):
     if os.path.exists(aud):
         media.append(aud)
 
-pkg = genanki.Package(deck); pkg.media_files = media
+pkg = genanki.Package(list(DECKS.values())); pkg.media_files = media
 pkg.write_to_file("Lietuviu_Flashcards.apkg")
-print(f"built Lietuviu_Flashcards.apkg — {len(media)} media files")
+counts = {lv: len(d.notes) for lv, d in DECKS.items()}
+print(f"built Lietuviu_Flashcards.apkg — {len(media)} media files | "
+      f"subdecks: {counts}")

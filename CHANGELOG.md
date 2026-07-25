@@ -8,16 +8,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 ## [Unreleased] — planning
 
 ### Added
-- **`ROADMAP.md`** — the plan of record for reaching CEFR **A2**. Includes a gap
-  audit of the current deck (which found it contains *no* numbers, calendar words,
-  question words, prepositions, conjunctions, adverbs, possessives or modal verbs
-  — a systematic consequence of the picture-only method), the phased build to
-  ~900 cards, the engine work each phase needs, and the outstanding non-vocabulary
-  work (human audio, native verification, the pre-1.7.1 image backlog).
-- **`wordlist_a2_pending.csv`** — the A2 queue: 402 proposed rows (376 net new,
-  26 flagged as already covered) across five phases — A1 completion, function
-  words, A2 topical vocabulary, phrases, and grammar patterns. Every Lithuanian
-  target is marked `LT proposed — verify`.
+- **CEFR levels on every card.** `cards_anki.csv` and the wordlist carry a `level`
+  column, and the deck now builds as **subdecks** `Lietuvių Flashcards::A1` and
+  `::A2` with matching `A1`/`A2` tags. Studying the parent deck studies all of it;
+  a subdeck studies one level. Existing 520 auto-assigned 427 A1 / 93 A2.
+- **`card_text` wordlist column** — text exceptions are now data, not code. Any
+  row can name exactly what lettering its card may carry (a day name on a calendar,
+  a numeral, a unit mark); everything else stays wordless. This is what makes
+  undepictable-but-teachable cards (days, months, numbers) generable.
+- **`ROADMAP.md`** — the plan of record for reaching CEFR **A2**, including a gap
+  audit which found the deck contains *no* numbers, calendar words, question words,
+  prepositions, conjunctions, adverbs, possessives or modal verbs — a systematic
+  consequence of the picture-only method rather than an oversight.
+- **`wordlist_a2_pending.csv`** — the A2 queue: **984 proposed rows** (845 net new)
+  across seven phases, each marked `level` (A1/A2) and `image_possible`, with
+  A1 *and* A2 phrases and model sentences. 722 rows can go straight through the
+  existing image engine. Every Lithuanian target is marked `LT proposed — verify`.
 
 ## [1.7.8] — 2026-07-24
 

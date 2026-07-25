@@ -1,403 +1,985 @@
-id,phase,phase_name,cefr,category,english,type,card_type,lithuanian_TARGET,lt_pron,gender,depictable,subject_phrase_EN,status,dup_check,notes
-A2-001,A,A1-completion,A1,Time,time,N,image,laikas,,,yes,,pending,,LT proposed — verify
-A2-002,A,A1-completion,A1,Time,hour,N,image,valanda,,,yes,,pending,,LT proposed — verify
-A2-003,A,A1-completion,A1,Time,minute,N,image,minutė,,,yes,,pending,,LT proposed — verify
-A2-004,A,A1-completion,A1,Time,second,N,image,sekundė,,,yes,,pending,,LT proposed — verify
-A2-005,A,A1-completion,A1,Time,day,N,image,diena,,,yes,,pending,,LT proposed — verify
-A2-006,A,A1-completion,A1,Time,week,N,image,savaitė,,,yes,,pending,,LT proposed — verify
-A2-007,A,A1-completion,A1,Time,month,N,image,mėnuo,,,yes,,pending,,LT proposed — verify
-A2-008,A,A1-completion,A1,Time,year,N,image,metai,,,yes,,pending,,LT proposed — verify
-A2-009,A,A1-completion,A1,Time,weekend,N,image,savaitgalis,,,yes,,pending,,LT proposed — verify
-A2-010,A,A1-completion,A1,Time,morning,N,image,rytas,,,yes,,pending,,LT proposed — verify
-A2-011,A,A1-completion,A1,Time,afternoon,N,image,popietė,,,yes,,pending,,LT proposed — verify
-A2-012,A,A1-completion,A1,Time,evening,N,image,vakaras,,,yes,,pending,,LT proposed — verify
-A2-013,A,A1-completion,A1,Time,night,N,image,naktis,,,yes,,pending,,LT proposed — verify
-A2-014,A,A1-completion,A1,Time,today,ADV,image,šiandien,,,yes,,pending,,LT proposed — verify
-A2-015,A,A1-completion,A1,Time,yesterday,ADV,image,vakar,,,yes,,pending,,LT proposed — verify
-A2-016,A,A1-completion,A1,Time,tomorrow,ADV,image,rytoj,,,yes,,pending,,LT proposed — verify
-A2-017,A,A1-completion,A1,Time,now,ADV,image,dabar,,,yes,,pending,,LT proposed — verify
-A2-018,A,A1-completion,A1,Time,Monday,N,image,pirmadienis,,,yes,,pending,,day of the week — calendar staging; LT proposed — verify
-A2-019,A,A1-completion,A1,Time,Tuesday,N,image,antradienis,,,yes,,pending,,day of the week — calendar staging; LT proposed — verify
-A2-020,A,A1-completion,A1,Time,Wednesday,N,image,trečiadienis,,,yes,,pending,,day of the week — calendar staging; LT proposed — verify
-A2-021,A,A1-completion,A1,Time,Thursday,N,image,ketvirtadienis,,,yes,,pending,,day of the week — calendar staging; LT proposed — verify
-A2-022,A,A1-completion,A1,Time,Friday,N,image,penktadienis,,,yes,,pending,,day of the week — calendar staging; LT proposed — verify
-A2-023,A,A1-completion,A1,Time,Saturday,N,image,šeštadienis,,,yes,,pending,,day of the week — calendar staging; LT proposed — verify
-A2-024,A,A1-completion,A1,Time,Sunday,N,image,sekmadienis,,,yes,,pending,,day of the week — calendar staging; LT proposed — verify
-A2-025,A,A1-completion,A1,Time,January,N,image,sausis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-026,A,A1-completion,A1,Time,February,N,image,vasaris,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-027,A,A1-completion,A1,Time,March,N,image,kovas,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-028,A,A1-completion,A1,Time,April,N,image,balandis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-029,A,A1-completion,A1,Time,May,N,image,gegužė,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-030,A,A1-completion,A1,Time,June,N,image,birželis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-031,A,A1-completion,A1,Time,July,N,image,liepa,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-032,A,A1-completion,A1,Time,August,N,image,rugpjūtis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-033,A,A1-completion,A1,Time,September,N,image,rugsėjis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-034,A,A1-completion,A1,Time,October,N,image,spalis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-035,A,A1-completion,A1,Time,November,N,image,lapkritis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-036,A,A1-completion,A1,Time,December,N,image,gruodis,,,yes,,pending,,month — seasonal scene staging; LT proposed — verify
-A2-037,A,A1-completion,A1,Time,spring,N,image,pavasaris,,,yes,,pending,,LT proposed — verify
-A2-038,A,A1-completion,A1,Time,summer,N,image,vasara,,,yes,,pending,,LT proposed — verify
-A2-039,A,A1-completion,A1,Time,autumn,N,image,ruduo,,,yes,,pending,,LT proposed — verify
-A2-040,A,A1-completion,A1,Time,winter,N,image,žiema,,,yes,,pending,,LT proposed — verify
-A2-041,A,A1-completion,A1,Numbers,zero,NUM,image,nulis,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-042,A,A1-completion,A1,Numbers,one,NUM,image,vienas,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-043,A,A1-completion,A1,Numbers,two,NUM,image,du,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-044,A,A1-completion,A1,Numbers,three,NUM,image,trys,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-045,A,A1-completion,A1,Numbers,four,NUM,image,keturi,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-046,A,A1-completion,A1,Numbers,five,NUM,image,penki,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-047,A,A1-completion,A1,Numbers,six,NUM,image,šeši,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-048,A,A1-completion,A1,Numbers,seven,NUM,image,septyni,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-049,A,A1-completion,A1,Numbers,eight,NUM,image,aštuoni,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-050,A,A1-completion,A1,Numbers,nine,NUM,image,devyni,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-051,A,A1-completion,A1,Numbers,ten,NUM,image,dešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-052,A,A1-completion,A1,Numbers,eleven,NUM,image,vienuolika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-053,A,A1-completion,A1,Numbers,twelve,NUM,image,dvylika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-054,A,A1-completion,A1,Numbers,thirteen,NUM,image,trylika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-055,A,A1-completion,A1,Numbers,fourteen,NUM,image,keturiolika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-056,A,A1-completion,A1,Numbers,fifteen,NUM,image,penkiolika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-057,A,A1-completion,A1,Numbers,sixteen,NUM,image,šešiolika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-058,A,A1-completion,A1,Numbers,seventeen,NUM,image,septyniolika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-059,A,A1-completion,A1,Numbers,eighteen,NUM,image,aštuoniolika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-060,A,A1-completion,A1,Numbers,nineteen,NUM,image,devyniolika,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-061,A,A1-completion,A1,Numbers,twenty,NUM,image,dvidešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-062,A,A1-completion,A1,Numbers,thirty,NUM,image,trisdešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-063,A,A1-completion,A1,Numbers,forty,NUM,image,keturiasdešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-064,A,A1-completion,A1,Numbers,fifty,NUM,image,penkiasdešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-065,A,A1-completion,A1,Numbers,sixty,NUM,image,šešiasdešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-066,A,A1-completion,A1,Numbers,seventy,NUM,image,septyniasdešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-067,A,A1-completion,A1,Numbers,eighty,NUM,image,aštuoniasdešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-068,A,A1-completion,A1,Numbers,ninety,NUM,image,devyniasdešimt,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-069,A,A1-completion,A1,Numbers,hundred,NUM,image,šimtas,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-070,A,A1-completion,A1,Numbers,thousand,NUM,image,tūkstantis,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-071,A,A1-completion,A1,Numbers,million,NUM,image,milijonas,,,yes,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
-A2-072,A,A1-completion,A1,Numbers,first,A,image,pirmas,,,yes,,pending,,ordinal — queue/podium staging; LT proposed — verify
-A2-073,A,A1-completion,A1,Numbers,second (2nd),A,image,antras,,,yes,,pending,,ordinal — queue/podium staging; LT proposed — verify
-A2-074,A,A1-completion,A1,Numbers,third,A,image,trečias,,,yes,,pending,,ordinal — queue/podium staging; LT proposed — verify
-A2-075,A,A1-completion,A1,Numbers,fourth,A,image,ketvirtas,,,yes,,pending,,ordinal — queue/podium staging; LT proposed — verify
-A2-076,A,A1-completion,A1,Numbers,fifth,A,image,penktas,,,yes,,pending,,ordinal — queue/podium staging; LT proposed — verify
-A2-077,A,A1-completion,A1,Numbers,last,A,image,paskutinis,,,yes,,pending,,ordinal — queue/podium staging; LT proposed — verify
-A2-078,A,A1-completion,A1,People,name,N,image,vardas,,,yes,,pending,,LT proposed — verify
-A2-079,A,A1-completion,A1,People,surname,N,image,pavardė,,,yes,,pending,,LT proposed — verify
-A2-080,A,A1-completion,A1,People,age,N,image,amžius,,,yes,,pending,,LT proposed — verify
-A2-081,A,A1-completion,A1,Electronics,phone,N,image,telefonas,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-082,A,A1-completion,A1,Location,shop,N,image,parduotuvė,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-083,A,A1-completion,A1,Nature,weather,N,image,oras,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-084,A,A1-completion,A1,Society,address,N,image,adresas,,,yes,,pending,,LT proposed — verify
-A2-085,A,A1-completion,A1,Location,ticket office,N,image,kasa,,,yes,,pending,,LT proposed — verify
-A2-086,A,A1-completion,A1,Home,key ring,N,image,raktų pakabukas,,,yes,,pending,,LT proposed — verify
-A2-087,A,A1-completion,A1,Home,wallet,N,image,piniginė,,,yes,,pending,,LT proposed — verify
-A2-088,A,A1-completion,A1,Home,bag,N,image,krepšys,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-089,A,A1-completion,A1,Transportation,suitcase,N,image,lagaminas,,,yes,,pending,,LT proposed — verify
-A2-090,A,A1-completion,A1,Society,passport,N,image,pasas,,,yes,,pending,,LT proposed — verify
-A2-091,A,A1-completion,A1,Society,map,N,image,žemėlapis,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-092,A,A1-completion,A1,Society,letter (post),N,image,laiškas,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-093,A,A1-completion,A1,Society,postcard,N,image,atvirukas,,,yes,,pending,,LT proposed — verify
-A2-094,A,A1-completion,A1,Society,stamp,N,image,pašto ženklas,,,yes,,pending,,LT proposed — verify
-A2-095,A,A1-completion,A1,Location,newspaper stand,N,image,kioskas,,,yes,,pending,,LT proposed — verify
-A2-096,A,A1-completion,A1,Society,queue,N,image,eilė,,,yes,,pending,,LT proposed — verify
-A2-097,A,A1-completion,A1,Food,breakfast,N,image,pusryčiai,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-098,A,A1-completion,A1,Food,lunch,N,image,pietūs,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-099,A,A1-completion,A1,Food,dinner,N,image,vakarienė,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-100,A,A1-completion,A1,Food,snack,N,image,užkandis,,,yes,,pending,,LT proposed — verify
-A2-101,A,A1-completion,A1,Food,dessert,N,image,desertas,,,yes,,pending,,LT proposed — verify
-A2-102,A,A1-completion,A1,Food,menu,N,image,meniu,,,yes,,pending,,LT proposed — verify
-A2-103,A,A1-completion,A1,Food,bill (restaurant),N,image,sąskaita,,,yes,,review-duplicate,EN already in deck,LT proposed — verify
-A2-104,A,A1-completion,A1,Society,receipt,N,image,kvitas,,,yes,,pending,,LT proposed — verify
-A2-105,A,A1-completion,A1,Society,discount,N,image,nuolaida,,,yes,,pending,,LT proposed — verify
-A2-106,A,A1-completion,A1,Society,size,N,image,dydis,,,yes,,pending,,LT proposed — verify
-A2-107,A,A1-completion,A1,Society,change (money),N,image,grąža,,,yes,,pending,,LT proposed — verify
-A2-108,B,A2-function,A2,Question words,who,Q,sentence,kas,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-109,B,A2-function,A2,Question words,what,Q,sentence,kas,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-110,B,A2-function,A2,Question words,where,Q,sentence,kur,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-111,B,A2-function,A2,Question words,when,Q,sentence,kada,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-112,B,A2-function,A2,Question words,how,Q,sentence,kaip,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-113,B,A2-function,A2,Question words,why,Q,sentence,kodėl,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-114,B,A2-function,A2,Question words,how much/many,Q,sentence,kiek,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-115,B,A2-function,A2,Question words,what kind of,Q,sentence,koks,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-116,B,A2-function,A2,Question words,which,Q,sentence,kuris,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-117,B,A2-function,A2,Question words,whose,Q,sentence,kieno,,,no,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-118,B,A2-function,A2,Pronouns,my,P,sentence,mano,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-119,B,A2-function,A2,Pronouns,your (sg),P,sentence,tavo,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-120,B,A2-function,A2,Pronouns,his,P,sentence,jo,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-121,B,A2-function,A2,Pronouns,her,P,sentence,jos,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-122,B,A2-function,A2,Pronouns,our,P,sentence,mūsų,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-123,B,A2-function,A2,Pronouns,your (pl),P,sentence,jūsų,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-124,B,A2-function,A2,Pronouns,their,P,sentence,jų,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-125,B,A2-function,A2,Pronouns,one's own,P,sentence,savo,,,no,,pending,,possessive — indeclinable; LT proposed — verify
-A2-126,B,A2-function,A2,Pronouns,this,P,sentence,šis,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-127,B,A2-function,A2,Pronouns,that,P,sentence,tas,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-128,B,A2-function,A2,Pronouns,these,P,sentence,šie,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-129,B,A2-function,A2,Pronouns,those,P,sentence,tie,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-130,B,A2-function,A2,Pronouns,someone,P,sentence,kažkas,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-131,B,A2-function,A2,Pronouns,nobody,P,sentence,niekas,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-132,B,A2-function,A2,Pronouns,everyone,P,sentence,visi,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-133,B,A2-function,A2,Pronouns,something,P,sentence,kažkas (daiktas),,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-134,B,A2-function,A2,Pronouns,nothing,P,sentence,niekas (nieko),,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-135,B,A2-function,A2,Pronouns,all/every,P,sentence,visas,,,no,,pending,,demonstrative / indefinite; LT proposed — verify
-A2-136,B,A2-function,A2,Prepositions,"in, into",PREP,sentence,į,,,no,,pending,,preposition governs +accusative; LT proposed — verify
-A2-137,B,A2-function,A2,Prepositions,"from, out of",PREP,sentence,iš,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-138,B,A2-function,A2,Prepositions,with,PREP,sentence,su,,,no,,pending,,preposition governs +instrumental; LT proposed — verify
-A2-139,B,A2-function,A2,Prepositions,without,PREP,sentence,be,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-140,B,A2-function,A2,Prepositions,on,PREP,sentence,ant,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-141,B,A2-function,A2,Prepositions,under,PREP,sentence,po,,,no,,pending,,preposition governs +instrumental; LT proposed — verify
-A2-142,B,A2-function,A2,Prepositions,"near, by",PREP,sentence,prie,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-143,B,A2-function,A2,Prepositions,"behind, for",PREP,sentence,už,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-144,B,A2-function,A2,Prepositions,"through, during",PREP,sentence,per,,,no,,pending,,preposition governs +accusative; LT proposed — verify
-A2-145,B,A2-function,A2,Prepositions,from (since),PREP,sentence,nuo,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-146,B,A2-function,A2,Prepositions,"until, up to",PREP,sentence,iki,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-147,B,A2-function,A2,Prepositions,about,PREP,sentence,apie,,,no,,pending,,preposition governs +accusative; LT proposed — verify
-A2-148,B,A2-function,A2,Prepositions,between,PREP,sentence,tarp,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-149,B,A2-function,A2,Prepositions,before,PREP,sentence,prieš,,,no,,pending,,preposition governs +accusative; LT proposed — verify
-A2-150,B,A2-function,A2,Prepositions,to (a person),PREP,sentence,pas,,,no,,pending,,preposition governs +accusative; LT proposed — verify
-A2-151,B,A2-function,A2,Prepositions,because of,PREP,sentence,dėl,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-152,B,A2-function,A2,Prepositions,towards,PREP,sentence,link,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-153,B,A2-function,A2,Prepositions,after,PREP,sentence,po,,,no,,pending,,preposition governs +genitive; LT proposed — verify
-A2-154,B,A2-function,A2,Conjunctions,and,CONJ,sentence,ir,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-155,B,A2-function,A2,Conjunctions,but,CONJ,sentence,bet,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-156,B,A2-function,A2,Conjunctions,or,CONJ,sentence,arba,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-157,B,A2-function,A2,Conjunctions,because,CONJ,sentence,nes,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-158,B,A2-function,A2,Conjunctions,therefore,CONJ,sentence,todėl,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-159,B,A2-function,A2,Conjunctions,that (conj),CONJ,sentence,kad,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-160,B,A2-function,A2,Conjunctions,if,CONJ,sentence,jei,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-161,B,A2-function,A2,Conjunctions,when (conj),CONJ,sentence,kai,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-162,B,A2-function,A2,Conjunctions,although,CONJ,sentence,nors,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-163,B,A2-function,A2,Conjunctions,however,CONJ,sentence,tačiau,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-164,B,A2-function,A2,Conjunctions,also,CONJ,sentence,taip pat,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-165,B,A2-function,A2,Conjunctions,whether,CONJ,sentence,ar,,,no,,pending,,connector — sentence card; LT proposed — verify
-A2-166,B,A2-function,A2,Adverbs,very,ADV,sentence,labai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-167,B,A2-function,A2,Adverbs,maybe,ADV,sentence,gal,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-168,B,A2-function,A2,Adverbs,really,ADV,sentence,tikrai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-169,B,A2-function,A2,Adverbs,often,ADV,sentence,dažnai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-170,B,A2-function,A2,Adverbs,rarely,ADV,sentence,retai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-171,B,A2-function,A2,Adverbs,always,ADV,sentence,visada,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-172,B,A2-function,A2,Adverbs,never,ADV,sentence,niekada,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-173,B,A2-function,A2,Adverbs,sometimes,ADV,sentence,kartais,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-174,B,A2-function,A2,Adverbs,already,ADV,sentence,jau,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-175,B,A2-function,A2,Adverbs,"still, yet",ADV,sentence,dar,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-176,B,A2-function,A2,Adverbs,only,ADV,sentence,tik,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-177,B,A2-function,A2,Adverbs,again,ADV,sentence,vėl,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-178,B,A2-function,A2,Adverbs,here,ADV,sentence,čia,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-179,B,A2-function,A2,Adverbs,there,ADV,sentence,ten,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-180,B,A2-function,A2,Adverbs,everywhere,ADV,sentence,visur,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-181,B,A2-function,A2,Adverbs,nowhere,ADV,sentence,niekur,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-182,B,A2-function,A2,Adverbs,together,ADV,sentence,kartu,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-183,B,A2-function,A2,Adverbs,separately,ADV,sentence,atskirai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-184,B,A2-function,A2,Adverbs,well,ADV,sentence,gerai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-185,B,A2-function,A2,Adverbs,badly,ADV,sentence,blogai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-186,B,A2-function,A2,Adverbs,a lot,ADV,sentence,daug,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-187,B,A2-function,A2,Adverbs,a little,ADV,sentence,mažai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-188,B,A2-function,A2,Adverbs,too (excessively),ADV,sentence,per,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-189,B,A2-function,A2,Adverbs,enough,ADV,sentence,pakankamai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-190,B,A2-function,A2,Adverbs,soon,ADV,sentence,greitai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-191,B,A2-function,A2,Adverbs,later,ADV,sentence,vėliau,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-192,B,A2-function,A2,Adverbs,early,ADV,sentence,anksti,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-193,B,A2-function,A2,Adverbs,late,ADV,sentence,vėlai,,,no,,pending,,adverb — sentence card; LT proposed — verify
-A2-194,B,A2-function,A2,Modal & core verbs,to be,V,sentence,būti,,,no,,pending,,irregular; core copula; LT proposed — verify
-A2-195,B,A2-function,A2,Modal & core verbs,to have,V,sentence,turėti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-196,B,A2-function,A2,Modal & core verbs,"to be able, can",V,sentence,galėti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-197,B,A2-function,A2,Modal & core verbs,to want,V,sentence,norėti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-198,B,A2-function,A2,Modal & core verbs,to need (impersonal),V,sentence,reikėti,,,no,,pending,,impersonal: man reikia; LT proposed — verify
-A2-199,B,A2-function,A2,Modal & core verbs,"must, have to",V,sentence,privalėti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-200,B,A2-function,A2,Modal & core verbs,to intend,V,sentence,ketinti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-201,B,A2-function,A2,Modal & core verbs,to try,V,sentence,bandyti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-202,B,A2-function,A2,Modal & core verbs,to begin,V,sentence,pradėti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-203,B,A2-function,A2,Modal & core verbs,to finish,V,sentence,baigti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-204,B,A2-function,A2,Modal & core verbs,to continue,V,sentence,tęsti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-205,B,A2-function,A2,Modal & core verbs,to like,V,sentence,patikti,,,no,,pending,,impersonal: man patinka; LT proposed — verify
-A2-206,B,A2-function,A2,Modal & core verbs,to love/like doing,V,sentence,mėgti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-207,B,A2-function,A2,Modal & core verbs,to become,V,sentence,tapti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-208,B,A2-function,A2,Modal & core verbs,to seem,V,sentence,atrodyti,,,no,,pending,,high-frequency verb; LT proposed — verify
-A2-209,C,A2-topical,A2,Travel,"journey, trip",N,image,kelionė,,,yes,,pending,,LT proposed — verify
-A2-210,C,A2-topical,A2,Travel,luggage,N,image,bagažas,,,yes,,pending,,LT proposed — verify
-A2-211,C,A2-topical,A2,Travel,visa,N,image,viza,,,yes,,pending,,LT proposed — verify
-A2-212,C,A2-topical,A2,Travel,direction,N,image,kryptis,,,yes,,pending,,LT proposed — verify
-A2-213,C,A2-topical,A2,Travel,distance,N,image,atstumas,,,yes,,pending,,LT proposed — verify
-A2-214,C,A2-topical,A2,Travel,arrival,N,image,atvykimas,,,yes,,pending,,LT proposed — verify
-A2-215,C,A2-topical,A2,Travel,departure,N,image,išvykimas,,,yes,,pending,,LT proposed — verify
-A2-216,C,A2-topical,A2,Travel,timetable,N,image,tvarkaraštis,,,yes,,pending,,LT proposed — verify
-A2-217,C,A2-topical,A2,Travel,platform,N,image,peronas,,,yes,,pending,,LT proposed — verify
-A2-218,C,A2-topical,A2,Travel,border,N,image,siena,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-219,C,A2-topical,A2,Travel,customs,N,image,muitinė,,,yes,,pending,,LT proposed — verify
-A2-220,C,A2-topical,A2,Travel,tourist,N,image,turistas,,,yes,,pending,,LT proposed — verify
-A2-221,C,A2-topical,A2,Travel,guide,N,image,gidas,,,yes,,pending,,LT proposed — verify
-A2-222,C,A2-topical,A2,Travel,souvenir,N,image,suvenyras,,,yes,,pending,,LT proposed — verify
-A2-223,C,A2-topical,A2,Travel,to travel,V,image,keliauti,,,yes,,pending,,LT proposed — verify
-A2-224,C,A2-topical,A2,Travel,to arrive,V,image,atvykti,,,yes,,pending,,LT proposed — verify
-A2-225,C,A2-topical,A2,Travel,"to leave, depart",V,image,išvykti,,,yes,,pending,,LT proposed — verify
-A2-226,C,A2-topical,A2,Travel,"to book, reserve",V,image,rezervuoti,,,yes,,pending,,LT proposed — verify
-A2-227,C,A2-topical,A2,Travel,to pack,V,image,pakuoti,,,yes,,pending,,LT proposed — verify
-A2-228,C,A2-topical,A2,Health,health,N,image,sveikata,,,yes,,pending,,LT proposed — verify
-A2-229,C,A2-topical,A2,Health,pain,N,image,skausmas,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-230,C,A2-topical,A2,Health,prescription,N,image,receptas,,,yes,,pending,,LT proposed — verify
-A2-231,C,A2-topical,A2,Health,pharmacy,N,image,vaistinė,,,yes,,pending,,LT proposed — verify
-A2-232,C,A2-topical,A2,Health,cold (illness),N,image,peršalimas,,,yes,,review-duplicate,EN already in deck,LT proposed — verify
-A2-233,C,A2-topical,A2,Health,fever,N,image,karščiavimas,,,yes,,pending,,LT proposed — verify
-A2-234,C,A2-topical,A2,Health,cough,N,image,kosulys,,,yes,,pending,,LT proposed — verify
-A2-235,C,A2-topical,A2,Health,wound,N,image,žaizda,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-236,C,A2-topical,A2,Health,nurse,N,image,slaugytoja,,,yes,,pending,,LT proposed — verify
-A2-237,C,A2-topical,A2,Health,dentist,N,image,odontologas,,,yes,,pending,,LT proposed — verify
-A2-238,C,A2-topical,A2,Health,appointment,N,image,vizitas,,,yes,,pending,,LT proposed — verify
-A2-239,C,A2-topical,A2,Health,to be ill,V,image,sirgti,,,yes,,pending,,LT proposed — verify
-A2-240,C,A2-topical,A2,Health,"to treat, cure",V,image,gydyti,,,yes,,pending,,LT proposed — verify
-A2-241,C,A2-topical,A2,Health,to feel,V,image,jaustis,,,yes,,pending,,LT proposed — verify
-A2-242,C,A2-topical,A2,Health,to hurt (ache),V,image,skaudėti,,,yes,,pending,,impersonal: man skauda; LT proposed — verify
-A2-243,C,A2-topical,A2,Work & school,meeting,N,image,susitikimas,,,yes,,pending,,LT proposed — verify
-A2-244,C,A2-topical,A2,Work & school,project,N,image,projektas,,,yes,,pending,,LT proposed — verify
-A2-245,C,A2-topical,A2,Work & school,salary,N,image,alga,,,yes,,pending,,LT proposed — verify
-A2-246,C,A2-topical,A2,Work & school,colleague,N,image,kolega,,,yes,,pending,,LT proposed — verify
-A2-247,C,A2-topical,A2,Work & school,boss,N,image,viršininkas,,,yes,,pending,,LT proposed — verify
-A2-248,C,A2-topical,A2,Work & school,company,N,image,įmonė,,,yes,,pending,,LT proposed — verify
-A2-249,C,A2-topical,A2,Work & school,interview,N,image,pokalbis,,,yes,,pending,,LT proposed — verify
-A2-250,C,A2-topical,A2,Work & school,lesson,N,image,pamoka,,,yes,,pending,,LT proposed — verify
-A2-251,C,A2-topical,A2,Work & school,exam,N,image,egzaminas,,,yes,,pending,,LT proposed — verify
-A2-252,C,A2-topical,A2,Work & school,homework,N,image,namų darbai,,,yes,,pending,,LT proposed — verify
-A2-253,C,A2-topical,A2,Work & school,student,N,image,studentas,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-254,C,A2-topical,A2,Work & school,"grade, mark",N,image,pažymys,,,yes,,pending,,LT proposed — verify
-A2-255,C,A2-topical,A2,Work & school,degree,N,image,diplomas,,,yes,,pending,,LT proposed — verify
-A2-256,C,A2-topical,A2,Work & school,experience,N,image,patirtis,,,yes,,pending,,LT proposed — verify
-A2-257,C,A2-topical,A2,Work & school,to study,V,image,studijuoti,,,yes,,pending,,LT proposed — verify
-A2-258,C,A2-topical,A2,Work & school,to learn,V,image,mokytis,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-259,C,A2-topical,A2,Work & school,to teach,V,image,dėstyti,,,yes,,pending,,LT proposed — verify
-A2-260,C,A2-topical,A2,Work & school,to explain,V,image,aiškinti,,,yes,,pending,,LT proposed — verify
-A2-261,C,A2-topical,A2,Work & school,to answer,V,image,atsakyti,,,yes,,pending,,LT proposed — verify
-A2-262,C,A2-topical,A2,Work & school,to ask,V,image,klausti,,,yes,,pending,,LT proposed — verify
-A2-263,C,A2-topical,A2,Work & school,to repeat,V,image,kartoti,,,yes,,pending,,LT proposed — verify
-A2-264,C,A2-topical,A2,Work & school,to remember,V,image,atsiminti,,,yes,,pending,,LT proposed — verify
-A2-265,C,A2-topical,A2,Work & school,to forget,V,image,pamiršti,,,yes,,pending,,LT proposed — verify
-A2-266,C,A2-topical,A2,Shopping,"goods, product",N,image,prekė,,,yes,,pending,,LT proposed — verify
-A2-267,C,A2-topical,A2,Shopping,price tag,N,image,kainoskaitė,,,yes,,pending,,LT proposed — verify
-A2-268,C,A2-topical,A2,Shopping,cash,N,image,grynieji,,,yes,,pending,,LT proposed — verify
-A2-269,C,A2-topical,A2,Shopping,card (bank),N,image,kortelė,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-270,C,A2-topical,A2,Shopping,account,N,image,sąskaita (banko),,,yes,,pending,,LT proposed — verify
-A2-271,C,A2-topical,A2,Shopping,cost,N,image,kaina,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-272,C,A2-topical,A2,Shopping,to cost,V,image,kainuoti,,,yes,,pending,,LT proposed — verify
-A2-273,C,A2-topical,A2,Shopping,to order,V,image,užsisakyti,,,yes,,pending,,LT proposed — verify
-A2-274,C,A2-topical,A2,Shopping,to choose,V,image,rinktis,,,yes,,pending,,LT proposed — verify
-A2-275,C,A2-topical,A2,Shopping,"to change, exchange",V,image,keisti,,,yes,,pending,,LT proposed — verify
-A2-276,C,A2-topical,A2,Shopping,to spend,V,image,išleisti,,,yes,,pending,,LT proposed — verify
-A2-277,C,A2-topical,A2,Shopping,to save (money),V,image,taupyti,,,yes,,pending,,LT proposed — verify
-A2-278,C,A2-topical,A2,Home,furniture,N,image,baldai,,,yes,,pending,,LT proposed — verify
-A2-279,C,A2-topical,A2,Home,kitchen,N,image,virtuvė,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-280,C,A2-topical,A2,Home,bathroom,N,image,vonia,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-281,C,A2-topical,A2,Home,bedroom,N,image,miegamasis,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-282,C,A2-topical,A2,Home,living room,N,image,svetainė,,,yes,,pending,,LT proposed — verify
-A2-283,C,A2-topical,A2,Home,rent,N,image,nuoma,,,yes,,pending,,LT proposed — verify
-A2-284,C,A2-topical,A2,Home,neighbour,N,image,kaimynas,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-285,C,A2-topical,A2,Home,rubbish,N,image,šiukšlės,,,yes,,pending,,LT proposed — verify
-A2-286,C,A2-topical,A2,Home,laundry,N,image,skalbiniai,,,yes,,pending,,LT proposed — verify
-A2-287,C,A2-topical,A2,Home,to wash (clothes),V,image,skalbti,,,yes,,pending,,LT proposed — verify
-A2-288,C,A2-topical,A2,Home,to tidy up,V,image,tvarkyti,,,yes,,pending,,LT proposed — verify
-A2-289,C,A2-topical,A2,Home,to repair,V,image,taisyti,,,yes,,pending,,LT proposed — verify
-A2-290,C,A2-topical,A2,Home,to rest,V,image,ilsėtis,,,yes,,pending,,LT proposed — verify
-A2-291,C,A2-topical,A2,Home,to wake up,V,image,keltis,,,yes,,pending,,LT proposed — verify
-A2-292,C,A2-topical,A2,Home,to get dressed,V,image,rengtis,,,yes,,pending,,LT proposed — verify
-A2-293,C,A2-topical,A2,Feelings,feeling,N,image,jausmas,,,yes,,pending,,LT proposed — verify
-A2-294,C,A2-topical,A2,Feelings,happiness,N,image,laimė,,,yes,,pending,,LT proposed — verify
-A2-295,C,A2-topical,A2,Feelings,sadness,N,image,liūdesys,,,yes,,pending,,LT proposed — verify
-A2-296,C,A2-topical,A2,Feelings,fear,N,image,baimė,,,yes,,pending,,LT proposed — verify
-A2-297,C,A2-topical,A2,Feelings,anger,N,image,pyktis,,,yes,,pending,,LT proposed — verify
-A2-298,C,A2-topical,A2,Feelings,surprise,N,image,nuostaba,,,yes,,pending,,LT proposed — verify
-A2-299,C,A2-topical,A2,Feelings,character,N,image,charakteris,,,yes,,pending,,LT proposed — verify
-A2-300,C,A2-topical,A2,Feelings,tired,A,image,pavargęs,,,yes,,pending,,LT proposed — verify
-A2-301,C,A2-topical,A2,Feelings,calm,A,image,ramus,,,yes,,pending,,LT proposed — verify
-A2-302,C,A2-topical,A2,Feelings,nervous,A,image,nervingas,,,yes,,pending,,LT proposed — verify
-A2-303,C,A2-topical,A2,Feelings,bored,A,image,nuobodžiaujantis,,,yes,,pending,,LT proposed — verify
-A2-304,C,A2-topical,A2,Feelings,polite,A,image,mandagus,,,yes,,pending,,LT proposed — verify
-A2-305,C,A2-topical,A2,Feelings,friendly,A,image,draugiškas,,,yes,,pending,,LT proposed — verify
-A2-306,C,A2-topical,A2,Feelings,clever,A,image,protingas,,,yes,,pending,,LT proposed — verify
-A2-307,C,A2-topical,A2,Feelings,patient,A,image,kantrus,,,yes,,review-duplicate,EN already in deck,LT proposed — verify
-A2-308,C,A2-topical,A2,Feelings,brave,A,image,drąsus,,,yes,,pending,,LT proposed — verify
-A2-309,C,A2-topical,A2,Feelings,lazy,A,image,tingus,,,yes,,pending,,LT proposed — verify
-A2-310,C,A2-topical,A2,Feelings,hard-working,A,image,darbštus,,,yes,,pending,,LT proposed — verify
-A2-311,C,A2-topical,A2,Technology,internet,N,image,internetas,,,yes,,pending,,LT proposed — verify
-A2-312,C,A2-topical,A2,Technology,website,N,image,svetainė,,,yes,,pending,,LT proposed — verify
-A2-313,C,A2-topical,A2,Technology,e-mail,N,image,el. paštas,,,yes,,pending,,LT proposed — verify
-A2-314,C,A2-topical,A2,Technology,message,N,image,žinutė,,,yes,,pending,,LT proposed — verify
-A2-315,C,A2-topical,A2,Technology,app,N,image,programėlė,,,yes,,pending,,LT proposed — verify
-A2-316,C,A2-topical,A2,Technology,screen,N,image,ekranas,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-317,C,A2-topical,A2,Technology,password,N,image,slaptažodis,,,yes,,pending,,LT proposed — verify
-A2-318,C,A2-topical,A2,Technology,file,N,image,failas,,,yes,,pending,,LT proposed — verify
-A2-319,C,A2-topical,A2,Technology,battery,N,image,baterija,,,yes,,pending,,LT proposed — verify
-A2-320,C,A2-topical,A2,Technology,charger,N,image,kroviklis,,,yes,,pending,,LT proposed — verify
-A2-321,C,A2-topical,A2,Technology,to download,V,image,atsisiųsti,,,yes,,pending,,LT proposed — verify
-A2-322,C,A2-topical,A2,Technology,"to click, press",V,image,spausti,,,yes,,pending,,LT proposed — verify
-A2-323,C,A2-topical,A2,Technology,to send,V,image,siųsti,,,yes,,pending,,LT proposed — verify
-A2-324,C,A2-topical,A2,Technology,to call (phone),V,image,skambinti,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-325,C,A2-topical,A2,Technology,to switch on,V,image,įjungti,,,yes,,pending,,LT proposed — verify
-A2-326,C,A2-topical,A2,Technology,to switch off,V,image,išjungti,,,yes,,pending,,LT proposed — verify
-A2-327,C,A2-topical,A2,Nature,storm,N,image,audra,,,yes,,pending,,LT proposed — verify
-A2-328,C,A2-topical,A2,Nature,fog,N,image,rūkas,,,yes,,pending,,LT proposed — verify
-A2-329,C,A2-topical,A2,Nature,frost,N,image,šalna,,,yes,,pending,,LT proposed — verify
-A2-330,C,A2-topical,A2,Nature,forecast,N,image,prognozė,,,yes,,pending,,LT proposed — verify
-A2-331,C,A2-topical,A2,Nature,ice,N,image,ledas,,,yes,,review-duplicate,LT already in deck,LT proposed — verify
-A2-332,C,A2-topical,A2,Nature,puddle,N,image,bala,,,yes,,pending,,LT proposed — verify
-A2-333,C,A2-topical,A2,Nature,shade,N,image,šešėlis,,,yes,,pending,,LT proposed — verify
-A2-334,C,A2-topical,A2,Society,"state, country",N,image,valstybė,,,yes,,pending,,LT proposed — verify
-A2-335,C,A2-topical,A2,Society,government,N,image,vyriausybė,,,yes,,pending,,LT proposed — verify
-A2-336,C,A2-topical,A2,Society,law,N,image,įstatymas,,,yes,,pending,,LT proposed — verify
-A2-337,C,A2-topical,A2,Society,tax,N,image,mokestis,,,yes,,pending,,LT proposed — verify
-A2-338,C,A2-topical,A2,Society,news,N,image,naujienos,,,yes,,pending,,LT proposed — verify
-A2-339,C,A2-topical,A2,Society,politics,N,image,politika,,,yes,,pending,,LT proposed — verify
-A2-340,C,A2-topical,A2,Society,economy,N,image,ekonomika,,,yes,,pending,,LT proposed — verify
-A2-341,C,A2-topical,A2,Society,problem,N,image,problema,,,yes,,pending,,LT proposed — verify
-A2-342,C,A2-topical,A2,Society,solution,N,image,sprendimas,,,yes,,pending,,LT proposed — verify
-A2-343,C,A2-topical,A2,Society,reason,N,image,priežastis,,,yes,,pending,,LT proposed — verify
-A2-344,C,A2-topical,A2,Society,example,N,image,pavyzdys,,,yes,,pending,,LT proposed — verify
-A2-345,C,A2-topical,A2,Society,difference,N,image,skirtumas,,,yes,,pending,,LT proposed — verify
-A2-346,C,A2-topical,A2,Society,possibility,N,image,galimybė,,,yes,,pending,,LT proposed — verify
-A2-347,C,A2-topical,A2,Society,rule,N,image,taisyklė,,,yes,,pending,,LT proposed — verify
-A2-348,D,A2-phrases,A2,Greetings,Hello (informal),PHRASE,phrase,Labas,,,no,,pending,,LT proposed — verify
-A2-349,D,A2-phrases,A2,Greetings,Hello (formal/plural),PHRASE,phrase,Sveiki,,,no,,pending,,LT proposed — verify
-A2-350,D,A2-phrases,A2,Greetings,Good morning,PHRASE,phrase,Labas rytas,,,no,,pending,,LT proposed — verify
-A2-351,D,A2-phrases,A2,Greetings,Good day,PHRASE,phrase,Laba diena,,,no,,pending,,LT proposed — verify
-A2-352,D,A2-phrases,A2,Greetings,Good evening,PHRASE,phrase,Labas vakaras,,,no,,pending,,LT proposed — verify
-A2-353,D,A2-phrases,A2,Greetings,Good night,PHRASE,phrase,Labanakt,,,no,,pending,,LT proposed — verify
-A2-354,D,A2-phrases,A2,Greetings,Goodbye,PHRASE,phrase,Viso gero,,,no,,pending,,LT proposed — verify
-A2-355,D,A2-phrases,A2,Greetings,See you,PHRASE,phrase,Iki pasimatymo,,,no,,pending,,LT proposed — verify
-A2-356,D,A2-phrases,A2,Greetings,Bye (informal),PHRASE,phrase,Iki,,,no,,pending,,LT proposed — verify
-A2-357,D,A2-phrases,A2,Politeness,Please / you're welcome,PHRASE,phrase,Prašau,,,no,,pending,,LT proposed — verify
-A2-358,D,A2-phrases,A2,Politeness,Thank you,PHRASE,phrase,Ačiū,,,no,,pending,,LT proposed — verify
-A2-359,D,A2-phrases,A2,Politeness,Thank you very much,PHRASE,phrase,Labai ačiū,,,no,,pending,,LT proposed — verify
-A2-360,D,A2-phrases,A2,Politeness,You're welcome (not at all),PHRASE,phrase,Nėra už ką,,,no,,pending,,LT proposed — verify
-A2-361,D,A2-phrases,A2,Politeness,Sorry / excuse me,PHRASE,phrase,Atsiprašau,,,no,,pending,,LT proposed — verify
-A2-362,D,A2-phrases,A2,Politeness,Excuse me (formal),PHRASE,phrase,Atleiskite,,,no,,pending,,LT proposed — verify
-A2-363,D,A2-phrases,A2,Politeness,Nice to meet you,PHRASE,phrase,Malonu susipažinti,,,no,,pending,,LT proposed — verify
-A2-364,D,A2-phrases,A2,Basics,How are you?,PHRASE,phrase,Kaip sekasi?,,,no,,pending,,LT proposed — verify
-A2-365,D,A2-phrases,A2,Basics,I'm fine,PHRASE,phrase,Man gerai,,,no,,pending,,LT proposed — verify
-A2-366,D,A2-phrases,A2,Basics,What is your name?,PHRASE,phrase,Koks jūsų vardas?,,,no,,pending,,LT proposed — verify
-A2-367,D,A2-phrases,A2,Basics,My name is…,PHRASE,phrase,Mano vardas…,,,no,,pending,,LT proposed — verify
-A2-368,D,A2-phrases,A2,Basics,Where are you from?,PHRASE,phrase,Iš kur jūs?,,,no,,pending,,LT proposed — verify
-A2-369,D,A2-phrases,A2,Basics,I am from…,PHRASE,phrase,Aš esu iš…,,,no,,pending,,LT proposed — verify
-A2-370,D,A2-phrases,A2,Basics,Do you speak English?,PHRASE,phrase,Ar kalbate angliškai?,,,no,,pending,,LT proposed — verify
-A2-371,D,A2-phrases,A2,Basics,I don't understand,PHRASE,phrase,Nesuprantu,,,no,,pending,,LT proposed — verify
-A2-372,D,A2-phrases,A2,Basics,I understand,PHRASE,phrase,Suprantu,,,no,,pending,,LT proposed — verify
-A2-373,D,A2-phrases,A2,Basics,I don't know,PHRASE,phrase,Nežinau,,,no,,pending,,LT proposed — verify
-A2-374,D,A2-phrases,A2,Basics,Could you repeat?,PHRASE,phrase,Ar galite pakartoti?,,,no,,pending,,LT proposed — verify
-A2-375,D,A2-phrases,A2,Basics,"Speak more slowly, please",PHRASE,phrase,"Kalbėkite lėčiau, prašau",,,no,,pending,,LT proposed — verify
-A2-376,D,A2-phrases,A2,Basics,What does … mean?,PHRASE,phrase,Ką reiškia…?,,,no,,pending,,LT proposed — verify
-A2-377,D,A2-phrases,A2,Getting by,How much does it cost?,PHRASE,phrase,Kiek kainuoja?,,,no,,pending,,LT proposed — verify
-A2-378,D,A2-phrases,A2,Getting by,Where is…?,PHRASE,phrase,Kur yra…?,,,no,,pending,,LT proposed — verify
-A2-379,D,A2-phrases,A2,Getting by,What time is it?,PHRASE,phrase,Kiek valandų?,,,no,,pending,,LT proposed — verify
-A2-380,D,A2-phrases,A2,Getting by,I would like…,PHRASE,phrase,Norėčiau…,,,no,,pending,,LT proposed — verify
-A2-381,D,A2-phrases,A2,Getting by,"The bill, please",PHRASE,phrase,"Sąskaitą, prašau",,,no,,pending,,LT proposed — verify
-A2-382,D,A2-phrases,A2,Getting by,Is there…?,PHRASE,phrase,Ar yra…?,,,no,,pending,,LT proposed — verify
-A2-383,D,A2-phrases,A2,Getting by,Can you help me?,PHRASE,phrase,Ar galite man padėti?,,,no,,pending,,LT proposed — verify
-A2-384,D,A2-phrases,A2,Getting by,Help!,PHRASE,phrase,Padėkite!,,,no,,pending,,LT proposed — verify
-A2-385,D,A2-phrases,A2,Getting by,Be careful!,PHRASE,phrase,Atsargiai!,,,no,,pending,,LT proposed — verify
-A2-386,D,A2-phrases,A2,Getting by,I'm lost,PHRASE,phrase,Aš pasiklydau,,,no,,pending,,LT proposed — verify
-A2-387,E,A2-grammar,A2,Grammar,Nominative case,PATTERN,pattern,vardininkas,,,no,,pending,,who/what — the dictionary form; subject; LT proposed — verify
-A2-388,E,A2-grammar,A2,Grammar,Genitive case,PATTERN,pattern,kilmininkas,,,no,,pending,,of/possession; after many prepositions & negation; LT proposed — verify
-A2-389,E,A2-grammar,A2,Grammar,Dative case,PATTERN,pattern,naudininkas,,,no,,pending,,to/for someone; impersonal subjects (man reikia); LT proposed — verify
-A2-390,E,A2-grammar,A2,Grammar,Accusative case,PATTERN,pattern,galininkas,,,no,,pending,,"direct object; after į, per, apie; LT proposed — verify"
-A2-391,E,A2-grammar,A2,Grammar,Instrumental case,PATTERN,pattern,įnagininkas,,,no,,pending,,by/with; after su; LT proposed — verify
-A2-392,E,A2-grammar,A2,Grammar,Locative case,PATTERN,pattern,vietininkas,,,no,,pending,,in/at a place; LT proposed — verify
-A2-393,E,A2-grammar,A2,Grammar,Vocative case,PATTERN,pattern,šauksmininkas,,,no,,pending,,addressing someone; LT proposed — verify
-A2-394,E,A2-grammar,A2,Grammar,Present tense,PATTERN,pattern,esamasis laikas,,,no,,pending,,the 3rd-person form already on every verb card; LT proposed — verify
-A2-395,E,A2-grammar,A2,Grammar,Past tense,PATTERN,pattern,būtasis kartinis laikas,,,no,,pending,,the past form already on every verb card; LT proposed — verify
-A2-396,E,A2-grammar,A2,Grammar,Future tense,PATTERN,pattern,būsimasis laikas,,,no,,pending,,-siu/-si/-s endings; LT proposed — verify
-A2-397,E,A2-grammar,A2,Grammar,Past frequentative,PATTERN,pattern,būtasis dažninis laikas,,,no,,pending,,-davo: used to do; LT proposed — verify
-A2-398,E,A2-grammar,A2,Grammar,Reflexive verbs,PATTERN,pattern,sangrąžiniai veiksmažodžiai,,,no,,pending,,"-tis / -si: praustis, mokytis; LT proposed — verify"
-A2-399,E,A2-grammar,A2,Grammar,Comparative,PATTERN,pattern,aukštesnysis laipsnis,,,no,,pending,,"-esnis / -iau: didesnis, greičiau; LT proposed — verify"
-A2-400,E,A2-grammar,A2,Grammar,Superlative,PATTERN,pattern,aukščiausiasis laipsnis,,,no,,pending,,-iausias: didžiausias; LT proposed — verify
-A2-401,E,A2-grammar,A2,Grammar,Noun plurals,PATTERN,pattern,daugiskaita,,,no,,pending,,plural endings by declension; LT proposed — verify
-A2-402,E,A2-grammar,A2,Grammar,Adjective agreement,PATTERN,pattern,būdvardžio derinimas,,,no,,pending,,"adjective matches noun in gender, number, case; LT proposed — verify"
+id,phase,phase_name,level,category,english,type,card_type,image_possible,lithuanian_TARGET,card_text,lt_pron,gender,subject_phrase_EN,status,dup_check,notes
+A2-0001,P-A,A1 completion,A1,Time,time,N,image,yes,laikas,,,,,pending,,LT proposed — verify
+A2-0002,P-A,A1 completion,A1,Time,hour,N,image,yes,valanda,,,,,pending,,LT proposed — verify
+A2-0003,P-A,A1 completion,A1,Time,minute,N,image,yes,minutė,,,,,pending,,LT proposed — verify
+A2-0004,P-A,A1 completion,A1,Time,second,N,image,yes,sekundė,,,,,pending,,LT proposed — verify
+A2-0005,P-A,A1 completion,A1,Time,day,N,image,yes,diena,,,,,pending,,LT proposed — verify
+A2-0006,P-A,A1 completion,A1,Time,week,N,image,yes,savaitė,,,,,pending,,LT proposed — verify
+A2-0007,P-A,A1 completion,A1,Time,month,N,image,yes,mėnuo,,,,,pending,,LT proposed — verify
+A2-0008,P-A,A1 completion,A1,Time,year,N,image,yes,metai,,,,,pending,,LT proposed — verify
+A2-0009,P-A,A1 completion,A1,Time,weekend,N,image,yes,savaitgalis,,,,,pending,,LT proposed — verify
+A2-0010,P-A,A1 completion,A1,Time,morning,N,image,yes,rytas,,,,,pending,,LT proposed — verify
+A2-0011,P-A,A1 completion,A1,Time,afternoon,N,image,yes,popietė,,,,,pending,,LT proposed — verify
+A2-0012,P-A,A1 completion,A1,Time,evening,N,image,yes,vakaras,,,,,pending,,LT proposed — verify
+A2-0013,P-A,A1 completion,A1,Time,night,N,image,yes,naktis,,,,,pending,,LT proposed — verify
+A2-0014,P-A,A1 completion,A1,Time,today,ADV,image,yes,šiandien,,,,,pending,,LT proposed — verify
+A2-0015,P-A,A1 completion,A1,Time,yesterday,ADV,image,yes,vakar,,,,,pending,,LT proposed — verify
+A2-0016,P-A,A1 completion,A1,Time,tomorrow,ADV,image,yes,rytoj,,,,,pending,,LT proposed — verify
+A2-0017,P-A,A1 completion,A1,Time,now,ADV,image,yes,dabar,,,,,pending,,LT proposed — verify
+A2-0018,P-A,A1 completion,A1,Time,Monday,N,image,yes,pirmadienis,"""Monday"" on the calendar page",,,,pending,,day of the week — calendar staging; LT proposed — verify
+A2-0019,P-A,A1 completion,A1,Time,Tuesday,N,image,yes,antradienis,"""Tuesday"" on the calendar page",,,,pending,,day of the week — calendar staging; LT proposed — verify
+A2-0020,P-A,A1 completion,A1,Time,Wednesday,N,image,yes,trečiadienis,"""Wednesday"" on the calendar page",,,,pending,,day of the week — calendar staging; LT proposed — verify
+A2-0021,P-A,A1 completion,A1,Time,Thursday,N,image,yes,ketvirtadienis,"""Thursday"" on the calendar page",,,,pending,,day of the week — calendar staging; LT proposed — verify
+A2-0022,P-A,A1 completion,A1,Time,Friday,N,image,yes,penktadienis,"""Friday"" on the calendar page",,,,pending,,day of the week — calendar staging; LT proposed — verify
+A2-0023,P-A,A1 completion,A1,Time,Saturday,N,image,yes,šeštadienis,"""Saturday"" on the calendar page",,,,pending,,day of the week — calendar staging; LT proposed — verify
+A2-0024,P-A,A1 completion,A1,Time,Sunday,N,image,yes,sekmadienis,"""Sunday"" on the calendar page",,,,pending,,day of the week — calendar staging; LT proposed — verify
+A2-0025,P-A,A1 completion,A1,Time,January,N,image,yes,sausis,"""January"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0026,P-A,A1 completion,A1,Time,February,N,image,yes,vasaris,"""February"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0027,P-A,A1 completion,A1,Time,March,N,image,yes,kovas,"""March"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0028,P-A,A1 completion,A1,Time,April,N,image,yes,balandis,"""April"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0029,P-A,A1 completion,A1,Time,May,N,image,yes,gegužė,"""May"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0030,P-A,A1 completion,A1,Time,June,N,image,yes,birželis,"""June"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0031,P-A,A1 completion,A1,Time,July,N,image,yes,liepa,"""July"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0032,P-A,A1 completion,A1,Time,August,N,image,yes,rugpjūtis,"""August"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0033,P-A,A1 completion,A1,Time,September,N,image,yes,rugsėjis,"""September"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0034,P-A,A1 completion,A1,Time,October,N,image,yes,spalis,"""October"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0035,P-A,A1 completion,A1,Time,November,N,image,yes,lapkritis,"""November"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0036,P-A,A1 completion,A1,Time,December,N,image,yes,gruodis,"""December"" on the calendar header",,,,pending,,month — seasonal scene staging; LT proposed — verify
+A2-0037,P-A,A1 completion,A1,Time,spring,N,image,yes,pavasaris,,,,,pending,,LT proposed — verify
+A2-0038,P-A,A1 completion,A1,Time,summer,N,image,yes,vasara,,,,,pending,,LT proposed — verify
+A2-0039,P-A,A1 completion,A1,Time,autumn,N,image,yes,ruduo,,,,,pending,,LT proposed — verify
+A2-0040,P-A,A1 completion,A1,Time,winter,N,image,yes,žiema,,,,,pending,,LT proposed — verify
+A2-0041,P-A,A1 completion,A1,Numbers,zero,NUM,image,yes,nulis,"the numeral for ""zero""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0042,P-A,A1 completion,A1,Numbers,one,NUM,image,yes,vienas,"the numeral for ""one""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0043,P-A,A1 completion,A1,Numbers,two,NUM,image,yes,du,"the numeral for ""two""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0044,P-A,A1 completion,A1,Numbers,three,NUM,image,yes,trys,"the numeral for ""three""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0045,P-A,A1 completion,A1,Numbers,four,NUM,image,yes,keturi,"the numeral for ""four""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0046,P-A,A1 completion,A1,Numbers,five,NUM,image,yes,penki,"the numeral for ""five""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0047,P-A,A1 completion,A1,Numbers,six,NUM,image,yes,šeši,"the numeral for ""six""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0048,P-A,A1 completion,A1,Numbers,seven,NUM,image,yes,septyni,"the numeral for ""seven""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0049,P-A,A1 completion,A1,Numbers,eight,NUM,image,yes,aštuoni,"the numeral for ""eight""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0050,P-A,A1 completion,A1,Numbers,nine,NUM,image,yes,devyni,"the numeral for ""nine""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0051,P-A,A1 completion,A1,Numbers,ten,NUM,image,yes,dešimt,"the numeral for ""ten""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0052,P-A,A1 completion,A1,Numbers,eleven,NUM,image,yes,vienuolika,"the numeral for ""eleven""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0053,P-A,A1 completion,A1,Numbers,twelve,NUM,image,yes,dvylika,"the numeral for ""twelve""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0054,P-A,A1 completion,A1,Numbers,thirteen,NUM,image,yes,trylika,"the numeral for ""thirteen""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0055,P-A,A1 completion,A1,Numbers,fourteen,NUM,image,yes,keturiolika,"the numeral for ""fourteen""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0056,P-A,A1 completion,A1,Numbers,fifteen,NUM,image,yes,penkiolika,"the numeral for ""fifteen""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0057,P-A,A1 completion,A1,Numbers,sixteen,NUM,image,yes,šešiolika,"the numeral for ""sixteen""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0058,P-A,A1 completion,A1,Numbers,seventeen,NUM,image,yes,septyniolika,"the numeral for ""seventeen""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0059,P-A,A1 completion,A1,Numbers,eighteen,NUM,image,yes,aštuoniolika,"the numeral for ""eighteen""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0060,P-A,A1 completion,A1,Numbers,nineteen,NUM,image,yes,devyniolika,"the numeral for ""nineteen""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0061,P-A,A1 completion,A1,Numbers,twenty,NUM,image,yes,dvidešimt,"the numeral for ""twenty""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0062,P-A,A1 completion,A1,Numbers,thirty,NUM,image,yes,trisdešimt,"the numeral for ""thirty""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0063,P-A,A1 completion,A1,Numbers,forty,NUM,image,yes,keturiasdešimt,"the numeral for ""forty""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0064,P-A,A1 completion,A1,Numbers,fifty,NUM,image,yes,penkiasdešimt,"the numeral for ""fifty""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0065,P-A,A1 completion,A1,Numbers,sixty,NUM,image,yes,šešiasdešimt,"the numeral for ""sixty""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0066,P-A,A1 completion,A1,Numbers,seventy,NUM,image,yes,septyniasdešimt,"the numeral for ""seventy""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0067,P-A,A1 completion,A1,Numbers,eighty,NUM,image,yes,aštuoniasdešimt,"the numeral for ""eighty""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0068,P-A,A1 completion,A1,Numbers,ninety,NUM,image,yes,devyniasdešimt,"the numeral for ""ninety""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0069,P-A,A1 completion,A1,Numbers,hundred,NUM,image,yes,šimtas,"the numeral for ""hundred""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0070,P-A,A1 completion,A1,Numbers,thousand,NUM,image,yes,tūkstantis,"the numeral for ""thousand""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0071,P-A,A1 completion,A1,Numbers,million,NUM,image,yes,milijonas,"the numeral for ""million""",,,,pending,,needs TEXT_EXCEPTION: render the digit(s); LT proposed — verify
+A2-0072,P-A,A1 completion,A1,Numbers,first,A,image,yes,pirmas,,,,,pending,,ordinal — queue/podium staging; LT proposed — verify
+A2-0073,P-A,A1 completion,A1,Numbers,second (2nd),A,image,yes,antras,,,,,pending,,ordinal — queue/podium staging; LT proposed — verify
+A2-0074,P-A,A1 completion,A1,Numbers,third,A,image,yes,trečias,,,,,pending,,ordinal — queue/podium staging; LT proposed — verify
+A2-0075,P-A,A1 completion,A1,Numbers,fourth,A,image,yes,ketvirtas,,,,,pending,,ordinal — queue/podium staging; LT proposed — verify
+A2-0076,P-A,A1 completion,A1,Numbers,fifth,A,image,yes,penktas,,,,,pending,,ordinal — queue/podium staging; LT proposed — verify
+A2-0077,P-A,A1 completion,A1,Numbers,last,A,image,yes,paskutinis,,,,,pending,,ordinal — queue/podium staging; LT proposed — verify
+A2-0078,P-A,A1 completion,A1,People,name,N,image,yes,vardas,,,,,pending,,LT proposed — verify
+A2-0079,P-A,A1 completion,A1,People,surname,N,image,yes,pavardė,,,,,pending,,LT proposed — verify
+A2-0080,P-A,A1 completion,A1,People,age,N,image,yes,amžius,,,,,pending,,LT proposed — verify
+A2-0081,P-A,A1 completion,A1,Electronics,phone,N,image,yes,telefonas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0082,P-A,A1 completion,A1,Location,shop,N,image,yes,parduotuvė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0083,P-A,A1 completion,A1,Nature,weather,N,image,yes,oras,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0084,P-A,A1 completion,A1,Society,address,N,image,yes,adresas,,,,,pending,,LT proposed — verify
+A2-0085,P-A,A1 completion,A1,Location,ticket office,N,image,yes,kasa,,,,,pending,,LT proposed — verify
+A2-0086,P-A,A1 completion,A1,Home,key ring,N,image,yes,raktų pakabukas,,,,,pending,,LT proposed — verify
+A2-0087,P-A,A1 completion,A1,Home,wallet,N,image,yes,piniginė,,,,,pending,,LT proposed — verify
+A2-0088,P-A,A1 completion,A1,Home,bag,N,image,yes,krepšys,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0089,P-A,A1 completion,A1,Transportation,suitcase,N,image,yes,lagaminas,,,,,pending,,LT proposed — verify
+A2-0090,P-A,A1 completion,A1,Society,passport,N,image,yes,pasas,,,,,pending,,LT proposed — verify
+A2-0091,P-A,A1 completion,A1,Society,map,N,image,yes,žemėlapis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0092,P-A,A1 completion,A1,Society,letter (post),N,image,yes,laiškas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0093,P-A,A1 completion,A1,Society,postcard,N,image,yes,atvirukas,,,,,pending,,LT proposed — verify
+A2-0094,P-A,A1 completion,A1,Society,stamp,N,image,yes,pašto ženklas,,,,,pending,,LT proposed — verify
+A2-0095,P-A,A1 completion,A1,Location,newspaper stand,N,image,yes,kioskas,,,,,pending,,LT proposed — verify
+A2-0096,P-A,A1 completion,A1,Society,queue,N,image,yes,eilė,,,,,pending,,LT proposed — verify
+A2-0097,P-A,A1 completion,A1,Food,breakfast,N,image,yes,pusryčiai,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0098,P-A,A1 completion,A1,Food,lunch,N,image,yes,pietūs,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0099,P-A,A1 completion,A1,Food,dinner,N,image,yes,vakarienė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0100,P-A,A1 completion,A1,Food,snack,N,image,yes,užkandis,,,,,pending,,LT proposed — verify
+A2-0101,P-A,A1 completion,A1,Food,dessert,N,image,yes,desertas,,,,,pending,,LT proposed — verify
+A2-0102,P-A,A1 completion,A1,Food,menu,N,image,yes,meniu,,,,,pending,,LT proposed — verify
+A2-0103,P-A,A1 completion,A1,Food,bill (restaurant),N,image,yes,sąskaita,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0104,P-A,A1 completion,A1,Society,receipt,N,image,yes,kvitas,,,,,pending,,LT proposed — verify
+A2-0105,P-A,A1 completion,A1,Society,discount,N,image,yes,nuolaida,,,,,pending,,LT proposed — verify
+A2-0106,P-A,A1 completion,A1,Society,size,N,image,yes,dydis,,,,,pending,,LT proposed — verify
+A2-0107,P-A,A1 completion,A1,Society,change (money),N,image,yes,grąža,,,,,pending,,LT proposed — verify
+A2-0108,P-B,function words,A1,Question words,who,Q,sentence,no,kas,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0109,P-B,function words,A1,Question words,what,Q,sentence,no,kas,,,,,review-duplicate,dup within queue (A2-0108),question word — cloze sentence card; LT proposed — verify
+A2-0110,P-B,function words,A1,Question words,where,Q,sentence,no,kur,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0111,P-B,function words,A1,Question words,when,Q,sentence,no,kada,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0112,P-B,function words,A1,Question words,how,Q,sentence,no,kaip,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0113,P-B,function words,A1,Question words,why,Q,sentence,no,kodėl,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0114,P-B,function words,A1,Question words,how much/many,Q,sentence,no,kiek,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0115,P-B,function words,A1,Question words,what kind of,Q,sentence,no,koks,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0116,P-B,function words,A1,Question words,which,Q,sentence,no,kuris,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0117,P-B,function words,A1,Question words,whose,Q,sentence,no,kieno,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0118,P-B,function words,A1,Pronouns,my,P,sentence,no,mano,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0119,P-B,function words,A1,Pronouns,your (sg),P,sentence,no,tavo,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0120,P-B,function words,A1,Pronouns,his,P,sentence,no,jo,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0121,P-B,function words,A1,Pronouns,her,P,sentence,no,jos,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0122,P-B,function words,A1,Pronouns,our,P,sentence,no,mūsų,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0123,P-B,function words,A1,Pronouns,your (pl),P,sentence,no,jūsų,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0124,P-B,function words,A1,Pronouns,their,P,sentence,no,jų,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0125,P-B,function words,A1,Pronouns,one's own,P,sentence,no,savo,,,,,pending,,possessive — indeclinable; LT proposed — verify
+A2-0126,P-B,function words,A1,Pronouns,this,P,sentence,no,šis,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0127,P-B,function words,A1,Pronouns,that,P,sentence,no,tas,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0128,P-B,function words,A1,Pronouns,these,P,sentence,no,šie,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0129,P-B,function words,A1,Pronouns,those,P,sentence,no,tie,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0130,P-B,function words,A1,Pronouns,someone,P,sentence,no,kažkas,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0131,P-B,function words,A1,Pronouns,nobody,P,sentence,no,niekas,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0132,P-B,function words,A1,Pronouns,everyone,P,sentence,no,visi,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0133,P-B,function words,A1,Pronouns,something,P,sentence,no,kažkas (daiktas),,,,,review-duplicate,dup within queue (A2-0130),demonstrative / indefinite; LT proposed — verify
+A2-0134,P-B,function words,A1,Pronouns,nothing,P,sentence,no,niekas (nieko),,,,,review-duplicate,dup within queue (A2-0131),demonstrative / indefinite; LT proposed — verify
+A2-0135,P-B,function words,A1,Pronouns,all/every,P,sentence,no,visas,,,,,pending,,demonstrative / indefinite; LT proposed — verify
+A2-0136,P-B,function words,A1,Prepositions,"in, into",PREP,sentence,no,į,,,,,pending,,preposition governs +accusative; LT proposed — verify
+A2-0137,P-B,function words,A1,Prepositions,"from, out of",PREP,sentence,no,iš,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0138,P-B,function words,A1,Prepositions,with,PREP,sentence,no,su,,,,,pending,,preposition governs +instrumental; LT proposed — verify
+A2-0139,P-B,function words,A1,Prepositions,without,PREP,sentence,no,be,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0140,P-B,function words,A1,Prepositions,on,PREP,sentence,no,ant,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0141,P-B,function words,A1,Prepositions,under,PREP,sentence,no,po,,,,,pending,,preposition governs +instrumental; LT proposed — verify
+A2-0142,P-B,function words,A1,Prepositions,"near, by",PREP,sentence,no,prie,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0143,P-B,function words,A1,Prepositions,"behind, for",PREP,sentence,no,už,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0144,P-B,function words,A1,Prepositions,"through, during",PREP,sentence,no,per,,,,,pending,,preposition governs +accusative; LT proposed — verify
+A2-0145,P-B,function words,A1,Prepositions,from (since),PREP,sentence,no,nuo,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0146,P-B,function words,A1,Prepositions,"until, up to",PREP,sentence,no,iki,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0147,P-B,function words,A1,Prepositions,about,PREP,sentence,no,apie,,,,,pending,,preposition governs +accusative; LT proposed — verify
+A2-0148,P-B,function words,A1,Prepositions,between,PREP,sentence,no,tarp,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0149,P-B,function words,A1,Prepositions,before,PREP,sentence,no,prieš,,,,,pending,,preposition governs +accusative; LT proposed — verify
+A2-0150,P-B,function words,A1,Prepositions,to (a person),PREP,sentence,no,pas,,,,,pending,,preposition governs +accusative; LT proposed — verify
+A2-0151,P-B,function words,A1,Prepositions,because of,PREP,sentence,no,dėl,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0152,P-B,function words,A1,Prepositions,towards,PREP,sentence,no,link,,,,,pending,,preposition governs +genitive; LT proposed — verify
+A2-0153,P-B,function words,A1,Prepositions,after,PREP,sentence,no,po,,,,,review-duplicate,dup within queue (A2-0141),preposition governs +genitive; LT proposed — verify
+A2-0154,P-B,function words,A1,Conjunctions,and,CONJ,sentence,no,ir,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0155,P-B,function words,A1,Conjunctions,but,CONJ,sentence,no,bet,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0156,P-B,function words,A1,Conjunctions,or,CONJ,sentence,no,arba,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0157,P-B,function words,A1,Conjunctions,because,CONJ,sentence,no,nes,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0158,P-B,function words,A1,Conjunctions,therefore,CONJ,sentence,no,todėl,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0159,P-B,function words,A1,Conjunctions,that (conj),CONJ,sentence,no,kad,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0160,P-B,function words,A1,Conjunctions,if,CONJ,sentence,no,jei,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0161,P-B,function words,A1,Conjunctions,when (conj),CONJ,sentence,no,kai,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0162,P-B,function words,A1,Conjunctions,although,CONJ,sentence,no,nors,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0163,P-B,function words,A1,Conjunctions,however,CONJ,sentence,no,tačiau,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0164,P-B,function words,A1,Conjunctions,also,CONJ,sentence,no,taip pat,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0165,P-B,function words,A1,Conjunctions,whether,CONJ,sentence,no,ar,,,,,pending,,connector — sentence card; LT proposed — verify
+A2-0166,P-B,function words,A1,Adverbs,very,ADV,sentence,no,labai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0167,P-B,function words,A1,Adverbs,maybe,ADV,sentence,no,gal,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0168,P-B,function words,A1,Adverbs,really,ADV,sentence,no,tikrai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0169,P-B,function words,A1,Adverbs,often,ADV,sentence,no,dažnai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0170,P-B,function words,A1,Adverbs,rarely,ADV,sentence,no,retai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0171,P-B,function words,A1,Adverbs,always,ADV,sentence,no,visada,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0172,P-B,function words,A1,Adverbs,never,ADV,sentence,no,niekada,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0173,P-B,function words,A1,Adverbs,sometimes,ADV,sentence,no,kartais,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0174,P-B,function words,A1,Adverbs,already,ADV,sentence,no,jau,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0175,P-B,function words,A1,Adverbs,"still, yet",ADV,sentence,no,dar,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0176,P-B,function words,A1,Adverbs,only,ADV,sentence,no,tik,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0177,P-B,function words,A1,Adverbs,again,ADV,sentence,no,vėl,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0178,P-B,function words,A1,Adverbs,here,ADV,sentence,no,čia,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0179,P-B,function words,A1,Adverbs,there,ADV,sentence,no,ten,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0180,P-B,function words,A1,Adverbs,everywhere,ADV,sentence,no,visur,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0181,P-B,function words,A1,Adverbs,nowhere,ADV,sentence,no,niekur,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0182,P-B,function words,A1,Adverbs,together,ADV,sentence,no,kartu,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0183,P-B,function words,A1,Adverbs,separately,ADV,sentence,no,atskirai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0184,P-B,function words,A1,Adverbs,well,ADV,sentence,no,gerai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0185,P-B,function words,A1,Adverbs,badly,ADV,sentence,no,blogai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0186,P-B,function words,A1,Adverbs,a lot,ADV,sentence,no,daug,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0187,P-B,function words,A1,Adverbs,a little,ADV,sentence,no,mažai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0188,P-B,function words,A1,Adverbs,too (excessively),ADV,sentence,no,per,,,,,review-duplicate,dup within queue (A2-0144),adverb — sentence card; LT proposed — verify
+A2-0189,P-B,function words,A1,Adverbs,enough,ADV,sentence,no,pakankamai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0190,P-B,function words,A1,Adverbs,soon,ADV,sentence,no,greitai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0191,P-B,function words,A1,Adverbs,later,ADV,sentence,no,vėliau,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0192,P-B,function words,A1,Adverbs,early,ADV,sentence,no,anksti,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0193,P-B,function words,A1,Adverbs,late,ADV,sentence,no,vėlai,,,,,pending,,adverb — sentence card; LT proposed — verify
+A2-0194,P-B,function words,A1,Modal & core verbs,to be,V,sentence,no,būti,,,,,pending,,irregular; core copula; LT proposed — verify
+A2-0195,P-B,function words,A1,Modal & core verbs,to have,V,sentence,no,turėti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0196,P-B,function words,A1,Modal & core verbs,"to be able, can",V,sentence,no,galėti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0197,P-B,function words,A1,Modal & core verbs,to want,V,sentence,no,norėti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0198,P-B,function words,A1,Modal & core verbs,to need (impersonal),V,sentence,no,reikėti,,,,,pending,,impersonal: man reikia; LT proposed — verify
+A2-0199,P-B,function words,A1,Modal & core verbs,"must, have to",V,sentence,no,privalėti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0200,P-B,function words,A1,Modal & core verbs,to intend,V,sentence,no,ketinti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0201,P-B,function words,A1,Modal & core verbs,to try,V,sentence,no,bandyti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0202,P-B,function words,A1,Modal & core verbs,to begin,V,sentence,no,pradėti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0203,P-B,function words,A1,Modal & core verbs,to finish,V,sentence,no,baigti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0204,P-B,function words,A1,Modal & core verbs,to continue,V,sentence,no,tęsti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0205,P-B,function words,A1,Modal & core verbs,to like,V,sentence,no,patikti,,,,,pending,,impersonal: man patinka; LT proposed — verify
+A2-0206,P-B,function words,A1,Modal & core verbs,to love/like doing,V,sentence,no,mėgti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0207,P-B,function words,A1,Modal & core verbs,to become,V,sentence,no,tapti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0208,P-B,function words,A1,Modal & core verbs,to seem,V,sentence,no,atrodyti,,,,,pending,,high-frequency verb; LT proposed — verify
+A2-0209,P-C,A2 topical,A2,Travel,"journey, trip",N,image,yes,kelionė,,,,,pending,,LT proposed — verify
+A2-0210,P-C,A2 topical,A2,Travel,luggage,N,image,yes,bagažas,,,,,pending,,LT proposed — verify
+A2-0211,P-C,A2 topical,A2,Travel,visa,N,image,yes,viza,,,,,pending,,LT proposed — verify
+A2-0212,P-C,A2 topical,A2,Travel,direction,N,image,yes,kryptis,,,,,pending,,LT proposed — verify
+A2-0213,P-C,A2 topical,A2,Travel,distance,N,image,yes,atstumas,,,,,pending,,LT proposed — verify
+A2-0214,P-C,A2 topical,A2,Travel,arrival,N,image,yes,atvykimas,,,,,pending,,LT proposed — verify
+A2-0215,P-C,A2 topical,A2,Travel,departure,N,image,yes,išvykimas,,,,,pending,,LT proposed — verify
+A2-0216,P-C,A2 topical,A2,Travel,timetable,N,image,yes,tvarkaraštis,,,,,pending,,LT proposed — verify
+A2-0217,P-C,A2 topical,A2,Travel,platform,N,image,yes,peronas,,,,,pending,,LT proposed — verify
+A2-0218,P-C,A2 topical,A2,Travel,border,N,image,yes,siena,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0219,P-C,A2 topical,A2,Travel,customs,N,image,yes,muitinė,,,,,pending,,LT proposed — verify
+A2-0220,P-C,A2 topical,A2,Travel,tourist,N,image,yes,turistas,,,,,pending,,LT proposed — verify
+A2-0221,P-C,A2 topical,A2,Travel,guide,N,image,yes,gidas,,,,,pending,,LT proposed — verify
+A2-0222,P-C,A2 topical,A2,Travel,souvenir,N,image,yes,suvenyras,,,,,pending,,LT proposed — verify
+A2-0223,P-C,A2 topical,A2,Travel,to travel,V,image,yes,keliauti,,,,,pending,,LT proposed — verify
+A2-0224,P-C,A2 topical,A2,Travel,to arrive,V,image,yes,atvykti,,,,,pending,,LT proposed — verify
+A2-0225,P-C,A2 topical,A2,Travel,"to leave, depart",V,image,yes,išvykti,,,,,pending,,LT proposed — verify
+A2-0226,P-C,A2 topical,A2,Travel,"to book, reserve",V,image,yes,rezervuoti,,,,,pending,,LT proposed — verify
+A2-0227,P-C,A2 topical,A2,Travel,to pack,V,image,yes,pakuoti,,,,,pending,,LT proposed — verify
+A2-0228,P-C,A2 topical,A2,Health,health,N,image,yes,sveikata,,,,,pending,,LT proposed — verify
+A2-0229,P-C,A2 topical,A2,Health,pain,N,image,yes,skausmas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0230,P-C,A2 topical,A2,Health,prescription,N,image,yes,receptas,,,,,pending,,LT proposed — verify
+A2-0231,P-C,A2 topical,A2,Health,pharmacy,N,image,yes,vaistinė,,,,,pending,,LT proposed — verify
+A2-0232,P-C,A2 topical,A2,Health,cold (illness),N,image,yes,peršalimas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0233,P-C,A2 topical,A2,Health,fever,N,image,yes,karščiavimas,,,,,pending,,LT proposed — verify
+A2-0234,P-C,A2 topical,A2,Health,cough,N,image,yes,kosulys,,,,,pending,,LT proposed — verify
+A2-0235,P-C,A2 topical,A2,Health,wound,N,image,yes,žaizda,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0236,P-C,A2 topical,A2,Health,nurse,N,image,yes,slaugytoja,,,,,pending,,LT proposed — verify
+A2-0237,P-C,A2 topical,A2,Health,dentist,N,image,yes,odontologas,,,,,pending,,LT proposed — verify
+A2-0238,P-C,A2 topical,A2,Health,appointment,N,image,yes,vizitas,,,,,pending,,LT proposed — verify
+A2-0239,P-C,A2 topical,A2,Health,to be ill,V,image,yes,sirgti,,,,,pending,,LT proposed — verify
+A2-0240,P-C,A2 topical,A2,Health,"to treat, cure",V,image,yes,gydyti,,,,,pending,,LT proposed — verify
+A2-0241,P-C,A2 topical,A2,Health,to feel,V,image,yes,jaustis,,,,,pending,,LT proposed — verify
+A2-0242,P-C,A2 topical,A2,Health,to hurt (ache),V,image,yes,skaudėti,,,,,pending,,impersonal: man skauda; LT proposed — verify
+A2-0243,P-C,A2 topical,A2,Work & school,meeting,N,image,yes,susitikimas,,,,,pending,,LT proposed — verify
+A2-0244,P-C,A2 topical,A2,Work & school,project,N,image,yes,projektas,,,,,pending,,LT proposed — verify
+A2-0245,P-C,A2 topical,A2,Work & school,salary,N,image,yes,alga,,,,,pending,,LT proposed — verify
+A2-0246,P-C,A2 topical,A2,Work & school,colleague,N,image,yes,kolega,,,,,pending,,LT proposed — verify
+A2-0247,P-C,A2 topical,A2,Work & school,boss,N,image,yes,viršininkas,,,,,pending,,LT proposed — verify
+A2-0248,P-C,A2 topical,A2,Work & school,company,N,image,yes,įmonė,,,,,pending,,LT proposed — verify
+A2-0249,P-C,A2 topical,A2,Work & school,interview,N,image,yes,pokalbis,,,,,pending,,LT proposed — verify
+A2-0250,P-C,A2 topical,A2,Work & school,lesson,N,image,yes,pamoka,,,,,pending,,LT proposed — verify
+A2-0251,P-C,A2 topical,A2,Work & school,exam,N,image,yes,egzaminas,,,,,pending,,LT proposed — verify
+A2-0252,P-C,A2 topical,A2,Work & school,homework,N,image,yes,namų darbai,,,,,pending,,LT proposed — verify
+A2-0253,P-C,A2 topical,A2,Work & school,student,N,image,yes,studentas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0254,P-C,A2 topical,A2,Work & school,"grade, mark",N,image,yes,pažymys,,,,,pending,,LT proposed — verify
+A2-0255,P-C,A2 topical,A2,Work & school,degree,N,image,yes,diplomas,,,,,pending,,LT proposed — verify
+A2-0256,P-C,A2 topical,A2,Work & school,experience,N,image,yes,patirtis,,,,,pending,,LT proposed — verify
+A2-0257,P-C,A2 topical,A2,Work & school,to study,V,image,yes,studijuoti,,,,,pending,,LT proposed — verify
+A2-0258,P-C,A2 topical,A2,Work & school,to learn,V,image,yes,mokytis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0259,P-C,A2 topical,A2,Work & school,to teach,V,image,yes,dėstyti,,,,,pending,,LT proposed — verify
+A2-0260,P-C,A2 topical,A2,Work & school,to explain,V,image,yes,aiškinti,,,,,pending,,LT proposed — verify
+A2-0261,P-C,A2 topical,A2,Work & school,to answer,V,image,yes,atsakyti,,,,,pending,,LT proposed — verify
+A2-0262,P-C,A2 topical,A2,Work & school,to ask,V,image,yes,klausti,,,,,pending,,LT proposed — verify
+A2-0263,P-C,A2 topical,A2,Work & school,to repeat,V,image,yes,kartoti,,,,,pending,,LT proposed — verify
+A2-0264,P-C,A2 topical,A2,Work & school,to remember,V,image,yes,atsiminti,,,,,pending,,LT proposed — verify
+A2-0265,P-C,A2 topical,A2,Work & school,to forget,V,image,yes,pamiršti,,,,,pending,,LT proposed — verify
+A2-0266,P-C,A2 topical,A2,Shopping,"goods, product",N,image,yes,prekė,,,,,pending,,LT proposed — verify
+A2-0267,P-C,A2 topical,A2,Shopping,price tag,N,image,yes,kainoskaitė,,,,,pending,,LT proposed — verify
+A2-0268,P-C,A2 topical,A2,Shopping,cash,N,image,yes,grynieji,,,,,pending,,LT proposed — verify
+A2-0269,P-C,A2 topical,A2,Shopping,card (bank),N,image,yes,kortelė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0270,P-C,A2 topical,A2,Shopping,account,N,image,yes,sąskaita (banko),,,,,pending,,LT proposed — verify
+A2-0271,P-C,A2 topical,A2,Shopping,cost,N,image,yes,kaina,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0272,P-C,A2 topical,A2,Shopping,to cost,V,image,yes,kainuoti,,,,,pending,,LT proposed — verify
+A2-0273,P-C,A2 topical,A2,Shopping,to order,V,image,yes,užsisakyti,,,,,pending,,LT proposed — verify
+A2-0274,P-C,A2 topical,A2,Shopping,to choose,V,image,yes,rinktis,,,,,pending,,LT proposed — verify
+A2-0275,P-C,A2 topical,A2,Shopping,"to change, exchange",V,image,yes,keisti,,,,,pending,,LT proposed — verify
+A2-0276,P-C,A2 topical,A2,Shopping,to spend,V,image,yes,išleisti,,,,,pending,,LT proposed — verify
+A2-0277,P-C,A2 topical,A2,Shopping,to save (money),V,image,yes,taupyti,,,,,pending,,LT proposed — verify
+A2-0278,P-C,A2 topical,A2,Home,furniture,N,image,yes,baldai,,,,,pending,,LT proposed — verify
+A2-0279,P-C,A2 topical,A2,Home,kitchen,N,image,yes,virtuvė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0280,P-C,A2 topical,A2,Home,bathroom,N,image,yes,vonia,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0281,P-C,A2 topical,A2,Home,bedroom,N,image,yes,miegamasis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0282,P-C,A2 topical,A2,Home,living room,N,image,yes,svetainė,,,,,pending,,LT proposed — verify
+A2-0283,P-C,A2 topical,A2,Home,rent,N,image,yes,nuoma,,,,,pending,,LT proposed — verify
+A2-0284,P-C,A2 topical,A2,Home,neighbour,N,image,yes,kaimynas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0285,P-C,A2 topical,A2,Home,rubbish,N,image,yes,šiukšlės,,,,,pending,,LT proposed — verify
+A2-0286,P-C,A2 topical,A2,Home,laundry,N,image,yes,skalbiniai,,,,,pending,,LT proposed — verify
+A2-0287,P-C,A2 topical,A2,Home,to wash (clothes),V,image,yes,skalbti,,,,,pending,,LT proposed — verify
+A2-0288,P-C,A2 topical,A2,Home,to tidy up,V,image,yes,tvarkyti,,,,,pending,,LT proposed — verify
+A2-0289,P-C,A2 topical,A2,Home,to repair,V,image,yes,taisyti,,,,,pending,,LT proposed — verify
+A2-0290,P-C,A2 topical,A2,Home,to rest,V,image,yes,ilsėtis,,,,,pending,,LT proposed — verify
+A2-0291,P-C,A2 topical,A2,Home,to wake up,V,image,yes,keltis,,,,,pending,,LT proposed — verify
+A2-0292,P-C,A2 topical,A2,Home,to get dressed,V,image,yes,rengtis,,,,,pending,,LT proposed — verify
+A2-0293,P-C,A2 topical,A2,Feelings,feeling,N,image,yes,jausmas,,,,,pending,,LT proposed — verify
+A2-0294,P-C,A2 topical,A2,Feelings,happiness,N,image,yes,laimė,,,,,pending,,LT proposed — verify
+A2-0295,P-C,A2 topical,A2,Feelings,sadness,N,image,yes,liūdesys,,,,,pending,,LT proposed — verify
+A2-0296,P-C,A2 topical,A2,Feelings,fear,N,image,yes,baimė,,,,,pending,,LT proposed — verify
+A2-0297,P-C,A2 topical,A2,Feelings,anger,N,image,yes,pyktis,,,,,pending,,LT proposed — verify
+A2-0298,P-C,A2 topical,A2,Feelings,surprise,N,image,yes,nuostaba,,,,,pending,,LT proposed — verify
+A2-0299,P-C,A2 topical,A2,Feelings,character,N,image,yes,charakteris,,,,,pending,,LT proposed — verify
+A2-0300,P-C,A2 topical,A2,Feelings,tired,A,image,yes,pavargęs,,,,,pending,,LT proposed — verify
+A2-0301,P-C,A2 topical,A2,Feelings,calm,A,image,yes,ramus,,,,,pending,,LT proposed — verify
+A2-0302,P-C,A2 topical,A2,Feelings,nervous,A,image,yes,nervingas,,,,,pending,,LT proposed — verify
+A2-0303,P-C,A2 topical,A2,Feelings,bored,A,image,yes,nuobodžiaujantis,,,,,pending,,LT proposed — verify
+A2-0304,P-C,A2 topical,A2,Feelings,polite,A,image,yes,mandagus,,,,,pending,,LT proposed — verify
+A2-0305,P-C,A2 topical,A2,Feelings,friendly,A,image,yes,draugiškas,,,,,pending,,LT proposed — verify
+A2-0306,P-C,A2 topical,A2,Feelings,clever,A,image,yes,protingas,,,,,pending,,LT proposed — verify
+A2-0307,P-C,A2 topical,A2,Feelings,patient,A,image,yes,kantrus,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0308,P-C,A2 topical,A2,Feelings,brave,A,image,yes,drąsus,,,,,pending,,LT proposed — verify
+A2-0309,P-C,A2 topical,A2,Feelings,lazy,A,image,yes,tingus,,,,,pending,,LT proposed — verify
+A2-0310,P-C,A2 topical,A2,Feelings,hard-working,A,image,yes,darbštus,,,,,pending,,LT proposed — verify
+A2-0311,P-C,A2 topical,A2,Technology,internet,N,image,yes,internetas,,,,,pending,,LT proposed — verify
+A2-0312,P-C,A2 topical,A2,Technology,website,N,image,yes,svetainė,,,,,review-duplicate,dup within queue (A2-0282),LT proposed — verify
+A2-0313,P-C,A2 topical,A2,Technology,e-mail,N,image,yes,el. paštas,,,,,pending,,LT proposed — verify
+A2-0314,P-C,A2 topical,A2,Technology,message,N,image,yes,žinutė,,,,,pending,,LT proposed — verify
+A2-0315,P-C,A2 topical,A2,Technology,app,N,image,yes,programėlė,,,,,pending,,LT proposed — verify
+A2-0316,P-C,A2 topical,A2,Technology,screen,N,image,yes,ekranas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0317,P-C,A2 topical,A2,Technology,password,N,image,yes,slaptažodis,,,,,pending,,LT proposed — verify
+A2-0318,P-C,A2 topical,A2,Technology,file,N,image,yes,failas,,,,,pending,,LT proposed — verify
+A2-0319,P-C,A2 topical,A2,Technology,battery,N,image,yes,baterija,,,,,pending,,LT proposed — verify
+A2-0320,P-C,A2 topical,A2,Technology,charger,N,image,yes,kroviklis,,,,,pending,,LT proposed — verify
+A2-0321,P-C,A2 topical,A2,Technology,to download,V,image,yes,atsisiųsti,,,,,pending,,LT proposed — verify
+A2-0322,P-C,A2 topical,A2,Technology,"to click, press",V,image,yes,spausti,,,,,pending,,LT proposed — verify
+A2-0323,P-C,A2 topical,A2,Technology,to send,V,image,yes,siųsti,,,,,pending,,LT proposed — verify
+A2-0324,P-C,A2 topical,A2,Technology,to call (phone),V,image,yes,skambinti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0325,P-C,A2 topical,A2,Technology,to switch on,V,image,yes,įjungti,,,,,pending,,LT proposed — verify
+A2-0326,P-C,A2 topical,A2,Technology,to switch off,V,image,yes,išjungti,,,,,pending,,LT proposed — verify
+A2-0327,P-C,A2 topical,A2,Nature,storm,N,image,yes,audra,,,,,pending,,LT proposed — verify
+A2-0328,P-C,A2 topical,A2,Nature,fog,N,image,yes,rūkas,,,,,pending,,LT proposed — verify
+A2-0329,P-C,A2 topical,A2,Nature,frost,N,image,yes,šalna,,,,,pending,,LT proposed — verify
+A2-0330,P-C,A2 topical,A2,Nature,forecast,N,image,yes,prognozė,,,,,pending,,LT proposed — verify
+A2-0331,P-C,A2 topical,A2,Nature,ice,N,image,yes,ledas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0332,P-C,A2 topical,A2,Nature,puddle,N,image,yes,bala,,,,,pending,,LT proposed — verify
+A2-0333,P-C,A2 topical,A2,Nature,shade,N,image,yes,šešėlis,,,,,pending,,LT proposed — verify
+A2-0334,P-C,A2 topical,A2,Society,"state, country",N,image,yes,valstybė,,,,,pending,,LT proposed — verify
+A2-0335,P-C,A2 topical,A2,Society,government,N,image,yes,vyriausybė,,,,,pending,,LT proposed — verify
+A2-0336,P-C,A2 topical,A2,Society,law,N,image,yes,įstatymas,,,,,pending,,LT proposed — verify
+A2-0337,P-C,A2 topical,A2,Society,tax,N,image,yes,mokestis,,,,,pending,,LT proposed — verify
+A2-0338,P-C,A2 topical,A2,Society,news,N,image,yes,naujienos,,,,,pending,,LT proposed — verify
+A2-0339,P-C,A2 topical,A2,Society,politics,N,image,yes,politika,,,,,pending,,LT proposed — verify
+A2-0340,P-C,A2 topical,A2,Society,economy,N,image,yes,ekonomika,,,,,pending,,LT proposed — verify
+A2-0341,P-C,A2 topical,A2,Society,problem,N,image,yes,problema,,,,,pending,,LT proposed — verify
+A2-0342,P-C,A2 topical,A2,Society,solution,N,image,yes,sprendimas,,,,,pending,,LT proposed — verify
+A2-0343,P-C,A2 topical,A2,Society,reason,N,image,yes,priežastis,,,,,pending,,LT proposed — verify
+A2-0344,P-C,A2 topical,A2,Society,example,N,image,yes,pavyzdys,,,,,pending,,LT proposed — verify
+A2-0345,P-C,A2 topical,A2,Society,difference,N,image,yes,skirtumas,,,,,pending,,LT proposed — verify
+A2-0346,P-C,A2 topical,A2,Society,possibility,N,image,yes,galimybė,,,,,pending,,LT proposed — verify
+A2-0347,P-C,A2 topical,A2,Society,rule,N,image,yes,taisyklė,,,,,pending,,LT proposed — verify
+A2-0348,P-D,phrases (A2 core),A2,Greetings,Hello (informal),PHRASE,phrase,no,Labas,,,,,pending,,LT proposed — verify
+A2-0349,P-D,phrases (A2 core),A2,Greetings,Hello (formal/plural),PHRASE,phrase,no,Sveiki,,,,,pending,,LT proposed — verify
+A2-0350,P-D,phrases (A2 core),A2,Greetings,Good morning,PHRASE,phrase,no,Labas rytas,,,,,pending,,LT proposed — verify
+A2-0351,P-D,phrases (A2 core),A2,Greetings,Good day,PHRASE,phrase,no,Laba diena,,,,,pending,,LT proposed — verify
+A2-0352,P-D,phrases (A2 core),A2,Greetings,Good evening,PHRASE,phrase,no,Labas vakaras,,,,,pending,,LT proposed — verify
+A2-0353,P-D,phrases (A2 core),A2,Greetings,Good night,PHRASE,phrase,no,Labanakt,,,,,pending,,LT proposed — verify
+A2-0354,P-D,phrases (A2 core),A2,Greetings,Goodbye,PHRASE,phrase,no,Viso gero,,,,,pending,,LT proposed — verify
+A2-0355,P-D,phrases (A2 core),A2,Greetings,See you,PHRASE,phrase,no,Iki pasimatymo,,,,,pending,,LT proposed — verify
+A2-0356,P-D,phrases (A2 core),A2,Greetings,Bye (informal),PHRASE,phrase,no,Iki,,,,,review-duplicate,dup within queue (A2-0146),LT proposed — verify
+A2-0357,P-D,phrases (A2 core),A2,Politeness,Please / you're welcome,PHRASE,phrase,no,Prašau,,,,,pending,,LT proposed — verify
+A2-0358,P-D,phrases (A2 core),A2,Politeness,Thank you,PHRASE,phrase,no,Ačiū,,,,,pending,,LT proposed — verify
+A2-0359,P-D,phrases (A2 core),A2,Politeness,Thank you very much,PHRASE,phrase,no,Labai ačiū,,,,,pending,,LT proposed — verify
+A2-0360,P-D,phrases (A2 core),A2,Politeness,You're welcome (not at all),PHRASE,phrase,no,Nėra už ką,,,,,pending,,LT proposed — verify
+A2-0361,P-D,phrases (A2 core),A2,Politeness,Sorry / excuse me,PHRASE,phrase,no,Atsiprašau,,,,,pending,,LT proposed — verify
+A2-0362,P-D,phrases (A2 core),A2,Politeness,Excuse me (formal),PHRASE,phrase,no,Atleiskite,,,,,pending,,LT proposed — verify
+A2-0363,P-D,phrases (A2 core),A2,Politeness,Nice to meet you,PHRASE,phrase,no,Malonu susipažinti,,,,,pending,,LT proposed — verify
+A2-0364,P-D,phrases (A2 core),A2,Basics,How are you?,PHRASE,phrase,no,Kaip sekasi?,,,,,pending,,LT proposed — verify
+A2-0365,P-D,phrases (A2 core),A2,Basics,I'm fine,PHRASE,phrase,no,Man gerai,,,,,pending,,LT proposed — verify
+A2-0366,P-D,phrases (A2 core),A2,Basics,What is your name?,PHRASE,phrase,no,Koks jūsų vardas?,,,,,pending,,LT proposed — verify
+A2-0367,P-D,phrases (A2 core),A2,Basics,My name is…,PHRASE,phrase,no,Mano vardas…,,,,,pending,,LT proposed — verify
+A2-0368,P-D,phrases (A2 core),A2,Basics,Where are you from?,PHRASE,phrase,no,Iš kur jūs?,,,,,pending,,LT proposed — verify
+A2-0369,P-D,phrases (A2 core),A2,Basics,I am from…,PHRASE,phrase,no,Aš esu iš…,,,,,pending,,LT proposed — verify
+A2-0370,P-D,phrases (A2 core),A2,Basics,Do you speak English?,PHRASE,phrase,no,Ar kalbate angliškai?,,,,,pending,,LT proposed — verify
+A2-0371,P-D,phrases (A2 core),A2,Basics,I don't understand,PHRASE,phrase,no,Nesuprantu,,,,,pending,,LT proposed — verify
+A2-0372,P-D,phrases (A2 core),A2,Basics,I understand,PHRASE,phrase,no,Suprantu,,,,,pending,,LT proposed — verify
+A2-0373,P-D,phrases (A2 core),A2,Basics,I don't know,PHRASE,phrase,no,Nežinau,,,,,pending,,LT proposed — verify
+A2-0374,P-D,phrases (A2 core),A2,Basics,Could you repeat?,PHRASE,phrase,no,Ar galite pakartoti?,,,,,pending,,LT proposed — verify
+A2-0375,P-D,phrases (A2 core),A2,Basics,"Speak more slowly, please",PHRASE,phrase,no,"Kalbėkite lėčiau, prašau",,,,,pending,,LT proposed — verify
+A2-0376,P-D,phrases (A2 core),A2,Basics,What does … mean?,PHRASE,phrase,no,Ką reiškia…?,,,,,pending,,LT proposed — verify
+A2-0377,P-D,phrases (A2 core),A2,Getting by,How much does it cost?,PHRASE,phrase,no,Kiek kainuoja?,,,,,pending,,LT proposed — verify
+A2-0378,P-D,phrases (A2 core),A2,Getting by,Where is…?,PHRASE,phrase,no,Kur yra…?,,,,,pending,,LT proposed — verify
+A2-0379,P-D,phrases (A2 core),A2,Getting by,What time is it?,PHRASE,phrase,no,Kiek valandų?,,,,,pending,,LT proposed — verify
+A2-0380,P-D,phrases (A2 core),A2,Getting by,I would like…,PHRASE,phrase,no,Norėčiau…,,,,,pending,,LT proposed — verify
+A2-0381,P-D,phrases (A2 core),A2,Getting by,"The bill, please",PHRASE,phrase,no,"Sąskaitą, prašau",,,,,pending,,LT proposed — verify
+A2-0382,P-D,phrases (A2 core),A2,Getting by,Is there…?,PHRASE,phrase,no,Ar yra…?,,,,,pending,,LT proposed — verify
+A2-0383,P-D,phrases (A2 core),A2,Getting by,Can you help me?,PHRASE,phrase,no,Ar galite man padėti?,,,,,pending,,LT proposed — verify
+A2-0384,P-D,phrases (A2 core),A2,Getting by,Help!,PHRASE,phrase,no,Padėkite!,,,,,pending,,LT proposed — verify
+A2-0385,P-D,phrases (A2 core),A2,Getting by,Be careful!,PHRASE,phrase,no,Atsargiai!,,,,,pending,,LT proposed — verify
+A2-0386,P-D,phrases (A2 core),A2,Getting by,I'm lost,PHRASE,phrase,no,Aš pasiklydau,,,,,pending,,LT proposed — verify
+A2-0387,P-E,grammar patterns,A2,Grammar,Nominative case,PATTERN,pattern,no,vardininkas,,,,,pending,,who/what — the dictionary form; subject; LT proposed — verify
+A2-0388,P-E,grammar patterns,A2,Grammar,Genitive case,PATTERN,pattern,no,kilmininkas,,,,,pending,,of/possession; after many prepositions & negation; LT proposed — verify
+A2-0389,P-E,grammar patterns,A2,Grammar,Dative case,PATTERN,pattern,no,naudininkas,,,,,pending,,to/for someone; impersonal subjects (man reikia); LT proposed — verify
+A2-0390,P-E,grammar patterns,A2,Grammar,Accusative case,PATTERN,pattern,no,galininkas,,,,,pending,,"direct object; after į, per, apie; LT proposed — verify"
+A2-0391,P-E,grammar patterns,A2,Grammar,Instrumental case,PATTERN,pattern,no,įnagininkas,,,,,pending,,by/with; after su; LT proposed — verify
+A2-0392,P-E,grammar patterns,A2,Grammar,Locative case,PATTERN,pattern,no,vietininkas,,,,,pending,,in/at a place; LT proposed — verify
+A2-0393,P-E,grammar patterns,A2,Grammar,Vocative case,PATTERN,pattern,no,šauksmininkas,,,,,pending,,addressing someone; LT proposed — verify
+A2-0394,P-E,grammar patterns,A2,Grammar,Present tense,PATTERN,pattern,no,esamasis laikas,,,,,pending,,the 3rd-person form already on every verb card; LT proposed — verify
+A2-0395,P-E,grammar patterns,A2,Grammar,Past tense,PATTERN,pattern,no,būtasis kartinis laikas,,,,,pending,,the past form already on every verb card; LT proposed — verify
+A2-0396,P-E,grammar patterns,A2,Grammar,Future tense,PATTERN,pattern,no,būsimasis laikas,,,,,pending,,-siu/-si/-s endings; LT proposed — verify
+A2-0397,P-E,grammar patterns,A2,Grammar,Past frequentative,PATTERN,pattern,no,būtasis dažninis laikas,,,,,pending,,-davo: used to do; LT proposed — verify
+A2-0398,P-E,grammar patterns,A2,Grammar,Reflexive verbs,PATTERN,pattern,no,sangrąžiniai veiksmažodžiai,,,,,pending,,"-tis / -si: praustis, mokytis; LT proposed — verify"
+A2-0399,P-E,grammar patterns,A2,Grammar,Comparative,PATTERN,pattern,no,aukštesnysis laipsnis,,,,,pending,,"-esnis / -iau: didesnis, greičiau; LT proposed — verify"
+A2-0400,P-E,grammar patterns,A2,Grammar,Superlative,PATTERN,pattern,no,aukščiausiasis laipsnis,,,,,pending,,-iausias: didžiausias; LT proposed — verify
+A2-0401,P-E,grammar patterns,A2,Grammar,Noun plurals,PATTERN,pattern,no,daugiskaita,,,,,pending,,plural endings by declension; LT proposed — verify
+A2-0402,P-E,grammar patterns,A2,Grammar,Adjective agreement,PATTERN,pattern,no,būdvardžio derinimas,,,,,pending,,"adjective matches noun in gender, number, case; LT proposed — verify"
+A2-0403,P-F,vocabulary expansion,A1,Verbs,to enter,V,image,yes,įeiti,,,,,pending,,LT proposed — verify
+A2-0404,P-F,vocabulary expansion,A1,Verbs,to exit,V,image,yes,išeiti,,,,,pending,,LT proposed — verify
+A2-0405,P-F,vocabulary expansion,A1,Verbs,to return,V,image,yes,grįžti,,,,,pending,,LT proposed — verify
+A2-0406,P-F,vocabulary expansion,A2,Verbs,to cross,V,image,yes,pereiti,,,,,pending,,LT proposed — verify
+A2-0407,P-F,vocabulary expansion,A2,Verbs,to climb,V,image,yes,lipti,,,,,pending,,LT proposed — verify
+A2-0408,P-F,vocabulary expansion,A2,Verbs,to descend,V,image,yes,leistis,,,,,pending,,LT proposed — verify
+A2-0409,P-F,vocabulary expansion,A2,Verbs,to approach,V,image,yes,artintis,,,,,pending,,LT proposed — verify
+A2-0410,P-F,vocabulary expansion,A2,Verbs,to move away,V,image,yes,tolti,,,,,pending,,LT proposed — verify
+A2-0411,P-F,vocabulary expansion,A2,Verbs,to move (house),V,image,yes,kraustytis,,,,,pending,,LT proposed — verify
+A2-0412,P-F,vocabulary expansion,A1,Verbs,to hurry,V,image,yes,skubėti,,,,,pending,,LT proposed — verify
+A2-0413,P-F,vocabulary expansion,A1,Verbs,to wait,V,image,yes,laukti,,,,,pending,,LT proposed — verify
+A2-0414,P-F,vocabulary expansion,A1,Verbs,to meet,V,image,yes,susitikti,,,,,pending,,LT proposed — verify
+A2-0415,P-F,vocabulary expansion,A2,Verbs,to accompany,V,image,yes,palydėti,,,,,pending,,LT proposed — verify
+A2-0416,P-F,vocabulary expansion,A2,Verbs,to lead,V,image,yes,vesti,,,,,pending,,LT proposed — verify
+A2-0417,P-F,vocabulary expansion,A1,Verbs,to bring,V,image,yes,atnešti,,,,,pending,,LT proposed — verify
+A2-0418,P-F,vocabulary expansion,A2,Verbs,to take away,V,image,yes,išsinešti,,,,,pending,,LT proposed — verify
+A2-0419,P-F,vocabulary expansion,A1,Verbs,to put (place),V,image,yes,dėti,,,,,pending,,LT proposed — verify
+A2-0420,P-F,vocabulary expansion,A1,Verbs,to lift,V,image,yes,kelti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0421,P-F,vocabulary expansion,A2,Verbs,to lower,V,image,yes,nuleisti,,,,,pending,,LT proposed — verify
+A2-0422,P-F,vocabulary expansion,A1,Verbs,to turn (rotate),V,image,yes,sukti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0423,P-F,vocabulary expansion,A2,Verbs,to turn around,V,image,yes,apsisukti,,,,,pending,,LT proposed — verify
+A2-0424,P-F,vocabulary expansion,A2,Verbs,to enter (vehicle),V,image,yes,įlipti,,,,,pending,,LT proposed — verify
+A2-0425,P-F,vocabulary expansion,A2,Verbs,to get off,V,image,yes,išlipti,,,,,pending,,LT proposed — verify
+A2-0426,P-F,vocabulary expansion,A1,Verbs,to speak,V,image,yes,kalbėti,,,,,pending,,LT proposed — verify
+A2-0427,P-F,vocabulary expansion,A1,Verbs,to say,V,image,yes,sakyti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0428,P-F,vocabulary expansion,A2,Verbs,to tell,V,image,yes,pasakoti,,,,,pending,,LT proposed — verify
+A2-0429,P-F,vocabulary expansion,A2,Verbs,to talk over,V,image,yes,aptarti,,,,,pending,,LT proposed — verify
+A2-0430,P-F,vocabulary expansion,A2,Verbs,to discuss,V,image,yes,diskutuoti,,,,,pending,,LT proposed — verify
+A2-0431,P-F,vocabulary expansion,A2,Verbs,to agree,V,image,yes,sutikti,,,,,pending,,LT proposed — verify
+A2-0432,P-F,vocabulary expansion,A2,Verbs,to disagree,V,image,yes,nesutikti,,,,,pending,,LT proposed — verify
+A2-0433,P-F,vocabulary expansion,A2,Verbs,to promise,V,image,yes,žadėti,,,,,pending,,LT proposed — verify
+A2-0434,P-F,vocabulary expansion,A1,Verbs,to invite,V,image,yes,kviesti,,,,,pending,,LT proposed — verify
+A2-0435,P-F,vocabulary expansion,A1,Verbs,to thank,V,image,yes,dėkoti,,,,,pending,,LT proposed — verify
+A2-0436,P-F,vocabulary expansion,A1,Verbs,to apologise,V,image,yes,atsiprašyti,,,,,pending,,LT proposed — verify
+A2-0437,P-F,vocabulary expansion,A1,Verbs,to greet,V,image,yes,sveikinti,,,,,pending,,LT proposed — verify
+A2-0438,P-F,vocabulary expansion,A2,Verbs,to congratulate,V,image,yes,sveikinti (su švente),,,,,review-duplicate,dup within queue (A2-0437),LT proposed — verify
+A2-0439,P-F,vocabulary expansion,A2,Verbs,to complain,V,image,yes,skųstis,,,,,pending,,LT proposed — verify
+A2-0440,P-F,vocabulary expansion,A2,Verbs,to advise,V,image,yes,patarti,,,,,pending,,LT proposed — verify
+A2-0441,P-F,vocabulary expansion,A2,Verbs,to warn,V,image,yes,perspėti,,,,,pending,,LT proposed — verify
+A2-0442,P-F,vocabulary expansion,A1,Verbs,to shout,V,image,yes,šaukti,,,,,pending,,LT proposed — verify
+A2-0443,P-F,vocabulary expansion,A2,Verbs,to whisper,V,image,yes,šnabždėti,,,,,pending,,LT proposed — verify
+A2-0444,P-F,vocabulary expansion,A2,Verbs,to translate,V,image,yes,versti,,,,,pending,,LT proposed — verify
+A2-0445,P-F,vocabulary expansion,A1,Verbs,to write down,V,image,yes,užrašyti,,,,,pending,,LT proposed — verify
+A2-0446,P-F,vocabulary expansion,A1,Verbs,to know (a fact),V,image,yes,žinoti,,,,,pending,,LT proposed — verify
+A2-0447,P-F,vocabulary expansion,A1,Verbs,to understand,V,image,yes,suprasti,,,,,pending,,LT proposed — verify
+A2-0448,P-F,vocabulary expansion,A2,Verbs,to believe,V,image,yes,tikėti,,,,,pending,,LT proposed — verify
+A2-0449,P-F,vocabulary expansion,A2,Verbs,to doubt,V,image,yes,abejoti,,,,,pending,,LT proposed — verify
+A2-0450,P-F,vocabulary expansion,A2,Verbs,to decide,V,image,yes,nuspręsti,,,,,pending,,LT proposed — verify
+A2-0451,P-F,vocabulary expansion,A1,Verbs,to choose,V,image,yes,pasirinkti,,,,,pending,,LT proposed — verify
+A2-0452,P-F,vocabulary expansion,A2,Verbs,to hope,V,image,yes,tikėtis,,,,,pending,,LT proposed — verify
+A2-0453,P-F,vocabulary expansion,A2,Verbs,to worry,V,image,yes,nerimauti,,,,,pending,,LT proposed — verify
+A2-0454,P-F,vocabulary expansion,A1,Verbs,to be afraid,V,image,yes,bijoti,,,,,pending,,LT proposed — verify
+A2-0455,P-F,vocabulary expansion,A2,Verbs,to be surprised,V,image,yes,stebėtis,,,,,pending,,LT proposed — verify
+A2-0456,P-F,vocabulary expansion,A2,Verbs,to enjoy,V,image,yes,mėgautis,,,,,pending,,LT proposed — verify
+A2-0457,P-F,vocabulary expansion,A2,Verbs,to prefer,V,image,yes,labiau mėgti,,,,,pending,,LT proposed — verify
+A2-0458,P-F,vocabulary expansion,A2,Verbs,to plan,V,image,yes,planuoti,,,,,pending,,LT proposed — verify
+A2-0459,P-F,vocabulary expansion,A2,Verbs,to imagine,V,image,yes,įsivaizduoti,,,,,pending,,LT proposed — verify
+A2-0460,P-F,vocabulary expansion,A2,Verbs,to notice,V,image,yes,pastebėti,,,,,pending,,LT proposed — verify
+A2-0461,P-F,vocabulary expansion,A2,Verbs,to compare,V,image,yes,lyginti,,,,,pending,,LT proposed — verify
+A2-0462,P-F,vocabulary expansion,A2,Verbs,to mean,V,image,yes,reikšti,,,,,pending,,LT proposed — verify
+A2-0463,P-F,vocabulary expansion,A2,Verbs,to depend,V,image,yes,priklausyti,,,,,pending,,LT proposed — verify
+A2-0464,P-F,vocabulary expansion,A1,Verbs,to use,V,image,yes,naudoti,,,,,pending,,LT proposed — verify
+A2-0465,P-F,vocabulary expansion,A1,Verbs,to build,V,image,yes,statyti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0466,P-F,vocabulary expansion,A2,Verbs,to destroy,V,image,yes,griauti,,,,,pending,,LT proposed — verify
+A2-0467,P-F,vocabulary expansion,A1,Verbs,to change (alter),V,image,yes,keisti,,,,,review-duplicate,dup within queue (A2-0275),LT proposed — verify
+A2-0468,P-F,vocabulary expansion,A2,Verbs,to improve,V,image,yes,gerinti,,,,,pending,,LT proposed — verify
+A2-0469,P-F,vocabulary expansion,A1,Verbs,to grow,V,image,yes,augti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0470,P-F,vocabulary expansion,A2,Verbs,to add,V,image,yes,pridėti,,,,,pending,,LT proposed — verify
+A2-0471,P-F,vocabulary expansion,A2,Verbs,to remove,V,image,yes,pašalinti,,,,,pending,,LT proposed — verify
+A2-0472,P-F,vocabulary expansion,A2,Verbs,to fill,V,image,yes,pripildyti,,,,,pending,,LT proposed — verify
+A2-0473,P-F,vocabulary expansion,A2,Verbs,to empty,V,image,yes,ištuštinti,,,,,pending,,LT proposed — verify
+A2-0474,P-F,vocabulary expansion,A2,Verbs,to cover,V,image,yes,uždengti,,,,,pending,,LT proposed — verify
+A2-0475,P-F,vocabulary expansion,A2,Verbs,to open (a shop),V,image,yes,atidaryti (parduotuvę),,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0476,P-F,vocabulary expansion,A1,Verbs,to close,V,image,yes,uždaryti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0477,P-F,vocabulary expansion,A1,Verbs,to lock,V,image,yes,užrakinti,,,,,pending,,LT proposed — verify
+A2-0478,P-F,vocabulary expansion,A1,Verbs,to unlock,V,image,yes,atrakinti,,,,,pending,,LT proposed — verify
+A2-0479,P-F,vocabulary expansion,A2,Verbs,to tie,V,image,yes,rišti,,,,,pending,,LT proposed — verify
+A2-0480,P-F,vocabulary expansion,A1,Verbs,to cut,V,image,yes,pjauti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0481,P-F,vocabulary expansion,A2,Verbs,to burn,V,image,yes,deginti,,,,,pending,,LT proposed — verify
+A2-0482,P-F,vocabulary expansion,A2,Verbs,to freeze,V,image,yes,šaldyti,,,,,pending,,LT proposed — verify
+A2-0483,P-F,vocabulary expansion,A1,Verbs,to boil,V,image,yes,virti,,,,,pending,,LT proposed — verify
+A2-0484,P-F,vocabulary expansion,A1,Verbs,to bake,V,image,yes,kepti,,,,,pending,,LT proposed — verify
+A2-0485,P-F,vocabulary expansion,A2,Verbs,to mix,V,image,yes,maišyti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0486,P-F,vocabulary expansion,A1,Verbs,to pour,V,image,yes,pilti,,,,,pending,,LT proposed — verify
+A2-0487,P-F,vocabulary expansion,A2,Verbs,to weigh,V,image,yes,sverti,,,,,pending,,LT proposed — verify
+A2-0488,P-F,vocabulary expansion,A2,Verbs,to measure,V,image,yes,matuoti,,,,,pending,,LT proposed — verify
+A2-0489,P-F,vocabulary expansion,A1,Verbs,to count,V,image,yes,skaičiuoti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0490,P-F,vocabulary expansion,A2,Verbs,to check,V,image,yes,tikrinti,,,,,pending,,LT proposed — verify
+A2-0491,P-F,vocabulary expansion,A2,Verbs,"to fix, arrange",V,image,yes,sutvarkyti,,,,,pending,,LT proposed — verify
+A2-0492,P-F,vocabulary expansion,A2,Verbs,to prepare,V,image,yes,ruošti,,,,,pending,,LT proposed — verify
+A2-0493,P-F,vocabulary expansion,A2,Verbs,to protect,V,image,yes,saugoti,,,,,pending,,LT proposed — verify
+A2-0494,P-F,vocabulary expansion,A1,Verbs,to help,V,image,yes,padėti,,,,,pending,,LT proposed — verify
+A2-0495,P-F,vocabulary expansion,A2,Verbs,to allow,V,image,yes,leisti,,,,,pending,,LT proposed — verify
+A2-0496,P-F,vocabulary expansion,A2,Verbs,to forbid,V,image,yes,drausti,,,,,pending,,LT proposed — verify
+A2-0497,P-F,vocabulary expansion,A2,Verbs,to order (command),V,image,yes,liepti,,,,,pending,,LT proposed — verify
+A2-0498,P-F,vocabulary expansion,A2,Verbs,to work (function),V,image,yes,veikti,,,,,pending,,LT proposed — verify
+A2-0499,P-F,vocabulary expansion,A1,Verbs,to live (reside),V,image,yes,gyventi,,,,,pending,,LT proposed — verify
+A2-0500,P-F,vocabulary expansion,A1,Verbs,to visit,V,image,yes,lankyti,,,,,pending,,LT proposed — verify
+A2-0501,P-F,vocabulary expansion,A1,Verbs,to celebrate,V,image,yes,švęsti,,,,,pending,,LT proposed — verify
+A2-0502,P-F,vocabulary expansion,A2,Verbs,to marry,V,image,yes,tuoktis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0503,P-F,vocabulary expansion,A2,Verbs,to divorce,V,image,yes,skirtis,,,,,pending,,LT proposed — verify
+A2-0504,P-F,vocabulary expansion,A1,Verbs,to be born,V,image,yes,gimti,,,,,pending,,LT proposed — verify
+A2-0505,P-F,vocabulary expansion,A2,Verbs,to raise (children),V,image,yes,auginti,,,,,pending,,LT proposed — verify
+A2-0506,P-F,vocabulary expansion,A2,Verbs,to earn,V,image,yes,uždirbti,,,,,pending,,LT proposed — verify
+A2-0507,P-F,vocabulary expansion,A2,Verbs,to borrow,V,image,yes,skolintis,,,,,pending,,LT proposed — verify
+A2-0508,P-F,vocabulary expansion,A2,Verbs,to lend,V,image,yes,skolinti,,,,,pending,,LT proposed — verify
+A2-0509,P-F,vocabulary expansion,A2,Verbs,to owe,V,image,yes,būti skolingam,,,,,pending,,LT proposed — verify
+A2-0510,P-F,vocabulary expansion,A2,Verbs,to rent,V,image,yes,nuomotis,,,,,pending,,LT proposed — verify
+A2-0511,P-F,vocabulary expansion,A2,Verbs,to share,V,image,yes,dalintis,,,,,pending,,LT proposed — verify
+A2-0512,P-F,vocabulary expansion,A2,Verbs,to belong,V,image,yes,priklausyti (kam),,,,,review-duplicate,dup within queue (A2-0463),LT proposed — verify
+A2-0513,P-F,vocabulary expansion,A1,Verbs,to win,V,image,yes,laimėti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0514,P-F,vocabulary expansion,A1,Verbs,to lose (a game),V,image,yes,pralaimėti,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0515,P-F,vocabulary expansion,A2,Verbs,to compete,V,image,yes,varžytis,,,,,pending,,LT proposed — verify
+A2-0516,P-F,vocabulary expansion,A2,Verbs,to practise,V,image,yes,treniruotis,,,,,pending,,LT proposed — verify
+A2-0517,P-F,vocabulary expansion,A2,Verbs,to relax,V,image,yes,atsipalaiduoti,,,,,pending,,LT proposed — verify
+A2-0518,P-F,vocabulary expansion,A1,Adjectives,important,A,image,yes,svarbus,,,,,pending,,LT proposed — verify
+A2-0519,P-F,vocabulary expansion,A2,Adjectives,necessary,A,image,yes,reikalingas,,,,,pending,,LT proposed — verify
+A2-0520,P-F,vocabulary expansion,A2,Adjectives,possible,A,image,yes,galimas,,,,,pending,,LT proposed — verify
+A2-0521,P-F,vocabulary expansion,A2,Adjectives,impossible,A,image,yes,neįmanomas,,,,,pending,,LT proposed — verify
+A2-0522,P-F,vocabulary expansion,A1,Adjectives,difficult,A,image,yes,sunkus (užduotis),,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0523,P-F,vocabulary expansion,A1,Adjectives,easy,A,image,yes,lengvas (užduotis),,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0524,P-F,vocabulary expansion,A1,Adjectives,interesting,A,image,yes,įdomus,,,,,pending,,LT proposed — verify
+A2-0525,P-F,vocabulary expansion,A1,Adjectives,boring,A,image,yes,nuobodus,,,,,pending,,LT proposed — verify
+A2-0526,P-F,vocabulary expansion,A2,Adjectives,useful,A,image,yes,naudingas,,,,,pending,,LT proposed — verify
+A2-0527,P-F,vocabulary expansion,A1,Adjectives,dangerous,A,image,yes,pavojingas,,,,,pending,,LT proposed — verify
+A2-0528,P-F,vocabulary expansion,A1,Adjectives,safe,A,image,yes,saugus,,,,,pending,,LT proposed — verify
+A2-0529,P-F,vocabulary expansion,A1,Adjectives,free (no cost),A,image,yes,nemokamas,,,,,pending,,LT proposed — verify
+A2-0530,P-F,vocabulary expansion,A1,Adjectives,busy,A,image,yes,užimtas,,,,,pending,,LT proposed — verify
+A2-0531,P-F,vocabulary expansion,A1,Adjectives,ready,A,image,yes,pasiruošęs,,,,,pending,,LT proposed — verify
+A2-0532,P-F,vocabulary expansion,A1,Adjectives,open (adj),A,image,yes,atidarytas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0533,P-F,vocabulary expansion,A1,Adjectives,closed,A,image,yes,uždarytas,,,,,pending,,LT proposed — verify
+A2-0534,P-F,vocabulary expansion,A1,Adjectives,full,A,image,yes,pilnas,,,,,pending,,LT proposed — verify
+A2-0535,P-F,vocabulary expansion,A1,Adjectives,empty,A,image,yes,tuščias,,,,,pending,,LT proposed — verify
+A2-0536,P-F,vocabulary expansion,A1,Adjectives,same,A,image,yes,toks pat,,,,,pending,,LT proposed — verify
+A2-0537,P-F,vocabulary expansion,A1,Adjectives,different,A,image,yes,kitoks,,,,,pending,,LT proposed — verify
+A2-0538,P-F,vocabulary expansion,A2,Adjectives,similar,A,image,yes,panašus,,,,,pending,,LT proposed — verify
+A2-0539,P-F,vocabulary expansion,A1,Adjectives,correct,A,image,yes,teisingas,,,,,pending,,LT proposed — verify
+A2-0540,P-F,vocabulary expansion,A1,Adjectives,wrong,A,image,yes,neteisingas,,,,,pending,,LT proposed — verify
+A2-0541,P-F,vocabulary expansion,A2,Adjectives,true,A,image,yes,tikras,,,,,pending,,LT proposed — verify
+A2-0542,P-F,vocabulary expansion,A2,Adjectives,false,A,image,yes,netikras,,,,,pending,,LT proposed — verify
+A2-0543,P-F,vocabulary expansion,A2,Adjectives,real,A,image,yes,realus,,,,,pending,,LT proposed — verify
+A2-0544,P-F,vocabulary expansion,A2,Adjectives,modern,A,image,yes,modernus,,,,,pending,,LT proposed — verify
+A2-0545,P-F,vocabulary expansion,A2,Adjectives,traditional,A,image,yes,tradicinis,,,,,pending,,LT proposed — verify
+A2-0546,P-F,vocabulary expansion,A2,Adjectives,popular,A,image,yes,populiarus,,,,,pending,,LT proposed — verify
+A2-0547,P-F,vocabulary expansion,A2,Adjectives,famous (well-known),A,image,yes,žinomas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0548,P-F,vocabulary expansion,A2,Adjectives,natural,A,image,yes,natūralus,,,,,pending,,LT proposed — verify
+A2-0549,P-F,vocabulary expansion,A2,Adjectives,artificial,A,image,yes,dirbtinis,,,,,pending,,LT proposed — verify
+A2-0550,P-F,vocabulary expansion,A2,Adjectives,public,A,image,yes,viešas,,,,,pending,,LT proposed — verify
+A2-0551,P-F,vocabulary expansion,A2,Adjectives,private,A,image,yes,privatus,,,,,pending,,LT proposed — verify
+A2-0552,P-F,vocabulary expansion,A2,Adjectives,local,A,image,yes,vietinis,,,,,pending,,LT proposed — verify
+A2-0553,P-F,vocabulary expansion,A2,Adjectives,foreign,A,image,yes,užsienio,,,,,pending,,LT proposed — verify
+A2-0554,P-F,vocabulary expansion,A2,Adjectives,national,A,image,yes,nacionalinis,,,,,pending,,LT proposed — verify
+A2-0555,P-F,vocabulary expansion,A2,Adjectives,main,A,image,yes,pagrindinis,,,,,pending,,LT proposed — verify
+A2-0556,P-F,vocabulary expansion,A2,Adjectives,special,A,image,yes,ypatingas,,,,,pending,,LT proposed — verify
+A2-0557,P-F,vocabulary expansion,A2,Adjectives,usual,A,image,yes,įprastas,,,,,pending,,LT proposed — verify
+A2-0558,P-F,vocabulary expansion,A2,Adjectives,strange,A,image,yes,keistas,,,,,pending,,LT proposed — verify
+A2-0559,P-F,vocabulary expansion,A1,Adjectives,comfortable,A,image,yes,patogus,,,,,pending,,LT proposed — verify
+A2-0560,P-F,vocabulary expansion,A2,Adjectives,uncomfortable,A,image,yes,nepatogus,,,,,pending,,LT proposed — verify
+A2-0561,P-F,vocabulary expansion,A1,Adjectives,quiet (calm),A,image,yes,tylus (ramus),,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0562,P-F,vocabulary expansion,A2,Adjectives,crowded,A,image,yes,perpildytas,,,,,pending,,LT proposed — verify
+A2-0563,P-F,vocabulary expansion,A1,Adjectives,cheap (inexpensive),A,image,yes,nebrangus,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0564,P-F,vocabulary expansion,A1,Adjectives,delicious,A,image,yes,skanus,,,,,pending,,LT proposed — verify
+A2-0565,P-F,vocabulary expansion,A2,Adjectives,tasteless,A,image,yes,neskanus,,,,,pending,,LT proposed — verify
+A2-0566,P-F,vocabulary expansion,A1,Adjectives,fresh,A,image,yes,šviežias,,,,,pending,,LT proposed — verify
+A2-0567,P-F,vocabulary expansion,A2,Adjectives,stale,A,image,yes,pasenęs,,,,,pending,,LT proposed — verify
+A2-0568,P-F,vocabulary expansion,A1,Adjectives,sweet,A,image,yes,saldus,,,,,pending,,LT proposed — verify
+A2-0569,P-F,vocabulary expansion,A1,Adjectives,sour,A,image,yes,rūgštus,,,,,pending,,LT proposed — verify
+A2-0570,P-F,vocabulary expansion,A1,Adjectives,salty,A,image,yes,sūrus,,,,,pending,,LT proposed — verify
+A2-0571,P-F,vocabulary expansion,A2,Adjectives,bitter,A,image,yes,kartus,,,,,pending,,LT proposed — verify
+A2-0572,P-F,vocabulary expansion,A2,Adjectives,spicy,A,image,yes,aštrus,,,,,pending,,LT proposed — verify
+A2-0573,P-F,vocabulary expansion,A1,People,man,N,image,yes,vyras,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0574,P-F,vocabulary expansion,A1,People,woman,N,image,yes,moteris,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0575,P-F,vocabulary expansion,A1,People,boy,N,image,yes,berniukas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0576,P-F,vocabulary expansion,A1,People,girl,N,image,yes,mergaitė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0577,P-F,vocabulary expansion,A1,People,baby,N,image,yes,kūdikis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0578,P-F,vocabulary expansion,A2,People,teenager,N,image,yes,paauglys,,,,,pending,,LT proposed — verify
+A2-0579,P-F,vocabulary expansion,A1,People,grandmother,N,image,yes,močiutė,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0580,P-F,vocabulary expansion,A1,People,grandfather,N,image,yes,senelis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0581,P-F,vocabulary expansion,A1,People,aunt,N,image,yes,teta,,,,,pending,,LT proposed — verify
+A2-0582,P-F,vocabulary expansion,A1,People,uncle,N,image,yes,dėdė,,,,,pending,,LT proposed — verify
+A2-0583,P-F,vocabulary expansion,A2,People,cousin,N,image,yes,pusbrolis,,,,,pending,,LT proposed — verify
+A2-0584,P-F,vocabulary expansion,A2,People,nephew,N,image,yes,sūnėnas,,,,,pending,,LT proposed — verify
+A2-0585,P-F,vocabulary expansion,A2,People,niece,N,image,yes,dukterėčia,,,,,pending,,LT proposed — verify
+A2-0586,P-F,vocabulary expansion,A1,People,husband,N,image,yes,vyras (sutuoktinis),,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0587,P-F,vocabulary expansion,A1,People,wife,N,image,yes,žmona,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0588,P-F,vocabulary expansion,A2,People,relative,N,image,yes,giminaitis,,,,,pending,,LT proposed — verify
+A2-0589,P-F,vocabulary expansion,A1,People,guest,N,image,yes,svečias,,,,,pending,,LT proposed — verify
+A2-0590,P-F,vocabulary expansion,A2,People,stranger,N,image,yes,nepažįstamasis,,,,,pending,,LT proposed — verify
+A2-0591,P-F,vocabulary expansion,A2,People,neighbourhood,N,image,yes,rajonas,,,,,pending,,LT proposed — verify
+A2-0592,P-F,vocabulary expansion,A2,People,population,N,image,yes,gyventojai,,,,,pending,,LT proposed — verify
+A2-0593,P-F,vocabulary expansion,A1,People,group,N,image,yes,grupė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0594,P-F,vocabulary expansion,A2,People,member,N,image,yes,narys,,,,,pending,,LT proposed — verify
+A2-0595,P-F,vocabulary expansion,A2,People,couple,N,image,yes,pora,,,,,pending,,LT proposed — verify
+A2-0596,P-F,vocabulary expansion,A1,Body,face,N,image,yes,veidas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0597,P-F,vocabulary expansion,A2,Body,hair (single),N,image,yes,plaukas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0598,P-F,vocabulary expansion,A1,Body,tooth,N,image,yes,dantis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0599,P-F,vocabulary expansion,A2,Body,tongue,N,image,yes,liežuvis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0600,P-F,vocabulary expansion,A2,Body,throat,N,image,yes,gerklė,,,,,pending,,LT proposed — verify
+A2-0601,P-F,vocabulary expansion,A2,Body,chest,N,image,yes,krūtinė,,,,,pending,,LT proposed — verify
+A2-0602,P-F,vocabulary expansion,A1,Body,stomach,N,image,yes,pilvas,,,,,pending,,LT proposed — verify
+A2-0603,P-F,vocabulary expansion,A2,Body,elbow,N,image,yes,alkūnė,,,,,pending,,LT proposed — verify
+A2-0604,P-F,vocabulary expansion,A2,Body,wrist,N,image,yes,riešas,,,,,pending,,LT proposed — verify
+A2-0605,P-F,vocabulary expansion,A2,Body,ankle,N,image,yes,kulkšnis,,,,,pending,,LT proposed — verify
+A2-0606,P-F,vocabulary expansion,A2,Body,nail,N,image,yes,nagas,,,,,pending,,LT proposed — verify
+A2-0607,P-F,vocabulary expansion,A1,Body,blood,N,image,yes,kraujas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0608,P-F,vocabulary expansion,A2,Body,brain,N,image,yes,smegenys,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0609,P-F,vocabulary expansion,A2,Body,muscle,N,image,yes,raumuo,,,,,pending,,LT proposed — verify
+A2-0610,P-F,vocabulary expansion,A1,Body,voice,N,image,yes,balsas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0611,P-F,vocabulary expansion,A1,Home,"flat, apartment",N,image,yes,butas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0612,P-F,vocabulary expansion,A1,Home,floor (storey),N,image,yes,aukštas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0613,P-F,vocabulary expansion,A1,Home,stairs,N,image,yes,laiptai,,,,,pending,,LT proposed — verify
+A2-0614,P-F,vocabulary expansion,A1,Home,lift,N,image,yes,liftas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0615,P-F,vocabulary expansion,A2,Home,balcony,N,image,yes,balkonas,,,,,pending,,LT proposed — verify
+A2-0616,P-F,vocabulary expansion,A1,Home,garden,N,image,yes,sodas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0617,P-F,vocabulary expansion,A1,Home,yard,N,image,yes,kiemas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0618,P-F,vocabulary expansion,A2,Home,garage,N,image,yes,garažas,,,,,pending,,LT proposed — verify
+A2-0619,P-F,vocabulary expansion,A1,Home,roof,N,image,yes,stogas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0620,P-F,vocabulary expansion,A1,Home,wall,N,image,yes,siena,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0621,P-F,vocabulary expansion,A1,Home,ceiling,N,image,yes,lubos,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0622,P-F,vocabulary expansion,A1,Home,corner,N,image,yes,kampas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0623,P-F,vocabulary expansion,A1,Home,shelf,N,image,yes,lentyna,,,,,pending,,LT proposed — verify
+A2-0624,P-F,vocabulary expansion,A2,Home,drawer,N,image,yes,stalčius,,,,,pending,,LT proposed — verify
+A2-0625,P-F,vocabulary expansion,A1,Home,cupboard,N,image,yes,spinta,,,,,pending,,LT proposed — verify
+A2-0626,P-F,vocabulary expansion,A1,Home,mirror,N,image,yes,veidrodis,,,,,pending,,LT proposed — verify
+A2-0627,P-F,vocabulary expansion,A2,Home,curtain,N,image,yes,užuolaida,,,,,pending,,LT proposed — verify
+A2-0628,P-F,vocabulary expansion,A2,Home,carpet,N,image,yes,kilimas,,,,,pending,,LT proposed — verify
+A2-0629,P-F,vocabulary expansion,A1,Home,blanket,N,image,yes,antklodė,,,,,pending,,LT proposed — verify
+A2-0630,P-F,vocabulary expansion,A1,Home,pillow,N,image,yes,pagalvė,,,,,pending,,LT proposed — verify
+A2-0631,P-F,vocabulary expansion,A1,Home,towel,N,image,yes,rankšluostis,,,,,pending,,LT proposed — verify
+A2-0632,P-F,vocabulary expansion,A1,Home,soap,N,image,yes,muilas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0633,P-F,vocabulary expansion,A1,Home,toothbrush,N,image,yes,dantų šepetėlis,,,,,pending,,LT proposed — verify
+A2-0634,P-F,vocabulary expansion,A2,Home,comb,N,image,yes,šukos,,,,,pending,,LT proposed — verify
+A2-0635,P-F,vocabulary expansion,A1,Home,scissors,N,image,yes,žirklės,,,,,pending,,LT proposed — verify
+A2-0636,P-F,vocabulary expansion,A2,Home,needle,N,image,yes,adata,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0637,P-F,vocabulary expansion,A2,Home,rope,N,image,yes,virvė,,,,,pending,,LT proposed — verify
+A2-0638,P-F,vocabulary expansion,A2,Home,candle,N,image,yes,žvakė,,,,,pending,,LT proposed — verify
+A2-0639,P-F,vocabulary expansion,A2,Home,battery (cell),N,image,yes,elementas,,,,,pending,,LT proposed — verify
+A2-0640,P-F,vocabulary expansion,A2,Home,bulb,N,image,yes,lemputė,,,,,pending,,LT proposed — verify
+A2-0641,P-F,vocabulary expansion,A1,Home,bin,N,image,yes,šiukšliadėžė,,,,,pending,,LT proposed — verify
+A2-0642,P-F,vocabulary expansion,A2,Home,bucket,N,image,yes,kibiras,,,,,pending,,LT proposed — verify
+A2-0643,P-F,vocabulary expansion,A2,Home,broom,N,image,yes,šluota,,,,,pending,,LT proposed — verify
+A2-0644,P-F,vocabulary expansion,A1,Location,village,N,image,yes,kaimas,,,,,pending,,LT proposed — verify
+A2-0645,P-F,vocabulary expansion,A1,Location,town square,N,image,yes,aikštė,,,,,pending,,LT proposed — verify
+A2-0646,P-F,vocabulary expansion,A1,Location,bridge (city),N,image,yes,tiltas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0647,P-F,vocabulary expansion,A2,Location,corner shop,N,image,yes,krautuvėlė,,,,,pending,,LT proposed — verify
+A2-0648,P-F,vocabulary expansion,A1,Location,market,N,image,yes,turgus,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0649,P-F,vocabulary expansion,A1,Location,post office,N,image,yes,paštas,,,,,pending,,LT proposed — verify
+A2-0650,P-F,vocabulary expansion,A2,Location,police station,N,image,yes,policijos nuovada,,,,,pending,,LT proposed — verify
+A2-0651,P-F,vocabulary expansion,A2,Location,fire station,N,image,yes,gaisrinė,,,,,pending,,LT proposed — verify
+A2-0652,P-F,vocabulary expansion,A1,Location,museum,N,image,yes,muziejus,,,,,pending,,LT proposed — verify
+A2-0653,P-F,vocabulary expansion,A1,Location,cinema,N,image,yes,kinas,,,,,pending,,LT proposed — verify
+A2-0654,P-F,vocabulary expansion,A1,Location,stadium,N,image,yes,stadionas,,,,,pending,,LT proposed — verify
+A2-0655,P-F,vocabulary expansion,A1,Location,swimming pool,N,image,yes,baseinas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0656,P-F,vocabulary expansion,A1,Location,gym,N,image,yes,sporto salė,,,,,pending,,LT proposed — verify
+A2-0657,P-F,vocabulary expansion,A1,Location,church (building),N,image,yes,bažnyčia,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0658,P-F,vocabulary expansion,A2,Location,cemetery,N,image,yes,kapinės,,,,,pending,,LT proposed — verify
+A2-0659,P-F,vocabulary expansion,A1,Location,bus stop,N,image,yes,stotelė,,,,,pending,,LT proposed — verify
+A2-0660,P-F,vocabulary expansion,A1,Location,crossing,N,image,yes,perėja,,,,,pending,,LT proposed — verify
+A2-0661,P-F,vocabulary expansion,A2,Location,pavement,N,image,yes,šaligatvis,,,,,pending,,LT proposed — verify
+A2-0662,P-F,vocabulary expansion,A1,Location,traffic light,N,image,yes,šviesoforas,,,,,pending,,LT proposed — verify
+A2-0663,P-F,vocabulary expansion,A1,Location,sign (road),N,image,yes,kelio ženklas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0664,P-F,vocabulary expansion,A1,Location,petrol station,N,image,yes,degalinė,,,,,pending,,LT proposed — verify
+A2-0665,P-F,vocabulary expansion,A2,Location,car park,N,image,yes,stovėjimo aikštelė,,,,,pending,,LT proposed — verify
+A2-0666,P-F,vocabulary expansion,A2,Location,embassy,N,image,yes,ambasada,,,,,pending,,LT proposed — verify
+A2-0667,P-F,vocabulary expansion,A2,Location,bank branch,N,image,yes,banko skyrius,,,,,pending,,LT proposed — verify
+A2-0668,P-F,vocabulary expansion,A1,Food,meal,N,image,yes,patiekalas,,,,,pending,,LT proposed — verify
+A2-0669,P-F,vocabulary expansion,A1,Food,soup,N,image,yes,sriuba,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0670,P-F,vocabulary expansion,A1,Food,salad,N,image,yes,salotos,,,,,pending,,LT proposed — verify
+A2-0671,P-F,vocabulary expansion,A1,Food,sandwich,N,image,yes,sumuštinis,,,,,pending,,LT proposed — verify
+A2-0672,P-F,vocabulary expansion,A2,Food,porridge,N,image,yes,košė,,,,,pending,,LT proposed — verify
+A2-0673,P-F,vocabulary expansion,A1,Food,pancake,N,image,yes,blynas,,,,,pending,,LT proposed — verify
+A2-0674,P-F,vocabulary expansion,A1,Food,dumpling,N,image,yes,koldūnas,,,,,pending,,LT proposed — verify
+A2-0675,P-F,vocabulary expansion,A1,Food,sausage,N,image,yes,dešra,,,,,pending,,LT proposed — verify
+A2-0676,P-F,vocabulary expansion,A2,Food,ham,N,image,yes,kumpis,,,,,pending,,LT proposed — verify
+A2-0677,P-F,vocabulary expansion,A2,Food,bacon,N,image,yes,šoninė,,,,,pending,,LT proposed — verify
+A2-0678,P-F,vocabulary expansion,A1,Food,egg,N,image,yes,kiaušinis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0679,P-F,vocabulary expansion,A1,Food,butter,N,image,yes,sviestas,,,,,pending,,LT proposed — verify
+A2-0680,P-F,vocabulary expansion,A2,Food,flour,N,image,yes,miltai,,,,,pending,,LT proposed — verify
+A2-0681,P-F,vocabulary expansion,A1,Food,sugar,N,image,yes,cukrus,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0682,P-F,vocabulary expansion,A1,Food,salt,N,image,yes,druska,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0683,P-F,vocabulary expansion,A2,Food,pepper,N,image,yes,pipirai,,,,,pending,,LT proposed — verify
+A2-0684,P-F,vocabulary expansion,A1,Food,honey,N,image,yes,medus,,,,,pending,,LT proposed — verify
+A2-0685,P-F,vocabulary expansion,A2,Food,jam,N,image,yes,uogienė,,,,,pending,,LT proposed — verify
+A2-0686,P-F,vocabulary expansion,A1,Food,yoghurt,N,image,yes,jogurtas,,,,,pending,,LT proposed — verify
+A2-0687,P-F,vocabulary expansion,A1,Food,cheese,N,image,yes,sūris,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0688,P-F,vocabulary expansion,A2,Food,cream,N,image,yes,grietinėlė,,,,,pending,,LT proposed — verify
+A2-0689,P-F,vocabulary expansion,A1,Food,juice,N,image,yes,sultys,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0690,P-F,vocabulary expansion,A1,Food,tea,N,image,yes,arbata,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0691,P-F,vocabulary expansion,A1,Food,beer,N,image,yes,alus,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0692,P-F,vocabulary expansion,A1,Food,wine,N,image,yes,vynas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0693,P-F,vocabulary expansion,A1,Food,mushroom,N,image,yes,grybas,,,,,pending,,LT proposed — verify
+A2-0694,P-F,vocabulary expansion,A1,Food,berry,N,image,yes,uoga,,,,,pending,,LT proposed — verify
+A2-0695,P-F,vocabulary expansion,A2,Food,nut,N,image,yes,riešutas,,,,,pending,,LT proposed — verify
+A2-0696,P-F,vocabulary expansion,A2,Food,garlic,N,image,yes,česnakas,,,,,pending,,LT proposed — verify
+A2-0697,P-F,vocabulary expansion,A1,Food,onion,N,image,yes,svogūnas,,,,,pending,,LT proposed — verify
+A2-0698,P-F,vocabulary expansion,A1,Food,cabbage,N,image,yes,kopūstas,,,,,pending,,LT proposed — verify
+A2-0699,P-F,vocabulary expansion,A2,Food,beetroot,N,image,yes,burokėlis,,,,,pending,,LT proposed — verify
+A2-0700,P-F,vocabulary expansion,A1,Food,cucumber,N,image,yes,agurkas,,,,,pending,,LT proposed — verify
+A2-0701,P-F,vocabulary expansion,A1,Food,tomato,N,image,yes,pomidoras,,,,,pending,,LT proposed — verify
+A2-0702,P-F,vocabulary expansion,A1,Food,pear,N,image,yes,kriaušė,,,,,pending,,LT proposed — verify
+A2-0703,P-F,vocabulary expansion,A2,Food,plum,N,image,yes,slyva,,,,,pending,,LT proposed — verify
+A2-0704,P-F,vocabulary expansion,A1,Food,cherry,N,image,yes,vyšnia,,,,,pending,,LT proposed — verify
+A2-0705,P-F,vocabulary expansion,A1,Food,strawberry,N,image,yes,braškė,,,,,pending,,LT proposed — verify
+A2-0706,P-F,vocabulary expansion,A1,Food,grape,N,image,yes,vynuogė,,,,,pending,,LT proposed — verify
+A2-0707,P-F,vocabulary expansion,A1,Clothing,jumper,N,image,yes,megztinis,,,,,pending,,LT proposed — verify
+A2-0708,P-F,vocabulary expansion,A1,Clothing,jacket,N,image,yes,striukė,,,,,pending,,LT proposed — verify
+A2-0709,P-F,vocabulary expansion,A1,Clothing,scarf,N,image,yes,šalikas,,,,,pending,,LT proposed — verify
+A2-0710,P-F,vocabulary expansion,A1,Clothing,glove,N,image,yes,pirštinė,,,,,pending,,LT proposed — verify
+A2-0711,P-F,vocabulary expansion,A1,Clothing,hat (winter),N,image,yes,kepurė (žieminė),,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0712,P-F,vocabulary expansion,A1,Clothing,belt,N,image,yes,diržas,,,,,pending,,LT proposed — verify
+A2-0713,P-F,vocabulary expansion,A1,Clothing,sock,N,image,yes,kojinė,,,,,pending,,LT proposed — verify
+A2-0714,P-F,vocabulary expansion,A1,Clothing,boot,N,image,yes,aulinis batas,,,,,pending,,LT proposed — verify
+A2-0715,P-F,vocabulary expansion,A2,Clothing,sandal,N,image,yes,basutė,,,,,pending,,LT proposed — verify
+A2-0716,P-F,vocabulary expansion,A2,Clothing,button,N,image,yes,saga,,,,,pending,,LT proposed — verify
+A2-0717,P-F,vocabulary expansion,A2,Clothing,zip,N,image,yes,užtrauktukas,,,,,pending,,LT proposed — verify
+A2-0718,P-F,vocabulary expansion,A1,Clothing,umbrella,N,image,yes,skėtis,,,,,pending,,LT proposed — verify
+A2-0719,P-F,vocabulary expansion,A1,Clothing,glasses,N,image,yes,akiniai,,,,,pending,,LT proposed — verify
+A2-0720,P-F,vocabulary expansion,A1,Clothing,ring,N,image,yes,žiedas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0721,P-F,vocabulary expansion,A1,Clothing,watch (wrist),N,image,yes,laikrodis (rankinis),,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0722,P-F,vocabulary expansion,A1,Transportation,tram,N,image,yes,tramvajus,,,,,pending,,LT proposed — verify
+A2-0723,P-F,vocabulary expansion,A1,Transportation,trolleybus,N,image,yes,troleibusas,,,,,pending,,LT proposed — verify
+A2-0724,P-F,vocabulary expansion,A1,Transportation,taxi,N,image,yes,taksi,,,,,pending,,LT proposed — verify
+A2-0725,P-F,vocabulary expansion,A1,Transportation,motorbike,N,image,yes,motociklas,,,,,pending,,LT proposed — verify
+A2-0726,P-F,vocabulary expansion,A1,Transportation,lorry,N,image,yes,sunkvežimis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0727,P-F,vocabulary expansion,A1,Transportation,wheel,N,image,yes,ratas,,,,,pending,,LT proposed — verify
+A2-0728,P-F,vocabulary expansion,A1,Transportation,seat,N,image,yes,sėdynė,,,,,pending,,LT proposed — verify
+A2-0729,P-F,vocabulary expansion,A1,Transportation,driver,N,image,yes,vairuotojas,,,,,pending,,LT proposed — verify
+A2-0730,P-F,vocabulary expansion,A1,Transportation,passenger,N,image,yes,keleivis,,,,,pending,,LT proposed — verify
+A2-0731,P-F,vocabulary expansion,A2,Transportation,traffic,N,image,yes,eismas,,,,,pending,,LT proposed — verify
+A2-0732,P-F,vocabulary expansion,A2,Transportation,accident,N,image,yes,avarija,,,,,pending,,LT proposed — verify
+A2-0733,P-F,vocabulary expansion,A2,Transportation,speed,N,image,yes,greitis,,,,,pending,,LT proposed — verify
+A2-0734,P-F,vocabulary expansion,A2,Transportation,fuel,N,image,yes,kuras,,,,,pending,,LT proposed — verify
+A2-0735,P-F,vocabulary expansion,A2,Transportation,road sign,N,image,yes,nuoroda,,,,,pending,,LT proposed — verify
+A2-0736,P-F,vocabulary expansion,A1,Nature,forest,N,image,yes,miškas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0737,P-F,vocabulary expansion,A1,Nature,field,N,image,yes,laukas,,,,,pending,,LT proposed — verify
+A2-0738,P-F,vocabulary expansion,A2,Nature,meadow,N,image,yes,pieva,,,,,pending,,LT proposed — verify
+A2-0739,P-F,vocabulary expansion,A1,Nature,hill,N,image,yes,kalva,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0740,P-F,vocabulary expansion,A1,Nature,mountain,N,image,yes,kalnas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0741,P-F,vocabulary expansion,A1,Nature,island,N,image,yes,sala,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0742,P-F,vocabulary expansion,A2,Nature,coast,N,image,yes,pakrantė,,,,,pending,,LT proposed — verify
+A2-0743,P-F,vocabulary expansion,A2,Nature,river bank,N,image,yes,krantas,,,,,pending,,LT proposed — verify
+A2-0744,P-F,vocabulary expansion,A2,Nature,swamp,N,image,yes,pelkė,,,,,pending,,LT proposed — verify
+A2-0745,P-F,vocabulary expansion,A1,Nature,path,N,image,yes,takas,,,,,pending,,LT proposed — verify
+A2-0746,P-F,vocabulary expansion,A1,Nature,branch,N,image,yes,šaka,,,,,pending,,LT proposed — verify
+A2-0747,P-F,vocabulary expansion,A1,Nature,root,N,image,yes,šaknis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0748,P-F,vocabulary expansion,A1,Nature,seed,N,image,yes,sėkla,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0749,P-F,vocabulary expansion,A1,Nature,grass,N,image,yes,žolė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0750,P-F,vocabulary expansion,A1,Nature,bush,N,image,yes,krūmas,,,,,pending,,LT proposed — verify
+A2-0751,P-F,vocabulary expansion,A2,Nature,oak,N,image,yes,ąžuolas,,,,,pending,,LT proposed — verify
+A2-0752,P-F,vocabulary expansion,A2,Nature,pine,N,image,yes,pušis,,,,,pending,,LT proposed — verify
+A2-0753,P-F,vocabulary expansion,A2,Nature,birch,N,image,yes,beržas,,,,,pending,,LT proposed — verify
+A2-0754,P-F,vocabulary expansion,A1,Nature,cow,N,image,yes,karvė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0755,P-F,vocabulary expansion,A1,Nature,sheep,N,image,yes,avis,,,,,pending,,LT proposed — verify
+A2-0756,P-F,vocabulary expansion,A1,Nature,goat,N,image,yes,ožka,,,,,pending,,LT proposed — verify
+A2-0757,P-F,vocabulary expansion,A1,Nature,chicken,N,image,yes,višta,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0758,P-F,vocabulary expansion,A1,Nature,duck,N,image,yes,antis,,,,,pending,,LT proposed — verify
+A2-0759,P-F,vocabulary expansion,A2,Nature,goose,N,image,yes,žąsis,,,,,pending,,LT proposed — verify
+A2-0760,P-F,vocabulary expansion,A1,Nature,rabbit,N,image,yes,triušis,,,,,pending,,LT proposed — verify
+A2-0761,P-F,vocabulary expansion,A1,Nature,fox,N,image,yes,lapė,,,,,pending,,LT proposed — verify
+A2-0762,P-F,vocabulary expansion,A1,Nature,wolf,N,image,yes,vilkas,,,,,pending,,LT proposed — verify
+A2-0763,P-F,vocabulary expansion,A1,Nature,bear,N,image,yes,lokys,,,,,pending,,LT proposed — verify
+A2-0764,P-F,vocabulary expansion,A2,Nature,deer,N,image,yes,elnias,,,,,pending,,LT proposed — verify
+A2-0765,P-F,vocabulary expansion,A1,Nature,squirrel,N,image,yes,voverė,,,,,pending,,LT proposed — verify
+A2-0766,P-F,vocabulary expansion,A1,Nature,mouse,N,image,yes,pelė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0767,P-F,vocabulary expansion,A1,Nature,frog,N,image,yes,varlė,,,,,pending,,LT proposed — verify
+A2-0768,P-F,vocabulary expansion,A1,Nature,snake,N,image,yes,gyvatė,,,,,pending,,LT proposed — verify
+A2-0769,P-F,vocabulary expansion,A1,Nature,insect,N,image,yes,vabzdys,,,,,pending,,LT proposed — verify
+A2-0770,P-F,vocabulary expansion,A1,Nature,bee,N,image,yes,bitė,,,,,pending,,LT proposed — verify
+A2-0771,P-F,vocabulary expansion,A1,Nature,butterfly,N,image,yes,drugelis,,,,,pending,,LT proposed — verify
+A2-0772,P-F,vocabulary expansion,A1,Nature,spider,N,image,yes,voras,,,,,pending,,LT proposed — verify
+A2-0773,P-F,vocabulary expansion,A2,Nature,ant,N,image,yes,skruzdėlė,,,,,pending,,LT proposed — verify
+A2-0774,P-F,vocabulary expansion,A2,Nature,stork,N,image,yes,gandras,,,,,pending,,LT proposed — verify
+A2-0775,P-F,vocabulary expansion,A2,Nature,owl,N,image,yes,pelėda,,,,,pending,,LT proposed — verify
+A2-0776,P-F,vocabulary expansion,A2,Work & culture,profession,N,image,yes,profesija,,,,,pending,,LT proposed — verify
+A2-0777,P-F,vocabulary expansion,A2,Work & culture,employer,N,image,yes,darbdavys,,,,,pending,,LT proposed — verify
+A2-0778,P-F,vocabulary expansion,A2,Work & culture,employee,N,image,yes,darbuotojas,,,,,pending,,LT proposed — verify
+A2-0779,P-F,vocabulary expansion,A1,Work & culture,customer,N,image,yes,klientas,,,,,pending,,LT proposed — verify
+A2-0780,P-F,vocabulary expansion,A2,Work & culture,manager,N,image,yes,vadovas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0781,P-F,vocabulary expansion,A2,Work & culture,secretary,N,image,yes,sekretorė,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0782,P-F,vocabulary expansion,A2,Work & culture,engineer,N,image,yes,inžinierius,,,,,pending,,LT proposed — verify
+A2-0783,P-F,vocabulary expansion,A2,Work & culture,lawyer,N,image,yes,teisininkas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0784,P-F,vocabulary expansion,A2,Work & culture,nurse (male),N,image,yes,slaugytojas,,,,,pending,,LT proposed — verify
+A2-0785,P-F,vocabulary expansion,A1,Work & culture,cook (chef),N,image,yes,virėjas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0786,P-F,vocabulary expansion,A1,Work & culture,waiter,N,image,yes,padavėjas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0787,P-F,vocabulary expansion,A1,Work & culture,driver (job),N,image,yes,vairuotojas (profesija),,,,,review-duplicate,dup within queue (A2-0729),LT proposed — verify
+A2-0788,P-F,vocabulary expansion,A1,Work & culture,farmer,N,image,yes,ūkininkas,,,,,pending,,LT proposed — verify
+A2-0789,P-F,vocabulary expansion,A1,Work & culture,builder,N,image,yes,statybininkas,,,,,pending,,LT proposed — verify
+A2-0790,P-F,vocabulary expansion,A1,Work & culture,artist,N,image,yes,dailininkas,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0791,P-F,vocabulary expansion,A1,Work & culture,musician,N,image,yes,muzikantas,,,,,pending,,LT proposed — verify
+A2-0792,P-F,vocabulary expansion,A1,Work & culture,writer,N,image,yes,rašytojas,,,,,pending,,LT proposed — verify
+A2-0793,P-F,vocabulary expansion,A2,Work & culture,journalist,N,image,yes,žurnalistas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0794,P-F,vocabulary expansion,A2,Work & culture,scientist,N,image,yes,mokslininkas,,,,,pending,,LT proposed — verify
+A2-0795,P-F,vocabulary expansion,A1,Work & culture,classroom,N,image,yes,klasė,,,,,pending,,LT proposed — verify
+A2-0796,P-F,vocabulary expansion,A1,Work & culture,blackboard,N,image,yes,lenta,,,,,pending,,LT proposed — verify
+A2-0797,P-F,vocabulary expansion,A1,Work & culture,notebook,N,image,yes,sąsiuvinis,,,,,pending,,LT proposed — verify
+A2-0798,P-F,vocabulary expansion,A1,Work & culture,pencil,N,image,yes,pieštukas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0799,P-F,vocabulary expansion,A2,Work & culture,eraser,N,image,yes,trintukas,,,,,pending,,LT proposed — verify
+A2-0800,P-F,vocabulary expansion,A1,Work & culture,ruler,N,image,yes,liniuotė,,,,,pending,,LT proposed — verify
+A2-0801,P-F,vocabulary expansion,A1,Work & culture,dictionary,N,image,yes,žodynas,,,,,pending,,LT proposed — verify
+A2-0802,P-F,vocabulary expansion,A2,Work & culture,library card,N,image,yes,skaitytojo bilietas,,,,,pending,,LT proposed — verify
+A2-0803,P-F,vocabulary expansion,A1,Work & culture,question,N,image,yes,klausimas,,,,,pending,,LT proposed — verify
+A2-0804,P-F,vocabulary expansion,A1,Work & culture,answer,N,image,yes,atsakymas,,,,,pending,,LT proposed — verify
+A2-0805,P-F,vocabulary expansion,A1,Work & culture,mistake,N,image,yes,klaida,,,,,pending,,LT proposed — verify
+A2-0806,P-F,vocabulary expansion,A1,Work & culture,word,N,image,yes,žodis,,,,,pending,,LT proposed — verify
+A2-0807,P-F,vocabulary expansion,A1,Work & culture,sentence,N,image,yes,sakinys,,,,,pending,,LT proposed — verify
+A2-0808,P-F,vocabulary expansion,A1,Work & culture,story,N,image,yes,istorija,,,,,pending,,LT proposed — verify
+A2-0809,P-F,vocabulary expansion,A1,Work & culture,song,N,image,yes,daina,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0810,P-F,vocabulary expansion,A1,Work & culture,film,N,image,yes,filmas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0811,P-F,vocabulary expansion,A2,Work & culture,play (theatre),N,image,yes,spektaklis,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0812,P-F,vocabulary expansion,A1,Work & culture,concert,N,image,yes,koncertas,,,,,pending,,LT proposed — verify
+A2-0813,P-F,vocabulary expansion,A2,Work & culture,exhibition,N,image,yes,paroda,,,,,pending,,LT proposed — verify
+A2-0814,P-F,vocabulary expansion,A1,Work & culture,photograph,N,image,yes,nuotrauka,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0815,P-F,vocabulary expansion,A1,Work & culture,painting,N,image,yes,paveikslas,,,,,pending,,LT proposed — verify
+A2-0816,P-F,vocabulary expansion,A1,Work & culture,hobby,N,image,yes,pomėgis,,,,,pending,,LT proposed — verify
+A2-0817,P-F,vocabulary expansion,A1,Work & culture,game,N,image,yes,žaidimas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0818,P-F,vocabulary expansion,A1,Work & culture,sport,N,image,yes,sportas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0819,P-F,vocabulary expansion,A2,Work & culture,team sport,N,image,yes,komandinis sportas,,,,,pending,,LT proposed — verify
+A2-0820,P-F,vocabulary expansion,A1,Work & culture,holiday (vacation),N,image,yes,atostogos,,,,,pending,,LT proposed — verify
+A2-0821,P-F,vocabulary expansion,A1,Work & culture,festival,N,image,yes,šventė,,,,,pending,,LT proposed — verify
+A2-0822,P-F,vocabulary expansion,A1,Work & culture,gift,N,image,yes,dovana,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0823,P-F,vocabulary expansion,A1,Work & culture,party,N,image,yes,vakarėlis,,,,,pending,,LT proposed — verify
+A2-0824,P-F,vocabulary expansion,A1,Abstract,beginning,N,image,yes,pradžia,,,,,pending,,LT proposed — verify
+A2-0825,P-F,vocabulary expansion,A1,Abstract,end,N,image,yes,pabaiga,,,,,pending,,LT proposed — verify
+A2-0826,P-F,vocabulary expansion,A2,Abstract,middle,N,image,yes,vidurys,,,,,pending,,LT proposed — verify
+A2-0827,P-F,vocabulary expansion,A2,Abstract,moment,N,image,yes,akimirka,,,,,pending,,LT proposed — verify
+A2-0828,P-F,vocabulary expansion,A2,Abstract,period,N,image,yes,laikotarpis,,,,,pending,,LT proposed — verify
+A2-0829,P-F,vocabulary expansion,A2,Abstract,century,N,image,yes,amžius (šimtmetis),,,,,review-duplicate,dup within queue (A2-0080),LT proposed — verify
+A2-0830,P-F,vocabulary expansion,A1,Abstract,date (calendar),N,image,yes,data,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0831,P-F,vocabulary expansion,A1,Abstract,birthday,N,image,yes,gimtadienis,,,,,pending,,LT proposed — verify
+A2-0832,P-F,vocabulary expansion,A1,Abstract,appointment (meeting),N,image,yes,susitikimas,,,,,review-duplicate,dup within queue (A2-0243),LT proposed — verify
+A2-0833,P-F,vocabulary expansion,A1,Abstract,plan,N,image,yes,planas,,,,,pending,,LT proposed — verify
+A2-0834,P-F,vocabulary expansion,A1,Abstract,idea,N,image,yes,idėja,,,,,pending,,LT proposed — verify
+A2-0835,P-F,vocabulary expansion,A2,Abstract,opinion,N,image,yes,nuomonė,,,,,pending,,LT proposed — verify
+A2-0836,P-F,vocabulary expansion,A2,Abstract,advice,N,image,yes,patarimas,,,,,pending,,LT proposed — verify
+A2-0837,P-F,vocabulary expansion,A2,Abstract,decision,N,image,yes,sprendimas,,,,,review-duplicate,dup within queue (A2-0342),LT proposed — verify
+A2-0838,P-F,vocabulary expansion,A2,Abstract,choice,N,image,yes,pasirinkimas,,,,,pending,,LT proposed — verify
+A2-0839,P-F,vocabulary expansion,A2,Abstract,chance,N,image,yes,proga,,,,,pending,,LT proposed — verify
+A2-0840,P-F,vocabulary expansion,A2,Abstract,purpose,N,image,yes,tikslas,,,,,pending,,LT proposed — verify
+A2-0841,P-F,vocabulary expansion,A2,Abstract,result,N,image,yes,rezultatas,,,,,pending,,LT proposed — verify
+A2-0842,P-F,vocabulary expansion,A2,Abstract,change (noun),N,image,yes,pokytis,,,,,pending,,LT proposed — verify
+A2-0843,P-F,vocabulary expansion,A2,Abstract,order (sequence),N,image,yes,tvarka,,,,,pending,,LT proposed — verify
+A2-0844,P-F,vocabulary expansion,A1,Abstract,part,N,image,yes,dalis,,,,,pending,,LT proposed — verify
+A2-0845,P-F,vocabulary expansion,A2,Abstract,piece (bit),N,image,yes,gabalėlis,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0846,P-F,vocabulary expansion,A2,Abstract,"kind, type",N,image,yes,rūšis,,,,,pending,,LT proposed — verify
+A2-0847,P-F,vocabulary expansion,A2,Abstract,"way, method",N,image,yes,būdas,,,,,pending,,LT proposed — verify
+A2-0848,P-F,vocabulary expansion,A2,Abstract,truth,N,image,yes,tiesa,,,,,pending,,LT proposed — verify
+A2-0849,P-F,vocabulary expansion,A2,Abstract,lie (untruth),N,image,yes,melas,,,,,pending,,LT proposed — verify
+A2-0850,P-F,vocabulary expansion,A2,Abstract,secret,N,image,yes,paslaptis,,,,,pending,,LT proposed — verify
+A2-0851,P-F,vocabulary expansion,A2,Abstract,dream,N,image,yes,svajonė,,,,,review-duplicate,EN already in deck,LT proposed — verify
+A2-0852,P-F,vocabulary expansion,A2,Abstract,memory,N,image,yes,atmintis,,,,,pending,,LT proposed — verify
+A2-0853,P-F,vocabulary expansion,A2,Abstract,habit,N,image,yes,įprotis,,,,,pending,,LT proposed — verify
+A2-0854,P-F,vocabulary expansion,A1,Abstract,luck,N,image,yes,sėkmė,,,,,pending,,LT proposed — verify
+A2-0855,P-F,vocabulary expansion,A1,Abstract,danger,N,image,yes,pavojus,,,,,pending,,LT proposed — verify
+A2-0856,P-F,vocabulary expansion,A2,Abstract,safety,N,image,yes,saugumas,,,,,pending,,LT proposed — verify
+A2-0857,P-F,vocabulary expansion,A1,Abstract,help (noun),N,image,yes,pagalba,,,,,pending,,LT proposed — verify
+A2-0858,P-F,vocabulary expansion,A2,Abstract,service,N,image,yes,paslauga,,,,,pending,,LT proposed — verify
+A2-0859,P-F,vocabulary expansion,A1,Abstract,information,N,image,yes,informacija,,,,,pending,,LT proposed — verify
+A2-0860,P-F,vocabulary expansion,A2,Abstract,detail,N,image,yes,detalė,,,,,pending,,LT proposed — verify
+A2-0861,P-F,vocabulary expansion,A1,Abstract,list,N,image,yes,sąrašas,,,,,pending,,LT proposed — verify
+A2-0862,P-F,vocabulary expansion,A1,Abstract,number (figure),N,image,yes,skaičius,,,,,pending,,LT proposed — verify
+A2-0863,P-F,vocabulary expansion,A1,Abstract,half (portion),N,image,yes,pusė,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0864,P-F,vocabulary expansion,A1,Money & admin,euro,N,image,yes,euras,,,,,pending,,LT proposed — verify
+A2-0865,P-F,vocabulary expansion,A1,Money & admin,cent,N,image,yes,centas,,,,,pending,,LT proposed — verify
+A2-0866,P-F,vocabulary expansion,A1,Money & admin,coin,N,image,yes,moneta,,,,,pending,,LT proposed — verify
+A2-0867,P-F,vocabulary expansion,A1,Money & admin,banknote,N,image,yes,banknotas,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0868,P-F,vocabulary expansion,A2,Money & admin,bank account,N,image,yes,banko sąskaita,,,,,pending,,LT proposed — verify
+A2-0869,P-F,vocabulary expansion,A2,Money & admin,loan,N,image,yes,paskola,,,,,pending,,LT proposed — verify
+A2-0870,P-F,vocabulary expansion,A2,Money & admin,debt,N,image,yes,skola,,,,,pending,,LT proposed — verify
+A2-0871,P-F,vocabulary expansion,A2,Money & admin,salary payment,N,image,yes,atlyginimas,,,,,pending,,LT proposed — verify
+A2-0872,P-F,vocabulary expansion,A2,Money & admin,insurance,N,image,yes,draudimas,,,,,pending,,LT proposed — verify
+A2-0873,P-F,vocabulary expansion,A2,Money & admin,contract,N,image,yes,sutartis,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0874,P-F,vocabulary expansion,A1,Money & admin,document,N,image,yes,dokumentas,,,,,pending,,LT proposed — verify
+A2-0875,P-F,vocabulary expansion,A2,Money & admin,form (to fill),N,image,yes,anketa,,,,,pending,,LT proposed — verify
+A2-0876,P-F,vocabulary expansion,A2,Money & admin,signature,N,image,yes,parašas,,,,,pending,,LT proposed — verify
+A2-0877,P-F,vocabulary expansion,A2,Money & admin,permission,N,image,yes,leidimas,,,,,pending,,LT proposed — verify
+A2-0878,P-F,vocabulary expansion,A2,Money & admin,appointment (booking),N,image,yes,registracija,,,,,pending,,LT proposed — verify
+A2-0879,P-G,phrases & sentences,A1,Formulas,Yes / no,PHRASE,phrase,no,Taip / Ne,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0880,P-G,phrases & sentences,A1,Formulas,"Excuse me, please…",PHRASE,phrase,no,"Atsiprašau, prašau…",,,,,pending,,LT proposed — verify
+A2-0881,P-G,phrases & sentences,A1,Formulas,I'm sorry,PHRASE,phrase,no,Man gaila,,,,,pending,,LT proposed — verify
+A2-0882,P-G,phrases & sentences,A1,Formulas,No problem,PHRASE,phrase,no,Nieko tokio,,,,,pending,,LT proposed — verify
+A2-0883,P-G,phrases & sentences,A1,Formulas,Of course,PHRASE,phrase,no,Žinoma,,,,,pending,,LT proposed — verify
+A2-0884,P-G,phrases & sentences,A1,Formulas,Just a moment,PHRASE,phrase,no,Akimirką,,,,,pending,,LT proposed — verify
+A2-0885,P-G,phrases & sentences,A1,Formulas,Here you are,PHRASE,phrase,no,Prašom,,,,,pending,,LT proposed — verify
+A2-0886,P-G,phrases & sentences,A1,Formulas,Welcome!,PHRASE,phrase,no,Sveiki atvykę!,,,,,pending,,LT proposed — verify
+A2-0887,P-G,phrases & sentences,A1,Formulas,Good luck!,PHRASE,phrase,no,Sėkmės!,,,,,pending,,LT proposed — verify
+A2-0888,P-G,phrases & sentences,A1,Formulas,Cheers!,PHRASE,phrase,no,Į sveikatą!,,,,,pending,,LT proposed — verify
+A2-0889,P-G,phrases & sentences,A1,Formulas,Bon appétit,PHRASE,phrase,no,Skanaus,,,,,pending,,LT proposed — verify
+A2-0890,P-G,phrases & sentences,A1,Formulas,Happy birthday!,PHRASE,phrase,no,Su gimtadieniu!,,,,,pending,,LT proposed — verify
+A2-0891,P-G,phrases & sentences,A1,Formulas,Congratulations!,PHRASE,phrase,no,Sveikinu!,,,,,pending,,LT proposed — verify
+A2-0892,P-G,phrases & sentences,A1,Formulas,Get well soon,PHRASE,phrase,no,Pasveik greičiau,,,,,pending,,LT proposed — verify
+A2-0893,P-G,phrases & sentences,A1,Formulas,See you tomorrow,PHRASE,phrase,no,Iki rytojaus,,,,,pending,,LT proposed — verify
+A2-0894,P-G,phrases & sentences,A1,Formulas,Have a nice day,PHRASE,phrase,no,Geros dienos,,,,,pending,,LT proposed — verify
+A2-0895,P-G,phrases & sentences,A1,Formulas,Good luck on the trip,PHRASE,phrase,no,Geros kelionės,,,,,pending,,LT proposed — verify
+A2-0896,P-G,phrases & sentences,A1,Getting by,What is this?,PHRASE,phrase,no,Kas tai?,,,,,pending,,LT proposed — verify
+A2-0897,P-G,phrases & sentences,A1,Getting by,Who is that?,PHRASE,phrase,no,Kas tas žmogus?,,,,,pending,,LT proposed — verify
+A2-0898,P-G,phrases & sentences,A1,Getting by,Where is the toilet?,PHRASE,phrase,no,Kur yra tualetas?,,,,,pending,,LT proposed — verify
+A2-0899,P-G,phrases & sentences,A1,Getting by,How much is it?,PHRASE,phrase,no,Kiek tai kainuoja?,,,,,pending,,LT proposed — verify
+A2-0900,P-G,phrases & sentences,A1,Getting by,I don't speak Lithuanian,PHRASE,phrase,no,Nekalbu lietuviškai,,,,,pending,,LT proposed — verify
+A2-0901,P-G,phrases & sentences,A1,Getting by,A little,PHRASE,phrase,no,Truputį,,,,,pending,,LT proposed — verify
+A2-0902,P-G,phrases & sentences,A1,Getting by,Please repeat,PHRASE,phrase,no,"Pakartokite, prašau",,,,,pending,,LT proposed — verify
+A2-0903,P-G,phrases & sentences,A1,Getting by,"Write it down, please",PHRASE,phrase,no,"Užrašykite, prašau",,,,,pending,,LT proposed — verify
+A2-0904,P-G,phrases & sentences,A1,Getting by,What does it mean?,PHRASE,phrase,no,Ką tai reiškia?,,,,,pending,,LT proposed — verify
+A2-0905,P-G,phrases & sentences,A1,Getting by,How do you say … in Lithuanian?,PHRASE,phrase,no,Kaip lietuviškai …?,,,,,pending,,LT proposed — verify
+A2-0906,P-G,phrases & sentences,A1,Getting by,I need help,PHRASE,phrase,no,Man reikia pagalbos,,,,,pending,,LT proposed — verify
+A2-0907,P-G,phrases & sentences,A1,Getting by,Call a doctor!,PHRASE,phrase,no,Iškvieskite gydytoją!,,,,,pending,,LT proposed — verify
+A2-0908,P-G,phrases & sentences,A1,Getting by,I'm lost,PHRASE,phrase,no,Aš pasiklydau,,,,,review-duplicate,dup within queue (A2-0386),LT proposed — verify
+A2-0909,P-G,phrases & sentences,A1,Getting by,Where can I find…?,PHRASE,phrase,no,Kur galiu rasti…?,,,,,pending,,LT proposed — verify
+A2-0910,P-G,phrases & sentences,A1,Core patterns,My name is Dainius,SENTENCE,sentence,no,Mano vardas Dainius,,,,,pending,,pattern: Mano vardas + name; LT proposed — verify
+A2-0911,P-G,phrases & sentences,A1,Core patterns,I am from Lithuania,SENTENCE,sentence,no,Aš esu iš Lietuvos,,,,,pending,,būti + iš + genitive; LT proposed — verify
+A2-0912,P-G,phrases & sentences,A1,Core patterns,I live in Vilnius,SENTENCE,sentence,no,Aš gyvenu Vilniuje,,,,,pending,,locative case; LT proposed — verify
+A2-0913,P-G,phrases & sentences,A1,Core patterns,I am twenty years old,SENTENCE,sentence,no,Man dvidešimt metų,,,,,pending,,age uses the dative: MAN + number; LT proposed — verify
+A2-0914,P-G,phrases & sentences,A1,Core patterns,I have a brother,SENTENCE,sentence,no,Aš turiu brolį,,,,,pending,,turėti + accusative; LT proposed — verify
+A2-0915,P-G,phrases & sentences,A1,Core patterns,I don't have time,SENTENCE,sentence,no,Neturiu laiko,,,,,pending,,negation takes the GENITIVE; LT proposed — verify
+A2-0916,P-G,phrases & sentences,A1,Core patterns,I want to eat,SENTENCE,sentence,no,Noriu valgyti,,,,,pending,,modal + infinitive; LT proposed — verify
+A2-0917,P-G,phrases & sentences,A1,Core patterns,I would like coffee,SENTENCE,sentence,no,Norėčiau kavos,,,,,pending,,polite conditional + genitive; LT proposed — verify
+A2-0918,P-G,phrases & sentences,A1,Core patterns,I can speak a little,SENTENCE,sentence,no,Galiu truputį kalbėti,,,,,pending,,galėti + infinitive; LT proposed — verify
+A2-0919,P-G,phrases & sentences,A1,Core patterns,I need water,SENTENCE,sentence,no,Man reikia vandens,,,,,pending,,impersonal: MAN reikia + genitive; LT proposed — verify
+A2-0920,P-G,phrases & sentences,A1,Core patterns,I like this city,SENTENCE,sentence,no,Man patinka šis miestas,,,,,pending,,impersonal: MAN patinka + nominative; LT proposed — verify
+A2-0921,P-G,phrases & sentences,A1,Core patterns,This is my house,SENTENCE,sentence,no,Tai mano namas,,,,,pending,,tai + nominative; LT proposed — verify
+A2-0922,P-G,phrases & sentences,A1,Core patterns,There is a shop here,SENTENCE,sentence,no,Čia yra parduotuvė,,,,,pending,,yra = there is; LT proposed — verify
+A2-0923,P-G,phrases & sentences,A1,Core patterns,It is cold today,SENTENCE,sentence,no,Šiandien šalta,,,,,pending,,"impersonal weather, no subject; LT proposed — verify"
+A2-0924,P-G,phrases & sentences,A1,Core patterns,What time is it?,SENTENCE,sentence,no,Kiek valandų?,,,,,review-duplicate,dup within queue (A2-0379),fixed question; LT proposed — verify
+A2-0925,P-G,phrases & sentences,A1,Core patterns,It is three o'clock,SENTENCE,sentence,no,Trečia valanda,,,,,pending,,ordinal + valanda; LT proposed — verify
+A2-0926,P-G,phrases & sentences,A1,Core patterns,Where are you going?,SENTENCE,sentence,no,Kur tu eini?,,,,,pending,,present tense 2sg; LT proposed — verify
+A2-0927,P-G,phrases & sentences,A1,Core patterns,I am going home,SENTENCE,sentence,no,Einu namo,,,,,pending,,"namo = homewards, adverbial; LT proposed — verify"
+A2-0928,P-G,phrases & sentences,A1,Core patterns,How much does the ticket cost?,SENTENCE,sentence,no,Kiek kainuoja bilietas?,,,,,pending,,kainuoti + nominative; LT proposed — verify
+A2-0929,P-G,phrases & sentences,A1,Core patterns,"I don't understand, sorry",SENTENCE,sentence,no,"Nesuprantu, atsiprašau",,,,,pending,,negation prefix ne-; LT proposed — verify
+A2-0930,P-G,phrases & sentences,A2,Opinion & discourse,In my opinion,PHRASE,phrase,no,Mano nuomone,,,,,pending,,LT proposed — verify
+A2-0931,P-G,phrases & sentences,A2,Opinion & discourse,I think that…,PHRASE,phrase,no,"Manau, kad…",,,,,pending,,LT proposed — verify
+A2-0932,P-G,phrases & sentences,A2,Opinion & discourse,It seems to me,PHRASE,phrase,no,Man atrodo,,,,,pending,,LT proposed — verify
+A2-0933,P-G,phrases & sentences,A2,Opinion & discourse,I agree,PHRASE,phrase,no,Sutinku,,,,,pending,,LT proposed — verify
+A2-0934,P-G,phrases & sentences,A2,Opinion & discourse,I don't agree,PHRASE,phrase,no,Nesutinku,,,,,pending,,LT proposed — verify
+A2-0935,P-G,phrases & sentences,A2,Opinion & discourse,You are right,PHRASE,phrase,no,Jūs teisus,,,,,pending,,LT proposed — verify
+A2-0936,P-G,phrases & sentences,A2,Opinion & discourse,That's a good idea,PHRASE,phrase,no,Gera mintis,,,,,pending,,LT proposed — verify
+A2-0937,P-G,phrases & sentences,A2,Opinion & discourse,It doesn't matter,PHRASE,phrase,no,Nesvarbu,,,,,pending,,LT proposed — verify
+A2-0938,P-G,phrases & sentences,A2,Opinion & discourse,It depends,PHRASE,phrase,no,Priklauso,,,,,pending,,LT proposed — verify
+A2-0939,P-G,phrases & sentences,A2,Opinion & discourse,As far as I know,PHRASE,phrase,no,Kiek žinau,,,,,pending,,LT proposed — verify
+A2-0940,P-G,phrases & sentences,A2,Opinion & discourse,For example,PHRASE,phrase,no,Pavyzdžiui,,,,,pending,,LT proposed — verify
+A2-0941,P-G,phrases & sentences,A2,Opinion & discourse,That is to say,PHRASE,phrase,no,Tai yra,,,,,pending,,LT proposed — verify
+A2-0942,P-G,phrases & sentences,A2,Opinion & discourse,On the one hand,PHRASE,phrase,no,Viena vertus,,,,,pending,,LT proposed — verify
+A2-0943,P-G,phrases & sentences,A2,Opinion & discourse,On the other hand,PHRASE,phrase,no,Kita vertus,,,,,pending,,LT proposed — verify
+A2-0944,P-G,phrases & sentences,A2,Opinion & discourse,First of all,PHRASE,phrase,no,Visų pirma,,,,,pending,,LT proposed — verify
+A2-0945,P-G,phrases & sentences,A2,Opinion & discourse,Finally,PHRASE,phrase,no,Galiausiai,,,,,pending,,LT proposed — verify
+A2-0946,P-G,phrases & sentences,A2,Opinion & discourse,By the way,PHRASE,phrase,no,Beje,,,,,pending,,LT proposed — verify
+A2-0947,P-G,phrases & sentences,A2,Opinion & discourse,Unfortunately,PHRASE,phrase,no,Deja,,,,,pending,,LT proposed — verify
+A2-0948,P-G,phrases & sentences,A2,Opinion & discourse,Luckily,PHRASE,phrase,no,Laimei,,,,,pending,,LT proposed — verify
+A2-0949,P-G,phrases & sentences,A2,Opinion & discourse,Of course not,PHRASE,phrase,no,"Žinoma, ne",,,,,pending,,LT proposed — verify
+A2-0950,P-G,phrases & sentences,A2,Transactions,"Could you help me, please?",PHRASE,phrase,no,Ar galėtumėte man padėti?,,,,,pending,,LT proposed — verify
+A2-0951,P-G,phrases & sentences,A2,Transactions,I would like to book a room,PHRASE,phrase,no,Norėčiau rezervuoti kambarį,,,,,pending,,LT proposed — verify
+A2-0952,P-G,phrases & sentences,A2,Transactions,Is there a table free?,PHRASE,phrase,no,Ar yra laisvas staliukas?,,,,,pending,,LT proposed — verify
+A2-0953,P-G,phrases & sentences,A2,Transactions,I'll take this one,PHRASE,phrase,no,Imsiu šitą,,,,,pending,,LT proposed — verify
+A2-0954,P-G,phrases & sentences,A2,Transactions,Can I pay by card?,PHRASE,phrase,no,Ar galiu mokėti kortele?,,,,,pending,,LT proposed — verify
+A2-0955,P-G,phrases & sentences,A2,Transactions,Where do I have to change?,PHRASE,phrase,no,Kur reikia persėsti?,,,,,pending,,LT proposed — verify
+A2-0956,P-G,phrases & sentences,A2,Transactions,What time does it open?,PHRASE,phrase,no,Kada atsidaro?,,,,,pending,,LT proposed — verify
+A2-0957,P-G,phrases & sentences,A2,Transactions,How do I get to…?,PHRASE,phrase,no,Kaip nuvykti į…?,,,,,pending,,LT proposed — verify
+A2-0958,P-G,phrases & sentences,A2,Transactions,It's on the left,PHRASE,phrase,no,Tai kairėje,,,,,pending,,LT proposed — verify
+A2-0959,P-G,phrases & sentences,A2,Transactions,Go straight ahead,PHRASE,phrase,no,Eikite tiesiai,,,,,pending,,LT proposed — verify
+A2-0960,P-G,phrases & sentences,A2,Transactions,I have an appointment,PHRASE,phrase,no,Turiu registraciją,,,,,pending,,LT proposed — verify
+A2-0961,P-G,phrases & sentences,A2,Transactions,I don't feel well,PHRASE,phrase,no,Blogai jaučiuosi,,,,,pending,,LT proposed — verify
+A2-0962,P-G,phrases & sentences,A2,Transactions,It hurts here,PHRASE,phrase,no,Čia skauda,,,,,pending,,LT proposed — verify
+A2-0963,P-G,phrases & sentences,A2,Transactions,I'm allergic to…,PHRASE,phrase,no,Esu alergiškas…,,,,,pending,,LT proposed — verify
+A2-0964,P-G,phrases & sentences,A2,Transactions,Can you recommend something?,PHRASE,phrase,no,Ar galite ką nors rekomenduoti?,,,,,pending,,LT proposed — verify
+A2-0965,P-G,phrases & sentences,A2,Extended patterns,Yesterday I went to the shop,SENTENCE,sentence,no,Vakar nuėjau į parduotuvę,,,,,pending,,past tense + į + accusative; LT proposed — verify
+A2-0966,P-G,phrases & sentences,A2,Extended patterns,I was at home,SENTENCE,sentence,no,Buvau namuose,,,,,pending,,past of būti + locative; LT proposed — verify
+A2-0967,P-G,phrases & sentences,A2,Extended patterns,Tomorrow I will work,SENTENCE,sentence,no,Rytoj dirbsiu,,,,,pending,,future -siu; LT proposed — verify
+A2-0968,P-G,phrases & sentences,A2,Extended patterns,I will call you later,SENTENCE,sentence,no,Paskambinsiu tau vėliau,,,,,pending,,future + dative; LT proposed — verify
+A2-0969,P-G,phrases & sentences,A2,Extended patterns,I used to live in Kaunas,SENTENCE,sentence,no,Anksčiau gyvendavau Kaune,,,,,pending,,past frequentative -davo; LT proposed — verify
+A2-0970,P-G,phrases & sentences,A2,Extended patterns,I have never been to Latvia,SENTENCE,sentence,no,Niekada nebuvau Latvijoje,,,,,pending,,double negation is standard; LT proposed — verify
+A2-0971,P-G,phrases & sentences,A2,Extended patterns,"If it rains, I will stay home",SENTENCE,sentence,no,"Jei lis, liksiu namie",,,,,pending,,conditional clause; LT proposed — verify
+A2-0972,P-G,phrases & sentences,A2,Extended patterns,I would go if I had time,SENTENCE,sentence,no,"Eičiau, jei turėčiau laiko",,,,,pending,,subjunctive -čiau; LT proposed — verify
+A2-0973,P-G,phrases & sentences,A2,Extended patterns,This is bigger than that,SENTENCE,sentence,no,Šis didesnis nei tas,,,,,pending,,comparative + nei; LT proposed — verify
+A2-0974,P-G,phrases & sentences,A2,Extended patterns,It is the best restaurant in the city,SENTENCE,sentence,no,Tai geriausias restoranas mieste,,,,,pending,,superlative + locative; LT proposed — verify
+A2-0975,P-G,phrases & sentences,A2,Extended patterns,I have been learning Lithuanian for a year,SENTENCE,sentence,no,Metus mokausi lietuvių kalbos,,,,,pending,,duration in accusative; LT proposed — verify
+A2-0976,P-G,phrases & sentences,A2,Extended patterns,I am going to visit my grandmother,SENTENCE,sentence,no,Ketinu aplankyti močiutę,,,,,pending,,ketinti + infinitive; LT proposed — verify
+A2-0977,P-G,phrases & sentences,A2,Extended patterns,She asked me where I live,SENTENCE,sentence,no,"Ji paklausė, kur aš gyvenu",,,,,pending,,reported question; LT proposed — verify
+A2-0978,P-G,phrases & sentences,A2,Extended patterns,I don't know if he is coming,SENTENCE,sentence,no,"Nežinau, ar jis ateis",,,,,pending,,ar = whether; LT proposed — verify
+A2-0979,P-G,phrases & sentences,A2,Extended patterns,It is easier than I thought,SENTENCE,sentence,no,"Lengviau, nei maniau",,,,,pending,,comparative clause; LT proposed — verify
+A2-0980,P-G,phrases & sentences,A2,Extended patterns,The book was written by a Lithuanian,SENTENCE,sentence,no,Knygą parašė lietuvis,,,,,pending,,"agent, word order; LT proposed — verify"
+A2-0981,P-G,phrases & sentences,A2,Extended patterns,You must not smoke here,SENTENCE,sentence,no,Čia negalima rūkyti,,,,,pending,,negalima = not allowed; LT proposed — verify
+A2-0982,P-G,phrases & sentences,A2,Extended patterns,It is necessary to book in advance,SENTENCE,sentence,no,Reikia rezervuoti iš anksto,,,,,pending,,impersonal reikia; LT proposed — verify
+A2-0983,P-G,phrases & sentences,A2,Extended patterns,I am interested in history,SENTENCE,sentence,no,Domiuosi istorija,,,,,pending,,domėtis + instrumental; LT proposed — verify
+A2-0984,P-G,phrases & sentences,A2,Extended patterns,We are meeting at six,SENTENCE,sentence,no,Susitinkame šeštą valandą,,,,,pending,,"time expression, accusative; LT proposed — verify"

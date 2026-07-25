@@ -1043,6 +1043,13 @@ def adj_inset_note(english):
 
 
 # ===========================================================================
+# 1.7.9 — TEXT EXCEPTIONS ARE NOW DATA. Any wordlist row may carry a `card_text`
+# column naming exactly what lettering that card may show; it overrides the
+# table below. This is what makes undepictable-but-teachable cards possible
+# (days of the week on a calendar, numerals, unit marks) without hardcoding
+# each one. Everything without card_text stays wordless under NO_TEXT_RULE.
+# ===========================================================================
+# legacy in-code exceptions (kept working; new rows should use the column)
 # 1.7.7 — TEXT EXCEPTION rows (owner QA). A handful of cards cannot teach
 # their word without a little lettering. Each value names EXACTLY what may be
 # written; everything else on the card stays wordless.
@@ -1149,7 +1156,8 @@ def build_call(key, r, cls):
     return dict(subject=subject, scene=scene, inset_note=inset_note,
                 insets=insets, text=False, people=people,
                 glyph=n in GLYPH_ROWS,
-                exact_text=TEXT_EXCEPTION.get(n, ""),
+                exact_text=(r.get("card_text", "").strip()
+                            or TEXT_EXCEPTION.get(n, "")),
                 flag=FLAG_OVERRIDE.get(n, "lt"),
                 filename=f"{key}.png")
 

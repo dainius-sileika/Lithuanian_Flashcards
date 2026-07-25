@@ -51,9 +51,11 @@ A2 is not "more nouns". It is the level at which a learner handles routine
 exchanges: describing the past and future, asking and answering, expressing need
 and preference, and getting through shops, travel, appointments and small talk.
 
-Practically that means roughly **1,000–1,500 known lemmas**, of which the deck
-supplies ~520 — but more importantly it means **function words, phrases and
-grammar**, which is exactly the hole above.
+Published estimates vary widely, but A2 is commonly put at **1,500–2,500 words**
+(one survey: "at A2 learners should understand between 1,500 and 2,500 words";
+another gives A1 500–1,000 and A2 1,000–2,000). **We target ~2,000.** The deck
+supplies ~520 of those — but more importantly, size is not the real problem:
+A2 needs **function words, phrases and grammar**, which is exactly the hole above.
 
 **So the honest conclusion: reaching A2 requires a second card type.** The image
 card cannot teach *although* or *+genitive*. This is the same conclusion Fluent
@@ -62,16 +64,28 @@ for grammar and abstractions.
 
 ## 3. Phased plan
 
-`wordlist_a2_pending.csv` holds **402 proposed rows** (376 net new; 26 flagged as
-already covered and awaiting a drop decision). Projected finished deck: **~900 cards.**
+`wordlist_a2_pending.csv` holds **984 proposed rows** (845 net new; 139 flagged as
+already covered or duplicated within the queue). Projected deck: **~1,365 cards.**
 
-| phase | what | rows | card type | engine work |
-|-------|------|-----:|-----------|-------------|
-| **A** | A1 completion — time, calendar, numbers, missing everyday nouns | 107 | image | numbers need a `TEXT_EXCEPTION` (render the digit); calendar/season staging |
-| **B** | Function words — question words, prepositions, conjunctions, adverbs, possessives, modal verbs | 101 | **sentence** | new note type + template; no image required |
-| **C** | A2 topical vocabulary — travel, health, work & school, shopping, home, feelings, technology, weather, society | 139 | image | existing engine, no changes |
-| **D** | Phrases & formulas — greetings, politeness, getting by | 39 | **phrase** | audio-first card; text front, no illustration |
-| **E** | Grammar patterns — the 7 cases, tenses, reflexives, comparatives, agreement | 16 | **pattern** | reference-card template with worked examples |
+| phase | what | rows | card type | images? |
+|-------|------|-----:|-----------|---------|
+| **P-A** | A1 completion — time, calendar, numbers, missing everyday nouns | 107 | image | yes (numerals/day names via `card_text`) |
+| **P-B** | Function words — question words, prepositions, conjunctions, adverbs, possessives, modals | 101 | sentence | no |
+| **P-C** | A2 topical — travel, health, work, shopping, home, feelings, technology, society | 139 | image | yes |
+| **P-D** | Phrases — greetings, politeness, getting by | 39 | phrase | no |
+| **P-E** | Grammar patterns — the 7 cases, tenses, reflexives, comparatives | 16 | pattern | no |
+| **P-F** | Vocabulary expansion — 200 verbs/adjectives, 300+ nouns across every domain | 476 | image | yes |
+| **P-G** | Phrases & sentences for **both levels** — A1 survival formulas and core sentence patterns, A2 discourse, transactions and extended patterns | 106 | phrase / sentence | no |
+
+**722 of the 984 rows are marked `image_possible = yes`** and can go straight
+through the existing engine. The remaining 262 are the function words, phrases,
+sentences and grammar patterns that need the new note types.
+
+**Honest gap:** this queue lands at ~1,365 cards, not 2,000. That is a solid A2
+core covering every high-frequency domain; closing the last ~600 to the top of
+the cited range wants a **frequency-list pass** (phase P-H) rather than more
+hand-authoring, so the additions are driven by real corpus frequency instead of
+intuition. Recommended only once P-A…P-G are generated and in use.
 
 ### Sequencing
 
@@ -137,7 +151,23 @@ Independent of A2, these are outstanding:
    (image → word). Production practice (EN → LT, or typed answer) would need a
    second template — worth deciding before the deck grows to 900.
 
-## 6. Open decisions
+## 6. Decisions taken
+
+- **Target ~2,000 words** (the queue delivers ~1,365; a frequency pass closes the rest).
+- **A1/A2 split: subdecks + tags.** `Lietuvių Flashcards::A1` and `::A2`, plus an
+  `A1`/`A2` tag on every note. Studying the parent deck studies everything;
+  clicking a subdeck studies one level; tags keep custom filtered decks possible.
+  The existing 520 are already tagged (**427 A1 / 93 A2** — the abstract round and
+  the measurement/meta-linguistic cards are A2; auto-assigned, worth a review).
+- **Text on cards: only where undepictable.** Generalised from a hardcoded table
+  into a `card_text` column on the wordlist — any row may now name exactly what
+  lettering it may show (a day name on a calendar page, a numeral, a unit mark),
+  and everything else stays wordless. This is what makes days, months and numbers
+  generable at all.
+- **Sentences: generic model sentences**, authored with a grammar note explaining
+  the pattern (case government, impersonal constructions, negation-takes-genitive).
+
+## 7. Open decisions
 
 - **Drop or keep the 26 flagged duplicates** in `wordlist_a2_pending.csv`
   (`status = review-duplicate`). Some are genuine collisions; a few are arguably
@@ -151,7 +181,7 @@ Independent of A2, these are outstanding:
 - **Do phrases need images?** Currently specified as text+audio. A GO-style
   illustration for *"Kiek kainuoja?"* is possible but expensive and may add little.
 
-## 7. Milestones
+## 8. Milestones
 
 | milestone | deck size | gate |
 |-----------|----------:|------|
