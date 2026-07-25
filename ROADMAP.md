@@ -4,9 +4,12 @@
 covers now, what A2 additionally requires, how we get there, and the non-vocabulary
 work that has to land alongside it.
 
-Companion file: **`wordlist_a2_pending.csv`** — the actual queue of words, phrases
-and grammar items, one row per proposed card, phased and deduplicated against the
-existing deck.
+Companion files:
+- **`wordlist_a2_pending.csv`** — the queue of words, phrases and grammar items,
+  one row per proposed card, phased and deduplicated against the existing deck.
+- **`accents_todo_kirtis.csv`** — the 195 words whose stress no automated source
+  carries; fill `accented_form_FILL_ME` from [kirtis.info](https://kirtis.info)
+  and they merge straight back into the queue.
 
 ---
 
@@ -102,7 +105,10 @@ intuition. Recommended only once P-A…P-G are generated and in use.
 - Lithuanian target verified by a native speaker (every row currently says
   `LT proposed — verify`).
 - Stress accent sourced (Wiktionary → kirtis.info), validated by the stress-strip
-  rule, never invented.
+  rule, never invented. **Status: done for the queue** — 634 of 829 single-word
+  rows (76%) carry a sourced accent; the remaining **195 are listed in
+  `accents_todo_kirtis.csv`** for manual lookup, because neither English nor
+  Lithuanian Wiktionary has them.
 - Grammar forms filled: genitive for nouns, principal parts for verbs, feminine
   for adjectives.
 - Audio generated.

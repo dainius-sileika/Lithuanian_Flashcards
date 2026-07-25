@@ -20,6 +20,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   audit which found the deck contains *no* numbers, calendar words, question words,
   prepositions, conjunctions, adverbs, possessives or modal verbs — a systematic
   consequence of the picture-only method rather than an oversight.
+- **Accent pass on the A2 queue.** 634 of 829 single-word rows (76%) now carry a
+  stress-marked form, sourced — never guessed — from the existing deck, English
+  Wiktionary (wikitext `head=` and rendered headword) and Lithuanian Wiktionary,
+  each accepted only if stripping its marks exactly reproduces the headword.
+  102 rows also captured IPA. The 195 words no source covers are listed in
+  **`accents_todo_kirtis.csv`** for manual lookup; 8 rows where a source returned
+  an unstressed form were moved there rather than left looking complete.
 - **`wordlist_a2_pending.csv`** — the A2 queue: **984 proposed rows** (845 net new)
   across seven phases, each marked `level` (A1/A2) and `image_possible`, with
   A1 *and* A2 phrases and model sentences. 722 rows can go straight through the
