@@ -116,6 +116,25 @@ intuition. Recommended only once P-A…P-G are generated and in use.
 - `build_recorder.py` re-run so the recorder stays in step.
 - Changelog entry + version bump.
 
+
+### Accent sources: what was tested (2026-07-25)
+
+Evaluated for automating the remaining stress marks. Recorded here so the
+dead ends are not re-litigated.
+
+| resource | verdict |
+|----------|---------|
+| **English Wiktionary** (wikitext `head=`, rendered headword) | **In use.** Supplied 630 of the queue's accents. |
+| **Lithuanian Wiktionary** | **In use, marginal.** Added 7 words over the whole run. |
+| **Kaikki.org / wiktextract** | **No value for our gap.** It is a re-extraction of the same Wiktionary. Sampled 25 of the 195 misses: 19 have no Wiktionary page at all, and the 6 that do render *unstressed* headwords even with full template expansion. The data is absent, not merely hard to extract. Would be useful later purely as an offline bulk lookup for a large pass (avoids ~800 rate-limited API calls). |
+| **phonology_engine** (rule-based accentuation, VDU/LIEPA lineage) | **Best candidate, currently unrunnable.** Algorithmic, so it covers out-of-vocabulary and inflected forms — exactly our failure mode. But it ships **x86_64 Linux + Windows binaries only**: no aarch64, no macOS, no sdist on PyPI, and the GitHub repo ships the same prebuilt binary (build fails). Needs an amd64 Linux environment (Docker `--platform linux/amd64`). Worth standing up before the P-H frequency pass, not for 195 words. |
+| **Hunspell LT** (`.dic`/`.aff`) | **Does not carry stress.** Encodes morphology and inflection only; useful for lemmatisation and generating inflected forms, not accents. |
+| **LIEPA engine / neural stress taggers** | **Projects, not tools.** LIEPA has real stressing internals but needs compiling from C/C++; the neural work is research-stage with no downloadable model. |
+
+**Standing rule:** any engine-derived accent is a *candidate for verification*,
+never truth. Rule-based accentuation errs on homographs and irregular paradigms,
+and a confidently wrong stress mark is worse for a learner than a blank one.
+
 ## 4. Engine work required
 
 **New note type: sentence/cloze cards** (Phases B, D). Front = a short Lithuanian
