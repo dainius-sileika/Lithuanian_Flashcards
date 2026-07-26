@@ -11,15 +11,38 @@ the deck: re-run it after any wordlist change.
 """
 import csv
 import json
+import os
+import sys
 
 SRC = "cards_anki.csv"
+QUEUE = "wordlist_a2_pending.csv"
+
+# Which level(s) to record. `python3 build_recorder.py A1` builds an A1-only
+# sheet; no argument builds everything.
+LEVEL = sys.argv[1] if len(sys.argv) > 1 else ""
 
 WORDS = [
     {"key": r["key"], "number": r["number"], "lt": r["lithuanian"],
      "en": r["english"], "pron": r.get("pron", ""), "cat": r["category"]}
     for r in csv.DictReader(open(SRC, encoding="utf-8"))
-    if r["lithuanian"].strip()
+    if r["lithuanian"].strip() and (not LEVEL or r.get("level", "A1") == LEVEL)
 ]
+
+# Recording is gated on the WORD being final, not on the image existing — so
+# confirmed queue rows are included even before their images are generated.
+if os.path.exists(QUEUE):
+    for r in csv.DictReader(open(QUEUE, encoding="utf-8")):
+        if r.get("status") != "pending":
+            continue
+        if LEVEL and r.get("level") != LEVEL:
+            continue
+        if "verify" in (r.get("notes", "") or "").lower():
+            continue                      # not owner-confirmed yet
+        if not r["lithuanian_TARGET"].strip():
+            continue
+        WORDS.append({"key": r["id"], "number": r["id"], "lt": r["lithuanian_TARGET"],
+                      "en": r["english"], "pron": r.get("lt_pron", ""),
+                      "cat": r["category"] + " (new)"})
 
 TEMPLATE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -233,5 +256,6 @@ document.getElementById('export').onclick=async()=>{
 </body></html>"""
 
 html = TEMPLATE.replace("__WORDS__", json.dumps(WORDS, ensure_ascii=False))
-open("recorder.html", "w", encoding="utf-8").write(html)
-print("wrote recorder.html", len(html)//1024, "KB")
+out = f"recorder_{LEVEL}.html" if LEVEL else "recorder.html"
+open(out, "w", encoding="utf-8").write(html)
+print(f"wrote {out} — {len(WORDS)} words, {len(html)//1024} KB")

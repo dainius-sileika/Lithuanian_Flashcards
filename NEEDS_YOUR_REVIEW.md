@@ -3,50 +3,52 @@
 This file is the single answer to "where's the bottleneck?". It is rewritten
 every time a batch moves, so whatever is at the top is what unblocks the project.
 
-**Last updated: 2026-07-25 · P-A verified and merged**
+**Last updated: 2026-07-25 · A1 push — 312 rows to verify, then record**
 
 ---
 
-## → Nothing is blocked on you this minute
+## → Goal: finish A1 today, then record
 
-**P-A is verified and merged** — 97/97 accents (all passed the strip-back gate),
-62 grammar forms, every row now reads *owner-confirmed*. I'm authoring the scene
-phrases and generating that phase now; I'll come back with a small validation
-batch (a numeral, a day, a month, a plain noun) before spending on all 97, because
-the `card_text` lettering machinery is new and I want it proven on four cards
-rather than ninety-seven.
+**A1 = 427 existing cards + 409 queued rows = 836 words.** Audio is gated on the
+*word list*, not on images — so recording can happen before the new A1 pictures
+are generated.
 
-## → Next for you, whenever convenient
+### 1. `review_A1.csv` — 312 rows *(the critical path)*
 
-**1. Duplicate decisions — `wordlist_a2_pending.csv`, filter `status = review-duplicate`.**
-139 rows collide with the existing 520. Most should be dropped; a few are arguably
-distinct senses (*sąskaita* = restaurant bill vs bank account). Mark keep/drop.
-Quick, and it shrinks every phase downstream.
+The A1 rows of P-B (function words), P-F (vocabulary) and P-G (phrases), sorted
+by phase then category. Same three columns as the P-A pack:
 
-**2. `accents_todo_kirtis.csv` — 185 words left** (down from 195; the 10 in P-A are
-done). **43 are A1.** The next review pack (P-C) will draw from this list, so
-doing the A1 ones first stays efficient.
+- **`LT_ok_or_fix`** — blank = my Lithuanian is right; type a correction if not.
+- **`accent_FILL`** — **39 rows** need a kirtis.info lookup (phrases skipped).
+- **`form_ok_or_fix`** — **66 rows** flagged; 129 are rule-derived and just need a
+  skim. Verbs need *3sg · past* (e.g. `dirba / dirbo`) — I don't guess those.
 
-## Coming back to you next
+### 2. `review_A1_duplicates.csv` — 101 rows
 
-**`review_P-C.csv`** — 122 rows, A2 topical vocabulary (travel, health, work,
-shopping, home, feelings, technology, society). Same three-column format. I'll
-produce it once P-A images are through QA.
+Mark `KEEP_or_DROP`. These collide with the existing 520; `collides_with` says how.
+Fast, and it decides the true A1 size.
+
+### 3. Then I merge, and you record
+
+`recorder_A1.html` is **already built and current** — 524 A1 words right now,
+rising to ~836 once the 312 are confirmed and merged. Run
+`python3 build_recorder.py A1` any time to refresh it.
+
+---
+
+## Recording notes, for when you get there
+
+- **836 words is a long sitting** — roughly 1.5–2 hours with retakes. The
+  recorder saves to the browser as you go, so stop and resume freely; a partial
+  export merges fine and the rest keeps its synthesized audio until you finish.
+- Quiet room, consistent mic distance, one clear citation-form utterance per word.
+- Export the ZIP and hand it back; I normalise, trim, convert and rebuild.
 
 ---
 
 ## Not blocked on you
 
-- Rule-deriving grammar forms for the remaining phases; irregulars get flagged,
-  never guessed.
-- Authoring subject phrases per phase, after that phase's words are confirmed.
-- Building the sentence/phrase note type, which unblocks P-B, P-D, P-E and P-G.
-
----
-
-## The loop, for reference
-
-For each phase: **I produce a review pack → you correct it → I author the scene
-phrases, generate, QA, and merge** (with audio, level tags and a rebuilt
-recorder). Order: **P-A → P-C → P-F** (in three chunks), with
-**P-B / P-D / P-E / P-G** following once the sentence note type exists.
+- Authoring P-A scene phrases and generating those 97 images (validation batch first).
+- Grammar forms for later phases; irregulars flagged, never guessed.
+- The sentence/phrase note type, which unblocks P-B, P-D, P-E and P-G as *cards*
+  (their words can still be recorded today).
