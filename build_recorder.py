@@ -21,9 +21,25 @@ QUEUE = "wordlist_a2_pending.csv"
 # sheet; no argument builds everything.
 LEVEL = sys.argv[1] if len(sys.argv) > 1 else ""
 
+def read_script(headword, row):
+    """What the speaker should say for this card: the headword, then the forms
+    that show the paradigm. Lithuanian stress moves between forms, so hearing
+    the genitive / principal parts is the point of recording them."""
+    out = [{"label": "", "form": headword}]
+    if row.get("gen_sg", "").strip():
+        out.append({"label": "gen.", "form": row["gen_sg"].strip()})
+    if row.get("pres3", "").strip():
+        out.append({"label": "3sg", "form": row["pres3"].strip()})
+    if row.get("past3", "").strip():
+        out.append({"label": "past", "form": row["past3"].strip()})
+    if row.get("fem", "").strip():
+        out.append({"label": "fem.", "form": row["fem"].strip()})
+    return out
+
 WORDS = [
     {"key": r["key"], "number": r["number"], "lt": r["lithuanian"],
-     "en": r["english"], "pron": r.get("pron", ""), "cat": r["category"]}
+     "en": r["english"], "pron": r.get("pron", ""), "cat": r["category"],
+     "script": read_script(r.get("pron") or r["lithuanian"], r)}
     for r in csv.DictReader(open(SRC, encoding="utf-8"))
     if r["lithuanian"].strip() and (not LEVEL or r.get("level", "A1") == LEVEL)
 ]
@@ -42,7 +58,8 @@ if os.path.exists(QUEUE):
             continue
         WORDS.append({"key": r["id"], "number": r["id"], "lt": r["lithuanian_TARGET"],
                       "en": r["english"], "pron": r.get("lt_pron", ""),
-                      "cat": r["category"] + " (new)"})
+                      "cat": r["category"] + " (new)",
+                      "script": read_script(r.get("lt_pron") or r["lithuanian_TARGET"], r)})
 
 TEMPLATE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -62,6 +79,11 @@ TEMPLATE = r"""<!doctype html>
   .word{font-size:3.4rem;font-weight:700;line-height:1.05;margin:6px 0 2px}
   .pron{font-style:italic;color:var(--teal);font-size:1.5rem;margin-bottom:6px}
   .en{color:#4a4238;font-size:1.15rem}.en:before{content:"— ";color:var(--red)}
+  .script{margin:14px auto 0;padding:12px 14px;background:#f6f1e2;border:1px dashed var(--red);max-width:560px}
+  .script .lead{font-variant:small-caps;letter-spacing:.1em;font-size:.72rem;color:var(--dun);display:block;margin-bottom:6px}
+  .script b{font-size:1.9rem;display:inline-block;margin:0 .35em}
+  .script .lab{font-size:.7rem;color:var(--teal);font-variant:small-caps;vertical-align:super;margin-right:2px}
+  .script .sep{color:var(--dun);font-size:1.4rem}
   .controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
   button{font-family:inherit;font-size:1rem;padding:11px 18px;border:2px solid var(--red);background:var(--paper);color:var(--red);
          border-radius:3px;cursor:pointer;font-variant:small-caps;letter-spacing:.06em;font-weight:700}
@@ -91,7 +113,7 @@ TEMPLATE = r"""<!doctype html>
 <div class="wrap">
 
   <div id="setup" class="card">
-    <p style="font-size:1.1rem">Read each Lithuanian word once, clearly and naturally.<br>One clip is saved per word — no editing needed.</p>
+    <p style="font-size:1.1rem">For each card, read <b>every form shown in the dashed box</b> — the headword, then its genitive / principal parts — one clear breath apart.<br>One clip is saved per card; no editing needed.</p>
     <p class="hint">Your recordings are saved in this browser as you go, so you can close the tab and resume later on the same computer. When finished (or partway), click <b>Export ZIP</b> and send it back.</p>
     <div class="controls"><button class="rec big" id="start">Enable microphone &amp; start</button></div>
     <p class="status" id="setupStatus"></p>
@@ -103,6 +125,7 @@ TEMPLATE = r"""<!doctype html>
       <div class="word" id="lt"></div>
       <div class="pron" id="pron"></div>
       <div class="en" id="en"></div>
+      <div class="script" id="script"></div>
       <div class="bar"><div id="progress"></div></div>
       <div class="status" id="status">Not recorded yet</div>
       <div class="controls">
@@ -192,6 +215,11 @@ async function render(){
   document.getElementById('lt').textContent=w.lt;
   document.getElementById('pron').textContent=w.pron||'';
   document.getElementById('en').textContent=w.en;
+  const sc=w.script&&w.script.length?w.script:[{label:'',form:w.pron||w.lt}];
+  document.getElementById('script').innerHTML =
+    '<span class="lead">say all of this, one breath apart</span>' +
+    sc.map(f=>(f.label?'<span class="lab">'+f.label+'</span>':'')+'<b>'+f.form+'</b>')
+      .join('<span class="sep">·</span>');
   recBtn.classList.remove('recording');
   const clip=await getClip(w.key);
   if(clip){ recBtn.textContent='● Re-record'; setPlayer(clip); document.getElementById('status').textContent="Recorded ✓"; }

@@ -38,10 +38,21 @@ rising to ~836 once the 312 are confirmed and merged. Run
 
 ## Recording notes, for when you get there
 
-- **836 words is a long sitting** — roughly 1.5–2 hours with retakes. The
-  recorder saves to the browser as you go, so stop and resume freely; a partial
-  export merges fine and the rest keeps its synthesized audio until you finish.
-- Quiet room, consistent mic distance, one clear citation-form utterance per word.
+**The recorder now prompts the full paradigm.** Each card shows a dashed box with
+everything to say: the headword, then the genitive (nouns), the principal parts
+(verbs) or the feminine (adjectives) — e.g. `dìrbti · 3sg dìrba · past dìrbo`.
+Read them one clear breath apart; **one clip per card**, so nothing changes in
+the merge pipeline. Of the 524 A1 cards currently loaded, 489 prompt more than
+one form.
+
+- **Headwords carry stress marks; the other forms don't.** We only sourced
+  accents for headwords, and accenting every inflected form would be a large
+  separate job. For recording it doesn't matter — you know how to say *namo*, and
+  **your recording becomes the authority** for that form's stress.
+- **836 words with paradigms is ~2.5 hours** with retakes. The recorder saves to
+  the browser continuously, so stop and resume freely; a partial export merges
+  fine and un-recorded cards keep their synthesized audio until you finish.
+- Quiet room, consistent mic distance, natural citation form.
 - Export the ZIP and hand it back; I normalise, trim, convert and rebuild.
 
 ---
