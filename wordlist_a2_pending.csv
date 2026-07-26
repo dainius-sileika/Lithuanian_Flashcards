@@ -11,7 +11,7 @@ A2-0009,P-A,A1 completion,A1,Time,weekend,N,image,yes,savaitgalis,,saváitgalis,
 A2-0010,P-A,A1 completion,A1,Time,morning,N,image,yes,rytas,,rýtas,en.wiktionary,,ryto,,,,pending,,LT owner-confirmed (P-A review)
 A2-0011,P-A,A1 completion,A1,Time,afternoon,N,image,yes,popietė,,pópietė,en.wiktionary,,popietės,,,,pending,,LT owner-confirmed (P-A review)
 A2-0012,P-A,A1 completion,A1,Time,evening,N,image,yes,vakaras,,vãkaras,en.wiktionary,,vakaro,,,,pending,,LT owner-confirmed (P-A review)
-A2-0013,P-A,A1 completion,A1,Time,night,N,image,yes,naktis,,naktìs,en.wiktionary,,nakčio,,,,pending,,LT owner-confirmed (P-A review)
+A2-0013,P-A,A1 completion,A1,Time,night,N,image,yes,naktis,,naktìs,en.wiktionary,,nakties,,,,pending,,LT owner-confirmed (P-A review)
 A2-0014,P-A,A1 completion,A1,Time,today,ADV,image,yes,šiandien,,šiañdien,lt.wiktionary,,,,,,pending,,LT owner-confirmed (P-A review)
 A2-0015,P-A,A1 completion,A1,Time,yesterday,ADV,image,yes,vakar,,vãkar,en.wiktionary,,,,,,pending,,LT owner-confirmed (P-A review)
 A2-0016,P-A,A1 completion,A1,Time,tomorrow,ADV,image,yes,rytoj,,rytój,en.wiktionary,/ɾʲiːˈtoːj/,,,,,pending,,LT owner-confirmed (P-A review)
@@ -606,7 +606,7 @@ A2-0604,P-F,vocabulary expansion,A2,Body,wrist,N,image,yes,riešas,,,,,,,,,pendi
 A2-0605,P-F,vocabulary expansion,A2,Body,ankle,N,image,yes,kulkšnis,,,,,,,,,pending,,LT proposed — verify
 A2-0606,P-F,vocabulary expansion,A2,Body,nail,N,image,yes,nagas,,nãgas,en.wiktionary,[ˈn̪ä̌ːɡɐs̪],,,,,pending,,LT proposed — verify
 A2-0607,P-F,vocabulary expansion,A1,Body,blood,N,image,yes,kraujas,,kraũjas,en.wiktionary,,,,,,review-duplicate,LT already in deck,LT proposed — verify
-A2-0608,P-F,vocabulary expansion,A2,Body,brain,N,image,yes,smegenys,,smẽgenys,en.wiktionary,,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0608,P-F,vocabulary expansion,A2,Body,brain,N,image,yes,smegenys,,smẽgenys,en.wiktionary,,smegenų,,,,review-duplicate,LT already in deck,LT proposed — verify
 A2-0609,P-F,vocabulary expansion,A2,Body,muscle,N,image,yes,raumuo,,raumuõ,en.wiktionary,,,,,,pending,,LT proposed — verify
 A2-0610,P-F,vocabulary expansion,A1,Body,voice,N,image,yes,balsas,,bal̃sas,en.wiktionary,,,,,,review-duplicate,LT already in deck,LT proposed — verify
 A2-0611,P-F,vocabulary expansion,A1,Home,"flat, apartment",N,image,yes,butas,,bùtas,en.wiktionary,,,,,,review-duplicate,LT already in deck,LT proposed — verify
@@ -687,7 +687,7 @@ A2-0685,P-F,vocabulary expansion,A2,Food,jam,N,image,yes,uogienė,,uogiẽnė,en
 A2-0686,P-F,vocabulary expansion,A1,Food,yoghurt,N,image,yes,jogurtas,,jogùrtas,en.wiktionary,/jɔːˈɡʊrtɐs/,,,,,pending,,LT proposed — verify
 A2-0687,P-F,vocabulary expansion,A1,Food,cheese,N,image,yes,sūris,,sū́ris,en.wiktionary,[ˈs̪ûːrʲɪs̪],,,,,review-duplicate,LT already in deck,LT proposed — verify
 A2-0688,P-F,vocabulary expansion,A2,Food,cream,N,image,yes,grietinėlė,,grietinė̃lė,en.wiktionary,,,,,,pending,,LT proposed — verify
-A2-0689,P-F,vocabulary expansion,A1,Food,juice,N,image,yes,sultys,,sùltys,en.wiktionary,,,,,,review-duplicate,LT already in deck,LT proposed — verify
+A2-0689,P-F,vocabulary expansion,A1,Food,juice,N,image,yes,sultys,,sùltys,en.wiktionary,,sulčių,,,,review-duplicate,LT already in deck,LT proposed — verify
 A2-0690,P-F,vocabulary expansion,A1,Food,tea,N,image,yes,arbata,,arbatà,en.wiktionary,/ɐrbɐˈtɐ/,,,,,review-duplicate,LT already in deck,LT proposed — verify
 A2-0691,P-F,vocabulary expansion,A1,Food,beer,N,image,yes,alus,,alùs,en.wiktionary,,,,,,review-duplicate,LT already in deck,LT proposed — verify
 A2-0692,P-F,vocabulary expansion,A1,Food,wine,N,image,yes,vynas,,vỹnas,en.wiktionary,,,,,,review-duplicate,LT already in deck,LT proposed — verify

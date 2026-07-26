@@ -37,19 +37,31 @@ model = genanki.Model(
 # each image to JPEG (universally supported) into a temp folder. The repo set is
 # untouched. Set IMG_FMT="webp" to bundle WebP directly instead.
 IMG_FMT = os.environ.get("IMG_FMT", "jpg")
+# Anki/AnkiWeb caps a shared deck at 250 MB. Measured on this deck, resolution
+# dominates format: full-size WebP still lands ~308 MB at the projected 1365
+# cards, while JPEG downscaled to 1024 px comes in at ~179 MB (+~30 MB audio)
+# and keeps universal client compatibility — some Anki builds don't render WebP
+# inside cards. 1024 px is still more than a card ever displays.
+IMG_WIDTH = int(os.environ.get("IMG_WIDTH", "1024"))
 TMP = "_apkg_media"; os.makedirs(TMP, exist_ok=True)
 
 def media_image(k):
     src = f"images/{k}.webp"
     if not os.path.exists(src):
         return None, None
-    if IMG_FMT == "webp":
-        return src, f"{k}.webp"
-    dst = f"{TMP}/{k}.jpg"
+    ext = "webp" if IMG_FMT == "webp" else "jpg"
+    dst = f"{TMP}/{k}.{ext}"
     if not os.path.exists(dst):
         from PIL import Image
-        Image.open(src).convert("RGB").save(dst, "JPEG", quality=86, optimize=True)
-    return dst, f"{k}.jpg"
+        im = Image.open(src).convert("RGB")
+        if IMG_WIDTH and im.width > IMG_WIDTH:
+            im = im.resize((IMG_WIDTH, round(im.height * IMG_WIDTH / im.width)),
+                           Image.LANCZOS)
+        if ext == "webp":
+            im.save(dst, "WEBP", quality=85, method=6)
+        else:
+            im.save(dst, "JPEG", quality=85, optimize=True, progressive=True)
+    return dst, f"{k}.{ext}"
 
 # 1.7.9 — one deck, split into CEFR subdecks. Studying the parent studies
 # everything; clicking A1 or A2 studies just that level. Cards also carry an

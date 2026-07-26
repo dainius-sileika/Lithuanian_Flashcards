@@ -25,7 +25,8 @@ Every card teaches one Lithuanian word through a single, *guessable* illustratio
 **Ready-made:** download **`Lietuviu_Flashcards.apkg`** from the
 [Releases](https://github.com/dainius-sileika/Lithuanian_Flashcards/releases) page
 and double-click it (or File → Import in Anki). It bundles all 520 illustrated
-cards, the GO theme, and Lithuanian audio (Azure neural voice).
+cards, the GO theme, and Lithuanian audio — **human-recorded for the A1 core**
+(426 of 520 cards), synthesized elsewhere until the recordings are complete.
 
 **Build it yourself** from the source in this repo:
 ```bash
@@ -61,7 +62,7 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 | `cards_anki.csv` | **The Anki data** (520 rows): word, gloss, gender, grammar forms (`gen_sg`/`pres3`/`past3`/`fem`), stress-accented `pron`, image + number. This is what `build_apkg.py` reads. |
 | `build_apkg.py` | Builds the importable `Lietuviu_Flashcards.apkg` from `cards_anki.csv` + `images/` + `audio/` + the theme. |
 | `images/` | The 520 finished cards as WebP (1536×1024, ~120 MB) — the distributed set. |
-| `audio/` | One pronunciation MP3 per card (Lithuanian neural voice). |
+| `audio/` | One pronunciation MP3 per card. A1 is human-recorded (full paradigm: headword + genitive / principal parts); the rest is Azure neural. `audio_source.tsv` says which is which. |
 | `anki/` | `go_theme.css` (card styling) + `templates.md` (note-type reference). |
 | `master_wordlist.csv` | The source wordlist (v2.9): 530 rows → 520 generable cards — target word, gloss, gender, pronunciation, per-card notes. |
 | `out_deck/ledger.csv` | The exact prompt + settings behind every card (full reproducibility). |

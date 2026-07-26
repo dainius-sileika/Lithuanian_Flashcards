@@ -32,6 +32,41 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   A1 *and* A2 phrases and model sentences. 722 rows can go straight through the
   existing image engine. Every Lithuanian target is marked `LT proposed — verify`.
 
+## [1.8.0] — 2026-07-26 — human audio
+
+### Added
+- **Human audio for A1.** 523 owner-recorded clips replace the synthesized voice
+  on **426 of 520 deck cards**; the remaining 97 clips belong to queued P-A rows
+  and wait for their images. Each clip reads the **full paradigm** — headword,
+  then genitive (nouns), 3sg + past (verbs) or feminine (adjectives) — so the
+  audio now teaches the stress *shift* between forms, which a written accent on
+  the lemma cannot.
+- Processing: silence-trimmed, EBU R128 loudness-normalised to −16 LUFS, mono
+  24 kHz 64 kbps MP3. 21 minutes, 10.3 MB for 524 clips.
+- **`audio_source.tsv`** records per-card provenance (human vs azure-neural), so
+  the deck description can stay honest while the changeover is partial.
+
+### Fixed
+- **Six wrong noun genitives**, caught by the owner while recording:
+  `sultys→sulčių`, `durys→durų`, `grindys→grindų`, `petys→peties`,
+  `smegenys→smegenų`, `naktis→nakties`. All six were rule-derived in 1.7.5 and
+  the rule misfired on plural-only and i-stem nouns (it had produced *sultio*,
+  *durio*, *nakčio*). A follow-up audit of all 50 `-is`/`-ys` genitives and every
+  i-stem noun in the deck found **no further cases** — the true i-stems were
+  hand-authored and correct.
+
+### Changed
+- **Deck images downscaled to 1024 px** (JPEG q85, progressive). AnkiWeb caps a
+  shared deck at 250 MB; measurement showed resolution dominates format — full
+  size WebP would still reach ~308 MB at the projected 1365 cards, whereas
+  1024 px JPEG lands ~179 MB and keeps universal client compatibility. The deck
+  drops from **170 MB to 78 MB**, and 1024 px is still larger than a card ever
+  displays.
+
+### Known
+- `071_melynas` was recorded silent (raw take is 9.2 s at RMS 4) and keeps its
+  synthesized clip until re-recorded.
+
 ## [1.7.8] — 2026-07-24
 
 ### Added

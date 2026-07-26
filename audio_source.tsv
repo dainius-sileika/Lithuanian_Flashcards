@@ -1,0 +1,618 @@
+key	source
+001_suo	human
+002_kate	human
+003_zuvis	human
+004_paukstis	human
+005_karve	human
+006_kiaule	human
+007_pele	human
+008_arklys	human
+009_sparnas	human
+010_gyvunas	human
+011_traukinys	human
+012_lektuvas	human
+013_automobilis	human
+014_sunkvezimis	human
+015_dviratis	human
+016_autobusas	human
+017_valtis	human
+018_laivas	human
+019_padanga	human
+020_benzinas	human
+021_variklis	human
+022_bilietas	human
+023_transportas	human
+024_miestas	human
+025_namas	human
+026_butas	human
+027_gatve	human
+028_kelias	human
+029_oro_uostas	human
+030_stotis	human
+031_tiltas	human
+032_viesbutis	human
+033_restoranas	human
+034_ukis	human
+035_teismas	human
+036_mokykla	human
+037_biuras	human
+038_kambarys	human
+039_miestelis	human
+040_universitetas	human
+041_klubas	human
+042_baras	human
+043_parkas	human
+044_stovykla	human
+045_parduotuve	human
+046_teatras	human
+047_biblioteka	human
+048_ligonine	human
+049_baznycia	human
+050_turgus	human
+051_salis	human
+052_pastatas	human
+053_zeme	human
+054_kosmosas	human
+055_bankas	human
+056_vieta	human
+057_kepure	human
+058_suknele	human
+059_kostiumas	human
+060_sijonas	human
+061_marskiniai	human
+062_marskineliai	human
+063_kelnes	human
+064_batai	human
+065_kisene	human
+066_paltas	human
+067_deme	human
+068_drabuziai	human
+069_raudonas	human
+070_zalias	human
+071_melynas	azure-neural
+072_geltonas	human
+073_rudas	human
+074_rozinis	human
+075_oranzinis	human
+076_juodas	human
+077_baltas	human
+078_pilkas	human
+079_spalva	human
+080_sunus	human
+081_dukra	human
+082_motina	human
+083_tevas	human
+084_tevai	human
+085_kudikis	human
+086_vyras	human
+087_moteris	human
+088_brolis	human
+089_sesuo	human
+090_seima	human
+091_senelis	human
+092_senele	human
+093_vyras	human
+094_zmona	human
+095_karalius	human
+096_karaliene	human
+097_prezidentas	human
+098_kaimynas	human
+099_berniukas	human
+100_mergaite	human
+101_vaikas	human
+102_suauges	human
+103_zmogus	human
+104_draugas	human
+105_auka	human
+106_zaidejas	human
+107_sirgalius	human
+108_minia	human
+109_asmuo	human
+110_mokytojas	human
+111_studentas	human
+112_advokatas	human
+113_gydytojas	human
+114_pacientas	human
+115_padavejas	human
+116_sekretorius	human
+117_kunigas	human
+118_policininkas	human
+119_policija	human
+120_kariuomene	human
+121_kareivis	human
+122_menininkas	human
+123_autorius	human
+124_vadovas	human
+125_zurnalistas	human
+126_aktorius	human
+127_darbas	human
+128_religija	azure-neural
+129_dangus	azure-neural
+130_pragaras	azure-neural
+131_mirtis	azure-neural
+132_vaistai	azure-neural
+133_pinigai	azure-neural
+134_doleris	azure-neural
+135_banknotas	azure-neural
+136_santuoka	azure-neural
+137_vestuves	human
+138_komanda	azure-neural
+139_santykiai	azure-neural
+140_rase	azure-neural
+141_seksas	azure-neural
+142_lytis	azure-neural
+143_zmogzudyste	azure-neural
+144_kalejimas	azure-neural
+145_technologija	azure-neural
+146_energija	azure-neural
+147_karas	azure-neural
+148_taika	azure-neural
+149_puolimas	azure-neural
+150_rinkimai	azure-neural
+151_zurnalas	azure-neural
+152_laikrastis	azure-neural
+153_nuodai	azure-neural
+154_ginklas	azure-neural
+155_sportas	azure-neural
+156_lenktynes	azure-neural
+157_manksta	azure-neural
+158_kamuolys	azure-neural
+159_zaidimas	azure-neural
+160_kaina	azure-neural
+161_sutartis	azure-neural
+162_narkotikas	azure-neural
+163_zenklas	human
+164_mokslas	azure-neural
+165_dievas	azure-neural
+166_grupe	human
+167_daina	azure-neural
+168_instrumentas	human
+169_muzika	azure-neural
+170_filmas	human
+171_menas	azure-neural
+172_kava	human
+173_arbata	human
+174_vynas	human
+175_alus	human
+176_sultys	human
+177_vanduo	human
+178_pienas	human
+179_gerimas	human
+180_kiausinis	human
+181_suris	human
+182_duona	human
+183_sriuba	human
+184_tortas	human
+185_vistiena	human
+186_kiauliena	human
+187_jautiena	human
+188_obuolys	human
+189_bananas	human
+190_apelsinas	human
+191_citrina	human
+192_kukuruzai	human
+193_ryziai	human
+194_aliejus	human
+195_tepalas	human
+196_sekla	human
+197_peilis	human
+198_saukstas	human
+199_sakute	human
+200_lekste	human
+201_puodelis	human
+202_pusryciai	human
+203_pietus	human
+204_vakariene	human
+205_cukrus	human
+206_druska	human
+207_butelis	human
+208_maistas	human
+209_stalas	human
+210_kede	human
+211_lova	human
+212_sapnas	azure-neural
+213_langas	human
+214_durys	human
+215_miegamasis	human
+216_virtuve	human
+217_vonia	human
+218_piestukas	human
+219_rasiklis	human
+220_nuotrauka	human
+221_muilas	human
+222_knyga	human
+223_puslapis	human
+224_raktas	human
+225_dazai	human
+226_laiskas	human
+227_raide	azure-neural
+228_rastelis	human
+229_siena	human
+230_popierius	human
+231_grindys	human
+232_lubos	human
+233_stogas	human
+234_baseinas	human
+235_spyna	human
+236_telefonas	human
+237_sodas	human
+238_kiemas	human
+239_adata	human
+240_krepsys	human
+241_deze	human
+242_dovana	human
+243_kortele	human
+244_ziedas	human
+245_irankis	human
+246_laikrodis	human
+247_lempa	human
+248_ventiliatorius	human
+249_mobilusis_telefonas	human
+250_tinklas	azure-neural
+251_kompiuteris	human
+252_programa	azure-neural
+253_nesiojamasis_kompiuteris	human
+254_ekranas	human
+255_fotoaparatas	human
+256_televizorius	human
+257_radijas	human
+258_galva	human
+259_kaklas	human
+260_veidas	human
+261_barzda	human
+262_plaukai	human
+263_akis	human
+264_burna	human
+265_lupa	human
+266_nosis	human
+267_dantis	human
+268_ausis	human
+269_asara	human
+270_liezuvis	human
+271_nugara	human
+272_kojos_pirstas	human
+273_pirstas	human
+274_peda	human
+275_plastaka	human
+276_koja	human
+277_ranka	human
+278_petys	human
+279_sirdis	human
+280_kraujas	human
+281_smegenys	human
+282_kelis	human
+283_prakaitas	human
+284_liga	azure-neural
+285_kaulas	human
+286_balsas	azure-neural
+287_oda	human
+288_kunas	human
+289_jura	human
+290_vandenynas	human
+291_upe	human
+292_kalnas	human
+293_lietus	human
+294_sniegas	human
+295_medis	human
+296_saule	human
+297_menulis	human
+298_pasaulis	azure-neural
+299_zeme	human
+300_miskas	human
+301_dangus	human
+302_augalas	human
+303_vejas	human
+304_zeme	human
+305_gele	human
+306_slenis	human
+307_saknis	human
+308_ezeras	human
+309_zvaigzde	human
+310_zole	human
+311_lapas	human
+312_oras	azure-neural
+313_smelis	human
+314_papludimys	human
+315_banga	human
+316_ugnis	human
+317_ledas	human
+318_sala	human
+319_kalva	human
+320_karstis	azure-neural
+321_gamta	human
+322_stiklas	human
+323_metalas	human
+324_plastikas	human
+325_mediena	human
+326_akmuo	human
+327_deimantas	human
+328_molis	human
+329_dulkes	human
+330_auksas	human
+331_varis	human
+332_sidabras	human
+333_medziaga	human
+334_metras	azure-neural
+335_centimetras	azure-neural
+336_kilogramas	azure-neural
+337_colis	azure-neural
+338_peda	azure-neural
+339_svaras	azure-neural
+340_puse	azure-neural
+341_apskritimas	azure-neural
+342_kvadratas	azure-neural
+343_temperatura	azure-neural
+344_data	azure-neural
+345_svoris	azure-neural
+346_krastas	azure-neural
+347_kampas	azure-neural
+348_zemelapis	human
+349_taskas	human
+350_priebalsis	azure-neural
+351_balsis	azure-neural
+352_sviesa	azure-neural
+353_garsas	azure-neural
+354_taip	azure-neural
+355_ne	azure-neural
+356_gabalas	azure-neural
+357_skausmas	azure-neural
+358_suzalojimas	human
+359_zaizda	human
+360_skyle	human
+361_vaizdas	human
+362_rastas	azure-neural
+363_dirbti	human
+364_zaisti	human
+365_groti	human
+366_eiti	human
+367_begti	human
+368_vairuoti	human
+369_skristi	human
+370_plaukti	human
+371_eiti	human
+372_sustoti	human
+373_sekti	human
+374_galvoti	azure-neural
+375_sakyti	human
+376_valgyti	human
+377_gerti	human
+378_zudyti	human
+379_mirti	human
+380_sypsotis	human
+381_juoktis	human
+382_verkti	human
+383_pirkti	human
+384_moketi	human
+385_parduoti	human
+386_sauti	human
+387_mokytis	azure-neural
+388_sokti	human
+389_uostyti	human
+390_girdeti	human
+391_klausytis	human
+392_ragauti	human
+393_liesti	human
+394_matyti	human
+395_ziureti	human
+396_buciuoti	human
+397_degti	human
+398_tirpti	human
+399_kasti	human
+400_sprogti	human
+401_sedeti	human
+402_stoveti	human
+403_myleti	azure-neural
+404_praeiti	human
+405_pjauti	human
+406_mustis	human
+407_guleti	human
+408_sokti	human
+409_miegoti	human
+410_pabusti	human
+411_dainuoti	human
+412_skaiciuoti	human
+413_tuoktis	human
+414_melstis	azure-neural
+415_laimeti	azure-neural
+416_pralaimeti	azure-neural
+417_maisyti	human
+418_lenkti	human
+419_plauti	human
+420_gaminti	human
+421_atidaryti	human
+422_uzdaryti	human
+423_rasyti	human
+424_skambinti	human
+425_sukti	human
+426_statyti	human
+427_mokyti	azure-neural
+428_augti	human
+429_piesti	human
+430_maitinti	human
+431_gaudyti	human
+432_mesti	human
+433_valyti	human
+434_rasti	human
+435_kristi	human
+436_stumti	human
+437_traukti	human
+438_nesti	human
+439_lauzyti	human
+440_deveti	human
+441_kabinti	human
+442_purtyti	human
+443_pasirasyti	human
+444_musti	human
+445_kelti	human
+446_ilgas	human
+447_trumpas	human
+448_aukstas	human
+449_zemas	human
+450_platus	human
+451_siauras	human
+452_didelis	human
+453_mazas	human
+454_letas	human
+455_greitas	human
+456_karstas	human
+457_saltas	human
+458_siltas	human
+459_vesus	human
+460_naujas	human
+461_senas	human
+462_jaunas	human
+463_senas	human
+464_geras	azure-neural
+465_blogas	azure-neural
+466_slapias	human
+467_sausas	human
+468_sergantis	human
+469_sveikas	human
+470_garsus	human
+471_tylus	human
+472_laimingas	human
+473_liudnas	human
+474_grazus	human
+475_bjaurus	human
+476_kurcias	human
+477_aklas	human
+478_malonus	human
+479_piktas	azure-neural
+480_turtingas	human
+481_neturtingas	human
+482_storas	human
+483_plonas	human
+484_brangus	human
+485_pigus	human
+486_plokscias	human
+487_islenktas	human
+488_vyriskas	human
+489_moteriskas	human
+490_ankstas	human
+491_laisvas	human
+492_aukstas	human
+493_zemas	human
+494_minkstas	human
+495_kietas	human
+496_gilus	human
+497_seklus	human
+498_svarus	human
+499_purvinas	human
+500_stiprus	human
+501_silpnas	human
+502_negyvas	human
+503_gyvas	human
+504_sunkus	human
+505_lengvas	human
+506_tamsus	human
+507_sviesus	human
+508_branduolinis	azure-neural
+509_garsus	azure-neural
+510_as	azure-neural
+511_tu	azure-neural
+512_jis	azure-neural
+513_ji	azure-neural
+514_tai	azure-neural
+515_mes	azure-neural
+516_jus	azure-neural
+517_jie	azure-neural
+528_serti	azure-neural
+529_lesinti	azure-neural
+530_lydyti	human
+A2-0001	human (queued card, image pending)
+A2-0002	human (queued card, image pending)
+A2-0003	human (queued card, image pending)
+A2-0004	human (queued card, image pending)
+A2-0005	human (queued card, image pending)
+A2-0006	human (queued card, image pending)
+A2-0007	human (queued card, image pending)
+A2-0008	human (queued card, image pending)
+A2-0009	human (queued card, image pending)
+A2-0010	human (queued card, image pending)
+A2-0011	human (queued card, image pending)
+A2-0012	human (queued card, image pending)
+A2-0013	human (queued card, image pending)
+A2-0014	human (queued card, image pending)
+A2-0015	human (queued card, image pending)
+A2-0016	human (queued card, image pending)
+A2-0017	human (queued card, image pending)
+A2-0018	human (queued card, image pending)
+A2-0019	human (queued card, image pending)
+A2-0020	human (queued card, image pending)
+A2-0021	human (queued card, image pending)
+A2-0022	human (queued card, image pending)
+A2-0023	human (queued card, image pending)
+A2-0024	human (queued card, image pending)
+A2-0025	human (queued card, image pending)
+A2-0026	human (queued card, image pending)
+A2-0027	human (queued card, image pending)
+A2-0028	human (queued card, image pending)
+A2-0029	human (queued card, image pending)
+A2-0030	human (queued card, image pending)
+A2-0031	human (queued card, image pending)
+A2-0032	human (queued card, image pending)
+A2-0033	human (queued card, image pending)
+A2-0034	human (queued card, image pending)
+A2-0035	human (queued card, image pending)
+A2-0036	human (queued card, image pending)
+A2-0037	human (queued card, image pending)
+A2-0038	human (queued card, image pending)
+A2-0039	human (queued card, image pending)
+A2-0040	human (queued card, image pending)
+A2-0041	human (queued card, image pending)
+A2-0042	human (queued card, image pending)
+A2-0043	human (queued card, image pending)
+A2-0044	human (queued card, image pending)
+A2-0045	human (queued card, image pending)
+A2-0046	human (queued card, image pending)
+A2-0047	human (queued card, image pending)
+A2-0048	human (queued card, image pending)
+A2-0049	human (queued card, image pending)
+A2-0050	human (queued card, image pending)
+A2-0051	human (queued card, image pending)
+A2-0052	human (queued card, image pending)
+A2-0053	human (queued card, image pending)
+A2-0054	human (queued card, image pending)
+A2-0055	human (queued card, image pending)
+A2-0056	human (queued card, image pending)
+A2-0057	human (queued card, image pending)
+A2-0058	human (queued card, image pending)
+A2-0059	human (queued card, image pending)
+A2-0060	human (queued card, image pending)
+A2-0061	human (queued card, image pending)
+A2-0062	human (queued card, image pending)
+A2-0063	human (queued card, image pending)
+A2-0064	human (queued card, image pending)
+A2-0065	human (queued card, image pending)
+A2-0066	human (queued card, image pending)
+A2-0067	human (queued card, image pending)
+A2-0068	human (queued card, image pending)
+A2-0069	human (queued card, image pending)
+A2-0070	human (queued card, image pending)
+A2-0071	human (queued card, image pending)
+A2-0072	human (queued card, image pending)
+A2-0073	human (queued card, image pending)
+A2-0074	human (queued card, image pending)
+A2-0075	human (queued card, image pending)
+A2-0076	human (queued card, image pending)
+A2-0077	human (queued card, image pending)
+A2-0078	human (queued card, image pending)
+A2-0079	human (queued card, image pending)
+A2-0080	human (queued card, image pending)
+A2-0084	human (queued card, image pending)
+A2-0085	human (queued card, image pending)
+A2-0086	human (queued card, image pending)
+A2-0087	human (queued card, image pending)
+A2-0089	human (queued card, image pending)
+A2-0090	human (queued card, image pending)
+A2-0093	human (queued card, image pending)
+A2-0094	human (queued card, image pending)
+A2-0095	human (queued card, image pending)
+A2-0096	human (queued card, image pending)
+A2-0100	human (queued card, image pending)
+A2-0101	human (queued card, image pending)
+A2-0102	human (queued card, image pending)
+A2-0104	human (queued card, image pending)
+A2-0105	human (queued card, image pending)
+A2-0106	human (queued card, image pending)
+A2-0107	human (queued card, image pending)

@@ -44,3 +44,7 @@ _accents_*.tsv
 
 # transient apkg media (transcoded jpg)
 _apkg_media/
+
+# raw recording sessions (masters kept locally)
+deprecated/recordings_raw/
+Inbox/
