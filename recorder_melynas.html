@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Re-record — mėlynas</title>
+<style>
+  :root{--paper:#e7ddc6;--paper2:#efe7d4;--red:#97301f;--ink:#2c2620;--teal:#3c5e5a;--dun:#8a7d61;--green:#3f7d4f}
+  *{box-sizing:border-box}
+  body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--paper);margin:0;
+       background-image:radial-gradient(rgba(44,38,32,.05) 1px,transparent 1.2px);background-size:6px 6px}
+  header{background:var(--red);color:var(--paper);padding:10px 16px;font-variant:small-caps;letter-spacing:.12em;font-weight:700}
+  .wrap{max-width:640px;margin:0 auto;padding:16px}
+  .card{background:var(--paper2);border:2px solid var(--red);padding:28px 22px;text-align:center;margin-top:16px}
+  .word{font-size:3.6rem;font-weight:700;margin:4px 0}
+  .en{color:#4a4238;font-size:1.15rem}.en:before{content:"— ";color:var(--red)}
+  .script{margin:16px auto 0;padding:14px;background:#f6f1e2;border:1px dashed var(--red)}
+  .script .lead{font-variant:small-caps;letter-spacing:.1em;font-size:.72rem;color:var(--dun);display:block;margin-bottom:8px}
+  .script b{font-size:2rem;margin:0 .35em}
+  .script .lab{font-size:.7rem;color:var(--teal);font-variant:small-caps;vertical-align:super;margin-right:2px}
+  .controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+  button{font-family:inherit;font-size:1rem;padding:12px 20px;border:2px solid var(--red);background:var(--paper);
+         color:var(--red);border-radius:3px;cursor:pointer;font-variant:small-caps;letter-spacing:.06em;font-weight:700}
+  button:hover{background:var(--red);color:var(--paper)}
+  button:disabled{opacity:.4;cursor:not-allowed}
+  button.rec{background:var(--red);color:var(--paper)}
+  button.recording{background:#c0392b;color:#fff;border-color:#c0392b;animation:pulse 1s infinite}
+  @keyframes pulse{50%{opacity:.55}}
+  .status{margin-top:12px;color:var(--teal);min-height:1.3em}
+  audio{width:100%;margin-top:14px}
+  .hint{font-size:.86rem;color:var(--dun);margin-top:14px;line-height:1.55}
+  kbd{background:#d8ccae;border:1px solid var(--dun);border-radius:3px;padding:0 5px;font-family:monospace;font-size:.8rem}
+</style></head>
+<body>
+<header>Lietuvių — single re-record</header>
+<div class="wrap">
+  <div class="card">
+    <div class="word">mė́lynas</div>
+    <div class="en">blue</div>
+    <div class="script">
+      <span class="lead">say both, one breath apart</span>
+      <b>mė́lynas</b><span style="color:var(--dun);font-size:1.4rem">·</span><span class="lab">fem.</span><b>mėlyna</b>
+    </div>
+    <div class="controls">
+      <button class="rec" id="rec">● Record</button>
+      <button id="play" disabled>▶ Play</button>
+      <button id="dl" disabled>⬇ Download</button>
+    </div>
+    <audio id="player" controls style="display:none"></audio>
+    <p class="status" id="status">The last take came through silent — this one replaces it.</p>
+    <p class="hint">
+      <kbd>Space</kbd> to start/stop. Play it back to check there's actual sound, then
+      <b>Download</b> — the file saves as <code>071_melynas.webm</code>, already named
+      correctly. Drop it in the <b>Inbox</b> folder and I'll swap it in.
+    </p>
+  </div>
+</div>
+<script>
+let stream, rec, chunks=[], blob=null, MIME='';
+const $=id=>document.getElementById(id);
+function pick(){for(const m of ['audio/webm;codecs=opus','audio/webm','audio/mp4','audio/ogg'])
+  if(window.MediaRecorder&&MediaRecorder.isTypeSupported(m))return m;return '';}
+async function ensure(){
+  if(stream)return true;
+  try{stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});}
+  catch(e){$('status').textContent="Could not access the microphone: "+e.message;return false;}
+  MIME=pick();return true;
+}
+async function toggle(){
+  if(rec&&rec.state==='recording'){rec.stop();return;}
+  if(!await ensure())return;
+  chunks=[];rec=new MediaRecorder(stream,MIME?{mimeType:MIME}:undefined);
+  rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};
+  rec.onstop=()=>{
+    blob=new Blob(chunks,{type:MIME||'audio/webm'});
+    $('player').src=URL.createObjectURL(blob);$('player').style.display='block';
+    $('play').disabled=false;$('dl').disabled=false;
+    $('rec').classList.remove('recording');$('rec').textContent='● Re-record';
+    $('status').textContent="Recorded — "+Math.round(blob.size/1024)+" KB. Play it back to confirm there's sound.";
+  };
+  rec.start();$('rec').classList.add('recording');$('rec').textContent='■ Stop';
+  $('status').textContent="Recording…";
+}
+$('rec').onclick=toggle;
+$('play').onclick=()=>{const p=$('player');p.currentTime=0;p.play();};
+$('dl').onclick=()=>{
+  if(!blob)return;
+  const ext=(blob.type.includes('mp4')?'m4a':blob.type.includes('ogg')?'ogg':'webm');
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='071_melynas.'+ext;a.click();
+  $('status').textContent="Saved as 071_melynas."+ext+" — drop it in the Inbox folder.";
+};
+document.addEventListener('keydown',e=>{if(e.code==='Space'){e.preventDefault();toggle();}});
+</script>
+</body></html>
