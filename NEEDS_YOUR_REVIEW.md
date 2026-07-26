@@ -3,63 +3,44 @@
 This file is the single answer to "where's the bottleneck?". It is rewritten
 every time a batch moves, so whatever is at the top is what unblocks the project.
 
-**Last updated: 2026-07-25 · after the accent pass**
+**Last updated: 2026-07-25 · P-A verified and merged**
 
 ---
 
-## → Do this now: `review_P-A.csv`
+## → Nothing is blocked on you this minute
 
-**97 rows. One pass, correcting rather than authoring.** This is Phase A —
-time, calendar, numbers and the everyday nouns the deck is missing. Nothing
-else can be generated until it's checked, because the whole pipeline
-(images → audio → forms) is built on the word being right.
+**P-A is verified and merged** — 97/97 accents (all passed the strip-back gate),
+62 grammar forms, every row now reads *owner-confirmed*. I'm authoring the scene
+phrases and generating that phase now; I'll come back with a small validation
+batch (a numeral, a day, a month, a plain noun) before spending on all 97, because
+the `card_text` lettering machinery is new and I want it proven on four cards
+rather than ninety-seven.
 
-How to work it — only three columns need you:
+## → Next for you, whenever convenient
 
-| column | what to do |
-|--------|-----------|
-| `LT_ok_or_fix` | Leave **blank if my proposed Lithuanian is right**. Type a correction if not. That's the important one. |
-| `accent_FILL` | **12 rows** say `<-- from kirtis.info`. Everything else already has a sourced accent in `accent`. |
-| `form_ok_or_fix` | **18 rows** are flagged in `form_confidence` (i-stem `-is`, plural-only nouns, irregulars). The other 58 are rule-derived and usually fine — a skim is enough. |
+**1. Duplicate decisions — `wordlist_a2_pending.csv`, filter `status = review-duplicate`.**
+139 rows collide with the existing 520. Most should be dropped; a few are arguably
+distinct senses (*sąskaita* = restaurant bill vs bank account). Mark keep/drop.
+Quick, and it shrinks every phase downstream.
 
-`comment` is free text for anything that smells wrong (a gloss pointing at the
-wrong sense, a word that's technically right but nobody says, etc.).
+**2. `accents_todo_kirtis.csv` — 185 words left** (down from 195; the 10 in P-A are
+done). **43 are A1.** The next review pack (P-C) will draw from this list, so
+doing the A1 ones first stays efficient.
 
-**Ignore** `card_text_plan` — that's my column; it records what lettering the
-card is allowed to show (a numeral, a day name on a calendar).
+## Coming back to you next
 
----
-
-## Then: duplicate decisions
-
-**139 rows** in `wordlist_a2_pending.csv` have `status = review-duplicate` —
-they collide with something already in the 520-card deck. Most should be
-dropped, but some are arguably distinct senses (*sąskaita* = restaurant bill vs
-bank account; *kaina* = price vs cost). Filter that column and mark keep/drop.
-Quick job, and it shrinks everything downstream.
-
----
-
-## Background, whenever you have a spare hour
-
-**`accents_todo_kirtis.csv` — 195 words**, sorted by level and category, with an
-empty `accented_form_FILL_ME` column. **53 are A1** and worth doing first; the
-12 in the P-A pack above are drawn from this list, so doing P-A's first is the
-efficient order. No automated source carries these (see the accent-source
-evaluation in `ROADMAP.md` — Wiktionary simply lacks the data).
+**`review_P-C.csv`** — 122 rows, A2 topical vocabulary (travel, health, work,
+shopping, home, feelings, technology, society). Same three-column format. I'll
+produce it once P-A images are through QA.
 
 ---
 
 ## Not blocked on you
 
-I'm handling these in parallel; listed so you know they're not forgotten:
-
-- Rule-deriving the remaining grammar forms across all phases (359 genitives,
-  148 verb pairs, 65 feminines) — I flag irregulars rather than guessing them.
-- Authoring the ~592 subject phrases for image rows, per phase, after its words
-  are confirmed.
-- Building the sentence/phrase note type, which unblocks phases B, D, E and G.
-- Finishing the `card_text` plans for numerals and calendar cards.
+- Rule-deriving grammar forms for the remaining phases; irregulars get flagged,
+  never guessed.
+- Authoring subject phrases per phase, after that phase's words are confirmed.
+- Building the sentence/phrase note type, which unblocks P-B, P-D, P-E and P-G.
 
 ---
 
@@ -67,5 +48,5 @@ I'm handling these in parallel; listed so you know they're not forgotten:
 
 For each phase: **I produce a review pack → you correct it → I author the scene
 phrases, generate, QA, and merge** (with audio, level tags and a rebuilt
-recorder). Then the next phase. Order: **P-A → P-C → P-F** (in three chunks),
-with **P-B / P-D / P-E / P-G** following once the sentence note type exists.
+recorder). Order: **P-A → P-C → P-F** (in three chunks), with
+**P-B / P-D / P-E / P-G** following once the sentence note type exists.
