@@ -35,8 +35,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 ## [1.8.0] — 2026-07-26 — human audio
 
 ### Added
-- **Human audio for A1.** 523 owner-recorded clips replace the synthesized voice
-  on **426 of 520 deck cards**; the remaining 97 clips belong to queued P-A rows
+- **Human audio for A1.** 524 owner-recorded clips replace the synthesized voice
+  on **all 427 A1 cards** (of 520 total); the remaining 97 clips belong to queued P-A rows
   and wait for their images. Each clip reads the **full paradigm** — headword,
   then genitive (nouns), 3sg + past (verbs) or feminine (adjectives) — so the
   audio now teaches the stress *shift* between forms, which a written accent on
@@ -63,9 +63,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   drops from **170 MB to 78 MB**, and 1024 px is still larger than a card ever
   displays.
 
-### Known
-- `071_melynas` was recorded silent (raw take is 9.2 s at RMS 4) and keeps its
-  synthesized clip until re-recorded.
+### Note
+- `071_melynas` was silent on the first take (9.2 s at RMS 4 — the mic dropped);
+  re-recorded the same day via a single-word recorder page. **All 427 A1 deck
+  cards now carry human audio.**
 
 ## [1.7.8] — 2026-07-24
 

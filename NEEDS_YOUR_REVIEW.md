@@ -18,17 +18,11 @@ A1 cards plus the 97 P-A rows. The 312 above are the rest of A1; once merged,
 re-run `python3 build_recorder.py A1` and the recorder will hold only the
 un-recorded remainder.
 
-## → One re-record
-
-**`071_melynas` (mėlynas)** came through silent — the raw take is 9.2 seconds at
-RMS 4, so the mic dropped for that card. It keeps its synthesized clip until you
-redo it. Everything else landed: **523 of 524 clips usable.**
-
 ---
 
 ## Done this round
 
-- **Human audio installed** on 426 of 520 deck cards; 97 clips held for P-A rows
+- **Human audio installed on all 427 A1 cards** (mėlynas re-recorded); 97 clips held for P-A rows
   whose images don't exist yet. Trimmed, loudness-normalised, 10.3 MB total.
 - **Your six genitive corrections applied**, plus an audit of every `-is`/`-ys`
   and i-stem noun in the deck — no further cases found.
