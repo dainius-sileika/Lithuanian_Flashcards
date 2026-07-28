@@ -9,10 +9,10 @@ version bumps.
 
 | version | what | where |
 |---------|------|-------|
-| **1.7.1** | noun-inset dress follows setting (civilian default; Materials + tool/industry = worker); inset-meaning gate baked into the prompt | root: `go_grammars.py`, `go_generator.py`, `deck_builder.py`; `files_1_7_1_DIFF.md`; `GO_STYLE_SPEC_files_1_7_1.md` |
+| **1.7.1** | noun-inset dress follows setting (civilian default; Materials + tool/industry = worker); inset-meaning gate baked into the prompt | root: `go_grammars.py`, `go_generator.py`, `deck_builder.py`; `files_1_7_1_DIFF.md`; `GO_STYLE_SPEC.md` |
 | 1.7 | guessability pass: QA gate, NOUN_STAGING (22 rows), OVERRIDE_CLASS reroutes, wordlist 2.3 (22 phrases) | `deprecated/code_1.7/`; `files_1_7_DIFF.md` (corrected record) |
 | 1.6.1 | 8 open design decisions implemented; glyph exception; wordlist 2.2 | `deprecated/code_1.6.1/`, `deprecated/spec_1.6.1/`, `deprecated/wordlist_2.2/` |
-| ≤1.6 | full narrative history (0.1 → 1.6) | "File batches ledger" in `GO_STYLE_SPEC_files_1_7_1.md` |
+| ≤1.6 | full narrative history (0.1 → 1.6) | "File batches ledger" in `GO_STYLE_SPEC.md` |
 
 ## Current working files (root)
 - `go_generator.py` — the GO engine (style/palette/overlays/generation). Backend: OpenAI gpt-image-1.5.
@@ -22,7 +22,7 @@ version bumps.
 - `verb_flashcards.py`, `noun_flashcards.py` — verb production staging / noun demo.
 - `master_wordlist.csv` — wordlist 2.9 (530 rows → 520 generable cards).
 - `cards_anki.csv` — the curated 520-row Anki dataset (forms + accents). `build_apkg.py` builds the deck from it.
-- `GO_STYLE_SPEC_files_1_7_1.md` — canonical spec + changelog.
+- `GO_STYLE_SPEC.md` — canonical spec + changelog.
 - `files_1_7_DIFF.md`, `files_1_7_1_DIFF.md` — per-release sign-off diffs.
 - `out_deck/` — generated card PNGs + `ledger.csv` (prompts) + `cards.csv` (raw per-generation log; the clean Anki source is `cards_anki.csv`).
 - `out_par/` — transient per-card working dirs (safe to ignore).

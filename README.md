@@ -71,10 +71,12 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 | `go_grammars.py` | Per-category visual grammars (the executable design bible). |
 | `deck_builder.py` | Production runner: routes every wordlist row, applies per-card staging overrides. |
 | `driver.py` | Parallel/batch runner; resumable; merges into `out_deck/`. |
-| `GO_STYLE_SPEC_files_1_7_1.md` | The canonical art specification + full changelog. |
+| `GO_STYLE_SPEC.md` | The canonical art specification (house style, grammars, rules). |
 | `NEEDS_YOUR_REVIEW.md` | **Start here if you're the owner** — the current bottleneck and exactly which file to check. |
 | `ROADMAP.md` | **The plan to A2** — gap analysis, phased build, outstanding work. |
-| `wordlist_a2_pending.csv` | The A2 queue: 402 proposed words/phrases/patterns, phased. |
+| `wordlist_a2_pending.csv` | The A2 queue: 984 proposed words/phrases/patterns, phased. |
+| `review_A1*.csv` | Open review packs awaiting the owner. |
+| `build_recorder.py` | Generates the voice-recorder sheet on demand (`python3 build_recorder.py A1 new`). |
 | `CHANGELOG.md` | **Release changelog** — what changed in each version. |
 | `VERSIONS.md` | Long-form production notes behind each release. |
 | `deprecated/` | Frozen older code/wordlist/spec versions for rollback. |

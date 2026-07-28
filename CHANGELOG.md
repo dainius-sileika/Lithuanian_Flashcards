@@ -249,4 +249,4 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 ## [0.1 – 1.6] — 2026-07
 
 Initial engine, house style and vocabulary build-out. See the "File batches
-ledger" in `GO_STYLE_SPEC_files_1_7_1.md` for the full narrative history.
+ledger" in `GO_STYLE_SPEC.md` for the full narrative history.

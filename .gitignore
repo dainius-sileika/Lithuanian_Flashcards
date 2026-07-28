@@ -56,3 +56,6 @@ _rec*/
 _proto/
 review/
 out_phrases/
+
+# recorder sheets are build artifacts — regenerate with build_recorder.py
+recorder*.html
