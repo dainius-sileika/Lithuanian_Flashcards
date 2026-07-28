@@ -35,6 +35,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 ## [1.9.0] — 2026-07-28 — question & sequence grammars, gender symbols
 
 ### Added
+- **Three phrase/sentence formats, chosen by job** — settled with a side-by-side
+  bake-off of the same phrase before any bulk generation. `utterance` (one pane,
+  one speaker, one bubble) for formulas and sentence patterns; `exchange` (two
+  panels, same two people, ask then answer) for transactional phrases, where the
+  pragmatics are the point; `sequence` (numbered strip) reserved for items where
+  time or causality *is* the meaning — mostly A2. The strip was demoted from the
+  default after the bake-off showed it reads as a narrative, under-determining
+  which sentence it depicts. Bubble/panel content authored for all 51 items.
+- **57 more human clips** (9 question words + 48 A1 phrases and sentences),
+  processed with the settled no-trim pipeline. 581 human clips in the deck.
 - **Question grammar.** Question words are unpicturable one at a time but uniform
   as a *set*, so every question card is the same civic enquiry scene — asker on
   the left, clerk behind a counter on the right, one large speech bubble — and
@@ -58,6 +68,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   for feminine, both together for words with two forms, and a small **pl.** tag
   beside for plural-only nouns. Computed in `build_apkg.gender_mark()` and styled
   in `go_theme.css`.
+- **Recorder bug fixed:** every generated sheet shared a single IndexedDB store,
+  so a fresh sheet counted the previous session's clips as already recorded and
+  displayed a stale count. The store is now namespaced per sheet.
 - `build_recorder.py` gains a `new` mode — `python3 build_recorder.py A1 new`
   builds a sheet of only the words with no human recording yet.
 

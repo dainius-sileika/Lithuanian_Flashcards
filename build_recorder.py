@@ -167,11 +167,12 @@ TEMPLATE = r"""<!doctype html>
 </div>
 <script>
 const WORDS = __WORDS__;
+const SHEET_ID = "__SHEET_ID__";        // unique per generated sheet
 document.getElementById('count').textContent = "0 / " + WORDS.length;
 
 /* ---------- IndexedDB (persist clips so a long session can resume) ---------- */
 let db;
-function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open('lt_recorder',1);
+function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open('lt_recorder_'+SHEET_ID,1);
   r.onupgradeneeded=e=>e.target.result.createObjectStore('clips');
   r.onsuccess=e=>{db=e.target.result;res()};r.onerror=()=>rej(r.error);});}
 function putClip(k,b){return new Promise((res,rej)=>{const t=db.transaction('clips','readwrite');
@@ -299,7 +300,11 @@ document.getElementById('export').onclick=async()=>{
 </script>
 </body></html>"""
 
-html = TEMPLATE.replace("__WORDS__", json.dumps(WORDS, ensure_ascii=False))
+import hashlib
+sheet_id = (LEVEL or "all") + ("_new" if ONLY_NEW else "") + "_" + \
+    hashlib.md5(",".join(w["key"] for w in WORDS).encode()).hexdigest()[:8]
+html = (TEMPLATE.replace("__WORDS__", json.dumps(WORDS, ensure_ascii=False))
+                .replace("__SHEET_ID__", sheet_id))
 out = ("recorder_" + (LEVEL or "all") + ("_new" if ONLY_NEW else "") + ".html")
 open(out, "w", encoding="utf-8").write(html)
 print(f"wrote {out} — {len(WORDS)} words, {len(html)//1024} KB")

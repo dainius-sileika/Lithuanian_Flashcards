@@ -48,3 +48,11 @@ _apkg_media/
 # raw recording sessions (masters kept locally)
 deprecated/recordings_raw/
 Inbox/
+
+# session working dirs
+_rawnew/
+_newclean/
+_rec*/
+_proto/
+review/
+out_phrases/

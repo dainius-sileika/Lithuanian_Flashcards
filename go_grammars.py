@@ -59,7 +59,8 @@ CAT2CLASS = {
 DEFAULT_CLASS = "object"
 
 # classes whose composition is complete in itself — no supporting insets
-NO_INSET_CLASSES = {"attribute", "chart", "question", "sequence"}
+NO_INSET_CLASSES = {"attribute", "chart", "question", "sequence",
+                    "utterance", "exchange"}
 
 # category -> dress class for any people on the card.
 # 1.7: population follows the place — Location cards default to civilians
@@ -155,6 +156,35 @@ NOUN_GRAMMARS = {
                  "identical in every card of this set."),
         "insets": []},
 
+
+    # 1.9.1 — UTTERANCE (format A). One pane, one speaker, one speech bubble.
+    # Used for formulas with no reply (ačiū, labas) and for sentence patterns,
+    # where the bubble carries the proposition pictographically. Same object as
+    # the question card, so phrases and question words read as one family.
+    "utterance": {
+        "main": ("Compose the card as ONE single calm scene in a plain everyday "
+                 "setting. One person is speaking; a single large clean "
+                 "bold-outlined speech bubble rises from them and fills the upper "
+                 "half of the card. The bubble is the subject of the card — draw "
+                 "it large and uncluttered, and put the described content inside "
+                 "it and nowhere else. Keep figures small, plain and calm; the "
+                 "setting is context only and must never compete with the bubble."),
+        "insets": []},
+
+    # 1.9.1 — EXCHANGE (format B). Two panels: the asking, then the answering.
+    # Used for transactional phrases, where the pragmatics (who asks, who
+    # answers, what the reply looks like) are the point.
+    "exchange": {
+        "main": ("Compose the card as exactly TWO equal bordered panels side by "
+                 "side, read LEFT to RIGHT, sharing one border weight, background "
+                 "and figure scale. THE SAME TWO PEOPLE appear in both panels, "
+                 "identically dressed, so the pair reads as one exchange. LEFT "
+                 "panel: the first person speaks, with a clean bold-outlined "
+                 "speech bubble containing the described content. RIGHT panel: "
+                 "the second person answers, and the answer is shown as a plain "
+                 "visible action or object — no bubble in the right panel."),
+        "insets": []},
+
     # 1.9 — SEQUENCE grammar. A phrase or sentence is a chain of events, so it
     # is staged the way the manual stages a procedure: numbered panels read left
     # to right, each one step, joined by arrows. Same frame every time.
@@ -196,8 +226,12 @@ def route(category: str, wtype: str = "N", flags: str = "") -> str:
     # 1.9 — the two new uniform-set grammars
     if wtype == "Q" or category == "Question words" or "question" in f:
         return "question"
-    if wtype in ("PHRASE", "SENTENCE") or "sequence" in f:
-        return "sequence"
+    if "exchange" in f:
+        return "exchange"          # transactional: ask -> answer
+    if "sequence" in f:
+        return "sequence"          # time/causality IS the meaning (mostly A2)
+    if wtype in ("PHRASE", "SENTENCE"):
+        return "utterance"         # default: one pane, one bubble
     if wtype == "A":
         return "attribute"
     return class_for(category)
