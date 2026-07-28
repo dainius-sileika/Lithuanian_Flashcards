@@ -89,15 +89,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   then genitive (nouns), 3sg + past (verbs) or feminine (adjectives) — so the
   audio now teaches the stress *shift* between forms, which a written accent on
   the lemma cannot.
-- Processing: **no trimming of any kind** — 250 ms lead-in and 400 ms tail
-  padding, EBU R128 loudness-normalised to −16 LUFS, mono 24 kHz 64 kbps MP3.
+- Processing (final): a **fixed 0.25 s head cut** to remove the key-press click,
+  then 100 ms lead-in and 400 ms tail padding, EBU R128 loudness-normalised to −16 LUFS, mono 24 kHz 64 kbps MP3.
   19.5 MB for 524 clips. Three earlier passes gated the audio and each one ate
   phonemes: tail gates removed the word-final voiceless fricative (`karvės`
   heard as `karvė`), and the head gate shaved plosive onsets (`dukra` heard
   without its *d*). Measurement settled it — the raw takes carry a median of
   **0.02 s** of leading silence, so there was never anything to gain by gating.
   The recorder now also inserts a **400 ms pre-roll** before prompting "SPEAK
-  NOW", so future takes always begin with clean lead-in.
+  NOW".
+  **Click removal (1.9.2):** every take opens with a 10–150 ms transient — the
+  physical keypress reaching the mic at t=0. It had been mistaken for speech
+  onset in the earlier analysis, which is why the no-trim pass left it in.
+  Measured across both sessions: click ends by **0.150 s** at worst, while the
+  earliest speech onset anywhere is **0.385 s**. So the cut is a *fixed* 0.25 s —
+  deterministic, clear of every click by 100 ms and of every word by 135 ms. An
+  onset-relative cut was tried first and rejected: it mis-cut into words.
 - **`audio_source.tsv`** records per-card provenance (human vs azure-neural), so
   the deck description can stay honest while the changeover is partial.
 
