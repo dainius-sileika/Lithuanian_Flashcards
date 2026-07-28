@@ -19,7 +19,7 @@ BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA<
         '<span class="plate">{{number}}</span></div>{{image}}'
         '<div class="answer"><div class="word">{{lithuanian}}</div>'
         '{{#pron}}<div class="pron">{{pron}}</div>{{/pron}}{{audio}}'
-        '{{#gender}}<div class="gender {{gender}}">{{gender}}</div>{{/gender}}'
+        '{{#gender}}<div class="gender">{{gender}}</div>{{/gender}}'
         '{{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}'
         '{{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}'
         '{{#fem}}<div class="forms">{{lithuanian}} · {{fem}}</div>{{/fem}}'
@@ -44,6 +44,28 @@ IMG_FMT = os.environ.get("IMG_FMT", "jpg")
 # inside cards. 1024 px is still more than a card ever displays.
 IMG_WIDTH = int(os.environ.get("IMG_WIDTH", "1024"))
 TMP = "_apkg_media"; os.makedirs(TMP, exist_ok=True)
+
+def gender_mark(g):
+    """1.9 — gender as a symbol, not a letter: blue Mars for masculine, red
+    Venus for feminine, with a plural tag beside where the noun is plural-only.
+    Returns HTML placed straight into the gender field."""
+    g = (g or "").strip()
+    if not g or g == "V":
+        return ""
+    plural = "pl" in g.lower()
+    out = []
+    if g.upper().startswith("M/F") or g.upper() == "MF":
+        out.append('<span class="g m">\u2642</span><span class="g f">\u2640</span>')
+    elif g.upper().startswith("M"):
+        out.append('<span class="g m">\u2642</span>')
+    elif g.upper().startswith("F"):
+        out.append('<span class="g f">\u2640</span>')
+    elif g.upper().startswith("N"):
+        out.append('<span class="g n">\u26b2</span>')
+    if plural:
+        out.append('<span class="pl">pl.</span>')
+    return "".join(out)
+
 
 def media_image(k):
     src = f"images/{k}.webp"
@@ -87,7 +109,7 @@ for r in csv.DictReader(open("cards_anki.csv")):
         # re-importing an updated deck updates cards in place (keeps study
         # history / scheduling) instead of creating duplicates.
         guid=genanki.guid_for(k),
-        fields=[k, r['lithuanian'], r['english'], r['gender'], r['gen_sg'],
+        fields=[k, r['lithuanian'], r['english'], gender_mark(r['gender']), r['gen_sg'],
                 r['pres3'], r['past3'], r['fem'], r['number'], r['category'],
                 f'<img class="art" src="{img_name}">', audf, r.get('pron', '')]))
     media.append(img_path)

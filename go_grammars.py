@@ -59,7 +59,7 @@ CAT2CLASS = {
 DEFAULT_CLASS = "object"
 
 # classes whose composition is complete in itself — no supporting insets
-NO_INSET_CLASSES = {"attribute", "chart"}
+NO_INSET_CLASSES = {"attribute", "chart", "question", "sequence"}
 
 # category -> dress class for any people on the card.
 # 1.7: population follows the place — Location cards default to civilians
@@ -138,6 +138,35 @@ NOUN_GRAMMARS = {
                  "with an arrow, render exactly one bold clear arrow "
                  "indicating it and nothing else."),
         "insets": []},
+
+    # 1.9 — QUESTION grammar. Question words are unpicturable one at a time, but
+    # uniform as a set: the SAME civic enquiry scene every card, with only the
+    # thing being asked about changing inside the speech bubble. The learner
+    # reads the bubble, not the scene, so the scene must never vary.
+    "question": {
+        "main": ("Compose the card as a calm civic enquiry: one plain figure on "
+                 "the LEFT turns to a second figure behind a plain information "
+                 "counter on the RIGHT and asks a question. A single large clean "
+                 "speech bubble rises from the asking figure and fills the upper "
+                 "half of the card. The bubble is the subject of the card — draw "
+                 "it large, bold-outlined and uncluttered. Inside the bubble, and "
+                 "nowhere else, place one bold question mark together with the "
+                 "pictogram described. Keep the two figures small, plain and "
+                 "identical in every card of this set."),
+        "insets": []},
+
+    # 1.9 — SEQUENCE grammar. A phrase or sentence is a chain of events, so it
+    # is staged the way the manual stages a procedure: numbered panels read left
+    # to right, each one step, joined by arrows. Same frame every time.
+    "sequence": {
+        "main": ("Compose the card as a civil-defence procedure strip: a single "
+                 "horizontal row of equally sized bordered panels, read LEFT to "
+                 "RIGHT, each panel showing exactly one step of the action, with "
+                 "a bold arrow between consecutive panels. Number the panels in "
+                 "small plain circles in their upper-left corners. Every panel "
+                 "shares the same border weight, background and figure scale. No "
+                 "panel may contain more than one action."),
+        "insets": []},
     "chart": {
         "main": ("Compose the card as a calm specimen chart: arrange the "
                  "named items in an even row or grid, each drawn small, "
@@ -159,10 +188,16 @@ def class_for(category: str) -> str:
 
 def route(category: str, wtype: str = "N", flags: str = "") -> str:
     """Resolve a wordlist row to its semantic class. Flag-level routing wins
-    (category-multi), then word type (adjectives), then the category map.
-    Verbs are handled by the verb treatment, not a noun grammar."""
-    if "categoryC" in (flags or ""):
+    (category-multi), then word type, then the category map. Verbs are handled
+    by the verb treatment, not a noun grammar."""
+    f = flags or ""
+    if "categoryC" in f:
         return "chart"
+    # 1.9 — the two new uniform-set grammars
+    if wtype == "Q" or category == "Question words" or "question" in f:
+        return "question"
+    if wtype in ("PHRASE", "SENTENCE") or "sequence" in f:
+        return "sequence"
     if wtype == "A":
         return "attribute"
     return class_for(category)

@@ -1,79 +1,4 @@
-#!/usr/bin/env python3
-"""Build recorder.html — a self-contained, offline browser recorder for the
-deck's wordlist. Shows one word at a time, records one clip per card key via the
-mic, persists to IndexedDB (resume across sessions), and exports a zip of clips
-named by card key (ready to drop into audio/ and rebuild the deck).
-
-Reads cards_anki.csv directly, so the recorder can never drift out of step with
-the deck: re-run it after any wordlist change.
-
-    python3 build_recorder.py     ->  recorder.html
-"""
-import csv
-import json
-import os
-import sys
-
-SRC = "cards_anki.csv"
-QUEUE = "wordlist_a2_pending.csv"
-
-# Which level(s) to record. `python3 build_recorder.py A1` builds an A1-only
-# sheet; no argument builds everything.
-LEVEL = sys.argv[1] if len(sys.argv) > 1 else ""
-# `python3 build_recorder.py A1 new` builds a sheet of ONLY the words that have
-# no human recording yet, so a follow-up session isn't cluttered with done work.
-ONLY_NEW = len(sys.argv) > 2 and sys.argv[2].lower() == "new"
-HUMAN = set()
-if ONLY_NEW and os.path.exists("audio_source.tsv"):
-    for _ln in open("audio_source.tsv", encoding="utf-8").read().splitlines()[1:]:
-        _p = _ln.split("\t")
-        if len(_p) >= 2 and _p[1].startswith("human"):
-            HUMAN.add(_p[0])
-
-def read_script(headword, row):
-    """What the speaker should say for this card: the headword, then the forms
-    that show the paradigm. Lithuanian stress moves between forms, so hearing
-    the genitive / principal parts is the point of recording them."""
-    out = [{"label": "", "form": headword}]
-    if row.get("gen_sg", "").strip():
-        out.append({"label": "gen.", "form": row["gen_sg"].strip()})
-    if row.get("pres3", "").strip():
-        out.append({"label": "3sg", "form": row["pres3"].strip()})
-    if row.get("past3", "").strip():
-        out.append({"label": "past", "form": row["past3"].strip()})
-    if row.get("fem", "").strip():
-        out.append({"label": "fem.", "form": row["fem"].strip()})
-    return out
-
-WORDS = [
-    {"key": r["key"], "number": r["number"], "lt": r["lithuanian"],
-     "en": r["english"], "pron": r.get("pron", ""), "cat": r["category"],
-     "script": read_script(r.get("pron") or r["lithuanian"], r)}
-    for r in csv.DictReader(open(SRC, encoding="utf-8"))
-    if r["lithuanian"].strip() and (not LEVEL or r.get("level", "A1") == LEVEL)
-       and not (ONLY_NEW and r["key"] in HUMAN)
-]
-
-# Recording is gated on the WORD being final, not on the image existing — so
-# confirmed queue rows are included even before their images are generated.
-if os.path.exists(QUEUE):
-    for r in csv.DictReader(open(QUEUE, encoding="utf-8")):
-        if r.get("status") != "pending":
-            continue
-        if LEVEL and r.get("level") != LEVEL:
-            continue
-        if "verify" in (r.get("notes", "") or "").lower():
-            continue                      # not owner-confirmed yet
-        if not r["lithuanian_TARGET"].strip():
-            continue
-        if ONLY_NEW and r["id"] in HUMAN:
-            continue
-        WORDS.append({"key": r["id"], "number": r["id"], "lt": r["lithuanian_TARGET"],
-                      "en": r["english"], "pron": r.get("lt_pron", ""),
-                      "cat": r["category"] + " (new)",
-                      "script": read_script(r.get("lt_pron") or r["lithuanian_TARGET"], r)})
-
-TEMPLATE = r"""<!doctype html>
+<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lietuvių Flashcards — voice recorder</title>
@@ -166,7 +91,7 @@ TEMPLATE = r"""<!doctype html>
 
 </div>
 <script>
-const WORDS = __WORDS__;
+const WORDS = [{"key": "A2-0108", "number": "A2-0108", "lt": "kas", "en": "who", "pron": "kàs", "cat": "Question words (new)", "script": [{"label": "", "form": "kàs"}]}, {"key": "A2-0110", "number": "A2-0110", "lt": "kur", "en": "where", "pron": "kur̃", "cat": "Question words (new)", "script": [{"label": "", "form": "kur̃"}]}, {"key": "A2-0111", "number": "A2-0111", "lt": "kada", "en": "when", "pron": "kadà", "cat": "Question words (new)", "script": [{"label": "", "form": "kadà"}]}, {"key": "A2-0112", "number": "A2-0112", "lt": "kaip", "en": "how", "pron": "kaĩp", "cat": "Question words (new)", "script": [{"label": "", "form": "kaĩp"}]}, {"key": "A2-0113", "number": "A2-0113", "lt": "kodėl", "en": "why", "pron": "kodė̃l", "cat": "Question words (new)", "script": [{"label": "", "form": "kodė̃l"}]}, {"key": "A2-0114", "number": "A2-0114", "lt": "kiek", "en": "how much/many", "pron": "kiẽk", "cat": "Question words (new)", "script": [{"label": "", "form": "kiẽk"}]}, {"key": "A2-0115", "number": "A2-0115", "lt": "koks", "en": "what kind of", "pron": "kóks", "cat": "Question words (new)", "script": [{"label": "", "form": "kóks"}]}, {"key": "A2-0116", "number": "A2-0116", "lt": "kuris", "en": "which", "pron": "kurìs", "cat": "Question words (new)", "script": [{"label": "", "form": "kurìs"}]}, {"key": "A2-0117", "number": "A2-0117", "lt": "kieno", "en": "whose", "pron": "kienõ", "cat": "Question words (new)", "script": [{"label": "", "form": "kienõ"}]}, {"key": "A2-0880", "number": "A2-0880", "lt": "Atsiprašau…", "en": "Excuse me, please…", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Atsiprašau…"}]}, {"key": "A2-0881", "number": "A2-0881", "lt": "Atsiprašau", "en": "I'm sorry", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Atsiprašau"}]}, {"key": "A2-0882", "number": "A2-0882", "lt": "Nieko tokio", "en": "No problem", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Nieko tokio"}]}, {"key": "A2-0883", "number": "A2-0883", "lt": "Žinoma", "en": "Of course", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Žinoma"}]}, {"key": "A2-0884", "number": "A2-0884", "lt": "Akimirką", "en": "Just a moment", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Akimirką"}]}, {"key": "A2-0885", "number": "A2-0885", "lt": "Prašom", "en": "Here you are", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Prašom"}]}, {"key": "A2-0886", "number": "A2-0886", "lt": "Sveiki atvykę!", "en": "Welcome!", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Sveiki atvykę!"}]}, {"key": "A2-0887", "number": "A2-0887", "lt": "Sėkmės!", "en": "Good luck!", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Sėkmės!"}]}, {"key": "A2-0888", "number": "A2-0888", "lt": "Į sveikatą!", "en": "Cheers!", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Į sveikatą!"}]}, {"key": "A2-0889", "number": "A2-0889", "lt": "Skanaus", "en": "Bon appétit", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Skanaus"}]}, {"key": "A2-0890", "number": "A2-0890", "lt": "Su gimtadieniu!", "en": "Happy birthday!", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Su gimtadieniu!"}]}, {"key": "A2-0891", "number": "A2-0891", "lt": "Sveikinu!", "en": "Congratulations!", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Sveikinu!"}]}, {"key": "A2-0892", "number": "A2-0892", "lt": "Greitai pasveik!", "en": "Get well soon", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Greitai pasveik!"}]}, {"key": "A2-0893", "number": "A2-0893", "lt": "Iki rytojaus", "en": "See you tomorrow", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Iki rytojaus"}]}, {"key": "A2-0894", "number": "A2-0894", "lt": "Geros dienos", "en": "Have a nice day", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Geros dienos"}]}, {"key": "A2-0895", "number": "A2-0895", "lt": "Geros kelionės", "en": "Good luck on the trip", "pron": "", "cat": "Formulas (new)", "script": [{"label": "", "form": "Geros kelionės"}]}, {"key": "A2-0896", "number": "A2-0896", "lt": "Kas tai?", "en": "What is this?", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Kas tai?"}]}, {"key": "A2-0897", "number": "A2-0897", "lt": "Kas tas žmogus?", "en": "Who is that?", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Kas tas žmogus?"}]}, {"key": "A2-0898", "number": "A2-0898", "lt": "Kur yra tualetas?", "en": "Where is the toilet?", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Kur yra tualetas?"}]}, {"key": "A2-0899", "number": "A2-0899", "lt": "Kiek tai kainuoja?", "en": "How much is it?", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Kiek tai kainuoja?"}]}, {"key": "A2-0900", "number": "A2-0900", "lt": "Nekalbu lietuviškai", "en": "I don't speak Lithuanian", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Nekalbu lietuviškai"}]}, {"key": "A2-0901", "number": "A2-0901", "lt": "Truputį", "en": "A little", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Truputį"}]}, {"key": "A2-0902", "number": "A2-0902", "lt": "Pakartokite, prašau", "en": "Please repeat", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Pakartokite, prašau"}]}, {"key": "A2-0903", "number": "A2-0903", "lt": "Užrašykite, prašau", "en": "Write it down, please", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Užrašykite, prašau"}]}, {"key": "A2-0904", "number": "A2-0904", "lt": "Ką tai reiškia?", "en": "What does it mean?", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Ką tai reiškia?"}]}, {"key": "A2-0905", "number": "A2-0905", "lt": "Kaip lietuviškai …?", "en": "How do you say … in Lithuanian?", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Kaip lietuviškai …?"}]}, {"key": "A2-0906", "number": "A2-0906", "lt": "Man reikia pagalbos", "en": "I need help", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Man reikia pagalbos"}]}, {"key": "A2-0907", "number": "A2-0907", "lt": "Iškvieskite gydytoją!", "en": "Call a doctor!", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Iškvieskite gydytoją!"}]}, {"key": "A2-0909", "number": "A2-0909", "lt": "Kur galiu rasti…?", "en": "Where can I find…?", "pron": "", "cat": "Getting by (new)", "script": [{"label": "", "form": "Kur galiu rasti…?"}]}, {"key": "A2-0910", "number": "A2-0910", "lt": "Mano vardas Dainius", "en": "My name is Dainius", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Mano vardas Dainius"}]}, {"key": "A2-0911", "number": "A2-0911", "lt": "Aš esu iš Lietuvos", "en": "I am from Lithuania", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Aš esu iš Lietuvos"}]}, {"key": "A2-0912", "number": "A2-0912", "lt": "Aš gyvenu Vilniuje", "en": "I live in Vilnius", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Aš gyvenu Vilniuje"}]}, {"key": "A2-0913", "number": "A2-0913", "lt": "Man dvidešimt metų", "en": "I am twenty years old", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Man dvidešimt metų"}]}, {"key": "A2-0914", "number": "A2-0914", "lt": "Aš turiu brolį", "en": "I have a brother", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Aš turiu brolį"}]}, {"key": "A2-0915", "number": "A2-0915", "lt": "Neturiu laiko", "en": "I don't have time", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Neturiu laiko"}]}, {"key": "A2-0916", "number": "A2-0916", "lt": "Noriu valgyti", "en": "I want to eat", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Noriu valgyti"}]}, {"key": "A2-0917", "number": "A2-0917", "lt": "Norėčiau kavos", "en": "I would like coffee", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Norėčiau kavos"}]}, {"key": "A2-0918", "number": "A2-0918", "lt": "Galiu truputį kalbėti", "en": "I can speak a little", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Galiu truputį kalbėti"}]}, {"key": "A2-0919", "number": "A2-0919", "lt": "Man reikia vandens", "en": "I need water", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Man reikia vandens"}]}, {"key": "A2-0920", "number": "A2-0920", "lt": "Man patinka šis miestas", "en": "I like this city", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Man patinka šis miestas"}]}, {"key": "A2-0921", "number": "A2-0921", "lt": "Tai mano namas", "en": "This is my house", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Tai mano namas"}]}, {"key": "A2-0922", "number": "A2-0922", "lt": "Čia yra parduotuvė", "en": "There is a shop here", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Čia yra parduotuvė"}]}, {"key": "A2-0923", "number": "A2-0923", "lt": "Šiandien šalta", "en": "It is cold today", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Šiandien šalta"}]}, {"key": "A2-0925", "number": "A2-0925", "lt": "Trečia valanda", "en": "It is three o'clock", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Trečia valanda"}]}, {"key": "A2-0926", "number": "A2-0926", "lt": "Kur tu eini?", "en": "Where are you going?", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Kur tu eini?"}]}, {"key": "A2-0927", "number": "A2-0927", "lt": "Einu namo", "en": "I am going home", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Einu namo"}]}, {"key": "A2-0928", "number": "A2-0928", "lt": "Kiek kainuoja bilietas?", "en": "How much does the ticket cost?", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Kiek kainuoja bilietas?"}]}, {"key": "A2-0929", "number": "A2-0929", "lt": "Nesuprantu, atsiprašau", "en": "I don't understand, sorry", "pron": "", "cat": "Core patterns (new)", "script": [{"label": "", "form": "Nesuprantu, atsiprašau"}]}];
 document.getElementById('count').textContent = "0 / " + WORDS.length;
 
 /* ---------- IndexedDB (persist clips so a long session can resume) ---------- */
@@ -297,9 +222,4 @@ document.getElementById('export').onclick=async()=>{
   info.textContent="Exported "+(files.length-1)+" clips.";
 };
 </script>
-</body></html>"""
-
-html = TEMPLATE.replace("__WORDS__", json.dumps(WORDS, ensure_ascii=False))
-out = ("recorder_" + (LEVEL or "all") + ("_new" if ONLY_NEW else "") + ".html")
-open(out, "w", encoding="utf-8").write(html)
-print(f"wrote {out} — {len(WORDS)} words, {len(html)//1024} KB")
+</body></html>

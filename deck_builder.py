@@ -1043,6 +1043,77 @@ def adj_inset_note(english):
 
 
 # ===========================================================================
+# 1.9 — QUESTION STAGING. Every question card shares one scene (see the
+# "question" grammar); only the pictogram inside the speech bubble changes.
+# That is what makes the set legible: the learner learns to read the bubble.
+# The bubble is also the one place a "?" is permitted (via card_text).
+# ===========================================================================
+QUESTION_BUBBLE = {
+    "kas_who":   "a plain faceless head-and-shoulders silhouette of a PERSON",
+    "kas_what":  "a plain unlabelled cardboard box, a generic THING",
+    "kur":       "a map pin dropped on a small simplified street map",
+    "kada":      "a clock face beside a small tear-off calendar page",
+    "kaip":      "a hand turning a spanner on a bolt — the MANNER of doing",
+    "kodel":     "a small cause-and-effect chain: a falling domino striking a "
+                 "second domino, joined by a bold arrow",
+    "kiek":      "a stack of coins beside a set of balance scales — QUANTITY",
+    "koks":      "three cups of visibly different shape and pattern side by side "
+                 "— the KIND or sort of thing",
+    "kuris":     "a row of four identical cups with one of them singled out by a "
+                 "bold arrow — WHICH one of several",
+    "kieno":     "a single coat hanging on a hook, with two plain figures either "
+                 "side of it looking at it — WHOSE it is",
+}
+# keyed by English gloss so it works before the rows get wordlist numbers
+QUESTION_BY_GLOSS = {
+    "who": "kas_who", "what": "kas_what", "where": "kur", "when": "kada",
+    "how": "kaip", "why": "kodel", "how much/many": "kiek",
+    "what kind of": "koks", "which": "kuris", "whose": "kieno",
+}
+
+# ===========================================================================
+# 1.9 — SEQUENCE STAGING. A phrase/sentence card is a numbered procedure strip
+# (see the "sequence" grammar). Each entry lists the panels in order; the
+# engine renders them as equal bordered panels joined by arrows.
+# ===========================================================================
+# keyed by English gloss; each value is the ordered list of panels
+SEQUENCE_BY_GLOSS = {
+    "I need water": [
+        "a person holding an empty glass upside down, looking thirsty",
+        "the same person at a tap, filling the glass",
+        "the person drinking the full glass, satisfied"],
+    "I like this city": [
+        "a person standing before a city skyline, looking at it",
+        "the same person smiling warmly, one hand on their chest",
+        "a small heart symbol floating clean and whole above the skyline"],
+    "I don't have time": [
+        "a person looking at a wall clock showing a late hour",
+        "the same person hurrying past a desk piled with unfinished work",
+        "the person spreading both hands wide in refusal, the clock behind them"],
+    "I want to eat": [
+        "a person with one hand on their stomach, looking hungry",
+        "the same person looking at a plate of food on a table",
+        "the person seated and eating from that plate"],
+    "Where is the toilet?": [
+        "a traveller with a suitcase looking around a plain corridor",
+        "the traveller asking a passer-by, who points down the corridor",
+        "a plain lavatory door at the corridor's end"],
+    "How much does the ticket cost?": [
+        "a person at a ticket window holding out an open hand",
+        "the clerk holding up a plain ticket",
+        "coins being counted out onto the counter"],
+    "I am from Lithuania": [
+        "a person standing beside a small suitcase",
+        "a wall map with one country shaded and a bold arrow running from the "
+        "person to it",
+        "the person shaking hands with someone in front of that map"],
+    "I live in Vilnius": [
+        "a person standing on a plain street",
+        "a bold arrow from the person down to a house on that street",
+        "the person at the lit window of that house, at home"],
+}
+
+# ===========================================================================
 # 1.7.9 — TEXT EXCEPTIONS ARE NOW DATA. Any wordlist row may carry a `card_text`
 # column naming exactly what lettering that card may show; it overrides the
 # table below. This is what makes undepictable-but-teachable cards possible

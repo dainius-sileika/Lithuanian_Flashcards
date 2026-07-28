@@ -106,16 +106,16 @@ A2-0104,P-A,A1 completion,A1,Society,receipt,N,image,yes,kvitas,,kvìtas,en.wikt
 A2-0105,P-A,A1 completion,A1,Society,discount,N,image,yes,nuolaida,,núolaida,en.wiktionary,,nuolaidos,,,,pending,,LT owner-confirmed (P-A review)
 A2-0106,P-A,A1 completion,A1,Society,size,N,image,yes,dydis,,dỹdis,en.wiktionary,,dydžio,,,,pending,,LT owner-confirmed (P-A review)
 A2-0107,P-A,A1 completion,A1,Society,change (money),N,image,yes,grąža,,grąžà,en.wiktionary,/ɡɾaːˈʒaː/,grąžos,,,,pending,,LT owner-confirmed (P-A review)
-A2-0108,P-B,function words,A1,Question words,who,Q,sentence,no,kas,,kàs,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0108,P-B,function words,A1,Question words,who,Q,sentence,no,kas,,kàs,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
 A2-0109,P-B,function words,A1,Question words,what,Q,sentence,no,kas,,kàs,en.wiktionary,,,,,,review-duplicate,dup within queue (A2-0108),question word — cloze sentence card; LT proposed — verify
-A2-0110,P-B,function words,A1,Question words,where,Q,sentence,no,kur,,kur̃,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-0111,P-B,function words,A1,Question words,when,Q,sentence,no,kada,,kadà,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-0112,P-B,function words,A1,Question words,how,Q,sentence,no,kaip,,kaĩp,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-0113,P-B,function words,A1,Question words,why,Q,sentence,no,kodėl,,kodė̃l,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-0114,P-B,function words,A1,Question words,how much/many,Q,sentence,no,kiek,,ki̇́ek,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-0115,P-B,function words,A1,Question words,what kind of,Q,sentence,no,koks,,kóks,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-0116,P-B,function words,A1,Question words,which,Q,sentence,no,kuris,,kurìs,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
-A2-0117,P-B,function words,A1,Question words,whose,Q,sentence,no,kieno,,,,,,,,,pending,,question word — cloze sentence card; LT proposed — verify
+A2-0110,P-B,function words,A1,Question words,where,Q,sentence,no,kur,,kur̃,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
+A2-0111,P-B,function words,A1,Question words,when,Q,sentence,no,kada,,kadà,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
+A2-0112,P-B,function words,A1,Question words,how,Q,sentence,no,kaip,,kaĩp,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
+A2-0113,P-B,function words,A1,Question words,why,Q,sentence,no,kodėl,,kodė̃l,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
+A2-0114,P-B,function words,A1,Question words,how much/many,Q,sentence,no,kiek,,kiẽk,kirtis.info (owner),,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
+A2-0115,P-B,function words,A1,Question words,what kind of,Q,sentence,no,koks,,kóks,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
+A2-0116,P-B,function words,A1,Question words,which,Q,sentence,no,kuris,,kurìs,en.wiktionary,,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack)
+A2-0117,P-B,function words,A1,Question words,whose,Q,sentence,no,kieno,,kienõ,kirtis.info (owner),,,,,,pending,,question word — cloze sentence card; LT owner-confirmed (priority pack); owner: Stress confirmed as kienõ (final syllable).
 A2-0118,P-B,function words,A1,Pronouns,my,P,sentence,no,mano,,màno,en.wiktionary,,,,,,pending,,possessive — indeclinable; LT proposed — verify
 A2-0119,P-B,function words,A1,Pronouns,your (sg),P,sentence,no,tavo,,tàvo,en.wiktionary,,,,,,pending,,possessive — indeclinable; LT proposed — verify
 A2-0120,P-B,function words,A1,Pronouns,his,P,sentence,no,jo,,jõ,en.wiktionary,,,,,,pending,,possessive — indeclinable; LT proposed — verify
@@ -878,56 +878,56 @@ A2-0876,P-F,vocabulary expansion,A2,Money & admin,signature,N,image,yes,parašas
 A2-0877,P-F,vocabulary expansion,A2,Money & admin,permission,N,image,yes,leidimas,,,,,,,,,pending,,LT proposed — verify
 A2-0878,P-F,vocabulary expansion,A2,Money & admin,appointment (booking),N,image,yes,registracija,,registrácija,en.wiktionary-html,,,,,,pending,,LT proposed — verify
 A2-0879,P-G,phrases & sentences,A1,Formulas,Yes / no,PHRASE,phrase,no,Taip / Ne,,,n/a (phrase),,,,,,review-duplicate,LT already in deck,LT proposed — verify
-A2-0880,P-G,phrases & sentences,A1,Formulas,"Excuse me, please…",PHRASE,phrase,no,"Atsiprašau, prašau…",,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0881,P-G,phrases & sentences,A1,Formulas,I'm sorry,PHRASE,phrase,no,Man gaila,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0882,P-G,phrases & sentences,A1,Formulas,No problem,PHRASE,phrase,no,Nieko tokio,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0883,P-G,phrases & sentences,A1,Formulas,Of course,PHRASE,phrase,no,Žinoma,,,,,,,,,pending,,LT proposed — verify
-A2-0884,P-G,phrases & sentences,A1,Formulas,Just a moment,PHRASE,phrase,no,Akimirką,,,,,,,,,pending,,LT proposed — verify
-A2-0885,P-G,phrases & sentences,A1,Formulas,Here you are,PHRASE,phrase,no,Prašom,,,,,,,,,pending,,LT proposed — verify
-A2-0886,P-G,phrases & sentences,A1,Formulas,Welcome!,PHRASE,phrase,no,Sveiki atvykę!,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0887,P-G,phrases & sentences,A1,Formulas,Good luck!,PHRASE,phrase,no,Sėkmės!,,,,,,,,,pending,,LT proposed — verify
-A2-0888,P-G,phrases & sentences,A1,Formulas,Cheers!,PHRASE,phrase,no,Į sveikatą!,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0889,P-G,phrases & sentences,A1,Formulas,Bon appétit,PHRASE,phrase,no,Skanaus,,,,,,,,,pending,,LT proposed — verify
-A2-0890,P-G,phrases & sentences,A1,Formulas,Happy birthday!,PHRASE,phrase,no,Su gimtadieniu!,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0891,P-G,phrases & sentences,A1,Formulas,Congratulations!,PHRASE,phrase,no,Sveikinu!,,,,,,,,,pending,,LT proposed — verify
-A2-0892,P-G,phrases & sentences,A1,Formulas,Get well soon,PHRASE,phrase,no,Pasveik greičiau,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0893,P-G,phrases & sentences,A1,Formulas,See you tomorrow,PHRASE,phrase,no,Iki rytojaus,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0894,P-G,phrases & sentences,A1,Formulas,Have a nice day,PHRASE,phrase,no,Geros dienos,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0895,P-G,phrases & sentences,A1,Formulas,Good luck on the trip,PHRASE,phrase,no,Geros kelionės,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0896,P-G,phrases & sentences,A1,Getting by,What is this?,PHRASE,phrase,no,Kas tai?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0897,P-G,phrases & sentences,A1,Getting by,Who is that?,PHRASE,phrase,no,Kas tas žmogus?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0898,P-G,phrases & sentences,A1,Getting by,Where is the toilet?,PHRASE,phrase,no,Kur yra tualetas?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0899,P-G,phrases & sentences,A1,Getting by,How much is it?,PHRASE,phrase,no,Kiek tai kainuoja?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0900,P-G,phrases & sentences,A1,Getting by,I don't speak Lithuanian,PHRASE,phrase,no,Nekalbu lietuviškai,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0901,P-G,phrases & sentences,A1,Getting by,A little,PHRASE,phrase,no,Truputį,,,,,,,,,pending,,LT proposed — verify
-A2-0902,P-G,phrases & sentences,A1,Getting by,Please repeat,PHRASE,phrase,no,"Pakartokite, prašau",,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0903,P-G,phrases & sentences,A1,Getting by,"Write it down, please",PHRASE,phrase,no,"Užrašykite, prašau",,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0904,P-G,phrases & sentences,A1,Getting by,What does it mean?,PHRASE,phrase,no,Ką tai reiškia?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0905,P-G,phrases & sentences,A1,Getting by,How do you say … in Lithuanian?,PHRASE,phrase,no,Kaip lietuviškai …?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0906,P-G,phrases & sentences,A1,Getting by,I need help,PHRASE,phrase,no,Man reikia pagalbos,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0907,P-G,phrases & sentences,A1,Getting by,Call a doctor!,PHRASE,phrase,no,Iškvieskite gydytoją!,,,n/a (phrase),,,,,,pending,,LT proposed — verify
+A2-0880,P-G,phrases & sentences,A1,Formulas,"Excuse me, please…",PHRASE,phrase,no,Atsiprašau…,,,n/a (phrase),,,,,,pending,,"LT owner-confirmed (priority pack); owner: Changed to natural standalone translation of 'Excuse me, ple"
+A2-0881,P-G,phrases & sentences,A1,Formulas,I'm sorry,PHRASE,phrase,no,Atsiprašau,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack); owner: Changed from 'Man gaila' (I feel sorry / I regret it) to 'At
+A2-0882,P-G,phrases & sentences,A1,Formulas,No problem,PHRASE,phrase,no,Nieko tokio,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0883,P-G,phrases & sentences,A1,Formulas,Of course,PHRASE,phrase,no,Žinoma,,,,,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0884,P-G,phrases & sentences,A1,Formulas,Just a moment,PHRASE,phrase,no,Akimirką,,,,,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0885,P-G,phrases & sentences,A1,Formulas,Here you are,PHRASE,phrase,no,Prašom,,,,,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0886,P-G,phrases & sentences,A1,Formulas,Welcome!,PHRASE,phrase,no,Sveiki atvykę!,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0887,P-G,phrases & sentences,A1,Formulas,Good luck!,PHRASE,phrase,no,Sėkmės!,,,,,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0888,P-G,phrases & sentences,A1,Formulas,Cheers!,PHRASE,phrase,no,Į sveikatą!,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0889,P-G,phrases & sentences,A1,Formulas,Bon appétit,PHRASE,phrase,no,Skanaus,,,,,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0890,P-G,phrases & sentences,A1,Formulas,Happy birthday!,PHRASE,phrase,no,Su gimtadieniu!,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0891,P-G,phrases & sentences,A1,Formulas,Congratulations!,PHRASE,phrase,no,Sveikinu!,,,,,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0892,P-G,phrases & sentences,A1,Formulas,Get well soon,PHRASE,phrase,no,Greitai pasveik!,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack); owner: Changed to the natural/common phrase 'Greitai pasveik!' = 'G
+A2-0893,P-G,phrases & sentences,A1,Formulas,See you tomorrow,PHRASE,phrase,no,Iki rytojaus,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0894,P-G,phrases & sentences,A1,Formulas,Have a nice day,PHRASE,phrase,no,Geros dienos,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0895,P-G,phrases & sentences,A1,Formulas,Good luck on the trip,PHRASE,phrase,no,Geros kelionės,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0896,P-G,phrases & sentences,A1,Getting by,What is this?,PHRASE,phrase,no,Kas tai?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0897,P-G,phrases & sentences,A1,Getting by,Who is that?,PHRASE,phrase,no,Kas tas žmogus?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0898,P-G,phrases & sentences,A1,Getting by,Where is the toilet?,PHRASE,phrase,no,Kur yra tualetas?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0899,P-G,phrases & sentences,A1,Getting by,How much is it?,PHRASE,phrase,no,Kiek tai kainuoja?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0900,P-G,phrases & sentences,A1,Getting by,I don't speak Lithuanian,PHRASE,phrase,no,Nekalbu lietuviškai,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0901,P-G,phrases & sentences,A1,Getting by,A little,PHRASE,phrase,no,Truputį,,,,,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0902,P-G,phrases & sentences,A1,Getting by,Please repeat,PHRASE,phrase,no,"Pakartokite, prašau",,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0903,P-G,phrases & sentences,A1,Getting by,"Write it down, please",PHRASE,phrase,no,"Užrašykite, prašau",,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0904,P-G,phrases & sentences,A1,Getting by,What does it mean?,PHRASE,phrase,no,Ką tai reiškia?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0905,P-G,phrases & sentences,A1,Getting by,How do you say … in Lithuanian?,PHRASE,phrase,no,Kaip lietuviškai …?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0906,P-G,phrases & sentences,A1,Getting by,I need help,PHRASE,phrase,no,Man reikia pagalbos,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0907,P-G,phrases & sentences,A1,Getting by,Call a doctor!,PHRASE,phrase,no,Iškvieskite gydytoją!,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
 A2-0908,P-G,phrases & sentences,A1,Getting by,I'm lost,PHRASE,phrase,no,Aš pasiklydau,,,n/a (phrase),,,,,,review-duplicate,dup within queue (A2-0386),LT proposed — verify
-A2-0909,P-G,phrases & sentences,A1,Getting by,Where can I find…?,PHRASE,phrase,no,Kur galiu rasti…?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0910,P-G,phrases & sentences,A1,Core patterns,My name is Dainius,SENTENCE,sentence,no,Mano vardas Dainius,,,n/a (phrase),,,,,,pending,,pattern: Mano vardas + name; LT proposed — verify
-A2-0911,P-G,phrases & sentences,A1,Core patterns,I am from Lithuania,SENTENCE,sentence,no,Aš esu iš Lietuvos,,,n/a (phrase),,,,,,pending,,būti + iš + genitive; LT proposed — verify
-A2-0912,P-G,phrases & sentences,A1,Core patterns,I live in Vilnius,SENTENCE,sentence,no,Aš gyvenu Vilniuje,,,n/a (phrase),,,,,,pending,,locative case; LT proposed — verify
-A2-0913,P-G,phrases & sentences,A1,Core patterns,I am twenty years old,SENTENCE,sentence,no,Man dvidešimt metų,,,n/a (phrase),,,,,,pending,,age uses the dative: MAN + number; LT proposed — verify
-A2-0914,P-G,phrases & sentences,A1,Core patterns,I have a brother,SENTENCE,sentence,no,Aš turiu brolį,,,n/a (phrase),,,,,,pending,,turėti + accusative; LT proposed — verify
-A2-0915,P-G,phrases & sentences,A1,Core patterns,I don't have time,SENTENCE,sentence,no,Neturiu laiko,,,n/a (phrase),,,,,,pending,,negation takes the GENITIVE; LT proposed — verify
-A2-0916,P-G,phrases & sentences,A1,Core patterns,I want to eat,SENTENCE,sentence,no,Noriu valgyti,,,n/a (phrase),,,,,,pending,,modal + infinitive; LT proposed — verify
-A2-0917,P-G,phrases & sentences,A1,Core patterns,I would like coffee,SENTENCE,sentence,no,Norėčiau kavos,,,n/a (phrase),,,,,,pending,,polite conditional + genitive; LT proposed — verify
-A2-0918,P-G,phrases & sentences,A1,Core patterns,I can speak a little,SENTENCE,sentence,no,Galiu truputį kalbėti,,,n/a (phrase),,,,,,pending,,galėti + infinitive; LT proposed — verify
-A2-0919,P-G,phrases & sentences,A1,Core patterns,I need water,SENTENCE,sentence,no,Man reikia vandens,,,n/a (phrase),,,,,,pending,,impersonal: MAN reikia + genitive; LT proposed — verify
-A2-0920,P-G,phrases & sentences,A1,Core patterns,I like this city,SENTENCE,sentence,no,Man patinka šis miestas,,,n/a (phrase),,,,,,pending,,impersonal: MAN patinka + nominative; LT proposed — verify
-A2-0921,P-G,phrases & sentences,A1,Core patterns,This is my house,SENTENCE,sentence,no,Tai mano namas,,,n/a (phrase),,,,,,pending,,tai + nominative; LT proposed — verify
-A2-0922,P-G,phrases & sentences,A1,Core patterns,There is a shop here,SENTENCE,sentence,no,Čia yra parduotuvė,,,n/a (phrase),,,,,,pending,,yra = there is; LT proposed — verify
-A2-0923,P-G,phrases & sentences,A1,Core patterns,It is cold today,SENTENCE,sentence,no,Šiandien šalta,,,n/a (phrase),,,,,,pending,,"impersonal weather, no subject; LT proposed — verify"
+A2-0909,P-G,phrases & sentences,A1,Getting by,Where can I find…?,PHRASE,phrase,no,Kur galiu rasti…?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0910,P-G,phrases & sentences,A1,Core patterns,My name is Dainius,SENTENCE,sentence,no,Mano vardas Dainius,,,n/a (phrase),,,,,,pending,,pattern: Mano vardas + name; LT owner-confirmed (priority pack)
+A2-0911,P-G,phrases & sentences,A1,Core patterns,I am from Lithuania,SENTENCE,sentence,no,Aš esu iš Lietuvos,,,n/a (phrase),,,,,,pending,,būti + iš + genitive; LT owner-confirmed (priority pack)
+A2-0912,P-G,phrases & sentences,A1,Core patterns,I live in Vilnius,SENTENCE,sentence,no,Aš gyvenu Vilniuje,,,n/a (phrase),,,,,,pending,,locative case; LT owner-confirmed (priority pack)
+A2-0913,P-G,phrases & sentences,A1,Core patterns,I am twenty years old,SENTENCE,sentence,no,Man dvidešimt metų,,,n/a (phrase),,,,,,pending,,age uses the dative: MAN + number; LT owner-confirmed (priority pack)
+A2-0914,P-G,phrases & sentences,A1,Core patterns,I have a brother,SENTENCE,sentence,no,Aš turiu brolį,,,n/a (phrase),,,,,,pending,,turėti + accusative; LT owner-confirmed (priority pack)
+A2-0915,P-G,phrases & sentences,A1,Core patterns,I don't have time,SENTENCE,sentence,no,Neturiu laiko,,,n/a (phrase),,,,,,pending,,negation takes the GENITIVE; LT owner-confirmed (priority pack)
+A2-0916,P-G,phrases & sentences,A1,Core patterns,I want to eat,SENTENCE,sentence,no,Noriu valgyti,,,n/a (phrase),,,,,,pending,,modal + infinitive; LT owner-confirmed (priority pack)
+A2-0917,P-G,phrases & sentences,A1,Core patterns,I would like coffee,SENTENCE,sentence,no,Norėčiau kavos,,,n/a (phrase),,,,,,pending,,polite conditional + genitive; LT owner-confirmed (priority pack)
+A2-0918,P-G,phrases & sentences,A1,Core patterns,I can speak a little,SENTENCE,sentence,no,Galiu truputį kalbėti,,,n/a (phrase),,,,,,pending,,galėti + infinitive; LT owner-confirmed (priority pack)
+A2-0919,P-G,phrases & sentences,A1,Core patterns,I need water,SENTENCE,sentence,no,Man reikia vandens,,,n/a (phrase),,,,,,pending,,impersonal: MAN reikia + genitive; LT owner-confirmed (priority pack)
+A2-0920,P-G,phrases & sentences,A1,Core patterns,I like this city,SENTENCE,sentence,no,Man patinka šis miestas,,,n/a (phrase),,,,,,pending,,impersonal: MAN patinka + nominative; LT owner-confirmed (priority pack)
+A2-0921,P-G,phrases & sentences,A1,Core patterns,This is my house,SENTENCE,sentence,no,Tai mano namas,,,n/a (phrase),,,,,,pending,,tai + nominative; LT owner-confirmed (priority pack)
+A2-0922,P-G,phrases & sentences,A1,Core patterns,There is a shop here,SENTENCE,sentence,no,Čia yra parduotuvė,,,n/a (phrase),,,,,,pending,,yra = there is; LT owner-confirmed (priority pack)
+A2-0923,P-G,phrases & sentences,A1,Core patterns,It is cold today,SENTENCE,sentence,no,Šiandien šalta,,,n/a (phrase),,,,,,pending,,"impersonal weather, no subject; LT owner-confirmed (priority pack)"
 A2-0924,P-G,phrases & sentences,A1,Core patterns,What time is it?,SENTENCE,sentence,no,Kiek valandų?,,,n/a (phrase),,,,,,review-duplicate,dup within queue (A2-0379),fixed question; LT proposed — verify
-A2-0925,P-G,phrases & sentences,A1,Core patterns,It is three o'clock,SENTENCE,sentence,no,Trečia valanda,,,n/a (phrase),,,,,,pending,,ordinal + valanda; LT proposed — verify
-A2-0926,P-G,phrases & sentences,A1,Core patterns,Where are you going?,SENTENCE,sentence,no,Kur tu eini?,,,n/a (phrase),,,,,,pending,,present tense 2sg; LT proposed — verify
-A2-0927,P-G,phrases & sentences,A1,Core patterns,I am going home,SENTENCE,sentence,no,Einu namo,,,n/a (phrase),,,,,,pending,,"namo = homewards, adverbial; LT proposed — verify"
-A2-0928,P-G,phrases & sentences,A1,Core patterns,How much does the ticket cost?,SENTENCE,sentence,no,Kiek kainuoja bilietas?,,,n/a (phrase),,,,,,pending,,kainuoti + nominative; LT proposed — verify
-A2-0929,P-G,phrases & sentences,A1,Core patterns,"I don't understand, sorry",SENTENCE,sentence,no,"Nesuprantu, atsiprašau",,,n/a (phrase),,,,,,pending,,negation prefix ne-; LT proposed — verify
+A2-0925,P-G,phrases & sentences,A1,Core patterns,It is three o'clock,SENTENCE,sentence,no,Trečia valanda,,,n/a (phrase),,,,,,pending,,ordinal + valanda; LT owner-confirmed (priority pack)
+A2-0926,P-G,phrases & sentences,A1,Core patterns,Where are you going?,SENTENCE,sentence,no,Kur tu eini?,,,n/a (phrase),,,,,,pending,,present tense 2sg; LT owner-confirmed (priority pack)
+A2-0927,P-G,phrases & sentences,A1,Core patterns,I am going home,SENTENCE,sentence,no,Einu namo,,,n/a (phrase),,,,,,pending,,"namo = homewards, adverbial; LT owner-confirmed (priority pack)"
+A2-0928,P-G,phrases & sentences,A1,Core patterns,How much does the ticket cost?,SENTENCE,sentence,no,Kiek kainuoja bilietas?,,,n/a (phrase),,,,,,pending,,kainuoti + nominative; LT owner-confirmed (priority pack)
+A2-0929,P-G,phrases & sentences,A1,Core patterns,"I don't understand, sorry",SENTENCE,sentence,no,"Nesuprantu, atsiprašau",,,n/a (phrase),,,,,,pending,,negation prefix ne-; LT owner-confirmed (priority pack)
 A2-0930,P-G,phrases & sentences,A2,Opinion & discourse,In my opinion,PHRASE,phrase,no,Mano nuomone,,,n/a (phrase),,,,,,pending,,LT proposed — verify
 A2-0931,P-G,phrases & sentences,A2,Opinion & discourse,I think that…,PHRASE,phrase,no,"Manau, kad…",,,n/a (phrase),,,,,,pending,,LT proposed — verify
 A2-0932,P-G,phrases & sentences,A2,Opinion & discourse,It seems to me,PHRASE,phrase,no,Man atrodo,,,n/a (phrase),,,,,,pending,,LT proposed — verify

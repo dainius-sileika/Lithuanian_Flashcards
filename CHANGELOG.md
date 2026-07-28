@@ -32,6 +32,41 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   A1 *and* A2 phrases and model sentences. 722 rows can go straight through the
   existing image engine. Every Lithuanian target is marked `LT proposed — verify`.
 
+## [1.9.0] — 2026-07-28 — question & sequence grammars, gender symbols
+
+### Added
+- **Question grammar.** Question words are unpicturable one at a time but uniform
+  as a *set*, so every question card is the same civic enquiry scene — asker on
+  the left, clerk behind a counter on the right, one large speech bubble — and
+  **only the pictogram inside the bubble changes**: a map pin for *kur*, a clock
+  and calendar for *kada*, falling dominoes for *kodėl*, a row of cups with one
+  singled out for *kuris*. The learner learns to read the bubble. The bubble is
+  also the one place a `?` is permitted.
+- **Sequence grammar.** A phrase or sentence is a chain of events, so it is
+  staged the way the manual stages a procedure: numbered panels read left to
+  right, one action each, joined by arrows. `SEQUENCE_BY_GLOSS` holds the panel
+  chain per sentence (*man reikia vandens* = empty glass → filling at the tap →
+  drinking).
+- Both classes route automatically: `type=Q` or category *Question words* →
+  `question`; `type=PHRASE`/`SENTENCE` → `sequence`. Both are inset-free — the
+  bubble and the strip *are* the composition.
+- Prototypes generated and verified for both before adoption.
+
+### Changed
+- **Gender is now a symbol, not a letter.** The answer side showed a white `m`
+  or `f` chip; it now shows a **blue Mars ♂** for masculine and a **red Venus ♀**
+  for feminine, both together for words with two forms, and a small **pl.** tag
+  beside for plural-only nouns. Computed in `build_apkg.gender_mark()` and styled
+  in `go_theme.css`.
+- `build_recorder.py` gains a `new` mode — `python3 build_recorder.py A1 new`
+  builds a sheet of only the words with no human recording yet.
+
+### Verified
+- Owner confirmed the 57-row priority pack (9 question words + 48 A1 phrases and
+  sentences), including *kienõ* and three phrasing corrections: *Atsiprašau…* for
+  "Excuse me", *Greitai pasveik!* for "Get well soon", and *Atsiprašau* rather
+  than *Man gaila* for the ordinary apologetic "I'm sorry".
+
 ## [1.8.0] — 2026-07-26 — human audio
 
 ### Added
