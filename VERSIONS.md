@@ -1,6 +1,6 @@
 # VERSIONS — Lietuvių Flashcards
 
-**Current: 520-card beta — engine files 1.7.8 / wordlist 2.9, plus audio +
+**Current: 520-card beta — engine files 1.9.2 / wordlist 2.9, plus audio +
 stress-accented pronunciation + importable `.apkg` (see the dated sections
 below).** The image *engine* has been stable since 1.7.1; work since then has
 been content and packaging (abstract cards, grammar forms, audio, accents, the
@@ -9,8 +9,8 @@ version bumps.
 
 | version | what | where |
 |---------|------|-------|
-| **1.7.1** | noun-inset dress follows setting (civilian default; Materials + tool/industry = worker); inset-meaning gate baked into the prompt | root: `go_grammars.py`, `go_generator.py`, `deck_builder.py`; `files_1_7_1_DIFF.md`; `GO_STYLE_SPEC.md` |
-| 1.7 | guessability pass: QA gate, NOUN_STAGING (22 rows), OVERRIDE_CLASS reroutes, wordlist 2.3 (22 phrases) | `deprecated/code_1.7/`; `files_1_7_DIFF.md` (corrected record) |
+| **1.7.1** | noun-inset dress follows setting (civilian default; Materials + tool/industry = worker); inset-meaning gate baked into the prompt | root: `go_grammars.py`, `go_generator.py`, `deck_builder.py`; `GO_STYLE_SPEC.md` (diffs archived in `deprecated/docs_superseded/`) |
+| 1.7 | guessability pass: QA gate, NOUN_STAGING (22 rows), OVERRIDE_CLASS reroutes, wordlist 2.3 (22 phrases) | `deprecated/code_1.7/` |
 | 1.6.1 | 8 open design decisions implemented; glyph exception; wordlist 2.2 | `deprecated/code_1.6.1/`, `deprecated/spec_1.6.1/`, `deprecated/wordlist_2.2/` |
 | ≤1.6 | full narrative history (0.1 → 1.6) | "File batches ledger" in `GO_STYLE_SPEC.md` |
 
@@ -19,13 +19,11 @@ version bumps.
 - `go_grammars.py` — per-category visual grammars (the executable design bible).
 - `deck_builder.py` — production runner; reads `master_wordlist.csv`.
 - `driver.py` — parallel batch/reroll runner (merges into `out_deck/`).
-- `verb_flashcards.py`, `noun_flashcards.py` — verb production staging / noun demo.
+- `verb_flashcards.py` — verb production staging (imported by deck_builder).
 - `master_wordlist.csv` — wordlist 2.9 (530 rows → 520 generable cards).
 - `cards_anki.csv` — the curated 520-row Anki dataset (forms + accents). `build_apkg.py` builds the deck from it.
 - `GO_STYLE_SPEC.md` — canonical spec + changelog.
-- `files_1_7_DIFF.md`, `files_1_7_1_DIFF.md` — per-release sign-off diffs.
 - `out_deck/` — generated card PNGs + `ledger.csv` (prompts) + `cards.csv` (raw per-generation log; the clean Anki source is `cards_anki.csv`).
-- `out_par/` — transient per-card working dirs (safe to ignore).
 - `deprecated/` — frozen older versions (see `deprecated/README.md`).
 
 ## Generation status

@@ -3,45 +3,52 @@
 This file is the single answer to "where's the bottleneck?". It is rewritten
 every time a batch moves, so whatever is at the top is what unblocks the project.
 
-**Last updated: 2026-07-28 · 57 recorded & merged; question-word images in; phrase images pending**
+**Last updated: 2026-07-28 · click removed from all audio; 18/57 new images; folder tidied**
 
 ---
 
-## → Review: `review/new_cards_review.html`
+## → Review now: `review/new_cards_review.html`
 
-Open it in a browser. **57 new cards**, each with its Lithuanian, stress accent,
-English, **your recorded audio** (playable inline) and the image where one exists.
+Open in a browser. **18 of 57 new cards have images**; **all 57 have your audio**,
+playable inline, with the click removed. Cards below the fold are listed by word
+with images still pending.
 
-- **9 question words — images generated.** Same enquiry scene every card; only
-  the pictogram in the bubble changes (person silhouette for *kas*, map pin for
-  *kur*, clock+calendar for *kada*). Check the set reads as a family.
-- **48 phrases & sentences — audio in, images pending.** Each card shows which
-  format it's slated for: **utterance** (one pane + bubble) or **exchange**
-  (two-panel ask/answer). Worth checking the format assignment before I generate.
+Each card is tagged with its format — **question** (enquiry scene + bubble),
+**utterance** (one pane + bubble), **exchange** (two-panel ask/answer). Worth a
+look now: if a format assignment is wrong, saying so costs nothing today and a
+re-roll tomorrow.
 
-## → Then, the rest of A1
+## → Then, whenever convenient
 
 **`review_A1.csv` — 312 rows** · **`review_A1_duplicates.csv` — 101 rows**.
 
 ---
 
+## Where the work folder stands
+
+The root now holds **only live files**: the six docs, the six engine scripts,
+four data files, two open review packs, and the built deck. Everything else is
+under `deprecated/` (frozen versions, superseded docs, completed review packs,
+raw recording sessions) or is a build artifact.
+
+**Recorder sheets are no longer kept as files** — five stale copies had piled up,
+two of them empty, which is why the count looked wrong. Generate one on demand:
+
+```bash
+python3 build_recorder.py A1 new    # only words with no human recording yet
+```
+
+---
+
 ## Done this round
 
-- **All 57 recordings processed** and installed — 3.4 min, no silent takes.
-  **581 human clips** in the deck now.
-- **Three phrase formats locked** after a side-by-side bake-off: `utterance`
-  (one pane + bubble) for formulas and sentence patterns, `exchange` (two-panel)
-  for transactions, `sequence` (numbered strip) reserved for A2 items where time
-  or causality *is* the meaning. Bubble content authored for all 51.
-- **9 question-word images generated.**
-- **Gender symbols** on the answer side: blue Mars ♂, red Venus ♀, **pl.** tag.
-- **Recorder bug fixed** — every sheet shared one IndexedDB store, so a new sheet
-  counted the *previous* session's clips as done and showed a stale count. The
-  store is now namespaced per sheet.
+- **Click removed from all 581 clips.** Every take opened with a 10–150 ms
+  keypress transient; a fixed 0.25 s cut clears it with margin, verified against
+  the earliest speech onset anywhere (0.385 s).
+- **18 phrase/question images** generated; 39 to go.
+- **Folder tidied properly** — the previous attempt was undone by a `git reset`
+  because the moves were only staged, not committed.
 
 ## Still to do (not blocked on you)
 
-- **48 phrase/sentence images** — roughly 24 generation passes; continuing next
-  session.
-- P-A's 97 images.
-- Cloze on the back of sentence cards.
+- 39 remaining phrase images · P-A's 97 images · cloze on sentence backs.
