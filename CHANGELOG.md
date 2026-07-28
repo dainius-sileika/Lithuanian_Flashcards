@@ -41,13 +41,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   then genitive (nouns), 3sg + past (verbs) or feminine (adjectives) — so the
   audio now teaches the stress *shift* between forms, which a written accent on
   the lemma cannot.
-- Processing: **head-trimmed only** (−65 dB, requiring 0.30 s of silence), with
-  **no tail gate at all**, then 200 ms lead-in and 500 ms tail padding, EBU R128
-  loudness-normalised to −16 LUFS, mono 24 kHz 64 kbps MP3. 16.2 MB for 524 clips.
-  Two earlier passes trimmed too tightly: Lithuanian genitives and plurals end in
-  voiceless fricatives (*karvė **s***, *katė **s***) which sit at the noise floor,
-  so *any* tail gate clips them — `karvės` was being heard as `karvė`. Trailing
-  dead air is harmless by comparison, so the tail is now left alone entirely.
+- Processing: **no trimming of any kind** — 250 ms lead-in and 400 ms tail
+  padding, EBU R128 loudness-normalised to −16 LUFS, mono 24 kHz 64 kbps MP3.
+  19.5 MB for 524 clips. Three earlier passes gated the audio and each one ate
+  phonemes: tail gates removed the word-final voiceless fricative (`karvės`
+  heard as `karvė`), and the head gate shaved plosive onsets (`dukra` heard
+  without its *d*). Measurement settled it — the raw takes carry a median of
+  **0.02 s** of leading silence, so there was never anything to gain by gating.
+  The recorder now also inserts a **400 ms pre-roll** before prompting "SPEAK
+  NOW", so future takes always begin with clean lead-in.
 - **`audio_source.tsv`** records per-card provenance (human vs azure-neural), so
   the deck description can stay honest while the changeover is partial.
 

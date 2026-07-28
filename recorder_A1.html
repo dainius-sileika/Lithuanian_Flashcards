@@ -139,7 +139,11 @@ function startRec(){
     if(document.getElementById('auto').checked) setTimeout(()=>go(1),350);
   };
   rec.start(); recBtn.classList.add('recording'); recBtn.textContent='■ Stop';
-  document.getElementById('status').textContent="Recording…";
+  // pre-roll: the mic is live but we ask for silence first, so every take begins
+  // with clean lead-in and no plosive onset is clipped at capture.
+  document.getElementById('status').textContent="… wait …";
+  setTimeout(()=>{ if(rec&&rec.state==='recording')
+      document.getElementById('status').textContent="SPEAK NOW"; }, 400);
 }
 function toggleRec(){ if(rec&&rec.state==='recording'){rec.stop();} else {startRec();} }
 
