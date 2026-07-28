@@ -8,6 +8,48 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 ## [Unreleased] — planning
 
 ### Added
+- **`qa_images.py` — an automated QA gate for generated art.** Two rules have
+  governed this deck from the start and both were being enforced by eye, which is
+  why breaches surfaced a batch late: *no text in the art*, and *guessability*.
+  QA now checks both. It reads each image with a vision model that is **never told
+  the answer**, then compares what it saw against the card's metadata: any
+  lettering beyond the row's declared `card_text` is a defect, the target word
+  appearing is a hard failure, and a blind guess that misses the gloss is a
+  warning that the picture may not be teaching. Results are cached by file hash,
+  so a re-run only pays for images that changed, and a non-zero exit can gate a
+  generation run.
+
+  *Tesseract was tried first and abandoned.* On this painterly, textured ground it
+  produced pages of hallucinated words while missing a 400-pixel question mark
+  entirely — and OCR cannot judge whether a picture is *weird*, which was half the
+  requirement.
+
+- **57 question / phrase / sentence cards**, the first in the deck to carry speech
+  bubbles, across three new grammars: **question** (uniform enquiry scene, only the
+  bubble pictogram changes), **utterance** (one pane + bubble) and **exchange**
+  (two panels, same two people, ask then answer).
+
+### Fixed
+- **A question mark on every phrase card, including the statements.** *Cheers!*,
+  *Welcome!* and *Of course* were all drawn as questions. The prompt had asked for
+  a question mark "only if the phrase is a question" — the model ignored the
+  condition. **No prompt now contains a condition**: Python decides and the prompt
+  only ever states. 
+- **The Lithuanian target word printed inside speech bubbles**, which hands the
+  learner the answer and stops the card teaching. Two causes: passing any
+  `exact_text` *replaced* the strong `NO_TEXT_RULE` that had protected the other
+  520 cards, and the `exclude` argument — which names the target as forbidden —
+  reached only the labelled branch and so never applied to these cards. Both are
+  wired through now, and `NO_TEXT_RULE` explicitly covers speech bubbles, which
+  did not exist when it was written.
+- **Generator and QA disagreed on what a question is.** Full sentences like
+  *Kas tai?* are questions by punctuation but sit outside the `Question words`
+  category, so the generator drew the mark correctly and QA then failed the card
+  for it. Both now import one definition.
+- **Review page audio was dead.** Every clip was inlined as a base64 data URI;
+  browsers refuse to load media from data URIs over `file://`, so all 18 were
+  silent despite the bytes being valid. Media is now written as real files into
+  `review/media/` — which also took the page from 1.3 MB to 26 KB.
 - **CEFR levels on every card.** `cards_anki.csv` and the wordlist carry a `level`
   column, and the deck now builds as **subdecks** `Lietuvių Flashcards::A1` and
   `::A2` with matching `A1`/`A2` tags. Studying the parent deck studies all of it;

@@ -146,7 +146,10 @@ NO_TEXT_RULE = (
     "Render NO text, NO lettering, NO numbers, NO words, NO labels and NO "
     "captions anywhere in the image — no leader-line labels, no writing in any "
     "panel, on any flag, sign, or object, and none in the header or footer "
-    "bands. Any area that would normally hold text must be left completely blank."
+    "bands. Any area that would normally hold text must be left completely blank. "
+    "This applies with full force inside speech bubbles and thought balloons: a "
+    "bubble may contain a drawn picture or symbol, but never a written word, "
+    "letter, or punctuation mark in any language."
 )
 GLYPH_RULE = (
     "The ONLY lettering permitted is the one single large letter that is "
@@ -154,18 +157,31 @@ GLYPH_RULE = (
     "Render NO other text, lettering, numbers, words, labels or captions "
     "anywhere else in the image, and none in the header or footer bands."
 )
-def _exact_text_rule(spec):
+def _exact_text_rule(spec, exclude=""):
     """1.7.7 text exception. A few cards are unteachable without a little
     lettering (unit marks on a ruler, ABC/123 on a blackboard, a price, a
     masthead, the vowel set). This permits EXACTLY the specified lettering and
-    nothing else — the no-text rule still governs the rest of the card."""
-    return ("TEXT EXCEPTION for this card: the only lettering permitted "
+    nothing else — the no-text rule still governs the rest of the card.
+
+    1.9.0: the spec must be UNCONDITIONAL. Phrasing like "a question mark only
+    if the phrase is a question" was silently ignored by the model, which drew
+    the mark on all nine non-question cards. The caller decides; the prompt only
+    ever states what to draw. The exclusion clause is also carried here — it
+    previously reached the labelled branch only, so cards using a text exception
+    had nothing stopping the target word from being written into the art."""
+    segs = ["TEXT EXCEPTION for this card: the only lettering permitted "
             f"anywhere in the image is {spec} Draw it cleanly and correctly "
             "spelled in the muted period print style, large enough to read. "
             "Render NO other text, lettering, numbers, words, labels or "
             "captions anywhere else in the image — no leader-line labels, no "
             "writing on any other object, sign or flag — and none in the "
-            "header or footer bands.")
+            "header or footer bands."]
+    if exclude:
+        segs.append(f"Absolutely never write the word \"{exclude}\", any part "
+                    "of it, its translation, or any other Lithuanian or English "
+                    "word anywhere in the image. Speech bubbles must stay free "
+                    "of words in every language.")
+    return " ".join(segs)
 
 
 BARS_RULE = (
@@ -207,7 +223,7 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
         segs.append(GLYPH_RULE)
         segs.append(BARS_RULE)
     elif exact_text:
-        segs.append(_exact_text_rule(exact_text))
+        segs.append(_exact_text_rule(exact_text, exclude))
         segs.append(BARS_RULE)
     elif text:
         lc = _label_clause(labels, exclude)
