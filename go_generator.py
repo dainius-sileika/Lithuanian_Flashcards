@@ -58,7 +58,23 @@ import os, sys, csv, time, shutil, argparse, hashlib, base64
 # ===========================================================================
 # CONCEPT-FORWARD encoding (backend="openai")
 # ===========================================================================
-CONCEPT_LEAD = (
+# F6.1 house style (2026-10-11). Settled by the owner's blind surveys in
+# style_lab/2026-10-10_06..08 (Fable analysis: 08_F6_roll/results/). Two leads that
+# differ only in the composition sentence: vignette (objects, clothing, animals,
+# persons, single-figure verbs) and full scene (places, buildings, crowds,
+# workplace scenes). Each has a matching suffix appended at the very end, so the
+# paper/gaze/inset finish is the last thing the model reads.
+# Paper target (strict, style_lab/tools/papertone2.py): L* 85-88, b* 18-23.
+CONCEPT_LEAD = "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The light paper is the background: the main subject is drawn directly on it, its surroundings sketched in around it and fading into the paper, leaving open margins; insets are small ruled boxes on the same paper, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. In a group, heads turn at varied natural angles as in a documentary photograph, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder; a lone figure stands near-frontal, face turned only a little, eyes just past the viewer's shoulder."
+CONCEPT_LEAD_SCENE = "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, printed on the same light paper; insets are small ruled boxes beside or below it, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. In a group, heads turn at varied natural angles as in a documentary photograph, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder; a lone figure stands near-frontal, face turned only a little, eyes just past the viewer's shoulder."
+STYLE_SUFFIX = "Finish: muted offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions. Group heads at varied natural angles, one or two facing the viewer with eyes just past the viewer's shoulder; a lone figure near-frontal. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink."
+STYLE_SUFFIX_SCENE = "Finish: a full, detailed scene in muted offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions. Group heads at varied natural angles, one or two facing the viewer with eyes just past the viewer's shoulder; a lone figure near-frontal. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink."
+LEADS = {"vignette": (CONCEPT_LEAD, STYLE_SUFFIX),
+         "scene": (CONCEPT_LEAD_SCENE, STYLE_SUFFIX_SCENE)}
+
+# The gpt-image-1.5 era lead (files 1.x, the 520 shipped masters). Kept for the
+# record and for slicing old ledger prompts; not used for new renders.
+LEGACY_CONCEPT_LEAD_1_5 = (
     "An illustration for a Lithuanian-language learning flashcard, in the style "
     "of a late Soviet instructional wall chart / civil-defense (Grazhdanskaya "
     "Oborona) training poster, circa 1975-1985. This is an educational technical "
@@ -71,31 +87,32 @@ CONCEPT_LEAD = (
     "heroic posing, in a period late-1970s setting."
 )
 
-# --- people & dress classes (1.3): coveralls are no longer forced on everyone ---
+# --- people & dress classes. F6.1 adds "formal" (church, weddings, occasions)
+# and puts the red cross / pupils / smock into the professional class.
 FIGURE_DRESS = {
-    "worker": (
-        "Any people who appear are ordinary workers in plain muted blue-grey "
-        "civil-defense coveralls, soft flat-topped cloth workers' caps (the "
-        "Lenin-style flat cap) or bareheaded, and black kirza-style work boots."),
-    "professional": (
-        "Any people who appear are dressed for their profession and setting — a "
-        "doctor or nurse in a white medical coat, a teacher in a modest 1970s "
-        "jacket or dress, a uniformed officer in service uniform — and NOT in "
-        "workers' coveralls."),
-    "civilian": (
-        "Any people who appear are ordinary Soviet-era Lithuanian civilians in "
-        "plain everyday late-1970s clothes — a simple shirt, jacket, dress, or "
-        "headscarf — and NOT workers' coveralls or a uniform."),
+    "worker": 'Any people who appear are working men and women in plain muted blue-grey work jackets and trousers, the men in flat cloth caps, with black kirza-style work boots.',
+    "professional": 'Any people who appear are dressed for their profession and setting: a doctor or nurse in a white coat, with a small red cross on the medical kit or the clinic front; a teacher in a modest jacket or dress with pupils present at their desks; a shop assistant in a white smock; a uniformed officer in plain service uniform.',
+    "civilian": 'Any people who appear are ordinary Lithuanian civilians in plain everyday clothes of 1981, dressed for the setting and the weather: shirts, cardigans, simple dresses and headscarves indoors and on the street; coats, caps and hats outdoors in cold weather.',
+    "formal": 'Any people who appear are ordinary Lithuanians in their Sunday best for church, a wedding or a celebration: men in dark suits with a white shirt and tie, women in modest good dresses or skirts with a cardigan, a small hat or a fine headscarf, children neatly dressed.',
 }
 # guard against the model inventing a stray standing figure on object/place cards
 NO_STRAY_FIGURE = ("Only include people the subject or scene actually calls for; "
                    "do not add an extra standing figure that is not needed.")
 
-INSET_RULE = (
-    "Include just 2 to 3 small supporting inset panels — external close-up "
-    "details or a small civic scene of ordinary people — kept clean and "
-    "uncluttered. Do not overcrowd the card."
-)
+INSET_RULE = 'Include just 2 to 3 small supporting inset panels, all drawn in the same thin ruled frame on the same paper, each showing a clearly different moment, object or angle from the others and from the main picture. Keep them clean and uncluttered.'
+# appended when a card supplies its own inset_note, so custom insets keep the
+# same frame and stay distinct (F6 vestuves: one inset had an odd white frame)
+INSET_FRAME_RULE = ("All insets are drawn in the same thin ruled frame on the "
+                    "same paper, each showing a clearly different moment, object "
+                    "or angle from the others and from the main picture.")
+# F6.1: walking/running strips kept drawing the same foot forward twice
+MOTION_STRIP_RULE = 'The motion strip shows one figure in three clearly different phases, left to right: first standing with both feet together and arms at the sides; second with the LEFT foot forward and the right arm swung forward; third with the RIGHT foot forward and the left arm swung forward. The three frames read as one continuous movement.'
+# F6.1: ~20 % of F6 draws had a mechanical glitch (table in a doorway, a
+# well-sweep with no well, a spoon behind its hook, a "dead" sleeping hare)
+PLAUSIBILITY_RULE = 'Every object, tool and fixture is complete, attached and in working order: a well-sweep stands over its timber well-head, hanging utensils hang from a proper rack or wall hooks, doorways and corridors stay clear and passable, furniture rests on the floor against a wall, tools are held in a usable grip, and a resting or sleeping animal is visibly alive and at ease, curled up with eyes closed and ears relaxed.'
+ARROW_RULE = 'Any arrow or callout, drawn in solid black ink, points only at the subject the card teaches or at the direction of its motion.'
+SETTING_GUARD = ("The setting stays behind and around the subject and never "
+                 "competes with it.")
 
 # 1.7.1: the guessability gate, baked into the prompt so it holds at generation
 # time instead of only at human QA. Applied whenever insets are present.
@@ -209,16 +226,32 @@ def _label_clause(labels, exclude=""):
 
 def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
                    inset_note="", text=False, people="worker", extra="",
-                   glyph=False, flag="lt", exact_text=""):
-    segs = [CONCEPT_LEAD, f"Subject: {subject}."]
+                   glyph=False, flag="lt", exact_text="", composition="vignette",
+                   staging="", setting="", motion_strip=False):
+    """F6.1 assembly order (production_spec_F6_1.json): lead, subject, per-card
+    staging, class scene, setting, dress, inset rules, plausibility, arrows,
+    text rules, bars, flag, anatomy, extra, suffix."""
+    lead, suffix = LEADS.get(composition, LEADS["vignette"])
+    segs = [lead, f"Subject: {subject}."]
+    if staging:
+        segs.append(staging)
     if scene:
         segs.append(scene)
+    if setting:
+        segs.append(setting)
+        segs.append(SETTING_GUARD)
     segs.append(FIGURE_DRESS.get(people, FIGURE_DRESS["worker"]))
     segs.append(NO_STRAY_FIGURE)
     if insets:
         segs.append(inset_note if inset_note else INSET_RULE)
+        if inset_note:
+            segs.append(INSET_FRAME_RULE)
+        if motion_strip:
+            segs.append(MOTION_STRIP_RULE)
         segs.append(INSET_MEANING_RULE)
         segs.append(NO_CUTAWAY_RULE)
+    segs.append(PLAUSIBILITY_RULE)
+    segs.append(ARROW_RULE)
     if glyph:
         segs.append(GLYPH_RULE)
         segs.append(BARS_RULE)
@@ -239,6 +272,7 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
     segs.append(ANATOMY_RULE)
     if extra:
         segs.append(extra)
+    segs.append(suffix)
     return " ".join(segs)
 
 
@@ -279,11 +313,15 @@ def _prompt_zimage(subject, scene="", overlays=None, extra=""):
 def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
                  inset_note="", text=False, people="worker", overlays=None,
                  glyph=False,
-                 extra="", backend="openai", flag="lt", exact_text=""):
+                 extra="", backend="openai", flag="lt", exact_text="",
+                 composition="vignette", staging="", setting="",
+                 motion_strip=False):
     if backend == "openai":
         return _prompt_openai(subject, scene, labels, exclude, insets,
                               inset_note, text, people, extra, glyph=glyph,
-                              flag=flag, exact_text=exact_text)
+                              flag=flag, exact_text=exact_text,
+                              composition=composition, staging=staging,
+                              setting=setting, motion_strip=motion_strip)
     return _prompt_zimage(subject, scene, overlays, extra)
 
 
@@ -384,12 +422,16 @@ class GOGenerator:
     def generate(self, subject, scene="", labels=None, exclude="", insets=True,
                  inset_note="", text=False, people="worker", overlays=None,
                  glyph=False,
-                 extra="", out_dir=".", filename=None, flag="lt", exact_text=""):
+                 extra="", out_dir=".", filename=None, flag="lt", exact_text="",
+                 composition="vignette", staging="", setting="",
+                 motion_strip=False):
         prompt = build_prompt(subject, scene=scene, labels=labels,
                               exclude=exclude, insets=insets, inset_note=inset_note,
                               text=text, people=people, overlays=overlays,
                               glyph=glyph, extra=extra, backend=self.backend,
-                              flag=flag, exact_text=exact_text)
+                              flag=flag, exact_text=exact_text,
+                              composition=composition, staging=staging,
+                              setting=setting, motion_strip=motion_strip)
         os.makedirs(out_dir, exist_ok=True)
         if filename is None:
             filename = "go_" + hashlib.md5(subject.encode()).hexdigest()[:8] + ".png"

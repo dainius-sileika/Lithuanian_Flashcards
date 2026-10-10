@@ -1,0 +1,217 @@
+<title>F6.1 Spot Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@700&family=PT+Mono&display=swap">
+<style>
+/* Layout: a working desk for one round at a time. Card-chrome red band on top, round tabs, a
+   2-column sortable grid of plates, each with rank, ship toggle and a comment. */
+:root {
+  --paper: #f3efe4;      /* page ground, the manual's cream */
+  --sheet: #fbf9f3;      /* card surface */
+  --ink: #2b2620;        /* text */
+  --ink-soft: #6c6457;   /* secondary text */
+  --rule: #d8d0bf;       /* borders */
+  --band: #8e2a22;       /* the cards' dark-red bars */
+  --band-ink: #fbf3ea;
+  --ship: #2f5d50;       /* blue-grey teal from the house palette */
+  --ship-soft: #dfeae5;
+  --focus: #b5482f;
+  --font-body: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "PT Sans Narrow", "Arial Narrow", "PT Sans", sans-serif;
+  --font-mono: "PT Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #1d1a16; --sheet: #26221d; --ink: #ece5d8; --ink-soft: #a89e8d; --rule: #3d372f;
+  --band: #7a241d; --band-ink: #f7ece0; --ship: #7fb3a3; --ship-soft: #24342f; --focus: #e07a5f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #1d1a16; --sheet: #26221d; --ink: #ece5d8; --ink-soft: #a89e8d; --rule: #3d372f;
+  --band: #7a241d; --band-ink: #f7ece0; --ship: #7fb3a3; --ship-soft: #24342f; --focus: #e07a5f; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 16px/1.45 var(--font-body); margin: 0 }
+.band { background: var(--band); color: var(--band-ink); padding: 10px 16px; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap }
+.band h1 { font: 700 1.35rem/1.1 var(--font-display); letter-spacing: .06em; text-transform: uppercase; margin: 0 }
+.band .sub { font-size: .9rem; opacity: .85 }
+.wrap { max-width: 1400px; margin: 0 auto; padding-inline: 16px; padding-block: 12px 48px }
+.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule);
+  padding-block: 10px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center }
+.tab { font: 15px/1 var(--font-mono); min-width: 2.4em; padding: 8px 6px; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink);
+  border-radius: 4px; cursor: pointer; font-variant-numeric: tabular-nums }
+.tab[aria-current="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+.tab.done { border-color: var(--ship); color: var(--ship) }
+.tab.done[aria-current="true"] { background: var(--ship); color: var(--sheet) }
+.tab.started:not(.done)::after { content: "•"; margin-left: 2px }
+.status { margin-left: auto; font-size: .85rem; color: var(--ink-soft) }
+.status.warn { color: var(--focus) }
+.head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-block: 18px 6px }
+.head h2 { font: 700 1.9rem/1.1 var(--font-display); letter-spacing: .03em; margin: 0; text-wrap: balance }
+.head .word { font-size: 1.15rem; color: var(--ink-soft) }
+.how { color: var(--ink-soft); margin: 0 0 14px; max-width: 75ch }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+.card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; display: flex; flex-direction: column; min-width: 0 }
+.card.ship { border-color: var(--ship); box-shadow: 0 0 0 2px var(--ship) inset }
+.bar { display: flex; align-items: center; gap: 10px; padding: 8px 10px; cursor: grab; user-select: none; border-bottom: 1px solid var(--rule) }
+.bar:active { cursor: grabbing }
+.rank { font: 700 1.6rem/1 var(--font-display); min-width: 1.6em; font-variant-numeric: tabular-nums }
+.grip { color: var(--ink-soft); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase }
+.moves { margin-left: auto; display: flex; gap: 4px }
+.btn { font: 14px/1 var(--font-body); padding: 7px 10px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 4px; cursor: pointer }
+.btn:hover { border-color: var(--ink-soft) }
+.btn:disabled { opacity: .35; cursor: default }
+.plate { display: block; width: 100%; aspect-ratio: 3 / 2; max-width: 100%; object-fit: cover; cursor: zoom-in; background: var(--rule) }
+.foot { padding: 10px; display: grid; gap: 8px }
+.shipbox { display: flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer; width: fit-content; padding: 6px 10px; border-radius: 4px; border: 1px solid var(--rule) }
+.card.ship .shipbox { background: var(--ship-soft); border-color: var(--ship); color: var(--ship) }
+.shipbox input { width: 18px; height: 18px; accent-color: var(--ship) }
+textarea { width: 100%; min-height: 3.2em; resize: vertical; font: 15px/1.4 var(--font-body); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 4px; padding: 8px }
+textarea::placeholder { color: var(--ink-soft) }
+.roundnote { margin-top: 18px; display: grid; gap: 6px; max-width: 900px }
+.roundnote label, .lbl { font: 700 .8rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft) }
+.nav { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap }
+.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); font-weight: 700; padding: 10px 16px }
+.ghost { opacity: .45 }
+.sortable-chosen { box-shadow: 0 6px 24px rgba(0,0,0,.18) }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px }
+.lightbox { position: fixed; inset: 0; background: rgba(15,12,9,.92); z-index: 20; display: grid; place-items: center; padding: 16px }
+.lightbox img { max-width: 100%; max-height: calc(100% - 48px); object-fit: contain; border-radius: 4px }
+.lightbox p { color: #f1ebe0; margin: 8px 0 0; font-size: .9rem; text-align: center }
+.finish { background: var(--sheet); border: 1px solid var(--ship); border-radius: 6px; padding: 18px; margin-top: 18px; max-width: 900px }
+.finish h3 { font: 700 1.4rem/1.2 var(--font-display); margin: 0 0 6px }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<div class="band"><h1>F6.1 spot check</h1><span class="sub">Production prompt, two engines · 30 cards</span></div>
+<div class="wrap">
+  <nav class="tabs" id="tabs" aria-label="Rounds"><span class="status" id="status">Connecting…</span></nav>
+  <div class="head"><h2 id="title">Round 1</h2><span class="word" id="word"></span></div>
+  <p class="how">The production prompt on thirty cards it has never drawn: ten scenes, ten single figures, ten objects and animals. Each round shows the same card from two different engines, in random order. Put the better one first, and tick <b>Would ship</b> on every version you'd put in the deck as it is. Comment on anything that looks wrong: proportions, glitches, gaze, paper, the Lithuanian setting. Click a picture to see it full size. Everything saves as you go.</p>
+  <div class="grid" id="grid"></div>
+  <div class="roundnote"><label for="note">Anything about this round as a whole</label><textarea id="note" placeholder="Optional"></textarea></div>
+  <div class="nav"><button class="btn" id="prev">← Previous round</button><button class="btn primary" id="next">Done, next round →</button></div>
+  <div class="finish" id="finish" hidden>
+    <h3>All rounds answered</h3>
+    <p>Your rankings are saved. Go back to the chat and tell Claude you've finished. You can still revisit any round and change it.</p>
+    <div class="roundnote"><label for="general">Overall impressions (optional)</label><textarea id="general" placeholder="What you found yourself looking for, what kept putting you off"></textarea></div>
+  </div>
+</div>
+<div class="lightbox" id="lb" hidden><div><img id="lbimg" alt=""><p>Click or press Esc to close · ← → to step through this round</p></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+<script>
+const ROUNDS = [{"round":1,"label":"sriuba · soup","cells":["bd4c3b00","abb8da7e"]},{"round":2,"label":"batai · shoes","cells":["0e98e05d","ef7a7539"]},{"round":3,"label":"šuo · dog","cells":["5a59bdf7","f1391b0b"]},{"round":4,"label":"teatras · theater","cells":["6fe97678","79448a45"]},{"round":5,"label":"dainuoti · sing","cells":["4ecf08e1","5d3964bd"]},{"round":6,"label":"laikrodis · clock","cells":["86c6f691","03127278"]},{"round":7,"label":"kunigas · priest","cells":["f4f44136","bbb367f5"]},{"round":8,"label":"pacientas · patient","cells":["033cf063","910c3130"]},{"round":9,"label":"ūkis · farm","cells":["6040161d","13c287cc"]},{"round":10,"label":"vairuoti · drive","cells":["92119147","19d16918"]},{"round":11,"label":"policininkas · police officer","cells":["d33922d3","6542ab84"]},{"round":12,"label":"šokti · dance","cells":["592d6b22","0a22854d"]},{"round":13,"label":"arklys · horse","cells":["d28fd319","2147e3d5"]},{"round":14,"label":"gatvė · street","cells":["4fc4eb76","aed1bfee"]},{"round":15,"label":"ligoninė · hospital","cells":["7e0fbfd7","6367fcfb"]},{"round":16,"label":"statyti · build","cells":["b0f0fcba","c095604b"]},{"round":17,"label":"menininkas · artist","cells":["00b72902","6d80c8b7"]},{"round":18,"label":"obuolys · apple","cells":["ccb389d2","9ba3f627"]},{"round":19,"label":"suknelė · dress","cells":["a4f22916","b80417d3"]},{"round":20,"label":"pjauti · cut","cells":["aa446be1","3b65ca6d"]},{"round":21,"label":"turgus · market","cells":["54eedefd","fd9ba458"]},{"round":22,"label":"telefonas · telephone","cells":["839b5fbe","dbf8e4e2"]},{"round":23,"label":"maitinti · feed","cells":["1a279692","215ded3d"]},{"round":24,"label":"mokykla · school","cells":["f22b7928","220520bb"]},{"round":25,"label":"tėvas · father","cells":["149a6857","2874561c"]},{"round":26,"label":"karvė · cow","cells":["6637dccb","00989b9b"]},{"round":27,"label":"stotis · train station","cells":["fe521d97","fd49bc82"]},{"round":28,"label":"bėgti · run","cells":["9902004f","7d3b1e4c"]},{"round":29,"label":"kostiumas · suit","cells":["b7a1366b","b057e98b"]},{"round":30,"label":"dirbti · work","cells":["c5adf713","f160ba3a"]}];
+const N = ROUNDS.length;
+const state = {};            // round -> {order, ship[], comments{}, note, done}
+let cur = 1, db = null, saveTimers = {}, sortable = null;
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2, "0");
+const blank = r => ({ order: [...ROUNDS[r - 1].cells], ship: [], comments: {}, note: "", done: false, touched: false });
+function local(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || "null"); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null } }
+
+function setStatus(t, warn) { const s = $("status"); s.textContent = t; s.classList.toggle("warn", !!warn) }
+
+function renderTabs() {
+  const tabs = $("tabs"); tabs.querySelectorAll(".tab").forEach(t => t.remove());
+  for (let r = N; r >= 1; r--) {
+    const b = document.createElement("button"); b.className = "tab"; b.textContent = r; b.setAttribute("aria-label", "Round " + r);
+    const s = state[r]; if (s?.done) b.classList.add("done"); else if (s?.touched) b.classList.add("started");
+    if (r === cur) b.setAttribute("aria-current", "true");
+    b.onclick = () => go(r); tabs.prepend(b);
+  }
+}
+
+function render() {
+  const R = ROUNDS[cur - 1], s = state[cur];
+  $("title").textContent = `Round ${cur} of ${N}`; $("word").textContent = R.label;
+  const g = $("grid"); g.innerHTML = "";
+  s.order.forEach((id, i) => {
+    const c = document.createElement("article"); c.className = "card" + (s.ship.includes(id) ? " ship" : ""); c.dataset.id = id;
+    c.innerHTML = `<div class="bar"><span class="rank">${i + 1}</span><span class="grip">drag</span>
+      <span class="moves"><button class="btn up" aria-label="Move up">↑</button><button class="btn down" aria-label="Move down">↓</button></span></div>
+      <img class="plate" src="img/${id}.jpg" alt="Version ${i + 1}" loading="eager">
+      <div class="foot"><label class="shipbox"><input type="checkbox" id="ship-${id}"> Would ship</label>
+      <textarea id="c-${id}" placeholder="What works, what doesn't"></textarea></div>`;
+    const cb = c.querySelector("input"), ta = c.querySelector("textarea");
+    cb.checked = s.ship.includes(id); ta.value = s.comments[id] || "";
+    cb.onchange = () => { s.ship = cb.checked ? [...new Set([...s.ship, id])] : s.ship.filter(x => x !== id); c.classList.toggle("ship", cb.checked); touch() };
+    ta.oninput = () => { s.comments[id] = ta.value; touch() };
+    c.querySelector(".up").onclick = () => move(id, -1);
+    c.querySelector(".down").onclick = () => move(id, 1);
+    c.querySelector(".plate").onclick = () => openLB(id);
+    g.appendChild(c);
+  });
+  updateRanks();
+  $("note").value = s.note || "";
+  $("prev").disabled = cur === 1;
+  $("next").textContent = cur === N ? "Done, finish" : "Done, next round →";
+  $("finish").hidden = !(Object.values(state).filter(x => x.done).length === N);
+  if (sortable) sortable.destroy();
+  sortable = Sortable.create(g, { animation: 150, handle: ".bar", filter: "button", preventOnFilter: false, ghostClass: "ghost",
+    onEnd: () => { s.order = [...g.children].map(c => c.dataset.id); updateRanks(); touch() } });
+  renderTabs();
+}
+function updateRanks() {
+  [...$("grid").children].forEach((c, i) => {
+    c.querySelector(".rank").textContent = i + 1; c.querySelector(".plate").alt = "Version ranked " + (i + 1);
+    c.querySelector(".up").disabled = i === 0; c.querySelector(".down").disabled = i === state[cur].order.length - 1;
+  });
+}
+function move(id, d) {
+  const o = state[cur].order, i = o.indexOf(id), j = i + d; if (j < 0 || j >= o.length) return;
+  [o[i], o[j]] = [o[j], o[i]]; touch(); render();
+  const btn = document.querySelector(`[data-id="${id}"] .${d < 0 ? "up" : "down"}`); if (btn && !btn.disabled) btn.focus();
+}
+function touch(r = cur) { state[r].touched = true; queueSave(r); renderTabsLight(r) }
+function renderTabsLight() { renderTabs() }
+function queueSave(r) {
+  local("go-survey-" + r, state[r]); setStatus("Saving…");
+  clearTimeout(saveTimers[r]); saveTimers[r] = setTimeout(() => save(r), 700);
+}
+async function save(r) {
+  const s = state[r];
+  if (!db) { setStatus("Saved in this browser only (not connected)", true); return }
+  try {
+    await db.doc("responses/r" + pad(r)).set({ round: r, order: s.order, ship: s.ship, comments: s.comments, note: s.note, done: s.done, touched: s.touched, updatedAt: new Date().toISOString() });
+    setStatus("Saved");
+  } catch (e) { setStatus("Couldn't save to the survey store (" + (e.code || "error") + "); kept in this browser", true) }
+}
+function go(r) { cur = r; render(); window.scrollTo({ top: 0 }) }
+$("note").oninput = e => { state[cur].note = e.target.value; touch() };
+$("prev").onclick = () => cur > 1 && go(cur - 1);
+$("next").onclick = () => { state[cur].done = true; state[cur].touched = true; queueSave(cur); if (cur < N) go(cur + 1); else { render(); $("finish").scrollIntoView({ behavior: "smooth" }) } };
+let generalTimer;
+$("general").oninput = e => { local("go-survey-general", e.target.value); clearTimeout(generalTimer);
+  generalTimer = setTimeout(async () => { if (db) try { await db.doc("responses/general").set({ text: e.target.value, updatedAt: new Date().toISOString() }); setStatus("Saved") } catch (_) {} }, 700) };
+
+// lightbox
+let lbId = null;
+function openLB(id) { lbId = id; $("lbimg").src = `img/${id}.jpg`; $("lb").hidden = false }
+function closeLB() { $("lb").hidden = true; lbId = null }
+$("lb").onclick = closeLB;
+document.addEventListener("keydown", e => {
+  if ($("lb").hidden) return;
+  if (e.key === "Escape") closeLB();
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    const o = state[cur].order, i = o.indexOf(lbId) + (e.key === "ArrowRight" ? 1 : -1);
+    if (i >= 0 && i < o.length) openLB(o[i]);
+  }
+});
+
+// boot: local drafts first, then the shared store
+for (let r = 1; r <= N; r++) state[r] = Object.assign(blank(r), local("go-survey-" + r) || {});
+$("general").value = local("go-survey-general") || "";
+render();
+(async () => {
+  db = window.claude?.use ? await window.claude.use("db") : null;
+  if (!db) { setStatus("Not connected: answers stay in this browser only", true); return }
+  try {
+    for (let r = 1; r <= N; r++) {
+      const snap = await db.doc("responses/r" + pad(r)).get();
+      const d = snap.exists ? snap.data() : null;
+      if (d && Array.isArray(d.order) && d.order.length === ROUNDS[r - 1].cells.length) state[r] = Object.assign(blank(r), structuredClone(d));
+    }
+    const g = await db.doc("responses/general").get(); if (g.exists && g.data().text) $("general").value = g.data().text;
+    setStatus("Connected · saves automatically"); render();
+  } catch (e) { setStatus("Couldn't read saved answers (" + (e.code || "error") + "); working from this browser", true) }
+})();
+</script>

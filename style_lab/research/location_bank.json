@@ -1,0 +1,1427 @@
+{
+  "meta": {
+    "title": "Lithuanian location bank for the GO-style deck (free Lithuania, 1981)",
+    "date": "2026-10-11",
+    "notes": [
+      "prompt_phrase describes the LOOK; image models ignore or garble place names, so the name is informational except where naming_the_place_helps is true (famous silhouettes: Trakai, Gediminas tower, Hill of Crosses, Nida dune).",
+      "All state_1981 claims are from the cited sources; items in unverified_points are not.",
+      "Universal counterfactual rules: tricolour only; no Lenin/Soviet emblems, slogans, red stars; Catholic churches in use; Vilnius Cathedral has its three pediment statues; Kaunas Resurrection church is complete; Hill of Crosses undisturbed; Kaunas Vytautas monument standing; Palanga 'Blessing Christ' standing."
+    ]
+  },
+  "locations": [
+    {
+      "id": "vilnius_old_town",
+      "name": "Vilnius Old Town street",
+      "region": "Vilnius",
+      "kind": "city street",
+      "signature_features": [
+        "narrow curving cobbled lane between 3-storey rendered houses in ochre, pink and pale green",
+        "baroque church tower or gable closing the view",
+        "arched gateway into a courtyard"
+      ],
+      "prompt_phrase": "narrow curving cobbled lane, tall rendered houses in ochre and faded pink, a baroque church tower closing the view, arched courtyard gate",
+      "prompt_word_count": 22,
+      "state_1981": "Existed as now; facades shabbier, fewer shop signs, cobbles and trolleybus wires on the wider streets.",
+      "exclude_built_after_1981_or_demolished": [
+        "Gediminas monument on Cathedral Square (1996)",
+        "Užupis angel (2001)"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "street",
+        "city",
+        "shop",
+        "transport",
+        "church",
+        "school"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/vilniaus-katedra-ir-varpine/",
+        "https://www.vle.lt/straipsnis/uzupis/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_gediminas_hill",
+      "name": "Gediminas Hill and tower",
+      "region": "Vilnius",
+      "kind": "landmark",
+      "signature_features": [
+        "octagonal red-brick tower stump on a steep wooded hill",
+        "tricolour on the tower",
+        "river Neris or cathedral roofs below"
+      ],
+      "prompt_phrase": "steep green hill above red roofs, squat octagonal red-brick tower on top flying a yellow-green-red flag, river bend below",
+      "prompt_word_count": 19,
+      "state_1981": "Western tower stands (conserved 1930–39; upper floor rebuilt); museum inside since 1960. Funicular up the hill is later.",
+      "exclude_built_after_1981_or_demolished": [
+        "funicular to the hill (2003, unverified date)"
+      ],
+      "free_lithuania_1981_adjustments": [
+        "Tricolour on the tower is historically correct for 1919/1939 and the natural choice for the counterfactual; no Soviet flag."
+      ],
+      "kitsch_risk": "medium",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "city",
+        "nature",
+        "weather",
+        "leisure"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/aukstutine-pilis/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_cathedral",
+      "name": "Vilnius Cathedral and belfry",
+      "region": "Vilnius",
+      "kind": "landmark",
+      "signature_features": [
+        "white classical temple front with six Doric columns and three statues on the pediment",
+        "free-standing round-based belfry with a helm roof beside it",
+        "wide empty square"
+      ],
+      "prompt_phrase": "white colonnaded cathedral front with three statues on the pediment, a tall free-standing round bell tower with a dark helm roof, wide paved square",
+      "prompt_word_count": 24,
+      "state_1981": "Under Soviet rule it was a picture gallery (taken 1953, returned 1988) and the three pediment statues were removed in 1950 (restored 1997). Roof re-coppered and facades repainted 1980; interior restored from 1981.",
+      "exclude_built_after_1981_or_demolished": [
+        "Gediminas monument (1996)"
+      ],
+      "free_lithuania_1981_adjustments": [
+        "Draw it as a working cathedral WITH the three pediment statues (Helena, Casimir, Stanislaus) — the Soviet removal never happened.",
+        "Belfry lower part housed a Soviet excursion bureau 1965–89; in the counterfactual just a belfry."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "church",
+        "city",
+        "square",
+        "holiday"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/vilniaus-katedra-ir-varpine/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_gate_of_dawn",
+      "name": "Gate of Dawn (Aušros vartai)",
+      "region": "Vilnius",
+      "kind": "landmark",
+      "signature_features": [
+        "street closed by a three-storey gate with a renaissance attic",
+        "chapel windows above the arch",
+        "pilgrims and candles"
+      ],
+      "prompt_phrase": "narrow street ending in a tall old city gate, chapel windows over the arch, people kneeling on cobbles below, baroque church beside",
+      "prompt_word_count": 22,
+      "state_1981": "As now; the attic relief carries the Grand Duchy coat of arms (griffins) — heraldry, keep it as a blur.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "Open religious practice is normal in the counterfactual; crowds at the chapel are correct."
+      ],
+      "kitsch_risk": "medium",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "church",
+        "street",
+        "holiday",
+        "family"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/ausros-vartai/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "The relief shows a coat of arms — draw as indistinct carving."
+      ]
+    },
+    {
+      "id": "vilnius_uzupis",
+      "name": "Užupis over the Vilnia",
+      "region": "Vilnius",
+      "kind": "district",
+      "signature_features": [
+        "small river with a stone bridge",
+        "crooked old houses stacked up a slope",
+        "Bernardine church towers across the water"
+      ],
+      "prompt_phrase": "small fast river under a stone bridge, crooked old houses climbing a slope, church towers across the water, washing lines",
+      "prompt_word_count": 20,
+      "state_1981": "Run-down artisan quarter in 1981; no Angel (2001), no republic signs.",
+      "exclude_built_after_1981_or_demolished": [
+        "Užupis angel (2001)",
+        "art incubator and installations (2002+)"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "river",
+        "street",
+        "home",
+        "work"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/uzupis/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_antakalnis",
+      "name": "Antakalnis — Sts Peter and Paul",
+      "region": "Vilnius",
+      "kind": "district",
+      "signature_features": [
+        "twin-towered white baroque church on a rise",
+        "wooded hills and pine",
+        "hospital complex 1954/1973"
+      ],
+      "prompt_phrase": "white baroque church with two towers and a dome on a wooded rise, pine trees, a long hospital block of the 1970s nearby",
+      "prompt_word_count": 23,
+      "state_1981": "Church open throughout (it held St Casimir's relics 1953–89). Hospital blocks 1954 and 1973; polyclinics 1983–84 are borderline.",
+      "exclude_built_after_1981_or_demolished": [
+        "adult polyclinic (1983)",
+        "children's polyclinic (1984)"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "hospital",
+        "church",
+        "city",
+        "nature"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/antakalnis/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_neris_embankment",
+      "name": "Neris embankment",
+      "region": "Vilnius",
+      "kind": "riverside",
+      "signature_features": [
+        "wide slow river with grassy banks and a concrete-railed embankment",
+        "bridges",
+        "church towers one side, new blocks the other"
+      ],
+      "prompt_phrase": "wide slow river with grassy banks, low concrete embankment railing, a bridge, church towers on one bank and pale new blocks on the other",
+      "prompt_word_count": 24,
+      "state_1981": "Žaliasis tiltas (1948–52) and later bridges exist; Soviet statues on the Green Bridge are OUT for the counterfactual.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "Green Bridge without its 1952 Socialist-realist statue groups."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "river",
+        "water",
+        "weather",
+        "leisure",
+        "transport"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/lietuvos-architektura-1945-1990/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Green Bridge statue date 1952 is from the VLE architecture article (bridge 1948–52); statues' exact date unverified."
+      ]
+    },
+    {
+      "id": "vilnius_zverynas",
+      "name": "Žvėrynas wooden houses",
+      "region": "Vilnius",
+      "kind": "district",
+      "signature_features": [
+        "two-storey wooden villas with fretwork eaves and glazed verandas",
+        "lime and maple street trees",
+        "small Orthodox church dome"
+      ],
+      "prompt_phrase": "quiet street of two-storey wooden villas, fretwork eaves, glazed verandas, tall limes, a small onion dome at the end",
+      "prompt_word_count": 19,
+      "state_1981": "Intact wooden suburb; many houses shabby, some divided into flats.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "home",
+        "street",
+        "family",
+        "school",
+        "seasons"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/zverynas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_vingis",
+      "name": "Vingis Park",
+      "region": "Vilnius",
+      "kind": "park",
+      "signature_features": [
+        "tall pines on river terraces",
+        "the 1960 song-festival stage shell",
+        "river bend"
+      ],
+      "prompt_phrase": "tall pines on a river terrace, a great concrete band-shell stage facing a sloping field, river bend behind",
+      "prompt_word_count": 18,
+      "state_1981": "Stage 1960 (Kotli/Alekna); song festivals held here; stadium 1954.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "Song festival crowds in folk costume are correct; replace Soviet banners with the tricolour."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "leisure",
+        "music",
+        "nature",
+        "sport",
+        "summer"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/vingio-parkas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_kalvariju_market",
+      "name": "Kalvarijų market",
+      "region": "Vilnius",
+      "kind": "market",
+      "signature_features": [
+        "open stalls under a long low roof",
+        "women in headscarves selling from baskets",
+        "wooden crates and scales"
+      ],
+      "prompt_phrase": "open market stalls under a long low roof, women in headscarves behind baskets of apples and curd, brass scales, wooden crates",
+      "prompt_word_count": 21,
+      "state_1981": "Historic market on the right bank; details of its 1981 buildings not verified.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "market",
+        "shop",
+        "food",
+        "money",
+        "work"
+      ],
+      "sources": [],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Kalvarijų market history not verified in a read source; treat as a generic Vilnius market."
+      ]
+    },
+    {
+      "id": "vilnius_tv_tower",
+      "name": "Vilnius TV tower (1980)",
+      "region": "Vilnius",
+      "kind": "landmark",
+      "signature_features": [
+        "very tall thin concrete shaft with one saucer disc two-thirds up",
+        "pine tops and panel blocks below"
+      ],
+      "prompt_phrase": "very tall thin concrete tower with a single saucer-shaped disc near the top, pine tops and nine-storey panel blocks at its foot",
+      "prompt_word_count": 22,
+      "state_1981": "Finished 1980 (326.5 m, deck at 165 m) in Karoliniškės; brand new in 1981.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "city",
+        "technology",
+        "television",
+        "far",
+        "high"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vilnius_TV_Tower"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "vilnius_lazdynai",
+      "name": "Lazdynai housing district",
+      "region": "Vilnius",
+      "kind": "district",
+      "signature_features": [
+        "5- and 9-storey pale panel blocks stepped on a pine slope",
+        "pedestrian paths, sculptures",
+        "footbridge over the ring road"
+      ],
+      "prompt_phrase": "pale prefabricated apartment blocks stepped along a pine-wooded slope, footpaths between, a Žiguli-sized car on a wide road",
+      "prompt_word_count": 18,
+      "state_1981": "Begun 1967, finished 1974 (Lenin Prize 1974). Litexpo 1980. Pure late-Soviet modernism — in the counterfactual it reads as 1970s Nordic-style housing; no slogans on roofs.",
+      "exclude_built_after_1981_or_demolished": [
+        "sculpture Darbininkas 1983",
+        "Kanklininkė 1982"
+      ],
+      "free_lithuania_1981_adjustments": [
+        "Keep the architecture, drop roof slogans and red banners."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "home",
+        "city",
+        "school",
+        "family",
+        "transport"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/lazdynai/",
+        "https://www.vle.lt/straipsnis/lietuvos-architektura-1945-1990/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "kaunas_laisves_aleja",
+      "name": "Kaunas — Laisvės alėja",
+      "region": "Kaunas",
+      "kind": "city street",
+      "signature_features": [
+        "long straight boulevard with two rows of limes",
+        "two-storey eclectic facades",
+        "1980 fountain; Vytautas monument"
+      ],
+      "prompt_phrase": "long straight boulevard with a double row of clipped limes, two-storey ornate facades, a round fountain, people strolling",
+      "prompt_word_count": 18,
+      "state_1981": "Fountain 1980; pedestrianised boulevard character; Vytautas the Great monument (1932) was destroyed 1952 and rebuilt 1990.",
+      "exclude_built_after_1981_or_demolished": [
+        "Dolskis statue (2007)"
+      ],
+      "free_lithuania_1981_adjustments": [
+        "Vytautas monument (1932) still standing in the counterfactual."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "street",
+        "city",
+        "shop",
+        "cafe",
+        "leisure",
+        "transport"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/laisves-aleja/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "kaunas_modernism",
+      "name": "Kaunas interwar modernism",
+      "region": "Kaunas",
+      "kind": "city street",
+      "signature_features": [
+        "pale smooth rendered 4–6 storey facades, rounded corners, ribbon windows, flat roofs",
+        "Christ's Resurrection church tower on the hill"
+      ],
+      "prompt_phrase": "pale smooth rendered modernist building with rounded corner and horizontal window bands, flat roof, 1930s lettering-free facade",
+      "prompt_word_count": 17,
+      "state_1981": "~1,500 interwar buildings (UNESCO 2023). All present in 1981.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "city",
+        "office",
+        "bank",
+        "post",
+        "school",
+        "work"
+      ],
+      "sources": [
+        "https://whc.unesco.org/en/list/1661/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Visual traits (rounded corners, ribbon windows) are my generalisation; UNESCO page gives few visual details."
+      ]
+    },
+    {
+      "id": "kaunas_resurrection_church",
+      "name": "Christ's Resurrection church, Žaliakalnis",
+      "region": "Kaunas",
+      "kind": "landmark",
+      "signature_features": [
+        "white stepped block with a 70 m square tower of narrow vertical slits",
+        "smaller stepped tower over the altar",
+        "seen above the city from the river"
+      ],
+      "prompt_phrase": "white monumental church, tall square tower pierced by narrow vertical slit windows, stepped smaller tower behind, on a hill above red roofs",
+      "prompt_word_count": 22,
+      "state_1981": "Built 1934–40, unfinished; Soviets turned it into the Banga radio factory (returned 1988, completed 2004).",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "Draw it COMPLETED and white as a church — the key counterfactual marker of Kaunas."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "church",
+        "city",
+        "high",
+        "holiday"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/kristaus-prisikelimo-bazilika/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "kaunas_old_town_confluence",
+      "name": "Kaunas Old Town and the confluence",
+      "region": "Kaunas",
+      "kind": "landmark",
+      "signature_features": [
+        "red-brick Gothic (Perkūnas house, castle round tower)",
+        "white town hall 'swan' spire",
+        "two rivers meeting at a grassy point"
+      ],
+      "prompt_phrase": "red-brick Gothic castle tower and church gables, slender white town-hall spire, two wide rivers meeting at a grassy point",
+      "prompt_word_count": 19,
+      "state_1981": "As now; Santaka park largely as grass.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "river",
+        "city",
+        "church",
+        "square",
+        "water"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/kaunas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Perkūnas house / town-hall details not re-verified in this pass."
+      ]
+    },
+    {
+      "id": "kaunas_funicular",
+      "name": "Žaliakalnis funicular",
+      "region": "Kaunas",
+      "kind": "transport",
+      "signature_features": [
+        "small boxy wooden-sided car on a steep straight track",
+        "stairs beside, trees",
+        "view over the city roofs"
+      ],
+      "prompt_phrase": "small boxy funicular car on a steep straight rail track between trees, wooden station hut below, city roofs beyond",
+      "prompt_word_count": 19,
+      "state_1981": "Two funiculars (Žaliakalnis 1931, Aleksotas 1935 — VLE gives 'two funiculars'; years unverified).",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "transport",
+        "up",
+        "down",
+        "city"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/kaunas/",
+        "https://www.vle.lt/straipsnis/keltuvas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Opening years 1931/1935 unverified here."
+      ]
+    },
+    {
+      "id": "kaunas_pazaislis",
+      "name": "Pažaislis monastery",
+      "region": "Kaunas",
+      "kind": "landmark",
+      "signature_features": [
+        "baroque church with a tall hexagonal dome and two towers",
+        "long monastery wall",
+        "pine woods and the Kaunas lagoon"
+      ],
+      "prompt_phrase": "pink-and-white baroque monastery church with a tall domed drum and twin towers behind a long wall, pines, a wide reservoir",
+      "prompt_word_count": 20,
+      "state_1981": "Kaunas lagoon (1959) exists. Monastery used as a psychiatric hospital/ museum under the Soviets.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "Working convent (Sisters of St Casimir since 1920) in the counterfactual."
+      ],
+      "kitsch_risk": "medium",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "church",
+        "water",
+        "leisure",
+        "nature"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/pazaislis/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Dome colour/shape detail from general knowledge."
+      ]
+    },
+    {
+      "id": "kaunas_railway_station",
+      "name": "Kaunas railway station (1953)",
+      "region": "Kaunas",
+      "kind": "transport",
+      "signature_features": [
+        "symmetrical stone-faced station with a clock tower",
+        "green electric train",
+        "wide forecourt"
+      ],
+      "prompt_phrase": "symmetrical stone-faced railway station with a central clock tower, green carriages at a low platform, wide forecourt with a bus",
+      "prompt_word_count": 20,
+      "state_1981": "Built 1953 (architect P. Ašastinas), Stalinist-neoclassical.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "In a free Lithuania the style would differ; acceptable as 'heavy 1950s neoclassical station' without emblems."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "transport",
+        "train",
+        "travel",
+        "station"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/lietuvos-architektura-1945-1990/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "klaipeda_old_town",
+      "name": "Klaipėda old town",
+      "region": "Klaipėda",
+      "kind": "city street",
+      "signature_features": [
+        "timber-framed (fachwerk) warehouses with dark beams on white",
+        "steep red tiled roofs",
+        "cobbled quay on the Danė"
+      ],
+      "prompt_phrase": "timber-framed warehouses, dark beams on whitewashed infill, steep red-tiled roofs, cobbled quay along a small river with moored boats",
+      "prompt_word_count": 19,
+      "state_1981": "Fachwerk and brick warehouses (18th–19th c.) on Aukštoji/Daržų streets survive; theatre square. Ännchen statue absent until 1989.",
+      "exclude_built_after_1981_or_demolished": [
+        "Ännchen von Tharau statue (restored 1989)",
+        "sailing ship Meridianas on the Danė (placed 1971, unverified)"
+      ],
+      "free_lithuania_1981_adjustments": [
+        "Queen of Peace church (1960) was converted to a concert hall in 1963 — in the counterfactual it stands as a church with its tall tower."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "port",
+        "street",
+        "city",
+        "work",
+        "ship",
+        "river"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/klaipedos-architektura/",
+        "https://www.vle.lt/straipsnis/klaipedos-istorija/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "klaipeda_port_ferry",
+      "name": "Klaipėda port and Smiltynė ferry",
+      "region": "Klaipėda",
+      "kind": "port",
+      "signature_features": [
+        "cranes and black-hulled ships across the strait",
+        "small flat ferry crossing to a pine-and-dune shore",
+        "red-and-white lighthouse"
+      ],
+      "prompt_phrase": "harbour cranes and a dark ship's hull across a narrow strait, a small flat passenger ferry crossing to a pine-covered sandy shore",
+      "prompt_word_count": 22,
+      "state_1981": "Ferry to Smiltynė operates; Sea Museum in Kopgalis fort opened 1979.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "transport",
+        "ship",
+        "sea",
+        "work",
+        "travel"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/klaipedos-architektura/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Ferry service history not verified in a read source."
+      ]
+    },
+    {
+      "id": "siauliai",
+      "name": "Šiauliai — cathedral and Vilniaus street",
+      "region": "Šiauliai",
+      "kind": "city",
+      "signature_features": [
+        "tall white renaissance cathedral with a single very tall spire",
+        "long straight pedestrian street with lamps and benches"
+      ],
+      "prompt_phrase": "tall white church with one very tall pointed spire above a long straight pedestrian street, lamp posts, benches, low 1970s shop fronts",
+      "prompt_word_count": 22,
+      "state_1981": "Cathedral (1625) stands; Vilniaus street boulevard pedestrianised in the 1970s (year unverified). Sundial square with golden archer is 1986 — OUT.",
+      "exclude_built_after_1981_or_demolished": [
+        "Sundial square and 'Šaulys' golden archer (1986, unverified)"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "city",
+        "street",
+        "shop",
+        "bicycle"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/%C5%A0iauliai",
+        "https://www.vle.lt/straipsnis/siauliai-1/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Pedestrian street date (1975) and sundial (1986) unverified."
+      ]
+    },
+    {
+      "id": "panevezys",
+      "name": "Panevėžys — Nevėžis and theatre",
+      "region": "Panevėžys",
+      "kind": "city",
+      "signature_features": [
+        "low flat town on a slow river with an old riverbed pond (Senvagė)",
+        "1967 modernist drama theatre",
+        "narrow-gauge railway"
+      ],
+      "prompt_phrase": "flat quiet town, slow river with a willow-lined old-riverbed pond, a low 1960s modernist theatre block, a tiny narrow-gauge train",
+      "prompt_word_count": 20,
+      "state_1981": "Theatre building 1967; cathedral 1930; narrow-gauge viaduct 1938; Ekranas factory 1962.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "low",
+      "card_categories": [
+        "city",
+        "theatre",
+        "river",
+        "train",
+        "factory"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panev%C4%97%C5%BEys",
+        "https://www.vle.lt/straipsnis/panevezys/",
+        "https://www.vle.lt/straipsnis/ekranas-1/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "trakai_castle",
+      "name": "Trakai island castle",
+      "region": "Trakai",
+      "kind": "landmark",
+      "signature_features": [
+        "red-brick castle with a tall square keep on a small island",
+        "wooden footbridge over the lake",
+        "rowing boats and reeds"
+      ],
+      "prompt_phrase": "red-brick castle with a tall square keep on a small lake island, long wooden footbridge, rowing boats, reeds",
+      "prompt_word_count": 18,
+      "state_1981": "Palace rebuilt 1953–62 (museum); forecastle completed 1987.",
+      "exclude_built_after_1981_or_demolished": [
+        "forecastle restoration (1987) — draw the outer ward lower/partly ruined"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "medium",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "lake",
+        "water",
+        "leisure",
+        "boat",
+        "history",
+        "summer"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/traku-pilys/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "trakai_karaim_street",
+      "name": "Trakai Karaim street",
+      "region": "Trakai",
+      "kind": "village street",
+      "signature_features": [
+        "small wooden houses gable-end to the street, each with three windows in the gable",
+        "painted shutters",
+        "lake behind"
+      ],
+      "prompt_phrase": "row of small wooden houses set gable-end to the street, each gable with exactly three windows, painted shutters, lake glimpsed behind",
+      "prompt_word_count": 21,
+      "state_1981": "Karaim houses as now; kenesa stands.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "home",
+        "street",
+        "village",
+        "food"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/lietuvos-karaimai/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "druskininkai",
+      "name": "Druskininkai spa",
+      "region": "Druskininkai",
+      "kind": "resort",
+      "signature_features": [
+        "pine forest on a steep Nemunas bank",
+        "wooden spa villas with verandas",
+        "colonnaded 1980 balneology building"
+      ],
+      "prompt_phrase": "pine forest on a steep river bank, wooden spa villas with glazed verandas, a low white colonnaded spa building, people with cups",
+      "prompt_word_count": 22,
+      "state_1981": "Balneology building 1980 (Šilinskai); interwar villas; Soviet sanatoria blocks of the 1970s exist.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "Sanatoria without Soviet names; interwar-villa character foregrounded."
+      ],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "hospital",
+        "health",
+        "leisure",
+        "forest",
+        "river"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/druskininkai/",
+        "https://www.vle.lt/straipsnis/lietuvos-architektura-1945-1990/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "palanga",
+      "name": "Palanga pier and Birutė hill",
+      "region": "Palanga",
+      "kind": "resort",
+      "signature_features": [
+        "long wooden pier into the sea",
+        "wooded dune with a small brick chapel on top",
+        "pine-lined Basanavičius street"
+      ],
+      "prompt_phrase": "long wooden pier on piles running out into a grey sea, wooded dune with a small brick chapel on top, pines, bathers",
+      "prompt_word_count": 22,
+      "state_1981": "Pier wooden (1882/1932) until the 1998 concrete one; Birutė chapel 1869; Tiškevičiai palace = Amber Museum since 1963; Jūratė ir Kastytis 1961, Birutė statue 1965, Šaulys 1981.",
+      "exclude_built_after_1981_or_demolished": [
+        "concrete pier (1998)"
+      ],
+      "free_lithuania_1981_adjustments": [
+        "'Blessing Christ' statue in the palace park (1901) was removed 1952 — present in the counterfactual."
+      ],
+      "kitsch_risk": "medium",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "sea",
+        "beach",
+        "summer",
+        "leisure",
+        "weather",
+        "holiday"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/palanga/",
+        "https://www.vle.lt/straipsnis/palangos-istorija/",
+        "https://www.vle.lt/straipsnis/palangos-architektura/",
+        "https://www.vle.lt/straipsnis/birutes-kalnas/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "nida_curonian_spit",
+      "name": "Nida and the Curonian Spit",
+      "region": "Neringa",
+      "kind": "landscape",
+      "signature_features": [
+        "huge bare sand dune falling to a lagoon",
+        "low fishermen's houses with reed roofs and carved weathervanes",
+        "flat-bottomed boat"
+      ],
+      "prompt_phrase": "huge bare sand dune sloping to a flat lagoon, low wooden fishermen's houses with reed-thatched roofs and a carved pierced weathervane",
+      "prompt_word_count": 21,
+      "state_1981": "Lutheran church 1888, Thomas Mann house 1930, lighthouse; Neringa town since 1961; Catholic church 2003 — OUT.",
+      "exclude_built_after_1981_or_demolished": [
+        "Catholic church (2003)",
+        "amber gallery (1995)"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "medium",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "sea",
+        "sand",
+        "fish",
+        "boat",
+        "wind",
+        "summer",
+        "home"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/nida/",
+        "https://www.vle.lt/straipsnis/kursiu-nerija/",
+        "https://www.vle.lt/straipsnis/vejarodis/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": [
+        "House colours (blue/brown with white trim) not verified in a read source."
+      ]
+    },
+    {
+      "id": "kernave",
+      "name": "Kernavė mounds",
+      "region": "Širvintos district",
+      "kind": "landscape",
+      "signature_features": [
+        "four grassy flat-topped mounds side by side above a river valley",
+        "wooden footpaths",
+        "neo-Gothic brick church behind"
+      ],
+      "prompt_phrase": "four steep grassy flat-topped mounds in a row above a wide river valley, a small brick neo-Gothic church behind them",
+      "prompt_word_count": 20,
+      "state_1981": "Mounds as now; church c. 1920; UNESCO 2004; Moses statue 2000 — OUT; no festival.",
+      "exclude_built_after_1981_or_demolished": [
+        "Moses statue (2000)",
+        "archaeology festival (1999+)"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "hill",
+        "history",
+        "river",
+        "nature",
+        "walk"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/kernaves-piliakalniai/",
+        "https://www.vle.lt/straipsnis/kernave/"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "hill_of_crosses",
+      "name": "Hill of Crosses",
+      "region": "near Šiauliai",
+      "kind": "landmark",
+      "signature_features": [
+        "small mound bristling with thousands of wooden and iron crosses",
+        "flat fields around",
+        "a path up the middle"
+      ],
+      "prompt_phrase": "small grassy mound crowded with thousands of wooden and iron crosses of every size, path up the middle, flat fields around",
+      "prompt_word_count": 21,
+      "state_1981": "Soviets bulldozed it 1961 and 1973–75; crosses rebuilt secretly. In the counterfactual it is dense and undisturbed.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [
+        "Draw it full, old and weathered — no destruction ever happened."
+      ],
+      "kitsch_risk": "high",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "church",
+        "holiday",
+        "hill",
+        "history"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/kryziu-kalnas/",
+        "https://ich.unesco.org/en/RL/cross-crafting-and-its-symbolism-00013"
+      ],
+      "naming_the_place_helps": true,
+      "unverified_points": []
+    },
+    {
+      "id": "rumsiskes_farmstead",
+      "name": "Rumšiškės-type farmstead (open-air museum)",
+      "region": "Kaišiadorys district",
+      "kind": "farm",
+      "signature_features": [
+        "log farmhouse, granary on stones, wattle fence, sweep well",
+        "orchard and roadside cross"
+      ],
+      "prompt_phrase": "log farmhouse with wide eaves, small granary on corner stones with open gallery, wattle fence, sweep well, orchard, roadside cross",
+      "prompt_word_count": 20,
+      "state_1981": "Museum opened 1974 (unverified date); used here as the generic authentic farmstead model.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "farm",
+        "animals",
+        "crops",
+        "home",
+        "village",
+        "work"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/lietuvos-etnografijos-muziejus/",
+        "https://www.vle.lt/straipsnis/lietuviu-tradicines-sodybos/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": [
+        "Museum opening year unverified."
+      ]
+    },
+    {
+      "id": "zemaitija_village",
+      "name": "Žemaitija farmstead",
+      "region": "Žemaitija",
+      "kind": "farm",
+      "signature_features": [
+        "long low troba with half-hipped roof and gable vents, wide eaves",
+        "ponds and many trees",
+        "wooden koplytstulpis at the gate"
+      ],
+      "prompt_phrase": "long low log farmhouse with half-hipped roof, triangular gable vents and deep eaves, pond, big old trees, a roofed shrine-post at the gate",
+      "prompt_word_count": 23,
+      "state_1981": "Many such farmsteads survived in Žemaitija; in the counterfactual all do.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "farm",
+        "home",
+        "animals",
+        "rain",
+        "autumn"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/troba/",
+        "https://www.vle.lt/straipsnis/lietuviu-tradicines-sodybos/",
+        "https://www.vle.lt/straipsnis/koplytstulpiai/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "aukstaitija_village",
+      "name": "Aukštaitija street village and lakes",
+      "region": "Aukštaitija",
+      "kind": "village",
+      "signature_features": [
+        "houses in a row gable-end to one street",
+        "white interiors",
+        "lake and hills behind"
+      ],
+      "prompt_phrase": "row of small log houses set gable-end to a single village street, picket fences, a long lake and low hills behind",
+      "prompt_word_count": 21,
+      "state_1981": "Street villages mostly broken up by 1939; in a free Lithuania more single farms, but a few street villages remain (Aukštaitija NP).",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "village",
+        "lake",
+        "home",
+        "school",
+        "neighbour"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/lietuviu-tradicines-gyvenvietes/",
+        "https://www.vle.lt/straipsnis/labanoro-regioninis-parkas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "dzukija_village",
+      "name": "Dzūkija forest village",
+      "region": "Dzūkija",
+      "kind": "village",
+      "signature_features": [
+        "log pirkia with projecting corner logs and painted two-colour shutters",
+        "sandy track, pine forest",
+        "mushroom baskets"
+      ],
+      "prompt_phrase": "small log house with projecting corner joints and two-colour painted shutters, sandy track, tall pines, baskets of mushrooms",
+      "prompt_word_count": 18,
+      "state_1981": "Forest villages (Marcinkonys, Zervynos type) intact.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "forest",
+        "village",
+        "home",
+        "mushroom",
+        "berry",
+        "autumn"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/pirkia/",
+        "https://www.vle.lt/straipsnis/cepkeliu-raistas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "suvalkija_farm",
+      "name": "Suvalkija single farmstead",
+      "region": "Suvalkija",
+      "kind": "farm",
+      "signature_features": [
+        "symmetrical boarded stuba with red clay-tile roof and glazed porch",
+        "square yard ringed by rows of trees",
+        "flat rich fields"
+      ],
+      "prompt_phrase": "symmetrical boarded farmhouse with red clay-tile roof and glazed porch, square yard ringed by rows of tall trees, flat fields",
+      "prompt_word_count": 20,
+      "state_1981": "Prosperous interwar farms; the counterfactual keeps them.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "farm",
+        "crops",
+        "home",
+        "summer",
+        "work"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/stuba/",
+        "https://www.vle.lt/straipsnis/lietuviu-tradicines-sodybos/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "neris_valley",
+      "name": "Neris valley",
+      "region": "Vilnius–Kernavė",
+      "kind": "landscape",
+      "signature_features": [
+        "wide river in a deep wooded valley with sandy bluffs",
+        "pine on the bluffs",
+        "wooden boat"
+      ],
+      "prompt_phrase": "wide river curving through a deep wooded valley, pale sandy bluff on the outer bank, pines above, a wooden boat",
+      "prompt_word_count": 20,
+      "state_1981": "As now.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "river",
+        "water",
+        "nature",
+        "swim",
+        "summer"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/kernaves-piliakalniai/",
+        "https://www.vle.lt/straipsnis/vingio-parkas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "nemunas_valley",
+      "name": "Nemunas valley",
+      "region": "Kaunas–Jurbarkas",
+      "kind": "landscape",
+      "signature_features": [
+        "very wide river with high steep banks, castle mounds and manor spires",
+        "ferry or barge"
+      ],
+      "prompt_phrase": "very wide slow river with high steep wooded banks, a small flat ferry, a church spire on the bluff",
+      "prompt_word_count": 19,
+      "state_1981": "As now.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "river",
+        "boat",
+        "travel",
+        "nature"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/druskininkai/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "aukstaitija_lakes",
+      "name": "Aukštaitija lakes (Labanoras)",
+      "region": "Aukštaitija",
+      "kind": "landscape",
+      "signature_features": [
+        "chain of long lakes between wooded hills",
+        "reeds, rowing boat, fishing",
+        "wooden church bell-tower on shore"
+      ],
+      "prompt_phrase": "long narrow lake between pine-wooded hills, reed beds, a wooden rowing boat, a small wooden bell-tower on the shore",
+      "prompt_word_count": 19,
+      "state_1981": "Labanoras region: 285 lakes, Labanoras belfry.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "lake",
+        "fish",
+        "boat",
+        "summer",
+        "winter",
+        "nature"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/labanoro-regioninis-parkas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "dzukija_pine_forest",
+      "name": "Dzūkija pine forest",
+      "region": "Dzūkija",
+      "kind": "landscape",
+      "signature_features": [
+        "straight pine trunks on pale sand and lichen",
+        "heather",
+        "mushroom pickers"
+      ],
+      "prompt_phrase": "straight red-brown pine trunks on pale sand and grey lichen, heather, a figure with a wicker basket",
+      "prompt_word_count": 17,
+      "state_1981": "As now.",
+      "exclude_built_after_1981_or_demolished": [],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "high",
+      "card_categories": [
+        "forest",
+        "tree",
+        "mushroom",
+        "walk",
+        "autumn"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/cepkeliu-raistas/",
+        "https://www.vle.lt/straipsnis/druskininkai/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    },
+    {
+      "id": "cepkeliai_bog",
+      "name": "Čepkeliai raised bog",
+      "region": "Dzūkija",
+      "kind": "landscape",
+      "signature_features": [
+        "flat open bog with sparse stunted pines",
+        "cotton grass, dark pools",
+        "distant dune ridge"
+      ],
+      "prompt_phrase": "flat open bog with sparse stunted pines, white cotton-grass tufts, dark still pools, a low wooded ridge far off",
+      "prompt_word_count": 19,
+      "state_1981": "Reserve since 1975; boardwalk later.",
+      "exclude_built_after_1981_or_demolished": [
+        "educational boardwalk and tower (later, unverified)"
+      ],
+      "free_lithuania_1981_adjustments": [],
+      "kitsch_risk": "low",
+      "recognisability_at_card_scale": "medium",
+      "card_categories": [
+        "nature",
+        "bird",
+        "wet",
+        "spring",
+        "berry"
+      ],
+      "sources": [
+        "https://www.vle.lt/straipsnis/cepkeliu-raistas/"
+      ],
+      "naming_the_place_helps": false,
+      "unverified_points": []
+    }
+  ],
+  "category_map": {
+    "street_city": [
+      "vilnius_old_town",
+      "kaunas_laisves_aleja",
+      "kaunas_modernism",
+      "klaipeda_old_town",
+      "siauliai",
+      "vilnius_lazdynai",
+      "vilnius_zverynas"
+    ],
+    "transport": [
+      "kaunas_funicular",
+      "kaunas_railway_station",
+      "klaipeda_port_ferry",
+      "vilnius_old_town",
+      "kaunas_laisves_aleja",
+      "vilnius_lazdynai",
+      "panevezys"
+    ],
+    "market_shop": [
+      "vilnius_kalvariju_market",
+      "kaunas_laisves_aleja",
+      "siauliai",
+      "vilnius_old_town"
+    ],
+    "school": [
+      "vilnius_lazdynai",
+      "vilnius_zverynas",
+      "kaunas_modernism",
+      "aukstaitija_village"
+    ],
+    "hospital_health": [
+      "vilnius_antakalnis",
+      "druskininkai",
+      "kaunas_modernism"
+    ],
+    "church_holiday": [
+      "vilnius_cathedral",
+      "vilnius_gate_of_dawn",
+      "kaunas_resurrection_church",
+      "hill_of_crosses",
+      "vilnius_antakalnis",
+      "kaunas_pazaislis",
+      "aukstaitija_lakes"
+    ],
+    "farm_animals_crops": [
+      "rumsiskes_farmstead",
+      "zemaitija_village",
+      "suvalkija_farm",
+      "dzukija_village",
+      "aukstaitija_village"
+    ],
+    "water_weather_seasons": [
+      "aukstaitija_lakes",
+      "neris_valley",
+      "nemunas_valley",
+      "palanga",
+      "nida_curonian_spit",
+      "vilnius_neris_embankment",
+      "trakai_castle"
+    ],
+    "home_interior": [
+      "zemaitija_village",
+      "dzukija_village",
+      "suvalkija_farm",
+      "trakai_karaim_street",
+      "vilnius_zverynas",
+      "vilnius_lazdynai",
+      "nida_curonian_spit"
+    ],
+    "work_trades": [
+      "klaipeda_old_town",
+      "klaipeda_port_ferry",
+      "panevezys",
+      "vilnius_uzupis",
+      "rumsiskes_farmstead",
+      "nida_curonian_spit"
+    ],
+    "leisure": [
+      "palanga",
+      "trakai_castle",
+      "druskininkai",
+      "vilnius_vingis",
+      "nida_curonian_spit",
+      "aukstaitija_lakes"
+    ],
+    "nature": [
+      "dzukija_pine_forest",
+      "cepkeliai_bog",
+      "aukstaitija_lakes",
+      "neris_valley",
+      "kernave",
+      "vilnius_gediminas_hill",
+      "nida_curonian_spit"
+    ]
+  },
+  "rotation_rule": {
+    "share_with_named_location": 0.7,
+    "method": "Deterministic: take a stable hash of the card's lemma (not its index); if hash mod 100 < 70 the card gets a location from its category list, chosen by hash mod len(list); otherwise generic. Re-roll only if the same location was used by the previous card in the same category.",
+    "caps": "No single location above 8 % of located cards; Vilnius Old Town and Rumšiškės-type farmstead are the natural overflow sinks, so cap them first.",
+    "always_generic": [
+      "abstract nouns and adjectives",
+      "objects shown in isolation (cup, key, pencil)",
+      "body parts",
+      "numbers, colours, pronouns, function words",
+      "verbs of thinking/feeling without a scene",
+      "clothing items shown alone",
+      "animals shown alone (use farm/forest location only when the card shows a scene)"
+    ],
+    "eligible": [
+      "any card whose scene has a background: places, transport, weather, seasons, work, leisure, food at table, family at home, school, church, farm, nature"
+    ],
+    "soft_preference": "Prefer region-generic locations (Žemaitija/Dzūkija/Suvalkija/Aukštaitija farms, Old Town street, lake, pine forest) for 2/3 of located cards and famous silhouettes (Trakai, Gediminas tower, Hill of Crosses, Nida dune, TV tower, Resurrection church) for at most 1/3, so the deck does not read as a postcard set."
+  }
+}

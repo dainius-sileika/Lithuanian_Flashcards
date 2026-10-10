@@ -1,0 +1,238 @@
+key,english,class,category,subject_phrase,verb_setting,people,hand_staged,keyword_route
+001_suo,dog,creature,Animal,a single dog standing alert in side profile,,,False,
+002_kate,cat,creature,Animal,a single domestic cat in side profile,,,False,
+003_zuvis,fish,creature,Animal,a single freshwater fish (a carp),,,False,
+004_paukstis,bird,creature,Animal,a single bird in side profile,,,False,
+005_karve,cow,creature,Animal,a single dairy cow in side profile,,,False,farm
+006_kiaule,pig,creature,Animal,a single farm pig,,,False,farm
+007_pele,mouse,creature,Animal,a single house mouse,,,False,farm
+008_arklys,horse,creature,Animal,a single working horse in side profile,,,False,farm
+009_sparnas,wing,creature,Animal,a bird's outstretched wing,,,False,
+011_traukinys,train,vehicle,Transportation,a passenger train with locomotive and one carriage,,,False,rail
+012_lektuvas,plane,vehicle,Transportation,a passenger airplane,,,False,air
+013_automobilis,car,vehicle,Transportation,a compact 1970s sedan car,,,False,road
+014_sunkvezimis,truck,vehicle,Transportation,a flatbed cargo truck,,,False,road
+015_dviratis,bicycle,vehicle,Transportation,a bicycle,,,False,road
+016_autobusas,bus,vehicle,Transportation,a city bus,,,False,road
+017_valtis,boat,vehicle,Transportation,a small rowing boat,,,False,boat
+018_laivas,ship,vehicle,Transportation,a cargo ship,,,False,boat
+019_padanga,tire,vehicle,Transportation,a rubber road tire,,,False,road
+020_benzinas,gasoline,vehicle,Transportation,a fuel canister and a pump nozzle,,,False,
+021_variklis,engine,vehicle,Transportation,an automobile engine block,,,False,
+022_bilietas,train ticket,vehicle,Transportation,a small blank paper train ticket,,,False,rail
+024_miestas,city,place,Location,a busy city street panorama — crowds of pedestrians and cars among tall mid-rise buildings,,,True,street
+025_namas,house,place,Location,a single modest house from the front,,,True,farm
+026_butas,apartment,place,Location,a large apartment block with one apartment unit indicated by an arrow,,,False,home
+027_gatve,street,place,Location,a straight city street with pavement and lampposts,,,False,street
+028_kelias,road,place,Location,a country road running through fields,,,False,farm
+029_oro_uostas,airport,place,Location,an airport terminal building with an airplane behind it,,,False,air
+030_stotis,train station,place,Location,a railway station building with a platform,,,False,rail
+031_tiltas,bridge,place,Location,a river bridge,,,False,water
+032_viesbutis,hotel,place,Location,a hotel building with a doorman and an arriving guest carrying a suitcase,,,False,
+033_restoranas,restaurant,place,Location,a small restaurant with a glimpse of the dining room,,,False,home
+034_ukis,farm,place,Location,a farmstead with a barn and a field,,,False,farm
+035_teismas,court,place,Location,"a courtroom with a judge at the raised bench, wooden gavel in hand",,,False,
+036_mokykla,school,place,Location,a schoolhouse building with young children with satchels arriving at the door,,,False,school
+037_biuras,office,place,Location,"an office room with desks, clerks in everyday clothes at typewriters and telephones",,,False,home
+038_kambarys,room,place,Location,a plain empty room seen from a doorway,,,False,home
+039_miestelis,town,place,Location,"a small town main square of low wooden houses around a cobbled square, a modest church spire visible far in the distance behind the rooftops",,,False,church
+040_universitetas,university,place,Location,"a university main building with a columned portico, young adult students with books on the steps",,,False,school
+041_klubas,club,place,Location,young people dancing in a club hall in the evening,,,True,leisure
+042_baras,bar,place,Location,a small bar interior with a counter,,,False,market
+043_parkas,park,place,Location,"a public park with paths, benches and trees",,,False,nature
+044_stovykla,camp,place,Location,a campsite with tents,,,False,
+045_parduotuve,store/shop,place,Location,a small shop with its storefront,,,False,market
+046_teatras,theater,place,Location,a theatre building with a columned facade,,,False,leisure
+047_biblioteka,library,place,Location,a library building,,,False,
+048_ligonine,hospital,place,Location,a hospital building with an ambulance at the entrance,,,False,hospital
+049_baznycia,church,place,Location,a village church with a tower,,,True,church
+050_turgus,market,place,Location,an open-air market with stalls,,,False,market
+053_zeme,ground,nature,Location,"a mound of dark earth soil with a spade thrust into it, a pair of cupped hands holding a handful of soil beside it",,,False,
+054_kosmosas,space,place,Location,"outer space with stars, the Moon and a satellite",,,False,
+055_bankas,bank,place,Location,a bank building with a columned entrance,,,False,
+080_sunus,son,person,People,"a father standing with his young son, an arrow indicating the boy",,,False,home
+081_dukra,daughter,person,People,"a mother standing with her young daughter, an arrow indicating the girl",,,False,home
+082_motina,mother,person,People,a mother holding a small child,,,False,home
+083_tevas,father,person,People,a father holding a child's hand,,,False,home
+084_tevai,parent,person,People,"a mother and father standing side by side, arrows indicating both adults, their small child standing apart beside them",,,False,home
+085_kudikis,baby,person,People,a swaddled baby,,,False,home
+086_vyras,man,person,People,"an adult man standing, front view",,,False,
+087_moteris,woman,person,People,"an adult woman standing, front view",,,False,
+088_brolis,brother,person,People,"two brothers close in age and alike in features, side by side, an arrow indicating one",,,False,
+089_sesuo,sister,person,People,"two sisters — an older and a younger girl — side by side, an arrow indicating one",,,False,
+090_seima,family,person,People,a family of four — parents and two children,,,True,home
+091_senelis,grandfather,person,People,"an elderly grandfather with a walking stick, a child beside him",,,False,home
+092_senele,grandmother,person,People,"an elderly grandmother in a headscarf, a child beside her",,,True,home
+093_vyras,husband,person,People,"a married couple standing together, an arrow indicating the husband, wedding rings visible",,,False,church
+094_zmona,wife,person,People,"a married couple standing together, an arrow indicating the wife, wedding rings visible",,,False,church
+095_karalius,king,person,People,a king with a crown and mantle,,,False,
+096_karaliene,queen,person,People,a queen with a crown,,,False,
+097_prezidentas,president,person,People,"a male president and a female president at matching plain podiums, side by side, the Lithuanian tricolor draped on the wall behind them",,,False,
+098_kaimynas,neighbor,person,People,"two neighbours — a man and a woman — greeting each other from opposite sides of a low garden fence, one on each side",,,False,farm
+099_berniukas,boy,person,People,a young boy,,,False,
+100_mergaite,girl,person,People,a young girl,,,False,
+102_suauges,adult,person,People,"a man and a woman standing beside a child, an arrow indicating the two adults",,,False,
+103_zmogus,human,person,People,"a standing human figure, front view",,,False,
+104_draugas,friend,person,People,"two friends — two men — with arms around each other's shoulders, laughing together",,,False,
+105_auka,victim,person,People,an injured person on a stretcher being helped by two aides,,,False,
+106_zaidejas,player,person,People,two players — a man and a woman — in plain sports jerseys and shorts with a ball on a sports field,,,False,farm
+107_sirgalius,fan (sports),person,People,two cheering spectators — a man and a woman — with scarves in a stadium stand,,,False,
+108_minia,crowd,person,People,a dense crowd of ordinary people,,,True,street
+110_mokytojas,teacher,person,Job,"two teachers — a man and a woman — at a blackboard with pointers, the board bearing only simple diagrams",,,True,school
+111_studentas,student,person,Job,"two university students — a man and a woman — young adults with books in a lecture hall, a lecturer at the lectern behind them",,,False,school
+112_advokatas,lawyer,person,Job,two lawyers — a man and a woman — in suits with documents at a desk,,,False,
+113_gydytojas,doctor,person,Job,two doctors — a man and a woman — in white coats with stethoscopes,,,True,hospital
+114_pacientas,patient,person,Job,two patients — a man and a woman — in neighbouring hospital beds,,,False,hospital
+115_padavejas,waiter,person,Job,two waiters — a man and a woman — each carrying a tray,,,False,
+116_sekretorius,secretary,person,Job,two secretaries — a man and a woman — at typewriters,,,False,
+117_kunigas,priest,person,Job,a priest in a cassock before a church,,,False,church
+118_policininkas,police officer,person,Job,two uniformed police officers — a man and a woman — directing traffic,,,False,road
+119_policija,police force,person,Job,a group of uniformed police officers beside a patrol car,,,False,road
+120_kariuomene,army,person,Job,a column of soldiers marching,,,False,
+121_kareivis,soldier,person,Job,a single soldier in uniform,,,False,
+122_menininkas,artist,person,Job,two artists — a man and a woman — painting at easels,,,False,
+123_autorius,author,person,Job,two authors — a man and a woman — writing at a shared desk,,,False,
+124_vadovas,manager,person,Job,"two managers — a man and a woman — standing before seated staff, one pointing at a wall chart, directing the work",,,False,
+125_zurnalistas,reporter,person,Job,two reporters — a man and a woman — with notebooks and a microphone,,,False,
+126_aktorius,actor,person,Job,two actors — a man and a woman — performing on a stage,,,False,leisure
+137_vestuves,wedding,attribute,Society,a wedding scene — a couple exchanging rings before a small group of guests outside a registry office,,,True,church
+147_karas,war,attribute,Society,a deadpan civil-defence scene: soldier silhouettes and a tank on a smoky horizon with civilians fleeing carrying bundles,,,True,
+180_kiausinis,egg,food,Food,"a hen's egg, whole and one cracked open",,,False,
+181_suris,cheese,food,Food,a wheel of cheese with a cut wedge,,,False,
+182_duona,bread,food,Food,"a loaf of bread, whole with a cut slice",,,True,
+183_sriuba,soup,food,Food,a bowl of soup with a spoon,,,False,
+184_tortas,cake,food,Food,a layered cake with a slice cut out,,,False,
+185_vistiena,chicken,food,Food,a cooked chicken served whole on a platter,,,False,
+186_kiauliena,pork,food,Food,a raw cut of pork on a butcher's board,,,False,
+187_jautiena,beef,food,Food,a raw cut of beef on a butcher's board,,,False,
+188_obuolys,apple,food,Food,"a single apple, whole with a cutaway half",,,False,
+189_bananas,banana,food,Food,"a banana, whole and one peeled",,,False,
+190_apelsinas,orange (fruit),food,Food,"an orange, whole and in segments",,,False,
+191_citrina,lemon,food,Food,"a lemon, whole with a cut half",,,False,
+192_kukuruzai,corn,food,Food,ears of corn (maize) with husk,,,False,
+193_ryziai,rice,food,Food,a sack and a bowl of rice grains,,,False,
+194_aliejus,oil,food,Food,a bottle of cooking oil pouring into a pan,,,False,
+195_tepalas,oil (machine),food,Food,an oil can lubricating machine gears,,,False,
+196_sekla,seed,food,Food,"seeds in an open palm beside a plain seed packet, one seed sprouting",,,False,
+197_peilis,knife,food,Food,a kitchen knife,,,False,home
+198_saukstas,spoon,food,Food,a soup spoon,,,False,
+199_sakute,fork,food,Food,a table fork,,,False,home
+200_lekste,plate,food,Food,a dinner plate,,,False,
+201_puodelis,cup,food,Food,a tea cup with a saucer,,,False,
+202_pusryciai,breakfast,food,Food,"a simple breakfast — porridge, bread and tea — with low morning sun through the window",,,False,water
+203_pietus,lunch,food,Food,"a midday canteen meal — soup, a main course and bread — with the sun high through the window",,,False,home
+204_vakariene,dinner,food,Food,"an evening family meal at home, a lamp lit, the window dark",,,False,home
+205_cukrus,sugar,food,Food,a bowl of sugar cubes with a paper sack,,,False,
+206_druska,salt,food,Food,a salt cellar with a small pile of salt,,,False,
+207_butelis,bottle,food,Food,an empty glass bottle,,,False,
+212_sapnas,dream,attribute,Home,a person asleep in bed with a soft thought-cloud above showing a floating dreamlike scene,,,False,home
+280_kraujas,blood,body_part,Body,a first-aid scene — a finger with a drop of blood being bandaged,,,False,
+289_jura,sea,nature,Nature,a seaside scene with waves and the beach shore in view,,,False,water
+290_vandenynas,ocean,nature,Nature,"open ocean water to the horizon with a steamship, a small globe inset showing the oceans",,,False,
+291_upe,river,nature,Nature,a river winding through a valley,,,False,water
+292_kalnas,mountain,nature,Nature,a single mountain peak,,,False,nature
+293_lietus,rain,nature,Nature,"rain falling on a street, a figure with an umbrella",,,False,water
+294_sniegas,snow,nature,Nature,"snow falling on a village, with snowdrifts",,,False,farm
+295_medis,tree,nature,Nature,a single deciduous tree (an oak),,,False,nature
+296_saule,sun,nature,Nature,the sun with rays above a field,,,False,farm
+297_menulis,moon,nature,Nature,the crescent moon in a night sky,,,False,
+299_zeme,Earth,nature,Nature,the planet Earth seen from space,,,False,air
+300_miskas,forest,nature,Nature,the edge of a pine forest,,,False,nature
+301_dangus,sky,nature,Nature,a wide sky with clouds above a low horizon,,,False,water
+302_augalas,plant,nature,Nature,a potted plant with visible stem and leaves,,,False,
+303_vejas,wind,nature,Nature,"wind bending trees, with dashed wind-direction lines and a blowing scarf",,,False,water
+304_zeme,soil,nature,Nature,dark soil in a furrow with a spade,,,False,
+305_gele,flower,nature,Nature,a single flower (a tulip),,,False,nature
+306_slenis,valley,nature,Nature,a river valley between hills,,,False,water
+307_saknis,root,nature,Nature,a plant's roots exposed below the soil line,,,False,
+308_ezeras,lake,nature,Nature,a calm lake with its shoreline,,,False,water
+309_zvaigzde,star,nature,Nature,"stars in a night sky, one bright star indicated",,,False,
+310_zole,grass,nature,Nature,a tuft of green grass,,,False,
+311_lapas,leaf,nature,Nature,a single leaf (a birch leaf),,,False,
+313_smelis,sand,nature,Nature,"a handful of sand pouring, dunes behind",,,False,
+314_papludimys,beach,nature,Nature,"a Lithuanian seaside beach like Palanga or Nida — pale sand dunes with marram grass and the Baltic Sea — with holidaymakers playing on the sand: a beach ball game, children paddling at the water's edge, someone lying on a towel",,,False,water
+315_banga,wave,nature,Nature,a breaking sea wave,,,False,water
+316_ugnis,fire,nature,Nature,"a small contained fire with flames, a fire bucket beside it",,,False,
+317_ledas,ice,nature,Nature,a block of ice and icicles,,,False,water
+318_sala,island,nature,Nature,a small island in a lake,,,False,water
+319_kalva,hill,nature,Nature,a low grassy hill,,,False,nature
+363_dirbti,work,verb,Verbs,"a road-repair gang of workmen labouring together on a street, digging and shovelling","a stretch of public road under repair, with striped barriers, a warning sign on a tripod and a heap of gravel",worker,False,road
+364_zaisti,play (a game),verb,Verbs,two children playing with a ball,a courtyard with simple play equipment,civilian,False,street
+365_groti,play (an instrument),verb,Verbs,a musician playing an accordion,a small club stage or rehearsal room,civilian,False,home
+366_eiti,walk,verb,Verbs,a worker walking forward in mid-stride,"a long institutional corridor, the figure walking to the right",worker,True,
+367_begti,run,verb,Verbs,a worker running at full stride,"a plain institutional courtyard or street, the figure running to the right",worker,False,street
+368_vairuoti,drive,verb,Verbs,a driver at the wheel of a truck,"a road, the truck cab seen from the side",worker,False,road
+369_skristi,fly,verb,Verbs,"a bird in level flight, wings mid-beat",the open sky above fields,worker,False,farm
+370_plaukti,swim,verb,Verbs,a swimmer mid-stroke in a pool lane,a swimming-pool lane,civilian,False,water
+371_eiti,go,verb,Verbs,a worker setting off through a doorway into the street,"a home doorway in a SOLID OPAQUE wall (not see-through), a packed travel bag in hand, a bus waiting at the kerb beyond",civilian,False,road
+372_sustoti,stop,verb,Verbs,a walking worker halted mid-step before a lowered barrier,a street crossing,worker,False,street
+373_sekti,follow,verb,Verbs,"one worker walking close behind another, following","a plain corridor or street, THREE figures walking in single file one behind another with a clear gap between each, each following the one ahead",worker,False,street
+375_sakyti,say,verb,Verbs,"a worker speaking to another, mouth open, simple sound lines",an office or corridor,worker,False,
+376_valgyti,eat,verb,Verbs,a worker eating with a spoon,a plain workers' canteen with long tables and others eating in the background,worker,False,
+377_gerti,drink,verb,Verbs,a worker drinking from a glass,a workers' canteen or rest area with a water station,worker,False,rail
+378_zudyti,kill,verb,Verbs,a fly being swatted with a rolled newspaper,a kitchen corner,civilian,False,home
+380_sypsotis,smile,verb,Verbs,"a woman smiling warmly, close portrait view",a plain portrait setting,civilian,False,
+381_juoktis,laugh,verb,Verbs,two people laughing together at a canteen table,a canteen table,civilian,False,home
+382_verkti,cry,verb,Verbs,"a person crying, tears on the cheeks, a handkerchief in hand",a plain room,civilian,False,home
+383_pirkti,buy,verb,Verbs,a customer receiving wrapped goods across a shop counter,"a shop counter, the customer handing banknotes to the clerk with one hand and receiving the wrapped goods with the other, at the same time",civilian,True,market
+384_moketi,pay,verb,Verbs,a customer handing plain banknotes across a counter to a clerk,a shop counter or cashier's window,civilian,False,market
+385_parduoti,sell,verb,Verbs,a shopkeeper handing goods to a customer while receiving coins,a small shop counter seen from the clerk's side,worker,False,market
+386_sauti,shoot,verb,Verbs,a marksman firing a rifle at a paper target on a range,an indoor shooting range,worker,False,
+388_sokti,jump,verb,Verbs,a worker jumping over a low obstacle,a training yard with a low obstacle,worker,False,rail
+389_uostyti,smell,verb,Verbs,"a person sniffing a flower, scent lines rising to the nose",a market flower stall,civilian,False,market
+390_girdeti,hear,verb,Verbs,"a worker's head turning toward a distant ringing alarm bell, sound waves arriving",a workshop with an alarm bell on the far wall,worker,False,work
+391_klausytis,listen,verb,Verbs,"a person seated attentively listening to a radio, ear inclined toward it",a sitting room with a tabletop radio,civilian,False,home
+392_ragauti,taste,verb,Verbs,a cook tasting soup from a ladle,a canteen kitchen at a soup pot,professional,False,home
+393_liesti,touch,verb,Verbs,"a fingertip touching a smooth surface, the point of contact indicated",a plain table,worker,False,home
+394_matyti,see,verb,Verbs,"a worker seeing a distant water tower, a dotted sight line from eye to object",an open field with a distant water tower,worker,False,farm
+395_ziureti,watch,verb,Verbs,a person seated deliberately watching a television set,a sitting room with a television set,civilian,False,home
+396_buciuoti,kiss,verb,Verbs,a couple kissing on the cheek,a doorstep farewell,civilian,False,
+397_degti,burn,verb,Verbs,a wooden plank burning with flame at a safe distance,"a fire-safety training yard, at a safe distance",worker,False,rail
+398_tirpti,melt,verb,Verbs,a block of ice melting into water,a kitchen table,worker,False,home
+399_kasti,dig,verb,Verbs,a worker digging a trench with a spade,an open trench line with marker stakes,worker,False,
+400_sprogti,explode,verb,Verbs,"a small controlled demolition charge exploding at a distance, workers behind a barrier",a demolition training ground with workers behind a barrier,worker,False,rail
+401_sedeti,sit,verb,Verbs,a worker seated on a chair,a plain room with a chair,civilian,False,home
+402_stoveti,stand,verb,Verbs,a worker standing at ease,a corridor or muster line,worker,False,
+404_praeiti,pass by,verb,Verbs,"a worker walking past a kiosk, a dashed path carrying on beyond it","a street with a kiosk, the walker shown mid-stride having gone PAST the kiosk, which is now behind them",civilian,False,market
+405_pjauti,cut,verb,Verbs,a worker sawing a board on a sawhorse,a workshop sawhorse,worker,False,farm
+406_mustis,fight,verb,Verbs,two boxers sparring in a ring,a boxing ring in a plain gymnasium,civilian,False,
+407_guleti,lie down,verb,Verbs,"a worker lying on a rest cot, awake with open eyes",a rest room with a cot,worker,False,home
+408_sokti,dance,verb,Verbs,"a couple dancing at a social evening, musical notes above",a social hall with seated onlookers,civilian,False,leisure
+409_miegoti,sleep,verb,Verbs,a worker asleep on a cot,a plain barracks or dormitory bunk room,worker,False,home
+410_pabusti,wake up,verb,Verbs,"a worker sitting up in bed in the morning, sun through the window","a home bedroom in the morning, sun through the window",civilian,False,home
+411_dainuoti,sing,verb,Verbs,"a small choir singing, mouths open, notes rising",a small stage or campfire circle,civilian,False,leisure
+412_skaiciuoti,count,verb,Verbs,a clerk counting on an abacus at a stockroom desk,a stockroom desk with crates,worker,False,
+413_tuoktis,marry,verb,Verbs,a couple exchanging rings before an official at a registry office,a registry office with an official at a desk,civilian,False,
+417_maisyti,mix,verb,Verbs,"a worker mixing mortar in a trough with a shovel, a circular motion arrow",a construction yard mortar trough,worker,False,work
+418_lenkti,bend,verb,Verbs,"a worker bending a metal rod in a vise, a curve arrow",a metal workshop with a vise,worker,False,work
+419_plauti,wash,verb,Verbs,a worker washing their hands,a tiled factory or institutional washroom,worker,False,work
+420_gaminti,cook,verb,Verbs,a cook preparing food at a stove,a canteen kitchen stove,professional,False,home
+421_atidaryti,open,verb,Verbs,"a hand opening a door, an arc arrow showing the swing",a plain interior door,worker,False,
+422_uzdaryti,close,verb,Verbs,"a hand closing a door, a reverse arc arrow showing the swing",a plain interior door,worker,False,
+423_rasyti,write,verb,Verbs,a clerk writing with a pen on paper,an office desk with paper and pen,worker,False,
+424_skambinti,call,verb,Verbs,a worker dialing and speaking on a rotary telephone,an office with a rotary telephone,worker,False,
+425_sukti,turn,verb,Verbs,"a worker turning a large pipe-valve wheel, a circular arrow",a boiler room with a large pipe valve,worker,False,home
+426_statyti,build,verb,Verbs,a worker hammering a plank,a construction site where workers are raising the TIMBER FRAME of a house — upright wooden posts and cross-beams going up,worker,False,farm
+428_augti,grow,verb,Verbs,"a plant growing in three stages from sprout to full height, an upward arrow",a garden bed,worker,False,farm
+429_piesti,draw,verb,Verbs,a hand drawing a simple picture with a pencil,a desk with paper,civilian,False,
+430_maitinti,feed,verb,Verbs,a worker scattering grain to chickens in a yard,a home interior,civilian,False,home
+431_gaudyti,catch,verb,Verbs,a worker catching a tossed sack with both arms,a loading yard,worker,False,
+432_mesti,throw,verb,Verbs,"a worker throwing a sack onto a pile, an arc arrow",a loading yard with a pile of sacks,worker,False,
+433_valyti,clean,verb,Verbs,"a worker sweeping a corridor floor with a broom, one half already clean","an institutional corridor, one half already clean, the worker WET-MOPPING the floor with a mop and bucket (not a broom)",worker,False,
+434_rasti,find,verb,Verbs,a worker finding lost keys beneath a workbench,a garden or yard where children are playing hide-and-seek,civilian,False,farm
+435_kristi,fall,verb,Verbs,"a crate tipping and falling from a warehouse shelf, a downward arrow","a kitchen table, a drinking glass caught in mid-air as it falls off the table edge toward the floor. NO person in the main scene — the glass falls on its own",civilian,False,home
+436_stumti,push,verb,Verbs,a worker pushing a loaded handcart forward,a warehouse aisle,worker,False,work
+437_traukti,pull,verb,Verbs,a worker pulling a rope-hauled cart toward himself,a yard with a rope-hauled cart,worker,False,
+438_nesti,carry,verb,Verbs,a worker carrying a wooden crate with both arms,a supply depot or storeroom hall with tall shelves of crates and a few workers in the background,worker,False,market
+439_lauzyti,break,verb,Verbs,a worker breaking a stick over his knee,a firewood yard,worker,False,
+440_deveti,wear,verb,Verbs,"a worker wearing full protective work clothing, each item indicated","a bedroom by a wardrobe, a person in the act of putting ON and wearing outdoor clothes — arms going into the sleeves of a buttoned coat, a scarf already round the neck, a cap on the head",civilian,False,
+441_kabinti,hang,verb,Verbs,a worker hanging a framed picture on a wall hook,a plain room wall with a hook,worker,False,home
+442_purtyti,shake,verb,Verbs,"a worker shaking an apple tree, apples falling, motion lines",an orchard beneath an apple tree,worker,False,farm
+443_pasirasyti,sign,verb,Verbs,"a hand signing a document with a pen, the signature a plain scribbled line",an office desk with a document,worker,False,nature
+444_musti,beat,verb,Verbs,"a person beating a hanging rug with a carpet beater, dust puffing out",a yard with a rug on a beating rack,civilian,False,
+445_kelti,lift,verb,Verbs,a worker lifting a crate from the ground,a supply depot or storeroom with tall shelves of crates,worker,False,market
+464_geras,good,attribute,Adjectives,"a hand giving a firm thumbs-up beside a neat well-kept scene, a bold arrow on the thumbs-up",,,False,farm
+465_blogas,bad,attribute,Adjectives,"a hand giving a thumbs-down beside a spoilt messy scene, a bold arrow on the thumbs-down",,,False,
+506_tamsus,dark,attribute,Adjectives,"a split scene of a dark unlit room and a bright lamp-lit room, a bold arrow marking the DARK half",,,False,home
+507_sviesus,light-dark,attribute,Adjectives,"a split scene of a dark unlit room and a bright lamp-lit room, a bold arrow marking the BRIGHT half",,,False,home
+530_lydyti,melt (something),verb,Verbs,a foundry worker melting solid metal into glowing molten liquid,a foundry floor with a furnace,worker,False,

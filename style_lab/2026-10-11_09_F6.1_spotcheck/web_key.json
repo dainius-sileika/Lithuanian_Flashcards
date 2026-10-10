@@ -1,0 +1,302 @@
+{
+ "bd4c3b00": {
+  "round": 1,
+  "card": "183_sriuba",
+  "variant": "G_183_sriuba"
+ },
+ "abb8da7e": {
+  "round": 1,
+  "card": "183_sriuba",
+  "variant": "S_183_sriuba"
+ },
+ "0e98e05d": {
+  "round": 2,
+  "card": "064_batai",
+  "variant": "S_064_batai"
+ },
+ "ef7a7539": {
+  "round": 2,
+  "card": "064_batai",
+  "variant": "G_064_batai"
+ },
+ "5a59bdf7": {
+  "round": 3,
+  "card": "001_suo",
+  "variant": "S_001_suo"
+ },
+ "f1391b0b": {
+  "round": 3,
+  "card": "001_suo",
+  "variant": "G_001_suo"
+ },
+ "6fe97678": {
+  "round": 4,
+  "card": "046_teatras",
+  "variant": "S_046_teatras"
+ },
+ "79448a45": {
+  "round": 4,
+  "card": "046_teatras",
+  "variant": "G_046_teatras"
+ },
+ "4ecf08e1": {
+  "round": 5,
+  "card": "411_dainuoti",
+  "variant": "S_411_dainuoti"
+ },
+ "5d3964bd": {
+  "round": 5,
+  "card": "411_dainuoti",
+  "variant": "G_411_dainuoti"
+ },
+ "86c6f691": {
+  "round": 6,
+  "card": "246_laikrodis",
+  "variant": "G_246_laikrodis"
+ },
+ "03127278": {
+  "round": 6,
+  "card": "246_laikrodis",
+  "variant": "S_246_laikrodis"
+ },
+ "f4f44136": {
+  "round": 7,
+  "card": "117_kunigas",
+  "variant": "S_117_kunigas"
+ },
+ "bbb367f5": {
+  "round": 7,
+  "card": "117_kunigas",
+  "variant": "G_117_kunigas"
+ },
+ "033cf063": {
+  "round": 8,
+  "card": "114_pacientas",
+  "variant": "G_114_pacientas"
+ },
+ "910c3130": {
+  "round": 8,
+  "card": "114_pacientas",
+  "variant": "S_114_pacientas"
+ },
+ "6040161d": {
+  "round": 9,
+  "card": "034_ukis",
+  "variant": "G_034_ukis"
+ },
+ "13c287cc": {
+  "round": 9,
+  "card": "034_ukis",
+  "variant": "S_034_ukis"
+ },
+ "92119147": {
+  "round": 10,
+  "card": "368_vairuoti",
+  "variant": "G_368_vairuoti"
+ },
+ "19d16918": {
+  "round": 10,
+  "card": "368_vairuoti",
+  "variant": "S_368_vairuoti"
+ },
+ "d33922d3": {
+  "round": 11,
+  "card": "118_policininkas",
+  "variant": "S_118_policininkas"
+ },
+ "6542ab84": {
+  "round": 11,
+  "card": "118_policininkas",
+  "variant": "G_118_policininkas"
+ },
+ "592d6b22": {
+  "round": 12,
+  "card": "408_sokti",
+  "variant": "S_408_sokti"
+ },
+ "0a22854d": {
+  "round": 12,
+  "card": "408_sokti",
+  "variant": "G_408_sokti"
+ },
+ "d28fd319": {
+  "round": 13,
+  "card": "008_arklys",
+  "variant": "G_008_arklys"
+ },
+ "2147e3d5": {
+  "round": 13,
+  "card": "008_arklys",
+  "variant": "S_008_arklys"
+ },
+ "4fc4eb76": {
+  "round": 14,
+  "card": "027_gatve",
+  "variant": "S_027_gatve"
+ },
+ "aed1bfee": {
+  "round": 14,
+  "card": "027_gatve",
+  "variant": "G_027_gatve"
+ },
+ "7e0fbfd7": {
+  "round": 15,
+  "card": "048_ligonine",
+  "variant": "S_048_ligonine"
+ },
+ "6367fcfb": {
+  "round": 15,
+  "card": "048_ligonine",
+  "variant": "G_048_ligonine"
+ },
+ "b0f0fcba": {
+  "round": 16,
+  "card": "426_statyti",
+  "variant": "S_426_statyti"
+ },
+ "c095604b": {
+  "round": 16,
+  "card": "426_statyti",
+  "variant": "G_426_statyti"
+ },
+ "00b72902": {
+  "round": 17,
+  "card": "122_menininkas",
+  "variant": "G_122_menininkas"
+ },
+ "6d80c8b7": {
+  "round": 17,
+  "card": "122_menininkas",
+  "variant": "S_122_menininkas"
+ },
+ "ccb389d2": {
+  "round": 18,
+  "card": "188_obuolys",
+  "variant": "S_188_obuolys"
+ },
+ "9ba3f627": {
+  "round": 18,
+  "card": "188_obuolys",
+  "variant": "G_188_obuolys"
+ },
+ "a4f22916": {
+  "round": 19,
+  "card": "058_suknele",
+  "variant": "S_058_suknele"
+ },
+ "b80417d3": {
+  "round": 19,
+  "card": "058_suknele",
+  "variant": "G_058_suknele"
+ },
+ "aa446be1": {
+  "round": 20,
+  "card": "405_pjauti",
+  "variant": "S_405_pjauti"
+ },
+ "3b65ca6d": {
+  "round": 20,
+  "card": "405_pjauti",
+  "variant": "G_405_pjauti"
+ },
+ "54eedefd": {
+  "round": 21,
+  "card": "050_turgus",
+  "variant": "G_050_turgus"
+ },
+ "fd9ba458": {
+  "round": 21,
+  "card": "050_turgus",
+  "variant": "S_050_turgus"
+ },
+ "839b5fbe": {
+  "round": 22,
+  "card": "236_telefonas",
+  "variant": "G_236_telefonas"
+ },
+ "dbf8e4e2": {
+  "round": 22,
+  "card": "236_telefonas",
+  "variant": "S_236_telefonas"
+ },
+ "1a279692": {
+  "round": 23,
+  "card": "430_maitinti",
+  "variant": "S_430_maitinti"
+ },
+ "215ded3d": {
+  "round": 23,
+  "card": "430_maitinti",
+  "variant": "G_430_maitinti"
+ },
+ "f22b7928": {
+  "round": 24,
+  "card": "036_mokykla",
+  "variant": "G_036_mokykla"
+ },
+ "220520bb": {
+  "round": 24,
+  "card": "036_mokykla",
+  "variant": "S_036_mokykla"
+ },
+ "149a6857": {
+  "round": 25,
+  "card": "083_tevas",
+  "variant": "S_083_tevas"
+ },
+ "2874561c": {
+  "round": 25,
+  "card": "083_tevas",
+  "variant": "G_083_tevas"
+ },
+ "6637dccb": {
+  "round": 26,
+  "card": "005_karve",
+  "variant": "G_005_karve"
+ },
+ "00989b9b": {
+  "round": 26,
+  "card": "005_karve",
+  "variant": "S_005_karve"
+ },
+ "fe521d97": {
+  "round": 27,
+  "card": "030_stotis",
+  "variant": "G_030_stotis"
+ },
+ "fd49bc82": {
+  "round": 27,
+  "card": "030_stotis",
+  "variant": "S_030_stotis"
+ },
+ "9902004f": {
+  "round": 28,
+  "card": "367_begti",
+  "variant": "S_367_begti"
+ },
+ "7d3b1e4c": {
+  "round": 28,
+  "card": "367_begti",
+  "variant": "G_367_begti"
+ },
+ "b7a1366b": {
+  "round": 29,
+  "card": "059_kostiumas",
+  "variant": "S_059_kostiumas"
+ },
+ "b057e98b": {
+  "round": 29,
+  "card": "059_kostiumas",
+  "variant": "G_059_kostiumas"
+ },
+ "c5adf713": {
+  "round": 30,
+  "card": "363_dirbti",
+  "variant": "S_363_dirbti"
+ },
+ "f160ba3a": {
+  "round": 30,
+  "card": "363_dirbti",
+  "variant": "G_363_dirbti"
+ }
+}

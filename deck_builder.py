@@ -54,6 +54,33 @@ import os, csv, sys, argparse, unicodedata
 
 from go_generator import GOGenerator
 from go_grammars import route, compose_class, SCENE_TAIL
+import json
+import go_settings
+
+# ---------------------------------------------------------------------------
+# F6.1 (2026-10-11): house-style routing on top of the 1.x staging tables.
+# See style_lab/2026-10-10_08_F6_roll/results/production_spec_F6_1.json.
+# ---------------------------------------------------------------------------
+_HERE = os.path.dirname(os.path.abspath(__file__))
+# per-card staging lines, inserted right after the Subject sentence
+CARD_NOTES = json.load(open(os.path.join(_HERE, "card_notes.json"),
+                            encoding="utf-8"))["notes"]
+# Sunday-best dress class: church, weddings, theatre, social dancing
+FORMAL_ROWS = {46, 49, 137, 408}
+# full-scene composition (lead F6.1D) beyond the "place" class
+FULL_SCENE_ROWS = {383}
+# walking/running strips: explicit left/right alternation
+MOTION_STRIP_ROWS = {366, 367}
+# key -> "Setting: ..." line; filled by prepare_settings() over the WHOLE
+# eligible list (not a --only/--trial subset) so assignments are stable
+SETTINGS = {}
+
+
+def prepare_settings(work):
+    vs = {n: st[1] for n, st in VERB_STAGING.items()}
+    SETTINGS.clear()
+    SETTINGS.update(go_settings.assign(work, vs, skip=set(CARD_NOTES)))
+    return SETTINGS
 from verb_flashcards import scene_for, inset_for
 
 WORDLIST = "master_wordlist.csv"
@@ -1190,11 +1217,18 @@ def build_call(key, r, cls):
         # 1.7.2: VERB_INSET lets a verb override the default motion-sequence
         # inset with card-specific insets (as NOUN_STAGING inset_note does).
         vi = VERB_INSET.get(int(r["#"]))
-        return dict(subject=subject,
-                    scene=scene_for(setting, arrow=arrow, emphasis=emphasis,
-                                    people=people),
+        n = int(r["#"])
+        comp = "scene" if n in FULL_SCENE_ROWS else "vignette"
+        sc = scene_for(setting, arrow=arrow, emphasis=emphasis, people=people)
+        if comp == "scene":
+            sc = sc.replace(SCENE_TAIL, "")
+        return dict(subject=subject, scene=sc,
                     inset_note=(vi if vi else inset_for(consequence)), insets=True,
-                    text=False, people=people, glyph=False,
+                    text=False, people=("formal" if n in FORMAL_ROWS else people),
+                    glyph=False, composition=comp,
+                    staging=CARD_NOTES.get(key, ""),
+                    setting=SETTINGS.get(key, ""),
+                    motion_strip=n in MOTION_STRIP_ROWS,
                     filename=f"{key}.png")
     scene, inset_note, _, people, insets = compose_class(cls, r["category"])
     n = int(r["#"])
@@ -1224,8 +1258,16 @@ def build_call(key, r, cls):
     if "inset_note" in st:
         inset_note = st["inset_note"]
     insets = st.get("insets", insets)   # 1.7.4: per-card inset toggle
+    comp = "scene" if (cls == "place" or n in FULL_SCENE_ROWS) else "vignette"
+    if comp == "scene":
+        scene = scene.replace(SCENE_TAIL, "")
+    if n in FORMAL_ROWS:
+        people = "formal"
     return dict(subject=subject, scene=scene, inset_note=inset_note,
                 insets=insets, text=False, people=people,
+                composition=comp, staging=CARD_NOTES.get(key, ""),
+                setting=SETTINGS.get(key, ""),
+                motion_strip=n in MOTION_STRIP_ROWS,
                 glyph=n in GLYPH_ROWS,
                 exact_text=(r.get("card_text", "").strip()
                             or TEXT_EXCEPTION.get(n, "")),
@@ -1252,6 +1294,7 @@ def main():
 
     rows = load_rows(a.wordlist)
     work, skipped = eligible(rows, a.include_pending)
+    prepare_settings(work)               # before any subsetting
     if a.category:
         work = [w for w in work if w[1]["category"] == a.category]
     if a.only:

@@ -7,6 +7,32 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 
 ## [Unreleased] — planning
 
+### Changed (2026-10-11 — F6.1 house style into production)
+- **New house style, F6.1**, settled by three blind owner surveys
+  (`style_lab/2026-10-10_06..08`, Fable analyses in each `results/`). The old
+  "botanical plate" lead, the root of the detail drift, is retired
+  (`LEGACY_CONCEPT_LEAD_1_5`). Two leads now differ only in composition:
+  vignette (objects, people, single-figure verbs) and full scene (places,
+  `FULL_SCENE_ROWS`). Each has a matching suffix that closes the prompt.
+- **People:** sourced 1981 Lithuanian physiognomy, correct proportions, gaze as a
+  natural mix (a lone figure near-frontal, eyes just past the viewer's shoulder).
+- **Dress classes:** new `formal` (Sunday best) for church, weddings, theatre and
+  dance (`FORMAL_ROWS`). The red cross and the teacher's pupils move into
+  `professional`, and caps into `worker`.
+- **New rule blocks:** consistent inset frames, an explicit left/right motion strip
+  (`MOTION_STRIP_ROWS`: walk, run), physical plausibility, and arrows that point
+  only at the subject.
+- **Per-card staging lines** in `card_notes.json`, after the Subject sentence.
+- **Real Lithuanian places** on 82 of 237 scene-capable cards, as stood in a
+  free 1981 Lithuania. They are hand-assigned from the researcher's location bank
+  (`style_lab/research/`), read by `go_settings.py`, and given as a `Setting:` line.
+- **Engine:** gpt-image-2 stays the default until the 30-card dual-render
+  spot-check (`style_lab/2026-10-11_09_F6.1_spotcheck/`) decides between it and
+  Sunburst (3.3× cheaper). One model for the whole deck.
+- `NO_TEXT_RULE` remains in force. A lettering pilot is designed (spec, `text_policy`)
+  but not yet run.
+
+
 ### Fixed (2026-10-10 — pipeline repairs from the September audit)
 - **The "target named as forbidden on every card" claim was wrong** and is now
   stated correctly. The exclusion clause reaches only cards that are permitted

@@ -1,0 +1,119 @@
+{
+  "version": "F6.1",
+  "date": "2026-10-10",
+  "status": "PRODUCTION (style settled); model choice pending the 30-card dual-render spot-check (see model_decision)",
+  "model": {
+    "default": "gpt-image-2",
+    "quality": "medium",
+    "size": "1536x1024",
+    "challenger": "gpt-image-2.5-sunburst",
+    "rule": "one model for the whole deck; never mix within the deck"
+  },
+  "paper_target_strict": {
+    "L_star": [
+      85,
+      88
+    ],
+    "b_star": [
+      18,
+      23
+    ],
+    "anchor": "C_366_eiti (85.5 / 18.2), owner: 'the amount of yellow we should aim for'",
+    "tool": "style_lab/tools/papertone2.py"
+  },
+  "candidates": [
+    {
+      "id": "F6.1",
+      "use": "objects, clothing, animals, persons, single-figure verbs",
+      "hypothesis": "F6 with: paper one notch less yellow ('faint' for 'soft' yellow cast; A/Y measured b* 23-32 vs the owner's anchor 18); a lone-figure gaze sentence (near-frontal three-quarter, eyes just past the shoulder) added beside the group distribution that won minia; 'one thin ruled frame' for all insets (vestuves frame inconsistency); clothes 'chosen for the setting and occasion' (church in worker-blues); suffix carries plausibility and arrow rules for recency.",
+      "models": [
+        "gpt-image-2"
+      ],
+      "quality": "medium",
+      "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The light paper is the background: the main subject is drawn directly on it, its surroundings sketched in around it and fading into the paper, leaving open margins; insets are small ruled boxes on the same paper, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. In a group, heads turn at varied natural angles as in a documentary photograph, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder; a lone figure stands near-frontal, face turned only a little, eyes just past the viewer's shoulder.",
+      "suffix": "Finish: muted offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions. Group heads at varied natural angles, one or two facing the viewer with eyes just past the viewer's shoulder; a lone figure near-frontal. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink."
+    },
+    {
+      "id": "F6.1D",
+      "use": "places, buildings, workplace scenes, crowds",
+      "hypothesis": "Full-scene sibling; identical except the composition sentence.",
+      "models": [
+        "gpt-image-2"
+      ],
+      "quality": "medium",
+      "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, printed on the same light paper; insets are small ruled boxes beside or below it, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. In a group, heads turn at varied natural angles as in a documentary photograph, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder; a lone figure stands near-frontal, face turned only a little, eyes just past the viewer's shoulder.",
+      "suffix": "Finish: a full, detailed scene in muted offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions. Group heads at varied natural angles, one or two facing the viewer with eyes just past the viewer's shoulder; a lone figure near-frontal. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink."
+    }
+  ],
+  "prompt_assembly_order": [
+    "LEAD (F6.1 or F6.1D)",
+    "Subject: <subject sentence>",
+    "<scene / staging line from deck_builder>",
+    "Setting: <SETTING_LINE hook, see below>",
+    "FIGURE_DRESS[<class>]",
+    "NO_STRAY_FIGURE",
+    "INSET_RULE (+ MOTION_STRIP_RULE on strip verbs)",
+    "INSET_MEANING_RULE",
+    "NO_CUTAWAY_RULE",
+    "PLAUSIBILITY_RULE",
+    "ARROW_RULE (cards with arrows)",
+    "NO_TEXT_RULE or _exact_text_rule (pilot only)",
+    "BARS_RULE",
+    "FLAG_RULE",
+    "ANATOMY_RULE",
+    "SUFFIX"
+  ],
+  "setting_line_hook": {
+    "field": "deck_builder SETTING[<card_key>] -> appended after the staging line as 'Setting: ...'",
+    "format": "One sentence naming a real Lithuanian place as it stood in 1981, with two or three visible identifying details and nothing written; e.g. 'Setting: Kaunas, Laisvės alėja near the Soboras, lime trees and the 1930s modernist facades.'",
+    "coverage": "owner asked for roughly 2/3 to 3/4 of cards; the researcher's bank fills it; cards without a bank entry get no Setting line",
+    "guard": "the setting must never compete with the target word (INSET_MEANING_RULE applies); for object cards the setting goes in an inset, not around the main subject"
+  },
+  "rule_blocks": {
+    "FIGURE_DRESS": {
+      "worker": "Any people who appear are working men and women in plain muted blue-grey work jackets and trousers, the men in flat cloth caps, with black kirza-style work boots.",
+      "professional": "Any people who appear are dressed for their profession and setting: a doctor or nurse in a white coat, with a small red cross on the medical kit or the clinic front; a teacher in a modest jacket or dress with pupils present at their desks; a shop assistant in a white smock; a uniformed officer in plain service uniform.",
+      "civilian": "Any people who appear are ordinary Lithuanian civilians in plain everyday clothes of 1981, dressed for the setting and the weather: shirts, cardigans, simple dresses and headscarves indoors and on the street; coats, caps and hats outdoors in cold weather.",
+      "formal": "Any people who appear are ordinary Lithuanians in their Sunday best for church, a wedding or a celebration: men in dark suits with a white shirt and tie, women in modest good dresses or skirts with a cardigan, a small hat or a fine headscarf, children neatly dressed.",
+      "routing_note": "deck_builder: route bažnyčia, vestuvės, šventė, koncertas, teatras and similar occasion cards to 'formal'; medical cards to 'professional' (red cross is now in the class text, the per-card staging line can drop it)."
+    },
+    "INSET_RULE": "Include just 2 to 3 small supporting inset panels, all drawn in the same thin ruled frame on the same paper, each showing a clearly different moment, object or angle from the others and from the main picture. Keep them clean and uncluttered.",
+    "MOTION_STRIP_RULE": "The motion strip shows one figure in three clearly different phases, left to right: first standing with both feet together and arms at the sides; second with the LEFT foot forward and the right arm swung forward; third with the RIGHT foot forward and the left arm swung forward. The three frames read as one continuous movement.",
+    "PLAUSIBILITY_RULE": "Every object, tool and fixture is complete, attached and in working order: a well-sweep stands over its timber well-head, hanging utensils hang from a proper rack or wall hooks, doorways and corridors stay clear and passable, furniture rests on the floor against a wall, tools are held in a usable grip, and a resting or sleeping animal is visibly alive and at ease, curled up with eyes closed and ears relaxed.",
+    "ARROW_RULE": "Any arrow or callout, drawn in solid black ink, points only at the subject the card teaches or at the direction of its motion.",
+    "NO_TEXT_RULE": "UNCHANGED in production. Per-card text only through _exact_text_rule under the text pilot (see text_policy)."
+  },
+  "content_notes": {
+    "090_seima": "Main picture: the family of four at an everyday meal at the kitchen table (soup, rye bread, tea); insets: gathering potatoes in the garden; the family walking together on the street. The potato harvest stays in an inset only.",
+    "110_mokytojas": "Teacher(s) at the chalkboard WITH three or four pupils at desks in the foreground; the board carries simple true arithmetic or a plain geometric diagram (text pilot decides whether figures are permitted). Pupils are an essential prop.",
+    "182_duona": "A dense dark rye loaf (rupi ruginė duona): near-black crust, dark brown crumb, brick-shaped or round, on a linen cloth; insets of slicing and of loaves on a shelf. No white loaf anywhere on this card.",
+    "batonas": "Separate card: a long pale wheat loaf with a golden crust, scored top, on paper; the contrast with duona lives in the two cards, never inside one.",
+    "147_karas": "Drop the pointing arrow; if an arrow is kept it points at the burning village or the column of soldiers, never at a refugee.",
+    "025_namas": "Well-sweep standing over a timber well-head with a bucket on the pole; the sweep and the well together.",
+    "454_letas": "Hare awake and running at full stretch in its inset; if a resting hare is shown it is curled, eyes closed, ears relaxed, clearly asleep.",
+    "137_vestuves": "All insets in the same ruled frame; keep the one guest looking over the viewer's shoulder.",
+    "366_eiti": "MOTION_STRIP_RULE applies; corridor clear of furniture.",
+    "066_paltas": "Lone figure near-frontal three-quarter view (F6.1 lone-figure gaze sentence); coat flat-laid as the main subject.",
+    "049_baznycia": "FIGURE_DRESS formal; churchgoers in Sunday best, the men bareheaded at the door.",
+    "108_minia": "Keep the F6 staging (dense crowd, mixed head angles); the A draw that shipped is the reference."
+  },
+  "text_policy": {
+    "status": "NO_TEXT_RULE stays in production until the pilot passes",
+    "pilot": {
+      "cards": 20,
+      "renders_per_card": 2,
+      "selection": "cards where lettering teaches: mokytojas/mokykla (board arithmetic '7 x 8 = 56', 'S = v t'), parduotuvė/pirkti (sign PARDUOTUVĖ; price tags as decided below), ligoninė (sign LIGONINĖ), duona (sign DUONA), knyga/biblioteka (two or three interwar spines: 'ALTORIŲ ŠEŠĖLY', 'METAI', 'DĖDĖS IR DĖDIENĖS'), laikraštis (masthead only), kalendorius, laiškas (address block of three short lines), bankas, paštas",
+      "mechanism": "use the existing _exact_text_rule(spec, exclude) per card; the spec names the EXACT string(s), uppercase where a sign would be, in the muted period sign-painting or chalk style; at most two strings per card; the target word itself is still never written (exclude clause)",
+      "language_rules": "Lithuanian only, with correct diacritics (ą č ę ė į š ų ū ž); period-plausible wording; formulas and numbers true for the 1981 secondary curriculum (arithmetic tables, S = v t, F = m a, H2O, NaCl, 1 kg = 1000 g); interwar titles and spellings allowed as the owner's deliberate anachronism; currency on price tags is an OWNER DECISION (counterfactual free Lithuania 1981: litas/centai 'Lt / ct' vs period rubles) and is left blank until decided",
+      "whitelist": "researcher compiles style_lab/research/text_whitelist.csv: card_key, string, style (sign/chalk/spine/label), source; nothing outside the whitelist is ever requested",
+      "qa_gate": "(1) automatic read-back: a vision model transcribes every lettering region; the transcript must equal the whitelisted string exactly, diacritics included; (2) zero stray lettering anywhere else on the card (the usual check); (3) human check of period plausibility by the owner. Pass threshold for lifting the rule on a card CLASS: >= 90 % of text instances exact across the 40 pilot renders and 0 stray-text cards. On pass, that class keeps using _exact_text_rule with whitelisted strings; NO_TEXT_RULE remains the default for every other card. On fail, the class stays wordless."
+    }
+  },
+  "model_decision": {
+    "evidence_for_sunburst": "F6 roll: 1st in 3 of 4 rounds (eiti, duona, lėtas; 'best colour', 'all details right', 'wonderful card'); its paper is the owner's anchor; 3.3x cheaper ($7 vs $23 for 520 cards), ~2x faster; proportions correct on every F5/F6 draw.",
+    "evidence_against": "n = 4, all single-subject cards; its earlier losses were on multi-person and scene cards (full-bleed drift, 'flat/bland', klubas Western, minia target-word drift) and on gaze (paltas 'looking too far away' in this roll); it renders the bands a brighter scarlet than gpt-image-2's dark red, so mixing models would be visible across the deck.",
+    "decision": "Undetermined on current data. Settle it in the 30-card production spot-check by dual-rendering: 30 cards x both models (gpt-image-2 $1.32 + Sunburst $0.41), stratified 10 multi-person/scene (F6.1D), 10 single-figure verbs/persons, 10 objects/animals/clothing. Blind pairwise with ship flags. Sunburst becomes the production model if it wins >= 60 % overall AND >= 50 % of the multi-person/scene stratum AND its plausibility-glitch rate is <= gpt-image-2's; otherwise gpt-image-2. Whichever wins renders all 520 and everything after; add 'deep dark brick-red bands' to BARS_RULE if Sunburst wins, and re-measure paper on its first 30.",
+    "cost_note": "Dual-rendering the spot-check costs $1.73; a wrong model choice costs a $23 re-render or a visibly inconsistent deck."
+  },
+  "qa_expectation": "Style is settled; remaining failures are content/plausibility (5 of 28 A/Y images, ~18 %). Budget a 20 % re-roll rate in production QA; re-roll triggers: plausibility glitch, duplicate insets, same-foot motion strip, inconsistent inset frames, missing pupils/cross/occasion dress, target word unclear."
+}

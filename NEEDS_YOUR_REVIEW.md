@@ -14,13 +14,22 @@ every time a batch moves, so whatever is at the top is what unblocks the project
 > generate → qa_images.py → build_review.py → owner confirms → push
 > ```
 
-**Last updated: 2026-10-10 · engine switched to gpt-image-2; A2 re-base sheets built**
-
-**Engine switched 2026-10-10:** new art is drawn by `gpt-image-2` and QA'd by
-`gpt-5.6-luna` (both defaults, both verified with a live card). The old models'
-shutdowns on 1 and 11 Dec no longer block anything.
+**Last updated: 2026-10-11 · F6.1 style in production code; 30-card engine spot-check waiting**
 
 ---
+
+## 0 → Rank the F6.1 spot-check (30 rounds, ~15 min)
+
+Private page "F6.1 Spot Check" (https://claude.ai/artifact/AYbuoYm4s7qJsLb5fZXKpP): 30 cards never drawn in the
+new style, each by gpt-image-2 and by Sunburst, blind. Your ranking picks the engine for the full re-render
+(rule in `style_lab/2026-10-11_09_F6.1_spotcheck/NOTES.md`). Comment on anything wrong, including the
+Lithuanian settings, which appear on these cards for the first time.
+
+## 0b → Two small decisions
+
+- **Currency on price tags** if lettering is allowed later: litas/centai (*Lt / ct*, the free-Lithuania
+  counterfactual) or rubles (period-true)? Needed before the text pilot.
+- **batonas** (white wheat loaf) as its own card beside *duona*: add to the A2 queue? (Your F6 note.)
 
 ## 1 → Sign off genders: `review_genders_2026-10-10.csv` (63 rows, ~5 min)
 
