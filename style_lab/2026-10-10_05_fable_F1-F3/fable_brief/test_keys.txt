@@ -1,0 +1,15 @@
+024_miestas
+041_klubas
+036_mokykla
+366_eiti
+405_pjauti
+376_valgyti
+411_dainuoti
+090_seima
+113_gydytojas
+108_minia
+137_vestuves
+058_suknele
+059_kostiumas
+066_paltas
+057_kepure

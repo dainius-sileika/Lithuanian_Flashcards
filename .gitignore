@@ -62,3 +62,8 @@ recorder*.html
 
 # third-party source documents (URLs in a2_rebase/README.md)
 sources/*.pdf
+
+# style experiments: notes/prompts/manifest tracked, images not
+style_lab/**/*.png
+style_lab/**/*.jpg
+style_lab/**/.DS_Store
