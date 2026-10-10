@@ -3,6 +3,17 @@
 This file is the single answer to "where's the bottleneck?". It is rewritten
 every time a batch moves, so whatever is at the top is what unblocks the project.
 
+> ## Standing rule: review before push
+>
+> **A review HTML is built and confirmed by the owner *before* anything is pushed
+> to GitHub — never after.** Automated QA (`qa_images.py`) is a gate, not a
+> substitute for the owner's eye: it can prove a card carries no stray text, but
+> not that the picture teaches the right word. The order is always:
+>
+> ```
+> generate → qa_images.py → build_review.py → owner confirms → push
+> ```
+
 **Last updated: 2026-07-28 · all 57 new cards generated and QA'd; audio fixed**
 
 ---

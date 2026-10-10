@@ -85,6 +85,25 @@ The house style is **"deadpan civic procedure"**: the calm, patient temperature 
 
 Animals · Transportation · Locations · Clothing · Colours · Family & People · Jobs · Food & Drink · Home · Electronics · Body · Nature · Materials · Verbs · Adjectives — plus a handful of abstract/glyph cards.
 
+## The generation loop
+
+Cards are never pushed straight from the generator. Every batch runs the gate:
+
+```bash
+python3 gen_phrases.py 8 33                 # generate (or driver.py for the main deck)
+python3 qa_images.py out_phrases --csv _qa/qa_phrases.csv   # automated QA
+python3 build_review.py                     # -> review/new_cards_review.html
+#   ... owner opens the page and confirms ...
+#   ... only then: commit and push
+```
+
+`qa_images.py` enforces the two rules the deck lives by — **no text in the art**
+and **guessability** — by reading each image with a vision model that is never
+told the answer. It exits non-zero on failure, so it can gate the loop. It cannot
+judge whether an ambiguous picture is *acceptably* ambiguous; that is what the
+review page is for, and **the owner's confirmation comes before the push, not
+after**.
+
 ## Regenerating a card
 
 ```bash
