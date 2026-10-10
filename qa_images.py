@@ -225,6 +225,7 @@ def main():
 
     os.makedirs("_qa", exist_ok=True)
     cache = json.load(open(CACHE)) if os.path.exists(CACHE) and not recheck else {}
+    cache = {k: v for k, v in cache.items() if "error" not in v}  # legacy entries
     meta = load_meta()
 
     files = sorted(f for f in os.listdir(folder)
