@@ -1,0 +1,911 @@
+entry,pos,english,route,note
+abi,PRON,both (fem),CLOZE,pair with abu; gender agreement
+abu,PRON,both (masc),CLOZE,
+administratorius,N,receptionist; administrator,IMG,desk-badge sense first
+aikštelė,N,car park; playground; court,IMG,head of several list collocations (stovėjimo/žaidimų/statybų aikštelė)
+aiškiai,ADV,clearly,CLOZE,
+aišku,ADV,of course; clearly,PHRASE,"also discourse marker ""aišku!"""
+akademija,N,academy,IMG,
+akcija,N,special offer; promotion,IMG,"shop sign context; also ""share (stock)"""
+alergija,N,allergy,IMG,
+alėja,N,avenue (tree-lined walk),IMG,not English 'alley'
+alio,INTJ,hello (on the phone),PHRASE,
+alkanas,A,hungry,IMG,adjective pair candidate with sotus
+alkoholikas,N,alcoholic (person),SKIP,sensitive; low A2 value
+alkoholiniai gėrimai,N,alcoholic drinks,IMG,
+alkoholis,N,alcohol,IMG,
+ambasadorius,N,ambassador,IMG,
+ampulė,N,ampoule,SKIP,clinical; low value
+anglų kalba,N,English (language),CLOZE,teach as pattern X-ų kalba with other languages
+anksčiau,ADV,earlier; before,CLOZE,
+antra,NUM,second (fem),CLOZE,ordinal agreement; deck has antras?
+aplankas,N,folder,IMG,
+aplink,PREP/ADV,around,CLOZE,+acc
+apsauginiai akiniai,N,safety goggles,IMG,fits GO aesthetic well
+apsipirkti,V,to do the shopping,IMG,
+apvalus,A,round,IMG,
+apžiūrėti,V,to examine; look over,CLOZE,
+arbatinis,N,teapot,IMG,
+arbatpinigiai,N,tip (gratuity),IMG,
+arti,ADV,near; close,CLOZE,pair with toli; NB homograph arti = to plough
+asmens tapatybės kortelė,N,identity card,IMG,
+ateiti,V,to come (on foot),CLOZE,core verb; prefix series ateiti/išeiti/įeiti
+atestatas,N,school-leaving certificate,IMG,
+atidaryta,A,open (sign on a door),PHRASE,sign text; card_text exception
+atidarytas,A,opened,CLOZE,participle
+atidarytuvas,N,bottle opener,IMG,
+atidėti,V,to postpone,CLOZE,
+atleisti,V,to forgive; to dismiss,CLOZE,
+atleisti iš darbo,V,to fire from a job,CLOZE,
+atmintukas,N,USB stick,IMG,
+atostogauti,V,to be on holiday,CLOZE,
+atrodo,V,it seems; looks,PHRASE,
+atsargiai,ADV,"carefully; ""careful!""",PHRASE,
+atsikelti,V,to get up,IMG,daily-routine verb
+atvažiuoti,V,to arrive (by vehicle),CLOZE,core; pairs with važiuoti
+auditorija,N,lecture hall,IMG,
+auklė,N,nanny,IMG,
+auklėtojas,N,kindergarten teacher; class teacher,IMG,
+aukščiau,ADV,higher; above,CLOZE,
+aukštyn,ADV,upwards,CLOZE,pair with žemyn
+ausinės,N,headphones,IMG,
+autis,V,to put on shoes,IMG,reflexive dressing verbs set (autis/mautis/vilktis)
+autobusų stotelė,N,bus stop,IMG,
+autobusų stotis,N,bus station,IMG,
+automatas,N,vending machine,IMG,
+automobilių,FRAG,,FRAG,PDF fragment of a collocation
+automobilių stovėjimo,FRAG,,FRAG,"PDF wrap of ""automobilių stovėjimo aikštelė"" (car park)"
+autoservisas,N,car repair shop,IMG,
+avalynė,N,footwear,IMG,collective; shop-department word
+avarinis išėjimas,N,emergency exit,IMG,GO aesthetic natural fit
+baigiamasis egzaminas,N,final exam,CLOZE,
+baigtis,V,to end (intrans.),CLOZE,
+balandėliai,N,stuffed cabbage rolls,IMG,Lithuanian dish
+balsuoti,V,to vote,IMG,
+bandelė,N,bun,IMG,
+bankomatas,N,cash machine,IMG,
+basutės,N,sandals,IMG,
+batonas,N,white loaf,IMG,
+bauda,N,fine (penalty),IMG,
+bedarbis,N,unemployed person,CLOZE,a status; a wordless picture can't distinguish it
+belaidis internetas,N,wireless internet,IMG,
+bendrabutis,N,dormitory,IMG,
+bendradarbis,N,colleague,IMG,
+bendras,A,common; shared,CLOZE,
+bet kada,ADV,any time,CLOZE,indefinite series bet kas/kur/kada
+bet kas,PRON,anything; anyone,CLOZE,
+bet kur,ADV,anywhere,CLOZE,
+be abejo,ADV,undoubtedly,PHRASE,
+bėgioti,V,to jog; run about,IMG,iterative of bėgti
+biologija,N,biology,IMG,school subjects set
+blynai,N,pancakes,IMG,
+blyneliai,N,small pancakes,SYN,diminutive of blynai
+bomba,N,bomb,SKIP,low A2 value; deck has ginklas
+braškės,N,strawberries,IMG,
+brendis,N,brandy,SKIP,low value
+bronzos,FRAG,,FRAG,fragment (bronzos medalis)
+bulvė,N,potato,IMG,
+būtinai,ADV,definitely; necessarily,CLOZE,
+centras,N,centre,IMG,
+cepelinai,N,cepelinai (potato dumplings),IMG,Lithuanian dish
+chemija,N,chemistry,IMG,school subjects set
+čekis,N,receipt,IMG,
+čiuožinėti,V,to skate,IMG,
+čiužinys,N,mattress,IMG,
+daiktas,N,thing; object,CLOZE,
+dailininkas,N,painter (artist),SYN,deck has menininkas (artist)
+dainininkas,N,singer,IMG,
+daktaras,N,doctor (colloquial),SYN,deck has gydytojas
+dalykas,N,thing; matter; subject,CLOZE,
+dalyvauti,V,to take part,CLOZE,
+darbininkas,N,worker,IMG,
+darbo,FRAG,,FRAG,fragment (darbo užmokestis etc.)
+darbo drabužiai,N,work clothes,IMG,
+darbo valandos,N,working hours; opening hours,PHRASE,sign text
+darbo vieta,N,workplace,CLOZE,
+darbuotojai,N,employees,IMG,
+daržovės,N,vegetables,IMG,
+daugiabutis,N,block of flats,IMG,GO aesthetic natural fit
+dažyti,V,to paint; to dye (hair),IMG,dažyti plaukus
+debesis,N,cloud,IMG,
+degalai,N,fuel,SYN,deck has benzinas
+degtinė,N,vodka,IMG,
+degtukai,N,matches,IMG,
+dekanas,N,dean,SKIP,low value
+deklaracija,N,declaration (tax/customs),CLOZE,
+deklaruoti,V,to declare,CLOZE,
+dešinė,N,right (side),CLOZE,directions set with kairė
+dešinėje,ADV,on the right,CLOZE,locative
+dešrelės,N,sausages (frankfurters),IMG,
+dėkui,INTJ,thanks,PHRASE,
+dėmesio,INTJ,attention!,PHRASE,announcement word
+dėstytojas,N,lecturer,IMG,
+dėžutė,N,small box,SYN,deck has dėžė (box)
+didžkukuliai,N,cepelinai (synonym),SYN,= cepelinai
+dingo elektra,PHRASE,the power went out,PHRASE,
+dirbtuvė,N,workshop,IMG,
+direktorius,N,director; headteacher,IMG,
+dyzelinis,A,diesel,SKIP,low value
+dokumentai,N,documents,IMG,
+drabužiai moterims,N,women's clothing,PHRASE,shop sign
+drabužiai vaikams,N,children's clothing,PHRASE,shop sign
+drabužiai vyrams,N,men's clothing,PHRASE,shop sign
+drabužinė,N,cloakroom,IMG,
+drabužis,N,garment,SYN,check deck for drabužiai
+draudimo,FRAG,,FRAG,fragment (draudimo polisas)
+draudžiama,A,forbidden (sign),PHRASE,sign text
+draustis,V,to get insured,CLOZE,
+drožtukas,N,pencil sharpener,IMG,
+dubuo,N,bowl,IMG,
+dujokaukė,N,gas mask,IMG,the GO aesthetic made flesh
+dujos,N,gas,IMG,
+dukart,ADV,twice,CLOZE,
+duktė,N,daughter,SYN,deck has dukra
+dulkių siurblys,N,vacuum cleaner,IMG,
+duoti,V,to give,CLOZE,core; dative government
+dušas,N,shower,IMG,
+džinsai,N,jeans,IMG,
+džiovinti,V,to dry (trans.),IMG,
+džiovyklė,N,clothes dryer,IMG,
+džiūti,V,to dry (intrans.),CLOZE,pair with džiovinti
+eiti miegoti,V,to go to bed,PHRASE,
+ekskursija,N,excursion; tour,IMG,
+ekskursijos,FRAG,,FRAG,fragment (ekskursijos vadovas)
+elektra,N,electricity,IMG,
+elektrikas,N,electrician,IMG,
+elektroninis laiškas,N,email (message),IMG,
+elektroninis paštas,N,email (system),SYN,overlaps elektroninis laiškas
+elektroninis receptas,N,e-prescription,SKIP,low value
+epidemija,N,epidemic,SKIP,low value
+epocha,N,epoch,SKIP,low value
+fabrikas,N,factory,IMG,
+faksas,N,fax,SKIP,dated
+filmavimo kamera,N,video camera,IMG,
+filmuoti,V,to film,IMG,
+fizika,N,physics,IMG,school subjects set
+flomasteris,N,felt-tip pen,IMG,
+fotografija,N,photograph,IMG,
+fotografuoti,V,to photograph,IMG,
+futbolas,N,football,IMG,
+Gelbėkit!,INTJ,Help!,PHRASE,
+gabalėlis,N,small piece,SYN,deck has gabalas
+gabaliukas,N,small piece,SYN,deck has gabalas
+gaila,ADV,a pity; sorry,PHRASE,Gaila!; dative of person
+gaisras,N,fire (blaze),IMG,deck has ugnis (fire as element)
+galbūt,ADV,perhaps,CLOZE,
+galima,ADV,it is allowed; one may,CLOZE,modal; + infinitive
+galų,FRAG,,FRAG,fragment (galų gale = after all)
+galvos skausmas,N,headache,IMG,
+gamykla,N,factory; plant,SYN,overlaps fabrikas; keep one
+gana,ADV,enough; quite; rather,CLOZE,'Gana!' = Enough!
+garantija,N,guarantee,CLOZE,
+gauti,V,to get; receive,CLOZE,core
+gauti vizą,V,to get a visa,CLOZE,
+gazuotas vanduo,N,sparkling water,IMG,pair with negazuotas
+geležinkelio stotis,N,railway station,IMG,
+geležinkelis,N,railway,IMG,
+geležis,N,iron (metal),IMG,materials set
+gerbiamas,A,respected; Dear (in letters),PHRASE,letter formula
+gerbiamasis,A,respected (definite); Dear Sir,SYN,= gerbiamas
+gesti,V,to break down; go off,CLOZE,
+gėlynas,N,flower bed,IMG,
+gėrimai,N,drinks,IMG,
+gimimo data,N,date of birth,CLOZE,form-filling set
+gimimo vieta,N,place of birth,CLOZE,form-filling set
+gimnazija,N,gymnasium (upper secondary school),IMG,
+gimtoji,FRAG,,FRAG,fragment of gimtoji kalba
+gimtoji kalba,N,native language,CLOZE,
+gintaras,N,amber,IMG,Lithuanian cultural staple
+gyvenimas,N,life,CLOZE,deck has gyvenimas? check
+gyvenimo aprašymas,N,CV,IMG,
+globa,N,care; custody,SKIP,low value
+golfas,N,golf,SKIP,low value
+gramas,N,gram,CLOZE,units set; deck has kilogramas?
+gramatika,N,grammar,CLOZE,
+greitoji,FRAG,,FRAG,fragment of greitoji pagalba
+greitoji pagalba,N,ambulance,IMG,
+grėblys,N,rake,IMG,
+grietinė,N,sour cream,IMG,
+gripas,N,flu,IMG,
+grįžti namo,V,to go back home,CLOZE,
+grynieji pinigai,N,cash,IMG,
+grotuvas,N,player (music),IMG,
+gulėti ligoninėje,V,to be in hospital,CLOZE,locative pattern
+gultis,V,to lie down,IMG,posture verbs: gultis/sėstis/atsistoti
+gultis į ligoninę,V,to go into hospital,CLOZE,į + acc pattern
+hektaras,N,hectare,SKIP,low value
+ilgai,ADV,for a long time,CLOZE,
+imti,V,to take,CLOZE,core
+indai,N,dishes,IMG,
+indaplovė,N,dishwasher,IMG,
+indelis,N,small container; tub (dimin. of indas),SKIP,ambiguous; low value; NOT deposit (= indėlis)
+injekcija,N,injection,IMG,
+institutas,N,institute,SKIP,low value
+instrukcija,N,instructions (leaflet),IMG,GO aesthetic fit
+internetinis,A,online,CLOZE,
+interneto svetainė,N,website,IMG,
+ispanų kalba,N,Spanish (language),CLOZE,languages pattern
+išėjimas,N,exit,IMG,sign; pair with įėjimas
+išjungtas,A,switched off,IMG,pair with įjungtas
+išmanusis telefonas,N,smartphone,SYN,deck has mobilusis telefonas
+išmokti,V,to learn (perf.),PAIR,aspect pair: mokytis → išmokti
+išrašyti,V,to write out (prescription/invoice),CLOZE,
+išsiskyręs,A,divorced,CLOZE,marital status set
+išskyrus,PREP,except,CLOZE,+acc
+ištekėjusi,A,married (of a woman),CLOZE,marital status set
+išvežti,V,to take away (by vehicle),CLOZE,
+išvežti šiukšles,V,to collect the rubbish (by truck),IMG,carrying it out = išnešti šiukšles
+įdomu,ADV,interesting; I wonder,PHRASE,
+įėjimas,N,entrance,IMG,sign; pair with išėjimas
+įjungtas,A,switched on,IMG,
+įvertinimas,N,mark; grade,CLOZE,
+įvežti,V,to bring in (by vehicle),SKIP,low value
+į lauką,ADV,outside (direction),CLOZE,pair with lauke (location)
+į sveikatą,PHRASE,cheers; bless you,PHRASE,
+į vidų,ADV,inside (direction),CLOZE,pair with viduje
+jaunuolis,N,young man,SYN,overlaps vaikinas
+jausti,V,to feel,CLOZE,
+jeigu,CONJ,if,CLOZE,core conjunction
+jokia,PRON,no (fem),CLOZE,negative concord with joks
+joks,PRON,no; none (masc),CLOZE,joks ... ne- negative concord
+jungti,V,to connect; switch on,CLOZE,įjungti/išjungti prefix pair
+juoda kava,N,black coffee,IMG,café set
+Kalėdos,N,Christmas,IMG,
+kabinetas,N,office; doctor's consulting room,IMG,gydytojo kabinetas
+kadangi,CONJ,because; since,CLOZE,
+kada nors,ADV,ever; some time,CLOZE,
+kairė,N,left (side),CLOZE,
+kairėje,ADV,on the left,CLOZE,
+kai kas,PRON,something; some people,CLOZE,
+kai kur,ADV,in some places,CLOZE,
+kai kuri,PRON,some (fem),CLOZE,
+kai kuris,PRON,some (masc),CLOZE,
+kalba,N,language; speech,CLOZE,
+kamščiatraukis,N,corkscrew,IMG,
+kandidatas,N,candidate,CLOZE,
+kariauti,V,to wage war,SKIP,low value; deck has karas
+karininkas,N,officer (military),IMG,
+karpis,N,carp,IMG,Christmas Eve dish
+karšta,ADV,it is hot,CLOZE,weather impersonal set
+kasdien,ADV,every day,CLOZE,
+kastuvas,N,shovel,IMG,
+katedra,N,cathedral; university department,IMG,Vilnius cathedral
+kava su pienu,N,coffee with milk,IMG,café set
+kavinė,N,café,IMG,
+kažkada,ADV,once; some time,CLOZE,
+kažkiek,ADV,some amount,CLOZE,
+kažkokia,PRON,some kind of (fem),CLOZE,
+kažkoks,PRON,some kind of (masc),CLOZE,
+kažkuri,PRON,some one (fem),CLOZE,
+kažkuris,PRON,some one (masc),CLOZE,
+ką,PRON,what (acc),CLOZE,acc of kas; question words
+kefyras,N,kefir,IMG,
+keistis,V,to change (intrans.); exchange,CLOZE,
+keletas,NUM,several,CLOZE,+gen
+keli,NUM,several (masc),CLOZE,
+kelinta,PRON,which (ordinal; fem),CLOZE,Kelinta valanda?
+kelintas,PRON,which (ordinal; masc),CLOZE,dates and floors
+kelionės draudimas,N,travel insurance,CLOZE,
+kelionių agentūra,N,travel agency,IMG,
+kelios,NUM,several (fem),CLOZE,
+kelio ženklas,N,road sign,SYN,deck promoted road sign in 1.6.1; check
+kelių policija,N,traffic police,IMG,
+keltas,N,ferry,IMG,
+kepsnys,N,roast; steak,IMG,
+keptas,A,fried; baked,IMG,cooking participles: keptas/virtas/rūkytas
+keptuvė,N,frying pan,IMG,
+ketvirtadalis,N,quarter,CLOZE,fractions set
+kiaušinienė,N,scrambled/fried eggs,IMG,
+kiekis,N,quantity,CLOZE,
+kiekvienas,PRON,every; each,CLOZE,
+kilometras,N,kilometre,CLOZE,units set
+kirpėjas,N,hairdresser,IMG,
+kirpykla,N,hairdresser's,IMG,
+kirpti,V,to cut (hair; with scissors),IMG,
+kirptis,V,to get a haircut,CLOZE,reflexive vs transitive pair
+kitas,PRON,other; next,CLOZE,
+klaidingai,ADV,wrongly,CLOZE,
+klaidingas,A,wrong; incorrect,CLOZE,
+klausyti,V,to listen to,CLOZE,+gen government
+klaviatūra,N,keyboard,IMG,
+klinika,N,clinic,SYN,overlaps poliklinika
+knygynas,N,bookshop,IMG,
+kojinės,N,socks,IMG,
+kokia,PRON,what kind (fem),CLOZE,question words
+kokybė,N,quality,CLOZE,
+kolegija,N,college,SKIP,low value
+kombinezonas,N,overalls,IMG,
+koncertų salė,N,concert hall,IMG,
+konfliktas,N,conflict,SKIP,low value
+konkursas,N,competition,CLOZE,
+konteineris,N,container; skip,SYN,overlaps šiukšlių konteineris
+kontrolė,N,control; inspection,SKIP,low value
+kontrolierius,N,ticket inspector,IMG,
+kopijuoti,V,to copy,CLOZE,
+koridorius,N,corridor,IMG,
+kosėti,V,to cough,IMG,
+kraujospūdis,N,blood pressure,IMG,
+kraujo tyrimai,N,blood tests,CLOZE,
+kreditinė kortelė,N,credit card,SYN,deck has kortelė
+krepšelis,N,shopping basket,IMG,
+krepšinis,N,basketball,IMG,national sport
+kupė,N,train compartment,SKIP,low value
+kuprinė,N,rucksack,IMG,
+kuri,PRON,which (fem),CLOZE,
+kursai,N,course (of lessons),CLOZE,
+kursas,N,course; year (university); exchange rate,CLOZE,
+kur nors,ADV,somewhere,CLOZE,
+kvadratinis,A,square,SKIP,covered by kvadratinis metras
+kvadratinis kilometras,N,square kilometre,SKIP,low value
+kvadratinis metras,N,square metre,CLOZE,flat-hunting
+kvalifikacija,N,qualification,SKIP,low value
+kvapas,N,smell,IMG,
+kvepėti,V,to smell (good),IMG,pair with smirdėti
+kvietimas,N,invitation,IMG,
+labai gerai,PHRASE,very good,PHRASE,
+labai sunku,PHRASE,very difficult,SKIP,compositional
+labą dieną,PHRASE,good afternoon; hello,PHRASE,check deck greetings
+labą rytą,PHRASE,good morning,PHRASE,
+labą vakarą,PHRASE,good evening,PHRASE,
+labiau,ADV,more,CLOZE,comparison
+laboratorija,N,laboratory,SKIP,low value
+laikytis įstatymų,V,to obey the law,SKIP,low value
+laikyti egzaminą,V,to sit an exam,CLOZE,
+laipsnis,N,degree,CLOZE,temperature
+laisvai,ADV,freely; fluently,CLOZE,
+laisvalaikio prekės,N,leisure goods,SKIP,shop department; low value
+laisvalaikis,N,free time,CLOZE,
+laisva diena,N,day off,CLOZE,
+lašai,N,drops (medicine),IMG,
+lašiša,N,salmon,IMG,
+lauke,ADV,outside (location),CLOZE,
+lauktis,V,to be expecting (a baby),SKIP,colloquial
+laukti svečių,V,to expect guests,CLOZE,laukti + gen
+ledai,N,ice cream,IMG,NB deck has ledas (ice)
+leidžiama,A,allowed (sign),PHRASE,pair with draudžiama
+lengva,ADV,it is easy,CLOZE,
+lengvai,ADV,easily,CLOZE,
+lėtai,ADV,slowly,CLOZE,adverb of lėtas
+lietuviškai,ADV,in Lithuanian,CLOZE,Ar kalbate lietuviškai?
+lietuvių kalba,N,Lithuanian (language),CLOZE,
+liftas,N,lift,IMG,
+ligonis,N,patient; sick person,SYN,deck has pacientas
+ligonių kasa,N,health insurance fund,SKIP,administrative
+linas,N,flax; linen,IMG,materials set; Lithuanian staple
+linksmas,A,cheerful,IMG,pair with liūdnas
+litas,N,litas (former currency),SKIP,obsolete since 2015; deck money card already uses Litai
+litras,N,litre,CLOZE,units set
+liudyti,V,to testify,SKIP,low value
+liudytojas,N,witness,SKIP,low value
+lygus,A,flat; even; equal,IMG,
+lyti,V,to rain,IMG,Lyja. weather verbs
+Man patiko!,PHRASE,I liked it!,PHRASE,dative experiencer
+mada,N,fashion,CLOZE,
+madingas,A,fashionable,IMG,
+maisto produktai,N,groceries,IMG,
+maišas,N,sack,IMG,
+maišelis,N,(plastic) bag,IMG,
+malonu,ADV,pleasant; nice to meet you,PHRASE,Malonu susipažinti
+mama,N,mum,SYN,deck has motina
+manyti,V,to think; reckon,CLOZE,
+mašina,N,car; machine,SYN,deck has automobilis
+matavimosi kabina,N,fitting room,IMG,
+matematika,N,mathematics,IMG,school subjects set
+matuotis,V,to try on,IMG,
+matuoti spaudimą,V,to take blood pressure,SKIP,covered by kraujospūdis
+maudyti,V,to bathe (someone),CLOZE,reflexive pair
+maudytis,V,to bathe; swim,IMG,
+mautis,V,to put on (trousers; gloves),IMG,dressing verbs set
+medalis,N,medal,IMG,
+medicina,N,medicine (field),SKIP,low value
+medvilnė,N,cotton,IMG,materials set
+meistras,N,craftsman; repairman,IMG,
+meras,N,mayor,IMG,
+mergina,N,girl; young woman,IMG,check deck for mergaitė
+metų laikas,N,season,CLOZE,
+mėsa,N,meat,IMG,
+mielai,ADV,gladly,PHRASE,
+mielas,A,dear; sweet,CLOZE,
+migracijos tarnyba,N,migration office,SKIP,administrative
+milimetras,N,millimetre,SKIP,low value
+mineralinis vanduo,N,mineral water,IMG,café set
+ministras,N,minister,IMG,
+ministras pirmininkas,N,prime minister,IMG,
+ministrė,N,minister (fem),SYN,feminine of ministras
+minus,ADV,minus,CLOZE,temperatures
+minutėlė,N,just a minute,PHRASE,Minutėlę!
+miręs,A,dead; deceased,SYN,deck has negyvas
+mm,FRAG,,FRAG,abbreviation artefact
+mokama aikštelė,N,paid car park,SKIP,covered by aikštelė
+mokesčiai,N,taxes; fees,CLOZE,
+mokėjimo kortelė,N,payment card,SYN,deck has kortelė
+mokėti kortele,V,to pay by card,CLOZE,instrumental pattern
+mokinys,N,pupil,IMG,
+mokytojų kambarys,N,staff room,SKIP,low value
+mugė,N,fair (market),IMG,Kaziuko mugė
+muitininkas,N,customs officer,IMG,
+Naujieji metai,N,New Year,IMG,
+Negali būti!,PHRASE,No way!,PHRASE,
+na,INTJ,well,CLOZE,discourse particle
+namai,N,home,CLOZE,namie / namo distinction
+namų šeimininkė,N,housewife,SKIP,low value
+narkomanas,N,drug addict,SKIP,sensitive
+narkotikai,N,drugs,SYN,deck has narkotikas
+naudinga,ADV,useful,CLOZE,
+nebūti,V,not to be,CLOZE,negation + gen
+nedaug,ADV,not much; a little,CLOZE,+gen
+negalėti,V,cannot,CLOZE,
+negazuotas vanduo,N,still water,IMG,
+negerai,ADV,not good,CLOZE,
+negeras,A,bad; not good,SYN,deck has blogas
+negu,CONJ,than,CLOZE,comparison
+neišlaikyti egzamino,V,to fail an exam,CLOZE,negation + gen
+nelabai,ADV,not very,CLOZE,
+nelaimingas atsitikimas,N,accident,IMG,
+nemėgti,V,to dislike,CLOZE,
+nemokamai,ADV,free of charge,PHRASE,sign text
+nepatenkintas,A,dissatisfied,CLOZE,
+nepatikti,V,to not like,CLOZE,dative experiencer
+nervintis,V,to be nervous,CLOZE,
+nesuprasti,V,to not understand,CLOZE,
+nesveikas,A,unwell,CLOZE,
+nešioti,V,to wear; carry about,CLOZE,iterative of nešti
+netekėjusi,A,unmarried (woman),CLOZE,marital status set
+netiesa,N,untrue; a lie,CLOZE,
+netyčia,ADV,by accident,CLOZE,pair with tyčia
+netoli,ADV,not far,CLOZE,+gen
+nevedęs,A,unmarried (man),CLOZE,marital status set
+nežinoti,V,to not know,CLOZE,
+nėščia,A,pregnant,IMG,
+nė vienas,PRON,not a single one,CLOZE,
+niekaip,ADV,in no way,CLOZE,
+nieko,PRON,nothing (gen),CLOZE,negative concord
+nieko baisaus,PHRASE,it's nothing; never mind,PHRASE,
+normalus,A,normal,CLOZE,
+notaras,N,notary,SKIP,low value
+nudegti,V,to get burnt,CLOZE,
+numeris,N,number; hotel room,CLOZE,
+nuolaidų kortelė,N,discount card,CLOZE,low value; 'Ar turite nuolaidų kortelę?' at every checkout
+nuolatinis bilietas,N,season ticket,SKIP,low value
+nuostabu,ADV,wonderful,PHRASE,
+nuostabus,A,wonderful,CLOZE,
+nuovada,N,police station,IMG,
+nustoti,V,to stop (doing),CLOZE,+ infinitive
+o,CONJ,and; but,CLOZE,contrastive o vs ir
+olimpiada,N,Olympics; school olympiad,SKIP,low value
+omletas,N,omelette,SYN,overlaps kiaušinienė
+operacija,N,operation (surgery),IMG,
+operuoti,V,to operate (surgically),SKIP,low value
+optika,N,optician's,IMG,
+orai,N,weather,CLOZE,NB deck oras = air
+orkaitė,N,oven,IMG,
+oro,FRAG,,FRAG,fragment (oro uostas in deck)
+oro kondicionierius,N,air conditioner,IMG,
+paaiškinti,V,to explain,CLOZE,
+pabūti,V,to stay a while,CLOZE,
+padarytas,A,done; made,CLOZE,participle
+padaryti,V,to do; make (perf.),PAIR,list has padaryti; daryti is absent from list
+padėtis,N,situation,CLOZE,
+pagal,PREP,according to,CLOZE,+acc
+pagaliau,ADV,finally,CLOZE,
+pagamintas,A,made (manufactured),CLOZE,pagamintas Lietuvoje
+pagarba,N,respect,SKIP,low value
+pagarbiai,ADV,respectfully (letter closing),PHRASE,letter formula
+pagyvenęs,A,elderly,IMG,
+pagrindinė mokykla,N,basic school,SKIP,administrative
+pailgas,A,oblong,SKIP,low value
+pailsėti,V,to rest (perf.),PAIR,ilsėtis → pailsėti
+pakartoti,V,to repeat,PHRASE,"Pakartokite, prašau"
+pakas,N,pack (colloquial),SKIP,low value
+pakeisti,V,to change (perf.),PAIR,keisti → pakeisti
+pakelis,N,packet,IMG,
+paklodė,N,bed sheet,IMG,
+pakviesti,V,to invite (perf.),PAIR,kviesti → pakviesti
+palaidinė,N,blouse,IMG,
+palata,N,hospital ward,SKIP,low value
+palei,PREP,along,CLOZE,+acc
+palikti,V,to leave (something),CLOZE,
+pamesti,V,to lose,CLOZE,
+panelė,N,miss; young lady,CLOZE,forms of address
+papildomas reisas,N,extra service (transport),SKIP,low value
+papuošalas,N,piece of jewellery,IMG,
+para,N,24 hours; day,CLOZE,
+parama,N,support; aid,SKIP,low value
+parašyti,V,to write (perf.),PAIR,rašyti → parašyti
+pardavėjas,N,shop assistant,IMG,
+pareiti,V,to come back home,CLOZE,
+parengti,V,to prepare,SKIP,low value; ruošti covers
+parkeris,N,fountain pen,SKIP,dated
+parlamentas,N,parliament,SYN,overlaps seimas
+parodyti,V,to show (perf.),PAIR,rodyti → parodyti
+parodos,FRAG,,FRAG,fragment (parodos salė)
+parteris,N,stalls (theatre),SKIP,low value
+partija,N,party (political),CLOZE,
+pasakyti,V,to say (perf.),PAIR,sakyti → pasakyti
+pasidaryti,V,to become; make for oneself,CLOZE,
+pasienis,N,border area,SKIP,low value
+pasilikti,V,to stay,CLOZE,
+pasimatymas,N,date (romantic),CLOZE,
+pasimatyti,V,to meet up,CLOZE,
+pasimatuoti,V,to try on (perf.),PAIR,matuotis → pasimatuoti
+pasivaikščioti,V,to go for a walk,IMG,
+paskaita,N,lecture,IMG,
+paskambinti,V,to phone (perf.),PAIR,skambinti → paskambinti; + dat
+pasukti į dešinę / dešinėn,V,to turn right,CLOZE,directions set
+pasukti į kairę / kairėn,V,to turn left,CLOZE,directions set
+pasų,FRAG,,FRAG,fragment (pasų kontrolė)
+pašalpa,N,benefit (welfare),SKIP,administrative
+paštininkas,N,postman,IMG,
+pašto dėžutė,N,letterbox,IMG,
+pašto kodas,N,postcode,CLOZE,form-filling set
+patenkintas,A,satisfied,CLOZE,
+pati,PRON,herself; self (fem),CLOZE,
+pats,PRON,himself; self (masc),CLOZE,
+pavadinimas,N,name; title,CLOZE,
+pavargti,V,to get tired,CLOZE,
+pavogti,V,to steal (perf.),PAIR,vogti → pavogti
+pažinti,V,to know (a person),CLOZE,pažinti vs žinoti contrast
+pažymėjimas,N,certificate; ID card,CLOZE,
+pensija,N,pension,CLOZE,
+pensininkas,N,pensioner,IMG,
+pernai,ADV,last year,CLOZE,time adverbs set
+persikelti,V,to move (house),CLOZE,
+pertrauka,N,break,CLOZE,
+per lengva,PHRASE,too easy,SKIP,compositional
+pica,N,pizza,IMG,
+pieno produktai,N,dairy products,IMG,
+pietauti,V,to have lunch,IMG,meal verbs set
+pietų pertrauka,N,lunch break,PHRASE,sign text
+pildyti deklaraciją,V,to fill in a declaration,SKIP,administrative
+pinigų keitykla,N,currency exchange,SYN,overlaps valiutos keitykla
+pirma,ADV,first; first (fem),CLOZE,
+pirmiausia,ADV,first of all,CLOZE,
+pirštinės,N,gloves,IMG,
+pyragaitis,N,pastry; small cake,IMG,
+pyragas,N,cake; pie,IMG,
+planšetė,N,tablet (device),IMG,
+planšetinis kompiuteris,N,tablet computer,SYN,= planšetė
+plastikinis,A,plastic,CLOZE,materials adjectives
+plaukioti,V,to swim (around),IMG,iterative of plaukti
+plius,ADV,plus,CLOZE,temperatures
+plovykla,N,car wash,SKIP,low value
+policijos postas,N,police post,SKIP,overlaps nuovada
+poliklinika,N,outpatient clinic,IMG,
+politikas,N,politician,IMG,
+politinis,A,political,SKIP,low value
+ponas,N,Mr; sir,CLOZE,forms of address
+popieriaus lapas,N,sheet of paper,SYN,deck has popierius?
+popierinis,A,paper (adj.),CLOZE,materials adjectives
+poryt,ADV,the day after tomorrow,CLOZE,time adverbs set
+pradinė mokykla,N,primary school,SKIP,administrative
+prancūzų kalba,N,French (language),CLOZE,languages pattern
+prasidėti,V,to begin (intrans.),CLOZE,
+prašymas,N,application; request,CLOZE,
+prašyti,V,to ask for; request,CLOZE,+gen government
+pratimas,N,exercise (task),CLOZE,
+pratybų sąsiuvinis,N,workbook,SKIP,low value
+prausti,V,to wash (someone),CLOZE,reflexive pair
+praustis,V,to wash oneself,IMG,
+prekybos centras,N,shopping centre,IMG,
+priemonės,N,means; aids,SKIP,low value
+priešais,PREP,opposite,CLOZE,+acc
+prieškambaris,N,hallway,IMG,
+prieštarauti,V,to object,SKIP,low value
+priimti į darbą,V,to hire,CLOZE,
+prisiminti,V,to remember,CLOZE,
+pristatyti,V,to introduce; deliver,CLOZE,
+procentai,N,percent,CLOZE,
+produktai,N,products; groceries,SYN,overlaps maisto produktai
+profesorius,N,professor,IMG,
+prokuroras,N,prosecutor,SKIP,low value
+puikiai,ADV,excellently,CLOZE,
+puiku,ADV,great!,PHRASE,
+puikus,A,excellent,CLOZE,
+puodas,N,pot; saucepan,IMG,
+pusantro,NUM,one and a half,CLOZE,
+pusė etato,N,part-time (half a job),SKIP,low value
+pusė kilogramo,N,half a kilogram,CLOZE,shopping quantities
+puslitris,N,half a litre,CLOZE,shopping quantities
+pusryčiauti,V,to have breakfast,IMG,meal verbs set
+pusseserė,N,cousin (female),IMG,family set
+pusvalandis,N,half an hour,CLOZE,
+putojantis vynas,N,sparkling wine,SKIP,low value
+pūsti,V,to blow,IMG,
+radiatorius,N,radiator,IMG,
+rakinti,V,to lock,IMG,imperfective; perfective užrakinti is queue A2-0477
+raktų dirbtuvė,N,key-cutting shop,SKIP,low value
+rankinė,N,handbag,IMG,
+rankinis,N,handball,SKIP,low value
+raštinė,N,office (administrative),SKIP,low value
+registratūra,N,reception (clinic),IMG,
+registruotis,V,to register; book in,CLOZE,
+reikalas,N,matter; business,CLOZE,
+reikmenys,N,supplies,SKIP,low value
+reisas,N,flight; route,CLOZE,
+reklama,N,advertisement,IMG,
+rektorius,N,rector,SKIP,low value
+remontuoti,V,to repair,SYN,check deck for taisyti
+rentgenas,N,X-ray,IMG,
+respiratorius,N,respirator,IMG,GO aesthetic fit
+retkarčiais,ADV,occasionally,CLOZE,frequency adverbs
+riekė,N,slice,IMG,
+rinkti,V,to collect; choose; dial,CLOZE,
+rodyti,V,to show,CLOZE,aspect pair with parodyti
+rusų kalba,N,Russian (language),CLOZE,languages pattern
+rūgpienis,N,soured milk,IMG,
+rūkytas,A,smoked,IMG,cooking participles
+rūsys,N,cellar,IMG,
+Sudie,INTJ,goodbye,PHRASE,
+saldainis,N,sweet; candy,IMG,
+saldumynai,N,sweets (collective),SYN,overlaps saldainis
+salė,N,hall,IMG,
+samtis,N,ladle,IMG,
+sanatorija,N,sanatorium,SKIP,low value
+sandėlis,N,storeroom; warehouse,IMG,
+sankryža,N,crossroads,IMG,
+santechnikas,N,plumber,IMG,
+sausainis,N,biscuit,IMG,
+savęs,PRON,oneself (gen),CLOZE,reflexive pronoun
+savivaldybė,N,municipality,IMG,
+sąlygos,N,conditions,CLOZE,
+sąskaita,N,bill; account,IMG,restaurant bill
+scena,N,stage,SYN,deck teatras card shows stage
+seansas,N,showing (film),CLOZE,
+seimas,N,Seimas (parliament),IMG,
+sektis,V,to go (well); succeed,CLOZE,Kaip sekasi? dative
+semestras,N,semester,SKIP,low value
+seminaras,N,seminar,SKIP,low value
+senamiestis,N,old town,IMG,
+senis,N,old man,SYN,overlaps senelis
+seniūnija,N,ward office,SKIP,administrative
+servetėlė,N,napkin,IMG,
+sesija,N,exam session,SKIP,low value
+sezonas,N,season,SYN,overlaps metų laikas
+sėkmės,INTJ,good luck,PHRASE,
+sėstis,V,to sit down,IMG,posture verbs set
+silkė,N,herring,IMG,
+sintetika,N,synthetic fabric,SKIP,low value
+siuntinys,N,parcel,IMG,
+siuvamoji mašina,N,sewing machine,IMG,
+siuvykla,N,tailor's,SKIP,low value
+siūlas,N,thread,IMG,
+siūti,V,to sew,IMG,
+skaitykla,N,reading room,SKIP,low value
+skaityti,V,to read,IMG,core verb missing from deck
+skalbiamieji milteliai,N,washing powder,IMG,
+skalbykla,N,laundry,SKIP,low value
+skalbyklė,N,washing machine,IMG,
+skardinė,N,can; tin,IMG,
+skelbimas,N,notice; advert,IMG,
+skirtingas,A,different,CLOZE,
+skonis,N,taste,CLOZE,
+skulptūra,N,sculpture,IMG,
+skustis barzdą,V,to shave,IMG,
+slidinėti,V,to ski,IMG,
+sloga,N,head cold; runny nose,IMG,Turiu slogą = I have a cold
+smirdėti,V,to stink,IMG,pair with kvepėti
+snigti,V,to snow,IMG,weather verbs
+socialinio draudimo pažymėjimas,N,social insurance card,SKIP,administrative
+socialinis darbuotojas,N,social worker,SKIP,low value
+socialinis draudimas,N,social insurance,SKIP,administrative
+sofa,N,sofa,IMG,
+solistas,N,soloist,SKIP,low value
+spausdinti,V,to print,IMG,
+spausdintuvas,N,printer,IMG,
+specialistas,N,specialist,CLOZE,
+spektaklis,N,performance (theatre),IMG,
+sportbačiai,N,trainers,IMG,
+sportininkas,N,athlete,IMG,
+sporto,FRAG,,FRAG,fragment (sporto salė)
+sporto prekės,N,sports goods,SKIP,shop department
+sportuoti,V,to do sport,IMG,
+sprogimas,N,explosion,IMG,
+stabdžiai,N,brakes,SKIP,low value
+staiga,ADV,suddenly,CLOZE,
+staklės,N,machine tool,SKIP,low value
+stalo tenisas,N,table tennis,SKIP,low value
+staltiesė,N,tablecloth,IMG,
+statybų aikštelė,N,building site,IMG,
+stiklainis,N,glass jar,IMG,
+stiklinė,N,glass (tumbler),IMG,resolves owner's open stiklas/stiklinė split
+stipendija,N,scholarship; stipend,SKIP,low value
+stojamasis egzaminas,N,entrance exam,SKIP,low value
+suaugusysis,N,adult,SYN,deck has suaugęs
+sudie(v),INTJ,goodbye,SYN,= Sudie
+sugebėti,V,to be able; manage,CLOZE,
+sulūžęs,A,broken,IMG,
+suma,N,sum; amount,CLOZE,
+sunkiai,ADV,with difficulty,CLOZE,
+sunku,ADV,it is difficult,CLOZE,dative experiencer
+suolas,N,bench,IMG,
+susilaužyti,V,to break (a limb),IMG,
+susipažinti,V,to get acquainted,PHRASE,Malonu susipažinti
+susitarti,V,to agree; arrange,CLOZE,
+susižeisti,V,to get hurt,CLOZE,
+sužeisti,V,to injure,CLOZE,
+sveikatos centras,N,health centre,SKIP,overlaps poliklinika
+sveikti,V,to recover,CLOZE,
+šachmatai,N,chess,IMG,
+šakotis,N,šakotis (tree cake),IMG,Lithuanian dish
+šaldiklis,N,freezer,IMG,
+šaldytuvas,N,fridge,IMG,check deck
+šalia,PREP,next to,CLOZE,+gen
+šalmas,N,helmet,IMG,
+šalta,ADV,it is cold,CLOZE,weather impersonal set
+šaltibarščiai,N,cold beetroot soup,IMG,Lithuanian dish
+šaltis,N,cold; frost,IMG,
+šaškės,N,draughts,SKIP,low value
+šaunu,ADV,cool!; great!,PHRASE,
+šaunuolis,N,good lad; well done,PHRASE,Šaunuolis!
+šautuvas,N,rifle,SYN,deck has ginklas
+šeimos gydytojas,N,family doctor,SYN,deck has gydytojas
+šepetys,N,brush,IMG,
+ši,PRON,this (fem),CLOZE,demonstratives set
+šiaip sau,PHRASE,so-so,PHRASE,"answer to ""Kaip sekasi?"""
+šiek tiek,ADV,a little,CLOZE,+gen
+šildymas,N,heating,CLOZE,
+šildytuvas,N,heater,IMG,
+šilkas,N,silk,IMG,materials set
+šilta,ADV,it is warm,CLOZE,weather impersonal set
+šiluma,N,warmth,SYN,deck has karštis (heat)
+šita,PRON,this (fem; colloquial),CLOZE,
+šitas,PRON,this (masc; colloquial),CLOZE,
+šiukšlių konteineris,N,outdoor rubbish container,IMG,indoor bin = šiukšliadėžė
+šiurkštus,A,rough,IMG,pair with švelnus
+šįryt,ADV,this morning,CLOZE,time adverbs set
+šlapinti,V,to wet,SKIP,low value
+šlapti,V,to get wet,CLOZE,
+šluostė,N,cloth; rag,IMG,
+šluoti,V,to sweep,IMG,
+šokėjas,N,dancer,IMG,
+šokoladas,N,chocolate,IMG,
+šukuotis,V,to comb one's hair,IMG,
+švarkas,N,jacket (suit),IMG,
+švelnus,A,soft; gentle,IMG,
+šventės,N,holidays; celebrations,CLOZE,
+šviesiai,ADV,light (of colours),CLOZE,šviesiai mėlynas
+šviesos,FRAG,,FRAG,fragment (šviesoforas?)
+šviesti,V,to shine,IMG,
+švirkštas,N,syringe,SKIP,clinical
+Tikrai?,PHRASE,Really?,PHRASE,
+ta,PRON,that (fem),CLOZE,demonstratives set
+tabletė,N,pill,IMG,
+tada,ADV,then,CLOZE,
+taisykla,N,repair shop,SKIP,low value
+taisyklinga,ADV,correct(ly),CLOZE,
+tamsiai,ADV,dark (of colours),CLOZE,tamsiai mėlynas
+tam tikras,A,certain,CLOZE,
+tapatybės kortelė,N,ID card,SYN,= asmens tapatybės kortelė
+tarti,V,to pronounce,CLOZE,
+taupomoji knygelė,N,savings book,SKIP,dated
+tautybė,N,nationality,CLOZE,form-filling set
+teisėjas,N,judge,IMG,
+teisės,N,rights; law (field),SKIP,low value
+teisingai,ADV,correctly,CLOZE,
+teisininkas,N,lawyer,SYN,deck has advokatas
+teisus,A,right (correct),CLOZE,Tu teisus
+tenisas,N,tennis,IMG,
+teniso aikštynas,N,tennis court,SKIP,low value
+teptukas,N,paintbrush,IMG,
+termometras,N,thermometer,IMG,
+teroristas,N,terrorist,SKIP,sensitive
+terorizmas,N,terrorism,SKIP,sensitive
+testas,N,test,CLOZE,
+tėtė,N,dad,SYN,deck has tėvas
+tiek,ADV,so much,CLOZE,
+ties,PREP,at; by,CLOZE,+inst
+tiesiai,ADV,straight on,CLOZE,directions set
+tikti,V,to suit; fit,CLOZE,dative experiencer
+tinklaraštis,N,blog,SKIP,low value
+tirti,V,to examine; investigate,SKIP,low value
+tyčia,ADV,on purpose,CLOZE,
+tyla,N,silence,SYN,deck has tylus
+tokia,PRON,such (fem),CLOZE,
+toks,PRON,such (masc),CLOZE,
+toli,ADV,far,CLOZE,pair with arti
+tona,N,tonne,SKIP,low value
+tradicija,N,tradition,CLOZE,
+transporto draudimas,N,vehicle insurance,SKIP,administrative
+trečdalis,N,a third,CLOZE,fractions set
+trečia,NUM,third (fem),CLOZE,
+trečioji,NUM,third (fem; definite),SKIP,covered by trečia
+trimestras,N,school term,SKIP,low value
+triukšmas,N,noise,IMG,
+triukšmingas,A,noisy,SYN,deck has garsus (loud)
+troleibusų stotelė,N,trolleybus stop,IMG,Vilnius staple
+trumpai,ADV,briefly,CLOZE,
+truputis,N,a bit,CLOZE,
+trūko vamzdis,PHRASE,a pipe has burst,PHRASE,
+tualetas,N,toilet,IMG,
+tušinukas,N,ballpoint pen,IMG,
+tvarkingas,A,tidy,IMG,
+tvora,N,fence,IMG,
+uniforma,N,uniform,IMG,
+uostas,N,port; harbour,IMG,
+uždaryta,A,closed (sign),PHRASE,sign text
+uždaryti sąskaitą,V,to close an account,SKIP,administrative
+užduotis,N,task,CLOZE,
+užlieti,V,to flood,SKIP,covered by užlieti kaimynus
+užlieti kaimynus,V,to flood the neighbours,PHRASE,household emergency
+užmiršti,V,to forget,CLOZE,
+užpernai,ADV,the year before last,CLOZE,time adverbs set
+užrašų knygelė,N,notebook,IMG,
+užsakyti,V,to order; book,CLOZE,
+užsienis,N,abroad,CLOZE,
+užsirašyti,V,to make an appointment; sign up; note down,CLOZE,užsirašyti pas gydytoją
+užsiregistruoti,V,to register (perf.),PAIR,registruotis → užsiregistruoti
+užvakar,ADV,the day before yesterday,CLOZE,time adverbs set
+ūsai,N,moustache,IMG,
+Velykos,N,Easter,IMG,
+Vogti,V,to steal,CLOZE,aspect pair with pavogti
+vadovė,N,manager (fem),CLOZE,
+vadovėlis,N,textbook,IMG,
+vagis,N,thief,IMG,
+vagystė,N,theft,CLOZE,
+vagonas,N,carriage (train),IMG,
+vaidinti,V,to act; perform,IMG,
+vaikinas,N,young man; boyfriend,IMG,
+vaikų darželis,N,kindergarten,IMG,
+vairas,N,steering wheel,IMG,
+vairuotojo pažymėjimas,N,driving licence,IMG,
+vaisiai,N,fruit,IMG,
+vaistai nuo skausmo,N,painkillers,CLOZE,nuo + gen
+vaistininkas,N,pharmacist,IMG,
+vakarieniauti,V,to have dinner,IMG,meal verbs set
+valgiaraštis,N,menu,IMG,
+valgis,N,dish; meal,CLOZE,
+valgykla,N,canteen,IMG,GO aesthetic fit
+valiuta,N,currency,CLOZE,
+valiutos keitykla,N,currency exchange,IMG,
+valykla,N,dry cleaner's,SKIP,low value
+vamzdis,N,pipe,IMG,
+varškė,N,curd cheese,IMG,
+varškės sūrelis,N,glazed curd snack,IMG,Lithuanian staple
+vartai,N,gate,IMG,
+varžybos,N,competition (sport),CLOZE,
+vasarnamis,N,summer house,IMG,
+vaza,N,vase,IMG,
+važinėti,V,to drive around,CLOZE,iterative of važiuoti
+važiuoti,V,to go (by vehicle),IMG,core verb missing from deck; eiti vs važiuoti
+vedęs,A,married (of a man),CLOZE,marital status set
+veikiantis,A,working; in operation,CLOZE,
+veiksmas,N,action,SKIP,low value
+verslininkas,N,businessman,IMG,
+vežtis,V,to take along (by vehicle),CLOZE,
+vėluoti,V,to be late,CLOZE,
+viduje,ADV,inside (location),CLOZE,
+vidurinė mokykla,N,secondary school,SKIP,administrative
+vidury,PREP,in the middle of,CLOZE,+gen
+vidutinio amžiaus,A,middle-aged,IMG,
+viena,NUM,one (fem),CLOZE,
+vienąkart,ADV,once,CLOZE,
+vienoks,PRON,one kind,SKIP,low value
+viešnia,N,guest (fem),SYN,feminine of svečias
+vieta prie lango,N,window seat,PHRASE,
+vieta prie tako,N,aisle seat,PHRASE,
+vilktis,V,to put on (clothes),IMG,dressing verbs set
+vilna,N,wool,IMG,materials set
+violetinis,A,purple,IMG,colours set
+virdulys,N,kettle,IMG,
+virėjas,N,cook; chef,IMG,
+viryklė,N,cooker; stove,IMG,
+virš,PREP,above,CLOZE,+gen
+viršvalandžiai,N,overtime,SKIP,low value
+virtas,A,boiled,IMG,cooking participles
+visai,ADV,completely; quite,CLOZE,
+viskas,PRON,everything,CLOZE,
+viso,FRAG,,FRAG,fragment (viso gero)
+visokia,PRON,all kinds (fem),CLOZE,
+visoks,PRON,all kinds (masc),CLOZE,
+vykti,V,to take place; travel,CLOZE,
+vynuogės,N,grapes,IMG,
+vyšnios,N,cherries,IMG,
+vokas,N,envelope,IMG,
+vokiečių kalba,N,German (language),CLOZE,languages pattern
+žaidimų aikštelė,N,playground,IMG,
+želė,N,jelly,SKIP,low value
+žemiau,ADV,lower; below,CLOZE,
+žemyn,ADV,downwards,CLOZE,
+žinių portalas,N,news website,SKIP,low value
+žiūrėti televizorių,V,to watch TV,IMG,
+žymėti,V,to mark,CLOZE,

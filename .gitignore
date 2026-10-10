@@ -59,3 +59,6 @@ out_phrases/
 
 # recorder sheets are build artifacts — regenerate with build_recorder.py
 recorder*.html
+
+# third-party source documents (URLs in a2_rebase/README.md)
+sources/*.pdf
