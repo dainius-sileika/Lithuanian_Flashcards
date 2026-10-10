@@ -14,30 +14,21 @@ every time a batch moves, so whatever is at the top is what unblocks the project
 > generate → qa_images.py → build_review.py → owner confirms → push
 > ```
 
-**Last updated: 2026-10-10 · audit fixes pushed; gpt-image-2 probed; A2 re-base sheets built**
+**Last updated: 2026-10-10 · engine switched to gpt-image-2; A2 re-base sheets built**
 
-The clock: `gpt-image-1.5` is switched off on **1 Dec 2026**, `gpt-5-mini` (QA)
-on **11 Dec 2026**. Both are now overridable per run (`GO_IMAGE_MODEL`,
-`GO_QA_MODEL`), so the switch is one environment variable once you decide.
+**Engine switched 2026-10-10:** new art is drawn by `gpt-image-2` and QA'd by
+`gpt-5.6-luna` (both defaults, both verified with a live card). The old models'
+shutdowns on 1 and 11 Dec no longer block anything.
 
 ---
 
-## 1 → Decide the image model: `_proto/gpt-image-2/compare_sheet.jpg`
-
-10 shipped cards (left, gpt-image-1.5) re-run on the same prompts through
-gpt-image-2 (right), ~$0.04 each. House language carries over (paper, red bars,
-flag, workwear, insets, staging). Drift: softer, more naturalistic rendering;
-arrows turned **red** on 3 of 10; inner ruled frame often missing; *karas* lost its
-arrow. Likely fixable in the prompt. **The one-publication test is your eye.**
-Everything after this depends on the answer.
-
-## 2 → Sign off genders: `review_genders_2026-10-10.csv` (63 rows, ~5 min)
+## 1 → Sign off genders: `review_genders_2026-10-10.csv` (63 rows, ~5 min)
 
 60 nouns that shipped with no ♂/♀ plus 3 adjectives, already filled into
 `cards_anki.csv` (uncommitted). Blank `owner_ok` = yes. Once you're done they get
 committed and the `.apkg` rebuilt.
 
-## 3 → Re-base the A2 queue: `a2_rebase/` (start with its README)
+## 2 → Re-base the A2 queue: `a2_rebase/` (start with its README)
 
 - `official_missing_triage.csv`: 910 official-list words the deck lacks, each
   glossed and routed (329 picture, 303 cloze, 41 phrase, 14 aspect pair, 8 swap…).
@@ -47,13 +38,15 @@ committed and the `.apkg` rebuilt.
 - **Caveat:** the official list omits much of the frequent core (*laikas, prašau,
   vėl*), so "off-list" alone is not a reason to cut. The audit overstated this.
 
-## 4 → Decide where the repo lives
+## 3 → Watch the Proton situation
 
 On 10 Oct, Proton Drive rolled a file back ten minutes, spawned eight
 "edit conflict" copies and locked freshly written files until `git add` crashed.
-No data lost; everything here is pushed. Either pause Proton sync during working
-sessions, or keep the git working copy outside Proton and let Proton hold only
-the heavy artwork (`out_deck/`, `out_phrases/`, `_qa/`).
+No data lost; everything here is pushed. Likely trigger: the router was unplugged
+mid-session, so Proton reconciled queued offline edits against newer local ones.
+The folder is now marked *available offline*; keep watching for
+`(# Edit conflict …)` files. If they recur on a stable connection, move the git
+working copy out of Proton.
 
 ---
 

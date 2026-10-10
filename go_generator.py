@@ -45,7 +45,7 @@ procedure** — a technical educational wall chart, not agitprop.
 0.7: text removed from the image; empty red bars; blue coveralls; cards.csv.
 
 DUAL BACKEND — verbosity is inversely proportional to model competence:
-  backend="openai" (default): gpt-image-1.5, quality "medium". Concept-forward.
+  backend="openai" (default): gpt-image-2, quality "medium". Concept-forward.
   backend="zimage" (fallback): Z-Image-Turbo. Decomposed clause. Seeds recorded.
 
 SETUP (keys live in YOUR environment, never in code or chat):
@@ -294,9 +294,11 @@ OPENAI_SIZES = {"1:1": "1024x1024", "3:4": "1024x1536", "4:3": "1536x1024"}
 ZIMAGE_RES   = {"1:1": "1024x1024 ( 1:1 )", "3:4": "864x1152 ( 3:4 )",
                 "4:3": "1536x1024 ( 3:2 )"}
 
-# Override per run with GO_IMAGE_MODEL. gpt-image-1.5 leaves the API on
-# 2026-12-01; the successor is gpt-image-2 (style probe pending).
-OPENAI_MODEL = os.environ.get("GO_IMAGE_MODEL", "gpt-image-1.5")
+# Override per run with GO_IMAGE_MODEL. Default switched 2026-10-10 from
+# gpt-image-1.5 (removed from the API 2026-12-01) to gpt-image-2 after a 10-card
+# style probe the owner approved (_proto/gpt-image-2/compare_sheet.jpg). The 520
+# shipped masters were drawn by gpt-image-1.5; new cards come from gpt-image-2.
+OPENAI_MODEL = os.environ.get("GO_IMAGE_MODEL", "gpt-image-2")
 OPENAI_QUALITY = "medium"
 ZIMAGE_SPACE = "mcp-tools/Z-Image-Turbo"
 ZIMAGE_STEPS = 8
@@ -398,6 +400,12 @@ class GOGenerator:
             print(f"OK  {filename}  seed={seed or 'n/a'}")
         return dest, seed, prompt
 
+    @property
+    def engine_tag(self):
+        """Backend plus model, for the ledger's backend column, so each card
+        records which model drew it (1.5 masters vs gpt-image-2 additions)."""
+        return f"openai/{OPENAI_MODEL}" if self.backend == "openai" else self.backend
+
     @staticmethod
     def open_ledger(path):
         new = not os.path.exists(path)
@@ -433,7 +441,7 @@ def _cli():
     dest, seed, prompt = gen.generate(a.subject, scene=a.scene, text=a.text,
                                       out_dir=a.out)
     f, w = GOGenerator.open_ledger(os.path.join(a.out, "ledger.csv"))
-    w.writerow(["cli", a.subject, seed, a.backend, gen.size,
+    w.writerow(["cli", a.subject, seed, gen.engine_tag, gen.size,
                 os.path.basename(dest), prompt]); f.close()
     print(f"\nsaved -> {dest}")
 

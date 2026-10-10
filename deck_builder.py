@@ -1290,7 +1290,7 @@ def main():
         for key, r, cls in work:
             kw = build_call(key, r, cls)
             dest, seed, prompt = gen.generate(out_dir=a.out, **kw)
-            lw.writerow([key, kw["subject"], seed, gen.backend, gen.size,
+            lw.writerow([key, kw["subject"], seed, gen.engine_tag, gen.size,
                          os.path.basename(dest), prompt]); lf.flush()
             cw.writerow([key, r["lithuanian_TARGET"], r["english"],
                          r["lt_pron"], r["gender"], r["#"], r["category"],

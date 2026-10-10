@@ -30,6 +30,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
   dropped `exact_text` and the exclusion). It now builds from the same arguments.
 - Ledger and card CSVs are written as explicit UTF-8.
 
+### Changed (2026-10-10 — engine switch)
+- **Image model is now `gpt-image-2`** (was `gpt-image-1.5`, removed from the API
+  on 2026-12-01). Chosen after a 10-card side-by-side probe the owner judged more
+  serious and consistent than the originals; `gpt-image-2` has no announced
+  shutdown. The 520 shipped masters stay as drawn by 1.5; new cards come from 2.
+- **QA model is now `gpt-5.6-luna`** (was `gpt-5-mini`, removed 2026-12-11):
+  vision input, not deprecated, cheaper per token.
+- The ledger's backend column now records the model (`openai/gpt-image-2`), so
+  every card's provenance is traceable in a deck drawn by two models.
+- Verified end to end on 2026-10-10: one card generated through `deck_builder.py`
+  and passed by `qa_images.py` on the new models.
+
 ### Changed
 - Model names are overridable per run: `GO_IMAGE_MODEL` (default `gpt-image-1.5`,
   shut down 2026-12-01) and `GO_QA_MODEL` (default `gpt-5-mini`, shut down

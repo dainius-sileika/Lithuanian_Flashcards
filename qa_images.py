@@ -39,8 +39,11 @@ try:
 except ImportError:
     sys.exit("pip install openai")
 
-# Override with GO_QA_MODEL. gpt-5-mini leaves the API on 2026-12-11.
-MODEL = os.environ.get("GO_QA_MODEL", "gpt-5-mini")
+# Override with GO_QA_MODEL. Default switched 2026-10-10 from gpt-5-mini
+# (removed 2026-12-11) to gpt-5.6-luna: vision input, not deprecated, and
+# cheaper ($0.20/$1.20 vs $0.25/$2.00 per M tokens). gpt-5.4-nano was the other
+# candidate but is itself deprecated for 2027-04-01.
+MODEL = os.environ.get("GO_QA_MODEL", "gpt-5.6-luna")
 CACHE = "_qa/qa_cache.json"
 STRESS = {0x0300, 0x0301, 0x0303}
 
