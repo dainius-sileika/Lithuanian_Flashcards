@@ -14,46 +14,57 @@ every time a batch moves, so whatever is at the top is what unblocks the project
 > generate → qa_images.py → build_review.py → owner confirms → push
 > ```
 
-**Last updated: 2026-07-28 · all 57 new cards generated and QA'd; audio fixed**
+**Last updated: 2026-10-10 · audit fixes pushed; gpt-image-2 probed; A2 re-base sheets built**
+
+The clock: `gpt-image-1.5` is switched off on **1 Dec 2026**, `gpt-5-mini` (QA)
+on **11 Dec 2026**. Both are now overridable per run (`GO_IMAGE_MODEL`,
+`GO_QA_MODEL`), so the switch is one environment variable once you decide.
 
 ---
 
-## → Review now: `review/new_cards_review.html`
+## 1 → Decide the image model: `_proto/gpt-image-2/compare_sheet.jpg`
 
-Open in a browser. **All 57 new cards now have both image and audio**, and the
-audio actually plays this time — every clip is a real file in `review/media/`
-rather than an inlined data URI, which is why nothing played before.
+10 shipped cards (left, gpt-image-1.5) re-run on the same prompts through
+gpt-image-2 (right), ~$0.04 each. House language carries over (paper, red bars,
+flag, workwear, insets, staging). Drift: softer, more naturalistic rendering;
+arrows turned **red** on 3 of 10; inner ruled frame often missing; *karas* lost its
+arrow. Likely fixable in the prompt. **The one-publication test is your eye.**
+Everything after this depends on the answer.
 
-Each card shows its format — **question** (enquiry scene + bubble), **utterance**
-(one pane + bubble), **exchange** (two panels, ask then answer) — and its
-automated QA verdict.
+## 2 → Sign off genders: `review_genders_2026-10-10.csv` (63 rows, ~5 min)
 
-**The 16 amber WARN cards are the ones worth your time.** Each carries a line
-reading *"read cold as: …"* — what a vision model guessed the picture meant
-without being told the answer. Where that guess misses the gloss, the picture may
-not be carrying its own weight:
+60 nouns that shipped with no ♂/♀ plus 3 adjectives, already filled into
+`cards_anki.csv` (uncommitted). Blank `owner_ok` = yes. Once you're done they get
+committed and the `.apkg` rebuilt.
 
-| Card | Teaches | Read cold as |
-|---|---|---|
-| A2-0882 | No problem | hello |
-| A2-0883 | Of course | yes |
-| A2-0885 | Here you are | give |
-| A2-0902 | Please repeat | listen |
-| A2-0913 | I am twenty years old | birthday cake |
-| A2-0914 | I have a brother | My name is |
+## 3 → Re-base the A2 queue: `a2_rebase/` (start with its README)
 
-Some of these are fine — *Of course* read as *yes* is close enough that the card
-still works. Others may need a re-roll. **That call is yours**; the machine can
-tell you the picture is ambiguous but not whether the ambiguity matters.
+- `official_missing_triage.csv`: 910 official-list words the deck lacks, each
+  glossed and routed (329 picture, 303 cloze, 41 phrase, 14 aspect pair, 8 swap…).
+  Second-reviewed blind; 15 corrections applied.
+- `queue_offlist.csv`: 478 queue rows not on the list → 315 keep, 139 defer,
+  8 swap, 16 drop.
+- **Caveat:** the official list omits much of the frequent core (*laikas, prašau,
+  vėl*), so "off-list" alone is not a reason to cut. The audit overstated this.
 
-Nothing is failing QA: 0 FAIL, 16 WARN, 41 PASS.
+## 4 → Decide where the repo lives
 
-## → Then, whenever convenient
-
-**`review_A1.csv` — 312 rows** · **`review_A1_duplicates.csv` — 101 rows** ·
-**185 accents** in `accents_todo_kirtis.csv` for manual kirtis.info lookup.
+On 10 Oct, Proton Drive rolled a file back ten minutes, spawned eight
+"edit conflict" copies and locked freshly written files until `git add` crashed.
+No data lost; everything here is pushed. Either pause Proton sync during working
+sessions, or keep the git working copy outside Proton and let Proton hold only
+the heavy artwork (`out_deck/`, `out_phrases/`, `_qa/`).
 
 ---
+
+## Older backlog (untouched since July)
+
+- **16 amber WARN phrase cards** in `review/new_cards_review.html` (e.g. A2-0913
+  *I am twenty years old* read cold as "birthday cake"). Most of these phrases are
+  KEEP in the re-base, so they still matter.
+- **`review_A1.csv`**: 312 rows · **`review_A1_duplicates.csv`**: 101 rows.
+- **`accents_todo_kirtis.csv`**: 185 manual lookups. Skim first: monosyllabic
+  function words (*į, su, ten*) don't need one.
 
 ## Running QA yourself
 
@@ -62,19 +73,4 @@ python3 qa_images.py out_phrases --csv _qa/qa_phrases.csv
 python3 qa_images.py images --budget 300      # the full 520-card deck, in chunks
 ```
 
-It caches by file hash, so re-running only costs for images that changed, and it
-exits non-zero if anything fails — it can gate a generation run.
-
-## Done this round
-
-- **Automated image QA** (`qa_images.py`), replacing per-card eyeballing. It found
-  both defects you spotted plus one you hadn't, and cleared the re-rolls.
-- **The question-mark bug fixed at the root**: no prompt in the engine now
-  contains a condition, because the model ignores them.
-- **Target-word leakage fixed**: a text exception no longer silently disables the
-  no-text rule, and the target is now named as forbidden on every card.
-- **All 57 new images generated**, 11 re-rolled to clean.
-
-## Still to do (not blocked on you)
-
-- P-A's 97 images · cloze on sentence-card backs · fold the 57 into the `.apkg`.
+It caches by file hash, and exits non-zero if anything fails, so it can gate a run.
