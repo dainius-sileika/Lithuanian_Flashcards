@@ -9,9 +9,9 @@ Front = card image (question). Back = image + Lithuanian word, audio, gender,
 grammatical forms (noun genitive / verb principal parts / adjective feminine),
 and the English gloss. Media (webp + mp3) is bundled into the .apkg.
 """
-import genanki, csv, os
+import genanki, csv, hashlib, os
 
-CSS = open("anki/go_theme.css").read()
+CSS = open("anki/go_theme.css", encoding="utf-8").read()
 FRONT = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA</span>'
          '<span class="plate">{{number}}</span></div>{{image}}'
          '<div class="bar bottom"><span>{{category}}</span><span>?</span></div></div>')
@@ -43,7 +43,7 @@ IMG_FMT = os.environ.get("IMG_FMT", "jpg")
 # and keeps universal client compatibility — some Anki builds don't render WebP
 # inside cards. 1024 px is still more than a card ever displays.
 IMG_WIDTH = int(os.environ.get("IMG_WIDTH", "1024"))
-TMP = "_apkg_media"; os.makedirs(TMP, exist_ok=True)
+TMP = "_apkg_media"
 
 def gender_mark(g):
     """1.9 — gender as a symbol, not a letter: blue Mars for masculine, red
@@ -67,13 +67,28 @@ def gender_mark(g):
     return "".join(out)
 
 
+def _sha1(path):
+    h = hashlib.sha1()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
 def media_image(k):
     src = f"images/{k}.webp"
     if not os.path.exists(src):
         return None, None
     ext = "webp" if IMG_FMT == "webp" else "jpg"
     dst = f"{TMP}/{k}.{ext}"
-    if not os.path.exists(dst):
+    # The transcode cache is keyed by the SOURCE's content hash (and the
+    # settings), recorded in a sidecar. Keyed by filename alone, a re-rolled
+    # card silently shipped its old picture.
+    stamp = f"{_sha1(src)} {ext} {IMG_WIDTH}"
+    side = dst + ".src"
+    cached = (os.path.exists(dst) and os.path.exists(side)
+              and open(side).read().strip() == stamp)
+    if not cached:
         from PIL import Image
         im = Image.open(src).convert("RGB")
         if IMG_WIDTH and im.width > IMG_WIDTH:
@@ -83,41 +98,49 @@ def media_image(k):
             im.save(dst, "WEBP", quality=85, method=6)
         else:
             im.save(dst, "JPEG", quality=85, optimize=True, progressive=True)
+        with open(side, "w") as fh:
+            fh.write(stamp)
     return dst, f"{k}.{ext}"
 
-# 1.7.9 — one deck, split into CEFR subdecks. Studying the parent studies
-# everything; clicking A1 or A2 studies just that level. Cards also carry an
-# A1/A2 tag so custom filtered decks stay possible.
-DECKS = {
-    "A1": genanki.Deck(2059400112, "Lietuvių Flashcards::A1"),
-    "A2": genanki.Deck(2059400113, "Lietuvių Flashcards::A2"),
-}
-deck = DECKS["A1"]   # default for rows with no level set
-media = []
-for r in csv.DictReader(open("cards_anki.csv")):
-    k = r['key']; aud = f"audio/{k}.mp3"
-    img_path, img_name = media_image(k)
-    if not img_path:
-        continue
-    audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
-    level = (r.get("level") or "A1").strip() or "A1"
-    target = DECKS.get(level, DECKS["A1"])
-    target.add_note(genanki.Note(
-        model=model,
-        tags=[level],
-        # STABLE identity: guid derived from the card key, never random, so
-        # re-importing an updated deck updates cards in place (keeps study
-        # history / scheduling) instead of creating duplicates.
-        guid=genanki.guid_for(k),
-        fields=[k, r['lithuanian'], r['english'], gender_mark(r['gender']), r['gen_sg'],
-                r['pres3'], r['past3'], r['fem'], r['number'], r['category'],
-                f'<img class="art" src="{img_name}">', audf, r.get('pron', '')]))
-    media.append(img_path)
-    if os.path.exists(aud):
-        media.append(aud)
+def main():
+    os.makedirs(TMP, exist_ok=True)
+    # 1.7.9 — one deck, split into CEFR subdecks. Studying the parent studies
+    # everything; clicking A1 or A2 studies just that level. Cards also carry an
+    # A1/A2 tag so custom filtered decks stay possible.
+    DECKS = {
+        "A1": genanki.Deck(2059400112, "Lietuvių Flashcards::A1"),
+        "A2": genanki.Deck(2059400113, "Lietuvių Flashcards::A2"),
+    }
+    deck = DECKS["A1"]   # default for rows with no level set
+    media = []
+    for r in csv.DictReader(open("cards_anki.csv", encoding="utf-8")):
+        k = r['key']; aud = f"audio/{k}.mp3"
+        img_path, img_name = media_image(k)
+        if not img_path:
+            continue
+        audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
+        level = (r.get("level") or "A1").strip() or "A1"
+        target = DECKS.get(level, DECKS["A1"])
+        target.add_note(genanki.Note(
+            model=model,
+            tags=[level],
+            # STABLE identity: guid derived from the card key, never random, so
+            # re-importing an updated deck updates cards in place (keeps study
+            # history / scheduling) instead of creating duplicates.
+            guid=genanki.guid_for(k),
+            fields=[k, r['lithuanian'], r['english'], gender_mark(r['gender']), r['gen_sg'],
+                    r['pres3'], r['past3'], r['fem'], r['number'], r['category'],
+                    f'<img class="art" src="{img_name}">', audf, r.get('pron', '')]))
+        media.append(img_path)
+        if os.path.exists(aud):
+            media.append(aud)
 
-pkg = genanki.Package(list(DECKS.values())); pkg.media_files = media
-pkg.write_to_file("Lietuviu_Flashcards.apkg")
-counts = {lv: len(d.notes) for lv, d in DECKS.items()}
-print(f"built Lietuviu_Flashcards.apkg — {len(media)} media files | "
-      f"subdecks: {counts}")
+    pkg = genanki.Package(list(DECKS.values())); pkg.media_files = media
+    pkg.write_to_file("Lietuviu_Flashcards.apkg")
+    counts = {lv: len(d.notes) for lv, d in DECKS.items()}
+    print(f"built Lietuviu_Flashcards.apkg — {len(media)} media files | "
+          f"subdecks: {counts}")
+
+
+if __name__ == "__main__":
+    main()

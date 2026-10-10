@@ -13,8 +13,9 @@ here:
   2. A TEXT EXCEPTION SUSPENDS THE NO-TEXT RULE. Passing any `exact_text` swaps
      out the strong NO_TEXT_RULE, which is why the Lithuanian target started
      appearing in bubbles. Cards that need no lettering now pass exact_text=""
-     so the proven rule governs them, and `exclude` names the target as forbidden
-     on every card either way.
+     so the proven rule governs them. `exclude` names the target as forbidden
+     only where lettering is permitted; wordless cards never name it, because
+     naming a forbidden thing primes it.
 
     python3 gen_phrases.py [count] [budget_seconds]
 """
@@ -94,7 +95,8 @@ def main():
         return key, en, q
 
     done = 0
-    with ThreadPoolExecutor(max_workers=6) as ex:
+    # Tier 1 allows 5 images/minute; raise GO_WORKERS on a higher tier.
+    with ThreadPoolExecutor(max_workers=int(os.environ.get("GO_WORKERS", "4"))) as ex:
         futs = {ex.submit(run, j): j for j in jobs}
         for fut in as_completed(futs):
             key, en = futs[fut][0], futs[fut][1]

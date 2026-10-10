@@ -39,7 +39,8 @@ try:
 except ImportError:
     sys.exit("pip install openai")
 
-MODEL = "gpt-5-mini"
+# Override with GO_QA_MODEL. gpt-5-mini leaves the API on 2026-12-11.
+MODEL = os.environ.get("GO_QA_MODEL", "gpt-5-mini")
 CACHE = "_qa/qa_cache.json"
 STRESS = {0x0300, 0x0301, 0x0303}
 
@@ -87,16 +88,39 @@ def file_hash(path):
     return h.hexdigest()[:16]
 
 
+def card_id(r):
+    """One id per card across all three sources: A2 queue rows by `id`
+    ('A2-0882'), the main wordlist by `#` (151 -> '151'), cards_anki by the
+    numeric prefix of `key` ('151_zurnalas' -> '151')."""
+    if (r.get("id") or "").strip():
+        return r["id"].strip()
+    if (r.get("#") or "").strip():
+        return f"{int(r['#']):03d}"
+    if (r.get("key") or "").strip():
+        return r["key"].strip().split("_")[0]
+    if (r.get("number") or "").strip():
+        return f"{int(r['number']):03d}"
+    return ""
+
+
 def load_meta():
+    """Merge every source into one row per card. Earlier sources win per
+    field, but an empty field never hides a filled one — so `card_text` from
+    master_wordlist reaches the text-exception cards even though cards_anki
+    has no such column. (Before 2026-10-10 master_wordlist, keyed `#`, was
+    never indexed at all, and the exception cards failed QA as text leaks.)"""
     meta = {}
     for src in SOURCES:
         if not os.path.exists(src):
             continue
         for r in csv.DictReader(open(src, encoding="utf-8")):
-            for k in ("id", "key", "number"):
-                if r.get(k):
-                    meta.setdefault(str(r[k]).strip(), r)
-                    break
+            cid = card_id(r)
+            if not cid:
+                continue
+            row = meta.setdefault(cid, {})
+            for k, v in r.items():
+                if k and (v or "").strip() and not (row.get(k) or "").strip():
+                    row[k] = v
     return meta
 
 
@@ -173,8 +197,10 @@ def judge(seen, row):
     # of". The card teaches through the cloze sentence on the back, not the
     # picture, so scoring it on guessability would flag the design as a bug.
     if not is_q:
-        guess, gw = seen.get("guess", ""), set(words_of(seen.get("guess", "")))
-        glw = set(words_of(gloss))
+        # crude singular fold, so "vowels" matches "vowel"
+        fold = lambda ws: {w[:-1] if w.endswith("s") and len(w) > 3 else w for w in ws}
+        guess, gw = seen.get("guess", ""), fold(words_of(seen.get("guess", "")))
+        glw = fold(words_of(gloss))
         if gloss and gw and glw and not (gw & glw):
             warns.append(f"guessed {guess!r}, card teaches {gloss!r}")
         if (seen.get("confidence") or "").lower() == "low":
@@ -215,6 +241,7 @@ def main():
     print(f"{len(files)} images | {len(files)-len(todo)} cached | {len(todo)} to inspect")
     t0 = time.time()
     done = 0
+    errors = {}
     if todo:
         with ThreadPoolExecutor(max_workers=8) as ex:
             futs = {ex.submit(describe, client, p): (k, ck) for k, p, ck in todo}
@@ -223,7 +250,9 @@ def main():
                 try:
                     cache[ck] = fut.result()
                 except Exception as e:
-                    cache[ck] = {"error": str(e)[:200]}
+                    # errors are reported but never cached, so a transient API
+                    # failure is retried on the next run instead of sticking
+                    errors[ck] = {"error": str(e)[:200]}
                 done += 1
                 if time.time() - t0 > budget:
                     print(f"  budget reached — {done}/{len(todo)} inspected; rerun to continue")
@@ -236,10 +265,10 @@ def main():
     for f in files:
         key = os.path.splitext(f)[0]
         ck = f"{key}:{file_hash(os.path.join(folder, f))}"
-        seen = cache.get(ck)
+        seen = cache.get(ck) or errors.get(ck)
         if not seen:
             continue
-        row = meta.get(key) or meta.get(key.split("_")[0]) or {}
+        row = meta.get(key.split("_")[0]) or meta.get(key) or {}
         if seen.get("error"):
             fails, warns = [f"QA error: {seen['error']}"], []
         else:

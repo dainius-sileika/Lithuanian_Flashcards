@@ -7,6 +7,35 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 
 ## [Unreleased] — planning
 
+### Fixed (2026-10-10 — pipeline repairs from the September audit)
+- **The "target named as forbidden on every card" claim was wrong** and is now
+  stated correctly. The exclusion clause reaches only cards that are permitted
+  some lettering (text exceptions, labelled cards); the main deck's builder had
+  never passed it at all, and now does. Wordless cards deliberately do *not* name
+  the target — naming a forbidden thing primes it, and `NO_TEXT_RULE` already bans
+  all lettering. 520 cards were generated that way and QA found no target-word leak.
+- **`qa_images.py` false FAILs on the shipped deck.** It never indexed
+  `master_wordlist.csv` (keyed `#`), so the text-exception cards lost their
+  `card_text` budget and failed as text leaks. All three sources are now merged
+  into one row per card. API errors are no longer cached as results.
+- **`build_apkg.py` could ship a stale picture.** The JPEG transcode cache was
+  keyed by filename, so a re-rolled card kept its old transcode. It is now keyed by
+  the source image's content hash. The script also gained a `__main__` guard.
+- **`master_wordlist.csv` carried the old machine-guessed accents** on 491 of 520
+  rows (`šúo` vs `šuõ`). `lt_pron` is now synced from the signed-off `pron` in
+  `cards_anki.csv`, so regenerating from the wordlist no longer reintroduces them.
+- **Z-Image fallback produced portrait cards.** `ZIMAGE_RES` had no `4:3` key; it
+  now maps to the Space's `1536x1024 (3:2)`, the masters' exact size.
+- **`deck_builder.py --dry-run` printed a different prompt from production** (it
+  dropped `exact_text` and the exclusion). It now builds from the same arguments.
+- Ledger and card CSVs are written as explicit UTF-8.
+
+### Changed
+- Model names are overridable per run: `GO_IMAGE_MODEL` (default `gpt-image-1.5`,
+  shut down 2026-12-01) and `GO_QA_MODEL` (default `gpt-5-mini`, shut down
+  2026-12-11). The engine also reads `.openai_key.txt` if no key is in the
+  environment.
+
 ### Added
 - **`qa_images.py` — an automated QA gate for generated art.** Two rules have
   governed this deck from the start and both were being enforced by eye, which is

@@ -230,6 +230,9 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
         if lc:
             segs.append(lc)
     else:
+        # Wordless cards deliberately do NOT name the target word: naming a
+        # forbidden thing primes it, and NO_TEXT_RULE already bans all lettering.
+        # `exclude` therefore only reaches the branches that permit some text.
         segs.append(NO_TEXT_RULE)
         segs.append(BARS_RULE)
     segs.append(FLAG_RULES.get(flag, FLAG_RULE))
@@ -285,9 +288,15 @@ def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
 
 
 OPENAI_SIZES = {"1:1": "1024x1024", "3:4": "1024x1536", "4:3": "1536x1024"}
-ZIMAGE_RES   = {"1:1": "1024x1024 ( 1:1 )", "3:4": "864x1152 ( 3:4 )"}
+# The engine's "4:3" has always meant the 1536x1024 landscape master (which is
+# really 3:2). The Space offers that exact size, so the fallback now matches the
+# masters pixel-for-pixel instead of silently producing portrait (2026-10-10).
+ZIMAGE_RES   = {"1:1": "1024x1024 ( 1:1 )", "3:4": "864x1152 ( 3:4 )",
+                "4:3": "1536x1024 ( 3:2 )"}
 
-OPENAI_MODEL = "gpt-image-1.5"
+# Override per run with GO_IMAGE_MODEL. gpt-image-1.5 leaves the API on
+# 2026-12-01; the successor is gpt-image-2 (style probe pending).
+OPENAI_MODEL = os.environ.get("GO_IMAGE_MODEL", "gpt-image-1.5")
 OPENAI_QUALITY = "medium"
 ZIMAGE_SPACE = "mcp-tools/Z-Image-Turbo"
 ZIMAGE_STEPS = 8
@@ -303,6 +312,8 @@ class GOGenerator:
         self.verbose = verbose
         if backend == "openai":
             from openai import OpenAI
+            if not os.environ.get("OPENAI_API_KEY") and os.path.exists(".openai_key.txt"):
+                os.environ["OPENAI_API_KEY"] = open(".openai_key.txt").read().strip()
             if not os.environ.get("OPENAI_API_KEY") and verbose:
                 print("WARNING: no OPENAI_API_KEY in environment. See SETUP.")
             self._client = OpenAI()
@@ -319,7 +330,7 @@ class GOGenerator:
                 if verbose:
                     print("WARNING: no HF_TOKEN — anonymous quota throttles fast.")
                 self._client = Client(ZIMAGE_SPACE)
-            self.size = ZIMAGE_RES.get(ratio, "864x1152 ( 3:4 )")
+            self.size = ZIMAGE_RES.get(ratio, "1536x1024 ( 3:2 )")
         else:
             raise ValueError(f"unknown backend: {backend}")
 
@@ -391,7 +402,7 @@ class GOGenerator:
     def open_ledger(path):
         new = not os.path.exists(path)
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-        f = open(path, "a", newline="")
+        f = open(path, "a", newline="", encoding="utf-8")
         w = csv.writer(f)
         if new:
             w.writerow(["key", "subject", "seed", "backend", "size", "file", "prompt"])
@@ -401,7 +412,7 @@ class GOGenerator:
     def open_cards(path):
         new = not os.path.exists(path)
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-        f = open(path, "a", newline="")
+        f = open(path, "a", newline="", encoding="utf-8")
         w = csv.writer(f)
         if new:
             w.writerow(["key", "lithuanian", "english", "lt_pron", "gender",

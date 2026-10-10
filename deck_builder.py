@@ -1229,6 +1229,9 @@ def build_call(key, r, cls):
                 glyph=n in GLYPH_ROWS,
                 exact_text=(r.get("card_text", "").strip()
                             or TEXT_EXCEPTION.get(n, "")),
+                # only takes effect on cards that permit lettering (see
+                # go_generator._prompt_openai); wordless cards never name it
+                exclude=r["lithuanian_TARGET"].strip(),
                 flag=FLAG_OVERRIDE.get(n, "lt"),
                 filename=f"{key}.png")
 
@@ -1272,11 +1275,10 @@ def main():
         from go_generator import build_prompt
         for key, r, cls in work:
             kw = build_call(key, r, cls)
-            prompt = build_prompt(kw["subject"], scene=kw["scene"],
-                                  insets=kw["insets"],
-                                  inset_note=kw["inset_note"], text=False,
-                                  people=kw["people"], glyph=kw["glyph"],
-                                  backend=a.backend, flag=kw.get("flag", "lt"))
+            # same kwargs as production, so the dry run prints the real prompt
+            # (it used to drop exact_text and exclude)
+            pk = {k: v for k, v in kw.items() if k != "filename"}
+            prompt = build_prompt(backend=a.backend, **pk)
             print(f"\n--- {key}  [{cls}]  #{r['#']} {r['english']}\n{prompt}")
         return
 
