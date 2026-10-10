@@ -1,0 +1,222 @@
+{
+ "e758fa57": {
+  "round": 1,
+  "card": "024_miestas",
+  "variant": "L_024_miestas"
+ },
+ "073c0878": {
+  "round": 1,
+  "card": "024_miestas",
+  "variant": "B_024_miestas"
+ },
+ "be095f3b": {
+  "round": 1,
+  "card": "024_miestas",
+  "variant": "orig"
+ },
+ "266acef1": {
+  "round": 1,
+  "card": "024_miestas",
+  "variant": "A_024_miestas"
+ },
+ "cbea3afe": {
+  "round": 2,
+  "card": "366_eiti",
+  "variant": "B_366_eiti"
+ },
+ "a0e7740d": {
+  "round": 2,
+  "card": "366_eiti",
+  "variant": "orig"
+ },
+ "a8743245": {
+  "round": 2,
+  "card": "366_eiti",
+  "variant": "C_366_eiti"
+ },
+ "cc7a5c6a": {
+  "round": 2,
+  "card": "366_eiti",
+  "variant": "A_366_eiti"
+ },
+ "a28cfd0a": {
+  "round": 3,
+  "card": "113_gydytojas",
+  "variant": "orig"
+ },
+ "0a0495ce": {
+  "round": 3,
+  "card": "113_gydytojas",
+  "variant": "L_113_gydytojas"
+ },
+ "91097704": {
+  "round": 3,
+  "card": "113_gydytojas",
+  "variant": "A_113_gydytojas"
+ },
+ "5bd08653": {
+  "round": 4,
+  "card": "001_suo",
+  "variant": "A_001_suo"
+ },
+ "d181983d": {
+  "round": 4,
+  "card": "001_suo",
+  "variant": "orig"
+ },
+ "96ba10b7": {
+  "round": 5,
+  "card": "137_vestuves",
+  "variant": "orig"
+ },
+ "742aaf93": {
+  "round": 5,
+  "card": "137_vestuves",
+  "variant": "L_137_vestuves"
+ },
+ "c7ae80f8": {
+  "round": 5,
+  "card": "137_vestuves",
+  "variant": "B_137_vestuves"
+ },
+ "e6f80e54": {
+  "round": 5,
+  "card": "137_vestuves",
+  "variant": "A_137_vestuves"
+ },
+ "17df0101": {
+  "round": 6,
+  "card": "405_pjauti",
+  "variant": "A_405_pjauti"
+ },
+ "27fd5e1a": {
+  "round": 6,
+  "card": "405_pjauti",
+  "variant": "orig"
+ },
+ "e07330f5": {
+  "round": 7,
+  "card": "066_paltas",
+  "variant": "A_066_paltas"
+ },
+ "20964f9e": {
+  "round": 7,
+  "card": "066_paltas",
+  "variant": "L_066_paltas"
+ },
+ "2bc70be8": {
+  "round": 7,
+  "card": "066_paltas",
+  "variant": "C_066_paltas"
+ },
+ "9a2346d8": {
+  "round": 7,
+  "card": "066_paltas",
+  "variant": "orig"
+ },
+ "808aa859": {
+  "round": 7,
+  "card": "066_paltas",
+  "variant": "B_066_paltas"
+ },
+ "63d20e6b": {
+  "round": 8,
+  "card": "108_minia",
+  "variant": "A_108_minia"
+ },
+ "f3f8241f": {
+  "round": 8,
+  "card": "108_minia",
+  "variant": "L_108_minia"
+ },
+ "e74b1af6": {
+  "round": 8,
+  "card": "108_minia",
+  "variant": "B_108_minia"
+ },
+ "f1723b39": {
+  "round": 8,
+  "card": "108_minia",
+  "variant": "orig"
+ },
+ "f337de99": {
+  "round": 9,
+  "card": "036_mokykla",
+  "variant": "orig"
+ },
+ "52b92051": {
+  "round": 9,
+  "card": "036_mokykla",
+  "variant": "A_036_mokykla"
+ },
+ "df65e37a": {
+  "round": 10,
+  "card": "211_lova",
+  "variant": "orig"
+ },
+ "f0c1151b": {
+  "round": 10,
+  "card": "211_lova",
+  "variant": "A_211_lova"
+ },
+ "b4720052": {
+  "round": 11,
+  "card": "090_seima",
+  "variant": "orig"
+ },
+ "5d36148f": {
+  "round": 11,
+  "card": "090_seima",
+  "variant": "A_090_seima"
+ },
+ "da897f6f": {
+  "round": 11,
+  "card": "090_seima",
+  "variant": "L_090_seima"
+ },
+ "b3c359ec": {
+  "round": 12,
+  "card": "147_karas",
+  "variant": "orig"
+ },
+ "239e58ba": {
+  "round": 12,
+  "card": "147_karas",
+  "variant": "A_147_karas"
+ },
+ "1772dd2d": {
+  "round": 13,
+  "card": "376_valgyti",
+  "variant": "L_376_valgyti"
+ },
+ "de3f9a3a": {
+  "round": 13,
+  "card": "376_valgyti",
+  "variant": "orig"
+ },
+ "07a2bd93": {
+  "round": 13,
+  "card": "376_valgyti",
+  "variant": "A_376_valgyti"
+ },
+ "66cf61d5": {
+  "round": 14,
+  "card": "050_turgus",
+  "variant": "A_050_turgus"
+ },
+ "9caf1a49": {
+  "round": 14,
+  "card": "050_turgus",
+  "variant": "orig"
+ },
+ "ebf954f7": {
+  "round": 15,
+  "card": "454_letas",
+  "variant": "A_454_letas"
+ },
+ "b1721d6c": {
+  "round": 15,
+  "card": "454_letas",
+  "variant": "orig"
+ }
+}
