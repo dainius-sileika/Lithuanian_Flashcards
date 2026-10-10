@@ -67,3 +67,5 @@ sources/*.pdf
 style_lab/**/*.png
 style_lab/**/*.jpg
 style_lab/**/.DS_Store
+style_lab/**/standalone/GO_style_survey.html
+style_lab/**/*.zip

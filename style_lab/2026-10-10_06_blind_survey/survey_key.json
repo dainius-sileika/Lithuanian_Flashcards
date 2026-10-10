@@ -1,0 +1,575 @@
+{
+ "1": {
+  "card": "024_miestas",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "F",
+    "variant": "F4_sun_miestas",
+    "cell": 1
+   },
+   {
+    "letter": "D",
+    "variant": "sun_old",
+    "cell": 2
+   },
+   {
+    "letter": "C",
+    "variant": "F4bleed_g2_miestas",
+    "cell": 3
+   },
+   {
+    "letter": "G",
+    "variant": "F3_sun",
+    "cell": 4
+   },
+   {
+    "letter": "E",
+    "variant": "orig",
+    "cell": 5
+   },
+   {
+    "letter": "H",
+    "variant": "F4_g2_miestas",
+    "cell": 6
+   },
+   {
+    "letter": "A",
+    "variant": "F4ref_g2_miestas",
+    "cell": 7
+   },
+   {
+    "letter": "B",
+    "variant": "F3_g2",
+    "cell": 8
+   }
+  ]
+ },
+ "2": {
+  "card": "113_gydytojas",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "D",
+    "variant": "F4_15_gydytojas",
+    "cell": 1
+   },
+   {
+    "letter": "G",
+    "variant": "F3_g2",
+    "cell": 2
+   },
+   {
+    "letter": "B",
+    "variant": "F4_g2_gydytojas",
+    "cell": 3
+   },
+   {
+    "letter": "C",
+    "variant": "F3_sun",
+    "cell": 4
+   },
+   {
+    "letter": "F",
+    "variant": "orig",
+    "cell": 5
+   },
+   {
+    "letter": "A",
+    "variant": "g2_old",
+    "cell": 6
+   },
+   {
+    "letter": "H",
+    "variant": "F4dun_g2_gydytojas",
+    "cell": 7
+   },
+   {
+    "letter": "E",
+    "variant": "F4_sun_gydytojas",
+    "cell": 8
+   }
+  ]
+ },
+ "3": {
+  "card": "366_eiti",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "E",
+    "variant": "F1_sunlow",
+    "cell": 1
+   },
+   {
+    "letter": "B",
+    "variant": "F4_g2_eiti",
+    "cell": 2
+   },
+   {
+    "letter": "F",
+    "variant": "orig",
+    "cell": 3
+   },
+   {
+    "letter": "D",
+    "variant": "F4_sun_eiti",
+    "cell": 4
+   },
+   {
+    "letter": "G",
+    "variant": "F4arrow_sun_eiti",
+    "cell": 5
+   },
+   {
+    "letter": "C",
+    "variant": "F4arrow_g2_eiti",
+    "cell": 6
+   },
+   {
+    "letter": "A",
+    "variant": "F3_g2",
+    "cell": 7
+   }
+  ]
+ },
+ "4": {
+  "card": "001_suo",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "D",
+    "variant": "orig",
+    "cell": 1
+   },
+   {
+    "letter": "B",
+    "variant": "F4_sun_suo",
+    "cell": 2
+   },
+   {
+    "letter": "G",
+    "variant": "F4dun_g2_suo",
+    "cell": 3
+   },
+   {
+    "letter": "E",
+    "variant": "F4_flare_suo",
+    "cell": 4
+   },
+   {
+    "letter": "C",
+    "variant": "g2_old",
+    "cell": 5
+   },
+   {
+    "letter": "A",
+    "variant": "F4_g2_suo",
+    "cell": 6
+   },
+   {
+    "letter": "F",
+    "variant": "F4_g2low_suo",
+    "cell": 7
+   }
+  ]
+ },
+ "5": {
+  "card": "041_klubas",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "D",
+    "variant": "F4ovr_g2_klubas",
+    "cell": 1
+   },
+   {
+    "letter": "F",
+    "variant": "F3_sun",
+    "cell": 2
+   },
+   {
+    "letter": "G",
+    "variant": "orig",
+    "cell": 3
+   },
+   {
+    "letter": "C",
+    "variant": "F4ref_sun_klubas",
+    "cell": 4
+   },
+   {
+    "letter": "B",
+    "variant": "F4_sun_klubas",
+    "cell": 5
+   },
+   {
+    "letter": "H",
+    "variant": "F4ovr_sun_klubas",
+    "cell": 6
+   },
+   {
+    "letter": "A",
+    "variant": "sun_old",
+    "cell": 7
+   },
+   {
+    "letter": "E",
+    "variant": "F4_g2_klubas",
+    "cell": 8
+   }
+  ]
+ },
+ "6": {
+  "card": "090_seima",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "H",
+    "variant": "F4_g2b_seima",
+    "cell": 1
+   },
+   {
+    "letter": "B",
+    "variant": "F4_15_seima",
+    "cell": 2
+   },
+   {
+    "letter": "D",
+    "variant": "F3_g2",
+    "cell": 3
+   },
+   {
+    "letter": "A",
+    "variant": "F4_sun_seima",
+    "cell": 4
+   },
+   {
+    "letter": "G",
+    "variant": "orig",
+    "cell": 5
+   },
+   {
+    "letter": "F",
+    "variant": "F3_sun",
+    "cell": 6
+   },
+   {
+    "letter": "C",
+    "variant": "F4_g2_seima",
+    "cell": 7
+   },
+   {
+    "letter": "E",
+    "variant": "F2_g2",
+    "cell": 8
+   }
+  ]
+ },
+ "7": {
+  "card": "066_paltas",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "A",
+    "variant": "F4_sun_paltas",
+    "cell": 1
+   },
+   {
+    "letter": "G",
+    "variant": "F4dun_sun_paltas",
+    "cell": 2
+   },
+   {
+    "letter": "D",
+    "variant": "F1_sun",
+    "cell": 3
+   },
+   {
+    "letter": "C",
+    "variant": "F4_flare_paltas",
+    "cell": 4
+   },
+   {
+    "letter": "B",
+    "variant": "F3_sun",
+    "cell": 5
+   },
+   {
+    "letter": "E",
+    "variant": "orig",
+    "cell": 6
+   },
+   {
+    "letter": "F",
+    "variant": "F4_g2_paltas",
+    "cell": 7
+   }
+  ]
+ },
+ "8": {
+  "card": "405_pjauti",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "B",
+    "variant": "F4_g2_pjauti",
+    "cell": 1
+   },
+   {
+    "letter": "D",
+    "variant": "sun_B",
+    "cell": 2
+   },
+   {
+    "letter": "F",
+    "variant": "F4_g2low_pjauti",
+    "cell": 3
+   },
+   {
+    "letter": "G",
+    "variant": "orig",
+    "cell": 4
+   },
+   {
+    "letter": "E",
+    "variant": "g2_A",
+    "cell": 5
+   },
+   {
+    "letter": "C",
+    "variant": "F3_g2",
+    "cell": 6
+   },
+   {
+    "letter": "A",
+    "variant": "F4_sun_pjauti",
+    "cell": 7
+   },
+   {
+    "letter": "H",
+    "variant": "F4bleed_g2_pjauti",
+    "cell": 8
+   }
+  ]
+ },
+ "9": {
+  "card": "108_minia",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "A",
+    "variant": "F4_sun_minia",
+    "cell": 1
+   },
+   {
+    "letter": "B",
+    "variant": "F3_sun",
+    "cell": 2
+   },
+   {
+    "letter": "G",
+    "variant": "orig",
+    "cell": 3
+   },
+   {
+    "letter": "E",
+    "variant": "F4ref_sun_minia",
+    "cell": 4
+   },
+   {
+    "letter": "D",
+    "variant": "F3_g2",
+    "cell": 5
+   },
+   {
+    "letter": "C",
+    "variant": "F4_g2_minia",
+    "cell": 6
+   },
+   {
+    "letter": "F",
+    "variant": "F4ref_g2_minia",
+    "cell": 7
+   }
+  ]
+ },
+ "10": {
+  "card": "036_mokykla",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "F",
+    "variant": "orig",
+    "cell": 1
+   },
+   {
+    "letter": "E",
+    "variant": "F3_g2",
+    "cell": 2
+   },
+   {
+    "letter": "G",
+    "variant": "F4_sun_mokykla",
+    "cell": 3
+   },
+   {
+    "letter": "A",
+    "variant": "flare_old",
+    "cell": 4
+   },
+   {
+    "letter": "B",
+    "variant": "F4bleed_g2_mokykla",
+    "cell": 5
+   },
+   {
+    "letter": "C",
+    "variant": "F1_g2",
+    "cell": 6
+   },
+   {
+    "letter": "H",
+    "variant": "F4_flare_mokykla",
+    "cell": 7
+   },
+   {
+    "letter": "D",
+    "variant": "F4_g2_mokykla",
+    "cell": 8
+   }
+  ]
+ },
+ "11": {
+  "card": "211_lova",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "A",
+    "variant": "F4_g2low_lova",
+    "cell": 1
+   },
+   {
+    "letter": "G",
+    "variant": "F4_flare_lova",
+    "cell": 2
+   },
+   {
+    "letter": "C",
+    "variant": "F4_15_lova",
+    "cell": 3
+   },
+   {
+    "letter": "E",
+    "variant": "F4_sun_lova",
+    "cell": 4
+   },
+   {
+    "letter": "D",
+    "variant": "F4dun_g2_lova",
+    "cell": 5
+   },
+   {
+    "letter": "B",
+    "variant": "F4_g2_lova",
+    "cell": 6
+   },
+   {
+    "letter": "F",
+    "variant": "orig",
+    "cell": 7
+   }
+  ]
+ },
+ "12": {
+  "card": "113_gydytojas",
+  "repeat_of": 2,
+  "cells": [
+   {
+    "letter": "G",
+    "variant": "F4_g2_gydytojas",
+    "cell": 1
+   },
+   {
+    "letter": "B",
+    "variant": "g2_old",
+    "cell": 2
+   },
+   {
+    "letter": "F",
+    "variant": "F4dun_g2_gydytojas",
+    "cell": 3
+   },
+   {
+    "letter": "E",
+    "variant": "orig",
+    "cell": 4
+   },
+   {
+    "letter": "D",
+    "variant": "F4_15_gydytojas",
+    "cell": 5
+   },
+   {
+    "letter": "H",
+    "variant": "F3_sun",
+    "cell": 6
+   },
+   {
+    "letter": "A",
+    "variant": "F3_g2",
+    "cell": 7
+   },
+   {
+    "letter": "C",
+    "variant": "F4_sun_gydytojas",
+    "cell": 8
+   }
+  ]
+ },
+ "13": {
+  "card": "137_vestuves",
+  "repeat_of": null,
+  "cells": [
+   {
+    "letter": "A",
+    "variant": "F4_sunb_vestuves",
+    "cell": 1
+   },
+   {
+    "letter": "F",
+    "variant": "F4_sun_vestuves",
+    "cell": 2
+   },
+   {
+    "letter": "G",
+    "variant": "F4ref_sun_vestuves",
+    "cell": 3
+   },
+   {
+    "letter": "C",
+    "variant": "F3_sun",
+    "cell": 4
+   },
+   {
+    "letter": "B",
+    "variant": "F4_g2_vestuves",
+    "cell": 5
+   },
+   {
+    "letter": "H",
+    "variant": "F4_15_vestuves",
+    "cell": 6
+   },
+   {
+    "letter": "E",
+    "variant": "F3_g2",
+    "cell": 7
+   },
+   {
+    "letter": "D",
+    "variant": "orig",
+    "cell": 8
+   }
+  ]
+ }
+}

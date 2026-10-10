@@ -1,0 +1,829 @@
+{
+ "owner": "Dainius",
+ "rounds": [
+  {
+   "round": 1,
+   "card": "024_miestas",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "In general, a criteria I perhaps forgot to mention, is that every card must be beautiful",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "orig",
+     "ship": true,
+     "comment": "Good simple post feel; very close to GO aesthetic",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "F4ref_g2_miestas",
+     "ship": true,
+     "comment": "also simple, but still beautiful - probably closest to the GO aesthetic; ",
+     "initial_pos": 4
+    },
+    {
+     "rank": 3,
+     "variant": "F3_g2",
+     "ship": true,
+     "comment": "Also has the GO feel, slightly grimmer but accurately soviet",
+     "initial_pos": 8
+    },
+    {
+     "rank": 4,
+     "variant": "F4bleed_g2_miestas",
+     "ship": true,
+     "comment": "Maybe too beautiful, too detailed - still, I kind of love it, and whatever this is, save the prompt for a detailed soviet art aesthetic. This card, and card number 3, ranked about it, are a tossup ",
+     "initial_pos": 2
+    },
+    {
+     "rank": 5,
+     "variant": "sun_old",
+     "ship": true,
+     "comment": "Clearly city, beautiful - doesn't feel soviet exactly, kid of feels like 1990 to me - still, quite good",
+     "initial_pos": 5
+    },
+    {
+     "rank": 6,
+     "variant": "F4_g2_miestas",
+     "ship": false,
+     "comment": "GO feel, but a bit dark, high contrast, but somehow is off to me",
+     "initial_pos": 3
+    },
+    {
+     "rank": 7,
+     "variant": "F3_sun",
+     "ship": false,
+     "comment": "emphasis is off, the couple in the front - however, the people are well done",
+     "initial_pos": 7
+    },
+    {
+     "rank": 8,
+     "variant": "F4_sun_miestas",
+     "ship": false,
+     "comment": "Not GO enough to me - there should be a \"nostalgic\" feeling in all of these images",
+     "initial_pos": 6
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "card": "113_gydytojas",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F4_15_gydytojas",
+     "ship": true,
+     "comment": "Not too detailed, exactly has the GO feel; could be slightly more yellow - this might be exactly it",
+     "initial_pos": 7
+    },
+    {
+     "rank": 2,
+     "variant": "g2_old",
+     "ship": true,
+     "comment": "Good, serious, actors are soviet-handome, but could be more yellow",
+     "initial_pos": 6
+    },
+    {
+     "rank": 3,
+     "variant": "F4dun_g2_gydytojas",
+     "ship": true,
+     "comment": "Yellow colour is good - detailing and shading is a bit much, but still good",
+     "initial_pos": 1
+    },
+    {
+     "rank": 4,
+     "variant": "F3_g2",
+     "ship": true,
+     "comment": "slightly more yellow, detail and shading is bang on; hospital needs to have a cross on the front, even in soviet times",
+     "initial_pos": 8
+    },
+    {
+     "rank": 5,
+     "variant": "F4_g2_gydytojas",
+     "ship": false,
+     "comment": "Pretty good, good inserts, could be a bit more yellow",
+     "initial_pos": 5
+    },
+    {
+     "rank": 6,
+     "variant": "F3_sun",
+     "ship": false,
+     "comment": "Less interesting, not yellow enough, feeling is off - somehow too flat, or bland",
+     "initial_pos": 3
+    },
+    {
+     "rank": 7,
+     "variant": "F4_sun_gydytojas",
+     "ship": false,
+     "comment": "feeling is off, not sure ",
+     "initial_pos": 4
+    },
+    {
+     "rank": 8,
+     "variant": "orig",
+     "ship": false,
+     "comment": "Too happy, too bright, need more yellow; i know this is from the original set",
+     "initial_pos": 2
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "card": "366_eiti",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "So, body proportions need to be correct",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F1_sunlow",
+     "ship": true,
+     "comment": "movement insert of just legs walking isnt' great, better to have the man standing, the walking, as in the others; but otherwise, excellent",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "F4arrow_sun_eiti",
+     "ship": true,
+     "comment": "good colour",
+     "initial_pos": 6
+    },
+    {
+     "rank": 3,
+     "variant": "F4_sun_eiti",
+     "ship": false,
+     "comment": "Colours aren't the best, there are images ranked lower with better colours, but the body proportions are correct",
+     "initial_pos": 5
+    },
+    {
+     "rank": 4,
+     "variant": "F3_g2",
+     "ship": false,
+     "comment": "body proportions off, but colour, feeling, is good",
+     "initial_pos": 3
+    },
+    {
+     "rank": 5,
+     "variant": "F4_g2_eiti",
+     "ship": false,
+     "comment": "Drawing is good but body proportions are off and therefore surreal; would be in the top 3 otherwise",
+     "initial_pos": 2
+    },
+    {
+     "rank": 6,
+     "variant": "F4arrow_g2_eiti",
+     "ship": false,
+     "comment": "Body proportions are off",
+     "initial_pos": 7
+    },
+    {
+     "rank": 7,
+     "variant": "orig",
+     "ship": false,
+     "comment": "Too white; also, too cartoony",
+     "initial_pos": 4
+    }
+   ]
+  },
+  {
+   "round": 4,
+   "card": "001_suo",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F4dun_g2_suo",
+     "ship": true,
+     "comment": "A bit too yellow, but I looove the yellow. Toss up between the top two",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "F4_g2_suo",
+     "ship": true,
+     "comment": "Feels like the figures and humans are exactly GO style",
+     "initial_pos": 5
+    },
+    {
+     "rank": 3,
+     "variant": "g2_old",
+     "ship": false,
+     "comment": "Good on the yellow, shading is good, has a feeling",
+     "initial_pos": 4
+    },
+    {
+     "rank": 4,
+     "variant": "F4_sun_suo",
+     "ship": false,
+     "comment": "likewise, has a feeling, could be a bit more yellow",
+     "initial_pos": 6
+    },
+    {
+     "rank": 5,
+     "variant": "F4_g2low_suo",
+     "ship": false,
+     "comment": "True GO, but too simple now, needs more feeling",
+     "initial_pos": 2
+    },
+    {
+     "rank": 6,
+     "variant": "orig",
+     "ship": false,
+     "comment": "Too painted, or cartoony",
+     "initial_pos": 3
+    },
+    {
+     "rank": 7,
+     "variant": "F4_flare_suo",
+     "ship": false,
+     "comment": "AI glitch in the legs in the insert, weird airbrush feeling in the dogs face",
+     "initial_pos": 7
+    }
+   ]
+  },
+  {
+   "round": 5,
+   "card": "041_klubas",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "orig",
+     "ship": true,
+     "comment": "OG GO - simple, true, and Lithuanians tell me that they would go to places like this actually",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "F4ref_sun_klubas",
+     "ship": true,
+     "comment": "Pretty good, but needs to be chut chut more soviet",
+     "initial_pos": 2
+    },
+    {
+     "rank": 3,
+     "variant": "F3_sun",
+     "ship": false,
+     "comment": "Good GO drawing, but target word looks like dancing now, and not club - but the aesthetic is very good. Chut chut a bit more soviet. Would almost ship",
+     "initial_pos": 5
+    },
+    {
+     "rank": 4,
+     "variant": "F4_g2_klubas",
+     "ship": false,
+     "comment": "Not bad, but the men in the front whose faces we see all feel the same, and there's an uncanny feeling. Well populated, wooden is good, GO feeling",
+     "initial_pos": 7
+    },
+    {
+     "rank": 5,
+     "variant": "F4ovr_g2_klubas",
+     "ship": false,
+     "comment": "Too sparse in characters for the detail",
+     "initial_pos": 3
+    },
+    {
+     "rank": 6,
+     "variant": "F4ovr_sun_klubas",
+     "ship": false,
+     "comment": "Somehow feels staged - but pretty good",
+     "initial_pos": 4
+    },
+    {
+     "rank": 7,
+     "variant": "F4_sun_klubas",
+     "ship": false,
+     "comment": "Also feels too american",
+     "initial_pos": 6
+    },
+    {
+     "rank": 8,
+     "variant": "sun_old",
+     "ship": false,
+     "comment": "Automatic fail, doesn't feel soviet - this is america",
+     "initial_pos": 8
+    }
+   ]
+  },
+  {
+   "round": 6,
+   "card": "090_seima",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "The men should be a austere but soviet-handsome",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F2_g2",
+     "ship": true,
+     "comment": "Excellent colours, traditional values, gender roles - man in handsome, woman is handsome enough",
+     "initial_pos": 3
+    },
+    {
+     "rank": 2,
+     "variant": "F4_sun_seima",
+     "ship": true,
+     "comment": "Just good composition, etc, feeling is right",
+     "initial_pos": 7
+    },
+    {
+     "rank": 3,
+     "variant": "F3_sun",
+     "ship": true,
+     "comment": "Feeling is perfect, but the man and woman need to be chut chut a little bit more handsome - would be a top candidate, otherwise",
+     "initial_pos": 1
+    },
+    {
+     "rank": 4,
+     "variant": "F3_g2",
+     "ship": true,
+     "comment": "Feeling is perfect, but the man and woman need to be chut chut a little bit more handsome - would be a top candidate, otherwise",
+     "initial_pos": 4
+    },
+    {
+     "rank": 5,
+     "variant": "F4_g2b_seima",
+     "ship": false,
+     "comment": "Feeling is pretty accurate, just slightly more handsome",
+     "initial_pos": 2
+    },
+    {
+     "rank": 6,
+     "variant": "F4_g2_seima",
+     "ship": false,
+     "comment": "Feeling is pretty accurate, just slightly more handsome",
+     "initial_pos": 6
+    },
+    {
+     "rank": 7,
+     "variant": "F4_15_seima",
+     "ship": false,
+     "comment": "Too cartoony and simple, proportions are weird",
+     "initial_pos": 5
+    },
+    {
+     "rank": 8,
+     "variant": "orig",
+     "ship": false,
+     "comment": "This is the first one, but it's a bit too over the top - would be perfect if it were toned down a bit",
+     "initial_pos": 8
+    }
+   ]
+  },
+  {
+   "round": 7,
+   "card": "066_paltas",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F1_sun",
+     "ship": true,
+     "comment": "Colour is good, man is with a cap, target word is clear, enough yellowing",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "F4_sun_paltas",
+     "ship": true,
+     "comment": "Colour is good, man is with a cap, target word is clear, yellowing on the line",
+     "initial_pos": 4
+    },
+    {
+     "rank": 3,
+     "variant": "F4_flare_paltas",
+     "ship": false,
+     "comment": "Not bad, but I prefer the gaze to be slightly off the viewer. This is GO, but perhaps a bit plain feeling, doesn't has the nostalgia exactly",
+     "initial_pos": 2
+    },
+    {
+     "rank": 4,
+     "variant": "F3_sun",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 7
+    },
+    {
+     "rank": 5,
+     "variant": "F4dun_sun_paltas",
+     "ship": false,
+     "comment": "Colours and image not bad, but man is too serious and cunning, clothing fits a little too well",
+     "initial_pos": 3
+    },
+    {
+     "rank": 6,
+     "variant": "F4_g2_paltas",
+     "ship": false,
+     "comment": "Good feeling all around, but feels like the proportions are off?",
+     "initial_pos": 6
+    },
+    {
+     "rank": 7,
+     "variant": "orig",
+     "ship": false,
+     "comment": "Too sparse, not beautiful enough, not enough yellow, feels incomplete",
+     "initial_pos": 5
+    }
+   ]
+  },
+  {
+   "round": 8,
+   "card": "405_pjauti",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "It seems like GO + detail and feeling, yellow, are what makes for success",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F4bleed_g2_pjauti",
+     "ship": true,
+     "comment": "Beautiful, has the feeling, even if it's more detailed than usual GO; leg proportions are off, though",
+     "initial_pos": 3
+    },
+    {
+     "rank": 2,
+     "variant": "F4_g2_pjauti",
+     "ship": true,
+     "comment": "Good balance of detail and austerity - toss up between this image and the first one; also feels like leg proportions are off",
+     "initial_pos": 1
+    },
+    {
+     "rank": 3,
+     "variant": "sun_B",
+     "ship": true,
+     "comment": "Good balance of GO and detail, beauty; also feels like proportions are off",
+     "initial_pos": 2
+    },
+    {
+     "rank": 4,
+     "variant": "F3_g2",
+     "ship": true,
+     "comment": "Probably, most worker images need the men be wearing a cap - feeling is good, toss up by being in 4th position and 3rd",
+     "initial_pos": 4
+    },
+    {
+     "rank": 5,
+     "variant": "F4_sun_pjauti",
+     "ship": false,
+     "comment": "too bright, but also contrasts too high, doesn't have the feeling",
+     "initial_pos": 6
+    },
+    {
+     "rank": 6,
+     "variant": "orig",
+     "ship": false,
+     "comment": "staging feels off, maybe too bright, weird placement of inserts, man is too overweight",
+     "initial_pos": 5
+    },
+    {
+     "rank": 7,
+     "variant": "g2_A",
+     "ship": false,
+     "comment": "Perfect GO, decent yellow, but then lacks feeling, feels cartoony",
+     "initial_pos": 8
+    },
+    {
+     "rank": 8,
+     "variant": "F4_g2low_pjauti",
+     "ship": false,
+     "comment": "too high contrast, also cartoony. Saw is a weird size, image glitch in the first insert, also, image glitch in the background",
+     "initial_pos": 7
+    }
+   ]
+  },
+  {
+   "round": 9,
+   "card": "108_minia",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": true,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F3_sun",
+     "ship": true,
+     "comment": "Aesthetic pretty good, target word identifiable, enough cream/yellow",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": true,
+     "comment": "Aesthetic pretty good, target word, a bit too white",
+     "initial_pos": 2
+    },
+    {
+     "rank": 3,
+     "variant": "F3_g2",
+     "ship": false,
+     "comment": "Colour not bad, but a bit surreal, uncanny, although the inserts are good or at least interesting. Wins on feelings, but less on target word",
+     "initial_pos": 3
+    },
+    {
+     "rank": 4,
+     "variant": "F4ref_g2_minia",
+     "ship": false,
+     "comment": "very GO, but needs more yellow, and inserts are less good",
+     "initial_pos": 4
+    },
+    {
+     "rank": 5,
+     "variant": "F4_g2_minia",
+     "ship": false,
+     "comment": "Feeling not bad, toss up between this and 4 for that position",
+     "initial_pos": 5
+    },
+    {
+     "rank": 6,
+     "variant": "F4_sun_minia",
+     "ship": false,
+     "comment": "Doesn't naturally show target word, although good aesthetic",
+     "initial_pos": 6
+    },
+    {
+     "rank": 7,
+     "variant": "F4ref_sun_minia",
+     "ship": false,
+     "comment": "Don't meet target word, although good aesthetic",
+     "initial_pos": 7
+    }
+   ]
+  },
+  {
+   "round": 10,
+   "card": "036_mokykla",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F4bleed_g2_mokykla",
+     "ship": true,
+     "comment": "Good aesthetic, colour, card is beautiful",
+     "initial_pos": 5
+    },
+    {
+     "rank": 2,
+     "variant": "F3_g2",
+     "ship": true,
+     "comment": "Good aesthetic, colour, card is beautiful, but AI error having the girl walk in the insert",
+     "initial_pos": 1
+    },
+    {
+     "rank": 3,
+     "variant": "F1_g2",
+     "ship": false,
+     "comment": "Good aesthetic, colour, card is beautiful, but AI error having the girl walk in the insert",
+     "initial_pos": 3
+    },
+    {
+     "rank": 4,
+     "variant": "F4_g2_mokykla",
+     "ship": false,
+     "comment": "proportions are off, but colour and feeling is good",
+     "initial_pos": 6
+    },
+    {
+     "rank": 5,
+     "variant": "flare_old",
+     "ship": false,
+     "comment": "too bright, but proportions are good",
+     "initial_pos": 4
+    },
+    {
+     "rank": 6,
+     "variant": "F4_sun_mokykla",
+     "ship": false,
+     "comment": "better colours than 5, birch is a nice touch, but AI error in boy walking on insert",
+     "initial_pos": 8
+    },
+    {
+     "rank": 7,
+     "variant": "F4_flare_mokykla",
+     "ship": false,
+     "comment": "clean, good, but would be a better candidate if it were more cream/yellow",
+     "initial_pos": 2
+    },
+    {
+     "rank": 8,
+     "variant": "orig",
+     "ship": false,
+     "comment": "to cartoony, too bright",
+     "initial_pos": 7
+    }
+   ]
+  },
+  {
+   "round": 11,
+   "card": "211_lova",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F4dun_g2_lova",
+     "ship": true,
+     "comment": "Top for feeling and aesthetic",
+     "initial_pos": 6
+    },
+    {
+     "rank": 2,
+     "variant": "F4_g2_lova",
+     "ship": true,
+     "comment": "good colour, feeling; inferior to 3 in feeling and colour, but no errors",
+     "initial_pos": 3
+    },
+    {
+     "rank": 3,
+     "variant": "F4_g2low_lova",
+     "ship": true,
+     "comment": "Colour is superior 2, but AI error, middle insert, blanket is split",
+     "initial_pos": 1
+    },
+    {
+     "rank": 4,
+     "variant": "F4_sun_lova",
+     "ship": true,
+     "comment": "",
+     "initial_pos": 2
+    },
+    {
+     "rank": 5,
+     "variant": "F4_15_lova",
+     "ship": true,
+     "comment": "bang on GO - maybe perfect, candidate for 1, but i suppose I like the feeling of 1. Still, this is an excellent style and it's probably the most GO; a deck of these wouldn't be bad",
+     "initial_pos": 5
+    },
+    {
+     "rank": 6,
+     "variant": "orig",
+     "ship": false,
+     "comment": "Interesting, contender for a higher position",
+     "initial_pos": 7
+    },
+    {
+     "rank": 7,
+     "variant": "F4_flare_lova",
+     "ship": false,
+     "comment": "bright, too simple",
+     "initial_pos": 4
+    }
+   ]
+  },
+  {
+   "round": 12,
+   "card": "113_gydytojas",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": true,
+   "note": "same as round 2? Use the results from round 2",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F3_g2",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 2
+    },
+    {
+     "rank": 3,
+     "variant": "F4dun_g2_gydytojas",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 3
+    },
+    {
+     "rank": 4,
+     "variant": "F4_g2_gydytojas",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 4
+    },
+    {
+     "rank": 5,
+     "variant": "F3_sun",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 5
+    },
+    {
+     "rank": 6,
+     "variant": "F4_sun_gydytojas",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 6
+    },
+    {
+     "rank": 7,
+     "variant": "F4_15_gydytojas",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 7
+    },
+    {
+     "rank": 8,
+     "variant": "g2_old",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 8
+    }
+   ]
+  },
+  {
+   "round": 13,
+   "card": "137_vestuves",
+   "done": true,
+   "touched": true,
+   "unchanged_from_initial": false,
+   "note": "Do a search for the old soviet map that showed the different \"races\" of the soviet union; it's on Aliexpress now, I think - but anyway, it was a map of the soviet union with pictures of its people, and gave the characteristics of all the peoples\n\nMake sure you use Fable to analyse the results",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "F4_g2_vestuves",
+     "ship": true,
+     "comment": "Best all around match for aesthetic, and handsomeness of characters; man looks like a real Lithuanian",
+     "initial_pos": 4
+    },
+    {
+     "rank": 2,
+     "variant": "F3_g2",
+     "ship": true,
+     "comment": "toss up between this one and number 1",
+     "initial_pos": 3
+    },
+    {
+     "rank": 3,
+     "variant": "F4ref_sun_vestuves",
+     "ship": false,
+     "comment": "True GO - clean candidate",
+     "initial_pos": 7
+    },
+    {
+     "rank": 4,
+     "variant": "F4_sun_vestuves",
+     "ship": false,
+     "comment": "better than what precedes for the colour, seriousness",
+     "initial_pos": 5
+    },
+    {
+     "rank": 5,
+     "variant": "F3_sun",
+     "ship": false,
+     "comment": "Good colours, would like the people to be a little more handsome  ",
+     "initial_pos": 8
+    },
+    {
+     "rank": 6,
+     "variant": "F4_sunb_vestuves",
+     "ship": false,
+     "comment": "chut chut too bright, would like the people to be a little more handsome  ",
+     "initial_pos": 1
+    },
+    {
+     "rank": 7,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too plain, too bright",
+     "initial_pos": 6
+    },
+    {
+     "rank": 8,
+     "variant": "F4_15_vestuves",
+     "ship": false,
+     "comment": "Too cartoony",
+     "initial_pos": 2
+    }
+   ]
+  }
+ ],
+ "general": "It seems that true GO falls between 1-3 place, and the soviet-nostalgia feeling and colour palate trump pure GO\n"
+}

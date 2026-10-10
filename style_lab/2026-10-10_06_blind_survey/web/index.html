@@ -1,0 +1,217 @@
+<title>GO Style Survey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@700&family=PT+Mono&display=swap">
+<style>
+/* Layout: a working desk for one round at a time. Card-chrome red band on top, round tabs, a
+   2-column sortable grid of plates, each with rank, ship toggle and a comment. */
+:root {
+  --paper: #f3efe4;      /* page ground, the manual's cream */
+  --sheet: #fbf9f3;      /* card surface */
+  --ink: #2b2620;        /* text */
+  --ink-soft: #6c6457;   /* secondary text */
+  --rule: #d8d0bf;       /* borders */
+  --band: #8e2a22;       /* the cards' dark-red bars */
+  --band-ink: #fbf3ea;
+  --ship: #2f5d50;       /* blue-grey teal from the house palette */
+  --ship-soft: #dfeae5;
+  --focus: #b5482f;
+  --font-body: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "PT Sans Narrow", "Arial Narrow", "PT Sans", sans-serif;
+  --font-mono: "PT Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #1d1a16; --sheet: #26221d; --ink: #ece5d8; --ink-soft: #a89e8d; --rule: #3d372f;
+  --band: #7a241d; --band-ink: #f7ece0; --ship: #7fb3a3; --ship-soft: #24342f; --focus: #e07a5f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #1d1a16; --sheet: #26221d; --ink: #ece5d8; --ink-soft: #a89e8d; --rule: #3d372f;
+  --band: #7a241d; --band-ink: #f7ece0; --ship: #7fb3a3; --ship-soft: #24342f; --focus: #e07a5f; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 16px/1.45 var(--font-body); margin: 0 }
+.band { background: var(--band); color: var(--band-ink); padding: 10px 16px; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap }
+.band h1 { font: 700 1.35rem/1.1 var(--font-display); letter-spacing: .06em; text-transform: uppercase; margin: 0 }
+.band .sub { font-size: .9rem; opacity: .85 }
+.wrap { max-width: 1400px; margin: 0 auto; padding-inline: 16px; padding-block: 12px 48px }
+.tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule);
+  padding-block: 10px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center }
+.tab { font: 15px/1 var(--font-mono); min-width: 2.4em; padding: 8px 6px; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink);
+  border-radius: 4px; cursor: pointer; font-variant-numeric: tabular-nums }
+.tab[aria-current="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+.tab.done { border-color: var(--ship); color: var(--ship) }
+.tab.done[aria-current="true"] { background: var(--ship); color: var(--sheet) }
+.tab.started:not(.done)::after { content: "•"; margin-left: 2px }
+.status { margin-left: auto; font-size: .85rem; color: var(--ink-soft) }
+.status.warn { color: var(--focus) }
+.head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-block: 18px 6px }
+.head h2 { font: 700 1.9rem/1.1 var(--font-display); letter-spacing: .03em; margin: 0; text-wrap: balance }
+.head .word { font-size: 1.15rem; color: var(--ink-soft) }
+.how { color: var(--ink-soft); margin: 0 0 14px; max-width: 75ch }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+.card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; display: flex; flex-direction: column; min-width: 0 }
+.card.ship { border-color: var(--ship); box-shadow: 0 0 0 2px var(--ship) inset }
+.bar { display: flex; align-items: center; gap: 10px; padding: 8px 10px; cursor: grab; user-select: none; border-bottom: 1px solid var(--rule) }
+.bar:active { cursor: grabbing }
+.rank { font: 700 1.6rem/1 var(--font-display); min-width: 1.6em; font-variant-numeric: tabular-nums }
+.grip { color: var(--ink-soft); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase }
+.moves { margin-left: auto; display: flex; gap: 4px }
+.btn { font: 14px/1 var(--font-body); padding: 7px 10px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 4px; cursor: pointer }
+.btn:hover { border-color: var(--ink-soft) }
+.btn:disabled { opacity: .35; cursor: default }
+.plate { display: block; width: 100%; aspect-ratio: 3 / 2; max-width: 100%; object-fit: cover; cursor: zoom-in; background: var(--rule) }
+.foot { padding: 10px; display: grid; gap: 8px }
+.shipbox { display: flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer; width: fit-content; padding: 6px 10px; border-radius: 4px; border: 1px solid var(--rule) }
+.card.ship .shipbox { background: var(--ship-soft); border-color: var(--ship); color: var(--ship) }
+.shipbox input { width: 18px; height: 18px; accent-color: var(--ship) }
+textarea { width: 100%; min-height: 3.2em; resize: vertical; font: 15px/1.4 var(--font-body); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 4px; padding: 8px }
+textarea::placeholder { color: var(--ink-soft) }
+.roundnote { margin-top: 18px; display: grid; gap: 6px; max-width: 900px }
+.roundnote label, .lbl { font: 700 .8rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft) }
+.nav { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap }
+.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); font-weight: 700; padding: 10px 16px }
+.ghost { opacity: .45 }
+.sortable-chosen { box-shadow: 0 6px 24px rgba(0,0,0,.18) }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px }
+.lightbox { position: fixed; inset: 0; background: rgba(15,12,9,.92); z-index: 20; display: grid; place-items: center; padding: 16px }
+.lightbox img { max-width: 100%; max-height: calc(100% - 48px); object-fit: contain; border-radius: 4px }
+.lightbox p { color: #f1ebe0; margin: 8px 0 0; font-size: .9rem; text-align: center }
+.finish { background: var(--sheet); border: 1px solid var(--ship); border-radius: 6px; padding: 18px; margin-top: 18px; max-width: 900px }
+.finish h3 { font: 700 1.4rem/1.2 var(--font-display); margin: 0 0 6px }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<div class="band"><h1>GO style survey</h1><span class="sub">Blind ranking of card art · 13 rounds</span></div>
+<div class="wrap">
+  <nav class="tabs" id="tabs" aria-label="Rounds"><span class="status" id="status">Connecting…</span></nav>
+  <div class="head"><h2 id="title">Round 1</h2><span class="word" id="word"></span></div>
+  <p class="how">Drag the plates into order, best first. You can also use the arrows. Tick <b>Would ship</b> on every version you'd put in the deck as it is. Say what you like or dislike about any plate in its comment box. Click a picture to see it full size. Everything saves as you go.</p>
+  <div class="grid" id="grid"></div>
+  <div class="roundnote"><label for="note">Anything about this round as a whole</label><textarea id="note" placeholder="Optional"></textarea></div>
+  <div class="nav"><button class="btn" id="prev">← Previous round</button><button class="btn primary" id="next">Done, next round →</button></div>
+  <div class="finish" id="finish" hidden>
+    <h3>All rounds answered</h3>
+    <p>Your rankings are saved. Go back to the chat and tell Claude you've finished. You can still revisit any round and change it.</p>
+    <div class="roundnote"><label for="general">Overall impressions (optional)</label><textarea id="general" placeholder="What you found yourself looking for, what kept putting you off"></textarea></div>
+  </div>
+</div>
+<div class="lightbox" id="lb" hidden><div><img id="lbimg" alt=""><p>Click or press Esc to close · ← → to step through this round</p></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+<script>
+const ROUNDS = [{"round":1,"label":"miestas \u00b7 city","cells":["d4728069","976532f1","4bf7356a","8ab2676d","54755c41","b8fb5cb4","2b06985e","2ed325c6"]},{"round":2,"label":"gydytojas \u00b7 doctor","cells":["09507436","1132f038","a3b215ef","824844ea","765d22a3","cb5f0a64","3933ae57","89d270e6"]},{"round":3,"label":"eiti \u00b7 to walk","cells":["4e18369e","6f7f25b7","ad6039a6","2af4be94","ef9e6c34","c667095f","0b1e8a8e"]},{"round":4,"label":"\u0161uo \u00b7 dog","cells":["2873ccdf","bcc9b586","8ecb9a18","d39fa342","bdc94b64","07fd5c39","171dbf79"]},{"round":5,"label":"klubas \u00b7 club","cells":["4969c6b8","4ff32f94","95272959","149d7d98","fff6545f","5db99072","39a7d68d","7461bf5a"]},{"round":6,"label":"\u0161eima \u00b7 family","cells":["02abc615","ee8bb836","a4f40a8d","63738ecc","4bd576ce","15cbefab","c6707961","52379266"]},{"round":7,"label":"paltas \u00b7 coat","cells":["adf0ccf7","9c688b20","639234f1","abb34339","f805caa2","f5745a89","fc870aea"]},{"round":8,"label":"pjauti \u00b7 to saw","cells":["6475d1ac","c3eb6774","e58a697d","d4befe9f","5a0d167b","15d5c7d1","18b1c332","6903e5f5"]},{"round":9,"label":"minia \u00b7 crowd","cells":["05caf853","d1781f70","1fca8aa3","4a24f120","1862193e","f8c4a8f8","aad4f893"]},{"round":10,"label":"mokykla \u00b7 school","cells":["502f0fc6","f36d2840","dc0dc13b","2fccccaf","30450c0f","6969f377","ea42d600","5cfe9e43"]},{"round":11,"label":"lova \u00b7 bed","cells":["5f80c923","77efc2df","a84c046c","d289c8c0","987723d0","04db6d38","7a304201"]},{"round":12,"label":"gydytojas \u00b7 doctor","cells":["a00d4c8e","3d2ffea1","4a28e55a","1a8feb76","520135ab","7d559918","17f8c537","577693ed"]},{"round":13,"label":"vestuv\u0117s \u00b7 wedding","cells":["84b0e33d","b66ee9e3","c2613034","859b11d2","bfcb6af7","231484d3","462d8120","db4c8979"]}];
+const N = ROUNDS.length;
+const state = {};            // round -> {order, ship[], comments{}, note, done}
+let cur = 1, db = null, saveTimers = {}, sortable = null;
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2, "0");
+const blank = r => ({ order: [...ROUNDS[r - 1].cells], ship: [], comments: {}, note: "", done: false, touched: false });
+function local(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || "null"); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null } }
+
+function setStatus(t, warn) { const s = $("status"); s.textContent = t; s.classList.toggle("warn", !!warn) }
+
+function renderTabs() {
+  const tabs = $("tabs"); tabs.querySelectorAll(".tab").forEach(t => t.remove());
+  for (let r = N; r >= 1; r--) {
+    const b = document.createElement("button"); b.className = "tab"; b.textContent = r; b.setAttribute("aria-label", "Round " + r);
+    const s = state[r]; if (s?.done) b.classList.add("done"); else if (s?.touched) b.classList.add("started");
+    if (r === cur) b.setAttribute("aria-current", "true");
+    b.onclick = () => go(r); tabs.prepend(b);
+  }
+}
+
+function render() {
+  const R = ROUNDS[cur - 1], s = state[cur];
+  $("title").textContent = `Round ${cur} of ${N}`; $("word").textContent = R.label;
+  const g = $("grid"); g.innerHTML = "";
+  s.order.forEach((id, i) => {
+    const c = document.createElement("article"); c.className = "card" + (s.ship.includes(id) ? " ship" : ""); c.dataset.id = id;
+    c.innerHTML = `<div class="bar"><span class="rank">${i + 1}</span><span class="grip">drag</span>
+      <span class="moves"><button class="btn up" aria-label="Move up">↑</button><button class="btn down" aria-label="Move down">↓</button></span></div>
+      <img class="plate" src="img/${id}.jpg" alt="Version ${i + 1}" loading="eager">
+      <div class="foot"><label class="shipbox"><input type="checkbox" id="ship-${id}"> Would ship</label>
+      <textarea id="c-${id}" placeholder="What works, what doesn't"></textarea></div>`;
+    const cb = c.querySelector("input"), ta = c.querySelector("textarea");
+    cb.checked = s.ship.includes(id); ta.value = s.comments[id] || "";
+    cb.onchange = () => { s.ship = cb.checked ? [...new Set([...s.ship, id])] : s.ship.filter(x => x !== id); c.classList.toggle("ship", cb.checked); touch() };
+    ta.oninput = () => { s.comments[id] = ta.value; touch() };
+    c.querySelector(".up").onclick = () => move(id, -1);
+    c.querySelector(".down").onclick = () => move(id, 1);
+    c.querySelector(".plate").onclick = () => openLB(id);
+    g.appendChild(c);
+  });
+  updateRanks();
+  $("note").value = s.note || "";
+  $("prev").disabled = cur === 1;
+  $("next").textContent = cur === N ? "Done, finish" : "Done, next round →";
+  $("finish").hidden = !(Object.values(state).filter(x => x.done).length === N);
+  if (sortable) sortable.destroy();
+  sortable = Sortable.create(g, { animation: 150, handle: ".bar", filter: "button", preventOnFilter: false, ghostClass: "ghost",
+    onEnd: () => { s.order = [...g.children].map(c => c.dataset.id); updateRanks(); touch() } });
+  renderTabs();
+}
+function updateRanks() {
+  [...$("grid").children].forEach((c, i) => {
+    c.querySelector(".rank").textContent = i + 1; c.querySelector(".plate").alt = "Version ranked " + (i + 1);
+    c.querySelector(".up").disabled = i === 0; c.querySelector(".down").disabled = i === state[cur].order.length - 1;
+  });
+}
+function move(id, d) {
+  const o = state[cur].order, i = o.indexOf(id), j = i + d; if (j < 0 || j >= o.length) return;
+  [o[i], o[j]] = [o[j], o[i]]; touch(); render();
+  const btn = document.querySelector(`[data-id="${id}"] .${d < 0 ? "up" : "down"}`); if (btn && !btn.disabled) btn.focus();
+}
+function touch(r = cur) { state[r].touched = true; queueSave(r); renderTabsLight(r) }
+function renderTabsLight() { renderTabs() }
+function queueSave(r) {
+  local("go-survey-" + r, state[r]); setStatus("Saving…");
+  clearTimeout(saveTimers[r]); saveTimers[r] = setTimeout(() => save(r), 700);
+}
+async function save(r) {
+  const s = state[r];
+  if (!db) { setStatus("Saved in this browser only (not connected)", true); return }
+  try {
+    await db.doc("responses/r" + pad(r)).set({ round: r, order: s.order, ship: s.ship, comments: s.comments, note: s.note, done: s.done, touched: s.touched, updatedAt: new Date().toISOString() });
+    setStatus("Saved");
+  } catch (e) { setStatus("Couldn't save to the survey store (" + (e.code || "error") + "); kept in this browser", true) }
+}
+function go(r) { cur = r; render(); window.scrollTo({ top: 0 }) }
+$("note").oninput = e => { state[cur].note = e.target.value; touch() };
+$("prev").onclick = () => cur > 1 && go(cur - 1);
+$("next").onclick = () => { state[cur].done = true; state[cur].touched = true; queueSave(cur); if (cur < N) go(cur + 1); else { render(); $("finish").scrollIntoView({ behavior: "smooth" }) } };
+let generalTimer;
+$("general").oninput = e => { local("go-survey-general", e.target.value); clearTimeout(generalTimer);
+  generalTimer = setTimeout(async () => { if (db) try { await db.doc("responses/general").set({ text: e.target.value, updatedAt: new Date().toISOString() }); setStatus("Saved") } catch (_) {} }, 700) };
+
+// lightbox
+let lbId = null;
+function openLB(id) { lbId = id; $("lbimg").src = `img/${id}.jpg`; $("lb").hidden = false }
+function closeLB() { $("lb").hidden = true; lbId = null }
+$("lb").onclick = closeLB;
+document.addEventListener("keydown", e => {
+  if ($("lb").hidden) return;
+  if (e.key === "Escape") closeLB();
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    const o = state[cur].order, i = o.indexOf(lbId) + (e.key === "ArrowRight" ? 1 : -1);
+    if (i >= 0 && i < o.length) openLB(o[i]);
+  }
+});
+
+// boot: local drafts first, then the shared store
+for (let r = 1; r <= N; r++) state[r] = Object.assign(blank(r), local("go-survey-" + r) || {});
+$("general").value = local("go-survey-general") || "";
+render();
+(async () => {
+  db = window.claude?.use ? await window.claude.use("db") : null;
+  if (!db) { setStatus("Not connected: answers stay in this browser only", true); return }
+  try {
+    for (let r = 1; r <= N; r++) {
+      const snap = await db.doc("responses/r" + pad(r)).get();
+      const d = snap.exists ? snap.data() : null;
+      if (d && Array.isArray(d.order) && d.order.length === ROUNDS[r - 1].cells.length) state[r] = Object.assign(blank(r), structuredClone(d));
+    }
+    const g = await db.doc("responses/general").get(); if (g.exists && g.data().text) $("general").value = g.data().text;
+    setStatus("Connected · saves automatically"); render();
+  } catch (e) { setStatus("Couldn't read saved answers (" + (e.code || "error") + "); working from this browser", true) }
+})();
+</script>

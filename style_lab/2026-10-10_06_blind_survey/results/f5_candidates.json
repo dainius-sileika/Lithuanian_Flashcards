@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "id": "F5",
+      "hypothesis": "F4 corrected by the survey: paper moved to the dun/yellowed tone that won every paper contrast (target L~82-86, b*~22-27 on the paper); people block softened from 'broad plain faces, heavy features, thick-set bodies' (which the owner read as not handsome enough and which gave gpt-image-2 proportion errors) to 'correct natural proportions, austere, regular, plainly handsome, gaze slightly off the viewer'; working men in caps; black arrows; composition kept as a vignette but with surroundings sketched in, since both float and detailed-scene variants shipped and the owner likes detail and feeling. Default for object, clothing, person and single-figure verb cards.",
+      "models": [
+        "gpt-image-2"
+      ],
+      "quality": "medium",
+      "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: a dark-brown brush-and-ink outline around every figure and object, matte gouache fills with soft shading, four-colour offset lithography with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on warm yellowed dun paper. The dun paper is the background: the main subject is drawn directly on it with its surroundings sketched in around it and fading into the paper at the edges, leaving open margins; insets are small ruled boxes on the same paper. Flat even diagram lighting with a quiet nostalgic warmth. People are ordinary Soviet-era Lithuanians of 1981, anonymous types, correct natural body proportions: austere, regular, plainly handsome faces, calm closed mouths, the gaze resting slightly off the viewer; men's hair short and side-parted, women's short and practical or under a cotton headscarf; plain loosely cut clothes in brown, olive, dusty blue, grey and dull red; working men in flat cloth caps.",
+      "suffix": "Finish: muted offset print on warm yellowed dun paper, brush-ink outlines, soft shading, correct body proportions, austere plainly handsome Soviet-era people; diagram arrows and callouts in solid black ink."
+    },
+    {
+      "id": "F5D",
+      "hypothesis": "The 'detailed soviet art aesthetic' sibling: identical to F5 except the composition sentence asks for a full edge-to-edge scene with its own sky and ground. Preserves what made F4bleed_g2_miestas, F4bleed_g2_pjauti and F4bleed_g2_mokykla win (3/3 against the floating twin, all three ship-flagged). For place and workplace-scene cards (miestas, mokykla, turgus, workshop verbs).",
+      "models": [
+        "gpt-image-2"
+      ],
+      "quality": "medium",
+      "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: a dark-brown brush-and-ink outline around every figure and object, matte gouache fills with soft shading, four-colour offset lithography with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on warm yellowed dun paper. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, printed on the same dun paper; insets are small ruled boxes beside or below it. Flat even diagram lighting with a quiet nostalgic warmth. People are ordinary Soviet-era Lithuanians of 1981, anonymous types, correct natural body proportions: austere, regular, plainly handsome faces, calm closed mouths, the gaze resting slightly off the viewer; men's hair short and side-parted, women's short and practical or under a cotton headscarf; plain loosely cut clothes in brown, olive, dusty blue, grey and dull red; working men in flat cloth caps.",
+      "suffix": "Finish: a full, detailed scene in muted offset print on warm yellowed dun paper, brush-ink outlines, soft shading, correct body proportions, austere plainly handsome Soviet-era people; diagram arrows and callouts in solid black ink."
+    }
+  ]
+}

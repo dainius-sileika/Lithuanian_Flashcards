@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GO Style Survey</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@700&family=PT+Mono&display=swap">
+<style>
+:root {
+  --paper: #f3efe4; --sheet: #fbf9f3; --ink: #2b2620; --ink-soft: #6c6457; --rule: #d8d0bf;
+  --band: #8e2a22; --band-ink: #fbf3ea; --ship: #2f5d50; --ship-soft: #dfeae5; --focus: #b5482f;
+  --font-body: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "PT Sans Narrow", "Arial Narrow", "PT Sans", sans-serif;
+  --font-mono: "PT Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --paper: #1d1a16; --sheet: #26221d; --ink: #ece5d8; --ink-soft: #a89e8d; --rule: #3d372f;
+  --band: #7a241d; --band-ink: #f7ece0; --ship: #7fb3a3; --ship-soft: #24342f; --focus: #e07a5f; color-scheme: dark } }
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 16px/1.45 var(--font-body); margin: 0 }
+img { max-width: 100% }
+[hidden] { display: none !important }
+.band { background: var(--band); color: var(--band-ink); padding: 10px 16px; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap }
+.band h1 { font: 700 1.35rem/1.1 var(--font-display); letter-spacing: .06em; text-transform: uppercase; margin: 0 }
+.band .sub { font-size: .9rem; opacity: .85 }
+.wrap { max-width: 1400px; margin: 0 auto; padding-inline: 16px; padding-block: 12px 48px }
+.intro { max-width: 70ch; padding-block: 24px }
+.intro h2 { font: 700 2rem/1.15 var(--font-display); margin: 0 0 12px; text-wrap: balance }
+.intro p { margin: 0 0 12px }
+.field { display: grid; gap: 6px; margin-block: 18px; max-width: 420px }
+input[type="text"] { font: 16px var(--font-body); padding: 10px; border: 1px solid var(--rule); border-radius: 4px; background: var(--sheet); color: var(--ink) }
+.tabs { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); padding-block: 10px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center }
+.tab { font: 15px/1 var(--font-mono); min-width: 2.4em; padding: 8px 6px; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); border-radius: 4px; cursor: pointer; font-variant-numeric: tabular-nums }
+.tab[aria-current="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+.tab.done { border-color: var(--ship); color: var(--ship) }
+.tab.done[aria-current="true"] { background: var(--ship); color: var(--sheet) }
+.tab.started:not(.done)::after { content: "•"; margin-left: 2px }
+.status { margin-left: auto; font-size: .85rem; color: var(--ink-soft) }
+.head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-block: 18px 6px }
+.head h2 { font: 700 1.9rem/1.1 var(--font-display); letter-spacing: .03em; margin: 0 }
+.head .word { font-size: 1.15rem; color: var(--ink-soft) }
+.how { color: var(--ink-soft); margin: 0 0 14px; max-width: 75ch }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+.card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; display: flex; flex-direction: column; min-width: 0 }
+.card.ship { border-color: var(--ship); box-shadow: 0 0 0 2px var(--ship) inset }
+.bar { display: flex; align-items: center; gap: 10px; padding: 8px 10px; cursor: grab; user-select: none; border-bottom: 1px solid var(--rule) }
+.rank { font: 700 1.6rem/1 var(--font-display); min-width: 1.6em; font-variant-numeric: tabular-nums }
+.grip { color: var(--ink-soft); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase }
+.moves { margin-left: auto; display: flex; gap: 4px }
+.btn { font: 14px/1 var(--font-body); padding: 7px 10px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 4px; cursor: pointer }
+.btn:hover { border-color: var(--ink-soft) }
+.btn:disabled { opacity: .35; cursor: default }
+.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); font-weight: 700; padding: 10px 16px }
+.plate { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; cursor: zoom-in; background: var(--rule) }
+.foot { padding: 10px; display: grid; gap: 8px }
+.shipbox { display: flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer; width: fit-content; padding: 6px 10px; border-radius: 4px; border: 1px solid var(--rule) }
+.card.ship .shipbox { background: var(--ship-soft); border-color: var(--ship); color: var(--ship) }
+.shipbox input { width: 18px; height: 18px; accent-color: var(--ship) }
+textarea { width: 100%; min-height: 3.2em; resize: vertical; font: 15px/1.4 var(--font-body); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 8px }
+.lbl { font: 700 .8rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft) }
+.roundnote { margin-top: 18px; display: grid; gap: 6px; max-width: 900px }
+.nav { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap }
+.ghost { opacity: .45 }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px }
+.lightbox { position: fixed; inset: 0; background: rgba(15,12,9,.92); z-index: 20; display: grid; place-items: center; padding: 16px }
+.lightbox img { max-height: calc(100vh - 80px); object-fit: contain; border-radius: 4px }
+.lightbox p { color: #f1ebe0; margin: 8px 0 0; font-size: .9rem; text-align: center }
+.finish { background: var(--sheet); border: 1px solid var(--ship); border-radius: 6px; padding: 18px; margin-top: 18px; max-width: 900px; display: grid; gap: 10px }
+.finish h3 { font: 700 1.4rem/1.2 var(--font-display); margin: 0 }
+.finish textarea.code { font: 12px/1.35 var(--font-mono); min-height: 8em }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center }
+.small { font-size: .85rem; color: var(--ink-soft) }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+</head>
+<body>
+<div class="band"><h1>GO style survey</h1><span class="sub">Lietuvių flashcards · blind ranking of card art</span></div>
+<div class="wrap">
+
+<section class="intro" id="intro">
+  <h2>Help choose the look of the Lithuanian deck</h2>
+  <p>The deck's pictures are meant to look like pages from a 1981 Lithuanian civil-defence training manual, drawn in the style of Soviet <i>Grazhdanskaya Oborona</i> posters. We are choosing how the next thousand cards will be drawn.</p>
+  <p>There are 13 rounds. Each round shows 7 or 8 versions of the same card, in random order and unlabelled. For each round, drag the pictures into order from best to worst, tick <b>Would ship</b> on any you would happily see in the deck, and say what you like or dislike in the comment boxes. Go by your eye; there are no right answers. It takes about 20–30 minutes, and your progress is kept in this browser if you stop part-way.</p>
+  <p>At the end you'll get a short results file to send back to Dainius.</p>
+  <div class="field"><label class="lbl" for="name">Your name</label><input type="text" id="name" autocomplete="name" placeholder="So Dainius knows whose answers these are"></div>
+  <button class="btn primary" id="start">Start the survey</button>
+</section>
+
+<section id="survey" hidden>
+  <nav class="tabs" id="tabs" aria-label="Rounds"><span class="status" id="status"></span></nav>
+  <div class="head"><h2 id="title">Round 1</h2><span class="word" id="word"></span></div>
+  <p class="how">Drag the pictures into order, best first (or use the arrows). Tick <b>Would ship</b> on every version you'd put in the deck as it is. Click a picture to see it larger.</p>
+  <div class="grid" id="grid"></div>
+  <div class="roundnote"><label class="lbl" for="note">Anything about this round as a whole</label><textarea id="note" placeholder="Optional"></textarea></div>
+  <div class="nav"><button class="btn" id="prev">← Previous round</button><button class="btn primary" id="next">Done, next round →</button></div>
+
+  <div class="finish" id="finish" hidden>
+    <h3>Thank you. Now send your results to Dainius</h3>
+    <div class="roundnote" style="margin-top:0"><label class="lbl" for="general">Overall impressions (optional)</label><textarea id="general" placeholder="What you found yourself looking for, what kept putting you off"></textarea></div>
+    <p>Save the results file and send it to Dainius by email or message. If saving doesn't work, copy the text below and paste it into a message instead.</p>
+    <div class="row"><button class="btn primary" id="dl">Save results file</button><button class="btn" id="copy">Copy results text</button><span class="small" id="copymsg" role="status"></span></div>
+    <textarea class="code" id="code" readonly aria-label="Results text"></textarea>
+    <div class="row"><button class="btn" id="reset">Clear my answers and start again</button><button class="btn" id="resetyes" hidden>Yes, clear everything</button></div>
+  </div>
+</section>
+</div>
+<div class="lightbox" id="lb" hidden><div><img id="lbimg" alt=""><p>Click or press Esc to close · ← → to step through this round</p></div></div>
+
+<script>__SORTABLE__</script>
+<script>
+const SURVEY_ID = "go-style-survey-2026-10-10";
+const ROUNDS = __ROUNDS__;
+const IMG = __IMAGES__;
+const N = ROUNDS.length, KEY = SURVEY_ID + "-state";
+const $ = id => document.getElementById(id);
+function load() { try { return JSON.parse(localStorage.getItem(KEY) || "null") } catch (e) { return null } }
+function persist() { try { localStorage.setItem(KEY, JSON.stringify(S)) } catch (e) {} }
+function shuffle(a) { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a }
+let S = load();
+if (!S) {
+  S = { survey: SURVEY_ID, respondent: "", started: null, finished: null, general: "", cur: 1, rounds: {} };
+  for (const R of ROUNDS) { const o = shuffle(R.cells); S.rounds[R.round] = { initial: o, order: [...o], ship: [], comments: {}, note: "", done: false, touched: false } }
+}
+let sortable = null;
+
+function showSurvey() { $("intro").hidden = true; $("survey").hidden = false; render() }
+$("name").value = S.respondent || "";
+$("start").onclick = () => { S.respondent = $("name").value.trim(); if (!S.started) S.started = new Date().toISOString(); persist(); showSurvey() };
+if (S.started) showSurvey();
+
+function renderTabs() {
+  const tabs = $("tabs"); tabs.querySelectorAll(".tab").forEach(t => t.remove());
+  for (let r = N; r >= 1; r--) {
+    const b = document.createElement("button"); b.className = "tab"; b.textContent = r; b.setAttribute("aria-label", "Round " + r);
+    const s = S.rounds[r]; if (s.done) b.classList.add("done"); else if (s.touched) b.classList.add("started");
+    if (r === S.cur) b.setAttribute("aria-current", "true");
+    b.onclick = () => go(r); tabs.prepend(b);
+  }
+  const done = Object.values(S.rounds).filter(x => x.done).length;
+  $("status").textContent = `${done} of ${N} rounds done` + (S.respondent ? ` · ${S.respondent}` : "");
+}
+function render() {
+  const R = ROUNDS[S.cur - 1], s = S.rounds[S.cur];
+  $("title").textContent = `Round ${S.cur} of ${N}`; $("word").textContent = R.label;
+  const g = $("grid"); g.innerHTML = "";
+  s.order.forEach((id, i) => {
+    const c = document.createElement("article"); c.className = "card" + (s.ship.includes(id) ? " ship" : ""); c.dataset.id = id;
+    c.innerHTML = `<div class="bar"><span class="rank">${i + 1}</span><span class="grip">drag</span>
+      <span class="moves"><button class="btn up" aria-label="Move up">↑</button><button class="btn down" aria-label="Move down">↓</button></span></div>
+      <img class="plate" alt="">
+      <div class="foot"><label class="shipbox"><input type="checkbox" id="ship-${id}"> Would ship</label>
+      <textarea id="c-${id}" placeholder="What works, what doesn't"></textarea></div>`;
+    c.querySelector(".plate").src = IMG[id];
+    const cb = c.querySelector("input"), ta = c.querySelector("textarea");
+    cb.checked = s.ship.includes(id); ta.value = s.comments[id] || "";
+    cb.onchange = () => { s.ship = cb.checked ? [...new Set([...s.ship, id])] : s.ship.filter(x => x !== id); c.classList.toggle("ship", cb.checked); touch() };
+    ta.oninput = () => { s.comments[id] = ta.value; touch(false) };
+    c.querySelector(".up").onclick = () => move(id, -1);
+    c.querySelector(".down").onclick = () => move(id, 1);
+    c.querySelector(".plate").onclick = () => openLB(id);
+    g.appendChild(c);
+  });
+  updateRanks();
+  $("note").value = s.note || "";
+  $("prev").disabled = S.cur === 1;
+  $("next").textContent = S.cur === N ? "Done, finish" : "Done, next round →";
+  const allDone = Object.values(S.rounds).every(x => x.done);
+  $("finish").hidden = !allDone; if (allDone) refreshCode();
+  if (sortable) sortable.destroy();
+  sortable = Sortable.create(g, { animation: 150, handle: ".bar", filter: "button", preventOnFilter: false, ghostClass: "ghost",
+    onEnd: () => { s.order = [...g.children].map(c => c.dataset.id); updateRanks(); touch() } });
+  renderTabs();
+}
+function updateRanks() {
+  [...$("grid").children].forEach((c, i) => {
+    c.querySelector(".rank").textContent = i + 1; c.querySelector(".plate").alt = "Version ranked " + (i + 1);
+    c.querySelector(".up").disabled = i === 0; c.querySelector(".down").disabled = i === S.rounds[S.cur].order.length - 1;
+  });
+}
+function move(id, d) {
+  const o = S.rounds[S.cur].order, i = o.indexOf(id), j = i + d; if (j < 0 || j >= o.length) return;
+  [o[i], o[j]] = [o[j], o[i]]; touch(); render();
+  const btn = document.querySelector(`[data-id="${id}"] .${d < 0 ? "up" : "down"}`); if (btn && !btn.disabled) btn.focus();
+}
+function touch(tabs = true) { S.rounds[S.cur].touched = true; persist(); if (tabs) renderTabs(); if (!$("finish").hidden) refreshCode() }
+function go(r) { S.cur = r; persist(); render(); window.scrollTo({ top: 0 }) }
+$("note").oninput = e => { S.rounds[S.cur].note = e.target.value; touch(false) };
+$("general").value = S.general || "";
+$("general").oninput = e => { S.general = e.target.value; persist(); refreshCode() };
+$("prev").onclick = () => S.cur > 1 && go(S.cur - 1);
+$("next").onclick = () => {
+  const s = S.rounds[S.cur]; s.done = true; s.touched = true;
+  if (Object.values(S.rounds).every(x => x.done) && !S.finished) S.finished = new Date().toISOString();
+  persist();
+  const next = ROUNDS.find(R => !S.rounds[R.round].done);
+  if (S.cur < N) go(S.cur + 1); else if (next) go(next.round); else { render(); $("finish").scrollIntoView({ behavior: "smooth" }) }
+};
+
+function results() {
+  return { survey: SURVEY_ID, respondent: S.respondent, started: S.started, finished: S.finished, general: S.general,
+    rounds: ROUNDS.map(R => { const s = S.rounds[R.round]; return { round: R.round, card: R.label, order: s.order, initial: s.initial, ship: s.ship, comments: s.comments, note: s.note, done: s.done } }) };
+}
+function refreshCode() { $("code").value = JSON.stringify(results()) }
+$("dl").onclick = () => {
+  const blob = new Blob([JSON.stringify(results(), null, 1)], { type: "application/json" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  a.download = "go-survey-" + ((S.respondent || "anonymous").replace(/[^\p{L}\p{N}_-]+/gu, "_")) + ".json";
+  document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove() }, 1000);
+};
+$("copy").onclick = async () => {
+  refreshCode();
+  try { await navigator.clipboard.writeText($("code").value); $("copymsg").textContent = "Copied. Paste it into a message to Dainius." }
+  catch (e) { $("code").select(); $("copymsg").textContent = "Select-all is done: press Ctrl+C (or ⌘C) to copy." }
+};
+$("reset").onclick = () => { $("resetyes").hidden = false };
+$("resetyes").onclick = () => { try { localStorage.removeItem(KEY) } catch (e) {} location.reload() };
+
+let lbId = null;
+function openLB(id) { lbId = id; $("lbimg").src = IMG[id]; $("lb").hidden = false }
+$("lb").onclick = () => { $("lb").hidden = true; lbId = null };
+document.addEventListener("keydown", e => {
+  if ($("lb").hidden) return;
+  if (e.key === "Escape") { $("lb").hidden = true; lbId = null }
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    const o = S.rounds[S.cur].order, i = o.indexOf(lbId) + (e.key === "ArrowRight" ? 1 : -1);
+    if (i >= 0 && i < o.length) openLB(o[i]);
+  }
+});
+</script>
+</body>
+</html>
