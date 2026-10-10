@@ -1,0 +1,242 @@
+{
+ "ec08ba35": {
+  "round": 1,
+  "card": "108_minia",
+  "variant": "A2_108_minia"
+ },
+ "a6c053ad": {
+  "round": 1,
+  "card": "108_minia",
+  "variant": "orig"
+ },
+ "acac3e20": {
+  "round": 1,
+  "card": "108_minia",
+  "variant": "Y_108_minia"
+ },
+ "2766571a": {
+  "round": 1,
+  "card": "108_minia",
+  "variant": "A_108_minia"
+ },
+ "ecd0c579": {
+  "round": 2,
+  "card": "025_namas",
+  "variant": "A_025_namas"
+ },
+ "dbaaeaae": {
+  "round": 2,
+  "card": "025_namas",
+  "variant": "Y_025_namas"
+ },
+ "5047955b": {
+  "round": 2,
+  "card": "025_namas",
+  "variant": "orig"
+ },
+ "20f14a90": {
+  "round": 3,
+  "card": "366_eiti",
+  "variant": "orig"
+ },
+ "31c57d94": {
+  "round": 3,
+  "card": "366_eiti",
+  "variant": "C_366_eiti"
+ },
+ "91c915bf": {
+  "round": 3,
+  "card": "366_eiti",
+  "variant": "Y_366_eiti"
+ },
+ "bd0cd856": {
+  "round": 3,
+  "card": "366_eiti",
+  "variant": "A_366_eiti"
+ },
+ "60792ee1": {
+  "round": 4,
+  "card": "092_senele",
+  "variant": "A_092_senele"
+ },
+ "8ad19cdc": {
+  "round": 4,
+  "card": "092_senele",
+  "variant": "orig"
+ },
+ "da65e1de": {
+  "round": 4,
+  "card": "092_senele",
+  "variant": "Y_092_senele"
+ },
+ "4665a6ab": {
+  "round": 5,
+  "card": "090_seima",
+  "variant": "A_090_seima"
+ },
+ "318c5cda": {
+  "round": 5,
+  "card": "090_seima",
+  "variant": "Y_090_seima"
+ },
+ "ba30509b": {
+  "round": 5,
+  "card": "090_seima",
+  "variant": "orig"
+ },
+ "cf0e5549": {
+  "round": 6,
+  "card": "182_duona",
+  "variant": "A_182_duona"
+ },
+ "9ad842d1": {
+  "round": 6,
+  "card": "182_duona",
+  "variant": "C_182_duona"
+ },
+ "62f2c65c": {
+  "round": 6,
+  "card": "182_duona",
+  "variant": "orig"
+ },
+ "c32cba62": {
+  "round": 6,
+  "card": "182_duona",
+  "variant": "Y_182_duona"
+ },
+ "6187ac75": {
+  "round": 7,
+  "card": "137_vestuves",
+  "variant": "A_137_vestuves"
+ },
+ "f0ecf8c6": {
+  "round": 7,
+  "card": "137_vestuves",
+  "variant": "Y_137_vestuves"
+ },
+ "ad83a314": {
+  "round": 7,
+  "card": "137_vestuves",
+  "variant": "orig"
+ },
+ "a646c660": {
+  "round": 8,
+  "card": "110_mokytojas",
+  "variant": "Y_110_mokytojas"
+ },
+ "2b98bd9f": {
+  "round": 8,
+  "card": "110_mokytojas",
+  "variant": "A2_110_mokytojas"
+ },
+ "1b76ece3": {
+  "round": 8,
+  "card": "110_mokytojas",
+  "variant": "A_110_mokytojas"
+ },
+ "38a3c46c": {
+  "round": 8,
+  "card": "110_mokytojas",
+  "variant": "orig"
+ },
+ "e4edb8ce": {
+  "round": 9,
+  "card": "147_karas",
+  "variant": "Y_147_karas"
+ },
+ "afb748ad": {
+  "round": 9,
+  "card": "147_karas",
+  "variant": "orig"
+ },
+ "2002a58d": {
+  "round": 9,
+  "card": "147_karas",
+  "variant": "A_147_karas"
+ },
+ "89a1ea4a": {
+  "round": 10,
+  "card": "049_baznycia",
+  "variant": "A_049_baznycia"
+ },
+ "3c0f2abf": {
+  "round": 10,
+  "card": "049_baznycia",
+  "variant": "orig"
+ },
+ "f9ba5cbc": {
+  "round": 10,
+  "card": "049_baznycia",
+  "variant": "Y_049_baznycia"
+ },
+ "534cc798": {
+  "round": 11,
+  "card": "454_letas",
+  "variant": "Y_454_letas"
+ },
+ "43c9dc0d": {
+  "round": 11,
+  "card": "454_letas",
+  "variant": "A_454_letas"
+ },
+ "65735081": {
+  "round": 11,
+  "card": "454_letas",
+  "variant": "orig"
+ },
+ "e6eee693": {
+  "round": 11,
+  "card": "454_letas",
+  "variant": "C_454_letas"
+ },
+ "62eb33ad": {
+  "round": 12,
+  "card": "383_pirkti",
+  "variant": "orig"
+ },
+ "1d7770f1": {
+  "round": 12,
+  "card": "383_pirkti",
+  "variant": "Y_383_pirkti"
+ },
+ "bea1264c": {
+  "round": 12,
+  "card": "383_pirkti",
+  "variant": "A_383_pirkti"
+ },
+ "3cb742fd": {
+  "round": 13,
+  "card": "066_paltas",
+  "variant": "orig"
+ },
+ "a77ac73f": {
+  "round": 13,
+  "card": "066_paltas",
+  "variant": "C_066_paltas"
+ },
+ "c860ed36": {
+  "round": 13,
+  "card": "066_paltas",
+  "variant": "Y_066_paltas"
+ },
+ "a23cad16": {
+  "round": 13,
+  "card": "066_paltas",
+  "variant": "A_066_paltas"
+ },
+ "7a86494b": {
+  "round": 14,
+  "card": "113_gydytojas",
+  "variant": "A_113_gydytojas"
+ },
+ "42e51960": {
+  "round": 14,
+  "card": "113_gydytojas",
+  "variant": "orig"
+ },
+ "b5991a33": {
+  "round": 14,
+  "card": "113_gydytojas",
+  "variant": "Y_113_gydytojas"
+ }
+}

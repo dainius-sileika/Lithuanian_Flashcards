@@ -1,0 +1,296 @@
+{
+  "purpose": "Confirm F6 (gaze distribution, lighter paper, Lithuanian people block as default, inset variety) and pick the paper wording (F6 vs F6y) before committing ~1,000 cards. 14 cards: 6 re-rolls of cards that failed or drew complaints, 6 fresh cards never generated before (two of them Lithuanian-iconography probes), 2 passed controls for paper calibration.",
+  "cards": {
+    "reroll": [
+      "108_minia",
+      "366_eiti",
+      "090_seima",
+      "137_vestuves",
+      "147_karas",
+      "454_letas"
+    ],
+    "fresh": [
+      "049_baznycia",
+      "025_namas",
+      "092_senele",
+      "110_mokytojas",
+      "383_pirkti",
+      "182_duona"
+    ],
+    "controls": [
+      "066_paltas",
+      "113_gydytojas"
+    ]
+  },
+  "arms": {
+    "A": "F6 / F6D on gpt-image-2 medium (light paper wording)",
+    "Y": "F6y / F6Dy, identical except one notch warmer paper",
+    "A2": "second seed of arm A on the two gaze stress cards",
+    "C": "F6 on Sunburst medium, single-figure/object cards only (its paper was 'actually perfect' and it draws bodies correctly)"
+  },
+  "staging": {
+    "108_minia": "Main subject: a dense standing crowd of ordinary townspeople, many heads deep, filling the picture; faces at mixed angles, several turned to neighbours, a few facing forward with eyes just past the viewer. Insets: a queue boarding a bus; a crowded tram stop (both crowds, so the insets vote for the target word).",
+    "366_eiti": "Motion strip of three clearly different phases of the same man: standing with feet together; left leg forward, right arm forward; right leg forward, left arm forward. Arrow in solid black ink.",
+    "454_letas": "Tortoise moving slowly as the main subject; the hare awake and running at full stretch in its inset, so the fast/slow contrast is unmistakable.",
+    "090_seima": "Four people: one parent facing the viewer with eyes just past the viewer's shoulder, the other parent turned toward the children, the children looking at each other or at what they hold.",
+    "137_vestuves": "Bride and groom looking at each other or at the ring; one guest facing the viewer, the others watching the couple.",
+    "147_karas": "Refugees looking along the road ahead; one child glancing back toward the viewer; arrows and callouts in black ink.",
+    "113_gydytojas": "Keep the small red cross on the clinic building or medical kit; one doctor facing the viewer, the other attending to a patient.",
+    "024_miestas": "A Lithuanian town rather than a metropolis: five-storey panel blocks beside older brick and plastered buildings, a church tower in the distance, an Ikarus bus; people secondary to the street.",
+    "041_klubas": "The hall itself as the subject: a low stage with a small band, a bar or cloakroom, the lit entrance in an inset; dancers secondary.",
+    "066_paltas": "Standing man in a flat cap, three-quarter view, eyes on something to the side; coat flat-laid as the main subject.",
+    "_general_people": "In every multi-person scene the figures look in different directions; at most two faces address the viewer, and those rest their eyes just past the viewer's shoulder.",
+    "_general_insets": "Each inset shows a different moment, object or angle from the others and from the main picture; motion strips alternate limbs.",
+    "_lithuanian_detail_slot": "Reserve one short sentence per card for the research agent's Lithuanian detail (farmstead woodwork, roadside cross, rye bread, linen, amber, interwar book spines without readable text, etc.), appended after the subject sentence.",
+    "049_baznycia": "FRESH. A whitewashed village church with a separate wooden bell tower and a carved wooden roadside cross by the gate; a few villagers walking toward it. (verify key in out_deck/ledger.csv; substitute 025_namas if absent)",
+    "025_namas": "FRESH. A single-storey wooden farmhouse with carved window surrounds and shutters, a picket fence and a well-sweep; one person in the yard.",
+    "092_senele": "FRESH. An elderly grandmother in a cotton headscarf with set grey hair showing at the front, hands folded, a child beside her; she looks at the child, the child looks just past the viewer.",
+    "110_mokytojas": "FRESH. A man and a woman teacher at a chalkboard bearing only simple diagrams; the woman lean with straight light-brown hair, the man side-parted; one faces the class (the viewer), the other points at the board.",
+    "383_pirkti": "FRESH. A customer receiving wrapped goods across a plain shop counter with an abacus and a scale; the shop assistant in a white smock; both looking at the goods.",
+    "182_duona": "FRESH. A dark rye loaf, whole, with a cut slice beside it on a linen cloth; inset of hands slicing; inset of loaves on a shop shelf."
+  },
+  "images": [
+    {
+      "vid": "A_108_minia",
+      "card": "108_minia",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_108_minia",
+      "card": "108_minia",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_366_eiti",
+      "card": "366_eiti",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_366_eiti",
+      "card": "366_eiti",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_090_seima",
+      "card": "090_seima",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_090_seima",
+      "card": "090_seima",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_137_vestuves",
+      "card": "137_vestuves",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_137_vestuves",
+      "card": "137_vestuves",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_147_karas",
+      "card": "147_karas",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_147_karas",
+      "card": "147_karas",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_454_letas",
+      "card": "454_letas",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_454_letas",
+      "card": "454_letas",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_049_baznycia",
+      "card": "049_baznycia",
+      "model": "gpt-image-2",
+      "prompt": "F6D",
+      "refs": false
+    },
+    {
+      "vid": "Y_049_baznycia",
+      "card": "049_baznycia",
+      "model": "gpt-image-2",
+      "prompt": "F6Dy",
+      "refs": false
+    },
+    {
+      "vid": "A_025_namas",
+      "card": "025_namas",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_025_namas",
+      "card": "025_namas",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_092_senele",
+      "card": "092_senele",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_092_senele",
+      "card": "092_senele",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_110_mokytojas",
+      "card": "110_mokytojas",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_110_mokytojas",
+      "card": "110_mokytojas",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_383_pirkti",
+      "card": "383_pirkti",
+      "model": "gpt-image-2",
+      "prompt": "F6D",
+      "refs": false
+    },
+    {
+      "vid": "Y_383_pirkti",
+      "card": "383_pirkti",
+      "model": "gpt-image-2",
+      "prompt": "F6Dy",
+      "refs": false
+    },
+    {
+      "vid": "A_182_duona",
+      "card": "182_duona",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_182_duona",
+      "card": "182_duona",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_066_paltas",
+      "card": "066_paltas",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_066_paltas",
+      "card": "066_paltas",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A_113_gydytojas",
+      "card": "113_gydytojas",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "Y_113_gydytojas",
+      "card": "113_gydytojas",
+      "model": "gpt-image-2",
+      "prompt": "F6y",
+      "refs": false
+    },
+    {
+      "vid": "A2_108_minia",
+      "card": "108_minia",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "A2_110_mokytojas",
+      "card": "110_mokytojas",
+      "model": "gpt-image-2",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "C_366_eiti",
+      "card": "366_eiti",
+      "model": "gpt-image-2.5-sunburst",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "C_066_paltas",
+      "card": "066_paltas",
+      "model": "gpt-image-2.5-sunburst",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "C_454_letas",
+      "card": "454_letas",
+      "model": "gpt-image-2.5-sunburst",
+      "prompt": "F6",
+      "refs": false
+    },
+    {
+      "vid": "C_182_duona",
+      "card": "182_duona",
+      "model": "gpt-image-2.5-sunburst",
+      "prompt": "F6",
+      "refs": false
+    }
+  ],
+  "count": 34,
+  "estimated_cost_usd": 1.37,
+  "review": "Blind, same web tool, orig as control in every round where one exists (fresh cards have no orig: show A, Y and, where present, C only). Full ranking + ship flag + comment. Ask additionally for ONE word on paper per image: 'dark' / 'ok' / 'bright'.",
+  "pass_criteria": "1. Ship: the better paper arm (A or Y, chosen in 2) ship-flagged on >= 12/14 cards, and orig below it on every card that has an orig. 2. Paper: choose the arm whose strict paper measure (papertone2.py) has median L* in 83-90 and b* in 20-26 AND fewer dark/bright words; that arm's wording becomes production. If both miss, interpolate the wording and run 5 cards more. 3. Gaze: zero 'head position / looking away / eye contact' comments on arm A/Y across the multi-person cards (minia x2 seeds, seima, vestuves, mokytojas x2, senele, pirkti); minia ship-flagged in at least one of its three draws. 4. Insets: zero near-duplicate-inset comments; eiti strip alternates limbs; letas hare awake and running. 5. Guessability: target word identifiable on all 14 without the label, including the 6 fresh cards. 6. Lithuanian look: no 'does not look Lithuanian/USSR' comment on arm A/Y; at least two unprompted positive 'Lithuanian' comments. 7. Proportions/glitches: zero on single-figure cards (eiti, paltas, duona, letas). If 1-5 pass: commit F6 (winning paper arm) + staging fixes to production for the remaining cards, with the per-card Lithuanian-detail line slotted in as the research agent delivers it; spot-check the first 30 production cards blind against orig. If only 3 (gaze) fails: move the gaze sentence to the front of the people block and re-roll the multi-person cards only. If C beats A/Y on >= 3/4 of its cards, route single-figure clothing/verb classes to Sunburst F6."
+}

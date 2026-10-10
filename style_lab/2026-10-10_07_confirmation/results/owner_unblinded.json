@@ -1,0 +1,448 @@
+{
+ "rounds": [
+  {
+   "round": 1,
+   "card": "024_miestas",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "Careful about the not looking at the camera rule - now everything is looking 45 degrees off, and never looking forward, and in all the images, it looks weird. Range should be from 80-90, to a few degrees off centre - in the more forward facing, looking \"just over the shoulder\" of the audience",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "B_024_miestas",
+     "ship": true,
+     "comment": "Not too dense, city is still the emphasis; see note about head position",
+     "initial_pos": 2
+    },
+    {
+     "rank": 2,
+     "variant": "L_024_miestas",
+     "ship": true,
+     "comment": "There are no Lithuanian cities this big, but the card is beautiful; see note about head position",
+     "initial_pos": 1
+    },
+    {
+     "rank": 3,
+     "variant": "A_024_miestas",
+     "ship": true,
+     "comment": "People in forefront, although the city is better sized; see note about head position",
+     "initial_pos": 4
+    },
+    {
+     "rank": 4,
+     "variant": "orig",
+     "ship": true,
+     "comment": "Effective as a card, but less beautiful than the other cards",
+     "initial_pos": 3
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "card": "366_eiti",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "Minor aspect, but if there are three inserts in the bottom, make sure the limbs alternate, i.e., can't be that three inserts essentially have two images that are the same",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_366_eiti",
+     "ship": true,
+     "comment": "A bit dark on the yellow, but most natural looking",
+     "initial_pos": 4
+    },
+    {
+     "rank": 2,
+     "variant": "C_366_eiti",
+     "ship": true,
+     "comment": "Most realistic, but doesn't look lithuanian exactly; candidate for first place",
+     "initial_pos": 3
+    },
+    {
+     "rank": 3,
+     "variant": "B_366_eiti",
+     "ship": true,
+     "comment": "Best flashcard in terms of simiplicity, but the man doesn't look like a USSR citizen; something about the cap and the face, otherwise, this card would be first",
+     "initial_pos": 1
+    },
+    {
+     "rank": 4,
+     "variant": "orig",
+     "ship": false,
+     "comment": "abandon the white",
+     "initial_pos": 2
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "card": "113_gydytojas",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "Again, careful about the head angle; the Kraftwerk \"transeurope express\" is not bad for the angle, but there should be a variety of angles, from looking to the side, like in soviet photography (or european in general, for the last 150 years?), but front facing, always being a degree or two off, \"just over the shoulder\"",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_113_gydytojas",
+     "ship": true,
+     "comment": "Pretty perfect; head position is good, just be careful not to always have the total side look",
+     "initial_pos": 3
+    },
+    {
+     "rank": 2,
+     "variant": "L_113_gydytojas",
+     "ship": true,
+     "comment": "As good as the first",
+     "initial_pos": 2
+    },
+    {
+     "rank": 3,
+     "variant": "orig",
+     "ship": false,
+     "comment": "Too white, too much looking in the eye",
+     "initial_pos": 1
+    }
+   ]
+  },
+  {
+   "round": 4,
+   "card": "001_suo",
+   "done": true,
+   "unchanged_from_initial": true,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_001_suo",
+     "ship": true,
+     "comment": "Too dark, could go more cream, but better than white",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": true,
+     "comment": "Pretty good, just a dash darker on the background",
+     "initial_pos": 2
+    }
+   ]
+  },
+  {
+   "round": 5,
+   "card": "137_vestuves",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "Lean in on the Lithuanian women as being blond or brunnette, and in younger women, avoid frizzy or curled hair, unless slightly curled, but older women might have such hair",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_137_vestuves",
+     "ship": true,
+     "comment": "Too dark, but right feeling",
+     "initial_pos": 4
+    },
+    {
+     "rank": 2,
+     "variant": "L_137_vestuves",
+     "ship": true,
+     "comment": "Too dark",
+     "initial_pos": 2
+    },
+    {
+     "rank": 3,
+     "variant": "B_137_vestuves",
+     "ship": true,
+     "comment": "Very clean, good flashcard, just more posed",
+     "initial_pos": 3
+    },
+    {
+     "rank": 4,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too bright",
+     "initial_pos": 1
+    }
+   ]
+  },
+  {
+   "round": 6,
+   "card": "405_pjauti",
+   "done": true,
+   "unchanged_from_initial": true,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_405_pjauti",
+     "ship": true,
+     "comment": "Chut chut too dark\n\nmake sure that inserts are sufficiently different\n",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too bright",
+     "initial_pos": 2
+    }
+   ]
+  },
+  {
+   "round": 7,
+   "card": "066_paltas",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "L_066_paltas",
+     "ship": true,
+     "comment": "Churt chut too dark; careful about the head position again",
+     "initial_pos": 2
+    },
+    {
+     "rank": 2,
+     "variant": "A_066_paltas",
+     "ship": true,
+     "comment": "Good, but a bit plain",
+     "initial_pos": 1
+    },
+    {
+     "rank": 3,
+     "variant": "C_066_paltas",
+     "ship": true,
+     "comment": "Careful about head position; background cream/yellow colour is actually perfect, though",
+     "initial_pos": 3
+    },
+    {
+     "rank": 4,
+     "variant": "B_066_paltas",
+     "ship": false,
+     "comment": "strange angle to the target item",
+     "initial_pos": 5
+    },
+    {
+     "rank": 5,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too bright, feels empty",
+     "initial_pos": 4
+    }
+   ]
+  },
+  {
+   "round": 8,
+   "card": "108_minia",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "Best example of the \"don't face forward\" rule going wrong; some must face forward, but none should be making eye contact",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "orig",
+     "ship": true,
+     "comment": "Wins because it's not awkward and weird, and some people are more or less facing forward, even if the other aesthetic aspects aren't as good",
+     "initial_pos": 4
+    },
+    {
+     "rank": 2,
+     "variant": "A_108_minia",
+     "ship": false,
+     "comment": "Awkward because of the no forward facing rule, chut chut too dark, number of people is n't bad",
+     "initial_pos": 1
+    },
+    {
+     "rank": 3,
+     "variant": "L_108_minia",
+     "ship": false,
+     "comment": "Awkward because of the no forward facing rule, chut chut too dark",
+     "initial_pos": 2
+    },
+    {
+     "rank": 4,
+     "variant": "B_108_minia",
+     "ship": false,
+     "comment": "Awkward because of the no forward facing rule, but feels like the crowd is floating\n",
+     "initial_pos": 3
+    }
+   ]
+  },
+  {
+   "round": 9,
+   "card": "036_mokykla",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_036_mokykla",
+     "ship": true,
+     "comment": "Chut chut a bit dark, but good feeling wise",
+     "initial_pos": 2
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 1
+    }
+   ]
+  },
+  {
+   "round": 10,
+   "card": "211_lova",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_211_lova",
+     "ship": true,
+     "comment": "Good winner, good colour palate ",
+     "initial_pos": 2
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": false,
+     "comment": "",
+     "initial_pos": 1
+    }
+   ]
+  },
+  {
+   "round": 11,
+   "card": "090_seima",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "where there are multiple people, only one or two should be looking forward, \"over our shoulder,\" and the rest must be naturally distributed looking elsewhere\n",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_090_seima",
+     "ship": true,
+     "comment": "Toss up between 1 and 2, head position is off though, too much away",
+     "initial_pos": 2
+    },
+    {
+     "rank": 2,
+     "variant": "L_090_seima",
+     "ship": true,
+     "comment": "also candidate for the first spot, good colour, moustache sometimes is good, but can't all be looking away",
+     "initial_pos": 3
+    },
+    {
+     "rank": 3,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too bright",
+     "initial_pos": 1
+    }
+   ]
+  },
+  {
+   "round": 12,
+   "card": "147_karas",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_147_karas",
+     "ship": true,
+     "comment": "Great aesthetic, chut chut too dark, head positions again",
+     "initial_pos": 2
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": false,
+     "comment": "original, too dark",
+     "initial_pos": 1
+    }
+   ]
+  },
+  {
+   "round": 13,
+   "card": "376_valgyti",
+   "done": true,
+   "unchanged_from_initial": false,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "L_376_valgyti",
+     "ship": true,
+     "comment": "Perfect, very Lithuanian looking",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "A_376_valgyti",
+     "ship": true,
+     "comment": "also a candidate for first place, Lithuanian looking man",
+     "initial_pos": 3
+    },
+    {
+     "rank": 3,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too bright",
+     "initial_pos": 2
+    }
+   ]
+  },
+  {
+   "round": 14,
+   "card": "050_turgus",
+   "done": true,
+   "unchanged_from_initial": true,
+   "note": "",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_050_turgus",
+     "ship": true,
+     "comment": "Excellent; chut chut too dark",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too bright, old cop",
+     "initial_pos": 2
+    }
+   ]
+  },
+  {
+   "round": 15,
+   "card": "454_letas",
+   "done": true,
+   "unchanged_from_initial": true,
+   "note": "Head position and slight brightening of the deck as a whole is the main observation; also, now, do a deep dive into lithuanian iconography, details *on top of* the soviet union setting--what a farmhouse might look like, settings in Lithuania for the cards, if there are books, having them have, anachronistically, interwar Lithuanian titles, etc",
+   "ranking": [
+    {
+     "rank": 1,
+     "variant": "A_454_letas",
+     "ship": true,
+     "comment": "Good all around, chut chut too dark; rabbit sleeping in insert  goes against the \"fast\" association",
+     "initial_pos": 1
+    },
+    {
+     "rank": 2,
+     "variant": "orig",
+     "ship": false,
+     "comment": "too bright, original copy",
+     "initial_pos": 2
+    }
+   ]
+  }
+ ],
+ "general": "head position needs to be corrected, slightly lighter cards over all, and now add more Lithuanian details to cards, subtly, where possible; also, lean towards blond lithuanian women, and if younger, sometimes curled, but more often straight haired - older women might do more with their hair\n"
+}

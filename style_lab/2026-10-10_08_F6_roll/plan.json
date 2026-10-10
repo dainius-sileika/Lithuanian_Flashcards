@@ -1,0 +1,304 @@
+{
+ "staging": {
+  "108_minia": "Main subject: a dense standing crowd of ordinary townspeople, many heads deep, filling the picture; faces at mixed angles, several turned to neighbours, a few facing forward with eyes just past the viewer. Insets: a queue boarding a bus; a crowded tram stop (both crowds, so the insets vote for the target word).",
+  "366_eiti": "Motion strip of three clearly different phases of the same man: standing with feet together; left leg forward, right arm forward; right leg forward, left arm forward. Arrow in solid black ink.",
+  "454_letas": "Tortoise moving slowly as the main subject; the hare awake and running at full stretch in its inset, so the fast/slow contrast is unmistakable.",
+  "090_seima": "Four people: one parent facing the viewer with eyes just past the viewer's shoulder, the other parent turned toward the children, the children looking at each other or at what they hold.",
+  "137_vestuves": "Bride and groom looking at each other or at the ring; one guest facing the viewer, the others watching the couple.",
+  "147_karas": "Refugees looking along the road ahead; one child glancing back toward the viewer; arrows and callouts in black ink.",
+  "113_gydytojas": "Keep the small red cross on the clinic building or medical kit; one doctor facing the viewer, the other attending to a patient.",
+  "024_miestas": "A Lithuanian town rather than a metropolis: five-storey panel blocks beside older brick and plastered buildings, a church tower in the distance, an Ikarus bus; people secondary to the street.",
+  "041_klubas": "The hall itself as the subject: a low stage with a small band, a bar or cloakroom, the lit entrance in an inset; dancers secondary.",
+  "066_paltas": "Standing man in a flat cap, three-quarter view, eyes on something to the side; coat flat-laid as the main subject.",
+  "049_baznycia": "A whitewashed village church with a separate wooden bell tower and a carved wooden roadside cross by the gate; a few villagers walking toward it.",
+  "025_namas": "A single-storey wooden farmhouse with carved window surrounds and shutters, a picket fence and a well-sweep; one person in the yard. The house has crossed horse-head boards at the roof ridge and a small glazed porch.",
+  "092_senele": "An elderly grandmother in a cotton headscarf with set grey hair showing at the front, hands folded, a child beside her; she looks at the child, the child looks just past the viewer.",
+  "110_mokytojas": "A man and a woman teacher at a chalkboard bearing only simple diagrams; the woman lean with straight light-brown hair, the man side-parted; one faces the class (the viewer), the other points at the board.",
+  "383_pirkti": "A customer receiving wrapped goods across a plain shop counter with an abacus and a scale; the shop assistant in a white smock; both looking at the goods.",
+  "182_duona": "A dark rye loaf, whole, with a cut slice beside it on a linen cloth; inset of hands slicing; inset of loaves on a shop shelf. Behind, a clay jug and a wooden spoon rack on a log wall."
+ },
+ "extra_prompts": [
+  {
+   "id": "F6",
+   "hypothesis": "F5 corrected by the confirmation run: paper lightened from 'warm yellowed dun' (measured L* 74-81 on the paper, owner: 'chut chut too dark' on 10/15) to 'light aged cream with a soft yellow cast', aiming at the band the owner did not complain about (strict paper L* 83-90, b* 20-26; C_066_paltas 'actually perfect' = 82.5/23.6, first-survey F3/F2 winners 86.5/22-23). The L (sourced Lithuanian) people block becomes the default, condensed, with the owner's hair rules (women blond/light-brown, younger straight or faintly waved, older set/curled or headscarf; some moustaches; caps on working men). 'Gaze slightly off the viewer' is replaced by a distribution: varied natural angles, most looking at task or each other, one or two facing the viewer with eyes just past the viewer's shoulder. Inset variety stated in lead and suffix. Vignette composition. Default for object, clothing, person and single-figure verb cards.",
+   "models": [
+    "gpt-image-2"
+   ],
+   "quality": "medium",
+   "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a soft yellow cast. The light paper is the background: the main subject is drawn directly on it, its surroundings sketched in around it and fading into the paper, leaving open margins; insets are small ruled boxes on the same paper, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; plain loose clothes in brown, olive, dusty blue, grey and dull red. Heads turn at varied natural angles, as in a documentary photograph; one or two face the viewer, eyes resting just past the viewer's shoulder.",
+   "suffix": "Finish: muted offset print on light aged cream paper, softly yellowed, brush-ink outlines, soft shading, correct proportions. Heads at varied natural angles, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder. Every inset a clearly different moment. Diagram arrows and callouts in solid black ink."
+  },
+  {
+   "id": "F6D",
+   "hypothesis": "Full-scene sibling of F6 (the 'detailed soviet art aesthetic'): identical except the composition sentence. For place and workplace-scene cards (miestas, mokykla, turgus, workshop verbs), where F5D shipped 4/4.",
+   "models": [
+    "gpt-image-2"
+   ],
+   "quality": "medium",
+   "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a soft yellow cast. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, printed on the same light paper; insets are small ruled boxes beside or below it, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; plain loose clothes in brown, olive, dusty blue, grey and dull red. Heads turn at varied natural angles, as in a documentary photograph; one or two face the viewer, eyes resting just past the viewer's shoulder.",
+   "suffix": "Finish: a full, detailed scene in muted offset print on light aged cream paper, softly yellowed, brush-ink outlines, soft shading, correct proportions. Heads at varied natural angles, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder. Every inset a clearly different moment. Diagram arrows and callouts in solid black ink."
+  },
+  {
+   "id": "F6y",
+   "hypothesis": "Paper-bracket twin of F6: identical except the paper words are one notch warmer ('warm aged cream paper, gently yellowed'). Run beside F6 on every card of the next roll so the owner's dark/bright comments and the measured L*/b* pick the production wording; F6y is expected to land around L* 80-85, F6 around 86-91.",
+   "models": [
+    "gpt-image-2"
+   ],
+   "quality": "medium",
+   "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on warm aged cream paper, gently yellowed. The light paper is the background: the main subject is drawn directly on it, its surroundings sketched in around it and fading into the paper, leaving open margins; insets are small ruled boxes on the same paper, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; plain loose clothes in brown, olive, dusty blue, grey and dull red. Heads turn at varied natural angles, as in a documentary photograph; one or two face the viewer, eyes resting just past the viewer's shoulder.",
+   "suffix": "Finish: muted offset print on warm aged cream paper, gently yellowed, brush-ink outlines, soft shading, correct proportions. Heads at varied natural angles, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder. Every inset a clearly different moment. Diagram arrows and callouts in solid black ink."
+  },
+  {
+   "id": "F6Dy",
+   "hypothesis": "Paper-bracket twin of F6D.",
+   "models": [
+    "gpt-image-2"
+   ],
+   "quality": "medium",
+   "lead": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on warm aged cream paper, gently yellowed. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, printed on the same light paper; insets are small ruled boxes beside or below it, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; plain loose clothes in brown, olive, dusty blue, grey and dull red. Heads turn at varied natural angles, as in a documentary photograph; one or two face the viewer, eyes resting just past the viewer's shoulder.",
+   "suffix": "Finish: a full, detailed scene in muted offset print on warm aged cream paper, gently yellowed, brush-ink outlines, soft shading, correct proportions. Heads at varied natural angles, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder. Every inset a clearly different moment. Diagram arrows and callouts in solid black ink."
+  }
+ ],
+ "images": [
+  {
+   "vid": "A_108_minia",
+   "card": "108_minia",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_108_minia",
+   "card": "108_minia",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_366_eiti",
+   "card": "366_eiti",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_366_eiti",
+   "card": "366_eiti",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_090_seima",
+   "card": "090_seima",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_090_seima",
+   "card": "090_seima",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_137_vestuves",
+   "card": "137_vestuves",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_137_vestuves",
+   "card": "137_vestuves",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_147_karas",
+   "card": "147_karas",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_147_karas",
+   "card": "147_karas",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_454_letas",
+   "card": "454_letas",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_454_letas",
+   "card": "454_letas",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_049_baznycia",
+   "card": "049_baznycia",
+   "model": "gpt-image-2",
+   "prompt": "F6D",
+   "refs": false
+  },
+  {
+   "vid": "Y_049_baznycia",
+   "card": "049_baznycia",
+   "model": "gpt-image-2",
+   "prompt": "F6Dy",
+   "refs": false
+  },
+  {
+   "vid": "A_025_namas",
+   "card": "025_namas",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_025_namas",
+   "card": "025_namas",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_092_senele",
+   "card": "092_senele",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_092_senele",
+   "card": "092_senele",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_110_mokytojas",
+   "card": "110_mokytojas",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_110_mokytojas",
+   "card": "110_mokytojas",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_383_pirkti",
+   "card": "383_pirkti",
+   "model": "gpt-image-2",
+   "prompt": "F6D",
+   "refs": false
+  },
+  {
+   "vid": "Y_383_pirkti",
+   "card": "383_pirkti",
+   "model": "gpt-image-2",
+   "prompt": "F6Dy",
+   "refs": false
+  },
+  {
+   "vid": "A_182_duona",
+   "card": "182_duona",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_182_duona",
+   "card": "182_duona",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_066_paltas",
+   "card": "066_paltas",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_066_paltas",
+   "card": "066_paltas",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A_113_gydytojas",
+   "card": "113_gydytojas",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "Y_113_gydytojas",
+   "card": "113_gydytojas",
+   "model": "gpt-image-2",
+   "prompt": "F6y",
+   "refs": false
+  },
+  {
+   "vid": "A2_108_minia",
+   "card": "108_minia",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "A2_110_mokytojas",
+   "card": "110_mokytojas",
+   "model": "gpt-image-2",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "C_366_eiti",
+   "card": "366_eiti",
+   "model": "gpt-image-2.5-sunburst",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "C_066_paltas",
+   "card": "066_paltas",
+   "model": "gpt-image-2.5-sunburst",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "C_454_letas",
+   "card": "454_letas",
+   "model": "gpt-image-2.5-sunburst",
+   "prompt": "F6",
+   "refs": false
+  },
+  {
+   "vid": "C_182_duona",
+   "card": "182_duona",
+   "model": "gpt-image-2.5-sunburst",
+   "prompt": "F6",
+   "refs": false
+  }
+ ],
+ "pass_criteria": "1. Ship: the better paper arm (A or Y, chosen in 2) ship-flagged on >= 12/14 cards, and orig below it on every card that has an orig. 2. Paper: choose the arm whose strict paper measure (papertone2.py) has median L* in 83-90 and b* in 20-26 AND fewer dark/bright words; that arm's wording becomes production. If both miss, interpolate the wording and run 5 cards more. 3. Gaze: zero 'head position / looking away / eye contact' comments on arm A/Y across the multi-person cards (minia x2 seeds, seima, vestuves, mokytojas x2, senele, pirkti); minia ship-flagged in at least one of its three draws. 4. Insets: zero near-duplicate-inset comments; eiti strip alternates limbs; letas hare awake and running. 5. Guessability: target word identifiable on all 14 without the label, including the 6 fresh cards. 6. Lithuanian look: no 'does not look Lithuanian/USSR' comment on arm A/Y; at least two unprompted positive 'Lithuanian' comments. 7. Proportions/glitches: zero on single-figure cards (eiti, paltas, duona, letas). If 1-5 pass: commit F6 (winning paper arm) + staging fixes to production for the remaining cards, with the per-card Lithuanian-detail line slotted in as the research agent delivers it; spot-check the first 30 production cards blind against orig. If only 3 (gaze) fails: move the gaze sentence to the front of the people block and re-roll the multi-person cards only. If C beats A/Y on >= 3/4 of its cards, route single-figure clothing/verb classes to Sunburst F6.",
+ "review": "Blind, same web tool, orig as control in every round where one exists (fresh cards have no orig: show A, Y and, where present, C only). Full ranking + ship flag + comment. Ask additionally for ONE word on paper per image: 'dark' / 'ok' / 'bright'."
+}
