@@ -1,64 +1,64 @@
-key,lithuanian,proposed,english,owner_ok (blank=yes / write correction)
-079_spalva,spalva,F,color,
-094_zmona,žmona,F,wife,
-128_religija,religija,F,religion,
-129_dangus,dangus,M,heaven,
-130_pragaras,pragaras,M,hell,
-131_mirtis,mirtis,F,death,
-132_vaistai,vaistai,M pl,medicine,
-133_pinigai,pinigai,M pl,money,
-134_doleris,doleris,M,dollar,
-135_banknotas,banknotas,M,bill,
-136_santuoka,santuoka,F,marriage,
-138_komanda,komanda,F,team,
-139_santykiai,santykiai,M pl,relationship,
-140_rase,rasė,F,race ethnicity,
-141_seksas,seksas,M,sex act,
-142_lytis,lytis,F,sex gender,
-143_zmogzudyste,žmogžudystė,F,murder,
-144_kalejimas,kalėjimas,M,prison,
-145_technologija,technologija,F,technology,
-146_energija,energija,F,energy,
-147_karas,karas,M,war,
-148_taika,taika,F,peace,
-149_puolimas,puolimas,M,attack,
-150_rinkimai,rinkimai,M pl,election,
-151_zurnalas,žurnalas,M,magazine,
-152_laikrastis,laikraštis,M,newspaper,
-153_nuodai,nuodai,M pl,poison,
-154_ginklas,ginklas,M,gun,
-155_sportas,sportas,M,sport,
-156_lenktynes,lenktynės,F pl,race sport,
-157_manksta,mankšta,F,exercise,
-158_kamuolys,kamuolys,M,ball,
-159_zaidimas,žaidimas,M,game,
-160_kaina,kaina,F,price,
-161_sutartis,sutartis,F,contract,
-162_narkotikas,narkotikas,M,drug,
-164_mokslas,mokslas,M,science,
-165_dievas,Dievas,M,God,
-169_muzika,muzika,F,music,
-171_menas,menas,M,art,
-212_sapnas,sapnas,M,dream,
-250_tinklas,tinklas,M,network,
-252_programa,programa,F,program,
-272_kojos_pirstas,kojos pirštas,M,toe,
-284_liga,liga,F,disease,
-286_balsas,balsas,M,voice,
-298_pasaulis,pasaulis,M,world,
-299_zeme,Žemė,F,Earth,
-312_oras,oras,M,air,
-320_karstis,karštis,M,heat,
-340_puse,pusė,F,half,
-344_data,data,F,date,
-345_svoris,svoris,M,weight,
-350_priebalsis,priebalsis,M,consonant,
-351_balsis,balsis,M,vowel,
-352_sviesa,šviesa,F,light,
-353_garsas,garsas,M,sound,
-356_gabalas,gabalas,M,piece,
-357_skausmas,skausmas,M,pain,
-362_rastas,raštas,M,"writing, script",
-479_piktas,piktas,M/F · pikta,mean,
-508_branduolinis,branduolinis,M/F · branduolinė,nuclear,
-509_garsus,garsus,M/F · garsi,famous,
+key,lithuanian,proposed,english,owner_ok (blank=yes / write correction),verdict,agrees_with_proposed,cards_anki_now,source,decided
+079_spalva,spalva,F,color,,F,yes,F,en.wiktionary.org/wiki/spalva: {{lt-noun|f|spal̃vos|4|head=spalvà}},2026-10-11 Fable (cloud); owner delegated
+094_zmona,žmona,F,wife,,F,yes,F,en.wiktionary.org/wiki/žmona: {{lt-noun|f|žmónos|3|head=žmonà}},2026-10-11 Fable (cloud); owner delegated
+128_religija,religija,F,religion,,F,yes,F,en.wiktionary.org/wiki/religija: {{lt-noun|f|relìgijos|1|head=relìgija}},2026-10-11 Fable (cloud); owner delegated
+129_dangus,dangus,M,heaven,,M,yes,M,en.wiktionary.org/wiki/dangus: {{lt-noun|m|dañgūs|4|head=dangùs}},2026-10-11 Fable (cloud); owner delegated
+130_pragaras,pragaras,M,hell,,M,yes,M,en.wiktionary.org/wiki/pragaras: {{lt-noun|head=prãgaras|m|pragaraĩ|3<sup>b</sup>}},2026-10-11 Fable (cloud); owner delegated
+131_mirtis,mirtis,F,death,,F,yes,F,en.wiktionary.org/wiki/mirtis: {{lt-noun|f|mir̃tys|4|head=mirtìs}},2026-10-11 Fable (cloud); owner delegated
+132_vaistai,vaistai,M pl,medicine,,M pl,yes,M pl,en.wiktionary.org/wiki/vaistai: {{head|lt|noun form|head=váistai|g=m-p}},2026-10-11 Fable (cloud); owner delegated
+133_pinigai,pinigai,M pl,money,,M pl,yes,M pl,en.wiktionary.org/wiki/pinigai: {{lt-noun|m-p||3b|head=pinigaĩ}},2026-10-11 Fable (cloud); owner delegated
+134_doleris,doleris,M,dollar,,M,yes,M,en.wiktionary.org/wiki/doleris: {{lt-noun|m|dóleriai|1|head=dóleris}},2026-10-11 Fable (cloud); owner delegated
+135_banknotas,banknotas,M,bill,,M,yes,M,en.wiktionary.org/wiki/banknotas: {{lt-noun|m|head=banknòtas|banknòtai|2}},2026-10-11 Fable (cloud); owner delegated
+136_santuoka,santuoka,F,marriage,,F,yes,F,en.wiktionary.org/wiki/santuoka: {{lt-noun|head=sántuoka|f|sántuokos|1}},2026-10-11 Fable (cloud); owner delegated
+138_komanda,komanda,F,team,,F,yes,F,en.wiktionary.org/wiki/komanda: {{lt-noun|f|komándos|1|head=kománda}},2026-10-11 Fable (cloud); owner delegated
+139_santykiai,santykiai,M pl,relationship,,M pl,yes,M pl,"santykis is masculine (-is, gen. santykio; DLKŽ sañtykis sm.); plural-only sense ""relationship""; rule: -is/-io nouns are m.",2026-10-11 Fable (cloud); owner delegated
+140_rase,rasė,F,race ethnicity,,F,yes,F,"-ė nouns are feminine (DLKŽ rãsė sf.); rule, no Wiktionary page",2026-10-11 Fable (cloud); owner delegated
+141_seksas,seksas,M,sex act,,M,yes,M,en.wiktionary.org/wiki/seksas: {{lt-noun|m|sèksai|2|head=sèksas}},2026-10-11 Fable (cloud); owner delegated
+142_lytis,lytis,F,sex gender,,F,yes,F,en.wiktionary.org/wiki/lytis: {{lt-noun|f|lỹtys|4|head=lytìs}},2026-10-11 Fable (cloud); owner delegated
+143_zmogzudyste,žmogžudystė,F,murder,,F,yes,F,-ystė abstract suffix is always feminine (DLKŽ žmogžudỹstė sf.),2026-10-11 Fable (cloud); owner delegated
+144_kalejimas,kalėjimas,M,prison,,M,yes,M,en.wiktionary.org/wiki/kalėjimas: {{lt-noun|head=kalė́jimas|m|kalė́jimai|2}},2026-10-11 Fable (cloud); owner delegated
+145_technologija,technologija,F,technology,,F,yes,F,en.wiktionary.org/wiki/technologija: {{lt-noun|f}},2026-10-11 Fable (cloud); owner delegated
+146_energija,energija,F,energy,,F,yes,F,en.wiktionary.org/wiki/energija: {{lt-noun|f|ener̃gijos|1|head=ener̃gija}},2026-10-11 Fable (cloud); owner delegated
+147_karas,karas,M,war,,M,yes,M,en.wiktionary.org/wiki/karas: {{lt-noun|m|karaĩ|4|head=kãras}},2026-10-11 Fable (cloud); owner delegated
+148_taika,taika,F,peace,,F,yes,F,"-a noun, gen. taikos (DLKŽ taikà sf.); no Lithuanian section on Wiktionary",2026-10-11 Fable (cloud); owner delegated
+149_puolimas,puolimas,M,attack,,M,yes,M,-imas verbal nouns are always masculine (DLKŽ puolìmas sm.),2026-10-11 Fable (cloud); owner delegated
+150_rinkimai,rinkimai,M pl,election,,M pl,yes,M pl,en.wiktionary.org/wiki/rinkimai: {{lt-noun|m-p|head=rinkìmai||2}},2026-10-11 Fable (cloud); owner delegated
+151_zurnalas,žurnalas,M,magazine,,M,yes,M,en.wiktionary.org/wiki/žurnalas: {{lt-noun|head=žurnãlas|m|žurnãlai|2}},2026-10-11 Fable (cloud); owner delegated
+152_laikrastis,laikraštis,M,newspaper,,M,yes,M,en.wiktionary.org/wiki/laikraštis: {{lt-noun|m|laīkraščiai|1|head=laĩkraštis}},2026-10-11 Fable (cloud); owner delegated
+153_nuodai,nuodai,M pl,poison,,M pl,yes,M pl,en.wiktionary.org/wiki/nuodai: {{lt-noun|m-p||4|head=nuodaĩ}},2026-10-11 Fable (cloud); owner delegated
+154_ginklas,ginklas,M,gun,,M,yes,M,en.wiktionary.org/wiki/ginklas: {{lt-noun|head=giñklas|m|giñklai|2}},2026-10-11 Fable (cloud); owner delegated
+155_sportas,sportas,M,sport,,M,yes,M,en.wiktionary.org/wiki/sportas: {{lt-noun|m|spòrtai|1|head=spòrtas}},2026-10-11 Fable (cloud); owner delegated
+156_lenktynes,lenktynės,F pl,race sport,,F pl,yes,F pl,en.wiktionary.org/wiki/lenktynės: {{lt-noun|head=lenktỹnės|f-p||2}},2026-10-11 Fable (cloud); owner delegated
+157_manksta,mankšta,F,exercise,,F,yes,F,"-a noun, gen. mankštos (DLKŽ mankštà sf.)",2026-10-11 Fable (cloud); owner delegated
+158_kamuolys,kamuolys,M,ball,,M,yes,M,en.wiktionary.org/wiki/kamuolys: {{lt-noun|m|kamuoliaĩ|3<sup>b</sup>|head=kamuolỹs}},2026-10-11 Fable (cloud); owner delegated
+159_zaidimas,žaidimas,M,game,,M,yes,M,en.wiktionary.org/wiki/žaidimas: {{lt-noun|head=žaidìmas|m|žaidìmai|2}},2026-10-11 Fable (cloud); owner delegated
+160_kaina,kaina,F,price,,F,yes,F,en.wiktionary.org/wiki/kaina: {{lt-noun|f|káinos|1|head=káina}},2026-10-11 Fable (cloud); owner delegated
+161_sutartis,sutartis,F,contract,,F,yes,F,en.wiktionary.org/wiki/sutartis: {{lt-noun|head=sutartìs|f|sùtartys|3b}},2026-10-11 Fable (cloud); owner delegated
+162_narkotikas,narkotikas,M,drug,,M,yes,M,en.wiktionary.org/wiki/narkotikas: {{lt-noun|m|narkòtikai|1|head=narkòtikas}},2026-10-11 Fable (cloud); owner delegated
+164_mokslas,mokslas,M,science,,M,yes,M,en.wiktionary.org/wiki/mokslas: {{lt-noun|head=mókslas|m|mókslai|1}},2026-10-11 Fable (cloud); owner delegated
+165_dievas,Dievas,M,God,,M,yes,M,Wiktionary Dievas: declension template lt-noun-m-as-4 (masculine),2026-10-11 Fable (cloud); owner delegated
+169_muzika,muzika,F,music,,F,yes,F,en.wiktionary.org/wiki/muzika: {{lt-noun|f|mùzikos|1|head=mùzika}},2026-10-11 Fable (cloud); owner delegated
+171_menas,menas,M,art,,M,yes,M,en.wiktionary.org/wiki/menas: {{lt-noun|head=mẽnas|m|mẽnai|2}},2026-10-11 Fable (cloud); owner delegated
+212_sapnas,sapnas,M,dream,,M,yes,M,en.wiktionary.org/wiki/sapnas: {{lt-noun|m|sapnaĩ|4|head=sãpnas}},2026-10-11 Fable (cloud); owner delegated
+250_tinklas,tinklas,M,network,,M,yes,M,en.wiktionary.org/wiki/tinklas: {{lt-noun|m|head=tiñklas|tiñklai|2}},2026-10-11 Fable (cloud); owner delegated
+252_programa,programa,F,program,,F,yes,F,en.wiktionary.org/wiki/programa: {{lt-noun|head=programà|f|progrãmos|3=2}},2026-10-11 Fable (cloud); owner delegated
+272_kojos_pirstas,kojos pirštas,M,toe,,M,yes,M,head noun pirštas is masculine (Wiktionary pirštas: lt-noun m); kojos is a genitive attribute,2026-10-11 Fable (cloud); owner delegated
+284_liga,liga,F,disease,,F,yes,F,en.wiktionary.org/wiki/liga: {{lt-noun|f|lìgos|4|head=ligà}},2026-10-11 Fable (cloud); owner delegated
+286_balsas,balsas,M,voice,,M,yes,M,en.wiktionary.org/wiki/balsas: {{lt-noun|m|balsaĩ|4|head=bal̃sas}},2026-10-11 Fable (cloud); owner delegated
+298_pasaulis,pasaulis,M,world,,M,yes,M,en.wiktionary.org/wiki/pasaulis: {{lt-noun|m|pasáuliai|1|head=pasáulis}},2026-10-11 Fable (cloud); owner delegated
+299_zeme,Žemė,F,Earth,,F,yes,F,Wiktionary Žemė: declension template lt-noun-f-ė-2 (feminine),2026-10-11 Fable (cloud); owner delegated
+312_oras,oras,M,air,,M,yes,M,en.wiktionary.org/wiki/oras: {{lt-noun|m|oraĩ|3|head=óras}},2026-10-11 Fable (cloud); owner delegated
+320_karstis,karštis,M,heat,,M,yes,M,"masculine -tis/-čio noun (gen. karščio, not *karšties; DLKŽ kar̃štis sm.); contrast feminine mirtis/mirties",2026-10-11 Fable (cloud); owner delegated
+340_puse,pusė,F,half,,F,yes,F,en.wiktionary.org/wiki/pusė: {{lt-noun|f|pùsės|2|head=pùsė}},2026-10-11 Fable (cloud); owner delegated
+344_data,data,F,date,,F,yes,F,"-a noun, gen. datos (DLKŽ datà sf.); Wiktionary page has no Lithuanian section",2026-10-11 Fable (cloud); owner delegated
+345_svoris,svoris,M,weight,,M,yes,M,en.wiktionary.org/wiki/svoris: {{lt-noun|head=svõris|m|svõriai|2}},2026-10-11 Fable (cloud); owner delegated
+350_priebalsis,priebalsis,M,consonant,,M,yes,M,en.wiktionary.org/wiki/priebalsis: {{lt-noun|m|head=príebalsis|príebalsiai|1}},2026-10-11 Fable (cloud); owner delegated
+351_balsis,balsis,M,vowel,,M,yes,M,en.wiktionary.org/wiki/balsis: {{lt-noun|m|bal̃siai|2|head=bal̃sis}},2026-10-11 Fable (cloud); owner delegated
+352_sviesa,šviesa,F,light,,F,yes,F,en.wiktionary.org/wiki/šviesa: {{lt-noun|f|šviesos|4|head=šviesà}},2026-10-11 Fable (cloud); owner delegated
+353_garsas,garsas,M,sound,,M,yes,M,en.wiktionary.org/wiki/garsas: {{lt-noun|m|garsaĩ|4|head=gar̃sas}},2026-10-11 Fable (cloud); owner delegated
+356_gabalas,gabalas,M,piece,,M,yes,M,en.wiktionary.org/wiki/gabalas: {{lt-noun|head=gãbalas|m|gabalaĩ|3<sup>b</sup>}},2026-10-11 Fable (cloud); owner delegated
+357_skausmas,skausmas,M,pain,,M,yes,M,en.wiktionary.org/wiki/skausmas: {{lt-noun|head=skaũsmas|m|skausmaĩ|4}},2026-10-11 Fable (cloud); owner delegated
+362_rastas,raštas,M,"writing, script",,M,yes,M,en.wiktionary.org/wiki/raštas: {{lt-noun|head=rãštas|m|rãštai|2}},2026-10-11 Fable (cloud); owner delegated
+479_piktas,piktas,M/F · pikta,mean,,M/F · pikta,yes,M/F,en.wiktionary.org/wiki/piktas: {{lt-adj|piktà||4|head=pìktas}} (adjective; M/F with feminine as proposed),2026-10-11 Fable (cloud); owner delegated
+508_branduolinis,branduolinis,M/F · branduolinė,nuclear,,M/F · branduolinė,yes,M/F,en.wiktionary.org/wiki/branduolinis: {{lt-adj|head=branduolìnis|branduolìnė|3=2}} (adjective; M/F with feminine as proposed),2026-10-11 Fable (cloud); owner delegated
+509_garsus,garsus,M/F · garsi,famous,,M/F · garsi,yes,M/F,en.wiktionary.org/wiki/garsus: {{lt-adj|head=garsùs|garsì|garsù|4}} (adjective; M/F with feminine as proposed),2026-10-11 Fable (cloud); owner delegated
