@@ -63,14 +63,25 @@ import go_settings
 # ---------------------------------------------------------------------------
 _HERE = os.path.dirname(os.path.abspath(__file__))
 # per-card staging lines, inserted right after the Subject sentence
-CARD_NOTES = json.load(open(os.path.join(_HERE, "card_notes.json"),
-                            encoding="utf-8"))["notes"]
+_CN = json.load(open(os.path.join(_HERE, "card_notes.json"), encoding="utf-8"))
+CARD_NOTES = _CN["notes"]
+# staged cards whose note already places them (they get no bank Setting line)
+SETTINGS_EMBEDDED = set(_CN.get("_settings_embedded", []))
 # Sunday-best dress class: church, weddings, theatre, social dancing
 FORMAL_ROWS = {46, 49, 137, 408}
 # full-scene composition (lead F6.1D) beyond the "place" class
 FULL_SCENE_ROWS = {383}
 # walking/running strips: explicit left/right alternation
 MOTION_STRIP_ROWS = {366, 367}
+# verbs whose generic step-by-step motion strip still teaches the word (jump,
+# go out, throw, fall, bend, turn); every other verb without its own insets or
+# result panel gets VERB_INSET_DEFAULT (F6.2: dainuoti drew a conductor's
+# hand-gesture strip that "confuses the card")
+SEQUENCE_VERBS = {371, 388, 418, 425, 432, 435}
+VERB_INSET_DEFAULT = ("Include 2 to 3 small supporting insets showing the action's "
+                      "defining detail at close range (the mouth, the hands, the "
+                      "tool, the foot), the action seen from a second angle, and "
+                      "its result, each clearly different.")
 # key -> "Setting: ..." line; filled by prepare_settings() over the WHOLE
 # eligible list (not a --only/--trial subset) so assignments are stable
 SETTINGS = {}
@@ -78,8 +89,14 @@ SETTINGS = {}
 
 def prepare_settings(work):
     vs = {n: st[1] for n, st in VERB_STAGING.items()}
+    # place cards whose note draws the main picture itself keep no bank
+    # Setting line: in check 10 those notes alone fixed gatve/mokykla/stotis,
+    # and a second place (a lime boulevard behind "a street") risks the
+    # plaza reading coming back
+    staged_places = {k for k, r, cls in work if cls == "place"
+                     and CARD_NOTES.get(k, "").startswith("Main picture:")}
     SETTINGS.clear()
-    SETTINGS.update(go_settings.assign(work, vs, skip=set(CARD_NOTES)))
+    SETTINGS.update(go_settings.assign(work, vs, skip=SETTINGS_EMBEDDED | staged_places))
     return SETTINGS
 from verb_flashcards import scene_for, inset_for
 
@@ -1223,12 +1240,20 @@ def build_call(key, r, cls):
         if comp == "scene":
             sc = sc.replace(SCENE_TAIL, "")
         return dict(subject=subject, scene=sc,
-                    inset_note=(vi if vi else inset_for(consequence)), insets=True,
+                    inset_note=(vi if vi else
+                                inset_for(consequence) if (consequence or n in MOTION_STRIP_ROWS
+                                                           or n in SEQUENCE_VERBS)
+                                else VERB_INSET_DEFAULT), insets=True,
                     text=False, people=("formal" if n in FORMAL_ROWS else people),
                     glyph=False, composition=comp,
                     staging=CARD_NOTES.get(key, ""),
                     setting=SETTINGS.get(key, ""),
                     motion_strip=n in MOTION_STRIP_ROWS,
+                    # 2026-10-11: verbs may carry card_text too (383 pirkti,
+                    # 385 parduoti price tags); this branch used to drop it,
+                    # so the row's declared lettering never reached the prompt
+                    exact_text=r.get("card_text", "").strip(),
+                    exclude=r["lithuanian_TARGET"].strip(),
                     filename=f"{key}.png")
     scene, inset_note, _, people, insets = compose_class(cls, r["category"])
     n = int(r["#"])
@@ -1261,6 +1286,11 @@ def build_call(key, r, cls):
     comp = "scene" if (cls == "place" or n in FULL_SCENE_ROWS) else "vignette"
     if comp == "scene":
         scene = scene.replace(SCENE_TAIL, "")
+    # a staging note that sets the main picture itself replaces the class
+    # composition clause (Fable 10: interior place cards otherwise also got
+    # "draw it from the front as an architectural elevation")
+    if CARD_NOTES.get(key, "").startswith("Main picture:") and "main" not in st:
+        scene = "" if comp == "scene" else SCENE_TAIL.strip()
     if n in FORMAL_ROWS:
         people = "formal"
     return dict(subject=subject, scene=scene, inset_note=inset_note,

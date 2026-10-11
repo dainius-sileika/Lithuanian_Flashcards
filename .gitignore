@@ -26,6 +26,9 @@ probe.log
 # card images are distributed via GitHub Releases, not committed to the repo.
 # The text ledgers (ledger.csv / prompts, cards.csv / Anki fields) ARE kept.
 out_deck/*.png
+out_deck_f62/*.png
+out_deck_f62/review/media/
+out_deck_f62/_sheets/
 deprecated/card_images_pre_1.7/
 
 qa_crop*.png
@@ -69,3 +72,4 @@ style_lab/**/*.jpg
 style_lab/**/.DS_Store
 style_lab/**/standalone/GO_style_survey.html
 style_lab/**/*.zip
+out_deck_f62/_rerolled/

@@ -1,0 +1,47 @@
+entry,english,route,note,source
+čekis,,SWAP,replaces queue A2-0104 kvitas (off-list),overlap check 2026-10-10
+grynieji pinigai,,SWAP,replaces queue A2-0268 grynieji (off-list form),overlap check 2026-10-10
+nuovada,,SWAP,replaces queue A2-0650 policijos nuovada (off-list),overlap check 2026-10-10
+persikelti,,SWAP,replaces queue A2-0411 kraustytis (off-list),overlap check 2026-10-10
+sąskaita,,SWAP,replaces queue A2-0270 sąskaita (banko); keep phrase A2-0381,overlap check 2026-10-10
+pirmiausia,,SWAP,replaces queue A2-0944 visų pirma (off-list),overlap check 2026-10-10
+pagaliau,,SWAP,replaces queue A2-0945 galiausiai (off-list),overlap check 2026-10-10
+klaidingas,,SWAP,replaces queue A2-0540 neteisingas (off-list),overlap check 2026-10-10
+į sveikatą,,DUP,queue A2-0888,overlap check 2026-10-10
+sėkmės,,DUP,queue A2-0887,overlap check 2026-10-10
+Tikrai?,,DUP,queue A2-0168 tikrai,overlap check 2026-10-10
+uždaryta,,DUP,queue A2-0533 uždarytas; use as sign text there,overlap check 2026-10-10
+labą rytą,,DUP,queue A2-0350 labas rytas (both forms on list),overlap check 2026-10-10
+labą vakarą,,DUP,queue A2-0352 labas vakaras (both forms on list),overlap check 2026-10-10
+malonu,,DUP,queue A2-0363 malonu susipažinti,overlap check 2026-10-10
+viena,,DUP,fem of queue A2-0042 vienas,overlap check 2026-10-10
+pirma,,DUP,fem of queue A2-0072 pirmas; also adverb 'first',overlap check 2026-10-10
+antra,,DUP,fem of queue A2-0073 antras,overlap check 2026-10-10
+trečia,,DUP,fem of queue A2-0074 trečias,overlap check 2026-10-10
+kuri,,DUP,fem of queue A2-0116 kuris,overlap check 2026-10-10
+paaiškinti,,PAIR,aiškinti (queue A2-0260) → paaiškinti,overlap check 2026-10-10
+pakartoti,,PAIR,kartoti (queue A2-0263) → pakartoti; also phrase 'Pakartokite; prašau',overlap check 2026-10-10
+užmiršti,,SYN,queue A2-0265 pamiršti,overlap check 2026-10-10
+užsakyti,,SYN,queue A2-0273 užsisakyti,overlap check 2026-10-10
+valgiaraštis,,SYN,queue A2-0102 meniu,overlap check 2026-10-10
+prisiminti,,SYN,queue A2-0264 atsiminti,overlap check 2026-10-10
+bendradarbis,,SYN,queue A2-0246 kolega,overlap check 2026-10-10
+autobusų stotelė,,SYN,queue A2-0659 stotelė,overlap check 2026-10-10
+įvertinimas,,SYN,queue A2-0254 pažymys,overlap check 2026-10-10
+vadovė,,SYN,fem of deck vadovas,overlap check 2026-10-10
+fotografija,,SYN,deck has nuotrauka,overlap check 2026-10-10
+indelis,small container; tub (dimin. of indas),,low value; NOT deposit (= indėlis),Fable blind review 2026-10-10
+gana,enough; quite; rather,,'Gana!' = Enough!,Fable blind review 2026-10-10
+administratorius,receptionist; administrator,,desk-badge sense first,Fable blind review 2026-10-10
+rakinti,to lock,IMG,imperfective; perfective užrakinti is queue A2-0477,Fable blind review 2026-10-10
+aikštelė,car park; playground; court,,head of stovėjimo/žaidimų/statybų aikštelė,Fable blind review 2026-10-10
+alėja,avenue (tree-lined walk),,not English 'alley',Fable blind review 2026-10-10
+šiukšlių konteineris,outdoor rubbish container,,indoor bin = šiukšliadėžė,Fable blind review 2026-10-10
+kabinetas,office; doctor's consulting room,,gydytojo kabinetas,Fable blind review 2026-10-10
+užsirašyti,to make an appointment; sign up; note down,,užsirašyti pas gydytoją,Fable blind review 2026-10-10
+nuolaidų kortelė,discount card,CLOZE,'Ar turite nuolaidų kortelę?' at every checkout,Fable blind review 2026-10-10
+dažyti,to paint; to dye (hair),,dažyti plaukus,Fable blind review 2026-10-10
+išvežti šiukšles,to collect the rubbish (by truck),,carrying it out = išnešti šiukšles,Fable blind review 2026-10-10
+suolas,bench; school desk,,,Fable blind review 2026-10-10
+sloga,head cold; runny nose,,Turiu slogą = I have a cold,Fable blind review 2026-10-10
+bedarbis,unemployed person,CLOZE,a status; a wordless picture can't distinguish it,Fable blind review 2026-10-10

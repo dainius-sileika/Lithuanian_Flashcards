@@ -18,7 +18,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 017_valtis,valtis,boat,F,valties,,,,17,Transportation,017_valtis.webp,forms machine-generated — (accents & irregulars),váltis,wiktionary,A1
 018_laivas,laivas,ship,M,laivo,,,,18,Transportation,018_laivas.webp,forms machine-generated — (accents & irregulars),laĩvas,wiktionary,A1
 019_padanga,padanga,tire,F,padangos,,,,19,Transportation,019_padanga.webp,forms machine-generated — (accents & irregulars),padangà,wiktionary,A1
-020_benzinas,benzinas,gasoline,M,benzino,,,,20,Transportation,020_benzinas.webp,forms machine-generated — (accents & irregulars),benzinas,wiktionary-html,A1
+020_benzinas,benzinas,gasoline,M,benzino,,,,20,Transportation,020_benzinas.webp,forms machine-generated — (accents & irregulars),benzìnas,wiktionary-html,A1
 021_variklis,variklis,engine,M,variklio,,,,21,Transportation,021_variklis.webp,forms machine-generated — (accents & irregulars),varìklis,wiktionary,A1
 022_bilietas,bilietas,train ticket,M,bilieto,,,,22,Transportation,022_bilietas.webp,forms machine-generated — (accents & irregulars),bìlietas,wiktionary,A1
 023_transportas,transportas,transportation,M,transporto,,,,23,Transportation,023_transportas.webp,forms machine-generated — (accents & irregulars),transpòrtas,wiktionary,A1
@@ -77,7 +77,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 076_juodas,juodas,black,M/F,juodo,,,,76,Color,076_juodas.webp,forms machine-generated — (accents & irregulars),júodas,wiktionary,A1
 077_baltas,baltas,white,M/F,balto,,,,77,Color,077_baltas.webp,forms machine-generated — (accents & irregulars),báltas,wiktionary,A1
 078_pilkas,pilkas,gray,M/F,pilko,,,,78,Color,078_pilkas.webp,forms machine-generated — (accents & irregulars),pìlkas,wiktionary,A1
-079_spalva,spalva,color,,spalvos,,,,79,Color,079_spalva.webp,forms machine-generated — (accents & irregulars),spalvà,wiktionary,A1
+079_spalva,spalva,color,F,spalvos,,,,79,Color,079_spalva.webp,forms machine-generated — (accents & irregulars),spalvà,wiktionary,A1
 080_sunus,sūnus,son,M,sūnaus,,,,80,People,080_sunus.webp,forms machine-generated — (accents & irregulars),sūnùs,wiktionary,A1
 081_dukra,dukra,daughter,F,dukros,,,,81,People,081_dukra.webp,forms machine-generated — (accents & irregulars),dukrà,wiktionary,A1
 082_motina,motina,mother,F,motinos,,,,82,People,082_motina.webp,forms machine-generated — (accents & irregulars),mótina,wiktionary,A1
@@ -92,9 +92,9 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 091_senelis,senelis,grandfather,M,senelio,,,,91,People,091_senelis.webp,forms machine-generated — (accents & irregulars),senẽlis,wiktionary,A1
 092_senele,senelė,grandmother,F,senelės,,,,92,People,092_senele.webp,forms machine-generated — (accents & irregulars),senẽlė,wiktionary,A1
 093_vyras,vyras,husband,M,vyro,,,,93,People,093_vyras.webp,forms machine-generated — (accents & irregulars),výras,wiktionary,A1
-094_zmona,žmona,wife,,žmonos,,,,94,People,094_zmona.webp,forms machine-generated — (accents & irregulars),žmonà,wiktionary,A1
+094_zmona,žmona,wife,F,žmonos,,,,94,People,094_zmona.webp,forms machine-generated — (accents & irregulars),žmonà,wiktionary,A1
 095_karalius,karalius,king,M,karaliaus,,,,95,People,095_karalius.webp,forms machine-generated — (accents & irregulars),karãlius,wiktionary,A1
-096_karaliene,karalienė,queen,F,karalienės,,,,96,People,096_karaliene.webp,forms machine-generated — (accents & irregulars),karalienė,wiktionary,A1
+096_karaliene,karalienė,queen,F,karalienės,,,,96,People,096_karaliene.webp,forms machine-generated — (accents & irregulars),karalíenė,wiktionary,A1
 097_prezidentas,prezidentas,president,M/F,prezidento,,,,97,People,097_prezidentas.webp,forms machine-generated — (accents & irregulars),prezideñtas,wiktionary,A1
 098_kaimynas,kaimynas,neighbor,M/F,kaimyno,,,,98,People,098_kaimynas.webp,forms machine-generated — (accents & irregulars),kaimýnas,wiktionary,A1
 099_berniukas,berniukas,boy,M,berniuko,,,,99,People,099_berniukas.webp,forms machine-generated — (accents & irregulars),berniùkas,wiktionary,A1
@@ -113,7 +113,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 112_advokatas,advokatas,lawyer,M/F,advokato,,,,112,Job,112_advokatas.webp,forms machine-generated — (accents & irregulars),advokãtas,wiktionary,A1
 113_gydytojas,gydytojas,doctor,M/F,gydytojo,,,,113,Job,113_gydytojas.webp,forms machine-generated — (accents & irregulars),gýdytojas,wiktionary,A1
 114_pacientas,pacientas,patient,M/F,paciento,,,,114,Job,114_pacientas.webp,forms machine-generated — (accents & irregulars),pacieñtas,wiktionary,A1
-115_padavejas,padavėjas,waiter,M/F,padavėjo,,,,115,Job,115_padavejas.webp,forms machine-generated — (accents & irregulars),padavėjas,wiktionary-html,A1
+115_padavejas,padavėjas,waiter,M/F,padavėjo,,,,115,Job,115_padavejas.webp,forms machine-generated — (accents & irregulars),padavė́jas,wiktionary-html,A1
 116_sekretorius,sekretorius,secretary,M/F,sekretoriaus,,,,116,Job,116_sekretorius.webp,forms machine-generated — (accents & irregulars),sekretõrius,kirtis.info,A1
 117_kunigas,kunigas,priest,M,kunigo,,,,117,Job,117_kunigas.webp,forms machine-generated — (accents & irregulars),kùnigas,wiktionary,A1
 118_policininkas,policininkas,police officer,M/F,policininko,,,,118,Job,118_policininkas.webp,forms machine-generated — (accents & irregulars),polìcininkas,wiktionary,A1
@@ -126,50 +126,50 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 125_zurnalistas,žurnalistas,reporter,M/F,žurnalisto,,,,125,Job,125_zurnalistas.webp,forms machine-generated — (accents & irregulars),žurnalìstas,wiktionary,A1
 126_aktorius,aktorius,actor,M/F,aktoriaus,,,,126,Job,126_aktorius.webp,forms machine-generated — (accents & irregulars),ãktorius,wiktionary,A1
 127_darbas,darbas,job,M,darbo,,,,127,Job,127_darbas.webp,forms machine-generated — (accents & irregulars),dárbas,wiktionary,A1
-128_religija,religija,religion,,religijos,,,,128,Society,128_religija.webp,forms machine-generated — (accents & irregulars),relìgija,wiktionary,A2
-129_dangus,dangus,heaven,,dangaus,,,,129,Society,129_dangus.webp,forms machine-generated — (accents & irregulars),dangùs,wiktionary,A2
-130_pragaras,pragaras,hell,,pragaro,,,,130,Society,130_pragaras.webp,forms machine-generated — (accents & irregulars),prãgaras,wiktionary,A2
-131_mirtis,mirtis,death,,mirties,,,,131,Society,131_mirtis.webp,forms machine-generated — (accents & irregulars),mirtìs,wiktionary,A2
-132_vaistai,vaistai,medicine,,vaistų,,,,132,Society,132_vaistai.webp,forms machine-generated — (accents & irregulars),váistai,wiktionary,A2
-133_pinigai,pinigai,money,,pinigų,,,,133,Society,133_pinigai.webp,forms machine-generated — (accents & irregulars),pinigaĩ,wiktionary,A2
-134_doleris,doleris,dollar,,dolerio,,,,134,Society,134_doleris.webp,forms machine-generated — (accents & irregulars),dóleris,wiktionary,A2
-135_banknotas,banknotas,bill,,banknoto,,,,135,Society,135_banknotas.webp,forms machine-generated — (accents & irregulars),banknòtas,wiktionary,A2
-136_santuoka,santuoka,marriage,,santuokos,,,,136,Society,136_santuoka.webp,forms machine-generated — (accents & irregulars),sántuoka,wiktionary,A2
+128_religija,religija,religion,F,religijos,,,,128,Society,128_religija.webp,forms machine-generated — (accents & irregulars),relìgija,wiktionary,A2
+129_dangus,dangus,heaven,M,dangaus,,,,129,Society,129_dangus.webp,forms machine-generated — (accents & irregulars),dangùs,wiktionary,A2
+130_pragaras,pragaras,hell,M,pragaro,,,,130,Society,130_pragaras.webp,forms machine-generated — (accents & irregulars),prãgaras,wiktionary,A2
+131_mirtis,mirtis,death,F,mirties,,,,131,Society,131_mirtis.webp,forms machine-generated — (accents & irregulars),mirtìs,wiktionary,A2
+132_vaistai,vaistai,medicine,M pl,vaistų,,,,132,Society,132_vaistai.webp,forms machine-generated — (accents & irregulars),váistai,wiktionary,A2
+133_pinigai,pinigai,money,M pl,pinigų,,,,133,Society,133_pinigai.webp,forms machine-generated — (accents & irregulars),pinigaĩ,wiktionary,A2
+134_doleris,doleris,dollar,M,dolerio,,,,134,Society,134_doleris.webp,forms machine-generated — (accents & irregulars),dóleris,wiktionary,A2
+135_banknotas,banknotas,bill,M,banknoto,,,,135,Society,135_banknotas.webp,forms machine-generated — (accents & irregulars),banknòtas,wiktionary,A2
+136_santuoka,santuoka,marriage,F,santuokos,,,,136,Society,136_santuoka.webp,forms machine-generated — (accents & irregulars),sántuoka,wiktionary,A2
 137_vestuves,vestuvės,wedding,F,vestuvių,,,,137,Society,137_vestuves.webp,forms machine-generated — (accents & irregulars),vestùvės,wiktionary,A1
-138_komanda,komanda,team,,komandos,,,,138,Society,138_komanda.webp,forms machine-generated — (accents & irregulars),kománda,wiktionary,A2
-139_santykiai,santykiai,relationship,,santykių,,,,139,Society,139_santykiai.webp,forms machine-generated — (accents & irregulars),sántykiai,wiktionary-lt,A2
-140_rase,rasė,race ethnicity,,rasės,,,,140,Society,140_rase.webp,forms machine-generated — (accents & irregulars),rãsė,kirtis.info,A2
-141_seksas,seksas,sex act,,sekso,,,,141,Society,141_seksas.webp,forms machine-generated — (accents & irregulars),sèksas,wiktionary,A2
-142_lytis,lytis,sex gender,,lyties,,,,142,Society,142_lytis.webp,forms machine-generated — (accents & irregulars),lytìs,wiktionary,A2
-143_zmogzudyste,žmogžudystė,murder,,žmogžudystės,,,,143,Society,143_zmogzudyste.webp,forms machine-generated — (accents & irregulars),žmogžudỹstė,kirtis.info,A2
-144_kalejimas,kalėjimas,prison,,kalėjimo,,,,144,Society,144_kalejimas.webp,forms machine-generated — (accents & irregulars),kalė́jimas,wiktionary,A2
-145_technologija,technologija,technology,,technologijos,,,,145,Society,145_technologija.webp,forms machine-generated — (accents & irregulars),technologija,wiktionary-html,A2
-146_energija,energija,energy,,energijos,,,,146,Society,146_energija.webp,forms machine-generated — (accents & irregulars),ener̃gija,wiktionary,A2
-147_karas,karas,war,,karo,,,,147,Society,147_karas.webp,forms machine-generated — (accents & irregulars),kãras,wiktionary,A2
-148_taika,taika,peace,,taikos,,,,148,Society,148_taika.webp,forms machine-generated — (accents & irregulars),taika,wiktionary-html,A2
-149_puolimas,puolimas,attack,,puolimo,,,,149,Society,149_puolimas.webp,forms machine-generated — (accents & irregulars),puolìmas,kirtis.info,A2
-150_rinkimai,rinkimai,election,,rinkimų,,,,150,Society,150_rinkimai.webp,forms machine-generated — (accents & irregulars),rinkìmai,wiktionary,A2
-151_zurnalas,žurnalas,magazine,,žurnalo,,,,151,Society,151_zurnalas.webp,forms machine-generated — (accents & irregulars),žurnãlas,wiktionary,A2
-152_laikrastis,laikraštis,newspaper,,laikraščio,,,,152,Society,152_laikrastis.webp,forms machine-generated — (accents & irregulars),laĩkraštis,wiktionary,A2
-153_nuodai,nuodai,poison,,nuodų,,,,153,Society,153_nuodai.webp,forms machine-generated — (accents & irregulars),nuodaĩ,wiktionary,A2
-154_ginklas,ginklas,gun,,ginklo,,,,154,Society,154_ginklas.webp,forms machine-generated — (accents & irregulars),giñklas,wiktionary,A2
-155_sportas,sportas,sport,,sporto,,,,155,Society,155_sportas.webp,forms machine-generated — (accents & irregulars),spòrtas,wiktionary,A2
-156_lenktynes,lenktynės,race sport,,lenktynių,,,,156,Society,156_lenktynes.webp,forms machine-generated — (accents & irregulars),lenktỹnės,wiktionary,A2
-157_manksta,mankšta,exercise,,mankštos,,,,157,Society,157_manksta.webp,forms machine-generated — (accents & irregulars),mankštà,kirtis.info,A2
-158_kamuolys,kamuolys,ball,,kamuolio,,,,158,Society,158_kamuolys.webp,forms machine-generated — (accents & irregulars),kamuolỹs,wiktionary,A2
-159_zaidimas,žaidimas,game,,žaidimo,,,,159,Society,159_zaidimas.webp,forms machine-generated — (accents & irregulars),žaidìmas,wiktionary,A2
-160_kaina,kaina,price,,kainos,,,,160,Society,160_kaina.webp,forms machine-generated — (accents & irregulars),káina,wiktionary,A2
-161_sutartis,sutartis,contract,,sutarties,,,,161,Society,161_sutartis.webp,forms machine-generated — (accents & irregulars),sutartìs,wiktionary,A2
-162_narkotikas,narkotikas,drug,,narkotiko,,,,162,Society,162_narkotikas.webp,forms machine-generated — (accents & irregulars),narkòtikas,wiktionary,A2
+138_komanda,komanda,team,F,komandos,,,,138,Society,138_komanda.webp,forms machine-generated — (accents & irregulars),kománda,wiktionary,A2
+139_santykiai,santykiai,relationship,M pl,santykių,,,,139,Society,139_santykiai.webp,forms machine-generated — (accents & irregulars),sántykiai,wiktionary-lt,A2
+140_rase,rasė,race ethnicity,F,rasės,,,,140,Society,140_rase.webp,forms machine-generated — (accents & irregulars),rãsė,kirtis.info,A2
+141_seksas,seksas,sex act,M,sekso,,,,141,Society,141_seksas.webp,forms machine-generated — (accents & irregulars),sèksas,wiktionary,A2
+142_lytis,lytis,sex gender,F,lyties,,,,142,Society,142_lytis.webp,forms machine-generated — (accents & irregulars),lytìs,wiktionary,A2
+143_zmogzudyste,žmogžudystė,murder,F,žmogžudystės,,,,143,Society,143_zmogzudyste.webp,forms machine-generated — (accents & irregulars),žmogžudỹstė,kirtis.info,A2
+144_kalejimas,kalėjimas,prison,M,kalėjimo,,,,144,Society,144_kalejimas.webp,forms machine-generated — (accents & irregulars),kalė́jimas,wiktionary,A2
+145_technologija,technologija,technology,F,technologijos,,,,145,Society,145_technologija.webp,forms machine-generated — (accents & irregulars),technològija,wiktionary-html,A2
+146_energija,energija,energy,F,energijos,,,,146,Society,146_energija.webp,forms machine-generated — (accents & irregulars),ener̃gija,wiktionary,A2
+147_karas,karas,war,M,karo,,,,147,Society,147_karas.webp,forms machine-generated — (accents & irregulars),kãras,wiktionary,A2
+148_taika,taika,peace,F,taikos,,,,148,Society,148_taika.webp,forms machine-generated — (accents & irregulars),taika,wiktionary-html,A2
+149_puolimas,puolimas,attack,M,puolimo,,,,149,Society,149_puolimas.webp,forms machine-generated — (accents & irregulars),puolìmas,kirtis.info,A2
+150_rinkimai,rinkimai,election,M pl,rinkimų,,,,150,Society,150_rinkimai.webp,forms machine-generated — (accents & irregulars),rinkìmai,wiktionary,A2
+151_zurnalas,žurnalas,magazine,M,žurnalo,,,,151,Society,151_zurnalas.webp,forms machine-generated — (accents & irregulars),žurnãlas,wiktionary,A2
+152_laikrastis,laikraštis,newspaper,M,laikraščio,,,,152,Society,152_laikrastis.webp,forms machine-generated — (accents & irregulars),laĩkraštis,wiktionary,A2
+153_nuodai,nuodai,poison,M pl,nuodų,,,,153,Society,153_nuodai.webp,forms machine-generated — (accents & irregulars),nuodaĩ,wiktionary,A2
+154_ginklas,ginklas,gun,M,ginklo,,,,154,Society,154_ginklas.webp,forms machine-generated — (accents & irregulars),giñklas,wiktionary,A2
+155_sportas,sportas,sport,M,sporto,,,,155,Society,155_sportas.webp,forms machine-generated — (accents & irregulars),spòrtas,wiktionary,A2
+156_lenktynes,lenktynės,race sport,F pl,lenktynių,,,,156,Society,156_lenktynes.webp,forms machine-generated — (accents & irregulars),lenktỹnės,wiktionary,A2
+157_manksta,mankšta,exercise,F,mankštos,,,,157,Society,157_manksta.webp,forms machine-generated — (accents & irregulars),mankštà,kirtis.info,A2
+158_kamuolys,kamuolys,ball,M,kamuolio,,,,158,Society,158_kamuolys.webp,forms machine-generated — (accents & irregulars),kamuolỹs,wiktionary,A2
+159_zaidimas,žaidimas,game,M,žaidimo,,,,159,Society,159_zaidimas.webp,forms machine-generated — (accents & irregulars),žaidìmas,wiktionary,A2
+160_kaina,kaina,price,F,kainos,,,,160,Society,160_kaina.webp,forms machine-generated — (accents & irregulars),káina,wiktionary,A2
+161_sutartis,sutartis,contract,F,sutarties,,,,161,Society,161_sutartis.webp,forms machine-generated — (accents & irregulars),sutartìs,wiktionary,A2
+162_narkotikas,narkotikas,drug,M,narkotiko,,,,162,Society,162_narkotikas.webp,forms machine-generated — (accents & irregulars),narkòtikas,wiktionary,A2
 163_zenklas,ženklas,sign,M,ženklo,,,,163,Society,163_zenklas.webp,forms machine-generated — (accents & irregulars),žénklas,wiktionary,A1
-164_mokslas,mokslas,science,,mokslo,,,,164,Society,164_mokslas.webp,forms machine-generated — (accents & irregulars),mókslas,wiktionary,A2
-165_dievas,Dievas,God,,Dievo,,,,165,Society,165_dievas.webp,forms machine-generated — (accents & irregulars),Diẽvas,wiktionary,A2
+164_mokslas,mokslas,science,M,mokslo,,,,164,Society,164_mokslas.webp,forms machine-generated — (accents & irregulars),mókslas,wiktionary,A2
+165_dievas,Dievas,God,M,Dievo,,,,165,Society,165_dievas.webp,forms machine-generated — (accents & irregulars),Diẽvas,wiktionary,A2
 166_grupe,grupė,band,F,grupės,,,,166,Art,166_grupe.webp,forms machine-generated — (accents & irregulars),grùpė,wiktionary,A1
 167_daina,daina,song,F,dainos,,,,167,Art,167_daina.webp,forms machine-generated — (accents & irregulars),dainà,wiktionary,A2
 168_instrumentas,instrumentas,instrument,M,instrumento,,,,168,Art,168_instrumentas.webp,forms machine-generated — (accents & irregulars),instrumeñtas,wiktionary,A1
-169_muzika,muzika,music,,muzikos,,,,169,Art,169_muzika.webp,forms machine-generated — (accents & irregulars),mùzika,wiktionary,A2
+169_muzika,muzika,music,F,muzikos,,,,169,Art,169_muzika.webp,forms machine-generated — (accents & irregulars),mùzika,wiktionary,A2
 170_filmas,filmas,movie,M,filmo,,,,170,Art,170_filmas.webp,forms machine-generated — (accents & irregulars),fìlmas,wiktionary,A1
-171_menas,menas,art,,meno,,,,171,Art,171_menas.webp,forms machine-generated — (accents & irregulars),mẽnas,wiktionary,A2
+171_menas,menas,art,M,meno,,,,171,Art,171_menas.webp,forms machine-generated — (accents & irregulars),mẽnas,wiktionary,A2
 172_kava,kava,coffee,F,kavos,,,,172,Beverages,172_kava.webp,forms machine-generated — (accents & irregulars),kavà,wiktionary,A1
 173_arbata,arbata,tea,F,arbatos,,,,173,Beverages,173_arbata.webp,forms machine-generated — (accents & irregulars),arbatà,wiktionary,A1
 174_vynas,vynas,wine,M,vyno,,,,174,Beverages,174_vynas.webp,forms machine-generated — (accents & irregulars),vỹnas,wiktionary,A1
@@ -181,6 +181,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 180_kiausinis,kiaušinis,egg,M,kiaušinio,,,,180,Food,180_kiausinis.webp,forms machine-generated — (accents & irregulars),kiaušìnis,wiktionary,A1
 181_suris,sūris,cheese,M,sūrio,,,,181,Food,181_suris.webp,forms machine-generated — (accents & irregulars),sū́ris,wiktionary,A1
 182_duona,duona,bread,F,duonos,,,,182,Food,182_duona.webp,forms machine-generated — (accents & irregulars),dúona,wiktionary,A1
+531_batonas,batonas,white loaf (wheat bread),M,batono,,,,531,Food,531_batonas.webp,added 2026-10-11 (owner F6 note); placed after 182_duona so the study order keeps the pair together; image pending,batònas,kirtis.info,A1
 183_sriuba,sriuba,soup,F,sriubos,,,,183,Food,183_sriuba.webp,forms machine-generated — (accents & irregulars),sriubà,wiktionary,A1
 184_tortas,tortas,cake,M,torto,,,,184,Food,184_tortas.webp,forms machine-generated — (accents & irregulars),tòrtas,wiktionary,A1
 185_vistiena,vištiena,chicken,F,vištienos,,,,185,Food,185_vistiena.webp,forms machine-generated — (accents & irregulars),vištíena,wiktionary,A1
@@ -197,9 +198,9 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 196_sekla,sėkla,seed,F,sėklos,,,,196,Food,196_sekla.webp,forms machine-generated — (accents & irregulars),sė́kla,wiktionary,A1
 197_peilis,peilis,knife,M,peilio,,,,197,Food,197_peilis.webp,forms machine-generated — (accents & irregulars),peĩlis,wiktionary,A1
 198_saukstas,šaukštas,spoon,M,šaukšto,,,,198,Food,198_saukstas.webp,forms machine-generated — (accents & irregulars),šáukštas,wiktionary,A1
-199_sakute,šakutė,fork,F,šakutės,,,,199,Food,199_sakute.webp,forms machine-generated — (accents & irregulars),šakutė,wiktionary-html,A1
+199_sakute,šakutė,fork,F,šakutės,,,,199,Food,199_sakute.webp,forms machine-generated — (accents & irregulars),šakùtė,wiktionary-html,A1
 200_lekste,lėkštė,plate,F,lėkštės,,,,200,Food,200_lekste.webp,forms machine-generated — (accents & irregulars),lėkštė̃,wiktionary,A1
-201_puodelis,puodelis,cup,M,puodelio,,,,201,Food,201_puodelis.webp,forms machine-generated — (accents & irregulars),puodelis,wiktionary-html,A1
+201_puodelis,puodelis,cup,M,puodelio,,,,201,Food,201_puodelis.webp,forms machine-generated — (accents & irregulars),puodẽlis,wiktionary-html,A1
 202_pusryciai,pusryčiai,breakfast,M pl,pusryčių,,,,202,Food,202_pusryciai.webp,forms machine-generated — (accents & irregulars),pùsryčiai,wiktionary,A1
 203_pietus,pietūs,lunch,M pl,pietų,,,,203,Food,203_pietus.webp,forms machine-generated — (accents & irregulars),piẽtūs,wiktionary,A1
 204_vakariene,vakarienė,dinner,F,vakarienės,,,,204,Food,204_vakariene.webp,forms machine-generated — (accents & irregulars),vakariẽnė,wiktionary,A1
@@ -210,7 +211,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 209_stalas,stalas,table,M,stalo,,,,209,Home,209_stalas.webp,forms machine-generated — (accents & irregulars),stãlas,wiktionary,A1
 210_kede,kėdė,chair,F,kėdės,,,,210,Home,210_kede.webp,forms machine-generated — (accents & irregulars),kėdė̃,wiktionary,A1
 211_lova,lova,bed,F,lovos,,,,211,Home,211_lova.webp,forms machine-generated — (accents & irregulars),lóva,wiktionary,A1
-212_sapnas,sapnas,dream,,sapno,,,,212,Home,212_sapnas.webp,forms machine-generated — (accents & irregulars),sãpnas,wiktionary,A2
+212_sapnas,sapnas,dream,M,sapno,,,,212,Home,212_sapnas.webp,forms machine-generated — (accents & irregulars),sãpnas,wiktionary,A2
 213_langas,langas,window,M,lango,,,,213,Home,213_langas.webp,forms machine-generated — (accents & irregulars),lángas,wiktionary,A1
 214_durys,durys,door,F pl,durų,,,,214,Home,214_durys.webp,forms machine-generated — (accents & irregulars),dùrys,wiktionary,A1
 215_miegamasis,miegamasis,bedroom,M,miegamojo,,,,215,Home,215_miegamasis.webp,forms machine-generated — (accents & irregulars),miegamàsis,wiktionary,A1
@@ -218,7 +219,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 217_vonia,vonia,bathroom,F,vonios,,,,217,Home,217_vonia.webp,forms machine-generated — (accents & irregulars),vonià,wiktionary,A1
 218_piestukas,pieštukas,pencil,M,pieštuko,,,,218,Home,218_piestukas.webp,forms machine-generated — (accents & irregulars),pieštùkas,wiktionary,A1
 219_rasiklis,rašiklis,pen,M,rašiklio,,,,219,Home,219_rasiklis.webp,forms machine-generated — (accents & irregulars),rašìklis,kirtis.info,A1
-220_nuotrauka,nuotrauka,photograph,F,nuotraukos,,,,220,Home,220_nuotrauka.webp,forms machine-generated — (accents & irregulars),nuotrauka,wiktionary-html,A1
+220_nuotrauka,nuotrauka,photograph,F,nuotraukos,,,,220,Home,220_nuotrauka.webp,forms machine-generated — (accents & irregulars),núotrauka,wiktionary-html,A1
 221_muilas,muilas,soap,M,muilo,,,,221,Home,221_muilas.webp,forms machine-generated — (accents & irregulars),muĩlas,wiktionary,A1
 222_knyga,knyga,book,F,knygos,,,,222,Home,222_knyga.webp,forms machine-generated — (accents & irregulars),knygà,wiktionary,A1
 223_puslapis,puslapis,page,M,puslapio,,,,223,Home,223_puslapis.webp,forms machine-generated — (accents & irregulars),pùslapis,wiktionary,A1
@@ -247,10 +248,10 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 246_laikrodis,laikrodis,clock,M,laikrodžio,,,,246,Electronics,246_laikrodis.webp,forms machine-generated — (accents & irregulars),laĩkrodis,wiktionary,A1
 247_lempa,lempa,lamp,F,lempos,,,,247,Electronics,247_lempa.webp,forms machine-generated — (accents & irregulars),lémpa,wiktionary,A1
 248_ventiliatorius,ventiliatorius,fan (electric),M,ventiliatoriaus,,,,248,Electronics,248_ventiliatorius.webp,forms machine-generated — (accents & irregulars),ventiliãtorius,kirtis.info,A1
-249_mobilusis_telefonas,mobilusis telefonas,cell phone,M,mobilusis telefono,,,,249,Electronics,249_mobilusis_telefonas.webp,forms machine-generated — (accents & irregulars),mobilùsis telefònas,kirtis.info,A1
-250_tinklas,tinklas,network,,tinklo,,,,250,Electronics,250_tinklas.webp,forms machine-generated — (accents & irregulars),tiñklas,wiktionary,A2
+249_mobilusis_telefonas,mobilusis telefonas,cell phone,M,mobiliojo telefono,,,,249,Electronics,249_mobilusis_telefonas.webp,forms machine-generated — (accents & irregulars),mobilùsis telefònas,kirtis.info,A1
+250_tinklas,tinklas,network,M,tinklo,,,,250,Electronics,250_tinklas.webp,forms machine-generated — (accents & irregulars),tiñklas,wiktionary,A2
 251_kompiuteris,kompiuteris,computer,M,kompiuterio,,,,251,Electronics,251_kompiuteris.webp,forms machine-generated — (accents & irregulars),kompiùteris,wiktionary,A1
-252_programa,programa,program,,programos,,,,252,Electronics,252_programa.webp,forms machine-generated — (accents & irregulars),programà,wiktionary,A2
+252_programa,programa,program,F,programos,,,,252,Electronics,252_programa.webp,forms machine-generated — (accents & irregulars),programà,wiktionary,A2
 253_nesiojamasis_kompiuteris,nešiojamasis kompiuteris,laptop,M,nešiojamojo kompiuterio,,,,253,Electronics,253_nesiojamasis_kompiuteris.webp,forms machine-generated — (accents & irregulars),nešiójamasis kompiùteris,kirtis.info,A1
 254_ekranas,ekranas,screen,M,ekrano,,,,254,Electronics,254_ekranas.webp,forms machine-generated — (accents & irregulars),ekrãnas,wiktionary,A1
 255_fotoaparatas,fotoaparatas,camera,M,fotoaparato,,,,255,Electronics,255_fotoaparatas.webp,forms machine-generated — (accents & irregulars),fotoaparãtas,wiktionary,A1
@@ -270,7 +271,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 269_asara,ašara,tear,F,ašaros,,,,269,Body,269_asara.webp,forms machine-generated — (accents & irregulars),ãšara,wiktionary,A1
 270_liezuvis,liežuvis,tongue,M,liežuvio,,,,270,Body,270_liezuvis.webp,forms machine-generated — (accents & irregulars),liežùvis,wiktionary,A1
 271_nugara,nugara,back,F,nugaros,,,,271,Body,271_nugara.webp,forms machine-generated — (accents & irregulars),nùgara,wiktionary,A1
-272_kojos_pirstas,kojos pirštas,toe,,kojos piršto,,,,272,Body,272_kojos_pirstas.webp,forms machine-generated — (accents & irregulars),kójos pir̃štas,kirtis.info,A1
+272_kojos_pirstas,kojos pirštas,toe,M,kojos piršto,,,,272,Body,272_kojos_pirstas.webp,forms machine-generated — (accents & irregulars),kójos pir̃štas,kirtis.info,A1
 273_pirstas,pirštas,finger,M,piršto,,,,273,Body,273_pirstas.webp,forms machine-generated — (accents & irregulars),pir̃štas,wiktionary,A1
 274_peda,pėda,foot,F,pėdos,,,,274,Body,274_peda.webp,forms machine-generated — (accents & irregulars),pėdà,wiktionary,A1
 275_plastaka,plaštaka,hand,F,plaštakos,,,,275,Body,275_plastaka.webp,forms machine-generated — (accents & irregulars),plãštaka,kirtis.info,A1
@@ -282,9 +283,9 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 281_smegenys,smegenys,brain,F pl,smegenų,,,,281,Body,281_smegenys.webp,forms machine-generated — (accents & irregulars),smẽgenys,wiktionary,A1
 282_kelis,kelis,knee,M,kelio,,,,282,Body,282_kelis.webp,forms machine-generated — (accents & irregulars),kẽlis,wiktionary,A1
 283_prakaitas,prakaitas,sweat,M,prakaito,,,,283,Body,283_prakaitas.webp,forms machine-generated — (accents & irregulars),prãkaitas,wiktionary,A1
-284_liga,liga,disease,,ligos,,,,284,Body,284_liga.webp,forms machine-generated — (accents & irregulars),ligà,wiktionary,A2
+284_liga,liga,disease,F,ligos,,,,284,Body,284_liga.webp,forms machine-generated — (accents & irregulars),ligà,wiktionary,A2
 285_kaulas,kaulas,bone,M,kaulo,,,,285,Body,285_kaulas.webp,forms machine-generated — (accents & irregulars),káulas,wiktionary,A1
-286_balsas,balsas,voice,,balso,,,,286,Body,286_balsas.webp,forms machine-generated — (accents & irregulars),bal̃sas,wiktionary,A2
+286_balsas,balsas,voice,M,balso,,,,286,Body,286_balsas.webp,forms machine-generated — (accents & irregulars),bal̃sas,wiktionary,A2
 287_oda,oda,skin,F,odos,,,,287,Body,287_oda.webp,forms machine-generated — (accents & irregulars),óda,wiktionary,A1
 288_kunas,kūnas,body,M,kūno,,,,288,Body,288_kunas.webp,forms machine-generated — (accents & irregulars),kū́nas,wiktionary,A1
 289_jura,jūra,sea,F,jūros,,,,289,Nature,289_jura.webp,forms machine-generated — (accents & irregulars),jū́ra,wiktionary,A1
@@ -296,21 +297,21 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 295_medis,medis,tree,M,medžio,,,,295,Nature,295_medis.webp,forms machine-generated — (accents & irregulars),mẽdis,wiktionary,A1
 296_saule,saulė,sun,F,saulės,,,,296,Nature,296_saule.webp,forms machine-generated — (accents & irregulars),sáulė,wiktionary,A1
 297_menulis,mėnulis,moon,M,mėnulio,,,,297,Nature,297_menulis.webp,forms machine-generated — (accents & irregulars),mėnùlis,wiktionary,A1
-298_pasaulis,pasaulis,world,,pasaulio,,,,298,Nature,298_pasaulis.webp,forms machine-generated — (accents & irregulars),pasáulis,wiktionary,A2
-299_zeme,Žemė,Earth,,Žemės,,,,299,Nature,299_zeme.webp,forms machine-generated — (accents & irregulars),Žẽmė,wiktionary,A1
+298_pasaulis,pasaulis,world,M,pasaulio,,,,298,Nature,298_pasaulis.webp,forms machine-generated — (accents & irregulars),pasáulis,wiktionary,A2
+299_zeme,Žemė,Earth,F,Žemės,,,,299,Nature,299_zeme.webp,forms machine-generated — (accents & irregulars),Žẽmė,wiktionary,A1
 300_miskas,miškas,forest,M,miško,,,,300,Nature,300_miskas.webp,forms machine-generated — (accents & irregulars),mìškas,wiktionary,A1
 301_dangus,dangus,sky,M,dangaus,,,,301,Nature,301_dangus.webp,forms machine-generated — (accents & irregulars),dangùs,wiktionary,A1
 302_augalas,augalas,plant,M,augalo,,,,302,Nature,302_augalas.webp,forms machine-generated — (accents & irregulars),áugalas,wiktionary,A1
 303_vejas,vėjas,wind,M,vėjo,,,,303,Nature,303_vejas.webp,forms machine-generated — (accents & irregulars),vė́jas,wiktionary,A1
 304_zeme,žemė,soil,F,žemės,,,,304,Nature,304_zeme.webp,forms machine-generated — (accents & irregulars),žẽmė,wiktionary,A1
 305_gele,gėlė,flower,F,gėlės,,,,305,Nature,305_gele.webp,forms machine-generated — (accents & irregulars),gėlė̃,wiktionary,A1
-306_slenis,slėnis,valley,M,slėnio,,,,306,Nature,306_slenis.webp,forms machine-generated — (accents & irregulars),slėnis,wiktionary-html,A1
+306_slenis,slėnis,valley,M,slėnio,,,,306,Nature,306_slenis.webp,forms machine-generated — (accents & irregulars),slė̃nis,wiktionary-html,A1
 307_saknis,šaknis,root,F,šaknies,,,,307,Nature,307_saknis.webp,forms machine-generated — (accents & irregulars),šaknìs,wiktionary,A1
 308_ezeras,ežeras,lake,M,ežero,,,,308,Nature,308_ezeras.webp,forms machine-generated — (accents & irregulars),ẽžeras,wiktionary,A1
 309_zvaigzde,žvaigždė,star,F,žvaigždės,,,,309,Nature,309_zvaigzde.webp,forms machine-generated — (accents & irregulars),žvaigždė̃,wiktionary,A1
 310_zole,žolė,grass,F,žolės,,,,310,Nature,310_zole.webp,forms machine-generated — (accents & irregulars),žolė̃,wiktionary,A1
 311_lapas,lapas,leaf,M,lapo,,,,311,Nature,311_lapas.webp,forms machine-generated — (accents & irregulars),lãpas,wiktionary,A1
-312_oras,oras,air,,oro,,,,312,Nature,312_oras.webp,forms machine-generated — (accents & irregulars),óras,wiktionary,A2
+312_oras,oras,air,M,oro,,,,312,Nature,312_oras.webp,forms machine-generated — (accents & irregulars),óras,wiktionary,A2
 313_smelis,smėlis,sand,M,smėlio,,,,313,Nature,313_smelis.webp,forms machine-generated — (accents & irregulars),smė̃lis,wiktionary,A1
 314_papludimys,paplūdimys,beach,M,paplūdimio,,,,314,Nature,314_papludimys.webp,forms machine-generated — (accents & irregulars),paplūdimỹs,wiktionary,A1
 315_banga,banga,wave,F,bangos,,,,315,Nature,315_banga.webp,forms machine-generated — (accents & irregulars),bangà,wiktionary,A1
@@ -318,7 +319,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 317_ledas,ledas,ice,M,ledo,,,,317,Nature,317_ledas.webp,forms machine-generated — (accents & irregulars),lẽdas,wiktionary,A1
 318_sala,sala,island,F,salos,,,,318,Nature,318_sala.webp,forms machine-generated — (accents & irregulars),salà,wiktionary,A1
 319_kalva,kalva,hill,F,kalvos,,,,319,Nature,319_kalva.webp,forms machine-generated — (accents & irregulars),kalvà,wiktionary,A1
-320_karstis,karštis,heat,,karščio,,,,320,Nature,320_karstis.webp,forms machine-generated — (accents & irregulars),kar̃štis,kirtis.info,A2
+320_karstis,karštis,heat,M,karščio,,,,320,Nature,320_karstis.webp,forms machine-generated — (accents & irregulars),kar̃štis,kirtis.info,A2
 321_gamta,gamta,nature,F,gamtos,,,,321,Nature,321_gamta.webp,forms machine-generated — (accents & irregulars),gamtà,wiktionary,A1
 322_stiklas,stiklas,glass,M,stiklo,,,,322,Materials,322_stiklas.webp,forms machine-generated — (accents & irregulars),stìklas,wiktionary,A1
 323_metalas,metalas,metal,M,metalo,,,,323,Materials,323_metalas.webp,forms machine-generated — (accents & irregulars),metãlas,wiktionary,A1
@@ -338,29 +339,29 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 337_colis,colis,inch,M,colio,,,,337,Math,337_colis.webp,forms machine-generated — (accents & irregulars),cólis,wiktionary,A2
 338_peda,pėda,foot,F,pėdos,,,,338,Math,338_peda.webp,forms machine-generated — (accents & irregulars),pėdà,wiktionary,A2
 339_svaras,svaras,pound,M,svaro,,,,339,Math,339_svaras.webp,forms machine-generated — (accents & irregulars),svàras,wiktionary,A2
-340_puse,pusė,half,,pusės,,,,340,Math,340_puse.webp,forms machine-generated — (accents & irregulars),pùsė,wiktionary,A2
+340_puse,pusė,half,F,pusės,,,,340,Math,340_puse.webp,forms machine-generated — (accents & irregulars),pùsė,wiktionary,A2
 341_apskritimas,apskritimas,circle,M,apskritimo,,,,341,Math,341_apskritimas.webp,forms machine-generated — (accents & irregulars),apskritìmas,kirtis.info,A2
 342_kvadratas,kvadratas,square,M,kvadrato,,,,342,Math,342_kvadratas.webp,forms machine-generated — (accents & irregulars),kvadrãtas,kirtis.info,A2
 343_temperatura,temperatūra,temperature,F,temperatūros,,,,343,Math,343_temperatura.webp,forms machine-generated — (accents & irregulars),temperatūrà,wiktionary,A2
-344_data,data,date,,datos,,,,344,Math,344_data.webp,forms machine-generated — (accents & irregulars),data,wiktionary-html,A2
-345_svoris,svoris,weight,,svorio,,,,345,Math,345_svoris.webp,forms machine-generated — (accents & irregulars),svõris,wiktionary,A2
+344_data,data,date,F,datos,,,,344,Math,344_data.webp,forms machine-generated — (accents & irregulars),data,wiktionary-html,A2
+345_svoris,svoris,weight,M,svorio,,,,345,Math,345_svoris.webp,forms machine-generated — (accents & irregulars),svõris,wiktionary,A2
 346_krastas,kraštas,edge,M,krašto,,,,346,Math,346_krastas.webp,forms machine-generated — (accents & irregulars),krãštas,wiktionary,A2
 347_kampas,kampas,corner,M,kampo,,,,347,Math,347_kampas.webp,forms machine-generated — (accents & irregulars),kam̃pas,wiktionary,A2
 348_zemelapis,žemėlapis,map,M,žemėlapio,,,,348,Misc,348_zemelapis.webp,forms machine-generated — (accents & irregulars),žemė́lapis,wiktionary,A1
 349_taskas,taškas,dot,M,taško,,,,349,Misc,349_taskas.webp,forms machine-generated — (accents & irregulars),tãškas,wiktionary,A1
-350_priebalsis,priebalsis,consonant,,priebalsio,,,,350,Misc,350_priebalsis.webp,forms machine-generated — (accents & irregulars),príebalsis,wiktionary,A2
-351_balsis,balsis,vowel,,balsio,,,,351,Misc,351_balsis.webp,forms machine-generated — (accents & irregulars),bal̃sis,wiktionary,A2
-352_sviesa,šviesa,light,,šviesos,,,,352,Misc,352_sviesa.webp,forms machine-generated — (accents & irregulars),šviesà,wiktionary,A2
-353_garsas,garsas,sound,,garso,,,,353,Misc,353_garsas.webp,forms machine-generated — (accents & irregulars),gar̃sas,wiktionary,A2
+350_priebalsis,priebalsis,consonant,M,priebalsio,,,,350,Misc,350_priebalsis.webp,forms machine-generated — (accents & irregulars),príebalsis,wiktionary,A2
+351_balsis,balsis,vowel,M,balsio,,,,351,Misc,351_balsis.webp,forms machine-generated — (accents & irregulars),bal̃sis,wiktionary,A2
+352_sviesa,šviesa,light,F,šviesos,,,,352,Misc,352_sviesa.webp,forms machine-generated — (accents & irregulars),šviesà,wiktionary,A2
+353_garsas,garsas,sound,M,garso,,,,353,Misc,353_garsas.webp,forms machine-generated — (accents & irregulars),gar̃sas,wiktionary,A2
 354_taip,taip,yes,,,,,,354,Misc,354_taip.webp,forms machine-generated — (accents & irregulars),taĩp,wiktionary,A2
-355_ne,ne,no,,,,,,355,Misc,355_ne.webp,forms machine-generated — (accents & irregulars),ne,wiktionary-html,A2
-356_gabalas,gabalas,piece,,gabalo,,,,356,Misc,356_gabalas.webp,forms machine-generated — (accents & irregulars),gãbalas,wiktionary,A2
-357_skausmas,skausmas,pain,,skausmo,,,,357,Misc,357_skausmas.webp,forms machine-generated — (accents & irregulars),skaũsmas,wiktionary,A2
+355_ne,ne,no,,,,,,355,Misc,355_ne.webp,forms machine-generated — (accents & irregulars),nè,wiktionary-html,A2
+356_gabalas,gabalas,piece,M,gabalo,,,,356,Misc,356_gabalas.webp,forms machine-generated — (accents & irregulars),gãbalas,wiktionary,A2
+357_skausmas,skausmas,pain,M,skausmo,,,,357,Misc,357_skausmas.webp,forms machine-generated — (accents & irregulars),skaũsmas,wiktionary,A2
 358_suzalojimas,sužalojimas,injury,M,sužalojimo,,,,358,Misc,358_suzalojimas.webp,forms machine-generated — (accents & irregulars),sužalójimas,kirtis.info,A1
 359_zaizda,žaizda,wound,F,žaizdos,,,,359,Misc,359_zaizda.webp,forms machine-generated — (accents & irregulars),žaizdà,wiktionary,A1
 360_skyle,skylė,hole,F,skylės,,,,360,Misc,360_skyle.webp,forms machine-generated — (accents & irregulars),skylė̃,wiktionary,A1
 361_vaizdas,vaizdas,image,M,vaizdo,,,,361,Misc,361_vaizdas.webp,forms machine-generated — (accents & irregulars),vaĩzdas,wiktionary,A1
-362_rastas,raštas,"writing, script",,rašto,,,,362,Misc,362_rastas.webp,raštas = writing/script (primary sense); owner-confirmed 1.7.8,rãštas,wiktionary,A2
+362_rastas,raštas,"writing, script",M,rašto,,,,362,Misc,362_rastas.webp,raštas = writing/script (primary sense); owner-confirmed 1.7.8,rãštas,wiktionary,A2
 363_dirbti,dìrbti,work,,,dìrba,dìrbo,,363,Verbs,363_dirbti.webp,forms machine-generated — (accents & irregulars),dìrbti,wiktionary,A1
 364_zaisti,žaĩsti,play (a game),V,,žaĩdžia,žaĩdė,,364,Verbs,364_zaisti.webp,forms machine-generated — (accents & irregulars),žaĩsti,wiktionary,A1
 365_groti,gróti,play (an instrument),V,,grója,grójo,,365,Verbs,365_groti.webp,forms machine-generated — (accents & irregulars),gróti,wiktionary,A1
@@ -377,13 +378,13 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 376_valgyti,válgyti,eat,,,válgo,válgė,,376,Verbs,376_valgyti.webp,forms machine-generated — (accents & irregulars),válgyti,wiktionary,A1
 377_gerti,gérti,drink,,,gẽria,gė́rė,,377,Verbs,377_gerti.webp,forms machine-generated — (accents & irregulars),gérti,wiktionary,A1
 378_zudyti,žudýti,kill,,,žùdo,žùdė,,378,Verbs,378_zudyti.webp,forms machine-generated — (accents & irregulars),žudýti,wiktionary,A1
-379_mirti,mìrti,die,,,mìršta,mìrė,,379,Verbs,379_mirti.webp,forms machine-generated — (accents & irregulars),mir̃ti,wiktionary,A1
+379_mirti,mir̃ti,die,,,mìršta,mìrė,,379,Verbs,379_mirti.webp,forms machine-generated — (accents & irregulars),mir̃ti,wiktionary,A1
 380_sypsotis,šypsótis,smile,,,šỹpsosi,šỹpsojosi,,380,Verbs,380_sypsotis.webp,forms machine-generated — (accents & irregulars),šypsótis,wiktionary,A1
 381_juoktis,juõktis,laugh,,,juõkiasi,juõkėsi,,381,Verbs,381_juoktis.webp,forms machine-generated — (accents & irregulars),juõktis,wiktionary,A1
 382_verkti,ver̃kti,cry,,,ver̃kia,ver̃kė,,382,Verbs,382_verkti.webp,forms machine-generated — (accents & irregulars),ver̃kti,wiktionary,A1
 383_pirkti,pir̃kti,buy,,,per̃ka,pir̃ko,,383,Verbs,383_pirkti.webp,forms machine-generated — (accents & irregulars),pir̃kti,wiktionary,A1
 384_moketi,mokė́ti,pay,,,móka,mokė́jo,,384,Verbs,384_moketi.webp,forms machine-generated — (accents & irregulars),mokė́ti,wiktionary,A1
-385_parduoti,parduóti,sell,,,par̃duoda,par̃davė,,385,Verbs,385_parduoti.webp,forms machine-generated — (accents & irregulars),pardúoti,wiktionary,A1
+385_parduoti,pardúoti,sell,,,par̃duoda,par̃davė,,385,Verbs,385_parduoti.webp,forms machine-generated — (accents & irregulars),pardúoti,wiktionary,A1
 386_sauti,šáuti,shoot,,,šáuna,šóvė,,386,Verbs,386_sauti.webp,forms machine-generated — (accents & irregulars),šáuti,verb-generation,A1
 387_mokytis,mókytis,learn,,,mókosi,mókėsi,,387,Verbs,387_mokytis.webp,forms machine-generated — (accents & irregulars),mókytis,wiktionary,A2
 388_sokti,šókti,jump,,,šóka,šóko,,388,Verbs,388_sokti.webp,forms machine-generated — (accents & irregulars),šókti,wiktionary,A1
@@ -425,11 +426,11 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 424_skambinti,skam̃binti,call,,,skam̃bina,skam̃bino,,424,Verbs,424_skambinti.webp,forms machine-generated — (accents & irregulars),skam̃binti,wiktionary,A1
 425_sukti,sùkti,turn,,,sùka,sùko,,425,Verbs,425_sukti.webp,forms machine-generated — (accents & irregulars),sùkti,wiktionary,A1
 426_statyti,statýti,build,,,stãto,stãtė,,426,Verbs,426_statyti.webp,forms machine-generated — (accents & irregulars),statýti,wiktionary,A1
-427_mokyti,mokýti,teach,,,móko,mókė,,427,Verbs,427_mokyti.webp,forms machine-generated — (accents & irregulars),mókyti,wiktionary,A2
+427_mokyti,mókyti,teach,,,móko,mókė,,427,Verbs,427_mokyti.webp,forms machine-generated — (accents & irregulars),mókyti,wiktionary,A2
 428_augti,áugti,grow,,,áuga,áugo,,428,Verbs,428_augti.webp,forms machine-generated — (accents & irregulars),áugti,wiktionary,A1
 429_piesti,piẽšti,draw,,,piẽšia,piẽšė,,429,Verbs,429_piesti.webp,forms machine-generated — (accents & irregulars),piẽšti,wiktionary,A1
 430_maitinti,maitìnti,feed,,,maĩtina,maĩtino,,430,Verbs,430_maitinti.webp,forms machine-generated — (accents & irregulars),maitìnti,verb-generation,A1
-431_gaudyti,gaudýti,catch,,,gáudo,gáudė,,431,Verbs,431_gaudyti.webp,forms machine-generated — (accents & irregulars),gáudyti,wiktionary,A1
+431_gaudyti,gáudyti,catch,,,gáudo,gáudė,,431,Verbs,431_gaudyti.webp,forms machine-generated — (accents & irregulars),gáudyti,wiktionary,A1
 432_mesti,mèsti,throw,,,mẽta,mẽtė,,432,Verbs,432_mesti.webp,forms machine-generated — (accents & irregulars),mèsti,wiktionary,A1
 433_valyti,valýti,clean,,,vãlo,vãlė,,433,Verbs,433_valyti.webp,forms machine-generated — (accents & irregulars),valýti,wiktionary,A1
 434_rasti,ràsti,find,,,rañda,rãdo,,434,Verbs,434_rasti.webp,forms machine-generated — (accents & irregulars),ràsti,wiktionary,A1
@@ -468,7 +469,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 467_sausas,sausas,dry,M/F,,,,sausa,467,Adjectives,467_sausas.webp,forms machine-generated — (accents & irregulars),saũsas,wiktionary,A1
 468_sergantis,sergantis,sick,M/F,,,,serganti,468,Adjectives,468_sergantis.webp,forms machine-generated — (accents & irregulars),ser̃gantis,wiktionary,A1
 469_sveikas,sveikas,healthy,M/F,,,,sveika,469,Adjectives,469_sveikas.webp,forms machine-generated — (accents & irregulars),sveĩkas,wiktionary,A1
-470_garsus,garsus,loud,M/F,,,,garsi,470,Adjectives,470_garsus.webp,forms machine-generated — (accents & irregulars),garsus,wiktionary-html,A1
+470_garsus,garsus,loud,M/F,,,,garsi,470,Adjectives,470_garsus.webp,forms machine-generated — (accents & irregulars),garsùs,wiktionary-html,A1
 471_tylus,tylus,quiet,M/F,,,,tyli,471,Adjectives,471_tylus.webp,forms machine-generated — (accents & irregulars),tylùs,kirtis.info,A1
 472_laimingas,laimingas,happy,M/F,,,,laiminga,472,Adjectives,472_laimingas.webp,forms machine-generated — (accents & irregulars),laimìngas,wiktionary,A1
 473_liudnas,liūdnas,sad,M/F,,,,liūdna,473,Adjectives,473_liudnas.webp,forms machine-generated — (accents & irregulars),liū̃dnas,wiktionary,A1
@@ -477,7 +478,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 476_kurcias,kurčias,deaf,M/F,,,,kurčia,476,Adjectives,476_kurcias.webp,forms machine-generated — (accents & irregulars),kur̃čias,kirtis.info,A1
 477_aklas,aklas,blind,M/F,,,,akla,477,Adjectives,477_aklas.webp,forms machine-generated — (accents & irregulars),ãklas,wiktionary,A1
 478_malonus,malonus,nice,M/F,,,,maloni,478,Adjectives,478_malonus.webp,forms machine-generated — (accents & irregulars),malonùs,wiktionary,A1
-479_piktas,piktas,mean,,,,,,479,Adjectives,479_piktas.webp,forms machine-generated — (accents & irregulars),pìktas,wiktionary,A2
+479_piktas,piktas,mean,M/F,,,,pikta,479,Adjectives,479_piktas.webp,forms machine-generated — (accents & irregulars),pìktas,wiktionary,A2
 480_turtingas,turtingas,rich,M/F,,,,turtinga,480,Adjectives,480_turtingas.webp,forms machine-generated — (accents & irregulars),turtìngas,wiktionary,A1
 481_neturtingas,neturtingas,poor,M/F,,,,neturtinga,481,Adjectives,481_neturtingas.webp,forms machine-generated — (accents & irregulars),neturtìngas,kirtis.info,A1
 482_storas,storas,thick,M/F,,,,stora,482,Adjectives,482_storas.webp,forms machine-generated — (accents & irregulars),stóras,wiktionary,A1
@@ -506,8 +507,8 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 505_lengvas,lengvas,light-heavy,M/F,,,,lengva,505,Adjectives,505_lengvas.webp,forms machine-generated — (accents & irregulars),leñgvas,wiktionary,A1
 506_tamsus,tamsus,dark,M/F,,,,tamsi,506,Adjectives,506_tamsus.webp,forms machine-generated — (accents & irregulars),tamsùs,wiktionary,A1
 507_sviesus,šviesus,light-dark,M/F,,,,šviesi,507,Adjectives,507_sviesus.webp,forms machine-generated — (accents & irregulars),šviesùs,wiktionary,A1
-508_branduolinis,branduolinis,nuclear,,,,,,508,Adjectives,508_branduolinis.webp,forms machine-generated — (accents & irregulars),branduolìnis,wiktionary,A2
-509_garsus,garsus,famous,,,,,,509,Adjectives,509_garsus.webp,forms machine-generated — (accents & irregulars),garsus,wiktionary-html,A2
+508_branduolinis,branduolinis,nuclear,M/F,,,,branduolinė,508,Adjectives,508_branduolinis.webp,forms machine-generated — (accents & irregulars),branduolìnis,wiktionary,A2
+509_garsus,garsus,famous,M/F,,,,garsi,509,Adjectives,509_garsus.webp,forms machine-generated — (accents & irregulars),garsùs,wiktionary-html,A2
 510_as,aš,I,,,,,,510,Pronouns,510_as.webp,forms machine-generated — (accents & irregulars),àš,wiktionary,A2
 511_tu,tu,you sg,,,,,,511,Pronouns,511_tu.webp,forms machine-generated — (accents & irregulars),tù,wiktionary,A2
 512_jis,jis,he,,,,,,512,Pronouns,512_jis.webp,forms machine-generated — (accents & irregulars),jìs,wiktionary,A2

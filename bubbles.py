@@ -72,3 +72,17 @@ EXCH = {
  "Where can I find…?":("a shop aisle","a bold question mark beside a shopping basket",
                        "the assistant pointing along the aisle to a shelf"),
 }
+
+# --- A2 phrase cards (Fable, 2026-10-11) — authored in a2_build/src/bubbles_a2.py, merged here so
+# gen_phrases.py sees them. Same two formats. Keys are the english glosses of a2_build/a2_wordlist.csv
+# PHRASE rows (104 new; the P-G priority pack and the question words above are unchanged).
+try:
+    import os as _os, sys as _sys
+    _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "a2_build", "src"))
+    from bubbles_a2 import UTTER_A2 as _U2, EXCH_A2 as _E2
+    for _k, _v in _U2.items():
+        UTTER.setdefault(_k, _v)
+    for _k, _v in _E2.items():
+        EXCH.setdefault(_k, _v)
+except ImportError:
+    pass

@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+# IMG rows made possible by the lettering decision (2026-10-11)
+S = {
+ 'nuolaida': ('a shop price tag on a jumper with the old price struck through and a lower price written below, a customer pointing at it',
+  'Main picture: close on a cardboard price tag tied to a folded jumper on a shop counter, the upper price struck through with a bold line and a lower price written beneath in the lettering declared in card_text, a customer\'s finger pointing at it, the assistant nodding. The struck-through tag is the subject. Insets: a shop window with several tags all struck through; coins saved in a palm; a queue at the shop door.'),
+ 'čekis': ('a till slip just printed, held by a cashier\'s hand over the cash register, a column of prices on it',
+  'Main picture: a cashier\'s hand tearing a narrow paper slip from a cash register, the slip carrying only the short column of prices declared in card_text, the customer\'s open hand waiting for it, the purchase bagged beside. The printed slip from the register is the subject. Insets: the slip alone, flat; the register with its drawer open; a slip pinned on a kitchen board.'),
+ 'sąskaita': ('a folded restaurant bill on a saucer brought to a diner, two lines and a total, the waiter withdrawing',
+  'Main picture: a restaurant table — a waiter setting down a small saucer with a folded paper bill on it, the bill open enough to show the two priced lines and the total declared in card_text, the diner reaching for his wallet. The bill on its saucer is the subject. Insets: the bill alone; a wallet opening; the waiter at a till.'),
+ 'meniu': ('a folded menu card held open by a diner, three priced dishes listed, a waiter waiting with a notepad',
+  'Main picture: a seated diner holding a folded card open before him, the card showing the three priced lines declared in card_text and a small drawing of a plate, the waiter beside him with a notepad. The card of dishes in the diner\'s hands is the subject. Insets: the card standing on a table; a chalkboard outside a café with one priced line; the diner pointing at a line.'),
+ 'adresas': ('an envelope with a handwritten address, and the same street name and number on an enamel door plate',
+  'Main picture: an envelope held in a hand, the address declared in card_text handwritten across it, and behind it the door of a town house with an enamel plate carrying the same street and number. The written address is the subject. Insets: a postman reading the envelope; the enamel plate alone; a hand writing on a form.'),
+ 'tvarkaraštis': ('a station departures board with three lines of times and towns, travellers looking up at it',
+  'Main picture: a large board high on a station wall with the three lines of times and destinations declared in card_text in neat rows, a clock beside it, travellers with bags looking up and checking their watches. The board of times is the subject. Insets: a pocket timetable booklet open; a bus-stop timetable frame on a post; a finger running along a line.'),
+ 'pažymys': ('a notebook page with a red mark written at the foot, the teacher\'s red pen, a pupil looking at it',
+  'Main picture: an open exercise book on a desk, a page of wavy pencil lines, and at its foot a large red mark — the numeral declared in card_text — in the teacher\'s hand, the red pen lifting away, the pupil\'s pleased face beyond. The red mark on the page is the subject. Insets: a report booklet with a column of such marks; a pupil showing the page to a parent; the teacher at a stack of books.'),
+ 'laipsnis': ('a mercury thermometer on a snowy window frame with the reading written beside it, a man in a fur hat looking at it',
+  'Main picture: a large outdoor thermometer fixed to a snowy window frame, its mercury low, the reading declared in card_text lettered beside the scale, a man in a fur hat bending to read it, breath visible. The reading on the scale is the subject. Insets: a clinical thermometer under an arm; a weather board with a temperature; a protractor marked in degrees.'),
+ 'kilometras': ('a road sign showing a town and a distance, the straight road running toward it',
+  'Main picture: a roadside distance sign at eye level carrying the town and distance declared in card_text, the straight road running toward the horizon behind it, a Zhiguli passing. The distance sign is the subject. Insets: a kilometre post at the verge; a car odometer; a map with a scale bar.'),
+ 'gramas': ('a shop scale weighing a wedge of cheese, the weight shown on the display, the assistant\'s hand',
+  'Main picture: close on a shop counter scale with a wedge of cheese on the pan and the weight declared in card_text on its display, the assistant\'s hand on the cheese, a customer\'s string bag. The weight reading is the subject. Insets: a small brass weight; a kitchen scale with flour; a letter on a post-office scale.'),
+ 'litras': ('a glass milk bottle with its volume marked, beside a measuring jug and a petrol can',
+  'Main picture: a one-litre glass milk bottle large and central with the mark declared in card_text on its label, a glass measuring jug filled to the top line beside it, a petrol can behind. The marked bottle is the subject. Insets: milk poured into the jug; a bottle of mineral water of the same size; a bucket with level marks.'),
+ 'litas': ('a litas coin and a banknote on a wooden counter, a hand paying, the figures on them',
+  'Main picture: a silver-coloured coin and a folded banknote on a shop counter, the coin and note carrying only the figures declared in card_text and a small Vytis knight, a hand sliding them to the cashier. The money of the free Lithuania is the subject. Insets: coins stacked; an open purse; a price tag.'),
+}

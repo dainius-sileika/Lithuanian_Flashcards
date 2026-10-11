@@ -1,0 +1,111 @@
+{
+  "version": "F6.2",
+  "date": "2026-10-11",
+  "production_model": {
+    "model": "gpt-image-2.5-sunburst",
+    "quality": "medium",
+    "size": "1536x1024",
+    "condition": "The matte amendment (MATTE_RULE + lead wording) is verified on the first 30 production cards: if 3 or more of 30 show specular highlights on skin, hair or metal, test quality=high on 10 of them before falling back to gpt-image-2. One model for the whole deck."
+  },
+  "paper": {
+    "rule": "keep F6.1 paper wording for Sunburst (measured median strict L* 84 / b* 19 = the owner's anchor); no change",
+    "bands": "add 'deep, dark brick-red' to BARS_RULE (Sunburst renders the bands a brighter scarlet than gpt-image-2)"
+  },
+  "leads": {
+    "CONCEPT_LEAD": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, dead-matte gouache fills with soft shading on every surface, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The light paper is the background: the main subject is drawn directly on it, large and central, its surroundings sketched in around it and fading into the paper, leaving open margins; insets are small ruled boxes on the same paper, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions, each person a different individual: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. Heads turn at varied natural angles: in a group most look at their task or at each other and one or two face the viewer, eyes just past the viewer's shoulder; of two main figures only one faces the viewer; a lone figure stands near-frontal, face turned only a little.",
+    "CONCEPT_LEAD_SCENE": "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, dead-matte gouache fills with soft shading on every surface, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, the subject large and central in it, printed on the same light paper; insets are small ruled boxes beside or below it, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions, each person a different individual: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. Heads turn at varied natural angles: in a group most look at their task or at each other and one or two face the viewer, eyes just past the viewer's shoulder; of two main figures only one faces the viewer; a lone figure stands near-frontal, face turned only a little.",
+    "STYLE_SUFFIX": "Finish: dead-matte offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions, flat tone on skin, hair, cloth and metal. One or two faces toward the viewer, eyes just past the shoulder; of two main figures only one. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink.",
+    "STYLE_SUFFIX_SCENE": "Finish: a full, detailed scene in dead-matte offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions, flat tone on skin, hair, cloth and metal. One or two faces toward the viewer, eyes just past the shoulder; of two main figures only one. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink.",
+    "diff_vs_F6_1": [
+      "'matte gouache fills with soft shading' -> 'dead-matte gouache fills with soft shading on every surface' (a); the surface list lives in MATTE_RULE",
+      "subject 'large and central' added to both composition sentences (c)",
+      "'each person a different individual' added to the people sentence (d)",
+      "gaze sentence rewritten to cover group / two main figures / lone figure (b)",
+      "suffix: 'dead-matte', 'flat tone on skin, hair, cloth and metal', 'of two main figures only one' (a, b)",
+      "'as in a documentary photograph' removed to pay for the additions; lead stays ~265 words"
+    ]
+  },
+  "rule_blocks": {
+    "MATTE_RULE": {
+      "text": "Every surface is dead-matte, as absorbent offset paper prints it: skin, hair, fabric, leather, metal, glass, water and polished wood carry flat ink tone and one soft shadow tone only.",
+      "where": "new constant; append in _prompt_openai immediately after PLAUSIBILITY_RULE (before ARROW_RULE)",
+      "why": "(a) owner: 'THIS DECK HAS A GENERAL HIGHLIGHT ISSUE' (S karve, S maitinti, S mokykla inset); the lead now says it too, the block gives it recency"
+    },
+    "MAIN_MEANING_RULE": {
+      "text": "The main picture alone makes this card's word obvious at a glance: the subject is the largest and most central element, shown in its most recognisable form and in the action that defines it, and the insets only add supporting detail.",
+      "where": "new constant; append right after the staging/scene/setting group (i.e. after SETTING_GUARD, before FIGURE_DRESS)",
+      "why": "(c) šokti, gatvė, mokykla, stotis(G) failed because only the insets carried the word; the F6.1 vignette wording 'surroundings sketched in' plus a Setting line let the setting take over"
+    },
+    "DISTINCT_FACES_RULE": {
+      "text": "Every person in a group is a different individual, with a distinct face, age, build, hair and clothing colour.",
+      "where": "new constant; append immediately after FIGURE_DRESS[...] (before NO_STRAY_FIGURE)",
+      "why": "(d) G turgus: 'the two seller women are exactly the same, uncanny'; G klubas earlier: 'the men whose faces we see all feel the same'"
+    },
+    "GAZE_PAIR_RULE": {
+      "text": "Of two main figures, one faces the viewer with eyes resting just past the viewer's shoulder and the other looks at the task, at the first figure, or into the scene.",
+      "where": "fold into the lead (done above) and append as its own constant after DISTINCT_FACES_RULE on cards whose dress class is 'professional' or whose staging names two main figures; harmless on all cards, so appending it unconditionally is acceptable",
+      "why": "(b) S pacientas: 'if there are two main actors, don't have them both looking at the camera'"
+    },
+    "SETTING_GUARD": {
+      "text": "People stand inside the place: feet on its ground, scaled to its doors, furniture and vehicles, lit by the same flat light, with the setting continuing behind and between them. The setting stays behind and around the subject and never competes with it.",
+      "where": "replaces the current SETTING_GUARD (still appended only when a setting line is present)",
+      "why": "(e) S policininkas: 'placed not into the setting but standing on a background'; G tėvas: 'booth out of scale, track ends at an odd place'"
+    },
+    "PLAUSIBILITY_RULE": {
+      "text": "Every object, tool and fixture is complete, attached and in working order: hanging things hang from a proper rack or hook, doorways and corridors stay clear and passable, furniture rests on the floor against a wall, tools are held in a usable grip, machines and vehicles are whole and correctly scaled to the people, and a resting animal is visibly alive and at ease, eyes closed and body relaxed.",
+      "where": "replaces the current PLAUSIBILITY_RULE",
+      "why": "(f) the F6.1 text named 'a well-sweep over its timber well-head' as an example and PRIMED wells onto cards that have none (maitinti got a broken well on both models). Props are no longer named in the global rule; a well-sweep is described only in the staging line of a card that is about a well or a farmstead (025_namas, šulinys)."
+    },
+    "CLOCK_STAGING": {
+      "text": "246_laikrodis staging: 'The main clock reads one clear time. The insets show three different clocks, each at a clearly different time, hour and minute hands in different positions on each.'",
+      "where": "card_notes.json entry for 246_laikrodis",
+      "why": "(f) owner: 'insert clock hands should be varied, minutes and hours'"
+    },
+    "BARS_RULE": {
+      "text": "Frame the card with a plain solid deep, dark brick-red horizontal band across the very top and another across the very bottom, plus a thin band of the same dark red around the whole card. These bands are blank design elements and must contain no text whatsoever. Keep ALL illustration content — every figure, object, and inset panel — fully inside the inner frame; nothing may overlap, touch, or extend across the red header or footer bands.",
+      "where": "replaces BARS_RULE (only the colour words change)",
+      "why": "(g) Sunburst's scarlet bands vs the shipped dark red; keeps the deck reading as one printing"
+    },
+    "VERB_INSET_DEFAULT": {
+      "text": "For verbs without a motion strip, the insets show the action's defining detail at close range (the mouth, the hands, the tool, the foot), the action seen from a second angle, and its result — each clearly different.",
+      "where": "deck_builder: default inset_note for verb rows not in MOTION_STRIP_ROWS, so the generic 3-frame strip stops being drawn for non-locomotion verbs",
+      "why": "dainuoti: both models drew a conductor's hand-gesture strip that 'confuses the card'"
+    }
+  },
+  "assembly_order_F6_2": [
+    "LEAD",
+    "Subject: ...",
+    "staging (card_notes)",
+    "class scene",
+    "Setting: ... (bank)",
+    "SETTING_GUARD (new text)",
+    "MAIN_MEANING_RULE (new)",
+    "FIGURE_DRESS[class]",
+    "DISTINCT_FACES_RULE (new)",
+    "GAZE_PAIR_RULE (new)",
+    "NO_STRAY_FIGURE",
+    "INSET_RULE / inset_note + INSET_FRAME_RULE",
+    "MOTION_STRIP_RULE (rows 366, 367)",
+    "INSET_MEANING_RULE",
+    "NO_CUTAWAY_RULE",
+    "PLAUSIBILITY_RULE (new text)",
+    "MATTE_RULE (new)",
+    "ARROW_RULE",
+    "text rules",
+    "BARS_RULE (new colour words)",
+    "FLAG_RULE",
+    "ANATOMY_RULE",
+    "extra",
+    "SUFFIX"
+  ],
+  "staging_lines": {
+    "027_gatve": "Main picture: a town street seen along its length at eye level, a two-lane asphalt roadway with a painted centre line and a zebra crossing in the foreground, kerbs and pavements on both sides, a Zhiguli and an Ikarus bus on the road, pedestrians on the pavements, three- and four-storey plastered houses with shop fronts on either side, a street lamp and a road sign on a post. The roadway and its traffic are the subject. Insets: a close-up of the kerb, pavement and a storm drain; a pedestrian crossing at the zebra; a street lamp on its post.",
+    "036_mokykla": "Main picture: a two-storey school building seen from the front, long rows of large identical classroom windows, a flagpole with the tricolour and a wide entrance with steps, a stream of children with satchels and white collars going up the steps, a teacher holding the door, a bell on a bracket beside it, the paved schoolyard and a football goal to one side. The school building with its children is the subject. Insets: a classroom with a teacher at a chalkboard bearing only a simple diagram and pupils at desks; children playing in the schoolyard; a satchel, slate and pencil case.",
+    "411_dainuoti": "Main picture: a small village choir of six singing with open mouths from songbooks, standing in a row on a low outdoor stage, a conductor seen from behind, musical notes drawn in the air above them. Open mouths and songbooks make the action clear. Insets: a close-up of one singer's face with the mouth open in song and notes in the air; hands holding an open songbook; the choir seen from the side with the accordion player. These insets replace any motion strip.",
+    "408_sokti": "Main picture: a couple in full motion on a wooden dance floor, the woman spun out at arm's length with her skirt flaring, both feet of the man mid-step, a small band with accordion and drum on the stage behind, seated onlookers at tables along the wall, musical notes in the air. The spinning couple is the subject. Insets: three phases of one dance step, left to right: step together, the woman turning under the man's raised arm, the pair apart at arm's length; a close-up of the dancers' feet mid-step; the accordion player.",
+    "246_laikrodis": "The main clock reads one clear time. The insets show three different clocks, each at a clearly different time, hour and minute hands in different positions on each.",
+    "430_maitinti": "A woman feeding hens from a basin of grain in a farmyard, hens crowding at her feet; a pig trough and a barn behind. Insets: a hand scattering grain; a child feeding a calf from a bucket; a cat at a saucer. No well or well-sweep on this card.",
+    "114_pacientas": "One patient as the subject, sitting up in a single hospital bed with the blanket over the legs, a nurse at the bedside turned toward the patient; the patient faces the viewer, the nurse looks at the patient. One bed only in the main picture.",
+    "050_turgus": "Several stallholders of clearly different age, build and headscarf colour behind separate stalls; one looks toward the viewer, the others at customers or at their scales."
+  }
+}

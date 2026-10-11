@@ -60,3 +60,18 @@ Paste the contents of `go_theme.css` into the **Styling** box (shared by front &
 Grammar forms (genitive, principal parts, feminine) and stress accents are
 sourced/machine-assembled and are being verified by a native speaker — treat them
 as provisional in this beta.
+
+## Note type 2 — "Lietuvių GO Cloze" (A2, 2026-10-11)
+
+Native Anki cloze model (`model_type = CLOZE`), built by `build_apkg.py` from the A2 list
+(`a2_build/a2_wordlist.csv`, rows with `route` CLOZE or PAIR). Fields, in order:
+
+`Text`, `SentenceEN`, `Word`, `Pron`, `Gender`, `Forms`, `Gloss`, `Number`, `Category`, `Audio`, `Key`
+
+- `Text` is `example_lt` with the {braces} turned into `{{c1::…}}` — Anki blanks the form itself.
+- Front: the sentence with the blank and the English sentence as a hint. Back: the sentence
+  revealed, the headword, its stress-marked form, gender symbol, forms line (genitive /
+  principal parts / feminine), gloss, audio.
+- Styling: `go_theme.css` plus a small `.cloze-text / .hint` block defined in `build_apkg.py`.
+- Picture rows of the A2 list (IMG, PHRASE) use note type 1 above; their key is the list id
+  (`A2-0108`) and their image is looked up by that id in `images_a2/`, `out_phrases/`, `out_deck_a2/`.

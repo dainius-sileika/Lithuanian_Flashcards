@@ -1,0 +1,522 @@
+key,lithuanian,english,lt_pron,gender,number,category,image_file
+001_suo,šuo,dog,šuõ,M,1,Animal,001_suo.png
+002_kate,katė,cat,katė̃,F,2,Animal,002_kate.png
+003_zuvis,žuvis,fish,žuvìs,F,3,Animal,003_zuvis.png
+004_paukstis,paukštis,bird,paũkštis,M,4,Animal,004_paukstis.png
+005_karve,karvė,cow,kárvė,F,5,Animal,005_karve.png
+006_kiaule,kiaulė,pig,kiaũlė,F,6,Animal,006_kiaule.png
+007_pele,pelė,mouse,pelė̃,F,7,Animal,007_pele.png
+008_arklys,arklys,horse,arklỹs,M,8,Animal,008_arklys.png
+009_sparnas,sparnas,wing,spar̃nas,M,9,Animal,009_sparnas.png
+010_gyvunas,gyvūnas,animal,gyvū̃nas,M,10,Animal,010_gyvunas.png
+011_traukinys,traukinys,train,traukinỹs,M,11,Transportation,011_traukinys.png
+012_lektuvas,lėktuvas,plane,lėktùvas,M,12,Transportation,012_lektuvas.png
+013_automobilis,automobilis,car,automobìlis,M,13,Transportation,013_automobilis.png
+014_sunkvezimis,sunkvežimis,truck,suñkvežimis,M,14,Transportation,014_sunkvezimis.png
+015_dviratis,dviratis,bicycle,dvirãtis,M,15,Transportation,015_dviratis.png
+016_autobusas,autobusas,bus,autobùsas,M,16,Transportation,016_autobusas.png
+017_valtis,valtis,boat,váltis,F,17,Transportation,017_valtis.png
+018_laivas,laivas,ship,laĩvas,M,18,Transportation,018_laivas.png
+019_padanga,padanga,tire,padangà,F,19,Transportation,019_padanga.png
+020_benzinas,benzinas,gasoline,benzìnas,M,20,Transportation,020_benzinas.png
+021_variklis,variklis,engine,varìklis,M,21,Transportation,021_variklis.png
+022_bilietas,bilietas,train ticket,bìlietas,M,22,Transportation,022_bilietas.png
+023_transportas,transportas,transportation,transpòrtas,M,23,Transportation,023_transportas.png
+024_miestas,miestas,city,miẽstas,M,24,Location,024_miestas.png
+025_namas,namas,house,nãmas,M,25,Location,025_namas.png
+026_butas,butas,apartment,bùtas,M,26,Location,026_butas.png
+027_gatve,gatvė,street,gãtvė,F,27,Location,027_gatve.png
+028_kelias,kelias,road,kẽlias,M,28,Location,028_kelias.png
+029_oro_uostas,oro uostas,airport,óro úostas,M,29,Location,029_oro_uostas.png
+030_stotis,stotis,train station,stotìs,F,30,Location,030_stotis.png
+031_tiltas,tiltas,bridge,tìltas,M,31,Location,031_tiltas.png
+032_viesbutis,viešbutis,hotel,viẽšbutis,M,32,Location,032_viesbutis.png
+033_restoranas,restoranas,restaurant,restorãnas,M,33,Location,033_restoranas.png
+034_ukis,ūkis,farm,ū́kis,M,34,Location,034_ukis.png
+035_teismas,teismas,court,teĩsmas,M,35,Location,035_teismas.png
+036_mokykla,mokykla,school,mokyklà,F,36,Location,036_mokykla.png
+037_biuras,biuras,office,biùras,M,37,Location,037_biuras.png
+038_kambarys,kambarys,room,kambarỹs,M,38,Location,038_kambarys.png
+039_miestelis,miestelis,town,miestẽlis,M,39,Location,039_miestelis.png
+040_universitetas,universitetas,university,universitètas,M,40,Location,040_universitetas.png
+041_klubas,klubas,club,klùbas,M,41,Location,041_klubas.png
+042_baras,baras,bar,bãras,M,42,Location,042_baras.png
+043_parkas,parkas,park,párkas,M,43,Location,043_parkas.png
+044_stovykla,stovykla,camp,stovyklà,F,44,Location,044_stovykla.png
+045_parduotuve,parduotuvė,store/shop,parduotùvė,F,45,Location,045_parduotuve.png
+046_teatras,teatras,theater,teãtras,M,46,Location,046_teatras.png
+047_biblioteka,biblioteka,library,bibliotekà,F,47,Location,047_biblioteka.png
+048_ligonine,ligoninė,hospital,ligóninė,F,48,Location,048_ligonine.png
+049_baznycia,bažnyčia,church,bažnýčia,F,49,Location,049_baznycia.png
+050_turgus,turgus,market,tur̃gus,M,50,Location,050_turgus.png
+051_salis,šalis,country,šalìs,F,51,Location,051_salis.png
+052_pastatas,pastatas,building,pãstatas,M,52,Location,052_pastatas.png
+053_zeme,žemė,ground,žẽmė,F,53,Location,053_zeme.png
+054_kosmosas,kosmosas (kosminė erdvė),space,kòsmosas,M,54,Location,054_kosmosas.png
+055_bankas,bankas,bank,bánkas,M,55,Location,055_bankas.png
+056_vieta,vieta,location,vietà,F,56,Location,056_vieta.png
+057_kepure,kepurė,hat,kepùrė,F,57,Clothing,057_kepure.png
+058_suknele,suknelė,dress,suknẽlė,F,58,Clothing,058_suknele.png
+059_kostiumas,kostiumas,suit,kostiùmas,M,59,Clothing,059_kostiumas.png
+060_sijonas,sijonas,skirt,sijõnas,M,60,Clothing,060_sijonas.png
+061_marskiniai,marškiniai,shirt,marškiniaĩ,M pl,61,Clothing,061_marskiniai.png
+062_marskineliai,marškinėliai (maikė),T-shirt,marškinė̃liai,M pl,62,Clothing,062_marskineliai.png
+063_kelnes,kelnės,pants,kélnės,F pl,63,Clothing,063_kelnes.png
+064_batai,batai,shoes,bãtai,M pl,64,Clothing,064_batai.png
+065_kisene,kišenė,pocket,kišẽnė,F,65,Clothing,065_kisene.png
+066_paltas,paltas,coat,páltas,M,66,Clothing,066_paltas.png
+067_deme,dėmė,stain,dėmė̃,F,67,Clothing,067_deme.png
+068_drabuziai,drabužiai,clothing,drabùžiai,M pl,68,Clothing,068_drabuziai.png
+069_raudonas,raudonas/raudona,red,raudónas,M/F,69,Color,069_raudonas.png
+070_zalias,žalias/žalia,green,žãlias,M/F,70,Color,070_zalias.png
+071_melynas,mėlynas/mėlyna,blue,mė́lynas,M/F,71,Color,071_melynas.png
+072_geltonas,geltonas/geltona,yellow,geltónas,M/F,72,Color,072_geltonas.png
+073_rudas,rudas/ruda,brown,rùdas,M/F,73,Color,073_rudas.png
+074_rozinis,rožinis/rožinė,pink,rõžinis,M/F,74,Color,074_rozinis.png
+075_oranzinis,oranžinis/oranžinė,orange (color),oránžinis,M/F,75,Color,075_oranzinis.png
+076_juodas,juodas/juoda,black,júodas,M/F,76,Color,076_juodas.png
+077_baltas,baltas/balta,white,báltas,M/F,77,Color,077_baltas.png
+078_pilkas,pilkas/pilka,gray,pìlkas,M/F,78,Color,078_pilkas.png
+079_spalva,spalva,color,spalvà,,79,Color,079_spalva.png
+080_sunus,sūnus,son,sūnùs,M,80,People,080_sunus.png
+081_dukra,dukra,daughter,dukrà,F,81,People,081_dukra.png
+082_motina,motina,mother,mótina,F,82,People,082_motina.png
+083_tevas,tėvas,father,tė́vas,M,83,People,083_tevas.png
+084_tevai,tėvai,parent,tėvai̇̃,M pl,84,People,084_tevai.png
+085_kudikis,kūdikis,baby,kū̃dikis,M,85,People,085_kudikis.png
+086_vyras,vyras,man,výras,M,86,People,086_vyras.png
+087_moteris,moteris,woman,móteris,F,87,People,087_moteris.png
+088_brolis,brolis,brother,brólis,M,88,People,088_brolis.png
+089_sesuo,sesuo,sister,sesuõ,F,89,People,089_sesuo.png
+090_seima,šeima,family,šeimà,F,90,People,090_seima.png
+091_senelis,senelis,grandfather,senẽlis,M,91,People,091_senelis.png
+092_senele,senelė,grandmother,senẽlė,F,92,People,092_senele.png
+093_vyras,vyras,husband,výras,M,93,People,093_vyras.png
+094_zmona,žmona,wife,žmonà,,94,People,094_zmona.png
+095_karalius,karalius,king,karãlius,M,95,People,095_karalius.png
+096_karaliene,karalienė,queen,karalíenė,F,96,People,096_karaliene.png
+097_prezidentas,prezidentas/prezidentė,president,prezideñtas,M/F,97,People,097_prezidentas.png
+098_kaimynas,kaimynas/kaimynė,neighbor,kaimýnas,M/F,98,People,098_kaimynas.png
+099_berniukas,berniukas,boy,berniùkas,M,99,People,099_berniukas.png
+100_mergaite,mergaitė,girl,mergáitė,F,100,People,100_mergaite.png
+101_vaikas,vaikas,child,vaĩkas,M,101,People,101_vaikas.png
+102_suauges,suaugęs/suaugusi,adult,suáugęs,M/F,102,People,102_suauges.png
+103_zmogus,žmogus,human,žmogùs,M,103,People,103_zmogus.png
+104_draugas,draugas/draugė,friend,draũgas,M/F,104,People,104_draugas.png
+105_auka,auka,victim,aukà,F,105,People,105_auka.png
+106_zaidejas,žaidėjas/žaidėja,player,žaidė́jas,M/F,106,People,106_zaidejas.png
+107_sirgalius,sirgalius/sirgalė,fan (sports),sirgãlius,M/F,107,People,107_sirgalius.png
+108_minia,minia,crowd,minia,F,108,People,108_minia.png
+109_asmuo,asmuo,person,asmuõ,M,109,People,109_asmuo.png
+110_mokytojas,mokytojas/mokytoja,teacher,mókytojas,M/F,110,Job,110_mokytojas.png
+111_studentas,studentas/studentė,student,studeñtas,M/F,111,Job,111_studentas.png
+112_advokatas,advokatas/advokatė,lawyer,advokãtas,M/F,112,Job,112_advokatas.png
+113_gydytojas,gydytojas/gydytoja,doctor,gýdytojas,M/F,113,Job,113_gydytojas.png
+114_pacientas,pacientas/pacientė,patient,pacieñtas,M/F,114,Job,114_pacientas.png
+115_padavejas,padavėjas/padavėja,waiter,padavė́jas,M/F,115,Job,115_padavejas.png
+116_sekretorius,sekretorius/sekretorė,secretary,sekretõrius,M/F,116,Job,116_sekretorius.png
+117_kunigas,kunigas,priest,kùnigas,M,117,Job,117_kunigas.png
+118_policininkas,policininkas/policininkė,police officer,polìcininkas,M/F,118,Job,118_policininkas.png
+119_policija,policija,police force,polìcija,F,119,Job,119_policija.png
+120_kariuomene,kariuomenė,army,kariúomenė,F,120,Job,120_kariuomene.png
+121_kareivis,kareivis,soldier,karei̇̃vis,M,121,Job,121_kareivis.png
+122_menininkas,menininkas/menininkė,artist,mẽnininkas,M/F,122,Job,122_menininkas.png
+123_autorius,autorius/autorė,author,áutorius,M/F,123,Job,123_autorius.png
+124_vadovas,vadovas/vadovė,manager,vadõvas,M/F,124,Job,124_vadovas.png
+125_zurnalistas,žurnalistas/žurnalistė,reporter,žurnalìstas,M/F,125,Job,125_zurnalistas.png
+126_aktorius,aktorius/aktorė,actor,ãktorius,M/F,126,Job,126_aktorius.png
+127_darbas,darbas,job,dárbas,M,127,Job,127_darbas.png
+128_religija,religija,religion,relìgija,,128,Society,128_religija.png
+129_dangus,dangus,heaven,dangùs,,129,Society,129_dangus.png
+130_pragaras,pragaras,hell,prãgaras,,130,Society,130_pragaras.png
+131_mirtis,mirtis,death,mirtìs,,131,Society,131_mirtis.png
+132_vaistai,vaistai,medicine,váistai,,132,Society,132_vaistai.png
+133_pinigai,pinigai,money,pinigaĩ,,133,Society,133_pinigai.png
+134_doleris,doleris,dollar,dóleris,,134,Society,134_doleris.png
+135_banknotas,banknotas,bill,banknòtas,,135,Society,135_banknotas.png
+136_santuoka,santuoka,marriage,sántuoka,,136,Society,136_santuoka.png
+137_vestuves,vestuvės,wedding,vestùvės,F,137,Society,137_vestuves.png
+138_komanda,komanda,team,kománda,,138,Society,138_komanda.png
+139_santykiai,santykiai,relationship,sántykiai,,139,Society,139_santykiai.png
+140_rase,rasė,race ethnicity,rãsė,,140,Society,140_rase.png
+141_seksas,seksas,sex act,sèksas,,141,Society,141_seksas.png
+142_lytis,lytis,sex gender,lytìs,,142,Society,142_lytis.png
+143_zmogzudyste,žmogžudystė,murder,žmogžudỹstė,,143,Society,143_zmogzudyste.png
+144_kalejimas,kalėjimas,prison,kalė́jimas,,144,Society,144_kalejimas.png
+145_technologija,technologija,technology,technològija,,145,Society,145_technologija.png
+146_energija,energija,energy,ener̃gija,,146,Society,146_energija.png
+147_karas,karas,war,kãras,,147,Society,147_karas.png
+148_taika,taika,peace,taika,,148,Society,148_taika.png
+149_puolimas,puolimas,attack,puolìmas,,149,Society,149_puolimas.png
+150_rinkimai,rinkimai,election,rinkìmai,,150,Society,150_rinkimai.png
+151_zurnalas,žurnalas,magazine,žurnãlas,,151,Society,151_zurnalas.png
+152_laikrastis,laikraštis,newspaper,laĩkraštis,,152,Society,152_laikrastis.png
+153_nuodai,nuodai,poison,nuodaĩ,,153,Society,153_nuodai.png
+154_ginklas,ginklas,gun,giñklas,,154,Society,154_ginklas.png
+155_sportas,sportas,sport,spòrtas,,155,Society,155_sportas.png
+156_lenktynes,lenktynės,race sport,lenktỹnės,,156,Society,156_lenktynes.png
+157_manksta,mankšta,exercise,mankštà,,157,Society,157_manksta.png
+158_kamuolys,kamuolys,ball,kamuolỹs,,158,Society,158_kamuolys.png
+159_zaidimas,žaidimas,game,žaidìmas,,159,Society,159_zaidimas.png
+160_kaina,kaina,price,káina,,160,Society,160_kaina.png
+161_sutartis,sutartis,contract,sutartìs,,161,Society,161_sutartis.png
+162_narkotikas,narkotikas,drug,narkòtikas,,162,Society,162_narkotikas.png
+163_zenklas,ženklas,sign,žénklas,M,163,Society,163_zenklas.png
+164_mokslas,mokslas,science,mókslas,,164,Society,164_mokslas.png
+165_dievas,Dievas,God,Diẽvas,,165,Society,165_dievas.png
+166_grupe,grupė,band,grùpė,F,166,Art,166_grupe.png
+167_daina,daina,song,dainà,F,167,Art,167_daina.png
+168_instrumentas,instrumentas,instrument,instrumeñtas,M,168,Art,168_instrumentas.png
+169_muzika,muzika,music,mùzika,,169,Art,169_muzika.png
+170_filmas,filmas,movie,fìlmas,M,170,Art,170_filmas.png
+171_menas,menas,art,mẽnas,,171,Art,171_menas.png
+172_kava,kava,coffee,kavà,F,172,Beverages,172_kava.png
+173_arbata,arbata,tea,arbatà,F,173,Beverages,173_arbata.png
+174_vynas,vynas,wine,vỹnas,M,174,Beverages,174_vynas.png
+175_alus,alus,beer,alùs,M,175,Beverages,175_alus.png
+176_sultys,sultys,juice,sùltys,F pl,176,Beverages,176_sultys.png
+177_vanduo,vanduo,water,vanduõ,M,177,Beverages,177_vanduo.png
+178_pienas,pienas,milk,píenas,M,178,Beverages,178_pienas.png
+179_gerimas,gėrimas,beverage,gė́rimas,M,179,Beverages,179_gerimas.png
+180_kiausinis,kiaušinis,egg,kiaušìnis,M,180,Food,180_kiausinis.png
+181_suris,sūris,cheese,sū́ris,M,181,Food,181_suris.png
+182_duona,duona,bread,dúona,F,182,Food,182_duona.png
+183_sriuba,sriuba,soup,sriubà,F,183,Food,183_sriuba.png
+184_tortas,tortas,cake,tòrtas,M,184,Food,184_tortas.png
+185_vistiena,vištiena,chicken,vištíena,F,185,Food,185_vistiena.png
+186_kiauliena,kiauliena,pork,kiaulíena,F,186,Food,186_kiauliena.png
+187_jautiena,jautiena,beef,jáutiena,F,187,Food,187_jautiena.png
+188_obuolys,obuolys,apple,obuolỹs,M,188,Food,188_obuolys.png
+189_bananas,bananas,banana,banãnas,M,189,Food,189_bananas.png
+190_apelsinas,apelsinas,orange (fruit),apelsìnas,M,190,Food,190_apelsinas.png
+191_citrina,citrina,lemon,citrinà,F,191,Food,191_citrina.png
+192_kukuruzai,kukurūzai,corn,kukurū̃zai,M pl,192,Food,192_kukuruzai.png
+193_ryziai,ryžiai,rice,rỹžiai,M pl,193,Food,193_ryziai.png
+194_aliejus,aliejus,oil,aliẽjus,M,194,Food,194_aliejus.png
+195_tepalas,tepalas (alyva),oil (machine),tẽpalas,M,195,Food,195_tepalas.png
+196_sekla,sėkla,seed,sė́kla,F,196,Food,196_sekla.png
+197_peilis,peilis,knife,peĩlis,M,197,Food,197_peilis.png
+198_saukstas,šaukštas,spoon,šáukštas,M,198,Food,198_saukstas.png
+199_sakute,šakutė,fork,šakùtė,F,199,Food,199_sakute.png
+200_lekste,lėkštė,plate,lėkštė̃,F,200,Food,200_lekste.png
+201_puodelis,puodelis,cup,puodẽlis,M,201,Food,201_puodelis.png
+202_pusryciai,pusryčiai,breakfast,pùsryčiai,M pl,202,Food,202_pusryciai.png
+203_pietus,pietūs,lunch,piẽtūs,M pl,203,Food,203_pietus.png
+204_vakariene,vakarienė,dinner,vakariẽnė,F,204,Food,204_vakariene.png
+205_cukrus,cukrus,sugar,cùkrus,M,205,Food,205_cukrus.png
+206_druska,druska,salt,druskà,F,206,Food,206_druska.png
+207_butelis,butelis,bottle,bùtelis,M,207,Food,207_butelis.png
+208_maistas,maistas,food,maĩstas,M,208,Food,208_maistas.png
+209_stalas,stalas,table,stãlas,M,209,Home,209_stalas.png
+210_kede,kėdė,chair,kėdė̃,F,210,Home,210_kede.png
+211_lova,lova,bed,lóva,F,211,Home,211_lova.png
+212_sapnas,sapnas,dream,sãpnas,,212,Home,212_sapnas.png
+213_langas,langas,window,lángas,M,213,Home,213_langas.png
+214_durys,durys,door,dùrys,F pl,214,Home,214_durys.png
+215_miegamasis,miegamasis,bedroom,miegamàsis,M,215,Home,215_miegamasis.png
+216_virtuve,virtuvė,kitchen,virtùvė,F,216,Home,216_virtuve.png
+217_vonia,vonia,bathroom,vonià,F,217,Home,217_vonia.png
+218_piestukas,pieštukas,pencil,pieštùkas,M,218,Home,218_piestukas.png
+219_rasiklis,rašiklis,pen,rašìklis,M,219,Home,219_rasiklis.png
+220_nuotrauka,nuotrauka,photograph,núotrauka,F,220,Home,220_nuotrauka.png
+221_muilas,muilas,soap,muĩlas,M,221,Home,221_muilas.png
+222_knyga,knyga,book,knygà,F,222,Home,222_knyga.png
+223_puslapis,puslapis,page,pùslapis,M,223,Home,223_puslapis.png
+224_raktas,raktas,key,rãktas,M,224,Home,224_raktas.png
+225_dazai,dažai,paint,dažaĩ,M pl,225,Home,225_dazai.png
+226_laiskas,laiškas,letter (mail),láiškas,M,226,Home,226_laiskas.png
+227_raide,raidė,letter (alphabet),raĩdė,F,227,Misc,227_raide.png
+228_rastelis,raštelis,note,raštẽlis,M,228,Home,228_rastelis.png
+229_siena,siena,wall,síena,F,229,Home,229_siena.png
+230_popierius,popierius,paper,põpierius,M,230,Home,230_popierius.png
+231_grindys,grindys,floor,griñdys,F pl,231,Home,231_grindys.png
+232_lubos,lubos,ceiling,lùbos,F pl,232,Home,232_lubos.png
+233_stogas,stogas,roof,stógas,M,233,Home,233_stogas.png
+234_baseinas,baseinas,pool,baseĩnas,M,234,Home,234_baseinas.png
+235_spyna,spyna,lock,spynà,F,235,Home,235_spyna.png
+236_telefonas,telefonas,telephone,telefònas,M,236,Home,236_telefonas.png
+237_sodas,sodas,garden,sõdas,M,237,Home,237_sodas.png
+238_kiemas,kiemas,yard,kiẽmas,M,238,Home,238_kiemas.png
+239_adata,adata,needle,ãdata,F,239,Home,239_adata.png
+240_krepsys,krepšys,bag,krepšỹs,M,240,Home,240_krepsys.png
+241_deze,dėžė,box,dėžė̃,F,241,Home,241_deze.png
+242_dovana,dovana,gift,dovanà,F,242,Home,242_dovana.png
+243_kortele,kortelė,card,kortelė,F,243,Home,243_kortele.png
+244_ziedas,žiedas,ring,žíedas,M,244,Home,244_ziedas.png
+245_irankis,įrankis,tool,į́rankis,M,245,Home,245_irankis.png
+246_laikrodis,laikrodis,clock,laĩkrodis,M,246,Electronics,246_laikrodis.png
+247_lempa,lempa,lamp,lémpa,F,247,Electronics,247_lempa.png
+248_ventiliatorius,ventiliatorius,fan (electric),ventiliãtorius,M,248,Electronics,248_ventiliatorius.png
+249_mobilusis_telefonas,mobilusis telefonas,cell phone,mobilùsis telefònas,M,249,Electronics,249_mobilusis_telefonas.png
+250_tinklas,tinklas,network,tiñklas,,250,Electronics,250_tinklas.png
+251_kompiuteris,kompiuteris,computer,kompiùteris,M,251,Electronics,251_kompiuteris.png
+252_programa,programa,program,programà,,252,Electronics,252_programa.png
+253_nesiojamasis_kompiuteris,nešiojamasis kompiuteris,laptop,nešiójamasis kompiùteris,M,253,Electronics,253_nesiojamasis_kompiuteris.png
+254_ekranas,ekranas,screen,ekrãnas,M,254,Electronics,254_ekranas.png
+255_fotoaparatas,fotoaparatas,camera,fotoaparãtas,M,255,Electronics,255_fotoaparatas.png
+256_televizorius,televizorius,television,televìzorius,M,256,Electronics,256_televizorius.png
+257_radijas,radijas,radio,rãdijas,M,257,Electronics,257_radijas.png
+258_galva,galva,head,galvà,F,258,Body,258_galva.png
+259_kaklas,kaklas,neck,kãklas,M,259,Body,259_kaklas.png
+260_veidas,veidas,face,véidas,M,260,Body,260_veidas.png
+261_barzda,barzda,beard,barzdà,F,261,Body,261_barzda.png
+262_plaukai,plaukai,hair,plaukaĩ,M pl,262,Body,262_plaukai.png
+263_akis,akis,eye,akìs,F,263,Body,263_akis.png
+264_burna,burna,mouth,burnà,F,264,Body,264_burna.png
+265_lupa,lūpa,lip,lū́pa,F,265,Body,265_lupa.png
+266_nosis,nosis,nose,nósis,F,266,Body,266_nosis.png
+267_dantis,dantis,tooth,dantìs,M,267,Body,267_dantis.png
+268_ausis,ausis,ear,ausìs,F,268,Body,268_ausis.png
+269_asara,ašara,tear,ãšara,F,269,Body,269_asara.png
+270_liezuvis,liežuvis,tongue,liežùvis,M,270,Body,270_liezuvis.png
+271_nugara,nugara,back,nùgara,F,271,Body,271_nugara.png
+272_kojos_pirstas,kojos pirštas,toe,kójos pir̃štas,,272,Body,272_kojos_pirstas.png
+273_pirstas,pirštas,finger,pir̃štas,M,273,Body,273_pirstas.png
+274_peda,pėda,foot,pėdà,F,274,Body,274_peda.png
+275_plastaka,plaštaka,hand,plãštaka,F,275,Body,275_plastaka.png
+276_koja,koja,leg,kója,F,276,Body,276_koja.png
+277_ranka,ranka,arm,rankà,F,277,Body,277_ranka.png
+278_petys,petys,shoulder,petỹs,M,278,Body,278_petys.png
+279_sirdis,širdis,heart,širdìs,F,279,Body,279_sirdis.png
+280_kraujas,kraujas,blood,kraũjas,M,280,Body,280_kraujas.png
+281_smegenys,smegenys,brain,smẽgenys,F pl,281,Body,281_smegenys.png
+282_kelis,kelis,knee,kẽlis,M,282,Body,282_kelis.png
+283_prakaitas,prakaitas,sweat,prãkaitas,M,283,Body,283_prakaitas.png
+284_liga,liga,disease,ligà,,284,Body,284_liga.png
+285_kaulas,kaulas,bone,káulas,M,285,Body,285_kaulas.png
+286_balsas,balsas,voice,bal̃sas,,286,Body,286_balsas.png
+287_oda,oda,skin,óda,F,287,Body,287_oda.png
+288_kunas,kūnas,body,kū́nas,M,288,Body,288_kunas.png
+289_jura,jūra,sea,jū́ra,F,289,Nature,289_jura.png
+290_vandenynas,vandenynas,ocean,vandenýnas,M,290,Nature,290_vandenynas.png
+291_upe,upė,river,ùpė,F,291,Nature,291_upe.png
+292_kalnas,kalnas,mountain,kálnas,M,292,Nature,292_kalnas.png
+293_lietus,lietus,rain,lietùs,M,293,Nature,293_lietus.png
+294_sniegas,sniegas,snow,sniẽgas,M,294,Nature,294_sniegas.png
+295_medis,medis,tree,mẽdis,M,295,Nature,295_medis.png
+296_saule,saulė,sun,sáulė,F,296,Nature,296_saule.png
+297_menulis,mėnulis,moon,mėnùlis,M,297,Nature,297_menulis.png
+298_pasaulis,pasaulis,world,pasáulis,,298,Nature,298_pasaulis.png
+299_zeme,Žemė,Earth,Žẽmė,,299,Nature,299_zeme.png
+300_miskas,miškas,forest,mìškas,M,300,Nature,300_miskas.png
+301_dangus,dangus,sky,dangùs,M,301,Nature,301_dangus.png
+302_augalas,augalas,plant,áugalas,M,302,Nature,302_augalas.png
+303_vejas,vėjas,wind,vė́jas,M,303,Nature,303_vejas.png
+304_zeme,žemė (dirvožemis),soil,žẽmė,F,304,Nature,304_zeme.png
+305_gele,gėlė,flower,gėlė̃,F,305,Nature,305_gele.png
+306_slenis,slėnis,valley,slė̃nis,M,306,Nature,306_slenis.png
+307_saknis,šaknis,root,šaknìs,F,307,Nature,307_saknis.png
+308_ezeras,ežeras,lake,ẽžeras,M,308,Nature,308_ezeras.png
+309_zvaigzde,žvaigždė,star,žvaigždė̃,F,309,Nature,309_zvaigzde.png
+310_zole,žolė,grass,žolė̃,F,310,Nature,310_zole.png
+311_lapas,lapas,leaf,lãpas,M,311,Nature,311_lapas.png
+312_oras,oras,air,óras,,312,Nature,312_oras.png
+313_smelis,smėlis,sand,smė̃lis,M,313,Nature,313_smelis.png
+314_papludimys,paplūdimys,beach,paplūdimỹs,M,314,Nature,314_papludimys.png
+315_banga,banga,wave,bangà,F,315,Nature,315_banga.png
+316_ugnis,ugnis,fire,ugnìs,F,316,Nature,316_ugnis.png
+317_ledas,ledas,ice,lẽdas,M,317,Nature,317_ledas.png
+318_sala,sala,island,salà,F,318,Nature,318_sala.png
+319_kalva,kalva,hill,kalvà,F,319,Nature,319_kalva.png
+320_karstis,karštis,heat,kar̃štis,,320,Nature,320_karstis.png
+321_gamta,gamta,nature,gamtà,F,321,Nature,321_gamta.png
+322_stiklas,stiklas,glass,stìklas,M,322,Materials,322_stiklas.png
+323_metalas,metalas,metal,metãlas,M,323,Materials,323_metalas.png
+324_plastikas,plastikas,plastic,plãstikas,M,324,Materials,324_plastikas.png
+325_mediena,mediena,wood,medíena,F,325,Materials,325_mediena.png
+326_akmuo,akmuo,stone,akmuõ,M,326,Materials,326_akmuo.png
+327_deimantas,deimantas,diamond,deĩmantas,M,327,Materials,327_deimantas.png
+328_molis,molis,clay,mólis,M,328,Materials,328_molis.png
+329_dulkes,dulkės,dust,dùlkės,F pl,329,Materials,329_dulkes.png
+330_auksas,auksas,gold,áuksas,M,330,Materials,330_auksas.png
+331_varis,varis,copper,vãris,M,331,Materials,331_varis.png
+332_sidabras,sidabras,silver,sidãbras,M,332,Materials,332_sidabras.png
+333_medziaga,medžiaga,material,mẽdžiaga,F,333,Materials,333_medziaga.png
+334_metras,metras,meter,mètras,M,334,Math,334_metras.png
+335_centimetras,centimetras,centimeter,centimètras,M,335,Math,335_centimetras.png
+336_kilogramas,kilogramas,kilogram,kilogrãmas,M,336,Math,336_kilogramas.png
+337_colis,colis,inch,cólis,M,337,Math,337_colis.png
+338_peda,pėda,foot,pėdà,F,338,Math,338_peda.png
+339_svaras,svaras,pound,svàras,M,339,Math,339_svaras.png
+340_puse,pusė,half,pùsė,,340,Math,340_puse.png
+341_apskritimas,apskritimas,circle,apskritìmas,M,341,Math,341_apskritimas.png
+342_kvadratas,kvadratas,square,kvadrãtas,M,342,Math,342_kvadratas.png
+343_temperatura,temperatūra,temperature,temperatūrà,F,343,Math,343_temperatura.png
+344_data,data,date,data,,344,Math,344_data.png
+345_svoris,svoris,weight,svõris,,345,Math,345_svoris.png
+346_krastas,kraštas,edge,krãštas,M,346,Math,346_krastas.png
+347_kampas,kampas,corner,kam̃pas,M,347,Math,347_kampas.png
+348_zemelapis,žemėlapis,map,žemė́lapis,M,348,Misc,348_zemelapis.png
+349_taskas,taškas,dot,tãškas,M,349,Misc,349_taskas.png
+350_priebalsis,priebalsis,consonant,príebalsis,,350,Misc,350_priebalsis.png
+351_balsis,balsis,vowel,bal̃sis,,351,Misc,351_balsis.png
+352_sviesa,šviesa,light,šviesà,,352,Misc,352_sviesa.png
+353_garsas,garsas,sound,gar̃sas,,353,Misc,353_garsas.png
+354_taip,taip,yes,taĩp,,354,Misc,354_taip.png
+355_ne,ne,no,nè,,355,Misc,355_ne.png
+356_gabalas,gabalas,piece,gãbalas,,356,Misc,356_gabalas.png
+357_skausmas,skausmas,pain,skaũsmas,,357,Misc,357_skausmas.png
+358_suzalojimas,sužalojimas,injury,sužalójimas,M,358,Misc,358_suzalojimas.png
+359_zaizda,žaizda,wound,žaizdà,F,359,Misc,359_zaizda.png
+360_skyle,skylė,hole,skylė̃,F,360,Misc,360_skyle.png
+361_vaizdas,vaizdas,image,vaĩzdas,M,361,Misc,361_vaizdas.png
+362_rastas,raštas,"writing, script",rãštas,,362,Misc,362_rastas.png
+363_dirbti,dirbti,work,dìrbti,,363,Verbs,363_dirbti.png
+364_zaisti,žaisti,play (a game),žaĩsti,V,364,Verbs,364_zaisti.png
+365_groti,groti,play (an instrument),gróti,V,365,Verbs,365_groti.png
+366_eiti,eiti,walk,eĩti,,366,Verbs,366_eiti.png
+367_begti,bėgti,run,bė́gti,,367,Verbs,367_begti.png
+368_vairuoti,vairuoti,drive,vairúoti,,368,Verbs,368_vairuoti.png
+369_skristi,skristi,fly,skrìsti,,369,Verbs,369_skristi.png
+370_plaukti,plaukti,swim,plaũkti,,370,Verbs,370_plaukti.png
+371_eiti,eiti,go,eĩti,,371,Verbs,371_eiti.png
+372_sustoti,sustoti,stop,sustóti,,372,Verbs,372_sustoti.png
+373_sekti,sekti,follow,sèkti,,373,Verbs,373_sekti.png
+374_galvoti,galvoti,think,galvóti,,374,Verbs,374_galvoti.png
+375_sakyti,sakyti,say,sakýti,,375,Verbs,375_sakyti.png
+376_valgyti,valgyti,eat,válgyti,,376,Verbs,376_valgyti.png
+377_gerti,gerti,drink,gérti,,377,Verbs,377_gerti.png
+378_zudyti,žudyti,kill,žudýti,,378,Verbs,378_zudyti.png
+379_mirti,mirti,die,mir̃ti,,379,Verbs,379_mirti.png
+380_sypsotis,šypsotis,smile,šypsótis,,380,Verbs,380_sypsotis.png
+381_juoktis,juoktis,laugh,juõktis,,381,Verbs,381_juoktis.png
+382_verkti,verkti,cry,ver̃kti,,382,Verbs,382_verkti.png
+383_pirkti,pirkti,buy,pir̃kti,,383,Verbs,383_pirkti.png
+384_moketi,mokėti,pay,mokė́ti,,384,Verbs,384_moketi.png
+385_parduoti,parduoti,sell,pardúoti,,385,Verbs,385_parduoti.png
+386_sauti,šauti,shoot,šáuti,,386,Verbs,386_sauti.png
+387_mokytis,mokytis,learn,mókytis,,387,Verbs,387_mokytis.png
+388_sokti,šokti,jump,šókti,,388,Verbs,388_sokti.png
+389_uostyti,uostyti,smell,úostyti,,389,Verbs,389_uostyti.png
+390_girdeti,girdėti,hear,girdė́ti,,390,Verbs,390_girdeti.png
+391_klausytis,klausytis,listen,klausýtis,,391,Verbs,391_klausytis.png
+392_ragauti,ragauti,taste,ragáuti,,392,Verbs,392_ragauti.png
+393_liesti,liesti,touch,liẽsti,,393,Verbs,393_liesti.png
+394_matyti,matyti,see,matýti,,394,Verbs,394_matyti.png
+395_ziureti,žiūrėti,watch,žiūrė́ti,,395,Verbs,395_ziureti.png
+396_buciuoti,bučiuoti,kiss,bučiúoti,,396,Verbs,396_buciuoti.png
+397_degti,degti,burn,dègti,,397,Verbs,397_degti.png
+398_tirpti,tirpti,melt,tir̃pti,,398,Verbs,398_tirpti.png
+399_kasti,kasti,dig,kàsti,,399,Verbs,399_kasti.png
+400_sprogti,sprogti,explode,sprógti,,400,Verbs,400_sprogti.png
+401_sedeti,sėdėti,sit,sėdė́ti,,401,Verbs,401_sedeti.png
+402_stoveti,stovėti,stand,stovė́ti,,402,Verbs,402_stoveti.png
+403_myleti,mylėti,love,mylė́ti,,403,Verbs,403_myleti.png
+404_praeiti,praeiti,pass by,praei̇̃ti,,404,Verbs,404_praeiti.png
+405_pjauti,pjauti,cut,pjáuti,,405,Verbs,405_pjauti.png
+406_mustis,muštis,fight,mùštis,,406,Verbs,406_mustis.png
+407_guleti,gulėti,lie down,gulė́ti,,407,Verbs,407_guleti.png
+408_sokti,šokti,dance,šókti,,408,Verbs,408_sokti.png
+409_miegoti,miegoti,sleep,miegóti,,409,Verbs,409_miegoti.png
+410_pabusti,pabusti,wake up,pabùsti,,410,Verbs,410_pabusti.png
+411_dainuoti,dainuoti,sing,dainúoti,,411,Verbs,411_dainuoti.png
+412_skaiciuoti,skaičiuoti,count,skaičiúoti,,412,Verbs,412_skaiciuoti.png
+413_tuoktis,tuoktis,marry,tuõktis,,413,Verbs,413_tuoktis.png
+414_melstis,melstis,pray,mel̃stis,,414,Verbs,414_melstis.png
+415_laimeti,laimėti,win,laimė́ti,,415,Verbs,415_laimeti.png
+416_pralaimeti,pralaimėti,lose,pralaimė́ti,,416,Verbs,416_pralaimeti.png
+417_maisyti,maišyti,mix,maišýti,,417,Verbs,417_maisyti.png
+418_lenkti,lenkti,bend,leñkti,,418,Verbs,418_lenkti.png
+419_plauti,plauti,wash,pláuti,,419,Verbs,419_plauti.png
+420_gaminti,gaminti,cook,gami̇̀nti,,420,Verbs,420_gaminti.png
+421_atidaryti,atidaryti,open,atidarýti,,421,Verbs,421_atidaryti.png
+422_uzdaryti,uždaryti,close,uždarýti,,422,Verbs,422_uzdaryti.png
+423_rasyti,rašyti,write,rašýti,,423,Verbs,423_rasyti.png
+424_skambinti,skambinti,call,skam̃binti,,424,Verbs,424_skambinti.png
+425_sukti,sukti,turn,sùkti,,425,Verbs,425_sukti.png
+426_statyti,statyti,build,statýti,,426,Verbs,426_statyti.png
+427_mokyti,mokyti,teach,mókyti,,427,Verbs,427_mokyti.png
+428_augti,augti,grow,áugti,,428,Verbs,428_augti.png
+429_piesti,piešti,draw,piẽšti,,429,Verbs,429_piesti.png
+430_maitinti,maitinti,feed,maitìnti,,430,Verbs,430_maitinti.png
+431_gaudyti,gaudyti,catch,gáudyti,,431,Verbs,431_gaudyti.png
+432_mesti,mesti,throw,mèsti,,432,Verbs,432_mesti.png
+433_valyti,valyti,clean,valýti,,433,Verbs,433_valyti.png
+434_rasti,rasti,find,ràsti,,434,Verbs,434_rasti.png
+435_kristi,kristi,fall,krìsti,,435,Verbs,435_kristi.png
+436_stumti,stumti,push,stùmti,,436,Verbs,436_stumti.png
+437_traukti,traukti,pull,tráukti,,437,Verbs,437_traukti.png
+438_nesti,nešti,carry,nèšti,,438,Verbs,438_nesti.png
+439_lauzyti,laužyti,break,láužyti,,439,Verbs,439_lauzyti.png
+440_deveti,dėvėti,wear,dėvė́ti,,440,Verbs,440_deveti.png
+441_kabinti,kabinti,hang,kabìnti,,441,Verbs,441_kabinti.png
+442_purtyti,purtyti,shake,purtýti,,442,Verbs,442_purtyti.png
+443_pasirasyti,pasirašyti,sign,pasirašýti,,443,Verbs,443_pasirasyti.png
+444_musti,mušti,beat,mùšti,,444,Verbs,444_musti.png
+445_kelti,kelti,lift,kélti,,445,Verbs,445_kelti.png
+446_ilgas,ilgas/ilga,long,i̇̀lgas,M/F,446,Adjectives,446_ilgas.png
+447_trumpas,trumpas/trumpa,short-long,trum̃pas,M/F,447,Adjectives,447_trumpas.png
+448_aukstas,aukštas/aukšta,tall,áukštas,M/F,448,Adjectives,448_aukstas.png
+449_zemas,žemas/žema,short-tall,žẽmas,M/F,449,Adjectives,449_zemas.png
+450_platus,platus/plati,wide,platùs,M/F,450,Adjectives,450_platus.png
+451_siauras,siauras/siaura,narrow,siaũras,M/F,451,Adjectives,451_siauras.png
+452_didelis,didelis/didelė,big,dìdelis,M/F,452,Adjectives,452_didelis.png
+453_mazas,mažas/maža,small,mãžas,M/F,453,Adjectives,453_mazas.png
+454_letas,lėtas/lėta,slow,lėtas,M/F,454,Adjectives,454_letas.png
+455_greitas,greitas/greita,fast,greĩtas,M/F,455,Adjectives,455_greitas.png
+456_karstas,karštas/karšta,hot,kárštas,M/F,456,Adjectives,456_karstas.png
+457_saltas,šaltas/šalta,cold,šáltas,M/F,457,Adjectives,457_saltas.png
+458_siltas,šiltas/šilta,warm,šil̃tas,M/F,458,Adjectives,458_siltas.png
+459_vesus,vėsus/vėsi,cool,vėsùs,M/F,459,Adjectives,459_vesus.png
+460_naujas,naujas/nauja,new,naũjas,M/F,460,Adjectives,460_naujas.png
+461_senas,senas/sena,old-new,sẽnas,M/F,461,Adjectives,461_senas.png
+462_jaunas,jaunas/jauna,young,jáunas,M/F,462,Adjectives,462_jaunas.png
+463_senas,senas/sena,old-young,sẽnas,M/F,463,Adjectives,463_senas.png
+464_geras,geras/gera,good,gẽras,M/F,464,Adjectives,464_geras.png
+465_blogas,blogas/bloga,bad,blõgas,M/F,465,Adjectives,465_blogas.png
+466_slapias,šlapias/šlapia,wet,šlãpias,M/F,466,Adjectives,466_slapias.png
+467_sausas,sausas/sausa,dry,saũsas,M/F,467,Adjectives,467_sausas.png
+468_sergantis,sergantis/serganti,sick,ser̃gantis,M/F,468,Adjectives,468_sergantis.png
+469_sveikas,sveikas/sveika,healthy,sveĩkas,M/F,469,Adjectives,469_sveikas.png
+470_garsus,garsus/garsi,loud,garsùs,M/F,470,Adjectives,470_garsus.png
+471_tylus,tylus/tyli,quiet,tylùs,M/F,471,Adjectives,471_tylus.png
+472_laimingas,laimingas/laiminga,happy,laimìngas,M/F,472,Adjectives,472_laimingas.png
+473_liudnas,liūdnas/liūdna,sad,liū̃dnas,M/F,473,Adjectives,473_liudnas.png
+474_grazus,gražus/graži,beautiful,gražùs,M/F,474,Adjectives,474_grazus.png
+475_bjaurus,bjaurus/bjauri (negražus/negraži),ugly,bjaurùs,M/F,475,Adjectives,475_bjaurus.png
+476_kurcias,kurčias/kurčia,deaf,kur̃čias,M/F,476,Adjectives,476_kurcias.png
+477_aklas,aklas/akla,blind,ãklas,M/F,477,Adjectives,477_aklas.png
+478_malonus,malonus/maloni,nice,malonùs,M/F,478,Adjectives,478_malonus.png
+479_piktas,piktas,mean,pìktas,,479,Adjectives,479_piktas.png
+480_turtingas,turtingas/turtinga,rich,turtìngas,M/F,480,Adjectives,480_turtingas.png
+481_neturtingas,neturtingas/neturtinga (vargšas),poor,neturtìngas,M/F,481,Adjectives,481_neturtingas.png
+482_storas,storas/stora,thick,stóras,M/F,482,Adjectives,482_storas.png
+483_plonas,plonas/plona,thin,plónas,M/F,483,Adjectives,483_plonas.png
+484_brangus,brangus/brangi,expensive,brangùs,M/F,484,Adjectives,484_brangus.png
+485_pigus,pigus/pigi,cheap,pigùs,M/F,485,Adjectives,485_pigus.png
+486_plokscias,plokščias/plokščia,flat,plókščias,M/F,486,Adjectives,486_plokscias.png
+487_islenktas,išlenktas/išlenkta,curved,ìšlenktas,M/F,487,Adjectives,487_islenktas.png
+488_vyriskas,vyriškas/vyriška,male,výriškas,M/F,488,Adjectives,488_vyriskas.png
+489_moteriskas,moteriškas/moteriška,female,móteriškas,M/F,489,Adjectives,489_moteriskas.png
+490_ankstas,ankštas/ankšta,tight,añkštas,M/F,490,Adjectives,490_ankstas.png
+491_laisvas,laisvas/laisva,loose,laĩsvas,M/F,491,Adjectives,491_laisvas.png
+492_aukstas,aukštas/aukšta,high,áukštas,M/F,492,Adjectives,492_aukstas.png
+493_zemas,žemas/žema,low,žẽmas,M/F,493,Adjectives,493_zemas.png
+494_minkstas,minkštas/minkšta,soft,mìnkštas,M/F,494,Adjectives,494_minkstas.png
+495_kietas,kietas/kieta,hard,kíetas,M/F,495,Adjectives,495_kietas.png
+496_gilus,gilus/gili,deep,gilùs,M/F,496,Adjectives,496_gilus.png
+497_seklus,seklus/sekli,shallow,seklus,M/F,497,Adjectives,497_seklus.png
+498_svarus,švarus/švari,clean,švarùs,M/F,498,Adjectives,498_svarus.png
+499_purvinas,purvinas/purvina,dirty,pur̃vinas,M/F,499,Adjectives,499_purvinas.png
+500_stiprus,stiprus/stipri,strong,stiprùs,M/F,500,Adjectives,500_stiprus.png
+501_silpnas,silpnas/silpna,weak,sil̃pnas,M/F,501,Adjectives,501_silpnas.png
+502_negyvas,negyvas/negyva,dead,negývas,M/F,502,Adjectives,502_negyvas.png
+503_gyvas,gyvas/gyva,alive,gývas,M/F,503,Adjectives,503_gyvas.png
+504_sunkus,sunkus/sunki,heavy,sunkùs,M/F,504,Adjectives,504_sunkus.png
+505_lengvas,lengvas/lengva,light-heavy,leñgvas,M/F,505,Adjectives,505_lengvas.png
+506_tamsus,tamsus/tamsi,dark,tamsùs,M/F,506,Adjectives,506_tamsus.png
+507_sviesus,šviesus/šviesi,light-dark,šviesùs,M/F,507,Adjectives,507_sviesus.png
+508_branduolinis,branduolinis,nuclear,branduolìnis,,508,Adjectives,508_branduolinis.png
+509_garsus,garsus,famous,garsùs,,509,Adjectives,509_garsus.png
+510_as,aš,I,àš,,510,Pronouns,510_as.png
+511_tu,tu,you sg,tù,,511,Pronouns,511_tu.png
+512_jis,jis,he,jìs,,512,Pronouns,512_jis.png
+513_ji,ji,she,ji,,513,Pronouns,513_ji.png
+514_tai,tai,it,taĩ,,514,Pronouns,514_tai.png
+515_mes,mes,we,mẽs,,515,Pronouns,515_mes.png
+516_jus,jūs,you pl,jūs,,516,Pronouns,516_jus.png
+517_jie,jie,they,jie,,517,Pronouns,517_jie.png
+528_serti,šerti,feed (animals),šérti,,528,Verbs,528_serti.png
+529_lesinti,lesinti,feed (birds),lẽsinti,,529,Verbs,529_lesinti.png
+530_lydyti,lydyti,melt (something),lýdyti,,530,Verbs,530_lydyti.png
+531_batonas,batonas,white loaf (wheat bread),batònas,M,531,Food,531_batonas.png

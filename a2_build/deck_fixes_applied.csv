@@ -1,0 +1,28 @@
+file,key,field,old,new,source,applied_on
+cards_anki.csv,249_mobilusis_telefonas,gen_sg,mobilusis telefono,mobiliojo telefono,"pronominal adjective declines: mobilusis → mobiliojo (en.wiktionary.org/wiki/mobilusis, declension table)",2026-10-11
+cards_anki.csv,379_mirti,lithuanian,mìrti,mir̃ti,"en.wiktionary.org/wiki/mirti (head=mir̃ti, mìršta, mìrė)",2026-10-11
+cards_anki.csv,385_parduoti,lithuanian,parduóti,pardúoti,"en.wiktionary.org/wiki/parduoti (head=pardúoti); acute on uo is written úo (cf. deck dúona, úostyti)",2026-10-11
+cards_anki.csv,427_mokyti,lithuanian,mokýti,mókyti,"en.wiktionary.org/wiki/mokyti (head=mókyti, móko, mókė)",2026-10-11
+cards_anki.csv,431_gaudyti,lithuanian,gaudýti,gáudyti,"en.wiktionary.org/wiki/gaudyti (head=gáudyti, gáudo, gáudė)",2026-10-11
+cards_anki.csv,020_benzinas,pron,benzinas,benzìnas,"en.wiktionary.org/wiki/benzinas (lt-pr benzìnas, class 2)",2026-10-11
+master_wordlist.csv,020_benzinas,lt_pron,benzinas,benzìnas,"en.wiktionary.org/wiki/benzinas (lt-pr benzìnas, class 2)",2026-10-11
+cards_anki.csv,096_karaliene,pron,karalienė,karalíenė,"en.wiktionary.org/wiki/karalienė (lt-pr karali̇́enė = acute on ie, cf. deck píenas, síena)",2026-10-11
+master_wordlist.csv,096_karaliene,lt_pron,karalienė,karalíenė,"en.wiktionary.org/wiki/karalienė (lt-pr karali̇́enė = acute on ie, cf. deck píenas, síena)",2026-10-11
+cards_anki.csv,115_padavejas,pron,padavėjas,padavė́jas,en.wiktionary.org/wiki/padavėjas (lt-pr padavė́jas),2026-10-11
+master_wordlist.csv,115_padavejas,lt_pron,padavėjas,padavė́jas,en.wiktionary.org/wiki/padavėjas (lt-pr padavė́jas),2026-10-11
+cards_anki.csv,145_technologija,pron,technologija,technològija,en.wiktionary.org/wiki/technologija (lt-pr techno^lògija),2026-10-11
+master_wordlist.csv,145_technologija,lt_pron,technologija,technològija,en.wiktionary.org/wiki/technologija (lt-pr techno^lògija),2026-10-11
+cards_anki.csv,199_sakute,pron,šakutė,šakùtė,en.wiktionary.org/wiki/šakutė (lt-pr šakùtė),2026-10-11
+master_wordlist.csv,199_sakute,lt_pron,šakutė,šakùtė,en.wiktionary.org/wiki/šakutė (lt-pr šakùtė),2026-10-11
+cards_anki.csv,201_puodelis,pron,puodelis,puodẽlis,en.wiktionary.org/wiki/puodelis (lt-pr puodẽlis),2026-10-11
+master_wordlist.csv,201_puodelis,lt_pron,puodelis,puodẽlis,en.wiktionary.org/wiki/puodelis (lt-pr puodẽlis),2026-10-11
+cards_anki.csv,220_nuotrauka,pron,nuotrauka,núotrauka,en.wiktionary.org/wiki/nuotrauka (lt-pr núotrauka),2026-10-11
+master_wordlist.csv,220_nuotrauka,lt_pron,nuotrauka,núotrauka,en.wiktionary.org/wiki/nuotrauka (lt-pr núotrauka),2026-10-11
+cards_anki.csv,306_slenis,pron,slėnis,slė̃nis,en.wiktionary.org/wiki/slėnis (lt-pr slė̃nis),2026-10-11
+master_wordlist.csv,306_slenis,lt_pron,slėnis,slė̃nis,en.wiktionary.org/wiki/slėnis (lt-pr slė̃nis),2026-10-11
+cards_anki.csv,355_ne,pron,ne,nè,en.wiktionary.org/wiki/ne (head=nè),2026-10-11
+master_wordlist.csv,355_ne,lt_pron,ne,nè,en.wiktionary.org/wiki/ne (head=nè),2026-10-11
+cards_anki.csv,470_garsus,pron,garsus,garsùs,"en.wiktionary.org/wiki/garsus (head=garsùs, garsì, class 4)",2026-10-11
+master_wordlist.csv,470_garsus,lt_pron,garsus,garsùs,"en.wiktionary.org/wiki/garsus (head=garsùs, garsì, class 4)",2026-10-11
+cards_anki.csv,509_garsus,pron,garsus,garsùs,en.wiktionary.org/wiki/garsus (head=garsùs),2026-10-11
+master_wordlist.csv,509_garsus,lt_pron,garsus,garsùs,en.wiktionary.org/wiki/garsus (head=garsùs),2026-10-11

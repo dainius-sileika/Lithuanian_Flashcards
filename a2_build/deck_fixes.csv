@@ -1,0 +1,96 @@
+key,field,old,new,source,confidence,note
+249_mobilusis_telefonas,gen_sg,mobilusis telefono,mobiliojo telefono,"pronominal adjective declines: mobilusis → mobiliojo (en.wiktionary.org/wiki/mobilusis, declension table)",high,only gen_sg in the deck built by a rule that skipped the adjective
+379_mirti,lithuanian,mìrti,mir̃ti,"en.wiktionary.org/wiki/mirti (head=mir̃ti, mìršta, mìrė)",high,pron column already mir̃ti; the word line shows the wrong accent
+385_parduoti,lithuanian,parduóti,pardúoti,"en.wiktionary.org/wiki/parduoti (head=pardúoti); acute on uo is written úo (cf. deck dúona, úostyti)",high,pron column already pardúoti
+427_mokyti,lithuanian,mokýti,mókyti,"en.wiktionary.org/wiki/mokyti (head=mókyti, móko, mókė)",high,pron column already mókyti
+431_gaudyti,lithuanian,gaudýti,gáudyti,"en.wiktionary.org/wiki/gaudyti (head=gáudyti, gáudo, gáudė)",high,pron column already gáudyti
+385_parduoti,pres3,par̃duoda,pardúoda ?,en.wiktionary.org/wiki/parduoti gives pres3 pardúoda; DLKŽ/native check gave par̃duoda,low,two sources disagree; native-checked value stands unless owner re-checks DLKŽ
+020_benzinas,pron,benzinas,benzìnas,"en.wiktionary.org/wiki/benzinas (lt-pr benzìnas, class 2)",high,also master_wordlist.csv lt_pron
+096_karaliene,pron,karalienė,karalíenė,"en.wiktionary.org/wiki/karalienė (lt-pr karali̇́enė = acute on ie, cf. deck píenas, síena)",high,also master_wordlist.csv lt_pron
+108_minia,pron,minia,minià,kirtis.info/api/krc/minia (nom. Minià); no Wiktionary entry,medium,also master_wordlist.csv lt_pron
+115_padavejas,pron,padavėjas,padavė́jas,en.wiktionary.org/wiki/padavėjas (lt-pr padavė́jas),high,also master_wordlist.csv lt_pron
+145_technologija,pron,technologija,technològija,en.wiktionary.org/wiki/technologija (lt-pr techno^lògija),high,also master_wordlist.csv lt_pron
+148_taika,pron,taika,taikà,kirtis.info/api/krc/taika (nom. Taikà); no Wiktionary entry,medium,also master_wordlist.csv lt_pron
+199_sakute,pron,šakutė,šakùtė,en.wiktionary.org/wiki/šakutė (lt-pr šakùtė),high,also master_wordlist.csv lt_pron
+201_puodelis,pron,puodelis,puodẽlis,en.wiktionary.org/wiki/puodelis (lt-pr puodẽlis),high,also master_wordlist.csv lt_pron
+220_nuotrauka,pron,nuotrauka,núotrauka,en.wiktionary.org/wiki/nuotrauka (lt-pr núotrauka),high,also master_wordlist.csv lt_pron
+243_kortele,pron,kortelė,kortẽlė,kirtis.info/api/krc/kortelė (Kortẽlė); Wiktionary entry unaccented,medium,also master_wordlist.csv lt_pron
+306_slenis,pron,slėnis,slė̃nis,en.wiktionary.org/wiki/slėnis (lt-pr slė̃nis),high,also master_wordlist.csv lt_pron
+344_data,pron,data,datà,kirtis.info/api/krc/data (nom. Datà); no Wiktionary entry,medium,also master_wordlist.csv lt_pron
+355_ne,pron,ne,nè,en.wiktionary.org/wiki/ne (head=nè),high,also master_wordlist.csv lt_pron
+454_letas,pron,lėtas,lė̃tas,kirtis.info/api/krc/lėtas (Lė̃tas); Wiktionary headword unaccented; class 4 adjective,medium,also master_wordlist.csv lt_pron
+470_garsus,pron,garsus,garsùs,"en.wiktionary.org/wiki/garsus (head=garsùs, garsì, class 4)",high,also master_wordlist.csv lt_pron
+509_garsus,pron,garsus,garsùs,en.wiktionary.org/wiki/garsus (head=garsùs),high,also master_wordlist.csv lt_pron
+497_seklus,pron,seklus,seklùs,kirtis.info/api/krc/seklus (Seklùs); no Wiktionary entry,medium,also master_wordlist.csv lt_pron
+513_ji,pron,ji,jì,kirtis.info/api/krc/ji (Jì); Wiktionary unaccented,medium,also master_wordlist.csv lt_pron
+516_jus,pron,jūs,jū̃s,kirtis.info/api/krc/jūs (Jū̃s); Wiktionary unaccented,medium,also master_wordlist.csv lt_pron
+517_jie,pron,jie,jiẽ,kirtis.info/api/krc/jie (Jiẽ); Wiktionary unaccented,medium,also master_wordlist.csv lt_pron
+339_svaras,pron,svàras,svãras,en.wiktionary.org/wiki/svaras (lt-pr svãras; its lt-noun head says svàras) + kirtis.info/api/krc/svaras (Svãras),medium,two of three sources give svãras; owner to confirm in DLKŽ
+084_tevai,pron,tėvai̇̃,tėvaĩ,"Wiktionary writes accented i as i + U+0307 + accent; the deck elsewhere uses precomposed ì/ĩ (žuvìs, eĩti)",low,cosmetic: renders with a stray dot in some fonts; normalise to one convention deck-wide
+121_kareivis,pron,karei̇̃vis,kareĩvis,"Wiktionary writes accented i as i + U+0307 + accent; the deck elsewhere uses precomposed ì/ĩ (žuvìs, eĩti)",low,cosmetic: renders with a stray dot in some fonts; normalise to one convention deck-wide
+404_praeiti,pron,praei̇̃ti,praeĩti,"Wiktionary writes accented i as i + U+0307 + accent; the deck elsewhere uses precomposed ì/ĩ (žuvìs, eĩti)",low,cosmetic: renders with a stray dot in some fonts; normalise to one convention deck-wide
+446_ilgas,pron,i̇̀lgas,ìlgas,"Wiktionary writes accented i as i + U+0307 + accent; the deck elsewhere uses precomposed ì/ĩ (žuvìs, eĩti)",low,cosmetic: renders with a stray dot in some fonts; normalise to one convention deck-wide
+420_gaminti,pron,gami̇̀nti,gamìnti,"Wiktionary writes accented i as i + U+0307 + accent; the deck elsewhere uses precomposed ì/ĩ (žuvìs, eĩti)",low,cosmetic: renders with a stray dot in some fonts; normalise to one convention deck-wide
+371_eiti,lithuanian_TARGET,eiti (go),važiuoti,"deck already teaches eiti at #366 (walk); važiuoti (go by vehicle) is top-3000 rank 710 and on the VU list, and the eiti/važiuoti split is the A1 point",medium,#371 is a second card for the same word; retargeting fixes a duplicate and a core gap at once (needs a new picture: a person riding a bus/driving)
+388_sokti,english,jump,"jump (šokti also = dance, see #408)","same word twice (#388 jump, #408 dance); both correct",low,owner decision: keep both as polysemy cards or drop one
+492_aukstas / 493_zemas / 463_senas,(card),duplicate of #448 / #449 / #461,consider dropping or merging,same Lithuanian word and gloss pair already taught,low,"high/tall, low/short, old/old are one word each in Lithuanian"
+470_garsus / 509_garsus,(card),"garsus twice (loud, famous)","keep, or retarget #509 famous → žinomas",garsus = both loud and famous (correct); žinomas = well-known (VU list),low,
+053_zeme / 304_zeme / 299_Zeme,(card),"žemė ×3 (ground, soil, Earth)",consider merging 304 into 053,same word,low,
+274_peda / 338_peda,(card),"pėda twice (foot, foot-unit)",keep (text-exception card for the unit),,low,
+195_tepalas,lithuanian_TARGET,tepalas (alyva),alyva (tepalas),DLKŽ: alyva = engine/machine oil; tepalas = grease/ointment (kirtis.info/api/krc/alyva: Alyvà),medium,engine oil in a 1981 garage is alyva; pron would become alyvà
+275_plastaka,notes,,gloss note: everyday Lithuanian uses ranka for hand and arm; plaštaka is the anatomical term,usage,low,keep the card; add the note so the learner is not surprised
+134_doleris,(card),dollar,consider euras / litas instead (queue A2-0864 euras exists),"a Lithuanian deck; litas fits the 1981 counterfactual, euras the learner",low,owner decision
+468_sergantis,notes,,participle used as adjective (Jis serga = he is ill is the normal predicate),usage,low,
+035_teismas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+054_kosmosas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+095_karalius,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+096_karaliene,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+105_auka,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+107_sirgalius,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+112_advokatas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+116_sekretorius,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+120_kariuomene,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+123_autorius,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+125_zurnalistas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+290_vandenynas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+327_deimantas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+331_varis,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+358_suzalojimas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+378_zudyti,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+386_sauti,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+400_sprogti,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+476_kurcias,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+477_aklas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+486_plokscias,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+487_islenktas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+488_vyriskas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+489_moteriskas,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+530_lydyti,level,A1,A2,"not on the VU A1+A2 list and outside the top 3,000 (sources/); low-frequency or specialised",low,tag only; no card change
+354_taip,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+355_ne,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+510_as,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+511_tu,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+512_jis,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+513_ji,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+514_tai,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+515_mes,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+516_jus,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+517_jie,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+464_geras,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+465_blogas,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+133_pinigai,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+160_kaina,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+284_liga,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+340_puse,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+312_oras,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+298_pasaulis,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+155_sportas,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+167_daina,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+169_muzika,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+152_laikrastis,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+132_vaistai,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+374_galvoti,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+387_mokytis,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+403_myleti,level,A2,A1,on the VU list and/or top-500 frequency; a learner needs these before most of the A1 concrete nouns,low,tag only
+"(verbs 363–445, 528–530)",lithuanian,accented (dìrbti),plain (dirbti) or keep — decide once,"nouns and adjectives carry a plain headword in cards_anki.csv, verbs an accented one; the word line therefore mixes conventions (pron already carries the accent)",low,four of these accented headwords disagree with pron (rows above)
+364_zaisti / 365_groti,gender,V,(blank),other verbs leave gender blank,low,cosmetic

@@ -58,17 +58,18 @@ import os, sys, csv, time, shutil, argparse, hashlib, base64
 # ===========================================================================
 # CONCEPT-FORWARD encoding (backend="openai")
 # ===========================================================================
-# F6.1 house style (2026-10-11). Settled by the owner's blind surveys in
+# F6.2 house style (2026-10-11; F6.1 + spot-check 09 amendments). Hair wording
+# corrected per owner 2026-10-11: curls are one option for older women, never a rule. Settled by the owner's blind surveys in
 # style_lab/2026-10-10_06..08 (Fable analysis: 08_F6_roll/results/). Two leads that
 # differ only in the composition sentence: vignette (objects, clothing, animals,
 # persons, single-figure verbs) and full scene (places, buildings, crowds,
 # workplace scenes). Each has a matching suffix appended at the very end, so the
 # paper/gaze/inset finish is the last thing the model reads.
 # Paper target (strict, style_lab/tools/papertone2.py): L* 85-88, b* 18-23.
-CONCEPT_LEAD = "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The light paper is the background: the main subject is drawn directly on it, its surroundings sketched in around it and fading into the paper, leaving open margins; insets are small ruled boxes on the same paper, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. In a group, heads turn at varied natural angles as in a documentary photograph, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder; a lone figure stands near-frontal, face turned only a little, eyes just past the viewer's shoulder."
-CONCEPT_LEAD_SCENE = "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, matte gouache fills with soft shading, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, printed on the same light paper; insets are small ruled boxes beside or below it, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; younger women lean, hair straight or faintly waved; older women with set or curled hair or a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. In a group, heads turn at varied natural angles as in a documentary photograph, most people looking at their task or at each other, one or two facing the viewer with eyes resting just past the viewer's shoulder; a lone figure stands near-frontal, face turned only a little, eyes just past the viewer's shoulder."
-STYLE_SUFFIX = "Finish: muted offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions. Group heads at varied natural angles, one or two facing the viewer with eyes just past the viewer's shoulder; a lone figure near-frontal. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink."
-STYLE_SUFFIX_SCENE = "Finish: a full, detailed scene in muted offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions. Group heads at varied natural angles, one or two facing the viewer with eyes just past the viewer's shoulder; a lone figure near-frontal. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink."
+CONCEPT_LEAD = "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, dead-matte gouache fills with soft shading on every surface, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The light paper is the background: the main subject is drawn directly on it, large and central, its surroundings sketched in around it and fading into the paper, leaving open margins; insets are small ruled boxes on the same paper, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions, each person a different individual: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; women blond or light-brown-haired, the younger ones lean, with hair mostly straight, now and then faintly waved or neatly styled; older women in the usual range of everyday styles, plain, pinned back or set, occasionally curled, or under a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. Heads turn at varied natural angles: in a group most look at their task or at each other and one or two face the viewer, eyes just past the viewer's shoulder; of two main figures only one faces the viewer; a lone figure stands near-frontal, face turned only a little."
+CONCEPT_LEAD_SCENE = "A printed page from a 1981 Lithuanian civil-defence training album, drawn and printed like the Soviet Grazhdanskaya Oborona wall charts of 1975-1985: dark-brown brush-and-ink outlines around every figure and object, dead-matte gouache fills with soft shading on every surface, four-colour offset with a faint coarse halftone, muted inks of dusty blue, olive, ochre, brick red and grey-brown on light aged cream paper with a faint yellow cast. The main scene fills its panel edge to edge as a complete, richly worked picture with its own sky, ground and background, the subject large and central in it, printed on the same light paper; insets are small ruled boxes beside or below it, each a clearly different moment or detail. Flat even diagram lighting, a quiet nostalgic warmth. People are ordinary Lithuanians of 1981, anonymous types with correct natural proportions, each person a different individual: fair skin, ash-blond to light-brown hair, grey or blue-grey eyes, broad-cheeked oval faces, straight noses, calm closed mouths, austere and plainly handsome. Men side-parted or cropped, some moustached, working men in flat caps; women blond or light-brown-haired, the younger ones lean, with hair mostly straight, now and then faintly waved or neatly styled; older women in the usual range of everyday styles, plain, pinned back or set, occasionally curled, or under a cotton headscarf; clothes plain and loosely cut, in brown, olive, dusty blue, grey and dull red, chosen for the setting and occasion. Heads turn at varied natural angles: in a group most look at their task or at each other and one or two face the viewer, eyes just past the viewer's shoulder; of two main figures only one faces the viewer; a lone figure stands near-frontal, face turned only a little."
+STYLE_SUFFIX = 'Finish: dead-matte offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions, flat tone on skin, hair, cloth and metal. One or two faces toward the viewer, eyes just past the shoulder; of two main figures only one. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink.'
+STYLE_SUFFIX_SCENE = 'Finish: a full, detailed scene in dead-matte offset print on light aged cream paper with a faint yellow cast, brush-ink outlines, soft shading, correct proportions, flat tone on skin, hair, cloth and metal. One or two faces toward the viewer, eyes just past the shoulder; of two main figures only one. Every inset a clearly different moment, all in the same ruled frame. Diagram arrows and callouts in solid black ink.'
 LEADS = {"vignette": (CONCEPT_LEAD, STYLE_SUFFIX),
          "scene": (CONCEPT_LEAD_SCENE, STYLE_SUFFIX_SCENE)}
 
@@ -109,10 +110,17 @@ INSET_FRAME_RULE = ("All insets are drawn in the same thin ruled frame on the "
 MOTION_STRIP_RULE = 'The motion strip shows one figure in three clearly different phases, left to right: first standing with both feet together and arms at the sides; second with the LEFT foot forward and the right arm swung forward; third with the RIGHT foot forward and the left arm swung forward. The three frames read as one continuous movement.'
 # F6.1: ~20 % of F6 draws had a mechanical glitch (table in a doorway, a
 # well-sweep with no well, a spoon behind its hook, a "dead" sleeping hare)
-PLAUSIBILITY_RULE = 'Every object, tool and fixture is complete, attached and in working order: a well-sweep stands over its timber well-head, hanging utensils hang from a proper rack or wall hooks, doorways and corridors stay clear and passable, furniture rests on the floor against a wall, tools are held in a usable grip, and a resting or sleeping animal is visibly alive and at ease, curled up with eyes closed and ears relaxed.'
+PLAUSIBILITY_RULE = 'Every object, tool and fixture is complete, attached and in working order: hanging things hang from a proper rack or hook, doorways and corridors stay clear and passable, furniture rests on the floor against a wall, tools are held in a usable grip, machines and vehicles are whole and correctly scaled to the people, and a resting animal is visibly alive and at ease, eyes closed and body relaxed.'
+# F6.2 (2026-10-11, owner spot-check 09 + Fable): "this deck has a general
+# highlight issue"; main picture must carry the word (gatve, mokykla, sokti read
+# only through their insets); identical faces in groups; two main actors both
+# looking at the camera.
+MATTE_RULE = 'Every surface is dead-matte, as absorbent offset paper prints it: skin, hair, fabric, leather, metal, glass, water and polished wood carry flat ink tone and one soft shadow tone only.'
+MAIN_MEANING_RULE = "The main picture alone makes this card's word obvious at a glance: the subject is the largest and most central element, shown in its most recognisable form and in the action that defines it, and the insets only add supporting detail."
+DISTINCT_FACES_RULE = 'Every person in a group is a different individual, with a distinct face, age, build, hair and clothing colour.'
+GAZE_PAIR_RULE = "Of two main figures, one faces the viewer with eyes resting just past the viewer's shoulder and the other looks at the task, at the first figure, or into the scene."
 ARROW_RULE = 'Any arrow or callout, drawn in solid black ink, points only at the subject the card teaches or at the direction of its motion.'
-SETTING_GUARD = ("The setting stays behind and around the subject and never "
-                 "competes with it.")
+SETTING_GUARD = 'People stand inside the place: feet on its ground, scaled to its doors, furniture and vehicles, lit by the same flat light, with the setting continuing behind and between them. The setting stays behind and around the subject and never competes with it.'
 
 # 1.7.1: the guessability gate, baked into the prompt so it holds at generation
 # time instead of only at human QA. Applied whenever insets are present.
@@ -201,14 +209,7 @@ def _exact_text_rule(spec, exclude=""):
     return " ".join(segs)
 
 
-BARS_RULE = (
-    "Frame the card with a plain solid dark-red horizontal band across the very "
-    "top and another across the very bottom, plus a thin dark-red border around "
-    "the whole card. These bands are blank design elements and must contain no "
-    "text whatsoever. Keep ALL illustration content — every figure, object, and "
-    "inset panel — fully inside the inner frame; nothing may overlap, touch, or "
-    "extend across the red header or footer bands."
-)
+BARS_RULE = 'Frame the card with a plain solid deep, dark brick-red horizontal band across the very top and another across the very bottom, plus a thin band of the same dark red around the whole card. These bands are blank design elements and must contain no text whatsoever. Keep ALL illustration content — every figure, object, and inset panel — fully inside the inner frame; nothing may overlap, touch, or extend across the red header or footer bands.'
 
 
 def _label_clause(labels, exclude=""):
@@ -240,7 +241,10 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
     if setting:
         segs.append(setting)
         segs.append(SETTING_GUARD)
+    segs.append(MAIN_MEANING_RULE)
     segs.append(FIGURE_DRESS.get(people, FIGURE_DRESS["worker"]))
+    segs.append(DISTINCT_FACES_RULE)
+    segs.append(GAZE_PAIR_RULE)
     segs.append(NO_STRAY_FIGURE)
     if insets:
         segs.append(inset_note if inset_note else INSET_RULE)
@@ -251,6 +255,7 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
         segs.append(INSET_MEANING_RULE)
         segs.append(NO_CUTAWAY_RULE)
     segs.append(PLAUSIBILITY_RULE)
+    segs.append(MATTE_RULE)
     segs.append(ARROW_RULE)
     if glyph:
         segs.append(GLYPH_RULE)
@@ -336,7 +341,10 @@ ZIMAGE_RES   = {"1:1": "1024x1024 ( 1:1 )", "3:4": "864x1152 ( 3:4 )",
 # gpt-image-1.5 (removed from the API 2026-12-01) to gpt-image-2 after a 10-card
 # style probe the owner approved (_proto/gpt-image-2/compare_sheet.jpg). The 520
 # shipped masters were drawn by gpt-image-1.5; new cards come from gpt-image-2.
-OPENAI_MODEL = os.environ.get("GO_IMAGE_MODEL", "gpt-image-2")
+# 2026-10-11: production model is Sunburst (owner blind spot-check 09: 19/30
+# wins, 7/10 on scenes, fewer glitches, paper on target; 3.3x cheaper). One
+# model for the whole deck. gpt-image-2 remains the fallback via GO_IMAGE_MODEL.
+OPENAI_MODEL = os.environ.get("GO_IMAGE_MODEL", "gpt-image-2.5-sunburst")
 OPENAI_QUALITY = "medium"
 ZIMAGE_SPACE = "mcp-tools/Z-Image-Turbo"
 ZIMAGE_STEPS = 8

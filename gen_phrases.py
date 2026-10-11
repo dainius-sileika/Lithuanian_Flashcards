@@ -18,6 +18,7 @@ here:
      naming a forbidden thing primes it.
 
     python3 gen_phrases.py [count] [budget_seconds]
+    A2_LIST=a2_build/a2_wordlist.csv python3 gen_phrases.py 8 60   # the A2 list's phrase rows
 """
 import csv, os, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -43,9 +44,16 @@ from qa_images import is_question
 
 
 def main():
-    rows = [r for r in csv.DictReader(open("wordlist_a2_pending.csv", encoding="utf-8"))
-            if r["status"] == "pending" and r["level"] == "A1"
-            and (r["category"] == "Question words" or r["phase"] == "P-G")]
+    # A2_LIST=a2_build/a2_wordlist.csv renders every PHRASE row of the A2 list instead
+    # (ids are the same A2-#### keys, so out_phrases/ stays one folder). Default unchanged.
+    a2_list = os.environ.get("A2_LIST")
+    if a2_list:
+        rows = [r for r in csv.DictReader(open(a2_list, encoding="utf-8"))
+                if r.get("route") == "PHRASE" or r.get("category") == "Question words"]
+    else:
+        rows = [r for r in csv.DictReader(open("wordlist_a2_pending.csv", encoding="utf-8"))
+                if r["status"] == "pending" and r["level"] == "A1"
+                and (r["category"] == "Question words" or r["phase"] == "P-G")]
 
     gen = GOGenerator(backend="openai", ratio="4:3")
     N = int(sys.argv[1]) if len(sys.argv) > 1 else 4

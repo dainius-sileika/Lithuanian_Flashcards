@@ -11,6 +11,11 @@ eye, which is why breaches kept surfacing a batch late:
   2. GUESSABILITY. If you didn't already know the word, the picture alone should
      get you there. An image can be text-free and still fail by being unreadable,
      off-concept, or simply weird.
+  3. DECLARED TEXT CAME OUT RIGHT (2026-10-11, lettering allowed where declared).
+     Every quoted string in a card's `card_text` ("2 Lt 40 ct", "NAUJOJI ROMUVA")
+     must appear in the read-back exactly — diacritics and numerals included,
+     case and spacing ignored. A price tag reading "2 Lt 40 et" is a defect the
+     old gate waved through as "declared and permitted".
 
 Rule 1 is mechanical. Rule 2 is a judgement call, and OCR cannot make it —
 tesseract was tried first and is unusable here: the painterly, textured ground
@@ -49,6 +54,12 @@ STRESS = {0x0300, 0x0301, 0x0303}
 
 # Metadata sources, in priority order. Each maps id -> row.
 SOURCES = ["wordlist_a2_pending.csv", "master_wordlist.csv", "cards_anki.csv"]
+# rows drawn under the engine's single-glyph exception (227 raidė): one bare
+# letter IS the subject, so a lone letter in the read-back is not a leak
+try:
+    from deck_builder import GLYPH_ROWS
+except Exception:
+    GLYPH_ROWS = {227}
 
 PROMPT = """You are inspecting an illustration from a language-learning flashcard deck.
 Answer ONLY about what is actually visible. Do not speculate about intent.
@@ -77,6 +88,17 @@ def plain(s):
     d = unicodedata.normalize("NFD", s)
     d = "".join(c for c in d if ord(c) not in STRESS)
     return unicodedata.normalize("NFC", d).lower().strip()
+
+
+def compact(s):
+    """plain() with all whitespace removed, so 'A E I O U' read back as five
+    separate letters, or '2 + 3 = 5' read back as '2+3=5', still compare equal."""
+    return re.sub(r"\s+", "", plain(s))
+
+
+def declared_strings(card_text):
+    """The exact strings a card's `card_text` puts in double quotes."""
+    return [q for q in re.findall(r'"([^"]+)"', card_text or "") if q.strip()]
 
 
 def words_of(s):
@@ -164,6 +186,10 @@ def judge(seen, row):
     is_q = is_question(row)
 
     fails, warns = [], []
+    try:
+        is_glyph = int(row.get("#") or row.get("number") or 0) in GLYPH_ROWS
+    except ValueError:
+        is_glyph = False
     allow_words = set(words_of(allowed)) | {plain(x) for x in re.split(r"[,;/]", allowed) if x.strip()}
     tgt_words = set(words_of(target))
 
@@ -173,17 +199,35 @@ def judge(seen, row):
             continue
         # Bare numerals are illustration, not answer-leakage — clock faces,
         # prices, and rulers all carry them and none of them spell a word.
-        if re.fullmatch(r"[\d\s.,:%-]+", p):
+        if re.fullmatch(r"[\d\s.,:%+=-]+", p):
             continue
+        if is_glyph and len(p) == 1 and p.isalpha():
+            continue   # the glyph card's own letter (main picture + insets)
         pw = set(words_of(piece)) or {p}
         if pw & tgt_words:
             fails.append(f"TARGET WORD IN ART: {piece!r}")
         elif allowed and (p in allow_words or pw <= allow_words):
             pass  # declared and permitted
-        elif allowed and p in plain(allowed):
+        elif allowed and (p in plain(allowed) or compact(p) in compact(allowed)):
             pass
         else:
             fails.append(f"undeclared text: {piece!r}")
+
+    # Rule 3: every declared quoted string must have come out exactly. The
+    # read-back is compared whitespace-free and in order; if the model listed
+    # the pieces out of order, each whitespace-separated token must still be
+    # present ("100" and "cm" for '"100" with "cm"').
+    if allowed:
+        readback = compact(" ".join(seen.get("lettering", []) or []))
+        for want in declared_strings(allowed):
+            cw = compact(want)
+            if cw in readback:
+                continue
+            toks = [compact(t) for t in want.split() if compact(t)]
+            if toks and all(t in readback for t in toks):
+                continue
+            fails.append(f"declared text garbled/missing: {want!r} (read back: "
+                         f"{' | '.join(seen.get('lettering') or []) or 'nothing'})")
 
     puncts = [p for p in (seen.get("punctuation") or []) if p.strip()]
     has_q = any("?" in p for p in puncts)
@@ -246,24 +290,41 @@ def main():
     t0 = time.time()
     done = 0
     errors = {}
+    def save_cache():
+        # Proton Drive can refuse a write with EDEADLK while it syncs; the
+        # cache is the run's only record, so retry rather than lose it
+        for i in range(6):
+            try:
+                json.dump(cache, open(CACHE, "w"), ensure_ascii=False, indent=1)
+                return
+            except OSError:
+                time.sleep(2 * (i + 1))
+
+    hard_stop = False
     if todo:
-        with ThreadPoolExecutor(max_workers=8) as ex:
-            futs = {ex.submit(describe, client, p): (k, ck) for k, p, ck in todo}
-            for fut in as_completed(futs):
-                k, ck = futs[fut]
-                try:
-                    cache[ck] = fut.result()
-                except Exception as e:
-                    # errors are reported but never cached, so a transient API
-                    # failure is retried on the next run instead of sticking
-                    errors[ck] = {"error": str(e)[:200]}
-                done += 1
-                if time.time() - t0 > budget:
-                    print(f"  budget reached — {done}/{len(todo)} inspected; rerun to continue")
-                    for g in futs:
-                        g.cancel()
-                    break
-        json.dump(cache, open(CACHE, "w"), ensure_ascii=False, indent=1)
+        ex = ThreadPoolExecutor(max_workers=int(os.environ.get("QA_WORKERS", "8")))
+        futs = {ex.submit(describe, client, p): (k, ck) for k, p, ck in todo}
+        for fut in as_completed(futs):
+            k, ck = futs[fut]
+            try:
+                cache[ck] = fut.result()
+            except Exception as e:
+                # errors are reported but never cached, so a transient API
+                # failure is retried on the next run instead of sticking
+                errors[ck] = {"error": str(e)[:200]}
+            done += 1
+            if done % 10 == 0:
+                save_cache()          # a killed run keeps what it paid for
+            if time.time() - t0 > budget:
+                print(f"  budget reached — {done}/{len(todo)} inspected; rerun to continue")
+                # do not wait for the in-flight requests: the budget is a hard
+                # stop (a 180 s shell cap killed runs that waited on 40 futures)
+                ex.shutdown(wait=False, cancel_futures=True)
+                hard_stop = True
+                break
+        else:
+            ex.shutdown(wait=True)
+        save_cache()
 
     rows, nfail, nwarn = [], 0, 0
     for f in files:
@@ -296,6 +357,9 @@ def main():
             w.writeheader()
             w.writerows(rows)
         print(f"report -> {out_csv}")
+    if hard_stop:
+        sys.stdout.flush()
+        os._exit(1 if nfail else 0)   # skip the interpreter's thread join
     return 1 if nfail else 0
 
 

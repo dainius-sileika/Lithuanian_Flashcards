@@ -18,7 +18,7 @@
 17,Transportation,boat,N,,yes,a small rowing boat,valtis,váltis,F,,,A1
 18,Transportation,ship,N,,yes,a cargo ship,laivas,laĩvas,M,,,A1
 19,Transportation,tire,N,,yes,a rubber road tire,padanga,padangà,F,,stress: CHECK,A1
-20,Transportation,gasoline,N,,yes,a fuel canister and a pump nozzle,benzinas,benzinas,M,,,A1
+20,Transportation,gasoline,N,,yes,a fuel canister and a pump nozzle,benzinas,benzìnas,M,,,A1
 21,Transportation,engine,N,,yes,an automobile engine block,variklis,varìklis,M,,,A1
 22,Transportation,train ticket,N,,yes,a small blank paper train ticket,bilietas,bìlietas,M,,,A1
 23,Transportation,transportation,N,categoryC,category-multi,"a chart of transport modes — a bus, a truck, and a bicycle — in side profile",transportas,transpòrtas,M,,,A1
@@ -48,7 +48,7 @@
 47,Location,library,N,,yes,a library building,biblioteka,bibliotekà,F,,,A1
 48,Location,hospital,N,,yes,a hospital building with an ambulance at the entrance,ligoninė,ligóninė,F,,,A1
 49,Location,church,N,,yes,a village church with a tower,bažnyčia,bažnýčia,F,,,A1
-50,Location,market,N,,yes,an open-air market with stalls,turgus,tur̃gus,M,,,A1
+50,Location,market,N,,yes,an open-air market with stalls,turgus,tur̃gus,M,"the price ""80 ct"" written once on a small hand-written price card standing in the basket of apples.",,A1
 51,Location,country,N,,yes,"a wall map of one whole country, its national border drawn as a single bold outline, a small Lithuanian tricolor planted at its centre",šalis,šalìs,F,,šalis=nation; not 'countryside',A1
 52,Location,building,N,,yes,"three different buildings side by side — a dwelling house, an office block, and a public hall",pastatas,pãstatas,M,,,A1
 53,Location,ground,N,,yes,"a mound of dark earth soil with a spade thrust into it, a pair of cupped hands holding a handful of soil beside it",žemė,žẽmė,F,,,A1
@@ -94,7 +94,7 @@
 93,People,husband,N,disambig,yes,"a married couple standing together, an arrow indicating the husband, wedding rings visible",vyras,výras,M,,vyras=husband/man; sutuoktinis=spouse,A1
 94,People,wife,N,disambig,yes,"a married couple standing together, an arrow indicating the wife, wedding rings visible",žmona,žmonà,,,,A1
 95,People,king,N,,yes,a king with a crown and mantle,karalius,karãlius,M,,,A1
-96,People,queen,N,,yes,a queen with a crown,karalienė,karalienė,F,,,A1
+96,People,queen,N,,yes,a queen with a crown,karalienė,karalíenė,F,,,A1
 97,People,president,N,,yes,"a male president and a female president at matching plain podiums, side by side, the Lithuanian tricolor draped on the wall behind them",prezidentas/prezidentė,prezideñtas,M/F,,dual-gender; pl prezidentai; dual-form card: two figures m+f (decision Q7),A1
 98,People,neighbor,N,,yes,"two neighbours — a man and a woman — greeting each other from opposite sides of a low garden fence, one on each side",kaimynas/kaimynė,kaimýnas,M/F,,dual-gender; pl kaimynai; dual-form card: two figures m+f (decision Q7),A1
 99,People,boy,N,,yes,a young boy,berniukas,berniùkas,M,,,A1
@@ -108,12 +108,12 @@
 107,People,fan (sports),N,,yes,two cheering spectators — a man and a woman — with scarves in a stadium stand,sirgalius/sirgalė,sirgãlius,M/F,,dual-gender; pl sirgaliai | sports fan; electric fan=ventiliatorius; stress: CHECK; dual-form card: two figures m+f (decision Q7),A1
 108,People,crowd,N,,yes,a dense crowd of ordinary people,minia,minia,F,,,A1
 109,People,person,N,categoryC,category-multi,"three ordinary people of different ages standing in a row — a man, a woman, and an elderly person",asmuo,asmuõ,M,,,A1
-110,Job,teacher,N,,yes,"two teachers — a man and a woman — at a blackboard with pointers, the board bearing only simple diagrams",mokytojas/mokytoja,mókytojas,M/F,"the letters ""ABC"" written once on the blackboard with the numbers ""123"" written once beneath them.",dual-gender; pl mokytojai; dual-form card: two figures m+f (decision Q7),A1
+110,Job,teacher,N,,yes,"two teachers — a man and a woman — at a blackboard with pointers, the board bearing only simple diagrams",mokytojas/mokytoja,mókytojas,M/F,"the letters ""ABC"" and the sum ""2 + 3 = 5"" written once each on the blackboard.",dual-gender; pl mokytojai; dual-form card: two figures m+f (decision Q7),A1
 111,Job,student,N,,yes,"two university students — a man and a woman — young adults with books in a lecture hall, a lecturer at the lectern behind them",studentas/studentė,studeñtas,M/F,,dual-gender; pl studentai; dual-form card: two figures m+f (decision Q7),A1
 112,Job,lawyer,N,,yes,two lawyers — a man and a woman — in suits with documents at a desk,advokatas/advokatė,advokãtas,M/F,,dual-gender; pl advokatai; dual-form card: two figures m+f (decision Q7),A1
 113,Job,doctor,N,,yes,two doctors — a man and a woman — in white coats with stethoscopes,gydytojas/gydytoja,gýdytojas,M/F,,dual-gender; pl gydytojai; dual-form card: two figures m+f (decision Q7),A1
 114,Job,patient,N,,yes,two patients — a man and a woman — in neighbouring hospital beds,pacientas/pacientė,pacieñtas,M/F,,dual-gender; pl pacientai; dual-form card: two figures m+f (decision Q7),A1
-115,Job,waiter,N,,yes,two waiters — a man and a woman — each carrying a tray,padavėjas/padavėja,padavėjas,M/F,,dual-gender; pl padavėjai; dual-form card: two figures m+f (decision Q7),A1
+115,Job,waiter,N,,yes,two waiters — a man and a woman — each carrying a tray,padavėjas/padavėja,padavė́jas,M/F,,dual-gender; pl padavėjai; dual-form card: two figures m+f (decision Q7),A1
 116,Job,secretary,N,,yes,two secretaries — a man and a woman — at typewriters,sekretorius/sekretorė,sekretõrius,M/F,,dual-gender; pl sekretoriai; dual-form card: two figures m+f (decision Q7),A1
 117,Job,priest,N,,yes,a priest in a cassock before a church,kunigas,kùnigas,M,,,A1
 118,Job,police officer,N,,yes,two uniformed police officers — a man and a woman — directing traffic,policininkas/policininkė,polìcininkas,M/F,,dual-gender; pl policininkai; dual-form card: two figures m+f (decision Q7),A1
@@ -143,7 +143,7 @@
 142,Society,sex gender,N,,yes,"a GO-style man and woman standing side by side, the male Mars symbol floating above the man's head and the female Venus symbol above the woman's head",lytis,lytìs,,,LT owner-confirmed 1.7.8,A2
 143,Society,murder,N,,yes,a stark black silhouette of one figure stabbing another figure in the back with a knife,žmogžudystė,žmogžudỹstė,,,LT owner-confirmed 1.7.8,A2
 144,Society,prison,N,,yes,a grim grey stone prison building with barred windows and a high perimeter wall,kalėjimas,kalė́jimas,,,LT owner-confirmed 1.7.8,A2
-145,Society,technology,N,,yes,"a calm specimen chart of period machines: a telephone, a radio, a tractor and a rocket",technologija,technologija,,,LT owner-confirmed 1.7.8,A2
+145,Society,technology,N,,yes,"a calm specimen chart of period machines: a telephone, a radio, a tractor and a rocket",technologija,technològija,,,LT owner-confirmed 1.7.8,A2
 146,Society,energy,N,,yes,"a lightning bolt striking, a large battery, and humming power-line pylons",energija,ener̃gija,,,LT owner-confirmed 1.7.8,A2
 147,Society,war,N,,yes,a deadpan civil-defence scene: soldier silhouettes and a tank on a smoky horizon with civilians fleeing carrying bundles,karas,kãras,,,LT owner-confirmed 1.7.8,A2
 148,Society,peace,N,,yes,"a fictional 1981 Soviet 'Woodstock' — a field gathering of GO-style long-haired hippies with guitars, flowers and peace banners, calm and happy",taika,taika,,,LT owner-confirmed 1.7.8,A2
@@ -197,9 +197,9 @@
 196,Food,seed,N,,yes,"seeds in an open palm beside a plain seed packet, one seed sprouting",sėkla,sė́kla,F,,,A1
 197,Food,knife,N,,yes,a kitchen knife,peilis,peĩlis,M,,,A1
 198,Food,spoon,N,,yes,a soup spoon,šaukštas,šáukštas,M,,,A1
-199,Food,fork,N,,yes,a table fork,šakutė,šakutė,F,,,A1
+199,Food,fork,N,,yes,a table fork,šakutė,šakùtė,F,,,A1
 200,Food,plate,N,,yes,a dinner plate,lėkštė,lėkštė̃,F,,,A1
-201,Food,cup,N,,yes,a tea cup with a saucer,puodelis,puodelis,M,,,A1
+201,Food,cup,N,,yes,a tea cup with a saucer,puodelis,puodẽlis,M,,,A1
 202,Food,breakfast,N,,yes,"a simple breakfast — porridge, bread and tea — with low morning sun through the window",pusryčiai,pùsryčiai,M pl,,,A1
 203,Food,lunch,N,,yes,"a midday canteen meal — soup, a main course and bread — with the sun high through the window",pietūs,piẽtūs,M pl,,,A1
 204,Food,dinner,N,,yes,"an evening family meal at home, a lamp lit, the window dark",vakarienė,vakariẽnė,F,,,A1
@@ -218,7 +218,7 @@
 217,Home,bathroom,N,,yes,a bathroom with a bathtub and a sink,vonia,vonià,F,,,A1
 218,Home,pencil,N,,yes,a wooden pencil,pieštukas,pieštùkas,M,,,A1
 219,Home,pen,N,,yes,a fountain pen,rašiklis,rašìklis,M,,,A1
-220,Home,photograph,N,,yes,a black-and-white family photograph print,nuotrauka,nuotrauka,F,,,A1
+220,Home,photograph,N,,yes,a black-and-white family photograph print,nuotrauka,núotrauka,F,,,A1
 221,Home,soap,N,,yes,a bar of soap with lather,muilas,muĩlas,M,,,A1
 222,Home,book,N,,yes,a closed book beside an open one,knyga,knygà,F,,,A1
 223,Home,page,N,,yes,an open book with one blank page lifted mid-turn,puslapis,pùslapis,M,,,A1
@@ -304,7 +304,7 @@
 303,Nature,wind,N,,yes,"wind bending trees, with dashed wind-direction lines and a blowing scarf",vėjas,vė́jas,M,,,A1
 304,Nature,soil,N,,yes,dark soil in a furrow with a spade,žemė (dirvožemis),žẽmė,F,,same word as 'ground'=žemė; disambiguate,A1
 305,Nature,flower,N,,yes,a single flower (a tulip),gėlė,gėlė̃,F,,,A1
-306,Nature,valley,N,,yes,a river valley between hills,slėnis,slėnis,M,,,A1
+306,Nature,valley,N,,yes,a river valley between hills,slėnis,slė̃nis,M,,,A1
 307,Nature,root,N,,yes,a plant's roots exposed below the soil line,šaknis,šaknìs,F,,,A1
 308,Nature,lake,N,,yes,a calm lake with its shoreline,ežeras,ẽžeras,M,,,A1
 309,Nature,star,N,,yes,"stars in a night sky, one bright star indicated",žvaigždė,žvaigždė̃,F,,,A1
@@ -353,7 +353,7 @@
 352,Misc,light,N,,yes,a flashlight beam cutting a bright swath through an otherwise dark room,šviesa,šviesà,,,LT owner-confirmed 1.7.8,A2
 353,Misc,sound,N,,yes,a bell ringing with bold radiating sound waves reaching a listening ear,garsas,gar̃sas,,,LT owner-confirmed 1.7.8,A2
 354,Misc,yes,N,,yes,"a person nodding their head in agreement beside a big green tick mark, a small motion arrow on the nod",taip,taĩp,,,LT owner-confirmed 1.7.8,A2
-355,Misc,no,N,,yes,"a person shaking their head in refusal beside a big bold red X cross-out rejection mark (an X shape, NOT a plus sign and NOT a medical cross), a small motion arrow on the head-shake",ne,ne,,,LT owner-confirmed 1.7.8,A2
+355,Misc,no,N,,yes,"a person shaking their head in refusal beside a big bold red X cross-out rejection mark (an X shape, NOT a plus sign and NOT a medical cross), a small motion arrow on the head-shake",ne,nè,,,LT owner-confirmed 1.7.8,A2
 356,Misc,piece,N,,yes,"a bar of chocolate with one piece broken off and set apart, a bold arrow on the single piece",gabalas,gãbalas,,,LT owner-confirmed 1.7.8,A2
 357,Misc,pain,N,,yes,"a person wincing and clutching their arm, a red starburst marking the spot of pain",skausmas,skaũsmas,,,LT owner-confirmed 1.7.8,A2
 358,Misc,injury,N,,yes,a bandaged arm in a sling,sužalojimas,sužalójimas,M,,,A1
@@ -381,9 +381,9 @@
 380,Verbs,smile,V,,yes,"a woman smiling warmly, close portrait view",šypsotis,šypsótis,,,,A1
 381,Verbs,laugh,V,,yes,two people laughing together at a canteen table,juoktis,juõktis,,,,A1
 382,Verbs,cry,V,,yes,"a person crying, tears on the cheeks, a handkerchief in hand",verkti,ver̃kti,,,,A1
-383,Verbs,buy,V,disambig,yes,a customer receiving wrapped goods across a shop counter,pirkti,pir̃kti,,,,A1
+383,Verbs,buy,V,disambig,yes,a customer receiving wrapped goods across a shop counter,pirkti,pir̃kti,,"the price ""2 Lt 40 ct"" written once on a small paper price tag on the counter.",,A1
 384,Verbs,pay,V,disambig,yes,a customer handing plain banknotes across a counter to a clerk,mokėti,mokė́ti,,,,A1
-385,Verbs,sell,V,disambig,yes,a shopkeeper handing goods to a customer while receiving coins,parduoti,pardúoti,,,,A1
+385,Verbs,sell,V,disambig,yes,a shopkeeper handing goods to a customer while receiving coins,parduoti,pardúoti,,"the price ""1 Lt 20 ct"" written once on a small paper price tag beside the goods.",,A1
 386,Verbs,shoot,V,,yes,a marksman firing a rifle at a paper target on a range,šauti,šáuti,,,,A1
 387,Verbs,learn,V,,yes,"a student at a desk absorbed in a book, a glowing arrow rising from the book to their head",mokytis,mókytis,,,LT owner-confirmed 1.7.8,A2
 388,Verbs,jump,V,,yes,a worker jumping over a low obstacle,šokti,šókti,,,,A1
@@ -468,7 +468,7 @@
 467,Adjectives,dry,A,,yes,"two shirts on a washing line, one dripping wet and one dry, a bold arrow marking the DRY one",sausas/sausa,saũsas,M/F,,,A1
 468,Adjectives,sick,A,,yes,"a sick person in bed with a thermometer beside a healthy person exercising, a bold arrow marking the SICK one",sergantis/serganti,ser̃gantis,M/F,,,A1
 469,Adjectives,healthy,A,,yes,"a sick person in bed with a thermometer beside a healthy person exercising, a bold arrow marking the HEALTHY one",sveikas/sveika,sveĩkas,M/F,,,A1
-470,Adjectives,loud,A,,yes,"a blaring loudspeaker with large sound waves beside a whispering person with tiny waves, a bold arrow marking the LOUD speaker",garsus/garsi,garsus,M/F,,,A1
+470,Adjectives,loud,A,,yes,"a blaring loudspeaker with large sound waves beside a whispering person with tiny waves, a bold arrow marking the LOUD speaker",garsus/garsi,garsùs,M/F,,,A1
 471,Adjectives,quiet,A,,yes,"a marked contrast between a loud clanging alarm bell ringing on one side and, on the other, a person in a hushed still room holding one finger to their lips for silence; a bold arrow marks the QUIET, silent side",tylus/tyli,tylùs,M/F,,,A1
 472,Adjectives,happy,A,,yes,"a happy smiling face beside a sad downcast face, a bold arrow marking the HAPPY one",laimingas/laiminga,laimìngas,M/F,,,A1
 473,Adjectives,sad,A,,yes,"a marked contrast of two men's faces side by side, one happy and smiling, the other SAD and downcast with lowered eyes; a bold arrow points directly at the SAD man's face",liūdnas/liūdna,liū̃dnas,M/F,,,A1
@@ -482,8 +482,8 @@
 481,Adjectives,poor,A,,yes,"a richly dressed man with a fine coat and full purse beside a man in patched clothes, a bold arrow marking the POOR man",neturtingas/neturtinga (vargšas),neturtìngas,M/F,,colloq. biednas is nonstandard,A1
 482,Adjectives,thick,A,,yes,"a thick book beside a thin book, a bold arrow marking the THICK one",storas/stora,stóras,M/F,,,A1
 483,Adjectives,thin,A,,yes,"a thick book beside a thin book, a bold arrow marking the THIN one",plonas/plona,plónas,M/F,,,A1
-484,Adjectives,expensive,A,,yes,"two shelf items with coin stacks beneath — a crystal vase over a tall stack, a plain cup over one coin — a bold arrow marking the EXPENSIVE vase",brangus/brangi,brangùs,M/F,,,A1
-485,Adjectives,cheap,A,,yes,"two shelf items with coin stacks beneath — a crystal vase over a tall stack, a plain cup over one coin — a bold arrow marking the CHEAP cup",pigus/pigi,pigùs,M/F,,,A1
+484,Adjectives,expensive,A,,yes,"two shelf items with coin stacks beneath — a crystal vase over a tall stack, a plain cup over one coin — a bold arrow marking the EXPENSIVE vase",brangus/brangi,brangùs,M/F,"the price ""150 Lt"" written once on the tag of the crystal vase and the price ""2 Lt"" written once on the tag of the plain cup.",,A1
+485,Adjectives,cheap,A,,yes,"two shelf items with coin stacks beneath — a crystal vase over a tall stack, a plain cup over one coin — a bold arrow marking the CHEAP cup",pigus/pigi,pigùs,M/F,"the price ""150 Lt"" written once on the tag of the crystal vase and the price ""2 Lt"" written once on the tag of the plain cup.",,A1
 486,Adjectives,flat,A,,yes,"a flat straight board beside a curved bent board, a bold arrow marking the FLAT one",plokščias/plokščia,plókščias,M/F,,,A1
 487,Adjectives,curved,A,,yes,"a flat straight board beside a curved bent board, a bold arrow marking the CURVED one",išlenktas/išlenkta,ìšlenktas,M/F,,stress: CHECK,A1
 488,Adjectives,male,A,,yes,"a man and a woman standing side by side, a bold arrow marking the MAN",vyriškas/vyriška,výriškas,M/F,,,A1
@@ -507,7 +507,7 @@
 506,Adjectives,dark,A,,yes,"a split scene of a dark unlit room and a bright lamp-lit room, a bold arrow marking the DARK half",tamsus/tamsi,tamsùs,M/F,,,A1
 507,Adjectives,light-dark,A,,yes,"a split scene of a dark unlit room and a bright lamp-lit room, a bold arrow marking the BRIGHT half",šviesus/šviesi,šviesùs,M/F,,,A1
 508,Adjectives,nuclear,A,,yes,the yellow-and-black radiation trefoil symbol beside a nuclear cooling tower emitting steam,branduolinis,branduolìnis,,,LT owner-confirmed 1.7.8,A2
-509,Adjectives,famous,A,,yes,a celebrated figure signing autographs amid an admiring crowd with flashing cameras,garsus,garsus,,,LT owner-confirmed 1.7.8,A2
+509,Adjectives,famous,A,,yes,a celebrated figure signing autographs amid an admiring crowd with flashing cameras,garsus,garsùs,,,LT owner-confirmed 1.7.8,A2
 510,Pronouns,I,P,,yes,"a person pointing a thumb back at their own chest, a bold arrow on them (the speaker: I)",aš,àš,,,LT owner-confirmed 1.7.8,A2
 511,Pronouns,you sg,P,,yes,"a person pointing a finger directly at one other person facing them, a bold arrow on the addressed person (you)",tu,tù,,,LT owner-confirmed 1.7.8,A2
 512,Pronouns,he,P,,yes,"a speaker pointing aside at a single man, a bold arrow on the man (he)",jis,jìs,,,LT owner-confirmed 1.7.8,A2
@@ -529,3 +529,4 @@
 528,Verbs,feed (animals),V,,yes,a farm worker tipping feed from a bucket into a trough as pigs and cattle eat,šerti,šérti,,,new,A2
 529,Verbs,feed (birds),V,,yes,a woman scattering grain from her apron to hens and chickens pecking at her feet in a farmyard,lesinti,lẽsinti,,,new,A2
 530,Verbs,melt (something),V,,yes,a foundry worker melting solid metal into glowing molten liquid,lydyti,lýdyti,,,transitive counterpart of 398 tirpti (intransitive melt); owner-requested 1.7.7,A1
+531,Food,white loaf (wheat bread),N,,yes,"a long pale wheat loaf with a golden scored crust, cut to show the soft white crumb, on a linen cloth",batonas,batònas,M,,"study order: right after 182 duona; owner F6 note 2026-10-11; pron kirtis.info (engine) — no Wiktionary entry, verify",A1
