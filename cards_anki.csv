@@ -264,7 +264,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 262_plaukai,plaukai,hair,M pl,plaukų,,,,262,Body,262_plaukai.webp,forms machine-generated — (accents & irregulars),plaukaĩ,wiktionary,A1
 263_akis,akis,eye,F,akies,,,,263,Body,263_akis.webp,forms machine-generated — (accents & irregulars),akìs,wiktionary,A1
 264_burna,burna,mouth,F,burnos,,,,264,Body,264_burna.webp,forms machine-generated — (accents & irregulars),burnà,wiktionary,A1
-265_lupa,lūpa,lip,F,lūpos,,,,265,Body,265_lupa.webp,forms machine-generated — (accents & irregulars),lū́pa,wiktionary,A1
+265_lupa,lūpos,lips,F pl,lūpų,,,,265,Body,265_lupa.webp,"forms machine-generated — (accents & irregulars); retargeted lūpa→lūpos (plural is the usual word; owner 2026-10-11, decided by Fable); key and GUID unchanged; Wiktionary lūpa: lū́pa (1), pl. lū́pos; audio 265_lupa.mp3 still says the singular paradigm — re-record",lū́pos,wiktionary,A1
 266_nosis,nosis,nose,F,nosies,,,,266,Body,266_nosis.webp,forms machine-generated — (accents & irregulars),nósis,wiktionary,A1
 267_dantis,dantis,tooth,M,danties,,,,267,Body,267_dantis.webp,forms machine-generated — (accents & irregulars),dantìs,wiktionary,A1
 268_ausis,ausis,ear,F,ausies,,,,268,Body,268_ausis.webp,forms machine-generated — (accents & irregulars),ausìs,wiktionary,A1
@@ -481,7 +481,7 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,number,category,image_file,
 479_piktas,piktas,mean,M/F,,,,pikta,479,Adjectives,479_piktas.webp,forms machine-generated — (accents & irregulars),pìktas,wiktionary,A2
 480_turtingas,turtingas,rich,M/F,,,,turtinga,480,Adjectives,480_turtingas.webp,forms machine-generated — (accents & irregulars),turtìngas,wiktionary,A1
 481_neturtingas,neturtingas,poor,M/F,,,,neturtinga,481,Adjectives,481_neturtingas.webp,forms machine-generated — (accents & irregulars),neturtìngas,kirtis.info,A1
-482_storas,storas,thick,M/F,,,,stora,482,Adjectives,482_storas.webp,forms machine-generated — (accents & irregulars),stóras,wiktionary,A1
+482_storas,storas,fat,M/F,,,,stora,482,Adjectives,482_storas.webp,forms machine-generated — (accents & irregulars); gloss thick→fat (owner 2026-10-11),stóras,wiktionary,A1
 483_plonas,plonas,thin,M/F,,,,plona,483,Adjectives,483_plonas.webp,forms machine-generated — (accents & irregulars),plónas,wiktionary,A1
 484_brangus,brangus,expensive,M/F,,,,brangi,484,Adjectives,484_brangus.webp,forms machine-generated — (accents & irregulars),brangùs,wiktionary,A1
 485_pigus,pigus,cheap,M/F,,,,pigi,485,Adjectives,485_pigus.webp,forms machine-generated — (accents & irregulars),pigùs,wiktionary,A1

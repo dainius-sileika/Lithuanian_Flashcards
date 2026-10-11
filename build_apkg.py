@@ -60,7 +60,7 @@ CLOZE_BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ 
               '<div class="cloze-text">{{cloze:Text}}</div>'
               '<div class="hint">{{SentenceEN}}</div>'
               '<div class="answer word-line"><div class="word">{{Word}}</div>'
-              '{{#Pron}}<div class="pron">{{Pron}}</div>{{/Pron}}{{Audio}}'
+              '{{#Pron}}<div class="pron">{{Pron}}</div>{{/Pron}}{{Audio}}{{SentenceAudio}}'
               '{{#Gender}}<div class="gender">{{Gender}}</div>{{/Gender}}'
               '{{#Forms}}<div class="forms">{{Forms}}</div>{{/Forms}}'
               '<hr id="answer"><div class="gloss">{{Gloss}}</div></div>'
@@ -68,12 +68,32 @@ CLOZE_BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ 
 cloze_model = genanki.Model(
     1607392914, "Lietuvių GO Cloze", model_type=genanki.Model.CLOZE,
     fields=[{'name': n} for n in ['Text', 'SentenceEN', 'Word', 'Pron', 'Gender', 'Forms',
-            'Gloss', 'Number', 'Category', 'Audio', 'Key']],
+            'Gloss', 'Number', 'Category', 'Audio', 'Key', 'SentenceAudio']],
     templates=[{'name': 'Cloze', 'qfmt': CLOZE_FRONT, 'afmt': CLOZE_BACK}], css=CLOZE_CSS)
 
 A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
-A2_IMAGE_DIRS = ["images_a2", "out_phrases", "out_deck_a2", "images"]
-A2_AUDIO_DIR = "audio_a2"
+# Image sources, first hit wins. The A1 deck prefers the F6.2 re-render (out_deck_f62) and
+# falls back to the 1.5 masters in images/; override with comma-separated env vars, e.g.
+# A1_IMAGE_DIRS=_cloud_media/f62,images  A2_IMAGE_DIRS=_cloud_media/a2,_cloud_media/phrases
+A1_IMAGE_DIRS = os.environ.get("A1_IMAGE_DIRS", "out_deck_f62,images").split(",")
+A2_IMAGE_DIRS = os.environ.get("A2_IMAGE_DIRS",
+                               "out_deck_a2,out_phrases_a2,images_a2,out_phrases").split(",")
+A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", "audio_a2")
+# Study order (new-card position): study_order.csv, made by build_study_order.py.
+STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
+
+# IDENTITY — what keeps a learner's history across deck versions:
+#  * note GUID = genanki.guid_for(<card key>) — the permanent key (001_suo, A2-0108),
+#    never the row position, the picture or the text. Re-importing a new version
+#    updates the note's fields in place and keeps its cards' scheduling.
+#  * model ids (1607392913 picture, 1607392914 cloze) and deck ids (2059400112/3) are
+#    constants; changing any of them would make Anki treat the notes as new.
+#  * a key is never reused or renamed; a card that changes meaning keeps its key
+#    (265_lupa now teaches lūpos). A row that moves between note types (picture ↔
+#    cloze) cannot be updated in place — Anki will report a note-type conflict; avoid.
+#  * the study order (`due`) is applied to NEW cards at import; Anki does not move
+#    cards a user already has. Their fix: Browse → select the deck → sort by the
+#    Key/Number field → Cards → Reposition.
 
 # Images are stored as WebP in the repo (compact). Some Anki clients/older Qt
 # builds don't render WebP inside cards, so for the importable deck we transcode
@@ -87,7 +107,8 @@ IMG_FMT = os.environ.get("IMG_FMT", "jpg")
 # inside cards. 1024 px is still more than a card ever displays.
 IMG_WIDTH = int(os.environ.get("IMG_WIDTH", "1024"))
 TMP = "_apkg_media"
-APKG_OUT = os.environ.get("APKG_OUT", "Lietuviu_Flashcards.apkg")   # where to write the deck
+APKG_VERSION = os.environ.get("APKG_VERSION", "2.0")
+APKG_OUT = os.environ.get("APKG_OUT", f"Lietuviu_Flashcards_v{APKG_VERSION}.apkg")   # never the old file
 
 def gender_mark(g):
     """1.9 — gender as a symbol, not a letter: blue Mars for masculine, red
@@ -119,9 +140,12 @@ def _sha1(path):
     return h.hexdigest()
 
 
-def find_a2_image(k):
-    """First existing <dir>/<id>.webp|png|jpg in A2_IMAGE_DIRS, else None."""
-    for d in A2_IMAGE_DIRS:
+def find_image(k, dirs):
+    """First existing <dir>/<key>.webp|png|jpg in dirs, else None."""
+    for d in dirs:
+        d = d.strip()
+        if not d:
+            continue
         for ext in ("webp", "png", "jpg"):
             p = f"{d}/{k}.{ext}"
             if os.path.exists(p):
@@ -129,9 +153,30 @@ def find_a2_image(k):
     return None
 
 
+def find_a2_image(k):
+    return find_image(k, A2_IMAGE_DIRS)
+
+
+def load_study_order():
+    """key -> position from STUDY_ORDER (1-based); missing file -> {}."""
+    if not STUDY_ORDER or not os.path.exists(STUDY_ORDER):
+        return {}
+    return {r["key"]: int(r["order"]) for r in csv.DictReader(open(STUDY_ORDER, encoding="utf-8"))}
+
+
+def versioned_out(path):
+    """Never overwrite a package: Lietuviu_Flashcards_v2.0.apkg, then _v2.0-1.apkg, -2 ..."""
+    if not os.path.exists(path):
+        return path
+    stem, ext = os.path.splitext(path); n = 1
+    while os.path.exists(f"{stem}-{n}{ext}"):
+        n += 1
+    return f"{stem}-{n}{ext}"
+
+
 def media_image(k, src=None):
-    src = src or f"images/{k}.webp"
-    if not os.path.exists(src):
+    src = src or find_image(k, A1_IMAGE_DIRS)
+    if not src or not os.path.exists(src):
         return None, None
     ext = "webp" if IMG_FMT == "webp" else "jpg"
     dst = f"{TMP}/{k}.{ext}"
@@ -184,7 +229,7 @@ def a2_forms(r):
     return ""
 
 
-def add_a2_notes(DECKS, media):
+def add_a2_notes(DECKS, media, order=None):
     """Add the A2 list to the decks. Picture rows (IMG, PHRASE) need an image in
     A2_IMAGE_DIRS and use the GO model; CLOZE/PAIR rows need example_lt and use the
     cloze model. Returns counts. Skipped silently: no list, rows without image/sentence."""
@@ -192,8 +237,10 @@ def add_a2_notes(DECKS, media):
     if not A2_LIST or not os.path.exists(A2_LIST):
         return counts
     os.makedirs(TMP, exist_ok=True)
+    order = order or {}
     for r in csv.DictReader(open(A2_LIST, encoding="utf-8")):
         k = r["id"]; route = r.get("route", "")
+        due = order.get(k, 0)
         level = (r.get("level") or "A2").strip() or "A2"
         target = DECKS.get(level, DECKS["A2"])
         tags = [level, route, r.get("phase", "").replace("-", "")]
@@ -205,7 +252,7 @@ def add_a2_notes(DECKS, media):
                 counts["skipped_no_image"] += 1; continue
             img_path, img_name = media_image(k, src)
             target.add_note(genanki.Note(
-                model=model, tags=tags, guid=genanki.guid_for(k),
+                model=model, tags=tags, guid=genanki.guid_for(k), due=due,
                 fields=[k, r["lithuanian_TARGET"], r["english"], gender_mark(r.get("gender", "")),
                         r.get("gen_sg", ""), r.get("pres3", ""), r.get("past3", ""), r.get("fem", ""),
                         k.replace("A2-", ""), r.get("category", ""),
@@ -215,12 +262,16 @@ def add_a2_notes(DECKS, media):
             text, n = cloze_text(r.get("example_lt", ""))
             if not n:
                 counts["skipped_no_sentence"] += 1; continue
+            saud = f"{A2_AUDIO_DIR}/{k}_s.mp3"          # the recorded example sentence
+            saudf = f"[sound:{k}_s.mp3]" if os.path.exists(saud) else ""
             target.add_note(genanki.Note(
-                model=cloze_model, tags=tags, guid=genanki.guid_for(k),
+                model=cloze_model, tags=tags, guid=genanki.guid_for(k), due=due,
                 fields=[text, r.get("example_en", ""), r["lithuanian_TARGET"], r.get("lt_pron", ""),
                         gender_mark(r.get("gender", "")), a2_forms(r), r["english"],
-                        k.replace("A2-", ""), r.get("category", ""), audf, k]))
+                        k.replace("A2-", ""), r.get("category", ""), audf, k, saudf]))
             counts["cloze"] += 1
+            if saudf:
+                media.append(saud)
         else:
             continue
         if audf:
@@ -239,11 +290,13 @@ def main():
     }
     deck = DECKS["A1"]   # default for rows with no level set
     media = []
+    order = load_study_order()
+    skipped = []
     for r in csv.DictReader(open("cards_anki.csv", encoding="utf-8")):
         k = r['key']; aud = f"audio/{k}.mp3"
         img_path, img_name = media_image(k)
         if not img_path:
-            continue
+            skipped.append(k); continue
         audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
         level = (r.get("level") or "A1").strip() or "A1"
         target = DECKS.get(level, DECKS["A1"])
@@ -253,7 +306,7 @@ def main():
             # STABLE identity: guid derived from the card key, never random, so
             # re-importing an updated deck updates cards in place (keeps study
             # history / scheduling) instead of creating duplicates.
-            guid=genanki.guid_for(k),
+            guid=genanki.guid_for(k), due=order.get(k, 0),
             fields=[k, r['lithuanian'], r['english'], gender_mark(r['gender']), r['gen_sg'],
                     r['pres3'], r['past3'], r['fem'], r['number'], r['category'],
                     f'<img class="art" src="{img_name}">', audf, r.get('pron', '')]))
@@ -261,13 +314,16 @@ def main():
         if os.path.exists(aud):
             media.append(aud)
 
-    a2_counts = add_a2_notes(DECKS, media)
+    a2_counts = add_a2_notes(DECKS, media, order)
 
+    out = versioned_out(APKG_OUT)
     pkg = genanki.Package(list(DECKS.values())); pkg.media_files = media
-    pkg.write_to_file(APKG_OUT)
+    pkg.write_to_file(out)
     counts = {lv: len(d.notes) for lv, d in DECKS.items()}
-    print(f"built {APKG_OUT} — {len(media)} media files | "
-          f"subdecks: {counts} | A2 list: {a2_counts}")
+    print(f"built {out} — {len(media)} media files | subdecks: {counts} | "
+          f"A1 rows without image: {len(skipped)} | A2 list: {a2_counts} | "
+          f"study order: {len(order)} positions")
+    return out
 
 
 if __name__ == "__main__":

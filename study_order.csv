@@ -1,0 +1,2231 @@
+order,key,block,lithuanian,category
+1,103_zmogus,A1 deck,žmogus,People
+2,086_vyras,A1 deck,vyras,People
+3,087_moteris,A1 deck,moteris,People
+4,177_vanduo,A1 deck,vanduo,Beverages
+5,182_duona,A1 deck,duona,Food
+6,531_batonas,A1 deck,batonas,Food
+7,178_pienas,A1 deck,pienas,Beverages
+8,172_kava,A1 deck,kava,Beverages
+9,376_valgyti,A1 deck,válgyti,Verbs
+10,377_gerti,A1 deck,gérti,Verbs
+11,366_eiti,A1 deck,eĩti,Verbs
+12,363_dirbti,A1 deck,dìrbti,Verbs
+13,409_miegoti,A1 deck,miegóti,Verbs
+14,394_matyti,A1 deck,matýti,Verbs
+15,375_sakyti,A1 deck,sakýti,Verbs
+16,236_telefonas,A1 deck,telefonas,Home
+17,209_stalas,A1 deck,stalas,Home
+18,210_kede,A1 deck,kėdė,Home
+19,452_didelis,A1 deck,didelis,Adjectives
+20,453_mazas,A1 deck,mažas,Adjectives
+21,460_naujas,A1 deck,naujas,Adjectives
+22,461_senas,A1 deck,senas,Adjectives
+23,474_grazus,A1 deck,gražus,Adjectives
+24,475_bjaurus,A1 deck,bjaurus,Adjectives
+25,456_karstas,A1 deck,karštas,Adjectives
+26,457_saltas,A1 deck,šaltas,Adjectives
+27,024_miestas,A1 deck,miestas,Location
+28,025_namas,A1 deck,namas,Location
+29,027_gatve,A1 deck,gatvė,Location
+30,258_galva,A1 deck,galva,Body
+31,277_ranka,A1 deck,ranka,Body
+32,276_koja,A1 deck,koja,Body
+33,296_saule,A1 deck,saulė,Nature
+34,293_lietus,A1 deck,lietus,Nature
+35,294_sniegas,A1 deck,sniegas,Nature
+36,016_autobusas,A1 deck,autobusas,Transportation
+37,001_suo,A1 deck,šuo,Animal
+38,064_batai,A1 deck,batai,Clothing
+39,110_mokytojas,A1 deck,mokytojas,Job
+40,113_gydytojas,A1 deck,gydytojas,Job
+41,251_kompiuteris,A1 deck,kompiuteris,Electronics
+42,166_grupe,A1 deck,grupė,Art
+43,101_vaikas,A1 deck,vaikas,People
+44,099_berniukas,A1 deck,berniukas,People
+45,100_mergaite,A1 deck,mergaitė,People
+46,173_arbata,A1 deck,arbata,Beverages
+47,180_kiausinis,A1 deck,kiaušinis,Food
+48,181_suris,A1 deck,sūris,Food
+49,188_obuolys,A1 deck,obuolys,Food
+50,395_ziureti,A1 deck,žiūrė́ti,Verbs
+51,390_girdeti,A1 deck,girdė́ti,Verbs
+52,423_rasyti,A1 deck,rašýti,Verbs
+53,383_pirkti,A1 deck,pir̃kti,Verbs
+54,384_moketi,A1 deck,mokė́ti,Verbs
+55,401_sedeti,A1 deck,sėdė́ti,Verbs
+56,402_stoveti,A1 deck,stovė́ti,Verbs
+57,211_lova,A1 deck,lova,Home
+58,214_durys,A1 deck,durys,Home
+59,213_langas,A1 deck,langas,Home
+60,458_siltas,A1 deck,šiltas,Adjectives
+61,459_vesus,A1 deck,vėsus,Adjectives
+62,484_brangus,A1 deck,brangus,Adjectives
+63,485_pigus,A1 deck,pigus,Adjectives
+64,498_svarus,A1 deck,švarus,Adjectives
+65,499_purvinas,A1 deck,purvinas,Adjectives
+66,472_laimingas,A1 deck,laimingas,Adjectives
+67,473_liudnas,A1 deck,liūdnas,Adjectives
+68,038_kambarys,A1 deck,kambarys,Location
+69,045_parduotuve,A1 deck,parduotuvė,Location
+70,036_mokykla,A1 deck,mokykla,Location
+71,263_akis,A1 deck,akis,Body
+72,264_burna,A1 deck,burna,Body
+73,266_nosis,A1 deck,nosis,Body
+74,295_medis,A1 deck,medis,Nature
+75,305_gele,A1 deck,gėlė,Nature
+76,291_upe,A1 deck,upė,Nature
+77,013_automobilis,A1 deck,automobilis,Transportation
+78,002_kate,A1 deck,katė,Animal
+79,063_kelnes,A1 deck,kelnės,Clothing
+80,111_studentas,A1 deck,studentas,Job
+81,115_padavejas,A1 deck,padavėjas,Job
+82,069_raudonas,A1 deck,raudonas,Color
+83,070_zalias,A1 deck,žalias,Color
+84,071_melynas,A1 deck,mėlynas,Color
+85,072_geltonas,A1 deck,geltonas,Color
+86,073_rudas,A1 deck,rudas,Color
+87,074_rozinis,A1 deck,rožinis,Color
+88,075_oranzinis,A1 deck,oranžinis,Color
+89,076_juodas,A1 deck,juodas,Color
+90,077_baltas,A1 deck,baltas,Color
+91,078_pilkas,A1 deck,pilkas,Color
+92,079_spalva,A1 deck,spalva,Color
+93,256_televizorius,A1 deck,televizorius,Electronics
+94,333_medziaga,A1 deck,medžiaga,Materials
+95,090_seima,A1 deck,šeima,People
+96,082_motina,A1 deck,motina,People
+97,083_tevas,A1 deck,tėvas,People
+98,183_sriuba,A1 deck,sriuba,Food
+99,206_druska,A1 deck,druska,Food
+100,205_cukrus,A1 deck,cukrus,Food
+101,176_sultys,A1 deck,sultys,Beverages
+102,367_begti,A1 deck,bė́gti,Verbs
+103,420_gaminti,A1 deck,gamìnti,Verbs
+104,419_plauti,A1 deck,pláuti,Verbs
+105,421_atidaryti,A1 deck,atidarýti,Verbs
+106,422_uzdaryti,A1 deck,uždarýti,Verbs
+107,424_skambinti,A1 deck,skam̃binti,Verbs
+108,380_sypsotis,A1 deck,šypsótis,Verbs
+109,216_virtuve,A1 deck,virtuvė,Home
+110,217_vonia,A1 deck,vonia,Home
+111,215_miegamasis,A1 deck,miegamasis,Home
+112,462_jaunas,A1 deck,jaunas,Adjectives
+113,463_senas,A1 deck,senas,Adjectives
+114,448_aukstas,A1 deck,aukštas,Adjectives
+115,449_zemas,A1 deck,žemas,Adjectives
+116,446_ilgas,A1 deck,ilgas,Adjectives
+117,447_trumpas,A1 deck,trumpas,Adjectives
+118,455_greitas,A1 deck,greitas,Adjectives
+119,454_letas,A1 deck,lėtas,Adjectives
+120,050_turgus,A1 deck,turgus,Location
+121,030_stotis,A1 deck,stotis,Location
+122,048_ligonine,A1 deck,ligoninė,Location
+123,268_ausis,A1 deck,ausis,Body
+124,267_dantis,A1 deck,dantis,Body
+125,262_plaukai,A1 deck,plaukai,Body
+126,308_ezeras,A1 deck,ežeras,Nature
+127,289_jura,A1 deck,jūra,Nature
+128,300_miskas,A1 deck,miškas,Nature
+129,011_traukinys,A1 deck,traukinys,Transportation
+130,004_paukstis,A1 deck,paukštis,Animal
+131,061_marskiniai,A1 deck,marškiniai,Clothing
+132,118_policininkas,A1 deck,policininkas,Job
+133,127_darbas,A1 deck,darbas,Job
+134,246_laikrodis,A1 deck,laikrodis,Electronics
+135,349_taskas,A1 deck,taškas,Misc
+136,080_sunus,A1 deck,sūnus,People
+137,081_dukra,A1 deck,dukra,People
+138,088_brolis,A1 deck,brolis,People
+139,175_alus,A1 deck,alus,Beverages
+140,202_pusryciai,A1 deck,pusryčiai,Food
+141,203_pietus,A1 deck,pietūs,Food
+142,204_vakariene,A1 deck,vakarienė,Food
+143,381_juoktis,A1 deck,juõktis,Verbs
+144,382_verkti,A1 deck,ver̃kti,Verbs
+145,410_pabusti,A1 deck,pabùsti,Verbs
+146,438_nesti,A1 deck,nèšti,Verbs
+147,434_rasti,A1 deck,ràsti,Verbs
+148,364_zaisti,A1 deck,žaĩsti,Verbs
+149,365_groti,A1 deck,gróti,Verbs
+150,222_knyga,A1 deck,knyga,Home
+151,224_raktas,A1 deck,raktas,Home
+152,226_laiskas,A1 deck,laiškas,Home
+153,469_sveikas,A1 deck,sveikas,Adjectives
+154,468_sergantis,A1 deck,sergantis,Adjectives
+155,504_sunkus,A1 deck,sunkus,Adjectives
+156,505_lengvas,A1 deck,lengvas,Adjectives
+157,500_stiprus,A1 deck,stiprus,Adjectives
+158,501_silpnas,A1 deck,silpnas,Adjectives
+159,470_garsus,A1 deck,garsus,Adjectives
+160,471_tylus,A1 deck,tylus,Adjectives
+161,049_baznycia,A1 deck,bažnyčia,Location
+162,043_parkas,A1 deck,parkas,Location
+163,033_restoranas,A1 deck,restoranas,Location
+164,260_veidas,A1 deck,veidas,Body
+165,279_sirdis,A1 deck,širdis,Body
+166,273_pirstas,A1 deck,pirštas,Body
+167,301_dangus,A1 deck,dangus,Nature
+168,303_vejas,A1 deck,vėjas,Nature
+169,297_menulis,A1 deck,mėnulis,Nature
+170,015_dviratis,A1 deck,dviratis,Transportation
+171,003_zuvis,A1 deck,žuvis,Animal
+172,066_paltas,A1 deck,paltas,Clothing
+173,124_vadovas,A1 deck,vadovas,Job
+174,119_policija,A1 deck,policija,Job
+175,247_lempa,A1 deck,lempa,Electronics
+176,170_filmas,A1 deck,filmas,Art
+177,089_sesuo,A1 deck,sesuo,People
+178,104_draugas,A1 deck,draugas,People
+179,084_tevai,A1 deck,tėvai,People
+180,208_maistas,A1 deck,maistas,Food
+181,179_gerimas,A1 deck,gėrimas,Beverages
+182,198_saukstas,A1 deck,šaukštas,Food
+183,197_peilis,A1 deck,peilis,Food
+184,408_sokti,A1 deck,šókti,Verbs
+185,411_dainuoti,A1 deck,dainúoti,Verbs
+186,368_vairuoti,A1 deck,vairúoti,Verbs
+187,370_plaukti,A1 deck,plaũkti,Verbs
+188,369_skristi,A1 deck,skrìsti,Verbs
+189,372_sustoti,A1 deck,sustóti,Verbs
+190,371_eiti,A1 deck,eĩti,Verbs
+191,218_piestukas,A1 deck,pieštukas,Home
+192,219_rasiklis,A1 deck,rašiklis,Home
+193,230_popierius,A1 deck,popierius,Home
+194,478_malonus,A1 deck,malonus,Adjectives
+195,450_platus,A1 deck,platus,Adjectives
+196,451_siauras,A1 deck,siauras,Adjectives
+197,480_turtingas,A1 deck,turtingas,Adjectives
+198,481_neturtingas,A1 deck,neturtingas,Adjectives
+199,495_kietas,A1 deck,kietas,Adjectives
+200,494_minkstas,A1 deck,minkštas,Adjectives
+201,496_gilus,A1 deck,gilus,Adjectives
+202,042_baras,A1 deck,baras,Location
+203,026_butas,A1 deck,butas,Location
+204,039_miestelis,A1 deck,miestelis,Location
+205,288_kunas,A1 deck,kūnas,Body
+206,280_kraujas,A1 deck,kraujas,Body
+207,287_oda,A1 deck,oda,Body
+208,309_zvaigzde,A1 deck,žvaigždė,Nature
+209,316_ugnis,A1 deck,ugnis,Nature
+210,310_zole,A1 deck,žolė,Nature
+211,022_bilietas,A1 deck,bilietas,Transportation
+212,005_karve,A1 deck,karvė,Animal
+213,057_kepure,A1 deck,kepurė,Clothing
+214,123_autorius,A1 deck,autorius,Job
+215,125_zurnalistas,A1 deck,žurnalistas,Job
+216,257_radijas,A1 deck,radijas,Electronics
+217,163_zenklas,A1 deck,ženklas,Society
+218,092_senele,A1 deck,senelė,People
+219,091_senelis,A1 deck,senelis,People
+220,085_kudikis,A1 deck,kūdikis,People
+221,199_sakute,A1 deck,šakutė,Food
+222,200_lekste,A1 deck,lėkštė,Food
+223,201_puodelis,A1 deck,puodelis,Food
+224,207_butelis,A1 deck,butelis,Food
+225,445_kelti,A1 deck,kélti,Verbs
+226,385_parduoti,A1 deck,pardúoti,Verbs
+227,379_mirti,A1 deck,mir̃ti,Verbs
+228,426_statyti,A1 deck,statýti,Verbs
+229,428_augti,A1 deck,áugti,Verbs
+230,412_skaiciuoti,A1 deck,skaičiúoti,Verbs
+231,432_mesti,A1 deck,mèsti,Verbs
+232,221_muilas,A1 deck,muilas,Home
+233,240_krepsys,A1 deck,krepšys,Home
+234,242_dovana,A1 deck,dovana,Home
+235,497_seklus,A1 deck,seklus,Adjectives
+236,506_tamsus,A1 deck,tamsus,Adjectives
+237,507_sviesus,A1 deck,šviesus,Adjectives
+238,467_sausas,A1 deck,sausas,Adjectives
+239,466_slapias,A1 deck,šlapias,Adjectives
+240,482_storas,A1 deck,storas,Adjectives
+241,483_plonas,A1 deck,plonas,Adjectives
+242,476_kurcias,A1 deck,kurčias,Adjectives
+243,028_kelias,A1 deck,kelias,Location
+244,031_tiltas,A1 deck,tiltas,Location
+245,055_bankas,A1 deck,bankas,Location
+246,282_kelis,A1 deck,kelis,Body
+247,271_nugara,A1 deck,nugara,Body
+248,285_kaulas,A1 deck,kaulas,Body
+249,302_augalas,A1 deck,augalas,Nature
+250,311_lapas,A1 deck,lapas,Nature
+251,317_ledas,A1 deck,ledas,Nature
+252,012_lektuvas,A1 deck,lėktuvas,Transportation
+253,008_arklys,A1 deck,arklys,Animal
+254,058_suknele,A1 deck,suknelė,Clothing
+255,120_kariuomene,A1 deck,kariuomenė,Job
+256,126_aktorius,A1 deck,aktorius,Job
+257,255_fotoaparatas,A1 deck,fotoaparatas,Electronics
+258,361_vaizdas,A1 deck,vaizdas,Misc
+259,098_kaimynas,A1 deck,kaimynas,People
+260,093_vyras,A1 deck,vyras,People
+261,094_zmona,A1 deck,žmona,People
+262,196_sekla,A1 deck,sėkla,Food
+263,174_vynas,A1 deck,vynas,Beverages
+264,194_aliejus,A1 deck,aliejus,Food
+265,184_tortas,A1 deck,tortas,Food
+266,435_kristi,A1 deck,krìsti,Verbs
+267,437_traukti,A1 deck,tráukti,Verbs
+268,388_sokti,A1 deck,šókti,Verbs
+269,397_degti,A1 deck,dègti,Verbs
+270,425_sukti,A1 deck,sùkti,Verbs
+271,407_guleti,A1 deck,gulė́ti,Verbs
+272,391_klausytis,A1 deck,klausýtis,Verbs
+273,229_siena,A1 deck,siena,Home
+274,220_nuotrauka,A1 deck,nuotrauka,Home
+275,238_kiemas,A1 deck,kiemas,Home
+276,477_aklas,A1 deck,aklas,Adjectives
+277,486_plokscias,A1 deck,plokščias,Adjectives
+278,487_islenktas,A1 deck,išlenktas,Adjectives
+279,488_vyriskas,A1 deck,vyriškas,Adjectives
+280,489_moteriskas,A1 deck,moteriškas,Adjectives
+281,490_ankstas,A1 deck,ankštas,Adjectives
+282,491_laisvas,A1 deck,laisvas,Adjectives
+283,492_aukstas,A1 deck,aukštas,Adjectives
+284,032_viesbutis,A1 deck,viešbutis,Location
+285,053_zeme,A1 deck,žemė,Location
+286,046_teatras,A1 deck,teatras,Location
+287,278_petys,A1 deck,petys,Body
+288,259_kaklas,A1 deck,kaklas,Body
+289,265_lupa,A1 deck,lūpos,Body
+290,292_kalnas,A1 deck,kalnas,Nature
+291,314_papludimys,A1 deck,paplūdimys,Nature
+292,313_smelis,A1 deck,smėlis,Nature
+293,018_laivas,A1 deck,laivas,Transportation
+294,006_kiaule,A1 deck,kiaulė,Animal
+295,060_sijonas,A1 deck,sijonas,Clothing
+296,116_sekretorius,A1 deck,sekretorius,Job
+297,112_advokatas,A1 deck,advokatas,Job
+298,254_ekranas,A1 deck,ekranas,Electronics
+299,330_auksas,A1 deck,auksas,Materials
+300,095_karalius,A1 deck,karalius,People
+301,096_karaliene,A1 deck,karalienė,People
+302,097_prezidentas,A1 deck,prezidentas,People
+303,185_vistiena,A1 deck,vištiena,Food
+304,186_kiauliena,A1 deck,kiauliena,Food
+305,187_jautiena,A1 deck,jautiena,Food
+306,189_bananas,A1 deck,bananas,Food
+307,433_valyti,A1 deck,valýti,Verbs
+308,389_uostyti,A1 deck,úostyti,Verbs
+309,392_ragauti,A1 deck,ragáuti,Verbs
+310,393_liesti,A1 deck,liẽsti,Verbs
+311,396_buciuoti,A1 deck,bučiúoti,Verbs
+312,399_kasti,A1 deck,kàsti,Verbs
+313,405_pjauti,A1 deck,pjáuti,Verbs
+314,243_kortele,A1 deck,kortelė,Home
+315,237_sodas,A1 deck,sodas,Home
+316,233_stogas,A1 deck,stogas,Home
+317,493_zemas,A1 deck,žemas,Adjectives
+318,502_negyvas,A1 deck,negyvas,Adjectives
+319,503_gyvas,A1 deck,gyvas,Adjectives
+320,037_biuras,A1 deck,biuras,Location
+321,047_biblioteka,A1 deck,biblioteka,Location
+322,029_oro_uostas,A1 deck,oro uostas,Location
+323,274_peda,A1 deck,pėda,Body
+324,261_barzda,A1 deck,barzda,Body
+325,269_asara,A1 deck,ašara,Body
+326,290_vandenynas,A1 deck,vandenynas,Nature
+327,014_sunkvezimis,A1 deck,sunkvežimis,Transportation
+328,007_pele,A1 deck,pelė,Animal
+329,059_kostiumas,A1 deck,kostiumas,Clothing
+330,114_pacientas,A1 deck,pacientas,Job
+331,122_menininkas,A1 deck,menininkas,Job
+332,248_ventiliatorius,A1 deck,ventiliatorius,Electronics
+333,323_metalas,A1 deck,metalas,Materials
+334,102_suauges,A1 deck,suaugęs,People
+335,105_auka,A1 deck,auka,People
+336,106_zaidejas,A1 deck,žaidėjas,People
+337,190_apelsinas,A1 deck,apelsinas,Food
+338,191_citrina,A1 deck,citrina,Food
+339,192_kukuruzai,A1 deck,kukurūzai,Food
+340,193_ryziai,A1 deck,ryžiai,Food
+341,413_tuoktis,A1 deck,tuõktis,Verbs
+342,417_maisyti,A1 deck,maišýti,Verbs
+343,429_piesti,A1 deck,piẽšti,Verbs
+344,299_zeme,A1 deck,Žemė,Nature
+345,304_zeme,A1 deck,žemė,Nature
+346,430_maitinti,A1 deck,maitìnti,Verbs
+347,431_gaudyti,A1 deck,gáudyti,Verbs
+348,436_stumti,A1 deck,stùmti,Verbs
+349,439_lauzyti,A1 deck,láužyti,Verbs
+350,223_puslapis,A1 deck,puslapis,Home
+351,244_ziedas,A1 deck,žiedas,Home
+352,245_irankis,A1 deck,įrankis,Home
+353,034_ukis,A1 deck,ūkis,Location
+354,035_teismas,A1 deck,teismas,Location
+355,040_universitetas,A1 deck,universitetas,Location
+356,270_liezuvis,A1 deck,liežuvis,Body
+357,272_kojos_pirstas,A1 deck,kojos pirštas,Body
+358,275_plastaka,A1 deck,plaštaka,Body
+359,306_slenis,A1 deck,slėnis,Nature
+360,307_saknis,A1 deck,šaknis,Nature
+361,315_banga,A1 deck,banga,Nature
+362,017_valtis,A1 deck,valtis,Transportation
+363,009_sparnas,A1 deck,sparnas,Animal
+364,062_marskineliai,A1 deck,marškinėliai,Clothing
+365,117_kunigas,A1 deck,kunigas,Job
+366,121_kareivis,A1 deck,kareivis,Job
+367,249_mobilusis_telefonas,A1 deck,mobilusis telefonas,Electronics
+368,326_akmuo,A1 deck,akmuo,Materials
+369,107_sirgalius,A1 deck,sirgalius,People
+370,108_minia,A1 deck,minia,People
+371,109_asmuo,A1 deck,asmuo,People
+372,195_tepalas,A1 deck,tepalas,Food
+373,440_deveti,A1 deck,dėvė́ti,Verbs
+374,441_kabinti,A1 deck,kabìnti,Verbs
+375,444_musti,A1 deck,mùšti,Verbs
+376,373_sekti,A1 deck,sèkti,Verbs
+377,378_zudyti,A1 deck,žudýti,Verbs
+378,386_sauti,A1 deck,šáuti,Verbs
+379,398_tirpti,A1 deck,tir̃pti,Verbs
+380,234_baseinas,A1 deck,baseinas,Home
+381,225_dazai,A1 deck,dažai,Home
+382,228_rastelis,A1 deck,raštelis,Home
+383,041_klubas,A1 deck,klubas,Location
+384,044_stovykla,A1 deck,stovykla,Location
+385,051_salis,A1 deck,šalis,Location
+386,281_smegenys,A1 deck,smegenys,Body
+387,283_prakaitas,A1 deck,prakaitas,Body
+388,318_sala,A1 deck,sala,Nature
+389,319_kalva,A1 deck,kalva,Nature
+390,321_gamta,A1 deck,gamta,Nature
+391,019_padanga,A1 deck,padanga,Transportation
+392,010_gyvunas,A1 deck,gyvūnas,Animal
+393,065_kisene,A1 deck,kišenė,Clothing
+394,253_nesiojamasis_kompiuteris,A1 deck,nešiojamasis kompiuteris,Electronics
+395,137_vestuves,A1 deck,vestuvės,Society
+396,400_sprogti,A1 deck,sprógti,Verbs
+397,404_praeiti,A1 deck,praeĩti,Verbs
+398,406_mustis,A1 deck,mùštis,Verbs
+399,418_lenkti,A1 deck,leñkti,Verbs
+400,442_purtyti,A1 deck,purtýti,Verbs
+401,443_pasirasyti,A1 deck,pasirašýti,Verbs
+402,530_lydyti,A1 deck,lýdyti,Verbs
+403,231_grindys,A1 deck,grindys,Home
+404,232_lubos,A1 deck,lubos,Home
+405,235_spyna,A1 deck,spyna,Home
+406,052_pastatas,A1 deck,pastatas,Location
+407,054_kosmosas,A1 deck,kosmosas,Location
+408,056_vieta,A1 deck,vieta,Location
+409,020_benzinas,A1 deck,benzinas,Transportation
+410,067_deme,A1 deck,dėmė,Clothing
+411,322_stiklas,A1 deck,stiklas,Materials
+412,239_adata,A1 deck,adata,Home
+413,241_deze,A1 deck,dėžė,Home
+414,021_variklis,A1 deck,variklis,Transportation
+415,068_drabuziai,A1 deck,drabužiai,Clothing
+416,325_mediena,A1 deck,mediena,Materials
+417,023_transportas,A1 deck,transportas,Transportation
+418,358_suzalojimas,A1 deck,sužalojimas,Misc
+419,168_instrumentas,A1 deck,instrumentas,Art
+420,348_zemelapis,A1 deck,žemėlapis,Misc
+421,324_plastikas,A1 deck,plastikas,Materials
+422,327_deimantas,A1 deck,deimantas,Materials
+423,328_molis,A1 deck,molis,Materials
+424,329_dulkes,A1 deck,dulkės,Materials
+425,331_varis,A1 deck,varis,Materials
+426,332_sidabras,A1 deck,sidabras,Materials
+427,359_zaizda,A1 deck,žaizda,Misc
+428,360_skyle,A1 deck,skylė,Misc
+429,403_myleti,A2 deck cards,mylė́ti,Verbs
+430,387_mokytis,A2 deck cards,mókytis,Verbs
+431,374_galvoti,A2 deck cards,galvóti,Verbs
+432,427_mokyti,A2 deck cards,mókyti,Verbs
+433,415_laimeti,A2 deck cards,laimė́ti,Verbs
+434,416_pralaimeti,A2 deck cards,pralaimė́ti,Verbs
+435,414_melstis,A2 deck cards,mel̃stis,Verbs
+436,212_sapnas,A2 deck cards,sapnas,Home
+437,464_geras,A2 deck cards,geras,Adjectives
+438,465_blogas,A2 deck cards,blogas,Adjectives
+439,509_garsus,A2 deck cards,garsus,Adjectives
+440,479_piktas,A2 deck cards,piktas,Adjectives
+441,508_branduolinis,A2 deck cards,branduolinis,Adjectives
+442,284_liga,A2 deck cards,liga,Body
+443,286_balsas,A2 deck cards,balsas,Body
+444,298_pasaulis,A2 deck cards,pasaulis,Nature
+445,312_oras,A2 deck cards,oras,Nature
+446,320_karstis,A2 deck cards,karštis,Nature
+447,252_programa,A2 deck cards,programa,Electronics
+448,512_jis,A2 deck cards,jis,Pronouns
+449,528_serti,A2 deck cards,šérti,Verbs
+450,529_lesinti,A2 deck cards,lẽsinti,Verbs
+451,250_tinklas,A2 deck cards,tinklas,Electronics
+452,510_as,A2 deck cards,aš,Pronouns
+453,355_ne,A2 deck cards,ne,Misc
+454,354_taip,A2 deck cards,taip,Misc
+455,511_tu,A2 deck cards,tu,Pronouns
+456,161_sutartis,A2 deck cards,sutartis,Society
+457,150_rinkimai,A2 deck cards,rinkimai,Society
+458,160_kaina,A2 deck cards,kaina,Society
+459,138_komanda,A2 deck cards,komanda,Society
+460,514_tai,A2 deck cards,tai,Pronouns
+461,164_mokslas,A2 deck cards,mokslas,Society
+462,340_puse,A2 deck cards,pusė,Math
+463,155_sportas,A2 deck cards,sportas,Society
+464,147_karas,A2 deck cards,karas,Society
+465,146_energija,A2 deck cards,energija,Society
+466,169_muzika,A2 deck cards,muzika,Art
+467,346_krastas,A2 deck cards,kraštas,Math
+468,344_data,A2 deck cards,data,Math
+469,362_rastas,A2 deck cards,raštas,Misc
+470,171_menas,A2 deck cards,menas,Art
+471,154_ginklas,A2 deck cards,ginklas,Society
+472,167_daina,A2 deck cards,daina,Art
+473,134_doleris,A2 deck cards,doleris,Society
+474,145_technologija,A2 deck cards,technologija,Society
+475,131_mirtis,A2 deck cards,mirtis,Society
+476,165_dievas,A2 deck cards,Dievas,Society
+477,334_metras,A2 deck cards,metras,Math
+478,159_zaidimas,A2 deck cards,žaidimas,Society
+479,158_kamuolys,A2 deck cards,kamuolys,Society
+480,152_laikrastis,A2 deck cards,laikraštis,Society
+481,144_kalejimas,A2 deck cards,kalėjimas,Society
+482,353_garsas,A2 deck cards,garsas,Misc
+483,151_zurnalas,A2 deck cards,žurnalas,Society
+484,343_temperatura,A2 deck cards,temperatūra,Math
+485,162_narkotikas,A2 deck cards,narkotikas,Society
+486,156_lenktynes,A2 deck cards,lenktynės,Society
+487,352_sviesa,A2 deck cards,šviesa,Misc
+488,136_santuoka,A2 deck cards,santuoka,Society
+489,345_svoris,A2 deck cards,svoris,Math
+490,148_taika,A2 deck cards,taika,Society
+491,357_skausmas,A2 deck cards,skausmas,Misc
+492,129_dangus,A2 deck cards,dangus,Society
+493,141_seksas,A2 deck cards,seksas,Society
+494,142_lytis,A2 deck cards,lytis,Society
+495,336_kilogramas,A2 deck cards,kilogramas,Math
+496,128_religija,A2 deck cards,religija,Society
+497,347_kampas,A2 deck cards,kampas,Math
+498,227_raide,A2 deck cards,raidė,Misc
+499,130_pragaras,A2 deck cards,pragaras,Society
+500,132_vaistai,A2 deck cards,vaistai,Society
+501,133_pinigai,A2 deck cards,pinigai,Society
+502,135_banknotas,A2 deck cards,banknotas,Society
+503,139_santykiai,A2 deck cards,santykiai,Society
+504,140_rase,A2 deck cards,rasė,Society
+505,143_zmogzudyste,A2 deck cards,žmogžudystė,Society
+506,149_puolimas,A2 deck cards,puolimas,Society
+507,153_nuodai,A2 deck cards,nuodai,Society
+508,157_manksta,A2 deck cards,mankšta,Society
+509,335_centimetras,A2 deck cards,centimetras,Math
+510,337_colis,A2 deck cards,colis,Math
+511,338_peda,A2 deck cards,pėda,Math
+512,339_svaras,A2 deck cards,svaras,Math
+513,341_apskritimas,A2 deck cards,apskritimas,Math
+514,342_kvadratas,A2 deck cards,kvadratas,Math
+515,350_priebalsis,A2 deck cards,priebalsis,Misc
+516,351_balsis,A2 deck cards,balsis,Misc
+517,356_gabalas,A2 deck cards,gabalas,Misc
+518,513_ji,A2 deck cards,ji,Pronouns
+519,515_mes,A2 deck cards,mes,Pronouns
+520,516_jus,A2 deck cards,jūs,Pronouns
+521,517_jie,A2 deck cards,jie,Pronouns
+522,A2-0001,A2 list P-A,laikas,Time
+523,A2-0002,A2 list P-A,valanda,Time
+524,A2-0003,A2 list P-A,minutė,Time
+525,A2-0004,A2 list P-A,sekundė,Time
+526,A2-0005,A2 list P-A,diena,Time
+527,A2-0006,A2 list P-A,savaitė,Time
+528,A2-0007,A2 list P-A,mėnuo,Time
+529,A2-0008,A2 list P-A,metai,Time
+530,A2-0009,A2 list P-A,savaitgalis,Time
+531,A2-0010,A2 list P-A,rytas,Time
+532,A2-0012,A2 list P-A,vakaras,Time
+533,A2-0013,A2 list P-A,naktis,Time
+534,A2-0014,A2 list P-A,šiandien,Time
+535,A2-0015,A2 list P-A,vakar,Time
+536,A2-0016,A2 list P-A,rytoj,Time
+537,A2-0017,A2 list P-A,dabar,Time
+538,A2-0018,A2 list P-A,pirmadienis,Time
+539,A2-0019,A2 list P-A,antradienis,Time
+540,A2-0020,A2 list P-A,trečiadienis,Time
+541,A2-0021,A2 list P-A,ketvirtadienis,Time
+542,A2-0022,A2 list P-A,penktadienis,Time
+543,A2-0023,A2 list P-A,šeštadienis,Time
+544,A2-0024,A2 list P-A,sekmadienis,Time
+545,A2-0025,A2 list P-A,sausis,Time
+546,A2-0026,A2 list P-A,vasaris,Time
+547,A2-0027,A2 list P-A,kovas,Time
+548,A2-0028,A2 list P-A,balandis,Time
+549,A2-0029,A2 list P-A,gegužė,Time
+550,A2-0030,A2 list P-A,birželis,Time
+551,A2-0031,A2 list P-A,liepa,Time
+552,A2-0032,A2 list P-A,rugpjūtis,Time
+553,A2-0033,A2 list P-A,rugsėjis,Time
+554,A2-0034,A2 list P-A,spalis,Time
+555,A2-0035,A2 list P-A,lapkritis,Time
+556,A2-0036,A2 list P-A,gruodis,Time
+557,A2-0037,A2 list P-A,pavasaris,Time
+558,A2-0038,A2 list P-A,vasara,Time
+559,A2-0039,A2 list P-A,ruduo,Time
+560,A2-0040,A2 list P-A,žiema,Time
+561,A2-0041,A2 list P-A,nulis,Numbers
+562,A2-0042,A2 list P-A,vienas,Numbers
+563,A2-0043,A2 list P-A,du,Numbers
+564,A2-0044,A2 list P-A,trys,Numbers
+565,A2-0045,A2 list P-A,keturi,Numbers
+566,A2-0046,A2 list P-A,penki,Numbers
+567,A2-0047,A2 list P-A,šeši,Numbers
+568,A2-0048,A2 list P-A,septyni,Numbers
+569,A2-0049,A2 list P-A,aštuoni,Numbers
+570,A2-0050,A2 list P-A,devyni,Numbers
+571,A2-0051,A2 list P-A,dešimt,Numbers
+572,A2-0052,A2 list P-A,vienuolika,Numbers
+573,A2-0053,A2 list P-A,dvylika,Numbers
+574,A2-0054,A2 list P-A,trylika,Numbers
+575,A2-0055,A2 list P-A,keturiolika,Numbers
+576,A2-0056,A2 list P-A,penkiolika,Numbers
+577,A2-0057,A2 list P-A,šešiolika,Numbers
+578,A2-0058,A2 list P-A,septyniolika,Numbers
+579,A2-0059,A2 list P-A,aštuoniolika,Numbers
+580,A2-0060,A2 list P-A,devyniolika,Numbers
+581,A2-0061,A2 list P-A,dvidešimt,Numbers
+582,A2-0062,A2 list P-A,trisdešimt,Numbers
+583,A2-0063,A2 list P-A,keturiasdešimt,Numbers
+584,A2-0064,A2 list P-A,penkiasdešimt,Numbers
+585,A2-0065,A2 list P-A,šešiasdešimt,Numbers
+586,A2-0066,A2 list P-A,septyniasdešimt,Numbers
+587,A2-0067,A2 list P-A,aštuoniasdešimt,Numbers
+588,A2-0068,A2 list P-A,devyniasdešimt,Numbers
+589,A2-0069,A2 list P-A,šimtas,Numbers
+590,A2-0070,A2 list P-A,tūkstantis,Numbers
+591,A2-0071,A2 list P-A,milijonas,Numbers
+592,A2-0072,A2 list P-A,pirmas,Numbers
+593,A2-0073,A2 list P-A,antras,Numbers
+594,A2-0074,A2 list P-A,trečias,Numbers
+595,A2-0075,A2 list P-A,ketvirtas,Numbers
+596,A2-0076,A2 list P-A,penktas,Numbers
+597,A2-0077,A2 list P-A,paskutinis,Numbers
+598,A2-0078,A2 list P-A,vardas,People
+599,A2-0079,A2 list P-A,pavardė,People
+600,A2-0080,A2 list P-A,amžius,People
+601,A2-0084,A2 list P-A,adresas,Society
+602,A2-0085,A2 list P-A,kasa,Location
+603,A2-0087,A2 list P-A,piniginė,Home
+604,A2-0089,A2 list P-A,lagaminas,Transportation
+605,A2-0090,A2 list P-A,pasas,Society
+606,A2-0093,A2 list P-A,atvirukas,Society
+607,A2-0094,A2 list P-A,pašto ženklas,Society
+608,A2-0095,A2 list P-A,kioskas,Location
+609,A2-0096,A2 list P-A,eilė,Society
+610,A2-0100,A2 list P-A,užkandis,Food
+611,A2-0102,A2 list P-A,meniu,Food
+612,A2-0104,A2 list P-A,čekis,Society
+613,A2-0105,A2 list P-A,nuolaida,Society
+614,A2-0106,A2 list P-A,dydis,Society
+615,A2-0107,A2 list P-A,grąža,Society
+616,A2-0154,A2 list P-B,ir,Conjunctions
+617,A2-0194,A2 list P-B,būti,Modal & core verbs
+618,A2-0159,A2 list P-B,kad,Conjunctions
+619,A2-0127,A2 list P-B,tas,Pronouns
+620,A2-0136,A2 list P-B,į,Prepositions
+621,A2-0116,A2 list P-B,kuris,Question words
+622,A2-0126,A2 list P-B,šis,Pronouns
+623,A2-0137,A2 list P-B,iš,Prepositions
+624,A2-0138,A2 list P-B,su,Prepositions
+625,A2-0196,A2 list P-B,galėti,Modal & core verbs
+626,A2-0195,A2 list P-B,turėti,Modal & core verbs
+627,A2-0151,A2 list P-B,dėl,Prepositions
+628,A2-1114,A2 list P-B,kitas,Pronouns
+629,A2-0165,A2 list P-B,ar,Conjunctions
+630,A2-1074,A2 list P-B,o,Conjunctions
+631,A2-0112,A2 list P-B,kaip,Question words
+632,A2-0135,A2 list P-B,visas,Pronouns
+633,A2-0108,A2 list P-B,kas,Question words
+634,A2-0145,A2 list P-B,nuo,Prepositions
+635,A2-0147,A2 list P-B,apie,Prepositions
+636,A2-1130,A2 list P-B,toks,Pronouns
+637,A2-0143,A2 list P-B,už,Prepositions
+638,A2-0155,A2 list P-B,bet,Conjunctions
+639,A2-0161,A2 list P-B,kai,Conjunctions
+640,A2-0176,A2 list P-B,tik,Adverbs
+641,A2-0186,A2 list P-B,daug,Adverbs
+642,A2-0146,A2 list P-B,iki,Prepositions
+643,A2-0144,A2 list P-B,per,Prepositions
+644,A2-0141,A2 list P-B,po,Prepositions
+645,A2-0156,A2 list P-B,arba,Conjunctions
+646,A2-0175,A2 list P-B,dar,Adverbs
+647,A2-0174,A2 list P-B,jau,Adverbs
+648,A2-0166,A2 list P-B,labai,Adverbs
+649,A2-0163,A2 list P-B,tačiau,Conjunctions
+650,A2-1124,A2 list P-B,pats,Pronouns
+651,A2-1082,A2 list P-B,pagal,Prepositions
+652,A2-0198,A2 list P-B,reikėti,Modal & core verbs
+653,A2-0142,A2 list P-B,prie,Prepositions
+654,A2-0160,A2 list P-B,jei,Conjunctions
+655,A2-0149,A2 list P-B,prieš,Prepositions
+656,A2-1069,A2 list P-B,jeigu,Conjunctions
+657,A2-0197,A2 list P-B,norėti,Modal & core verbs
+658,A2-0115,A2 list P-B,koks,Question words
+659,A2-1073,A2 list P-B,nei,Conjunctions
+660,A2-0157,A2 list P-B,nes,Conjunctions
+661,A2-1027,A2 list P-B,net,Adverbs
+662,A2-0202,A2 list P-B,pradėti,Modal & core verbs
+663,A2-0162,A2 list P-B,nors,Conjunctions
+664,A2-0158,A2 list P-B,todėl,Conjunctions
+665,A2-0110,A2 list P-B,kur,Question words
+666,A2-0207,A2 list P-B,tapti,Modal & core verbs
+667,A2-1046,A2 list P-B,tiek,Adverbs
+668,A2-0178,A2 list P-B,čia,Adverbs
+669,A2-0184,A2 list P-B,gerai,Adverbs
+670,A2-1113,A2 list P-B,kiekvienas,Pronouns
+671,A2-1050,A2 list P-B,toli,Adverbs
+672,A2-0187,A2 list P-B,mažai,Adverbs
+673,A2-0131,A2 list P-B,niekas,Pronouns
+674,A2-0140,A2 list P-B,ant,Prepositions
+675,A2-1077,A2 list P-B,keli,Numbers
+676,A2-0139,A2 list P-B,be,Prepositions
+677,A2-0167,A2 list P-B,gal,Adverbs
+678,A2-0148,A2 list P-B,tarp,Prepositions
+679,A2-0114,A2 list P-B,kiek,Question words
+680,A2-0199,A2 list P-B,privalėti,Modal & core verbs
+681,A2-0168,A2 list P-B,tikrai,Adverbs
+682,A2-1071,A2 list P-B,kol,Conjunctions
+683,A2-0182,A2 list P-B,kartu,Adverbs
+684,A2-1131,A2 list P-B,viskas,Pronouns
+685,A2-1125,A2 list P-B,savęs,Pronouns
+686,A2-0169,A2 list P-B,dažnai,Adverbs
+687,A2-1098,A2 list P-B,joks,Pronouns
+688,A2-0193,A2 list P-B,vėlai,Adverbs
+689,A2-1042,A2 list P-B,tada,Adverbs
+690,A2-0203,A2 list P-B,baigti,Modal & core verbs
+691,A2-0208,A2 list P-B,atrodyti,Modal & core verbs
+692,A2-0993,A2 list P-B,beveik,Adverbs
+693,A2-1003,A2 list P-B,juk,Adverbs
+694,A2-0113,A2 list P-B,kodėl,Question words
+695,A2-0192,A2 list P-B,anksti,Adverbs
+696,A2-0177,A2 list P-B,vėl,Adverbs
+697,A2-1060,A2 list P-B,ypač,Adverbs
+698,A2-0201,A2 list P-B,bandyti,Modal & core verbs
+699,A2-0190,A2 list P-B,greitai,Adverbs
+700,A2-0150,A2 list P-B,pas,Prepositions
+701,A2-0990,A2 list P-B,bent,Adverbs
+702,A2-0188,A2 list P-B,per,Adverbs
+703,A2-1092,A2 list P-B,abu,Pronouns
+704,A2-0153,A2 list P-B,po,Prepositions
+705,A2-0111,A2 list P-B,kada,Question words
+706,A2-1136,A2 list P-B,šitas,Pronouns
+707,A2-1070,A2 list P-B,kadangi,Conjunctions
+708,A2-1048,A2 list P-B,tiesiog,Adverbs
+709,A2-1075,A2 list P-B,taigi,Conjunctions
+710,A2-1010,A2 list P-B,kitaip,Adverbs
+711,A2-1059,A2 list P-B,visai,Adverbs
+712,A2-1144,A2 list P-B,šiemet,Time
+713,A2-0200,A2 list P-B,ketinti,Modal & core verbs
+714,A2-1143,A2 list P-B,seniai,Time
+715,A2-1034,A2 list P-B,pernai,Adverbs
+716,A2-0171,A2 list P-B,visada,Adverbs
+717,A2-1000,A2 list P-B,ilgai,Adverbs
+718,A2-0997,A2 list P-B,galbūt,Adverbs
+719,A2-0173,A2 list P-B,kartais,Adverbs
+720,A2-1072,A2 list P-B,negu,Conjunctions
+721,A2-0130,A2 list P-B,kažkas,Pronouns
+722,A2-1031,A2 list P-B,nuolat,Adverbs
+723,A2-1033,A2 list P-B,paprastai,Adverbs
+724,A2-1076,A2 list P-B,keletas,Numbers
+725,A2-1021,A2 list P-B,maždaug,Adverbs
+726,A2-0205,A2 list P-B,patikti,Modal & core verbs
+727,A2-0999,A2 list P-B,gana,Adverbs
+728,A2-1001,A2 list P-B,irgi,Adverbs
+729,A2-0172,A2 list P-B,niekada,Adverbs
+730,A2-1088,A2 list P-B,vietoj,Prepositions
+731,A2-1139,A2 list P-B,kuo,Question words
+732,A2-1040,A2 list P-B,sunkiai,Adverbs
+733,A2-1137,A2 list P-B,kam,Question words
+734,A2-1064,A2 list P-B,štai,Adverbs
+735,A2-1037,A2 list P-B,puikiai,Adverbs
+736,A2-0206,A2 list P-B,mėgti,Modal & core verbs
+737,A2-0189,A2 list P-B,pakankamai,Adverbs
+738,A2-1017,A2 list P-B,lengvai,Adverbs
+739,A2-0170,A2 list P-B,retai,Adverbs
+740,A2-0204,A2 list P-B,tęsti,Modal & core verbs
+741,A2-1142,A2 list P-B,paskui,Time
+742,A2-1141,A2 list P-B,kasmet,Time
+743,A2-1085,A2 list P-B,pro,Prepositions
+744,A2-1020,A2 list P-B,matyt,Adverbs
+745,A2-0185,A2 list P-B,blogai,Adverbs
+746,A2-0985,A2 list P-B,aiškiai,Adverbs
+747,A2-0179,A2 list P-B,ten,Adverbs
+748,A2-1108,A2 list P-B,kažkoks,Pronouns
+749,A2-1138,A2 list P-B,ko,Question words
+750,A2-1090,A2 list P-B,šalia,Prepositions
+751,A2-1052,A2 list P-B,turbūt,Adverbs
+752,A2-1049,A2 list P-B,tiksliai,Adverbs
+753,A2-1006,A2 list P-B,kasdien,Adverbs
+754,A2-1045,A2 list P-B,teisingai,Adverbs
+755,A2-1086,A2 list P-B,ties,Prepositions
+756,A2-1089,A2 list P-B,virš,Prepositions
+757,A2-0152,A2 list P-B,link,Prepositions
+758,A2-1028,A2 list P-B,netoli,Adverbs
+759,A2-0994,A2 list P-B,būtinai,Adverbs
+760,A2-1133,A2 list P-B,visoks,Pronouns
+761,A2-1002,A2 list P-B,iškart,Adverbs
+762,A2-0180,A2 list P-B,visur,Adverbs
+763,A2-1039,A2 list P-B,staiga,Adverbs
+764,A2-0181,A2 list P-B,niekur,Adverbs
+765,A2-1051,A2 list P-B,trumpai,Adverbs
+766,A2-1079,A2 list P-B,pusantro,Numbers
+767,A2-1011,A2 list P-B,kitur,Adverbs
+768,A2-0183,A2 list P-B,atskirai,Adverbs
+769,A2-1047,A2 list P-B,tiesiai,Adverbs
+770,A2-1030,A2 list P-B,niekaip,Adverbs
+771,A2-1015,A2 list P-B,laisvai,Adverbs
+772,A2-0117,A2 list P-B,kieno,Question words
+773,A2-0118,A2 list P-B,mano,Pronouns
+774,A2-0119,A2 list P-B,tavo,Pronouns
+775,A2-0120,A2 list P-B,jo,Pronouns
+776,A2-0121,A2 list P-B,jos,Pronouns
+777,A2-0122,A2 list P-B,mūsų,Pronouns
+778,A2-0123,A2 list P-B,jūsų,Pronouns
+779,A2-0124,A2 list P-B,jų,Pronouns
+780,A2-0125,A2 list P-B,savo,Pronouns
+781,A2-0128,A2 list P-B,šie,Pronouns
+782,A2-0129,A2 list P-B,tie,Pronouns
+783,A2-0132,A2 list P-B,visi,Pronouns
+784,A2-0164,A2 list P-B,taip pat,Conjunctions
+785,A2-0191,A2 list P-B,vėliau,Adverbs
+786,A2-0986,A2 list P-B,anksčiau,Adverbs
+787,A2-0987,A2 list P-B,arti,Adverbs
+788,A2-0988,A2 list P-B,aukštyn,Adverbs
+789,A2-0989,A2 list P-B,aukščiau,Adverbs
+790,A2-0991,A2 list P-B,bet kada,Adverbs
+791,A2-0992,A2 list P-B,bet kur,Adverbs
+792,A2-0995,A2 list P-B,dešinėje,Adverbs
+793,A2-0996,A2 list P-B,dukart,Adverbs
+794,A2-0998,A2 list P-B,galima,Adverbs
+795,A2-1004,A2 list P-B,kada nors,Adverbs
+796,A2-1005,A2 list P-B,kai kur,Adverbs
+797,A2-1007,A2 list P-B,kažkada,Adverbs
+798,A2-1008,A2 list P-B,kažkiek,Adverbs
+799,A2-1009,A2 list P-B,kažkur,Adverbs
+800,A2-1012,A2 list P-B,klaidingai,Adverbs
+801,A2-1013,A2 list P-B,kur nors,Adverbs
+802,A2-1014,A2 list P-B,labiau,Adverbs
+803,A2-1016,A2 list P-B,lauke,Adverbs
+804,A2-1018,A2 list P-B,lietuviškai,Adverbs
+805,A2-1019,A2 list P-B,lėtai,Adverbs
+806,A2-1022,A2 list P-B,minus,Adverbs
+807,A2-1023,A2 list P-B,naudinga,Adverbs
+808,A2-1024,A2 list P-B,nedaug,Adverbs
+809,A2-1025,A2 list P-B,negerai,Adverbs
+810,A2-1026,A2 list P-B,nelabai,Adverbs
+811,A2-1029,A2 list P-B,netyčia,Adverbs
+812,A2-1032,A2 list P-B,pagarbiai,Adverbs
+813,A2-1035,A2 list P-B,plius,Adverbs
+814,A2-1036,A2 list P-B,poryt,Adverbs
+815,A2-1038,A2 list P-B,retkarčiais,Adverbs
+816,A2-1041,A2 list P-B,sunku,Adverbs
+817,A2-1043,A2 list P-B,taisyklinga,Adverbs
+818,A2-1044,A2 list P-B,tamsiai,Adverbs
+819,A2-1053,A2 list P-B,tyčia,Adverbs
+820,A2-1054,A2 list P-B,užpernai,Adverbs
+821,A2-1055,A2 list P-B,užvakar,Adverbs
+822,A2-1056,A2 list P-B,viduje,Adverbs
+823,A2-1057,A2 list P-B,vienąkart,Adverbs
+824,A2-1058,A2 list P-B,vis dar,Adverbs
+825,A2-1061,A2 list P-B,į lauką,Adverbs
+826,A2-1062,A2 list P-B,į vidų,Adverbs
+827,A2-1063,A2 list P-B,šiek tiek,Adverbs
+828,A2-1065,A2 list P-B,šviesiai,Adverbs
+829,A2-1066,A2 list P-B,šįryt,Adverbs
+830,A2-1067,A2 list P-B,žemiau,Adverbs
+831,A2-1068,A2 list P-B,žemyn,Adverbs
+832,A2-1078,A2 list P-B,kelios,Numbers
+833,A2-1080,A2 list P-B,aplink,Prepositions
+834,A2-1081,A2 list P-B,išskyrus,Prepositions
+835,A2-1083,A2 list P-B,palei,Prepositions
+836,A2-1084,A2 list P-B,priešais,Prepositions
+837,A2-1087,A2 list P-B,vidury,Prepositions
+838,A2-1091,A2 list P-B,abi,Pronouns
+839,A2-1093,A2 list P-B,bet kas,Pronouns
+840,A2-1094,A2 list P-B,jai,Pronouns
+841,A2-1095,A2 list P-B,jam,Pronouns
+842,A2-1096,A2 list P-B,jiems,Pronouns
+843,A2-1097,A2 list P-B,jokia,Pronouns
+844,A2-1099,A2 list P-B,jums,Pronouns
+845,A2-1100,A2 list P-B,juos,Pronouns
+846,A2-1101,A2 list P-B,jus,Pronouns
+847,A2-1102,A2 list P-B,ją,Pronouns
+848,A2-1103,A2 list P-B,jį,Pronouns
+849,A2-1104,A2 list P-B,kai kas,Pronouns
+850,A2-1105,A2 list P-B,kai kuri,Pronouns
+851,A2-1106,A2 list P-B,kai kuris,Pronouns
+852,A2-1107,A2 list P-B,kažkokia,Pronouns
+853,A2-1109,A2 list P-B,kažkuri,Pronouns
+854,A2-1110,A2 list P-B,kažkuris,Pronouns
+855,A2-1111,A2 list P-B,kelinta,Pronouns
+856,A2-1112,A2 list P-B,kelintas,Pronouns
+857,A2-1115,A2 list P-B,kokia,Pronouns
+858,A2-1116,A2 list P-B,ką,Pronouns
+859,A2-1117,A2 list P-B,man,Pronouns
+860,A2-1118,A2 list P-B,mane,Pronouns
+861,A2-1119,A2 list P-B,mums,Pronouns
+862,A2-1120,A2 list P-B,mus,Pronouns
+863,A2-1121,A2 list P-B,nieko,Pronouns
+864,A2-1122,A2 list P-B,nė vienas,Pronouns
+865,A2-1123,A2 list P-B,pati,Pronouns
+866,A2-1126,A2 list P-B,ta,Pronouns
+867,A2-1127,A2 list P-B,tau,Pronouns
+868,A2-1128,A2 list P-B,tave,Pronouns
+869,A2-1129,A2 list P-B,tokia,Pronouns
+870,A2-1132,A2 list P-B,visokia,Pronouns
+871,A2-1134,A2 list P-B,ši,Pronouns
+872,A2-1135,A2 list P-B,šita,Pronouns
+873,A2-1140,A2 list P-B,iš pradžių,Time
+874,A2-0288,A2 list P-C,tvarkyti,Home
+875,A2-0283,A2 list P-C,nuoma,Home
+876,A2-0282,A2 list P-C,svetainė,Home
+877,A2-0330,A2 list P-C,prognozė,Nature
+878,A2-0327,A2 list P-C,audra,Nature
+879,A2-0328,A2 list P-C,rūkas,Nature
+880,A2-0336,A2 list P-C,įstatymas,Society
+881,A2-0292,A2 list P-C,rengtis,Home
+882,A2-0289,A2 list P-C,taisyti,Home
+883,A2-0278,A2 list P-C,baldai,Home
+884,A2-0334,A2 list P-C,valstybė,Society
+885,A2-0285,A2 list P-C,šiukšlės,Home
+886,A2-0287,A2 list P-C,skalbti,Home
+887,A2-0291,A2 list P-C,keltis,Home
+888,A2-0244,A2 list P-C,projektas,Work & school
+889,A2-0335,A2 list P-C,vyriausybė,Society
+890,A2-0248,A2 list P-C,įmonė,Work & school
+891,A2-0342,A2 list P-C,sprendimas,Society
+892,A2-0337,A2 list P-C,mokestis,Society
+893,A2-0228,A2 list P-C,sveikata,Health
+894,A2-0346,A2 list P-C,galimybė,Society
+895,A2-0347,A2 list P-C,taisyklė,Society
+896,A2-0341,A2 list P-C,problema,Society
+897,A2-0266,A2 list P-C,prekė,Shopping
+898,A2-0339,A2 list P-C,politika,Society
+899,A2-0344,A2 list P-C,pavyzdys,Society
+900,A2-0275,A2 list P-C,keisti,Shopping
+901,A2-0246,A2 list P-C,kolega,Work & school
+902,A2-0340,A2 list P-C,ekonomika,Society
+903,A2-0261,A2 list P-C,atsakyti,Work & school
+904,A2-0343,A2 list P-C,priežastis,Society
+905,A2-0224,A2 list P-C,atvykti,Travel
+906,A2-0311,A2 list P-C,internetas,Technology
+907,A2-0209,A2 list P-C,kelionė,Travel
+908,A2-0243,A2 list P-C,susitikimas,Work & school
+909,A2-0270,A2 list P-C,sąskaita,Shopping
+910,A2-0247,A2 list P-C,viršininkas,Work & school
+911,A2-0219,A2 list P-C,muitinė,Travel
+912,A2-0260,A2 list P-C,aiškinti,Work & school
+913,A2-0276,A2 list P-C,išleisti,Shopping
+914,A2-0272,A2 list P-C,kainuoti,Shopping
+915,A2-0256,A2 list P-C,patirtis,Work & school
+916,A2-0274,A2 list P-C,rinktis,Shopping
+917,A2-0262,A2 list P-C,klausti,Work & school
+918,A2-0345,A2 list P-C,skirtumas,Society
+919,A2-0241,A2 list P-C,jaustis,Health
+920,A2-0239,A2 list P-C,sirgti,Health
+921,A2-0251,A2 list P-C,egzaminas,Work & school
+922,A2-0212,A2 list P-C,kryptis,Travel
+923,A2-0249,A2 list P-C,pokalbis,Work & school
+924,A2-0225,A2 list P-C,išvykti,Travel
+925,A2-0294,A2 list P-C,laimė,Feelings
+926,A2-0265,A2 list P-C,pamiršti,Work & school
+927,A2-0293,A2 list P-C,jausmas,Feelings
+928,A2-0245,A2 list P-C,alga,Work & school
+929,A2-0323,A2 list P-C,siųsti,Technology
+930,A2-0223,A2 list P-C,keliauti,Travel
+931,A2-0240,A2 list P-C,gydyti,Health
+932,A2-0220,A2 list P-C,turistas,Travel
+933,A2-0301,A2 list P-C,ramus,Feelings
+934,A2-0250,A2 list P-C,pamoka,Work & school
+935,A2-0257,A2 list P-C,studijuoti,Work & school
+936,A2-0238,A2 list P-C,vizitas,Health
+937,A2-0306,A2 list P-C,protingas,Feelings
+938,A2-0259,A2 list P-C,dėstyti,Work & school
+939,A2-0296,A2 list P-C,baimė,Feelings
+940,A2-0231,A2 list P-C,vaistinė,Health
+941,A2-0277,A2 list P-C,taupyti,Shopping
+942,A2-0213,A2 list P-C,atstumas,Travel
+943,A2-0263,A2 list P-C,kartoti,Work & school
+944,A2-0305,A2 list P-C,draugiškas,Feelings
+945,A2-0211,A2 list P-C,viza,Travel
+946,A2-0255,A2 list P-C,diplomas,Work & school
+947,A2-0322,A2 list P-C,spausti,Technology
+948,A2-0230,A2 list P-C,receptas,Health
+949,A2-0210,A2 list P-C,bagažas,Travel
+950,A2-0214,A2 list P-C,atvykimas,Travel
+951,A2-0215,A2 list P-C,išvykimas,Travel
+952,A2-0217,A2 list P-C,peronas,Travel
+953,A2-0221,A2 list P-C,gidas,Travel
+954,A2-0226,A2 list P-C,rezervuoti,Travel
+955,A2-0232,A2 list P-C,peršalimas,Health
+956,A2-0234,A2 list P-C,kosulys,Health
+957,A2-0237,A2 list P-C,odontologas,Health
+958,A2-0242,A2 list P-C,skaudėti,Health
+959,A2-0254,A2 list P-C,pažymys,Work & school
+960,A2-0264,A2 list P-C,atsiminti,Work & school
+961,A2-0268,A2 list P-C,grynieji pinigai,Shopping
+962,A2-0273,A2 list P-C,užsisakyti,Shopping
+963,A2-0300,A2 list P-C,pavargęs,Feelings
+964,A2-0307,A2 list P-C,kantrus,Feelings
+965,A2-0317,A2 list P-C,slaptažodis,Technology
+966,A2-0318,A2 list P-C,failas,Technology
+967,A2-0325,A2 list P-C,įjungti,Technology
+968,A2-0326,A2 list P-C,išjungti,Technology
+969,A2-0348,A2 list P-D,Labas,Greetings
+970,A2-0349,A2 list P-D,Sveiki,Greetings
+971,A2-0350,A2 list P-D,Labas rytas,Greetings
+972,A2-0351,A2 list P-D,Laba diena,Greetings
+973,A2-0352,A2 list P-D,Labas vakaras,Greetings
+974,A2-0353,A2 list P-D,Labanakt,Greetings
+975,A2-0354,A2 list P-D,Viso gero,Greetings
+976,A2-0355,A2 list P-D,Iki pasimatymo,Greetings
+977,A2-0356,A2 list P-D,Iki,Greetings
+978,A2-0357,A2 list P-D,Prašau,Politeness
+979,A2-0358,A2 list P-D,Ačiū,Politeness
+980,A2-0359,A2 list P-D,Labai ačiū,Politeness
+981,A2-0360,A2 list P-D,Nėra už ką,Politeness
+982,A2-0362,A2 list P-D,Atleiskite,Politeness
+983,A2-0363,A2 list P-D,Malonu susipažinti,Politeness
+984,A2-0364,A2 list P-D,Kaip sekasi?,Basics
+985,A2-0365,A2 list P-D,Man gerai,Basics
+986,A2-0366,A2 list P-D,Koks jūsų vardas?,Basics
+987,A2-0367,A2 list P-D,Mano vardas…,Basics
+988,A2-0368,A2 list P-D,Iš kur jūs?,Basics
+989,A2-0369,A2 list P-D,Aš esu iš…,Basics
+990,A2-0370,A2 list P-D,Ar kalbate angliškai?,Basics
+991,A2-0371,A2 list P-D,Nesuprantu,Basics
+992,A2-0372,A2 list P-D,Suprantu,Basics
+993,A2-0373,A2 list P-D,Nežinau,Basics
+994,A2-0374,A2 list P-D,Ar galite pakartoti?,Basics
+995,A2-0375,A2 list P-D,"Kalbėkite lėčiau, prašau",Basics
+996,A2-0376,A2 list P-D,Ką reiškia…?,Basics
+997,A2-0377,A2 list P-D,Kiek kainuoja?,Getting by
+998,A2-0378,A2 list P-D,Kur yra…?,Getting by
+999,A2-0379,A2 list P-D,Kiek valandų?,Getting by
+1000,A2-0380,A2 list P-D,Norėčiau…,Getting by
+1001,A2-0381,A2 list P-D,"Sąskaitą, prašau",Getting by
+1002,A2-0382,A2 list P-D,Ar yra…?,Getting by
+1003,A2-0383,A2 list P-D,Ar galite man padėti?,Getting by
+1004,A2-0384,A2 list P-D,Padėkite!,Getting by
+1005,A2-0385,A2 list P-D,Atsargiai!,Getting by
+1006,A2-0386,A2 list P-D,Aš pasiklydau,Getting by
+1007,A2-0880,A2 list P-D,Atsiprašau…,Formulas
+1008,A2-0881,A2 list P-D,Atsiprašau,Formulas
+1009,A2-0882,A2 list P-D,Nieko tokio,Formulas
+1010,A2-0883,A2 list P-D,Žinoma,Formulas
+1011,A2-0884,A2 list P-D,Akimirką,Formulas
+1012,A2-0885,A2 list P-D,Prašom,Formulas
+1013,A2-0886,A2 list P-D,Sveiki atvykę!,Formulas
+1014,A2-0887,A2 list P-D,Sėkmės!,Formulas
+1015,A2-0888,A2 list P-D,Į sveikatą!,Formulas
+1016,A2-0889,A2 list P-D,Skanaus,Formulas
+1017,A2-0890,A2 list P-D,Su gimtadieniu!,Formulas
+1018,A2-0891,A2 list P-D,Sveikinu!,Formulas
+1019,A2-0892,A2 list P-D,Greitai pasveik!,Formulas
+1020,A2-0893,A2 list P-D,Iki rytojaus,Formulas
+1021,A2-0894,A2 list P-D,Geros dienos,Formulas
+1022,A2-0895,A2 list P-D,Geros kelionės,Formulas
+1023,A2-0896,A2 list P-D,Kas tai?,Getting by
+1024,A2-0897,A2 list P-D,Kas tas žmogus?,Getting by
+1025,A2-0898,A2 list P-D,Kur yra tualetas?,Getting by
+1026,A2-0899,A2 list P-D,Kiek tai kainuoja?,Getting by
+1027,A2-0900,A2 list P-D,Nekalbu lietuviškai,Getting by
+1028,A2-0901,A2 list P-D,Truputį,Getting by
+1029,A2-0902,A2 list P-D,"Pakartokite, prašau",Getting by
+1030,A2-0903,A2 list P-D,"Užrašykite, prašau",Getting by
+1031,A2-0904,A2 list P-D,Ką tai reiškia?,Getting by
+1032,A2-0905,A2 list P-D,Kaip lietuviškai …?,Getting by
+1033,A2-0906,A2 list P-D,Man reikia pagalbos,Getting by
+1034,A2-0907,A2 list P-D,Iškvieskite gydytoją!,Getting by
+1035,A2-0909,A2 list P-D,Kur galiu rasti…?,Getting by
+1036,A2-0910,A2 list P-D,Mano vardas Dainius,Core patterns
+1037,A2-0911,A2 list P-D,Aš esu iš Lietuvos,Core patterns
+1038,A2-0912,A2 list P-D,Aš gyvenu Vilniuje,Core patterns
+1039,A2-0913,A2 list P-D,Man dvidešimt metų,Core patterns
+1040,A2-0914,A2 list P-D,Aš turiu brolį,Core patterns
+1041,A2-0915,A2 list P-D,Neturiu laiko,Core patterns
+1042,A2-0916,A2 list P-D,Noriu valgyti,Core patterns
+1043,A2-0917,A2 list P-D,Norėčiau kavos,Core patterns
+1044,A2-0918,A2 list P-D,Galiu truputį kalbėti,Core patterns
+1045,A2-0919,A2 list P-D,Man reikia vandens,Core patterns
+1046,A2-0920,A2 list P-D,Man patinka šis miestas,Core patterns
+1047,A2-0921,A2 list P-D,Tai mano namas,Core patterns
+1048,A2-0922,A2 list P-D,Čia yra parduotuvė,Core patterns
+1049,A2-0923,A2 list P-D,Šiandien šalta,Core patterns
+1050,A2-0925,A2 list P-D,Trečia valanda,Core patterns
+1051,A2-0926,A2 list P-D,Kur tu eini?,Core patterns
+1052,A2-0927,A2 list P-D,Einu namo,Core patterns
+1053,A2-0928,A2 list P-D,Kiek kainuoja bilietas?,Core patterns
+1054,A2-0929,A2 list P-D,"Nesuprantu, atsiprašau",Core patterns
+1055,A2-0930,A2 list P-D,Mano nuomone,Opinion & discourse
+1056,A2-0931,A2 list P-D,"Manau, kad…",Opinion & discourse
+1057,A2-0932,A2 list P-D,Man atrodo,Opinion & discourse
+1058,A2-0933,A2 list P-D,Sutinku,Opinion & discourse
+1059,A2-0934,A2 list P-D,Nesutinku,Opinion & discourse
+1060,A2-0935,A2 list P-D,Jūs teisus,Opinion & discourse
+1061,A2-0936,A2 list P-D,Gera mintis,Opinion & discourse
+1062,A2-0937,A2 list P-D,Nesvarbu,Opinion & discourse
+1063,A2-0938,A2 list P-D,Priklauso,Opinion & discourse
+1064,A2-0939,A2 list P-D,Kiek žinau,Opinion & discourse
+1065,A2-0940,A2 list P-D,Pavyzdžiui,Opinion & discourse
+1066,A2-0941,A2 list P-D,Tai yra,Opinion & discourse
+1067,A2-0942,A2 list P-D,Viena vertus,Opinion & discourse
+1068,A2-0943,A2 list P-D,Kita vertus,Opinion & discourse
+1069,A2-0944,A2 list P-D,Pirmiausia,Opinion & discourse
+1070,A2-0945,A2 list P-D,Pagaliau,Opinion & discourse
+1071,A2-0946,A2 list P-D,Beje,Opinion & discourse
+1072,A2-0947,A2 list P-D,Deja,Opinion & discourse
+1073,A2-0948,A2 list P-D,Laimei,Opinion & discourse
+1074,A2-0949,A2 list P-D,"Žinoma, ne",Opinion & discourse
+1075,A2-0950,A2 list P-D,Ar galėtumėte man padėti?,Transactions
+1076,A2-0951,A2 list P-D,Norėčiau rezervuoti kambarį,Transactions
+1077,A2-0952,A2 list P-D,Ar yra laisvas staliukas?,Transactions
+1078,A2-0953,A2 list P-D,Imsiu šitą,Transactions
+1079,A2-0954,A2 list P-D,Ar galiu mokėti kortele?,Transactions
+1080,A2-0955,A2 list P-D,Kur reikia persėsti?,Transactions
+1081,A2-0956,A2 list P-D,Kada atsidaro?,Transactions
+1082,A2-0957,A2 list P-D,Kaip nuvykti į…?,Transactions
+1083,A2-0958,A2 list P-D,Kairėje,Transactions
+1084,A2-0959,A2 list P-D,Eikite tiesiai,Transactions
+1085,A2-0960,A2 list P-D,Esu užsiregistravęs pas gydytoją,Transactions
+1086,A2-0961,A2 list P-D,Blogai jaučiuosi,Transactions
+1087,A2-0962,A2 list P-D,Čia skauda,Transactions
+1088,A2-0963,A2 list P-D,Esu alergiškas…,Transactions
+1089,A2-0964,A2 list P-D,Ar galite ką nors rekomenduoti?,Transactions
+1090,A2-0965,A2 list P-D,Vakar nuėjau į parduotuvę,Extended patterns
+1091,A2-0966,A2 list P-D,Buvau namuose,Extended patterns
+1092,A2-0967,A2 list P-D,Rytoj dirbsiu,Extended patterns
+1093,A2-0968,A2 list P-D,Paskambinsiu tau vėliau,Extended patterns
+1094,A2-0969,A2 list P-D,Anksčiau gyvendavau Kaune,Extended patterns
+1095,A2-0970,A2 list P-D,Niekada nebuvau Latvijoje,Extended patterns
+1096,A2-0971,A2 list P-D,"Jei lis, liksiu namie",Extended patterns
+1097,A2-0972,A2 list P-D,"Eičiau, jei turėčiau laiko",Extended patterns
+1098,A2-0973,A2 list P-D,Šis didesnis nei tas,Extended patterns
+1099,A2-0974,A2 list P-D,Tai geriausias restoranas mieste,Extended patterns
+1100,A2-0975,A2 list P-D,Metus mokausi lietuvių kalbos,Extended patterns
+1101,A2-0976,A2 list P-D,Ketinu aplankyti močiutę,Extended patterns
+1102,A2-0977,A2 list P-D,"Ji paklausė, kur aš gyvenu",Extended patterns
+1103,A2-0978,A2 list P-D,"Nežinau, ar jis ateis",Extended patterns
+1104,A2-0979,A2 list P-D,"Lengviau, nei maniau",Extended patterns
+1105,A2-0980,A2 list P-D,Knygą parašė lietuvis,Extended patterns
+1106,A2-0981,A2 list P-D,Čia negalima rūkyti,Extended patterns
+1107,A2-0982,A2 list P-D,Reikia rezervuoti iš anksto,Extended patterns
+1108,A2-0983,A2 list P-D,Domiuosi istorija,Extended patterns
+1109,A2-0984,A2 list P-D,Susitinkame šeštą valandą,Extended patterns
+1110,A2-1145,A2 list P-D,atidaryta,Adjectives
+1111,A2-1146,A2 list P-D,draudžiama,Adjectives
+1112,A2-1147,A2 list P-D,leidžiama,Adjectives
+1113,A2-1148,A2 list P-D,aišku,Adverbs
+1114,A2-1149,A2 list P-D,atsargiai,Adverbs
+1115,A2-1150,A2 list P-D,gaila,Adverbs
+1116,A2-1151,A2 list P-D,mielai,Adverbs
+1117,A2-1152,A2 list P-D,nemokamai,Adverbs
+1118,A2-1153,A2 list P-D,nuostabu,Adverbs
+1119,A2-1154,A2 list P-D,puiku,Adverbs
+1120,A2-1155,A2 list P-D,įdomu,Adverbs
+1121,A2-1156,A2 list P-D,šaunu,Adverbs
+1122,A2-1157,A2 list P-D,Kiek jums metų?,Basics
+1123,A2-1158,A2 list P-D,Kuo dirbate?,Basics
+1124,A2-1159,A2 list P-D,Kur gyvenate?,Basics
+1125,A2-1160,A2 list P-D,Ką veiki?,Basics
+1126,A2-1161,A2 list P-D,Viskas gerai,Basics
+1127,A2-1162,A2 list P-D,Gero savaitgalio!,Formulas
+1128,A2-1163,A2 list P-D,Laimingų Naujųjų metų!,Formulas
+1129,A2-1164,A2 list P-D,Linksmų Kalėdų!,Formulas
+1130,A2-1165,A2 list P-D,Su šventėmis!,Formulas
+1131,A2-1166,A2 list P-D,"Sėskitės, prašau",Formulas
+1132,A2-1167,A2 list P-D,Užeikite!,Formulas
+1133,A2-1168,A2 list P-D,Ar turite…?,Getting by
+1134,A2-1169,A2 list P-D,minutėlė,Nouns
+1135,A2-1170,A2 list P-D,šaunuolis,Nouns
+1136,A2-1171,A2 list P-D,alio,Phrases
+1137,A2-1172,A2 list P-D,be abejo,Phrases
+1138,A2-1173,A2 list P-D,darbo valandos,Phrases
+1139,A2-1174,A2 list P-D,dingo elektra,Phrases
+1140,A2-1175,A2 list P-D,drabužiai moterims,Phrases
+1141,A2-1176,A2 list P-D,drabužiai vaikams,Phrases
+1142,A2-1177,A2 list P-D,drabužiai vyrams,Phrases
+1143,A2-1178,A2 list P-D,dėkui,Phrases
+1144,A2-1179,A2 list P-D,dėmesio,Phrases
+1145,A2-1180,A2 list P-D,eiti miegoti,Phrases
+1146,A2-1181,A2 list P-D,Gelbėkit!,Phrases
+1147,A2-1182,A2 list P-D,labai gerai,Phrases
+1148,A2-1183,A2 list P-D,Man patiko!,Phrases
+1149,A2-1184,A2 list P-D,Negali būti!,Phrases
+1150,A2-1185,A2 list P-D,nieko baisaus,Phrases
+1151,A2-1186,A2 list P-D,pietų pertrauka,Phrases
+1152,A2-1187,A2 list P-D,Sudie,Phrases
+1153,A2-1188,A2 list P-D,trūko vamzdis,Phrases
+1154,A2-1189,A2 list P-D,vieta prie lango,Phrases
+1155,A2-1190,A2 list P-D,vieta prie tako,Phrases
+1156,A2-1191,A2 list P-D,šiaip sau,Phrases
+1157,A2-1192,A2 list P-D,Be penkių trys,Time
+1158,A2-1193,A2 list P-D,Kuri valanda?,Time
+1159,A2-1194,A2 list P-D,Penkios po trijų,Time
+1160,A2-1195,A2 list P-D,Pusė trijų,Time
+1161,A2-1196,A2 list P-D,atrodo,Verbs
+1162,A2-1197,A2 list P-D,susipažinti,Verbs
+1163,A2-0594,A2 list P-F,narys,People
+1164,A2-0591,A2 list P-F,rajonas,People
+1165,A2-0595,A2 list P-F,pora,People
+1166,A2-0668,A2 list P-F,patiekalas,Food
+1167,A2-0693,A2 list P-F,grybas,Food
+1168,A2-0670,A2 list P-F,salotos,Food
+1169,A2-0671,A2 list P-F,sumuštinis,Food
+1170,A2-0499,A2 list P-F,gyventi,Verbs
+1171,A2-0446,A2 list P-F,žinoti,Verbs
+1172,A2-0426,A2 list P-F,kalbėti,Verbs
+1173,A2-0495,A2 list P-F,leisti,Verbs
+1174,A2-0464,A2 list P-F,naudoti,Verbs
+1175,A2-0463,A2 list P-F,priklausyti,Verbs
+1176,A2-0447,A2 list P-F,suprasti,Verbs
+1177,A2-0612,A2 list P-F,aukštas,Home
+1178,A2-0618,A2 list P-F,garažas,Home
+1179,A2-0628,A2 list P-F,kilimas,Home
+1180,A2-0518,A2 list P-F,svarbus,Adjectives
+1181,A2-0541,A2 list P-F,tikras,Adjectives
+1182,A2-0550,A2 list P-F,viešas,Adjectives
+1183,A2-0555,A2 list P-F,pagrindinis,Adjectives
+1184,A2-0554,A2 list P-F,nacionalinis,Adjectives
+1185,A2-0519,A2 list P-F,reikalingas,Adjectives
+1186,A2-0538,A2 list P-F,panašus,Adjectives
+1187,A2-0537,A2 list P-F,kitoks,Adjectives
+1188,A2-0644,A2 list P-F,kaimas,Location
+1189,A2-0653,A2 list P-F,kinas,Location
+1190,A2-0649,A2 list P-F,paštas,Location
+1191,A2-0601,A2 list P-F,krūtinė,Body
+1192,A2-0600,A2 list P-F,gerklė,Body
+1193,A2-0602,A2 list P-F,pilvas,Body
+1194,A2-0737,A2 list P-F,laukas,Nature
+1195,A2-0745,A2 list P-F,takas,Nature
+1196,A2-0746,A2 list P-F,šaka,Nature
+1197,A2-0729,A2 list P-F,vairuotojas,Transportation
+1198,A2-0707,A2 list P-F,megztinis,Clothing
+1199,A2-0844,A2 list P-F,dalis,Abstract
+1200,A2-0589,A2 list P-F,svečias,People
+1201,A2-0578,A2 list P-F,paauglys,People
+1202,A2-0588,A2 list P-F,giminaitis,People
+1203,A2-0672,A2 list P-F,košė,Food
+1204,A2-0673,A2 list P-F,blynai,Food
+1205,A2-0679,A2 list P-F,sviestas,Food
+1206,A2-0683,A2 list P-F,pipirai,Food
+1207,A2-0494,A2 list P-F,padėti,Verbs
+1208,A2-0498,A2 list P-F,veikti,Verbs
+1209,A2-0413,A2 list P-F,laukti,Verbs
+1210,A2-0452,A2 list P-F,tikėtis,Verbs
+1211,A2-0431,A2 list P-F,sutikti,Verbs
+1212,A2-0458,A2 list P-F,planuoti,Verbs
+1213,A2-0428,A2 list P-F,pasakoti,Verbs
+1214,A2-0613,A2 list P-F,laiptai,Home
+1215,A2-0615,A2 list P-F,balkonas,Home
+1216,A2-0623,A2 list P-F,lentyna,Home
+1217,A2-0551,A2 list P-F,privatus,Adjectives
+1218,A2-0524,A2 list P-F,įdomus,Adjectives
+1219,A2-0527,A2 list P-F,pavojingas,Adjectives
+1220,A2-0528,A2 list P-F,saugus,Adjectives
+1221,A2-0556,A2 list P-F,ypatingas,Adjectives
+1222,A2-0526,A2 list P-F,naudingas,Adjectives
+1223,A2-0545,A2 list P-F,tradicinis,Adjectives
+1224,A2-0546,A2 list P-F,populiarus,Adjectives
+1225,A2-0652,A2 list P-F,muziejus,Location
+1226,A2-0645,A2 list P-F,aikštė,Location
+1227,A2-0658,A2 list P-F,kapinės,Location
+1228,A2-0743,A2 list P-F,krantas,Nature
+1229,A2-0742,A2 list P-F,pakrantė,Nature
+1230,A2-0762,A2 list P-F,vilkas,Nature
+1231,A2-0731,A2 list P-F,eismas,Transportation
+1232,A2-0708,A2 list P-F,striukė,Clothing
+1233,A2-0843,A2 list P-F,tvarka,Abstract
+1234,A2-0581,A2 list P-F,teta,People
+1235,A2-0582,A2 list P-F,dėdė,People
+1236,A2-0583,A2 list P-F,pusbrolis,People
+1237,A2-0686,A2 list P-F,jogurtas,Food
+1238,A2-0688,A2 list P-F,grietinėlė,Food
+1239,A2-0696,A2 list P-F,česnakas,Food
+1240,A2-0697,A2 list P-F,svogūnas,Food
+1241,A2-0493,A2 list P-F,saugoti,Verbs
+1242,A2-0450,A2 list P-F,nuspręsti,Verbs
+1243,A2-0405,A2 list P-F,grįžti,Verbs
+1244,A2-0460,A2 list P-F,pastebėti,Verbs
+1245,A2-0462,A2 list P-F,reikšti,Verbs
+1246,A2-0434,A2 list P-F,kviesti,Verbs
+1247,A2-0451,A2 list P-F,pasirinkti,Verbs
+1248,A2-0625,A2 list P-F,spinta,Home
+1249,A2-0626,A2 list P-F,veidrodis,Home
+1250,A2-0629,A2 list P-F,antklodė,Home
+1251,A2-0539,A2 list P-F,teisingas,Adjectives
+1252,A2-0552,A2 list P-F,vietinis,Adjectives
+1253,A2-0543,A2 list P-F,realus,Adjectives
+1254,A2-0557,A2 list P-F,įprastas,Adjectives
+1255,A2-0558,A2 list P-F,keistas,Adjectives
+1256,A2-0548,A2 list P-F,natūralus,Adjectives
+1257,A2-0534,A2 list P-F,pilnas,Adjectives
+1258,A2-0544,A2 list P-F,modernus,Adjectives
+1259,A2-0654,A2 list P-F,stadionas,Location
+1260,A2-0666,A2 list P-F,ambasada,Location
+1261,A2-0664,A2 list P-F,degalinė,Location
+1262,A2-0770,A2 list P-F,bitė,Nature
+1263,A2-0757,A2 list P-F,višta,Nature
+1264,A2-0732,A2 list P-F,avarija,Transportation
+1265,A2-0709,A2 list P-F,šalikas,Clothing
+1266,A2-0803,A2 list P-F,klausimas,Work & culture
+1267,A2-0698,A2 list P-F,kopūstas,Food
+1268,A2-0699,A2 list P-F,burokėlis,Food
+1269,A2-0700,A2 list P-F,agurkas,Food
+1270,A2-0701,A2 list P-F,pomidoras,Food
+1271,A2-0444,A2 list P-F,versti,Verbs
+1272,A2-0404,A2 list P-F,išeiti,Verbs
+1273,A2-0496,A2 list P-F,drausti,Verbs
+1274,A2-0448,A2 list P-F,tikėti,Verbs
+1275,A2-0504,A2 list P-F,gimti,Verbs
+1276,A2-0470,A2 list P-F,pridėti,Verbs
+1277,A2-0433,A2 list P-F,žadėti,Verbs
+1278,A2-0630,A2 list P-F,pagalvė,Home
+1279,A2-0631,A2 list P-F,rankšluostis,Home
+1280,A2-0633,A2 list P-F,dantų šepetėlis,Home
+1281,A2-0559,A2 list P-F,patogus,Adjectives
+1282,A2-0535,A2 list P-F,tuščias,Adjectives
+1283,A2-0549,A2 list P-F,dirbtinis,Adjectives
+1284,A2-0533,A2 list P-F,uždarytas,Adjectives
+1285,A2-0536,A2 list P-F,toks pat,Adjectives
+1286,A2-0540,A2 list P-F,klaidingas,Adjectives
+1287,A2-0564,A2 list P-F,skanus,Adjectives
+1288,A2-0565,A2 list P-F,neskanus,Adjectives
+1289,A2-0650,A2 list P-F,nuovada,Location
+1290,A2-0651,A2 list P-F,gaisrinė,Location
+1291,A2-0659,A2 list P-F,stotelė,Location
+1292,A2-0730,A2 list P-F,keleivis,Transportation
+1293,A2-0710,A2 list P-F,pirštinės,Clothing
+1294,A2-0874,A2 list P-F,dokumentas,Money & admin
+1295,A2-0702,A2 list P-F,kriaušė,Food
+1296,A2-0704,A2 list P-F,vyšnios,Food
+1297,A2-0705,A2 list P-F,braškės,Food
+1298,A2-0706,A2 list P-F,vynuogės,Food
+1299,A2-0414,A2 list P-F,susitikti,Verbs
+1300,A2-0416,A2 list P-F,vesti,Verbs
+1301,A2-0454,A2 list P-F,bijoti,Verbs
+1302,A2-0449,A2 list P-F,abejoti,Verbs
+1303,A2-0490,A2 list P-F,tikrinti,Verbs
+1304,A2-0429,A2 list P-F,aptarti,Verbs
+1305,A2-0461,A2 list P-F,lyginti,Verbs
+1306,A2-0642,A2 list P-F,kibiras,Home
+1307,A2-0643,A2 list P-F,šluota,Home
+1308,A2-0566,A2 list P-F,šviežias,Adjectives
+1309,A2-0568,A2 list P-F,saldus,Adjectives
+1310,A2-0569,A2 list P-F,rūgštus,Adjectives
+1311,A2-0570,A2 list P-F,sūrus,Adjectives
+1312,A2-0572,A2 list P-F,aštrus,Adjectives
+1313,A2-0660,A2 list P-F,perėja,Location
+1314,A2-0661,A2 list P-F,šaligatvis,Location
+1315,A2-0662,A2 list P-F,šviesoforas,Location
+1316,A2-0727,A2 list P-F,ratas,Transportation
+1317,A2-0712,A2 list P-F,diržas,Clothing
+1318,A2-0858,A2 list P-F,paslauga,Abstract
+1319,A2-0505,A2 list P-F,auginti,Verbs
+1320,A2-0440,A2 list P-F,patarti,Verbs
+1321,A2-0471,A2 list P-F,pašalinti,Verbs
+1322,A2-0406,A2 list P-F,pereiti,Verbs
+1323,A2-0506,A2 list P-F,uždirbti,Verbs
+1324,A2-0501,A2 list P-F,švęsti,Verbs
+1325,A2-0419,A2 list P-F,dėti,Verbs
+1326,A2-0665,A2 list P-F,stovėjimo aikštelė,Location
+1327,A2-0733,A2 list P-F,greitis,Transportation
+1328,A2-0713,A2 list P-F,kojinės,Clothing
+1329,A2-0859,A2 list P-F,informacija,Abstract
+1330,A2-0412,A2 list P-F,skubėti,Verbs
+1331,A2-0503,A2 list P-F,skirtis,Verbs
+1332,A2-0459,A2 list P-F,įsivaizduoti,Verbs
+1333,A2-0435,A2 list P-F,dėkoti,Verbs
+1334,A2-0500,A2 list P-F,lankyti,Verbs
+1335,A2-0491,A2 list P-F,sutvarkyti,Verbs
+1336,A2-0483,A2 list P-F,virti,Verbs
+1337,A2-0734,A2 list P-F,kuras,Transportation
+1338,A2-0715,A2 list P-F,basutės,Clothing
+1339,A2-0806,A2 list P-F,žodis,Work & culture
+1340,A2-0430,A2 list P-F,diskutuoti,Verbs
+1341,A2-0492,A2 list P-F,ruošti,Verbs
+1342,A2-0417,A2 list P-F,atnešti,Verbs
+1343,A2-0436,A2 list P-F,atsiprašyti,Verbs
+1344,A2-0403,A2 list P-F,įeiti,Verbs
+1345,A2-0437,A2 list P-F,sveikinti,Verbs
+1346,A2-0439,A2 list P-F,skųstis,Verbs
+1347,A2-0725,A2 list P-F,motociklas,Transportation
+1348,A2-0717,A2 list P-F,užtrauktukas,Clothing
+1349,A2-0778,A2 list P-F,darbuotojas,Work & culture
+1350,A2-0468,A2 list P-F,gerinti,Verbs
+1351,A2-0442,A2 list P-F,šaukti,Verbs
+1352,A2-0484,A2 list P-F,kepti,Verbs
+1353,A2-0455,A2 list P-F,stebėtis,Verbs
+1354,A2-0515,A2 list P-F,varžytis,Verbs
+1355,A2-0441,A2 list P-F,perspėti,Verbs
+1356,A2-0407,A2 list P-F,lipti,Verbs
+1357,A2-0724,A2 list P-F,taksi,Transportation
+1358,A2-0718,A2 list P-F,skėtis,Clothing
+1359,A2-0872,A2 list P-F,draudimas,Money & admin
+1360,A2-0411,A2 list P-F,persikelti,Verbs
+1361,A2-0432,A2 list P-F,nesutikti,Verbs
+1362,A2-0445,A2 list P-F,užrašyti,Verbs
+1363,A2-0477,A2 list P-F,užrakinti,Verbs
+1364,A2-0478,A2 list P-F,atrakinti,Verbs
+1365,A2-0486,A2 list P-F,pilti,Verbs
+1366,A2-0487,A2 list P-F,sverti,Verbs
+1367,A2-0723,A2 list P-F,troleibusas,Transportation
+1368,A2-0719,A2 list P-F,akiniai,Clothing
+1369,A2-0841,A2 list P-F,rezultatas,Abstract
+1370,A2-0510,A2 list P-F,nuomotis,Verbs
+1371,A2-0847,A2 list P-F,būdas,Abstract
+1372,A2-0835,A2 list P-F,nuomonė,Abstract
+1373,A2-0862,A2 list P-F,skaičius,Abstract
+1374,A2-0824,A2 list P-F,pradžia,Abstract
+1375,A2-0840,A2 list P-F,tikslas,Abstract
+1376,A2-0833,A2 list P-F,planas,Abstract
+1377,A2-0861,A2 list P-F,sąrašas,Abstract
+1378,A2-0857,A2 list P-F,pagalba,Abstract
+1379,A2-0877,A2 list P-F,leidimas,Money & admin
+1380,A2-0856,A2 list P-F,saugumas,Abstract
+1381,A2-0828,A2 list P-F,laikotarpis,Abstract
+1382,A2-0825,A2 list P-F,pabaiga,Abstract
+1383,A2-0808,A2 list P-F,istorija,Work & culture
+1384,A2-0848,A2 list P-F,tiesa,Abstract
+1385,A2-0871,A2 list P-F,atlyginimas,Money & admin
+1386,A2-0821,A2 list P-F,šventė,Work & culture
+1387,A2-0864,A2 list P-F,euras,Money & admin
+1388,A2-0846,A2 list P-F,rūšis,Abstract
+1389,A2-0812,A2 list P-F,koncertas,Work & culture
+1390,A2-0813,A2 list P-F,paroda,Work & culture
+1391,A2-0795,A2 list P-F,klasė,Work & culture
+1392,A2-0869,A2 list P-F,paskola,Money & admin
+1393,A2-0834,A2 list P-F,idėja,Abstract
+1394,A2-0870,A2 list P-F,skola,Money & admin
+1395,A2-0779,A2 list P-F,klientas,Work & culture
+1396,A2-0794,A2 list P-F,mokslininkas,Work & culture
+1397,A2-0839,A2 list P-F,proga,Abstract
+1398,A2-0804,A2 list P-F,atsakymas,Work & culture
+1399,A2-0788,A2 list P-F,ūkininkas,Work & culture
+1400,A2-0805,A2 list P-F,klaida,Work & culture
+1401,A2-0820,A2 list P-F,atostogos,Work & culture
+1402,A2-0855,A2 list P-F,pavojus,Abstract
+1403,A2-0777,A2 list P-F,darbdavys,Work & culture
+1404,A2-0826,A2 list P-F,vidurys,Abstract
+1405,A2-0878,A2 list P-F,registracija,Money & admin
+1406,A2-0850,A2 list P-F,paslaptis,Abstract
+1407,A2-0876,A2 list P-F,parašas,Money & admin
+1408,A2-0854,A2 list P-F,sėkmė,Abstract
+1409,A2-0842,A2 list P-F,pokytis,Abstract
+1410,A2-0860,A2 list P-F,detalė,Abstract
+1411,A2-0836,A2 list P-F,patarimas,Abstract
+1412,A2-0827,A2 list P-F,akimirka,Abstract
+1413,A2-0838,A2 list P-F,pasirinkimas,Abstract
+1414,A2-0792,A2 list P-F,rašytojas,Work & culture
+1415,A2-0851,A2 list P-F,svajonė,Abstract
+1416,A2-0831,A2 list P-F,gimtadienis,Abstract
+1417,A2-0807,A2 list P-F,sakinys,Work & culture
+1418,A2-0815,A2 list P-F,paveikslas,Work & culture
+1419,A2-0791,A2 list P-F,muzikantas,Work & culture
+1420,A2-0776,A2 list P-F,profesija,Work & culture
+1421,A2-0852,A2 list P-F,atmintis,Abstract
+1422,A2-0865,A2 list P-F,centas,Money & admin
+1423,A2-0823,A2 list P-F,vakarėlis,Work & culture
+1424,A2-0784,A2 list P-F,slaugytojas,Work & culture
+1425,A2-0797,A2 list P-F,sąsiuvinis,Work & culture
+1426,A2-0799,A2 list P-F,trintukas,Work & culture
+1427,A2-0800,A2 list P-F,liniuotė,Work & culture
+1428,A2-0801,A2 list P-F,žodynas,Work & culture
+1429,A2-1423,A2 list P-H,balsuoti,Verbs
+1430,A2-1425,A2 list P-H,duoti,Verbs
+1431,A2-1436,A2 list P-H,rodyti,Verbs
+1432,A2-1438,A2 list P-H,skaityti,Verbs
+1433,A2-1445,A2 list P-H,važiuoti,Verbs
+1434,A2-1444,A2 list P-H,vaidinti,Verbs
+1435,A2-1420,A2 list P-H,apsipirkti,Verbs
+1436,A2-1203,A2 list P-H,lygus,Adjectives
+1437,A2-1202,A2 list P-H,linksmas,Adjectives
+1438,A2-1198,A2 list P-H,alkanas,Adjectives
+1439,A2-1199,A2 list P-H,apvalus,Adjectives
+1440,A2-1200,A2 list P-H,išjungtas,Adjectives
+1441,A2-1201,A2 list P-H,keptas,Adjectives
+1442,A2-1204,A2 list P-H,nėščia,Adjectives
+1443,A2-1205,A2 list P-H,rūkytas,Adjectives
+1444,A2-1347,A2 list P-H,seimas,Nouns
+1445,A2-1421,A2 list P-H,atsikelti,Verbs
+1446,A2-1422,A2 list P-H,autis,Verbs
+1447,A2-1424,A2 list P-H,dažyti,Verbs
+1448,A2-1426,A2 list P-H,filmuoti,Verbs
+1449,A2-1427,A2 list P-H,fotografuoti,Verbs
+1450,A2-1428,A2 list P-H,išvežti šiukšles,Verbs
+1451,A2-1429,A2 list P-H,kirpti,Verbs
+1452,A2-1206,A2 list P-H,sulūžęs,Adjectives
+1453,A2-1207,A2 list P-H,tvarkingas,Adjectives
+1454,A2-1208,A2 list P-H,violetinis,Adjectives
+1455,A2-1209,A2 list P-H,virtas,Adjectives
+1456,A2-1210,A2 list P-H,įjungtas,Adjectives
+1457,A2-1211,A2 list P-H,šiurkštus,Adjectives
+1458,A2-1212,A2 list P-H,švelnus,Adjectives
+1459,A2-1370,A2 list P-H,teisėjas,Nouns
+1460,A2-1430,A2 list P-H,kosėti,Verbs
+1461,A2-1431,A2 list P-H,matuotis,Verbs
+1462,A2-1432,A2 list P-H,maudytis,Verbs
+1463,A2-1433,A2 list P-H,mautis,Verbs
+1464,A2-1434,A2 list P-H,praustis,Verbs
+1465,A2-1435,A2 list P-H,pūsti,Verbs
+1466,A2-1437,A2 list P-H,siūti,Verbs
+1467,A2-1250,A2 list P-H,dujos,Nouns
+1468,A2-1439,A2 list P-H,skustis barzdą,Verbs
+1469,A2-1440,A2 list P-H,slidinėti,Verbs
+1470,A2-1441,A2 list P-H,spausdinti,Verbs
+1471,A2-1442,A2 list P-H,sportuoti,Verbs
+1472,A2-1443,A2 list P-H,susilaužyti,Verbs
+1473,A2-1446,A2 list P-H,vilktis,Verbs
+1474,A2-1447,A2 list P-H,vėluoti,Verbs
+1475,A2-1255,A2 list P-H,elektra,Nouns
+1476,A2-1448,A2 list P-H,čiuožinėti,Verbs
+1477,A2-1449,A2 list P-H,šluoti,Verbs
+1478,A2-1450,A2 list P-H,šukuotis,Verbs
+1479,A2-1451,A2 list P-H,žiūrėti televizorių,Verbs
+1480,A2-1297,A2 list P-H,krepšinis,Nouns
+1481,A2-1380,A2 list P-H,uostas,Nouns
+1482,A2-1260,A2 list P-H,futbolas,Nouns
+1483,A2-1317,A2 list P-H,operacija,Nouns
+1484,A2-1312,A2 list P-H,mokinys,Nouns
+1485,A2-1263,A2 list P-H,geležinkelis,Nouns
+1486,A2-1213,A2 list P-H,administratorius,Nouns
+1487,A2-1360,A2 list P-H,spektaklis,Nouns
+1488,A2-1261,A2 list P-H,gaisras,Nouns
+1489,A2-1362,A2 list P-H,sportininkas,Nouns
+1490,A2-1309,A2 list P-H,medalis,Nouns
+1491,A2-1343,A2 list P-H,sandėlis,Nouns
+1492,A2-1315,A2 list P-H,mėsa,Nouns
+1493,A2-1294,A2 list P-H,kontrolierius,Nouns
+1494,A2-1391,A2 list P-H,vartai,Nouns
+1495,A2-1282,A2 list P-H,kavinė,Nouns
+1496,A2-1236,A2 list P-H,dainininkas,Nouns
+1497,A2-1275,A2 list P-H,kabinetas,Nouns
+1498,A2-1383,A2 list P-H,vagis,Nouns
+1499,A2-1240,A2 list P-H,daugiabutis,Nouns
+1500,A2-1371,A2 list P-H,tenisas,Nouns
+1501,A2-1363,A2 list P-H,sprogimas,Nouns
+1502,A2-1324,A2 list P-H,pardavėjas,Nouns
+1503,A2-1299,A2 list P-H,kvapas,Nouns
+1504,A2-1237,A2 list P-H,darbininkas,Nouns
+1505,A2-1233,A2 list P-H,bulvė,Nouns
+1506,A2-1313,A2 list P-H,mugė,Nouns
+1507,A2-1348,A2 list P-H,senamiestis,Nouns
+1508,A2-1280,A2 list P-H,katedra,Nouns
+1509,A2-1311,A2 list P-H,meistras,Nouns
+1510,A2-1374,A2 list P-H,triukšmas,Nouns
+1511,A2-1386,A2 list P-H,vairas,Nouns
+1512,A2-1401,A2 list P-H,vokas,Nouns
+1513,A2-1376,A2 list P-H,tualetas,Nouns
+1514,A2-1357,A2 list P-H,skulptūra,Nouns
+1515,A2-1325,A2 list P-H,paskaita,Nouns
+1516,A2-1214,A2 list P-H,alkoholiniai gėrimai,Nouns
+1517,A2-1215,A2 list P-H,alėja,Nouns
+1518,A2-1216,A2 list P-H,aplankas,Nouns
+1519,A2-1217,A2 list P-H,apsauginiai akiniai,Nouns
+1520,A2-1218,A2 list P-H,arbatinis,Nouns
+1521,A2-1219,A2 list P-H,arbatpinigiai,Nouns
+1522,A2-1220,A2 list P-H,atidarytuvas,Nouns
+1523,A2-1221,A2 list P-H,auditorija,Nouns
+1524,A2-1222,A2 list P-H,auklė,Nouns
+1525,A2-1223,A2 list P-H,ausinės,Nouns
+1526,A2-1224,A2 list P-H,autobusų stotis,Nouns
+1527,A2-1225,A2 list P-H,automatas,Nouns
+1528,A2-1226,A2 list P-H,autoservisas,Nouns
+1529,A2-1227,A2 list P-H,avalynė,Nouns
+1530,A2-1228,A2 list P-H,avarinis išėjimas,Nouns
+1531,A2-1229,A2 list P-H,balandėliai,Nouns
+1532,A2-1230,A2 list P-H,bandelė,Nouns
+1533,A2-1231,A2 list P-H,bendrabutis,Nouns
+1534,A2-1232,A2 list P-H,biologija,Nouns
+1535,A2-1234,A2 list P-H,cepelinai,Nouns
+1536,A2-1235,A2 list P-H,chemija,Nouns
+1537,A2-1238,A2 list P-H,darbo drabužiai,Nouns
+1538,A2-1239,A2 list P-H,daržovės,Nouns
+1539,A2-1241,A2 list P-H,debesis,Nouns
+1540,A2-1242,A2 list P-H,degtinė,Nouns
+1541,A2-1243,A2 list P-H,degtukai,Nouns
+1542,A2-1244,A2 list P-H,dešrelės,Nouns
+1543,A2-1245,A2 list P-H,dirbtuvė,Nouns
+1544,A2-1246,A2 list P-H,drabužinė,Nouns
+1545,A2-1247,A2 list P-H,drožtukas,Nouns
+1546,A2-1248,A2 list P-H,dubuo,Nouns
+1547,A2-1249,A2 list P-H,dujokaukė,Nouns
+1548,A2-1251,A2 list P-H,dulkių siurblys,Nouns
+1549,A2-1252,A2 list P-H,dušas,Nouns
+1550,A2-1253,A2 list P-H,džinsai,Nouns
+1551,A2-1254,A2 list P-H,ekskursija,Nouns
+1552,A2-1256,A2 list P-H,elektrikas,Nouns
+1553,A2-1257,A2 list P-H,fabrikas,Nouns
+1554,A2-1258,A2 list P-H,filmavimo kamera,Nouns
+1555,A2-1259,A2 list P-H,flomasteris,Nouns
+1556,A2-1262,A2 list P-H,gazuotas vanduo,Nouns
+1557,A2-1264,A2 list P-H,geležis,Nouns
+1558,A2-1265,A2 list P-H,gintaras,Nouns
+1559,A2-1266,A2 list P-H,greitoji pagalba,Nouns
+1560,A2-1267,A2 list P-H,grietinė,Nouns
+1561,A2-1268,A2 list P-H,grotuvas,Nouns
+1562,A2-1269,A2 list P-H,grėblys,Nouns
+1563,A2-1270,A2 list P-H,gėlynas,Nouns
+1564,A2-1271,A2 list P-H,indai,Nouns
+1565,A2-1272,A2 list P-H,injekcija,Nouns
+1566,A2-1273,A2 list P-H,išėjimas,Nouns
+1567,A2-1274,A2 list P-H,juoda kava,Nouns
+1568,A2-1276,A2 list P-H,Kalėdos,Nouns
+1569,A2-1277,A2 list P-H,kamščiatraukis,Nouns
+1570,A2-1278,A2 list P-H,karpis,Nouns
+1571,A2-1279,A2 list P-H,kastuvas,Nouns
+1572,A2-1281,A2 list P-H,kava su pienu,Nouns
+1573,A2-1283,A2 list P-H,kefyras,Nouns
+1574,A2-1284,A2 list P-H,keltas,Nouns
+1575,A2-1285,A2 list P-H,kepsnys,Nouns
+1576,A2-1286,A2 list P-H,keptuvė,Nouns
+1577,A2-1287,A2 list P-H,kiaušinienė,Nouns
+1578,A2-1288,A2 list P-H,kirpykla,Nouns
+1579,A2-1289,A2 list P-H,kirpėjas,Nouns
+1580,A2-1290,A2 list P-H,klaviatūra,Nouns
+1581,A2-1291,A2 list P-H,knygynas,Nouns
+1582,A2-1292,A2 list P-H,kombinezonas,Nouns
+1583,A2-1293,A2 list P-H,koncertų salė,Nouns
+1584,A2-1295,A2 list P-H,koridorius,Nouns
+1585,A2-1296,A2 list P-H,krepšelis,Nouns
+1586,A2-1298,A2 list P-H,kuprinė,Nouns
+1587,A2-1300,A2 list P-H,lašai,Nouns
+1588,A2-1301,A2 list P-H,lašiša,Nouns
+1589,A2-1302,A2 list P-H,ledai,Nouns
+1590,A2-1303,A2 list P-H,liftas,Nouns
+1591,A2-1304,A2 list P-H,linas,Nouns
+1592,A2-1305,A2 list P-H,maisto produktai,Nouns
+1593,A2-1306,A2 list P-H,maišas,Nouns
+1594,A2-1307,A2 list P-H,maišelis,Nouns
+1595,A2-1308,A2 list P-H,matavimosi kabina,Nouns
+1596,A2-1310,A2 list P-H,medvilnė,Nouns
+1597,A2-1314,A2 list P-H,muitininkas,Nouns
+1598,A2-1316,A2 list P-H,Naujieji metai,Nouns
+1599,A2-1318,A2 list P-H,optika,Nouns
+1600,A2-1319,A2 list P-H,orkaitė,Nouns
+1601,A2-1320,A2 list P-H,pakelis,Nouns
+1602,A2-1321,A2 list P-H,paklodė,Nouns
+1603,A2-1322,A2 list P-H,palaidinė,Nouns
+1604,A2-1323,A2 list P-H,papuošalas,Nouns
+1605,A2-1326,A2 list P-H,paštininkas,Nouns
+1606,A2-1327,A2 list P-H,pašto dėžutė,Nouns
+1607,A2-1328,A2 list P-H,pieno produktai,Nouns
+1608,A2-1329,A2 list P-H,prieškambaris,Nouns
+1609,A2-1330,A2 list P-H,puodas,Nouns
+1610,A2-1331,A2 list P-H,pyragaitis,Nouns
+1611,A2-1332,A2 list P-H,pyragas,Nouns
+1612,A2-1333,A2 list P-H,radiatorius,Nouns
+1613,A2-1334,A2 list P-H,rankinė,Nouns
+1614,A2-1335,A2 list P-H,registratūra,Nouns
+1615,A2-1336,A2 list P-H,rentgenas,Nouns
+1616,A2-1337,A2 list P-H,respiratorius,Nouns
+1617,A2-1338,A2 list P-H,riekė,Nouns
+1618,A2-1339,A2 list P-H,rūgpienis,Nouns
+1619,A2-1340,A2 list P-H,rūsys,Nouns
+1620,A2-1341,A2 list P-H,saldainis,Nouns
+1621,A2-1342,A2 list P-H,samtis,Nouns
+1622,A2-1344,A2 list P-H,sankryža,Nouns
+1623,A2-1345,A2 list P-H,santechnikas,Nouns
+1624,A2-1346,A2 list P-H,sausainis,Nouns
+1625,A2-1349,A2 list P-H,servetėlė,Nouns
+1626,A2-1350,A2 list P-H,silkė,Nouns
+1627,A2-1351,A2 list P-H,siuntinys,Nouns
+1628,A2-1352,A2 list P-H,siuvamoji mašina,Nouns
+1629,A2-1353,A2 list P-H,siūlas,Nouns
+1630,A2-1354,A2 list P-H,skalbiamieji milteliai,Nouns
+1631,A2-1355,A2 list P-H,skalbyklė,Nouns
+1632,A2-1356,A2 list P-H,skardinė,Nouns
+1633,A2-1358,A2 list P-H,sofa,Nouns
+1634,A2-1359,A2 list P-H,spausdintuvas,Nouns
+1635,A2-1361,A2 list P-H,sportbačiai,Nouns
+1636,A2-1364,A2 list P-H,staltiesė,Nouns
+1637,A2-1365,A2 list P-H,statybų aikštelė,Nouns
+1638,A2-1366,A2 list P-H,stiklainis,Nouns
+1639,A2-1367,A2 list P-H,stiklinė,Nouns
+1640,A2-1368,A2 list P-H,suolas,Nouns
+1641,A2-1369,A2 list P-H,tabletė,Nouns
+1642,A2-1372,A2 list P-H,teptukas,Nouns
+1643,A2-1373,A2 list P-H,termometras,Nouns
+1644,A2-1375,A2 list P-H,troleibusų stotelė,Nouns
+1645,A2-1377,A2 list P-H,tušinukas,Nouns
+1646,A2-1378,A2 list P-H,tvora,Nouns
+1647,A2-1379,A2 list P-H,uniforma,Nouns
+1648,A2-1381,A2 list P-H,užrašų knygelė,Nouns
+1649,A2-1382,A2 list P-H,vadovėlis,Nouns
+1650,A2-1384,A2 list P-H,vagonas,Nouns
+1651,A2-1385,A2 list P-H,vaikų darželis,Nouns
+1652,A2-1387,A2 list P-H,vaisiai,Nouns
+1653,A2-1388,A2 list P-H,vaistininkas,Nouns
+1654,A2-1389,A2 list P-H,valgykla,Nouns
+1655,A2-1390,A2 list P-H,vamzdis,Nouns
+1656,A2-1392,A2 list P-H,varškė,Nouns
+1657,A2-1393,A2 list P-H,varškės sūrelis,Nouns
+1658,A2-1394,A2 list P-H,vasarnamis,Nouns
+1659,A2-1395,A2 list P-H,vaza,Nouns
+1660,A2-1396,A2 list P-H,Velykos,Nouns
+1661,A2-1397,A2 list P-H,vilna,Nouns
+1662,A2-1398,A2 list P-H,virdulys,Nouns
+1663,A2-1399,A2 list P-H,viryklė,Nouns
+1664,A2-1400,A2 list P-H,virėjas,Nouns
+1665,A2-1402,A2 list P-H,čiužinys,Nouns
+1666,A2-1403,A2 list P-H,įėjimas,Nouns
+1667,A2-1404,A2 list P-H,šachmatai,Nouns
+1668,A2-1405,A2 list P-H,šakotis,Nouns
+1669,A2-1406,A2 list P-H,šaldiklis,Nouns
+1670,A2-1407,A2 list P-H,šaldytuvas,Nouns
+1671,A2-1408,A2 list P-H,šalmas,Nouns
+1672,A2-1409,A2 list P-H,šaltibarščiai,Nouns
+1673,A2-1410,A2 list P-H,šepetys,Nouns
+1674,A2-1411,A2 list P-H,šildytuvas,Nouns
+1675,A2-1412,A2 list P-H,šilkas,Nouns
+1676,A2-1413,A2 list P-H,šiukšlių konteineris,Nouns
+1677,A2-1414,A2 list P-H,šluostė,Nouns
+1678,A2-1415,A2 list P-H,šokoladas,Nouns
+1679,A2-1416,A2 list P-H,šokėjas,Nouns
+1680,A2-1417,A2 list P-H,švarkas,Nouns
+1681,A2-1418,A2 list P-H,ūsai,Nouns
+1682,A2-1419,A2 list P-H,žaidimų aikštelė,Nouns
+1683,A2-1635,A2 list P-I,gauti,Verbs
+1684,A2-1656,A2 list P-I,manyti,Verbs
+1685,A2-1723,A2 list P-I,vykti,Verbs
+1686,A2-1630,A2 list P-I,dalyvauti,Verbs
+1687,A2-1672,A2 list P-I,padaryti,Verbs
+1688,A2-1675,A2 list P-I,pakeisti,Verbs
+1689,A2-1682,A2 list P-I,pasakyti,Verbs
+1690,A2-1453,A2 list P-I,bendras,Adjectives
+1691,A2-1473,A2 list P-I,skirtingas,Adjectives
+1692,A2-1472,A2 list P-I,puikus,Adjectives
+1693,A2-1464,A2 list P-I,normalus,Adjectives
+1694,A2-1465,A2 list P-I,nuostabus,Adjectives
+1695,A2-1459,A2 list P-I,mielas,Adjectives
+1696,A2-1455,A2 list P-I,internetinis,Adjectives
+1697,A2-1475,A2 list P-I,teisus,Adjectives
+1698,A2-1594,A2 list P-I,savivaldybė,Nouns
+1699,A2-1698,A2 list P-I,prašyti,Verbs
+1700,A2-1677,A2 list P-I,palikti,Verbs
+1701,A2-1642,A2 list P-I,imti,Verbs
+1702,A2-1622,A2 list P-I,ateiti,Verbs
+1703,A2-1700,A2 list P-I,pristatyti,Verbs
+1704,A2-1696,A2 list P-I,prasidėti,Verbs
+1705,A2-1681,A2 list P-I,parodyti,Verbs
+1706,A2-1452,A2 list P-I,atidarytas,Adjectives
+1707,A2-1454,A2 list P-I,gerbiamas,Adjectives
+1708,A2-1456,A2 list P-I,išsiskyręs,Adjectives
+1709,A2-1457,A2 list P-I,ištekėjusi,Adjectives
+1710,A2-1458,A2 list P-I,madingas,Adjectives
+1711,A2-1460,A2 list P-I,nepatenkintas,Adjectives
+1712,A2-1461,A2 list P-I,nesveikas,Adjectives
+1713,A2-1462,A2 list P-I,netekėjusi,Adjectives
+1714,A2-1554,A2 list P-I,ministras,Nouns
+1715,A2-1708,A2 list P-I,sugebėti,Verbs
+1716,A2-1624,A2 list P-I,atleisti,Verbs
+1717,A2-1704,A2 list P-I,rinkti,Verbs
+1718,A2-1679,A2 list P-I,parašyti,Verbs
+1719,A2-1628,A2 list P-I,baigtis,Verbs
+1720,A2-1715,A2 list P-I,tikti,Verbs
+1721,A2-1709,A2 list P-I,susitarti,Verbs
+1722,A2-1463,A2 list P-I,nevedęs,Adjectives
+1723,A2-1466,A2 list P-I,padarytas,Adjectives
+1724,A2-1467,A2 list P-I,pagamintas,Adjectives
+1725,A2-1468,A2 list P-I,pagyvenęs,Adjectives
+1726,A2-1469,A2 list P-I,patenkintas,Adjectives
+1727,A2-1470,A2 list P-I,plastikinis,Adjectives
+1728,A2-1471,A2 list P-I,popierinis,Adjectives
+1729,A2-1474,A2 list P-I,tam tikras,Adjectives
+1730,A2-1501,A2 list P-I,centras,Nouns
+1731,A2-1646,A2 list P-I,jausti,Verbs
+1732,A2-1670,A2 list P-I,paaiškinti,Verbs
+1733,A2-1693,A2 list P-I,pažinti,Verbs
+1734,A2-1714,A2 list P-I,tarti,Verbs
+1735,A2-1676,A2 list P-I,pakviesti,Verbs
+1736,A2-1631,A2 list P-I,deklaruoti,Verbs
+1737,A2-1648,A2 list P-I,keistis,Verbs
+1738,A2-1476,A2 list P-I,vedęs,Adjectives
+1739,A2-1477,A2 list P-I,veikiantis,Adjectives
+1740,A2-1478,A2 list P-I,vidutinio amžiaus,Adjectives
+1741,A2-1521,A2 list P-I,gyvenimas,Nouns
+1742,A2-1623,A2 list P-I,atidėti,Verbs
+1743,A2-1711,A2 list P-I,sužeisti,Verbs
+1744,A2-1645,A2 list P-I,išvežti,Verbs
+1745,A2-1627,A2 list P-I,atvažiuoti,Verbs
+1746,A2-1643,A2 list P-I,išmokti,Verbs
+1747,A2-1692,A2 list P-I,pavogti,Verbs
+1748,A2-1705,A2 list P-I,sektis,Verbs
+1749,A2-1557,A2 list P-I,namai,Nouns
+1750,A2-1718,A2 list P-I,užsiregistruoti,Verbs
+1751,A2-1650,A2 list P-I,klausyti,Verbs
+1752,A2-1688,A2 list P-I,paskambinti,Verbs
+1753,A2-1674,A2 list P-I,pakartoti,Verbs
+1754,A2-1683,A2 list P-I,pasidaryti,Verbs
+1755,A2-1720,A2 list P-I,važinėti,Verbs
+1756,A2-1722,A2 list P-I,vogti,Verbs
+1757,A2-1608,A2 list P-I,užsienis,Nouns
+1758,A2-1621,A2 list P-I,apžiūrėti,Verbs
+1759,A2-1666,A2 list P-I,nešioti,Verbs
+1760,A2-1703,A2 list P-I,registruotis,Verbs
+1761,A2-1625,A2 list P-I,atleisti iš darbo,Verbs
+1762,A2-1626,A2 list P-I,atostogauti,Verbs
+1763,A2-1629,A2 list P-I,bėgioti,Verbs
+1764,A2-1632,A2 list P-I,draustis,Verbs
+1765,A2-1590,A2 list P-I,reikalas,Nouns
+1766,A2-1633,A2 list P-I,džiovinti,Verbs
+1767,A2-1634,A2 list P-I,džiūti,Verbs
+1768,A2-1636,A2 list P-I,gauti vizą,Verbs
+1769,A2-1637,A2 list P-I,gesti,Verbs
+1770,A2-1638,A2 list P-I,grįžti namo,Verbs
+1771,A2-1639,A2 list P-I,gultis,Verbs
+1772,A2-1640,A2 list P-I,gultis į ligoninę,Verbs
+1773,A2-1568,A2 list P-I,partija,Nouns
+1774,A2-1641,A2 list P-I,gulėti ligoninėje,Verbs
+1775,A2-1644,A2 list P-I,išrašyti,Verbs
+1776,A2-1647,A2 list P-I,jungti,Verbs
+1777,A2-1649,A2 list P-I,kirptis,Verbs
+1778,A2-1651,A2 list P-I,kopijuoti,Verbs
+1779,A2-1652,A2 list P-I,kvepėti,Verbs
+1780,A2-1653,A2 list P-I,laikyti egzaminą,Verbs
+1781,A2-1507,A2 list P-I,direktorius,Nouns
+1782,A2-1654,A2 list P-I,laukti svečių,Verbs
+1783,A2-1655,A2 list P-I,lyti,Verbs
+1784,A2-1657,A2 list P-I,maudyti,Verbs
+1785,A2-1658,A2 list P-I,mokėti kortele,Verbs
+1786,A2-1659,A2 list P-I,nebūti,Verbs
+1787,A2-1660,A2 list P-I,negalėti,Verbs
+1788,A2-1661,A2 list P-I,neišlaikyti egzamino,Verbs
+1789,A2-1527,A2 list P-I,kalba,Nouns
+1790,A2-1662,A2 list P-I,nemėgti,Verbs
+1791,A2-1663,A2 list P-I,nepatikti,Verbs
+1792,A2-1664,A2 list P-I,nervintis,Verbs
+1793,A2-1665,A2 list P-I,nesuprasti,Verbs
+1794,A2-1667,A2 list P-I,nežinoti,Verbs
+1795,A2-1668,A2 list P-I,nudegti,Verbs
+1796,A2-1669,A2 list P-I,nustoti,Verbs
+1797,A2-1488,A2 list P-I,akcija,Nouns
+1798,A2-1671,A2 list P-I,pabūti,Verbs
+1799,A2-1673,A2 list P-I,pailsėti,Verbs
+1800,A2-1678,A2 list P-I,pamesti,Verbs
+1801,A2-1680,A2 list P-I,pareiti,Verbs
+1802,A2-1684,A2 list P-I,pasilikti,Verbs
+1803,A2-1685,A2 list P-I,pasimatuoti,Verbs
+1804,A2-1686,A2 list P-I,pasimatyti,Verbs
+1805,A2-1582,A2 list P-I,prašymas,Nouns
+1806,A2-1687,A2 list P-I,pasivaikščioti,Verbs
+1807,A2-1689,A2 list P-I,pasukti į dešinę / dešinėn,Verbs
+1808,A2-1690,A2 list P-I,pasukti į kairę / kairėn,Verbs
+1809,A2-1691,A2 list P-I,pavargti,Verbs
+1810,A2-1694,A2 list P-I,pietauti,Verbs
+1811,A2-1695,A2 list P-I,plaukioti,Verbs
+1812,A2-1697,A2 list P-I,prausti,Verbs
+1813,A2-1498,A2 list P-I,bauda,Nouns
+1814,A2-1699,A2 list P-I,priimti į darbą,Verbs
+1815,A2-1701,A2 list P-I,pusryčiauti,Verbs
+1816,A2-1702,A2 list P-I,rakinti,Verbs
+1817,A2-1706,A2 list P-I,smirdėti,Verbs
+1818,A2-1707,A2 list P-I,snigti,Verbs
+1819,A2-1710,A2 list P-I,susižeisti,Verbs
+1820,A2-1712,A2 list P-I,sveikti,Verbs
+1821,A2-1573,A2 list P-I,pensija,Nouns
+1822,A2-1713,A2 list P-I,sėstis,Verbs
+1823,A2-1716,A2 list P-I,užlieti kaimynus,Verbs
+1824,A2-1717,A2 list P-I,užsirašyti,Verbs
+1825,A2-1719,A2 list P-I,vakarieniauti,Verbs
+1826,A2-1721,A2 list P-I,vežtis,Verbs
+1827,A2-1724,A2 list P-I,šlapti,Verbs
+1828,A2-1725,A2 list P-I,šviesti,Verbs
+1829,A2-1600,A2 list P-I,suma,Nouns
+1830,A2-1726,A2 list P-I,žymėti,Verbs
+1831,A2-1570,A2 list P-I,pavadinimas,Nouns
+1832,A2-1599,A2 list P-I,specialistas,Nouns
+1833,A2-1503,A2 list P-I,dalykas,Nouns
+1834,A2-1537,A2 list P-I,konkursas,Nouns
+1835,A2-1550,A2 list P-I,meras,Nouns
+1836,A2-1616,A2 list P-I,varžybos,Nouns
+1837,A2-1528,A2 list P-I,kandidatas,Nouns
+1838,A2-1502,A2 list P-I,daiktas,Nouns
+1839,A2-1579,A2 list P-I,politikas,Nouns
+1840,A2-1551,A2 list P-I,mergina,Nouns
+1841,A2-1536,A2 list P-I,kokybė,Nouns
+1842,A2-1561,A2 list P-I,numeris,Nouns
+1843,A2-1534,A2 list P-I,kiekis,Nouns
+1844,A2-1565,A2 list P-I,padėtis,Nouns
+1845,A2-1593,A2 list P-I,salė,Nouns
+1846,A2-1490,A2 list P-I,alkoholis,Nouns
+1847,A2-1544,A2 list P-I,laipsnis,Nouns
+1848,A2-1620,A2 list P-I,na,Phrases
+1849,A2-1617,A2 list P-I,verslininkas,Nouns
+1850,A2-1572,A2 list P-I,pažymėjimas,Nouns
+1851,A2-1592,A2 list P-I,reklama,Nouns
+1852,A2-1580,A2 list P-I,ponas,Nouns
+1853,A2-1486,A2 list P-I,aikštelė,Nouns
+1854,A2-1610,A2 list P-I,vaikinas,Nouns
+1855,A2-1513,A2 list P-I,garantija,Nouns
+1856,A2-1567,A2 list P-I,para,Nouns
+1857,A2-1541,A2 list P-I,kursas,Nouns
+1858,A2-1505,A2 list P-I,deklaracija,Nouns
+1859,A2-1604,A2 list P-I,tradicija,Nouns
+1860,A2-1575,A2 list P-I,pertrauka,Nouns
+1861,A2-1548,A2 list P-I,mada,Nouns
+1862,A2-1614,A2 list P-I,valiuta,Nouns
+1863,A2-1487,A2 list P-I,akademija,Nouns
+1864,A2-1535,A2 list P-I,kilometras,Nouns
+1865,A2-1517,A2 list P-I,gimnazija,Nouns
+1866,A2-1607,A2 list P-I,užduotis,Nouns
+1867,A2-1619,A2 list P-I,šildymas,Nouns
+1868,A2-1596,A2 list P-I,skelbimas,Nouns
+1869,A2-1546,A2 list P-I,laisvalaikis,Nouns
+1870,A2-1585,A2 list P-I,profesorius,Nouns
+1871,A2-1606,A2 list P-I,truputis,Nouns
+1872,A2-1574,A2 list P-I,pensininkas,Nouns
+1873,A2-1609,A2 list P-I,vagystė,Nouns
+1874,A2-1499,A2 list P-I,bedarbis,Nouns
+1875,A2-1605,A2 list P-I,trečdalis,Nouns
+1876,A2-1597,A2 list P-I,skonis,Nouns
+1877,A2-1491,A2 list P-I,ambasadorius,Nouns
+1878,A2-1543,A2 list P-I,kvietimas,Nouns
+1879,A2-1547,A2 list P-I,litras,Nouns
+1880,A2-1520,A2 list P-I,gripas,Nouns
+1881,A2-1618,A2 list P-I,šaltis,Nouns
+1882,A2-1508,A2 list P-I,dėstytojas,Nouns
+1883,A2-1529,A2 list P-I,karininkas,Nouns
+1884,A2-1479,A2 list P-I,anglų kalba,Languages
+1885,A2-1480,A2 list P-I,gimtoji kalba,Languages
+1886,A2-1481,A2 list P-I,ispanų kalba,Languages
+1887,A2-1482,A2 list P-I,lietuvių kalba,Languages
+1888,A2-1483,A2 list P-I,prancūzų kalba,Languages
+1889,A2-1484,A2 list P-I,rusų kalba,Languages
+1890,A2-1485,A2 list P-I,vokiečių kalba,Languages
+1891,A2-1489,A2 list P-I,alergija,Nouns
+1892,A2-1492,A2 list P-I,asmens tapatybės kortelė,Nouns
+1893,A2-1493,A2 list P-I,atestatas,Nouns
+1894,A2-1494,A2 list P-I,atmintukas,Nouns
+1895,A2-1495,A2 list P-I,auklėtojas,Nouns
+1896,A2-1496,A2 list P-I,baigiamasis egzaminas,Nouns
+1897,A2-1497,A2 list P-I,bankomatas,Nouns
+1898,A2-1500,A2 list P-I,belaidis internetas,Nouns
+1899,A2-1504,A2 list P-I,darbo vieta,Nouns
+1900,A2-1506,A2 list P-I,dešinė,Nouns
+1901,A2-1509,A2 list P-I,džiovyklė,Nouns
+1902,A2-1510,A2 list P-I,elektroninis laiškas,Nouns
+1903,A2-1511,A2 list P-I,fizika,Nouns
+1904,A2-1512,A2 list P-I,galvos skausmas,Nouns
+1905,A2-1514,A2 list P-I,geležinkelio stotis,Nouns
+1906,A2-1515,A2 list P-I,gimimo data,Nouns
+1907,A2-1516,A2 list P-I,gimimo vieta,Nouns
+1908,A2-1518,A2 list P-I,gramas,Nouns
+1909,A2-1519,A2 list P-I,gramatika,Nouns
+1910,A2-1522,A2 list P-I,gyvenimo aprašymas,Nouns
+1911,A2-1523,A2 list P-I,indaplovė,Nouns
+1912,A2-1524,A2 list P-I,instrukcija,Nouns
+1913,A2-1525,A2 list P-I,interneto svetainė,Nouns
+1914,A2-1526,A2 list P-I,kairė,Nouns
+1915,A2-1530,A2 list P-I,kelionių agentūra,Nouns
+1916,A2-1531,A2 list P-I,kelionės draudimas,Nouns
+1917,A2-1532,A2 list P-I,kelių policija,Nouns
+1918,A2-1533,A2 list P-I,ketvirtadalis,Nouns
+1919,A2-1538,A2 list P-I,kraujo tyrimai,Nouns
+1920,A2-1539,A2 list P-I,kraujospūdis,Nouns
+1921,A2-1540,A2 list P-I,kursai,Nouns
+1922,A2-1542,A2 list P-I,kvadratinis metras,Nouns
+1923,A2-1545,A2 list P-I,laisva diena,Nouns
+1924,A2-1549,A2 list P-I,matematika,Nouns
+1925,A2-1552,A2 list P-I,metų laikas,Nouns
+1926,A2-1553,A2 list P-I,mineralinis vanduo,Nouns
+1927,A2-1555,A2 list P-I,ministras pirmininkas,Nouns
+1928,A2-1556,A2 list P-I,mokesčiai,Nouns
+1929,A2-1558,A2 list P-I,negazuotas vanduo,Nouns
+1930,A2-1559,A2 list P-I,nelaimingas atsitikimas,Nouns
+1931,A2-1560,A2 list P-I,netiesa,Nouns
+1932,A2-1562,A2 list P-I,nuolaidų kortelė,Nouns
+1933,A2-1563,A2 list P-I,orai,Nouns
+1934,A2-1564,A2 list P-I,oro kondicionierius,Nouns
+1935,A2-1566,A2 list P-I,panelė,Nouns
+1936,A2-1569,A2 list P-I,pasimatymas,Nouns
+1937,A2-1571,A2 list P-I,pašto kodas,Nouns
+1938,A2-1576,A2 list P-I,pica,Nouns
+1939,A2-1577,A2 list P-I,planšetė,Nouns
+1940,A2-1578,A2 list P-I,poliklinika,Nouns
+1941,A2-1581,A2 list P-I,pratimas,Nouns
+1942,A2-1583,A2 list P-I,prekybos centras,Nouns
+1943,A2-1584,A2 list P-I,procentai,Nouns
+1944,A2-1586,A2 list P-I,puslitris,Nouns
+1945,A2-1587,A2 list P-I,pusseserė,Nouns
+1946,A2-1588,A2 list P-I,pusvalandis,Nouns
+1947,A2-1589,A2 list P-I,pusė kilogramo,Nouns
+1948,A2-1591,A2 list P-I,reisas,Nouns
+1949,A2-1595,A2 list P-I,seansas,Nouns
+1950,A2-1598,A2 list P-I,sloga,Nouns
+1951,A2-1601,A2 list P-I,sąlygos,Nouns
+1952,A2-1602,A2 list P-I,tautybė,Nouns
+1953,A2-1603,A2 list P-I,testas,Nouns
+1954,A2-1611,A2 list P-I,vairuotojo pažymėjimas,Nouns
+1955,A2-1612,A2 list P-I,vaistai nuo skausmo,Nouns
+1956,A2-1613,A2 list P-I,valgis,Nouns
+1957,A2-1615,A2 list P-I,valiutos keitykla,Nouns
+1958,A2-1798,A2 list P-J,jaunimas,People
+1959,A2-1799,A2 list P-J,ponia,People
+1960,A2-1800,A2 list P-J,žmonės,People
+1961,A2-1759,A2 list P-J,taurė,Food
+1962,A2-1749,A2 list P-J,gira,Beverages
+1963,A2-1757,A2 list P-J,kugelis,Food
+1964,A2-1758,A2 list P-J,makaronai,Food
+1965,A2-1825,A2 list P-J,likti,Verbs
+1966,A2-1814,A2 list P-J,daryti,Verbs
+1967,A2-1828,A2 list P-J,mokėti (plaukti),Verbs
+1968,A2-1824,A2 list P-J,laikyti,Verbs
+1969,A2-1818,A2 list P-J,ieškoti,Verbs
+1970,A2-1845,A2 list P-J,pasiūlyti,Verbs
+1971,A2-1840,A2 list P-J,pamatyti,Verbs
+1972,A2-1765,A2 list P-J,remontas,Home
+1973,A2-1762,A2 list P-J,dantų pasta,Home
+1974,A2-1763,A2 list P-J,fotelis,Home
+1975,A2-1746,A2 list P-J,įvairus,Adjectives
+1976,A2-1732,A2 list P-J,aiškus,Adjectives
+1977,A2-1738,A2 list P-J,paprastas,Adjectives
+1978,A2-1745,A2 list P-J,vidutinis,Adjectives
+1979,A2-1734,A2 list P-J,didžiulis,Adjectives
+1980,A2-1739,A2 list P-J,rimtas,Adjectives
+1981,A2-1743,A2 list P-J,sudėtingas,Adjectives
+1982,A2-1735,A2 list P-J,kaltas,Adjectives
+1983,A2-1771,A2 list P-J,sostinė,Location
+1984,A2-1770,A2 list P-J,pilis,Location
+1985,A2-1769,A2 list P-J,paminklas,Location
+1986,A2-1750,A2 list P-J,ūgis,Body
+1987,A2-1788,A2 list P-J,vakarai,Nature
+1988,A2-1789,A2 list P-J,šiaurė,Nature
+1989,A2-1786,A2 list P-J,pietūs (pasaulio kryptis),Nature
+1990,A2-1807,A2 list P-J,pėstysis,Transportation
+1991,A2-1751,A2 list P-J,kaklaraištis,Clothing
+1992,A2-1772,A2 list P-J,litas,Money & admin
+1993,A2-1829,A2 list P-J,naudotis,Verbs
+1994,A2-1839,A2 list P-J,paklausti,Verbs
+1995,A2-1846,A2 list P-J,pastatyti,Verbs
+1996,A2-1854,A2 list P-J,stengtis,Verbs
+1997,A2-1859,A2 list P-J,trūkti,Verbs
+1998,A2-1836,A2 list P-J,paimti,Verbs
+1999,A2-1857,A2 list P-J,sužinoti,Verbs
+2000,A2-1764,A2 list P-J,lygintuvas,Home
+2001,A2-1766,A2 list P-J,šampūnas,Home
+2002,A2-1741,A2 list P-J,smulkus,Adjectives
+2003,A2-1733,A2 list P-J,baisus,Adjectives
+2004,A2-1737,A2 list P-J,medinis,Adjectives
+2005,A2-1740,A2 list P-J,smagus,Adjectives
+2006,A2-1744,A2 list P-J,tiesus,Adjectives
+2007,A2-1736,A2 list P-J,kvailas,Adjectives
+2008,A2-1742,A2 list P-J,sotus,Adjectives
+2009,A2-1768,A2 list P-J,Lietuva,Location
+2010,A2-1787,A2 list P-J,rytai,Nature
+2011,A2-1783,A2 list P-J,eglė,Nature
+2012,A2-1784,A2 list P-J,kopa,Nature
+2013,A2-1752,A2 list P-J,pižama,Clothing
+2014,A2-1779,A2 list P-J,lietuvis,Nationalities
+2015,A2-1858,A2 list P-J,trukti,Verbs
+2016,A2-1853,A2 list P-J,spėti,Verbs
+2017,A2-1813,A2 list P-J,bendrauti,Verbs
+2018,A2-1826,A2 list P-J,lyginti (drabužius),Verbs
+2019,A2-1847,A2 list P-J,patikrinti,Verbs
+2020,A2-1820,A2 list P-J,išgirsti,Verbs
+2021,A2-1842,A2 list P-J,paprašyti,Verbs
+2022,A2-1785,A2 list P-J,perkūnija,Nature
+2023,A2-1790,A2 list P-J,žaibas,Nature
+2024,A2-1753,A2 list P-J,šlepetės,Clothing
+2025,A2-1802,A2 list P-J,kultūra,Society
+2026,A2-1861,A2 list P-J,vežti,Verbs
+2027,A2-1809,A2 list P-J,atiduoti,Verbs
+2028,A2-1850,A2 list P-J,prižiūrėti,Verbs
+2029,A2-1837,A2 list P-J,pakakti,Verbs
+2030,A2-1815,A2 list P-J,dingti,Verbs
+2031,A2-1835,A2 list P-J,pagalvoti,Verbs
+2032,A2-1838,A2 list P-J,pakelti,Verbs
+2033,A2-1754,A2 list P-J,šortai,Clothing
+2034,A2-1803,A2 list P-J,laisvė,Society
+2035,A2-1843,A2 list P-J,paruošti,Verbs
+2036,A2-1831,A2 list P-J,nusipirkti,Verbs
+2037,A2-1821,A2 list P-J,išsiųsti,Verbs
+2038,A2-1808,A2 list P-J,aplankyti,Verbs
+2039,A2-1816,A2 list P-J,domėtis,Verbs
+2040,A2-1811,A2 list P-J,atsitikti,Verbs
+2041,A2-1834,A2 list P-J,paduoti,Verbs
+2042,A2-1804,A2 list P-J,televizija,Society
+2043,A2-1830,A2 list P-J,nueiti,Verbs
+2044,A2-1841,A2 list P-J,papasakoti,Verbs
+2045,A2-1849,A2 list P-J,perskaityti,Verbs
+2046,A2-1860,A2 list P-J,vaikščioti,Verbs
+2047,A2-1823,A2 list P-J,kalbėtis,Verbs
+2048,A2-1822,A2 list P-J,išvažiuoti,Verbs
+2049,A2-1848,A2 list P-J,pažadėti,Verbs
+2050,A2-1806,A2 list P-J,ateitis,Time
+2051,A2-1844,A2 list P-J,pasiimti,Verbs
+2052,A2-1817,A2 list P-J,dovanoti,Verbs
+2053,A2-1852,A2 list P-J,rūkyti,Verbs
+2054,A2-1812,A2 list P-J,atvežti,Verbs
+2055,A2-1856,A2 list P-J,sutaupyti,Verbs
+2056,A2-1819,A2 list P-J,išgerti,Verbs
+2057,A2-1855,A2 list P-J,susirgti,Verbs
+2058,A2-1728,A2 list P-J,jėga,Abstract
+2059,A2-1833,A2 list P-J,pabandyti,Verbs
+2060,A2-1810,A2 list P-J,atsistoti,Verbs
+2061,A2-1827,A2 list P-J,megzti,Verbs
+2062,A2-1832,A2 list P-J,nusirengti,Verbs
+2063,A2-1851,A2 list P-J,pykti,Verbs
+2064,A2-1862,A2 list P-J,čiaudėti,Verbs
+2065,A2-1781,A2 list P-J,rusas,Nationalities
+2066,A2-1729,A2 list P-J,meilė,Abstract
+2067,A2-1730,A2 list P-J,mintis,Abstract
+2068,A2-1778,A2 list P-J,lenkas,Nationalities
+2069,A2-1731,A2 list P-J,noras,Abstract
+2070,A2-1801,A2 list P-J,pirkėjas,Shopping
+2071,A2-1782,A2 list P-J,vokietis,Nationalities
+2072,A2-1774,A2 list P-J,amerikietis,Nationalities
+2073,A2-1773,A2 list P-J,pilietybė,Money & admin
+2074,A2-1797,A2 list P-J,šeštas,Numbers
+2075,A2-1756,A2 list P-J,nuotaika,Feelings
+2076,A2-1780,A2 list P-J,prancūzas,Nationalities
+2077,A2-1775,A2 list P-J,anglas,Nationalities
+2078,A2-1795,A2 list P-J,septintas,Numbers
+2079,A2-1767,A2 list P-J,ugniagesys,Jobs
+2080,A2-1805,A2 list P-J,vėliava,Society
+2081,A2-1777,A2 list P-J,latvis,Nationalities
+2082,A2-1791,A2 list P-J,aštuntas,Numbers
+2083,A2-1727,A2 list P-J,bėda,Abstract
+2084,A2-1792,A2 list P-J,devintas,Numbers
+2085,A2-1747,A2 list P-J,orkestras,Art
+2086,A2-1748,A2 list P-J,pasaka,Art
+2087,A2-1793,A2 list P-J,dešimtas,Numbers
+2088,A2-1755,A2 list P-J,gėda,Feelings
+2089,A2-1760,A2 list P-J,pleistras,Health
+2090,A2-1761,A2 list P-J,tvarstis,Health
+2091,A2-1776,A2 list P-J,estas,Nationalities
+2092,A2-1794,A2 list P-J,dvyliktas,Numbers
+2093,A2-1796,A2 list P-J,vienuoliktas,Numbers
+2094,A2-0584,A2 list P-K,sūnėnas,People
+2095,A2-0585,A2 list P-K,dukterėčia,People
+2096,A2-0590,A2 list P-K,nepažįstamasis,People
+2097,A2-0101,A2 list P-K,desertas,Food
+2098,A2-0674,A2 list P-K,koldūnas,Food
+2099,A2-0675,A2 list P-K,dešra,Food
+2100,A2-0676,A2 list P-K,kumpis,Food
+2101,A2-0408,A2 list P-K,leistis,Verbs
+2102,A2-0409,A2 list P-K,artintis,Verbs
+2103,A2-0410,A2 list P-K,tolti,Verbs
+2104,A2-0415,A2 list P-K,palydėti,Verbs
+2105,A2-0418,A2 list P-K,išsinešti,Verbs
+2106,A2-0421,A2 list P-K,nuleisti,Verbs
+2107,A2-0423,A2 list P-K,apsisukti,Verbs
+2108,A2-0086,A2 list P-K,raktų pakabukas,Home
+2109,A2-0286,A2 list P-K,skalbiniai,Home
+2110,A2-0290,A2 list P-K,ilsėtis,Home
+2111,A2-0520,A2 list P-K,galimas,Adjectives
+2112,A2-0521,A2 list P-K,neįmanomas,Adjectives
+2113,A2-0525,A2 list P-K,nuobodus,Adjectives
+2114,A2-0529,A2 list P-K,nemokamas,Adjectives
+2115,A2-0530,A2 list P-K,užimtas,Adjectives
+2116,A2-0531,A2 list P-K,pasiruošęs,Adjectives
+2117,A2-0542,A2 list P-K,netikras,Adjectives
+2118,A2-0553,A2 list P-K,užsienio,Adjectives
+2119,A2-0647,A2 list P-K,krautuvėlė,Location
+2120,A2-0656,A2 list P-K,sporto salė,Location
+2121,A2-0667,A2 list P-K,banko skyrius,Location
+2122,A2-0603,A2 list P-K,alkūnė,Body
+2123,A2-0604,A2 list P-K,riešas,Body
+2124,A2-0605,A2 list P-K,kulkšnis,Body
+2125,A2-0329,A2 list P-K,šalna,Nature
+2126,A2-0332,A2 list P-K,bala,Nature
+2127,A2-0333,A2 list P-K,šešėlis,Nature
+2128,A2-0722,A2 list P-K,tramvajus,Transportation
+2129,A2-0714,A2 list P-K,auliniai batai,Clothing
+2130,A2-0011,A2 list P-K,popietė,Time
+2131,A2-0592,A2 list P-K,gyventojai,People
+2132,A2-0677,A2 list P-K,šoninė,Food
+2133,A2-0680,A2 list P-K,miltai,Food
+2134,A2-0684,A2 list P-K,medus,Food
+2135,A2-0685,A2 list P-K,uogienė,Food
+2136,A2-0424,A2 list P-K,įlipti,Verbs
+2137,A2-0425,A2 list P-K,išlipti,Verbs
+2138,A2-0443,A2 list P-K,šnabždėti,Verbs
+2139,A2-0453,A2 list P-K,nerimauti,Verbs
+2140,A2-0456,A2 list P-K,mėgautis,Verbs
+2141,A2-0457,A2 list P-K,labiau mėgti,Verbs
+2142,A2-0466,A2 list P-K,griauti,Verbs
+2143,A2-0624,A2 list P-K,stalčius,Home
+2144,A2-0627,A2 list P-K,užuolaida,Home
+2145,A2-0634,A2 list P-K,šukos,Home
+2146,A2-0560,A2 list P-K,nepatogus,Adjectives
+2147,A2-0562,A2 list P-K,perpildytas,Adjectives
+2148,A2-0567,A2 list P-K,pasenęs,Adjectives
+2149,A2-0571,A2 list P-K,kartus,Adjectives
+2150,A2-0606,A2 list P-K,nagas,Body
+2151,A2-0609,A2 list P-K,raumuo,Body
+2152,A2-0738,A2 list P-K,pieva,Nature
+2153,A2-0744,A2 list P-K,pelkė,Nature
+2154,A2-0750,A2 list P-K,krūmas,Nature
+2155,A2-0728,A2 list P-K,sėdynė,Transportation
+2156,A2-0716,A2 list P-K,saga,Clothing
+2157,A2-0216,A2 list P-K,tvarkaraštis,Travel
+2158,A2-0694,A2 list P-K,uoga,Food
+2159,A2-0695,A2 list P-K,riešutas,Food
+2160,A2-0703,A2 list P-K,slyva,Food
+2161,A2-0472,A2 list P-K,pripildyti,Verbs
+2162,A2-0473,A2 list P-K,ištuštinti,Verbs
+2163,A2-0474,A2 list P-K,uždengti,Verbs
+2164,A2-0479,A2 list P-K,rišti,Verbs
+2165,A2-0481,A2 list P-K,deginti,Verbs
+2166,A2-0482,A2 list P-K,šaldyti,Verbs
+2167,A2-0488,A2 list P-K,matuoti,Verbs
+2168,A2-0635,A2 list P-K,žirklės,Home
+2169,A2-0637,A2 list P-K,virvė,Home
+2170,A2-0638,A2 list P-K,žvakė,Home
+2171,A2-0751,A2 list P-K,ąžuolas,Nature
+2172,A2-0752,A2 list P-K,pušis,Nature
+2173,A2-0753,A2 list P-K,beržas,Nature
+2174,A2-0222,A2 list P-K,suvenyras,Travel
+2175,A2-0497,A2 list P-K,liepti,Verbs
+2176,A2-0507,A2 list P-K,skolintis,Verbs
+2177,A2-0508,A2 list P-K,skolinti,Verbs
+2178,A2-0509,A2 list P-K,būti skolingas,Verbs
+2179,A2-0511,A2 list P-K,dalintis,Verbs
+2180,A2-0516,A2 list P-K,treniruotis,Verbs
+2181,A2-0517,A2 list P-K,atsipalaiduoti,Verbs
+2182,A2-0640,A2 list P-K,lemputė,Home
+2183,A2-0641,A2 list P-K,šiukšliadėžė,Home
+2184,A2-0755,A2 list P-K,avis,Nature
+2185,A2-0756,A2 list P-K,ožka,Nature
+2186,A2-0758,A2 list P-K,antis,Nature
+2187,A2-0227,A2 list P-K,pakuoti,Travel
+2188,A2-0759,A2 list P-K,žąsis,Nature
+2189,A2-0760,A2 list P-K,triušis,Nature
+2190,A2-0761,A2 list P-K,lapė,Nature
+2191,A2-0233,A2 list P-K,karščiavimas,Health
+2192,A2-0763,A2 list P-K,lokys,Nature
+2193,A2-0764,A2 list P-K,elnias,Nature
+2194,A2-0765,A2 list P-K,voverė,Nature
+2195,A2-0236,A2 list P-K,slaugytoja,Health
+2196,A2-0767,A2 list P-K,varlė,Nature
+2197,A2-0768,A2 list P-K,gyvatė,Nature
+2198,A2-0769,A2 list P-K,vabzdys,Nature
+2199,A2-0252,A2 list P-K,namų darbai,Work & school
+2200,A2-0771,A2 list P-K,drugelis,Nature
+2201,A2-0772,A2 list P-K,voras,Nature
+2202,A2-0773,A2 list P-K,skruzdėlė,Nature
+2203,A2-0295,A2 list P-K,liūdesys,Feelings
+2204,A2-0774,A2 list P-K,gandras,Nature
+2205,A2-0775,A2 list P-K,pelėda,Nature
+2206,A2-0297,A2 list P-K,pyktis,Feelings
+2207,A2-0298,A2 list P-K,nuostaba,Feelings
+2208,A2-0299,A2 list P-K,charakteris,Feelings
+2209,A2-0302,A2 list P-K,nervingas,Feelings
+2210,A2-0303,A2 list P-K,nuobodu,Feelings
+2211,A2-0304,A2 list P-K,mandagus,Feelings
+2212,A2-0308,A2 list P-K,drąsus,Feelings
+2213,A2-0309,A2 list P-K,tingus,Feelings
+2214,A2-0310,A2 list P-K,darbštus,Feelings
+2215,A2-0313,A2 list P-K,el. paštas,Technology
+2216,A2-0314,A2 list P-K,žinutė,Technology
+2217,A2-0315,A2 list P-K,programėlė,Technology
+2218,A2-0319,A2 list P-K,baterija,Technology
+2219,A2-0320,A2 list P-K,kroviklis,Technology
+2220,A2-0321,A2 list P-K,atsisiųsti,Technology
+2221,A2-0338,A2 list P-K,naujienos,Society
+2222,A2-0782,A2 list P-K,inžinierius,Work & culture
+2223,A2-0789,A2 list P-K,statybininkas,Work & culture
+2224,A2-0796,A2 list P-K,lenta,Work & culture
+2225,A2-0816,A2 list P-K,pomėgis,Work & culture
+2226,A2-0849,A2 list P-K,melas,Abstract
+2227,A2-0853,A2 list P-K,įprotis,Abstract
+2228,A2-0866,A2 list P-K,moneta,Money & admin
+2229,A2-0868,A2 list P-K,banko sąskaita,Money & admin
+2230,A2-0875,A2 list P-K,anketa,Money & admin
