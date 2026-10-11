@@ -27,7 +27,7 @@ caches in `~/a2work/` on this Mac — without them new rows lose pron/pres3/past
 1. **Size**: kept all 1,709 incl. the 137 deferred (P-K last). 520 + 1,709 = 2,229 cards ≈ 1,950 lemmas, top of the CEFR A2 band.
 2. **Anachronisms**: modern-tech words stay cloze (*internetas, el. paštas, planšetė, bankomatas, pica*); nothing of 1981 to draw.
 3. **Weekdays/months**: pictures, now with declared lettering — the week strip carries the heads `Pr An Tr Kt Pn Št Sk` and the numeral; the month page carries the numeral, `1981` and the weekday row. Cloze alternative kept in each row's note.
-4. **#371 eiti (go)**: proposed retarget → važiuoti left for you (deck_fixes, medium); the list keeps A2-1448 važiuoti. If you take the retarget, drop A2-1448.
+4. **#371 eiti (go)**: proposed retarget → važiuoti left for you (deck_fixes, medium); the list keeps A2-1445 važiuoti (ids now frozen in id_map.csv). If you take the retarget, drop A2-1445.
 5. **Re-base SWAPs** accepted as drafted (čekis, grynieji pinigai, sąskaita, persikelti, klaidingas, nuovada, pirmiausia, pagaliau).
 
 **Lettering** (owner, 2026-10-11): 97 rows now declare `card_text` — exact Lithuanian strings, never the target word; prices in litai (`2 Lt 40 ct`). It brought 11 words back from cloze to picture (*nuolaida, čekis, sąskaita, meniu, adresas, tvarkaraštis, pažymys, laipsnis, kilometras, gramas, litras*) and added **litas** (A2-1772). *euras* went to cloze (prices are litai). Signs whose text would be the target (*KASA, PAŠTAS, TAKSI, KAVINĖ*) stay wordless; signs that are the phrase itself (*draudžiama, atidaryta*) are pictogram bubbles.

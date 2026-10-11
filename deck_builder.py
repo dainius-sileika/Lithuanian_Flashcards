@@ -369,7 +369,8 @@ NOUN_STAGING = {
           "black-and-yellow biohazard symbol; germs and bacteria magnified under "
           "a lens.")},
     312: {"insets": True, "inset_note": ("Include 2 small supporting insets: a "
-          "green oxygen (O2) gas cylinder; a pair of lungs drawing breath.")},
+          "bicycle pump filling a tyre; washing on a line lifting in the wind.")},
+          # 2026-10-11: the lungs inset read as an anatomy card; both insets now show air at work
     140: {"insets": True, "inset_note": ("Include 2 small supporting insets: "
           "interlocking hands of many different skin tones; a row of diverse "
           "human faces in profile.")},

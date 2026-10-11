@@ -75,3 +75,8 @@ Native Anki cloze model (`model_type = CLOZE`), built by `build_apkg.py` from th
 - Styling: `go_theme.css` plus a small `.cloze-text / .hint` block defined in `build_apkg.py`.
 - Picture rows of the A2 list (IMG, PHRASE) use note type 1 above; their key is the list id
   (`A2-0108`) and their image is looked up by that id in `images_a2/`, `out_phrases/`, `out_deck_a2/`.
+
+## Identity and study order (2026-10-11)
+- Note GUID = `genanki.guid_for(key)` — the permanent card key (`001_suo`, `A2-0108`, `S-0001`). Model and deck ids are constants. A re-import therefore updates fields in place and keeps review history. Keys are never renamed or reused.
+- New-card position comes from `study_order.csv` (made by `build_study_order.py`). Anki applies it to cards it imports for the first time only; users updating an existing deck reorder with Browse → sort by Key → select all → Cards → Reposition.
+- The cloze note type has `SentenceAudio` (owner's recording of the example sentence, `audio_a2/<id>_s.mp3`) and `Image` (filled for the sentence cards `S-####`; when present the English hint is hidden on the front).
