@@ -210,11 +210,22 @@ def main():
             if ph not in ("P-A", "P-D"):
                 blk = separate_confusables(blk)
             out += [(c["key"], f"A2 list {ph}", c["lithuanian"], c["category"]) for c in blk]
+    # sentence cards: each goes right after the last of its words
+    sent_path = os.path.join(ROOT, os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv"))
+    if os.path.exists(sent_path):
+        pos = {k: i for i, (k, *_rest) in enumerate(out)}
+        inserts = []
+        for r in rd(os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")):
+            words = [w for w in r["words_used"].split() if w in pos]
+            after = max((pos[w] for w in words), default=len(out) - 1)
+            inserts.append((after, int(r["order"]), (r["id"], "sentences", r["lt"], "Sakiniai")))
+        for after, _o, item in sorted(inserts, reverse=True):
+            out.insert(after + 1, item)
     with open(os.path.join(ROOT, "study_order.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f); w.writerow(["order", "key", "block", "lithuanian", "category"])
         for i, (k, b, lt, cat) in enumerate(out, 1):
             w.writerow([i, k, b, lt, cat])
-    print(f"study_order.csv: {len(out)} rows ({len(a1)} A1 deck, {len(a2)} A2 deck, {len(out)-len(a1)-len(a2)} A2 list)")
+    print(f"study_order.csv: {len(out)} rows ({len(a1)} A1 deck, {len(a2)} A2 deck, the A2 list and the sentence cards)")
 
 
 if __name__ == "__main__":

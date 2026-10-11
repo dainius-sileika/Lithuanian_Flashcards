@@ -1,0 +1,56 @@
+id,order,lt,en,words_used,grammar_point,level,image_key,notes
+S-0001,1,Vyras {geria} kavą.,The man is drinking coffee.,086_vyras 377_gerti 172_kava,present 3sg; accusative object,A1,S-0001,picture + cloze; English on the back only
+S-0002,2,Moteris {valgo} duoną.,The woman is eating bread.,087_moteris 376_valgyti 182_duona,present 3sg; accusative,A1,S-0002,picture + cloze; English on the back only
+S-0003,3,Vaikas {miega} lovoje.,The child is sleeping in the bed.,101_vaikas 409_miegoti 211_lova,locative -oje,A1,S-0003,picture + cloze; English on the back only
+S-0004,4,Šuo {bėga} parke.,The dog is running in the park.,001_suo 367_begti 043_parkas,locative,A1,S-0004,picture + cloze; English on the back only
+S-0005,5,Katė {sėdi} ant stalo.,The cat is sitting on the table.,002_kate 401_sedeti 209_stalas A2-0140,ant + genitive,A1,S-0005,picture + cloze; English on the back only
+S-0006,6,Mama {gamina} vakarienę.,Mum is cooking dinner.,082_motina 420_gaminti 204_vakariene,accusative,A1,S-0006,picture + cloze; English on the back only
+S-0007,7,Tėvas {skaito} knygą.,Father is reading a book.,083_tevas A2-1438 222_knyga,accusative,A1,S-0007,picture + cloze; English on the back only
+S-0008,8,Aš {turiu} brolį.,I have a brother.,A2-0195 088_brolis,turėti + accusative,A1,S-0008,picture + cloze; English on the back only
+S-0009,9,Mes {gyvename} Vilniuje.,We live in Vilnius.,A2-0499 Vilnius,locative of a place name,A1,S-0009,picture + cloze; English on the back only
+S-0010,10,Mano vardas {yra} Jonas.,My name is Jonas.,A2-0078 A2-0194,copula; nominative,A1,S-0010,picture + cloze; English on the back only
+S-0011,11,Ji {eina} į mokyklą.,She is going to school.,366_eiti 036_mokykla A2-0136,į + accusative,A1,S-0011,picture + cloze; English on the back only
+S-0012,12,Jis {važiuoja} autobusu.,He is going by bus.,A2-1445 016_autobusas,instrumental of means,A1,S-0012,picture + cloze; English on the back only
+S-0013,13,Mes {perkame} pieną.,We are buying milk.,383_pirkti 178_pienas,present 1pl; accusative,A1,S-0013,picture + cloze; English on the back only
+S-0014,14,Kiek {kainuoja} duona?,How much does the bread cost?,A2-0272 182_duona,question with kiek,A1,S-0014,picture + cloze; English on the back only
+S-0015,15,Duona {kainuoja} vieną litą.,The bread costs one litas.,182_duona A2-0272 A2-1772,numeral + accusative,A1,S-0015,picture + cloze; English on the back only
+S-0016,16,Aš {noriu} arbatos.,I want (some) tea.,A2-0197 173_arbata,genitive after norėti (partitive),A1,S-0016,picture + cloze; English on the back only
+S-0017,17,Ar tu {kalbi} lietuviškai?,Do you speak Lithuanian?,A2-0426 A2-1018,ar question; adverb -iškai,A1,S-0017,picture + cloze; English on the back only
+S-0018,18,Aš {nesuprantu}.,I do not understand.,A2-0447,negation prefix ne-,A1,S-0018,picture + cloze; English on the back only
+S-0019,19,Man {reikia} vandens.,I need water.,A2-0198 177_vanduo,dative + reikia + genitive,A1,S-0019,picture + cloze; English on the back only
+S-0020,20,Man {patinka} muzika.,I like music.,A2-0205 169_muzika,dative experiencer + nominative,A1,S-0020,picture + cloze; English on the back only
+S-0021,21,Šiandien {šalta}.,It is cold today.,A2-0014 457_saltas,impersonal weather,A1,S-0021,picture + cloze; English on the back only
+S-0022,22,Lauke {lyja}.,It is raining outside.,A2-1655 293_lietus,weather verb 3sg,A1,S-0022,picture + cloze; English on the back only
+S-0023,23,Saulė {šviečia}.,The sun is shining.,296_saule A2-1725,present 3sg,A1,S-0023,picture + cloze; English on the back only
+S-0024,24,Aš {esu} mokytojas.,I am a teacher.,A2-0194 110_mokytojas,copula + nominative profession,A1,S-0024,picture + cloze; English on the back only
+S-0025,25,Jis {dirba} ligoninėje.,He works in the hospital.,363_dirbti 048_ligonine,locative,A1,S-0025,picture + cloze; English on the back only
+S-0026,26,Kur {yra} stotis?,Where is the station?,A2-0110 A2-0194 030_stotis,question with kur,A1,S-0026,picture + cloze; English on the back only
+S-0027,27,Stotis {yra} ten.,The station is over there.,030_stotis A2-0179,adverb of place,A1,S-0027,picture + cloze; English on the back only
+S-0028,28,Vaikai {žaidžia} kieme.,The children are playing in the yard.,101_vaikas 364_zaisti 238_kiemas,plural subject; locative,A1,S-0028,picture + cloze; English on the back only
+S-0029,29,Senelė {sėdi} ant kėdės.,Grandmother is sitting on the chair.,092_senele 401_sedeti 210_kede,ant + genitive,A1,S-0029,picture + cloze; English on the back only
+S-0030,30,Aš {gyvenu} name.,I live in a house.,A2-0499 025_namas,locative -e,A1,S-0030,picture + cloze; English on the back only
+S-0031,31,Mes {einame} namo.,We are going home.,366_eiti A2-1557,adverb namo,A1,S-0031,picture + cloze; English on the back only
+S-0032,32,Berniukas {rašo} laišką.,The boy is writing a letter.,099_berniukas 423_rasyti 226_laiskas,accusative,A1,S-0032,picture + cloze; English on the back only
+S-0033,33,Mergaitė {piešia} gėlę.,The girl is drawing a flower.,100_mergaite 429_piesti 305_gele,accusative,A1,S-0033,picture + cloze; English on the back only
+S-0034,34,Vyras {vairuoja} automobilį.,The man is driving a car.,086_vyras 368_vairuoti 013_automobilis,accusative,A1,S-0034,picture + cloze; English on the back only
+S-0035,35,Paukštis {skrenda} virš miško.,The bird is flying over the forest.,004_paukstis 369_skristi A2-1089 300_miskas,virš + genitive,A1,S-0035,picture + cloze; English on the back only
+S-0036,36,Žuvis {plaukia} upėje.,The fish is swimming in the river.,003_zuvis 370_plaukti 291_upe,locative,A2,S-0036,picture + cloze; English on the back only
+S-0037,37,Aš {nemoku} plaukti.,I cannot swim.,A2-1828 370_plaukti,negated modal + infinitive,A2,S-0037,picture + cloze; English on the back only
+S-0038,38,Ji {moka} dainuoti.,She can sing.,A2-1828 411_dainuoti,modal of skill + infinitive,A2,S-0038,picture + cloze; English on the back only
+S-0039,39,Mes {mokomės} lietuvių kalbos.,We are learning Lithuanian.,387_mokytis A2-1482,reflexive verb + genitive,A2,S-0039,picture + cloze; English on the back only
+S-0040,40,Tėvai {dirba} sode.,The parents are working in the garden.,084_tevai 363_dirbti 237_sodas,locative,A2,S-0040,picture + cloze; English on the back only
+S-0041,41,Draugas {skambina} man.,A friend is calling me.,104_draugas 424_skambinti A2-1117,dative object,A2,S-0041,picture + cloze; English on the back only
+S-0042,42,Aš {matau} jūrą.,I see the sea.,394_matyti 289_jura,accusative,A2,S-0042,picture + cloze; English on the back only
+S-0043,43,Vaikas {girdi} muziką.,The child hears music.,101_vaikas 390_girdeti 169_muzika,accusative,A2,S-0043,picture + cloze; English on the back only
+S-0044,44,Katė {miega} ant lovos.,The cat is sleeping on the bed.,002_kate 409_miegoti 211_lova,ant + genitive,A2,S-0044,picture + cloze; English on the back only
+S-0045,45,Jie {perka} bilietus.,They are buying tickets.,383_pirkti 022_bilietas,plural; accusative plural,A2,S-0045,picture + cloze; English on the back only
+S-0046,46,Aš {neturiu} pinigų.,I have no money.,A2-0195 133_pinigai,negation + genitive,A2,S-0046,picture + cloze; English on the back only
+S-0047,47,Mes {valgome} pietus.,We are having lunch.,376_valgyti 203_pietus,accusative plural,A2,S-0047,picture + cloze; English on the back only
+S-0048,48,Vakare mes {žiūrime} televizorių.,In the evening we watch television.,A2-0012 395_ziureti 256_televizorius,time adverbial; accusative,A2,S-0048,picture + cloze; English on the back only
+S-0049,49,Ryte aš {geriu} kavą.,In the morning I drink coffee.,A2-0010 377_gerti 172_kava,time adverbial,A2,S-0049,picture + cloze; English on the back only
+S-0050,50,Naktį {šviečia} mėnulis.,At night the moon shines.,A2-0013 A2-1725 297_menulis,accusative of time,A2,S-0050,picture + cloze; English on the back only
+S-0051,51,Kiek tau {metų}?,How old are you?,A2-0114 A2-1557 A2-0008,dative + genitive plural,A2,S-0051,picture + cloze; English on the back only
+S-0052,52,Man {trisdešimt} metų.,I am thirty years old.,A2-1117 A2-0062 A2-0008,dative + numeral,A2,S-0052,picture + cloze; English on the back only
+S-0053,53,Autobusas {atvažiuoja}.,The bus is coming (arriving).,016_autobusas A2-1627,prefix at- (arrival),A2,S-0053,picture + cloze; English on the back only
+S-0054,54,Traukinys {išvažiuoja} devintą valandą.,The train leaves at nine.,011_traukinys A2-1822 A2-0050 A2-0002,accusative of clock time,A2,S-0054,picture + cloze; English on the back only
+S-0055,55,Aš {noriu} valgyti.,I want to eat.,A2-0197 376_valgyti,modal + infinitive,A2,S-0055,picture + cloze; English on the back only

@@ -50,11 +50,16 @@ for r in deck:
     for part in re.split(r'[/()]',r['lithuanian_TARGET']):
         if part.strip(): deck_lt.add(base(part.strip()))
 WC=KC={}
+PREV={}   # fallback: derived fields of the last committed a2_wordlist.csv, keyed by id
 try:
     WC=json.load(open(os.path.expanduser('~/a2work/wikt_cache.json'),encoding='utf-8'))
     KC=json.load(open(os.path.expanduser('~/a2work/kirtis_cache.json'),encoding='utf-8'))
 except Exception as e:
-    print('no lookup caches:',e)
+    print('no lookup caches (~/a2work on the Mac):',e,'— reusing lt_pron/forms from the existing a2_wordlist.csv')
+    _prev=os.path.join(ROOT,'a2_build','a2_wordlist.csv')
+    if os.path.exists(_prev):
+        for _r in csv.DictReader(open(_prev,encoding='utf-8')): PREV[_r['id']]=_r
+DERIVED=['lt_pron','pron_src','gen_sg','gender','fem','pres3','past3']
 
 # ---------- Wiktionary parsing ----------
 def lt_section(wt):
@@ -190,6 +195,13 @@ def new_row(**kw):
     r={c:'' for c in COLS}; r.update(kw); return r
 def finish(r):
     plain=r['lithuanian_TARGET']; key=re.sub(r'\s*\(.*\)','',plain).strip()
+    pv=PREV.get(r.get('id') or '')
+    if pv and pv.get('lithuanian_TARGET')==plain:
+        for c in DERIVED:
+            if not r.get(c) and pv.get(c):
+                r[c]=pv[c]
+                if c=='lt_pron' and pv.get('pron_src'): r['pron_src']=pv['pron_src']
+        if not r.get('check') and pv.get('check'): r['check']=pv['check']
     let=LETTER.get(plain) or LETTER.get(key)
     if let:
         ct,rt,nt=let
@@ -253,6 +265,8 @@ def finish(r):
         elif r['route']!='PHRASE': warnings.append(f"{r['id']} no example for {plain}")
         if r['route']=='PHRASE' and not ex: r['example_lt'],r['example_en']=plain,r['english']
     r['check']='; '.join(c for c in checks if c)
+    if pv and pv.get('lithuanian_TARGET')==plain and pv.get('check'):
+        r['check']=pv['check']      # no lookups ran; keep the recorded verification
     return r
 
 def main():
@@ -302,9 +316,19 @@ for q in queue:
 # ---- 2. official-list rows ----
 POS2T={'N':'N','V':'V','A':'A','ADV':'ADV','PRON':'P','PREP':'PREP','CONJ':'CONJ','NUM':'NUM','INTJ':'PHRASE','PHRASE':'PHRASE','PREP/ADV':'PREP'}
 FUNC={'P','PREP','CONJ','ADV','NUM','Q'}
-nid=985
-def nextid():
-    global nid; s=f'A2-{nid:04d}'; nid+=1; return s
+# IDs are permanent card keys (images, audio and Anki GUIDs hang on them). a2_build/id_map.csv
+# freezes every id ever assigned; a new target gets the next free number, a known one keeps its id.
+ID_MAP_PATH=os.path.join(ROOT,'a2_build','id_map.csv')
+ID_MAP={}
+if os.path.exists(ID_MAP_PATH):
+    for _r in csv.DictReader(open(ID_MAP_PATH,encoding='utf-8')): ID_MAP[_r['lithuanian_TARGET']]=_r['id']
+nid=max([int(v.split('-')[1]) for v in ID_MAP.values()]+[984])+1
+def nextid(target=None):
+    global nid
+    if target is not None and target in ID_MAP: return ID_MAP[target]
+    s=f'A2-{nid:04d}'; nid+=1
+    if target is not None: ID_MAP[target]=s
+    return s
 staged=[]
 for t in triage:
     e=t['entry'].strip(); rt0=t['route']
@@ -344,7 +368,10 @@ for lt,en,typ,rt,level,cat,src,fr,note in ADD:
 order={p:i for i,p in enumerate(PHASES)}
 staged.sort(key=lambda r:(order[r['phase']],r['category'],base(r['lithuanian_TARGET'])))
 for r in staged:
-    r['id']=nextid(); out.append(finish(r))
+    r['id']=nextid(r['lithuanian_TARGET']); out.append(finish(r))
+with open(ID_MAP_PATH,'w',encoding='utf-8',newline='') as _f:
+    _w=csv.writer(_f); _w.writerow(['id','lithuanian_TARGET','english'])
+    for _r in sorted(out,key=lambda x:x['id']): _w.writerow([_r['id'],_r['lithuanian_TARGET'],_r['english']])
 
 # staging: subject phrases into the CSV, staging lines into a2_staging.json
 stg_notes={}; no_subject=[]

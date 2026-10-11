@@ -1,0 +1,1710 @@
+id,lithuanian_TARGET,english
+A2-0001,laikas,time
+A2-0002,valanda,hour
+A2-0003,minutė,minute
+A2-0004,sekundė,second
+A2-0005,diena,day
+A2-0006,savaitė,week
+A2-0007,mėnuo,month
+A2-0008,metai,year
+A2-0009,savaitgalis,weekend
+A2-0010,rytas,morning
+A2-0011,popietė,afternoon
+A2-0012,vakaras,evening
+A2-0013,naktis,night
+A2-0014,šiandien,today
+A2-0015,vakar,yesterday
+A2-0016,rytoj,tomorrow
+A2-0017,dabar,now
+A2-0018,pirmadienis,Monday
+A2-0019,antradienis,Tuesday
+A2-0020,trečiadienis,Wednesday
+A2-0021,ketvirtadienis,Thursday
+A2-0022,penktadienis,Friday
+A2-0023,šeštadienis,Saturday
+A2-0024,sekmadienis,Sunday
+A2-0025,sausis,January
+A2-0026,vasaris,February
+A2-0027,kovas,March
+A2-0028,balandis,April
+A2-0029,gegužė,May
+A2-0030,birželis,June
+A2-0031,liepa,July
+A2-0032,rugpjūtis,August
+A2-0033,rugsėjis,September
+A2-0034,spalis,October
+A2-0035,lapkritis,November
+A2-0036,gruodis,December
+A2-0037,pavasaris,spring
+A2-0038,vasara,summer
+A2-0039,ruduo,autumn
+A2-0040,žiema,winter
+A2-0041,nulis,zero
+A2-0042,vienas,one
+A2-0043,du,two
+A2-0044,trys,three
+A2-0045,keturi,four
+A2-0046,penki,five
+A2-0047,šeši,six
+A2-0048,septyni,seven
+A2-0049,aštuoni,eight
+A2-0050,devyni,nine
+A2-0051,dešimt,ten
+A2-0052,vienuolika,eleven
+A2-0053,dvylika,twelve
+A2-0054,trylika,thirteen
+A2-0055,keturiolika,fourteen
+A2-0056,penkiolika,fifteen
+A2-0057,šešiolika,sixteen
+A2-0058,septyniolika,seventeen
+A2-0059,aštuoniolika,eighteen
+A2-0060,devyniolika,nineteen
+A2-0061,dvidešimt,twenty
+A2-0062,trisdešimt,thirty
+A2-0063,keturiasdešimt,forty
+A2-0064,penkiasdešimt,fifty
+A2-0065,šešiasdešimt,sixty
+A2-0066,septyniasdešimt,seventy
+A2-0067,aštuoniasdešimt,eighty
+A2-0068,devyniasdešimt,ninety
+A2-0069,šimtas,hundred
+A2-0070,tūkstantis,thousand
+A2-0071,milijonas,million
+A2-0072,pirmas,first
+A2-0073,antras,second (2nd)
+A2-0074,trečias,third
+A2-0075,ketvirtas,fourth
+A2-0076,penktas,fifth
+A2-0077,paskutinis,last
+A2-0078,vardas,name
+A2-0079,pavardė,surname
+A2-0080,amžius,age
+A2-0084,adresas,address
+A2-0085,kasa,ticket office
+A2-0086,raktų pakabukas,key ring
+A2-0087,piniginė,wallet
+A2-0089,lagaminas,suitcase
+A2-0090,pasas,passport
+A2-0093,atvirukas,postcard
+A2-0094,pašto ženklas,stamp
+A2-0095,kioskas,newspaper stand
+A2-0096,eilė,queue
+A2-0100,užkandis,snack
+A2-0101,desertas,dessert
+A2-0102,meniu,menu
+A2-0104,čekis,receipt
+A2-0105,nuolaida,discount
+A2-0106,dydis,size
+A2-0107,grąža,change (money)
+A2-0108,kas,who
+A2-0110,kur,where
+A2-0111,kada,when
+A2-0112,kaip,how
+A2-0113,kodėl,why
+A2-0114,kiek,how much/many
+A2-0115,koks,what kind of
+A2-0116,kuris,which
+A2-0117,kieno,whose
+A2-0118,mano,my
+A2-0119,tavo,your (sg)
+A2-0120,jo,his
+A2-0121,jos,her
+A2-0122,mūsų,our
+A2-0123,jūsų,your (pl)
+A2-0124,jų,their
+A2-0125,savo,one's own
+A2-0126,šis,this
+A2-0127,tas,that
+A2-0128,šie,these
+A2-0129,tie,those
+A2-0130,kažkas,someone
+A2-0131,niekas,nobody
+A2-0132,visi,everyone
+A2-0135,visas,all/every
+A2-0136,į,"in, into"
+A2-0137,iš,"from, out of"
+A2-0138,su,with
+A2-0139,be,without
+A2-0140,ant,on
+A2-0141,po,under
+A2-0142,prie,"near, by"
+A2-0143,už,"behind, for"
+A2-0144,per,"through, during"
+A2-0145,nuo,from (since)
+A2-0146,iki,"until, up to"
+A2-0147,apie,about
+A2-0148,tarp,between
+A2-0149,prieš,before
+A2-0150,pas,to (a person)
+A2-0151,dėl,because of
+A2-0152,link,towards
+A2-0153,po,after
+A2-0154,ir,and
+A2-0155,bet,but
+A2-0156,arba,or
+A2-0157,nes,because
+A2-0158,todėl,therefore
+A2-0159,kad,that (conj)
+A2-0160,jei,if
+A2-0161,kai,when (conj)
+A2-0162,nors,although
+A2-0163,tačiau,however
+A2-0164,taip pat,also
+A2-0165,ar,whether
+A2-0166,labai,very
+A2-0167,gal,maybe
+A2-0168,tikrai,really
+A2-0169,dažnai,often
+A2-0170,retai,rarely
+A2-0171,visada,always
+A2-0172,niekada,never
+A2-0173,kartais,sometimes
+A2-0174,jau,already
+A2-0175,dar,"still, yet"
+A2-0176,tik,only
+A2-0177,vėl,again
+A2-0178,čia,here
+A2-0179,ten,there
+A2-0180,visur,everywhere
+A2-0181,niekur,nowhere
+A2-0182,kartu,together
+A2-0183,atskirai,separately
+A2-0184,gerai,well
+A2-0185,blogai,badly
+A2-0186,daug,a lot
+A2-0187,mažai,a little
+A2-0188,per,too (excessively)
+A2-0189,pakankamai,enough
+A2-0190,greitai,soon
+A2-0191,vėliau,later
+A2-0192,anksti,early
+A2-0193,vėlai,late
+A2-0194,būti,to be
+A2-0195,turėti,to have
+A2-0196,galėti,"to be able, can"
+A2-0197,norėti,to want
+A2-0198,reikėti,to need (impersonal)
+A2-0199,privalėti,"must, have to"
+A2-0200,ketinti,to intend
+A2-0201,bandyti,to try
+A2-0202,pradėti,to begin
+A2-0203,baigti,to finish
+A2-0204,tęsti,to continue
+A2-0205,patikti,to like
+A2-0206,mėgti,to love/like doing
+A2-0207,tapti,to become
+A2-0208,atrodyti,to seem
+A2-0209,kelionė,"journey, trip"
+A2-0210,bagažas,luggage
+A2-0211,viza,visa
+A2-0212,kryptis,direction
+A2-0213,atstumas,distance
+A2-0214,atvykimas,arrival
+A2-0215,išvykimas,departure
+A2-0216,tvarkaraštis,timetable
+A2-0217,peronas,platform
+A2-0219,muitinė,customs
+A2-0220,turistas,tourist
+A2-0221,gidas,guide
+A2-0222,suvenyras,souvenir
+A2-0223,keliauti,to travel
+A2-0224,atvykti,to arrive
+A2-0225,išvykti,"to leave, depart"
+A2-0226,rezervuoti,"to book, reserve"
+A2-0227,pakuoti,to pack
+A2-0228,sveikata,health
+A2-0230,receptas,prescription
+A2-0231,vaistinė,pharmacy
+A2-0232,peršalimas,cold (illness)
+A2-0233,karščiavimas,fever
+A2-0234,kosulys,cough
+A2-0236,slaugytoja,nurse
+A2-0237,odontologas,dentist
+A2-0238,vizitas,appointment
+A2-0239,sirgti,to be ill
+A2-0240,gydyti,"to treat, cure"
+A2-0241,jaustis,to feel
+A2-0242,skaudėti,to hurt (ache)
+A2-0243,susitikimas,meeting
+A2-0244,projektas,project
+A2-0245,alga,salary
+A2-0246,kolega,colleague
+A2-0247,viršininkas,boss
+A2-0248,įmonė,company
+A2-0249,pokalbis,interview
+A2-0250,pamoka,lesson
+A2-0251,egzaminas,exam
+A2-0252,namų darbai,homework
+A2-0254,pažymys,"grade, mark"
+A2-0255,diplomas,degree
+A2-0256,patirtis,experience
+A2-0257,studijuoti,to study
+A2-0259,dėstyti,to teach
+A2-0260,aiškinti,to explain
+A2-0261,atsakyti,to answer
+A2-0262,klausti,to ask
+A2-0263,kartoti,to repeat
+A2-0264,atsiminti,to remember
+A2-0265,pamiršti,to forget
+A2-0266,prekė,"goods, product"
+A2-0268,grynieji pinigai,cash
+A2-0270,sąskaita,bill (restaurant); account (bank)
+A2-0272,kainuoti,to cost
+A2-0273,užsisakyti,to order
+A2-0274,rinktis,to choose
+A2-0275,keisti,"to change, exchange"
+A2-0276,išleisti,to spend
+A2-0277,taupyti,to save (money)
+A2-0278,baldai,furniture
+A2-0282,svetainė,living room
+A2-0283,nuoma,rent
+A2-0285,šiukšlės,rubbish
+A2-0286,skalbiniai,laundry
+A2-0287,skalbti,to wash (clothes)
+A2-0288,tvarkyti,to tidy up
+A2-0289,taisyti,to repair
+A2-0290,ilsėtis,to rest
+A2-0291,keltis,to wake up
+A2-0292,rengtis,to get dressed
+A2-0293,jausmas,feeling
+A2-0294,laimė,happiness
+A2-0295,liūdesys,sadness
+A2-0296,baimė,fear
+A2-0297,pyktis,anger
+A2-0298,nuostaba,surprise
+A2-0299,charakteris,character
+A2-0300,pavargęs,tired
+A2-0301,ramus,calm
+A2-0302,nervingas,nervous
+A2-0303,nuobodu,bored; boring (it is boring)
+A2-0304,mandagus,polite
+A2-0305,draugiškas,friendly
+A2-0306,protingas,clever
+A2-0307,kantrus,patient
+A2-0308,drąsus,brave
+A2-0309,tingus,lazy
+A2-0310,darbštus,hard-working
+A2-0311,internetas,internet
+A2-0313,el. paštas,e-mail
+A2-0314,žinutė,message
+A2-0315,programėlė,app
+A2-0317,slaptažodis,password
+A2-0318,failas,file
+A2-0319,baterija,battery (cell)
+A2-0320,kroviklis,charger
+A2-0321,atsisiųsti,to download
+A2-0322,spausti,"to click, press"
+A2-0323,siųsti,to send
+A2-0325,įjungti,to switch on
+A2-0326,išjungti,to switch off
+A2-0327,audra,storm
+A2-0328,rūkas,fog
+A2-0329,šalna,frost
+A2-0330,prognozė,forecast
+A2-0332,bala,puddle
+A2-0333,šešėlis,shade
+A2-0334,valstybė,"state, country"
+A2-0335,vyriausybė,government
+A2-0336,įstatymas,law
+A2-0337,mokestis,tax
+A2-0338,naujienos,news
+A2-0339,politika,politics
+A2-0340,ekonomika,economy
+A2-0341,problema,problem
+A2-0342,sprendimas,solution
+A2-0343,priežastis,reason
+A2-0344,pavyzdys,example
+A2-0345,skirtumas,difference
+A2-0346,galimybė,possibility
+A2-0347,taisyklė,rule
+A2-0348,Labas,Hello (informal)
+A2-0349,Sveiki,Hello (formal/plural)
+A2-0350,Labas rytas,Good morning
+A2-0351,Laba diena,Good day
+A2-0352,Labas vakaras,Good evening
+A2-0353,Labanakt,Good night
+A2-0354,Viso gero,Goodbye
+A2-0355,Iki pasimatymo,See you
+A2-0356,Iki,Bye (informal)
+A2-0357,Prašau,Please / you're welcome
+A2-0358,Ačiū,Thank you
+A2-0359,Labai ačiū,Thank you very much
+A2-0360,Nėra už ką,You're welcome (not at all)
+A2-0362,Atleiskite,Excuse me (formal)
+A2-0363,Malonu susipažinti,Nice to meet you
+A2-0364,Kaip sekasi?,How are you?
+A2-0365,Man gerai,I'm fine
+A2-0366,Koks jūsų vardas?,What is your name?
+A2-0367,Mano vardas…,My name is…
+A2-0368,Iš kur jūs?,Where are you from?
+A2-0369,Aš esu iš…,I am from…
+A2-0370,Ar kalbate angliškai?,Do you speak English?
+A2-0371,Nesuprantu,I don't understand
+A2-0372,Suprantu,I understand
+A2-0373,Nežinau,I don't know
+A2-0374,Ar galite pakartoti?,Could you repeat?
+A2-0375,"Kalbėkite lėčiau, prašau","Speak more slowly, please"
+A2-0376,Ką reiškia…?,What does … mean?
+A2-0377,Kiek kainuoja?,How much does it cost?
+A2-0378,Kur yra…?,Where is…?
+A2-0379,Kiek valandų?,What time is it?
+A2-0380,Norėčiau…,I would like…
+A2-0381,"Sąskaitą, prašau","The bill, please"
+A2-0382,Ar yra…?,Is there…?
+A2-0383,Ar galite man padėti?,Can you help me?
+A2-0384,Padėkite!,Help!
+A2-0385,Atsargiai!,Be careful!
+A2-0386,Aš pasiklydau,I'm lost
+A2-0403,įeiti,to enter
+A2-0404,išeiti,to exit
+A2-0405,grįžti,to return
+A2-0406,pereiti,to cross
+A2-0407,lipti,to climb
+A2-0408,leistis,to descend
+A2-0409,artintis,to approach
+A2-0410,tolti,to move away
+A2-0411,persikelti,to move (house)
+A2-0412,skubėti,to hurry
+A2-0413,laukti,to wait
+A2-0414,susitikti,to meet
+A2-0415,palydėti,to accompany
+A2-0416,vesti,to lead
+A2-0417,atnešti,to bring
+A2-0418,išsinešti,to take away
+A2-0419,dėti,to put (place)
+A2-0421,nuleisti,to lower
+A2-0423,apsisukti,to turn around
+A2-0424,įlipti,to enter (vehicle)
+A2-0425,išlipti,to get off
+A2-0426,kalbėti,to speak
+A2-0428,pasakoti,to tell
+A2-0429,aptarti,to talk over
+A2-0430,diskutuoti,to discuss
+A2-0431,sutikti,to agree
+A2-0432,nesutikti,to disagree
+A2-0433,žadėti,to promise
+A2-0434,kviesti,to invite
+A2-0435,dėkoti,to thank
+A2-0436,atsiprašyti,to apologise
+A2-0437,sveikinti,to greet
+A2-0439,skųstis,to complain
+A2-0440,patarti,to advise
+A2-0441,perspėti,to warn
+A2-0442,šaukti,to shout
+A2-0443,šnabždėti,to whisper
+A2-0444,versti,to translate
+A2-0445,užrašyti,to write down
+A2-0446,žinoti,to know (a fact)
+A2-0447,suprasti,to understand
+A2-0448,tikėti,to believe
+A2-0449,abejoti,to doubt
+A2-0450,nuspręsti,to decide
+A2-0451,pasirinkti,to choose
+A2-0452,tikėtis,to hope
+A2-0453,nerimauti,to worry
+A2-0454,bijoti,to be afraid
+A2-0455,stebėtis,to be surprised
+A2-0456,mėgautis,to enjoy
+A2-0457,labiau mėgti,to prefer
+A2-0458,planuoti,to plan
+A2-0459,įsivaizduoti,to imagine
+A2-0460,pastebėti,to notice
+A2-0461,lyginti,to compare
+A2-0462,reikšti,to mean
+A2-0463,priklausyti,to depend
+A2-0464,naudoti,to use
+A2-0466,griauti,to destroy
+A2-0468,gerinti,to improve
+A2-0470,pridėti,to add
+A2-0471,pašalinti,to remove
+A2-0472,pripildyti,to fill
+A2-0473,ištuštinti,to empty
+A2-0474,uždengti,to cover
+A2-0477,užrakinti,to lock
+A2-0478,atrakinti,to unlock
+A2-0479,rišti,to tie
+A2-0481,deginti,to burn
+A2-0482,šaldyti,to freeze
+A2-0483,virti,to boil
+A2-0484,kepti,to bake
+A2-0486,pilti,to pour
+A2-0487,sverti,to weigh
+A2-0488,matuoti,to measure
+A2-0490,tikrinti,to check
+A2-0491,sutvarkyti,"to fix, arrange"
+A2-0492,ruošti,to prepare
+A2-0493,saugoti,to protect
+A2-0494,padėti,to help
+A2-0495,leisti,to allow
+A2-0496,drausti,to forbid
+A2-0497,liepti,to order (command)
+A2-0498,veikti,to work (function)
+A2-0499,gyventi,to live (reside)
+A2-0500,lankyti,to visit
+A2-0501,švęsti,to celebrate
+A2-0503,skirtis,to divorce
+A2-0504,gimti,to be born
+A2-0505,auginti,to raise (children)
+A2-0506,uždirbti,to earn
+A2-0507,skolintis,to borrow
+A2-0508,skolinti,to lend
+A2-0509,būti skolingas,to owe (be in debt)
+A2-0510,nuomotis,to rent
+A2-0511,dalintis,to share
+A2-0515,varžytis,to compete
+A2-0516,treniruotis,to practise
+A2-0517,atsipalaiduoti,to relax
+A2-0518,svarbus,important
+A2-0519,reikalingas,necessary
+A2-0520,galimas,possible
+A2-0521,neįmanomas,impossible
+A2-0524,įdomus,interesting
+A2-0525,nuobodus,boring
+A2-0526,naudingas,useful
+A2-0527,pavojingas,dangerous
+A2-0528,saugus,safe
+A2-0529,nemokamas,free (no cost)
+A2-0530,užimtas,busy
+A2-0531,pasiruošęs,ready
+A2-0533,uždarytas,closed
+A2-0534,pilnas,full
+A2-0535,tuščias,empty
+A2-0536,toks pat,same
+A2-0537,kitoks,different
+A2-0538,panašus,similar
+A2-0539,teisingas,correct
+A2-0540,klaidingas,"wrong, incorrect"
+A2-0541,tikras,true
+A2-0542,netikras,false
+A2-0543,realus,real
+A2-0544,modernus,modern
+A2-0545,tradicinis,traditional
+A2-0546,populiarus,popular
+A2-0548,natūralus,natural
+A2-0549,dirbtinis,artificial
+A2-0550,viešas,public
+A2-0551,privatus,private
+A2-0552,vietinis,local
+A2-0553,užsienio,foreign
+A2-0554,nacionalinis,national
+A2-0555,pagrindinis,main
+A2-0556,ypatingas,special
+A2-0557,įprastas,usual
+A2-0558,keistas,strange
+A2-0559,patogus,comfortable
+A2-0560,nepatogus,uncomfortable
+A2-0562,perpildytas,crowded
+A2-0564,skanus,delicious
+A2-0565,neskanus,tasteless
+A2-0566,šviežias,fresh
+A2-0567,pasenęs,stale
+A2-0568,saldus,sweet
+A2-0569,rūgštus,sour
+A2-0570,sūrus,salty
+A2-0571,kartus,bitter
+A2-0572,aštrus,spicy
+A2-0578,paauglys,teenager
+A2-0581,teta,aunt
+A2-0582,dėdė,uncle
+A2-0583,pusbrolis,cousin
+A2-0584,sūnėnas,nephew
+A2-0585,dukterėčia,niece
+A2-0588,giminaitis,relative
+A2-0589,svečias,guest
+A2-0590,nepažįstamasis,stranger
+A2-0591,rajonas,neighbourhood
+A2-0592,gyventojai,population
+A2-0594,narys,member
+A2-0595,pora,couple
+A2-0600,gerklė,throat
+A2-0601,krūtinė,chest
+A2-0602,pilvas,stomach
+A2-0603,alkūnė,elbow
+A2-0604,riešas,wrist
+A2-0605,kulkšnis,ankle
+A2-0606,nagas,nail
+A2-0609,raumuo,muscle
+A2-0612,aukštas,"storey, floor (of a building)"
+A2-0613,laiptai,stairs
+A2-0615,balkonas,balcony
+A2-0618,garažas,garage
+A2-0623,lentyna,shelf
+A2-0624,stalčius,drawer
+A2-0625,spinta,cupboard
+A2-0626,veidrodis,mirror
+A2-0627,užuolaida,curtain
+A2-0628,kilimas,carpet
+A2-0629,antklodė,blanket
+A2-0630,pagalvė,pillow
+A2-0631,rankšluostis,towel
+A2-0633,dantų šepetėlis,toothbrush
+A2-0634,šukos,comb
+A2-0635,žirklės,scissors
+A2-0637,virvė,rope
+A2-0638,žvakė,candle
+A2-0640,lemputė,bulb
+A2-0641,šiukšliadėžė,bin
+A2-0642,kibiras,bucket
+A2-0643,šluota,broom
+A2-0644,kaimas,village
+A2-0645,aikštė,town square
+A2-0647,krautuvėlė,corner shop
+A2-0649,paštas,post office
+A2-0650,nuovada,police station
+A2-0651,gaisrinė,fire station
+A2-0652,muziejus,museum
+A2-0653,kinas,cinema
+A2-0654,stadionas,stadium
+A2-0656,sporto salė,gym
+A2-0658,kapinės,cemetery
+A2-0659,stotelė,bus stop
+A2-0660,perėja,crossing
+A2-0661,šaligatvis,pavement
+A2-0662,šviesoforas,traffic light
+A2-0664,degalinė,petrol station
+A2-0665,stovėjimo aikštelė,car park
+A2-0666,ambasada,embassy
+A2-0667,banko skyrius,bank branch
+A2-0668,patiekalas,meal
+A2-0670,salotos,salad
+A2-0671,sumuštinis,sandwich
+A2-0672,košė,porridge
+A2-0673,blynai,pancakes
+A2-0674,koldūnas,dumpling
+A2-0675,dešra,sausage
+A2-0676,kumpis,ham
+A2-0677,šoninė,bacon
+A2-0679,sviestas,butter
+A2-0680,miltai,flour
+A2-0683,pipirai,pepper
+A2-0684,medus,honey
+A2-0685,uogienė,jam
+A2-0686,jogurtas,yoghurt
+A2-0688,grietinėlė,cream
+A2-0693,grybas,mushroom
+A2-0694,uoga,berry
+A2-0695,riešutas,nut
+A2-0696,česnakas,garlic
+A2-0697,svogūnas,onion
+A2-0698,kopūstas,cabbage
+A2-0699,burokėlis,beetroot
+A2-0700,agurkas,cucumber
+A2-0701,pomidoras,tomato
+A2-0702,kriaušė,pear
+A2-0703,slyva,plum
+A2-0704,vyšnios,cherries
+A2-0705,braškės,strawberries
+A2-0706,vynuogės,grapes
+A2-0707,megztinis,jumper
+A2-0708,striukė,jacket
+A2-0709,šalikas,scarf
+A2-0710,pirštinės,gloves
+A2-0712,diržas,belt
+A2-0713,kojinės,socks
+A2-0714,auliniai batai,boots
+A2-0715,basutės,sandals
+A2-0716,saga,button
+A2-0717,užtrauktukas,zip
+A2-0718,skėtis,umbrella
+A2-0719,akiniai,glasses
+A2-0722,tramvajus,tram
+A2-0723,troleibusas,trolleybus
+A2-0724,taksi,taxi
+A2-0725,motociklas,motorbike
+A2-0727,ratas,wheel
+A2-0728,sėdynė,seat
+A2-0729,vairuotojas,driver
+A2-0730,keleivis,passenger
+A2-0731,eismas,traffic
+A2-0732,avarija,accident
+A2-0733,greitis,speed
+A2-0734,kuras,fuel
+A2-0737,laukas,field
+A2-0738,pieva,meadow
+A2-0742,pakrantė,coast
+A2-0743,krantas,river bank
+A2-0744,pelkė,swamp
+A2-0745,takas,path
+A2-0746,šaka,branch
+A2-0750,krūmas,bush
+A2-0751,ąžuolas,oak
+A2-0752,pušis,pine
+A2-0753,beržas,birch
+A2-0755,avis,sheep
+A2-0756,ožka,goat
+A2-0757,višta,chicken
+A2-0758,antis,duck
+A2-0759,žąsis,goose
+A2-0760,triušis,rabbit
+A2-0761,lapė,fox
+A2-0762,vilkas,wolf
+A2-0763,lokys,bear
+A2-0764,elnias,deer
+A2-0765,voverė,squirrel
+A2-0767,varlė,frog
+A2-0768,gyvatė,snake
+A2-0769,vabzdys,insect
+A2-0770,bitė,bee
+A2-0771,drugelis,butterfly
+A2-0772,voras,spider
+A2-0773,skruzdėlė,ant
+A2-0774,gandras,stork
+A2-0775,pelėda,owl
+A2-0776,profesija,profession
+A2-0777,darbdavys,employer
+A2-0778,darbuotojas,employee
+A2-0779,klientas,customer
+A2-0782,inžinierius,engineer
+A2-0784,slaugytojas,nurse (male)
+A2-0788,ūkininkas,farmer
+A2-0789,statybininkas,builder
+A2-0791,muzikantas,musician
+A2-0792,rašytojas,writer
+A2-0794,mokslininkas,scientist
+A2-0795,klasė,classroom
+A2-0796,lenta,blackboard
+A2-0797,sąsiuvinis,notebook
+A2-0799,trintukas,eraser
+A2-0800,liniuotė,ruler
+A2-0801,žodynas,dictionary
+A2-0803,klausimas,question
+A2-0804,atsakymas,answer
+A2-0805,klaida,mistake
+A2-0806,žodis,word
+A2-0807,sakinys,sentence
+A2-0808,istorija,story
+A2-0812,koncertas,concert
+A2-0813,paroda,exhibition
+A2-0815,paveikslas,painting
+A2-0816,pomėgis,hobby
+A2-0820,atostogos,holiday (vacation)
+A2-0821,šventė,festival
+A2-0823,vakarėlis,party
+A2-0824,pradžia,beginning
+A2-0825,pabaiga,end
+A2-0826,vidurys,middle
+A2-0827,akimirka,moment
+A2-0828,laikotarpis,period
+A2-0831,gimtadienis,birthday
+A2-0833,planas,plan
+A2-0834,idėja,idea
+A2-0835,nuomonė,opinion
+A2-0836,patarimas,advice
+A2-0838,pasirinkimas,choice
+A2-0839,proga,chance
+A2-0840,tikslas,purpose
+A2-0841,rezultatas,result
+A2-0842,pokytis,change (noun)
+A2-0843,tvarka,order (sequence)
+A2-0844,dalis,part
+A2-0846,rūšis,"kind, type"
+A2-0847,būdas,"way, method"
+A2-0848,tiesa,truth
+A2-0849,melas,lie (untruth)
+A2-0850,paslaptis,secret
+A2-0851,svajonė,dream
+A2-0852,atmintis,memory
+A2-0853,įprotis,habit
+A2-0854,sėkmė,luck
+A2-0855,pavojus,danger
+A2-0856,saugumas,safety
+A2-0857,pagalba,help (noun)
+A2-0858,paslauga,service
+A2-0859,informacija,information
+A2-0860,detalė,detail
+A2-0861,sąrašas,list
+A2-0862,skaičius,number (figure)
+A2-0864,euras,euro
+A2-0865,centas,cent
+A2-0866,moneta,coin
+A2-0868,banko sąskaita,bank account
+A2-0869,paskola,loan
+A2-0870,skola,debt
+A2-0871,atlyginimas,salary payment
+A2-0872,draudimas,insurance
+A2-0874,dokumentas,document
+A2-0875,anketa,form (to fill)
+A2-0876,parašas,signature
+A2-0877,leidimas,permission
+A2-0878,registracija,appointment (booking)
+A2-0880,Atsiprašau…,"Excuse me, please…"
+A2-0881,Atsiprašau,I'm sorry
+A2-0882,Nieko tokio,No problem
+A2-0883,Žinoma,Of course
+A2-0884,Akimirką,Just a moment
+A2-0885,Prašom,Here you are
+A2-0886,Sveiki atvykę!,Welcome!
+A2-0887,Sėkmės!,Good luck!
+A2-0888,Į sveikatą!,Cheers!
+A2-0889,Skanaus,Bon appétit
+A2-0890,Su gimtadieniu!,Happy birthday!
+A2-0891,Sveikinu!,Congratulations!
+A2-0892,Greitai pasveik!,Get well soon
+A2-0893,Iki rytojaus,See you tomorrow
+A2-0894,Geros dienos,Have a nice day
+A2-0895,Geros kelionės,Good luck on the trip
+A2-0896,Kas tai?,What is this?
+A2-0897,Kas tas žmogus?,Who is that?
+A2-0898,Kur yra tualetas?,Where is the toilet?
+A2-0899,Kiek tai kainuoja?,How much is it?
+A2-0900,Nekalbu lietuviškai,I don't speak Lithuanian
+A2-0901,Truputį,A little
+A2-0902,"Pakartokite, prašau",Please repeat
+A2-0903,"Užrašykite, prašau","Write it down, please"
+A2-0904,Ką tai reiškia?,What does it mean?
+A2-0905,Kaip lietuviškai …?,How do you say … in Lithuanian?
+A2-0906,Man reikia pagalbos,I need help
+A2-0907,Iškvieskite gydytoją!,Call a doctor!
+A2-0909,Kur galiu rasti…?,Where can I find…?
+A2-0910,Mano vardas Dainius,My name is Dainius
+A2-0911,Aš esu iš Lietuvos,I am from Lithuania
+A2-0912,Aš gyvenu Vilniuje,I live in Vilnius
+A2-0913,Man dvidešimt metų,I am twenty years old
+A2-0914,Aš turiu brolį,I have a brother
+A2-0915,Neturiu laiko,I don't have time
+A2-0916,Noriu valgyti,I want to eat
+A2-0917,Norėčiau kavos,I would like coffee
+A2-0918,Galiu truputį kalbėti,I can speak a little
+A2-0919,Man reikia vandens,I need water
+A2-0920,Man patinka šis miestas,I like this city
+A2-0921,Tai mano namas,This is my house
+A2-0922,Čia yra parduotuvė,There is a shop here
+A2-0923,Šiandien šalta,It is cold today
+A2-0925,Trečia valanda,It is three o'clock
+A2-0926,Kur tu eini?,Where are you going?
+A2-0927,Einu namo,I am going home
+A2-0928,Kiek kainuoja bilietas?,How much does the ticket cost?
+A2-0929,"Nesuprantu, atsiprašau","I don't understand, sorry"
+A2-0930,Mano nuomone,In my opinion
+A2-0931,"Manau, kad…",I think that…
+A2-0932,Man atrodo,It seems to me
+A2-0933,Sutinku,I agree
+A2-0934,Nesutinku,I don't agree
+A2-0935,Jūs teisus,You are right
+A2-0936,Gera mintis,That's a good idea
+A2-0937,Nesvarbu,It doesn't matter
+A2-0938,Priklauso,It depends
+A2-0939,Kiek žinau,As far as I know
+A2-0940,Pavyzdžiui,For example
+A2-0941,Tai yra,That is to say
+A2-0942,Viena vertus,On the one hand
+A2-0943,Kita vertus,On the other hand
+A2-0944,Pirmiausia,First of all
+A2-0945,Pagaliau,"Finally, at last"
+A2-0946,Beje,By the way
+A2-0947,Deja,Unfortunately
+A2-0948,Laimei,Luckily
+A2-0949,"Žinoma, ne",Of course not
+A2-0950,Ar galėtumėte man padėti?,"Could you help me, please?"
+A2-0951,Norėčiau rezervuoti kambarį,I would like to book a room
+A2-0952,Ar yra laisvas staliukas?,Is there a table free?
+A2-0953,Imsiu šitą,I'll take this one
+A2-0954,Ar galiu mokėti kortele?,Can I pay by card?
+A2-0955,Kur reikia persėsti?,Where do I have to change?
+A2-0956,Kada atsidaro?,What time does it open?
+A2-0957,Kaip nuvykti į…?,How do I get to…?
+A2-0958,Kairėje,It's on the left
+A2-0959,Eikite tiesiai,Go straight ahead
+A2-0960,Esu užsiregistravęs pas gydytoją,I have an appointment (with the doctor)
+A2-0961,Blogai jaučiuosi,I don't feel well
+A2-0962,Čia skauda,It hurts here
+A2-0963,Esu alergiškas…,I'm allergic to…
+A2-0964,Ar galite ką nors rekomenduoti?,Can you recommend something?
+A2-0965,Vakar nuėjau į parduotuvę,Yesterday I went to the shop
+A2-0966,Buvau namuose,I was at home
+A2-0967,Rytoj dirbsiu,Tomorrow I will work
+A2-0968,Paskambinsiu tau vėliau,I will call you later
+A2-0969,Anksčiau gyvendavau Kaune,I used to live in Kaunas
+A2-0970,Niekada nebuvau Latvijoje,I have never been to Latvia
+A2-0971,"Jei lis, liksiu namie","If it rains, I will stay home"
+A2-0972,"Eičiau, jei turėčiau laiko",I would go if I had time
+A2-0973,Šis didesnis nei tas,This is bigger than that
+A2-0974,Tai geriausias restoranas mieste,It is the best restaurant in the city
+A2-0975,Metus mokausi lietuvių kalbos,I have been learning Lithuanian for a year
+A2-0976,Ketinu aplankyti močiutę,I am going to visit my grandmother
+A2-0977,"Ji paklausė, kur aš gyvenu",She asked me where I live
+A2-0978,"Nežinau, ar jis ateis",I don't know if he is coming
+A2-0979,"Lengviau, nei maniau",It is easier than I thought
+A2-0980,Knygą parašė lietuvis,The book was written by a Lithuanian
+A2-0981,Čia negalima rūkyti,You must not smoke here
+A2-0982,Reikia rezervuoti iš anksto,It is necessary to book in advance
+A2-0983,Domiuosi istorija,I am interested in history
+A2-0984,Susitinkame šeštą valandą,We are meeting at six
+A2-0985,aiškiai,clearly
+A2-0986,anksčiau,earlier; before
+A2-0987,arti,near; close
+A2-0988,aukštyn,upwards
+A2-0989,aukščiau,higher; above
+A2-0990,bent,at least
+A2-0991,bet kada,any time
+A2-0992,bet kur,anywhere
+A2-0993,beveik,almost
+A2-0994,būtinai,definitely; necessarily
+A2-0995,dešinėje,on the right
+A2-0996,dukart,twice
+A2-0997,galbūt,perhaps
+A2-0998,galima,it is allowed; one may
+A2-0999,gana,enough; quite; rather
+A2-1000,ilgai,for a long time
+A2-1001,irgi,"also, too"
+A2-1002,iškart,"at once, immediately"
+A2-1003,juk,"after all, surely (particle)"
+A2-1004,kada nors,ever; some time
+A2-1005,kai kur,in some places
+A2-1006,kasdien,every day
+A2-1007,kažkada,once; some time
+A2-1008,kažkiek,some amount
+A2-1009,kažkur,somewhere
+A2-1010,kitaip,otherwise; differently
+A2-1011,kitur,elsewhere
+A2-1012,klaidingai,wrongly
+A2-1013,kur nors,somewhere
+A2-1014,labiau,more
+A2-1015,laisvai,freely; fluently
+A2-1016,lauke,outside (location)
+A2-1017,lengvai,easily
+A2-1018,lietuviškai,in Lithuanian
+A2-1019,lėtai,slowly
+A2-1020,matyt,"apparently, evidently"
+A2-1021,maždaug,"approximately, about"
+A2-1022,minus,minus
+A2-1023,naudinga,useful
+A2-1024,nedaug,not much; a little
+A2-1025,negerai,not good
+A2-1026,nelabai,not very
+A2-1027,net,even (particle)
+A2-1028,netoli,not far
+A2-1029,netyčia,by accident
+A2-1030,niekaip,in no way
+A2-1031,nuolat,"constantly, all the time"
+A2-1032,pagarbiai,respectfully (letter closing)
+A2-1033,paprastai,usually
+A2-1034,pernai,last year
+A2-1035,plius,plus
+A2-1036,poryt,the day after tomorrow
+A2-1037,puikiai,excellently
+A2-1038,retkarčiais,occasionally
+A2-1039,staiga,suddenly
+A2-1040,sunkiai,with difficulty
+A2-1041,sunku,it is difficult
+A2-1042,tada,then
+A2-1043,taisyklinga,correct(ly)
+A2-1044,tamsiai,dark (of colours)
+A2-1045,teisingai,correctly
+A2-1046,tiek,so much
+A2-1047,tiesiai,straight on
+A2-1048,tiesiog,"simply, just"
+A2-1049,tiksliai,exactly
+A2-1050,toli,far
+A2-1051,trumpai,briefly
+A2-1052,turbūt,probably
+A2-1053,tyčia,on purpose
+A2-1054,užpernai,the year before last
+A2-1055,užvakar,the day before yesterday
+A2-1056,viduje,inside (location)
+A2-1057,vienąkart,once
+A2-1058,vis dar,still (continuing)
+A2-1059,visai,completely; quite
+A2-1060,ypač,especially
+A2-1061,į lauką,outside (direction)
+A2-1062,į vidų,inside (direction)
+A2-1063,šiek tiek,a little
+A2-1064,štai,"here is, look (presentative)"
+A2-1065,šviesiai,light (of colours)
+A2-1066,šįryt,this morning
+A2-1067,žemiau,lower; below
+A2-1068,žemyn,downwards
+A2-1069,jeigu,if
+A2-1070,kadangi,because; since
+A2-1071,kol,while; until
+A2-1072,negu,than
+A2-1073,nei,than; nor
+A2-1074,o,and; but
+A2-1075,taigi,"so, therefore"
+A2-1076,keletas,several
+A2-1077,keli,several (masc)
+A2-1078,kelios,several (fem)
+A2-1079,pusantro,one and a half
+A2-1080,aplink,around
+A2-1081,išskyrus,except
+A2-1082,pagal,according to
+A2-1083,palei,along
+A2-1084,priešais,opposite
+A2-1085,pro,"through, past (+acc)"
+A2-1086,ties,at; by
+A2-1087,vidury,in the middle of
+A2-1088,vietoj,instead of (+gen)
+A2-1089,virš,above
+A2-1090,šalia,next to
+A2-1091,abi,both (fem)
+A2-1092,abu,both (masc)
+A2-1093,bet kas,anything; anyone
+A2-1094,jai,to her (dative)
+A2-1095,jam,to him (dative)
+A2-1096,jiems,to them (dative)
+A2-1097,jokia,no (fem)
+A2-1098,joks,no; none (masc)
+A2-1099,jums,"to you (dative, pl/formal)"
+A2-1100,juos,them (accusative)
+A2-1101,jus,"you (accusative, pl)"
+A2-1102,ją,"her, it (accusative)"
+A2-1103,jį,"him, it (accusative)"
+A2-1104,kai kas,something; some people
+A2-1105,kai kuri,some (fem)
+A2-1106,kai kuris,some (masc)
+A2-1107,kažkokia,some kind of (fem)
+A2-1108,kažkoks,some kind of (masc)
+A2-1109,kažkuri,some one (fem)
+A2-1110,kažkuris,some one (masc)
+A2-1111,kelinta,which (ordinal; fem)
+A2-1112,kelintas,which (ordinal; masc)
+A2-1113,kiekvienas,every; each
+A2-1114,kitas,other; next
+A2-1115,kokia,what kind (fem)
+A2-1116,ką,what (acc)
+A2-1117,man,to me (dative)
+A2-1118,mane,me (accusative)
+A2-1119,mums,to us (dative)
+A2-1120,mus,us (accusative)
+A2-1121,nieko,nothing (gen)
+A2-1122,nė vienas,not a single one
+A2-1123,pati,herself; self (fem)
+A2-1124,pats,himself; self (masc)
+A2-1125,savęs,oneself (gen)
+A2-1126,ta,that (fem)
+A2-1127,tau,"to you (dative, sg)"
+A2-1128,tave,"you (accusative, sg)"
+A2-1129,tokia,such (fem)
+A2-1130,toks,such (masc)
+A2-1131,viskas,everything
+A2-1132,visokia,all kinds (fem)
+A2-1133,visoks,all kinds (masc)
+A2-1134,ši,this (fem)
+A2-1135,šita,this (fem; colloquial)
+A2-1136,šitas,this (masc; colloquial)
+A2-1137,kam,to whom; what for (dat. of kas)
+A2-1138,ko,"of what, what (gen. of kas)"
+A2-1139,kuo,"with what, by what (instr. of kas)"
+A2-1140,iš pradžių,at first
+A2-1141,kasmet,every year
+A2-1142,paskui,"afterwards, then"
+A2-1143,seniai,long ago; for a long time
+A2-1144,šiemet,this year
+A2-1145,atidaryta,open (sign on a door)
+A2-1146,draudžiama,forbidden (sign)
+A2-1147,leidžiama,allowed (sign)
+A2-1148,aišku,of course; clearly
+A2-1149,atsargiai,"carefully; ""careful!"""
+A2-1150,gaila,a pity; sorry
+A2-1151,mielai,gladly
+A2-1152,nemokamai,free of charge
+A2-1153,nuostabu,wonderful
+A2-1154,puiku,great!
+A2-1155,įdomu,interesting; I wonder
+A2-1156,šaunu,cool!; great!
+A2-1157,Kiek jums metų?,How old are you? (formal)
+A2-1158,Kuo dirbate?,What do you do (for work)?
+A2-1159,Kur gyvenate?,Where do you live?
+A2-1160,Ką veiki?,What are you doing? / What are you up to?
+A2-1161,Viskas gerai,Everything is fine / all good
+A2-1162,Gero savaitgalio!,Have a good weekend!
+A2-1163,Laimingų Naujųjų metų!,Happy New Year!
+A2-1164,Linksmų Kalėdų!,Merry Christmas!
+A2-1165,Su šventėmis!,Happy holidays!
+A2-1166,"Sėskitės, prašau","Sit down, please"
+A2-1167,Užeikite!,Come in!
+A2-1168,Ar turite…?,Do you have…?
+A2-1169,minutėlė,just a minute
+A2-1170,šaunuolis,good lad; well done
+A2-1171,alio,hello (on the phone)
+A2-1172,be abejo,undoubtedly
+A2-1173,darbo valandos,working hours; opening hours
+A2-1174,dingo elektra,the power went out
+A2-1175,drabužiai moterims,women's clothing
+A2-1176,drabužiai vaikams,children's clothing
+A2-1177,drabužiai vyrams,men's clothing
+A2-1178,dėkui,thanks
+A2-1179,dėmesio,attention!
+A2-1180,eiti miegoti,to go to bed
+A2-1181,Gelbėkit!,Help!
+A2-1182,labai gerai,very good
+A2-1183,Man patiko!,I liked it!
+A2-1184,Negali būti!,No way!
+A2-1185,nieko baisaus,it's nothing; never mind
+A2-1186,pietų pertrauka,lunch break
+A2-1187,Sudie,goodbye
+A2-1188,trūko vamzdis,a pipe has burst
+A2-1189,vieta prie lango,window seat
+A2-1190,vieta prie tako,aisle seat
+A2-1191,šiaip sau,so-so
+A2-1192,Be penkių trys,Five to three
+A2-1193,Kuri valanda?,What time is it? (alternative)
+A2-1194,Penkios po trijų,Five past three
+A2-1195,Pusė trijų,Half past two (lit. half of the third)
+A2-1196,atrodo,it seems; looks
+A2-1197,susipažinti,to get acquainted
+A2-1198,alkanas,hungry
+A2-1199,apvalus,round
+A2-1200,išjungtas,switched off
+A2-1201,keptas,fried; baked
+A2-1202,linksmas,cheerful
+A2-1203,lygus,flat; even; equal
+A2-1204,nėščia,pregnant
+A2-1205,rūkytas,smoked
+A2-1206,sulūžęs,broken
+A2-1207,tvarkingas,tidy
+A2-1208,violetinis,purple
+A2-1209,virtas,boiled
+A2-1210,įjungtas,switched on
+A2-1211,šiurkštus,rough
+A2-1212,švelnus,soft; gentle
+A2-1213,administratorius,receptionist; administrator
+A2-1214,alkoholiniai gėrimai,alcoholic drinks
+A2-1215,alėja,avenue (tree-lined walk)
+A2-1216,aplankas,folder
+A2-1217,apsauginiai akiniai,safety goggles
+A2-1218,arbatinis,teapot
+A2-1219,arbatpinigiai,tip (gratuity)
+A2-1220,atidarytuvas,bottle opener
+A2-1221,auditorija,lecture hall
+A2-1222,auklė,nanny
+A2-1223,ausinės,headphones
+A2-1224,autobusų stotis,bus station
+A2-1225,automatas,vending machine
+A2-1226,autoservisas,car repair shop
+A2-1227,avalynė,footwear
+A2-1228,avarinis išėjimas,emergency exit
+A2-1229,balandėliai,stuffed cabbage rolls
+A2-1230,bandelė,bun
+A2-1231,bendrabutis,dormitory
+A2-1232,biologija,biology
+A2-1233,bulvė,potato
+A2-1234,cepelinai,cepelinai (potato dumplings)
+A2-1235,chemija,chemistry
+A2-1236,dainininkas,singer
+A2-1237,darbininkas,worker
+A2-1238,darbo drabužiai,work clothes
+A2-1239,daržovės,vegetables
+A2-1240,daugiabutis,block of flats
+A2-1241,debesis,cloud
+A2-1242,degtinė,vodka
+A2-1243,degtukai,matches
+A2-1244,dešrelės,sausages (frankfurters)
+A2-1245,dirbtuvė,workshop
+A2-1246,drabužinė,cloakroom
+A2-1247,drožtukas,pencil sharpener
+A2-1248,dubuo,bowl
+A2-1249,dujokaukė,gas mask
+A2-1250,dujos,gas
+A2-1251,dulkių siurblys,vacuum cleaner
+A2-1252,dušas,shower
+A2-1253,džinsai,jeans
+A2-1254,ekskursija,excursion; tour
+A2-1255,elektra,electricity
+A2-1256,elektrikas,electrician
+A2-1257,fabrikas,factory
+A2-1258,filmavimo kamera,video camera
+A2-1259,flomasteris,felt-tip pen
+A2-1260,futbolas,football
+A2-1261,gaisras,fire (blaze)
+A2-1262,gazuotas vanduo,sparkling water
+A2-1263,geležinkelis,railway
+A2-1264,geležis,iron (metal)
+A2-1265,gintaras,amber
+A2-1266,greitoji pagalba,ambulance
+A2-1267,grietinė,sour cream
+A2-1268,grotuvas,player (music)
+A2-1269,grėblys,rake
+A2-1270,gėlynas,flower bed
+A2-1271,indai,dishes
+A2-1272,injekcija,injection
+A2-1273,išėjimas,exit
+A2-1274,juoda kava,black coffee
+A2-1275,kabinetas,doctor's consulting room; office
+A2-1276,Kalėdos,Christmas
+A2-1277,kamščiatraukis,corkscrew
+A2-1278,karpis,carp
+A2-1279,kastuvas,shovel
+A2-1280,katedra,cathedral; university department
+A2-1281,kava su pienu,coffee with milk
+A2-1282,kavinė,café
+A2-1283,kefyras,kefir
+A2-1284,keltas,ferry
+A2-1285,kepsnys,roast; steak
+A2-1286,keptuvė,frying pan
+A2-1287,kiaušinienė,scrambled/fried eggs
+A2-1288,kirpykla,hairdresser's
+A2-1289,kirpėjas,hairdresser
+A2-1290,klaviatūra,keyboard
+A2-1291,knygynas,bookshop
+A2-1292,kombinezonas,overalls
+A2-1293,koncertų salė,concert hall
+A2-1294,kontrolierius,ticket inspector
+A2-1295,koridorius,corridor
+A2-1296,krepšelis,shopping basket
+A2-1297,krepšinis,basketball
+A2-1298,kuprinė,rucksack
+A2-1299,kvapas,smell
+A2-1300,lašai,drops (medicine)
+A2-1301,lašiša,salmon
+A2-1302,ledai,ice cream
+A2-1303,liftas,lift
+A2-1304,linas,flax; linen
+A2-1305,maisto produktai,groceries
+A2-1306,maišas,sack
+A2-1307,maišelis,(plastic) bag
+A2-1308,matavimosi kabina,fitting room
+A2-1309,medalis,medal
+A2-1310,medvilnė,cotton
+A2-1311,meistras,craftsman; repairman
+A2-1312,mokinys,pupil
+A2-1313,mugė,fair (market)
+A2-1314,muitininkas,customs officer
+A2-1315,mėsa,meat
+A2-1316,Naujieji metai,New Year
+A2-1317,operacija,operation (surgery)
+A2-1318,optika,optician's
+A2-1319,orkaitė,oven
+A2-1320,pakelis,packet
+A2-1321,paklodė,bed sheet
+A2-1322,palaidinė,blouse
+A2-1323,papuošalas,piece of jewellery
+A2-1324,pardavėjas,shop assistant
+A2-1325,paskaita,lecture
+A2-1326,paštininkas,postman
+A2-1327,pašto dėžutė,letterbox
+A2-1328,pieno produktai,dairy products
+A2-1329,prieškambaris,hallway
+A2-1330,puodas,pot; saucepan
+A2-1331,pyragaitis,pastry; small cake
+A2-1332,pyragas,cake; pie
+A2-1333,radiatorius,radiator
+A2-1334,rankinė,handbag
+A2-1335,registratūra,reception (clinic)
+A2-1336,rentgenas,X-ray
+A2-1337,respiratorius,respirator
+A2-1338,riekė,slice
+A2-1339,rūgpienis,soured milk
+A2-1340,rūsys,cellar
+A2-1341,saldainis,sweet; candy
+A2-1342,samtis,ladle
+A2-1343,sandėlis,storeroom; warehouse
+A2-1344,sankryža,crossroads
+A2-1345,santechnikas,plumber
+A2-1346,sausainis,biscuit
+A2-1347,seimas,Seimas (parliament)
+A2-1348,senamiestis,old town
+A2-1349,servetėlė,napkin
+A2-1350,silkė,herring
+A2-1351,siuntinys,parcel
+A2-1352,siuvamoji mašina,sewing machine
+A2-1353,siūlas,thread
+A2-1354,skalbiamieji milteliai,washing powder
+A2-1355,skalbyklė,washing machine
+A2-1356,skardinė,can; tin
+A2-1357,skulptūra,sculpture
+A2-1358,sofa,sofa
+A2-1359,spausdintuvas,printer
+A2-1360,spektaklis,performance (theatre)
+A2-1361,sportbačiai,trainers
+A2-1362,sportininkas,athlete
+A2-1363,sprogimas,explosion
+A2-1364,staltiesė,tablecloth
+A2-1365,statybų aikštelė,building site
+A2-1366,stiklainis,glass jar
+A2-1367,stiklinė,glass (tumbler)
+A2-1368,suolas,bench; school desk
+A2-1369,tabletė,pill
+A2-1370,teisėjas,judge
+A2-1371,tenisas,tennis
+A2-1372,teptukas,paintbrush
+A2-1373,termometras,thermometer
+A2-1374,triukšmas,noise
+A2-1375,troleibusų stotelė,trolleybus stop
+A2-1376,tualetas,toilet
+A2-1377,tušinukas,ballpoint pen
+A2-1378,tvora,fence
+A2-1379,uniforma,uniform
+A2-1380,uostas,port; harbour
+A2-1381,užrašų knygelė,notebook
+A2-1382,vadovėlis,textbook
+A2-1383,vagis,thief
+A2-1384,vagonas,carriage (train)
+A2-1385,vaikų darželis,kindergarten
+A2-1386,vairas,steering wheel
+A2-1387,vaisiai,fruit
+A2-1388,vaistininkas,pharmacist
+A2-1389,valgykla,canteen
+A2-1390,vamzdis,pipe
+A2-1391,vartai,gate
+A2-1392,varškė,curd cheese
+A2-1393,varškės sūrelis,glazed curd snack
+A2-1394,vasarnamis,summer house
+A2-1395,vaza,vase
+A2-1396,Velykos,Easter
+A2-1397,vilna,wool
+A2-1398,virdulys,kettle
+A2-1399,viryklė,cooker; stove
+A2-1400,virėjas,cook; chef
+A2-1401,vokas,envelope
+A2-1402,čiužinys,mattress
+A2-1403,įėjimas,entrance
+A2-1404,šachmatai,chess
+A2-1405,šakotis,šakotis (tree cake)
+A2-1406,šaldiklis,freezer
+A2-1407,šaldytuvas,fridge
+A2-1408,šalmas,helmet
+A2-1409,šaltibarščiai,cold beetroot soup
+A2-1410,šepetys,brush
+A2-1411,šildytuvas,heater
+A2-1412,šilkas,silk
+A2-1413,šiukšlių konteineris,outdoor rubbish container
+A2-1414,šluostė,cloth; rag
+A2-1415,šokoladas,chocolate
+A2-1416,šokėjas,dancer
+A2-1417,švarkas,jacket (suit)
+A2-1418,ūsai,moustache
+A2-1419,žaidimų aikštelė,playground
+A2-1420,apsipirkti,to do the shopping
+A2-1421,atsikelti,to get up
+A2-1422,autis,to put on shoes
+A2-1423,balsuoti,to vote
+A2-1424,dažyti,to paint; to dye (hair)
+A2-1425,duoti,to give
+A2-1426,filmuoti,to film
+A2-1427,fotografuoti,to photograph
+A2-1428,išvežti šiukšles,to collect the rubbish (by truck)
+A2-1429,kirpti,to cut (hair; with scissors)
+A2-1430,kosėti,to cough
+A2-1431,matuotis,to try on
+A2-1432,maudytis,to bathe; swim
+A2-1433,mautis,to put on (trousers; gloves)
+A2-1434,praustis,to wash oneself
+A2-1435,pūsti,to blow
+A2-1436,rodyti,to show
+A2-1437,siūti,to sew
+A2-1438,skaityti,to read
+A2-1439,skustis barzdą,to shave
+A2-1440,slidinėti,to ski
+A2-1441,spausdinti,to print
+A2-1442,sportuoti,to do sport
+A2-1443,susilaužyti,to break (a limb)
+A2-1444,vaidinti,to act; perform
+A2-1445,važiuoti,to go (by vehicle)
+A2-1446,vilktis,to put on (clothes)
+A2-1447,vėluoti,to be late
+A2-1448,čiuožinėti,to skate
+A2-1449,šluoti,to sweep
+A2-1450,šukuotis,to comb one's hair
+A2-1451,žiūrėti televizorių,to watch TV
+A2-1452,atidarytas,opened
+A2-1453,bendras,common; shared
+A2-1454,gerbiamas,respected; Dear (in letters)
+A2-1455,internetinis,online
+A2-1456,išsiskyręs,divorced
+A2-1457,ištekėjusi,married (of a woman)
+A2-1458,madingas,fashionable
+A2-1459,mielas,dear; sweet
+A2-1460,nepatenkintas,dissatisfied
+A2-1461,nesveikas,unwell
+A2-1462,netekėjusi,unmarried (woman)
+A2-1463,nevedęs,unmarried (man)
+A2-1464,normalus,normal
+A2-1465,nuostabus,wonderful
+A2-1466,padarytas,done; made
+A2-1467,pagamintas,made (manufactured)
+A2-1468,pagyvenęs,elderly
+A2-1469,patenkintas,satisfied
+A2-1470,plastikinis,plastic
+A2-1471,popierinis,paper (adj.)
+A2-1472,puikus,excellent
+A2-1473,skirtingas,different
+A2-1474,tam tikras,certain
+A2-1475,teisus,right (correct)
+A2-1476,vedęs,married (of a man)
+A2-1477,veikiantis,working; in operation
+A2-1478,vidutinio amžiaus,middle-aged
+A2-1479,anglų kalba,English (language)
+A2-1480,gimtoji kalba,native language
+A2-1481,ispanų kalba,Spanish (language)
+A2-1482,lietuvių kalba,Lithuanian (language)
+A2-1483,prancūzų kalba,French (language)
+A2-1484,rusų kalba,Russian (language)
+A2-1485,vokiečių kalba,German (language)
+A2-1486,aikštelė,"small square; car park, playground (head word)"
+A2-1487,akademija,academy
+A2-1488,akcija,special offer; promotion
+A2-1489,alergija,allergy
+A2-1490,alkoholis,alcohol
+A2-1491,ambasadorius,ambassador
+A2-1492,asmens tapatybės kortelė,identity card
+A2-1493,atestatas,school-leaving certificate
+A2-1494,atmintukas,USB stick
+A2-1495,auklėtojas,kindergarten teacher; class teacher
+A2-1496,baigiamasis egzaminas,final exam
+A2-1497,bankomatas,cash machine
+A2-1498,bauda,fine (penalty)
+A2-1499,bedarbis,unemployed person
+A2-1500,belaidis internetas,wireless internet
+A2-1501,centras,centre
+A2-1502,daiktas,thing; object
+A2-1503,dalykas,thing; matter; subject
+A2-1504,darbo vieta,workplace
+A2-1505,deklaracija,declaration (tax/customs)
+A2-1506,dešinė,right (side)
+A2-1507,direktorius,director; headteacher
+A2-1508,dėstytojas,lecturer
+A2-1509,džiovyklė,clothes dryer
+A2-1510,elektroninis laiškas,email (message)
+A2-1511,fizika,physics
+A2-1512,galvos skausmas,headache
+A2-1513,garantija,guarantee
+A2-1514,geležinkelio stotis,railway station
+A2-1515,gimimo data,date of birth
+A2-1516,gimimo vieta,place of birth
+A2-1517,gimnazija,gymnasium (upper secondary school)
+A2-1518,gramas,gram
+A2-1519,gramatika,grammar
+A2-1520,gripas,flu
+A2-1521,gyvenimas,life
+A2-1522,gyvenimo aprašymas,CV
+A2-1523,indaplovė,dishwasher
+A2-1524,instrukcija,instructions (leaflet)
+A2-1525,interneto svetainė,website
+A2-1526,kairė,left (side)
+A2-1527,kalba,language; speech
+A2-1528,kandidatas,candidate
+A2-1529,karininkas,officer (military)
+A2-1530,kelionių agentūra,travel agency
+A2-1531,kelionės draudimas,travel insurance
+A2-1532,kelių policija,traffic police
+A2-1533,ketvirtadalis,quarter
+A2-1534,kiekis,quantity
+A2-1535,kilometras,kilometre
+A2-1536,kokybė,quality
+A2-1537,konkursas,competition
+A2-1538,kraujo tyrimai,blood tests
+A2-1539,kraujospūdis,blood pressure
+A2-1540,kursai,course (of lessons)
+A2-1541,kursas,course; year (university); exchange rate
+A2-1542,kvadratinis metras,square metre
+A2-1543,kvietimas,invitation
+A2-1544,laipsnis,degree
+A2-1545,laisva diena,day off
+A2-1546,laisvalaikis,free time
+A2-1547,litras,litre
+A2-1548,mada,fashion
+A2-1549,matematika,mathematics
+A2-1550,meras,mayor
+A2-1551,mergina,girl; young woman
+A2-1552,metų laikas,season
+A2-1553,mineralinis vanduo,mineral water
+A2-1554,ministras,minister
+A2-1555,ministras pirmininkas,prime minister
+A2-1556,mokesčiai,taxes; fees
+A2-1557,namai,"home (namie = at home, namo = homewards)"
+A2-1558,negazuotas vanduo,still water
+A2-1559,nelaimingas atsitikimas,accident
+A2-1560,netiesa,untrue; a lie
+A2-1561,numeris,"number (phone, house, hotel room)"
+A2-1562,nuolaidų kortelė,discount card
+A2-1563,orai,"weather (NB oras = air, weather)"
+A2-1564,oro kondicionierius,air conditioner
+A2-1565,padėtis,situation
+A2-1566,panelė,miss; young lady
+A2-1567,para,day (24 hours)
+A2-1568,partija,party (political)
+A2-1569,pasimatymas,date (romantic)
+A2-1570,pavadinimas,name; title
+A2-1571,pašto kodas,postcode
+A2-1572,pažymėjimas,certificate; ID card
+A2-1573,pensija,pension
+A2-1574,pensininkas,pensioner
+A2-1575,pertrauka,break
+A2-1576,pica,pizza
+A2-1577,planšetė,tablet (device)
+A2-1578,poliklinika,outpatient clinic
+A2-1579,politikas,politician
+A2-1580,ponas,Mr; sir
+A2-1581,pratimas,exercise (task)
+A2-1582,prašymas,application; request
+A2-1583,prekybos centras,shopping centre
+A2-1584,procentai,percent
+A2-1585,profesorius,professor
+A2-1586,puslitris,half a litre
+A2-1587,pusseserė,cousin (female)
+A2-1588,pusvalandis,half an hour
+A2-1589,pusė kilogramo,half a kilogram
+A2-1590,reikalas,matter; business
+A2-1591,reisas,flight; route
+A2-1592,reklama,advertisement
+A2-1593,salė,hall
+A2-1594,savivaldybė,municipality
+A2-1595,seansas,showing (film)
+A2-1596,skelbimas,notice; advert
+A2-1597,skonis,taste
+A2-1598,sloga,head cold; runny nose
+A2-1599,specialistas,specialist
+A2-1600,suma,sum; amount
+A2-1601,sąlygos,conditions
+A2-1602,tautybė,nationality
+A2-1603,testas,test
+A2-1604,tradicija,tradition
+A2-1605,trečdalis,a third
+A2-1606,truputis,a bit
+A2-1607,užduotis,task
+A2-1608,užsienis,abroad
+A2-1609,vagystė,theft
+A2-1610,vaikinas,young man; boyfriend
+A2-1611,vairuotojo pažymėjimas,driving licence
+A2-1612,vaistai nuo skausmo,painkillers
+A2-1613,valgis,dish; meal
+A2-1614,valiuta,currency
+A2-1615,valiutos keitykla,currency exchange
+A2-1616,varžybos,competition (sport)
+A2-1617,verslininkas,businessman
+A2-1618,šaltis,cold; frost
+A2-1619,šildymas,heating
+A2-1620,na,well
+A2-1621,apžiūrėti,to examine; look over
+A2-1622,ateiti,to come (on foot)
+A2-1623,atidėti,to postpone
+A2-1624,atleisti,to forgive; to dismiss
+A2-1625,atleisti iš darbo,to fire from a job
+A2-1626,atostogauti,to be on holiday
+A2-1627,atvažiuoti,to arrive (by vehicle)
+A2-1628,baigtis,to end (intrans.)
+A2-1629,bėgioti,to jog; run about
+A2-1630,dalyvauti,to take part
+A2-1631,deklaruoti,to declare
+A2-1632,draustis,to get insured
+A2-1633,džiovinti,to dry (trans.)
+A2-1634,džiūti,to dry (intrans.)
+A2-1635,gauti,to get; receive
+A2-1636,gauti vizą,to get a visa
+A2-1637,gesti,to break down; go off
+A2-1638,grįžti namo,to go back home
+A2-1639,gultis,to lie down
+A2-1640,gultis į ligoninę,to go into hospital
+A2-1641,gulėti ligoninėje,to be in hospital
+A2-1642,imti,to take
+A2-1643,išmokti,to learn (perf.)
+A2-1644,išrašyti,to write out (prescription/invoice)
+A2-1645,išvežti,to take away (by vehicle)
+A2-1646,jausti,to feel
+A2-1647,jungti,to connect; switch on
+A2-1648,keistis,to change (intrans.); exchange
+A2-1649,kirptis,to get a haircut
+A2-1650,klausyti,to listen to
+A2-1651,kopijuoti,to copy
+A2-1652,kvepėti,to smell (good)
+A2-1653,laikyti egzaminą,to sit an exam
+A2-1654,laukti svečių,to expect guests
+A2-1655,lyti,to rain
+A2-1656,manyti,to think; reckon
+A2-1657,maudyti,to bathe (someone)
+A2-1658,mokėti kortele,to pay by card
+A2-1659,nebūti,not to be
+A2-1660,negalėti,cannot
+A2-1661,neišlaikyti egzamino,to fail an exam
+A2-1662,nemėgti,to dislike
+A2-1663,nepatikti,to not like
+A2-1664,nervintis,to be nervous
+A2-1665,nesuprasti,to not understand
+A2-1666,nešioti,to wear; carry about
+A2-1667,nežinoti,to not know
+A2-1668,nudegti,to get burnt
+A2-1669,nustoti,to stop (doing)
+A2-1670,paaiškinti,to explain
+A2-1671,pabūti,to stay a while
+A2-1672,padaryti,to do; make (perf.)
+A2-1673,pailsėti,to rest (perf.)
+A2-1674,pakartoti,to repeat
+A2-1675,pakeisti,to change (perf.)
+A2-1676,pakviesti,to invite (perf.)
+A2-1677,palikti,to leave (something)
+A2-1678,pamesti,to lose
+A2-1679,parašyti,to write (perf.)
+A2-1680,pareiti,to come back home
+A2-1681,parodyti,to show (perf.)
+A2-1682,pasakyti,to say (perf.)
+A2-1683,pasidaryti,to become; make for oneself
+A2-1684,pasilikti,to stay
+A2-1685,pasimatuoti,to try on (perf.)
+A2-1686,pasimatyti,to meet up
+A2-1687,pasivaikščioti,to go for a walk
+A2-1688,paskambinti,to phone (perf.)
+A2-1689,pasukti į dešinę / dešinėn,to turn right
+A2-1690,pasukti į kairę / kairėn,to turn left
+A2-1691,pavargti,to get tired
+A2-1692,pavogti,to steal (perf.)
+A2-1693,pažinti,to know (a person)
+A2-1694,pietauti,to have lunch
+A2-1695,plaukioti,to swim (around)
+A2-1696,prasidėti,to begin (intrans.)
+A2-1697,prausti,to wash (someone)
+A2-1698,prašyti,to ask for; request
+A2-1699,priimti į darbą,to hire
+A2-1700,pristatyti,to introduce; deliver
+A2-1701,pusryčiauti,to have breakfast
+A2-1702,rakinti,to lock
+A2-1703,registruotis,to register; book in
+A2-1704,rinkti,to collect; choose; dial
+A2-1705,sektis,to go (well); succeed
+A2-1706,smirdėti,to stink
+A2-1707,snigti,to snow
+A2-1708,sugebėti,to be able; manage
+A2-1709,susitarti,to agree; arrange
+A2-1710,susižeisti,to get hurt
+A2-1711,sužeisti,to injure
+A2-1712,sveikti,to recover
+A2-1713,sėstis,to sit down
+A2-1714,tarti,to pronounce
+A2-1715,tikti,to suit; fit
+A2-1716,užlieti kaimynus,to flood the neighbours
+A2-1717,užsirašyti,to make an appointment; sign up; note down
+A2-1718,užsiregistruoti,to register (perf.)
+A2-1719,vakarieniauti,to have dinner
+A2-1720,važinėti,to drive around
+A2-1721,vežtis,to take along (by vehicle)
+A2-1722,vogti,to steal
+A2-1723,vykti,to take place; travel
+A2-1724,šlapti,to get wet
+A2-1725,šviesti,to shine
+A2-1726,žymėti,to mark
+A2-1727,bėda,"trouble, misfortune"
+A2-1728,jėga,"strength, force"
+A2-1729,meilė,love
+A2-1730,mintis,"thought, idea"
+A2-1731,noras,"wish, desire"
+A2-1732,aiškus,clear (easy to understand)
+A2-1733,baisus,terrible
+A2-1734,didžiulis,huge
+A2-1735,kaltas,"guilty, at fault (Aš kaltas)"
+A2-1736,kvailas,stupid
+A2-1737,medinis,wooden
+A2-1738,paprastas,"simple, ordinary"
+A2-1739,rimtas,serious
+A2-1740,smagus,"fun, pleasant"
+A2-1741,smulkus,"small, fine (smulkūs pinigai = small change)"
+A2-1742,sotus,full (not hungry)
+A2-1743,sudėtingas,complicated
+A2-1744,tiesus,straight
+A2-1745,vidutinis,"medium, average"
+A2-1746,įvairus,"various, varied"
+A2-1747,orkestras,orchestra
+A2-1748,pasaka,fairy tale
+A2-1749,gira,gira (kvass)
+A2-1750,ūgis,height (of a person)
+A2-1751,kaklaraištis,tie
+A2-1752,pižama,pyjamas
+A2-1753,šlepetės,slippers
+A2-1754,šortai,shorts
+A2-1755,gėda,shame (Man gėda)
+A2-1756,nuotaika,mood
+A2-1757,kugelis,potato pudding (kugelis)
+A2-1758,makaronai,pasta
+A2-1759,taurė,wine glass; cup (trophy)
+A2-1760,pleistras,sticking plaster
+A2-1761,tvarstis,bandage
+A2-1762,dantų pasta,toothpaste
+A2-1763,fotelis,armchair
+A2-1764,lygintuvas,iron (for clothes)
+A2-1765,remontas,"repairs, renovation"
+A2-1766,šampūnas,shampoo
+A2-1767,ugniagesys,firefighter
+A2-1768,Lietuva,Lithuania
+A2-1769,paminklas,monument
+A2-1770,pilis,castle
+A2-1771,sostinė,capital city
+A2-1772,litas,"litas (currency, 1981 counterfactual)"
+A2-1773,pilietybė,citizenship
+A2-1774,amerikietis,American
+A2-1775,anglas,Englishman
+A2-1776,estas,Estonian
+A2-1777,latvis,Latvian
+A2-1778,lenkas,Pole
+A2-1779,lietuvis,Lithuanian (man)
+A2-1780,prancūzas,Frenchman
+A2-1781,rusas,Russian (man)
+A2-1782,vokietis,German
+A2-1783,eglė,spruce; Christmas tree
+A2-1784,kopa,sand dune
+A2-1785,perkūnija,thunderstorm
+A2-1786,pietūs (pasaulio kryptis),south
+A2-1787,rytai,east
+A2-1788,vakarai,west
+A2-1789,šiaurė,north
+A2-1790,žaibas,lightning
+A2-1791,aštuntas,eighth
+A2-1792,devintas,ninth
+A2-1793,dešimtas,tenth
+A2-1794,dvyliktas,twelfth
+A2-1795,septintas,seventh
+A2-1796,vienuoliktas,eleventh
+A2-1797,šeštas,sixth
+A2-1798,jaunimas,"young people, youth"
+A2-1799,ponia,Mrs; madam
+A2-1800,žmonės,people (pl. of žmogus)
+A2-1801,pirkėjas,"buyer, customer"
+A2-1802,kultūra,culture
+A2-1803,laisvė,freedom
+A2-1804,televizija,television (broadcasting)
+A2-1805,vėliava,flag
+A2-1806,ateitis,future
+A2-1807,pėstysis,pedestrian
+A2-1808,aplankyti,to visit (perf.)
+A2-1809,atiduoti,to give back
+A2-1810,atsistoti,to stand up
+A2-1811,atsitikti,to happen (Kas atsitiko?)
+A2-1812,atvežti,to bring (by vehicle) (perf.)
+A2-1813,bendrauti,"to socialise, communicate"
+A2-1814,daryti,"to do, make"
+A2-1815,dingti,"to disappear, go missing"
+A2-1816,domėtis,to be interested in (+instr.)
+A2-1817,dovanoti,to give (as a present)
+A2-1818,ieškoti,to look for (+gen)
+A2-1819,išgerti,to drink up (perf.)
+A2-1820,išgirsti,to hear (perf.)
+A2-1821,išsiųsti,to send off (perf.)
+A2-1822,išvažiuoti,to leave (by vehicle) (perf.)
+A2-1823,kalbėtis,"to talk, converse (with +instr.)"
+A2-1824,laikyti,to hold; to keep
+A2-1825,likti,"to stay, remain"
+A2-1826,lyginti (drabužius),to iron
+A2-1827,megzti,to knit
+A2-1828,mokėti (plaukti),"to know how to, can (skill)"
+A2-1829,naudotis,to use (+instr.)
+A2-1830,nueiti,to go (on foot) to (perf.)
+A2-1831,nusipirkti,to buy (for oneself) (perf.)
+A2-1832,nusirengti,"to undress, take off (clothes)"
+A2-1833,pabandyti,to try (perf.)
+A2-1834,paduoti,"to pass, hand (Paduok druską)"
+A2-1835,pagalvoti,to think (a moment) (perf.)
+A2-1836,paimti,to take (perf.)
+A2-1837,pakakti,to suffice (Man pakanka)
+A2-1838,pakelti,"to lift, raise (perf.)"
+A2-1839,paklausti,to ask (perf.)
+A2-1840,pamatyti,"to see, catch sight of (perf.)"
+A2-1841,papasakoti,"to tell, recount (perf.)"
+A2-1842,paprašyti,to ask for (perf.)
+A2-1843,paruošti,to prepare (perf.)
+A2-1844,pasiimti,to take along
+A2-1845,pasiūlyti,"to offer, suggest"
+A2-1846,pastatyti,to build; to put (standing) (perf.)
+A2-1847,patikrinti,to check (perf.)
+A2-1848,pažadėti,to promise (perf.)
+A2-1849,perskaityti,to read through (perf.)
+A2-1850,prižiūrėti,"to look after, supervise"
+A2-1851,pykti,to be angry
+A2-1852,rūkyti,to smoke
+A2-1853,spėti,"to be in time, manage"
+A2-1854,stengtis,"to try hard, make an effort"
+A2-1855,susirgti,to fall ill (perf.)
+A2-1856,sutaupyti,to save up (perf.)
+A2-1857,sužinoti,to find out
+A2-1858,trukti,to last (of time)
+A2-1859,trūkti,to be lacking (Man trūksta +gen)
+A2-1860,vaikščioti,to walk about (iterative)
+A2-1861,vežti,"to carry, transport (by vehicle)"
+A2-1862,čiaudėti,to sneeze

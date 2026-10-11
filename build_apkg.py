@@ -51,12 +51,12 @@ CLOZE_CSS = CSS + """
 .word-line { text-align: center; margin-top: 0.6em; }
 """
 CLOZE_FRONT = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA</span>'
-               '<span class="plate">{{Number}}</span></div>'
+               '<span class="plate">{{Number}}</span></div>{{Image}}'
                '<div class="cloze-text">{{cloze:Text}}</div>'
-               '<div class="hint">{{SentenceEN}}</div>'
+               '{{^Image}}<div class="hint">{{SentenceEN}}</div>{{/Image}}'
                '<div class="bar bottom"><span>{{Category}}</span><span>?</span></div></div>')
 CLOZE_BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA</span>'
-              '<span class="plate">{{Number}}</span></div>'
+              '<span class="plate">{{Number}}</span></div>{{Image}}'
               '<div class="cloze-text">{{cloze:Text}}</div>'
               '<div class="hint">{{SentenceEN}}</div>'
               '<div class="answer word-line"><div class="word">{{Word}}</div>'
@@ -68,7 +68,7 @@ CLOZE_BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ 
 cloze_model = genanki.Model(
     1607392914, "Lietuvių GO Cloze", model_type=genanki.Model.CLOZE,
     fields=[{'name': n} for n in ['Text', 'SentenceEN', 'Word', 'Pron', 'Gender', 'Forms',
-            'Gloss', 'Number', 'Category', 'Audio', 'Key', 'SentenceAudio']],
+            'Gloss', 'Number', 'Category', 'Audio', 'Key', 'SentenceAudio', 'Image']],
     templates=[{'name': 'Cloze', 'qfmt': CLOZE_FRONT, 'afmt': CLOZE_BACK}], css=CLOZE_CSS)
 
 A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
@@ -79,6 +79,9 @@ A1_IMAGE_DIRS = os.environ.get("A1_IMAGE_DIRS", "out_deck_f62,images").split(","
 A2_IMAGE_DIRS = os.environ.get("A2_IMAGE_DIRS",
                                "out_deck_a2,out_phrases_a2,images_a2,out_phrases").split(",")
 A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", "audio_a2")
+# Sentence cards (picture + cloze), see a2_build/sentences/design.md
+SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
+SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", "out_deck_sent,images_sent").split(",")
 # Study order (new-card position): study_order.csv, made by build_study_order.py.
 STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
 
@@ -268,7 +271,7 @@ def add_a2_notes(DECKS, media, order=None):
                 model=cloze_model, tags=tags, guid=genanki.guid_for(k), due=due,
                 fields=[text, r.get("example_en", ""), r["lithuanian_TARGET"], r.get("lt_pron", ""),
                         gender_mark(r.get("gender", "")), a2_forms(r), r["english"],
-                        k.replace("A2-", ""), r.get("category", ""), audf, k, saudf]))
+                        k.replace("A2-", ""), r.get("category", ""), audf, k, saudf, ""]))
             counts["cloze"] += 1
             if saudf:
                 media.append(saud)
@@ -276,6 +279,40 @@ def add_a2_notes(DECKS, media, order=None):
             continue
         if audf:
             media.append(aud)
+    return counts
+
+
+def add_sentence_notes(DECKS, media, order=None):
+    """Picture + cloze sentence cards from SENTENCES (design: a2_build/sentences/design.md).
+    Front: picture + Lithuanian sentence with the blank, no English; back adds the English.
+    A sentence without a picture is still built (as a plain cloze with the English hint)."""
+    counts = {"sentence": 0, "sentence_with_image": 0}
+    if not SENTENCES or not os.path.exists(SENTENCES):
+        return counts
+    os.makedirs(TMP, exist_ok=True)
+    order = order or {}
+    for r in csv.DictReader(open(SENTENCES, encoding="utf-8")):
+        k = r["id"]
+        text, n = cloze_text(r["lt"])
+        if not n:
+            continue
+        level = (r.get("level") or "A2").strip() or "A2"
+        target = DECKS.get(level, DECKS["A2"])
+        src = find_image(k, SENT_IMAGE_DIRS)
+        img = ""
+        if src:
+            img_path, img_name = media_image(k, src)
+            img = f'<img class="art" src="{img_name}">'; media.append(img_path)
+            counts["sentence_with_image"] += 1
+        aud = f"{A2_AUDIO_DIR}/{k}.mp3"
+        audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
+        if audf:
+            media.append(aud)
+        target.add_note(genanki.Note(
+            model=cloze_model, tags=[level, "SENT"], guid=genanki.guid_for(k), due=order.get(k, 0),
+            fields=[text, r["en"], "", "", "", "", r.get("grammar_point", ""),
+                    k.replace("S-", "S "), "Sakiniai", "", k, audf, img]))
+        counts["sentence"] += 1
     return counts
 
 
@@ -315,13 +352,14 @@ def main():
             media.append(aud)
 
     a2_counts = add_a2_notes(DECKS, media, order)
+    s_counts = add_sentence_notes(DECKS, media, order)
 
     out = versioned_out(APKG_OUT)
     pkg = genanki.Package(list(DECKS.values())); pkg.media_files = media
     pkg.write_to_file(out)
     counts = {lv: len(d.notes) for lv, d in DECKS.items()}
     print(f"built {out} — {len(media)} media files | subdecks: {counts} | "
-          f"A1 rows without image: {len(skipped)} | A2 list: {a2_counts} | "
+          f"A1 rows without image: {len(skipped)} | A2 list: {a2_counts} | sentences: {s_counts} | "
           f"study order: {len(order)} positions")
     return out
 
