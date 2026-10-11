@@ -8,6 +8,14 @@ Reads cards_anki.csv directly, so the recorder can never drift out of step with
 the deck: re-run it after any wordlist change.
 
     python3 build_recorder.py     ->  recorder.html
+    python3 build_recorder.py A1 new   ->  recorder_A1_new.html (A1 words without a human take)
+    python3 build_recorder.py A2       ->  recorder_A2.html + a2_build/recording_list.csv
+        The A2 sheet is the A2 list (a2_build/a2_wordlist.csv) in study order, one take per
+        headword (key = the list id) and, for cloze rows, a second take of the example
+        sentence (key = id + "_s"), plus the sentence cards (a2_build/sentences, key S-####).
+        File names are these keys; build_apkg.py expects audio_a2/<key>.mp3 (convert the
+        exported webm/m4a with ffmpeg). Works on a phone: big buttons, takes are kept in the
+        browser between sessions, and "Export new" ships only what was not exported yet.
 """
 import csv
 import json
@@ -73,6 +81,44 @@ if os.path.exists(QUEUE):
                       "cat": r["category"] + " (new)",
                       "script": read_script(r.get("lt_pron") or r["lithuanian_TARGET"], r)})
 
+A2_MODE = LEVEL.upper() == "A2"
+if A2_MODE:
+    import re as _re
+    WORDS = []
+    order = {}
+    if os.path.exists("study_order.csv"):
+        order = {r["key"]: int(r["order"]) for r in csv.DictReader(open("study_order.csv", encoding="utf-8"))}
+    items = []
+    for r in csv.DictReader(open("a2_build/a2_wordlist.csv", encoding="utf-8")):
+        if not r["lithuanian_TARGET"].strip():
+            continue
+        head = _re.sub(r"\s*\(.*\)", "", r["lithuanian_TARGET"]).strip()
+        pron = r.get("lt_pron", "") or head
+        items.append((order.get(r["id"], 10**6), 0, {
+            "key": r["id"], "number": r["id"], "lt": head, "en": r["english"], "pron": pron,
+            "cat": r["category"] + " · " + r["route"].lower(), "kind": "word",
+            "script": read_script(pron, r)}))
+        if r.get("example_lt", "").strip() and r["route"] in ("CLOZE", "PAIR"):
+            sent = r["example_lt"].replace("{", "").replace("}", "")
+            items.append((order.get(r["id"], 10**6), 1, {
+                "key": r["id"] + "_s", "number": r["id"] + " s", "lt": sent, "en": r.get("example_en", ""),
+                "pron": "", "cat": "sentence for " + head, "kind": "sentence",
+                "script": [{"label": "", "form": sent}]}))
+    if os.path.exists("a2_build/sentences/sentences.csv"):
+        for r in csv.DictReader(open("a2_build/sentences/sentences.csv", encoding="utf-8")):
+            sent = r["lt"].replace("{", "").replace("}", "")
+            items.append((order.get(r["id"], 10**6), 2, {
+                "key": r["id"], "number": r["id"], "lt": sent, "en": r["en"], "pron": "",
+                "cat": "sentence card", "kind": "sentence", "script": [{"label": "", "form": sent}]}))
+    items.sort(key=lambda t: (t[0], t[1]))
+    WORDS = [w for _, _, w in items]
+    os.makedirs("a2_build", exist_ok=True)
+    with open("a2_build/recording_list.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f); w.writerow(["take", "file_name", "kind", "study_order", "lithuanian", "english", "say"])
+        for n, (o, _, it) in enumerate(items, 1):
+            w.writerow([n, it["key"] + ".mp3", it["kind"], o if o < 10**6 else "", it["lt"], it["en"],
+                        " · ".join(f["form"] for f in it["script"])])
+
 TEMPLATE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -119,6 +165,14 @@ TEMPLATE = r"""<!doctype html>
   .hint{font-size:.85rem;color:var(--dun);margin-top:10px;line-height:1.5}
   kbd{background:#d8ccae;border:1px solid var(--dun);border-radius:3px;padding:0 5px;font-family:monospace;font-size:.8rem}
   .big{font-size:1.05rem;padding:13px 22px}
+  .script.sentence b{font-size:1.5rem;line-height:1.3}
+  @media (max-width:600px){
+    .wrap{padding:8px} .card{padding:16px 10px} .word{font-size:2.3rem} .pron{font-size:1.2rem}
+    button{padding:14px 16px;font-size:1.05rem;min-width:44%} .controls button.rec{min-width:100%}
+    .grid{display:none} .jump{display:flex}
+  }
+  .jump{display:none;gap:8px;justify-content:center;margin-top:10px;align-items:center}
+  .jump input{font-size:1rem;padding:8px;width:7em;border:1px solid var(--dun);background:var(--paper2)}
 </style></head>
 <body>
 <header><span>Lietuvių — voice recorder</span><span id="count">0 / 0</span></header>
@@ -157,9 +211,12 @@ TEMPLATE = r"""<!doctype html>
 
     <div class="card">
       <div class="row">
-        <button id="export" class="big">⬇ Export ZIP</button>
-        <span class="hint" id="exportInfo"></span>
+        <button id="exportNew" class="big">⬇ Export new takes</button>
+        <button id="export">⬇ Export all</button>
       </div>
+      <p class="hint" id="exportInfo"></p>
+      <p class="hint">On a phone each export is one ZIP of the takes recorded since the last export — send it on and carry on; the batches add up. Files are named by card key.</p>
+      <div class="jump"><label class="hint">go to take</label><input id="jumpTo" type="number" min="1"><button id="jumpBtn">Go</button></div>
       <div class="grid" id="grid"></div>
     </div>
   </div>
@@ -172,13 +229,15 @@ document.getElementById('count').textContent = "0 / " + WORDS.length;
 
 /* ---------- IndexedDB (persist clips so a long session can resume) ---------- */
 let db;
-function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open('lt_recorder_'+SHEET_ID,1);
-  r.onupgradeneeded=e=>e.target.result.createObjectStore('clips');
+function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open('lt_recorder_'+SHEET_ID,2);
+  r.onupgradeneeded=e=>{const d=e.target.result; d.createObjectStore('clips'); d.createObjectStore('meta');};
   r.onsuccess=e=>{db=e.target.result;res()};r.onerror=()=>rej(r.error);});}
 function putClip(k,b){return new Promise((res,rej)=>{const t=db.transaction('clips','readwrite');
   t.objectStore('clips').put(b,k);t.oncomplete=res;t.onerror=()=>rej(t.error);});}
 function getClip(k){return new Promise(res=>{const t=db.transaction('clips','readonly');
   const q=t.objectStore('clips').get(k);q.onsuccess=()=>res(q.result||null);q.onerror=()=>res(null);});}
+function getMeta(k){return new Promise(res=>{try{const t=db.transaction('meta','readonly');const q=t.objectStore('meta').get(k);q.onsuccess=()=>res(q.result||null);q.onerror=()=>res(null);}catch(e){res(null)}});}
+function putMeta(k,v){return new Promise(res=>{try{const t=db.transaction('meta','readwrite');t.objectStore('meta').put(v,k);t.oncomplete=res;t.onerror=res;}catch(e){res()}});}
 function doneKeys(){return new Promise(res=>{const t=db.transaction('clips','readonly');
   const q=t.objectStore('clips').getAllKeys();q.onsuccess=()=>res(new Set(q.result));q.onerror=()=>res(new Set());});}
 
@@ -233,8 +292,9 @@ async function render(){
   document.getElementById('pron').textContent=w.pron||'';
   document.getElementById('en').textContent=w.en;
   const sc=w.script&&w.script.length?w.script:[{label:'',form:w.pron||w.lt}];
+  document.getElementById('script').className='script'+(w.kind==='sentence'?' sentence':'');
   document.getElementById('script').innerHTML =
-    '<span class="lead">say all of this, one breath apart</span>' +
+    '<span class="lead">'+(w.kind==='sentence'?'read the sentence once, naturally':'say all of this, one breath apart')+'</span>' +
     sc.map(f=>(f.label?'<span class="lab">'+f.label+'</span>':'')+'<b>'+f.form+'</b>')
       .join('<span class="sep">·</span>');
   recBtn.classList.remove('recording');
@@ -284,19 +344,25 @@ function makeZip(files){
   const eo=[].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cs),u32(offset),u16(0));
   return new Blob([...parts,...central,new Uint8Array(eo)],{type:'application/zip'});
 }
-document.getElementById('export').onclick=async()=>{
+document.getElementById('jumpBtn').onclick=()=>{const n=parseInt(document.getElementById('jumpTo').value,10); if(n>=1&&n<=WORDS.length){idx=n-1;render();}};
+async function doExport(onlyNew){
   const info=document.getElementById('exportInfo'); info.textContent="Packing…";
-  const files=[]; const man=["key\tword\tenglish\tfile"];
-  for(const w of WORDS){ const b=await getClip(w.key); if(!b)continue;
+  const exported=new Set((await getMeta('exported'))||[]);
+  const files=[]; const man=["key\tword\tenglish\tfile"]; const shipped=[];
+  for(const w of WORDS){ if(onlyNew&&exported.has(w.key))continue; const b=await getClip(w.key); if(!b)continue; shipped.push(w.key);
     const ext=extFor(b.type), name=w.key+"."+ext;
     files.push({name, data:new Uint8Array(await b.arrayBuffer())});
     man.push(w.key+"\t"+w.lt+"\t"+w.en+"\t"+name); }
-  if(!files.length){info.textContent="Nothing recorded yet.";return;}
+  if(!files.length){info.textContent=onlyNew?"Nothing new since the last export.":"Nothing recorded yet.";return;}
   files.push({name:"manifest.tsv", data:new TextEncoder().encode(man.join("\n"))});
+  const stamp=new Date().toISOString().replace(/[:T]/g,'-').slice(0,16);
   const blob=makeZip(files), url=URL.createObjectURL(blob), a=document.createElement('a');
-  a.href=url; a.download="lithuanian_recordings.zip"; a.click();
-  info.textContent="Exported "+(files.length-1)+" clips.";
-};
+  a.href=url; a.download="lt_"+SHEET_ID.split('_')[0]+"_takes_"+stamp+(onlyNew?"_batch":"_all")+".zip"; a.click();
+  for(const k of shipped) exported.add(k); await putMeta('exported',[...exported]);
+  info.textContent="Exported "+(files.length-1)+" clips ("+exported.size+" exported in all).";
+}
+document.getElementById('export').onclick=()=>doExport(false);
+document.getElementById('exportNew').onclick=()=>doExport(true);
 </script>
 </body></html>"""
 
