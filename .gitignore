@@ -73,3 +73,9 @@ style_lab/**/.DS_Store
 style_lab/**/standalone/GO_style_survey.html
 style_lab/**/*.zip
 out_deck_f62/_rerolled/
+out_deck_f62/review_pub/*/media/
+out_deck_a2/*.png
+out_deck_a2/_sheets/
+out_deck_a2/review/media/
+out_phrases_a2/*.png
+out_deck_a2/review_pub/*/media/

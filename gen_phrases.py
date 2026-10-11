@@ -29,7 +29,10 @@ from go_grammars import NOUN_GRAMMARS, SCENE_TAIL
 import deck_builder as db
 from bubbles import UTTER, EXCH
 
-OUT = "out_phrases"
+# PHRASES_OUT=out_phrases_a2 renders into a new folder (owner rule 2026-10-11:
+# version-track, never overwrite — the A2 list's phrase rows go beside, not into,
+# the shipped out_phrases/)
+OUT = os.environ.get("PHRASES_OUT", "out_phrases")
 os.makedirs(OUT, exist_ok=True)
 
 # The only lettering ever permitted on these cards: a lone question mark, on

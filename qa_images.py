@@ -53,7 +53,8 @@ CACHE = "_qa/qa_cache.json"
 STRESS = {0x0300, 0x0301, 0x0303}
 
 # Metadata sources, in priority order. Each maps id -> row.
-SOURCES = ["wordlist_a2_pending.csv", "master_wordlist.csv", "cards_anki.csv"]
+SOURCES = ["a2_build/a2_wordlist.csv", "wordlist_a2_pending.csv", "master_wordlist.csv",
+           "cards_anki.csv"]   # the A2 list first: its card_text is the declared lettering
 # rows drawn under the engine's single-glyph exception (227 raidė): one bare
 # letter IS the subject, so a lone letter in the read-back is not a leak
 try:
@@ -92,8 +93,9 @@ def plain(s):
 
 def compact(s):
     """plain() with all whitespace removed, so 'A E I O U' read back as five
-    separate letters, or '2 + 3 = 5' read back as '2+3=5', still compare equal."""
-    return re.sub(r"\s+", "", plain(s))
+    separate letters, or '2 + 3 = 5' read back as '2+3=5', still compare equal.
+    Dashes and the minus sign fold to '-' ("1901–1979", "−10°")."""
+    return re.sub(r"[\u2010-\u2015\u2212]", "-", re.sub(r"\s+", "", plain(s)))
 
 
 def declared_strings(card_text):
