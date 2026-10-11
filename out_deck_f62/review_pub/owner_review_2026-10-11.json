@@ -1,0 +1,443 @@
+[
+ {
+  "key": "022_bilietas",
+  "note": "Use text to clarify that this is a ticket",
+  "updatedAt": "2026-10-11T15:25:40.515Z",
+  "verdict": "redo",
+  "word": "bilietas"
+ },
+ {
+  "key": "039_miestelis",
+  "note": "",
+  "updatedAt": "2026-10-11T15:27:48.262Z",
+  "verdict": "redo",
+  "word": "miestelis"
+ },
+ {
+  "key": "040_universitetas",
+  "note": "Use Vilnius university as the model for this",
+  "updatedAt": "2026-10-11T15:28:12.884Z",
+  "verdict": "ok",
+  "word": "universitetas"
+ },
+ {
+  "key": "054_kosmosas",
+  "note": "",
+  "updatedAt": "2026-10-11T15:29:28.330Z",
+  "verdict": "redo",
+  "word": "kosmosas (kosminė erdvė)"
+ },
+ {
+  "key": "055_bankas",
+  "note": "AI glitch, is she behind or in front of the bars?",
+  "updatedAt": "2026-10-11T15:29:53.227Z",
+  "verdict": "redo",
+  "word": "bankas"
+ },
+ {
+  "key": "080_sunus",
+  "note": "Take him out of the school uniform, and in the small inserts, have him doing things with his father",
+  "updatedAt": "2026-10-11T15:59:49.386Z",
+  "verdict": "redo",
+  "word": "sūnus"
+ },
+ {
+  "key": "099_berniukas",
+  "note": "In other panels, have him doing other activities",
+  "updatedAt": "2026-10-11T16:01:50.278Z",
+  "verdict": "redo",
+  "word": "berniukas"
+ },
+ {
+  "key": "102_suauges",
+  "note": "Same lineup as before needs be used, as for \"child\" - it's the best way to teach these words",
+  "updatedAt": "2026-10-11T16:02:35.632Z",
+  "verdict": "redo",
+  "word": "suaugęs/suaugusi"
+ },
+ {
+  "key": "106_zaidejas",
+  "note": "Inserts should show players playing other sporst",
+  "updatedAt": "2026-10-11T17:05:04.976Z",
+  "verdict": "redo",
+  "word": "žaidėjas/žaidėja"
+ },
+ {
+  "key": "120_kariuomene",
+  "note": "In cases where army or military units are shown, depict them wearing Lithuanian partisan uniforms, or at least interwar military uniforms",
+  "updatedAt": "2026-10-11T17:07:19.709Z",
+  "verdict": "redo",
+  "word": "kariuomenė"
+ },
+ {
+  "key": "121_kareivis",
+  "note": "In cases where army or military units are shown, depict them wearing Lithuanian partisan uniforms, or at least interwar military uniforms",
+  "updatedAt": "2026-10-11T17:08:03.737Z",
+  "verdict": "redo",
+  "word": "kareivis"
+ },
+ {
+  "key": "128_religija",
+  "note": "Main image should be a church, inserts should show orthodox jews, and another insert, hari krishnas",
+  "updatedAt": "2026-10-11T17:09:41.793Z",
+  "verdict": "redo",
+  "word": "religija"
+ },
+ {
+  "key": "134_doleris",
+  "note": "One dollar OK",
+  "updatedAt": "2026-10-11T17:10:30.588Z",
+  "verdict": "redo",
+  "word": "doleris"
+ },
+ {
+  "key": "138_komanda",
+  "note": "make the team mates less uniform, it looks weird; make some of the inserts show other teams",
+  "updatedAt": "2026-10-11T17:11:14.694Z",
+  "verdict": "redo",
+  "word": "komanda"
+ },
+ {
+  "key": "140_rase",
+  "note": "redo central card hands but otherwise, good idea",
+  "updatedAt": "2026-10-11T17:11:58.591Z",
+  "verdict": "redo",
+  "word": "rasė"
+ },
+ {
+  "key": "168_instrumentas",
+  "note": "Inserts should show other instruments",
+  "updatedAt": "2026-10-11T17:14:29.740Z",
+  "verdict": "redo",
+  "word": "instrumentas"
+ },
+ {
+  "key": "184_tortas",
+  "note": "show a traditional Napoleon cake",
+  "updatedAt": "2026-10-11T17:15:27.606Z",
+  "verdict": "redo",
+  "word": "tortas"
+ },
+ {
+  "key": "215_miegamasis",
+  "note": "First card should show the view of the bedroom through the door, then the panels show the bed items and the mistress making the bed etc",
+  "updatedAt": "2026-10-11T17:17:24.513Z",
+  "verdict": "redo",
+  "word": "miegamasis"
+ },
+ {
+  "key": "216_virtuve",
+  "note": "Women is well drawn, but focus on kitchen appliances in the inserts, etc",
+  "updatedAt": "2026-10-11T17:18:00.462Z",
+  "verdict": "redo",
+  "word": "virtuvė"
+ },
+ {
+  "key": "234_baseinas",
+  "note": "main image, pool is empty of swimmers, although there may be people on the sides of the pool",
+  "updatedAt": "2026-10-11T17:19:17.636Z",
+  "verdict": "redo",
+  "word": "baseinas"
+ },
+ {
+  "key": "265_lupa",
+  "note": "Kissing can be insert, but main image must be lips; also, check with fable when back, but plural is more usual",
+  "updatedAt": "2026-10-11T13:14:06.859Z",
+  "verdict": "redo",
+  "word": "lūpa"
+ },
+ {
+  "key": "269_asara",
+  "note": "Make tearing eye main image, crying girl insert",
+  "updatedAt": "2026-10-11T13:31:40.648Z",
+  "verdict": "redo",
+  "word": "ašara"
+ },
+ {
+  "key": "273_pirstas",
+  "note": "Main image should be a hand with one finger raised, inserts should be a hand with all fingers, then one with just the pinky, something like that",
+  "updatedAt": "2026-10-11T13:33:31.211Z",
+  "verdict": "redo",
+  "word": "pirštas"
+ },
+ {
+  "key": "274_peda",
+  "note": "Top insert is an AI glitch",
+  "updatedAt": "2026-10-11T13:33:50.061Z",
+  "verdict": "redo",
+  "word": "pėda"
+ },
+ {
+  "key": "277_ranka",
+  "note": "I'm ok with this, \"hand\" enough for me",
+  "updatedAt": "2026-10-11T13:34:45.895Z",
+  "verdict": "ok",
+  "word": "ranka"
+ },
+ {
+  "key": "280_kraujas",
+  "note": "Main image should be a blood bag, for infusion, marked O+, for example; insert should show a wounded finger, a deer hanging from a tree with its throat cut (but not gory), or perhaps, humourosly, a vampire",
+  "updatedAt": "2026-10-11T13:36:27.195Z",
+  "verdict": "redo",
+  "word": "kraujas"
+ },
+ {
+  "key": "283_prakaitas",
+  "note": "Not every insert should show a towel - at least one should just be the brow with beads of sweat",
+  "updatedAt": "2026-10-11T13:38:56.655Z",
+  "verdict": "redo",
+  "word": "prakaitas"
+ },
+ {
+  "key": "284_liga",
+  "note": "Simply add an arrow pointing to the microscope, so we know that it is that which causes the illness",
+  "updatedAt": "2026-10-11T13:39:48.144Z",
+  "verdict": "redo",
+  "word": "liga"
+ },
+ {
+  "key": "286_balsas",
+  "note": "For one of them, you can use the HMV, \"his master's voice\" image, of a dog listening to a phonograph; or a sequence of recording and then listening to indicate voice",
+  "updatedAt": "2026-10-11T13:41:24.414Z",
+  "verdict": "redo",
+  "word": "balsas"
+ },
+ {
+  "key": "287_oda",
+  "note": "Add an insert of someone getting tattooed to make it clearer",
+  "updatedAt": "2026-10-11T13:42:04.933Z",
+  "verdict": "redo",
+  "word": "oda"
+ },
+ {
+  "key": "289_jura",
+  "note": "Make one insert that shows a map pointing to the baltic sea",
+  "updatedAt": "2026-10-11T13:43:09.425Z",
+  "verdict": "redo",
+  "word": "jūra"
+ },
+ {
+  "key": "290_vandenynas",
+  "note": "Remove ship from main image",
+  "updatedAt": "2026-10-11T13:43:40.943Z",
+  "verdict": "redo",
+  "word": "vandenynas"
+ },
+ {
+  "key": "293_lietus",
+  "note": "Remove umbrella from main picture, instead, have a woman covering her head with an umbrella as she runs through the rain; insert can have umbrella",
+  "updatedAt": "2026-10-11T13:44:58.464Z",
+  "verdict": "redo",
+  "word": "lietus"
+ },
+ {
+  "key": "300_miskas",
+  "note": "Main image should have no people in it, just nature and the forest; inserts might have people picking mushrooms, etc",
+  "updatedAt": "2026-10-11T13:46:06.136Z",
+  "verdict": "redo",
+  "word": "miškas"
+ },
+ {
+  "key": "316_ugnis",
+  "note": "Don't have someone putting out the fire as the main image",
+  "updatedAt": "2026-10-11T13:49:36.685Z",
+  "verdict": "redo",
+  "word": "ugnis"
+ },
+ {
+  "key": "318_sala",
+  "note": "Trakai is too much castle, even if it's on an island; redo without castle imagery",
+  "updatedAt": "2026-10-11T13:50:06.535Z",
+  "verdict": "redo",
+  "word": "sala"
+ },
+ {
+  "key": "319_kalva",
+  "note": "go for simpler image of mounds",
+  "updatedAt": "2026-10-11T13:50:37.265Z",
+  "verdict": "redo",
+  "word": "kalva"
+ },
+ {
+  "key": "336_kilogramas",
+  "note": "Use lettering, KG on the weight",
+  "updatedAt": "2026-10-11T13:52:57.540Z",
+  "verdict": "redo",
+  "word": "kilogramas"
+ },
+ {
+  "key": "338_peda",
+  "note": "Have a yardstick, marked as such, with feet then beside it; I'm ok also with \"foot\" or whatever being shown on the ruler, or elsewhere",
+  "updatedAt": "2026-10-11T13:55:00.921Z",
+  "verdict": "redo",
+  "word": "pėda"
+ },
+ {
+  "key": "339_svaras",
+  "note": "Have LB on it somewhere",
+  "updatedAt": "2026-10-11T13:55:11.104Z",
+  "verdict": "redo",
+  "word": "svaras"
+ },
+ {
+  "key": "344_data",
+  "note": "Make it a proper calendar with letters and numbers, as well as in the inserts",
+  "updatedAt": "2026-10-11T13:56:11.825Z",
+  "verdict": "redo",
+  "word": "data"
+ },
+ {
+  "key": "349_taskas",
+  "note": "It must be smaller and black to be a dot",
+  "updatedAt": "2026-10-11T13:56:58.405Z",
+  "verdict": "redo",
+  "word": "taškas"
+ },
+ {
+  "key": "352_sviesa",
+  "note": "Inserts need to have not just flaslight, but other forms of light",
+  "updatedAt": "2026-10-11T13:57:33.061Z",
+  "verdict": "redo",
+  "word": "šviesa"
+ },
+ {
+  "key": "353_garsas",
+  "note": "Inserts should show other things making sounds - a cock crowing, a window breaking, etc",
+  "updatedAt": "2026-10-11T13:58:23.737Z",
+  "verdict": "redo",
+  "word": "garsas"
+ },
+ {
+  "key": "356_gabalas",
+  "note": "Insert shows a piece of a pie, other insert, a piece of pizza",
+  "updatedAt": "2026-10-11T13:58:55.045Z",
+  "verdict": "redo",
+  "word": "gabalas"
+ },
+ {
+  "key": "359_zaizda",
+  "note": "Inserts should be various different wounds",
+  "updatedAt": "2026-10-11T13:59:47.334Z",
+  "verdict": "redo",
+  "word": "žaizda"
+ },
+ {
+  "key": "390_girdeti",
+  "note": "Need more examples in the insert of hearing something, such as a train in the distance, along with the main scene",
+  "updatedAt": "2026-10-11T14:58:20.033Z",
+  "verdict": "redo",
+  "word": "girdėti"
+ },
+ {
+  "key": "394_matyti",
+  "note": "Need an eye insert, and perhaps an insert of a man just looking with his eyes, no binoculars",
+  "updatedAt": "2026-10-11T14:59:25.549Z",
+  "verdict": "redo",
+  "word": "matyti"
+ },
+ {
+  "key": "406_mustis",
+  "note": "Inserts needs other examples of fighting to make the meaning more broad",
+  "updatedAt": "2026-10-11T15:02:19.186Z",
+  "verdict": "redo",
+  "word": "muštis"
+ },
+ {
+  "key": "429_piesti",
+  "note": "the house on the picture is upside down, and it would be unusual for the boy to be drawing upside down",
+  "updatedAt": "2026-10-11T15:05:40.607Z",
+  "verdict": "redo",
+  "word": "piešti"
+ },
+ {
+  "key": "435_kristi",
+  "note": "add an insert of a man falling off a roof, and another of an apple falling from a tree",
+  "updatedAt": "2026-10-11T15:06:47.943Z",
+  "verdict": "redo",
+  "word": "kristi"
+ },
+ {
+  "key": "451_siauras",
+  "note": "replace bottle insert with a man squeezing through a narrow cave",
+  "updatedAt": "2026-10-11T15:09:02.785Z",
+  "verdict": "redo",
+  "word": "siauras/siaura"
+ },
+ {
+  "key": "464_geras",
+  "note": "Probably, we need a few pictures of good things - something tidy, a good grade 10/10, a dog being petted and wagging its tail; thumbs up is probably a universal sign for \"good\"",
+  "updatedAt": "2026-10-11T15:12:00.182Z",
+  "verdict": "redo",
+  "word": "geras/gera"
+ },
+ {
+  "key": "465_blogas",
+  "note": "closer to the original; thumbs down probably a good universal symbol to use",
+  "updatedAt": "2026-10-11T15:12:13.597Z",
+  "verdict": "redo",
+  "word": "blogas/bloga"
+ },
+ {
+  "key": "474_grazus",
+  "note": "Here, go full subjective - a beautiful house is a good symbol, insert, someone doing their makeup or getting a smart haircut",
+  "updatedAt": "2026-10-11T15:14:22.260Z",
+  "verdict": "redo",
+  "word": "gražus/graži"
+ },
+ {
+  "key": "475_bjaurus",
+  "note": "See previous comments, and go for the opposite ",
+  "updatedAt": "2026-10-11T15:21:48.160Z",
+  "verdict": "redo",
+  "word": "bjaurus/bjauri (negražus/negraži)"
+ },
+ {
+  "key": "480_turtingas",
+  "note": "probably the rich man vs the beggar is still the right image to get the target response",
+  "updatedAt": "2026-10-11T15:16:07.458Z",
+  "verdict": "redo",
+  "word": "turtingas/turtinga"
+ },
+ {
+  "key": "481_neturtingas",
+  "note": "probably the rich man vs the beggar is still the right image to get the target response",
+  "updatedAt": "2026-10-11T15:16:10.706Z",
+  "verdict": "redo",
+  "word": "neturtingas/neturtinga (vargšas)"
+ },
+ {
+  "key": "482_storas",
+  "note": "english translation should also be rendered as \"fat\"",
+  "updatedAt": "2026-10-11T15:16:32.413Z",
+  "verdict": "ok",
+  "word": "storas/stora"
+ },
+ {
+  "key": "510_as",
+  "note": "INdex finger needs to be used, or very clear thumb toward himself",
+  "updatedAt": "2026-10-11T15:19:11.808Z",
+  "verdict": "redo",
+  "word": "aš"
+ },
+ {
+  "key": "513_ji",
+  "note": "poster is especiall confusing with its own arrows",
+  "updatedAt": "2026-10-11T15:19:56.155Z",
+  "verdict": "redo",
+  "word": "ji"
+ },
+ {
+  "key": "514_tai",
+  "note": "inserts must show other objects",
+  "updatedAt": "2026-10-11T15:20:15.717Z",
+  "verdict": "redo",
+  "word": "tai"
+ },
+ {
+  "key": "516_jus",
+  "note": "should just be pointing to a group of people; bunker image is confusing",
+  "updatedAt": "2026-10-11T15:20:48.868Z",
+  "verdict": "redo",
+  "word": "jūs"
+ }
+]
