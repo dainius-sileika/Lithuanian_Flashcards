@@ -111,7 +111,18 @@ IMG_FMT = os.environ.get("IMG_FMT", "jpg")
 IMG_WIDTH = int(os.environ.get("IMG_WIDTH", "1024"))
 TMP = "_apkg_media"
 APKG_VERSION = os.environ.get("APKG_VERSION", "2.0")
-APKG_OUT = os.environ.get("APKG_OUT", f"Lietuviu_Flashcards_v{APKG_VERSION}.apkg")   # never the old file
+# APKG_LEVELS (2026-10-12): build only the listed subdecks into the package, e.g.
+# APKG_LEVELS=A1 and APKG_LEVELS=A2 for two packages under AnkiWeb's 250 MB cap. Model and
+# deck ids are the same constants in both, so Anki merges them under one parent deck
+# "Lietuvių Flashcards"; media are filtered to what the included notes reference.
+APKG_LEVELS = [l.strip() for l in os.environ.get("APKG_LEVELS", "A1,A2").split(",") if l.strip()]
+APKG_OUT = os.environ.get("APKG_OUT",
+                          f"Lietuviu_Flashcards_v{APKG_VERSION}_{APKG_LEVELS[0]}.apkg" if len(APKG_LEVELS) == 1
+                          else f"Lietuviu_Flashcards_v{APKG_VERSION}.apkg")   # never the old file
+# A1 keys whose current render sits under a different file name: deck_builder derives the
+# render key from the headword, and 265 was retargeted lūpa -> lūpos (2026-10-11) while
+# the note key stays 265_lupa (identity rule below). Looked up first, then the key itself.
+IMAGE_ALIAS = {"265_lupa": "265_lupos"}
 
 def gender_mark(g):
     """1.9 — gender as a symbol, not a letter: blue Mars for masculine, red
@@ -178,7 +189,7 @@ def versioned_out(path):
 
 
 def media_image(k, src=None):
-    src = src or find_image(k, A1_IMAGE_DIRS)
+    src = src or find_image(IMAGE_ALIAS.get(k, k), A1_IMAGE_DIRS) or find_image(k, A1_IMAGE_DIRS)
     if not src or not os.path.exists(src):
         return None, None
     ext = "webp" if IMG_FMT == "webp" else "jpg"
@@ -354,10 +365,23 @@ def main():
     a2_counts = add_a2_notes(DECKS, media, order)
     s_counts = add_sentence_notes(DECKS, media, order)
 
+    unknown = [l for l in APKG_LEVELS if l not in DECKS]
+    if unknown:
+        raise SystemExit(f"APKG_LEVELS: unknown level(s) {unknown}; known: {list(DECKS)}")
+    built = {lv: d for lv, d in DECKS.items() if lv in APKG_LEVELS}
+    if len(built) < len(DECKS):
+        import re
+        used = set()
+        for d in built.values():
+            for n in d.notes:
+                for f in n.fields:
+                    used.update(re.findall(r'src="([^"]+)"', f))
+                    used.update(re.findall(r'\[sound:([^\]]+)\]', f))
+        media = [m for m in media if os.path.basename(m) in used]
     out = versioned_out(APKG_OUT)
-    pkg = genanki.Package(list(DECKS.values())); pkg.media_files = media
+    pkg = genanki.Package(list(built.values())); pkg.media_files = media
     pkg.write_to_file(out)
-    counts = {lv: len(d.notes) for lv, d in DECKS.items()}
+    counts = {lv: len(d.notes) for lv, d in built.items()}
     print(f"built {out} — {len(media)} media files | subdecks: {counts} | "
           f"A1 rows without image: {len(skipped)} | A2 list: {a2_counts} | sentences: {s_counts} | "
           f"study order: {len(order)} positions")

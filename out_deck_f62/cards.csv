@@ -263,7 +263,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 262_plaukai,plaukai,hair,plaukaĩ,M pl,262,Body,262_plaukai.png
 263_akis,akis,eye,akìs,F,263,Body,263_akis.png
 264_burna,burna,mouth,burnà,F,264,Body,264_burna.png
-265_lupa,lūpa,lip,lū́pa,F,265,Body,265_lupa.png
+265_lupos,lūpos,lips,lū́pos,F pl,265,Body,265_lupos.png
 266_nosis,nosis,nose,nósis,F,266,Body,266_nosis.png
 267_dantis,dantis,tooth,dantìs,M,267,Body,267_dantis.png
 268_ausis,ausis,ear,ausìs,F,268,Body,268_ausis.png
@@ -480,7 +480,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 479_piktas,piktas,mean,pìktas,,479,Adjectives,479_piktas.png
 480_turtingas,turtingas/turtinga,rich,turtìngas,M/F,480,Adjectives,480_turtingas.png
 481_neturtingas,neturtingas/neturtinga (vargšas),poor,neturtìngas,M/F,481,Adjectives,481_neturtingas.png
-482_storas,storas/stora,thick,stóras,M/F,482,Adjectives,482_storas.png
+482_storas,storas/stora,fat,stóras,M/F,482,Adjectives,482_storas.png
 483_plonas,plonas/plona,thin,plónas,M/F,483,Adjectives,483_plonas.png
 484_brangus,brangus/brangi,expensive,brangùs,M/F,484,Adjectives,484_brangus.png
 485_pigus,pigus/pigi,cheap,pigùs,M/F,485,Adjectives,485_pigus.png

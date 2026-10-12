@@ -10,21 +10,49 @@ Verdicts go to the artifact database (collection "review", one doc per card:
 claude.ai (window.claude.use("db")); localStorage is the off-line fallback and
 mirror. Publish each part with capabilities {db: {}}.
 
-    python out_deck_f62/build_review_pub.py
+    python out_deck_a2/build_review_a2.py                       # A2 pictures, old fixed ranges -> review_pub/part1, part2
+    python out_deck_a2/build_review_a2.py --parts 3 --out out_deck_a2/review_pub/pictures_2026-10-12
+    python out_deck_a2/build_review_a2.py --src out_phrases_a2 --out out_deck_a2/review_pub/phrases
+    python out_deck_a2/build_review_a2.py --src out_deck_sent --out out_deck_a2/review_pub/sentences
+
+Options (2026-10-12): --src DIR (picture folder; its qa_*.csv and plan.json are read when
+present; out_phrases_a2 has no cards.csv, so its rows come from the A2 list's PHRASE rows),
+--out DIR (output root; one sub-folder per part), --parts N (split the cards into N equal
+consecutive parts instead of the fixed id ranges; a publish takes <=255 files).
 """
-import csv, html, json, os
+import csv, html, json, os, sys, glob
 from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
-NEW, OLD = "out_deck_a2", "__none__"
-PUB = f"{NEW}/review_pub"
+def _opt(name, default):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
+NEW, OLD = _opt("--src", "out_deck_a2"), "__none__"
+PUB = _opt("--out", "out_deck_a2/review_pub")
+NPARTS = int(_opt("--parts", "0"))
+KIND = {"out_deck_a2": "A2 pictures", "out_phrases_a2": "A2 phrase cards",
+        "out_deck_sent": "Sentence cards"}.get(NEW, NEW)
 HALF = 500; Q = 70
 PARTS = [("part1", 0, 1240), ("part2", 1241, 99999)]   # by numeric id: A2-0010..A2-1240 / A2-1241..
 
-cards = list(csv.DictReader(open(f"{NEW}/cards.csv", encoding="utf-8")))
-qa = ({r["key"]: r for r in csv.DictReader(open(f"{NEW}/qa_a2.csv", encoding="utf-8"))}
-      if os.path.exists(f"{NEW}/qa_a2.csv") else {})
-plan = {j["key"]: j for j in json.load(open(f"{NEW}/plan.json"))["jobs"]}
+if os.path.exists(f"{NEW}/cards.csv"):
+    cards = list(csv.DictReader(open(f"{NEW}/cards.csv", encoding="utf-8")))
+else:   # out_phrases_a2: rows from the A2 list
+    cards = [{"key": r["id"], "lithuanian": r["lithuanian_TARGET"], "english": r["english"],
+              "category": r["category"], "number": r["id"]}
+             for r in csv.DictReader(open("a2_build/a2_wordlist.csv", encoding="utf-8"))
+             if r.get("route") == "PHRASE" and os.path.exists(f"{NEW}/{r['id']}.png")]
+_qa = sorted(glob.glob(f"{NEW}/qa_*.csv"))
+qa = {r["key"]: r for f in _qa for r in csv.DictReader(open(f, encoding="utf-8"))}
+plan = ({j["key"]: j for j in json.load(open(f"{NEW}/plan.json"))["jobs"]}
+        if os.path.exists(f"{NEW}/plan.json") else {})
+cards.sort(key=lambda c: int(c["number"].split("-")[1]))
+if NPARTS:
+    _n = len(cards); _step = -(-_n // NPARTS)
+    _nums = [int(c["number"].split("-")[1]) for c in cards]
+    PARTS = [(f"part{i + 1}", _nums[i * _step], _nums[min(_n, (i + 1) * _step) - 1])
+             for i in range(NPARTS) if i * _step < _n]
+elif NEW != "out_deck_a2":
+    PARTS = [("", 0, 99999)]
 rerolled = {}
 if os.path.isdir(f"{NEW}/_rerolled"):
     for f in os.listdir(f"{NEW}/_rerolled"):
@@ -50,9 +78,9 @@ def card_html(r):
     img = (f'<a class="plate" href="media/{r["img"]}" onclick="return lb(this)"><img loading="lazy" src="media/{r["img"]}" alt=""></a>'
            if r["img"] else '<div class="none">missing</div>')
     return f'''<section class="card" data-key="{r["k"]}" data-st="{r["st"]}" data-tags="{html.escape(' '.join(r["tags"]))}" data-cat="{html.escape(r["cat"])}">
-<header><span class="num">A2-{r["n"]:04d}</span> <b>{html.escape(r["lt"])}</b> <span class="en">{html.escape(r["en"])}</span> <span class="cat">{html.escape(r["cat"])}</span> {badge} {tags}
+<header><span class="num">{html.escape(r["k"])}</span> <b>{html.escape(r["lt"])}</b> <span class="en">{html.escape(r["en"])}</span> <span class="cat">{html.escape(r["cat"])}</span> {badge} {tags}
 <span class="verdict"><button class="ok" onclick="mark('{r["k"]}','ok')">OK</button><button class="redo" onclick="mark('{r["k"]}','redo')">Redo</button></span></header>
-{img}<div class="caps"><span>{html.escape(plan.get(r["k"], {}).get("phase", ""))}</span><span>F6.2 · Sunburst · A2</span></div>
+{img}<div class="caps"><span>{html.escape(plan.get(r["k"], {}).get("phase", ""))}</span><span>F6.2 · Sunburst · {html.escape(KIND)}</span></div>
 {guess}{lett}{note}
 <textarea placeholder="note for this card" oninput="noteFor('{r["k"]}',this.value)"></textarea>
 </section>'''
@@ -128,7 +156,7 @@ paint();
 '''
 
 for part, lo, hi in PARTS:
-    pdir = f"{PUB}/{part}"; media = f"{pdir}/media"; os.makedirs(media, exist_ok=True)
+    pdir = f"{PUB}/{part}" if part else PUB; media = f"{pdir}/media"; os.makedirs(media, exist_ok=True)
     rows, counts = [], {"PASS": 0, "WARN": 0, "FAIL": 0}
     for c in cards:
         n = int(c["number"].split("-")[1])
@@ -147,12 +175,14 @@ for part, lo, hi in PARTS:
                          lettering=q.get("lettering", ""), tags=tags, img=composite(k, f"{media}/{k}.jpg")))
     words = {r["k"]: r["lt"] for r in rows}
     first, last = rows[0]["n"], rows[-1]["n"]
-    title = f"A2 pictures review {first:04d}–{last:04d}"
-    other = "part2" if part == "part1" else "part1"
+    k0, k1 = rows[0]["k"], rows[-1]["k"]
+    title = f"{KIND} review {k0}–{k1}"
+    nparts = len(PARTS)
+    other = (f"{nparts} parts in all" if nparts > 1 else "the whole set on this page")
     body = "\n".join(card_html(r) for r in rows)
     doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title}</title><meta name="description" content="Owner review of the A2 picture cards A2-{first:04d}–A2-{last:04d}, first renders with QA verdicts where available.">
+<title>{title}</title><meta name="description" content="Owner review of the {html.escape(KIND)} {k0}–{k1}: renders with QA verdicts.">
 <style>{CSS}</style></head><body>
 <div class="top"><b>{html.escape(title)}</b>
 <button class="f on" data-f="all">all {len(rows)}</button>
@@ -167,12 +197,12 @@ for part, lo, hi in PARTS:
 <button onclick="copyRedo()">copy Redo list</button>
 <span class="counter"><span><b id="nok">0</b> OK</span><span><b id="nredo">0</b> Redo</span><span><b id="nleft">{len(rows)}</b> left</span></span>
 <span id="status"></span></div>
-<div class="lead"><p>A2 picture cards A2-{first:04d}–A2-{last:04d}, first renders on gpt-image-2.5-sunburst with the F6.2 house style ({other} holds the rest). Click a plate to enlarge.
+<div class="lead"><p>{html.escape(KIND)} {k0}–{k1}, renders on gpt-image-2.5-sunburst with the F6.2 house style ({other}). Click a plate to enlarge.
 QA badges are from <code>qa_images.py</code>; <i>read cold as</i> is what the vision model guessed without being told the word; a WARN is usually a synonym.
 Press <b>OK</b> or <b>Redo</b> on every card and add a note where it helps. Verdicts save to this page's store as you go; nothing is pushed to the deck until you confirm.</p></div>
 {body}
 <div id="lbx"><img id="lbimg" alt=""></div>
-<script>const TOTAL={len(rows)};const WORDS={json.dumps(words, ensure_ascii=False)};{JS % {"part": part}}</script>
+<script>const TOTAL={len(rows)};const WORDS={json.dumps(words, ensure_ascii=False)};{JS % {"part": (os.path.basename(PUB) + "_" + part) if (NPARTS or NEW != "out_deck_a2") else part}}</script>
 </body></html>'''
     open(f"{pdir}/index.html", "w", encoding="utf-8").write(doc)
     mb = sum(os.path.getsize(f"{media}/{f}") for f in os.listdir(media)) / 1e6

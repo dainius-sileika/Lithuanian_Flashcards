@@ -1,0 +1,1167 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A2 phrase cards review A2-0348–A2-1197</title><meta name="description" content="Owner review of the A2 phrase cards A2-0348–A2-1197: renders with QA verdicts.">
+<style>
+:root{--paper:#e7ddc6;--paper2:#efe7d4;--red:#8c2a1b;--ink:#2c2620;--teal:#3c5e5a;--dun:#8a7d61}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#2a2420;--paper2:#352d27;--ink:#e8dfcc;--dun:#b2a58a;--teal:#8fb5b0}}
+:root[data-theme="dark"]{--paper:#2a2420;--paper2:#352d27;--ink:#e8dfcc;--dun:#b2a58a;--teal:#8fb5b0}
+*{box-sizing:border-box}body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--paper);margin:0}
+.top{position:sticky;top:0;z-index:5;background:var(--red);color:#efe7d4;padding:8px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.top b{font-variant:small-caps;letter-spacing:.12em;font-size:1.05rem}
+.top button,.top select{font:inherit;font-size:.82rem;padding:3px 8px;border:1px solid #efe7d4;background:transparent;color:#efe7d4;cursor:pointer;border-radius:2px}
+.top button.on{background:#efe7d4;color:var(--red)}
+.counter{margin-left:auto;font-size:.95rem;display:flex;gap:10px;align-items:baseline}
+.counter b{font-size:1.5rem;letter-spacing:0}
+#status{font-size:.75rem;opacity:.85;width:100%}
+.lead{max-width:1240px;margin:14px auto;padding:0 16px;line-height:1.5}
+.card{max-width:1240px;margin:0 auto 20px;background:var(--paper2);border:2px solid var(--red);padding:10px 12px 12px}
+.card.hide{display:none}
+header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+header b{font-size:1.4rem} .num{color:var(--dun);font-size:.9rem} .en{opacity:.8} .cat{font-size:.7rem;color:var(--dun);font-variant:small-caps;letter-spacing:.08em}
+.qa,.tag{font-size:.68rem;font-variant:small-caps;letter-spacing:.08em;padding:1px 6px;border-radius:2px}
+.qa{color:#fff}.qa.pass{background:#3f7d4f}.qa.warn{background:#b7791f}.qa.fail{background:#97301f}
+.tag{border:1px solid var(--teal);color:var(--teal)}
+.verdict{margin-left:auto;display:flex;gap:4px}
+.verdict button{font:inherit;font-size:.85rem;padding:4px 12px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px}
+.card.v-ok .verdict .ok{background:#3f7d4f;color:#fff;border-color:#3f7d4f}
+.card.v-redo .verdict .redo{background:#97301f;color:#fff;border-color:#97301f}
+.card.v-redo{box-shadow:0 0 0 3px #97301f66}
+.card.v-ok{border-color:#3f7d4f}
+.plate img{width:100%;display:block;border:1px solid #b9a98a}
+.caps{display:flex;justify-content:space-between;font-size:.72rem;color:var(--dun);font-variant:small-caps;letter-spacing:.08em;margin-top:3px}
+.none{padding:60px 10px;text-align:center;color:var(--dun);font-style:italic}
+.note{font-size:.82rem;color:#a0604c;margin:8px 0 0;line-height:1.4} .guess{font-size:.82rem;color:var(--dun);margin:6px 0 0}
+code{font-size:.8rem} textarea{width:100%;margin-top:8px;font:inherit;font-size:.85rem;background:transparent;color:var(--ink);border:1px solid #c9b995;padding:4px 6px;min-height:28px;resize:vertical}
+#lbx{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out}
+#lbx img{max-width:98vw;max-height:96vh}
+@media(max-width:600px){header b{font-size:1.15rem}.counter{margin-left:0}}
+</style></head><body>
+<div class="top"><b>A2 phrase cards review A2-0348–A2-1197</b>
+<button class="f on" data-f="all">all 154</button>
+<button class="f" data-f="unmarked">unmarked</button>
+<button class="f" data-f="redo">Redo <span id="nredo2">0</span></button>
+<button class="f" data-f="FAIL">FAIL 5</button>
+<button class="f" data-f="WARN">WARN 74</button>
+<button class="f" data-f="PASS">PASS 75</button>
+<button class="f" data-f="re-rolled">re-rolled 0</button>
+<button class="f" data-f="lettering">lettering 0</button>
+<select id="cat"><option value="">all categories</option><option>Adjectives</option><option>Adverbs</option><option>Basics</option><option>Core patterns</option><option>Formulas</option><option>Getting by</option><option>Greetings</option><option>Nouns</option><option>Phrases</option><option>Politeness</option><option>Time</option><option>Transactions</option><option>Verbs</option></select>
+<button onclick="copyRedo()">copy Redo list</button>
+<span class="counter"><span><b id="nok">0</b> OK</span><span><b id="nredo">0</b> Redo</span><span><b id="nleft">154</b> left</span></span>
+<span id="status"></span></div>
+<div class="lead"><p>A2 phrase cards A2-0348–A2-1197, renders on gpt-image-2.5-sunburst with the F6.2 house style (the whole set on this page). Click a plate to enlarge.
+QA badges are from <code>qa_images.py</code>; <i>read cold as</i> is what the vision model guessed without being told the word; a WARN is usually a synonym.
+Press <b>OK</b> or <b>Redo</b> on every card and add a note where it helps. Verdicts save to this page's store as you go; nothing is pushed to the deck until you confirm.</p></div>
+<section class="card" data-key="A2-0348" data-st="WARN" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0348</span> <b>Labas</b> <span class="en">Hello (informal)</span> <span class="cat">Greetings</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0348','ok')">OK</button><button class="redo" onclick="mark('A2-0348','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0348.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0348.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave</i></p><p class="note">guessed &#x27;wave&#x27;, card teaches &#x27;Hello (informal)&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0348',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0349" data-st="WARN" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0349</span> <b>Sveiki</b> <span class="en">Hello (formal/plural)</span> <span class="cat">Greetings</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0349','ok')">OK</button><button class="redo" onclick="mark('A2-0349','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0349.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0349.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave</i></p><p class="note">guessed &#x27;wave&#x27;, card teaches &#x27;Hello (formal/plural)&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0349',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0350" data-st="PASS" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0350</span> <b>Labas rytas</b> <span class="en">Good morning</span> <span class="cat">Greetings</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0350','ok')">OK</button><button class="redo" onclick="mark('A2-0350','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0350.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0350.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Good morning</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0350',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0351" data-st="PASS" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0351</span> <b>Laba diena</b> <span class="en">Good day</span> <span class="cat">Greetings</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0351','ok')">OK</button><button class="redo" onclick="mark('A2-0351','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0351.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0351.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Good morning</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0351',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0352" data-st="PASS" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0352</span> <b>Labas vakaras</b> <span class="en">Good evening</span> <span class="cat">Greetings</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0352','ok')">OK</button><button class="redo" onclick="mark('A2-0352','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0352.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0352.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Good evening</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0352',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0353" data-st="WARN" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0353</span> <b>Labanakt</b> <span class="en">Good night</span> <span class="cat">Greetings</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0353','ok')">OK</button><button class="redo" onclick="mark('A2-0353','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0353.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0353.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>go to sleep</i></p><p class="note">guessed &#x27;go to sleep&#x27;, card teaches &#x27;Good night&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0353',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0354" data-st="PASS" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0354</span> <b>Viso gero</b> <span class="en">Goodbye</span> <span class="cat">Greetings</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0354','ok')">OK</button><button class="redo" onclick="mark('A2-0354','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0354.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0354.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>goodbye</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0354',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0355" data-st="WARN" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0355</span> <b>Iki pasimatymo</b> <span class="en">See you</span> <span class="cat">Greetings</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0355','ok')">OK</button><button class="redo" onclick="mark('A2-0355','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0355.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0355.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave goodbye</i></p><p class="note">guessed &#x27;wave goodbye&#x27;, card teaches &#x27;See you&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0355',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0356" data-st="WARN" data-tags="" data-cat="Greetings">
+<header><span class="num">A2-0356</span> <b>Iki</b> <span class="en">Bye (informal)</span> <span class="cat">Greetings</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0356','ok')">OK</button><button class="redo" onclick="mark('A2-0356','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0356.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0356.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave</i></p><p class="note">guessed &#x27;wave&#x27;, card teaches &#x27;Bye (informal)&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0356',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0357" data-st="WARN" data-tags="" data-cat="Politeness">
+<header><span class="num">A2-0357</span> <b>Prašau</b> <span class="en">Please / you&#x27;re welcome</span> <span class="cat">Politeness</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0357','ok')">OK</button><button class="redo" onclick="mark('A2-0357','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0357.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0357.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>give</i></p><p class="note">guessed &#x27;give&#x27;, card teaches &quot;Please / you&#x27;re welcome&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0357',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0358" data-st="PASS" data-tags="" data-cat="Politeness">
+<header><span class="num">A2-0358</span> <b>Ačiū</b> <span class="en">Thank you</span> <span class="cat">Politeness</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0358','ok')">OK</button><button class="redo" onclick="mark('A2-0358','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0358.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0358.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>thank you</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0358',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0359" data-st="WARN" data-tags="" data-cat="Politeness">
+<header><span class="num">A2-0359</span> <b>Labai ačiū</b> <span class="en">Thank you very much</span> <span class="cat">Politeness</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0359','ok')">OK</button><button class="redo" onclick="mark('A2-0359','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0359.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0359.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>chest pain</i></p><p class="note">guessed &#x27;chest pain&#x27;, card teaches &#x27;Thank you very much&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0359',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0360" data-st="WARN" data-tags="" data-cat="Politeness">
+<header><span class="num">A2-0360</span> <b>Nėra už ką</b> <span class="en">You&#x27;re welcome (not at all)</span> <span class="cat">Politeness</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0360','ok')">OK</button><button class="redo" onclick="mark('A2-0360','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0360.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0360.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave</i></p><p class="note">guessed &#x27;wave&#x27;, card teaches &quot;You&#x27;re welcome (not at all)&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0360',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0362" data-st="PASS" data-tags="" data-cat="Politeness">
+<header><span class="num">A2-0362</span> <b>Atleiskite</b> <span class="en">Excuse me (formal)</span> <span class="cat">Politeness</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0362','ok')">OK</button><button class="redo" onclick="mark('A2-0362','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0362.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0362.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>excuse me</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0362',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0363" data-st="WARN" data-tags="" data-cat="Politeness">
+<header><span class="num">A2-0363</span> <b>Malonu susipažinti</b> <span class="en">Nice to meet you</span> <span class="cat">Politeness</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0363','ok')">OK</button><button class="redo" onclick="mark('A2-0363','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0363.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0363.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>handshake</i></p><p class="note">guessed &#x27;handshake&#x27;, card teaches &#x27;Nice to meet you&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0363',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0364" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0364</span> <b>Kaip sekasi?</b> <span class="en">How are you?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0364','ok')">OK</button><button class="redo" onclick="mark('A2-0364','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0364.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0364.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Who?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0364',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0365" data-st="WARN" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0365</span> <b>Man gerai</b> <span class="en">I&#x27;m fine</span> <span class="cat">Basics</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0365','ok')">OK</button><button class="redo" onclick="mark('A2-0365','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0365.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0365.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>good</i></p><p class="note">guessed &#x27;good&#x27;, card teaches &quot;I&#x27;m fine&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0365',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0366" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0366</span> <b>Koks jūsų vardas?</b> <span class="en">What is your name?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0366','ok')">OK</button><button class="redo" onclick="mark('A2-0366','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0366.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0366.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>hotel reception</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0366',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0367" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0367</span> <b>Mano vardas…</b> <span class="en">My name is…</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0367','ok')">OK</button><button class="redo" onclick="mark('A2-0367','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0367.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0367.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>name</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0367',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0368" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0368</span> <b>Iš kur jūs?</b> <span class="en">Where are you from?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0368','ok')">OK</button><button class="redo" onclick="mark('A2-0368','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0368.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0368.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>question</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0368',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0369" data-st="WARN" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0369</span> <b>Aš esu iš…</b> <span class="en">I am from…</span> <span class="cat">Basics</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0369','ok')">OK</button><button class="redo" onclick="mark('A2-0369','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0369.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0369.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Lithuanian</i></p><p class="note">guessed &#x27;Lithuanian&#x27;, card teaches &#x27;I am from…&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0369',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0370" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0370</span> <b>Ar kalbate angliškai?</b> <span class="en">Do you speak English?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0370','ok')">OK</button><button class="redo" onclick="mark('A2-0370','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0370.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0370.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>What country?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0370',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0371" data-st="WARN" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0371</span> <b>Nesuprantu</b> <span class="en">I don&#x27;t understand</span> <span class="cat">Basics</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0371','ok')">OK</button><button class="redo" onclick="mark('A2-0371','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0371.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0371.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>confused</i></p><p class="note">guessed &#x27;confused&#x27;, card teaches &quot;I don&#x27;t understand&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0371',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0372" data-st="WARN" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0372</span> <b>Suprantu</b> <span class="en">I understand</span> <span class="cat">Basics</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0372','ok')">OK</button><button class="redo" onclick="mark('A2-0372','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0372.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0372.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>idea</i></p><p class="note">guessed &#x27;idea&#x27;, card teaches &#x27;I understand&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0372',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0373" data-st="FAIL" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0373</span> <b>Nežinau</b> <span class="en">I don&#x27;t know</span> <span class="cat">Basics</span> <span class="qa fail">FAIL</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0373','ok')">OK</button><button class="redo" onclick="mark('A2-0373','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0373.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0373.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>I don&#x27;t know</i></p><p class="note">stray &#x27;?&#x27; — this card is not a question</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0373',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0374" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0374</span> <b>Ar galite pakartoti?</b> <span class="en">Could you repeat?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0374','ok')">OK</button><button class="redo" onclick="mark('A2-0374','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0374.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0374.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>telephone</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0374',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0375" data-st="WARN" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0375</span> <b>Kalbėkite lėčiau, prašau</b> <span class="en">Speak more slowly, please</span> <span class="cat">Basics</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0375','ok')">OK</button><button class="redo" onclick="mark('A2-0375','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0375.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0375.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>turtle</i></p><p class="note">guessed &#x27;turtle&#x27;, card teaches &#x27;Speak more slowly, please&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0375',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0376" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-0376</span> <b>Ką reiškia…?</b> <span class="en">What does … mean?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0376','ok')">OK</button><button class="redo" onclick="mark('A2-0376','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0376.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0376.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>question</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0376',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0377" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0377</span> <b>Kiek kainuoja?</b> <span class="en">How much does it cost?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0377','ok')">OK</button><button class="redo" onclick="mark('A2-0377','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0377.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0377.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>price tag</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0377',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0378" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0378</span> <b>Kur yra…?</b> <span class="en">Where is…?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0378','ok')">OK</button><button class="redo" onclick="mark('A2-0378','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0378.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0378.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Where?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0378',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0379" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0379</span> <b>Kiek valandų?</b> <span class="en">What time is it?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0379','ok')">OK</button><button class="redo" onclick="mark('A2-0379','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0379.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0379.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>What time is it?</i></p><p class="guess">lettering read: <code>10 | 11 | 12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9</code></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0379',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0380" data-st="WARN" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0380</span> <b>Norėčiau…</b> <span class="en">I would like…</span> <span class="cat">Getting by</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0380','ok')">OK</button><button class="redo" onclick="mark('A2-0380','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0380.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0380.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>coffee</i></p><p class="note">guessed &#x27;coffee&#x27;, card teaches &#x27;I would like…&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0380',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0381" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0381</span> <b>Sąskaitą, prašau</b> <span class="en">The bill, please</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0381','ok')">OK</button><button class="redo" onclick="mark('A2-0381','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0381.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0381.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>bill</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0381',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0382" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0382</span> <b>Ar yra…?</b> <span class="en">Is there…?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0382','ok')">OK</button><button class="redo" onclick="mark('A2-0382','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0382.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0382.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>towel</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0382',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0383" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0383</span> <b>Ar galite man padėti?</b> <span class="en">Can you help me?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0383','ok')">OK</button><button class="redo" onclick="mark('A2-0383','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0383.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0383.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>help</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0383',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0384" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0384</span> <b>Padėkite!</b> <span class="en">Help!</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0384','ok')">OK</button><button class="redo" onclick="mark('A2-0384','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0384.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0384.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Help</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0384',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0385" data-st="WARN" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0385</span> <b>Atsargiai!</b> <span class="en">Be careful!</span> <span class="cat">Getting by</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0385','ok')">OK</button><button class="redo" onclick="mark('A2-0385','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0385.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0385.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wet floor</i></p><p class="note">guessed &#x27;wet floor&#x27;, card teaches &#x27;Be careful!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0385',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0386" data-st="FAIL" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0386</span> <b>Aš pasiklydau</b> <span class="en">I&#x27;m lost</span> <span class="cat">Getting by</span> <span class="qa fail">FAIL</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0386','ok')">OK</button><button class="redo" onclick="mark('A2-0386','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0386.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0386.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Where?</i></p><p class="note">stray &#x27;?&#x27; — this card is not a question</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0386',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0880" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0880</span> <b>Atsiprašau…</b> <span class="en">Excuse me, please…</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0880','ok')">OK</button><button class="redo" onclick="mark('A2-0880','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0880.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0880.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>hello</i></p><p class="note">guessed &#x27;hello&#x27;, card teaches &#x27;Excuse me, please…&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0880',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0881" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0881</span> <b>Atsiprašau</b> <span class="en">I&#x27;m sorry</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0881','ok')">OK</button><button class="redo" onclick="mark('A2-0881','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0881.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0881.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>broken cup</i></p><p class="note">guessed &#x27;broken cup&#x27;, card teaches &quot;I&#x27;m sorry&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0881',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0882" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0882</span> <b>Nieko tokio</b> <span class="en">No problem</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0882','ok')">OK</button><button class="redo" onclick="mark('A2-0882','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0882.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0882.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave</i></p><p class="note">guessed &#x27;wave&#x27;, card teaches &#x27;No problem&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0882',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0883" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0883</span> <b>Žinoma</b> <span class="en">Of course</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0883','ok')">OK</button><button class="redo" onclick="mark('A2-0883','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0883.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0883.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>approve</i></p><p class="note">guessed &#x27;approve&#x27;, card teaches &#x27;Of course&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0883',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0884" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0884</span> <b>Akimirką</b> <span class="en">Just a moment</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0884','ok')">OK</button><button class="redo" onclick="mark('A2-0884','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0884.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0884.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wait</i></p><p class="note">guessed &#x27;wait&#x27;, card teaches &#x27;Just a moment&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0884',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0885" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0885</span> <b>Prašom</b> <span class="en">Here you are</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0885','ok')">OK</button><button class="redo" onclick="mark('A2-0885','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0885.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0885.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>give</i></p><p class="note">guessed &#x27;give&#x27;, card teaches &#x27;Here you are&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0885',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0886" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0886</span> <b>Sveiki atvykę!</b> <span class="en">Welcome!</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0886','ok')">OK</button><button class="redo" onclick="mark('A2-0886','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0886.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0886.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>open the door</i></p><p class="note">guessed &#x27;open the door&#x27;, card teaches &#x27;Welcome!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0886',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0887" data-st="PASS" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0887</span> <b>Sėkmės!</b> <span class="en">Good luck!</span> <span class="cat">Formulas</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0887','ok')">OK</button><button class="redo" onclick="mark('A2-0887','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0887.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0887.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>good luck</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0887',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0888" data-st="PASS" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0888</span> <b>Į sveikatą!</b> <span class="en">Cheers!</span> <span class="cat">Formulas</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0888','ok')">OK</button><button class="redo" onclick="mark('A2-0888','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0888.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0888.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>cheers</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0888',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0889" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0889</span> <b>Skanaus</b> <span class="en">Bon appétit</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0889','ok')">OK</button><button class="redo" onclick="mark('A2-0889','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0889.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0889.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>dinner</i></p><p class="note">guessed &#x27;dinner&#x27;, card teaches &#x27;Bon appétit&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0889',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0890" data-st="PASS" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0890</span> <b>Su gimtadieniu!</b> <span class="en">Happy birthday!</span> <span class="cat">Formulas</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0890','ok')">OK</button><button class="redo" onclick="mark('A2-0890','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0890.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0890.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>birthday</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0890',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0891" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0891</span> <b>Sveikinu!</b> <span class="en">Congratulations!</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0891','ok')">OK</button><button class="redo" onclick="mark('A2-0891','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0891.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0891.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>applause</i></p><p class="note">guessed &#x27;applause&#x27;, card teaches &#x27;Congratulations!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0891',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0892" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0892</span> <b>Greitai pasveik!</b> <span class="en">Get well soon</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0892','ok')">OK</button><button class="redo" onclick="mark('A2-0892','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0892.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0892.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>thermometer</i></p><p class="note">guessed &#x27;thermometer&#x27;, card teaches &#x27;Get well soon&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0892',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0893" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0893</span> <b>Iki rytojaus</b> <span class="en">See you tomorrow</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0893','ok')">OK</button><button class="redo" onclick="mark('A2-0893','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0893.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0893.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave</i></p><p class="note">guessed &#x27;wave&#x27;, card teaches &#x27;See you tomorrow&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0893',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0894" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0894</span> <b>Geros dienos</b> <span class="en">Have a nice day</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0894','ok')">OK</button><button class="redo" onclick="mark('A2-0894','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0894.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0894.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>goodbye</i></p><p class="note">guessed &#x27;goodbye&#x27;, card teaches &#x27;Have a nice day&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0894',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0895" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-0895</span> <b>Geros kelionės</b> <span class="en">Good luck on the trip</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0895','ok')">OK</button><button class="redo" onclick="mark('A2-0895','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0895.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0895.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>goodbye</i></p><p class="note">guessed &#x27;goodbye&#x27;, card teaches &#x27;Good luck on the trip&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0895',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0896" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0896</span> <b>Kas tai?</b> <span class="en">What is this?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0896','ok')">OK</button><button class="redo" onclick="mark('A2-0896','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0896.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0896.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>What is in the box?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0896',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0897" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0897</span> <b>Kas tas žmogus?</b> <span class="en">Who is that?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0897','ok')">OK</button><button class="redo" onclick="mark('A2-0897','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0897.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0897.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Who?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0897',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0898" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0898</span> <b>Kur yra tualetas?</b> <span class="en">Where is the toilet?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0898','ok')">OK</button><button class="redo" onclick="mark('A2-0898','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0898.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0898.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Where is the restroom?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0898',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0899" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0899</span> <b>Kiek tai kainuoja?</b> <span class="en">How much is it?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0899','ok')">OK</button><button class="redo" onclick="mark('A2-0899','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0899.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0899.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>How much?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0899',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0900" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0900</span> <b>Nekalbu lietuviškai</b> <span class="en">I don&#x27;t speak Lithuanian</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0900','ok')">OK</button><button class="redo" onclick="mark('A2-0900','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0900.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0900.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Don&#x27;t speak</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0900',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0901" data-st="WARN" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0901</span> <b>Truputį</b> <span class="en">A little</span> <span class="cat">Getting by</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0901','ok')">OK</button><button class="redo" onclick="mark('A2-0901','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0901.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0901.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>a little</i></p><p class="note">picture points at no single meaning (low confidence)</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0901',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0902" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0902</span> <b>Pakartokite, prašau</b> <span class="en">Please repeat</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0902','ok')">OK</button><button class="redo" onclick="mark('A2-0902','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0902.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0902.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>repeat</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0902',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0903" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0903</span> <b>Užrašykite, prašau</b> <span class="en">Write it down, please</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0903','ok')">OK</button><button class="redo" onclick="mark('A2-0903','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0903.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0903.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>write</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0903',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0904" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0904</span> <b>Ką tai reiškia?</b> <span class="en">What does it mean?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0904','ok')">OK</button><button class="redo" onclick="mark('A2-0904','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0904.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0904.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>What does that mean?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0904',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0905" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0905</span> <b>Kaip lietuviškai …?</b> <span class="en">How do you say … in Lithuanian?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0905','ok')">OK</button><button class="redo" onclick="mark('A2-0905','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0905.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0905.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>language</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0905',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0906" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0906</span> <b>Man reikia pagalbos</b> <span class="en">I need help</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0906','ok')">OK</button><button class="redo" onclick="mark('A2-0906','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0906.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0906.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>help</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0906',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0907" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0907</span> <b>Iškvieskite gydytoją!</b> <span class="en">Call a doctor!</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0907','ok')">OK</button><button class="redo" onclick="mark('A2-0907','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0907.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0907.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>call an ambulance</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0907',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0909" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-0909</span> <b>Kur galiu rasti…?</b> <span class="en">Where can I find…?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0909','ok')">OK</button><button class="redo" onclick="mark('A2-0909','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0909.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0909.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>shopping basket</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0909',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0910" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0910</span> <b>Mano vardas Dainius</b> <span class="en">My name is Dainius</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0910','ok')">OK</button><button class="redo" onclick="mark('A2-0910','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0910.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0910.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>name tag</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0910',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0911" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0911</span> <b>Aš esu iš Lietuvos</b> <span class="en">I am from Lithuania</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0911','ok')">OK</button><button class="redo" onclick="mark('A2-0911','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0911.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0911.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Lithuanian</i></p><p class="note">guessed &#x27;Lithuanian&#x27;, card teaches &#x27;I am from Lithuania&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0911',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0912" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0912</span> <b>Aš gyvenu Vilniuje</b> <span class="en">I live in Vilnius</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0912','ok')">OK</button><button class="redo" onclick="mark('A2-0912','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0912.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0912.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>building entrance</i></p><p class="note">guessed &#x27;building entrance&#x27;, card teaches &#x27;I live in Vilnius&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0912',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0913" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0913</span> <b>Man dvidešimt metų</b> <span class="en">I am twenty years old</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0913','ok')">OK</button><button class="redo" onclick="mark('A2-0913','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0913.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0913.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>20th birthday</i></p><p class="guess">lettering read: <code>20</code></p><p class="note">guessed &#x27;20th birthday&#x27;, card teaches &#x27;I am twenty years old&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0913',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0914" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0914</span> <b>Aš turiu brolį</b> <span class="en">I have a brother</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0914','ok')">OK</button><button class="redo" onclick="mark('A2-0914','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0914.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0914.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>my brother</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0914',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0915" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0915</span> <b>Neturiu laiko</b> <span class="en">I don&#x27;t have time</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0915','ok')">OK</button><button class="redo" onclick="mark('A2-0915','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0915.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0915.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>No time</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0915',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0916" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0916</span> <b>Noriu valgyti</b> <span class="en">I want to eat</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0916','ok')">OK</button><button class="redo" onclick="mark('A2-0916','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0916.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0916.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>hungry</i></p><p class="note">guessed &#x27;hungry&#x27;, card teaches &#x27;I want to eat&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0916',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0917" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0917</span> <b>Norėčiau kavos</b> <span class="en">I would like coffee</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0917','ok')">OK</button><button class="redo" onclick="mark('A2-0917','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0917.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0917.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>coffee</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0917',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0918" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0918</span> <b>Galiu truputį kalbėti</b> <span class="en">I can speak a little</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0918','ok')">OK</button><button class="redo" onclick="mark('A2-0918','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0918.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0918.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>small</i></p><p class="note">guessed &#x27;small&#x27;, card teaches &#x27;I can speak a little&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0918',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0919" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0919</span> <b>Man reikia vandens</b> <span class="en">I need water</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0919','ok')">OK</button><button class="redo" onclick="mark('A2-0919','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0919.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0919.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>water</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0919',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0920" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0920</span> <b>Man patinka šis miestas</b> <span class="en">I like this city</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0920','ok')">OK</button><button class="redo" onclick="mark('A2-0920','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0920.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0920.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>I love Vilnius</i></p><p class="note">guessed &#x27;I love Vilnius&#x27;, card teaches &#x27;I like this city&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0920',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0921" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0921</span> <b>Tai mano namas</b> <span class="en">This is my house</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0921','ok')">OK</button><button class="redo" onclick="mark('A2-0921','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0921.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0921.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>house</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0921',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0922" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0922</span> <b>Čia yra parduotuvė</b> <span class="en">There is a shop here</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0922','ok')">OK</button><button class="redo" onclick="mark('A2-0922','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0922.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0922.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>grocery store</i></p><p class="note">guessed &#x27;grocery store&#x27;, card teaches &#x27;There is a shop here&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0922',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0923" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0923</span> <b>Šiandien šalta</b> <span class="en">It is cold today</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0923','ok')">OK</button><button class="redo" onclick="mark('A2-0923','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0923.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0923.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>cold</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0923',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0925" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0925</span> <b>Trečia valanda</b> <span class="en">It is three o&#x27;clock</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0925','ok')">OK</button><button class="redo" onclick="mark('A2-0925','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0925.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0925.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>three o&#x27;clock</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0925',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0926" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0926</span> <b>Kur tu eini?</b> <span class="en">Where are you going?</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0926','ok')">OK</button><button class="redo" onclick="mark('A2-0926','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0926.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0926.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Which way?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0926',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0927" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0927</span> <b>Einu namo</b> <span class="en">I am going home</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0927','ok')">OK</button><button class="redo" onclick="mark('A2-0927','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0927.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0927.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>go home</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0927',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0928" data-st="PASS" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0928</span> <b>Kiek kainuoja bilietas?</b> <span class="en">How much does the ticket cost?</span> <span class="cat">Core patterns</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0928','ok')">OK</button><button class="redo" onclick="mark('A2-0928','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0928.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0928.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>ticket</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0928',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0929" data-st="WARN" data-tags="" data-cat="Core patterns">
+<header><span class="num">A2-0929</span> <b>Nesuprantu, atsiprašau</b> <span class="en">I don&#x27;t understand, sorry</span> <span class="cat">Core patterns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0929','ok')">OK</button><button class="redo" onclick="mark('A2-0929','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0929.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0929.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>confused</i></p><p class="note">guessed &#x27;confused&#x27;, card teaches &quot;I don&#x27;t understand, sorry&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0929',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0950" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0950</span> <b>Ar galėtumėte man padėti?</b> <span class="en">Could you help me, please?</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0950','ok')">OK</button><button class="redo" onclick="mark('A2-0950','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0950.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0950.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>hand in a form</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0950',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0951" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0951</span> <b>Norėčiau rezervuoti kambarį</b> <span class="en">I would like to book a room</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0951','ok')">OK</button><button class="redo" onclick="mark('A2-0951','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0951.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0951.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>hotel room</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0951',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0952" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0952</span> <b>Ar yra laisvas staliukas?</b> <span class="en">Is there a table free?</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0952','ok')">OK</button><button class="redo" onclick="mark('A2-0952','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0952.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0952.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>A table, please</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0952',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0953" data-st="WARN" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0953</span> <b>Imsiu šitą</b> <span class="en">I&#x27;ll take this one</span> <span class="cat">Transactions</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0953','ok')">OK</button><button class="redo" onclick="mark('A2-0953','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0953.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0953.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>sweater</i></p><p class="note">guessed &#x27;sweater&#x27;, card teaches &quot;I&#x27;ll take this one&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0953',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0954" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0954</span> <b>Ar galiu mokėti kortele?</b> <span class="en">Can I pay by card?</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0954','ok')">OK</button><button class="redo" onclick="mark('A2-0954','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0954.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0954.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>credit card</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0954',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0955" data-st="WARN" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0955</span> <b>Kur reikia persėsti?</b> <span class="en">Where do I have to change?</span> <span class="cat">Transactions</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0955','ok')">OK</button><button class="redo" onclick="mark('A2-0955','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0955.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0955.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Which train?</i></p><p class="note">Train-front markings appear as illegible pseudo-lettering.</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0955',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0956" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0956</span> <b>Kada atsidaro?</b> <span class="en">What time does it open?</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0956','ok')">OK</button><button class="redo" onclick="mark('A2-0956','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0956.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0956.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>What time is it?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0956',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0957" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0957</span> <b>Kaip nuvykti į…?</b> <span class="en">How do I get to…?</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0957','ok')">OK</button><button class="redo" onclick="mark('A2-0957','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0957.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0957.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>asking for directions</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0957',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0958" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0958</span> <b>Kairėje</b> <span class="en">It&#x27;s on the left</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0958','ok')">OK</button><button class="redo" onclick="mark('A2-0958','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0958.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0958.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>left</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0958',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0959" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0959</span> <b>Eikite tiesiai</b> <span class="en">Go straight ahead</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0959','ok')">OK</button><button class="redo" onclick="mark('A2-0959','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0959.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0959.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>straight ahead</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0959',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0960" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0960</span> <b>Esu užsiregistravęs pas gydytoją</b> <span class="en">I have an appointment (with the doctor)</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0960','ok')">OK</button><button class="redo" onclick="mark('A2-0960','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0960.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0960.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>appointment</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0960',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0961" data-st="WARN" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0961</span> <b>Blogai jaučiuosi</b> <span class="en">I don&#x27;t feel well</span> <span class="cat">Transactions</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0961','ok')">OK</button><button class="redo" onclick="mark('A2-0961','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0961.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0961.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>headache</i></p><p class="note">guessed &#x27;headache&#x27;, card teaches &quot;I don&#x27;t feel well&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0961',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0962" data-st="WARN" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0962</span> <b>Čia skauda</b> <span class="en">It hurts here</span> <span class="cat">Transactions</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0962','ok')">OK</button><button class="redo" onclick="mark('A2-0962','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0962.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0962.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>stomachache</i></p><p class="note">guessed &#x27;stomachache&#x27;, card teaches &#x27;It hurts here&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0962',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0963" data-st="PASS" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0963</span> <b>Esu alergiškas…</b> <span class="en">I&#x27;m allergic to…</span> <span class="cat">Transactions</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0963','ok')">OK</button><button class="redo" onclick="mark('A2-0963','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0963.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0963.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>allergic to nuts</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0963',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-0964" data-st="WARN" data-tags="" data-cat="Transactions">
+<header><span class="num">A2-0964</span> <b>Ar galite ką nors rekomenduoti?</b> <span class="en">Can you recommend something?</span> <span class="cat">Transactions</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-0964','ok')">OK</button><button class="redo" onclick="mark('A2-0964','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-0964.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-0964.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>menu</i></p><p class="note">Menu text is represented by unreadable lines and dots rather than real lettering.</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-0964',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1145" data-st="PASS" data-tags="" data-cat="Adjectives">
+<header><span class="num">A2-1145</span> <b>atidaryta</b> <span class="en">open (sign on a door)</span> <span class="cat">Adjectives</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1145','ok')">OK</button><button class="redo" onclick="mark('A2-1145','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1145.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1145.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>opens at nine</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1145',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1146" data-st="WARN" data-tags="" data-cat="Adjectives">
+<header><span class="num">A2-1146</span> <b>draudžiama</b> <span class="en">forbidden (sign)</span> <span class="cat">Adjectives</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1146','ok')">OK</button><button class="redo" onclick="mark('A2-1146','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1146.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1146.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>No smoking</i></p><p class="note">guessed &#x27;No smoking&#x27;, card teaches &#x27;forbidden (sign)&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1146',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1147" data-st="WARN" data-tags="" data-cat="Adjectives">
+<header><span class="num">A2-1147</span> <b>leidžiama</b> <span class="en">allowed (sign)</span> <span class="cat">Adjectives</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1147','ok')">OK</button><button class="redo" onclick="mark('A2-1147','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1147.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1147.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>walk the dog</i></p><p class="note">guessed &#x27;walk the dog&#x27;, card teaches &#x27;allowed (sign)&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1147',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1148" data-st="WARN" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1148</span> <b>aišku</b> <span class="en">of course; clearly</span> <span class="cat">Adverbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1148','ok')">OK</button><button class="redo" onclick="mark('A2-1148','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1148.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1148.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>okay</i></p><p class="note">guessed &#x27;okay&#x27;, card teaches &#x27;of course; clearly&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1148',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1149" data-st="WARN" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1149</span> <b>atsargiai</b> <span class="en">carefully; &quot;careful!&quot;</span> <span class="cat">Adverbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1149','ok')">OK</button><button class="redo" onclick="mark('A2-1149','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1149.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1149.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>dangerous stairs</i></p><p class="note">guessed &#x27;dangerous stairs&#x27;, card teaches &#x27;carefully; &quot;careful!&quot;&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1149',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1150" data-st="WARN" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1150</span> <b>gaila</b> <span class="en">a pity; sorry</span> <span class="cat">Adverbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1150','ok')">OK</button><button class="redo" onclick="mark('A2-1150','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1150.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1150.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>sad</i></p><p class="note">guessed &#x27;sad&#x27;, card teaches &#x27;a pity; sorry&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1150',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1151" data-st="WARN" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1151</span> <b>mielai</b> <span class="en">gladly</span> <span class="cat">Adverbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1151','ok')">OK</button><button class="redo" onclick="mark('A2-1151','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1151.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1151.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>good</i></p><p class="note">guessed &#x27;good&#x27;, card teaches &#x27;gladly&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1151',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1152" data-st="FAIL" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1152</span> <b>nemokamai</b> <span class="en">free of charge</span> <span class="cat">Adverbs</span> <span class="qa fail">FAIL</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1152','ok')">OK</button><button class="redo" onclick="mark('A2-1152','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1152.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1152.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>the letter O</i></p><p class="guess">lettering read: <code>O</code></p><p class="note">undeclared text: &#x27;O&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1152',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1153" data-st="WARN" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1153</span> <b>nuostabu</b> <span class="en">wonderful</span> <span class="cat">Adverbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1153','ok')">OK</button><button class="redo" onclick="mark('A2-1153','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1153.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1153.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>beautiful</i></p><p class="note">guessed &#x27;beautiful&#x27;, card teaches &#x27;wonderful&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1153',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1154" data-st="WARN" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1154</span> <b>puiku</b> <span class="en">great!</span> <span class="cat">Adverbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1154','ok')">OK</button><button class="redo" onclick="mark('A2-1154','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1154.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1154.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>thumbs up</i></p><p class="guess">lettering read: <code>9 | 1</code></p><p class="note">guessed &#x27;thumbs up&#x27;, card teaches &#x27;great!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1154',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1155" data-st="FAIL" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1155</span> <b>įdomu</b> <span class="en">interesting; I wonder</span> <span class="cat">Adverbs</span> <span class="qa fail">FAIL</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1155','ok')">OK</button><button class="redo" onclick="mark('A2-1155','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1155.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1155.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Who?</i></p><p class="note">stray &#x27;?&#x27; — this card is not a question</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1155',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1156" data-st="WARN" data-tags="" data-cat="Adverbs">
+<header><span class="num">A2-1156</span> <b>šaunu</b> <span class="en">cool!; great!</span> <span class="cat">Adverbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1156','ok')">OK</button><button class="redo" onclick="mark('A2-1156','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1156.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1156.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>good</i></p><p class="note">guessed &#x27;good&#x27;, card teaches &#x27;cool!; great!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1156',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1157" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-1157</span> <b>Kiek jums metų?</b> <span class="en">How old are you? (formal)</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1157','ok')">OK</button><button class="redo" onclick="mark('A2-1157','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1157.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1157.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>How old are you?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1157',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1158" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-1158</span> <b>Kuo dirbate?</b> <span class="en">What do you do (for work)?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1158','ok')">OK</button><button class="redo" onclick="mark('A2-1158','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1158.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1158.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>What do you do?</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1158',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1159" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-1159</span> <b>Kur gyvenate?</b> <span class="en">Where do you live?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1159','ok')">OK</button><button class="redo" onclick="mark('A2-1159','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1159.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1159.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>house</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1159',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1160" data-st="PASS" data-tags="" data-cat="Basics">
+<header><span class="num">A2-1160</span> <b>Ką veiki?</b> <span class="en">What are you doing? / What are you up to?</span> <span class="cat">Basics</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1160','ok')">OK</button><button class="redo" onclick="mark('A2-1160','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1160.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1160.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>telephone</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1160',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1161" data-st="WARN" data-tags="" data-cat="Basics">
+<header><span class="num">A2-1161</span> <b>Viskas gerai</b> <span class="en">Everything is fine / all good</span> <span class="cat">Basics</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1161','ok')">OK</button><button class="redo" onclick="mark('A2-1161','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1161.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1161.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>yes</i></p><p class="note">guessed &#x27;yes&#x27;, card teaches &#x27;Everything is fine / all good&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1161',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1162" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-1162</span> <b>Gero savaitgalio!</b> <span class="en">Have a good weekend!</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1162','ok')">OK</button><button class="redo" onclick="mark('A2-1162','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1162.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1162.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>holiday</i></p><p class="note">guessed &#x27;holiday&#x27;, card teaches &#x27;Have a good weekend!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1162',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1163" data-st="PASS" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-1163</span> <b>Laimingų Naujųjų metų!</b> <span class="en">Happy New Year!</span> <span class="cat">Formulas</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1163','ok')">OK</button><button class="redo" onclick="mark('A2-1163','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1163.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1163.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>New Year&#x27;s Eve</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1163',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1164" data-st="PASS" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-1164</span> <b>Linksmų Kalėdų!</b> <span class="en">Merry Christmas!</span> <span class="cat">Formulas</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1164','ok')">OK</button><button class="redo" onclick="mark('A2-1164','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1164.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1164.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Christmas tree</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1164',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1165" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-1165</span> <b>Su šventėmis!</b> <span class="en">Happy holidays!</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1165','ok')">OK</button><button class="redo" onclick="mark('A2-1165','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1165.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1165.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>gift</i></p><p class="note">guessed &#x27;gift&#x27;, card teaches &#x27;Happy holidays!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1165',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1166" data-st="PASS" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-1166</span> <b>Sėskitės, prašau</b> <span class="en">Sit down, please</span> <span class="cat">Formulas</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1166','ok')">OK</button><button class="redo" onclick="mark('A2-1166','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1166.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1166.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>sit down</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1166',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1167" data-st="WARN" data-tags="" data-cat="Formulas">
+<header><span class="num">A2-1167</span> <b>Užeikite!</b> <span class="en">Come in!</span> <span class="cat">Formulas</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1167','ok')">OK</button><button class="redo" onclick="mark('A2-1167','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1167.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1167.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>open the door</i></p><p class="note">guessed &#x27;open the door&#x27;, card teaches &#x27;Come in!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1167',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1168" data-st="PASS" data-tags="" data-cat="Getting by">
+<header><span class="num">A2-1168</span> <b>Ar turite…?</b> <span class="en">Do you have…?</span> <span class="cat">Getting by</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1168','ok')">OK</button><button class="redo" onclick="mark('A2-1168','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1168.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1168.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>ask a question</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1168',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1169" data-st="WARN" data-tags="" data-cat="Nouns">
+<header><span class="num">A2-1169</span> <b>minutėlė</b> <span class="en">just a minute</span> <span class="cat">Nouns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1169','ok')">OK</button><button class="redo" onclick="mark('A2-1169','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1169.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1169.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>one o&#x27;clock</i></p><p class="note">guessed &quot;one o&#x27;clock&quot;, card teaches &#x27;just a minute&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1169',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1170" data-st="WARN" data-tags="" data-cat="Nouns">
+<header><span class="num">A2-1170</span> <b>šaunuolis</b> <span class="en">good lad; well done</span> <span class="cat">Nouns</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1170','ok')">OK</button><button class="redo" onclick="mark('A2-1170','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1170.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1170.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>school</i></p><p class="note">guessed &#x27;school&#x27;, card teaches &#x27;good lad; well done&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1170',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1171" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1171</span> <b>alio</b> <span class="en">hello (on the phone)</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1171','ok')">OK</button><button class="redo" onclick="mark('A2-1171','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1171.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1171.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>telephone</i></p><p class="note">guessed &#x27;telephone&#x27;, card teaches &#x27;hello (on the phone)&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1171',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1172" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1172</span> <b>be abejo</b> <span class="en">undoubtedly</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1172','ok')">OK</button><button class="redo" onclick="mark('A2-1172','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1172.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1172.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>correct</i></p><p class="note">guessed &#x27;correct&#x27;, card teaches &#x27;undoubtedly&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1172',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1173" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1173</span> <b>darbo valandos</b> <span class="en">working hours; opening hours</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1173','ok')">OK</button><button class="redo" onclick="mark('A2-1173','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1173.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1173.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>day and night</i></p><p class="note">guessed &#x27;day and night&#x27;, card teaches &#x27;working hours; opening hours&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1173',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1174" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1174</span> <b>dingo elektra</b> <span class="en">the power went out</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1174','ok')">OK</button><button class="redo" onclick="mark('A2-1174','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1174.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1174.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>no electricity</i></p><p class="note">guessed &#x27;no electricity&#x27;, card teaches &#x27;the power went out&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1174',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1175" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1175</span> <b>drabužiai moterims</b> <span class="en">women&#x27;s clothing</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1175','ok')">OK</button><button class="redo" onclick="mark('A2-1175','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1175.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1175.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>dress</i></p><p class="note">guessed &#x27;dress&#x27;, card teaches &quot;women&#x27;s clothing&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1175',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1176" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1176</span> <b>drabužiai vaikams</b> <span class="en">children&#x27;s clothing</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1176','ok')">OK</button><button class="redo" onclick="mark('A2-1176','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1176.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1176.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>sweater</i></p><p class="note">guessed &#x27;sweater&#x27;, card teaches &quot;children&#x27;s clothing&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1176',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1177" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1177</span> <b>drabužiai vyrams</b> <span class="en">men&#x27;s clothing</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1177','ok')">OK</button><button class="redo" onclick="mark('A2-1177','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1177.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1177.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>suit</i></p><p class="note">guessed &#x27;suit&#x27;, card teaches &quot;men&#x27;s clothing&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1177',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1178" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1178</span> <b>dėkui</b> <span class="en">thanks</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1178','ok')">OK</button><button class="redo" onclick="mark('A2-1178','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1178.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1178.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>introduce oneself</i></p><p class="note">guessed &#x27;introduce oneself&#x27;, card teaches &#x27;thanks&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1178',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1179" data-st="PASS" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1179</span> <b>dėmesio</b> <span class="en">attention!</span> <span class="cat">Phrases</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1179','ok')">OK</button><button class="redo" onclick="mark('A2-1179','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1179.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1179.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Attention!</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1179',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1180" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1180</span> <b>eiti miegoti</b> <span class="en">to go to bed</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1180','ok')">OK</button><button class="redo" onclick="mark('A2-1180','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1180.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1180.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>sleepy</i></p><p class="note">guessed &#x27;sleepy&#x27;, card teaches &#x27;to go to bed&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1180',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1181" data-st="PASS" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1181</span> <b>Gelbėkit!</b> <span class="en">Help!</span> <span class="cat">Phrases</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1181','ok')">OK</button><button class="redo" onclick="mark('A2-1181','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1181.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1181.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>Help</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1181',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1182" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1182</span> <b>labai gerai</b> <span class="en">very good</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1182','ok')">OK</button><button class="redo" onclick="mark('A2-1182','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1182.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1182.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>correct</i></p><p class="note">guessed &#x27;correct&#x27;, card teaches &#x27;very good&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1182',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1183" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1183</span> <b>Man patiko!</b> <span class="en">I liked it!</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1183','ok')">OK</button><button class="redo" onclick="mark('A2-1183','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1183.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1183.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>love</i></p><p class="note">guessed &#x27;love&#x27;, card teaches &#x27;I liked it!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1183',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1184" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1184</span> <b>Negali būti!</b> <span class="en">No way!</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1184','ok')">OK</button><button class="redo" onclick="mark('A2-1184','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1184.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1184.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>surprised</i></p><p class="note">guessed &#x27;surprised&#x27;, card teaches &#x27;No way!&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1184',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1185" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1185</span> <b>nieko baisaus</b> <span class="en">it&#x27;s nothing; never mind</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1185','ok')">OK</button><button class="redo" onclick="mark('A2-1185','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1185.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1185.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave</i></p><p class="note">guessed &#x27;wave&#x27;, card teaches &quot;it&#x27;s nothing; never mind&quot;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1185',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1186" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1186</span> <b>pietų pertrauka</b> <span class="en">lunch break</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1186','ok')">OK</button><button class="redo" onclick="mark('A2-1186','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1186.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1186.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>lunchtime</i></p><p class="guess">lettering read: <code>12</code></p><p class="note">guessed &#x27;lunchtime&#x27;, card teaches &#x27;lunch break&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1186',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1187" data-st="PASS" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1187</span> <b>Sudie</b> <span class="en">goodbye</span> <span class="cat">Phrases</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1187','ok')">OK</button><button class="redo" onclick="mark('A2-1187','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1187.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1187.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>wave goodbye</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1187',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1188" data-st="WARN" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1188</span> <b>trūko vamzdis</b> <span class="en">a pipe has burst</span> <span class="cat">Phrases</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1188','ok')">OK</button><button class="redo" onclick="mark('A2-1188','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1188.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1188.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>leak</i></p><p class="note">guessed &#x27;leak&#x27;, card teaches &#x27;a pipe has burst&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1188',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1189" data-st="PASS" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1189</span> <b>vieta prie lango</b> <span class="en">window seat</span> <span class="cat">Phrases</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1189','ok')">OK</button><button class="redo" onclick="mark('A2-1189','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1189.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1189.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>window seat</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1189',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1190" data-st="PASS" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1190</span> <b>vieta prie tako</b> <span class="en">aisle seat</span> <span class="cat">Phrases</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1190','ok')">OK</button><button class="redo" onclick="mark('A2-1190','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1190.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1190.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>aisle seat</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1190',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1191" data-st="PASS" data-tags="" data-cat="Phrases">
+<header><span class="num">A2-1191</span> <b>šiaip sau</b> <span class="en">so-so</span> <span class="cat">Phrases</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1191','ok')">OK</button><button class="redo" onclick="mark('A2-1191','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1191.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1191.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>I don&#x27;t know</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1191',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1192" data-st="PASS" data-tags="" data-cat="Time">
+<header><span class="num">A2-1192</span> <b>Be penkių trys</b> <span class="en">Five to three</span> <span class="cat">Time</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1192','ok')">OK</button><button class="redo" onclick="mark('A2-1192','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1192.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1192.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>five to four</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1192',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1193" data-st="PASS" data-tags="" data-cat="Time">
+<header><span class="num">A2-1193</span> <b>Kuri valanda?</b> <span class="en">What time is it? (alternative)</span> <span class="cat">Time</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1193','ok')">OK</button><button class="redo" onclick="mark('A2-1193','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1193.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1193.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>What time is it?</i></p><p class="guess">lettering read: <code>12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11</code></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1193',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1194" data-st="PASS" data-tags="" data-cat="Time">
+<header><span class="num">A2-1194</span> <b>Penkios po trijų</b> <span class="en">Five past three</span> <span class="cat">Time</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1194','ok')">OK</button><button class="redo" onclick="mark('A2-1194','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1194.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1194.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>five past three</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1194',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1195" data-st="PASS" data-tags="" data-cat="Time">
+<header><span class="num">A2-1195</span> <b>Pusė trijų</b> <span class="en">Half past two (lit. half of the third)</span> <span class="cat">Time</span> <span class="qa pass">PASS</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1195','ok')">OK</button><button class="redo" onclick="mark('A2-1195','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1195.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1195.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>half past two</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1195',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1196" data-st="FAIL" data-tags="" data-cat="Verbs">
+<header><span class="num">A2-1196</span> <b>atrodo</b> <span class="en">it seems; looks</span> <span class="cat">Verbs</span> <span class="qa fail">FAIL</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1196','ok')">OK</button><button class="redo" onclick="mark('A2-1196','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1196.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1196.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>umbrella</i></p><p class="note">stray &#x27;?&#x27; — this card is not a question</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1196',this.value)"></textarea>
+</section>
+<section class="card" data-key="A2-1197" data-st="WARN" data-tags="" data-cat="Verbs">
+<header><span class="num">A2-1197</span> <b>susipažinti</b> <span class="en">to get acquainted</span> <span class="cat">Verbs</span> <span class="qa warn">WARN</span> 
+<span class="verdict"><button class="ok" onclick="mark('A2-1197','ok')">OK</button><button class="redo" onclick="mark('A2-1197','redo')">Redo</button></span></header>
+<a class="plate" href="media/A2-1197.jpg" onclick="return lb(this)"><img loading="lazy" src="media/A2-1197.jpg" alt=""></a><div class="caps"><span></span><span>F6.2 · Sunburst · A2 phrase cards</span></div>
+<p class="guess">read cold as: <i>handshake</i></p><p class="note">guessed &#x27;handshake&#x27;, card teaches &#x27;to get acquainted&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('A2-1197',this.value)"></textarea>
+</section>
+<div id="lbx"><img id="lbimg" alt=""></div>
+<script>const TOTAL=154;const WORDS={"A2-0348": "Labas", "A2-0349": "Sveiki", "A2-0350": "Labas rytas", "A2-0351": "Laba diena", "A2-0352": "Labas vakaras", "A2-0353": "Labanakt", "A2-0354": "Viso gero", "A2-0355": "Iki pasimatymo", "A2-0356": "Iki", "A2-0357": "Prašau", "A2-0358": "Ačiū", "A2-0359": "Labai ačiū", "A2-0360": "Nėra už ką", "A2-0362": "Atleiskite", "A2-0363": "Malonu susipažinti", "A2-0364": "Kaip sekasi?", "A2-0365": "Man gerai", "A2-0366": "Koks jūsų vardas?", "A2-0367": "Mano vardas…", "A2-0368": "Iš kur jūs?", "A2-0369": "Aš esu iš…", "A2-0370": "Ar kalbate angliškai?", "A2-0371": "Nesuprantu", "A2-0372": "Suprantu", "A2-0373": "Nežinau", "A2-0374": "Ar galite pakartoti?", "A2-0375": "Kalbėkite lėčiau, prašau", "A2-0376": "Ką reiškia…?", "A2-0377": "Kiek kainuoja?", "A2-0378": "Kur yra…?", "A2-0379": "Kiek valandų?", "A2-0380": "Norėčiau…", "A2-0381": "Sąskaitą, prašau", "A2-0382": "Ar yra…?", "A2-0383": "Ar galite man padėti?", "A2-0384": "Padėkite!", "A2-0385": "Atsargiai!", "A2-0386": "Aš pasiklydau", "A2-0880": "Atsiprašau…", "A2-0881": "Atsiprašau", "A2-0882": "Nieko tokio", "A2-0883": "Žinoma", "A2-0884": "Akimirką", "A2-0885": "Prašom", "A2-0886": "Sveiki atvykę!", "A2-0887": "Sėkmės!", "A2-0888": "Į sveikatą!", "A2-0889": "Skanaus", "A2-0890": "Su gimtadieniu!", "A2-0891": "Sveikinu!", "A2-0892": "Greitai pasveik!", "A2-0893": "Iki rytojaus", "A2-0894": "Geros dienos", "A2-0895": "Geros kelionės", "A2-0896": "Kas tai?", "A2-0897": "Kas tas žmogus?", "A2-0898": "Kur yra tualetas?", "A2-0899": "Kiek tai kainuoja?", "A2-0900": "Nekalbu lietuviškai", "A2-0901": "Truputį", "A2-0902": "Pakartokite, prašau", "A2-0903": "Užrašykite, prašau", "A2-0904": "Ką tai reiškia?", "A2-0905": "Kaip lietuviškai …?", "A2-0906": "Man reikia pagalbos", "A2-0907": "Iškvieskite gydytoją!", "A2-0909": "Kur galiu rasti…?", "A2-0910": "Mano vardas Dainius", "A2-0911": "Aš esu iš Lietuvos", "A2-0912": "Aš gyvenu Vilniuje", "A2-0913": "Man dvidešimt metų", "A2-0914": "Aš turiu brolį", "A2-0915": "Neturiu laiko", "A2-0916": "Noriu valgyti", "A2-0917": "Norėčiau kavos", "A2-0918": "Galiu truputį kalbėti", "A2-0919": "Man reikia vandens", "A2-0920": "Man patinka šis miestas", "A2-0921": "Tai mano namas", "A2-0922": "Čia yra parduotuvė", "A2-0923": "Šiandien šalta", "A2-0925": "Trečia valanda", "A2-0926": "Kur tu eini?", "A2-0927": "Einu namo", "A2-0928": "Kiek kainuoja bilietas?", "A2-0929": "Nesuprantu, atsiprašau", "A2-0950": "Ar galėtumėte man padėti?", "A2-0951": "Norėčiau rezervuoti kambarį", "A2-0952": "Ar yra laisvas staliukas?", "A2-0953": "Imsiu šitą", "A2-0954": "Ar galiu mokėti kortele?", "A2-0955": "Kur reikia persėsti?", "A2-0956": "Kada atsidaro?", "A2-0957": "Kaip nuvykti į…?", "A2-0958": "Kairėje", "A2-0959": "Eikite tiesiai", "A2-0960": "Esu užsiregistravęs pas gydytoją", "A2-0961": "Blogai jaučiuosi", "A2-0962": "Čia skauda", "A2-0963": "Esu alergiškas…", "A2-0964": "Ar galite ką nors rekomenduoti?", "A2-1145": "atidaryta", "A2-1146": "draudžiama", "A2-1147": "leidžiama", "A2-1148": "aišku", "A2-1149": "atsargiai", "A2-1150": "gaila", "A2-1151": "mielai", "A2-1152": "nemokamai", "A2-1153": "nuostabu", "A2-1154": "puiku", "A2-1155": "įdomu", "A2-1156": "šaunu", "A2-1157": "Kiek jums metų?", "A2-1158": "Kuo dirbate?", "A2-1159": "Kur gyvenate?", "A2-1160": "Ką veiki?", "A2-1161": "Viskas gerai", "A2-1162": "Gero savaitgalio!", "A2-1163": "Laimingų Naujųjų metų!", "A2-1164": "Linksmų Kalėdų!", "A2-1165": "Su šventėmis!", "A2-1166": "Sėskitės, prašau", "A2-1167": "Užeikite!", "A2-1168": "Ar turite…?", "A2-1169": "minutėlė", "A2-1170": "šaunuolis", "A2-1171": "alio", "A2-1172": "be abejo", "A2-1173": "darbo valandos", "A2-1174": "dingo elektra", "A2-1175": "drabužiai moterims", "A2-1176": "drabužiai vaikams", "A2-1177": "drabužiai vyrams", "A2-1178": "dėkui", "A2-1179": "dėmesio", "A2-1180": "eiti miegoti", "A2-1181": "Gelbėkit!", "A2-1182": "labai gerai", "A2-1183": "Man patiko!", "A2-1184": "Negali būti!", "A2-1185": "nieko baisaus", "A2-1186": "pietų pertrauka", "A2-1187": "Sudie", "A2-1188": "trūko vamzdis", "A2-1189": "vieta prie lango", "A2-1190": "vieta prie tako", "A2-1191": "šiaip sau", "A2-1192": "Be penkių trys", "A2-1193": "Kuri valanda?", "A2-1194": "Penkios po trijų", "A2-1195": "Pusė trijų", "A2-1196": "atrodo", "A2-1197": "susipažinti"};
+const PART='phrases_', KEY='a2_review_'+PART; let V={}, db=null, timers={};
+try{V=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const $=id=>document.getElementById(id);
+function status(t,warn){const s=$('status');s.textContent=t;s.style.color=warn?'#ffd9a0':''}
+function local(){try{localStorage.setItem(KEY,JSON.stringify(V))}catch(e){}}
+function counts(){let ok=0,redo=0;for(const k in V){if(V[k].verdict==='ok')ok++;else if(V[k].verdict==='redo')redo++}
+  $('nok').textContent=ok;$('nredo').textContent=redo;$('nleft').textContent=TOTAL-ok-redo;$('nredo2').textContent=redo}
+function paint(){document.querySelectorAll('.card').forEach(c=>{const v=V[c.dataset.key]||{};c.classList.toggle('v-ok',v.verdict==='ok');c.classList.toggle('v-redo',v.verdict==='redo');
+  const ta=c.querySelector('textarea');if(ta&&(v.note||'')!==ta.value&&document.activeElement!==ta)ta.value=v.note||''});counts()}
+async function push(k){const v=V[k];local();if(!db){status('Saved in this browser only (not connected to the artifact store)',true);return}
+  try{await db.doc('review_a2/'+k).set({key:k,word:WORDS[k]||'',verdict:v.verdict||'',note:v.note||'',updatedAt:new Date().toISOString()});status('Saved · '+new Date().toLocaleTimeString())}
+  catch(e){status('Could not save to the artifact store ('+(e.code||'error')+'); kept in this browser',true)}}
+function mark(k,verdict){V[k]=Object.assign({},V[k]||{},{verdict:(V[k]&&V[k].verdict===verdict)?'':verdict});paint();push(k)}
+function noteFor(k,t){V[k]=Object.assign({},V[k]||{},{note:t});local();clearTimeout(timers[k]);timers[k]=setTimeout(()=>push(k),800)}
+let F='all';function filter(){const cat=$('cat').value;document.querySelectorAll('.card').forEach(c=>{const v=V[c.dataset.key]||{};let ok=true;
+  if(F==='redo')ok=v.verdict==='redo';else if(F==='unmarked')ok=!v.verdict;else if(F==='re-rolled')ok=c.dataset.tags.includes('re-rolled');
+  else if(F==='lettering')ok=c.dataset.tags.includes('lettering');else if(F!=='all')ok=c.dataset.st===F;if(cat&&c.dataset.cat!==cat)ok=false;c.classList.toggle('hide',!ok)})}
+document.querySelectorAll('.top .f').forEach(b=>b.onclick=()=>{F=b.dataset.f;document.querySelectorAll('.top .f').forEach(x=>x.classList.toggle('on',x===b));filter()});
+$('cat').onchange=filter;
+function copyRedo(){const t=Object.entries(V).filter(([k,v])=>v.verdict==='redo').map(([k,v])=>k+(v.note?'  # '+v.note:'')).join('\n');
+  navigator.clipboard.writeText(t||'(nothing marked Redo)').then(()=>status((t?t.split('\n').length:0)+' Redo keys copied to the clipboard'))}
+function lb(a){$('lbimg').src=a.href;$('lbx').style.display='flex';return false}
+$('lbx').onclick=()=>{$('lbx').style.display='none'};document.addEventListener('keydown',e=>{if(e.key==='Escape')$('lbx').style.display='none'});
+paint();
+(async()=>{db=window.claude?.use?await window.claude.use('db'):null;
+  if(!db){status('Not connected: verdicts stay in this browser (use "copy Redo list")',true);return}
+  try{const snap=await db.collection('review_a2').limit(1000).get();let n=0;
+    snap.docs.forEach(d=>{const x=d.data();if(!x||!x.key)return;const mine=V[x.key];
+      if(!mine||!mine.updatedAt||(x.updatedAt||'')>=mine.updatedAt){V[x.key]={verdict:x.verdict||'',note:x.note||'',updatedAt:x.updatedAt||''};n++}});
+    local();paint();status('Connected · '+n+' saved verdicts loaded · saves automatically')}
+  catch(e){status('Could not read the artifact store ('+(e.code||'error')+'); working from this browser',true)}})();
+</script>
+</body></html>

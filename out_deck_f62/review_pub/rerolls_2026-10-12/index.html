@@ -1,0 +1,545 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A1 re-rolls 2026-10-12</title><meta name="description" content="Owner review of the 65 A1 cards re-rolled on 2026-10-12: the render reviewed on 2026-10-11 beside the new one, with the owner's note and QA verdict.">
+<style>
+:root{--paper:#e7ddc6;--paper2:#efe7d4;--red:#8c2a1b;--ink:#2c2620;--teal:#3c5e5a;--dun:#8a7d61}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#2a2420;--paper2:#352d27;--ink:#e8dfcc;--dun:#b2a58a;--teal:#8fb5b0}}
+:root[data-theme="dark"]{--paper:#2a2420;--paper2:#352d27;--ink:#e8dfcc;--dun:#b2a58a;--teal:#8fb5b0}
+*{box-sizing:border-box}body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--paper);margin:0}
+.top{position:sticky;top:0;z-index:5;background:var(--red);color:#efe7d4;padding:8px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.top b{font-variant:small-caps;letter-spacing:.12em;font-size:1.05rem}
+.top button,.top select{font:inherit;font-size:.82rem;padding:3px 8px;border:1px solid #efe7d4;background:transparent;color:#efe7d4;cursor:pointer;border-radius:2px}
+.top button.on{background:#efe7d4;color:var(--red)}
+.counter{margin-left:auto;font-size:.95rem;display:flex;gap:10px;align-items:baseline}
+.counter b{font-size:1.5rem;letter-spacing:0}
+#status{font-size:.75rem;opacity:.85;width:100%}
+.lead{max-width:1240px;margin:14px auto;padding:0 16px;line-height:1.5}
+.card{max-width:1240px;margin:0 auto 20px;background:var(--paper2);border:2px solid var(--red);padding:10px 12px 12px}
+.card.hide{display:none}
+header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+header b{font-size:1.4rem} .num{color:var(--dun);font-size:.9rem} .en{opacity:.8} .cat{font-size:.7rem;color:var(--dun);font-variant:small-caps;letter-spacing:.08em}
+.qa,.tag{font-size:.68rem;font-variant:small-caps;letter-spacing:.08em;padding:1px 6px;border-radius:2px}
+.qa{color:#fff}.qa.pass{background:#3f7d4f}.qa.warn{background:#b7791f}.qa.fail{background:#97301f}
+.tag{border:1px solid var(--teal);color:var(--teal)}
+.verdict{margin-left:auto;display:flex;gap:4px}
+.verdict button{font:inherit;font-size:.85rem;padding:4px 12px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px}
+.card.v-ok .verdict .ok{background:#3f7d4f;color:#fff;border-color:#3f7d4f}
+.card.v-redo .verdict .redo{background:#97301f;color:#fff;border-color:#97301f}
+.card.v-redo{box-shadow:0 0 0 3px #97301f66}
+.card.v-ok{border-color:#3f7d4f}
+.plate img{width:100%;display:block;border:1px solid #b9a98a}
+.caps{display:flex;justify-content:space-between;font-size:.72rem;color:var(--dun);font-variant:small-caps;letter-spacing:.08em;margin-top:3px}
+.none{padding:60px 10px;text-align:center;color:var(--dun);font-style:italic}
+.owner{font-size:.9rem;margin:8px 0 0;line-height:1.4;border-left:3px solid var(--red);padding-left:8px}
+.note{font-size:.82rem;color:#a0604c;margin:8px 0 0;line-height:1.4} .guess{font-size:.82rem;color:var(--dun);margin:6px 0 0}
+code{font-size:.8rem} textarea{width:100%;margin-top:8px;font:inherit;font-size:.85rem;background:transparent;color:var(--ink);border:1px solid #c9b995;padding:4px 6px;min-height:28px;resize:vertical}
+#lbx{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out}
+#lbx img{max-width:98vw;max-height:96vh}
+@media(max-width:600px){header b{font-size:1.15rem}.counter{margin-left:0}}
+</style></head><body>
+<div class="top"><b>A1 re-rolls 2026-10-12</b>
+<button class="f on" data-f="all">all 65</button>
+<button class="f" data-f="unmarked">unmarked</button>
+<button class="f" data-f="redo">Redo <span id="nredo2">0</span></button>
+<button class="f" data-f="FAIL">FAIL 0</button>
+<button class="f" data-f="WARN">WARN 33</button>
+<button class="f" data-f="PASS">PASS 32</button>
+<button class="f" data-f="lettering">lettering 8</button>
+<select id="cat"><option value="">all categories</option><option>Adjectives</option><option>Art</option><option>Body</option><option>Food</option><option>Home</option><option>Job</option><option>Location</option><option>Math</option><option>Misc</option><option>Nature</option><option>People</option><option>Pronouns</option><option>Society</option><option>Transportation</option><option>Verbs</option></select>
+<button onclick="copyRedo()">copy Redo list</button>
+<span class="counter"><span><b id="nok">0</b> OK</span><span><b id="nredo">0</b> Redo</span><span><b id="nleft">65</b> left</span></span>
+<span id="status"></span></div>
+<div class="lead"><p>The 65 A1 cards you marked Redo on 2026-10-11 (plus Fable's five staging fixes), drawn again on 2026-10-12.
+Each plate: <b>left</b> the render you reviewed, <b>right</b> the new one; your note sits under the title. Click a plate to enlarge.
+QA badges are from <code>qa_images.py</code>; <i>read cold as</i> is what the vision model guessed without being told the word.
+Press <b>OK</b> or <b>Redo</b> on every card; verdicts save to this page's store as you go.</p></div>
+<section class="card" data-key="022_bilietas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Transportation">
+<header><span class="num">022</span> <b>bilietas</b> <span class="en">train ticket</span> <span class="cat">Transportation</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('022_bilietas','ok')">OK</button><button class="redo" onclick="mark('022_bilietas','redo')">Redo</button></span></header>
+<a class="plate" href="media/022_bilietas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/022_bilietas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>ticket</i></p><p class="guess">lettering read: <code>VILNIUS – KAUNAS | 2 Lt 40 ct</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> Use text to clarify that this is a ticket</p>
+<textarea placeholder="note for this card" oninput="noteFor('022_bilietas',this.value)"></textarea>
+</section>
+<section class="card" data-key="039_miestelis" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Location">
+<header><span class="num">039</span> <b>miestelis</b> <span class="en">town</span> <span class="cat">Location</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('039_miestelis','ok')">OK</button><button class="redo" onclick="mark('039_miestelis','redo')">Redo</button></span></header>
+<a class="plate" href="media/039_miestelis.jpg" onclick="return lb(this)"><img loading="lazy" src="media/039_miestelis.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>village</i></p><p class="note">guessed &#x27;village&#x27;, card teaches &#x27;town&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('039_miestelis',this.value)"></textarea>
+</section>
+<section class="card" data-key="054_kosmosas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Location">
+<header><span class="num">054</span> <b>kosmosas (kosminė erdvė)</b> <span class="en">space</span> <span class="cat">Location</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('054_kosmosas','ok')">OK</button><button class="redo" onclick="mark('054_kosmosas','redo')">Redo</button></span></header>
+<a class="plate" href="media/054_kosmosas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/054_kosmosas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>space</i></p>
+<textarea placeholder="note for this card" oninput="noteFor('054_kosmosas',this.value)"></textarea>
+</section>
+<section class="card" data-key="055_bankas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Location">
+<header><span class="num">055</span> <b>bankas</b> <span class="en">bank</span> <span class="cat">Location</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('055_bankas','ok')">OK</button><button class="redo" onclick="mark('055_bankas','redo')">Redo</button></span></header>
+<a class="plate" href="media/055_bankas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/055_bankas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>bank</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> AI glitch, is she behind or in front of the bars?</p>
+<textarea placeholder="note for this card" oninput="noteFor('055_bankas',this.value)"></textarea>
+</section>
+<section class="card" data-key="080_sunus" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="People">
+<header><span class="num">080</span> <b>sūnus</b> <span class="en">son</span> <span class="cat">People</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('080_sunus','ok')">OK</button><button class="redo" onclick="mark('080_sunus','redo')">Redo</button></span></header>
+<a class="plate" href="media/080_sunus.jpg" onclick="return lb(this)"><img loading="lazy" src="media/080_sunus.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>son</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Take him out of the school uniform, and in the small inserts, have him doing things with his father</p>
+<textarea placeholder="note for this card" oninput="noteFor('080_sunus',this.value)"></textarea>
+</section>
+<section class="card" data-key="084_tevai" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 Fable fix" data-cat="People">
+<header><span class="num">084</span> <b>tėvai</b> <span class="en">parent</span> <span class="cat">People</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">Fable fix</span>
+<span class="verdict"><button class="ok" onclick="mark('084_tevai','ok')">OK</button><button class="redo" onclick="mark('084_tevai','redo')">Redo</button></span></header>
+<a class="plate" href="media/084_tevai.jpg" onclick="return lb(this)"><img loading="lazy" src="media/084_tevai.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>family</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Fable fix: staging line changed 2026-10-11 (no owner note)</p><p class="note">guessed &#x27;family&#x27;, card teaches &#x27;parent&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('084_tevai',this.value)"></textarea>
+</section>
+<section class="card" data-key="088_brolis" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1 Fable fix" data-cat="People">
+<header><span class="num">088</span> <b>brolis</b> <span class="en">brother</span> <span class="cat">People</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">Fable fix</span>
+<span class="verdict"><button class="ok" onclick="mark('088_brolis','ok')">OK</button><button class="redo" onclick="mark('088_brolis','redo')">Redo</button></span></header>
+<a class="plate" href="media/088_brolis.jpg" onclick="return lb(this)"><img loading="lazy" src="media/088_brolis.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>older brother</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Fable fix: staging line changed 2026-10-11 (no owner note)</p>
+<textarea placeholder="note for this card" oninput="noteFor('088_brolis',this.value)"></textarea>
+</section>
+<section class="card" data-key="097_prezidentas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 Fable fix" data-cat="People">
+<header><span class="num">097</span> <b>prezidentas/prezidentė</b> <span class="en">president</span> <span class="cat">People</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">Fable fix</span>
+<span class="verdict"><button class="ok" onclick="mark('097_prezidentas','ok')">OK</button><button class="redo" onclick="mark('097_prezidentas','redo')">Redo</button></span></header>
+<a class="plate" href="media/097_prezidentas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/097_prezidentas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>independence</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Fable fix: staging line changed 2026-10-11 (no owner note)</p><p class="note">guessed &#x27;independence&#x27;, card teaches &#x27;president&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('097_prezidentas',this.value)"></textarea>
+</section>
+<section class="card" data-key="099_berniukas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="People">
+<header><span class="num">099</span> <b>berniukas</b> <span class="en">boy</span> <span class="cat">People</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('099_berniukas','ok')">OK</button><button class="redo" onclick="mark('099_berniukas','redo')">Redo</button></span></header>
+<a class="plate" href="media/099_berniukas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/099_berniukas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>boy</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> In other panels, have him doing other activities</p>
+<textarea placeholder="note for this card" oninput="noteFor('099_berniukas',this.value)"></textarea>
+</section>
+<section class="card" data-key="102_suauges" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="People">
+<header><span class="num">102</span> <b>suaugęs/suaugusi</b> <span class="en">adult</span> <span class="cat">People</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('102_suauges','ok')">OK</button><button class="redo" onclick="mark('102_suauges','redo')">Redo</button></span></header>
+<a class="plate" href="media/102_suauges.jpg" onclick="return lb(this)"><img loading="lazy" src="media/102_suauges.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>parents</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Same lineup as before needs be used, as for &quot;child&quot; - it&#x27;s the best way to teach these words</p><p class="note">guessed &#x27;parents&#x27;, card teaches &#x27;adult&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('102_suauges',this.value)"></textarea>
+</section>
+<section class="card" data-key="106_zaidejas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 LT setting" data-cat="People">
+<header><span class="num">106</span> <b>žaidėjas/žaidėja</b> <span class="en">player</span> <span class="cat">People</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">LT setting</span>
+<span class="verdict"><button class="ok" onclick="mark('106_zaidejas','ok')">OK</button><button class="redo" onclick="mark('106_zaidejas','redo')">Redo</button></span></header>
+<a class="plate" href="media/106_zaidejas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/106_zaidejas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>sports</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Inserts should show players playing other sporst</p><p class="note">guessed &#x27;sports&#x27;, card teaches &#x27;player&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('106_zaidejas',this.value)"></textarea>
+</section>
+<section class="card" data-key="120_kariuomene" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Job">
+<header><span class="num">120</span> <b>kariuomenė</b> <span class="en">army</span> <span class="cat">Job</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('120_kariuomene','ok')">OK</button><button class="redo" onclick="mark('120_kariuomene','redo')">Redo</button></span></header>
+<a class="plate" href="media/120_kariuomene.jpg" onclick="return lb(this)"><img loading="lazy" src="media/120_kariuomene.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>soldier</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> In cases where army or military units are shown, depict them wearing Lithuanian partisan uniforms, or at least interwar military uniforms</p><p class="note">guessed &#x27;soldier&#x27;, card teaches &#x27;army&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('120_kariuomene',this.value)"></textarea>
+</section>
+<section class="card" data-key="121_kareivis" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Job">
+<header><span class="num">121</span> <b>kareivis</b> <span class="en">soldier</span> <span class="cat">Job</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('121_kareivis','ok')">OK</button><button class="redo" onclick="mark('121_kareivis','redo')">Redo</button></span></header>
+<a class="plate" href="media/121_kareivis.jpg" onclick="return lb(this)"><img loading="lazy" src="media/121_kareivis.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>soldier</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> In cases where army or military units are shown, depict them wearing Lithuanian partisan uniforms, or at least interwar military uniforms</p>
+<textarea placeholder="note for this card" oninput="noteFor('121_kareivis',this.value)"></textarea>
+</section>
+<section class="card" data-key="128_religija" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Society">
+<header><span class="num">128</span> <b>religija</b> <span class="en">religion</span> <span class="cat">Society</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('128_religija','ok')">OK</button><button class="redo" onclick="mark('128_religija','redo')">Redo</button></span></header>
+<a class="plate" href="media/128_religija.jpg" onclick="return lb(this)"><img loading="lazy" src="media/128_religija.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>religion</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Main image should be a church, inserts should show orthodox jews, and another insert, hari krishnas</p><p class="note">The collage combines Christian, Jewish, Hindu, and Orthodox religious imagery, making the setting religiously inconsistent.</p>
+<textarea placeholder="note for this card" oninput="noteFor('128_religija',this.value)"></textarea>
+</section>
+<section class="card" data-key="134_doleris" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Society">
+<header><span class="num">134</span> <b>doleris</b> <span class="en">dollar</span> <span class="cat">Society</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('134_doleris','ok')">OK</button><button class="redo" onclick="mark('134_doleris','redo')">Redo</button></span></header>
+<a class="plate" href="media/134_doleris.jpg" onclick="return lb(this)"><img loading="lazy" src="media/134_doleris.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>dollar</i></p><p class="guess">lettering read: <code>1 | 1 | 1 | 1 | ONE DOLLAR</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> One dollar OK</p>
+<textarea placeholder="note for this card" oninput="noteFor('134_doleris',this.value)"></textarea>
+</section>
+<section class="card" data-key="138_komanda" data-st="PASS" data-tags="re-rolled 2026-10-12 ×2" data-cat="Society">
+<header><span class="num">138</span> <b>komanda</b> <span class="en">team</span> <span class="cat">Society</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×2</span>
+<span class="verdict"><button class="ok" onclick="mark('138_komanda','ok')">OK</button><button class="redo" onclick="mark('138_komanda','redo')">Redo</button></span></header>
+<a class="plate" href="media/138_komanda.jpg" onclick="return lb(this)"><img loading="lazy" src="media/138_komanda.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>team</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> make the team mates less uniform, it looks weird; make some of the inserts show other teams</p>
+<textarea placeholder="note for this card" oninput="noteFor('138_komanda',this.value)"></textarea>
+</section>
+<section class="card" data-key="140_rase" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Society">
+<header><span class="num">140</span> <b>rasė</b> <span class="en">race ethnicity</span> <span class="cat">Society</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('140_rase','ok')">OK</button><button class="redo" onclick="mark('140_rase','redo')">Redo</button></span></header>
+<a class="plate" href="media/140_rase.jpg" onclick="return lb(this)"><img loading="lazy" src="media/140_rase.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>unity in diversity</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> redo central card hands but otherwise, good idea</p><p class="note">guessed &#x27;unity in diversity&#x27;, card teaches &#x27;race ethnicity&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('140_rase',this.value)"></textarea>
+</section>
+<section class="card" data-key="168_instrumentas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Art">
+<header><span class="num">168</span> <b>instrumentas</b> <span class="en">instrument</span> <span class="cat">Art</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('168_instrumentas','ok')">OK</button><button class="redo" onclick="mark('168_instrumentas','redo')">Redo</button></span></header>
+<a class="plate" href="media/168_instrumentas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/168_instrumentas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>musical instruments</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Inserts should show other instruments</p>
+<textarea placeholder="note for this card" oninput="noteFor('168_instrumentas',this.value)"></textarea>
+</section>
+<section class="card" data-key="184_tortas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Food">
+<header><span class="num">184</span> <b>tortas</b> <span class="en">cake</span> <span class="cat">Food</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('184_tortas','ok')">OK</button><button class="redo" onclick="mark('184_tortas','redo')">Redo</button></span></header>
+<a class="plate" href="media/184_tortas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/184_tortas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>honey cake</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> show a traditional Napoleon cake</p>
+<textarea placeholder="note for this card" oninput="noteFor('184_tortas',this.value)"></textarea>
+</section>
+<section class="card" data-key="215_miegamasis" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Home">
+<header><span class="num">215</span> <b>miegamasis</b> <span class="en">bedroom</span> <span class="cat">Home</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('215_miegamasis','ok')">OK</button><button class="redo" onclick="mark('215_miegamasis','redo')">Redo</button></span></header>
+<a class="plate" href="media/215_miegamasis.jpg" onclick="return lb(this)"><img loading="lazy" src="media/215_miegamasis.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>make the bed</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> First card should show the view of the bedroom through the door, then the panels show the bed items and the mistress making the bed etc</p><p class="note">guessed &#x27;make the bed&#x27;, card teaches &#x27;bedroom&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('215_miegamasis',this.value)"></textarea>
+</section>
+<section class="card" data-key="216_virtuve" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Home">
+<header><span class="num">216</span> <b>virtuvė</b> <span class="en">kitchen</span> <span class="cat">Home</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('216_virtuve','ok')">OK</button><button class="redo" onclick="mark('216_virtuve','redo')">Redo</button></span></header>
+<a class="plate" href="media/216_virtuve.jpg" onclick="return lb(this)"><img loading="lazy" src="media/216_virtuve.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>kitchen</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Women is well drawn, but focus on kitchen appliances in the inserts, etc</p>
+<textarea placeholder="note for this card" oninput="noteFor('216_virtuve',this.value)"></textarea>
+</section>
+<section class="card" data-key="234_baseinas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Home">
+<header><span class="num">234</span> <b>baseinas</b> <span class="en">pool</span> <span class="cat">Home</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('234_baseinas','ok')">OK</button><button class="redo" onclick="mark('234_baseinas','redo')">Redo</button></span></header>
+<a class="plate" href="media/234_baseinas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/234_baseinas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>swimming pool</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> main image, pool is empty of swimmers, although there may be people on the sides of the pool</p>
+<textarea placeholder="note for this card" oninput="noteFor('234_baseinas',this.value)"></textarea>
+</section>
+<section class="card" data-key="265_lupa" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">265</span> <b>lūpos</b> <span class="en">lips</span> <span class="cat">Body</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('265_lupa','ok')">OK</button><button class="redo" onclick="mark('265_lupa','redo')">Redo</button></span></header>
+<a class="plate" href="media/265_lupa.jpg" onclick="return lb(this)"><img loading="lazy" src="media/265_lupa.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>lip</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Kissing can be insert, but main image must be lips; also, check with fable when back, but plural is more usual</p>
+<textarea placeholder="note for this card" oninput="noteFor('265_lupa',this.value)"></textarea>
+</section>
+<section class="card" data-key="269_asara" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">269</span> <b>ašara</b> <span class="en">tear</span> <span class="cat">Body</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('269_asara','ok')">OK</button><button class="redo" onclick="mark('269_asara','redo')">Redo</button></span></header>
+<a class="plate" href="media/269_asara.jpg" onclick="return lb(this)"><img loading="lazy" src="media/269_asara.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>tear</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Make tearing eye main image, crying girl insert</p>
+<textarea placeholder="note for this card" oninput="noteFor('269_asara',this.value)"></textarea>
+</section>
+<section class="card" data-key="273_pirstas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">273</span> <b>pirštas</b> <span class="en">finger</span> <span class="cat">Body</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('273_pirstas','ok')">OK</button><button class="redo" onclick="mark('273_pirstas','redo')">Redo</button></span></header>
+<a class="plate" href="media/273_pirstas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/273_pirstas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>press</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Main image should be a hand with one finger raised, inserts should be a hand with all fingers, then one with just the pinky, something like that</p><p class="note">guessed &#x27;press&#x27;, card teaches &#x27;finger&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('273_pirstas',this.value)"></textarea>
+</section>
+<section class="card" data-key="274_peda" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">274</span> <b>pėda</b> <span class="en">foot</span> <span class="cat">Body</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('274_peda','ok')">OK</button><button class="redo" onclick="mark('274_peda','redo')">Redo</button></span></header>
+<a class="plate" href="media/274_peda.jpg" onclick="return lb(this)"><img loading="lazy" src="media/274_peda.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>foot</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Top insert is an AI glitch</p>
+<textarea placeholder="note for this card" oninput="noteFor('274_peda',this.value)"></textarea>
+</section>
+<section class="card" data-key="280_kraujas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Body">
+<header><span class="num">280</span> <b>kraujas</b> <span class="en">blood</span> <span class="cat">Body</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('280_kraujas','ok')">OK</button><button class="redo" onclick="mark('280_kraujas','redo')">Redo</button></span></header>
+<a class="plate" href="media/280_kraujas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/280_kraujas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>blood</i></p><p class="guess">lettering read: <code>O+</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> Main image should be a blood bag, for infusion, marked O+, for example; insert should show a wounded finger, a deer hanging from a tree with its throat cut (but not gory), or perhaps, humourosly, a vampire</p><p class="note">The blood bag tubing and the patient&#x27;s arm tubing appear disconnected or ambiguously cropped.</p>
+<textarea placeholder="note for this card" oninput="noteFor('280_kraujas',this.value)"></textarea>
+</section>
+<section class="card" data-key="283_prakaitas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">283</span> <b>prakaitas</b> <span class="en">sweat</span> <span class="cat">Body</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('283_prakaitas','ok')">OK</button><button class="redo" onclick="mark('283_prakaitas','redo')">Redo</button></span></header>
+<a class="plate" href="media/283_prakaitas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/283_prakaitas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>sweating</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Not every insert should show a towel - at least one should just be the brow with beads of sweat</p><p class="note">guessed &#x27;sweating&#x27;, card teaches &#x27;sweat&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('283_prakaitas',this.value)"></textarea>
+</section>
+<section class="card" data-key="284_liga" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">284</span> <b>liga</b> <span class="en">disease</span> <span class="cat">Body</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('284_liga','ok')">OK</button><button class="redo" onclick="mark('284_liga','redo')">Redo</button></span></header>
+<a class="plate" href="media/284_liga.jpg" onclick="return lb(this)"><img loading="lazy" src="media/284_liga.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>fever</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Simply add an arrow pointing to the microscope, so we know that it is that which causes the illness</p><p class="note">guessed &#x27;fever&#x27;, card teaches &#x27;disease&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('284_liga',this.value)"></textarea>
+</section>
+<section class="card" data-key="286_balsas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">286</span> <b>balsas</b> <span class="en">voice</span> <span class="cat">Body</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('286_balsas','ok')">OK</button><button class="redo" onclick="mark('286_balsas','redo')">Redo</button></span></header>
+<a class="plate" href="media/286_balsas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/286_balsas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>hear</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> For one of them, you can use the HMV, &quot;his master&#x27;s voice&quot; image, of a dog listening to a phonograph; or a sequence of recording and then listening to indicate voice</p><p class="note">guessed &#x27;hear&#x27;, card teaches &#x27;voice&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('286_balsas',this.value)"></textarea>
+</section>
+<section class="card" data-key="287_oda" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Body">
+<header><span class="num">287</span> <b>oda</b> <span class="en">skin</span> <span class="cat">Body</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('287_oda','ok')">OK</button><button class="redo" onclick="mark('287_oda','redo')">Redo</button></span></header>
+<a class="plate" href="media/287_oda.jpg" onclick="return lb(this)"><img loading="lazy" src="media/287_oda.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>skin</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Add an insert of someone getting tattooed to make it clearer</p>
+<textarea placeholder="note for this card" oninput="noteFor('287_oda',this.value)"></textarea>
+</section>
+<section class="card" data-key="289_jura" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 LT setting" data-cat="Nature">
+<header><span class="num">289</span> <b>jūra</b> <span class="en">sea</span> <span class="cat">Nature</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">LT setting</span>
+<span class="verdict"><button class="ok" onclick="mark('289_jura','ok')">OK</button><button class="redo" onclick="mark('289_jura','redo')">Redo</button></span></header>
+<a class="plate" href="media/289_jura.jpg" onclick="return lb(this)"><img loading="lazy" src="media/289_jura.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>beach</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Make one insert that shows a map pointing to the baltic sea</p><p class="note">guessed &#x27;beach&#x27;, card teaches &#x27;sea&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('289_jura',this.value)"></textarea>
+</section>
+<section class="card" data-key="290_vandenynas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×2" data-cat="Nature">
+<header><span class="num">290</span> <b>vandenynas</b> <span class="en">ocean</span> <span class="cat">Nature</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×2</span>
+<span class="verdict"><button class="ok" onclick="mark('290_vandenynas','ok')">OK</button><button class="redo" onclick="mark('290_vandenynas','redo')">Redo</button></span></header>
+<a class="plate" href="media/290_vandenynas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/290_vandenynas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>ocean</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Remove ship from main image</p>
+<textarea placeholder="note for this card" oninput="noteFor('290_vandenynas',this.value)"></textarea>
+</section>
+<section class="card" data-key="293_lietus" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1 LT setting" data-cat="Nature">
+<header><span class="num">293</span> <b>lietus</b> <span class="en">rain</span> <span class="cat">Nature</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">LT setting</span>
+<span class="verdict"><button class="ok" onclick="mark('293_lietus','ok')">OK</button><button class="redo" onclick="mark('293_lietus','redo')">Redo</button></span></header>
+<a class="plate" href="media/293_lietus.jpg" onclick="return lb(this)"><img loading="lazy" src="media/293_lietus.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>rain</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Remove umbrella from main picture, instead, have a woman covering her head with an umbrella as she runs through the rain; insert can have umbrella</p>
+<textarea placeholder="note for this card" oninput="noteFor('293_lietus',this.value)"></textarea>
+</section>
+<section class="card" data-key="300_miskas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1 LT setting" data-cat="Nature">
+<header><span class="num">300</span> <b>miškas</b> <span class="en">forest</span> <span class="cat">Nature</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">LT setting</span>
+<span class="verdict"><button class="ok" onclick="mark('300_miskas','ok')">OK</button><button class="redo" onclick="mark('300_miskas','redo')">Redo</button></span></header>
+<a class="plate" href="media/300_miskas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/300_miskas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>forest</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Main image should have no people in it, just nature and the forest; inserts might have people picking mushrooms, etc</p>
+<textarea placeholder="note for this card" oninput="noteFor('300_miskas',this.value)"></textarea>
+</section>
+<section class="card" data-key="316_ugnis" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Nature">
+<header><span class="num">316</span> <b>ugnis</b> <span class="en">fire</span> <span class="cat">Nature</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('316_ugnis','ok')">OK</button><button class="redo" onclick="mark('316_ugnis','redo')">Redo</button></span></header>
+<a class="plate" href="media/316_ugnis.jpg" onclick="return lb(this)"><img loading="lazy" src="media/316_ugnis.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>fire</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Don&#x27;t have someone putting out the fire as the main image</p>
+<textarea placeholder="note for this card" oninput="noteFor('316_ugnis',this.value)"></textarea>
+</section>
+<section class="card" data-key="318_sala" data-st="WARN" data-tags="re-rolled 2026-10-12 ×2 LT setting" data-cat="Nature">
+<header><span class="num">318</span> <b>sala</b> <span class="en">island</span> <span class="cat">Nature</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×2</span><span class="tag">LT setting</span>
+<span class="verdict"><button class="ok" onclick="mark('318_sala','ok')">OK</button><button class="redo" onclick="mark('318_sala','redo')">Redo</button></span></header>
+<a class="plate" href="media/318_sala.jpg" onclick="return lb(this)"><img loading="lazy" src="media/318_sala.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>castle</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Trakai is too much castle, even if it&#x27;s on an island; redo without castle imagery</p><p class="note">guessed &#x27;castle&#x27;, card teaches &#x27;island&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('318_sala',this.value)"></textarea>
+</section>
+<section class="card" data-key="319_kalva" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1 LT setting" data-cat="Nature">
+<header><span class="num">319</span> <b>kalva</b> <span class="en">hill</span> <span class="cat">Nature</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">LT setting</span>
+<span class="verdict"><button class="ok" onclick="mark('319_kalva','ok')">OK</button><button class="redo" onclick="mark('319_kalva','redo')">Redo</button></span></header>
+<a class="plate" href="media/319_kalva.jpg" onclick="return lb(this)"><img loading="lazy" src="media/319_kalva.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>hill</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> go for simpler image of mounds</p>
+<textarea placeholder="note for this card" oninput="noteFor('319_kalva',this.value)"></textarea>
+</section>
+<section class="card" data-key="336_kilogramas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Math">
+<header><span class="num">336</span> <b>kilogramas</b> <span class="en">kilogram</span> <span class="cat">Math</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('336_kilogramas','ok')">OK</button><button class="redo" onclick="mark('336_kilogramas','redo')">Redo</button></span></header>
+<a class="plate" href="media/336_kilogramas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/336_kilogramas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>weighing</i></p><p class="guess">lettering read: <code>1 | KG | 1 | KG | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> Use lettering, KG on the weight</p><p class="note">guessed &#x27;weighing&#x27;, card teaches &#x27;kilogram&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('336_kilogramas',this.value)"></textarea>
+</section>
+<section class="card" data-key="338_peda" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Math">
+<header><span class="num">338</span> <b>pėda</b> <span class="en">foot</span> <span class="cat">Math</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('338_peda','ok')">OK</button><button class="redo" onclick="mark('338_peda','redo')">Redo</button></span></header>
+<a class="plate" href="media/338_peda.jpg" onclick="return lb(this)"><img loading="lazy" src="media/338_peda.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>yard</i></p><p class="guess">lettering read: <code>1 | 2 | 3 | YARD</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> Have a yardstick, marked as such, with feet then beside it; I&#x27;m ok also with &quot;foot&quot; or whatever being shown on the ruler, or elsewhere</p><p class="note">guessed &#x27;yard&#x27;, card teaches &#x27;foot&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('338_peda',this.value)"></textarea>
+</section>
+<section class="card" data-key="339_svaras" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Math">
+<header><span class="num">339</span> <b>svaras</b> <span class="en">pound</span> <span class="cat">Math</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('339_svaras','ok')">OK</button><button class="redo" onclick="mark('339_svaras','redo')">Redo</button></span></header>
+<a class="plate" href="media/339_svaras.jpg" onclick="return lb(this)"><img loading="lazy" src="media/339_svaras.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>pound</i></p><p class="guess">lettering read: <code>1 | LB | 1 | LB</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> Have LB on it somewhere</p><p class="note">A 1 lb weight appears to balance a much larger, apparently heavy sack.</p>
+<textarea placeholder="note for this card" oninput="noteFor('339_svaras',this.value)"></textarea>
+</section>
+<section class="card" data-key="344_data" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Math">
+<header><span class="num">344</span> <b>data</b> <span class="en">date</span> <span class="cat">Math</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('344_data','ok')">OK</button><button class="redo" onclick="mark('344_data','redo')">Redo</button></span></header>
+<a class="plate" href="media/344_data.jpg" onclick="return lb(this)"><img loading="lazy" src="media/344_data.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>September</i></p><p class="guess">lettering read: <code>RUGSĖJIS | Pr | An | Tr | Kt | Pn | Št | Sk | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 12 | 12 | 12.09.81</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> Make it a proper calendar with letters and numbers, as well as in the inserts</p><p class="note">guessed &#x27;September&#x27;, card teaches &#x27;date&#x27; | The calendar layout places September 12 on Friday, but the ticket reads 12.09.81, which was a Saturday.</p>
+<textarea placeholder="note for this card" oninput="noteFor('344_data',this.value)"></textarea>
+</section>
+<section class="card" data-key="349_taskas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Misc">
+<header><span class="num">349</span> <b>taškas</b> <span class="en">dot</span> <span class="cat">Misc</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('349_taskas','ok')">OK</button><button class="redo" onclick="mark('349_taskas','redo')">Redo</button></span></header>
+<a class="plate" href="media/349_taskas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/349_taskas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>dot</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> It must be smaller and black to be a dot</p>
+<textarea placeholder="note for this card" oninput="noteFor('349_taskas',this.value)"></textarea>
+</section>
+<section class="card" data-key="352_sviesa" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Misc">
+<header><span class="num">352</span> <b>šviesa</b> <span class="en">light</span> <span class="cat">Misc</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('352_sviesa','ok')">OK</button><button class="redo" onclick="mark('352_sviesa','redo')">Redo</button></span></header>
+<a class="plate" href="media/352_sviesa.jpg" onclick="return lb(this)"><img loading="lazy" src="media/352_sviesa.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>flashlight</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Inserts need to have not just flaslight, but other forms of light</p><p class="note">guessed &#x27;flashlight&#x27;, card teaches &#x27;light&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('352_sviesa',this.value)"></textarea>
+</section>
+<section class="card" data-key="353_garsas" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Misc">
+<header><span class="num">353</span> <b>garsas</b> <span class="en">sound</span> <span class="cat">Misc</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('353_garsas','ok')">OK</button><button class="redo" onclick="mark('353_garsas','redo')">Redo</button></span></header>
+<a class="plate" href="media/353_garsas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/353_garsas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>loud</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Inserts should show other things making sounds - a cock crowing, a window breaking, etc</p><p class="note">guessed &#x27;loud&#x27;, card teaches &#x27;sound&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('353_garsas',this.value)"></textarea>
+</section>
+<section class="card" data-key="356_gabalas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Misc">
+<header><span class="num">356</span> <b>gabalas</b> <span class="en">piece</span> <span class="cat">Misc</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('356_gabalas','ok')">OK</button><button class="redo" onclick="mark('356_gabalas','redo')">Redo</button></span></header>
+<a class="plate" href="media/356_gabalas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/356_gabalas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>a piece</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Insert shows a piece of a pie, other insert, a piece of pizza</p>
+<textarea placeholder="note for this card" oninput="noteFor('356_gabalas',this.value)"></textarea>
+</section>
+<section class="card" data-key="359_zaizda" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Misc">
+<header><span class="num">359</span> <b>žaizda</b> <span class="en">wound</span> <span class="cat">Misc</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('359_zaizda','ok')">OK</button><button class="redo" onclick="mark('359_zaizda','redo')">Redo</button></span></header>
+<a class="plate" href="media/359_zaizda.jpg" onclick="return lb(this)"><img loading="lazy" src="media/359_zaizda.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>injury</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Inserts should be various different wounds</p><p class="note">guessed &#x27;injury&#x27;, card teaches &#x27;wound&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('359_zaizda',this.value)"></textarea>
+</section>
+<section class="card" data-key="378_zudyti" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 Fable fix" data-cat="Verbs">
+<header><span class="num">378</span> <b>žudyti</b> <span class="en">kill</span> <span class="cat">Verbs</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">Fable fix</span>
+<span class="verdict"><button class="ok" onclick="mark('378_zudyti','ok')">OK</button><button class="redo" onclick="mark('378_zudyti','redo')">Redo</button></span></header>
+<a class="plate" href="media/378_zudyti.jpg" onclick="return lb(this)"><img loading="lazy" src="media/378_zudyti.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>swat a fly</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Fable fix: staging line changed 2026-10-11 (no owner note)</p><p class="note">guessed &#x27;swat a fly&#x27;, card teaches &#x27;kill&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('378_zudyti',this.value)"></textarea>
+</section>
+<section class="card" data-key="387_mokytis" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 Fable fix" data-cat="Verbs">
+<header><span class="num">387</span> <b>mokytis</b> <span class="en">learn</span> <span class="cat">Verbs</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">Fable fix</span>
+<span class="verdict"><button class="ok" onclick="mark('387_mokytis','ok')">OK</button><button class="redo" onclick="mark('387_mokytis','redo')">Redo</button></span></header>
+<a class="plate" href="media/387_mokytis.jpg" onclick="return lb(this)"><img loading="lazy" src="media/387_mokytis.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>study</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Fable fix: staging line changed 2026-10-11 (no owner note)</p><p class="note">guessed &#x27;study&#x27;, card teaches &#x27;learn&#x27; | Text on the papers and book pages is rendered as illegible lines rather than readable lettering.</p>
+<textarea placeholder="note for this card" oninput="noteFor('387_mokytis',this.value)"></textarea>
+</section>
+<section class="card" data-key="390_girdeti" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Verbs">
+<header><span class="num">390</span> <b>girdėti</b> <span class="en">hear</span> <span class="cat">Verbs</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('390_girdeti','ok')">OK</button><button class="redo" onclick="mark('390_girdeti','redo')">Redo</button></span></header>
+<a class="plate" href="media/390_girdeti.jpg" onclick="return lb(this)"><img loading="lazy" src="media/390_girdeti.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>listen</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Need more examples in the insert of hearing something, such as a train in the distance, along with the main scene</p><p class="note">guessed &#x27;listen&#x27;, card teaches &#x27;hear&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('390_girdeti',this.value)"></textarea>
+</section>
+<section class="card" data-key="394_matyti" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 LT setting" data-cat="Verbs">
+<header><span class="num">394</span> <b>matyti</b> <span class="en">see</span> <span class="cat">Verbs</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">LT setting</span>
+<span class="verdict"><button class="ok" onclick="mark('394_matyti','ok')">OK</button><button class="redo" onclick="mark('394_matyti','redo')">Redo</button></span></header>
+<a class="plate" href="media/394_matyti.jpg" onclick="return lb(this)"><img loading="lazy" src="media/394_matyti.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>look</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Need an eye insert, and perhaps an insert of a man just looking with his eyes, no binoculars</p><p class="note">guessed &#x27;look&#x27;, card teaches &#x27;see&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('394_matyti',this.value)"></textarea>
+</section>
+<section class="card" data-key="406_mustis" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Verbs">
+<header><span class="num">406</span> <b>muštis</b> <span class="en">fight</span> <span class="cat">Verbs</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('406_mustis','ok')">OK</button><button class="redo" onclick="mark('406_mustis','redo')">Redo</button></span></header>
+<a class="plate" href="media/406_mustis.jpg" onclick="return lb(this)"><img loading="lazy" src="media/406_mustis.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>fight</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Inserts needs other examples of fighting to make the meaning more broad</p>
+<textarea placeholder="note for this card" oninput="noteFor('406_mustis',this.value)"></textarea>
+</section>
+<section class="card" data-key="429_piesti" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Verbs">
+<header><span class="num">429</span> <b>piešti</b> <span class="en">draw</span> <span class="cat">Verbs</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('429_piesti','ok')">OK</button><button class="redo" onclick="mark('429_piesti','redo')">Redo</button></span></header>
+<a class="plate" href="media/429_piesti.jpg" onclick="return lb(this)"><img loading="lazy" src="media/429_piesti.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>drawing</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> the house on the picture is upside down, and it would be unusual for the boy to be drawing upside down</p><p class="note">guessed &#x27;drawing&#x27;, card teaches &#x27;draw&#x27; | Indistinct, possibly garbled markings are visible on a distant building.</p>
+<textarea placeholder="note for this card" oninput="noteFor('429_piesti',this.value)"></textarea>
+</section>
+<section class="card" data-key="435_kristi" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Verbs">
+<header><span class="num">435</span> <b>kristi</b> <span class="en">fall</span> <span class="cat">Verbs</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('435_kristi','ok')">OK</button><button class="redo" onclick="mark('435_kristi','redo')">Redo</button></span></header>
+<a class="plate" href="media/435_kristi.jpg" onclick="return lb(this)"><img loading="lazy" src="media/435_kristi.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>fall</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> add an insert of a man falling off a roof, and another of an apple falling from a tree</p>
+<textarea placeholder="note for this card" oninput="noteFor('435_kristi',this.value)"></textarea>
+</section>
+<section class="card" data-key="451_siauras" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Adjectives">
+<header><span class="num">451</span> <b>siauras/siaura</b> <span class="en">narrow</span> <span class="cat">Adjectives</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('451_siauras','ok')">OK</button><button class="redo" onclick="mark('451_siauras','redo')">Redo</button></span></header>
+<a class="plate" href="media/451_siauras.jpg" onclick="return lb(this)"><img loading="lazy" src="media/451_siauras.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>narrow</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> replace bottle insert with a man squeezing through a narrow cave</p>
+<textarea placeholder="note for this card" oninput="noteFor('451_siauras',this.value)"></textarea>
+</section>
+<section class="card" data-key="464_geras" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1 lettering declared" data-cat="Adjectives">
+<header><span class="num">464</span> <b>geras/gera</b> <span class="en">good</span> <span class="cat">Adjectives</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span><span class="tag">lettering declared</span>
+<span class="verdict"><button class="ok" onclick="mark('464_geras','ok')">OK</button><button class="redo" onclick="mark('464_geras','redo')">Redo</button></span></header>
+<a class="plate" href="media/464_geras.jpg" onclick="return lb(this)"><img loading="lazy" src="media/464_geras.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>thumb</i></p><p class="guess">lettering read: <code>10</code></p><p class="owner"><b>Owner's note (2026-10-11):</b> Probably, we need a few pictures of good things - something tidy, a good grade 10/10, a dog being petted and wagging its tail; thumbs up is probably a universal sign for &quot;good&quot;</p><p class="note">guessed &#x27;thumb&#x27;, card teaches &#x27;good&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('464_geras',this.value)"></textarea>
+</section>
+<section class="card" data-key="465_blogas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Adjectives">
+<header><span class="num">465</span> <b>blogas/bloga</b> <span class="en">bad</span> <span class="cat">Adjectives</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('465_blogas','ok')">OK</button><button class="redo" onclick="mark('465_blogas','redo')">Redo</button></span></header>
+<a class="plate" href="media/465_blogas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/465_blogas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>bad</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> closer to the original; thumbs down probably a good universal symbol to use</p>
+<textarea placeholder="note for this card" oninput="noteFor('465_blogas',this.value)"></textarea>
+</section>
+<section class="card" data-key="474_grazus" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Adjectives">
+<header><span class="num">474</span> <b>gražus/graži</b> <span class="en">beautiful</span> <span class="cat">Adjectives</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('474_grazus','ok')">OK</button><button class="redo" onclick="mark('474_grazus','redo')">Redo</button></span></header>
+<a class="plate" href="media/474_grazus.jpg" onclick="return lb(this)"><img loading="lazy" src="media/474_grazus.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>roof</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> Here, go full subjective - a beautiful house is a good symbol, insert, someone doing their makeup or getting a smart haircut</p><p class="note">guessed &#x27;roof&#x27;, card teaches &#x27;beautiful&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('474_grazus',this.value)"></textarea>
+</section>
+<section class="card" data-key="475_bjaurus" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Adjectives">
+<header><span class="num">475</span> <b>bjaurus/bjauri (negražus/negraži)</b> <span class="en">ugly</span> <span class="cat">Adjectives</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('475_bjaurus','ok')">OK</button><button class="redo" onclick="mark('475_bjaurus','redo')">Redo</button></span></header>
+<a class="plate" href="media/475_bjaurus.jpg" onclick="return lb(this)"><img loading="lazy" src="media/475_bjaurus.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>dilapidated</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> See previous comments, and go for the opposite </p><p class="note">guessed &#x27;dilapidated&#x27;, card teaches &#x27;ugly&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('475_bjaurus',this.value)"></textarea>
+</section>
+<section class="card" data-key="480_turtingas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Adjectives">
+<header><span class="num">480</span> <b>turtingas/turtinga</b> <span class="en">rich</span> <span class="cat">Adjectives</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('480_turtingas','ok')">OK</button><button class="redo" onclick="mark('480_turtingas','redo')">Redo</button></span></header>
+<a class="plate" href="media/480_turtingas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/480_turtingas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>rich</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> probably the rich man vs the beggar is still the right image to get the target response</p>
+<textarea placeholder="note for this card" oninput="noteFor('480_turtingas',this.value)"></textarea>
+</section>
+<section class="card" data-key="481_neturtingas" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Adjectives">
+<header><span class="num">481</span> <b>neturtingas/neturtinga (vargšas)</b> <span class="en">poor</span> <span class="cat">Adjectives</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('481_neturtingas','ok')">OK</button><button class="redo" onclick="mark('481_neturtingas','redo')">Redo</button></span></header>
+<a class="plate" href="media/481_neturtingas.jpg" onclick="return lb(this)"><img loading="lazy" src="media/481_neturtingas.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>poor</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> probably the rich man vs the beggar is still the right image to get the target response</p>
+<textarea placeholder="note for this card" oninput="noteFor('481_neturtingas',this.value)"></textarea>
+</section>
+<section class="card" data-key="510_as" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Pronouns">
+<header><span class="num">510</span> <b>aš</b> <span class="en">I</span> <span class="cat">Pronouns</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('510_as','ok')">OK</button><button class="redo" onclick="mark('510_as','redo')">Redo</button></span></header>
+<a class="plate" href="media/510_as.jpg" onclick="return lb(this)"><img loading="lazy" src="media/510_as.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>myself</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> INdex finger needs to be used, or very clear thumb toward himself</p>
+<textarea placeholder="note for this card" oninput="noteFor('510_as',this.value)"></textarea>
+</section>
+<section class="card" data-key="513_ji" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Pronouns">
+<header><span class="num">513</span> <b>ji</b> <span class="en">she</span> <span class="cat">Pronouns</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('513_ji','ok')">OK</button><button class="redo" onclick="mark('513_ji','redo')">Redo</button></span></header>
+<a class="plate" href="media/513_ji.jpg" onclick="return lb(this)"><img loading="lazy" src="media/513_ji.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>woman</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> poster is especiall confusing with its own arrows</p><p class="note">guessed &#x27;woman&#x27;, card teaches &#x27;she&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('513_ji',this.value)"></textarea>
+</section>
+<section class="card" data-key="514_tai" data-st="PASS" data-tags="re-rolled 2026-10-12 ×1" data-cat="Pronouns">
+<header><span class="num">514</span> <b>tai</b> <span class="en">it</span> <span class="cat">Pronouns</span> <span class="qa pass">PASS</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('514_tai','ok')">OK</button><button class="redo" onclick="mark('514_tai','redo')">Redo</button></span></header>
+<a class="plate" href="media/514_tai.jpg" onclick="return lb(this)"><img loading="lazy" src="media/514_tai.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>pointing</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> inserts must show other objects</p>
+<textarea placeholder="note for this card" oninput="noteFor('514_tai',this.value)"></textarea>
+</section>
+<section class="card" data-key="516_jus" data-st="WARN" data-tags="re-rolled 2026-10-12 ×1" data-cat="Pronouns">
+<header><span class="num">516</span> <b>jūs</b> <span class="en">you pl</span> <span class="cat">Pronouns</span> <span class="qa warn">WARN</span> <span class="tag">re-rolled 2026-10-12 ×1</span>
+<span class="verdict"><button class="ok" onclick="mark('516_jus','ok')">OK</button><button class="redo" onclick="mark('516_jus','redo')">Redo</button></span></header>
+<a class="plate" href="media/516_jus.jpg" onclick="return lb(this)"><img loading="lazy" src="media/516_jus.jpg" alt=""></a><div class="caps"><span>reviewed 2026-10-11 (before)</span><span>re-roll 2026-10-12 (now)</span></div>
+<p class="guess">read cold as: <i>introduce</i></p><p class="owner"><b>Owner's note (2026-10-11):</b> should just be pointing to a group of people; bunker image is confusing</p><p class="note">guessed &#x27;introduce&#x27;, card teaches &#x27;you pl&#x27;</p>
+<textarea placeholder="note for this card" oninput="noteFor('516_jus',this.value)"></textarea>
+</section>
+<div id="lbx"><img id="lbimg" alt=""></div>
+<script>const TOTAL=65;const WORDS={"022_bilietas": "bilietas", "039_miestelis": "miestelis", "054_kosmosas": "kosmosas (kosminė erdvė)", "055_bankas": "bankas", "080_sunus": "sūnus", "084_tevai": "tėvai", "088_brolis": "brolis", "097_prezidentas": "prezidentas/prezidentė", "099_berniukas": "berniukas", "102_suauges": "suaugęs/suaugusi", "106_zaidejas": "žaidėjas/žaidėja", "120_kariuomene": "kariuomenė", "121_kareivis": "kareivis", "128_religija": "religija", "134_doleris": "doleris", "138_komanda": "komanda", "140_rase": "rasė", "168_instrumentas": "instrumentas", "184_tortas": "tortas", "215_miegamasis": "miegamasis", "216_virtuve": "virtuvė", "234_baseinas": "baseinas", "265_lupa": "lūpos", "269_asara": "ašara", "273_pirstas": "pirštas", "274_peda": "pėda", "280_kraujas": "kraujas", "283_prakaitas": "prakaitas", "284_liga": "liga", "286_balsas": "balsas", "287_oda": "oda", "289_jura": "jūra", "290_vandenynas": "vandenynas", "293_lietus": "lietus", "300_miskas": "miškas", "316_ugnis": "ugnis", "318_sala": "sala", "319_kalva": "kalva", "336_kilogramas": "kilogramas", "338_peda": "pėda", "339_svaras": "svaras", "344_data": "data", "349_taskas": "taškas", "352_sviesa": "šviesa", "353_garsas": "garsas", "356_gabalas": "gabalas", "359_zaizda": "žaizda", "378_zudyti": "žudyti", "387_mokytis": "mokytis", "390_girdeti": "girdėti", "394_matyti": "matyti", "406_mustis": "muštis", "429_piesti": "piešti", "435_kristi": "kristi", "451_siauras": "siauras/siaura", "464_geras": "geras/gera", "465_blogas": "blogas/bloga", "474_grazus": "gražus/graži", "475_bjaurus": "bjaurus/bjauri (negražus/negraži)", "480_turtingas": "turtingas/turtinga", "481_neturtingas": "neturtingas/neturtinga (vargšas)", "510_as": "aš", "513_ji": "ji", "514_tai": "tai", "516_jus": "jūs"};
+const PART='rerolls_2026-10-12', KEY='f62_review_'+PART; let V={}, db=null, timers={};
+try{V=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const $=id=>document.getElementById(id);
+function status(t,warn){const s=$('status');s.textContent=t;s.style.color=warn?'#ffd9a0':''}
+function local(){try{localStorage.setItem(KEY,JSON.stringify(V))}catch(e){}}
+function counts(){let ok=0,redo=0;for(const k in V){if(V[k].verdict==='ok')ok++;else if(V[k].verdict==='redo')redo++}
+  $('nok').textContent=ok;$('nredo').textContent=redo;$('nleft').textContent=TOTAL-ok-redo;$('nredo2').textContent=redo}
+function paint(){document.querySelectorAll('.card').forEach(c=>{const v=V[c.dataset.key]||{};c.classList.toggle('v-ok',v.verdict==='ok');c.classList.toggle('v-redo',v.verdict==='redo');
+  const ta=c.querySelector('textarea');if(ta&&(v.note||'')!==ta.value&&document.activeElement!==ta)ta.value=v.note||''});counts()}
+async function push(k){const v=V[k];local();if(!db){status('Saved in this browser only (not connected to the artifact store)',true);return}
+  try{await db.doc('review/'+k).set({key:k,word:WORDS[k]||'',verdict:v.verdict||'',note:v.note||'',updatedAt:new Date().toISOString()});status('Saved · '+new Date().toLocaleTimeString())}
+  catch(e){status('Could not save to the artifact store ('+(e.code||'error')+'); kept in this browser',true)}}
+function mark(k,verdict){V[k]=Object.assign({},V[k]||{},{verdict:(V[k]&&V[k].verdict===verdict)?'':verdict});paint();push(k)}
+function noteFor(k,t){V[k]=Object.assign({},V[k]||{},{note:t});local();clearTimeout(timers[k]);timers[k]=setTimeout(()=>push(k),800)}
+let F='all';function filter(){const cat=$('cat').value;document.querySelectorAll('.card').forEach(c=>{const v=V[c.dataset.key]||{};let ok=true;
+  if(F==='redo')ok=v.verdict==='redo';else if(F==='unmarked')ok=!v.verdict;else if(F==='re-rolled')ok=c.dataset.tags.includes('re-rolled');
+  else if(F==='lettering')ok=c.dataset.tags.includes('lettering');else if(F!=='all')ok=c.dataset.st===F;if(cat&&c.dataset.cat!==cat)ok=false;c.classList.toggle('hide',!ok)})}
+document.querySelectorAll('.top .f').forEach(b=>b.onclick=()=>{F=b.dataset.f;document.querySelectorAll('.top .f').forEach(x=>x.classList.toggle('on',x===b));filter()});
+$('cat').onchange=filter;
+function copyRedo(){const t=Object.entries(V).filter(([k,v])=>v.verdict==='redo').map(([k,v])=>k+(v.note?'  # '+v.note:'')).join('\n');
+  navigator.clipboard.writeText(t||'(nothing marked Redo)').then(()=>status((t?t.split('\n').length:0)+' Redo keys copied to the clipboard'))}
+function lb(a){$('lbimg').src=a.href;$('lbx').style.display='flex';return false}
+$('lbx').onclick=()=>{$('lbx').style.display='none'};document.addEventListener('keydown',e=>{if(e.key==='Escape')$('lbx').style.display='none'});
+paint();
+(async()=>{db=window.claude?.use?await window.claude.use('db'):null;
+  if(!db){status('Not connected: verdicts stay in this browser (use "copy Redo list")',true);return}
+  try{const snap=await db.collection('review').limit(1000).get();let n=0;
+    snap.docs.forEach(d=>{const x=d.data();if(!x||!x.key)return;const mine=V[x.key];
+      if(!mine||!mine.updatedAt||(x.updatedAt||'')>=mine.updatedAt){V[x.key]={verdict:x.verdict||'',note:x.note||'',updatedAt:x.updatedAt||''};n++}});
+    local();paint();status('Connected · '+n+' saved verdicts loaded · saves automatically')}
+  catch(e){status('Could not read the artifact store ('+(e.code||'error')+'); working from this browser',true)}})();
+</script>
+</body></html>

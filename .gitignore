@@ -82,3 +82,11 @@ out_deck_a2/review_pub/*/media/
 _cloud_media/
 _cloud_out/
 _transfer/
+out_deck_a2/review_pub/**/media/
+out_deck_f62/review_pub/**/media/
+out_deck_sent/*.png
+out_deck_sent/_sheets/
+out_deck_sent/_rerolled/
+out_deck_a2/_rerolled/
+out_phrases_a2/_sheets/
+*.apkg

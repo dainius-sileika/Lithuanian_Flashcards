@@ -10,8 +10,15 @@ claude.ai (window.claude.use("db")); localStorage is the off-line fallback and
 mirror. Publish each part with capabilities {db: {}}.
 
     python out_deck_f62/build_review_pub.py
+    python out_deck_f62/build_review_pub.py --rerolls [--since 2026-10-12]
+
+--rerolls (2026-10-12): one page for the A1 Redo round -> review_pub/rerolls_<since>/.
+Cards = the owner's Redo verdicts in review_pub/owner_review_2026-10-11.json plus the
+Fable fixes (FABLE_FIXES). Each plate: left the render the owner reviewed (the newest
+_rerolled/<key>.r*.png older than --since), right the current render; the owner's note
+is shown beside each card; QA from qa_f62_rerolls.csv.
 """
-import csv, html, json, os
+import csv, html, json, os, sys, time
 from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
@@ -48,6 +55,9 @@ def card_html(r):
     badge = f'<span class="qa {r["st"].lower()}">{r["st"]}</span>' if r["st"] else ""
     tags = "".join(f'<span class="tag">{html.escape(t)}</span>' for t in r["tags"])
     note = f'<p class="note">{html.escape(r["note"])}</p>' if r["note"] else ""
+    if r.get("owner"):
+        note = f'<p class="owner"><b>Owner\'s note (2026-10-11):</b> {html.escape(r["owner"])}</p>' + note
+    cap_l, cap_r = r.get("caps", ("1.5 master (shipped)", "F6.2 · Sunburst"))
     guess = f'<p class="guess">read cold as: <i>{html.escape(r["guess"])}</i></p>' if r["guess"] else ""
     lett = f'<p class="guess">lettering read: <code>{html.escape(r["lettering"])}</code></p>' if r["lettering"] else ""
     img = (f'<a class="plate" href="media/{r["img"]}" onclick="return lb(this)"><img loading="lazy" src="media/{r["img"]}" alt=""></a>'
@@ -55,7 +65,7 @@ def card_html(r):
     return f'''<section class="card" data-key="{r["k"]}" data-st="{r["st"]}" data-tags="{html.escape(' '.join(r["tags"]))}" data-cat="{html.escape(r["cat"])}">
 <header><span class="num">{r["n"]:03d}</span> <b>{html.escape(r["lt"])}</b> <span class="en">{html.escape(r["en"])}</span> <span class="cat">{html.escape(r["cat"])}</span> {badge} {tags}
 <span class="verdict"><button class="ok" onclick="mark('{r["k"]}','ok')">OK</button><button class="redo" onclick="mark('{r["k"]}','redo')">Redo</button></span></header>
-{img}<div class="caps"><span>1.5 master (shipped)</span><span>F6.2 · Sunburst</span></div>
+{img}<div class="caps"><span>{html.escape(cap_l)}</span><span>{html.escape(cap_r)}</span></div>
 {guess}{lett}{note}
 <textarea placeholder="note for this card" oninput="noteFor('{r["k"]}',this.value)"></textarea>
 </section>'''
@@ -89,6 +99,7 @@ header b{font-size:1.4rem} .num{color:var(--dun);font-size:.9rem} .en{opacity:.8
 .plate img{width:100%;display:block;border:1px solid #b9a98a}
 .caps{display:flex;justify-content:space-between;font-size:.72rem;color:var(--dun);font-variant:small-caps;letter-spacing:.08em;margin-top:3px}
 .none{padding:60px 10px;text-align:center;color:var(--dun);font-style:italic}
+.owner{font-size:.9rem;margin:8px 0 0;line-height:1.4;border-left:3px solid var(--red);padding-left:8px}
 .note{font-size:.82rem;color:#a0604c;margin:8px 0 0;line-height:1.4} .guess{font-size:.82rem;color:var(--dun);margin:6px 0 0}
 code{font-size:.8rem} textarea{width:100%;margin-top:8px;font:inherit;font-size:.85rem;background:transparent;color:var(--ink);border:1px solid #c9b995;padding:4px 6px;min-height:28px;resize:vertical}
 #lbx{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out}
@@ -129,6 +140,87 @@ paint();
     local();paint();status('Connected · '+n+' saved verdicts loaded · saves automatically')}
   catch(e){status('Could not read the artifact store ('+(e.code||'error')+'); working from this browser',true)}})();
 '''
+
+FABLE_FIXES = ["084_tevai", "088_brolis", "097_prezidentas", "387_mokytis", "378_zudyti"]
+RENDER_KEY = {"265_lupa": "265_lupos"}   # deck_builder renders 265 under its retargeted headword
+
+
+def composite2(old, new, dst):
+    h = round(HALF * 2 / 3)
+    sheet = Image.new("RGB", (HALF * 2 + 6, h), (231, 221, 198))
+    for i, p in enumerate((old, new)):
+        if p and os.path.exists(p):
+            im = Image.open(p).convert("RGB").resize((HALF, h), Image.LANCZOS)
+            sheet.paste(im, (i * (HALF + 6), 0))
+    sheet.save(dst, "JPEG", quality=Q, optimize=True, progressive=True)
+    return os.path.basename(dst)
+
+
+def build_rerolls(since):
+    cutoff = time.mktime(time.strptime(since, "%Y-%m-%d"))
+    review = json.load(open(f"{PUB}/owner_review_2026-10-11.json", encoding="utf-8"))
+    owner = {v["key"]: v.get("note", "") for v in review if v["verdict"] == "redo"}
+    keys = list(owner) + [k for k in FABLE_FIXES if k not in owner]
+    qa2 = {r["key"]: r for r in csv.DictReader(open(f"{NEW}/qa_f62_rerolls.csv", encoding="utf-8"))}
+    byk = {c["key"]: c for c in cards}
+    pdir = f"{PUB}/rerolls_{since}"; media = f"{pdir}/media"; os.makedirs(media, exist_ok=True)
+    rows, counts, nobefore = [], {"PASS": 0, "WARN": 0, "FAIL": 0}, []
+    for k in sorted(keys):
+        rk = RENDER_KEY.get(k, k); c = byk.get(rk, {})
+        olds = sorted((os.path.getmtime(f"{NEW}/_rerolled/{f}"), f) for f in os.listdir(f"{NEW}/_rerolled")
+                      if f.split(".r")[0] == k)
+        before = [f for t, f in olds if t < cutoff]
+        today = [f for t, f in olds if t >= cutoff]
+        old = f"{NEW}/_rerolled/{before[-1]}" if before else None
+        if not old: nobefore.append(k)
+        q = qa2.get(rk, {}); st = q.get("status", ""); counts[st] = counts.get(st, 0) + 1
+        p = plan.get(rk, {}); tags = [f"re-rolled {since} ×{len(today) + 1}"]
+        if p.get("exact_text"): tags.append("lettering declared")
+        if p.get("setting"): tags.append("LT setting")
+        if k in FABLE_FIXES: tags.append("Fable fix")
+        rows.append(dict(k=k, n=int(k.split("_")[0]), lt=c.get("lithuanian", ""), en=c.get("english", ""),
+                         cat=c.get("category", ""), st=st, note=q.get("fails") or q.get("warnings") or "",
+                         guess=q.get("guess", ""), lettering=q.get("lettering", ""), tags=tags,
+                         owner=owner.get(k) or ("Fable fix: staging line changed 2026-10-11 (no owner note)" if k in FABLE_FIXES else ""),
+                         caps=("reviewed 2026-10-11 (before)", f"re-roll {since} (now)"),
+                         img=composite2(old, f"{NEW}/{rk}.png", f"{media}/{k}.jpg")))
+    words = {r["k"]: r["lt"] for r in rows}
+    title = f"A1 re-rolls {since}"
+    body = "\n".join(card_html(r) for r in rows)
+    doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title><meta name="description" content="Owner review of the {len(rows)} A1 cards re-rolled on {since}: the render reviewed on 2026-10-11 beside the new one, with the owner's note and QA verdict.">
+<style>{CSS}</style></head><body>
+<div class="top"><b>{html.escape(title)}</b>
+<button class="f on" data-f="all">all {len(rows)}</button>
+<button class="f" data-f="unmarked">unmarked</button>
+<button class="f" data-f="redo">Redo <span id="nredo2">0</span></button>
+<button class="f" data-f="FAIL">FAIL {counts.get("FAIL",0)}</button>
+<button class="f" data-f="WARN">WARN {counts.get("WARN",0)}</button>
+<button class="f" data-f="PASS">PASS {counts.get("PASS",0)}</button>
+<button class="f" data-f="lettering">lettering {sum(1 for r in rows if 'lettering declared' in r['tags'])}</button>
+<select id="cat"><option value="">all categories</option>{''.join(f'<option>{html.escape(c)}</option>' for c in sorted({r["cat"] for r in rows}))}</select>
+<button onclick="copyRedo()">copy Redo list</button>
+<span class="counter"><span><b id="nok">0</b> OK</span><span><b id="nredo">0</b> Redo</span><span><b id="nleft">{len(rows)}</b> left</span></span>
+<span id="status"></span></div>
+<div class="lead"><p>The {len(rows)} A1 cards you marked Redo on 2026-10-11 (plus Fable's five staging fixes), drawn again on {since}.
+Each plate: <b>left</b> the render you reviewed, <b>right</b> the new one; your note sits under the title. Click a plate to enlarge.
+QA badges are from <code>qa_images.py</code>; <i>read cold as</i> is what the vision model guessed without being told the word.
+Press <b>OK</b> or <b>Redo</b> on every card; verdicts save to this page's store as you go.</p></div>
+{body}
+<div id="lbx"><img id="lbimg" alt=""></div>
+<script>const TOTAL={len(rows)};const WORDS={json.dumps(words, ensure_ascii=False)};{JS % {"part": "rerolls_" + since}}</script>
+</body></html>'''
+    open(f"{pdir}/index.html", "w", encoding="utf-8").write(doc)
+    mb = sum(os.path.getsize(f"{media}/{f}") for f in os.listdir(media)) / 1e6
+    print(f"{pdir}/index.html  {os.path.getsize(f'{pdir}/index.html')/1024:.0f} KB · {len(rows)} cards · "
+          f"media {len(os.listdir(media))} files {mb:.1f} MB · without a 'before' render: "
+          f"{nobefore or 'none'}")
+
+
+if "--rerolls" in sys.argv:
+    build_rerolls(sys.argv[sys.argv.index("--since") + 1] if "--since" in sys.argv else "2026-10-12")
+    sys.exit()
 
 for part, lo, hi in PARTS:
     pdir = f"{PUB}/{part}"; media = f"{pdir}/media"; os.makedirs(media, exist_ok=True)

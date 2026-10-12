@@ -5,6 +5,16 @@ files it names. Do the tasks in order; each has a goal, exact commands, acceptan
 to hand back. Judgement calls (what a card should show, what a word means) are already made and
 sit in the data files — do not re-decide them; if a step cannot proceed, stop and report.
 
+## Status 2026-10-12 (executor) — tasks 0–7 done, task 8 waits on the owner
+- [x] 1 A1 Redo round: 65 re-rolled + 3 once more (138, 290, 318); QA 0 FAIL. 290/318 still miss (prompt-vs-staging conflict, see out_deck_f62/README.md). Page `out_deck_f62/review_pub/rerolls_2026-10-12/`.
+- [x] 2 A2: 49 missing + 8 changed-prompt re-rolls (6 planned + A2-1314, A2-1379); 625/625, ledger current.
+- [x] 3 A2 QA: 377 PASS · 245 WARN · 3 FAIL (false positives); 3 real FAILs fixed in one round.
+- [x] 4 Phrases: 154 in `out_phrases_a2/` (question-word rows not re-rendered); QA 75 PASS · 74 WARN · 5 FAIL — all five drawn as the bubble spec asks (a "?" or a "0"), not re-rolled.
+- [x] 5 Sentences: `out_deck_sent/gen.py` (new), 55 rendered + S-0024 re-rolled (mushroom-cloud blackboard); QA 0 FAIL.
+- [x] 6 `Lietuviu_Flashcards_v2.0_A1.apkg` (1077 notes, 140.5 MB), `…_A2.apkg` (1208 notes, 94.4 MB); refs resolve, media ASCII, GUIDs stable across two builds.
+- [x] 7 Review pages built (not published): rerolls_2026-10-12, pictures_2026-10-12/part1–3, phrases, sentences.
+- Spent: 338 images ≈ $4.56 + QA ≈ 900 inspections ≈ $9.
+
 ## 0. Ground rules (owner's, absolute)
 - **Never overwrite or delete** an old file, image, audio or .apkg. New versions go beside the old (new folder, `_vN` suffix); generators already move superseded renders into `_rerolled/`. Text files under git may be edited in place.
 - **Don't commit, don't push.** The main session commits. Say which files changed.

@@ -9,6 +9,22 @@ path on the production model, into `out_deck_a2/<id>.png` — the folder
 (HTTP 429 "You have no credits remaining") — 49 cards, the whole QA pass and the
 phrase cards are waiting on a top-up.** Everything is resumable; see *To finish*.
 
+> **Update 2026-10-12 (executor, PLAN_A2_completion tasks 2–5): all 625 rendered and QA'd.**
+> The 49 missing cards rendered; 8 re-rolled for staging/card_text changed on 10-11 (A2-0865,
+> 0813, 0255, 1769, 0071, 0067 as planned, plus A2-1314 muitininkas and A2-1379 uniforma, whose
+> prompts had also changed: interwar uniform staging). The other 29 cardinals A2-0041…0071 were
+> prompt-identical and were not re-rolled (`card_text_rewrites` is now empty). Ledger: last row per
+> key = current prompt for all 625. QA (`qa_a2.csv`, gpt-5.6-luna): **377 PASS · 245 WARN · 3 FAIL**
+> after one re-roll round (A2-0027 kovas "Št", A2-0105 nuolaida "£", A2-1768 Lietuva "Klaipeda" —
+> all three PASS after one re-roll). The 3 remaining FAILs are QA false positives: A2-0041 nulis
+> ("0" read as "O"), A2-0262 klausti and A2-0803 klausimas (the staging asks for the "?" bubble;
+> `is_question` does not treat them as questions). WARN notes worth an owner look: object counts on
+> the number cards (A2-0052…0068: e.g. 84 coins for 70), weekday abbreviations on the month cards.
+> 60 renders today ≈ $0.81. Review pages: `review_pub/pictures_2026-10-12/part1..3` (209/209/207
+> cards, ≤ 210 files each); the old `review_pub/part1`, `part2` are untouched. Phrase cards:
+> `../out_phrases_a2/` (154, `qa_phrases.csv`), review `review_pub/phrases/`; sentence cards:
+> `../out_deck_sent/` (55, `qa_sent.csv`), review `review_pub/sentences/`.
+
 | | |
 |---|---|
 | Model | `gpt-image-2.5-sunburst`, quality `medium`, 1536×1024 |

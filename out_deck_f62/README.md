@@ -5,6 +5,19 @@ Every eligible deck card drawn again by the production path
 `out_deck/` (the shipped 1.5 masters) is untouched; nothing here is in the `.apkg`
 until the owner confirms the review page and the main session swaps the folders.
 
+> **Update 2026-10-12 (executor, PLAN_A2_completion task 1): the A1 Redo round.** 65 cards re-rolled
+> (the owner's 60 Redo verdicts of `review_pub/owner_review_2026-10-11.json` + Fable fixes 084, 088,
+> 097, 387, 378); old renders in `_rerolled/`. 265 renders as `265_lupos.png` (deck_builder derives
+> the render key from the retargeted headword; the note key stays `265_lupa` — `build_apkg.py` maps
+> it via `IMAGE_ALIAS`). After a look against each owner note, three were rolled once more:
+> 138 komanda (teammates still near-identical), 290 vandenynas (ship in the main picture),
+> 318 sala (Trakai castle). 290 and 318 **still miss** — their prompts contradict the staging:
+> 290's `subject` column says "…with a steamship", 318 gets the Trakai castle from its LT `Setting`
+> line (go_settings); both need a data fix, not another roll. Also: 336/338/339 draw EU / US / UK
+> flags because their `subject` column asks for them (against FLAG_RULE). QA
+> (`qa_f62_rerolls.csv`, all 521): **344 PASS · 177 WARN · 0 FAIL**. 68 renders ≈ $0.92.
+> Review page: `review_pub/rerolls_2026-10-12/` (65 cards, before | now, owner's note beside each).
+
 | | |
 |---|---|
 | Model | `gpt-image-2.5-sunburst`, quality `medium`, 1536×1024 (one model for the whole deck) |
