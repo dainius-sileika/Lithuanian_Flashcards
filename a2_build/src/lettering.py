@@ -3,7 +3,9 @@
 correct diacritics, never the target word itself); qa_images.py reads it back. Prices are in litai/centai: "2 Lt 40 ct".
 Key = plain lithuanian_TARGET → (card_text, route or None, note)."""
 WEEK='Pr An Tr Kt Pn Št Sk'
+NUMS = {'nulis':'0','vienas':'1','du':'2','trys':'3','keturi':'4','penki':'5','šeši':'6','septyni':'7','aštuoni':'8','devyni':'9','dešimt':'10','vienuolika':'11','dvylika':'12','trylika':'13','keturiolika':'14','penkiolika':'15','šešiolika':'16','septyniolika':'17','aštuoniolika':'18','devyniolika':'19','dvidešimt':'20','trisdešimt':'30','keturiasdešimt':'40','penkiasdešimt':'50','šešiasdešimt':'60','septyniasdešimt':'70','aštuoniasdešimt':'80','devyniasdešimt':'90','šimtas':'100','tūkstantis':'1000','milijonas':'1 000 000'}
 L = {
+ **{w: (f'the numeral "{d}" written once, very large, as the subject of the card', None, 'cardinal: digits at source (renderer flag 2026-10-12)') for w,d in NUMS.items()},
  # calendar
  'pirmadienis': (f'the seven column heads "{WEEK}" across the week strip, the numeral "1" below "Pr"', None, 'weekday abbreviations are not the word'),
  'antradienis': (f'the seven column heads "{WEEK}" across the week strip, the numeral "2" below "An"', None, ''),
@@ -23,7 +25,7 @@ L = {
  # money and prices (litas world)
  'grąža': ('"1 Lt" and "50 ct" on the coins returned, "5 Lt" on the banknote in the till', None, ''),
  'grynieji pinigai': ('"10 Lt" and "20 Lt" on the banknotes, "50 ct" on a coin', None, ''),
- 'centas': ('"10 ct" on the small coin', None, ''),
+ 'centas': ('"10 ct" stamped once on the face of the coin', None, 'renderer flag 2026-10-12: the lettering is on the coin face'),
  'litas': ('"1 Lt" on the coin and "10 Lt" on the banknote', 'IMG', ''),
  'prekė': ('small price tags reading "1 Lt 20 ct", "80 ct" and "3 Lt" on the goods', None, ''),
  'nuolaida': ('a shop price tag with "3 Lt" struck through and "2 Lt 50 ct" written below it', 'IMG', 'lettering makes the discount readable; was cloze'),

@@ -20,7 +20,7 @@
 19,Transportation,tire,N,,yes,a rubber road tire,padanga,padangà,F,,stress: CHECK,A1
 20,Transportation,gasoline,N,,yes,a fuel canister and a pump nozzle,benzinas,benzìnas,M,,,A1
 21,Transportation,engine,N,,yes,an automobile engine block,variklis,varìklis,M,,,A1
-22,Transportation,train ticket,N,,yes,a small blank paper train ticket,bilietas,bìlietas,M,,,A1
+22,Transportation,train ticket,N,,yes,a small blank paper train ticket,bilietas,bìlietas,M,"the lettering ""VILNIUS – KAUNAS"" and ""2 Lt 40 ct"" printed once on the ticket",,A1
 23,Transportation,transportation,N,categoryC,category-multi,"a chart of transport modes — a bus, a truck, and a bicycle — in side profile",transportas,transpòrtas,M,,,A1
 24,Location,city,N,,yes,a busy city street panorama — crowds of pedestrians and cars among tall mid-rise buildings,miestas,miẽstas,M,,,A1
 25,Location,house,N,,yes,a single modest house from the front,namas,nãmas,M,,,A1
@@ -132,7 +132,7 @@
 131,Society,death,N,,yes,a plain gravestone with wilting flowers in a quiet cemetery,mirtis,mirtìs,,,LT owner-confirmed 1.7.8,A2
 132,Society,medicine,N,,yes,"a medicine bottle, a spoon of syrup and a blister pack of tablets on a bedside table",vaistai,váistai,,,LT owner-confirmed 1.7.8,A2
 133,Society,money,N,,yes,a fan of interwar Lithuanian LITAI banknotes and some litas coins spread on a table,pinigai,pinigaĩ,,,LT owner-confirmed 1.7.8,A2
-134,Society,dollar,N,,yes,"a single US one-dollar banknote and a coin on a table, a bold arrow on the dollar note",doleris,dóleris,,,LT owner-confirmed 1.7.8,A2
+134,Society,dollar,N,,yes,"a single US one-dollar banknote and a coin on a table, a bold arrow on the dollar note",doleris,dóleris,,"the words ""ONE DOLLAR"" printed once along the lower edge of the banknote and the numeral ""1"" in each corner",LT owner-confirmed 1.7.8,A2
 135,Society,bill,N,,yes,a single interwar Lithuanian litas banknote held up between two fingers,banknotas,banknòtas,,,LT owner-confirmed 1.7.8,A2
 136,Society,marriage,N,disambig,yes,a bride and groom exchanging rings before a registry official,santuoka,sántuoka,,,LT owner-confirmed 1.7.8,A2
 137,Society,wedding,N,disambig,yes,a wedding scene — a couple exchanging rings before a small group of guests outside a registry office,vestuvės,vestùvės,F,,promoted to picture deck (decision Q6); plural-only noun,A1
@@ -263,7 +263,7 @@
 262,Body,hair,N,,yes,a head of hair being combed,plaukai,plaukaĩ,M pl,,,A1
 263,Body,eye,N,,yes,"a human eye, external close view",akis,akìs,F,,,A1
 264,Body,mouth,N,disambig,yes,"a slightly open mouth in close view, the whole mouth circled",burna,burnà,F,,,A1
-265,Body,lip,N,disambig,yes,"closed lips in close view, the upper and lower lip each indicated",lūpa,lū́pa,F,,,A1
+265,Body,lips,N,disambig,yes,"a pair of lips in close view, slightly parted, an arrow on the lips",lūpos,lū́pos,F pl,,retargeted lūpa→lūpos 2026-10-11 (plural usual); key 265_lupa unchanged; retargeted lūpa→lūpos 2026-10-11 (plural usual); key 265_lupa unchanged,A1
 266,Body,nose,N,,yes,a human nose in profile,nosis,nósis,F,,,A1
 267,Body,tooth,N,,yes,a single tooth beside a smiling mouth showing teeth,dantis,dantìs,M,,,A1
 268,Body,ear,N,,yes,"a human ear, external side view",ausis,ausìs,F,,,A1
@@ -278,7 +278,7 @@
 277,Body,arm,N,,yes,"a human arm, the whole limb from shoulder to hand indicated",ranka,rankà,F,,arm=ranka; hand=plaštaka,A1
 278,Body,shoulder,N,,yes,"a person's shoulder, indicated by an arrow",petys,petỹs,M,,,A1
 279,Body,heart,N,,yes,a hand held over a chest with a simple schematic heart symbol beside it,širdis,širdìs,F,,,A1
-280,Body,blood,N,,yes,a first-aid scene — a finger with a drop of blood being bandaged,kraujas,kraũjas,M,,,A1
+280,Body,blood,N,,yes,a first-aid scene — a finger with a drop of blood being bandaged,kraujas,kraũjas,M,"the label ""O+"" written once on the blood bag",,A1
 281,Body,brain,N,,yes,"a standalone simplified schematic drawing of a brain, textbook-plate style",smegenys,smẽgenys,F pl,,,A1
 282,Body,knee,N,,yes,"a bent knee, indicated on a walking figure",kelis,kẽlis,M,,knee: dictionaries vary kẽlis/kelỹs — confirm preferred form,A1
 283,Body,sweat,N,,yes,"a worker wiping sweat from his brow, drops visible",prakaitas,prãkaitas,M,,,A1
@@ -334,15 +334,15 @@
 333,Materials,material,N,categoryC,category-multi,"a sample board of materials — a wood block, a metal plate, a glass pane and a cloth swatch",medžiaga,mẽdžiaga,F,,,A1
 334,Math,meter,N,,yes,a wooden metre-stick fully extended with a bold bracket marking its length; a small Lithuanian tricolor and a small European Union flag side by side,metras,mètras,M,"the unit mark ""m"" written once beside the metre-stick, and the number ""100"" with ""cm"" written once beneath it to show that one metre is a hundred centimetres.",,A2
 335,Math,centimeter,N,,yes,a ruler with a bold bracket marking one small centimetre division; a small Lithuanian tricolor and a small European Union flag side by side,centimetras,centimètras,M,"the unit mark ""cm"" written once beside the marked centimetre division on the ruler.",,A2
-336,Math,kilogram,N,,yes,a balance scale with a one-kilogram weight block on the pan; a small Lithuanian tricolor and a small European Union flag side by side,kilogramas,kilogrãmas,M,,,A2
+336,Math,kilogram,N,,yes,a balance scale with a one-kilogram weight block on the pan; a small Lithuanian tricolor and a small European Union flag side by side,kilogramas,kilogrãmas,M,"the letters ""KG"" cast once on the kilogram weight and the numeral ""1"" beside them",,A2
 337,Math,inch,N,,yes,a ruler with a bold bracket marking one inch division; a small United States flag and a small United Kingdom Union Jack side by side,colis,cólis,M,"the unit mark ""in"" written once beside the marked inch division on the ruler.",,A2
-338,Math,foot,N,,yes,a ruler marked to a one-foot length laid beside a shoe; a small United States flag and a small United Kingdom Union Jack side by side,pėda,pėdà,F,,,A2
-339,Math,pound,N,,yes,a balance scale with a one-pound weight block on the pan; a small United States flag and a small United Kingdom Union Jack side by side,svaras,svàras,M,,,A2
+338,Math,foot,N,,yes,a ruler marked to a one-foot length laid beside a shoe; a small United States flag and a small United Kingdom Union Jack side by side,pėda,pėdà,F,"the word ""YARD"" written once at the end of the yardstick and the numerals ""1"", ""2"", ""3"" at the three foot-divisions",,A2
+339,Math,pound,N,,yes,a balance scale with a one-pound weight block on the pan; a small United States flag and a small United Kingdom Union Jack side by side,svaras,svàras,M,"the letters ""LB"" cast once on the pound weight and the numeral ""1"" beside them",,A2
 340,Math,half,N,,yes,"a round loaf cut cleanly into two equal halves, one half marked with a bold arrow",pusė,pùsė,,,LT owner-confirmed 1.7.8,A2
 341,Math,circle,N,,yes,a single bold clean geometric circle drawn on the cream paper,apskritimas,apskritìmas,M,,,A2
 342,Math,square,N,,yes,a single bold clean geometric square drawn on the cream paper,kvadratas,kvadrãtas,M,,,A2
 343,Math,temperature,N,,yes,"a large thermometer with a marked mercury column, a hot sun at the top end and ice at the bottom end",temperatūra,temperatūrà,F,,,A2
-344,Math,date,N,,yes,a tear-off wall calendar with one day boldly circled in red,data,data,,,LT owner-confirmed 1.7.8,A2
+344,Math,date,N,,yes,a tear-off wall calendar with one day boldly circled in red,data,data,,"the month name ""RUGSĖJIS"" once across the top of the calendar page, the weekday row ""Pr An Tr Kt Pn Št Sk"" beneath it, and the day numbers 1 to 30 in the grid",LT owner-confirmed 1.7.8,A2
 345,Math,weight,N,,yes,"a heavy iron weight sitting on a scale, the pointer swung right over",svoris,svõris,,,LT owner-confirmed 1.7.8,A2
 346,Math,edge,N,,yes,a knife lying flat with a bold arrow pointing at its sharp cutting edge,kraštas,krãštas,M,,,A2
 347,Math,corner,N,,yes,"the interior corner of a room where two walls and the floor meet, a bold arrow on the corner",kampas,kam̃pas,M,,,A2
@@ -462,7 +462,7 @@
 461,Adjectives,old-new,A,,yes,"a new pair of boots beside an old worn pair, a bold arrow marking the OLD pair",senas/sena,sẽnas,M/F,,= senas (same word as old-young); tell apart by image: old object vs old person; antonym naujas,A1
 462,Adjectives,young,A,,yes,"a young man and an old man side by side, a bold arrow marking the YOUNG man",jaunas/jauna,jáunas,M/F,,,A1
 463,Adjectives,old-young,A,,yes,"a young man and an old man side by side, a bold arrow marking the OLD man",senas/sena,sẽnas,M/F,,= senas (same word as old-new); antonym jaunas,A1
-464,Adjectives,good,A,,yes,"a hand giving a firm thumbs-up beside a neat well-kept scene, a bold arrow on the thumbs-up",geras/gera,gẽras,M/F,,,A2
+464,Adjectives,good,A,,yes,"a hand giving a firm thumbs-up beside a neat well-kept scene, a bold arrow on the thumbs-up",geras/gera,gẽras,M/F,"the mark ""10"" written once in red at the foot of the exercise-book page in the inset",,A2
 465,Adjectives,bad,A,,yes,"a hand giving a thumbs-down beside a spoilt messy scene, a bold arrow on the thumbs-down",blogas/bloga,blõgas,M/F,,,A2
 466,Adjectives,wet,A,,yes,"two shirts on a washing line, one dripping wet and one dry, a bold arrow marking the WET one",šlapias/šlapia,šlãpias,M/F,,,A1
 467,Adjectives,dry,A,,yes,"two shirts on a washing line, one dripping wet and one dry, a bold arrow marking the DRY one",sausas/sausa,saũsas,M/F,,,A1
@@ -480,7 +480,7 @@
 479,Adjectives,mean,A,,yes,a scowling unkind man sneering and roughly shoving a smaller timid person aside,piktas,pìktas,,,LT owner-confirmed 1.7.8,A2
 480,Adjectives,rich,A,,yes,"a richly dressed man with a fine coat and full purse beside a man in patched clothes, a bold arrow marking the RICH man",turtingas/turtinga,turtìngas,M/F,,,A1
 481,Adjectives,poor,A,,yes,"a richly dressed man with a fine coat and full purse beside a man in patched clothes, a bold arrow marking the POOR man",neturtingas/neturtinga (vargšas),neturtìngas,M/F,,colloq. biednas is nonstandard,A1
-482,Adjectives,thick,A,,yes,"a thick book beside a thin book, a bold arrow marking the THICK one",storas/stora,stóras,M/F,,,A1
+482,Adjectives,fat,A,,yes,"a thick book beside a thin book, a bold arrow marking the THICK one",storas/stora,stóras,M/F,,,A1
 483,Adjectives,thin,A,,yes,"a thick book beside a thin book, a bold arrow marking the THIN one",plonas/plona,plónas,M/F,,,A1
 484,Adjectives,expensive,A,,yes,"two shelf items with coin stacks beneath — a crystal vase over a tall stack, a plain cup over one coin — a bold arrow marking the EXPENSIVE vase",brangus/brangi,brangùs,M/F,"the price ""150 Lt"" written once on the tag of the crystal vase and the price ""2 Lt"" written once on the tag of the plain cup.",,A1
 485,Adjectives,cheap,A,,yes,"two shelf items with coin stacks beneath — a crystal vase over a tall stack, a plain cup over one coin — a bold arrow marking the CHEAP cup",pigus/pigi,pigùs,M/F,"the price ""150 Lt"" written once on the tag of the crystal vase and the price ""2 Lt"" written once on the tag of the plain cup.",,A1

@@ -1284,6 +1284,12 @@ def build_call(key, r, cls):
     if "inset_note" in st:
         inset_note = st["inset_note"]
     insets = st.get("insets", insets)   # 1.7.4: per-card inset toggle
+    # 2026-10-12: a staging line that names its own insets ("Insets: ...") replaces the
+    # class inset menu, so the menu cannot vote against the owner's chosen insets.
+    if "Insets:" in CARD_NOTES.get(key, ""):
+        insets = True
+        inset_note = ("Include small supporting insets exactly as listed after 'Insets:' in the "
+                      "staging above, each a different detail, angle or example; none repeats the main picture.")
     comp = "scene" if (cls == "place" or n in FULL_SCENE_ROWS) else "vignette"
     if comp == "scene":
         scene = scene.replace(SCENE_TAIL, "")
