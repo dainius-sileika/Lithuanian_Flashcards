@@ -1,0 +1,183 @@
+deck,key,word,field,current,expected,note,severity
+A2,A2-0211,viza,gen_sg,vizas,vizos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0228,sveikata,gen_sg,sveikatas,sveikatos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0245,alga,gen_sg,algas,algos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0246,kolega,gen_sg,kolegas,kolegos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0250,pamoka,gen_sg,pamokas,pamokos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0283,nuoma,gen_sg,nuomas,nuomos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0327,audra,gen_sg,audras,audros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0339,politika,gen_sg,politikas,politikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0340,ekonomika,gen_sg,ekonomikas,ekonomikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0341,problema,gen_sg,problemas,problemos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0581,teta,gen_sg,tetas,tetos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0595,pora,gen_sg,poras,poros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0623,lentyna,gen_sg,lentynas,lentynos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0625,spinta,gen_sg,spintas,spintos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0643,šluota,gen_sg,šluotas,šluotos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0660,perėja,gen_sg,perėjas,perėjos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0666,ambasada,gen_sg,ambasadas,ambasados,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0732,avarija,gen_sg,avarijas,avarijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0746,šaka,gen_sg,šakas,šakos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0757,višta,gen_sg,vištas,vištos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0776,profesija,gen_sg,profesijas,profesijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0805,klaida,gen_sg,klaidas,klaidos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0808,istorija,gen_sg,istorijas,istorijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0813,paroda,gen_sg,parodas,parodos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0824,pradžia,gen_sg,pradžias,pradžios,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0825,pabaiga,gen_sg,pabaigas,pabaigos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0827,akimirka,gen_sg,akimirkas,akimirkos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0834,idėja,gen_sg,idėjas,idėjos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0839,proga,gen_sg,progas,progos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0843,tvarka,gen_sg,tvarkas,tvarkos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0848,tiesa,gen_sg,tiesas,tiesos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0857,pagalba,gen_sg,pagalbas,pagalbos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0858,paslauga,gen_sg,paslaugas,paslaugos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0859,informacija,gen_sg,informacijas,informacijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0869,paskola,gen_sg,paskolas,paskolos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0870,skola,gen_sg,skolas,skolos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0878,registracija,gen_sg,registracijas,registracijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1215,alėja,gen_sg,alėjas,alėjos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1221,auditorija,gen_sg,auditorijas,auditorijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1232,biologija,gen_sg,biologijas,biologijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1235,chemija,gen_sg,chemijas,chemijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1254,ekskursija,gen_sg,ekskursijas,ekskursijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1255,elektra,gen_sg,elektras,elektros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1272,injekcija,gen_sg,injekcijas,injekcijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1280,katedra,gen_sg,katedras,katedros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1288,kirpykla,gen_sg,kirpyklas,kirpyklos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1290,klaviatūra,gen_sg,klaviatūras,klaviatūros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1301,lašiša,gen_sg,lašišas,lašišos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1315,mėsa,gen_sg,mėsas,mėsos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1317,operacija,gen_sg,operacijas,operacijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1318,optika,gen_sg,optikas,optikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1325,paskaita,gen_sg,paskaitas,paskaitos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1335,registratūra,gen_sg,registratūras,registratūros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1344,sankryža,gen_sg,sankryžas,sankryžos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1357,skulptūra,gen_sg,skulptūras,skulptūros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1358,sofa,gen_sg,sofas,sofos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1378,tvora,gen_sg,tvoras,tvoros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1379,uniforma,gen_sg,uniformas,uniformos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1389,valgykla,gen_sg,valgyklas,valgyklos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1395,vaza,gen_sg,vazas,vazos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1397,vilna,gen_sg,vilnas,vilnos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1487,akademija,gen_sg,akademijas,akademijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1488,akcija,gen_sg,akcijas,akcijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1489,alergija,gen_sg,alergijas,alergijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1498,bauda,gen_sg,baudas,baudos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1505,deklaracija,gen_sg,deklaracijas,deklaracijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1511,fizika,gen_sg,fizikas,fizikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1513,garantija,gen_sg,garantijas,garantijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1517,gimnazija,gen_sg,gimnazijas,gimnazijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1519,gramatika,gen_sg,gramatikas,gramatikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1524,instrukcija,gen_sg,instrukcijas,instrukcijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1527,kalba,gen_sg,kalbas,kalbos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1548,mada,gen_sg,madas,mados,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1549,matematika,gen_sg,matematikas,matematikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1551,mergina,gen_sg,merginas,merginos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1560,netiesa,gen_sg,netiesas,netiesos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1567,para,gen_sg,paras,paros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1568,partija,gen_sg,partijas,partijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1573,pensija,gen_sg,pensijas,pensijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1575,pertrauka,gen_sg,pertraukas,pertraukos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1576,pica,gen_sg,picas,picos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1578,poliklinika,gen_sg,poliklinikas,poliklinikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1592,reklama,gen_sg,reklamas,reklamos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1598,sloga,gen_sg,slogas,slogos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1600,suma,gen_sg,sumas,sumos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1604,tradicija,gen_sg,tradicijas,tradicijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1614,valiuta,gen_sg,valiutas,valiutos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1727,bėda,gen_sg,bėdas,bėdos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1728,jėga,gen_sg,jėgas,jėgos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1748,pasaka,gen_sg,pasakas,pasakos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1749,gira,gen_sg,giras,giros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1752,pižama,gen_sg,pižamas,pižamos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1755,gėda,gen_sg,gėdas,gėdos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1756,nuotaika,gen_sg,nuotaikas,nuotaikos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1768,Lietuva,gen_sg,lietuvas,lietuvos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1784,kopa,gen_sg,kopas,kopos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1785,perkūnija,gen_sg,perkūnijas,perkūnijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1799,ponia,gen_sg,ponias,ponios,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1802,kultūra,gen_sg,kultūras,kultūros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1804,televizija,gen_sg,televizijas,televizijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-1805,vėliava,gen_sg,vėliavas,vėliavos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0236,slaugytoja,gen_sg,slaugytojas,slaugytojos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0298,nuostaba,gen_sg,nuostabas,nuostabos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0319,baterija,gen_sg,baterijas,baterijos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0329,šalna,gen_sg,šalnas,šalnos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0332,bala,gen_sg,balas,balos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0585,dukterėčia,gen_sg,dukterėčias,dukterėčios,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0627,užuolaida,gen_sg,užuolaidas,užuolaidos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0675,dešra,gen_sg,dešras,dešros,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0694,uoga,gen_sg,uogas,uogos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0703,slyva,gen_sg,slyvas,slyvos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0716,saga,gen_sg,sagas,sagos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0738,pieva,gen_sg,pievas,pievos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0756,ožka,gen_sg,ožkas,ožkos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0775,pelėda,gen_sg,pelėdas,pelėdos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0796,lenta,gen_sg,lentas,lentos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0866,moneta,gen_sg,monetas,monetos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A2,A2-0875,anketa,gen_sg,anketas,anketos,"rule engine gave accusative plural -as instead of genitive -os; shows on the back as ""viza · vizas""",high
+A1,108_minia,minia,pron,minia,(stress missing),pron has no stress mark,medium
+A1,148_taika,taika,pron,taika,(stress missing),pron has no stress mark,medium
+A1,243_kortele,kortelė,pron,kortelė,(stress missing),pron has no stress mark,medium
+A1,344_data,data,pron,data,(stress missing),pron has no stress mark,medium
+A1,454_letas,lėtas,pron,lėtas,(stress missing),pron has no stress mark,medium
+A1,497_seklus,seklus,pron,seklus,(stress missing),pron has no stress mark,medium
+A1,513_ji,ji,pron,ji,(stress missing),pron has no stress mark,medium
+A1,516_jus,jūs,pron,jūs,(stress missing),pron has no stress mark,medium
+A1,517_jie,jie,pron,jie,(stress missing),pron has no stress mark,medium
+A1,084_tevai,tėvai,pron,'tėvai̇̃',precomposed ì/ĩ,Wiktionary i+U+0307+accent encoding; renders as a dotted i with a stacked mark in some fonts,low
+A1,121_kareivis,kareivis,pron,'karei̇̃vis',precomposed ì/ĩ,Wiktionary i+U+0307+accent encoding; renders as a dotted i with a stacked mark in some fonts,low
+A1,404_praeiti,praeĩti,pron,'praei̇̃ti',precomposed ì/ĩ,Wiktionary i+U+0307+accent encoding; renders as a dotted i with a stacked mark in some fonts,low
+A1,420_gaminti,gamìnti,pron,'gami̇̀nti',precomposed ì/ĩ,Wiktionary i+U+0307+accent encoding; renders as a dotted i with a stacked mark in some fonts,low
+A1,446_ilgas,ilgas,pron,'i̇̀lgas',precomposed ì/ĩ,Wiktionary i+U+0307+accent encoding; renders as a dotted i with a stacked mark in some fonts,low
+A2,A2-1000,ilgai,lt_pron,'i̇lgaĩ',precomposed,same encoding issue,low
+A1,363_dirbti,dìrbti,lithuanian,dìrbti,dirbti,"headword carries stress marks (all 86 A1 verbs); nouns do not — the back shows the accented word twice and the forms line in accented small caps; also breaks ""type the answer"" and search",medium
+A1,364_zaisti,žaĩsti,lithuanian,žaĩsti,žaisti,"headword carries stress marks (all 86 A1 verbs); nouns do not — the back shows the accented word twice and the forms line in accented small caps; also breaks ""type the answer"" and search",medium
+A1,365_groti,gróti,lithuanian,gróti,groti,"headword carries stress marks (all 86 A1 verbs); nouns do not — the back shows the accented word twice and the forms line in accented small caps; also breaks ""type the answer"" and search",medium
+A1,069_raudonas,raudonas,fem/gen_sg,gen_sg=raudono,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,070_zalias,žalias,fem/gen_sg,gen_sg=žalio,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,071_melynas,mėlynas,fem/gen_sg,gen_sg=mėlyno,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,072_geltonas,geltonas,fem/gen_sg,gen_sg=geltono,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,073_rudas,rudas,fem/gen_sg,gen_sg=rudo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,074_rozinis,rožinis,fem/gen_sg,gen_sg=rožinio,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,075_oranzinis,oranžinis,fem/gen_sg,gen_sg=oranžinio,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,076_juodas,juodas,fem/gen_sg,gen_sg=juodo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,077_baltas,baltas,fem/gen_sg,gen_sg=balto,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,078_pilkas,pilkas,fem/gen_sg,gen_sg=pilko,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,medium
+A1,097_prezidentas,prezidentas,fem/gen_sg,gen_sg=prezidento,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,098_kaimynas,kaimynas,fem/gen_sg,gen_sg=kaimyno,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,102_suauges,suaugęs,fem/gen_sg,gen_sg=suaugusio,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,104_draugas,draugas,fem/gen_sg,gen_sg=draugo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,106_zaidejas,žaidėjas,fem/gen_sg,gen_sg=žaidėjo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,107_sirgalius,sirgalius,fem/gen_sg,gen_sg=sirgaliaus,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,110_mokytojas,mokytojas,fem/gen_sg,gen_sg=mokytojo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,111_studentas,studentas,fem/gen_sg,gen_sg=studento,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,112_advokatas,advokatas,fem/gen_sg,gen_sg=advokato,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,113_gydytojas,gydytojas,fem/gen_sg,gen_sg=gydytojo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,114_pacientas,pacientas,fem/gen_sg,gen_sg=paciento,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,115_padavejas,padavėjas,fem/gen_sg,gen_sg=padavėjo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,116_sekretorius,sekretorius,fem/gen_sg,gen_sg=sekretoriaus,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,118_policininkas,policininkas,fem/gen_sg,gen_sg=policininko,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,122_menininkas,menininkas,fem/gen_sg,gen_sg=menininko,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,123_autorius,autorius,fem/gen_sg,gen_sg=autoriaus,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,124_vadovas,vadovas,fem/gen_sg,gen_sg=vadovo,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,125_zurnalistas,žurnalistas,fem/gen_sg,gen_sg=žurnalisto,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A1,126_aktorius,aktorius,fem/gen_sg,gen_sg=aktoriaus,fem form (raudona) for adjectives; for common-gender job nouns keep gen_sg,adjective shown with ♂♀ and a noun-style genitive line; colours are adjectives,low
+A2,A2-0008,metai,gender,,M pl / F pl,"plural-only noun without gender/pl tag (metai, durys…) — verify each",low
+A2,A2-0605,kulkšnis,gender/gen_sg,M / kulkšnio,F / kulkšnies,"kulkšnis is feminine (-is, -ies); kirtis.info has no form ""kulkšnio""",medium
+A1,087_moteris,moteris,gen_sg,moters,"moters (correct, irregular)","flagged by the -is heuristic; verified correct, no action",none
+A1,086_vyras + 093_vyras,vyras,duplicate headword,man / husband,"one note with two senses, or keep both with distinct images",two cards share the same back word; acceptable polysemy but confusing in review,low
+A2,(355 rows),—,english gloss,"e.g. ""small square; car park, playground (head word)""",short display gloss + separate notes column,back shows editorial notes inside the gloss line,medium
+S,(55 rows),—,Gloss field,"grammar_point (""present 3sg; accusative object"")",English sentence as the gloss; grammar point in a small note line,sentence backs show a grammar tag where the meaning should be,high
+A2,A2-0001…,—,number,"0001 vs A1 ""1"" vs ""S 0001""",one plate-number scheme per deck section,inconsistent plate numbering across note types,low
+A1/A2,(all),—,category,Animal / Verbs / Work & culture / Sakiniai,"English section names, one list",mixed languages and granularity in the bottom band,low
+A1,108_minia,minia,pron,minià,minià (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,148_taika,taika,pron,taikà,taikà (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,243_kortele,kortele,pron,kortẽlė,kortẽlė (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,344_data,data,pron,datà,datà (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,454_letas,letas,pron,lėtas,lė́tas (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,497_seklus,seklus,pron,seklùs,seklùs (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,513_ji,ji,pron,jì,jì (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,516_jus,jus,pron,jūs,jū̃s (verify),pron carries no stress mark; the back shows the plain word twice,medium
+A1,517_jie,jie,pron,jiẽ,jiẽ (verify),pron carries no stress mark; the back shows the plain word twice,medium
