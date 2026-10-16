@@ -132,6 +132,39 @@ Written 2026-10-17 from the Lithuanian GO deck (A0→A2). Meant to be reused for
 
 **Division of labour that worked:** a strong model plans and judges (aesthetics, research, staging); a cheaper model executes the plan; an independent "blind" reviewer evaluates major plans.
 
+## 6. Building the word and phrase list: start from the English side
+
+Validated English A1–A2 inventories exist; most target languages have little. Start from what learners need to say, then map it into the target language.
+
+**English references:**
+- Oxford 3000 by CEFR level (free PDF).
+- Cambridge A2 Key Vocabulary List (free PDF, built on Waystage and the Cambridge Learner Corpus).
+- English Vocabulary Profile (sense-level; search only).
+- Threshold/Waystage function inventories, for phrases: greetings, requests, offers, suggestions, refusals, preferences, telephone, spelling, physical states…
+
+**Target-language anchors:** the official CEFR lexicon (for Lithuanian, the VU A1/A2 list) and a frequency list (PERLSI 3000).
+
+**Entry rule:** a word enters A2 if it is on an English list (Oxford A1/A2 or Key) AND on a target-language list (official lexicon or top 3,000 by frequency). Phrases enter by communicative function. A native speaker chooses the lemma, aspect and formal/informal form.
+
+**Where English does not map one-to-one:**
+- articles and "of" (the genitive);
+- particles (verb prefixes);
+- aspect pairs;
+- verbs of motion;
+- formal vs. informal "you";
+- motion vs. location after prepositions;
+- modals (the conditional);
+- clock arithmetic;
+- child register.
+
+Keep concrete, picturable words even when English rates them B1 by frequency. Keep culture-specific daily-life nouns.
+
+**Lithuanian result (2026-10-17):**
+- Our deck covers 85.6% of Oxford A1, 56.9% of Oxford A2 and 67.9% of Cambridge Key.
+- The A2 gaps are abstract and relational words, adverbs, quantifiers and about 12 communicative functions.
+- Details in a2_build/benchmark_en/.
+- Licence note: store only the gap subsets, never the copyrighted lists themselves.
+
 ## 5. Sources
 
 Read:
@@ -152,6 +185,9 @@ Read:
 - CASALC review (Webb 2007, Laufer & Shmueli 1997, Prince 1996): https://journals.muni.cz/casalc-review/article/download/14192/11864
 - McQuillan 2019 (advocate; summarises Nielson 2011): https://mail.sdkrashen.com/content/articles/and_then_there_were_none_mcquillan_2019.pdf
 - Rosetta Stone "How it works" (vendor): https://www.rosettastone.com/how-it-works/
+- Oxford 3000 by CEFR level: https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf
+- Cambridge A2 Key Vocabulary List (2025): https://www.cambridgeenglish.org/Images/506886-a2-key-2020-vocabulary-list.pdf
+- Threshold Level 1990: https://ealta.eu/documents/resources/Threshold-Level_CUP.pdf
 
 Abstract only:
 - Yanagisawa, Webb & Uchihara 2020: https://cambridge.org/core/journals/studies-in-second-language-acquisition/article/how-do-different-forms-of-glossing-contribute-to-l2-vocabulary-learning-from-reading/38124150D59DF3039EE1FF5AE88FE922

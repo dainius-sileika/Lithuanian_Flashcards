@@ -1,0 +1,127 @@
+kind,item,source,status,ours_or_suggestion,pos,oxford_level
+function,"greeting (informal/formal, times of day)",Waystage 4.2,have,Labas; Sveiki; Labas rytas; Laba diena; Labas vakaras,,
+function,taking leave,Waystage 4.12,have,Viso gero; Iki; Iki pasimatymo; Sudie; Labanakt,,
+function,attracting attention / addressing a stranger,"Waystage 4.1, 4.6",have,Atsiprašau; Atleiskite,,
+function,introducing oneself; asking name/origin/age/job,"Waystage 4.8, 1.4",have,Mano vardas…; Koks jūsų vardas?; Iš kur jūs?; Kiek jums metų?; Kuo dirbate?,,
+function,"introducing someone else (""This is…"")",Waystage 4.8,missing,"— (Čia yra… / Susipažinkite, tai…)",,
+function,reacting to an introduction,Waystage 4.9,have,Malonu susipažinti,,
+function,asking how someone is; replying,"Waystage 4.3, 4.4",have,Kaip sekasi?; Man gerai; Viskas gerai; Šiaip sau,,
+function,thanking; reacting to thanks,Waystage 2.48/2.49,have,Ačiū; Labai ačiū; Dėkui; Nėra už ką; Prašom,,
+function,apologising; accepting an apology,Waystage 2.54/2.52,have,Atsiprašau; Nieko tokio; Nieko baisaus,,
+function,congratulating; good wishes; toasts,"Waystage 4.10, 4.11",have,Sveikinu!; Su gimtadieniu!; Sėkmės!; Į sveikatą!; Skanaus; Geros kelionės; Linksmų Kalėdų!,,
+function,requesting something (shop/café); ordering,Waystage 3.3,have,"Norėčiau…; Norėčiau kavos; Sąskaitą, prašau; Ar turite…?",,
+function,requesting assistance,Waystage 3.8,have,Ar galite man padėti?; Ar galėtumėte man padėti?; Padėkite!,,
+function,"offering assistance (""Can I help you?"")",Waystage 3.9,missing,— (Ar galiu padėti? / Kuo galiu padėti?),,
+function,inviting; accepting / declining an invitation or offer,Waystage 3.10–3.12,partial,"Užeikite!; Sėskitės; Mielai — missing: Ačiū, ne / Deja, negaliu / Gal norite…?",,
+function,"suggesting a course of action (""Let's…"", ""Shall we…?"")",Waystage 3.1,missing,— (Eime… / Gal eikime į…? / Susitikime…),,
+function,agreeing / disagreeing; expressing opinion,"Waystage 2.1–2.2, 5.5",have,"Sutinku; Nesutinku; Jūs teisus; Manau, kad…; Mano nuomone; Man atrodo",,
+function,expressing wants / needs,Waystage 2.23,have,Noriu…; Norėčiau…; Man reikia…,,
+function,expressing liking / dislike; preference,"Waystage 2.32–2.34, 2.27",partial,Man patinka…; Man patiko! — missing: Man nepatinka…; Man labiau patinka…; Ar jums patinka…?,,
+function,expressing ability / inability,Waystage 2.17,have,Galiu truputį kalbėti; Nekalbu lietuviškai,,
+function,asking / giving permission,Waystage 2.19–2.21,partial,Ar galiu mokėti kortele?; Čia negalima rūkyti; draudžiama/leidžiama — missing: generic Ar galima…? / Galima.,,
+function,expressing intention / future plans,Waystage 2.25,have,Rytoj dirbsiu; Ketinu aplankyti močiutę; Paskambinsiu tau vėliau,,
+function,signalling non-understanding; asking for repetition / slower speech,Waystage 6.1–6.3,have,"Nesuprantu; Ar galite pakartoti?; Pakartokite, prašau; Kalbėkite lėčiau, prašau",,
+function,asking for meaning / how to say / to write down,Waystage 6.6–6.9,have,"Ką reiškia…?; Kaip lietuviškai…?; Užrašykite, prašau",,
+function,asking someone to spell,Waystage 6.7,missing,"— (Kaip rašoma? / Paraidžiui, prašau)",,
+function,asking whether one is understood,Waystage 5.24,missing,— (Ar suprantate? / Aišku?),,
+function,"telephone: opening, asking for someone, closing",Waystage 5.21–5.28,partial,Alio; Paskambinsiu — missing: Ar galėčiau kalbėti su…?; Kas skambina?; Palaukite minutėlę,,
+function,asking / telling the time; dates,Waystage notions time,have,Kiek valandų?; Kuri valanda?; Trečia valanda; Pusė trijų; Be penkių trys; Penkios po trijų,,
+function,asking for / giving directions,Waystage notions location,have,Kur yra…?; Kaip nuvykti į…?; Kairėje; Eikite tiesiai — add: dešinėje; toli/netoli; pirmas posūkis,,
+function,"shopping: price, paying, choosing",Waystage notions shopping,have,Kiek kainuoja?; Imsiu šitą; Ar galiu mokėti kortele?,,
+function,"travel: tickets, changing, platform, booking",Waystage notions travel,have,Kiek kainuoja bilietas?; Kur reikia persėsti?; Norėčiau rezervuoti kambarį; vieta prie lango,,
+function,"health: symptoms, appointment, pharmacy",Waystage notions health,have,Blogai jaučiuosi; Čia skauda; Esu alergiškas…; Esu užsiregistravęs pas gydytoją,,
+function,emergencies,Waystage 3.8,have,Padėkite!; Gelbėkit!; Iškvieskite gydytoją!; Atsargiai!,,
+function,"asking for / giving personal details (address, phone, spelling of name)",Waystage notions personal id,partial,Kur gyvenate?; place of birth — missing: Koks jūsų telefono numeris?; Koks jūsų adresas?,,
+function,expressing surprise / pleasure / regret,"Waystage 2.41, 2.29, 2.57",have,Negali būti!; Nuostabu; Puiku; Gaila; Deja,,
+function,hesitating / fillers / discourse markers,"Waystage 5.2, 5.4",have,na; Beje; Pavyzdžiui; Pirmiausia; Kita vertus,,
+function,asking someone to wait,Waystage 5.23,have,Akimirką; minutėlė,,
+function,expressing hunger / thirst / tiredness / cold,Waystage notions physical,partial,Noriu valgyti; Šiandien šalta — missing: Noriu gerti (thirsty); Pavargau; Man šalta/karšta,,
+multiword,hey,Cambridge A2 Key list,missing,,exclam.,A1
+multiword,no one,Cambridge A2 Key list,missing,,pron.,A1
+multiword,oh,Cambridge A2 Key list,missing,,exclam.,A1
+multiword,ok,Cambridge A2 Key list,missing,,"exclam., adj./adv.",A1
+multiword,all right,Cambridge A2 Key list,missing,,"adj./adv., exclam.",A2
+multiword,wow,Cambridge A2 Key list,missing,,exclam.,A2
+multiword,yeah,Oxford 3000,missing,,exclam.,A1
+multiword,a few,Cambridge A2 Key list,missing,,"det, adj & pron",not in Oxford 3000
+multiword,ah,Oxford 3000,missing,,exclam.,A2
+multiword,alarm clock,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,all kinds of,Cambridge A2 Key list,missing,,det & pron,not in Oxford 3000
+multiword,all sorts of,Cambridge A2 Key list,missing,,det & pron,not in Oxford 3000
+multiword,alright,Cambridge A2 Key list,missing,,"adj, adv & exclam",not in Oxford 3000
+multiword,any more,Oxford 3000,missing,,adv.,A2
+multiword,apartment building,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,as well,Cambridge A2 Key list,missing,,adv,not in Oxford 3000
+multiword,at all,Cambridge A2 Key list,missing,,prep phr,not in Oxford 3000
+multiword,bathing suit,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,board game,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,bring back,Cambridge A2 Key list,missing,,v,not in Oxford 3000
+multiword,business person,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,by post,Cambridge A2 Key list,missing,,prep phr,not in Oxford 3000
+multiword,cd player,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,city centre,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,close to,Cambridge A2 Key list,missing,,prep phr,not in Oxford 3000
+multiword,come back,Cambridge A2 Key list,missing,,v,not in Oxford 3000
+multiword,credit card,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,department store,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,digital camera,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,dining room,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,driver's licence,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,dvd player,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,each other,Cambridge A2 Key list,missing,,pron,not in Oxford 3000
+multiword,fall over,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,fast food,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,fill in,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,first name,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,for sale,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,french fries,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,gas station,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,get back,Cambridge A2 Key list,missing,,v,not in Oxford 3000
+multiword,get fit,Cambridge A2 Key list,missing,,v,not in Oxford 3000
+multiword,get married,Cambridge A2 Key list,missing,,v,not in Oxford 3000
+multiword,get on,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,give somebody a call,Cambridge A2 Key list,missing,,v,not in Oxford 3000
+multiword,go out,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,good afternoon,Cambridge A2 Key list,missing,,exclam,not in Oxford 3000
+multiword,grocery store,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,grow up,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,have got to,Cambridge A2 Key list,missing,,mv,not in Oxford 3000
+multiword,in front of,Cambridge A2 Key list,missing,,prep phr,not in Oxford 3000
+multiword,look at,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,look out,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,main course,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,movie theater,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,okay,Cambridge A2 Key list,missing,,exclam,not in Oxford 3000
+multiword,pardon,Cambridge A2 Key list,missing,,exclam,not in Oxford 3000
+multiword,parking lot,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,pencil case,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,per cent,Oxford 3000,missing,,"noun., adj./adv.",A2
+multiword,pick up,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,police car,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,poor thing,Cambridge A2 Key list,missing,,adj,not in Oxford 3000
+multiword,right hand,Cambridge A2 Key list,missing,,adj,not in Oxford 3000
+multiword,sitting room,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,sports centre,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,stomach ache,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,swimming costume,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,swimming pool,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,tour guide,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,tourist information centre,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,turn off,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,turn on,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,used to,Oxford 3000,missing,,modal v.,A2
+multiword,wash up,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,well known,Cambridge A2 Key list,missing,,adj,not in Oxford 3000
+multiword,work out,Cambridge A2 Key list,missing,,phr v,not in Oxford 3000
+multiword,would prefer,Cambridge A2 Key list,missing,,v,not in Oxford 3000
+multiword,football player,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,hip hop,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,ice skating,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,movie star,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,polar bear,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,social media,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,table tennis,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,tennis player,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,text message,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,video game,Cambridge A2 Key list,missing,,n,not in Oxford 3000
+multiword,web page,Cambridge A2 Key list,missing,,n,not in Oxford 3000
