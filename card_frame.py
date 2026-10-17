@@ -96,19 +96,34 @@ def font_media():
 
 
 # Caption fit: shrink a long English caption to fit one line (down to 72 % of its size),
-# then let it wrap to two smaller lines (.sf-wrap, clamped). Re-runs once the embedded
+# else let it wrap to two smaller lines (.sf-wrap, clamped to two). Re-runs once the embedded
 # fonts have loaded and on resize. Without JS the caption ends in an ellipsis.
 FIT_JS = """<script>
 (function () {
+  function px(v) { v = parseFloat(v); return isNaN(v) ? 0 : v; }
   function fit() {
     var els = document.querySelectorAll('.sf-en');
     for (var i = 0; i < els.length; i++) {
-      var e = els[i];
+      var e = els[i], band = e.parentNode;
       e.classList.remove('sf-wrap'); e.style.fontSize = '';
-      if (!e.clientWidth) continue;
-      var s = parseFloat(getComputedStyle(e).fontSize), min = s * 0.72;
-      while (e.scrollWidth > e.clientWidth + 1 && s > min) { s -= 0.5; e.style.fontSize = s + 'px'; }
-      if (e.scrollWidth > e.clientWidth + 1) { e.style.fontSize = ''; e.classList.add('sf-wrap'); }
+      var cs = getComputedStyle(band), gap = px(cs.columnGap);
+      // room for the caption: the band minus its padding, the plate number, the
+      // leader at its minimum width and the gaps
+      var avail = band.clientWidth - px(cs.paddingLeft) - px(cs.paddingRight);
+      for (var j = 0; j < band.children.length; j++) {
+        var c = band.children[j];
+        if (c === e) continue;
+        avail -= gap + (c.className.indexOf('sf-lead') >= 0 ? px(getComputedStyle(c).minWidth)
+                                                            : c.getBoundingClientRect().width);
+      }
+      // the caption's natural one-line width (fractional, unlike scrollWidth)
+      e.style.flex = 'none'; e.style.maxWidth = 'none';
+      var w = e.getBoundingClientRect().width;
+      e.style.flex = ''; e.style.maxWidth = '';
+      if (!w || w <= avail - 1) continue;
+      var s = px(getComputedStyle(e).fontSize), ns = s * (avail - 2) / w;
+      if (ns >= s * 0.72) e.style.fontSize = ns + 'px';
+      else e.classList.add('sf-wrap');
     }
   }
   window.__sfFit = fit;
