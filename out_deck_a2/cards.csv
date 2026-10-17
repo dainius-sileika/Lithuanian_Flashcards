@@ -79,7 +79,6 @@ A2-0107,grąža,change (money),grąžà,F,A2-0107,Society,A2-0107.png
 A2-0209,kelionė,"journey, trip",keliõnė,F,A2-0209,Travel,A2-0209.png
 A2-0210,bagažas,luggage,bagãžas,M,A2-0210,Travel,A2-0210.png
 A2-0217,peronas,platform,perònas,M,A2-0217,Travel,A2-0217.png
-A2-0219,muitinė,customs,muĩtinė,F,A2-0219,Travel,A2-0219.png
 A2-0220,turistas,tourist,turìstas,M,A2-0220,Travel,A2-0220.png
 A2-0221,gidas,guide,gìdas,M,A2-0221,Travel,A2-0221.png
 A2-0223,keliauti,to travel,keliáuti,,A2-0223,Travel,A2-0223.png
@@ -173,7 +172,6 @@ A2-0650,nuovada,police station,núovada,F,A2-0650,Location,A2-0650.png
 A2-0651,gaisrinė,fire station,gaĩsrinė,F,A2-0651,Location,A2-0651.png
 A2-0652,muziejus,museum,muziẽjus,M,A2-0652,Location,A2-0652.png
 A2-0653,kinas,cinema,kìnas,M,A2-0653,Location,A2-0653.png
-A2-0654,stadionas,stadium,stadiònas,M,A2-0654,Location,A2-0654.png
 A2-0658,kapinės,cemetery,kãpinės,F pl,A2-0658,Location,A2-0658.png
 A2-0659,stotelė,bus stop,stotẽlė,F,A2-0659,Location,A2-0659.png
 A2-0660,perėja,crossing,pérėja,F,A2-0660,Location,A2-0660.png
@@ -251,14 +249,12 @@ A2-1200,išjungtas,switched off,išjùngtas,,A2-1200,Adjectives,A2-1200.png
 A2-1201,keptas,fried; baked,kẽptas,,A2-1201,Adjectives,A2-1201.png
 A2-1202,linksmas,cheerful,liñksmas,,A2-1202,Adjectives,A2-1202.png
 A2-1203,lygus,flat; even; equal,lýgus,,A2-1203,Adjectives,A2-1203.png
-A2-1204,nėščia,pregnant,nėščià,,A2-1204,Adjectives,A2-1204.png
 A2-1205,rūkytas,smoked,rūkýtas,,A2-1205,Adjectives,A2-1205.png
 A2-1206,sulūžęs,broken,sulū́žęs,,A2-1206,Adjectives,A2-1206.png
 A2-1207,tvarkingas,tidy,tvarkìngas,,A2-1207,Adjectives,A2-1207.png
 A2-1208,violetinis,purple,violètinis,,A2-1208,Adjectives,A2-1208.png
 A2-1209,virtas,boiled,vìrtas,,A2-1209,Adjectives,A2-1209.png
 A2-1210,įjungtas,switched on,įjùngtas,,A2-1210,Adjectives,A2-1210.png
-A2-1211,šiurkštus,rough,šiurkštùs,,A2-1211,Adjectives,A2-1211.png
 A2-1212,švelnus,soft; gentle,švelnùs,,A2-1212,Adjectives,A2-1212.png
 A2-1213,administratorius,receptionist; administrator,administrãtorius,M,A2-1213,Nouns,A2-1213.png
 A2-1214,alkoholiniai gėrimai,alcoholic drinks,alkohòliniai gė́rimai,,A2-1214,Nouns,A2-1214.png
@@ -337,7 +333,6 @@ A2-1286,keptuvė,frying pan,keptùvė,F,A2-1286,Nouns,A2-1286.png
 A2-1287,kiaušinienė,scrambled/fried eggs,kiaušiniẽnė,F,A2-1287,Nouns,A2-1287.png
 A2-1288,kirpykla,hairdresser's,kirpyklà,F,A2-1288,Nouns,A2-1288.png
 A2-1289,kirpėjas,hairdresser,kirpė́jas,M,A2-1289,Nouns,A2-1289.png
-A2-1290,klaviatūra,keyboard,klaviatūrà,F,A2-1290,Nouns,A2-1290.png
 A2-1291,knygynas,bookshop,knygýnas,M,A2-1291,Nouns,A2-1291.png
 A2-1292,kombinezonas,overalls,kombinezònas,M,A2-1292,Nouns,A2-1292.png
 A2-1293,koncertų salė,concert hall,koncèrtų sãlė,F,A2-1293,Nouns,A2-1293.png
@@ -357,14 +352,12 @@ A2-1306,maišas,sack,maĩšas,M,A2-1306,Nouns,A2-1306.png
 A2-1307,maišelis,(plastic) bag,maišẽlis,M,A2-1307,Nouns,A2-1307.png
 A2-1308,matavimosi kabina,fitting room,matãvimosi kabinà,F,A2-1308,Nouns,A2-1308.png
 A2-1309,medalis,medal,medãlis,M,A2-1309,Nouns,A2-1309.png
-A2-1310,medvilnė,cotton,mẽdvilnė,F,A2-1310,Nouns,A2-1310.png
 A2-1311,meistras,craftsman; repairman,méistras,M,A2-1311,Nouns,A2-1311.png
 A2-1312,mokinys,pupil,mokinỹs,M,A2-1312,Nouns,A2-1312.png
 A2-1313,mugė,fair (market),mùgė,F,A2-1313,Nouns,A2-1313.png
 A2-1314,muitininkas,customs officer,muĩtininkas,M,A2-1314,Nouns,A2-1314.png
 A2-1315,mėsa,meat,mėsà,F,A2-1315,Nouns,A2-1315.png
 A2-1316,Naujieji metai,New Year,naujíeji mẽtai,,A2-1316,Nouns,A2-1316.png
-A2-1317,operacija,operation (surgery),operãcija,F,A2-1317,Nouns,A2-1317.png
 A2-1318,optika,optician's,òptika,F,A2-1318,Nouns,A2-1318.png
 A2-1319,orkaitė,oven,órkaitė,F,A2-1319,Nouns,A2-1319.png
 A2-1320,pakelis,packet,pakẽlis,M,A2-1320,Nouns,A2-1320.png
@@ -394,7 +387,6 @@ A2-1343,sandėlis,storeroom; warehouse,sándėlis,M,A2-1343,Nouns,A2-1343.png
 A2-1344,sankryža,crossroads,sánkryža,F,A2-1344,Nouns,A2-1344.png
 A2-1345,santechnikas,plumber,santèchnikas,M,A2-1345,Nouns,A2-1345.png
 A2-1346,sausainis,biscuit,sausaĩnis,M,A2-1346,Nouns,A2-1346.png
-A2-1347,seimas,Seimas (parliament),seĩmas,M,A2-1347,Nouns,A2-1347.png
 A2-1348,senamiestis,old town,senãmiestis,M,A2-1348,Nouns,A2-1348.png
 A2-1349,servetėlė,napkin,servetė̃lė,F,A2-1349,Nouns,A2-1349.png
 A2-1350,silkė,herring,sil̃kė,F,A2-1350,Nouns,A2-1350.png
@@ -410,14 +402,12 @@ A2-1359,spausdintuvas,printer,spausdintùvas,M,A2-1359,Nouns,A2-1359.png
 A2-1360,spektaklis,performance (theatre),spektãklis,M,A2-1360,Nouns,A2-1360.png
 A2-1361,sportbačiai,trainers,spòrtbačiai,,A2-1361,Nouns,A2-1361.png
 A2-1362,sportininkas,athlete,spòrtininkas,M,A2-1362,Nouns,A2-1362.png
-A2-1363,sprogimas,explosion,sprogìmas,M,A2-1363,Nouns,A2-1363.png
 A2-1364,staltiesė,tablecloth,stáltiesė,F,A2-1364,Nouns,A2-1364.png
 A2-1365,statybų aikštelė,building site,statýbų aikštẽlė,F,A2-1365,Nouns,A2-1365.png
 A2-1366,stiklainis,glass jar,stiklaĩnis,M,A2-1366,Nouns,A2-1366.png
 A2-1367,stiklinė,glass (tumbler),stiklìnė,F,A2-1367,Nouns,A2-1367.png
 A2-1368,suolas,bench; school desk,súolas,M,A2-1368,Nouns,A2-1368.png
 A2-1369,tabletė,pill,tablètė,F,A2-1369,Nouns,A2-1369.png
-A2-1370,teisėjas,judge,teisė́jas,M,A2-1370,Nouns,A2-1370.png
 A2-1371,tenisas,tennis,tènisas,M,A2-1371,Nouns,A2-1371.png
 A2-1372,teptukas,paintbrush,teptùkas,M,A2-1372,Nouns,A2-1372.png
 A2-1373,termometras,thermometer,termomètras,M,A2-1373,Nouns,A2-1373.png
@@ -459,7 +449,6 @@ A2-1408,šalmas,helmet,šálmas,M,A2-1408,Nouns,A2-1408.png
 A2-1409,šaltibarščiai,cold beetroot soup,šaltìbarščiai,M pl,A2-1409,Nouns,A2-1409.png
 A2-1410,šepetys,brush,šepetỹs,M,A2-1410,Nouns,A2-1410.png
 A2-1411,šildytuvas,heater,šildytùvas,M,A2-1411,Nouns,A2-1411.png
-A2-1412,šilkas,silk,šil̃kas,M,A2-1412,Nouns,A2-1412.png
 A2-1413,šiukšlių konteineris,outdoor rubbish container,šiùkšlių konteĩneris,M,A2-1413,Nouns,A2-1413.png
 A2-1414,šluostė,cloth; rag,šluõstė,F,A2-1414,Nouns,A2-1414.png
 A2-1415,šokoladas,chocolate,šokolãdas,M,A2-1415,Nouns,A2-1415.png
@@ -624,3 +613,46 @@ A2-0782,inžinierius,engineer,inžiniẽrius,M,A2-0782,Work & culture,A2-0782.pn
 A2-0789,statybininkas,builder,statýbininkas,M,A2-0789,Work & culture,A2-0789.png
 A2-0796,lenta,blackboard,lentà,F,A2-0796,Work & culture,A2-0796.png
 A2-0866,moneta,coin,monetà,F,A2-0866,Money & admin,A2-0866.png
+A2-1879,juokingas,funny,juokìngas,M/F,A2-1879,Adjectives,A2-1879.png
+A2-1880,saulėta,sunny,saulė́ta,,A2-1880,Adjectives,A2-1880.png
+A2-1883,susirūpinęs,worried,susirū́pinęs,M/F,A2-1883,Adjectives,A2-1883.png
+A2-1884,vienišas,lonely,víenišas,M/F,A2-1884,Adjectives,A2-1884.png
+A2-1892,triukšmingas,noisy,triukšmìngas,M/F,A2-1892,Adjectives,A2-1892.png
+A2-1893,paslaugus,helpful; kind,paslaugùs,M/F,A2-1893,Adjectives,A2-1893.png
+A2-1894,nemandagus,rude,nemandagùs,M/F,A2-1894,Adjectives,A2-1894.png
+A2-1896,išsigandęs,scared; frightened,išsigañdęs,M/F,A2-1896,Adjectives,A2-1896.png
+A2-1898,mama,mum; mom,mamà,F,A2-1898,Nouns,A2-1898.png
+A2-1899,tėtis,dad,tė̃tis,M,A2-1899,Nouns,A2-1899.png
+A2-1901,renginys,event,renginỹs,M,A2-1901,Nouns,A2-1901.png
+A2-1903,vidurnaktis,midnight,vidùrnaktis,M,A2-1903,Nouns,A2-1903.png
+A2-1904,rašomasis stalas,desk,,M,A2-1904,Nouns,A2-1904.png
+A2-1905,morka,carrot,morkà,F,A2-1905,Nouns,A2-1905.png
+A2-1906,pupelės,bean(s),pupẽlės,F pl,A2-1906,Nouns,A2-1906.png
+A2-1907,padažas,sauce,pãdažas,M,A2-1907,Nouns,A2-1907.png
+A2-1908,gitara,guitar,gitarà,F,A2-1908,Nouns,A2-1908.png
+A2-1909,pianinas,piano,pianìnas,M,A2-1909,Nouns,A2-1909.png
+A2-1910,žaislas,toy,žaĩslas,M,A2-1910,Nouns,A2-1910.png
+A2-1911,augintinis,pet,augìntinis,M,A2-1911,Nouns,A2-1911.png
+A2-1912,papuošalai,jewellery,papuošalaĩ,M pl,A2-1912,Nouns,A2-1912.png
+A2-1913,dienoraštis,diary,dienóraštis,M,A2-1913,Nouns,A2-1913.png
+A2-1914,piešinys,drawing,piešinỹs,M,A2-1914,Nouns,A2-1914.png
+A2-1915,galerija,gallery,galèrija,F,A2-1915,Nouns,A2-1915.png
+A2-1916,dailininkas,painter; artist,daĩlininkas,M/F,A2-1916,Nouns,A2-1916.png
+A2-1917,pilotas,pilot,pilòtas,M/F,A2-1917,Nouns,A2-1917.png
+A2-1918,treneris,coach; trainer,trèneris,M/F,A2-1918,Nouns,A2-1918.png
+A2-1919,nugalėtojas,winner,nugalė́tojas,M/F,A2-1919,Nouns,A2-1919.png
+A2-1920,prizas,prize,prìzas,M,A2-1920,Nouns,A2-1920.png
+A2-1921,įvartis,goal (football),į́vartis,M,A2-1921,Nouns,A2-1921.png
+A2-1922,išpardavimas,sale; for sale,išpardavìmas,M,A2-1922,Nouns,A2-1922.png
+A2-1923,viršus,top (of),viršùs,M,A2-1923,Nouns,A2-1923.png
+A2-1924,apačia,bottom (of),apačià,F,A2-1924,Nouns,A2-1924.png
+A2-1926,įranga,equipment; gear,į́ranga,F,A2-1926,Nouns,A2-1926.png
+A2-1931,banko kortelė,credit card,,F,A2-1931,Nouns,A2-1931.png
+A2-1932,valgomasis,dining room,válgomasis,M,A2-1932,Nouns,A2-1932.png
+A2-1933,žadintuvas,alarm clock,žadintùvas,M,A2-1933,Nouns,A2-1933.png
+A2-1938,pagrindinis patiekalas,main course,,M,A2-1938,Nouns,A2-1938.png
+A2-1939,turizmo informacijos centras,tourist information,,M,A2-1939,Nouns,A2-1939.png
+A2-1952,belstis,to knock,bélstis,,A2-1952,Verbs,A2-1952.png
+A2-1953,slėpti(s),to hide,slė̃pti,,A2-1953,Verbs,A2-1953.png
+A2-1956,susituokti,to get married,susituõkti,,A2-1956,Verbs,A2-1956.png
+A2-1957,užpildyti (anketą),to fill in (a form),užpìldyti,,A2-1957,Verbs,A2-1957.png

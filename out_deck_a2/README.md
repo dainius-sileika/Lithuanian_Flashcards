@@ -107,3 +107,10 @@ credits are back:
 4. `python out_deck_a2/build_review_a2.py` and publish the two parts.
 
 Append-only logs live in `~/a2_work/` (outside Proton) and are copied in once per call, as for the F6.2 run; no edit-conflict copies appeared this time.
+
+> **Update 2026-10-17 (executor): the 43 IMG-route benchmark additions** (A2-1879…A2-1957, phase P-L) drawn by
+> this same path from their `subject_phrase_EN` (no staging lines; F6.2 class conventions). 45 renders
+> (A2-1939 *turizmo informacijos centras* twice more: the information sign's "i" read as undeclared text; it is
+> now declared in `card_text` and reads back). QA `qa_a2_additions_2026-10-17.csv`: the 43 pass the hard gate;
+> WARNs are cold-read synonyms, plus A2-1879 *juokingas* (a cat in a cooking pot — odd, owner to judge).
+> Deferred B1 rows keep their PNGs here but are no longer in the plan.
