@@ -1,0 +1,184 @@
+proposal_id,new_id,lithuanian_TARGET,pos,route,status,gender,gen_sg,fem,pres3,past3,lt_pron,pron_src,notes,source_url
+P-001,A2-1863,dauguma,N,CLOZE,verified,f,daugumos,,,,daugumà,kirtis.info,,https://kirtis.info/api/krc/dauguma https://kirtis.info/api/krc/daugumos
+P-002,A2-1864,save,PRON,CLOZE,verified,,,,,,,,,https://kirtis.info/api/krc/save
+P-003,A2-1865,kas nors,PRON,CLOZE,verified,,,,,,,,,https://kirtis.info/api/krc/kas https://en.wiktionary.org/wiki/nors#Lithuanian
+P-004,A2-1866,dar,ADV,CLOZE,verified,,,,,,dár,en.wiktionary,,https://en.wiktionary.org/wiki/dar#Lithuanian https://en.wiktionary.org/wiki/dar#Lithuanian
+P-005,A2-1867,tas pats,PRON,CLOZE,verified,m (ta pati f),,,,,,,,https://kirtis.info/api/krc/tas https://kirtis.info/api/krc/pats
+P-006,A2-1868,šįvakar,ADV,CLOZE,verified,,,,,,šįvãkar,en.wiktionary,,https://en.wiktionary.org/wiki/%C5%A1%C4%AFvakar#Lithuanian https://en.wiktionary.org/wiki/%C5%A1%C4%AFvakar#Lithuanian
+P-007,A2-1869,neseniai,ADV,CLOZE,verified,,,,,,,,,https://en.wiktionary.org/wiki/neseniai#Lithuanian
+P-008,A2-1870,iš tikrųjų,ADV,CLOZE,verified,,,,,,,,,https://kirtis.info/api/krc/i%C5%A1 https://kirtis.info/api/krc/tikr%C5%B3j%C5%B3
+P-009,A2-1871,tikriausiai,ADV,CLOZE,verified,,,,,,,,,https://kirtis.info/api/krc/tikriausiai
+P-010,A2-1872,dažniausiai,ADV,CLOZE,verified,,,,,,dažniáusiai,en.wiktionary,,https://kirtis.info/api/krc/da%C5%BEniausiai https://en.wiktionary.org/wiki/da%C5%BEniausiai#Lithuanian
+P-011,A2-1873,tyliai,ADV,CLOZE,verified,,,,,,,,,https://kirtis.info/api/krc/tyliai
+P-012,A2-1874,garsiai,ADV,CLOZE,verified,,,,,,gar̃siai,en.wiktionary,,https://kirtis.info/api/krc/garsiai https://en.wiktionary.org/wiki/garsiai#Lithuanian
+P-013,A2-1875,visiškai,ADV,CLOZE,verified,,,,,,,,,https://kirtis.info/api/krc/visi%C5%A1kai
+P-014,A2-1876,vis tiek,ADV,CLOZE,verified,,,,,,,,,https://en.wiktionary.org/wiki/vis#Lithuanian https://kirtis.info/api/krc/tiek
+P-015,A2-1877,prieš (+acc),PREP,CLOZE,verified,,,,,,priẽš,en.wiktionary,,https://en.wiktionary.org/wiki/prie%C5%A1#Lithuanian https://en.wiktionary.org/wiki/prie%C5%A1#Lithuanian
+P-016,A2-1878,kitoje pusėje,ADV phrase,CLOZE,verified,,,,,,,,,https://kirtis.info/api/krc/kitoje https://kirtis.info/api/krc/pus%C4%97je
+P-017,A2-1879,juokingas,A,IMG,verified,m (juokinga f),,juokinga,,,juokìngas,kirtis.info,,https://kirtis.info/api/krc/juokingas https://kirtis.info/api/krc/juokinga
+P-018,A2-1880,saulėta,A (pred.),IMG,verified,,,,,,saulė́ta,kirtis.info,predicative neuter form; no masculine/feminine pair,https://kirtis.info/api/krc/saul%C4%97ta
+P-019,A2-1881,mėgstamiausias,A,CLOZE,verified,m (mėgstamiausia f),,mėgstamiausia,,,mėgstamiáusias,kirtis.info,,https://kirtis.info/api/krc/m%C4%97gstamiausias https://kirtis.info/api/krc/m%C4%97gstamiausia
+P-020,A2-1882,pasisekė (man pasisekė),V impers.,CLOZE,verified,,,,,,pasìsekė,kirtis.info,impersonal: past3 pasisekė and infinitive pasisekti confirmed by kirtis,https://kirtis.info/api/krc/pasisek%C4%97 https://kirtis.info/api/krc/pasisekti
+P-021,A2-1883,susirūpinęs,A (participle),IMG,verified,m (susirūpinusi f),,susirūpinusi,,,susirū́pinęs,kirtis.info,,https://kirtis.info/api/krc/susir%C5%ABpin%C4%99s https://kirtis.info/api/krc/susir%C5%ABpinusi
+P-022,A2-1884,vienišas,A,IMG,verified,m (vieniša f),,vieniša,,,víenišas,kirtis.info,,https://kirtis.info/api/krc/vieni%C5%A1as https://kirtis.info/api/krc/vieni%C5%A1a
+P-023,A2-1885,tobulas,A,CLOZE,verified,m (tobula f),,tobula,,,tóbulas,kirtis.info,,https://kirtis.info/api/krc/tobulas https://kirtis.info/api/krc/tobula
+P-024,A2-1886,papildomas,A,CLOZE,verified,m (papildoma f),,papildoma,,,papìldomas,kirtis.info,,https://kirtis.info/api/krc/papildomas https://kirtis.info/api/krc/papildoma
+P-025,A2-1887,asmeninis,A,CLOZE,verified,m (asmeninė f),,asmeninė,,,asmenìnis,kirtis.info,,https://kirtis.info/api/krc/asmeninis https://kirtis.info/api/krc/asmenin%C4%97
+P-026,A2-1888,tarptautinis,A,CLOZE,verified,m (tarptautinė f),,tarptautinė,,,tarptautìnis,kirtis.info,,https://kirtis.info/api/krc/tarptautinis https://kirtis.info/api/krc/tarptautin%C4%97
+P-027,A2-1889,neįprastas,A,CLOZE,verified,m (neįprasta f),,neįprasta,,,neįprãstas,kirtis.info,,https://kirtis.info/api/krc/ne%C4%AFprastas https://kirtis.info/api/krc/ne%C4%AFprasta
+P-028,A2-1890,dvivietis (kambarys),A,CLOZE,corrected,m,,dvivietė,,,dviviẽtis,kirtis.info,feminine dvivietė added (kirtis),https://kirtis.info/api/krc/dvivietis https://kirtis.info/api/krc/dviviet%C4%97
+P-029,A2-1891,vienvietis (kambarys),A,CLOZE,corrected,m,,vienvietė,,,vienviẽtis,kirtis.info,feminine vienvietė added (kirtis),https://kirtis.info/api/krc/vienvietis https://kirtis.info/api/krc/vienviet%C4%97
+P-030,A2-1892,triukšmingas,A,IMG,verified,m (triukšminga f),,triukšminga,,,triukšmìngas,kirtis.info,,https://kirtis.info/api/krc/triuk%C5%A1mingas https://kirtis.info/api/krc/triuk%C5%A1minga
+P-031,A2-1893,paslaugus,A,IMG,verified,m (paslaugi f),,paslaugi,,,paslaugùs,kirtis.info,,https://kirtis.info/api/krc/paslaugus https://kirtis.info/api/krc/paslaugi
+P-032,A2-1894,nemandagus,A,IMG,verified,m (nemandagi f),,nemandagi,,,nemandagùs,kirtis.info,,https://kirtis.info/api/krc/nemandagus https://kirtis.info/api/krc/nemandagi
+P-033,A2-1895,dingęs,A (participle),CLOZE,verified,m (dingusi f),,dingusi,,,diñgęs,kirtis.info,,https://kirtis.info/api/krc/ding%C4%99s https://kirtis.info/api/krc/dingusi
+P-034,A2-1896,išsigandęs,A (participle),IMG,verified,m (išsigandusi f),,išsigandusi,,,išsigañdęs,kirtis.info,,https://kirtis.info/api/krc/i%C5%A1sigand%C4%99s https://kirtis.info/api/krc/i%C5%A1sigandusi
+P-035,A2-1897,noriu gerti,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/noriu https://kirtis.info/api/krc/gerti
+P-036,A2-1898,mama,N,IMG,verified,f,mamos,,,,mamà,kirtis.info,,https://kirtis.info/api/krc/mama https://kirtis.info/api/krc/mamos
+P-037,A2-1899,tėtis,N,IMG,verified,m,tėčio,,,,tė̃tis,kirtis.info,,https://kirtis.info/api/krc/t%C4%97tis https://kirtis.info/api/krc/t%C4%97%C4%8Dio
+P-038,A2-1900,partneris,N,CLOZE,verified,m (partnerė f),partnerio,,,,pártneris,kirtis.info,,https://kirtis.info/api/krc/partneris https://kirtis.info/api/krc/partnerio https://kirtis.info/api/krc/partner%C4%97
+P-039,A2-1901,renginys,N,IMG,verified,m,renginio,,,,renginỹs,kirtis.info,,https://kirtis.info/api/krc/renginys https://kirtis.info/api/krc/renginio
+P-040,A2-1902,veikla,N,CLOZE,verified,f,veiklos,,,,veiklà,kirtis.info,,https://kirtis.info/api/krc/veikla https://kirtis.info/api/krc/veiklos
+P-041,A2-1903,vidurnaktis,N,IMG,verified,m,vidurnakčio,,,,vidùrnaktis,kirtis.info,,https://kirtis.info/api/krc/vidurnaktis https://kirtis.info/api/krc/vidurnak%C4%8Dio
+P-042,A2-1904,rašomasis stalas,N,IMG,verified,m,rašomojo stalo,,,,,,,https://kirtis.info/api/krc/stalas https://kirtis.info/api/krc/stalo
+P-043,A2-1905,morka,N,IMG,verified,f,morkos,,,,morkà,kirtis.info,,https://kirtis.info/api/krc/morka https://kirtis.info/api/krc/morkos
+P-044,A2-1906,pupelės,N,IMG,verified,f pl,pupelių,,,,pupẽlės,kirtis.info,,https://kirtis.info/api/krc/pupel%C4%97s https://kirtis.info/api/krc/pupeli%C5%B3
+P-045,A2-1907,padažas,N,IMG,verified,m,padažo,,,,pãdažas,kirtis.info,,https://kirtis.info/api/krc/pada%C5%BEas https://kirtis.info/api/krc/pada%C5%BEo
+P-046,A2-1908,gitara,N,IMG,verified,f,gitaros,,,,gitarà,kirtis.info,,https://kirtis.info/api/krc/gitara https://kirtis.info/api/krc/gitaros
+P-047,A2-1909,pianinas,N,IMG,verified,m,pianino,,,,pianìnas,kirtis.info,,https://kirtis.info/api/krc/pianinas https://kirtis.info/api/krc/pianino
+P-048,A2-1910,žaislas,N,IMG,verified,m,žaislo,,,,žaĩslas,kirtis.info,,https://kirtis.info/api/krc/%C5%BEaislas https://kirtis.info/api/krc/%C5%BEaislo
+P-049,A2-1911,augintinis,N,IMG,verified,m,augintinio,,,,augìntinis,kirtis.info,,https://kirtis.info/api/krc/augintinis https://kirtis.info/api/krc/augintinio
+P-050,A2-1912,papuošalai,N,IMG,verified,m pl,papuošalų,,,,papuošalaĩ,kirtis.info,,https://kirtis.info/api/krc/papuo%C5%A1alai https://kirtis.info/api/krc/papuo%C5%A1al%C5%B3
+P-051,A2-1913,dienoraštis,N,IMG,verified,m,dienoraščio,,,,dienóraštis,kirtis.info,,https://kirtis.info/api/krc/dienora%C5%A1tis https://kirtis.info/api/krc/dienora%C5%A1%C4%8Dio
+P-052,A2-1914,piešinys,N,IMG,verified,m,piešinio,,,,piešinỹs,kirtis.info,,https://kirtis.info/api/krc/pie%C5%A1inys https://kirtis.info/api/krc/pie%C5%A1inio
+P-053,A2-1915,galerija,N,IMG,verified,f,galerijos,,,,galèrija,kirtis.info,,https://kirtis.info/api/krc/galerija https://kirtis.info/api/krc/galerijos
+P-054,A2-1916,dailininkas,N,IMG,verified,m (dailininkė f),dailininko,,,,daĩlininkas,kirtis.info,,https://kirtis.info/api/krc/dailininkas https://kirtis.info/api/krc/dailininko https://kirtis.info/api/krc/dailinink%C4%97
+P-055,A2-1917,pilotas,N,IMG,verified,m (pilotė f),piloto,,,,pilòtas,kirtis.info,,https://kirtis.info/api/krc/pilotas https://kirtis.info/api/krc/piloto https://kirtis.info/api/krc/pilot%C4%97
+P-056,A2-1918,treneris,N,IMG,verified,m (trenerė f),trenerio,,,,trèneris,kirtis.info,,https://kirtis.info/api/krc/treneris https://kirtis.info/api/krc/trenerio https://kirtis.info/api/krc/trener%C4%97
+P-057,A2-1919,nugalėtojas,N,IMG,verified,m (nugalėtoja f),nugalėtojo,,,,nugalė́tojas,kirtis.info,,https://kirtis.info/api/krc/nugal%C4%97tojas https://kirtis.info/api/krc/nugal%C4%97tojo https://kirtis.info/api/krc/nugal%C4%97toja
+P-058,A2-1920,prizas,N,IMG,verified,m,prizo,,,,prìzas,kirtis.info,,https://kirtis.info/api/krc/prizas https://kirtis.info/api/krc/prizo
+P-059,A2-1921,įvartis,N,IMG,verified,m,įvarčio,,,,į́vartis,kirtis.info,,https://kirtis.info/api/krc/%C4%AFvartis https://kirtis.info/api/krc/%C4%AFvar%C4%8Dio
+P-060,A2-1922,išpardavimas,N,IMG,verified,m,išpardavimo,,,,išpardavìmas,kirtis.info,,https://kirtis.info/api/krc/i%C5%A1pardavimas https://kirtis.info/api/krc/i%C5%A1pardavimo
+P-061,A2-1923,viršus,N,IMG,verified,m,viršaus,,,,viršùs,kirtis.info,,https://kirtis.info/api/krc/vir%C5%A1us https://kirtis.info/api/krc/vir%C5%A1aus
+P-062,A2-1924,apačia,N,IMG,verified,f,apačios,,,,apačià,kirtis.info,,https://kirtis.info/api/krc/apa%C4%8Dia https://kirtis.info/api/krc/apa%C4%8Dios
+P-063,A2-1925,aplinka,N,CLOZE,verified,f,aplinkos,,,,aplinkà,kirtis.info,,https://kirtis.info/api/krc/aplinka https://kirtis.info/api/krc/aplinkos
+P-064,A2-1926,įranga,N,IMG,verified,f,įrangos,,,,į́ranga,kirtis.info,,https://kirtis.info/api/krc/%C4%AFranga https://kirtis.info/api/krc/%C4%AFrangos
+P-065,A2-1927,lygis,N,CLOZE,verified,m,lygio,,,,lỹgis,kirtis.info,,https://kirtis.info/api/krc/lygis https://kirtis.info/api/krc/lygio
+P-066,A2-1928,semestras,N,CLOZE,verified,m,semestro,,,,semèstras,kirtis.info,,https://kirtis.info/api/krc/semestras https://kirtis.info/api/krc/semestro
+P-067,A2-1929,stilius,N,CLOZE,verified,m,stiliaus,,,,stìlius,kirtis.info,,https://kirtis.info/api/krc/stilius https://kirtis.info/api/krc/stiliaus
+P-068,A2-1930,sėkmė,N,CLOZE,verified,f,sėkmės,,,,sėkmė̃,kirtis.info,,https://kirtis.info/api/krc/s%C4%97km%C4%97 https://kirtis.info/api/krc/s%C4%97km%C4%97s
+P-069,A2-1931,banko kortelė,N,IMG,verified,f,banko kortelės,,,,,,,https://kirtis.info/api/krc/kortel%C4%97 https://kirtis.info/api/krc/kortel%C4%97s
+P-070,A2-1932,valgomasis,N,IMG,verified,m,valgomojo,,,,válgomasis,kirtis.info,,https://kirtis.info/api/krc/valgomasis https://kirtis.info/api/krc/valgomojo
+P-071,A2-1933,žadintuvas,N,IMG,verified,m,žadintuvo,,,,žadintùvas,kirtis.info,,https://kirtis.info/api/krc/%C5%BEadintuvas https://kirtis.info/api/krc/%C5%BEadintuvo
+P-072,A2-1934,skauda pilvą,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/skauda https://kirtis.info/api/krc/pilv%C4%85
+P-073,A2-1935,skauda galvą,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/skauda https://kirtis.info/api/krc/galv%C4%85
+P-074,A2-1936,kompiuterinis žaidimas,N,CLOZE,verified,m,kompiuterinio žaidimo,,,,,,,https://kirtis.info/api/krc/%C5%BEaidimas https://kirtis.info/api/krc/%C5%BEaidimo
+P-075,A2-1937,socialiniai tinklai,N,CLOZE,verified,m pl,socialinių tinklų,,,,,,,https://kirtis.info/api/krc/tinklai https://kirtis.info/api/krc/tinkl%C5%B3
+P-076,A2-1938,pagrindinis patiekalas,N,IMG,verified,m,pagrindinio patiekalo,,,,,,,https://kirtis.info/api/krc/patiekalas https://kirtis.info/api/krc/patiekalo
+P-077,A2-1939,turizmo informacijos centras,N,IMG,verified,m,,,,,,,,https://kirtis.info/api/krc/centras
+P-078,A2-1940,kaimynystė,N,CLOZE,verified,f,kaimynystės,,,,kaimynỹstė,kirtis.info,,https://kirtis.info/api/krc/kaimynyst%C4%97 https://kirtis.info/api/krc/kaimynyst%C4%97s
+P-079,A2-1941,nekęsti (+gen),V,CLOZE,verified,,,,nekenčia,nekentė,nekę̃sti,kirtis.info,,https://kirtis.info/api/krc/nek%C4%99sti https://en.wiktionary.org/wiki/nek%C4%99sti#Lithuanian https://kirtis.info/api/krc/neken%C4%8Dia
+P-080,A2-1942,prisijungti (prie),V,CLOZE,verified,,,,prisijungia,prisijungė,prisijùngti,kirtis.info,,https://kirtis.info/api/krc/prisijungti https://kirtis.info/api/krc/prisijungia
+P-081,A2-1943,apibūdinti,V,CLOZE,verified,,,,apibūdina,apibūdino,apibū̃dinti,kirtis.info,,https://kirtis.info/api/krc/apib%C5%ABdinti https://kirtis.info/api/krc/apib%C5%ABdina
+P-082,A2-1944,Kaip rašoma?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Kaip#Lithuanian https://kirtis.info/api/krc/ra%C5%A1oma
+P-083,A2-1945,priklausyti (nuo),V,CLOZE,verified,,,,priklauso,priklausė,priklausýti,kirtis.info,,https://kirtis.info/api/krc/priklausyti https://en.wiktionary.org/wiki/priklausyti#Lithuanian https://kirtis.info/api/krc/priklauso
+P-084,A2-1946,Man nesvarbu / Neprieštarauju,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/man https://kirtis.info/api/krc/nesvarbu https://kirtis.info/api/krc/neprie%C5%A1tarauju
+P-085,A2-1947,kurti,V,CLOZE,verified,,,,kuria,kūrė,kùrti,kirtis.info,,https://kirtis.info/api/krc/kurti https://en.wiktionary.org/wiki/kurti#Lithuanian https://kirtis.info/api/krc/kuria
+P-086,A2-1948,išrasti,V,CLOZE,verified,,,,išranda,išrado,išràsti,kirtis.info,,https://kirtis.info/api/krc/i%C5%A1rasti https://kirtis.info/api/krc/i%C5%A1randa
+P-087,A2-1949,neišlaikyti (egzamino),V,CLOZE,verified,,,,neišlaiko,neišlaikė,neišlaikýti,kirtis.info,,https://kirtis.info/api/krc/nei%C5%A1laikyti https://kirtis.info/api/krc/nei%C5%A1laiko
+P-088,A2-1950,aptarnauti,V,CLOZE,verified,,,,aptarnauja,aptarnavo,aptarnáuti,kirtis.info,,https://kirtis.info/api/krc/aptarnauti https://kirtis.info/api/krc/aptarnauja
+P-089,A2-1951,trenkti,V,CLOZE,verified,,,,trenkia,trenkė,treñkti,kirtis.info,,https://kirtis.info/api/krc/trenkti https://en.wiktionary.org/wiki/trenkti#Lithuanian https://kirtis.info/api/krc/trenkia
+P-090,A2-1952,belstis,V,IMG,verified,,,,beldžiasi,beldėsi,bélstis,kirtis.info,,https://kirtis.info/api/krc/belstis https://kirtis.info/api/krc/beld%C5%BEiasi
+P-091,A2-1953,slėpti(s),V,IMG,verified,,,,slepia,slėpė,slė̃pti,kirtis.info,Wiktionary pres3 slėpia vs slepia,https://kirtis.info/api/krc/sl%C4%97pti https://en.wiktionary.org/wiki/sl%C4%97pti#Lithuanian https://kirtis.info/api/krc/slepia
+P-092,A2-1954,pasiekti,V,CLOZE,verified,,,,pasiekia,pasiekė,pasíekti,kirtis.info,,https://kirtis.info/api/krc/pasiekti https://en.wiktionary.org/wiki/pasiekti#Lithuanian https://kirtis.info/api/krc/pasiekia
+P-093,A2-1955,užaugti,V,CLOZE,verified,,,,užauga,užaugo,užáugti,kirtis.info,,https://kirtis.info/api/krc/u%C5%BEaugti https://kirtis.info/api/krc/u%C5%BEauga
+P-094,A2-1956,susituokti,V,IMG,verified,,,,susituokia,susituokė,susituõkti,kirtis.info,,https://kirtis.info/api/krc/susituokti https://kirtis.info/api/krc/susituokia
+P-095,A2-1957,užpildyti (anketą),V,IMG,verified,,,,užpildo,užpildė,užpìldyti,kirtis.info,,https://kirtis.info/api/krc/u%C5%BEpildyti https://kirtis.info/api/krc/u%C5%BEpildo
+P-096,A2-1958,labiau patinka (man labiau patinka),PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/labiau https://kirtis.info/api/krc/patinka
+P-097,A2-1959,važiuoti dviračiu,V phrase,CLOZE,verified,,,,važiuoja,važiavo,,,,https://kirtis.info/api/krc/va%C5%BEiuoti https://en.wiktionary.org/wiki/va%C5%BEiuoti#Lithuanian https://kirtis.info/api/krc/va%C5%BEiuoja
+P-098,A2-1960,praktikuotis,V,CLOZE,verified,,,,praktikuojasi,praktikavosi,praktikúotis,kirtis.info,reflexive praktikuojasi/praktikavosi built regularly on kirtis-confirmed praktikuoja/praktikavo (kirtis has no -si forms of this verb),https://kirtis.info/api/krc/praktikuoja https://kirtis.info/api/krc/praktikavo
+P-099,A2-1961,atpažinti,V,CLOZE,verified,,,,atpažįsta,atpažino,atpažìnti,kirtis.info,"not in kirtis/Wiktionary, accepted by hand as regular form: neatpažinau",https://kirtis.info/api/krc/atpa%C5%BEinti https://kirtis.info/api/krc/atpa%C5%BE%C4%AFsta
+P-100,A2-1962,išspręsti,V,CLOZE,verified,,,,išsprendžia,išsprendė,išsprę́sti,kirtis.info,"not in kirtis/Wiktionary, accepted by hand as regular form: išsprendėme",https://kirtis.info/api/krc/i%C5%A1spr%C4%99sti https://kirtis.info/api/krc/i%C5%A1sprend%C5%BEia
+P-101,A2-1963,palaikyti,V,CLOZE,verified,,,,palaiko,palaikė,palaikýti,kirtis.info,,https://kirtis.info/api/krc/palaikyti https://en.wiktionary.org/wiki/palaikyti#Lithuanian https://kirtis.info/api/krc/palaiko
+P-102,A2-1964,sustabdyti,V,CLOZE,verified,,,,sustabdo,sustabdė,sustabdýti,kirtis.info,,https://kirtis.info/api/krc/sustabdyti https://kirtis.info/api/krc/sustabdo
+P-103,A2-1965,organizuoti,V,CLOZE,verified,,,,organizuoja,organizavo,organizúoti,kirtis.info,,https://kirtis.info/api/krc/organizuoti https://en.wiktionary.org/wiki/organizuoti#Lithuanian https://kirtis.info/api/krc/organizuoja
+P-104,A2-1966,paveikti,V,CLOZE,verified,,,,paveikia,paveikė,paveĩkti,kirtis.info,,https://kirtis.info/api/krc/paveikti https://kirtis.info/api/krc/paveikia
+P-105,A2-1967,privalumas,N,CLOZE,verified,m,privalumo,,,,privalùmas,kirtis.info,,https://kirtis.info/api/krc/privalumas https://kirtis.info/api/krc/privalumo
+P-106,A2-1968,gebėjimas,N,CLOZE,verified,m,gebėjimo,,,,gebė́jimas,kirtis.info,,https://kirtis.info/api/krc/geb%C4%97jimas https://kirtis.info/api/krc/geb%C4%97jimo
+P-107,A2-1969,žinios,N,CLOZE,verified,f pl,žinių,,,,žìnios,kirtis.info,,https://kirtis.info/api/krc/%C5%BEinios https://kirtis.info/api/krc/%C5%BEini%C5%B3
+P-108,A2-1970,pasiūlymas,N,CLOZE,verified,m,pasiūlymo,,,,pasiū́lymas,kirtis.info,,https://kirtis.info/api/krc/pasi%C5%ABlymas https://kirtis.info/api/krc/pasi%C5%ABlymo
+P-109,A2-1971,situacija,N,CLOZE,verified,f,situacijos,,,,situãcija,kirtis.info,,https://kirtis.info/api/krc/situacija https://kirtis.info/api/krc/situacijos
+P-110,A2-1972,reikšmė,N,CLOZE,verified,f,reikšmės,,,,reikšmė̃,kirtis.info,,https://kirtis.info/api/krc/reik%C5%A1m%C4%97 https://kirtis.info/api/krc/reik%C5%A1m%C4%97s
+P-111,A2-1973,faktas,N,CLOZE,verified,m,fakto,,,,fãktas,kirtis.info,,https://kirtis.info/api/krc/faktas https://kirtis.info/api/krc/fakto
+P-112,A2-1974,prasmė,N,CLOZE,verified,f,prasmės,,,,prasmė̃,kirtis.info,,https://kirtis.info/api/krc/prasm%C4%97 https://kirtis.info/api/krc/prasm%C4%97s
+P-113,A2-1975,reikėtų / turėtum,SENT,SENT,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/reik%C4%97t%C5%B3 https://kirtis.info/api/krc/tur%C4%97tum
+P-114,A2-1976,Ar galėtumėte…?,SENT,SENT,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/gal%C4%97tum%C4%97te
+P-115,A2-1977,norėčiau,SENT,SENT,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/nor%C4%97%C4%8Diau
+P-116,A2-1978,"gali būti, kad",SENT,SENT,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/gali https://kirtis.info/api/krc/b%C5%ABti https://en.wiktionary.org/wiki/kad#Lithuanian
+P-117,A2-1979,negalima / galima,SENT,SENT,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/negalima https://kirtis.info/api/krc/galima
+P-118,A2-1980,reikia / turiu,SENT,SENT,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/reikia https://kirtis.info/api/krc/turiu
+P-119,A2-1981,-davo (frequentative past),SENT,SENT,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/davo#Lithuanian
+P-120,A2-1982,-esnis / -iausias,SENT,SENT,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/esnis#Lithuanian https://en.wiktionary.org/wiki/iausias#Lithuanian
+P-121,A2-1983,Čia (yra) mano draugas. / Susipažinkite — tai…,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/%C4%8Cia#Lithuanian https://kirtis.info/api/krc/mano https://kirtis.info/api/krc/draugas https://kirtis.info/api/krc/susipa%C5%BEinkite
+P-122,A2-1984,Kuo galiu padėti?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/kuo https://kirtis.info/api/krc/galiu https://kirtis.info/api/krc/pad%C4%97ti
+P-123,A2-1985,Eime į kavinę! / Gal eikime į kavinę?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/eime https://en.wiktionary.org/wiki/%C4%AF#Lithuanian https://kirtis.info/api/krc/kavin%C4%99 https://en.wiktionary.org/wiki/Gal#Lithuanian
+P-124,A2-1986,Susitikime šeštą. / Gal susitinkam rytoj?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/susitikime https://kirtis.info/api/krc/%C5%A1e%C5%A1t%C4%85 https://en.wiktionary.org/wiki/Gal#Lithuanian https://kirtis.info/api/krc/susitinkam
+P-125,A2-1987,"Ačiū, ne.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/A%C4%8Di%C5%AB#Lithuanian https://en.wiktionary.org/wiki/ne#Lithuanian
+P-126,A2-1988,"Deja, negaliu.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/deja https://kirtis.info/api/krc/negaliu
+P-127,A2-1989,Ar nori arbatos? / Ar norite arbatos?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/nori https://kirtis.info/api/krc/arbatos
+P-128,A2-1990,Man nepatinka…,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/man https://kirtis.info/api/krc/nepatinka
+P-129,A2-1991,Man labiau patinka arbata.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/man https://kirtis.info/api/krc/labiau https://kirtis.info/api/krc/patinka https://kirtis.info/api/krc/arbata
+P-130,A2-1992,Ar tau patinka…? / Ar jums patinka…?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/tau https://kirtis.info/api/krc/patinka
+P-131,A2-1993,Ar galima?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/galima
+P-132,A2-1994,Galima. / Prašom.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/galima https://kirtis.info/api/krc/pra%C5%A1om
+P-133,A2-1995,"Kaip rašoma? / Paraidžiui, prašau.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Kaip#Lithuanian https://kirtis.info/api/krc/ra%C5%A1oma https://en.wiktionary.org/wiki/Paraid%C5%BEiui#Lithuanian https://kirtis.info/api/krc/pra%C5%A1au
+P-134,A2-1996,Ar supranti? / Ar suprantate?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/supranti https://kirtis.info/api/krc/suprantate
+P-135,A2-1997,Ar galėčiau kalbėti su Jonu?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/gal%C4%97%C4%8Diau https://kirtis.info/api/krc/kalb%C4%97ti https://en.wiktionary.org/wiki/su#Lithuanian
+P-136,A2-1998,Kas skambina?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/kas https://kirtis.info/api/krc/skambina
+P-137,A2-1999,Palaukite minutėlę.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/palaukite https://kirtis.info/api/krc/minut%C4%97l%C4%99
+P-138,A2-2000,Jūs ne ten pataikėte.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/j%C5%ABs https://en.wiktionary.org/wiki/ne#Lithuanian https://en.wiktionary.org/wiki/ten#Lithuanian https://kirtis.info/api/krc/pataik%C4%97te
+P-139,A2-2001,Koks tavo / jūsų telefono numeris?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/koks https://kirtis.info/api/krc/tavo https://kirtis.info/api/krc/j%C5%ABs%C5%B3 https://kirtis.info/api/krc/telefono
+P-140,A2-2002,Koks jūsų adresas?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/koks https://kirtis.info/api/krc/j%C5%ABs%C5%B3 https://kirtis.info/api/krc/adresas
+P-141,A2-2003,Man šalta. / Man karšta.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/man https://kirtis.info/api/krc/%C5%A1alta https://kirtis.info/api/krc/kar%C5%A1ta
+P-142,A2-2004,Pavargau.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/pavargau
+P-143,A2-2005,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/de%C5%A1in%C4%97je https://kirtis.info/api/krc/sukite https://en.wiktionary.org/wiki/%C4%AF#Lithuanian https://kirtis.info/api/krc/de%C5%A1in%C4%99
+P-144,A2-2006,Ar toli? / Netoli.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),"not in kirtis/Wiktionary, accepted by hand as regular form: Netoli",https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/toli https://en.wiktionary.org/wiki/Netoli#Lithuanian
+P-145,A2-2007,"Vieną kavą, prašau.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/vien%C4%85 https://kirtis.info/api/krc/kav%C4%85 https://kirtis.info/api/krc/pra%C5%A1au
+P-146,A2-2008,Dar ko nors?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Dar#Lithuanian https://kirtis.info/api/krc/ko https://en.wiktionary.org/wiki/nors#Lithuanian
+P-147,A2-2009,"Viskas, ačiū.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/viskas https://en.wiktionary.org/wiki/a%C4%8Di%C5%AB#Lithuanian
+P-148,A2-2010,Grąžos nereikia.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/gr%C4%85%C5%BEos https://kirtis.info/api/krc/nereikia
+P-149,A2-2011,Kur galiu nusipirkti…?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Kur#Lithuanian https://kirtis.info/api/krc/galiu https://kirtis.info/api/krc/nusipirkti
+P-150,A2-2012,Ką rekomenduotumėte?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/k%C4%85 https://kirtis.info/api/krc/rekomenduotum%C4%97te
+P-151,A2-2013,"Atsiprašau, kad vėluoju.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/atsipra%C5%A1au https://en.wiktionary.org/wiki/kad#Lithuanian https://kirtis.info/api/krc/v%C4%97luoju
+P-152,A2-2014,Nesijaudink. / Nesijaudinkite.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/nesijaudink https://kirtis.info/api/krc/nesijaudinkite
+P-153,A2-2015,Kaip gaila!,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),"not in kirtis/Wiktionary, accepted by hand as regular form: gaila",https://en.wiktionary.org/wiki/Kaip#Lithuanian https://en.wiktionary.org/wiki/gaila#Lithuanian
+P-154,A2-2016,Kas atsitiko?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/kas https://kirtis.info/api/krc/atsitiko
+P-155,A2-2017,Linksmų Velykų!,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/linksm%C5%B3 https://kirtis.info/api/krc/velyk%C5%B3
+P-156,A2-2018,Ir jums! / Ir tau!,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ir#Lithuanian https://kirtis.info/api/krc/jums https://kirtis.info/api/krc/tau
+P-157,A2-2019,Iki greito! / Iki vėliau!,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Iki#Lithuanian https://kirtis.info/api/krc/greito https://kirtis.info/api/krc/v%C4%97liau
+P-158,A2-2020,"Atsiprašau, ką sakėte?",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/atsipra%C5%A1au https://kirtis.info/api/krc/k%C4%85 https://kirtis.info/api/krc/sak%C4%97te
+P-159,A2-2021,"Gerai, sutarta.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/gerai https://kirtis.info/api/krc/sutarta
+P-160,A2-2022,Leiskite prisistatyti.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/leiskite https://kirtis.info/api/krc/prisistatyti
+P-161,A2-2023,"Atsiprašau, ar čia laisva?",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/atsipra%C5%A1au https://en.wiktionary.org/wiki/ar#Lithuanian https://en.wiktionary.org/wiki/%C4%8Dia#Lithuanian https://kirtis.info/api/krc/laisva
+P-162,A2-2024,Norėčiau sumokėti.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/nor%C4%97%C4%8Diau https://kirtis.info/api/krc/sumok%C4%97ti
+P-163,A2-2025,Turiu rezervaciją.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),"not in kirtis/Wiktionary, accepted by hand as regular form: rezervaciją",https://kirtis.info/api/krc/turiu https://en.wiktionary.org/wiki/rezervacij%C4%85#Lithuanian
+P-164,A2-2026,"Vieną bilietą į Kauną, prašau.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/vien%C4%85 https://kirtis.info/api/krc/biliet%C4%85 https://en.wiktionary.org/wiki/%C4%AF#Lithuanian https://kirtis.info/api/krc/kaun%C4%85
+P-165,A2-2027,Kuris peronas?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/kuris https://kirtis.info/api/krc/peronas
+P-166,A2-2028,Ar šis autobusas važiuoja į centrą?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/%C5%A1is https://kirtis.info/api/krc/autobusas https://kirtis.info/api/krc/va%C5%BEiuoja
+P-167,A2-2029,"Sustokite čia, prašau.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/sustokite https://en.wiktionary.org/wiki/%C4%8Dia#Lithuanian https://kirtis.info/api/krc/pra%C5%A1au
+P-168,A2-2030,Man reikia gydytojo. / Kur vaistinė?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/man https://kirtis.info/api/krc/reikia https://kirtis.info/api/krc/gydytojo https://en.wiktionary.org/wiki/Kur#Lithuanian
+P-169,A2-2031,Karščiuoju. / Peršalau.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/kar%C5%A1%C4%8Diuoju https://kirtis.info/api/krc/per%C5%A1alau
+P-170,A2-2032,Gerkite du kartus per dieną.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/gerkite https://kirtis.info/api/krc/du https://kirtis.info/api/krc/kartus https://en.wiktionary.org/wiki/per#Lithuanian
+P-171,A2-2033,Gero poilsio! / Smagiai praleisti laiką!,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/gero https://kirtis.info/api/krc/poilsio https://kirtis.info/api/krc/smagiai https://kirtis.info/api/krc/praleisti
+P-172,A2-2034,"Tik žiūriu, ačiū.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/tik https://kirtis.info/api/krc/%C5%BEi%C5%ABriu https://en.wiktionary.org/wiki/a%C4%8Di%C5%AB#Lithuanian
+P-173,A2-2035,Ar galiu pasimatuoti?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/galiu https://kirtis.info/api/krc/pasimatuoti
+P-174,A2-2036,Per didelis. / Per mažas.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Per#Lithuanian https://kirtis.info/api/krc/didelis https://kirtis.info/api/krc/ma%C5%BEas
+P-175,A2-2037,Ar turite kitos spalvos? / kito dydžio?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/turite https://kirtis.info/api/krc/kitos https://kirtis.info/api/krc/spalvos
+P-176,A2-2038,"Man sriubos, prašau.",PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/man https://kirtis.info/api/krc/sriubos https://kirtis.info/api/krc/pra%C5%A1au
+P-177,A2-2039,Ar galėtume gauti meniu?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/gal%C4%97tume https://kirtis.info/api/krc/gauti https://kirtis.info/api/krc/meniu
+P-178,A2-2040,Ar aptarnavimas įskaičiuotas?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/aptarnavimas https://kirtis.info/api/krc/%C4%AFskai%C4%8Diuotas
+P-179,A2-2041,Buvo labai skanu.,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/buvo https://kirtis.info/api/krc/labai https://kirtis.info/api/krc/skanu
+P-180,A2-2042,Ar galite mus nufotografuoti?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Ar#Lithuanian https://kirtis.info/api/krc/galite https://kirtis.info/api/krc/mus https://kirtis.info/api/krc/nufotografuoti
+P-181,A2-2043,Kiek laiko užtrunka?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Kiek#Lithuanian https://kirtis.info/api/krc/laiko https://kirtis.info/api/krc/u%C5%BEtrunka
+P-182,A2-2044,Koks oras?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/koks https://kirtis.info/api/krc/oras
+P-183,A2-2045,Su vardadieniu!,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Su#Lithuanian https://kirtis.info/api/krc/vardadieniu

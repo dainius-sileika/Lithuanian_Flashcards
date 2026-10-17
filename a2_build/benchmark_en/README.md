@@ -96,3 +96,24 @@ Licence note: the Oxford and Cambridge PDFs are © OUP / UCLES and carry no redi
 - Kelly project lists, licence and languages (UiO Text Laboratory): https://hf.uio.no/iln/english/about/organization/text-laboratory/services/kelly.html ; Kilgarriff et al. 2014 paper record: https://repozytorium.amu.edu.pl/handle/10593/10369 [not read]
 - Pearson GSE Teacher Toolkit — not accessed this session [unverified]
 - VU A1/A2 lexicon (local): `sources/A2_2_lygis_VU_A1A2_lexicon.pdf` (Ramonienė 2016 Pusiaukelė + Stumbrienė 2016 Lūžis); PERLSI 3000: `sources/LT_3000_most_frequent_PERLSI.pdf`
+
+## 7. Applied 2026-10-17 (executor)
+
+- **Verification** (`additions_verified.csv`, script `verify_additions.py`): every lemma, gender, gen_sg,
+  feminine and pres3/past3 of the 183 proposals checked against kirtis.info's morphological analyser
+  (`https://kirtis.info/api/krc/<form>` — the state tags confirm e.g. *mot.gim. vnsk. K.* for a genitive,
+  *esam.l. IIIasm.* for pres3) and en.wiktionary (`{{lt-noun}}`, `{{lt-verb}}` heads); phrases token by
+  token. Result: **181 verified, 2 corrected, 0 failed**. Corrected: *dvivietis*, *vienvietis* (feminine
+  *dvivietė*, *vienvietė* added). Known conflict kept: *slėpti* pres3 — kirtis *slẽpia*, Wiktionary *slė̃pia*;
+  we keep *slepia*. Eight forms are absent from both sources and were accepted as regular by hand
+  (*netoli, gaila, rezervaciją, neatpažinau, išsprendėme*, reflexive *praktikuojasi/praktikavosi*); they are
+  named in each row's `notes`. Stress filled for 89 single-word rows (kirtis or Wiktionary).
+- **Merged** by `a2_build/src/apply_benchmark.py` (idempotent; re-run after any `build_a2.py` rebuild):
+  182 rows appended to `a2_wordlist.csv` as **A2-1863…A2-2045**, phase **P-L**, ids reserved in `id_map.csv`.
+  P-078 *kaimynystė* is also on the deferral list ("B1 pack") and went straight to `deferred_B1.csv`.
+- **Gloss alignments**: the 67 English headwords are in a new column `english_alt` (the `english` caption is
+  unchanged) on 69 rows of `a2_wordlist.csv` / `master_wordlist.csv`; all 67 matched.
+- **Deferrals**: the 30 A2 rows marked "B1 pack" moved to `a2_build/deferred_B1.csv` with their ids and all
+  columns (+ `deferred_reason`). Kept on A2: every "keep … owner call" row, *vilna* (conditional).
+  Not moved (A1 deck, Fluent Forever list): sutartis, rinkimai, branduolinis, žmogžudystė, auka, teismas,
+  rasė, seksas — owner decides. Not in our data at all: kvitas, įspėti, skuduras.
