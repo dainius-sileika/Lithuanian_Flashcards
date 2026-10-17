@@ -100,6 +100,7 @@ EXTENDED_PENALTY, PK_PENALTY = 1.0, 0.8
 LANE_CAP, WINDOW = 3, 10
 LANE_CAP_OVERRIDE = {"phrases": 2}
 FIRST_CLOZE, CLOZE_CAP, FIRST_PHRASE, FIRST_COLOURS = 100, 4, 40, 40
+A2_FIRST_CLOZE = 30     # the A2 block also opens with picture cards (owner: deck coherence), 2026-10-17
 SEPARATION = 60
 PIN_AFTER = {"531_batonas": "182_duona"}
 
@@ -372,7 +373,7 @@ def schedule(block, a1_rules):
         if sum(1 for x in window if x["lane"] == c["lane"]) >= LANE_CAP_OVERRIDE.get(c["lane"], LANE_CAP):
             return False
         if c["route"] in ("CLOZE", "PAIR"):
-            if a1_rules and i < FIRST_CLOZE:
+            if i < (FIRST_CLOZE if a1_rules else A2_FIRST_CLOZE):
                 return False
             if sum(1 for x in window if x["route"] in ("CLOZE", "PAIR")) >= CLOZE_CAP:
                 return False
