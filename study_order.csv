@@ -60,43 +60,43 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 59,A2-0072,A1 subdeck,pirmas,Numbers,numbers,1,169,70,2.977,614
 60,A2-0045,A1 subdeck,keturi,Numbers,numbers,0,424,395,3.021,587
 61,A2-0046,A1 subdeck,penki,Numbers,numbers,0,382,364,3.021,588
-62,A2-0010,A1 subdeck,rytas,Time,time,1,141,388,3.554,550
-63,A2-0405,A1 subdeck,grįžti,Verbs,verbs,1,113,573,3.577,1285
-64,277_ranka,A1 subdeck,ranka,Body,body,1,159,419,3.656,33
-65,036_mokykla,A1 subdeck,mokykla,Location,places,1,328,163,3.713,74
+62,A2-0270,A1 subdeck,sąskaita,Shopping,shopping,0,1093,636,3.480,946
+63,A2-0010,A1 subdeck,rytas,Time,time,1,141,388,3.554,550
+64,A2-0405,A1 subdeck,grįžti,Verbs,verbs,1,113,573,3.577,1285
+65,277_ranka,A1 subdeck,ranka,Body,body,1,159,419,3.656,33
 66,A2-0880,A1 subdeck,Atsiprašau…,Formulas,phrases,1,278,4334,-14.600,1045
 67,A2-0354,A1 subdeck,Viso gero,Greetings,phrases,0,120,230,-14.500,1013
-68,434_rasti,A1 subdeck,ràsti,Verbs,verbs,1,137,291,3.721,156
-69,028_kelias,A1 subdeck,kelias,Location,places,1,255,245,3.725,258
+68,036_mokykla,A1 subdeck,mokykla,Location,places,1,328,163,3.713,74
+69,434_rasti,A1 subdeck,ràsti,Verbs,verbs,1,137,291,3.721,156
 70,A2-0069,A1 subdeck,šimtas,Numbers,numbers,0,712,410,3.347,611
 71,A2-0070,A1 subdeck,tūkstantis,Numbers,numbers,0,591,310,3.347,612
 72,A2-0047,A1 subdeck,šeši,Numbers,numbers,0,583,940,3.559,589
-73,083_tevas,A1 subdeck,tėvas,People,people,1,117,928,3.791,102
-74,448_aukstas,A1 subdeck,aukštas,Adjectives,adjectives,1,334,211,3.827,119
-75,449_zemas,A1 subdeck,žemas,Adjectives,adjectives,1,1157,1624,5.389,120
-76,395_ziureti,A1 subdeck,žiūrė́ti,Verbs,verbs,1,138,795,3.828,52
+73,028_kelias,A1 subdeck,kelias,Location,places,1,255,245,3.725,258
+74,083_tevas,A1 subdeck,tėvas,People,people,1,117,928,3.791,102
+75,448_aukstas,A1 subdeck,aukštas,Adjectives,adjectives,1,334,211,3.827,119
+76,449_zemas,A1 subdeck,žemas,Adjectives,adjectives,1,1157,1624,5.389,120
 77,A2-0356,A1 subdeck,Iki,Greetings,phrases,0,100,44,-14.400,1015
 78,A2-0371,A1 subdeck,Nesuprantu,Basics,phrases,0,406,,-14.300,1029
-79,A2-0413,A1 subdeck,laukti,Verbs,verbs,1,146,361,3.846,1251
-80,474_grazus,A1 subdeck,gražus,Adjectives,adjectives,1,156,703,3.852,25
-81,475_bjaurus,A1 subdeck,bjaurus,Adjectives,adjectives,1,1030,,5.137,26
-82,A2-0077,A1 subdeck,paskutinis,Numbers,numbers,1,206,373,3.765,619
-83,258_galva,A1 subdeck,galva,Body,body,1,216,482,3.896,32
-84,390_girdeti,A1 subdeck,girdė́ti,Verbs,verbs,1,140,990,3.924,53
-85,A2-0048,A1 subdeck,septyni,Numbers,numbers,0,904,1265,3.941,590
-86,A2-0013,A1 subdeck,naktis,Time,time,1,198,620,3.945,554
-87,013_automobilis,A1 subdeck,automobilis,Transportation,transport,1,504,159,3.961,81
+79,395_ziureti,A1 subdeck,žiūrė́ti,Verbs,verbs,1,138,795,3.828,52
+80,A2-0413,A1 subdeck,laukti,Verbs,verbs,1,146,361,3.846,1251
+81,A2-0077,A1 subdeck,paskutinis,Numbers,numbers,1,206,373,3.765,619
+82,474_grazus,A1 subdeck,gražus,Adjectives,adjectives,1,156,703,3.852,25
+83,475_bjaurus,A1 subdeck,bjaurus,Adjectives,adjectives,1,1030,,5.137,26
+84,258_galva,A1 subdeck,galva,Body,body,1,216,482,3.896,32
+85,390_girdeti,A1 subdeck,girdė́ti,Verbs,verbs,1,140,990,3.924,53
+86,A2-0048,A1 subdeck,septyni,Numbers,numbers,0,904,1265,3.941,590
+87,A2-0013,A1 subdeck,naktis,Time,time,1,198,620,3.945,554
 88,A2-0377,A1 subdeck,Kiek kainuoja?,Getting by,phrases,0,2152,1718,-14.200,1035
 89,A2-0378,A1 subdeck,Kur yra…?,Getting by,phrases,0,33,152,-14.100,1036
-90,374_galvoti,A1 subdeck,galvóti,Verbs,verbs,1,161,891,3.966,449
-91,403_myleti,A1 subdeck,mylė́ti,Verbs,verbs,1,144,1160,4.004,447
-92,084_tevai,A1 subdeck,tėvai,People,people,1,234,566,4.009,190
-93,469_sveikas,A1 subdeck,sveikas,Adjectives,adjectives,1,153,1079,4.012,163
-94,468_sergantis,A1 subdeck,sergantis,Adjectives,adjectives,1,8038,,7.492,164
-95,263_akis,A1 subdeck,akis,Body,body,1,224,612,4.014,75
-96,384_moketi,A1 subdeck,mokė́ti,Verbs,verbs,1,478,222,4.063,57
-97,080_sunus,A1 subdeck,sūnus,People,people,1,191,934,4.087,143
-98,A2-0073,A1 subdeck,antras,Numbers,numbers,1,407,143,4.090,615
+90,013_automobilis,A1 subdeck,automobilis,Transportation,transport,1,504,159,3.961,81
+91,374_galvoti,A1 subdeck,galvóti,Verbs,verbs,1,161,891,3.966,449
+92,403_myleti,A1 subdeck,mylė́ti,Verbs,verbs,1,144,1160,4.004,447
+93,084_tevai,A1 subdeck,tėvai,People,people,1,234,566,4.009,190
+94,469_sveikas,A1 subdeck,sveikas,Adjectives,adjectives,1,153,1079,4.012,163
+95,468_sergantis,A1 subdeck,sergantis,Adjectives,adjectives,1,8038,,7.492,164
+96,263_akis,A1 subdeck,akis,Body,body,1,224,612,4.014,75
+97,384_moketi,A1 subdeck,mokė́ti,Verbs,verbs,1,478,222,4.063,57
+98,080_sunus,A1 subdeck,sūnus,People,people,1,191,934,4.087,143
 99,A2-0350,A1 subdeck,Labas rytas,Greetings,phrases,0,141,,-14.000,1009
 100,A2-0352,A1 subdeck,Labas vakaras,Greetings,phrases,0,794,,-13.900,1011
 101,S-0001,sentences,Vyras {geria} kavą.,Sakiniai,sentences,,,,,
@@ -107,11 +107,11 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 106,A2-0194,A1 subdeck,būti,Modal & core verbs,verbs,0,5,2,-2.057,639
 107,A2-0120,A1 subdeck,jo,Pronouns,function,0,6,6,-1.508,810
 108,A2-0121,A1 subdeck,jos,Pronouns,function,0,6,6,-1.508,811
-109,A2-1193,A1 subdeck,Kuri valanda?,Time,time,1,204,424,4.111,1196
-110,222_knyga,A1 subdeck,knyga,Home,home,1,338,446,4.134,159
-111,027_gatve,A1 subdeck,gatvė,Location,places,1,451,290,4.135,31
-112,208_maistas,A1 subdeck,maistas,Food,food,1,400,353,4.141,191
-113,236_telefonas,A1 subdeck,telefonas,Home,home,1,292,584,4.154,18
+109,A2-0073,A1 subdeck,antras,Numbers,numbers,1,407,143,4.090,615
+110,A2-1193,A1 subdeck,Kuri valanda?,Time,time,1,204,424,4.111,1196
+111,222_knyga,A1 subdeck,knyga,Home,home,1,338,446,4.134,159
+112,027_gatve,A1 subdeck,gatvė,Location,places,1,451,290,4.135,31
+113,208_maistas,A1 subdeck,maistas,Food,food,1,400,353,4.141,191
 114,A2-0349,A1 subdeck,Sveiki,Greetings,phrases,0,366,,-13.800,1008
 115,A2-0359,A1 subdeck,Labai ačiū,Politeness,phrases,0,72,719,-13.700,1018
 116,A2-0118,A1 subdeck,mano,Pronouns,function,0,2,32,-1.498,808
@@ -121,9 +121,9 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 120,A2-0108,A1 subdeck,kas,Question words,function,0,4,27,-1.150,660
 121,463_senas,A1 subdeck,senas,Adjectives,adjectives,1,249,471,3.972,118
 122,462_jaunas,A1 subdeck,jaunas,Adjectives,adjectives,1,431,343,4.175,117
-123,364_zaisti,A1 subdeck,žaĩsti,Verbs,verbs,1,353,497,4.203,157
-124,423_rasyti,A1 subdeck,rašýti,Verbs,verbs,1,479,319,4.209,54
-125,214_durys,A1 subdeck,durys,Home,home,1,227,1023,4.227,62
+123,236_telefonas,A1 subdeck,telefonas,Home,home,1,292,584,4.154,18
+124,364_zaisti,A1 subdeck,žaĩsti,Verbs,verbs,1,353,497,4.203,157
+125,423_rasyti,A1 subdeck,rašýti,Verbs,verbs,1,479,319,4.209,54
 126,A2-0360,A1 subdeck,Nėra už ką,Politeness,phrases,0,56,54,-13.600,1019
 127,A2-0898,A1 subdeck,Kur yra tualetas?,Getting by,phrases,0,769,2877,-13.500,1063
 128,A2-0136,A1 subdeck,į,Prepositions,function,0,14,6,-1.000,644
@@ -131,58 +131,58 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 130,A2-0196,A1 subdeck,galėti,Modal & core verbs,verbs,0,20,11,-0.543,650
 131,A2-0138,A1 subdeck,su,Prepositions,function,0,16,10,-0.715,649
 132,A2-0123,A1 subdeck,jūsų,Pronouns,function,0,4,120,-0.553,813
-133,484_brangus,A1 subdeck,brangus,Adjectives,adjectives,1,215,1164,4.246,66
-134,485_pigus,A1 subdeck,pigus,Adjectives,adjectives,1,1613,1598,5.582,67
-135,A2-1818,A1 subdeck,ieškoti,Verbs,verbs,1,217,495,4.210,2022
-136,A2-0404,A1 subdeck,išeiti,Verbs,verbs,1,160,783,4.210,1314
-137,A2-0049,A1 subdeck,aštuoni,Numbers,numbers,0,1309,1559,4.247,591
+133,214_durys,A1 subdeck,durys,Home,home,1,227,1023,4.227,62
+134,484_brangus,A1 subdeck,brangus,Adjectives,adjectives,1,215,1164,4.246,66
+135,485_pigus,A1 subdeck,pigus,Adjectives,adjectives,1,1613,1598,5.582,67
+136,A2-1818,A1 subdeck,ieškoti,Verbs,verbs,1,217,495,4.210,2022
+137,A2-0404,A1 subdeck,išeiti,Verbs,verbs,1,160,783,4.210,1314
 138,A2-0881,A1 subdeck,Atsiprašau,Formulas,phrases,1,278,4334,-14.600,1046
 139,A2-0381,A1 subdeck,"Sąskaitą, prašau",Getting by,phrases,0,2186,1272,-13.400,1039
 140,A2-0137,A1 subdeck,iš,Prepositions,function,0,24,9,-0.514,648
 141,A2-0178,A1 subdeck,čia,Adverbs,adverbs,0,12,162,0.226,699
 142,A2-0117,A1 subdeck,kieno,Question words,function,0,8,54,-0.457,807
 143,A2-1137,A1 subdeck,kam,Question words,function,0,8,54,-0.457,766
-144,055_bankas,A1 subdeck,bankas,Location,places,1,749,190,4.270,260
-145,371_eiti,A1 subdeck,eĩti,Verbs,verbs,2,47,292,4.281,203
-146,455_greitas,A1 subdeck,greitas,Adjectives,adjectives,1,143,1150,4.297,123
-147,454_letas,A1 subdeck,lėtas,Adjectives,adjectives,1,906,,5.309,124
-148,088_brolis,A1 subdeck,brolis,People,people,1,236,1196,4.313,145
-149,S-0008,sentences,Aš {turiu} brolį.,Sakiniai,sentences,,,,,
-150,A2-0380,A1 subdeck,Norėčiau…,Getting by,phrases,0,52,170,-13.300,1038
-151,A2-0370,A1 subdeck,Ar kalbate angliškai?,Basics,phrases,0,3582,,-13.200,1028
-152,A2-1138,A1 subdeck,ko,Question words,function,0,8,54,-0.457,783
-153,A2-0197,A1 subdeck,norėti,Modal & core verbs,verbs,0,26,85,0.432,685
-154,S-0016,sentences,Aš {noriu} arbatos.,Sakiniai,sentences,,,,,
-155,S-0055,sentences,Aš {noriu} valgyti.,Sakiniai,sentences,,,,,
-156,A2-0112,A1 subdeck,kaip,Question words,function,0,15,22,-0.439,658
-157,A2-0165,A1 subdeck,ar,Conjunctions,function,0,18,18,-0.410,656
-158,038_kambarys,A1 subdeck,kambarys,Location,places,1,235,1249,4.328,72
-159,A2-0050,A1 subdeck,devyni,Numbers,numbers,0,1346,1855,4.333,592
-160,A2-0051,A1 subdeck,dešimt,Numbers,numbers,0,722,728,4.333,593
-161,288_kunas,A1 subdeck,kūnas,Body,body,1,390,692,4.396,218
-162,A2-0061,A1 subdeck,dvidešimt,Numbers,numbers,0,1595,1710,4.402,603
+144,A2-0049,A1 subdeck,aštuoni,Numbers,numbers,0,1309,1559,4.247,591
+145,055_bankas,A1 subdeck,bankas,Location,places,1,749,190,4.270,260
+146,371_eiti,A1 subdeck,eĩti,Verbs,verbs,2,47,292,4.281,203
+147,455_greitas,A1 subdeck,greitas,Adjectives,adjectives,1,143,1150,4.297,123
+148,454_letas,A1 subdeck,lėtas,Adjectives,adjectives,1,906,,5.309,124
+149,A2-0380,A1 subdeck,Norėčiau…,Getting by,phrases,0,52,170,-13.300,1038
+150,A2-0370,A1 subdeck,Ar kalbate angliškai?,Basics,phrases,0,3582,,-13.200,1028
+151,A2-1138,A1 subdeck,ko,Question words,function,0,8,54,-0.457,783
+152,A2-0197,A1 subdeck,norėti,Modal & core verbs,verbs,0,26,85,0.432,685
+153,S-0016,sentences,Aš {noriu} arbatos.,Sakiniai,sentences,,,,,
+154,S-0055,sentences,Aš {noriu} valgyti.,Sakiniai,sentences,,,,,
+155,A2-0112,A1 subdeck,kaip,Question words,function,0,15,22,-0.439,658
+156,A2-0165,A1 subdeck,ar,Conjunctions,function,0,18,18,-0.410,656
+157,088_brolis,A1 subdeck,brolis,People,people,1,236,1196,4.313,145
+158,S-0008,sentences,Aš {turiu} brolį.,Sakiniai,sentences,,,,,
+159,038_kambarys,A1 subdeck,kambarys,Location,places,1,235,1249,4.328,72
+160,A2-0050,A1 subdeck,devyni,Numbers,numbers,0,1346,1855,4.333,592
+161,A2-0051,A1 subdeck,dešimt,Numbers,numbers,0,722,728,4.333,593
+162,288_kunas,A1 subdeck,kūnas,Body,body,1,390,692,4.396,218
 163,A2-0364,A1 subdeck,Kaip sekasi?,Basics,phrases,0,634,4244,-13.100,1022
 164,A2-0365,A1 subdeck,Man gerai,Basics,phrases,0,17,177,-13.000,1023
 165,A2-0116,A1 subdeck,kuris,Question words,function,0,34,7,-0.406,646
 166,A2-0184,A1 subdeck,gerai,Adverbs,adverbs,0,17,177,0.470,700
 167,A2-0126,A1 subdeck,šis,Pronouns,function,0,38,8,-0.286,647
 168,A2-0124,A1 subdeck,jų,Pronouns,function,1,6,6,-0.008,814
-169,A2-0012,A1 subdeck,vakaras,Time,time,1,496,491,4.403,552
-170,367_begti,A1 subdeck,bė́gti,Verbs,verbs,1,210,1807,4.408,107
-171,279_sirdis,A1 subdeck,širdis,Body,body,1,342,906,4.425,176
-172,100_mergaite,A1 subdeck,mergaitė,People,people,1,337,951,4.435,47
-173,026_butas,A1 subdeck,butas,Location,places,1,587,428,4.449,216
+169,A2-0061,A1 subdeck,dvidešimt,Numbers,numbers,0,1595,1710,4.402,603
+170,A2-0012,A1 subdeck,vakaras,Time,time,1,496,491,4.403,552
+171,367_begti,A1 subdeck,bė́gti,Verbs,verbs,1,210,1807,4.408,107
+172,279_sirdis,A1 subdeck,širdis,Body,body,1,342,906,4.425,176
+173,100_mergaite,A1 subdeck,mergaitė,People,people,1,337,951,4.435,47
 174,A2-0373,A1 subdeck,Nežinau,Basics,phrases,0,154,,-12.900,1031
 175,A2-0367,A1 subdeck,Mano vardas…,Basics,phrases,0,147,332,-12.800,1025
 176,A2-1094,A1 subdeck,jai,Pronouns,function,1,6,6,-0.008,875
 177,A2-0166,A1 subdeck,labai,Adverbs,adverbs,0,42,55,0.546,675
 178,A2-1095,A1 subdeck,jam,Pronouns,function,1,6,6,-0.008,876
 179,A2-1103,A1 subdeck,jį,Pronouns,function,1,6,6,-0.008,883
-180,260_veidas,A1 subdeck,veidas,Body,body,1,327,1038,4.452,175
-181,432_mesti,A1 subdeck,mèsti,Verbs,verbs,2,22,1450,4.466,246
-182,276_koja,A1 subdeck,koja,Body,body,1,350,995,4.476,34
-183,082_motina,A1 subdeck,motina,People,people,1,381,877,4.476,101
-184,387_mokytis,A1 subdeck,mókytis,Verbs,verbs,1,677,444,4.549,448
+180,026_butas,A1 subdeck,butas,Location,places,1,587,428,4.449,216
+181,260_veidas,A1 subdeck,veidas,Body,body,1,327,1038,4.452,175
+182,432_mesti,A1 subdeck,mèsti,Verbs,verbs,2,22,1450,4.466,246
+183,276_koja,A1 subdeck,koja,Body,body,1,350,995,4.476,34
+184,082_motina,A1 subdeck,motina,People,people,1,381,877,4.476,101
 185,A2-0369,A1 subdeck,Aš esu iš…,Basics,phrases,0,24,16,-12.700,1027
 186,A2-0353,A1 subdeck,Labanakt,Greetings,phrases,0,170,,-12.600,1012
 187,A2-0159,A1 subdeck,kad,Conjunctions,function,1,8,4,0.002,642
@@ -190,50 +190,50 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 189,S-0019,sentences,Man {reikia} vandens.,Sakiniai,sentences,,,,,
 190,A2-1117,A1 subdeck,man,Pronouns,function,1,2,32,0.002,894
 191,A2-1118,A1 subdeck,mane,Pronouns,function,1,2,32,0.002,897
-192,048_ligonine,A1 subdeck,ligoninė,Location,places,1,586,570,4.562,127
-193,S-0025,sentences,Jis {dirba} ligoninėje.,Sakiniai,sentences,,,,,
-194,401_sedeti,A1 subdeck,sėdė́ti,Verbs,verbs,1,349,1315,4.586,58
-195,099_berniukas,A1 subdeck,berniukas,People,people,1,297,1677,4.586,46
-196,A2-0041,A1 subdeck,nulis,Numbers,numbers,0,1971,,4.586,583
-197,224_raktas,A1 subdeck,raktas,Home,home,1,614,,4.620,160
+192,387_mokytis,A1 subdeck,mókytis,Verbs,verbs,1,677,444,4.549,448
+193,048_ligonine,A1 subdeck,ligoninė,Location,places,1,586,570,4.562,127
+194,S-0025,sentences,Jis {dirba} ligoninėje.,Sakiniai,sentences,,,,,
+195,401_sedeti,A1 subdeck,sėdė́ti,Verbs,verbs,1,349,1315,4.586,58
+196,099_berniukas,A1 subdeck,berniukas,People,people,1,297,1677,4.586,46
+197,A2-0041,A1 subdeck,nulis,Numbers,numbers,0,1971,,4.586,583
 198,A2-0355,A1 subdeck,Iki pasimatymo,Greetings,phrases,0,1272,,-12.500,1014
 199,A2-0362,A1 subdeck,Atleiskite,Politeness,phrases,0,184,1654,-12.400,1020
 200,A2-0155,A1 subdeck,bet,Conjunctions,function,0,23,36,0.015,665
 201,A2-0017,A1 subdeck,dabar,Time,time,0,39,105,0.760,559
 202,A2-0110,A1 subdeck,kur,Question words,function,0,33,152,0.807,695
 203,A2-0115,A1 subdeck,koks,Question words,function,0,52,90,0.871,688
-204,402_stoveti,A1 subdeck,stovė́ti,Verbs,verbs,1,426,1090,4.630,59
-205,383_pirkti,A1 subdeck,pir̃kti,Verbs,verbs,1,716,509,4.637,55
-206,S-0013,sentences,Mes {perkame} pieną.,Sakiniai,sentences,,,,,
-207,421_atidaryti,A1 subdeck,atidarýti,Verbs,verbs,1,379,1330,4.640,110
-208,A2-1899,A1 subdeck,tėtis,Nouns,nouns,2,105,,4.654,
-209,289_jura,A1 subdeck,jūra,Nature,nature,1,736,510,4.655,133
-210,S-0042,sentences,Aš {matau} jūrą.,Sakiniai,sentences,,,,,
-211,A2-0363,A1 subdeck,Malonu susipažinti,Politeness,phrases,0,476,2816,-12.300,1021
-212,A2-0889,A1 subdeck,Skanaus,Formulas,phrases,1,1368,,-12.200,1054
-213,A2-0005,A1 subdeck,diena,Time,time,0,89,48,0.942,545
-214,A2-1099,A1 subdeck,jums,Pronouns,function,1,4,120,0.947,879
-215,A2-1127,A1 subdeck,tau,Pronouns,function,1,4,120,0.947,904
-216,A2-1128,A1 subdeck,tave,Pronouns,function,1,4,120,0.947,905
-217,A2-1438,A1 subdeck,skaityti,Verbs,verbs,1,588,690,4.641,1474
-218,S-0007,sentences,Tėvas {skaito} knygą.,Sakiniai,sentences,,,,,
-219,203_pietus,A1 subdeck,pietūs,Food,food,1,512,927,4.676,148
-220,S-0047,sentences,Mes {valgome} pietus.,Sakiniai,sentences,,,,,
-221,409_miegoti,A1 subdeck,miegóti,Verbs,verbs,1,312,2003,4.687,15
-222,424_skambinti,A1 subdeck,skam̃binti,Verbs,verbs,1,294,2361,4.717,112
-223,S-0041,sentences,Draugas {skambina} man.,Sakiniai,sentences,,,,,
-224,309_zvaigzde,A1 subdeck,žvaigždė,Nature,nature,1,592,841,4.724,221
+204,224_raktas,A1 subdeck,raktas,Home,home,1,614,,4.620,160
+205,402_stoveti,A1 subdeck,stovė́ti,Verbs,verbs,1,426,1090,4.630,59
+206,383_pirkti,A1 subdeck,pir̃kti,Verbs,verbs,1,716,509,4.637,55
+207,S-0013,sentences,Mes {perkame} pieną.,Sakiniai,sentences,,,,,
+208,421_atidaryti,A1 subdeck,atidarýti,Verbs,verbs,1,379,1330,4.640,110
+209,A2-1899,A1 subdeck,tėtis,Nouns,nouns,2,105,,4.654,
+210,A2-0363,A1 subdeck,Malonu susipažinti,Politeness,phrases,0,476,2816,-12.300,1021
+211,A2-0889,A1 subdeck,Skanaus,Formulas,phrases,1,1368,,-12.200,1054
+212,A2-0005,A1 subdeck,diena,Time,time,0,89,48,0.942,545
+213,A2-1099,A1 subdeck,jums,Pronouns,function,1,4,120,0.947,879
+214,A2-1127,A1 subdeck,tau,Pronouns,function,1,4,120,0.947,904
+215,A2-1128,A1 subdeck,tave,Pronouns,function,1,4,120,0.947,905
+216,289_jura,A1 subdeck,jūra,Nature,nature,1,736,510,4.655,133
+217,S-0042,sentences,Aš {matau} jūrą.,Sakiniai,sentences,,,,,
+218,A2-1438,A1 subdeck,skaityti,Verbs,verbs,1,588,690,4.641,1474
+219,S-0007,sentences,Tėvas {skaito} knygą.,Sakiniai,sentences,,,,,
+220,203_pietus,A1 subdeck,pietūs,Food,food,1,512,927,4.676,148
+221,S-0047,sentences,Mes {valgome} pietus.,Sakiniai,sentences,,,,,
+222,409_miegoti,A1 subdeck,miegóti,Verbs,verbs,1,312,2003,4.687,15
+223,424_skambinti,A1 subdeck,skam̃binti,Verbs,verbs,1,294,2361,4.717,112
+224,S-0041,sentences,Draugas {skambina} man.,Sakiniai,sentences,,,,,
 225,A2-0888,A1 subdeck,Į sveikatą!,Formulas,phrases,1,1684,284,-12.100,1053
 226,A2-0383,A1 subdeck,Ar galite man padėti?,Getting by,phrases,0,86,276,-12.000,1041
 227,A2-0176,A1 subdeck,tik,Adverbs,adverbs,1,27,39,1.643,667
 228,A2-0129,A1 subdeck,tie,Pronouns,function,1,22,10,0.976,817
 229,A2-1126,A1 subdeck,ta,Pronouns,function,1,22,10,0.976,903
 230,A2-1116,A1 subdeck,ką,Pronouns,function,1,8,54,1.043,893
-231,012_lektuvas,A1 subdeck,lėktuvas,Transportation,transport,1,515,1044,4.727,267
-232,A2-0074,A1 subdeck,trečias,Numbers,numbers,1,743,285,4.727,616
-233,A2-0653,A1 subdeck,kinas,Location,places,1,788,577,4.745,1231
-234,300_miskas,A1 subdeck,miškas,Nature,nature,1,1018,445,4.795,135
-235,113_gydytojas,A1 subdeck,gydytojas,Job,work,1,839,617,4.809,42
+231,309_zvaigzde,A1 subdeck,žvaigždė,Nature,nature,1,592,841,4.724,221
+232,012_lektuvas,A1 subdeck,lėktuvas,Transportation,transport,1,515,1044,4.727,267
+233,A2-0074,A1 subdeck,trečias,Numbers,numbers,1,743,285,4.727,616
+234,A2-0653,A1 subdeck,kinas,Location,places,1,788,577,4.745,1231
+235,300_miskas,A1 subdeck,miškas,Nature,nature,1,1018,445,4.795,135
 236,A2-0374,A1 subdeck,Ar galite pakartoti?,Basics,phrases,0,1242,2420,-11.900,1032
 237,A2-0375,A1 subdeck,"Kalbėkite lėčiau, prašau",Basics,phrases,0,1812,,-11.800,1033
 238,A2-0446,A1 subdeck,žinoti,Verbs,verbs,0,66,121,1.132,1211
@@ -241,11 +241,11 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 240,A2-0135,A1 subdeck,visas,Pronouns,function,1,25,23,1.386,659
 241,A2-0447,A1 subdeck,suprasti,Verbs,verbs,0,71,265,1.489,1217
 242,S-0018,sentences,Aš {nesuprantu}.,Sakiniai,sentences,,,,,
-243,446_ilgas,A1 subdeck,ilgas,Adjectives,adjectives,1,776,711,4.819,121
-244,447_trumpas,A1 subdeck,trumpas,Adjectives,adjectives,1,628,1106,4.869,122
-245,204_vakariene,A1 subdeck,vakarienė,Food,food,1,751,,4.821,150
-246,A2-0589,A1 subdeck,svečias,People,people,1,753,753,4.824,1242
-247,A2-0071,A1 subdeck,milijonas,Numbers,numbers,1,487,691,4.828,613
+243,113_gydytojas,A1 subdeck,gydytojas,Job,work,1,839,617,4.809,42
+244,446_ilgas,A1 subdeck,ilgas,Adjectives,adjectives,1,776,711,4.819,121
+245,447_trumpas,A1 subdeck,trumpas,Adjectives,adjectives,1,628,1106,4.869,122
+246,204_vakariene,A1 subdeck,vakarienė,Food,food,1,751,,4.821,150
+247,A2-0589,A1 subdeck,svečias,People,people,1,753,753,4.824,1242
 248,A2-0382,A1 subdeck,Ar yra…?,Getting by,phrases,0,18,18,-0.110,1040
 249,A2-1983,A1 subdeck,Čia (yra) mano draugas. / Susipažinkite — tai…,Functions,phrases,0,12,162,0.226,
 250,A2-0113,A1 subdeck,kodėl,Question words,function,0,57,371,1.492,726
@@ -254,34 +254,34 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 253,S-0009,sentences,Mes {gyvename} Vilniuje.,Sakiniai,sentences,,,,,
 254,S-0030,sentences,Aš {gyvenu} name.,Sakiniai,sentences,,,,,
 255,A2-0125,A1 subdeck,savo,Pronouns,function,0,58,566,1.672,815
-256,472_laimingas,A1 subdeck,laimingas,Adjectives,adjectives,1,363,1088,4.833,70
-257,473_liudnas,A1 subdeck,liūdnas,Adjectives,adjectives,1,1040,2910,5.859,71
-258,A2-0644,A1 subdeck,kaimas,Location,places,1,1493,306,4.875,1230
-259,296_saule,A1 subdeck,saulė,Nature,nature,1,657,1072,4.884,35
-260,209_stalas,A1 subdeck,stalas,Home,home,1,585,1347,4.905,19
+256,A2-0071,A1 subdeck,milijonas,Numbers,numbers,1,487,691,4.828,613
+257,472_laimingas,A1 subdeck,laimingas,Adjectives,adjectives,1,363,1088,4.833,70
+258,473_liudnas,A1 subdeck,liūdnas,Adjectives,adjectives,1,1040,2910,5.859,71
+259,A2-0644,A1 subdeck,kaimas,Location,places,1,1493,306,4.875,1230
+260,296_saule,A1 subdeck,saulė,Nature,nature,1,657,1072,4.884,35
 261,A2-1168,A1 subdeck,Ar turite…?,Getting by,phrases,0,26,26,0.258,1171
 262,A2-0896,A1 subdeck,Kas tai?,Getting by,phrases,0,7,235,0.351,1061
 263,A2-0151,A1 subdeck,dėl,Prepositions,function,1,61,14,1.722,654
 264,A2-0147,A1 subdeck,apie,Prepositions,function,1,41,29,1.775,662
 265,A2-0175,A1 subdeck,dar,Adverbs,adverbs,1,36,52,1.931,673
 266,A2-0161,A1 subdeck,kai,Conjunctions,function,1,35,37,1.778,666
-267,226_laiskas,A1 subdeck,laiškas,Home,home,1,654,1152,4.910,161
-268,S-0032,sentences,Berniukas {rašo} laišką.,Sakiniai,sentences,,,,,
-269,456_karstas,A1 subdeck,karštas,Adjectives,adjectives,1,578,1432,4.922,27
-270,457_saltas,A1 subdeck,šaltas,Adjectives,adjectives,1,770,1752,5.175,28
-271,295_medis,A1 subdeck,medis,Nature,nature,1,693,1115,4.931,78
-272,408_sokti,A1 subdeck,šókti,Verbs,verbs,1,524,1723,4.938,195
+267,209_stalas,A1 subdeck,stalas,Home,home,1,585,1347,4.905,19
+268,226_laiskas,A1 subdeck,laiškas,Home,home,1,654,1152,4.910,161
+269,S-0032,sentences,Berniukas {rašo} laišką.,Sakiniai,sentences,,,,,
+270,456_karstas,A1 subdeck,karštas,Adjectives,adjectives,1,578,1432,4.922,27
+271,457_saltas,A1 subdeck,šaltas,Adjectives,adjectives,1,770,1752,5.175,28
+272,295_medis,A1 subdeck,medis,Nature,nature,1,693,1115,4.931,78
 273,A2-0897,A1 subdeck,Kas tas žmogus?,Getting by,phrases,0,43,42,0.752,1062
 274,A2-0368,A1 subdeck,Iš kur jūs?,Basics,phrases,0,33,152,1.107,1026
 275,A2-1104,A1 subdeck,kai kas,Pronouns,function,1,35,37,1.778,884
 276,A2-1106,A1 subdeck,kai kuris,Pronouns,function,1,35,37,1.778,886
 277,A2-0179,A1 subdeck,ten,Adverbs,adverbs,0,53,1422,1.986,780
 278,A2-0114,A1 subdeck,kiek,Question words,function,0,135,228,1.815,711
-279,A2-0534,A1 subdeck,pilnas,Adjectives,adjectives,1,547,1660,4.948,1299
-280,211_lova,A1 subdeck,lova,Home,home,1,476,2095,4.958,60
-281,S-0003,sentences,Vaikas {miega} lovoje.,Sakiniai,sentences,,,,,
-282,S-0044,sentences,Katė {miega} ant lovos.,Sakiniai,sentences,,,,,
-283,A2-0270,A1 subdeck,sąskaita,Shopping,shopping,1,1093,636,4.980,946
+279,408_sokti,A1 subdeck,šókti,Verbs,verbs,1,524,1723,4.938,195
+280,A2-0534,A1 subdeck,pilnas,Adjectives,adjectives,1,547,1660,4.948,1299
+281,211_lova,A1 subdeck,lova,Home,home,1,476,2095,4.958,60
+282,S-0003,sentences,Vaikas {miega} lovoje.,Sakiniai,sentences,,,,,
+283,S-0044,sentences,Katė {miega} ant lovos.,Sakiniai,sentences,,,,,
 284,089_sesuo,A1 subdeck,sesuo,People,people,1,519,1952,4.982,188
 285,111_studentas,A1 subdeck,studentas,Job,work,1,1044,685,4.982,85
 286,A2-1161,A1 subdeck,Viskas gerai,Basics,phrases,0,28,268,1.236,1164
@@ -367,692 +367,692 @@ order,key,block,lithuanian,category,lane,tier,sub_rank,press_rank,score,old_orde
 366,246_laikrodis,A1 subdeck,laikrodis,Electronics,electronics,1,1221,,5.307,141
 367,291_upe,A1 subdeck,upė,Nature,nature,1,1041,1568,5.312,80
 368,098_kaimynas,A1 subdeck,kaimynas,People,people,1,1184,1305,5.316,274
-369,032_viesbutis,A1 subdeck,viešbutis,Location,places,1,689,1427,5.326,300
+369,A2-0231,A1 subdeck,vaistinė,Health,body,0,10308,2163,5.316,978
 370,A2-0906,A1 subdeck,Man reikia pagalbos,Getting by,phrases,0,590,652,3.420,1071
 371,A2-1993,A1 subdeck,Ar galima?,Functions,phrases,2,40,22,3.450,
 372,A2-0142,A1 subdeck,prie,Prepositions,function,1,98,68,2.639,681
 373,A2-0162,A1 subdeck,nors,Conjunctions,function,1,65,133,2.661,693
 374,A2-0157,A1 subdeck,nes,Conjunctions,function,1,84,95,2.680,690
 375,A2-1682,A1 subdeck,pasakyti,Verbs,verbs,1,50,281,2.803,1733
-376,217_vonia,A1 subdeck,vonia,Home,home,1,1247,,5.328,115
-377,504_sunkus,A1 subdeck,sunkus,Adjectives,adjectives,2,247,334,5.330,165
-378,505_lengvas,A1 subdeck,lengvas,Adjectives,adjectives,2,664,814,6.280,166
-379,267_dantis,A1 subdeck,dantis,Body,body,1,880,2116,5.331,130
-380,498_svarus,A1 subdeck,švarus,Adjectives,adjectives,1,762,2636,5.332,68
-381,499_purvinas,A1 subdeck,purvinas,Adjectives,adjectives,1,3033,,6.217,69
-382,A2-1160,A1 subdeck,Ką veiki?,Basics,phrases,0,660,,3.492,1163
+376,032_viesbutis,A1 subdeck,viešbutis,Location,places,1,689,1427,5.326,300
+377,217_vonia,A1 subdeck,vonia,Home,home,1,1247,,5.328,115
+378,504_sunkus,A1 subdeck,sunkus,Adjectives,adjectives,2,247,334,5.330,165
+379,505_lengvas,A1 subdeck,lengvas,Adjectives,adjectives,2,664,814,6.280,166
+380,267_dantis,A1 subdeck,dantis,Body,body,1,880,2116,5.331,130
+381,A2-1160,A1 subdeck,Ką veiki?,Basics,phrases,0,660,,3.492,1163
+382,A2-0376,A1 subdeck,Ką reiškia…?,Basics,phrases,0,436,1286,3.510,1034
 383,A2-0164,A1 subdeck,taip pat,Conjunctions,function,1,128,57,2.728,819
 384,A2-0149,A1 subdeck,prieš,Prepositions,function,1,106,77,2.736,683
 385,A2-1867,A1 subdeck,tas pats,Pronouns,function,1,78,58,2.738,
 386,A2-1635,A1 subdeck,gauti,Verbs,verbs,1,133,78,2.877,1727
-387,A2-0376,A1 subdeck,Ką reiškia…?,Basics,phrases,0,436,1286,3.510,1034
-388,058_suknele,A1 subdeck,suknelė,Clothing,clothing,1,865,2237,5.343,269
-389,242_dovana,A1 subdeck,dovana,Home,home,1,1176,1415,5.344,249
-390,216_virtuve,A1 subdeck,virtuvė,Home,home,1,908,2165,5.359,114
-391,118_policininkas,A1 subdeck,policininkas,Job,work,1,1188,1448,5.359,139
-392,A2-1376,A1 subdeck,tualetas,Nouns,nouns,1,769,2877,5.373,1557
-393,A2-0904,A1 subdeck,Ką tai reiškia?,Getting by,phrases,0,436,1286,3.510,1069
+387,498_svarus,A1 subdeck,švarus,Adjectives,adjectives,1,762,2636,5.332,68
+388,499_purvinas,A1 subdeck,purvinas,Adjectives,adjectives,1,3033,,6.217,69
+389,058_suknele,A1 subdeck,suknelė,Clothing,clothing,1,865,2237,5.343,269
+390,242_dovana,A1 subdeck,dovana,Home,home,1,1176,1415,5.344,249
+391,216_virtuve,A1 subdeck,virtuvė,Home,home,1,908,2165,5.359,114
+392,A2-0904,A1 subdeck,Ką tai reiškia?,Getting by,phrases,0,436,1286,3.510,1069
+393,A2-0921,A1 subdeck,Tai mano namas,Core patterns,phrases,1,83,512,3.647,1085
 394,A2-0153,A1 subdeck,po,Prepositions,function,1,58,47,2.176,736
 395,A2-1119,A1 subdeck,mums,Pronouns,function,1,96,,2.764,898
 396,A2-1120,A1 subdeck,mus,Pronouns,function,1,96,,2.764,899
 397,A2-0167,A1 subdeck,gal,Adverbs,adverbs,1,68,220,2.889,709
-398,A2-0921,A1 subdeck,Tai mano namas,Core patterns,phrases,1,83,512,3.647,1085
-399,A2-0649,A1 subdeck,paštas,Location,places,1,1722,872,5.379,1232
-400,370_plaukti,A1 subdeck,plaũkti,Verbs,verbs,1,851,2562,5.387,199
-401,S-0036,sentences,Žuvis {plaukia} upėje.,Sakiniai,sentences,,,,,
-402,297_menulis,A1 subdeck,mėnulis,Nature,nature,1,1336,,5.397,180
-403,303_vejas,A1 subdeck,vėjas,Nature,nature,1,1246,1558,5.417,179
-404,316_ugnis,A1 subdeck,ugnis,Nature,nature,1,635,2028,5.418,222
-405,A2-0926,A1 subdeck,Kur tu eini?,Core patterns,phrases,1,94,584,3.774,1089
+398,118_policininkas,A1 subdeck,policininkas,Job,work,1,1188,1448,5.359,139
+399,A2-1376,A1 subdeck,tualetas,Nouns,nouns,1,769,2877,5.373,1557
+400,A2-0649,A1 subdeck,paštas,Location,places,1,1722,872,5.379,1232
+401,370_plaukti,A1 subdeck,plaũkti,Verbs,verbs,1,851,2562,5.387,199
+402,S-0036,sentences,Žuvis {plaukia} upėje.,Sakiniai,sentences,,,,,
+403,297_menulis,A1 subdeck,mėnulis,Nature,nature,1,1336,,5.397,180
+404,A2-0926,A1 subdeck,Kur tu eini?,Core patterns,phrases,1,94,584,3.774,1089
+405,A2-0894,A1 subdeck,Geros dienos,Formulas,phrases,1,178,230,3.784,1059
 406,A2-0156,A1 subdeck,arba,Conjunctions,function,1,177,49,2.862,672
 407,A2-0168,A1 subdeck,tikrai,Adverbs,adverbs,1,70,238,2.938,713
 408,A2-0001,A1 subdeck,laikas,Time,time,1,80,94,2.947,541
 409,A2-1865,A1 subdeck,kas nors,Pronouns,function,1,65,133,2.961,
-410,A2-0894,A1 subdeck,Geros dienos,Formulas,phrases,1,178,230,3.784,1059
-411,420_gaminti,A1 subdeck,gamìnti,Verbs,verbs,1,1127,862,5.420,108
-412,S-0006,sentences,Mama {gamina} vakarienę.,Sakiniai,sentences,,,,,
-413,365_groti,A1 subdeck,gróti,Verbs,verbs,1,1078,2131,5.455,158
-414,305_gele,A1 subdeck,gėlė,Nature,nature,1,1160,1878,5.449,79
-415,A2-0018,A1 subdeck,pirmadienis,Time,time,1,2211,731,5.458,560
-416,A2-1196,A1 subdeck,atrodo,Verbs,verbs,2,198,658,5.469,1199
-417,A2-0901,A1 subdeck,Truputį,Getting by,phrases,0,608,3750,3.838,1066
+410,303_vejas,A1 subdeck,vėjas,Nature,nature,1,1246,1558,5.417,179
+411,316_ugnis,A1 subdeck,ugnis,Nature,nature,1,635,2028,5.418,222
+412,420_gaminti,A1 subdeck,gamìnti,Verbs,verbs,1,1127,862,5.420,108
+413,S-0006,sentences,Mama {gamina} vakarienę.,Sakiniai,sentences,,,,,
+414,365_groti,A1 subdeck,gróti,Verbs,verbs,1,1078,2131,5.455,158
+415,305_gele,A1 subdeck,gėlė,Nature,nature,1,1160,1878,5.449,79
+416,A2-0901,A1 subdeck,Truputį,Getting by,phrases,0,608,3750,3.838,1066
+417,A2-0885,A1 subdeck,Prašom,Formulas,phrases,1,158,678,3.845,1050
 418,A2-0163,A1 subdeck,tačiau,Conjunctions,function,1,196,56,2.977,676
 419,A2-0015,A1 subdeck,vakar,Time,time,0,391,880,2.993,557
 420,A2-0140,A1 subdeck,ant,Prepositions,function,1,94,198,3.041,705
 421,S-0005,sentences,Katė {sėdi} ant stalo.,Sakiniai,sentences,,,,,
 422,A2-1115,A1 subdeck,kokia,Pronouns,function,1,104,180,3.064,892
-423,A2-0885,A1 subdeck,Prašom,Formulas,phrases,1,158,678,3.845,1050
-424,273_pirstas,A1 subdeck,pirštas,Body,body,1,683,2193,5.493,177
-425,240_krepsys,A1 subdeck,krepšys,Home,home,1,1021,2581,5.499,248
-426,031_tiltas,A1 subdeck,tiltas,Location,places,1,1415,1582,5.500,259
-427,018_laivas,A1 subdeck,laivas,Transportation,transport,2,290,437,5.534,309
-428,004_paukstis,A1 subdeck,paukštis,Animal,animals,1,889,1648,5.537,137
-429,A2-1182,A1 subdeck,labai gerai,Phrases,phrases,2,42,177,4.013,1185
+423,A2-0018,A1 subdeck,pirmadienis,Time,time,1,2211,731,5.458,560
+424,A2-1196,A1 subdeck,atrodo,Verbs,verbs,2,198,658,5.469,1199
+425,273_pirstas,A1 subdeck,pirštas,Body,body,1,683,2193,5.493,177
+426,240_krepsys,A1 subdeck,krepšys,Home,home,1,1021,2581,5.499,248
+427,031_tiltas,A1 subdeck,tiltas,Location,places,1,1415,1582,5.500,259
+428,A2-1182,A1 subdeck,labai gerai,Phrases,phrases,2,42,177,4.013,1185
+429,A2-0927,A1 subdeck,Einu namo,Core patterns,phrases,1,166,1024,4.040,1090
 430,A2-1069,A1 subdeck,jeigu,Conjunctions,function,1,185,79,3.080,684
 431,A2-1814,A1 subdeck,daryti,Verbs,verbs,1,59,213,3.091,2017
 432,A2-1121,A1 subdeck,nieko,Pronouns,function,1,64,394,3.086,900
 433,A2-0202,A1 subdeck,pradėti,Modal & core verbs,verbs,1,150,123,3.131,692
-434,A2-0927,A1 subdeck,Einu namo,Core patterns,phrases,1,166,1024,4.040,1090
-435,166_grupe,A1 subdeck,grupė,Art,rest,2,631,147,5.565,44
-436,A2-0019,A1 subdeck,antradienis,Time,time,1,2756,698,5.572,561
-437,A2-0075,A1 subdeck,ketvirtas,Numbers,numbers,1,1614,738,5.573,617
-438,A2-0403,A1 subdeck,įeiti,Verbs,verbs,1,778,2245,5.581,1386
-439,170_filmas,A1 subdeck,filmas,Art,rest,2,302,470,5.587,187
-440,A2-0915,A1 subdeck,Neturiu laiko,Core patterns,phrases,1,367,,4.405,1079
-441,A2-0139,A1 subdeck,be,Prepositions,function,1,131,203,3.250,708
-442,A2-1698,A1 subdeck,prašyti,Verbs,verbs,1,79,339,3.152,1743
-443,A2-1073,A1 subdeck,nei,Conjunctions,function,1,136,92,3.256,689
-444,A2-0206,A1 subdeck,mėgti,Modal & core verbs,verbs,0,462,1108,3.185,769
-445,A2-2008,A1 subdeck,Dar ko nors?,Functions,phrases,2,65,133,4.461,
-446,266_nosis,A1 subdeck,nosis,Body,body,1,1145,2719,5.589,77
-447,A2-0535,A1 subdeck,tuščias,Adjectives,adjectives,1,1283,2309,5.592,1324
-448,A2-0602,A1 subdeck,pilvas,Body,body,1,1625,,5.593,1235
-449,132_vaistai,A1 subdeck,vaistai,Society,society,1,1596,1698,5.600,519
-450,268_ausis,A1 subdeck,ausis,Body,body,1,1202,2726,5.619,129
-451,A2-0929,A1 subdeck,"Nesuprantu, atsiprašau",Core patterns,phrases,1,406,,4.506,1092
+434,018_laivas,A1 subdeck,laivas,Transportation,transport,2,290,437,5.534,309
+435,004_paukstis,A1 subdeck,paukštis,Animal,animals,1,889,1648,5.537,137
+436,166_grupe,A1 subdeck,grupė,Art,rest,2,631,147,5.565,44
+437,A2-0019,A1 subdeck,antradienis,Time,time,1,2756,698,5.572,561
+438,A2-0075,A1 subdeck,ketvirtas,Numbers,numbers,1,1614,738,5.573,617
+439,A2-0915,A1 subdeck,Neturiu laiko,Core patterns,phrases,1,367,,4.405,1079
+440,A2-2008,A1 subdeck,Dar ko nors?,Functions,phrases,2,65,133,4.461,
+441,A2-1698,A1 subdeck,prašyti,Verbs,verbs,1,79,339,3.152,1743
+442,A2-0206,A1 subdeck,mėgti,Modal & core verbs,verbs,0,462,1108,3.185,769
+443,A2-0139,A1 subdeck,be,Prepositions,function,1,131,203,3.250,708
+444,A2-1073,A1 subdeck,nei,Conjunctions,function,1,136,92,3.256,689
+445,A2-0403,A1 subdeck,įeiti,Verbs,verbs,1,778,2245,5.581,1386
+446,170_filmas,A1 subdeck,filmas,Art,rest,2,302,470,5.587,187
+447,266_nosis,A1 subdeck,nosis,Body,body,1,1145,2719,5.589,77
+448,A2-0535,A1 subdeck,tuščias,Adjectives,adjectives,1,1283,2309,5.592,1324
+449,A2-0602,A1 subdeck,pilvas,Body,body,1,1625,,5.593,1235
+450,A2-0929,A1 subdeck,"Nesuprantu, atsiprašau",Core patterns,phrases,1,406,,4.506,1092
+451,A2-0899,A1 subdeck,Kiek tai kainuoja?,Getting by,phrases,0,2152,1718,4.584,1064
 452,A2-1877,A1 subdeck,prieš (+acc),Prepositions,function,1,106,77,2.736,
-453,A2-0158,A1 subdeck,todėl,Conjunctions,function,1,173,139,3.266,694
-454,A2-0208,A1 subdeck,atrodyti,Modal & core verbs,verbs,1,99,329,3.275,723
+453,A2-0208,A1 subdeck,atrodyti,Modal & core verbs,verbs,1,99,329,3.275,723
+454,A2-0158,A1 subdeck,todėl,Conjunctions,function,1,173,139,3.266,694
 455,A2-1622,A1 subdeck,ateiti,Verbs,verbs,1,87,476,3.346,1746
-456,A2-0899,A1 subdeck,Kiek tai kainuoja?,Getting by,phrases,0,2152,1718,4.584,1064
-457,A2-0645,A1 subdeck,aikštė,Location,places,1,2473,953,5.632,1268
-458,282_kelis,A1 subdeck,kelis,Body,body,2,369,404,5.647,261
-459,A2-0025,A1 subdeck,sausis,Time,time,1,4793,368,5.648,567
-460,A2-0671,A1 subdeck,sumuštinis,Food,food,1,1718,,5.649,1207
-461,015_dviratis,A1 subdeck,dviratis,Transportation,transport,1,1876,1509,5.650,181
-462,A2-0919,A1 subdeck,Man reikia vandens,Core patterns,phrases,1,536,452,4.716,1083
+456,132_vaistai,A1 subdeck,vaistai,Society,society,1,1596,1698,5.600,519
+457,268_ausis,A1 subdeck,ausis,Body,body,1,1202,2726,5.619,129
+458,A2-0645,A1 subdeck,aikštė,Location,places,1,2473,953,5.632,1268
+459,282_kelis,A1 subdeck,kelis,Body,body,2,369,404,5.647,261
+460,A2-0025,A1 subdeck,sausis,Time,time,1,4793,368,5.648,567
+461,A2-0919,A1 subdeck,Man reikia vandens,Core patterns,phrases,1,536,452,4.716,1083
+462,A2-0920,A1 subdeck,Man patinka šis miestas,Core patterns,phrases,1,238,1752,4.771,1084
 463,A2-1135,A1 subdeck,šita,Pronouns,function,1,180,,3.393,909
 464,A2-0518,A1 subdeck,svarbus,Adjectives,adjectives,1,193,183,3.441,1222
 465,A2-1098,A1 subdeck,joks,Pronouns,function,1,148,299,3.479,719
 466,A2-1113,A1 subdeck,kiekvienas,Pronouns,function,1,213,188,3.511,701
-467,A2-0920,A1 subdeck,Man patinka šis miestas,Core patterns,phrases,1,238,1752,4.771,1084
-468,A2-0533,A1 subdeck,uždarytas,Adjectives,adjectives,1,1724,,5.652,1326
-469,180_kiausinis,A1 subdeck,kiaušinis,Food,food,1,1465,2311,5.672,49
-470,207_butelis,A1 subdeck,butelis,Food,food,1,1368,2573,5.674,239
-471,A2-0020,A1 subdeck,trečiadienis,Time,time,1,3124,747,5.675,562
-472,A2-0021,A1 subdeck,ketvirtadienis,Time,time,1,3010,558,5.675,563
-473,A2-2009,A1 subdeck,"Viskas, ačiū.",Functions,phrases,2,72,719,4.897,
+467,A2-0671,A1 subdeck,sumuštinis,Food,food,1,1718,,5.649,1207
+468,015_dviratis,A1 subdeck,dviratis,Transportation,transport,1,1876,1509,5.650,181
+469,A2-0533,A1 subdeck,uždarytas,Adjectives,adjectives,1,1724,,5.652,1326
+470,180_kiausinis,A1 subdeck,kiaušinis,Food,food,1,1465,2311,5.672,49
+471,207_butelis,A1 subdeck,butelis,Food,food,1,1368,2573,5.674,239
+472,A2-2009,A1 subdeck,"Viskas, ačiū.",Functions,phrases,2,72,719,4.897,
+473,A2-0916,A1 subdeck,Noriu valgyti,Core patterns,phrases,1,387,1255,4.929,1080
 474,A2-0078,A1 subdeck,vardas,People,people,1,147,332,3.516,620
 475,S-0010,sentences,Mano vardas {yra} Jonas.,Sakiniai,sentences,,,,,
 476,A2-1082,A1 subdeck,pagal,Prepositions,function,1,448,63,3.520,678
 477,A2-1059,A1 subdeck,visai,Adverbs,adverbs,2,50,46,3.579,743
 478,A2-0150,A1 subdeck,pas,Prepositions,function,1,124,511,3.587,732
-479,A2-0916,A1 subdeck,Noriu valgyti,Core patterns,phrases,1,387,1255,4.929,1080
-480,A2-0022,A1 subdeck,penktadienis,Time,time,1,1665,663,5.675,564
-481,294_sniegas,A1 subdeck,sniegas,Nature,nature,1,1710,1852,5.676,37
-482,092_senele,A1 subdeck,senelė,People,people,1,1773,,5.680,232
-483,A2-0023,A1 subdeck,šeštadienis,Time,time,1,1815,774,5.675,565
-484,A2-0024,A1 subdeck,sekmadienis,Time,time,1,1886,796,5.675,566
-485,A2-0907,A1 subdeck,Iškvieskite gydytoją!,Getting by,phrases,0,2982,,5.000,1072
+479,A2-0020,A1 subdeck,trečiadienis,Time,time,1,3124,747,5.675,562
+480,A2-0021,A1 subdeck,ketvirtadienis,Time,time,1,3010,558,5.675,563
+481,A2-0022,A1 subdeck,penktadienis,Time,time,1,1665,663,5.675,564
+482,294_sniegas,A1 subdeck,sniegas,Nature,nature,1,1710,1852,5.676,37
+483,092_senele,A1 subdeck,senelė,People,people,1,1773,,5.680,232
+484,A2-0907,A1 subdeck,Iškvieskite gydytoją!,Getting by,phrases,0,2982,,5.000,1072
+485,A2-1181,A1 subdeck,Gelbėkit!,Phrases,phrases,0,2116,5022,5.003,1184
 486,A2-1947,A1 subdeck,kurti,Verbs,verbs,2,68,14,3.587,
 487,A2-0272,A1 subdeck,kainuoti,Shopping,shopping,0,1076,859,3.591,951
 488,S-0014,sentences,Kiek {kainuoja} duona?,Sakiniai,sentences,,,,,
 489,A2-1071,A1 subdeck,kol,Conjunctions,function,1,134,240,3.631,714
 490,A2-0203,A1 subdeck,baigti,Modal & core verbs,verbs,1,192,323,3.666,722
-491,A2-0902,A1 subdeck,"Pakartokite, prašau",Getting by,phrases,0,2484,4840,5.084,1067
-492,308_ezeras,A1 subdeck,ežeras,Nature,nature,1,1735,1857,5.686,132
-493,A2-0087,A1 subdeck,piniginė,Home,home,1,1795,,5.693,625
-494,A2-0037,A1 subdeck,pavasaris,Time,time,1,2498,1109,5.698,579
-495,A2-0038,A1 subdeck,vasara,Time,time,1,1734,640,5.698,580
-496,A2-0089,A1 subdeck,lagaminas,Transportation,transport,1,1846,,5.721,626
+491,A2-0023,A1 subdeck,šeštadienis,Time,time,1,1815,774,5.675,565
+492,A2-0024,A1 subdeck,sekmadienis,Time,time,1,1886,796,5.675,566
+493,308_ezeras,A1 subdeck,ežeras,Nature,nature,1,1735,1857,5.686,132
+494,A2-0087,A1 subdeck,piniginė,Home,home,1,1795,,5.693,625
+495,A2-0037,A1 subdeck,pavasaris,Time,time,1,2498,1109,5.698,579
+496,A2-0902,A1 subdeck,"Pakartokite, prašau",Getting by,phrases,0,2484,4840,5.084,1067
 497,A2-0922,A1 subdeck,Čia yra parduotuvė,Core patterns,phrases,1,752,717,5.104,1086
-498,A2-0007,A1 subdeck,mėnuo,Time,time,1,298,145,3.609,547
-499,A2-0130,A1 subdeck,kažkas,Pronouns,function,1,110,790,3.689,753
-500,A2-0188,A1 subdeck,per,Adverbs,adverbs,2,63,46,3.717,734
-501,A2-0992,A1 subdeck,bet kur,Adverbs,adverbs,2,33,152,3.807,826
-502,A2-1987,A1 subdeck,"Ačiū, ne.",Functions,phrases,2,72,719,5.197,
-503,210_kede,A1 subdeck,kėdė,Home,home,1,1456,2672,5.726,20
-504,S-0029,sentences,Senelė {sėdi} ant kėdės.,Sakiniai,sentences,,,,,
-505,A2-0414,A1 subdeck,susitikti,Verbs,verbs,2,241,993,5.751,1341
-506,256_televizorius,A1 subdeck,televizorius,Electronics,electronics,1,1582,2630,5.770,98
-507,S-0048,sentences,Vakare mes {žiūrime} televizorių.,Sakiniai,sentences,,,,,
-508,039_miestelis,A1 subdeck,miestelis,Location,places,1,1470,1395,5.772,217
-509,056_vieta,A1 subdeck,vieta,Location,places,3,126,67,5.784,426
+498,A2-0130,A1 subdeck,kažkas,Pronouns,function,1,110,790,3.689,753
+499,A2-0188,A1 subdeck,per,Adverbs,adverbs,2,63,46,3.717,734
+500,A2-0992,A1 subdeck,bet kur,Adverbs,adverbs,2,33,152,3.807,826
+501,A2-0612,A1 subdeck,aukštas,Home,home,1,334,211,3.827,1219
+502,A2-0038,A1 subdeck,vasara,Time,time,1,1734,640,5.698,580
+503,A2-0089,A1 subdeck,lagaminas,Transportation,transport,1,1846,,5.721,626
+504,210_kede,A1 subdeck,kėdė,Home,home,1,1456,2672,5.726,20
+505,S-0029,sentences,Senelė {sėdi} ant kėdės.,Sakiniai,sentences,,,,,
+506,A2-0414,A1 subdeck,susitikti,Verbs,verbs,2,241,993,5.751,1341
+507,256_televizorius,A1 subdeck,televizorius,Electronics,electronics,1,1582,2630,5.770,98
+508,S-0048,sentences,Vakare mes {žiūrime} televizorių.,Sakiniai,sentences,,,,,
+509,A2-1987,A1 subdeck,"Ačiū, ne.",Functions,phrases,2,72,719,5.197,
 510,A2-0903,A1 subdeck,"Užrašykite, prašau",Getting by,phrases,0,3906,,5.270,1068
-511,A2-0006,A1 subdeck,savaitė,Time,time,1,250,264,3.743,546
-512,A2-0612,A1 subdeck,aukštas,Home,home,1,334,211,3.827,1219
+511,A2-0007,A1 subdeck,mėnuo,Time,time,1,298,145,3.609,547
+512,A2-0006,A1 subdeck,savaitė,Time,time,1,250,264,3.743,546
 513,A2-1005,A1 subdeck,kai kur,Adverbs,adverbs,2,35,152,3.843,831
 514,A2-1642,A1 subdeck,imti,Verbs,verbs,1,221,448,3.881,1745
-515,A2-0914,A1 subdeck,Aš turiu brolį,Core patterns,phrases,1,472,2392,5.306,1078
-516,381_juoktis,A1 subdeck,juõktis,Verbs,verbs,1,1088,2456,5.818,152
-517,197_peilis,A1 subdeck,peilis,Food,food,1,1009,2769,5.821,194
-518,A2-0026,A1 subdeck,vasaris,Time,time,1,4764,619,5.853,568
-519,A2-0027,A1 subdeck,kovas,Time,time,1,843,513,5.853,569
-520,293_lietus,A1 subdeck,lietus,Nature,nature,1,2197,2002,5.858,36
+515,039_miestelis,A1 subdeck,miestelis,Location,places,1,1470,1395,5.772,217
+516,056_vieta,A1 subdeck,vieta,Location,places,3,126,67,5.784,426
+517,381_juoktis,A1 subdeck,juõktis,Verbs,verbs,1,1088,2456,5.818,152
+518,197_peilis,A1 subdeck,peilis,Food,food,1,1009,2769,5.821,194
+519,A2-0026,A1 subdeck,vasaris,Time,time,1,4764,619,5.853,568
+520,A2-0914,A1 subdeck,Aš turiu brolį,Core patterns,phrases,1,472,2392,5.306,1078
 521,A2-2001,A1 subdeck,Koks tavo / jūsų telefono numeris?,Functions,phrases,2,62,2620,5.325,
 522,A2-0148,A1 subdeck,tarp,Prepositions,function,1,352,225,3.885,710
 523,A2-0199,A1 subdeck,privalėti,Modal & core verbs,verbs,1,356,229,3.898,712
 524,A2-0171,A1 subdeck,visada,Adverbs,adverbs,1,174,682,3.905,748
 525,A2-1077,A1 subdeck,keli,Numbers,numbers,1,414,202,3.939,707
-526,A2-1996,A1 subdeck,Ar supranti? / Ar suprantate?,Functions,phrases,2,142,530,5.483,
+526,A2-0027,A1 subdeck,kovas,Time,time,1,843,513,5.853,569
 527,A2-0028,A1 subdeck,balandis,Time,time,1,2647,524,5.853,570
-528,500_stiprus,A1 subdeck,stiprus,Adjectives,adjectives,2,329,826,5.864,167
-529,501_silpnas,A1 subdeck,silpnas,Adjectives,adjectives,2,1071,2214,6.967,168
-530,A2-0029,A1 subdeck,gegužė,Time,time,1,5078,484,5.853,571
-531,A2-0030,A1 subdeck,birželis,Time,time,1,4870,494,5.853,572
+528,293_lietus,A1 subdeck,lietus,Nature,nature,1,2197,2002,5.858,36
+529,500_stiprus,A1 subdeck,stiprus,Adjectives,adjectives,2,329,826,5.864,167
+530,501_silpnas,A1 subdeck,silpnas,Adjectives,adjectives,2,1071,2214,6.967,168
+531,A2-1996,A1 subdeck,Ar supranti? / Ar suprantate?,Functions,phrases,2,142,530,5.483,
 532,A2-1163,A1 subdeck,Laimingų Naujųjų metų!,Formulas,phrases,1,726,2176,5.527,1166
 533,A2-0207,A1 subdeck,tapti,Modal & core verbs,verbs,1,305,153,3.944,697
 534,A2-0172,A1 subdeck,niekada,Adverbs,adverbs,1,152,957,3.960,762
 535,A2-1101,A1 subdeck,jus,Pronouns,function,1,236,,3.964,881
-536,A2-0177,A1 subdeck,vėl,Adverbs,adverbs,1,181,412,4.028,728
-537,A2-0887,A1 subdeck,Sėkmės!,Formulas,phrases,1,1026,2894,5.548,1052
-538,A2-0031,A1 subdeck,liepa,Time,time,1,3285,430,5.853,573
+536,A2-0003,A1 subdeck,minutė,Time,time,1,219,610,3.999,543
+537,A2-0029,A1 subdeck,gegužė,Time,time,1,5078,484,5.853,571
+538,A2-0030,A1 subdeck,birželis,Time,time,1,4870,494,5.853,572
 539,380_sypsotis,A1 subdeck,šypsótis,Verbs,verbs,1,1579,,5.865,113
 540,A2-0076,A1 subdeck,penktas,Numbers,numbers,1,1956,1167,5.872,618
 541,478_malonus,A1 subdeck,malonus,Adjectives,adjectives,2,238,1408,5.883,207
-542,A2-0626,A1 subdeck,veidrodis,Home,home,1,2176,,5.885,1291
+542,A2-0887,A1 subdeck,Sėkmės!,Formulas,phrases,1,1026,2894,5.548,1052
 543,A2-0386,A1 subdeck,Aš pasiklydau,Getting by,phrases,0,5228,,5.562,1044
-544,A2-0003,A1 subdeck,minutė,Time,time,1,219,610,3.999,543
+544,A2-0177,A1 subdeck,vėl,Adverbs,adverbs,1,181,412,4.028,728
 545,A2-1122,A1 subdeck,nė vienas,Pronouns,function,1,243,654,4.089,901
 546,A2-0201,A1 subdeck,bandyti,Modal & core verbs,verbs,1,197,457,4.120,730
 547,A2-1092,A1 subdeck,abu,Pronouns,function,1,301,548,4.147,735
-548,A2-0895,A1 subdeck,Geros kelionės,Formulas,phrases,1,1180,1186,5.575,1060
-549,379_mirti,A1 subdeck,mir̃ti,Verbs,verbs,2,408,633,5.887,242
-550,205_cukrus,A1 subdeck,cukrus,Food,food,1,2411,1914,5.895,105
-551,A2-1148,A1 subdeck,aišku,Adverbs,adverbs,2,326,908,5.897,1151
-552,201_puodelis,A1 subdeck,puodelis,Food,food,1,2201,,5.897,238
-553,A2-0454,A1 subdeck,bijoti,Verbs,verbs,2,284,1132,5.902,1343
+548,A2-0031,A1 subdeck,liepa,Time,time,1,3285,430,5.853,573
+549,A2-0626,A1 subdeck,veidrodis,Home,home,1,2176,,5.885,1291
+550,379_mirti,A1 subdeck,mir̃ti,Verbs,verbs,2,408,633,5.887,242
+551,205_cukrus,A1 subdeck,cukrus,Food,food,1,2411,1914,5.895,105
+552,A2-1148,A1 subdeck,aišku,Adverbs,adverbs,2,326,908,5.897,1151
+553,A2-0895,A1 subdeck,Geros kelionės,Formulas,phrases,1,1180,1186,5.575,1060
 554,A2-1166,A1 subdeck,"Sėskitės, prašau",Formulas,phrases,1,1222,,5.608,1169
 555,A2-1136,A1 subdeck,šitas,Pronouns,function,1,307,565,4.171,738
 556,A2-0864,A1 subdeck,euras,Money & admin,society,0,3692,581,4.174,1429
 557,A2-1013,A1 subdeck,kur nors,Adverbs,adverbs,2,65,152,4.214,836
 558,A2-0536,A1 subdeck,toks pat,Adjectives,adjectives,2,128,57,4.228,1327
-559,A2-0918,A1 subdeck,Galiu truputį kalbėti,Core patterns,phrases,1,608,3750,5.638,1082
-560,A2-0865,A1 subdeck,centas,Money & admin,society,1,2079,2512,5.915,1464
-561,264_burna,A1 subdeck,burna,Body,body,1,1150,2947,5.924,76
-562,A2-0652,A1 subdeck,muziejus,Location,places,1,2520,912,5.925,1267
-563,A2-0730,A1 subdeck,keleivis,Transportation,transport,1,2481,949,5.932,1334
-564,A2-0712,A1 subdeck,diržas,Clothing,clothing,1,2285,,5.934,1359
+559,201_puodelis,A1 subdeck,puodelis,Food,food,1,2201,,5.897,238
+560,A2-0454,A1 subdeck,bijoti,Verbs,verbs,2,284,1132,5.902,1343
+561,A2-0865,A1 subdeck,centas,Money & admin,society,1,2079,2512,5.915,1464
+562,264_burna,A1 subdeck,burna,Body,body,1,1150,2947,5.924,76
+563,A2-0652,A1 subdeck,muziejus,Location,places,1,2520,912,5.925,1267
+564,A2-0918,A1 subdeck,Galiu truputį kalbėti,Core patterns,phrases,1,608,3750,5.638,1082
 565,A2-0886,A1 subdeck,Sveiki atvykę!,Formulas,phrases,1,1336,,5.697,1051
 566,A2-1672,A1 subdeck,padaryti,Verbs,verbs,2,73,167,4.321,1731
 567,A2-0169,A1 subdeck,dažnai,Adverbs,adverbs,1,658,284,4.353,718
 568,A2-0173,A1 subdeck,kartais,Adverbs,adverbs,1,362,737,4.376,751
 569,A2-0874,A1 subdeck,dokumentas,Money & admin,society,1,800,130,4.458,1336
-570,A2-2006,A1 subdeck,Ar toli? / Netoli.,Functions,phrases,2,410,192,5.713,
-571,410_pabusti,A1 subdeck,pabùsti,Verbs,verbs,1,2290,,5.936,154
-572,458_siltas,A1 subdeck,šiltas,Adjectives,adjectives,1,1624,1817,5.938,64
-573,459_vesus,A1 subdeck,vėsus,Adjectives,adjectives,1,7486,,7.421,65
-574,A2-1772,A1 subdeck,litas,Money & admin,society,1,23070,75,5.955,2045
-575,S-0015,sentences,Duona {kainuoja} vieną litą.,Sakiniai,sentences,,,,,
-576,385_parduoti,A1 subdeck,pardúoti,Verbs,verbs,2,601,421,5.956,241
-577,A2-0891,A1 subdeck,Sveikinu!,Formulas,phrases,1,1246,4518,5.843,1056
-578,A2-0080,A1 subdeck,amžius,People,people,1,570,469,4.468,622
-579,A2-1108,A1 subdeck,kažkoks,Pronouns,function,1,309,1433,4.547,782
-580,A2-1046,A1 subdeck,tiek,Adverbs,adverbs,2,123,158,4.612,698
-581,A2-0582,A1 subdeck,dėdė,People,people,1,626,,4.639,1277
-582,A2-0913,A1 subdeck,Man dvidešimt metų,Core patterns,phrases,1,1595,1710,5.902,1077
-583,220_nuotrauka,A1 subdeck,nuotrauka,Home,home,2,427,714,5.962,289
-584,057_kepure,A1 subdeck,kepurė,Clothing,clothing,1,2371,,5.971,227
-585,181_suris,A1 subdeck,sūris,Food,food,1,2175,2772,5.982,50
-586,A2-1436,A1 subdeck,rodyti,Verbs,verbs,2,550,526,5.992,1473
-587,229_siena,A1 subdeck,siena,Home,home,2,489,634,5.996,288
-588,176_sultys,A1 subdeck,sultys,Beverages,food,1,2449,,6.003,106
+570,A2-0730,A1 subdeck,keleivis,Transportation,transport,1,2481,949,5.932,1334
+571,A2-0712,A1 subdeck,diržas,Clothing,clothing,1,2285,,5.934,1359
+572,410_pabusti,A1 subdeck,pabùsti,Verbs,verbs,1,2290,,5.936,154
+573,458_siltas,A1 subdeck,šiltas,Adjectives,adjectives,1,1624,1817,5.938,64
+574,459_vesus,A1 subdeck,vėsus,Adjectives,adjectives,1,7486,,7.421,65
+575,A2-2006,A1 subdeck,Ar toli? / Netoli.,Functions,phrases,2,410,192,5.713,
+576,A2-0891,A1 subdeck,Sveikinu!,Formulas,phrases,1,1246,4518,5.843,1056
+577,A2-0080,A1 subdeck,amžius,People,people,1,570,469,4.468,622
+578,A2-1108,A1 subdeck,kažkoks,Pronouns,function,1,309,1433,4.547,782
+579,A2-1046,A1 subdeck,tiek,Adverbs,adverbs,2,123,158,4.612,698
+580,A2-0582,A1 subdeck,dėdė,People,people,1,626,,4.639,1277
+581,A2-1772,A1 subdeck,litas,Money & admin,society,1,23070,75,5.955,2045
+582,S-0015,sentences,Duona {kainuoja} vieną litą.,Sakiniai,sentences,,,,,
+583,385_parduoti,A1 subdeck,pardúoti,Verbs,verbs,2,601,421,5.956,241
+584,220_nuotrauka,A1 subdeck,nuotrauka,Home,home,2,427,714,5.962,289
+585,057_kepure,A1 subdeck,kepurė,Clothing,clothing,1,2371,,5.971,227
+586,181_suris,A1 subdeck,sūris,Food,food,1,2175,2772,5.982,50
+587,A2-0913,A1 subdeck,Man dvidešimt metų,Core patterns,phrases,1,1595,1710,5.902,1077
+588,A2-1436,A1 subdeck,rodyti,Verbs,verbs,2,550,526,5.992,1473
 589,A2-1976,A1 subdeck,Ar galėtumėte…?,Extended patterns,phrases,2,40,22,4.450,
 590,A2-1521,A1 subdeck,gyvenimas,Nouns,nouns,2,121,187,4.670,1785
 591,A2-1076,A1 subdeck,keletas,Numbers,numbers,1,568,809,4.684,756
 592,A2-0200,A1 subdeck,ketinti,Modal & core verbs,verbs,1,409,650,4.699,745
-593,A2-0724,A1 subdeck,taksi,Transportation,transport,1,2278,2849,6.021,1399
-594,310_zole,A1 subdeck,žolė,Nature,nature,1,2433,2617,6.026,223
-595,A2-0032,A1 subdeck,rugpjūtis,Time,time,1,5226,837,6.029,574
-596,A2-0033,A1 subdeck,rugsėjis,Time,time,1,3467,546,6.029,575
-597,A2-0034,A1 subdeck,spalis,Time,time,1,3366,560,6.029,576
-598,382_verkti,A1 subdeck,ver̃kti,Verbs,verbs,1,1898,,6.049,153
-599,A2-0668,A1 subdeck,patiekalas,Food,food,1,2713,2357,6.050,1204
+593,229_siena,A1 subdeck,siena,Home,home,2,489,634,5.996,288
+594,176_sultys,A1 subdeck,sultys,Beverages,food,1,2449,,6.003,106
+595,A2-0724,A1 subdeck,taksi,Transportation,transport,1,2278,2849,6.021,1399
+596,310_zole,A1 subdeck,žolė,Nature,nature,1,2433,2617,6.026,223
+597,A2-0032,A1 subdeck,rugpjūtis,Time,time,1,5226,837,6.029,574
+598,A2-0033,A1 subdeck,rugsėjis,Time,time,1,3467,546,6.029,575
+599,A2-0034,A1 subdeck,spalis,Time,time,1,3366,560,6.029,576
 600,A2-1042,A1 subdeck,tada,Adverbs,adverbs,2,97,308,4.737,721
 601,A2-0524,A1 subdeck,įdomus,Adjectives,adjectives,1,386,819,4.757,1260
 602,A2-1027,A1 subdeck,net,Adverbs,adverbs,2,130,118,4.829,691
 603,A2-1070,A1 subdeck,kadangi,Conjunctions,function,1,955,567,4.853,739
-604,A2-1729,A1 subdeck,meilė,Abstract,abstract,2,275,818,6.053,2121
-605,280_kraujas,A1 subdeck,kraujas,Body,body,2,376,1125,6.068,219
-606,A2-0035,A1 subdeck,lapkritis,Time,time,1,4308,568,6.029,577
-607,A2-0036,A1 subdeck,gruodis,Time,time,1,4938,432,6.029,578
-608,A2-1165,A1 subdeck,Su šventėmis!,Formulas,phrases,1,2828,1098,6.069,1168
-609,A2-0884,A1 subdeck,Akimirką,Formulas,phrases,1,1258,3818,6.081,1049
-610,A2-0039,A1 subdeck,ruduo,Time,time,1,4675,1256,6.124,581
-611,A2-1557,A1 subdeck,namai,Nouns,nouns,2,166,193,4.872,1794
-612,S-0031,sentences,Mes {einame} namo.,Sakiniai,sentences,,,,,
-613,S-0051,sentences,Kiek tau {metų}?,Sakiniai,sentences,,,,,
-614,A2-1799,A1 subdeck,ponia,People,people,1,244,2217,4.880,2010
-615,A2-0187,A1 subdeck,mažai,Adverbs,adverbs,1,2112,195,4.902,703
-616,A2-0844,A1 subdeck,dalis,Abstract,abstract,2,313,38,4.903,1241
-617,206_druska,A1 subdeck,druska,Food,food,1,2924,2576,6.130,104
-618,093_vyras,A1 subdeck,vyras,People,people,3,120,172,6.131,275
-619,A2-0040,A1 subdeck,žiema,Time,time,1,2719,1151,6.124,582
+604,382_verkti,A1 subdeck,ver̃kti,Verbs,verbs,1,1898,,6.049,153
+605,A2-0668,A1 subdeck,patiekalas,Food,food,1,2713,2357,6.050,1204
+606,A2-1729,A1 subdeck,meilė,Abstract,abstract,2,275,818,6.053,2121
+607,280_kraujas,A1 subdeck,kraujas,Body,body,2,376,1125,6.068,219
+608,A2-0035,A1 subdeck,lapkritis,Time,time,1,4308,568,6.029,577
+609,A2-0036,A1 subdeck,gruodis,Time,time,1,4938,432,6.029,578
+610,A2-1165,A1 subdeck,Su šventėmis!,Formulas,phrases,1,2828,1098,6.069,1168
+611,A2-1142,A1 subdeck,paskui,Time,time,1,266,1246,4.701,774
+612,A2-1557,A1 subdeck,namai,Nouns,nouns,2,166,193,4.872,1794
+613,S-0031,sentences,Mes {einame} namo.,Sakiniai,sentences,,,,,
+614,S-0051,sentences,Kiek tau {metų}?,Sakiniai,sentences,,,,,
+615,A2-1799,A1 subdeck,ponia,People,people,1,244,2217,4.880,2010
+616,A2-0187,A1 subdeck,mažai,Adverbs,adverbs,1,2112,195,4.902,703
+617,A2-0884,A1 subdeck,Akimirką,Formulas,phrases,1,1258,3818,6.081,1049
+618,206_druska,A1 subdeck,druska,Food,food,1,2924,2576,6.130,104
+619,093_vyras,A1 subdeck,vyras,People,people,3,120,172,6.131,275
 620,A2-1879,A1 subdeck,juokingas,Adjectives,adjectives,2,465,,6.142,
-621,A2-0928,A1 subdeck,Kiek kainuoja bilietas?,Core patterns,phrases,1,2152,1718,6.084,1091
-622,A2-0925,A1 subdeck,Trečia valanda,Core patterns,phrases,1,2035,,6.118,1088
-623,A2-0725,A1 subdeck,motociklas,Transportation,transport,1,2946,2732,6.158,1389
-624,A2-1142,A1 subdeck,paskui,Time,time,1,266,1246,4.701,774
-625,A2-0004,A1 subdeck,sekundė,Time,time,1,402,1949,4.828,544
+621,A2-0039,A1 subdeck,ruduo,Time,time,1,4675,1256,6.124,581
+622,A2-0040,A1 subdeck,žiema,Time,time,1,2719,1151,6.124,582
+623,A2-0928,A1 subdeck,Kiek kainuoja bilietas?,Core patterns,phrases,1,2152,1718,6.084,1091
+624,A2-0004,A1 subdeck,sekundė,Time,time,1,402,1949,4.828,544
+625,A2-0844,A1 subdeck,dalis,Abstract,abstract,2,313,38,4.903,1241
 626,A2-0079,A1 subdeck,pavardė,People,people,1,1029,786,5.029,621
 627,A2-1072,A1 subdeck,negu,Conjunctions,function,1,1054,766,5.033,752
-628,A2-1801,A1 subdeck,pirkėjas,Shopping,shopping,1,3218,1178,6.175,2125
-629,202_pusryciai,A1 subdeck,pusryčiai,Food,food,1,2926,,6.181,147
-630,A2-0085,A1 subdeck,kasa,Location,places,1,4581,1538,6.193,624
-631,333_medziaga,A1 subdeck,medžiaga,Materials,rest,2,1214,269,6.199,99
-632,A2-0917,A1 subdeck,Norėčiau kavos,Core patterns,phrases,1,1254,4418,6.138,1081
-633,A2-0890,A1 subdeck,Su gimtadieniu!,Formulas,phrases,1,1358,4134,6.159,1055
-634,069_raudonas,A1 subdeck,raudonas,Color,colours,2,542,1328,6.354,87
-635,070_zalias,A1 subdeck,žalias,Color,colours,2,3152,1462,7.448,88
-636,071_melynas,A1 subdeck,mėlynas,Color,colours,2,1031,,6.638,89
-637,072_geltonas,A1 subdeck,geltonas,Color,colours,2,2364,,7.468,90
-638,073_rudas,A1 subdeck,rudas,Color,colours,2,3376,,7.824,91
-639,074_rozinis,A1 subdeck,rožinis,Color,colours,2,3853,,8.257,92
-640,075_oranzinis,A1 subdeck,oranžinis,Color,colours,2,5976,,8.396,93
-641,076_juodas,A1 subdeck,juodas,Color,colours,2,566,1104,6.306,94
-642,077_baltas,A1 subdeck,baltas,Color,colours,2,507,1014,6.206,95
-643,078_pilkas,A1 subdeck,pilkas,Color,colours,2,2705,,7.603,96
-644,079_spalva,A1 subdeck,spalva,Color,colours,3,1085,921,8.124,97
-645,A2-1620,A1 subdeck,na,Phrases,phrases,2,69,839,4.933,1898
-646,A2-0806,A1 subdeck,žodis,Work & culture,work,2,222,191,5.043,1381
-647,A2-0182,A1 subdeck,kartu,Adverbs,adverbs,2,188,247,5.046,715
-648,A2-1580,A1 subdeck,ponas,Nouns,nouns,2,74,1013,5.051,1902
-649,A2-0923,A1 subdeck,Šiandien šalta,Core patterns,phrases,1,1540,3504,6.168,1087
-650,A2-0434,A1 subdeck,kviesti,Verbs,verbs,2,680,668,6.215,1288
-651,A2-0096,A1 subdeck,eilė,Society,society,2,610,811,6.227,631
-652,A2-0564,A1 subdeck,skanus,Adjectives,adjectives,2,684,,6.228,1329
-653,A2-0630,A1 subdeck,pagalvė,Home,home,1,3074,,6.231,1320
-654,A2-0613,A1 subdeck,laiptai,Home,home,1,3078,,6.232,1256
-655,445_kelti,A1 subdeck,kélti,Verbs,verbs,2,596,407,6.238,240
-656,A2-1624,A1 subdeck,atleisti,Verbs,verbs,2,92,827,5.100,1760
-657,A2-1977,A1 subdeck,norėčiau,Extended patterns,phrases,2,52,170,5.125,
-658,A2-1503,A1 subdeck,dalykas,Nouns,nouns,2,184,381,5.206,1883
-659,A2-1058,A1 subdeck,vis dar,Adverbs,adverbs,2,116,384,5.232,859
-660,A2-1164,A1 subdeck,Linksmų Kalėdų!,Formulas,phrases,1,2212,,6.202,1167
+628,A2-0925,A1 subdeck,Trečia valanda,Core patterns,phrases,1,2035,,6.118,1088
+629,A2-0725,A1 subdeck,motociklas,Transportation,transport,1,2946,2732,6.158,1389
+630,A2-1801,A1 subdeck,pirkėjas,Shopping,shopping,1,3218,1178,6.175,2125
+631,202_pusryciai,A1 subdeck,pusryčiai,Food,food,1,2926,,6.181,147
+632,A2-0085,A1 subdeck,kasa,Location,places,1,4581,1538,6.193,624
+633,333_medziaga,A1 subdeck,medžiaga,Materials,rest,2,1214,269,6.199,99
+634,A2-0917,A1 subdeck,Norėčiau kavos,Core patterns,phrases,1,1254,4418,6.138,1081
+635,A2-0806,A1 subdeck,žodis,Work & culture,work,2,222,191,5.043,1381
+636,A2-0182,A1 subdeck,kartu,Adverbs,adverbs,2,188,247,5.046,715
+637,A2-1580,A1 subdeck,ponas,Nouns,nouns,2,74,1013,5.051,1902
+638,A2-1624,A1 subdeck,atleisti,Verbs,verbs,2,92,827,5.100,1760
+639,A2-0890,A1 subdeck,Su gimtadieniu!,Formulas,phrases,1,1358,4134,6.159,1055
+640,069_raudonas,A1 subdeck,raudonas,Color,colours,2,542,1328,6.354,87
+641,070_zalias,A1 subdeck,žalias,Color,colours,2,3152,1462,7.448,88
+642,071_melynas,A1 subdeck,mėlynas,Color,colours,2,1031,,6.638,89
+643,072_geltonas,A1 subdeck,geltonas,Color,colours,2,2364,,7.468,90
+644,073_rudas,A1 subdeck,rudas,Color,colours,2,3376,,7.824,91
+645,074_rozinis,A1 subdeck,rožinis,Color,colours,2,3853,,8.257,92
+646,075_oranzinis,A1 subdeck,oranžinis,Color,colours,2,5976,,8.396,93
+647,076_juodas,A1 subdeck,juodas,Color,colours,2,566,1104,6.306,94
+648,077_baltas,A1 subdeck,baltas,Color,colours,2,507,1014,6.206,95
+649,078_pilkas,A1 subdeck,pilkas,Color,colours,2,2705,,7.603,96
+650,079_spalva,A1 subdeck,spalva,Color,colours,3,1085,921,8.124,97
+651,A2-1620,A1 subdeck,na,Phrases,phrases,2,69,839,4.933,1898
+652,A2-1977,A1 subdeck,norėčiau,Extended patterns,phrases,2,52,170,5.125,
+653,A2-1677,A1 subdeck,palikti,Verbs,verbs,2,151,442,5.147,1744
+654,A2-1503,A1 subdeck,dalykas,Nouns,nouns,2,184,381,5.206,1883
+655,A2-0434,A1 subdeck,kviesti,Verbs,verbs,2,680,668,6.215,1288
+656,A2-0096,A1 subdeck,eilė,Society,society,2,610,811,6.227,631
+657,A2-0564,A1 subdeck,skanus,Adjectives,adjectives,2,684,,6.228,1329
+658,A2-0630,A1 subdeck,pagalvė,Home,home,1,3074,,6.231,1320
+659,A2-0613,A1 subdeck,laiptai,Home,home,1,3078,,6.232,1256
+660,445_kelti,A1 subdeck,kélti,Verbs,verbs,2,596,407,6.238,240
 661,A2-1770,A1 subdeck,pilis,Location,places,1,2596,1908,6.239,2037
-662,050_turgus,A1 subdeck,turgus,Location,places,1,3841,2246,6.239,125
-663,185_vistiena,A1 subdeck,vištiena,Food,food,1,3107,,6.241,319
-664,A2-0631,A1 subdeck,rankšluostis,Home,home,1,3168,,6.261,1321
-665,A2-0679,A1 subdeck,sviestas,Food,food,1,3241,,6.284,1247
-666,A2-1150,A1 subdeck,gaila,Adverbs,adverbs,2,444,1588,6.306,1153
-667,A2-1677,A1 subdeck,palikti,Verbs,verbs,2,151,442,5.147,1744
-668,A2-1472,A1 subdeck,puikus,Adjectives,adjectives,2,112,965,5.280,1736
-669,A2-0991,A1 subdeck,bet kada,Adverbs,adverbs,2,162,559,5.283,825
-670,A2-1004,A1 subdeck,kada nors,Adverbs,adverbs,2,162,559,5.283,830
-671,A2-0954,A1 subdeck,Ar galiu mokėti kortele?,Transactions,phrases,1,1966,2746,6.217,1117
-672,A2-1167,A1 subdeck,Užeikite!,Formulas,phrases,1,2292,,6.237,1170
-673,471_tylus,A1 subdeck,tylus,Adjectives,adjectives,2,742,,6.309,170
-674,470_garsus,A1 subdeck,garsus,Adjectives,adjectives,2,738,1059,6.448,169
-675,124_vadovas,A1 subdeck,vadovas,Job,work,2,1424,135,6.319,184
-676,419_plauti,A1 subdeck,pláuti,Verbs,verbs,1,3378,,6.325,109
-677,361_vaizdas,A1 subdeck,vaizdas,Misc,rest,2,784,768,6.356,273
-678,A2-1527,A1 subdeck,kalba,Nouns,nouns,2,282,258,5.306,1837
-679,A2-0581,A1 subdeck,teta,People,people,1,1231,,5.316,1276
-680,A2-0009,A1 subdeck,savaitgalis,Time,time,1,1288,1179,5.325,549
-681,A2-0204,A1 subdeck,tęsti,Modal & core verbs,verbs,1,861,1232,5.401,773
-682,A2-0957,A1 subdeck,Kaip nuvykti į…?,Transactions,phrases,1,2357,,6.265,1120
-683,A2-1992,A1 subdeck,Ar tau patinka…? / Ar jums patinka…?,Functions,phrases,2,238,1752,6.271,
-684,247_lempa,A1 subdeck,lempa,Electronics,electronics,1,3497,,6.360,186
-685,A2-0656,A1 subdeck,sporto salė,Location,places,1,2766,687,6.368,2175
-686,061_marskiniai,A1 subdeck,marškiniai,Clothing,clothing,1,3562,,6.378,138
-687,A2-0795,A1 subdeck,klasė,Work & culture,work,2,816,798,6.395,1433
-688,219_rasiklis,A1 subdeck,rašiklis,Home,home,1,3634,,6.398,205
-689,A2-1050,A1 subdeck,toli,Adverbs,adverbs,2,410,192,5.413,702
-690,A2-1064,A1 subdeck,štai,Adverbs,adverbs,2,81,1049,5.419,767
-691,A2-0857,A1 subdeck,pagalba,Abstract,abstract,2,295,326,5.427,1420
-692,A2-0808,A1 subdeck,istorija,Work & culture,work,2,276,400,5.469,1425
-693,A2-1162,A1 subdeck,Gero savaitgalio!,Formulas,phrases,1,2576,2358,6.319,1165
-694,A2-1897,A1 subdeck,noriu gerti,Functions,phrases,2,343,1240,6.352,
-695,215_miegamasis,A1 subdeck,miegamasis,Home,home,1,3720,,6.421,116
-696,066_paltas,A1 subdeck,paltas,Clothing,clothing,1,3730,,6.424,183
-697,A2-0504,A1 subdeck,gimti,Verbs,verbs,2,822,861,6.430,1317
-698,A2-0629,A1 subdeck,antklodė,Home,home,1,3762,,6.433,1292
-699,388_sokti,A1 subdeck,šókti,Verbs,verbs,2,524,1723,6.438,283
-700,A2-0192,A1 subdeck,anksti,Adverbs,adverbs,2,288,377,5.471,727
-701,A2-1681,A1 subdeck,parodyti,Verbs,verbs,2,220,603,5.497,1749
-702,A2-0859,A1 subdeck,informacija,Abstract,abstract,2,600,155,5.556,1371
-703,A2-0997,A1 subdeck,galbūt,Adverbs,adverbs,2,226,712,5.580,750
-704,A2-2024,A1 subdeck,Norėčiau sumokėti.,Functions,phrases,2,579,607,6.380,
-705,A2-0893,A1 subdeck,Iki rytojaus,Formulas,phrases,1,2900,,6.472,1058
-706,262_plaukai,A1 subdeck,plaukai,Body,body,1,2782,3096,6.474,131
-707,A2-0708,A1 subdeck,striukė,Clothing,clothing,1,3953,,6.482,1274
-708,A2-0659,A1 subdeck,stotelė,Location,places,1,3979,,6.489,1333
-709,255_fotoaparatas,A1 subdeck,fotoaparatas,Electronics,electronics,1,4041,,6.504,272
-710,A2-0062,A1 subdeck,trisdešimt,Numbers,numbers,1,3056,2993,6.517,604
-711,S-0052,sentences,Man {trisdešimt} metų.,Sakiniai,sentences,,,,,
-712,A2-1828,A1 subdeck,mokėti (plaukti),Verbs,verbs,2,478,222,5.563,2018
-713,S-0037,sentences,Aš {nemoku} plaukti.,Sakiniai,sentences,,,,,
-714,S-0038,sentences,Ji {moka} dainuoti.,Sakiniai,sentences,,,,,
-715,A2-1675,A1 subdeck,pakeisti,Verbs,verbs,2,438,261,5.575,1732
-716,A2-1502,A1 subdeck,daiktas,Nouns,nouns,2,267,598,5.610,1888
-717,A2-0190,A1 subdeck,greitai,Adverbs,adverbs,2,319,464,5.615,731
-718,A2-2019,A1 subdeck,Iki greito! / Iki vėliau!,Functions,phrases,2,286,2300,6.490,
-719,435_kristi,A1 subdeck,krìsti,Verbs,verbs,2,644,1612,6.535,281
-720,317_ledas,A1 subdeck,ledas,Nature,nature,2,777,1262,6.549,266
-721,A2-1751,A1 subdeck,kaklaraištis,Clothing,clothing,1,3156,,6.557,2044
-722,A2-0697,A1 subdeck,svogūnas,Food,food,1,4288,,6.564,1282
-723,A2-0664,A1 subdeck,degalinė,Location,places,1,5809,2746,6.567,1303
-724,495_kietas,A1 subdeck,kietas,Adjectives,adjectives,2,548,2252,6.572,212
-725,494_minkstas,A1 subdeck,minkštas,Adjectives,adjectives,2,3131,,7.749,213
-726,A2-1975,A1 subdeck,reikėtų / turėtum,Extended patterns,phrases,2,90,132,5.353,
-727,A2-1551,A1 subdeck,mergina,Nouns,nouns,2,259,645,5.622,1890
-728,A2-0152,A1 subdeck,link,Prepositions,function,1,1016,1889,5.672,792
-729,A2-1980,A1 subdeck,reikia / turiu,Extended patterns,phrases,2,90,132,5.353,
-730,426_statyti,A1 subdeck,statýti,Verbs,verbs,2,1079,787,6.558,243
-731,A2-0821,A1 subdeck,šventė,Work & culture,work,2,1414,549,6.576,1428
-732,A2-0823,A1 subdeck,vakarėlis,Work & culture,work,2,514,2527,6.579,1465
-733,A2-0417,A1 subdeck,atnešti,Verbs,verbs,2,355,2141,6.591,1384
-734,437_traukti,A1 subdeck,tráukti,Verbs,verbs,2,701,1640,6.592,282
-735,A2-0100,A1 subdeck,užkandis,Food,food,1,4417,,6.593,632
-736,A2-0707,A1 subdeck,megztinis,Clothing,clothing,1,4441,,6.599,1240
-737,A2-1501,A1 subdeck,centras,Nouns,nouns,2,695,174,5.690,1774
-738,A2-0833,A1 subdeck,planas,Abstract,abstract,2,322,302,5.749,1418
-739,A2-0987,A1 subdeck,arti,Adverbs,adverbs,2,446,,5.800,822
-740,A2-0993,A1 subdeck,beveik,Adverbs,adverbs,2,357,344,5.863,724
-741,299_zeme,A1 subdeck,Žemė,Nature,nature,3,252,86,6.599,362
-742,304_zeme,A1 subdeck,žemė,Nature,nature,3,252,86,6.599,363
-743,349_taskas,A1 subdeck,taškas,Misc,rest,2,1225,345,6.604,142
-744,A2-0701,A1 subdeck,pomidoras,Food,food,1,4488,,6.609,1312
-745,241_deze,A1 subdeck,dėžė,Home,home,2,1003,,6.611,431
-746,A2-0719,A1 subdeck,akiniai,Clothing,clothing,1,4572,,6.628,1410
-747,112_advokatas,A1 subdeck,advokatas,Job,work,2,869,1331,6.638,313
-748,A2-0436,A1 subdeck,atsiprašyti,Verbs,verbs,2,139,2167,5.733,1385
-749,A2-1696,A1 subdeck,prasidėti,Verbs,verbs,2,421,551,5.850,1748
-750,A2-1000,A1 subdeck,ilgai,Adverbs,adverbs,2,380,688,5.878,749
-751,A2-1561,A1 subdeck,numeris,Nouns,nouns,2,416,673,5.923,1892
-752,163_zenklas,A1 subdeck,ženklas,Society,society,2,819,699,6.645,231
-753,200_lekste,A1 subdeck,lėkštė,Food,food,1,3457,,6.648,237
-754,046_teatras,A1 subdeck,teatras,Location,places,2,1654,539,6.662,302
-755,A2-0831,A1 subdeck,gimtadienis,Abstract,abstract,2,679,2067,6.666,1458
-756,A2-0737,A1 subdeck,laukas,Nature,nature,2,1010,1158,6.672,1236
-757,115_padavejas,A1 subdeck,padavėjas,Job,work,1,4882,,6.693,86
-758,A2-0102,A1 subdeck,meniu,Food,food,1,4970,,6.711,633
-759,A2-0824,A1 subdeck,pradžia,Abstract,abstract,2,455,278,5.923,1416
-760,A2-1001,A1 subdeck,irgi,Adverbs,adverbs,2,208,931,5.937,761
-761,A2-0464,A1 subdeck,naudoti,Verbs,verbs,2,572,216,5.960,1215
-762,A2-0999,A1 subdeck,gana,Adverbs,adverbs,2,368,903,5.967,760
-763,060_sijonas,A1 subdeck,sijonas,Clothing,clothing,1,4990,,6.715,311
-764,051_salis,A1 subdeck,šalis,Location,places,3,383,62,6.720,403
-765,243_kortele,A1 subdeck,kortelė,Home,home,2,983,1373,6.724,330
-766,A2-2020,A1 subdeck,"Atsiprašau, ką sakėte?",Functions,phrases,2,278,4334,6.726,
-767,A2-0713,A1 subdeck,kojinės,Clothing,clothing,1,5090,,6.735,1370
-768,A2-0084,A1 subdeck,adresas,Society,society,2,1297,945,6.741,623
-769,330_auksas,A1 subdeck,auksas,Materials,rest,2,936,1550,6.743,315
-770,A2-1771,A1 subdeck,sostinė,Location,places,1,3666,606,5.987,2036
-771,A2-0185,A1 subdeck,blogai,Adverbs,adverbs,2,352,1326,6.094,778
-772,A2-0825,A1 subdeck,pabaiga,Abstract,abstract,2,520,360,6.107,1424
-773,A2-1797,A1 subdeck,šeštas,Numbers,numbers,1,2341,1631,6.114,2129
-774,A2-0670,A1 subdeck,salotos,Food,food,1,5140,,6.745,1206
-775,037_biuras,A1 subdeck,biuras,Location,places,2,1126,1186,6.747,337
-776,A2-1544,A1 subdeck,laipsnis,Nouns,nouns,2,1440,834,6.754,1897
-777,292_kalnas,A1 subdeck,kalnas,Nature,nature,2,1019,1494,6.780,306
-778,A2-0623,A1 subdeck,lentyna,Home,home,1,5331,,6.781,1258
-779,218_piestukas,A1 subdeck,pieštukas,Home,home,1,5337,,6.782,204
-780,A2-0698,A1 subdeck,kopūstas,Food,food,1,5339,,6.783,1309
-781,A2-1941,A1 subdeck,nekęsti (+gen),Verbs,verbs,2,456,,6.122,
-782,A2-1078,A1 subdeck,kelios,Numbers,numbers,1,2810,,6.141,867
-783,A2-0862,A1 subdeck,skaičius,Abstract,abstract,2,717,273,6.189,1415
-784,A2-1878,A1 subdeck,kitoje pusėje,Adverbs,adverbs,2,464,596,6.240,
-785,035_teismas,A1 subdeck,teismas,Location,places,3,632,76,6.802,372
-786,A2-0625,A1 subdeck,spinta,Home,home,1,5462,,6.806,1290
-787,A2-0231,A1 subdeck,vaistinė,Health,body,1,10308,2163,6.816,978
-788,496_gilus,A1 subdeck,gilus,Adjectives,adjectives,2,815,2351,6.827,214
-789,497_seklus,A1 subdeck,seklus,Adjectives,adjectives,2,30000,,10.309,250
-790,221_muilas,A1 subdeck,muilas,Home,home,1,4092,,6.817,247
-791,492_aukstas,A1 subdeck,aukštas,Adjectives,adjectives,3,334,211,6.827,299
-792,493_zemas,A1 subdeck,žemas,Adjectives,adjectives,3,1157,1624,8.389,334
-793,A2-1679,A1 subdeck,parašyti,Verbs,verbs,2,545,999,6.243,1762
-794,A2-1052,A1 subdeck,turbūt,Adverbs,adverbs,2,253,1526,6.252,785
-795,A2-1795,A1 subdeck,septintas,Numbers,numbers,1,2868,1893,6.295,2133
-796,A2-0191,A1 subdeck,vėliau,Adverbs,adverbs,2,748,,6.317,820
-797,A2-0693,A1 subdeck,grybas,Food,food,1,5426,2774,6.831,1205
-798,231_grindys,A1 subdeck,grindys,Home,home,2,1268,,6.845,421
-799,A2-1312,A1 subdeck,mokinys,Nouns,nouns,2,1743,788,6.846,1528
-800,482_storas,A1 subdeck,storas,Adjectives,adjectives,2,1248,,6.829,255
-801,483_plonas,A1 subdeck,plonas,Adjectives,adjectives,2,5865,,8.377,256
-802,A2-1990,A1 subdeck,Man nepatinka…,Functions,phrases,2,942,,6.848,
-803,271_nugara,A1 subdeck,nugara,Body,body,2,847,2448,6.866,262
-804,A2-0106,A1 subdeck,dydis,Society,society,2,1234,363,6.329,636
-805,A2-1563,A1 subdeck,orai,Nouns,nouns,2,836,670,6.340,1984
-806,A2-0861,A1 subdeck,sąrašas,Abstract,abstract,2,868,309,6.353,1419
-807,A2-1902,A1 subdeck,veikla,Nouns,nouns,2,2228,81,6.383,
-808,A2-0412,A1 subdeck,skubėti,Verbs,verbs,2,1111,1643,6.870,1372
-809,287_oda,A1 subdeck,oda,Body,body,2,1204,1514,6.885,220
-810,137_vestuves,A1 subdeck,vestuvės,Society,society,2,589,2113,6.889,413
-811,174_vynas,A1 subdeck,vynas,Beverages,food,2,1051,1881,6.890,278
-812,425_sukti,A1 subdeck,sùkti,Verbs,verbs,2,900,2387,6.893,285
-813,114_pacientas,A1 subdeck,pacientas,Job,work,2,1300,1378,6.893,347
-814,A2-1315,A1 subdeck,mėsa,Nouns,nouns,2,1194,1600,6.902,1536
-815,A2-1811,A1 subdeck,atsitikti,Verbs,verbs,2,274,1884,6.384,2094
-816,A2-0805,A1 subdeck,klaida,Work & culture,work,2,661,1081,6.391,1442
-817,A2-0804,A1 subdeck,atsakymas,Work & culture,work,2,672,1058,6.392,1440
-818,A2-1009,A1 subdeck,kažkur,Adverbs,adverbs,2,604,,6.404,834
-819,444_musti,A1 subdeck,mùšti,Verbs,verbs,2,1358,,6.914,393
-820,A2-0710,A1 subdeck,pirštinės,Clothing,clothing,1,6120,,6.919,1335
-821,A2-1273,A1 subdeck,išėjimas,Nouns,nouns,2,1369,,6.922,1610
-822,237_sodas,A1 subdeck,sodas,Home,home,2,1482,1380,6.973,331
-823,S-0040,sentences,Tėvai {dirba} sode.,Sakiniai,sentences,,,,,
-824,412_skaiciuoti,A1 subdeck,skaičiúoti,Verbs,verbs,2,1704,1008,6.931,245
+662,A2-1058,A1 subdeck,vis dar,Adverbs,adverbs,2,116,384,5.232,859
+663,A2-1472,A1 subdeck,puikus,Adjectives,adjectives,2,112,965,5.280,1736
+664,A2-0991,A1 subdeck,bet kada,Adverbs,adverbs,2,162,559,5.283,825
+665,A2-1004,A1 subdeck,kada nors,Adverbs,adverbs,2,162,559,5.283,830
+666,A2-0923,A1 subdeck,Šiandien šalta,Core patterns,phrases,1,1540,3504,6.168,1087
+667,A2-1164,A1 subdeck,Linksmų Kalėdų!,Formulas,phrases,1,2212,,6.202,1167
+668,050_turgus,A1 subdeck,turgus,Location,places,1,3841,2246,6.239,125
+669,185_vistiena,A1 subdeck,vištiena,Food,food,1,3107,,6.241,319
+670,A2-0631,A1 subdeck,rankšluostis,Home,home,1,3168,,6.261,1321
+671,A2-0679,A1 subdeck,sviestas,Food,food,1,3241,,6.284,1247
+672,471_tylus,A1 subdeck,tylus,Adjectives,adjectives,2,742,,6.309,170
+673,470_garsus,A1 subdeck,garsus,Adjectives,adjectives,2,738,1059,6.448,169
+674,A2-1527,A1 subdeck,kalba,Nouns,nouns,2,282,258,5.306,1837
+675,A2-0581,A1 subdeck,teta,People,people,1,1231,,5.316,1276
+676,A2-0009,A1 subdeck,savaitgalis,Time,time,1,1288,1179,5.325,549
+677,A2-1975,A1 subdeck,reikėtų / turėtum,Extended patterns,phrases,2,90,132,5.353,
+678,A2-0954,A1 subdeck,Ar galiu mokėti kortele?,Transactions,phrases,1,1966,2746,6.217,1117
+679,A2-1150,A1 subdeck,gaila,Adverbs,adverbs,2,444,1588,6.306,1153
+680,124_vadovas,A1 subdeck,vadovas,Job,work,2,1424,135,6.319,184
+681,419_plauti,A1 subdeck,pláuti,Verbs,verbs,1,3378,,6.325,109
+682,361_vaizdas,A1 subdeck,vaizdas,Misc,rest,2,784,768,6.356,273
+683,247_lempa,A1 subdeck,lempa,Electronics,electronics,1,3497,,6.360,186
+684,A2-0656,A1 subdeck,sporto salė,Location,places,1,2766,687,6.368,2175
+685,A2-0204,A1 subdeck,tęsti,Modal & core verbs,verbs,1,861,1232,5.401,773
+686,A2-1050,A1 subdeck,toli,Adverbs,adverbs,2,410,192,5.413,702
+687,A2-1064,A1 subdeck,štai,Adverbs,adverbs,2,81,1049,5.419,767
+688,A2-1980,A1 subdeck,reikia / turiu,Extended patterns,phrases,2,90,132,5.353,
+689,A2-1167,A1 subdeck,Užeikite!,Formulas,phrases,1,2292,,6.237,1170
+690,061_marskiniai,A1 subdeck,marškiniai,Clothing,clothing,1,3562,,6.378,138
+691,A2-0795,A1 subdeck,klasė,Work & culture,work,2,816,798,6.395,1433
+692,219_rasiklis,A1 subdeck,rašiklis,Home,home,1,3634,,6.398,205
+693,215_miegamasis,A1 subdeck,miegamasis,Home,home,1,3720,,6.421,116
+694,066_paltas,A1 subdeck,paltas,Clothing,clothing,1,3730,,6.424,183
+695,A2-0504,A1 subdeck,gimti,Verbs,verbs,2,822,861,6.430,1317
+696,A2-0857,A1 subdeck,pagalba,Abstract,abstract,2,295,326,5.427,1420
+697,A2-0808,A1 subdeck,istorija,Work & culture,work,2,276,400,5.469,1425
+698,A2-0192,A1 subdeck,anksti,Adverbs,adverbs,2,288,377,5.471,727
+699,A2-1681,A1 subdeck,parodyti,Verbs,verbs,2,220,603,5.497,1749
+700,A2-0957,A1 subdeck,Kaip nuvykti į…?,Transactions,phrases,1,2357,,6.265,1120
+701,A2-1992,A1 subdeck,Ar tau patinka…? / Ar jums patinka…?,Functions,phrases,2,238,1752,6.271,
+702,A2-0629,A1 subdeck,antklodė,Home,home,1,3762,,6.433,1292
+703,388_sokti,A1 subdeck,šókti,Verbs,verbs,2,524,1723,6.438,283
+704,262_plaukai,A1 subdeck,plaukai,Body,body,1,2782,3096,6.474,131
+705,A2-0708,A1 subdeck,striukė,Clothing,clothing,1,3953,,6.482,1274
+706,A2-0659,A1 subdeck,stotelė,Location,places,1,3979,,6.489,1333
+707,A2-0859,A1 subdeck,informacija,Abstract,abstract,2,600,155,5.556,1371
+708,A2-1828,A1 subdeck,mokėti (plaukti),Verbs,verbs,2,478,222,5.563,2018
+709,S-0037,sentences,Aš {nemoku} plaukti.,Sakiniai,sentences,,,,,
+710,S-0038,sentences,Ji {moka} dainuoti.,Sakiniai,sentences,,,,,
+711,A2-0997,A1 subdeck,galbūt,Adverbs,adverbs,2,226,712,5.580,750
+712,A2-1675,A1 subdeck,pakeisti,Verbs,verbs,2,438,261,5.575,1732
+713,A2-1162,A1 subdeck,Gero savaitgalio!,Formulas,phrases,1,2576,2358,6.319,1165
+714,A2-1897,A1 subdeck,noriu gerti,Functions,phrases,2,343,1240,6.352,
+715,255_fotoaparatas,A1 subdeck,fotoaparatas,Electronics,electronics,1,4041,,6.504,272
+716,A2-0062,A1 subdeck,trisdešimt,Numbers,numbers,1,3056,2993,6.517,604
+717,S-0052,sentences,Man {trisdešimt} metų.,Sakiniai,sentences,,,,,
+718,435_kristi,A1 subdeck,krìsti,Verbs,verbs,2,644,1612,6.535,281
+719,317_ledas,A1 subdeck,ledas,Nature,nature,2,777,1262,6.549,266
+720,A2-1751,A1 subdeck,kaklaraištis,Clothing,clothing,1,3156,,6.557,2044
+721,A2-1502,A1 subdeck,daiktas,Nouns,nouns,2,267,598,5.610,1888
+722,A2-0190,A1 subdeck,greitai,Adverbs,adverbs,2,319,464,5.615,731
+723,A2-1551,A1 subdeck,mergina,Nouns,nouns,2,259,645,5.622,1890
+724,A2-0152,A1 subdeck,link,Prepositions,function,1,1016,1889,5.672,792
+725,A2-2024,A1 subdeck,Norėčiau sumokėti.,Functions,phrases,2,579,607,6.380,
+726,A2-0893,A1 subdeck,Iki rytojaus,Formulas,phrases,1,2900,,6.472,1058
+727,426_statyti,A1 subdeck,statýti,Verbs,verbs,2,1079,787,6.558,243
+728,A2-0697,A1 subdeck,svogūnas,Food,food,1,4288,,6.564,1282
+729,A2-0664,A1 subdeck,degalinė,Location,places,1,5809,2746,6.567,1303
+730,495_kietas,A1 subdeck,kietas,Adjectives,adjectives,2,548,2252,6.572,212
+731,494_minkstas,A1 subdeck,minkštas,Adjectives,adjectives,2,3131,,7.749,213
+732,A2-1501,A1 subdeck,centras,Nouns,nouns,2,695,174,5.690,1774
+733,A2-0436,A1 subdeck,atsiprašyti,Verbs,verbs,2,139,2167,5.733,1385
+734,A2-0833,A1 subdeck,planas,Abstract,abstract,2,322,302,5.749,1418
+735,A2-0987,A1 subdeck,arti,Adverbs,adverbs,2,446,,5.800,822
+736,A2-2019,A1 subdeck,Iki greito! / Iki vėliau!,Functions,phrases,2,286,2300,6.490,
+737,A2-0821,A1 subdeck,šventė,Work & culture,work,2,1414,549,6.576,1428
+738,A2-0823,A1 subdeck,vakarėlis,Work & culture,work,2,514,2527,6.579,1465
+739,A2-0417,A1 subdeck,atnešti,Verbs,verbs,2,355,2141,6.591,1384
+740,437_traukti,A1 subdeck,tráukti,Verbs,verbs,2,701,1640,6.592,282
+741,A2-0100,A1 subdeck,užkandis,Food,food,1,4417,,6.593,632
+742,A2-0707,A1 subdeck,megztinis,Clothing,clothing,1,4441,,6.599,1240
+743,A2-0993,A1 subdeck,beveik,Adverbs,adverbs,2,357,344,5.863,724
+744,A2-1696,A1 subdeck,prasidėti,Verbs,verbs,2,421,551,5.850,1748
+745,A2-1000,A1 subdeck,ilgai,Adverbs,adverbs,2,380,688,5.878,749
+746,A2-1561,A1 subdeck,numeris,Nouns,nouns,2,416,673,5.923,1892
+747,299_zeme,A1 subdeck,Žemė,Nature,nature,3,252,86,6.599,362
+748,304_zeme,A1 subdeck,žemė,Nature,nature,3,252,86,6.599,363
+749,349_taskas,A1 subdeck,taškas,Misc,rest,2,1225,345,6.604,142
+750,A2-0701,A1 subdeck,pomidoras,Food,food,1,4488,,6.609,1312
+751,241_deze,A1 subdeck,dėžė,Home,home,2,1003,,6.611,431
+752,A2-0719,A1 subdeck,akiniai,Clothing,clothing,1,4572,,6.628,1410
+753,112_advokatas,A1 subdeck,advokatas,Job,work,2,869,1331,6.638,313
+754,A2-0824,A1 subdeck,pradžia,Abstract,abstract,2,455,278,5.923,1416
+755,A2-1001,A1 subdeck,irgi,Adverbs,adverbs,2,208,931,5.937,761
+756,A2-0464,A1 subdeck,naudoti,Verbs,verbs,2,572,216,5.960,1215
+757,A2-0999,A1 subdeck,gana,Adverbs,adverbs,2,368,903,5.967,760
+758,163_zenklas,A1 subdeck,ženklas,Society,society,2,819,699,6.645,231
+759,200_lekste,A1 subdeck,lėkštė,Food,food,1,3457,,6.648,237
+760,046_teatras,A1 subdeck,teatras,Location,places,2,1654,539,6.662,302
+761,A2-0831,A1 subdeck,gimtadienis,Abstract,abstract,2,679,2067,6.666,1458
+762,A2-0737,A1 subdeck,laukas,Nature,nature,2,1010,1158,6.672,1236
+763,115_padavejas,A1 subdeck,padavėjas,Job,work,1,4882,,6.693,86
+764,A2-0102,A1 subdeck,meniu,Food,food,1,4970,,6.711,633
+765,A2-1771,A1 subdeck,sostinė,Location,places,1,3666,606,5.987,2036
+766,A2-0185,A1 subdeck,blogai,Adverbs,adverbs,2,352,1326,6.094,778
+767,A2-0825,A1 subdeck,pabaiga,Abstract,abstract,2,520,360,6.107,1424
+768,A2-1797,A1 subdeck,šeštas,Numbers,numbers,1,2341,1631,6.114,2129
+769,060_sijonas,A1 subdeck,sijonas,Clothing,clothing,1,4990,,6.715,311
+770,051_salis,A1 subdeck,šalis,Location,places,3,383,62,6.720,403
+771,243_kortele,A1 subdeck,kortelė,Home,home,2,983,1373,6.724,330
+772,A2-2020,A1 subdeck,"Atsiprašau, ką sakėte?",Functions,phrases,2,278,4334,6.726,
+773,A2-0713,A1 subdeck,kojinės,Clothing,clothing,1,5090,,6.735,1370
+774,A2-0084,A1 subdeck,adresas,Society,society,2,1297,945,6.741,623
+775,330_auksas,A1 subdeck,auksas,Materials,rest,2,936,1550,6.743,315
+776,A2-1941,A1 subdeck,nekęsti (+gen),Verbs,verbs,2,456,,6.122,
+777,A2-1078,A1 subdeck,kelios,Numbers,numbers,1,2810,,6.141,867
+778,A2-0862,A1 subdeck,skaičius,Abstract,abstract,2,717,273,6.189,1415
+779,A2-1878,A1 subdeck,kitoje pusėje,Adverbs,adverbs,2,464,596,6.240,
+780,A2-0670,A1 subdeck,salotos,Food,food,1,5140,,6.745,1206
+781,037_biuras,A1 subdeck,biuras,Location,places,2,1126,1186,6.747,337
+782,A2-1544,A1 subdeck,laipsnis,Nouns,nouns,2,1440,834,6.754,1897
+783,292_kalnas,A1 subdeck,kalnas,Nature,nature,2,1019,1494,6.780,306
+784,A2-0623,A1 subdeck,lentyna,Home,home,1,5331,,6.781,1258
+785,218_piestukas,A1 subdeck,pieštukas,Home,home,1,5337,,6.782,204
+786,A2-0698,A1 subdeck,kopūstas,Food,food,1,5339,,6.783,1309
+787,A2-1679,A1 subdeck,parašyti,Verbs,verbs,2,545,999,6.243,1762
+788,A2-1052,A1 subdeck,turbūt,Adverbs,adverbs,2,253,1526,6.252,785
+789,A2-1795,A1 subdeck,septintas,Numbers,numbers,1,2868,1893,6.295,2133
+790,A2-0191,A1 subdeck,vėliau,Adverbs,adverbs,2,748,,6.317,820
+791,035_teismas,A1 subdeck,teismas,Location,places,3,632,76,6.802,372
+792,A2-0625,A1 subdeck,spinta,Home,home,1,5462,,6.806,1290
+793,496_gilus,A1 subdeck,gilus,Adjectives,adjectives,2,815,2351,6.827,214
+794,497_seklus,A1 subdeck,seklus,Adjectives,adjectives,2,30000,,10.309,250
+795,221_muilas,A1 subdeck,muilas,Home,home,1,4092,,6.817,247
+796,492_aukstas,A1 subdeck,aukštas,Adjectives,adjectives,3,334,211,6.827,299
+797,493_zemas,A1 subdeck,žemas,Adjectives,adjectives,3,1157,1624,8.389,334
+798,A2-0106,A1 subdeck,dydis,Society,society,2,1234,363,6.329,636
+799,A2-1563,A1 subdeck,orai,Nouns,nouns,2,836,670,6.340,1984
+800,A2-0861,A1 subdeck,sąrašas,Abstract,abstract,2,868,309,6.353,1419
+801,A2-1902,A1 subdeck,veikla,Nouns,nouns,2,2228,81,6.383,
+802,A2-0693,A1 subdeck,grybas,Food,food,1,5426,2774,6.831,1205
+803,231_grindys,A1 subdeck,grindys,Home,home,2,1268,,6.845,421
+804,A2-1312,A1 subdeck,mokinys,Nouns,nouns,2,1743,788,6.846,1528
+805,482_storas,A1 subdeck,storas,Adjectives,adjectives,2,1248,,6.829,255
+806,483_plonas,A1 subdeck,plonas,Adjectives,adjectives,2,5865,,8.377,256
+807,A2-1990,A1 subdeck,Man nepatinka…,Functions,phrases,2,942,,6.848,
+808,271_nugara,A1 subdeck,nugara,Body,body,2,847,2448,6.866,262
+809,A2-1811,A1 subdeck,atsitikti,Verbs,verbs,2,274,1884,6.384,2094
+810,A2-0805,A1 subdeck,klaida,Work & culture,work,2,661,1081,6.391,1442
+811,A2-0804,A1 subdeck,atsakymas,Work & culture,work,2,672,1058,6.392,1440
+812,A2-1009,A1 subdeck,kažkur,Adverbs,adverbs,2,604,,6.404,834
+813,A2-0412,A1 subdeck,skubėti,Verbs,verbs,2,1111,1643,6.870,1372
+814,287_oda,A1 subdeck,oda,Body,body,2,1204,1514,6.885,220
+815,137_vestuves,A1 subdeck,vestuvės,Society,society,2,589,2113,6.889,413
+816,174_vynas,A1 subdeck,vynas,Beverages,food,2,1051,1881,6.890,278
+817,425_sukti,A1 subdeck,sùkti,Verbs,verbs,2,900,2387,6.893,285
+818,114_pacientas,A1 subdeck,pacientas,Job,work,2,1300,1378,6.893,347
+819,A2-1315,A1 subdeck,mėsa,Nouns,nouns,2,1194,1600,6.902,1536
+820,A2-0435,A1 subdeck,dėkoti,Verbs,verbs,2,496,1762,6.414,1375
+821,A2-1791,A1 subdeck,aštuntas,Numbers,numbers,1,3211,2183,6.420,2137
+822,A2-1033,A1 subdeck,paprastai,Adverbs,adverbs,2,524,807,6.434,755
+823,A2-1526,A1 subdeck,kairė,Nouns,nouns,2,850,,6.445,1965
+824,444_musti,A1 subdeck,mùšti,Verbs,verbs,2,1358,,6.914,393
 825,121_kareivis,A1 subdeck,kareivis,Job,work,2,1363,,6.917,384
-826,506_tamsus,A1 subdeck,tamsus,Adjectives,adjectives,2,1000,2567,6.985,251
-827,507_sviesus,A1 subdeck,šviesus,Adjectives,adjectives,2,1749,2808,7.356,252
-828,A2-0435,A1 subdeck,dėkoti,Verbs,verbs,2,496,1762,6.414,1375
-829,A2-1791,A1 subdeck,aštuntas,Numbers,numbers,1,3211,2183,6.420,2137
-830,A2-1033,A1 subdeck,paprastai,Adverbs,adverbs,2,524,807,6.434,755
-831,A2-1526,A1 subdeck,kairė,Nouns,nouns,2,850,,6.445,1965
-832,407_guleti,A1 subdeck,gulė́ti,Verbs,verbs,2,963,2414,6.938,286
-833,120_kariuomene,A1 subdeck,kariuomenė,Job,work,2,1807,1078,6.993,270
-834,A2-0718,A1 subdeck,skėtis,Clothing,clothing,1,6667,,7.005,1400
-835,428_augti,A1 subdeck,áugti,Verbs,verbs,2,1282,838,6.986,244
-836,A2-1762,A1 subdeck,dantų pasta,Home,home,1,4983,,7.014,2026
-837,244_ziedas,A1 subdeck,žiedas,Home,home,2,768,2010,7.029,369
-838,A2-2002,A1 subdeck,Koks jūsų adresas?,Functions,phrases,2,1297,945,7.041,
-839,A2-1792,A1 subdeck,devintas,Numbers,numbers,1,3493,2339,6.498,2139
-840,A2-0531,A1 subdeck,pasiruošęs,Adjectives,adjectives,2,299,,6.500,2171
-841,A2-1868,A1 subdeck,šįvakar,Adverbs,adverbs,2,674,,6.513,
-842,A2-0451,A1 subdeck,pasirinkti,Verbs,verbs,2,708,678,6.545,1289
-843,A2-0812,A1 subdeck,koncertas,Work & culture,work,2,2541,733,7.043,1431
-844,396_buciuoti,A1 subdeck,bučiúoti,Verbs,verbs,2,1551,,7.047,327
-845,A2-0052,A1 subdeck,vienuolika,Numbers,numbers,1,5179,,7.052,594
-846,A2-0053,A1 subdeck,dvylika,Numbers,numbers,1,3331,,7.052,595
-847,274_peda,A1 subdeck,pėda,Body,body,2,1174,,7.068,340
-848,097_prezidentas,A1 subdeck,prezidentas,People,people,3,567,175,7.070,318
-849,A2-0745,A1 subdeck,takas,Nature,nature,2,1570,1664,7.082,1237
-850,A2-1608,A1 subdeck,užsienis,Nouns,nouns,2,2729,194,6.554,1804
-851,A2-0527,A1 subdeck,pavojingas,Adjectives,adjectives,2,616,868,6.560,1261
-852,A2-0181,A1 subdeck,niekur,Adverbs,adverbs,2,546,2206,6.561,799
-853,A2-0537,A1 subdeck,kitoks,Adjectives,adjectives,2,1284,616,6.564,1229
+826,A2-0710,A1 subdeck,pirštinės,Clothing,clothing,1,6120,,6.919,1335
+827,A2-1273,A1 subdeck,išėjimas,Nouns,nouns,2,1369,,6.922,1610
+828,412_skaiciuoti,A1 subdeck,skaičiúoti,Verbs,verbs,2,1704,1008,6.931,245
+829,237_sodas,A1 subdeck,sodas,Home,home,2,1482,1380,6.973,331
+830,S-0040,sentences,Tėvai {dirba} sode.,Sakiniai,sentences,,,,,
+831,506_tamsus,A1 subdeck,tamsus,Adjectives,adjectives,2,1000,2567,6.985,251
+832,507_sviesus,A1 subdeck,šviesus,Adjectives,adjectives,2,1749,2808,7.356,252
+833,A2-1792,A1 subdeck,devintas,Numbers,numbers,1,3493,2339,6.498,2139
+834,A2-0531,A1 subdeck,pasiruošęs,Adjectives,adjectives,2,299,,6.500,2171
+835,A2-1868,A1 subdeck,šįvakar,Adverbs,adverbs,2,674,,6.513,
+836,A2-0451,A1 subdeck,pasirinkti,Verbs,verbs,2,708,678,6.545,1289
+837,407_guleti,A1 subdeck,gulė́ti,Verbs,verbs,2,963,2414,6.938,286
+838,120_kariuomene,A1 subdeck,kariuomenė,Job,work,2,1807,1078,6.993,270
+839,A2-0718,A1 subdeck,skėtis,Clothing,clothing,1,6667,,7.005,1400
+840,428_augti,A1 subdeck,áugti,Verbs,verbs,2,1282,838,6.986,244
+841,A2-1762,A1 subdeck,dantų pasta,Home,home,1,4983,,7.014,2026
+842,244_ziedas,A1 subdeck,žiedas,Home,home,2,768,2010,7.029,369
+843,A2-2002,A1 subdeck,Koks jūsų adresas?,Functions,phrases,2,1297,945,7.041,
+844,A2-1608,A1 subdeck,užsienis,Nouns,nouns,2,2729,194,6.554,1804
+845,A2-0527,A1 subdeck,pavojingas,Adjectives,adjectives,2,616,868,6.560,1261
+846,A2-0181,A1 subdeck,niekur,Adverbs,adverbs,2,546,2206,6.561,799
+847,A2-0537,A1 subdeck,kitoks,Adjectives,adjectives,2,1284,616,6.564,1229
+848,A2-0812,A1 subdeck,koncertas,Work & culture,work,2,2541,733,7.043,1431
+849,396_buciuoti,A1 subdeck,bučiúoti,Verbs,verbs,2,1551,,7.047,327
+850,A2-0052,A1 subdeck,vienuolika,Numbers,numbers,1,5179,,7.052,594
+851,A2-0053,A1 subdeck,dvylika,Numbers,numbers,1,3331,,7.052,595
+852,274_peda,A1 subdeck,pėda,Body,body,2,1174,,7.068,340
+853,097_prezidentas,A1 subdeck,prezidentas,People,people,3,567,175,7.070,318
 854,A2-0063,A1 subdeck,keturiasdešimt,Numbers,numbers,1,5323,,7.080,605
-855,125_zurnalistas,A1 subdeck,žurnalistas,Job,work,2,2723,740,7.088,229
-856,A2-0064,A1 subdeck,penkiasdešimt,Numbers,numbers,1,4206,2484,7.080,606
-857,311_lapas,A1 subdeck,lapas,Nature,nature,2,2113,1085,7.089,265
-858,A2-0700,A1 subdeck,agurkas,Food,food,1,7289,,7.094,1311
-859,A2-0090,A1 subdeck,pasas,Society,society,2,1578,1719,7.098,627
-860,359_zaizda,A1 subdeck,žaizda,Misc,rest,2,1635,,7.099,445
-861,A2-0528,A1 subdeck,saugus,Adjectives,adjectives,2,574,1048,6.593,1262
-862,A2-1473,A1 subdeck,skirtingas,Adjectives,adjectives,2,1077,916,6.617,1735
-863,A2-1047,A1 subdeck,tiesiai,Adverbs,adverbs,2,556,2506,6.623,804
-864,A2-1830,A1 subdeck,nueiti,Verbs,verbs,2,406,1916,6.627,2097
-865,A2-0686,A1 subdeck,jogurtas,Food,food,1,7359,,7.104,1279
-866,238_kiemas,A1 subdeck,kiemas,Home,home,2,1868,1366,7.107,290
-867,S-0028,sentences,Vaikai {žaidžia} kieme.,Sakiniai,sentences,,,,,
-868,A2-1252,A1 subdeck,dušas,Nouns,nouns,2,1661,,7.115,1593
-869,326_akmuo,A1 subdeck,akmuo,Materials,rest,2,939,1853,7.117,386
-870,360_skyle,A1 subdeck,skylė,Misc,rest,2,1239,,7.122,446
-871,A2-0104,A1 subdeck,čekis,Society,society,2,1682,,7.128,634
-872,A2-0702,A1 subdeck,kriaušė,Food,food,1,7572,,7.132,1337
-873,A2-1793,A1 subdeck,dešimtas,Numbers,numbers,1,4187,2521,6.637,2142
-874,A2-0834,A1 subdeck,idėja,Abstract,abstract,2,705,878,6.646,1435
-875,A2-0437,A1 subdeck,sveikinti,Verbs,verbs,2,623,2259,6.650,1387
-876,A2-0854,A1 subdeck,sėkmė,Abstract,abstract,2,513,1447,6.655,1450
-877,014_sunkvezimis,A1 subdeck,sunkvežimis,Transportation,transport,2,1255,,7.135,344
-878,094_zmona,A1 subdeck,žmona,People,people,3,228,817,7.140,276
-879,223_puslapis,A1 subdeck,puslapis,Home,home,2,1557,1961,7.143,368
-880,A2-0633,A1 subdeck,dantų šepetėlis,Home,home,1,7668,,7.145,1322
-881,A2-0559,A1 subdeck,patogus,Adjectives,adjectives,2,1522,2114,7.159,1323
-882,A2-0815,A1 subdeck,paveikslas,Work & culture,work,2,1559,2106,7.172,1460
-883,A2-0568,A1 subdeck,saldus,Adjectives,adjectives,2,1759,,7.173,1351
-884,A2-1506,A1 subdeck,dešinė,Nouns,nouns,2,1057,,6.663,1951
-885,A2-0539,A1 subdeck,teisingas,Adjectives,adjectives,2,994,1176,6.669,1293
-886,A2-0189,A1 subdeck,pakankamai,Adverbs,adverbs,2,647,1116,6.690,770
-887,A2-1593,A1 subdeck,salė,Nouns,nouns,2,1508,687,6.704,1895
-888,A2-0728,A1 subdeck,sėdynė,Transportation,transport,1,2648,,7.182,2210
-889,A2-1754,A1 subdeck,šortai,Clothing,clothing,1,5966,,7.194,2087
-890,A2-0419,A1 subdeck,dėti,Verbs,verbs,2,1171,1622,7.196,1367
-891,A2-2041,A1 subdeck,Buvo labai skanu.,Functions,phrases,2,1368,,7.221,
-892,480_turtingas,A1 subdeck,turtingas,Adjectives,adjectives,2,1068,1761,7.174,210
-893,481_neturtingas,A1 subdeck,neturtingas,Adjectives,adjectives,2,7480,,8.920,211
-894,A2-0054,A1 subdeck,trylika,Numbers,numbers,1,6144,,7.223,596
-895,A2-0193,A1 subdeck,vėlai,Adverbs,adverbs,2,2786,300,6.741,720
-896,A2-1819,A1 subdeck,išgerti,Verbs,verbs,2,419,2566,6.763,2111
-897,A2-1779,A1 subdeck,lietuvis,Nationalities,rest,1,30000,186,6.776,2068
-898,A2-0779,A1 subdeck,klientas,Work & culture,work,2,871,885,6.776,1437
-899,233_stogas,A1 subdeck,stogas,Home,home,2,1169,1770,7.230,333
-900,184_tortas,A1 subdeck,tortas,Food,food,2,1874,,7.236,280
-901,198_saukstas,A1 subdeck,šaukštas,Food,food,1,6231,,7.237,193
-902,A2-0095,A1 subdeck,kioskas,Location,places,1,8458,,7.243,630
-903,123_autorius,A1 subdeck,autorius,Job,work,2,3616,727,7.251,228
-904,A2-0709,A1 subdeck,šalikas,Clothing,clothing,1,8586,,7.258,1307
-905,A2-1358,A1 subdeck,sofa,Nouns,nouns,2,1918,,7.259,1677
-906,A2-0855,A1 subdeck,pavojus,Abstract,abstract,2,710,1227,6.784,1444
-907,A2-1974,A1 subdeck,prasmė,Nouns,nouns,2,686,1352,6.802,
-908,A2-1704,A1 subdeck,rinkti,Verbs,verbs,2,1616,857,6.834,1761
-909,A2-1885,A1 subdeck,tobulas,Adjectives,adjectives,2,945,,6.851,
-910,A2-0684,A1 subdeck,medus,Food,food,1,2862,,7.259,2189
-911,017_valtis,A1 subdeck,valtis,Transportation,transport,2,1435,,7.269,380
-912,A2-0483,A1 subdeck,virti,Verbs,verbs,2,1951,1928,7.271,1378
-913,A2-0011,A1 subdeck,popietė,Time,time,1,2898,,7.272,2185
-914,348_zemelapis,A1 subdeck,žemėlapis,Misc,rest,2,1469,2961,7.273,438
-915,A2-0866,A1 subdeck,moneta,Money & admin,society,1,2908,,7.275,2283
-916,A2-0445,A1 subdeck,užrašyti,Verbs,verbs,2,1953,,7.277,1404
-917,A2-0820,A1 subdeck,atostogos,Work & culture,work,2,1495,1121,6.895,1443
-918,A2-1490,A1 subdeck,alkoholis,Nouns,nouns,2,2061,709,6.904,1896
-919,A2-1831,A1 subdeck,nusipirkti,Verbs,verbs,2,690,1757,6.911,2090
-920,A2-1887,A1 subdeck,asmeninis,Adjectives,adjectives,2,1187,835,6.938,
+855,A2-0528,A1 subdeck,saugus,Adjectives,adjectives,2,574,1048,6.593,1262
+856,A2-1473,A1 subdeck,skirtingas,Adjectives,adjectives,2,1077,916,6.617,1735
+857,A2-1047,A1 subdeck,tiesiai,Adverbs,adverbs,2,556,2506,6.623,804
+858,A2-1830,A1 subdeck,nueiti,Verbs,verbs,2,406,1916,6.627,2097
+859,A2-0745,A1 subdeck,takas,Nature,nature,2,1570,1664,7.082,1237
+860,125_zurnalistas,A1 subdeck,žurnalistas,Job,work,2,2723,740,7.088,229
+861,A2-0064,A1 subdeck,penkiasdešimt,Numbers,numbers,1,4206,2484,7.080,606
+862,311_lapas,A1 subdeck,lapas,Nature,nature,2,2113,1085,7.089,265
+863,A2-0700,A1 subdeck,agurkas,Food,food,1,7289,,7.094,1311
+864,A2-0090,A1 subdeck,pasas,Society,society,2,1578,1719,7.098,627
+865,359_zaizda,A1 subdeck,žaizda,Misc,rest,2,1635,,7.099,445
+866,A2-1793,A1 subdeck,dešimtas,Numbers,numbers,1,4187,2521,6.637,2142
+867,A2-0834,A1 subdeck,idėja,Abstract,abstract,2,705,878,6.646,1435
+868,A2-0437,A1 subdeck,sveikinti,Verbs,verbs,2,623,2259,6.650,1387
+869,A2-0854,A1 subdeck,sėkmė,Abstract,abstract,2,513,1447,6.655,1450
+870,A2-0686,A1 subdeck,jogurtas,Food,food,1,7359,,7.104,1279
+871,238_kiemas,A1 subdeck,kiemas,Home,home,2,1868,1366,7.107,290
+872,S-0028,sentences,Vaikai {žaidžia} kieme.,Sakiniai,sentences,,,,,
+873,A2-1252,A1 subdeck,dušas,Nouns,nouns,2,1661,,7.115,1593
+874,326_akmuo,A1 subdeck,akmuo,Materials,rest,2,939,1853,7.117,386
+875,360_skyle,A1 subdeck,skylė,Misc,rest,2,1239,,7.122,446
+876,A2-0104,A1 subdeck,čekis,Society,society,2,1682,,7.128,634
+877,A2-0702,A1 subdeck,kriaušė,Food,food,1,7572,,7.132,1337
+878,A2-1506,A1 subdeck,dešinė,Nouns,nouns,2,1057,,6.663,1951
+879,A2-0539,A1 subdeck,teisingas,Adjectives,adjectives,2,994,1176,6.669,1293
+880,A2-0189,A1 subdeck,pakankamai,Adverbs,adverbs,2,647,1116,6.690,770
+881,A2-1593,A1 subdeck,salė,Nouns,nouns,2,1508,687,6.704,1895
+882,014_sunkvezimis,A1 subdeck,sunkvežimis,Transportation,transport,2,1255,,7.135,344
+883,094_zmona,A1 subdeck,žmona,People,people,3,228,817,7.140,276
+884,223_puslapis,A1 subdeck,puslapis,Home,home,2,1557,1961,7.143,368
+885,A2-0633,A1 subdeck,dantų šepetėlis,Home,home,1,7668,,7.145,1322
+886,A2-0559,A1 subdeck,patogus,Adjectives,adjectives,2,1522,2114,7.159,1323
+887,A2-0815,A1 subdeck,paveikslas,Work & culture,work,2,1559,2106,7.172,1460
+888,A2-0568,A1 subdeck,saldus,Adjectives,adjectives,2,1759,,7.173,1351
+889,A2-0193,A1 subdeck,vėlai,Adverbs,adverbs,2,2786,300,6.741,720
+890,A2-1819,A1 subdeck,išgerti,Verbs,verbs,2,419,2566,6.763,2111
+891,A2-1779,A1 subdeck,lietuvis,Nationalities,rest,1,30000,186,6.776,2068
+892,A2-0779,A1 subdeck,klientas,Work & culture,work,2,871,885,6.776,1437
+893,480_turtingas,A1 subdeck,turtingas,Adjectives,adjectives,2,1068,1761,7.174,210
+894,481_neturtingas,A1 subdeck,neturtingas,Adjectives,adjectives,2,7480,,8.920,211
+895,A2-0728,A1 subdeck,sėdynė,Transportation,transport,1,2648,,7.182,2210
+896,A2-1754,A1 subdeck,šortai,Clothing,clothing,1,5966,,7.194,2087
+897,A2-0419,A1 subdeck,dėti,Verbs,verbs,2,1171,1622,7.196,1367
+898,A2-2041,A1 subdeck,Buvo labai skanu.,Functions,phrases,2,1368,,7.221,
+899,A2-0054,A1 subdeck,trylika,Numbers,numbers,1,6144,,7.223,596
+900,A2-0855,A1 subdeck,pavojus,Abstract,abstract,2,710,1227,6.784,1444
+901,A2-1974,A1 subdeck,prasmė,Nouns,nouns,2,686,1352,6.802,
+902,A2-1704,A1 subdeck,rinkti,Verbs,verbs,2,1616,857,6.834,1761
+903,A2-1885,A1 subdeck,tobulas,Adjectives,adjectives,2,945,,6.851,
+904,233_stogas,A1 subdeck,stogas,Home,home,2,1169,1770,7.230,333
+905,184_tortas,A1 subdeck,tortas,Food,food,2,1874,,7.236,280
+906,198_saukstas,A1 subdeck,šaukštas,Food,food,1,6231,,7.237,193
+907,A2-0095,A1 subdeck,kioskas,Location,places,1,8458,,7.243,630
+908,123_autorius,A1 subdeck,autorius,Job,work,2,3616,727,7.251,228
+909,A2-0709,A1 subdeck,šalikas,Clothing,clothing,1,8586,,7.258,1307
+910,A2-1358,A1 subdeck,sofa,Nouns,nouns,2,1918,,7.259,1677
+911,A2-0820,A1 subdeck,atostogos,Work & culture,work,2,1495,1121,6.895,1443
+912,A2-1490,A1 subdeck,alkoholis,Nouns,nouns,2,2061,709,6.904,1896
+913,A2-1831,A1 subdeck,nusipirkti,Verbs,verbs,2,690,1757,6.911,2090
+914,A2-1823,A1 subdeck,kalbėtis,Verbs,verbs,2,613,2249,6.938,2101
+915,A2-0684,A1 subdeck,medus,Food,food,1,2862,,7.259,2189
+916,017_valtis,A1 subdeck,valtis,Transportation,transport,2,1435,,7.269,380
+917,A2-0483,A1 subdeck,virti,Verbs,verbs,2,1951,1928,7.271,1378
+918,A2-0011,A1 subdeck,popietė,Time,time,1,2898,,7.272,2185
+919,348_zemelapis,A1 subdeck,žemėlapis,Misc,rest,2,1469,2961,7.273,438
+920,A2-0866,A1 subdeck,moneta,Money & admin,society,1,2908,,7.275,2283
 921,503_gyvas,A1 subdeck,gyvas,Adjectives,adjectives,3,273,899,7.286,336
 922,502_negyvas,A1 subdeck,negyvas,Adjectives,adjectives,3,560,,7.828,335
-923,A2-1901,A1 subdeck,renginys,Nouns,nouns,2,3133,479,7.299,
-924,A2-2030,A1 subdeck,Man reikia gydytojo. / Kur vaistinė?,Functions,phrases,2,1678,1234,7.302,
-925,A2-0900,A1 subdeck,Nekalbu lietuviškai,Getting by,phrases,0,30000,,7.309,1065
-926,A2-1295,A1 subdeck,koridorius,Nouns,nouns,2,2021,,7.311,1628
-927,008_arklys,A1 subdeck,arklys,Animal,animals,2,971,2886,7.314,268
-928,A2-1823,A1 subdeck,kalbėtis,Verbs,verbs,2,613,2249,6.938,2101
-929,A2-1592,A1 subdeck,reklama,Nouns,nouns,2,1833,922,6.939,1901
-930,A2-0180,A1 subdeck,visur,Adverbs,adverbs,2,678,2032,6.958,797
-931,A2-1781,A1 subdeck,rusas,Nationalities,rest,2,1304,799,6.977,2120
+923,A2-1887,A1 subdeck,asmeninis,Adjectives,adjectives,2,1187,835,6.938,
+924,A2-1592,A1 subdeck,reklama,Nouns,nouns,2,1833,922,6.939,1901
+925,A2-0180,A1 subdeck,visur,Adverbs,adverbs,2,678,2032,6.958,797
+926,A2-1900,A1 subdeck,partneris,Nouns,nouns,2,1117,967,6.961,
+927,A2-0445,A1 subdeck,užrašyti,Verbs,verbs,2,1953,,7.277,1404
+928,A2-1901,A1 subdeck,renginys,Nouns,nouns,2,3133,479,7.299,
+929,A2-2030,A1 subdeck,Man reikia gydytojo. / Kur vaistinė?,Functions,phrases,2,1678,1234,7.302,
+930,A2-0900,A1 subdeck,Nekalbu lietuviškai,Getting by,phrases,0,30000,,7.309,1065
+931,008_arklys,A1 subdeck,arklys,Animal,animals,2,971,2886,7.314,268
 932,047_biblioteka,A1 subdeck,biblioteka,Location,places,2,2625,1455,7.337,338
 933,A2-0675,A1 subdeck,dešra,Food,food,1,3099,,7.339,2154
-934,109_asmuo,A1 subdeck,asmuo,People,people,3,1250,53,7.367,389
-935,A2-0905,A1 subdeck,Kaip lietuviškai …?,Getting by,phrases,0,30000,,7.309,1070
-936,A2-2005,A1 subdeck,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,Functions,phrases,2,2114,,7.356,
-937,393_liesti,A1 subdeck,liẽsti,Verbs,verbs,2,1597,,7.376,326
-938,302_augalas,A1 subdeck,augalas,Nature,nature,2,3924,917,7.393,264
-939,A2-1930,A1 subdeck,sėkmė,Nouns,nouns,2,513,1447,6.655,
-940,A2-1900,A1 subdeck,partneris,Nouns,nouns,2,1117,967,6.961,
-941,A2-0500,A1 subdeck,lankyti,Verbs,verbs,2,1339,1792,7.016,1376
-942,A2-1973,A1 subdeck,faktas,Nouns,nouns,2,1285,997,7.057,
-943,041_klubas,A1 subdeck,klubas,Location,places,3,688,294,7.394,401
-944,A2-0673,A1 subdeck,blynai,Food,food,1,9902,,7.400,1246
-945,254_ekranas,A1 subdeck,ekranas,Electronics,electronics,2,2813,1570,7.409,314
-946,323_metalas,A1 subdeck,metalas,Materials,rest,2,2595,1796,7.414,350
-947,431_gaudyti,A1 subdeck,gáudyti,Verbs,verbs,2,1660,,7.415,365
-948,A2-0566,A1 subdeck,šviežias,Adjectives,adjectives,2,2267,,7.426,1350
-949,A2-0055,A1 subdeck,keturiolika,Numbers,numbers,1,7530,,7.427,597
-950,A2-1942,A1 subdeck,prisijungti (prie),Verbs,verbs,2,820,2014,7.069,
-951,A2-1034,A1 subdeck,pernai,Adverbs,adverbs,2,3672,670,7.228,747
-952,A2-1617,A1 subdeck,verslininkas,Nouns,nouns,2,3303,856,7.262,1899
-953,A2-0170,A1 subdeck,retai,Adverbs,adverbs,2,2686,1177,7.266,772
-954,A2-0056,A1 subdeck,penkiolika,Numbers,numbers,1,3947,,7.427,598
-955,A2-0057,A1 subdeck,šešiolika,Numbers,numbers,1,6937,,7.427,599
-956,322_stiklas,A1 subdeck,stiklas,Materials,rest,2,2312,2222,7.430,429
-957,259_kaklas,A1 subdeck,kaklas,Body,body,2,1689,,7.432,304
-958,A2-2023,A1 subdeck,"Atsiprašau, ar čia laisva?",Functions,phrases,2,906,4334,7.435,
-959,234_baseinas,A1 subdeck,baseinas,Home,home,2,2007,2787,7.436,398
-960,A2-1403,A1 subdeck,įėjimas,Nouns,nouns,2,2295,,7.438,1710
-961,A2-1834,A1 subdeck,paduoti,Verbs,verbs,2,1359,1910,7.351,2095
-962,A2-1572,A1 subdeck,pažymėjimas,Nouns,nouns,2,3783,873,7.352,1900
-963,A2-1579,A1 subdeck,politikas,Nouns,nouns,2,4981,611,7.374,1889
-964,A2-1774,A1 subdeck,amerikietis,Nationalities,rest,2,1768,1389,7.381,2127
-965,A2-0484,A1 subdeck,kepti,Verbs,verbs,2,2114,2598,7.439,1394
-966,126_aktorius,A1 subdeck,aktorius,Job,work,2,2301,1118,7.452,271
-967,A2-0058,A1 subdeck,septyniolika,Numbers,numbers,1,7732,,7.453,600
-968,A2-0059,A1 subdeck,aštuoniolika,Numbers,numbers,1,7637,,7.453,601
-969,A2-0501,A1 subdeck,švęsti,Verbs,verbs,2,1834,1618,7.464,1366
-970,006_kiaule,A1 subdeck,kiaulė,Animal,animals,2,1554,2118,7.472,310
-971,A2-1407,A1 subdeck,šaldytuvas,Nouns,nouns,2,2372,,7.471,1714
-972,A2-1886,A1 subdeck,papildomas,Adjectives,adjectives,2,1655,,7.412,
-973,A2-1655,A1 subdeck,lyti,Verbs,verbs,2,2354,,7.464,1830
-974,S-0022,sentences,Lauke {lyja}.,Sakiniai,sentences,,,,,
-975,A2-1233,A1 subdeck,bulvė,Nouns,nouns,2,2454,2271,7.474,1549
-976,199_sakute,A1 subdeck,šakutė,Food,food,1,7904,,7.475,236
-977,A2-1758,A1 subdeck,makaronai,Food,food,1,7964,,7.483,2015
-978,397_degti,A1 subdeck,dègti,Verbs,verbs,2,1487,2330,7.484,284
-979,A2-1263,A1 subdeck,geležinkelis,Nouns,nouns,2,4731,896,7.496,1529
-980,A2-0660,A1 subdeck,perėja,Location,places,1,10898,,7.496,1355
-981,A2-0442,A1 subdeck,šaukti,Verbs,verbs,2,1427,2485,7.485,1393
+934,A2-1781,A1 subdeck,rusas,Nationalities,rest,2,1304,799,6.977,2120
+935,A2-1930,A1 subdeck,sėkmė,Nouns,nouns,2,513,1447,6.655,
+936,A2-0500,A1 subdeck,lankyti,Verbs,verbs,2,1339,1792,7.016,1376
+937,A2-1973,A1 subdeck,faktas,Nouns,nouns,2,1285,997,7.057,
+938,109_asmuo,A1 subdeck,asmuo,People,people,3,1250,53,7.367,389
+939,A2-1295,A1 subdeck,koridorius,Nouns,nouns,2,2021,,7.311,1628
+940,A2-0905,A1 subdeck,Kaip lietuviškai …?,Getting by,phrases,0,30000,,7.309,1070
+941,A2-2005,A1 subdeck,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,Functions,phrases,2,2114,,7.356,
+942,393_liesti,A1 subdeck,liẽsti,Verbs,verbs,2,1597,,7.376,326
+943,302_augalas,A1 subdeck,augalas,Nature,nature,2,3924,917,7.393,264
+944,041_klubas,A1 subdeck,klubas,Location,places,3,688,294,7.394,401
+945,A2-1942,A1 subdeck,prisijungti (prie),Verbs,verbs,2,820,2014,7.069,
+946,A2-1034,A1 subdeck,pernai,Adverbs,adverbs,2,3672,670,7.228,747
+947,A2-1617,A1 subdeck,verslininkas,Nouns,nouns,2,3303,856,7.262,1899
+948,A2-0170,A1 subdeck,retai,Adverbs,adverbs,2,2686,1177,7.266,772
+949,A2-0673,A1 subdeck,blynai,Food,food,1,9902,,7.400,1246
+950,254_ekranas,A1 subdeck,ekranas,Electronics,electronics,2,2813,1570,7.409,314
+951,323_metalas,A1 subdeck,metalas,Materials,rest,2,2595,1796,7.414,350
+952,431_gaudyti,A1 subdeck,gáudyti,Verbs,verbs,2,1660,,7.415,365
+953,A2-0566,A1 subdeck,šviežias,Adjectives,adjectives,2,2267,,7.426,1350
+954,A2-0055,A1 subdeck,keturiolika,Numbers,numbers,1,7530,,7.427,597
+955,A2-0056,A1 subdeck,penkiolika,Numbers,numbers,1,3947,,7.427,598
+956,A2-1834,A1 subdeck,paduoti,Verbs,verbs,2,1359,1910,7.351,2095
+957,A2-1572,A1 subdeck,pažymėjimas,Nouns,nouns,2,3783,873,7.352,1900
+958,A2-1579,A1 subdeck,politikas,Nouns,nouns,2,4981,611,7.374,1889
+959,A2-1774,A1 subdeck,amerikietis,Nationalities,rest,2,1768,1389,7.381,2127
+960,A2-0057,A1 subdeck,šešiolika,Numbers,numbers,1,6937,,7.427,599
+961,322_stiklas,A1 subdeck,stiklas,Materials,rest,2,2312,2222,7.430,429
+962,259_kaklas,A1 subdeck,kaklas,Body,body,2,1689,,7.432,304
+963,A2-2023,A1 subdeck,"Atsiprašau, ar čia laisva?",Functions,phrases,2,906,4334,7.435,
+964,234_baseinas,A1 subdeck,baseinas,Home,home,2,2007,2787,7.436,398
+965,A2-1403,A1 subdeck,įėjimas,Nouns,nouns,2,2295,,7.438,1710
+966,A2-0484,A1 subdeck,kepti,Verbs,verbs,2,2114,2598,7.439,1394
+967,A2-1886,A1 subdeck,papildomas,Adjectives,adjectives,2,1655,,7.412,
+968,126_aktorius,A1 subdeck,aktorius,Job,work,2,2301,1118,7.452,271
+969,A2-0058,A1 subdeck,septyniolika,Numbers,numbers,1,7732,,7.453,600
+970,A2-0059,A1 subdeck,aštuoniolika,Numbers,numbers,1,7637,,7.453,601
+971,A2-1655,A1 subdeck,lyti,Verbs,verbs,2,2354,,7.464,1830
+972,S-0022,sentences,Lauke {lyja}.,Sakiniai,sentences,,,,,
+973,A2-0501,A1 subdeck,švęsti,Verbs,verbs,2,1834,1618,7.464,1366
+974,A2-1407,A1 subdeck,šaldytuvas,Nouns,nouns,2,2372,,7.471,1714
+975,006_kiaule,A1 subdeck,kiaulė,Animal,animals,2,1554,2118,7.472,310
+976,A2-1233,A1 subdeck,bulvė,Nouns,nouns,2,2454,2271,7.474,1549
+977,199_sakute,A1 subdeck,šakutė,Food,food,1,7904,,7.475,236
+978,A2-1758,A1 subdeck,makaronai,Food,food,1,7964,,7.483,2015
+979,397_degti,A1 subdeck,dègti,Verbs,verbs,2,1487,2330,7.484,284
+980,A2-1263,A1 subdeck,geležinkelis,Nouns,nouns,2,4731,896,7.496,1529
+981,A2-0660,A1 subdeck,perėja,Location,places,1,10898,,7.496,1355
 982,A2-0101,A1 subdeck,desertas,Food,food,1,3641,,7.500,2152
-983,A2-1775,A1 subdeck,anglas,Nationalities,rest,2,1770,1890,7.505,2132
-984,285_kaulas,A1 subdeck,kaulas,Body,body,2,1481,2590,7.524,263
-985,433_valyti,A1 subdeck,valýti,Verbs,verbs,2,2337,2584,7.497,323
-986,A2-0094,A1 subdeck,pašto ženklas,Society,society,2,3444,1744,7.572,629
-987,A2-0792,A1 subdeck,rašytojas,Work & culture,work,2,1960,1973,7.583,1456
-988,450_platus,A1 subdeck,platus,Adjectives,adjectives,2,3648,1651,7.585,208
-989,451_siauras,A1 subdeck,siauras,Adjectives,adjectives,2,4296,,8.065,209
-990,A2-1817,A1 subdeck,dovanoti,Verbs,verbs,2,1531,2403,7.514,2107
-991,117_kunigas,A1 subdeck,kunigas,Job,work,2,2166,1861,7.620,383
-992,391_klausytis,A1 subdeck,klausýtis,Verbs,verbs,2,2554,2519,7.540,287
+983,A2-0442,A1 subdeck,šaukti,Verbs,verbs,2,1427,2485,7.485,1393
+984,433_valyti,A1 subdeck,valýti,Verbs,verbs,2,2337,2584,7.497,323
+985,A2-1775,A1 subdeck,anglas,Nationalities,rest,2,1770,1890,7.505,2132
+986,285_kaulas,A1 subdeck,kaulas,Body,body,2,1481,2590,7.524,263
+987,A2-0094,A1 subdeck,pašto ženklas,Society,society,2,3444,1744,7.572,629
+988,A2-0792,A1 subdeck,rašytojas,Work & culture,work,2,1960,1973,7.583,1456
+989,450_platus,A1 subdeck,platus,Adjectives,adjectives,2,3648,1651,7.585,208
+990,451_siauras,A1 subdeck,siauras,Adjectives,adjectives,2,4296,,8.065,209
+991,A2-1817,A1 subdeck,dovanoti,Verbs,verbs,2,1531,2403,7.514,2107
+992,117_kunigas,A1 subdeck,kunigas,Job,work,2,2166,1861,7.620,383
 993,A2-2007,A1 subdeck,"Vieną kavą, prašau.",Functions,phrases,2,1254,4418,7.638,
-994,314_papludimys,A1 subdeck,paplūdimys,Nature,nature,2,1765,2647,7.638,307
-995,A2-2004,A1 subdeck,Pavargau.,Functions,phrases,2,2846,,7.654,
-996,440_deveti,A1 subdeck,dėvė́ti,Verbs,verbs,2,1920,,7.560,391
-997,A2-0995,A1 subdeck,dešinėje,Adverbs,adverbs,2,2114,,7.356,827
+994,391_klausytis,A1 subdeck,klausýtis,Verbs,verbs,2,2554,2519,7.540,287
+995,440_deveti,A1 subdeck,dėvė́ti,Verbs,verbs,2,1920,,7.560,391
+996,314_papludimys,A1 subdeck,paplūdimys,Nature,nature,2,1765,2647,7.638,307
+997,A2-2004,A1 subdeck,Pavargau.,Functions,phrases,2,2846,,7.654,
 998,A2-0065,A1 subdeck,šešiasdešimt,Numbers,numbers,1,9584,,7.668,607
 999,116_sekretorius,A1 subdeck,sekretorius,Job,work,2,4941,1295,7.670,312
 1000,A2-0540,A1 subdeck,klaidingas,Adjectives,adjectives,2,2903,,7.673,1328
 1001,189_bananas,A1 subdeck,bananas,Food,food,2,2906,,7.675,322
-1002,A2-1367,A1 subdeck,stiklinė,Nouns,nouns,2,2954,,7.691,1683
-1003,A2-0762,A1 subdeck,vilkas,Nature,nature,2,2026,2488,7.696,1272
+1002,A2-0995,A1 subdeck,dešinėje,Adverbs,adverbs,2,2114,,7.356,827
+1003,A2-1367,A1 subdeck,stiklinė,Nouns,nouns,2,2954,,7.691,1683
 1004,A2-2003,A1 subdeck,Man šalta. / Man karšta.,Functions,phrases,2,1540,3504,7.668,
-1005,A2-1282,A1 subdeck,kavinė,Nouns,nouns,2,4144,1811,7.698,1539
-1006,A2-1972,A1 subdeck,reikšmė,Nouns,nouns,2,3080,1343,7.701,
-1007,A2-1782,A1 subdeck,vokietis,Nationalities,rest,2,3212,1271,7.704,2126
-1008,A2-1805,A1 subdeck,vėliava,Society,society,2,2434,1977,7.714,2135
-1009,A2-0757,A1 subdeck,višta,Nature,nature,2,2296,,7.739,1305
-1010,A2-0066,A1 subdeck,septyniasdešimt,Numbers,numbers,1,10355,,7.745,608
-1011,245_irankis,A1 subdeck,įrankis,Home,home,2,2343,2327,7.756,370
-1012,378_zudyti,A1 subdeck,žudýti,Verbs,verbs,3,711,,7.767,395
-1013,327_deimantas,A1 subdeck,deimantas,Materials,rest,2,2389,,7.779,440
-1014,005_karve,A1 subdeck,karvė,Animal,animals,2,2119,2903,7.785,226
-1015,A2-0662,A1 subdeck,šviesoforas,Location,places,1,14548,,7.785,1357
-1016,A2-0060,A1 subdeck,devyniolika,Numbers,numbers,1,10808,,7.788,602
-1017,429_piesti,A1 subdeck,piẽšti,Verbs,verbs,2,3281,,7.796,360
-1018,S-0033,sentences,Mergaitė {piešia} gėlę.,Sakiniai,sentences,,,,,
-1019,007_pele,A1 subdeck,pelė,Animal,animals,2,3308,,7.804,345
-1020,386_sauti,A1 subdeck,šáuti,Verbs,verbs,3,325,2546,7.807,396
-1021,491_laisvas,A1 subdeck,laisvas,Adjectives,adjectives,3,453,754,7.820,298
-1022,490_ankstas,A1 subdeck,ankštas,Adjectives,adjectives,3,2537,,9.339,297
-1023,A2-1330,A1 subdeck,puodas,Nouns,nouns,2,3433,,7.841,1653
-1024,A2-1719,A1 subdeck,vakarieniauti,Verbs,verbs,2,3323,,7.809,1873
-1025,A2-0807,A1 subdeck,sakinys,Work & culture,work,2,4806,2094,7.845,1459
-1026,A2-0705,A1 subdeck,braškės,Food,food,1,15466,,7.846,1339
-1027,A2-0706,A1 subdeck,vynuogės,Food,food,1,15544,,7.851,1340
-1028,A2-0635,A1 subdeck,žirklės,Home,home,1,5190,,7.854,2223
-1029,443_pasirasyti,A1 subdeck,pasirašýti,Verbs,verbs,3,980,503,7.821,419
-1030,A2-0067,A1 subdeck,aštuoniasdešimt,Numbers,numbers,1,11567,,7.856,609
-1031,404_praeiti,A1 subdeck,praeĩti,Verbs,verbs,3,911,272,7.831,415
-1032,A2-1152,A1 subdeck,nemokamai,Adverbs,adverbs,2,3510,,7.863,1155
-1033,313_smelis,A1 subdeck,smėlis,Nature,nature,2,2603,,7.864,308
-1034,467_sausas,A1 subdeck,sausas,Adjectives,adjectives,2,4129,2759,7.865,253
-1035,466_slapias,A1 subdeck,šlapias,Adjectives,adjectives,2,3704,,7.917,254
-1036,405_pjauti,A1 subdeck,pjáuti,Verbs,verbs,2,3413,,7.835,329
-1037,196_sekla,A1 subdeck,sėkla,Food,food,2,3297,1867,7.873,277
-1038,052_pastatas,A1 subdeck,pastatas,Location,places,3,952,301,7.898,424
-1039,A2-0788,A1 subdeck,ūkininkas,Work & culture,work,2,5024,1074,7.905,1441
-1040,A2-0477,A1 subdeck,užrakinti,Verbs,verbs,2,2605,,7.865,1405
-1041,278_petys,A1 subdeck,petys,Body,body,2,2822,2596,7.912,303
-1042,399_kasti,A1 subdeck,kàsti,Verbs,verbs,2,2428,3076,7.889,328
-1043,A2-1881,A1 subdeck,mėgstamiausias,Adjectives,adjectives,2,2751,,7.920,
-1044,A2-0704,A1 subdeck,vyšnios,Food,food,1,16676,,7.922,1338
-1045,122_menininkas,A1 subdeck,menininkas,Job,work,2,4098,1560,7.932,348
-1046,A2-1989,A1 subdeck,Ar nori arbatos? / Ar norite arbatos?,Functions,phrases,2,1752,5712,7.941,
-1047,389_uostyti,A1 subdeck,úostyti,Verbs,verbs,2,2680,,7.894,324
-1048,A2-0105,A1 subdeck,nuolaida,Society,society,2,4843,2711,7.953,635
-1049,034_ukis,A1 subdeck,ūkis,Location,places,3,3233,119,7.960,371
-1050,A2-0525,A1 subdeck,nuobodus,Adjectives,adjectives,2,1291,,7.963,2168
-1051,A2-1943,A1 subdeck,apibūdinti,Verbs,verbs,2,3334,2288,7.961,
-1052,A2-0746,A1 subdeck,šaka,Nature,nature,2,4099,1814,7.992,1238
-1053,332_sidabras,A1 subdeck,sidabras,Materials,rest,2,4030,,8.002,444
-1054,A2-1181,A1 subdeck,Gelbėkit!,Phrases,phrases,2,2116,5022,8.003,1184
+1005,A2-0762,A1 subdeck,vilkas,Nature,nature,2,2026,2488,7.696,1272
+1006,A2-1282,A1 subdeck,kavinė,Nouns,nouns,2,4144,1811,7.698,1539
+1007,A2-1972,A1 subdeck,reikšmė,Nouns,nouns,2,3080,1343,7.701,
+1008,A2-1782,A1 subdeck,vokietis,Nationalities,rest,2,3212,1271,7.704,2126
+1009,A2-1805,A1 subdeck,vėliava,Society,society,2,2434,1977,7.714,2135
+1010,A2-0757,A1 subdeck,višta,Nature,nature,2,2296,,7.739,1305
+1011,A2-0066,A1 subdeck,septyniasdešimt,Numbers,numbers,1,10355,,7.745,608
+1012,245_irankis,A1 subdeck,įrankis,Home,home,2,2343,2327,7.756,370
+1013,378_zudyti,A1 subdeck,žudýti,Verbs,verbs,3,711,,7.767,395
+1014,327_deimantas,A1 subdeck,deimantas,Materials,rest,2,2389,,7.779,440
+1015,005_karve,A1 subdeck,karvė,Animal,animals,2,2119,2903,7.785,226
+1016,A2-0662,A1 subdeck,šviesoforas,Location,places,1,14548,,7.785,1357
+1017,A2-0060,A1 subdeck,devyniolika,Numbers,numbers,1,10808,,7.788,602
+1018,429_piesti,A1 subdeck,piẽšti,Verbs,verbs,2,3281,,7.796,360
+1019,S-0033,sentences,Mergaitė {piešia} gėlę.,Sakiniai,sentences,,,,,
+1020,007_pele,A1 subdeck,pelė,Animal,animals,2,3308,,7.804,345
+1021,386_sauti,A1 subdeck,šáuti,Verbs,verbs,3,325,2546,7.807,396
+1022,491_laisvas,A1 subdeck,laisvas,Adjectives,adjectives,3,453,754,7.820,298
+1023,490_ankstas,A1 subdeck,ankštas,Adjectives,adjectives,3,2537,,9.339,297
+1024,A2-1330,A1 subdeck,puodas,Nouns,nouns,2,3433,,7.841,1653
+1025,A2-1719,A1 subdeck,vakarieniauti,Verbs,verbs,2,3323,,7.809,1873
+1026,A2-0807,A1 subdeck,sakinys,Work & culture,work,2,4806,2094,7.845,1459
+1027,A2-0705,A1 subdeck,braškės,Food,food,1,15466,,7.846,1339
+1028,A2-0706,A1 subdeck,vynuogės,Food,food,1,15544,,7.851,1340
+1029,A2-0635,A1 subdeck,žirklės,Home,home,1,5190,,7.854,2223
+1030,443_pasirasyti,A1 subdeck,pasirašýti,Verbs,verbs,3,980,503,7.821,419
+1031,A2-0067,A1 subdeck,aštuoniasdešimt,Numbers,numbers,1,11567,,7.856,609
+1032,404_praeiti,A1 subdeck,praeĩti,Verbs,verbs,3,911,272,7.831,415
+1033,A2-1152,A1 subdeck,nemokamai,Adverbs,adverbs,2,3510,,7.863,1155
+1034,313_smelis,A1 subdeck,smėlis,Nature,nature,2,2603,,7.864,308
+1035,467_sausas,A1 subdeck,sausas,Adjectives,adjectives,2,4129,2759,7.865,253
+1036,466_slapias,A1 subdeck,šlapias,Adjectives,adjectives,2,3704,,7.917,254
+1037,405_pjauti,A1 subdeck,pjáuti,Verbs,verbs,2,3413,,7.835,329
+1038,196_sekla,A1 subdeck,sėkla,Food,food,2,3297,1867,7.873,277
+1039,052_pastatas,A1 subdeck,pastatas,Location,places,3,952,301,7.898,424
+1040,A2-0788,A1 subdeck,ūkininkas,Work & culture,work,2,5024,1074,7.905,1441
+1041,A2-0477,A1 subdeck,užrakinti,Verbs,verbs,2,2605,,7.865,1405
+1042,278_petys,A1 subdeck,petys,Body,body,2,2822,2596,7.912,303
+1043,399_kasti,A1 subdeck,kàsti,Verbs,verbs,2,2428,3076,7.889,328
+1044,A2-1881,A1 subdeck,mėgstamiausias,Adjectives,adjectives,2,2751,,7.920,
+1045,A2-0704,A1 subdeck,vyšnios,Food,food,1,16676,,7.922,1338
+1046,122_menininkas,A1 subdeck,menininkas,Job,work,2,4098,1560,7.932,348
+1047,A2-1989,A1 subdeck,Ar nori arbatos? / Ar norite arbatos?,Functions,phrases,2,1752,5712,7.941,
+1048,389_uostyti,A1 subdeck,úostyti,Verbs,verbs,2,2680,,7.894,324
+1049,A2-0105,A1 subdeck,nuolaida,Society,society,2,4843,2711,7.953,635
+1050,034_ukis,A1 subdeck,ūkis,Location,places,3,3233,119,7.960,371
+1051,A2-0525,A1 subdeck,nuobodus,Adjectives,adjectives,2,1291,,7.963,2168
+1052,A2-1943,A1 subdeck,apibūdinti,Verbs,verbs,2,3334,2288,7.961,
+1053,A2-0746,A1 subdeck,šaka,Nature,nature,2,4099,1814,7.992,1238
+1054,332_sidabras,A1 subdeck,sidabras,Materials,rest,2,4030,,8.002,444
 1055,A2-0791,A1 subdeck,muzikantas,Work & culture,work,2,3740,2204,8.015,1461
 1056,235_spyna,A1 subdeck,spyna,Home,home,2,3085,,8.034,423
 1057,A2-1694,A1 subdeck,pietauti,Verbs,verbs,2,4170,,8.036,1858

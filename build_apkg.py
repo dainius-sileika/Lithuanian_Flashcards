@@ -128,7 +128,8 @@ A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", "audio_a2")
 # Sentence cards (picture + cloze), see a2_build/sentences/design.md
 SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
 SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", "out_deck_sent,images_sent").split(",")
-# Study order (new-card position): study_order.csv, made by build_study_order.py.
+# Study order (new-card position): study_order.csv, made by build_study_order_v2.py
+# (usefulness-first order adopted 2026-10-17; the v1 generator is in deprecated/).
 STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
 
 # IDENTITY — what keeps a learner's history across deck versions:
@@ -141,8 +142,14 @@ STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
 #    (265_lupa now teaches lūpos). A row that moves between note types (picture ↔
 #    cloze) cannot be updated in place — Anki will report a note-type conflict; avoid.
 #  * the study order (`due`) is applied to NEW cards at import; Anki does not move
-#    cards a user already has. Their fix: Browse → select the deck → sort by the
-#    Key/Number field → Cards → Reposition.
+#    cards a user already has (confirmed in its importer source), and the Key/Number
+#    field is the wordlist number, not the study position, so sorting by it and
+#    repositioning only reproduces the wordlist. Owner 2026-10-17: deck coherence
+#    over old study history — the advice to an existing user is simply to delete the
+#    deck and import the new package; the order is not retrofitted onto old
+#    collections, and no field is added to carry it (a new field would be a schema
+#    change: "conflicting" notes on import unless note types are merged, then a
+#    one-way sync).
 
 # Images are stored as WebP in the repo (compact). Some Anki clients/older Qt
 # builds don't render WebP inside cards, so for the importable deck we transcode

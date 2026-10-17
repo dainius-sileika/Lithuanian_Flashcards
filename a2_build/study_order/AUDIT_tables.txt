@@ -1,5 +1,5 @@
 # Audit tables — output of: python3 build_study_order_v2.py --report  (2026-10-17, adopted order after the A1 retag)
-# Positions are in the whole order (A1 subdeck 1–1164, then A2 subdeck). old = study_order.csv before this run (v1), new = the adopted study_order.csv.
+# Positions are in the whole order (A1 subdeck 1–1164, then A2 subdeck). old = study_order.csv before adoption (v1, commit 2ea6462), new = the adopted study_order.csv.
 
 study_order.csv: 2437 rows (1164 A1 subdeck, 1218 A2 subdeck, 55 sentences)
 
@@ -12,16 +12,16 @@ kava              coffee                 8    15    627   2209  T0   A1 subdeck
 pienas            milk                   7    17   1573    950  T0   A1 subdeck
 obuolys           apple                 51    27   2531   None  T0   A1 subdeck
 sriuba            soup                 103    28   2247   None  T0   A1 subdeck
-mėsa              meat                1536   814   1194   1600  T2   A1 subdeck
-bulvė             potato              1549   975   2454   2271  T2   A1 subdeck
+mėsa              meat                1536   819   1194   1600  T2   A1 subdeck
+bulvė             potato              1549   976   2454   2271  T2   A1 subdeck
 batai             shoes                 40    22   1446   4962  T0   A1 subdeck
-kiaulė            pig                  310   970   1554   2118  T2   A1 subdeck
-karvė             cow                  226  1014   2119   2903  T2   A1 subdeck
-pelė              mouse                345  1019   3308   None  T2   A1 subdeck
+kiaulė            pig                  310   975   1554   2118  T2   A1 subdeck
+karvė             cow                  226  1015   2119   2903  T2   A1 subdeck
+pelė              mouse                345  1020   3308   None  T2   A1 subdeck
 šuo               dog                   39    24    347   1181  T0   A1 subdeck
-prezidentas       president            318   848    567    175  T3   A1 subdeck
-teismas           court                372   785    632     76  T3   A1 subdeck
-asmuo             person (formal)      389   934   1250     53  T3   A1 subdeck
+prezidentas       president            318   853    567    175  T3   A1 subdeck
+teismas           court                372   791    632     76  T3   A1 subdeck
+asmuo             person (formal)      389   938   1250     53  T3   A1 subdeck
 branduolinis      nuclear              459  1875   2652   1221  T3   A2 subdeck
 pragaras          hell                 518  1743   1014   None  T3   A2 subdeck
 Labas             hello               1007    41     85   None  T0   A1 subdeck
@@ -32,24 +32,24 @@ aš                I                    470    31      1     16  T0   A1 subdeck
 taip              yes                  472    29     10     40  T0   A1 subdeck
 vienas            one                  584    38     40     61  T0   A1 subdeck
 šiandien          today                555   324    164    391  T0   A1 subdeck
-pirmadienis       Monday               560   415   2211    731  T1   A1 subdeck
+pirmadienis       Monday               560   423   2211    731  T1   A1 subdeck
 galėti            can                  650   130     20     11  T0   A1 subdeck
 kalbėti           speak               1212    39    107    151  T0   A1 subdeck
 suprasti          understand          1217   241     71    265  T0   A1 subdeck
 važiuoti          go (by vehicle)     1476    57    171    710  T0   A1 subdeck
-tualetas          toilet              1557   392    769   2877  T1   A1 subdeck
+tualetas          toilet              1557   399    769   2877  T1   A1 subdeck
 euras             euro                1429   556   3692    581  T0   A1 subdeck
-vaistinė          pharmacy             978   787  10308   2163  T1   A1 subdeck
-višta             hen                 1305  1009   2296   None  T2   A1 subdeck
+vaistinė          pharmacy             978   369  10308   2163  T0   A1 subdeck
+višta             hen                 1305  1010   2296   None  T2   A1 subdeck
 antis             duck                2241  1155   3627   None  T2   A1 subdeck
 
 == Spearman rank correlation of the order with each source (words only) ==
 old order  vs subtitle rank 0.350 (n=2200) | vs press rank 0.141 (n=1379, words in the press top 3000)
-v2 order   vs subtitle rank 0.600 (n=2382) | vs press rank 0.400 (n=1482, words in the press top 3000)
-v2 order vs old order 0.616
+v2 order   vs subtitle rank 0.599 (n=2382) | vs press rank 0.399 (n=1482, words in the press top 3000)
+v2 order vs old order 0.615
 
 == First 100 of the A1 subdeck ==
-žmogus, vyras, moteris, vanduo, duona, batonas, válgyti, gérti, eĩti, didelis, mažas, vaikas, namas, draugas, kava, arbata, pienas, šeima, parduotuvė, dìrbti, miestas, batai, autobusas, šuo, katė, alus, obuolys, sriuba, taip, ne, aš, tu, jis, geras, blogas, pinigai, kaina, vienas, kalbėti, du, Labas, ji, mes, jūs, Ačiū, padėti, duoti, trys, darbas, sakýti, naujas, senas, jie, tai, Prašau, Laba diena, važiuoti, matýti, pirmas, keturi, penki, rytas, grįžti, ranka, mokykla, Atsiprašau…, Viso gero, ràsti, kelias, šimtas, tūkstantis, šeši, tėvas, aukštas, žemas, žiūrė́ti, Iki, Nesuprantu, laukti, gražus, bjaurus, paskutinis, galva, girdė́ti, septyni, naktis, automobilis, Kiek kainuoja?, Kur yra…?, galvóti, mylė́ti, tėvai, sveikas, sergantis, akis, mokė́ti, sūnus, antras, Labas rytas, Labas vakaras
+žmogus, vyras, moteris, vanduo, duona, batonas, válgyti, gérti, eĩti, didelis, mažas, vaikas, namas, draugas, kava, arbata, pienas, šeima, parduotuvė, dìrbti, miestas, batai, autobusas, šuo, katė, alus, obuolys, sriuba, taip, ne, aš, tu, jis, geras, blogas, pinigai, kaina, vienas, kalbėti, du, Labas, ji, mes, jūs, Ačiū, padėti, duoti, trys, darbas, sakýti, naujas, senas, jie, tai, Prašau, Laba diena, važiuoti, matýti, pirmas, keturi, penki, sąskaita, rytas, grįžti, ranka, Atsiprašau…, Viso gero, mokykla, ràsti, šimtas, tūkstantis, šeši, kelias, tėvas, aukštas, žemas, Iki, Nesuprantu, žiūrė́ti, laukti, paskutinis, gražus, bjaurus, galva, girdė́ti, septyni, naktis, Kiek kainuoja?, Kur yra…?, automobilis, galvóti, mylė́ti, tėvai, sveikas, sergantis, akis, mokė́ti, sūnus, Labas rytas, Labas vakaras
 
 == First 100 of the A2 subdeck ==
 kuo*, manyti*, kai kuri*, tokia*, Ir jums! / Ir tau!, Ar galėtumėte man padėti?, pasaulis, pusė, pora, Pusė trijų, oras, pati*, galima*, save*, negalėti*, Imsiu šitą, Negali būti!, kelionė, keltis, keliauti, daina, liga, juos*, taigi*, atvykti*, nebūti*, metras, sportas, Kuo galiu padėti?, Naujieji metai, mókyti, klausti, Be penkių trys, Tai yra*, jiems*, nežinoti*, klausyti*, Penkios po trijų, sirgti, Čia skauda, prekė, rinktis, piktas, muzika, jokia*, sveikata*, labiau*, galimas*, Per didelis. / Per mažas., avarija, Blogai jaučiuosi, laikraštis, alkanas, tvarkyti, komanda, vienąkart*, atsakyti*, jaustis*, paimti*, Eikite tiesiai, pavargęs, data, Kairėje, laimė́ti, lipti, programa, šiek tiek*, rajonas*, narys*, darbo vieta*, Koks oras?, temperatūra, svetainė, autobusų stotis, taurė, užsisakyti, gerklė, gali būti, kad*, tikras*, keisti*, metų laikas*, alio, puiku, garažas, žaidimas, grynieji pinigai, rengtis, banko skyrius, Manau, kad…*, išvykti*, šalia*, abi*, darbo valandos, krūtinė, susipažinti, ambasada, pietūs (pasaulio kryptis), turistas, kilimas, Žinoma, ne*

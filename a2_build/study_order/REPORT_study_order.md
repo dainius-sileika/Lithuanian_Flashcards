@@ -50,3 +50,38 @@ Spearman agreement with subtitles rises 0.35 → 0.55; with press 0.15 → 0.36.
 4. **Keep the 100-card picture gate and the A1→A2 split?** v2 assumes both.
 
 Sources: github.com/hermitdave/FrequencyWords (content/2018/lt/lt_full.txt); github.com/adbar/simplemma; `sources/lt_3000_frequency.csv` (PERLSI, Dadurkevičius 2020); github.com/ankitects/anki rslib/src/import_export/package/apkg/import/{notes,cards}.rs.
+
+## Adopted 2026-10-17
+
+Owner: "adopt the order, yes; don't worry about old studying, it is what it is, deck coherence is more important than whatever studying someone has done with it; retagging words to A1, yes."
+
+Done, in three commits:
+
+- **Retag, 62 items A2 → A1** (`retag_A1.csv`, one reason per row; only the `level` field changed in `cards_anki.csv`, `master_wordlist.csv` and `a2_build/a2_wordlist.csv`, keys and GUIDs untouched): basics / introductions 13 (*Kaip sekasi?, Mano vardas…, Nesuprantu, Ar kalbate angliškai?* …), survival 12 (*Kur yra…?, Norėčiau…, Padėkite!, Gelbėkit!, Aš pasiklydau, vaistinė, vaistai, Kaip nuvykti į…?* …), greetings 9, pronouns 8 (the deck's *aš … jie, tai*), money and price 7 (*pinigai, kaina, kainuoti, sąskaita, Kiek kainuoja?, Sąskaitą prašau, Ar galiu mokėti kortele?*), politeness 6, core verbs 3 (*galvoti, mokytis, mylėti*), yes/no 2, *geras/blogas*. Left at A2 on purpose: *muzika, sportas, daina* (hobby nouns, not in the brief), *mokyti, laimėti*, the P-L "Functions" phrases, *alio, šiaip sau, Sudie*, the time-telling phrases. Numbers 1–10, the question words, the modal verbs and *euras/centas* were already A1 in the list.
+- **The order rebuilt and adopted.** `build_study_order_v2.py` now writes `study_order.csv` (the file `build_apkg.py` reads); `study_order_v2.csv` is gone and `build_study_order.py` is `deprecated/build_study_order_v1.py`, marked superseded. 2,437 rows: 1,164 A1 subdeck, 1,218 A2 subdeck, 55 sentences. Includes the 182 P-L benchmark additions (A2-1863…2045); the 31 `deferred_B1.csv` rows have no position and are not built. Checked against what `build_apkg.py` loads: all 1,555 keys it currently emits have a position, positions are unique, 1…2,437 without gaps. Spearman with subtitles 0.35 → 0.60, with press 0.14 → 0.40. Audit tables: `AUDIT_tables.txt`.
+- **Existing collections:** the `build_apkg.py` identity notes and `anki/templates.md` now say delete and reimport; the order is not retrofitted onto old collections and no field is added to carry it.
+
+### First 60 of the A1 subdeck
+
+žmogus, vyras, moteris, vanduo, duona, batonas, valgyti, gerti, eiti, didelis, mažas, vaikas, namas, draugas, kava, arbata, pienas, šeima, parduotuvė, dirbti, miestas, batai, autobusas, šuo, katė, alus, obuolys, sriuba, taip, ne, aš, tu, jis, geras, blogas, pinigai, kaina, vienas, kalbėti, du, Labas, ji, mes, jūs, Ačiū, padėti, duoti, trys, darbas, sakyti, naujas, senas, jie, tai, Prašau, Laba diena, važiuoti, matyti, pirmas, keturi
+
+### Telling positions (whole order; old = v1 at commit 2ea6462)
+
+| word | old | new | | word | old | new |
+|---|---|---|---|---|---|---|
+| duona | 5 | 5 | | kiaulė | 310 | 975 |
+| alus | 146 | 26 | | karvė | 226 | 1015 |
+| Labas | 1007 | 41 | | prezidentas | 318 | 853 |
+| Ačiū | 1017 | 45 | | teismas | 372 | 791 |
+| Prašau | 1016 | 55 | | asmuo | 389 | 938 |
+| aš | 470 | 31 | | branduolinis | 459 | 1875 (A2) |
+| taip | 472 | 29 | | pragaras | 518 | 1743 (A2) |
+| Kiek kainuoja? | 1035 | 88 | | mėsa | 1536 | 819 |
+| Kur yra tualetas? | 1063 | 127 | | tualetas | 1557 | 399 |
+| vaistinė | 978 | 369 | | euras | 1429 | 556 |
+| kalbėti | 1212 | 39 | | antis | 2241 | 1155 |
+
+### For the owner
+
+- The A2 subdeck now opens with reading cards (*kuo, manyti, kai kuri, tokia*, then *Ir jums!, Ar galėtumėte man padėti?, pasaulis, pusė*) because its picture-card heads moved to A1 and the A2 schedule has no picture-first gate. Harmless for someone who has done 1,164 A1 cards; if you want the A2 subdeck to open on pictures too, set `FIRST_CLOZE` for the A2 block (one line in `schedule()`).
+- *batonas* is in the order (6, after *duona*) but has no picture in this clone, so the builder skips it here; it builds wherever the image exists.

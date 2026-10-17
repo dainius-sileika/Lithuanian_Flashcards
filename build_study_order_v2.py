@@ -251,7 +251,7 @@ T0_WORDS = {"nulis", "vienas", "du", "trys", "keturi", "penki", "šeši", "septy
             "šiandien", "vakar", "rytoj", "dabar", "valanda", "diena", "būti", "turėti", "galėti", "norėti", "reikėti",
             "mano", "tavo", "jo", "jos", "mūsų", "jūsų", "savo", "šis", "tas", "į", "iš", "su", "ir", "bet", "ar",
             "labai", "čia", "ten", "gerai", "dėkui", "kainuoti", "euras", "kalbėti", "suprasti", "žinoti", "gyventi",
-            "mėgti", "patikti", "duoti", "padėti", "važiuoti"}
+            "mėgti", "patikti", "duoti", "padėti", "važiuoti", "gelbėkit", "sąskaita", "vaistinė"}
 T1_CATEGORIES = {"Food", "Beverages", "Home", "Body", "Clothing", "People", "Location", "Transportation", "Travel",
                  "Time", "Numbers", "Health", "Shopping", "Transactions", "Money & admin", "Formulas", "Core patterns",
                  "Modal & core verbs", "Prepositions", "Conjunctions", "Pronouns"}
