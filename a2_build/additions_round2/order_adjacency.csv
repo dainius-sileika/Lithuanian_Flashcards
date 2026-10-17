@@ -1,0 +1,11 @@
+pinned_key,pinned_lithuanian,after_key,anchor (current position),pinned current position,mechanism,note
+A2-1898,mama,082_motina,motina (184),345,PIN_AFTER,"owner: 'consider placing in card order close to other similar cards'. Both are in the A1 block (level A1), so the pin works inside one schedule() call. mama's subtitle rank (103) is far better than motina's (381); the pin places it right after motina rather than ahead of it, which keeps the picture-word before the everyday word. If the owner prefers mama first, swap the pair: PIN_AFTER['082_motina']='A2-1898'."
+A2-1899,tėtis,083_tevas,tėvas (74),209,PIN_AFTER,same reasoning; A1 block.
+081_dukra,dukra,080_sunus,sūnus (98),315,PIN_AFTER,son/daughter pair; both A1 People.
+089_sesuo,sesuo,088_brolis,brolis (157),284,PIN_AFTER,brother/sister pair.
+092_senele,senelė,091_senelis,senelis (297),483,PIN_AFTER,grandfather/grandmother pair; senelė currently 186 positions later.
+A2-0581,teta,A2-0582,dėdė (580),675,PIN_AFTER,uncle/aunt pair; both retagged A1.
+094_zmona,žmona,093_vyras,vyras-husband (619),883,PIN_AFTER,"husband/wife pair; both tier 3 (DEMOTE), same block. SEPARATION on 'vyras' (086 vyras-man at 2) is already satisfied."
+A2-1924,apačia,A2-1923,viršus,—,PIN_AFTER,top/bottom pair from Part A; both A2 block.
+A2-1874,garsiai,A2-1873,tyliai,—,PIN_AFTER,"quietly/loudly cloze pair, A2 block; CLOZE_CAP is bypassed by the pin (put() after the anchor), which is fine for one card."
+A2-1891,vienvietis (kambarys),A2-1890,dvivietis (kambarys),—,PIN_AFTER,single/double room cloze pair.
