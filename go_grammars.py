@@ -222,10 +222,11 @@ NOUN_GRAMMARS = {
         "main": ("Compose the card as exactly TWO equal bordered panels side by "
                  "side, read LEFT to RIGHT, sharing one border weight, background "
                  "and figure scale. THE SAME TWO PEOPLE appear in both panels, "
-                 "identically dressed and at the same scale, so the pair reads as "
-                 "one exchange: the LEFT panel shows the first act, the RIGHT panel "
-                 "shows the answer as a plain visible action or object. Both panels "
-                 "are equally large and legible. No speech bubble in either panel."),
+                 "identically dressed, at the same scale and in the same places, so "
+                 "the pair reads as one exchange seen from one spot: the LEFT panel "
+                 "shows the first act, the RIGHT panel shows the answer as a plain "
+                 "visible action or object. Both panels are equally large and "
+                 "legible. No speech bubble in either panel."),
         "insets": []},
     "chart": {
         "main": ("Compose the card as a calm specimen chart: arrange the "

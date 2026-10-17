@@ -7,6 +7,14 @@ Reusable engine for late-Soviet civil-defense INSTRUCTIONAL WALL CHART art.
 Governing principle (the north star we JUDGE against): **deadpan civic
 procedure** — a technical educational wall chart, not agitprop.
 
+2026-10-17 pilot round 2 (a2_build/pilot_round2/RULES.md): three new rules.
+     CONVERSATION_GAZE_RULE (situation=True, gaze="conversation") swaps the house
+     gaze sentences of lead, GAZE_PAIR_RULE and suffix; ANATOMY_PROPS_RULE replaces
+     ANATOMY_RULE on situation cards; PANEL_CONTINUITY_RULE is appended to EVERY
+     card with insets, a motion strip or panels > 1 (deck-wide, owner's decision).
+     New renders of inset cards are therefore no longer byte-identical to the
+     shipped masters' prompts; the shipped pictures are not re-rendered by this.
+
 2026-10-17: situation=True (bubble-free phrase cards, RESTAGE_PROPOSAL §2(f)):
      NO_TEXT_RULE_SITUATION + NO_BUBBLE_RULE replace NO_TEXT_RULE, and declared
      card_text never names the target. Only the rows of
@@ -124,8 +132,66 @@ MATTE_RULE = 'Every surface is dead-matte, as absorbent offset paper prints it: 
 MAIN_MEANING_RULE = "The main picture alone makes this card's word obvious at a glance: the subject is the largest and most central element, shown in its most recognisable form and in the action that defines it, and the insets only add supporting detail."
 DISTINCT_FACES_RULE = 'Every person in a group is a different individual, with a distinct face, age, build, hair and clothing colour.'
 GAZE_PAIR_RULE = "Of two main figures, one faces the viewer with eyes resting just past the viewer's shoulder and the other looks at the task, at the first figure, or into the scene."
+# 2026-10-17 pilot round 2 (owner): "all the conversation cards need to have the actors
+# looking at each other when they speak, unlike the other, single-panel, cards." Five of
+# the twelve two-panel pilot cards and two single scenes failed on a face turned to the
+# viewer. The prompt asked for it three times (lead, GAZE_PAIR_RULE, suffix). For
+# situation cards whose staging has a speaker (gaze == "conversation") all three are
+# swapped for this rule; non-speaking situation cards (a man patting his pockets, a
+# woman at a calendar, galvoti) keep the house gaze.
+CONVERSATION_GAZE_RULE = (
+    "This is a spoken moment. The person who speaks and the person spoken to look at "
+    "each other, eyes on each other's face, heads turned toward one another; where the "
+    "staging has the speaker look or point at a thing (a clock, a shelf, the rain), the "
+    "listener looks at the speaker or at that thing. Nobody in the picture looks at the "
+    "viewer or toward the camera; no face is turned to the front with eyes past the "
+    "viewer's shoulder. Bystanders look at their own task or at the speakers. A person "
+    "on a telephone looks at the receiver or into the middle distance, never at the "
+    "viewer. In a two-panel picture this holds in both panels."
+)
+# the two gaze sentences of the house style that CONVERSATION_GAZE_RULE replaces; the
+# asserts below fail loudly if a later edit of the lead or suffix changes their wording
+_HOUSE_GAZE_LEAD = ("Heads turn at varied natural angles: in a group most look at their task "
+                    "or at each other and one or two face the viewer, eyes just past the "
+                    "viewer's shoulder; of two main figures only one faces the viewer; a lone "
+                    "figure stands near-frontal, face turned only a little.")
+_HOUSE_GAZE_SUFFIX = ("One or two faces toward the viewer, eyes just past the shoulder; of two "
+                      "main figures only one. ")
+_CONVERSATION_GAZE_LEAD = ("Heads turn toward each other: the people who speak look at one "
+                           "another, the rest at their task; nobody looks at the viewer.")
+_CONVERSATION_GAZE_SUFFIX = "The speakers look at each other; no face toward the viewer. "
+for _lead in (CONCEPT_LEAD, CONCEPT_LEAD_SCENE):
+    assert _HOUSE_GAZE_LEAD in _lead, "house gaze sentence moved in the lead; update _HOUSE_GAZE_LEAD"
+for _suf in (STYLE_SUFFIX, STYLE_SUFFIX_SCENE):
+    assert _HOUSE_GAZE_SUFFIX in _suf, "house gaze sentence moved in the suffix; update _HOUSE_GAZE_SUFFIX"
+
+
+def _conversation_lead(lead, suffix):
+    """The house lead and suffix with their gaze sentences swapped for the conversation
+    ones. Used only when situation=True and gaze == "conversation"."""
+    return (lead.replace(_HOUSE_GAZE_LEAD, _CONVERSATION_GAZE_LEAD),
+            suffix.replace(_HOUSE_GAZE_SUFFIX, _CONVERSATION_GAZE_SUFFIX))
+
+
 ARROW_RULE = 'Any arrow or callout, drawn in solid black ink, points only at the subject the card teaches or at the direction of its motion.'
 SETTING_GUARD = 'People stand inside the place: feet on its ground, scaled to its doors, furniture and vehicles, lit by the same flat light, with the setting continuing behind and between them. The setting stays behind and around the subject and never competes with it.'
+
+# 2026-10-17 pilot round 2 — owner: "all panel cards needs a coherency check to make sure
+# the mise-en-scene between panels remains consistent." 0897 (a man moved behind his
+# companion between panels), 0898 (a door that exists only in the right panel), 0383 (a
+# suitcase in different hands across insets). Appended to EVERY card with more than one
+# panel, a strip, or insets; it binds only where a panel or inset repeats the same scene.
+PANEL_CONTINUITY_RULE = (
+    "Wherever the card shows the same scene more than once - in two or more panels, in a "
+    "strip, or in an inset that repeats the main scene - every repetition is the same "
+    "place seen from a consistent viewpoint: the same people in the same clothes and the "
+    "same relative positions (left stays left, nobody steps in front of or behind another, "
+    "nobody enters or leaves), the same walls, doors, windows, furniture, counters, signs "
+    "and street fixtures in the same places, and every object held by the same person "
+    "unless the staging says it is handed over, and then both hands are on it. Only the "
+    "moment changes: gesture, expression, the step of the action. An inset that shows a "
+    "different place, object or close-up detail is not a repetition and is free."
+)
 
 # 1.7.1: the guessability gate, baked into the prompt so it holds at generation
 # time instead of only at human QA. Applied whenever insets are present.
@@ -148,6 +214,24 @@ ANATOMY_RULE = (
     "Render any human hands with clean, natural anatomy and exactly five "
     "fingers, and render animal paws, hooves and feet cleanly and correctly — "
     "no extra or malformed fingers or toes."
+)
+
+# 2026-10-17 pilot round 2: 0895 (the mother's waving hand on the brother's arm), 0383
+# (a suitcase nobody's hand is actually on), 0900 (a shopkeeper fused into his counter),
+# 0114 (the wrong hand). ANATOMY_RULE only counted fingers. Used in place of it on
+# situation cards; every other card keeps ANATOMY_RULE byte-for-byte.
+ANATOMY_PROPS_RULE = (
+    "Render every human hand with clean natural anatomy and exactly five fingers. Every "
+    "arm and hand belongs to one body and is drawn joined to that body's shoulder: no "
+    "hand floats, no arm crosses from one person onto another, and when two people stand "
+    "close each one's arms stay on their own side. When the staging names a right or left "
+    "hand, that hand and no other performs the action, drawn on the correct side of the "
+    "body as the viewer sees it. An object a person is said to carry, hold or hand over is "
+    "visibly in that person's grip, fingers closed round the handle or the object, its "
+    "weight on that hand. People stand beside, behind or in front of furniture, counters, "
+    "rails and vehicles, never inside or merged with them: a person behind a counter is "
+    "cut off by its top edge and nothing else; a seated person sits on the seat. Faces are "
+    "whole and each face is its own."
 )
 
 # 0.9: flag-only, occasional. No intricate heraldry (it garbles like text did).
@@ -246,11 +330,15 @@ def _label_clause(labels, exclude=""):
 def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
                    inset_note="", text=False, people="worker", extra="",
                    glyph=False, flag="lt", exact_text="", composition="vignette",
-                   staging="", setting="", motion_strip=False, situation=False):
+                   staging="", setting="", motion_strip=False, situation=False,
+                   gaze="default", panels=1):
     """F6.1 assembly order (production_spec_F6_1.json): lead, subject, per-card
     staging, class scene, setting, dress, inset rules, plausibility, arrows,
     text rules, bars, flag, anatomy, extra, suffix."""
     lead, suffix = LEADS.get(composition, LEADS["vignette"])
+    conversation = bool(situation and gaze == "conversation")
+    if conversation:
+        lead, suffix = _conversation_lead(lead, suffix)
     segs = [lead, f"Subject: {subject}."]
     if staging:
         segs.append(staging)
@@ -262,7 +350,7 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
     segs.append(MAIN_MEANING_RULE)
     segs.append(FIGURE_DRESS.get(people, FIGURE_DRESS["worker"]))
     segs.append(DISTINCT_FACES_RULE)
-    segs.append(GAZE_PAIR_RULE)
+    segs.append(CONVERSATION_GAZE_RULE if conversation else GAZE_PAIR_RULE)
     segs.append(NO_STRAY_FIGURE)
     if insets:
         segs.append(inset_note if inset_note else INSET_RULE)
@@ -273,6 +361,8 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
         segs.append(INSET_MEANING_RULE)
         segs.append(NO_CUTAWAY_RULE)
     segs.append(PLAUSIBILITY_RULE)
+    if insets or motion_strip or panels > 1:
+        segs.append(PANEL_CONTINUITY_RULE)
     segs.append(MATTE_RULE)
     segs.append(ARROW_RULE)
     if glyph:
@@ -302,7 +392,7 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
         segs.append(NO_TEXT_RULE)
         segs.append(BARS_RULE)
     segs.append(FLAG_RULES.get(flag, FLAG_RULE))
-    segs.append(ANATOMY_RULE)
+    segs.append(ANATOMY_PROPS_RULE if situation else ANATOMY_RULE)
     if extra:
         segs.append(extra)
     segs.append(suffix)
@@ -348,14 +438,14 @@ def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
                  glyph=False,
                  extra="", backend="openai", flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
-                 motion_strip=False, situation=False):
+                 motion_strip=False, situation=False, gaze="default", panels=1):
     if backend == "openai":
         return _prompt_openai(subject, scene, labels, exclude, insets,
                               inset_note, text, people, extra, glyph=glyph,
                               flag=flag, exact_text=exact_text,
                               composition=composition, staging=staging,
                               setting=setting, motion_strip=motion_strip,
-                              situation=situation)
+                              situation=situation, gaze=gaze, panels=panels)
     return _prompt_zimage(subject, scene, overlays, extra)
 
 
@@ -461,7 +551,7 @@ class GOGenerator:
                  glyph=False,
                  extra="", out_dir=".", filename=None, flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
-                 motion_strip=False, situation=False):
+                 motion_strip=False, situation=False, gaze="default", panels=1):
         prompt = build_prompt(subject, scene=scene, labels=labels,
                               exclude=exclude, insets=insets, inset_note=inset_note,
                               text=text, people=people, overlays=overlays,
@@ -469,7 +559,7 @@ class GOGenerator:
                               flag=flag, exact_text=exact_text,
                               composition=composition, staging=staging,
                               setting=setting, motion_strip=motion_strip,
-                              situation=situation)
+                              situation=situation, gaze=gaze, panels=panels)
         os.makedirs(out_dir, exist_ok=True)
         if filename is None:
             filename = "go_" + hashlib.md5(subject.encode()).hexdigest()[:8] + ".png"

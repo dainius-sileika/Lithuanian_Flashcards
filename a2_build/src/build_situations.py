@@ -11,6 +11,8 @@ Rules:
   - the editorial " Note: ..." tail of a staging line is commentary for the owner,
     not prompt text; it is kept in `note` and dropped from `scene`.
   - merged rows (render "no (merged)") carry `merge_with` and no scene of their own.
+  - `gaze` (2026-10-17 pilot round 2): "conversation" | "default", from the CSV's gaze
+    column, else _default_gaze(): question words and 374 "default", the rest "conversation".
 """
 import csv, os, pprint, re
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -19,6 +21,15 @@ SRC = os.path.join(ROOT, "a2_build", "restage_bubbles.csv")
 OUT = os.path.join(ROOT, "situations.py")
 FORMAT = {"single scene": "situation", "single scene (optional)": "situation",
           "two panels": "situation_2", "three panels": "sequence", "no image": ""}
+
+def _default_gaze(r):
+    """Empty gaze column: phrase, exchange and sentence rows are spoken moments;
+    question-word pictures and 374 galvoti are not, unless the column says so."""
+    src = r["source_file"]
+    if "QUESTION_BUBBLE" in src or "NOUN_STAGING" in src:
+        return "default"
+    return "conversation"
+
 
 sit = {}
 for r in csv.DictReader(open(SRC, encoding="utf-8")):
@@ -34,7 +45,8 @@ for r in csv.DictReader(open(SRC, encoding="utf-8")):
              "scene": staging, "cue": r["distinguishing_cue"].strip(),
              "confusables": [c.strip() for c in r["confusables"].split(";") if c.strip()],
              "merge_with": r["merge_with"].strip(), "render": render, "note": note,
-             "source_file": r["source_file"].strip()}
+             "source_file": r["source_file"].strip(),
+             "gaze": (r.get("gaze") or "").strip() or _default_gaze(r)}
     prev = sit.get(en)
     if prev is None or render.startswith("yes") or not prev["render"].startswith("yes"):
         sit[en] = entry
@@ -52,7 +64,8 @@ with open(OUT, "w", encoding="utf-8") as f:
             '3 IMG + 5 sentence bubble rows, 374 galvoti). Supersedes bubbles.py / bubbles_a2.py,\n'
             'which stay for history only.\n\n'
             'SITUATIONS: english gloss -> {ids, lithuanian, format ("situation" | "situation_2" |\n'
-            '  "sequence" | "" = no image), scene, cue, confusables, merge_with, render, note, source_file}\n'
+            '  "sequence" | "" = no image), scene, cue, confusables, merge_with, render, note, source_file,\n'
+            '  gaze ("conversation" | "default")}\n'
             'BY_ID: card id ("A2-0882", "374", "S-0014") -> english gloss\n"""\n')
     f.write("SITUATIONS = " + pprint.pformat(sit, width=110, sort_dicts=False) + "\n\n")
     f.write("BY_ID = " + pprint.pformat(by_id, width=110) + "\n\n\n")

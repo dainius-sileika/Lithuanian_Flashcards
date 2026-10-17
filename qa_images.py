@@ -80,6 +80,13 @@ Return strict JSON with these keys:
                 garbled or nonsense lettering, malformed hands or faces, duplicated
                 or fused limbs, incoherent objects, elements that contradict each
                 other, or anything a careful reviewer would call an error. [] if none.
+  "coherence":  for a picture with two or more panels, a strip, or an inset that
+                repeats the main scene: {"applies": true, "consistent": true|false,
+                "note": "what differs between the repetitions, one line"} — people,
+                clothes, positions (left/right, front/behind), fixtures and held
+                objects must match; only gesture, expression or step may change.
+                {"applies": false} when no scene is repeated (insets that show a
+                different object, place or close-up do not count).
 """
 
 
@@ -95,6 +102,10 @@ Return strict JSON with these keys:
 #      speech act (handshake, wave, raised palm, bowed head, thumb-up, pointing that
 #      the phrase does not call for) are WARN — the owner judges those on the page.
 # Their cache entries are keyed "<key>:<hash>:sit", so the plain cache is untouched.
+# 2026-10-17 pilot round 2 (a2_build/pilot_round2/RULES.md (d)): the fit call also
+# reports speakers' gaze, two-panel continuity, limb ownership and held props, each a
+# hard FAIL; the base cold read gains "coherence" (every card with repeated scenes).
+# Situation cache keys are now "<key>:<hash>:sit:r2" so round-1 entries are not reused.
 try:
     from situations import SITUATIONS as _SIT, BY_ID as _SIT_ID
 except Exception:
@@ -121,6 +132,7 @@ Judge from the picture alone. Return strict JSON:
 FIT_PROMPT = """You are inspecting an illustration from a language-learning flashcard deck.
 Its English caption is: {caption}
 The detail meant to make the situation unmistakable is: {cue}
+{conversation_line}
 Answer ONLY about what is visible. Return strict JSON:
   "fit":        "yes" | "nearly" | "no" — with the caption, does the picture show
                 the moment this phrase is said?
@@ -129,10 +141,30 @@ Answer ONLY about what is visible. Return strict JSON:
                 DIFFERENT phrase and that this caption does not call for
                 (a handshake, a wave, a raised palm, a bowed head, a thumb-up,
                 a pointing finger, a hand on the chest). [] if none.
-  "two_panels_ok": for a two-panel picture only: true if the same two people
-                appear in both panels at the same scale and the right panel
-                answers the left; null for a single scene.
+  "speakers":   for a picture in which someone speaks or is spoken to: an object
+                {{"look_at_each_other": true|false,
+                  "anyone_at_viewer": true|false,
+                  "note": "who looks where, one line"}};
+                null if nobody in the picture is speaking to anyone.
+  "panels":     for a two-panel picture only: an object
+                {{"same_people": true|false,
+                  "same_positions": true|false,   (left stays left, nobody moved in front of or behind another)
+                  "same_background": true|false,  (same walls, doors, windows, furniture, signs in both)
+                  "props_consistent": true|false, (objects held by the same person in both, unless handed over)
+                  "right_answers_left": true|false,
+                  "note": "what differs, one line"}};
+                null for a single scene.
+  "limbs_ok":   true | false — every arm and hand is attached to the right body
+                (no hand on another person's arm, no floating or shared limb).
+                If false, say which in "limbs_note".
+  "limbs_note": one line, or "".
+  "props_ok":   true | false — every object the caption or cue says is carried or
+                held is visibly in that person's grip; no figure is merged into
+                furniture, a counter or a vehicle. If false, say which in "props_note".
+  "props_note": one line, or "".
 """
+CONVERSATION_LINE = ("In this picture someone speaks to someone else; the deck's rule is that "
+                     "they look at each other and nobody looks at the viewer.")
 
 
 def situation_row(key):
@@ -173,7 +205,9 @@ def describe_situation(client, path, srow):
         nb = _ask(client, path, NEIGHBOUR_PROMPT.format(options="\n".join(f"  - {o}" for o in opts)))
         seen["neighbour"] = nb
         seen["neighbour_options"] = opts
-    seen["fit"] = _ask(client, path, FIT_PROMPT.format(caption=cap, cue=srow.get("cue") or "(none given)"))
+    seen["fit"] = _ask(client, path, FIT_PROMPT.format(
+        caption=cap, cue=srow.get("cue") or "(none given)",
+        conversation_line=(CONVERSATION_LINE if srow.get("gaze", "conversation") == "conversation" else "")))
     return seen
 
 
@@ -209,8 +243,33 @@ def judge_situation(seen, row, srow):
         warns.append(f"cue not visible: {srow.get('cue')}")
     for a in fit.get("stray_acts") or []:
         warns.append(f"stray act: {a}")
-    if fit.get("two_panels_ok") is False and srow.get("format") == "situation_2":
-        warns.append("two panels: people/scale/answer do not match")
+    # 2026-10-17 pilot round 2 — the four owner-flagged defect classes. Each was a
+    # re-roll in the owner's hands, so each is a hard FAIL here, not a WARN; the vision
+    # model's own uncertainty is carried in the note.
+    conv = srow.get("gaze", "conversation") == "conversation"
+    sp = fit.get("speakers")
+    if conv:
+        if not sp:
+            warns.append("gaze: model saw nobody speaking on a conversation card")
+        elif sp.get("anyone_at_viewer") is True:
+            fails.append(f"GAZE: a speaker looks at the viewer ({sp.get('note', '')})")
+        elif sp.get("look_at_each_other") is False:
+            fails.append(f"GAZE: speakers do not look at each other ({sp.get('note', '')})")
+    pn = fit.get("panels") or {}
+    if srow.get("format") == "situation_2":
+        if not pn:
+            warns.append("panels: model did not report on the two panels")
+        else:
+            bad = [k for k in ("same_people", "same_positions", "same_background", "props_consistent")
+                   if pn.get(k) is False]
+            if bad:
+                fails.append(f"CONTINUITY: {', '.join(bad)} ({pn.get('note', '')})")
+            if pn.get("right_answers_left") is False:
+                warns.append(f"two panels: right does not answer left ({pn.get('note', '')})")
+    if fit.get("limbs_ok") is False:
+        fails.append(f"LIMBS: {fit.get('limbs_note') or 'a limb is on the wrong body'}")
+    if fit.get("props_ok") is False:
+        fails.append(f"PROPS: {fit.get('props_note') or 'a carried object is not held / figure merged into furniture'}")
     return fails, warns
 
 
@@ -386,6 +445,9 @@ def judge(seen, row):
         if (seen.get("confidence") or "").lower() == "low":
             warns.append("picture points at no single meaning (low confidence)")
 
+    coh = seen.get("coherence") or {}
+    if coh.get("applies") and coh.get("consistent") is False:
+        fails.append(f"CONTINUITY: {coh.get('note') or 'repeated scene differs between panels/insets'}")
     for p in seen.get("problems", []) or []:
         warns.append(str(p))
 
@@ -414,7 +476,7 @@ def main():
     for f in files:
         path = os.path.join(folder, f)
         key = os.path.splitext(f)[0]
-        ck = f"{key}:{file_hash(path)}" + (":sit" if situation_row(key) else "")
+        ck = f"{key}:{file_hash(path)}" + (":sit:r2" if situation_row(key) else "")
         if ck in cache:
             continue
         todo.append((key, path, ck))
@@ -464,7 +526,7 @@ def main():
     for f in files:
         key = os.path.splitext(f)[0]
         srow = situation_row(key)
-        ck = f"{key}:{file_hash(os.path.join(folder, f))}" + (":sit" if srow else "")
+        ck = f"{key}:{file_hash(os.path.join(folder, f))}" + (":sit:r2" if srow else "")
         seen = cache.get(ck) or errors.get(ck)
         if not seen:
             continue

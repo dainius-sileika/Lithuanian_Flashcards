@@ -89,6 +89,8 @@ def build_situation_call(row):
               setting="", motion_strip=False,
               exact_text=(row.get("card_text") or "").strip(), exclude="",
               flag="lt", situation=True,
+              gaze=s.get("gaze", "conversation"),
+              panels=(2 if fmt == "situation_2" else 3 if fmt == "sequence" else 1),
               filename=f"{(row.get('id') or en).strip()}.png")
     return kw
 
