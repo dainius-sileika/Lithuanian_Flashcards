@@ -16,8 +16,24 @@ A2_IMAGE_DIRS: images_a2/<id>.webp, out_phrases/<id>.png, ...); its CLOZE and PA
 rows become native Anki cloze notes ("Lietuvių GO Cloze") built from example_lt,
 where the {braces} mark the blank — these need no image. Every A2 note is tagged
 with its level, route and phase and goes to the A1/A2 subdeck by its level.
+
+v2.1 (2026-10-17) — standard bands. The drawn red frame of every picture varies a lot in
+thickness (bottom band 4-10 % of the height), so by default the builder trims it off a
+COPY of each picture (frame_crop.py; the sources are never written) and the note types
+redraw the frame in CSS at one fixed width (card_frame.py + anki/frame_standard.css):
+top band = section label, bottom band = "pav. N" · leader · English caption. PT Serif
+and Old Standard TT ship as media (fonts/). Pictures where detection fails fall back
+to a fixed-percentage crop and are listed in build_reports/frame_flags.csv.
+
+    python3 build_apkg.py                    # --frame standard (default)
+    python3 build_apkg.py --frame drawn      # the pictures' own frame, v2.0 templates
+
+Field lists, model ids, deck ids and note GUIDs are unchanged, so v2.1 updates v2.0
+notes in place; only templates, CSS and media differ.
 """
-import genanki, csv, hashlib, os
+import argparse, genanki, csv, hashlib, json, os
+import card_frame
+import frame_crop
 
 CSS = open("anki/go_theme.css", encoding="utf-8").read()
 FRONT = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA</span>'
@@ -34,10 +50,11 @@ BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA<
         '<hr id="answer"><div class="gloss">{{english}}</div></div>'
         '<div class="bar bottom"><span>{{category}}</span><span>{{number}}</span></div></div>')
 
+GO_FIELDS = ['key', 'lithuanian', 'english', 'gender', 'gen_sg',
+             'pres3', 'past3', 'fem', 'number', 'category', 'image', 'audio', 'pron']
 model = genanki.Model(
     1607392913, "Lietuvių GO",
-    fields=[{'name': n} for n in ['key', 'lithuanian', 'english', 'gender', 'gen_sg',
-            'pres3', 'past3', 'fem', 'number', 'category', 'image', 'audio', 'pron']],
+    fields=[{'name': n} for n in GO_FIELDS],
     templates=[{'name': 'Card', 'qfmt': FRONT, 'afmt': BACK}], css=CSS)
 
 # --- A2 cloze note type -----------------------------------------------------
@@ -65,11 +82,40 @@ CLOZE_BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ 
               '{{#Forms}}<div class="forms">{{Forms}}</div>{{/Forms}}'
               '<hr id="answer"><div class="gloss">{{Gloss}}</div></div>'
               '<div class="bar bottom"><span>{{Category}}</span><span>{{Number}}</span></div></div>')
+CLOZE_FIELDS = ['Text', 'SentenceEN', 'Word', 'Pron', 'Gender', 'Forms',
+                'Gloss', 'Number', 'Category', 'Audio', 'Key', 'SentenceAudio', 'Image']
 cloze_model = genanki.Model(
     1607392914, "Lietuvių GO Cloze", model_type=genanki.Model.CLOZE,
-    fields=[{'name': n} for n in ['Text', 'SentenceEN', 'Word', 'Pron', 'Gender', 'Forms',
-            'Gloss', 'Number', 'Category', 'Audio', 'Key', 'SentenceAudio', 'Image']],
+    fields=[{'name': n} for n in CLOZE_FIELDS],
     templates=[{'name': 'Cloze', 'qfmt': CLOZE_FRONT, 'afmt': CLOZE_BACK}], css=CLOZE_CSS)
+
+# --- frame mode (v2.1) ------------------------------------------------------------
+# The module-level FRONT/BACK/CSS above are the "drawn" (v2.0) look; set_frame("standard")
+# swaps the two models' templates and CSS for the standard-bands ones. Same model ids and
+# FIELDS either way: only templates/CSS change, so a re-import updates notes in place.
+FRAME = "standard"
+STD_CSS = card_frame.standard_css(CSS)
+STD_CLOZE_CSS = STD_CSS + CLOZE_CSS[len(CSS):]
+FRAME_FLAGS = []          # [(name, frame_crop.Detection)] collected while transcoding
+
+
+def set_frame(mode):
+    """Point the two models at the drawn (v2.0) or standard-bands (v2.1) templates."""
+    global FRAME
+    if mode not in ("standard", "drawn"):
+        raise SystemExit(f"--frame: expected standard or drawn, got {mode!r}")
+    FRAME = mode
+    if mode == "standard":
+        model.templates = [{'name': 'Card', 'qfmt': card_frame.FRONT, 'afmt': card_frame.BACK}]
+        model.css = STD_CSS
+        cloze_model.templates = [{'name': 'Cloze', 'qfmt': card_frame.CLOZE_FRONT,
+                                  'afmt': card_frame.CLOZE_BACK}]
+        cloze_model.css = STD_CLOZE_CSS
+    else:
+        model.templates = [{'name': 'Card', 'qfmt': FRONT, 'afmt': BACK}]
+        model.css = CSS
+        cloze_model.templates = [{'name': 'Cloze', 'qfmt': CLOZE_FRONT, 'afmt': CLOZE_BACK}]
+        cloze_model.css = CLOZE_CSS
 
 A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
 # Image sources, first hit wins. The A1 deck prefers the F6.2 re-render (out_deck_f62) and
@@ -110,7 +156,7 @@ IMG_FMT = os.environ.get("IMG_FMT", "jpg")
 # inside cards. 1024 px is still more than a card ever displays.
 IMG_WIDTH = int(os.environ.get("IMG_WIDTH", "1024"))
 TMP = "_apkg_media"
-APKG_VERSION = os.environ.get("APKG_VERSION", "2.0")
+APKG_VERSION = os.environ.get("APKG_VERSION", "2.1")   # 2.1 = standard bands; 2.0 packages stay as they are
 # APKG_LEVELS (2026-10-12): build only the listed subdecks into the package, e.g.
 # APKG_LEVELS=A1 and APKG_LEVELS=A2 for two packages under AnkiWeb's 250 MB cap. Model and
 # deck ids are the same constants in both, so Anki merges them under one parent deck
@@ -189,21 +235,40 @@ def versioned_out(path):
 
 
 def media_image(k, src=None):
+    """Transcode (and, in the standard frame, crop) one picture into the media staging
+    folder TMP; returns (path, media file name). The source is only ever read."""
     src = src or find_image(IMAGE_ALIAS.get(k, k), A1_IMAGE_DIRS) or find_image(k, A1_IMAGE_DIRS)
     if not src or not os.path.exists(src):
         return None, None
     ext = "webp" if IMG_FMT == "webp" else "jpg"
-    dst = f"{TMP}/{k}.{ext}"
+    std = FRAME == "standard"
+    # Cropped copies get their own media name: an Anki that already holds the v2.0 file
+    # under <key>.jpg would otherwise keep showing the drawn frame inside the CSS one.
+    name = f"{k}_sf{frame_crop.FRAME_CROP_VERSION}.{ext}" if std else f"{k}.{ext}"
+    dst = f"{TMP}/{name}"
     # The transcode cache is keyed by the SOURCE's content hash (and the
     # settings), recorded in a sidecar. Keyed by filename alone, a re-rolled
-    # card silently shipped its old picture.
-    stamp = f"{_sha1(src)} {ext} {IMG_WIDTH}"
+    # card silently shipped its old picture. The standard frame adds the crop
+    # version and keeps the detection on the sidecar's second line (for the report).
+    stamp = f"{_sha1(src)} {ext} {IMG_WIDTH}" + (f" crop{frame_crop.FRAME_CROP_VERSION}" if std else "")
     side = dst + ".src"
-    cached = (os.path.exists(dst) and os.path.exists(side)
-              and open(side).read().strip() == stamp)
+    det = None
+    cached = False
+    if os.path.exists(dst) and os.path.exists(side):
+        lines = open(side).read().splitlines()
+        cached = bool(lines) and lines[0].strip() == stamp
+        if cached and std:
+            try:
+                det = frame_crop.Detection.from_json(json.loads(lines[1]))
+            except (IndexError, ValueError, TypeError):
+                cached = False
     if not cached:
         from PIL import Image
-        im = Image.open(src).convert("RGB")
+        with Image.open(src) as im0:
+            im = im0.convert("RGB")
+        if std:
+            det = frame_crop.detect_frame(im)          # at the source's own resolution
+            im = frame_crop.crop_framed(im, det)       # a new image; src is untouched
         if IMG_WIDTH and im.width > IMG_WIDTH:
             im = im.resize((IMG_WIDTH, round(im.height * IMG_WIDTH / im.width)),
                            Image.LANCZOS)
@@ -212,8 +277,10 @@ def media_image(k, src=None):
         else:
             im.save(dst, "JPEG", quality=85, optimize=True, progressive=True)
         with open(side, "w") as fh:
-            fh.write(stamp)
-    return dst, f"{k}.{ext}"
+            fh.write(stamp + ("\n" + json.dumps(det.to_json()) if det else ""))
+    if det is not None:
+        FRAME_FLAGS.append((f"{os.path.basename(os.path.dirname(src))}/{k}", det))
+    return dst, name
 
 def cloze_text(example_lt):
     """'Aš {esu} mokytojas.' -> 'Aš {{c1::esu}} mokytojas.' (first braces only; later
@@ -327,7 +394,12 @@ def add_sentence_notes(DECKS, media, order=None):
     return counts
 
 
-def main():
+REPORT_DIR = os.environ.get("REPORT_DIR", "build_reports")
+
+
+def main(frame="standard"):
+    set_frame(frame)
+    FRAME_FLAGS.clear()
     os.makedirs(TMP, exist_ok=True)
     # 1.7.9 — one deck, split into CEFR subdecks. Studying the parent studies
     # everything; clicking A1 or A2 studies just that level. Cards also carry an
@@ -378,6 +450,17 @@ def main():
                     used.update(re.findall(r'src="([^"]+)"', f))
                     used.update(re.findall(r'\[sound:([^\]]+)\]', f))
         media = [m for m in media if os.path.basename(m) in used]
+    if FRAME == "standard":
+        # the fonts are referenced only from the CSS (leading underscore: Anki keeps them)
+        media += [f for f in card_frame.font_media() if f not in media]
+        n_flag = frame_crop.write_reports(FRAME_FLAGS, REPORT_DIR)
+        cats = [(n.fields[9], n.tags) for d in built.values() for n in d.notes if n.model is model] + \
+               [(n.fields[8], n.tags) for d in built.values() for n in d.notes if n.model is cloze_model]
+        missing = card_frame.unmapped(cats)
+        print(f"standard frame: {len(FRAME_FLAGS)} pictures cropped, {n_flag} flagged "
+              f"(fixed-percentage fallback) -> {REPORT_DIR}/frame_flags.csv")
+        if missing:
+            print(f"  categories without a section in card_frame.SECTIONS (shown as is): {missing}")
     out = versioned_out(APKG_OUT)
     pkg = genanki.Package(list(built.values())); pkg.media_files = media
     pkg.write_to_file(out)
@@ -389,4 +472,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    ap = argparse.ArgumentParser(description="Build the Lietuvių Flashcards .apkg")
+    ap.add_argument("--frame", choices=["standard", "drawn"], default="standard",
+                    help="standard: trim the drawn frame off copies of the pictures and redraw "
+                         "it in CSS at one fixed width (default, v2.1); drawn: the pictures' "
+                         "own frame and the v2.0 templates")
+    main(ap.parse_args().frame)

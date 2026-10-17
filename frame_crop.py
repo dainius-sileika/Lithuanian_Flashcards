@@ -67,7 +67,10 @@ class Detection:
                 "left": self.left / self.width, "right": (self.width - self.right) / self.width}
 
     def to_json(self) -> dict:
-        return asdict(self)
+        d = asdict(self)
+        for k in ("width", "height", "top", "bottom", "left", "right"):
+            d[k] = int(d[k])                       # numpy ints are not JSON-serialisable
+        return d
 
     @classmethod
     def from_json(cls, d: dict) -> "Detection":

@@ -1,0 +1,115 @@
+/* ===========================================================================
+   Lietuvių Flashcards — "standard bands" card frame (build_apkg.py --frame standard)
+   Appended after go_theme.css. The drawn red frame is trimmed off a copy of every
+   picture (frame_crop.py) and redrawn here at one fixed width for every card:
+   top band 3.6cqw (section label), bottom band 4.9cqw ("pav. N" · leader · English),
+   side border .7cqw. Colours: band #952f25 (the drawn bands' median is #8f2e24),
+   caption ink #f1e3c6, card cream #ead6b4. Approved mock: band_template4.html.
+   Sizes are container-query units of .sf-card; each one is preceded by a min(vw, px)
+   fallback for clients without container queries (Chromium < 105, Safari < 16).
+   =========================================================================== */
+
+@font-face { font-family: "PT Serif"; font-style: normal; font-weight: 400; src: url("_PTSerif-Regular.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: italic; font-weight: 400; src: url("_PTSerif-Italic.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: normal; font-weight: 700; src: url("_PTSerif-Bold.ttf"); }
+@font-face { font-family: "Old Standard TT"; font-style: normal; font-weight: 400; src: url("_OldStandardTT-Regular.ttf"); }
+
+:root {
+  --sf-red: #952f25;
+  --sf-ink: #f1e3c6;
+  --sf-cream: #ead6b4;
+  /* PT Serif lacks U+0300, U+0303, U+0307 and ĩ ũ ẽ ỹ: Old Standard TT renders those clusters */
+  --sf-body: "PT Serif", "Old Standard TT", Georgia, "Noto Serif", serif;
+  --sf-display: "Old Standard TT", "PT Serif", Georgia, serif;
+}
+
+.card {
+  background: var(--sf-cream);
+  background-image: none;
+  font-family: var(--sf-body);
+}
+.night_mode.card, .card.nightMode, .nightMode .card, .night_mode .card {
+  background: var(--sf-cream); color: var(--ink, #2c2620);
+}
+
+.sf-card {
+  container-type: inline-size;
+  max-width: 720px; margin: 0 auto;
+  text-align: center;
+}
+
+/* the frame: red ground with a very faint print grain (alpha .05) */
+.sf {
+  background-color: var(--sf-red);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  padding: 0 min(.7vw, 5.04px);
+  padding: 0 .7cqw;
+  overflow: hidden;
+}
+
+/* top band: the section, like a manual's running head */
+.sf-top {
+  height: min(3.6vw, 25.92px); height: 3.6cqw;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--sf-ink); white-space: nowrap; overflow: hidden;
+  font-family: var(--sf-display); font-weight: 400; font-variant: small-caps;
+  font-size: min(2.5vw, 18px); font-size: 2.5cqw; line-height: 1;
+  letter-spacing: .32em; opacity: .9;
+}
+.sf-sec::before { opacity: .7; letter-spacing: .12em; margin-right: min(1.4vw, 10px); margin-right: 1.4cqw; }
+.sf-sec::after { content: attr(data-cat); }   /* unmapped category: shown as is */
+
+/* the picture: the cropped copy, edge to edge inside the side borders */
+.sf-pic { line-height: 0; }
+.sf .art, .sf-pic img {
+  display: block; width: 100%; height: auto; margin: 0;
+  border: 0; max-width: none;
+}
+
+/* text panel in place of a picture (cloze notes without one) */
+.sf-panel {
+  background: #efe0c4; color: var(--ink, #2c2620);
+  padding: min(3vw, 22px) min(3vw, 22px) min(2vw, 14px);
+  padding: 3cqw 3cqw 2cqw;
+}
+.sf-panel .cloze-text { margin: 0 0 .35em; }
+.sf-panel .hint { margin: 0; }
+
+/* bottom band: plate number, dotted leader, English caption */
+.sf-bot {
+  height: min(4.9vw, 35.28px); height: 4.9cqw;
+  padding: 0 min(2.6vw, 18.72px); padding: 0 2.6cqw;
+  display: flex; align-items: center; gap: min(1.6vw, 11.52px); gap: 1.6cqw;
+  color: var(--sf-ink); text-align: left;
+}
+.sf-pav {
+  flex: none; white-space: nowrap; opacity: .8;
+  font-family: var(--sf-display); font-weight: 400; font-variant: small-caps; letter-spacing: .1em;
+  font-size: min(2.9vw, 20.88px); font-size: 2.9cqw; line-height: 1;
+}
+.sf-lead {
+  flex: 1 1 4cqw; min-width: min(4vw, 28.8px); min-width: 4cqw;
+  border-bottom: 1px dotted currentColor; opacity: .45;
+  transform: translateY(-.35cqw);
+}
+.sf-en {
+  flex: 0 1 auto; min-width: 0;
+  font-family: var(--sf-body); font-style: italic; font-weight: 400; letter-spacing: .02em;
+  font-size: min(3.8vw, 27.36px); font-size: 3.8cqw; line-height: 1.15;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;   /* no-JS fallback */
+  text-align: right;
+}
+/* long glosses: the fit script shrinks the caption first, then lets it wrap to two lines */
+.sf-en.sf-wrap {
+  white-space: normal; text-overflow: clip; line-height: 1.02;
+  font-size: min(2.2vw, 15.84px); font-size: 2.2cqw;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+  flex: 0 1 auto; max-width: 78%;
+}
+.sf-en:empty { display: none; }
+/* sentence cards: English on the back only (a2_build/sentences/design.md) */
+.sf[data-tags~="SENT"] .sf-en { display: none; }
+
+/* answer side, under the frame */
+.sf-card .answer { padding: 14px 18px 18px; }
+.sf-card > .cloze-text { margin: .8em .6em .3em; }
