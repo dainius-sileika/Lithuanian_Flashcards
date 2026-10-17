@@ -60,7 +60,15 @@ DEFAULT_CLASS = "object"
 
 # classes whose composition is complete in itself — no supporting insets
 NO_INSET_CLASSES = {"attribute", "chart", "question", "sequence",
-                    "utterance", "exchange"}
+                    "utterance", "exchange", "situation", "situation_2"}
+
+# 2026-10-17 (RESTAGE_PROPOSAL §2(a)/(f)): "question", "utterance" and "exchange"
+# are RETIRED — their text stays below for provenance, but route() no longer
+# selects them. Phrase, sentence-pattern and question-word rows route to the
+# bubble-free "situation" (single scene) / "situation_2" (two panels) classes;
+# the per-card format and staging come from situations.py (generated from
+# a2_build/restage_bubbles.csv). "sequence" is kept for the one strip.
+RETIRED_CLASSES = {"question", "utterance", "exchange"}
 
 # category -> dress class for any people on the card.
 # 1.7: population follows the place — Location cards default to civilians
@@ -197,6 +205,28 @@ NOUN_GRAMMARS = {
                  "shares the same border weight, background and figure scale. No "
                  "panel may contain more than one action."),
         "insets": []},
+    # 2026-10-17 — SITUATION (RESTAGE_PROPOSAL §2(a)). With an English caption on
+    # every front, the picture no longer has to make the words guessable; its job
+    # is the situation, and it must never suggest a different phrase. One calm
+    # moment, readable as a silent-film still. Per-card staging from situations.py.
+    "situation": {
+        "main": ("Compose the card as ONE single calm everyday scene, readable like a "
+                 "still from a silent film: the moment is carried entirely by the "
+                 "people, their faces and gestures, the objects they hold and the "
+                 "setting. Show clearly who turns to whom, where, and the thing the "
+                 "moment is about. Only the gestures the staging names; no extra "
+                 "handshake, wave, pointing finger or thumb-up."),
+        "insets": []},
+    # two panels: ask -> visible answer, same two people, no bubble in either panel
+    "situation_2": {
+        "main": ("Compose the card as exactly TWO equal bordered panels side by "
+                 "side, read LEFT to RIGHT, sharing one border weight, background "
+                 "and figure scale. THE SAME TWO PEOPLE appear in both panels, "
+                 "identically dressed and at the same scale, so the pair reads as "
+                 "one exchange: the LEFT panel shows the first act, the RIGHT panel "
+                 "shows the answer as a plain visible action or object. Both panels "
+                 "are equally large and legible. No speech bubble in either panel."),
+        "insets": []},
     "chart": {
         "main": ("Compose the card as a calm specimen chart: arrange the "
                  "named items in an even row or grid, each drawn small, "
@@ -223,15 +253,17 @@ def route(category: str, wtype: str = "N", flags: str = "") -> str:
     f = flags or ""
     if "categoryC" in f:
         return "chart"
-    # 1.9 — the two new uniform-set grammars
+    # 2026-10-17: question / exchange / utterance retired -> situation classes.
+    # (Only rows of a2_build/restage_bubbles.csv reach these branches; the
+    # per-card format there — single scene / two panels — wins over this default.)
     if wtype == "Q" or category == "Question words" or "question" in f:
-        return "question"
+        return "situation"
     if "exchange" in f:
-        return "exchange"          # transactional: ask -> answer
+        return "situation_2"       # transactional: ask -> visible answer
     if "sequence" in f:
         return "sequence"          # time/causality IS the meaning (mostly A2)
     if wtype in ("PHRASE", "SENTENCE"):
-        return "utterance"         # default: one pane, one bubble
+        return "situation"         # default: one calm scene, no bubble
     if wtype == "A":
         return "attribute"
     return class_for(category)

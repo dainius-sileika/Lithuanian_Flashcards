@@ -136,6 +136,10 @@ ABSTRACT_ATTR = {
     374,387,403,414,415,416,427,528,529,
 }
 
+# 2026-10-17: rows of a2_build/restage_bubbles.csv that go through this builder
+# (only 374 galvoti); they get generate(situation=True) — the no-bubble text rule.
+SITUATION_ROWS = {374}
+
 # measurement cards: metric -> EU flag, imperial -> US+UK flags.
 FLAG_OVERRIDE = {334: "eu", 335: "eu", 336: "eu",
                  337: "imperial", 338: "imperial", 339: "imperial"}
@@ -161,12 +165,20 @@ NOUN_STAGING = {
           "floating clearly above and between them against open paper. Draw NO "
           "arrow anywhere; nothing may overlap or cross the heart, which must be "
           "drawn whole, unbroken and complete")},
+    # 2026-10-17 owner decision (PILOT_24 / restage_bubbles.csv): redrawn WITHOUT the
+    # thought bubble, rendered under the situation no-bubble rule (SITUATION_ROWS).
+    # Was: "a person seated with one hand to their chin in thought, a clean empty
+    # thought-bubble rising above their head"; insets Rodin's Thinker + a frowning
+    # person at a desk.
     374: {"subject": "to think", "insets": True,
-          "main": ("a person seated with one hand to their chin in thought, a "
-          "clean empty thought-bubble rising above their head"),
-          "inset_note": ("Include 2 small supporting insets: Rodin's statue "
-          "'The Thinker' seated on its plinth, chin on hand; a person at a desk "
-          "frowning in concentration over a problem.")},
+          "main": ("a man seated at a kitchen table, chin resting in one hand, eyes "
+          "lifted to one side, a pencil and a half-written list in front of him; no "
+          "thought bubble, no lettering. The detail that makes this moment "
+          "unmistakable, clearly visible at small size: chin in hand, eyes away "
+          "from the page."),
+          "inset_note": ("Include 2 small supporting insets: a chess player "
+          "studying the board, hand at chin; a woman pausing with a letter, pen "
+          "raised.")},
     351: {"subject": "the vowels of the alphabet",
           "main": ("the five vowel letters A E I O U standing in one neat "
           "evenly-spaced row across the middle of the card, drawn as bold clean "
@@ -1088,6 +1100,9 @@ def adj_inset_note(english):
 
 
 # ===========================================================================
+# 2026-10-17: QUESTION_BUBBLE / QUESTION_BY_GLOSS are RETIRED (RESTAGE_PROPOSAL
+# §2(f)); the question words are drawn as bubble-free situations from
+# situations.py. Kept for provenance only — nothing imports them any more.
 # 1.9 — QUESTION STAGING. Every question card shares one scene (see the
 # "question" grammar); only the pictogram inside the speech bubble changes.
 # That is what makes the set legible: the learner learns to read the bubble.
@@ -1121,7 +1136,9 @@ QUESTION_BY_GLOSS = {
 # (see the "sequence" grammar). Each entry lists the panels in order; the
 # engine renders them as equal bordered panels joined by arrows.
 # ===========================================================================
-# keyed by English gloss; each value is the ordered list of panels
+# keyed by English gloss; each value is the ordered list of panels.
+# 2026-10-17: only "I need water" is still drawn as a strip (situations.py format
+# "sequence"); the other entries are history.
 SEQUENCE_BY_GLOSS = {
     "I need water": [
         "a person holding an empty glass upside down, looking thirsty",
@@ -1300,7 +1317,7 @@ def build_call(key, r, cls):
         scene = "" if comp == "scene" else SCENE_TAIL.strip()
     if n in FORMAL_ROWS:
         people = "formal"
-    return dict(subject=subject, scene=scene, inset_note=inset_note,
+    kw = dict(subject=subject, scene=scene, inset_note=inset_note,
                 insets=insets, text=False, people=people,
                 composition=comp, staging=CARD_NOTES.get(key, ""),
                 setting=SETTINGS.get(key, ""),
@@ -1313,6 +1330,10 @@ def build_call(key, r, cls):
                 exclude=r["lithuanian_TARGET"].strip(),
                 flag=FLAG_OVERRIDE.get(n, "lt"),
                 filename=f"{key}.png")
+    if n in SITUATION_ROWS:      # only then: every other row's kwargs are unchanged
+        kw["situation"] = True
+        kw["exclude"] = ""
+    return kw
 
 
 def main():

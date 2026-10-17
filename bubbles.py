@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# 2026-10-17: SUPERSEDED by situations.py (bubble-free "situation" staging, a2_build/RESTAGE_PROPOSAL.md).
+# Kept for history only; gen_phrases.py no longer reads UTTER/EXCH.
 # (english gloss) -> (setting, bubble content)   FORMAT A — utterance
 UTTER = {
  # --- formulas: no reply expected ---

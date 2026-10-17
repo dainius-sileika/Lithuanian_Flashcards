@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# 2026-10-17: SUPERSEDED by situations.py (bubble-free "situation" staging, a2_build/RESTAGE_PROPOSAL.md).
+# Kept for history only; gen_phrases.py no longer reads UTTER_A2/EXCH_A2.
 """Bubble content for the A2 phrase cards (Fable, 2026-10-11), same two formats as bubbles.py:
 UTTER (english) -> (setting, bubble content); EXCH (english) -> (setting, left bubble, right-panel answer).
 Appended to bubbles.py by build_a2.py (UTTER.update / EXCH.update) so gen_phrases.py sees them.

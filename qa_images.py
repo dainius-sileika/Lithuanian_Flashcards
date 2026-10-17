@@ -83,6 +83,131 @@ Return strict JSON with these keys:
 """
 
 
+# 2026-10-17 — SITUATION cards (bubble-free restaging, a2_build/RESTAGE_PROPOSAL.md
+# §2(b)). Rows of situations.py get three extra checks on top of rules 1-3:
+#   4. NO BUBBLE: the cold reading also lists every speech/thought bubble or symbol
+#      floating in the air; any one is a hard FAIL (so is any graphic "?" or "!").
+#   5. NEIGHBOUR TEST: a second, still caption-blind call is shown the card's English
+#      caption shuffled among its listed confusables and asked which one the picture
+#      shows; picking a confusable is a hard FAIL.
+#   6. CAPTION FIT / CUE / STRAY ACT: a third call is told the caption and the
+#      distinguishing cue: caption fit "no" is a FAIL; cue not visible and any stray
+#      speech act (handshake, wave, raised palm, bowed head, thumb-up, pointing that
+#      the phrase does not call for) are WARN — the owner judges those on the page.
+# Their cache entries are keyed "<key>:<hash>:sit", so the plain cache is untouched.
+try:
+    from situations import SITUATIONS as _SIT, BY_ID as _SIT_ID
+except Exception:
+    _SIT, _SIT_ID = {}, {}
+
+SIT_PROMPT = PROMPT.rstrip() + """
+  "bubbles":    array describing every speech bubble, thought bubble, balloon,
+                or symbol floating in the air (question marks, exclamation
+                marks, hearts, stars, pictograms, motion icons) that is drawn as
+                a graphic rather than as a real object in the scene. A sign
+                pictogram painted on a real door or signboard is NOT a bubble.
+                [] if none.
+"""
+
+NEIGHBOUR_PROMPT = """You are inspecting an illustration from a language-learning flashcard deck.
+The picture illustrates the everyday situation in which ONE of these phrases is said:
+{options}
+Judge from the picture alone. Return strict JSON:
+  "best":      the option (copied exactly) that the picture fits best,
+  "runner_up": the next best option (copied exactly), or "" if none comes close,
+  "margin":    "clear" | "slight" | "none" — how clearly the best beats the runner-up.
+"""
+
+FIT_PROMPT = """You are inspecting an illustration from a language-learning flashcard deck.
+Its English caption is: {caption}
+The detail meant to make the situation unmistakable is: {cue}
+Answer ONLY about what is visible. Return strict JSON:
+  "fit":        "yes" | "nearly" | "no" — with the caption, does the picture show
+                the moment this phrase is said?
+  "cue_visible": true | false — is the detail above clearly visible?
+  "stray_acts": array of gestures or symbols in the picture that belong to a
+                DIFFERENT phrase and that this caption does not call for
+                (a handshake, a wave, a raised palm, a bowed head, a thumb-up,
+                a pointing finger, a hand on the chest). [] if none.
+  "two_panels_ok": for a two-panel picture only: true if the same two people
+                appear in both panels at the same scale and the right panel
+                answers the left; null for a single scene.
+"""
+
+
+def situation_row(key):
+    """The situations.py entry for an image key ('A2-0882', '374_galvoti'), or None."""
+    en = _SIT_ID.get(key) or _SIT_ID.get(key.split("_")[0])
+    s = _SIT.get(en) if en else None
+    if s and s.get("format") and s.get("render", "").startswith("yes"):
+        return dict(s, english=en)
+    return None
+
+
+def _ask(client, path, text):
+    b = base64.b64encode(open(path, "rb").read()).decode()
+    r = client.responses.create(
+        model=MODEL,
+        input=[{"role": "user", "content": [
+            {"type": "input_text", "text": text},
+            {"type": "input_image", "image_url": f"data:image/png;base64,{b}"}]}],
+    )
+    txt = (r.output_text or "").strip()
+    m = re.search(r"\{.*\}", txt, re.S)
+    if not m:
+        raise ValueError(f"no JSON in reply: {txt[:200]}")
+    return json.loads(m.group(0))
+
+
+def describe_situation(client, path, srow):
+    """Cold read (+ bubbles), then the caption-blind neighbour choice, then the
+    caption-aware fit/cue/stray-act check. One merged dict, cached as one entry."""
+    import random
+    seen = _ask(client, path, SIT_PROMPT)
+    cap = srow["english"]
+    opts = [cap] + [c for c in srow.get("confusables", []) if c and c != cap]
+    if len(opts) > 1:
+        rnd = random.Random(cap)          # stable order per card
+        rnd.shuffle(opts)
+        nb = _ask(client, path, NEIGHBOUR_PROMPT.format(options="\n".join(f"  - {o}" for o in opts)))
+        seen["neighbour"] = nb
+        seen["neighbour_options"] = opts
+    seen["fit"] = _ask(client, path, FIT_PROMPT.format(caption=cap, cue=srow.get("cue") or "(none given)"))
+    return seen
+
+
+def judge_situation(seen, row, srow):
+    """Rules 1-3 as for any card (minus the '?' and guessability rules, which belonged
+    to the bubble grammar), plus rules 4-6 above."""
+    r2 = dict(row); r2["category"] = ""; r2["type"] = ""; r2["flags"] = ""
+    r2["english"] = r2.get("english") or srow["english"]
+    s2 = dict(seen); s2["punctuation"] = []; s2["confidence"] = "high"; s2["guess"] = ""
+    fails, warns = judge(s2, r2)
+    for b in seen.get("bubbles") or []:
+        fails.append(f"BUBBLE/FLOATING SYMBOL: {b}")
+    for p in seen.get("punctuation") or []:
+        if p.strip():
+            fails.append(f"floating punctuation {p!r}")
+    nb = seen.get("neighbour") or {}
+    best = (nb.get("best") or "").strip()
+    if best and best != srow["english"] and best in (srow.get("confusables") or []):
+        fails.append(f"NEIGHBOUR TEST: reads as {best!r} (margin {nb.get('margin', '?')})")
+    elif best == srow["english"] and (nb.get("margin") or "") == "none":
+        warns.append(f"neighbour test: no margin over {nb.get('runner_up')!r}")
+    fit = seen.get("fit") or {}
+    if (fit.get("fit") or "").lower() == "no":
+        fails.append("caption fit: no")
+    elif (fit.get("fit") or "").lower() == "nearly":
+        warns.append("caption fit: nearly")
+    if fit.get("cue_visible") is False:
+        warns.append(f"cue not visible: {srow.get('cue')}")
+    for a in fit.get("stray_acts") or []:
+        warns.append(f"stray act: {a}")
+    if fit.get("two_panels_ok") is False:
+        warns.append("two panels: people/scale/answer do not match")
+    return fails, warns
+
+
 def plain(s):
     """Lowercase, strip stress marks — so 'kodėl' and 'kodė́l' compare equal."""
     s = (s or "").replace("i̇", "i")
@@ -283,7 +408,7 @@ def main():
     for f in files:
         path = os.path.join(folder, f)
         key = os.path.splitext(f)[0]
-        ck = f"{key}:{file_hash(path)}"
+        ck = f"{key}:{file_hash(path)}" + (":sit" if situation_row(key) else "")
         if ck in cache:
             continue
         todo.append((key, path, ck))
@@ -305,7 +430,8 @@ def main():
     hard_stop = False
     if todo:
         ex = ThreadPoolExecutor(max_workers=int(os.environ.get("QA_WORKERS", "8")))
-        futs = {ex.submit(describe, client, p): (k, ck) for k, p, ck in todo}
+        futs = {(ex.submit(describe_situation, client, p, situation_row(k)) if situation_row(k)
+                 else ex.submit(describe, client, p)): (k, ck) for k, p, ck in todo}
         for fut in as_completed(futs):
             k, ck = futs[fut]
             try:
@@ -331,13 +457,16 @@ def main():
     rows, nfail, nwarn = [], 0, 0
     for f in files:
         key = os.path.splitext(f)[0]
-        ck = f"{key}:{file_hash(os.path.join(folder, f))}"
+        srow = situation_row(key)
+        ck = f"{key}:{file_hash(os.path.join(folder, f))}" + (":sit" if srow else "")
         seen = cache.get(ck) or errors.get(ck)
         if not seen:
             continue
         row = meta.get(key.split("_")[0]) or meta.get(key) or {}
         if seen.get("error"):
             fails, warns = [f"QA error: {seen['error']}"], []
+        elif srow:
+            fails, warns = judge_situation(seen, row, srow)
         else:
             fails, warns = judge(seen, row)
         status = "FAIL" if fails else ("WARN" if warns else "PASS")
@@ -347,7 +476,9 @@ def main():
         rows.append({"key": key, "word": word, "status": status,
                      "fails": " | ".join(fails), "warnings": " | ".join(warns),
                      "guess": seen.get("guess", ""),
-                     "lettering": " | ".join(seen.get("lettering") or [])})
+                     "lettering": " | ".join(seen.get("lettering") or []),
+                     "neighbour": ((seen.get("neighbour") or {}).get("best", "") if srow else ""),
+                     "fit": ((seen.get("fit") or {}).get("fit", "") if srow else "")})
         if status != "PASS":
             print(f"  {status}  {key:12} {word[:22]:24} {' | '.join(fails + warns)[:80]}")
 
@@ -355,7 +486,8 @@ def main():
     if out_csv:
         with open(out_csv, "w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, fieldnames=["key", "word", "status", "fails",
-                                               "warnings", "guess", "lettering"])
+                                               "warnings", "guess", "lettering",
+                                               "neighbour", "fit"])
             w.writeheader()
             w.writerows(rows)
         print(f"report -> {out_csv}")

@@ -1,54 +1,99 @@
 # -*- coding: utf-8 -*-
-"""gen_phrases.py — generation driver for the question / phrase / sentence cards.
+"""gen_phrases.py — generation driver for the phrase / question-word / sentence-pattern cards.
 
-These cards are the first in the deck to carry speech bubbles, and the bubble is
-what broke the no-text rule that had held for 520 cards. Two lessons are baked in
-here:
+2026-10-17 — BUBBLE-FREE "SITUATION" GRAMMAR (a2_build/RESTAGE_PROPOSAL.md §2(f), PILOT_24.md).
+With an English caption on every front, the picture no longer has to make the words guessable:
+its job is the situation. Every row is now routed by `situations.py` (generated from
+a2_build/restage_bubbles.csv) to one of three layouts:
 
-  1. NEVER PUT A CONDITION IN A PROMPT. The first version asked for a question
-     mark "only if the phrase is a question". The model ignored the condition and
-     drew one on all nine non-question cards — *Cheers!*, *Welcome!*, *Of course*
-     all ended up interrogative. Python decides; the prompt only ever states.
+    situation     one calm scene, no bubble (default)
+    situation_2   two panels, ask -> visible answer, same two people, no bubble in either
+    sequence      the one three-panel strip (I need water)
 
-  2. A TEXT EXCEPTION SUSPENDS THE NO-TEXT RULE. Passing any `exact_text` swaps
-     out the strong NO_TEXT_RULE, which is why the Lithuanian target started
-     appearing in bubbles. Cards that need no lettering now pass exact_text=""
-     so the proven rule governs them. `exclude` names the target as forbidden
-     only where lettering is permitted; wordless cards never name it, because
-     naming a forbidden thing primes it.
+Changes against the bubble version (kept in git history; bubbles.py UTTER/EXCH stay for history):
+  - no QMARK, no is_question branching: nothing is ever drawn inside a bubble, so no "?";
+  - text=False always; exact_text only for a row's declared object lettering (card_text);
+  - `exclude` is no longer passed (naming the forbidden word primes it; the no-text rule covers it);
+  - generate(..., situation=True) swaps NO_TEXT_RULE for NO_TEXT_RULE_SITUATION + NO_BUBBLE_RULE;
+  - question-word rows DO get a picture (owner 2026-10-17, PILOT_24 supersedes §2(c));
+  - merged rows (render "no (merged)") are skipped: they share their partner's image.
 
-    python3 gen_phrases.py [count] [budget_seconds]
-    A2_LIST=a2_build/a2_wordlist.csv python3 gen_phrases.py 8 60   # the A2 list's phrase rows
+The two lessons of the bubble version still hold: never put a condition in a prompt (Python
+decides; the prompt only states), and a text exception suspends the no-text rule, so only
+rows with declared card_text get one.
+
+    python3 gen_phrases.py [count] [budget_seconds]                  # A1 phrase pack (wordlist_a2_pending)
+    A2_LIST=a2_build/a2_wordlist.csv python3 gen_phrases.py 8 60      # the A2 list's phrase rows
+    PHRASES_OUT=out_phrases_v3 (default) — never over the bubble renders in out_phrases*/
+
+The production driver for the pilot / roll-out is out_phrases_v3/gen.py, which imports
+build_situation_call() from here so both paths build the same prompt.
 """
-import csv, os, sys, time
+import csv, os, re, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from go_generator import GOGenerator
 from go_grammars import NOUN_GRAMMARS, SCENE_TAIL
 import deck_builder as db
-from bubbles import UTTER, EXCH
+from situations import SITUATIONS, BY_ID
 
-# PHRASES_OUT=out_phrases_a2 renders into a new folder (owner rule 2026-10-11:
-# version-track, never overwrite — the A2 list's phrase rows go beside, not into,
-# the shipped out_phrases/)
-OUT = os.environ.get("PHRASES_OUT", "out_phrases")
-os.makedirs(OUT, exist_ok=True)
-
-# The only lettering ever permitted on these cards: a lone question mark, on
-# cards that really are questions. Stated unconditionally or not at all.
-QMARK = ('one single bold question mark "?" drawn as a graphic symbol inside '
-         'the speech bubble, and nothing else whatsoever.')
+OUT = os.environ.get("PHRASES_OUT", "out_phrases_v3")
 
 
-# Decided from the data, never delegated to the model. Defined in qa_images so
-# the generator and the QA gate share one definition of "question".
-from qa_images import is_question
+def situation_for(row):
+    """The SITUATIONS entry for a wordlist row (by id first, then by English gloss)."""
+    en = BY_ID.get((row.get("id") or "").strip()) or (row.get("english") or "").strip()
+    return en, SITUATIONS.get(en)
+
+
+def _split_insets(scene):
+    """'… ; no bubble. Insets: a; b' -> ('…; no bubble', 'a; b')."""
+    m = re.search(r"\s*Insets?:\s*(.*)$", scene)
+    if not m:
+        return scene, ""
+    return scene[:m.start()].rstrip(" .;"), m.group(1).strip().rstrip(".")
+
+
+def build_situation_call(row):
+    """kwargs for GOGenerator.generate() for one restaged row, or None if the row gets
+    no picture of its own (merged / no image). `row` needs id, english, and optionally
+    type/category/card_text (the A2 list's columns)."""
+    en, s = situation_for(row)
+    if not s or not s["format"] or not s["render"].startswith("yes"):
+        return None
+    scene, insets = _split_insets(s["scene"])
+    fmt = s["format"]
+    is_q = (row.get("category") == "Question words" or (row.get("type") or "").upper() == "Q")
+    subject = (f"the everyday moment that calls for the question word '{en}'" if is_q
+               else f"the everyday moment when someone says '{en}'")
+    if row.get("route") == "IMG":      # the 3 IMG rows (ask, speak, question): their old
+        subject = f"the everyday act named by the word '{en}'"   # subject phrase names a bubble
+    if fmt == "sequence":
+        panels = db.SEQUENCE_BY_GLOSS.get(en) or [p.strip() for p in scene.split(";") if p.strip()]
+        # the strip's numbered circles would be lettering; this card is wordless
+        main = (NOUN_GRAMMARS["sequence"]["main"].replace(
+                    " Number the panels in small plain circles in their upper-left corners.", "")
+                + " The panels, in order: "
+                + "; ".join(f"({i + 1}) {p}" for i, p in enumerate(panels))
+                + ". No speech bubble in any panel." + SCENE_TAIL)
+        staging = ""
+    else:
+        main = NOUN_GRAMMARS[fmt]["main"] + SCENE_TAIL
+        staging = f"Staging: {scene}."
+    if s["cue"]:
+        staging += f" The detail that makes this moment unmistakable, clearly visible at small size: {s['cue']}."
+    kw = dict(subject=subject, scene=main, staging=staging.strip(), insets=bool(insets),
+              inset_note=(f"Include 2 small supporting insets: {insets}." if insets else ""),
+              text=False, people="civilian", glyph=False, composition="vignette",
+              setting="", motion_strip=False,
+              exact_text=(row.get("card_text") or "").strip(), exclude="",
+              flag="lt", situation=True,
+              filename=f"{(row.get('id') or en).strip()}.png")
+    return kw
 
 
 def main():
-    # A2_LIST=a2_build/a2_wordlist.csv renders every PHRASE row of the A2 list instead
-    # (ids are the same A2-#### keys, so out_phrases/ stays one folder). Default unchanged.
     a2_list = os.environ.get("A2_LIST")
     if a2_list:
         rows = [r for r in csv.DictReader(open(a2_list, encoding="utf-8"))
@@ -57,7 +102,7 @@ def main():
         rows = [r for r in csv.DictReader(open("wordlist_a2_pending.csv", encoding="utf-8"))
                 if r["status"] == "pending" and r["level"] == "A1"
                 and (r["category"] == "Question words" or r["phase"] == "P-G")]
-
+    os.makedirs(OUT, exist_ok=True)
     gen = GOGenerator(backend="openai", ratio="4:3")
     N = int(sys.argv[1]) if len(sys.argv) > 1 else 4
     BUD = float(sys.argv[2]) if len(sys.argv) > 2 else 38
@@ -65,45 +110,17 @@ def main():
 
     jobs = []
     for r in rows:
-        key, en = r["id"], r["english"]
-        if os.path.exists(f"{OUT}/{key}.png"):
+        kw = build_situation_call(r)
+        if kw is None or os.path.exists(f"{OUT}/{kw['filename']}"):
             continue
         if len(jobs) >= N:
             break
+        jobs.append((r["id"], r["english"], kw))
 
-        q = is_question(r)
-        if r["category"] == "Question words":
-            bub = db.QUESTION_BUBBLE.get(db.QUESTION_BY_GLOSS.get(en, ""), "")
-            if not bub:
-                continue
-            scene = (NOUN_GRAMMARS["question"]["main"]
-                     + " The pictogram inside the bubble is " + bub + "." + SCENE_TAIL)
-            subj = f"the question word {en.upper()}"
-        elif en in EXCH:
-            setting, left, right = EXCH[en]
-            scene = (NOUN_GRAMMARS["exchange"]["main"] + f" The setting is {setting}. "
-                     f"The LEFT panel's bubble contains {left}. The RIGHT panel shows "
-                     f"{right}." + SCENE_TAIL)
-            subj = f"the phrase '{en}'"
-        elif en in UTTER:
-            setting, bub = UTTER[en]
-            scene = (NOUN_GRAMMARS["utterance"]["main"] + f" The setting is {setting}. "
-                     f"Inside the bubble, and nowhere else, place {bub}." + SCENE_TAIL)
-            subj = f"the phrase '{en}'"
-        else:
-            continue
-
-        jobs.append((key, en, subj, scene, q,
-                     r.get("lithuanian_TARGET", "").strip(" .!?")))
-
-    # Generation is ~16 s a card and entirely network-bound, so run a pool —
-    # serial batches could not fit enough cards inside the sandbox time limit.
     def run(job):
-        key, en, subj, scene, q, target = job
-        gen.generate(subject=subj, scene=scene, insets=False, text=False,
-                     people="civilian", exact_text=(QMARK if q else ""),
-                     exclude=target, out_dir=OUT, filename=f"{key}.png")
-        return key, en, q
+        key, en, kw = job
+        gen.generate(out_dir=OUT, **kw)
+        return key
 
     done = 0
     # Tier 1 allows 5 images/minute; raise GO_WORKERS on a higher tier.
@@ -112,15 +129,14 @@ def main():
         for fut in as_completed(futs):
             key, en = futs[fut][0], futs[fut][1]
             try:
-                _, _, q = fut.result()
+                fut.result()
                 done += 1
-                print(f"  {key} {en[:34]:36} {'question' if q else 'statement'}")
+                print(f"  {key} {en[:40]}")
             except Exception as e:
                 print(f"  {key}: FAIL {str(e)[:70]}")
             if time.time() - t0 > BUD:
                 print("  budget reached — rerun to continue")
                 break
-
     total = len([f for f in os.listdir(OUT) if f.endswith('.png')])
     print(f"generated {done} | total {total}/{len(rows)}")
 

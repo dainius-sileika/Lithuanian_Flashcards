@@ -7,6 +7,11 @@ Reusable engine for late-Soviet civil-defense INSTRUCTIONAL WALL CHART art.
 Governing principle (the north star we JUDGE against): **deadpan civic
 procedure** — a technical educational wall chart, not agitprop.
 
+2026-10-17: situation=True (bubble-free phrase cards, RESTAGE_PROPOSAL §2(f)):
+     NO_TEXT_RULE_SITUATION + NO_BUBBLE_RULE replace NO_TEXT_RULE, and declared
+     card_text never names the target. Only the rows of
+     a2_build/restage_bubbles.csv pass it; every other prompt is unchanged.
+
 1.7.1: INSET_MEANING_RULE bakes the 1.7 guessability QA gate into the prompt
      itself — every inset must SUPPORT recognition of the subject; at worst it
      must stay attractive and on-theme; it must NEVER depict something mistakable
@@ -176,6 +181,19 @@ NO_TEXT_RULE = (
     "bubble may contain a drawn picture or symbol, but never a written word, "
     "letter, or punctuation mark in any language."
 )
+# 2026-10-17 (RESTAGE_PROPOSAL §2(f)): the bubble-free "situation" cards. Used ONLY
+# when generate(..., situation=True) — i.e. for the rows of a2_build/restage_bubbles.csv
+# (situations.py). Every other card keeps NO_TEXT_RULE above byte-for-byte. The
+# situation variant drops the sentence that licensed pictures inside bubbles and adds
+# one positive sentence: there are no bubbles at all.
+NO_TEXT_RULE_SITUATION = (
+    "Render NO text, NO lettering, NO numbers, NO words, NO labels and NO "
+    "captions anywhere in the image — no leader-line labels, no writing in any "
+    "panel, on any flag, sign, or object, and none in the header or footer "
+    "bands. Any area that would normally hold text must be left completely blank."
+)
+NO_BUBBLE_RULE = ("No speech bubbles, thought bubbles or floating symbols of any kind; "
+                  "meaning is carried by people, gestures, objects and setting.")
 GLYPH_RULE = (
     "The ONLY lettering permitted is the one single large letter that is "
     "itself the subject of this card, drawn once as a bold display letterform. "
@@ -228,7 +246,7 @@ def _label_clause(labels, exclude=""):
 def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
                    inset_note="", text=False, people="worker", extra="",
                    glyph=False, flag="lt", exact_text="", composition="vignette",
-                   staging="", setting="", motion_strip=False):
+                   staging="", setting="", motion_strip=False, situation=False):
     """F6.1 assembly order (production_spec_F6_1.json): lead, subject, per-card
     staging, class scene, setting, dress, inset rules, plausibility, arrows,
     text rules, bars, flag, anatomy, extra, suffix."""
@@ -259,6 +277,16 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
     segs.append(ARROW_RULE)
     if glyph:
         segs.append(GLYPH_RULE)
+        segs.append(BARS_RULE)
+    elif situation and exact_text:
+        # declared object lettering (a sign, a clock face, a ticket) on a
+        # bubble-free situation card; the target is never named (no exclude)
+        segs.append(_exact_text_rule(exact_text))
+        segs.append(NO_BUBBLE_RULE)
+        segs.append(BARS_RULE)
+    elif situation:
+        segs.append(NO_TEXT_RULE_SITUATION)
+        segs.append(NO_BUBBLE_RULE)
         segs.append(BARS_RULE)
     elif exact_text:
         segs.append(_exact_text_rule(exact_text, exclude))
@@ -320,13 +348,14 @@ def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
                  glyph=False,
                  extra="", backend="openai", flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
-                 motion_strip=False):
+                 motion_strip=False, situation=False):
     if backend == "openai":
         return _prompt_openai(subject, scene, labels, exclude, insets,
                               inset_note, text, people, extra, glyph=glyph,
                               flag=flag, exact_text=exact_text,
                               composition=composition, staging=staging,
-                              setting=setting, motion_strip=motion_strip)
+                              setting=setting, motion_strip=motion_strip,
+                              situation=situation)
     return _prompt_zimage(subject, scene, overlays, extra)
 
 
@@ -432,14 +461,15 @@ class GOGenerator:
                  glyph=False,
                  extra="", out_dir=".", filename=None, flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
-                 motion_strip=False):
+                 motion_strip=False, situation=False):
         prompt = build_prompt(subject, scene=scene, labels=labels,
                               exclude=exclude, insets=insets, inset_note=inset_note,
                               text=text, people=people, overlays=overlays,
                               glyph=glyph, extra=extra, backend=self.backend,
                               flag=flag, exact_text=exact_text,
                               composition=composition, staging=staging,
-                              setting=setting, motion_strip=motion_strip)
+                              setting=setting, motion_strip=motion_strip,
+                              situation=situation)
         os.makedirs(out_dir, exist_ok=True)
         if filename is None:
             filename = "go_" + hashlib.md5(subject.encode()).hexdigest()[:8] + ".png"
