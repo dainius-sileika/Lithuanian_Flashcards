@@ -1,21 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""build_study_order_v2.py — a usefulness-first learning order, written to study_order_v2.csv.
+"""build_study_order_v2.py — the learning order of the deck, written to study_order.csv.
 
-    python3 build_study_order_v2.py                 # writes study_order_v2.csv
+    python3 build_study_order_v2.py                 # regenerates study_order.csv
     python3 build_study_order_v2.py --report        # also prints the audit tables
     python3 build_study_order_v2.py --rebuild-subs <lt_full.txt>
                                                     # re-derives the subtitle lemma list
 
-A proposal next to build_study_order.py; it touches no existing file. To adopt it,
-point build_apkg.py at it:  STUDY_ORDER=study_order_v2.csv python3 build_apkg.py
+Adopted 2026-10-17 (owner: "adopt the order, yes; deck coherence is more important than
+whatever studying someone has done with it"). build_apkg.py reads study_order.csv and
+gives every note its `order` as the new-card position (Anki's `due`), so a fresh import
+studies the deck in this sequence. Keys and GUIDs never change; only the position does.
+The previous generator is deprecated/build_study_order_v1.py; the previous order is in
+git (study_order.csv before this date). Re-running overwrites study_order.csv, so put
+lasting rules in the lists below, not in the CSV.
 
 WHY A V2
-  v1 orders A1 well (utility lists per category, unit mixing) but stacks the rest
-  phase by phase: all of P-A, then P-B, ... so "Labas" (P-D) is card ~1007, the
+  v1 ordered A1 well (utility lists per category, unit mixing) but stacked the rest
+  phase by phase: all of P-A, then P-B, ... so "Labas" (P-D) was card ~1007, the
   core verbs kalbėti/žinoti (P-F) ~1210, mėsa (P-H) ~1536, and the A2 subdeck
-  opens with the Fluent Forever "Society" leftovers (pragaras, žmogžudystė,
-  branduolinis) because the 93 A2-tagged deck cards come before the A2 list.
+  opened with the Fluent Forever "Society" leftovers (pragaras, žmogžudystė,
+  branduolinis) because the 93 A2-tagged deck cards came before the A2 list.
   Neither frequency corpus can fix this on its own: press (PERLSI/Dadurkevičius
   2020) ranks teismas 76 and duona 1992; film subtitles rank prezidentas 567 and
   duona 2044. Bread never beats president by counting, so a judged utility tier
@@ -36,10 +41,12 @@ THE SCORE  (lower = earlier)
   * tier: T0 survival. For the deck's own cards this is a hand-ORDERED list
     (SURVIVAL: žmogus, vyras, moteris, vaikas, vanduo, duona, kava ... eat, drink,
     go, big/small, good/bad, yes/no, the pronouns) placed first in that order;
-    counting cannot put bread before president, so the first ~30 words are judged
-    outright. For the A2 list T0 (−3.0) covers greetings, politeness, yes/no,
-    question words, 0–10, today/tomorrow/yesterday/now, the modal verbs, money,
-    price, the "getting by" phrases. T1 daily (−1.5): food & drink, home, body, clothing, people, places,
+    counting cannot put bread before president, so the first ~40 words are judged
+    outright. The greetings and getting-by phrases are likewise a hand-ordered list
+    (SURVIVAL_PHRASES), fed in from position FIRST_PHRASE on. For the A2 list T0
+    (−3.0) covers greetings, politeness, yes/no, question words, 0–10,
+    today/tomorrow/yesterday/now, the modal verbs, money, price, the "getting by"
+    phrases. T1 daily (−1.5): food & drink, home, body, clothing, people, places,
     transport, time, numbers, health, shopping, the v1 CORE lists. T2 (0): the
     rest. T3 demoted (+1.5): v1 DEMOTE (asmuo, teismas, prezidentas, auka ...) and
     the abstract Society leftovers; +1.0 for "Extended patterns" (conditionals,
@@ -47,7 +54,10 @@ THE SCORE  (lower = earlier)
     frequency" shelf). Tier lists are judged; edit them freely, they are the point.
 
 THE SCHEDULE  (per subdeck: the A1 subdeck first, then the A2 subdeck)
-  Cards are placed greedily by score, best eligible first, under these rules:
+  Which subdeck a card belongs to is the `level` column of cards_anki.csv and of the
+  A2 list (a2_build/study_order/retag_A1.csv records the 62 survival items moved to
+  A1 on 2026-10-17). Cards are placed greedily by score, best eligible first, under
+  these rules:
   1. Mixing: at most LANE_CAP (3) cards of the same lane (people, food, verbs,
      function words, phrases ...) in any trailing WINDOW (10). Frequency drives,
      mixing only throttles — unlike v1's fixed quota per unit, which forced one
@@ -66,10 +76,12 @@ THE SCHEDULE  (per subdeck: the A1 subdeck first, then the A2 subdeck)
   6. Pinned neighbours: 531_batonas directly after 182_duona.
   7. Sentence cards go right after the last of their words (as v1), but not before
      the cloze gate (rule 2).
+  Rows in a2_build/deferred_B1.csv are no longer in the A2 list, so they get no
+  position; build_apkg.py does not emit them either.
 
 Output columns: order, key, block, lithuanian, category, lane, tier, sub_rank,
-press_rank (blank when outside the press top 3000), score, old_order (position in
-study_order.csv, for the comparison).
+press_rank (blank when outside the press top 3000), score, old_order (the key's
+position in the study_order.csv this run replaces, for the comparison).
 """
 import csv, math, os, re, sys, unicodedata
 from collections import defaultdict, OrderedDict
@@ -78,7 +90,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
 SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
 SUBS_LEMMAS = "a2_build/study_order/opensubtitles_lt_lemmas.csv"
-OUT = "study_order_v2.csv"
+OUT = os.environ.get("STUDY_ORDER_OUT", "study_order.csv")
 
 W_SUB, W_PRESS = 0.6, 0.4
 MISSING_SUB, MISSING_PRESS = 30000, None      # None: no press rank -> subtitle rank alone
@@ -198,13 +210,13 @@ SURVIVAL = ["103_zmogus", "086_vyras", "087_moteris", "177_vanduo", "182_duona",
             "101_vaikas", "172_kava", "173_arbata", "366_eiti", "452_didelis", "453_mazas", "025_namas", "178_pienas",
             "175_alus", "104_draugas", "090_seima", "045_parduotuve", "363_dirbti", "024_miestas", "188_obuolys",
             "183_sriuba", "064_batai", "016_autobusas", "001_suo", "002_kate",
-            # these live in the A2 subdeck (tagged A2 in cards_anki.csv) and head it
+            # retagged A1 on 2026-10-17 (a2_build/study_order/retag_A1.csv); they follow the first words
             "354_taip", "355_ne", "510_as", "511_tu", "512_jis", "513_ji", "515_mes", "516_jus", "517_jie", "514_tai",
             "464_geras", "465_blogas", "133_pinigai", "160_kaina"]
 SURVIVAL_INDEX = {k: i for i, k in enumerate(SURVIVAL)}
 # The same for the phrase cards, by headword: a greeting made of one rare-ish word
 # ("Labas", subtitle rank 85) must not lose to a chunk of frequent function words
-# ("Ar yra…?"). Placed in this order, after the pronoun pictures.
+# ("Ar yra…?"). Placed in this order from FIRST_PHRASE on, two per ten cards.
 SURVIVAL_PHRASES = ["Labas", "Ačiū", "Prašau", "Laba diena", "Atsiprašau", "Viso gero", "Iki", "Nesuprantu", "Kiek kainuoja?",
                     "Kur yra…?", "Labas rytas", "Labas vakaras", "Sveiki", "Labai ačiū", "Nėra už ką", "Kur yra tualetas?",
                     "Sąskaitą, prašau", "Norėčiau…", "Ar kalbate angliškai?", "Kaip sekasi?", "Man gerai", "Nežinau",
@@ -442,7 +454,7 @@ def report(rows, cards):
     by_lt = defaultdict(list)
     for r in rows:
         by_lt[plain(r["lt"])].append(r)
-    print("\n== Telling words: position in the whole order (old study_order.csv -> v2) ==")
+    print("\n== Telling words: position in the whole order (previous study_order.csv -> this run) ==")
     print(f"{'word':18}{'gloss':18}{'old':>6}{'new':>6}{'subs':>7}{'press':>7}  tier block")
     for w, g in TELLING:
         for r in by_lt.get(plain(w), [])[:1]:

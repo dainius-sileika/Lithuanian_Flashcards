@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""build_study_order.py — the learning order of the deck, written to study_order.csv.
+"""build_study_order.py — SUPERSEDED 2026-10-17 by build_study_order_v2.py (repo root),
+which now writes study_order.csv. Kept for the record of the v1 rules (unit quotas,
+phase-by-phase A2); do not run it, it would overwrite the adopted order. The last v1
+output is study_order.csv at commit 2ea6462.
+
+Original docstring:
+build_study_order.py — the learning order of the deck, written to study_order.csv.
 
     python3 build_study_order.py          # regenerates study_order.csv
 
