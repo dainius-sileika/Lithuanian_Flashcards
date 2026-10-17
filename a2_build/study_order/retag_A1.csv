@@ -1,0 +1,63 @@
+key,source,lithuanian,english,category_group,reason
+510_as,deck,aš,I,pronouns,subject pronoun; first lesson of any A1 course
+511_tu,deck,tu,you sg,pronouns,subject pronoun; first lesson of any A1 course
+512_jis,deck,jis,he,pronouns,subject pronoun; first lesson of any A1 course
+513_ji,deck,ji,she,pronouns,subject pronoun; first lesson of any A1 course
+514_tai,deck,tai,it,pronouns,"demonstrative; ""Kas tai?"" is already A1"
+515_mes,deck,mes,we,pronouns,subject pronoun; first lesson of any A1 course
+516_jus,deck,jūs,you pl,pronouns,subject pronoun; the polite form every A1 dialogue uses
+517_jie,deck,jie,they,pronouns,subject pronoun; first lesson of any A1 course
+354_taip,deck,taip,yes,yes/no,yes; subtitle rank 10
+355_ne,deck,ne,no,yes/no,no; subtitle rank 9 and the negation prefix
+133_pinigai,deck,pinigai,money,money & price,money; A1 shopping topic
+160_kaina,deck,kaina,price,money & price,"price; pairs with ""Kiek kainuoja?"""
+464_geras,deck,geras,good,core adjectives,"good; subtitle rank 60; ""gerai"" is already A1"
+465_blogas,deck,blogas,bad,core adjectives,bad; antonym of geras (pair stays adjacent)
+374_galvoti,deck,galvoti,think,core verbs,"think; subtitle rank 161; ""manau/galvoju"" opinion pattern is A1"
+387_mokytis,deck,mokytis,learn,core verbs,"learn/study; ""mokausi lietuvių kalbos"" is the A1 self-introduction"
+403_myleti,deck,mylėti,love,core verbs,love; subtitle rank 144; likes and dislikes are an A1 topic
+132_vaistai,deck,vaistai,medicine,survival,medicine; survival word beside vaistinė
+A2-0348,list,Labas,Hello (informal),greetings,greeting; day one
+A2-0349,list,Sveiki,Hello (formal/plural),greetings,greeting; the polite form used with strangers
+A2-0350,list,Labas rytas,Good morning,greetings,greeting; day one
+A2-0351,list,Laba diena,Good day,greetings,greeting; the standard daytime greeting
+A2-0352,list,Labas vakaras,Good evening,greetings,greeting; day one
+A2-0353,list,Labanakt,Good night,greetings,greeting; day one
+A2-0354,list,Viso gero,Goodbye,greetings,leave-taking; day one
+A2-0355,list,Iki pasimatymo,See you,greetings,leave-taking; standard A1 set
+A2-0356,list,Iki,Bye (informal),greetings,leave-taking; subtitle rank 44
+A2-0357,list,Prašau,Please / you're welcome,politeness,please; day one
+A2-0358,list,Ačiū,Thank you,politeness,thank you; day one
+A2-0359,list,Labai ačiū,Thank you very much,politeness,thanks; day one
+A2-0360,list,Nėra už ką,You're welcome (not at all),politeness,reply to ačiū; completes the pair
+A2-0362,list,Atleiskite,Excuse me (formal),politeness,"attention-getter; ""Atsiprašau"" is already A1"
+A2-0363,list,Malonu susipažinti,Nice to meet you,politeness,introductions; A1 first-meeting dialogue
+A2-0364,list,Kaip sekasi?,How are you?,basics,greeting exchange; A1
+A2-0365,list,Man gerai,I'm fine,basics,reply to Kaip sekasi?; A1
+A2-0366,list,Koks jūsų vardas?,What is your name?,basics,introductions; A1 descriptor: can introduce themselves
+A2-0367,list,Mano vardas…,My name is…,basics,introductions; A1
+A2-0368,list,Iš kur jūs?,Where are you from?,basics,introductions; A1
+A2-0369,list,Aš esu iš…,I am from…,basics,introductions; A1
+A2-0370,list,Ar kalbate angliškai?,Do you speak English?,basics,communication repair; first-week survival
+A2-0371,list,Nesuprantu,I don't understand,basics,communication repair; first-week survival
+A2-0372,list,Suprantu,I understand,basics,pair of Nesuprantu
+A2-0373,list,Nežinau,I don't know,basics,subtitle rank of žinoti 71; first-week survival
+A2-0374,list,Ar galite pakartoti?,Could you repeat?,basics,communication repair; A1
+A2-0375,list,"Kalbėkite lėčiau, prašau",Speak more slowly please,basics,communication repair; A1
+A2-0376,list,Ką reiškia…?,What does … mean?,basics,"communication repair; ""Ką tai reiškia?"" is already A1"
+A2-0377,list,Kiek kainuoja?,How much does it cost?,money & price,shopping; first-week survival
+A2-0378,list,Kur yra…?,Where is…?,survival,"directions; ""Kur yra tualetas?"" is already A1"
+A2-0379,list,Kiek valandų?,What time is it?,survival,"time; ""Kuri valanda?"" is already A1"
+A2-0380,list,Norėčiau…,I would like…,survival,ordering and shopping; the A1 polite request
+A2-0381,list,"Sąskaitą, prašau",The bill please,money & price,restaurant; first-week survival
+A2-0382,list,Ar yra…?,Is there…?,survival,asking for things; A1
+A2-0383,list,Ar galite man padėti?,Can you help me?,survival,help; first-week survival
+A2-0384,list,Padėkite!,Help!,survival,help; emergency
+A2-0385,list,Atsargiai!,Be careful!,survival,warning sign and shout; survival
+A2-0386,list,Aš pasiklydau,I'm lost,survival,first-week survival
+A2-1181,list,Gelbėkit!,Help!,survival,help; emergency (the other shout)
+A2-0272,list,kainuoti,to cost,money & price,"the verb behind ""Kiek kainuoja?"""
+A2-0270,list,sąskaita,bill (restaurant); account,money & price,"the noun behind ""Sąskaitą, prašau"""
+A2-0954,list,Ar galiu mokėti kortele?,Can I pay by card?,money & price,paying; first-week survival
+A2-0231,list,vaistinė,pharmacy,survival,pharmacy; survival place beside vaistai
+A2-0957,list,Kaip nuvykti į…?,How do I get to…?,survival,"asking the way; pairs with ""Kur yra…?"""
