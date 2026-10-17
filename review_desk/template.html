@@ -1,0 +1,168 @@
+<title>Review Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:wght@400;700&display=swap">
+<style>
+/* Single look by choice: the deck's own cream paper and manual red, in every theme. */
+:root {
+  --page: #ead6b4; --paper: #f3e6cc; --ink: #2b2420; --ink-soft: #6b5a4a; --rule: #c9b48f;
+  --red: #8f2f25; --red-ink: #f3ead6; --done: #4f6b3c;
+  --font-display: "Old Standard TT", "PT Serif", Georgia, serif;
+  --font-body: "PT Serif", Georgia, "Times New Roman", serif;
+}
+body { background: var(--page); color: var(--ink); font: 16px/1.5 var(--font-body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 0 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.band { background: var(--red); color: var(--red-ink); }
+.band .wrap { padding-block: 14px 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+.band h1 { font: 700 clamp(24px, 4.4vw, 32px)/1.1 var(--font-display); margin: 0; letter-spacing: .02em; }
+.band .meta { font: 400 13px var(--font-display); font-variant: small-caps; letter-spacing: .12em; opacity: .85; }
+.lede { margin: 18px 0 6px; max-width: 64ch; color: var(--ink-soft); }
+.tally { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 10px 0 8px; font-size: 14px; }
+.tally b { font-family: var(--font-display); font-size: 20px; color: var(--red); margin-right: 4px; }
+.filter { display: flex; gap: 8px; margin: 10px 0 0; flex-wrap: wrap; }
+h2 { font: 700 13px var(--font-display); font-variant: small-caps; letter-spacing: .14em; color: var(--red);
+  margin: 34px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); text-transform: lowercase; }
+h2 .n { color: var(--ink-soft); font-weight: 400; margin-left: 6px; }
+.items { display: grid; gap: 12px; }
+.item { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--red); padding: 12px 14px 12px; display: grid; gap: 8px; min-width: 0; }
+.item.answered { border-left-color: var(--done); }
+.item .head { display: flex; gap: 10px; align-items: baseline; }
+.item .num { font: 700 14px var(--font-display); color: var(--red); min-width: 1.8em; }
+.item.answered .num { color: var(--done); }
+.item h3 { margin: 0; font: 700 17px/1.3 var(--font-body); text-wrap: balance; }
+.item .ask { margin: 0; color: var(--ink); font-size: 15px; }
+.links { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.links a { color: var(--red); font-weight: 700; font-size: 14px; text-decoration: none; border-bottom: 1px solid currentColor; }
+.links a::after { content: " →"; }
+.links a[href^="http"]::after { content: " ↗"; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+button { font: 600 14px var(--font-body); padding: 7px 12px; border: 1px solid var(--rule); background: transparent; color: var(--ink); border-radius: 3px; cursor: pointer; }
+button[aria-pressed="true"] { background: var(--red); color: var(--red-ink); border-color: var(--red); }
+.item.answered button[aria-pressed="true"] { background: var(--done); border-color: var(--done); }
+button:focus-visible, textarea:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+textarea { width: 100%; box-sizing: border-box; min-height: 44px; font: 15px/1.45 var(--font-body); color: var(--ink);
+  background: var(--page); border: 1px solid var(--rule); border-radius: 3px; padding: 7px 9px; resize: vertical; }
+.saved { font-size: 12px; color: var(--ink-soft); min-height: 16px; }
+details.doc { background: var(--paper); border: 1px solid var(--rule); margin-bottom: 10px; }
+details.doc > summary { cursor: pointer; padding: 10px 14px; font: 700 16px var(--font-body); list-style: none; display: flex; justify-content: space-between; gap: 10px; }
+details.doc > summary::after { content: "+"; color: var(--red); font-family: var(--font-display); }
+details.doc[open] > summary::after { content: "–"; }
+.doc .body { padding: 0 14px 14px; overflow-wrap: anywhere; min-width: 0; }
+.doc .body table { border-collapse: collapse; font-size: 13px; }
+.doc .body td, .doc .body th { border: 1px solid var(--rule); padding: 3px 6px; vertical-align: top; }
+.doc .scroll { overflow-x: auto; }
+.doc .body h1, .doc .body h2, .doc .body h3 { font-family: var(--font-display); color: var(--ink); text-transform: none; font-variant: normal; letter-spacing: 0; border: 0; margin: 18px 0 6px; }
+.doc .body h1 { font-size: 22px; } .doc .body h2 { font-size: 18px; } .doc .body h3 { font-size: 16px; }
+.doc .body code { font-size: 13px; background: var(--page); padding: 0 3px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.shots figure { margin: 0; } .shots img { width: 100%; height: auto; border: 1px solid var(--rule); display: block; }
+.shots figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+.status { font-size: 13px; color: var(--ink-soft); margin-top: 24px; }
+</style>
+
+<header class="band"><div class="wrap"><h1>Review Desk</h1><span class="meta">Lietuvių GO · updated __UPDATED__</span></div></header>
+<main class="wrap">
+  <p class="lede">Everything waiting on you, in one place. Each item links to what it concerns; pick an answer or write a note and it saves on its own. Claude reads this page, clears what's settled, and adds new items here every round.</p>
+  <div class="tally" id="tally"></div>
+  <div class="filter" role="group" aria-label="Show">
+    <button type="button" data-f="open" aria-pressed="true">Open only</button>
+    <button type="button" data-f="all" aria-pressed="false">Everything</button>
+  </div>
+  <div id="groups"></div>
+  <h2 id="docs">Documents for review</h2>
+  <details class="doc" id="doc-historical"><summary>Historical places and figures — Fable's plan</summary><div class="body" data-md="historical"></div></details>
+  <details class="doc" id="doc-backs"><summary>Card backs — audit and proposed design</summary><div class="body" data-md="backs"></div></details>
+  <details class="doc" id="doc-pilot"><summary>Pilot plan and judging rubric</summary><div class="body" data-md="pilot"></div></details>
+  <details class="doc" id="doc-order"><summary>Study order — report (adopted)</summary><div class="body" data-md="order"></div></details>
+  <details class="doc" id="doc-frames"><summary>Cards as they now build (phone width)</summary><div class="body"><div class="shots">__SHOTS__</div></div></details>
+  <div class="status" id="status">Connecting…</div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script>
+const ITEMS = __ITEMS__;
+const DOCS = __DOCS__;
+const state = {};            // id -> {choice, note}
+let filter = "open", db = null;
+const touched = new Set();   // answered this visit: stay in view until reload
+const timers = {};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const isAnswered = id => !!(state[id] && (state[id].choice || (state[id].note || "").trim()));
+
+function render() {
+  const groups = [...new Set(ITEMS.map(i => i.group))];
+  let n = 0;
+  const host = document.getElementById("groups");
+  const focusId = document.activeElement && document.activeElement.dataset.note;
+  host.innerHTML = groups.map(g => {
+    const its = ITEMS.filter(i => i.group === g).map(i => ({...i, n: ++n}));
+    const shown = its.filter(i => filter === "all" || !isAnswered(i.id) || touched.has(i.id));
+    const open = its.filter(i => !isAnswered(i.id)).length;
+    if (!shown.length) return "";
+    return `<h2>${esc(g)}<span class="n">${open} open</span></h2><div class="items">` + shown.map(i => {
+      const s = state[i.id] || {};
+      return `<article class="item${isAnswered(i.id) ? " answered" : ""}" id="item-${i.id}">
+        <div class="head"><span class="num">${i.n}.</span><h3>${esc(i.title)}</h3></div>
+        <p class="ask">${esc(i.ask)}</p>
+        ${i.links.length ? `<div class="links">${i.links.map(l => `<a href="${esc(l.href)}"${l.href.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>${esc(l.label)}</a>`).join("")}</div>` : ""}
+        <div class="chips" role="group" aria-label="Answer">${i.options.map(o => `<button type="button" data-id="${i.id}" data-choice="${esc(o)}" aria-pressed="${s.choice === o}">${esc(o)}</button>`).join("")}</div>
+        <textarea data-note="${i.id}" aria-label="Note for ${esc(i.title)}" placeholder="Note (optional)">${esc(s.note || "")}</textarea>
+        <div class="saved" id="saved-${i.id}"></div>
+      </article>`;
+    }).join("") + `</div>`;
+  }).join("") || `<p class="lede">Nothing open. Switch to “Everything” to see answered items.</p>`;
+  const total = ITEMS.length, done = ITEMS.filter(i => isAnswered(i.id)).length;
+  document.getElementById("tally").innerHTML = `<span><b>${total - done}</b>open</span><span><b>${done}</b>answered</span>`;
+  if (focusId) { const t = host.querySelector(`[data-note="${focusId}"]`); if (t) { t.focus(); t.setSelectionRange(t.value.length, t.value.length); } }
+}
+
+function save(id) {
+  const el = document.getElementById("saved-" + id);
+  try { localStorage.setItem("desk_v1", JSON.stringify(state)); } catch (e) {}
+  if (!db) { if (el) el.textContent = "Saved on this device only"; return; }
+  clearTimeout(timers[id]);
+  timers[id] = setTimeout(async () => {
+    try { await db.collection("answers").doc(id).set({ ...(state[id] || {}), updatedAt: new Date().toISOString() });
+      const e2 = document.getElementById("saved-" + id); if (e2) e2.textContent = "Saved"; }
+    catch (e) { const e2 = document.getElementById("saved-" + id); if (e2) e2.textContent = "Couldn't save just now; kept on this device"; }
+  }, 600);
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("button[data-choice]");
+  if (b) { const id = b.dataset.id; state[id] = state[id] || {}; touched.add(id);
+    state[id].choice = state[id].choice === b.dataset.choice ? null : b.dataset.choice; render(); save(id); return; }
+  const f = e.target.closest("button[data-f]");
+  if (f) { filter = f.dataset.f; document.querySelectorAll("[data-f]").forEach(x => x.setAttribute("aria-pressed", String(x === f))); render(); return; }
+  const a = e.target.closest('a[href^="#doc-"]');
+  if (a) { e.preventDefault(); const d = document.querySelector(a.getAttribute("href")); if (d) { d.open = true; d.scrollIntoView({behavior: "smooth", block: "start"}); } }
+});
+document.addEventListener("input", e => {
+  const id = e.target.dataset && e.target.dataset.note; if (!id) return;
+  state[id] = state[id] || {}; state[id].note = e.target.value; touched.add(id);
+  const card = document.getElementById("item-" + id); if (card) card.classList.toggle("answered", isAnswered(id));
+  save(id);
+});
+
+document.querySelectorAll("[data-md]").forEach(el => {
+  const src = DOCS[el.dataset.md] || "";
+  let html = window.marked ? marked.parse(src) : `<pre>${esc(src)}</pre>`;
+  el.innerHTML = html.replace(/<table>/g, '<div class="scroll"><table>').replace(/<\/table>/g, "</table></div>");
+});
+
+try { Object.assign(state, JSON.parse(localStorage.getItem("desk_v1") || "{}")); } catch (e) {}
+render();
+if (location.hash.startsWith("#doc-")) { const d = document.querySelector(location.hash); if (d) d.open = true; }
+(async () => {
+  const st = document.getElementById("status");
+  try {
+    db = window.claude?.use ? await window.claude.use("db") : null;
+    if (!db) { st.textContent = "Offline: answers stay on this device."; return; }
+    const snap = await db.collection("answers").get();
+    (snap.docs || []).forEach(d => { const v = d.data(); state[d.id] = { choice: v.choice || null, note: v.note || "" }; });
+    render();
+    st.textContent = "Connected: answers save automatically and Claude can read them.";
+  } catch (e) { st.textContent = "Offline: answers stay on this device."; }
+})();
+</script>
