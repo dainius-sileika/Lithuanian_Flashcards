@@ -46,7 +46,7 @@ BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA<
         '{{#gender}}<div class="gender">{{gender}}</div>{{/gender}}'
         '{{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}'
         '{{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}'
-        '{{#fem}}<div class="forms">{{lithuanian}} · {{fem}}</div>{{/fem}}'
+        '{{#fem}}<div class="forms">{{fem}}</div>{{/fem}}'
         '<hr id="answer"><div class="gloss">{{english}}</div></div>'
         '<div class="bar bottom"><span>{{category}}</span><span>{{number}}</span></div></div>')
 
@@ -192,6 +192,34 @@ def gender_mark(g):
     return "".join(out)
 
 
+def is_adjective(gender, fem):
+    """An adjective row: gender M/F and a feminine form (2ea6462 gave every adjective with
+    a gender pair both). M/F people and job nouns (mokytojas/mokytoja) have no fem."""
+    return bool((fem or "").strip()) and (gender or "").strip().upper().startswith("M/F")
+
+
+_STRESS = "\u0300\u0301\u0303"          # grave, acute, tilde (not ogonek/caron/dot/macron)
+
+
+def _unstressed(s):
+    import unicodedata
+    return unicodedata.normalize("NFC", "".join(
+        c for c in unicodedata.normalize("NFD", s) if c not in _STRESS))
+
+
+def adjective_forms(word, pron, fem):
+    """Owner 2026-10-17: an adjective's back shows both forms, each beside its own symbol,
+    "didelis ♂ · didelė ♀", in place of the bare ♂♀ pair. The masculine carries its stress
+    mark from pron where the data has one (pron must be the same word, or the headword
+    minus a bracketed note: "dvivietis (kambarys)" -> "dviviẽtis"); the feminine has no
+    stressed form in the data and is shown plain. Returns HTML for the fem/Forms field."""
+    word, pron, fem = (word or "").strip(), (pron or "").strip(), (fem or "").strip()
+    bare = word.split(" (")[0].strip()
+    masc = pron if pron and _unstressed(pron) in (word, bare) else word
+    return (f'<span class="fp">{masc}&#8239;<span class="g m">\u2642</span></span> · '
+            f'<span class="fp">{fem}&#8239;<span class="g f">\u2640</span></span>')
+
+
 def _sha1(path):
     h = hashlib.sha1()
     with open(path, "rb") as fh:
@@ -301,6 +329,8 @@ def cloze_text(example_lt):
 
 def a2_forms(r):
     w = r["lithuanian_TARGET"]
+    if is_adjective(r.get("gender", ""), r.get("fem", "")):
+        return adjective_forms(w, r.get("lt_pron", ""), r["fem"])
     if r.get("gen_sg"):
         return f"{w} · {r['gen_sg']}"
     if r.get("pres3"):
@@ -327,6 +357,9 @@ def add_a2_notes(DECKS, media, order=None):
         tags = [level, route, r.get("phase", "").replace("-", "")]
         aud = f"{A2_AUDIO_DIR}/{k}.mp3"
         audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
+        adj = is_adjective(r.get("gender", ""), r.get("fem", ""))
+        # adjectives: no separate symbol pair; the symbols sit in the forms line
+        gmark = "" if adj else gender_mark(r.get("gender", ""))
         if route in ("IMG", "PHRASE"):
             src = find_a2_image(k)
             if not src:
@@ -334,8 +367,10 @@ def add_a2_notes(DECKS, media, order=None):
             img_path, img_name = media_image(k, src)
             target.add_note(genanki.Note(
                 model=model, tags=tags, guid=genanki.guid_for(k), due=due,
-                fields=[k, r["lithuanian_TARGET"], r["english"], gender_mark(r.get("gender", "")),
-                        r.get("gen_sg", ""), r.get("pres3", ""), r.get("past3", ""), r.get("fem", ""),
+                fields=[k, r["lithuanian_TARGET"], r["english"], gmark,
+                        r.get("gen_sg", ""), r.get("pres3", ""), r.get("past3", ""),
+                        adjective_forms(r["lithuanian_TARGET"], r.get("lt_pron", ""), r["fem"])
+                        if adj else r.get("fem", ""),
                         k.replace("A2-", ""), r.get("category", ""),
                         f'<img class="art" src="{img_name}">', audf, r.get("lt_pron", "")]))
             media.append(img_path); counts["image"] += 1
@@ -348,7 +383,7 @@ def add_a2_notes(DECKS, media, order=None):
             target.add_note(genanki.Note(
                 model=cloze_model, tags=tags, guid=genanki.guid_for(k), due=due,
                 fields=[text, r.get("example_en", ""), r["lithuanian_TARGET"], r.get("lt_pron", ""),
-                        gender_mark(r.get("gender", "")), a2_forms(r), r["english"],
+                        gmark, a2_forms(r), r["english"],
                         k.replace("A2-", ""), r.get("category", ""), audf, k, saudf, ""]))
             counts["cloze"] += 1
             if saudf:
@@ -420,6 +455,11 @@ def main(frame="standard"):
         audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
         level = (r.get("level") or "A1").strip() or "A1"
         target = DECKS.get(level, DECKS["A1"])
+        # adjectives (incl. the colours): "raudónas ♂ · raudona ♀" in the forms line,
+        # no separate symbol pair; nouns, M/F job nouns and verbs as before
+        adj = is_adjective(r['gender'], r['fem'])
+        gmark = "" if adj else gender_mark(r['gender'])
+        fem = adjective_forms(r['lithuanian'], r.get('pron', ''), r['fem']) if adj else r['fem']
         target.add_note(genanki.Note(
             model=model,
             tags=[level],
@@ -427,8 +467,8 @@ def main(frame="standard"):
             # re-importing an updated deck updates cards in place (keeps study
             # history / scheduling) instead of creating duplicates.
             guid=genanki.guid_for(k), due=order.get(k, 0),
-            fields=[k, r['lithuanian'], r['english'], gender_mark(r['gender']), r['gen_sg'],
-                    r['pres3'], r['past3'], r['fem'], r['number'], r['category'],
+            fields=[k, r['lithuanian'], r['english'], gmark, r['gen_sg'],
+                    r['pres3'], r['past3'], fem, r['number'], r['category'],
                     f'<img class="art" src="{img_name}">', audf, r.get('pron', '')]))
         media.append(img_path)
         if os.path.exists(aud):

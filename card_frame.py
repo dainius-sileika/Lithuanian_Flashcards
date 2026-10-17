@@ -156,7 +156,7 @@ BACK = (f'<div class="sf-card">{_PIC_FRAME}'
         '{{#gender}}<div class="gender">{{gender}}</div>{{/gender}}'
         '{{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}'
         '{{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}'
-        '{{#fem}}<div class="forms">{{lithuanian}} · {{fem}}</div>{{/fem}}'
+        '{{#fem}}<div class="forms">{{fem}}</div>{{/fem}}'   # adjectives: "m ♂ · f ♀" (build_apkg)
         '<hr id="answer"><div class="gloss">{{english}}</div></div>'
         f'</div>{FIT_JS}')
 

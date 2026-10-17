@@ -72,6 +72,11 @@
 }
 
 .forms{ margin-top:6px; font-size:1rem; color: var(--teal); font-variant: small-caps; letter-spacing:.04em; }
+/* adjectives: "didelis ♂ · didelė ♀" — each symbol beside its own form, never wrapped apart */
+.forms .fp{ white-space:nowrap; }
+.forms .g{ font-variant:normal; font-weight:700; font-size:1.25em; line-height:1; vertical-align:-.06em; }
+.forms .g.m{ color:#2f6ea8; }
+.forms .g.f{ color:#b3242e; }
 .gloss{ margin-top:12px; font-size:1.15rem; color:#4a4238; }
 .gloss:before{ content:"— "; color: var(--red-ink); }
 
