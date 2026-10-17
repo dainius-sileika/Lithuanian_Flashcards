@@ -95,29 +95,46 @@ Behaviour kept: `situation=False` → unchanged prompt. `situation=True, gaze="d
 
 ---
 
-## (b) PANEL_CONTINUITY — go_generator.py (constant) + go_grammars.py (grammar text)
+## (b) PANEL_CONTINUITY — go_generator.py (constant, every multi-panel card) + go_grammars.py
+
+Owner, 2026-10-17 review notes: "all panel cards needs a coherency check to make sure the mise-en-scene between panels remains consistent." This is therefore a **standing rule for the whole deck**, not a situation-only rule: it fires on every card that has two or more panels, a strip, or insets — which is nearly every card. It is the one change here that touches prompts outside the situation set; the owner has confirmed it. The rule exempts insets that show a different place, object or detail, so the house inset style (each inset "a clearly different moment or detail") is untouched; it binds only where a panel or inset repeats the scene.
 
 ### b1. NEW constant in go_generator.py (after `SETTING_GUARD`, line 128)
 
 ```python
-# 2026-10-17 pilot round 2: 0897 (a man moved behind his companion between panels) and
-# 0898 (a door that exists only in the right panel). The two-panel grammar fixed people,
-# dress and scale but not position, setting or props. Appended by gen_phrases for
-# format situation_2 (panels == 2).
+# 2026-10-17 pilot round 2 — owner: "all panel cards needs a coherency check to make sure
+# the mise-en-scene between panels remains consistent." 0897 (a man moved behind his
+# companion between panels), 0898 (a door that exists only in the right panel), 0383 (a
+# suitcase in different hands across insets). Appended to EVERY card with more than one
+# panel, a strip, or insets; it binds only where a panel or inset repeats the same scene.
 PANEL_CONTINUITY_RULE = (
-    "Both panels are the same place seen from the same viewpoint at the same distance: "
-    "the same people stand in the same relative positions, left stays left and right "
-    "stays right, nobody steps in front of or behind another person between panels, "
-    "and nobody enters or leaves. The same walls, doors, windows, furniture, counter, "
-    "signs and street fixtures appear in both panels in the same places; anything "
-    "visible in one panel is visible in the other. Every object a person holds in the "
-    "left panel is held by the same person in the right panel unless the staging says "
-    "it is handed over, and then both hands are on it. Only the gesture and expression "
-    "change."
+    "Wherever the card shows the same scene more than once - in two or more panels, in a "
+    "strip, or in an inset that repeats the main scene - every repetition is the same "
+    "place seen from a consistent viewpoint: the same people in the same clothes and the "
+    "same relative positions (left stays left, nobody steps in front of or behind another, "
+    "nobody enters or leaves), the same walls, doors, windows, furniture, counters, signs "
+    "and street fixtures in the same places, and every object held by the same person "
+    "unless the staging says it is handed over, and then both hands are on it. Only the "
+    "moment changes: gesture, expression, the step of the action. An inset that shows a "
+    "different place, object or close-up detail is not a repetition and is free."
 )
 ```
 
-### b2. REPLACES the `situation_2` grammar in go_grammars.py (lines 221–229)
+### b2. REPLACES the plausibility line inside `_prompt_openai` (line 275)
+
+replaces
+```python
+    segs.append(PLAUSIBILITY_RULE)
+```
+with
+```python
+    segs.append(PLAUSIBILITY_RULE)
+    if insets or motion_strip or panels > 1:
+        segs.append(PANEL_CONTINUITY_RULE)
+```
+(`panels` is the new kwarg from a2; gen_phrases passes 2 for `situation_2` and 3 for `sequence`.) Consequence stated plainly: every future render of an inset card carries one more sentence, so the "prompts byte-identical to the shipped masters" line in the module docstring is no longer true for new renders. The 1387 shipped pictures are not re-rendered by this; see d6 for checking them.
+
+### b3. REPLACES the `situation_2` grammar in go_grammars.py (lines 221–229)
 
 replaces
 ```python
@@ -144,20 +161,13 @@ with
                  "legible. No speech bubble in either panel."),
         "insets": []},
 ```
-(only "and in the same places" and "seen from one spot" are added; the continuity detail lives in `PANEL_CONTINUITY_RULE` so the grammar stays short.)
 
-### b3. gen_phrases.py `build_situation_call()` — two one-line additions
+### b4. gen_phrases.py `build_situation_call()` — one addition to `kw = dict(...)`
 
-after `main = NOUN_GRAMMARS[fmt]["main"] + SCENE_TAIL` (line 83), add
 ```python
-        if fmt == "situation_2":
-            main += " " + PANEL_CONTINUITY_RULE
+              gaze=s.get("gaze", "conversation"),
+              panels=(2 if fmt == "situation_2" else 3 if fmt == "sequence" else 1),
 ```
-and in the `kw = dict(...)` add
-```python
-              gaze=s.get("gaze", "conversation"), panels=(2 if fmt == "situation_2" else 1),
-```
-with `from go_generator import GOGenerator, PANEL_CONTINUITY_RULE` at the top.
 
 ---
 
@@ -304,29 +314,48 @@ with
     return fails, warns
 ```
 
-### d4. Cache key
+### d4. Deck-wide coherence check — REPLACES the `"problems"` entry of the base `PROMPT` (lines 79–82)
 
-Append `":r2"` to the situation cache key so round-2 reads are not served from round-1 cache entries (which lack the new keys): in `main()` both occurrences of `(":sit" if … else "")` become `(":sit:r2" if … else "")`.
+Every card, not only situation cards: the base cold-read gains a coherence question, so `judge()` can fail any inset or panel card whose repeated scene drifts.
 
-### d5. `situation_row()` carries `gaze`
+replaces
+```python
+  "problems":   array of short strings describing anything visually wrong:
+                garbled or nonsense lettering, malformed hands or faces, duplicated
+                or fused limbs, incoherent objects, elements that contradict each
+                other, or anything a careful reviewer would call an error. [] if none.
+"""
+```
+with
+```python
+  "problems":   array of short strings describing anything visually wrong:
+                garbled or nonsense lettering, malformed hands or faces, duplicated
+                or fused limbs, incoherent objects, elements that contradict each
+                other, or anything a careful reviewer would call an error. [] if none.
+  "coherence":  for a picture with two or more panels, a strip, or an inset that
+                repeats the main scene: {"applies": true, "consistent": true|false,
+                "note": "what differs between the repetitions, one line"} — people,
+                clothes, positions (left/right, front/behind), fixtures and held
+                objects must match; only gesture, expression or step may change.
+                {"applies": false} when no scene is repeated (insets that show a
+                different object, place or close-up do not count).
+"""
+```
+and in `judge()`, before `for p in seen.get("problems", []) or []:` (line 389), add
+```python
+    coh = seen.get("coherence") or {}
+    if coh.get("applies") and coh.get("consistent") is False:
+        fails.append(f"CONTINUITY: {coh.get('note') or 'repeated scene differs between panels/insets'}")
+```
+`SIT_PROMPT` is built from `PROMPT`, so situation cards inherit the key; `judge_situation()` calls `judge()`, so they inherit the fail too. The two-panel-specific `panels` block in d3 stays (it also checks that the right panel answers the left).
+
+### d5. Cache key
+
+Append `":r2"` to the situation cache key so round-2 reads are not served from round-1 cache entries (which lack the new keys): in `main()` both occurrences of `(":sit" if … else "")` become `(":sit:r2" if … else "")`. The base cache is keyed by file hash only, so the shipped 1387 cards keep their old entries until run with `--recheck`; a retro coherence pass over the shipped deck is a separate decision for the owner (at the pilot's rate, ≈ $0.01 a card, so ≈ $15 for the whole deck; it finds existing inset drift, it does not fix it).
+
+### d6. `situation_row()` carries `gaze`
 
 `situations.py` (generated) gets a `gaze` key — see (f). `situation_row()` needs no change: it returns the whole dict.
-
----
-
-## (e) Optional: stop the lead from priming insets on single scenes — go_generator.py
-
-Not in the owner's list; it is the mechanism behind 0383's extra "panels" and the README observation that most single scenes grew 2–3 insets. If adopted, apply only when `situation and not insets`:
-
-```python
-_INSET_LEAD = ("; insets are small ruled boxes on the same paper, each a clearly different "
-               "moment or detail")
-_INSET_SUFFIX = " Every inset a clearly different moment, all in the same ruled frame."
-_INSET_MEANING_TAIL = ", and the insets only add supporting detail"
-NO_INSET_RULE = ("One picture only: no inset panels, no second moment, no small boxed "
-                 "details, no sequence. The whole card is this one scene.")
-```
-and in `_prompt_openai`, when `situation and not insets`: strip `_INSET_LEAD` from `lead`, `_INSET_SUFFIX` from `suffix`, `_INSET_MEANING_TAIL` from the `MAIN_MEANING_RULE` segment, and append `NO_INSET_RULE` after the scene. Owner's call: 0113 wants insets by design and gets them (`insets=True`), so this only affects cards staged as one scene. I recommend adopting it in round 2 so that the 11 single-scene redraws test it.
 
 ---
 
@@ -356,6 +385,6 @@ and in `_prompt_openai`, when `situation and not insets`: strip `_INSET_LEAD` fr
 ## Order for the executor
 
 1. (f) CSV column + build_situations.py; append `restage_round2.csv`; regenerate `situations.py`; `python3 -c "import situations"`.
-2. (a), (b1), (c) in go_generator.py; (b2) in go_grammars.py; (b3) in gen_phrases.py. Dry-run three prompts (0360, 0383, 0113) and read them: the word "viewer" must appear only inside the conversation rule's negations; `PANEL_CONTINUITY_RULE` only on 0360; two insets only on 0113.
-3. (d) in qa_images.py; run it on the untouched round-1 folder first with `--recheck` into a scratch cache to see the false-positive rate of the four new checks before spending on renders.
+2. (a), (b1), (b2), (c) in go_generator.py; (b3) in go_grammars.py; (b4) in gen_phrases.py. Dry-run three prompts (0360, 0383, 0113) and read them: the word "viewer" must appear only inside the conversation rule's negations; `PANEL_CONTINUITY_RULE` on all three (0360 has two panels, 0383 and 0113 have insets); two insets only on 0113. Also dry-run one ordinary noun card and confirm its prompt differs from the shipped ledger by exactly the one `PANEL_CONTINUITY_RULE` sentence and nothing else.
+3. (d) in qa_images.py; run it on the untouched round-1 folder first with `--recheck` into a scratch cache to see the false-positive rate of the five new checks (gaze, panels, limbs, props, coherence) before spending on renders.
 4. Render the 14 into `out_phrases_v3/round2/` (never over round 1); QA; owner review page.

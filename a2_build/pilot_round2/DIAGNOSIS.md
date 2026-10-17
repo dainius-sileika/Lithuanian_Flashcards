@@ -26,7 +26,7 @@ The two-panel grammar (`go_grammars.py` → `situation_2`) asks for "THE SAME TW
 
 `ANATOMY_RULE` speaks only of finger count. Nothing in the prompt says a hand must belong to the right body (0895), that a carried object must be visibly in the carrier's hand (0383), or that a figure may not merge with furniture (0900 "in" the counter; `PLAUSIBILITY_RULE` covers furniture, not people).
 
-One more rule-level cause, not in the owner's list but behind 0383's "second panel / last panel": `CONCEPT_LEAD`, `MAIN_MEANING_RULE` and `STYLE_SUFFIX` all describe insets even when `insets=False`. `out_phrases_v3/README.md` already recorded that "most single scenes still carry 2–3 small insets". 0383 was staged as one scene and came back as a sequence in which the suitcase changes hands. The fix is in RULES.md §(e); it is optional because 0113 now wants insets by design.
+0383's "second panel / last panel" is the same continuity failure in another guise: the single scene grew insets (as most single scenes do — `out_phrases_v3/README.md` noted it), and the insets repeated the main scene with the suitcase in different hands. The owner keeps insets ("our concurrent goal is beauty/aesthetic interest, and the panels add to this criterion") and makes coherency a standing rule for every multi-panel card: "all panel cards needs a coherency check to make sure the mise-en-scene between panels remains consistent." So the fix for 0383 is not fewer insets but PANEL_CONTINUITY applied to insets that repeat the scene, plus a staging line that says what each inset shows.
 
 ## Attribution per card
 
@@ -39,7 +39,7 @@ One more rule-level cause, not in the owner's list but behind 0383's "second pan
 | A2-0898 | no bathroom in panel 1, there is in panel 2 | **rule** (continuity) | PANEL_CONTINUITY; staging names the door in both panels |
 | A2-0900 | man "in" the counter; must look at the woman | **rule** (figure/furniture + gaze) | ANATOMY_PROPS + CONVERSATION_GAZE |
 | A2-0895 | mother's waving hand has the brother's arm | **rule** (limb ownership) | ANATOMY_PROPS; staging assigns each arm |
-| A2-0383 | hands not carrying the suitcase; man not carrying it in the last panel | **rule** (held props; unrequested panels) | ANATOMY_PROPS; staging says ONE scene; §(e) |
+| A2-0383 | hands not carrying the suitcase; man not carrying it in the last panel | **rule** (held props; insets repeating the scene incoherently) | ANATOMY_PROPS; PANEL_CONTINUITY on insets; staging names the insets |
 | A2-0114 | hand should be her right | **staging** (silent on handedness) + rule (c) | staging names the hand; ANATOMY_PROPS honours it |
 | A2-0882 | book isn't clear; use a dented car or paints and easel | **staging** | new scene (paints and easel) |
 | A2-0881 | better a child that's done something wrong | **staging** | new scene (boy, football, broken pane) |
