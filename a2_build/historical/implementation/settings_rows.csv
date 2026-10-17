@@ -1,0 +1,30 @@
+key,location_id,mode,why
+035_teismas,kaunas_justice_palace,interior,REPLACE (was generic). Courtroom inside the Palace of Justice; the arcaded front in one inset. A1 note starts 'Main picture:' so prepare_settings skips the bank line — the place is also written into the staging (staging_rows.csv).
+047_biblioteka,kaunas_modernism,exterior,"KEEP, no change (one of the 26 by count): no verified interwar library building; stays generic Kaunas modernism."
+048_ligonine,kaunas_clinics,exterior,SWAP from vilnius_antakalnis (1970s Soviet block) to the 1939 Kaunas Clinics; ambulance at the canopied entrance. Approved 2026-10-17.
+055_bankas,kaunas_bank_of_lithuania,interior,REFINE (was kaunas_modernism exterior): the hall under the glass skylight is in the staging; the columned front is the inset.
+106_zaidejas,kaunas_state_stadium,exterior,"SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
+107_sirgalius,kaunas_state_stadium,exterior,NEW: fans in the covered wooden grandstand of the State Stadium.
+112_advokatas,kaunas_justice_palace,interior,OPTIONAL (not among the 26; inventory 'generic'): the lawyers' table in the same courtroom as 035 so the two cards rhyme.
+A2-0085,kaunas_railway_station,interior,"NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
+A2-0645,kaunas_town_hall_square,exterior,NEW: the square itself is the subject; the tiered white tower in the middle.
+A2-0649,kaunas_central_post_office,interior,NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset.
+A2-1326,kaunas_central_post_office,inset,OPTIONAL: the postman's one inset shows him leaving the post office front.
+A2-0652,kaunas_war_museum,interior,NEW: the hall with the orange monoplane hanging overhead and the amber cases in the staging; the tower and garden in one inset.
+A2-0653,kaunas_romuva_cinema,inset,NEW: inset only — the cinema front with the blank fin; the auditorium stays the main picture.
+A2-0654,kaunas_state_stadium,exterior,NEW — DEFERRED: stadionas moved to the B1 pack on 2026-10-17 (a2_build/deferred_B1.csv). Row applies when the B1 pack ships.
+A2-0656,kaunas_sports_hall,exterior,"NEW: the 1939 hall interior is the whole scene (prompt_phrase is an interior; mode 'exterior' only means the plain 'Setting: Lithuania, 1981, …' line)."
+A2-0658,vilnius_rasos_cemetery,exterior,NEW: Rasos hillside.
+A2-0667,kaunas_bank_of_lithuania,interior,OPTIONAL: a branch hall; the Bank's columned front glimpsed. Low priority.
+A2-1282,kaunas_konrado_cafe,exterior,"NEW: interior prompt_phrase (mirrors, piano, plaster girl in the niche, cake case); plain setting line."
+A2-1293,vilnius_philharmonic,exterior,NEW: the white-and-gilt hall; the corner building with the rounded bay in one inset (staging).
+A2-0812,vilnius_philharmonic,exterior,"NEW: concert in the same hall; rotate the viewpoint (from the balcony) so 0812, 1293 and 1747 are not one picture."
+A2-1747,vilnius_philharmonic,exterior,"NEW: orchestra on the same stage, seen from the stalls' front row."
+A2-1297,kaunas_sports_hall,exterior,NEW: basketball under the four arches; players in plain white kit with a tricolour band (kit colours unverified — executor checks a 1939 team photograph first).
+A2-1260,kaunas_state_stadium,exterior,NEW: football on the State Stadium pitch.
+A2-1347,kaunas_justice_palace,interior,NEW — DEFERRED (B1 pack). The skylit Seimas hall; the Vytis on the wall is now allowed (rule change).
+A2-1360,kaunas_laisves_aleja,interior,"NEW: performance inside the 1892 Kaunas theatre (red velvet, tiered boxes in the staging); the boulevard outside glimpsed."
+A2-1370,kaunas_justice_palace,interior,NEW — DEFERRED (B1 pack). The judge at the bench in the same courtroom as 035.
+A2-1769,kaunas_war_museum,exterior,"SWAP (approved): the monument is the Freedom Statue in the museum garden, the bell tower behind; the Soviet-era seated poet (Jokūbonis 1977) is dropped."
+A2-1357,kaunas_war_museum,inset,NEW (optional): one inset shows the winged Freedom figure on its plinth as the example of a sculpture; the main picture keeps the sculptor at work.
+138_komanda,kaunas_sports_hall,exterior,"OPTIONAL, with the likeness plan: the team becomes the 1939 basketball champions lined up under the arches (likeness_cards.csv). If the owner keeps the football team, drop this row."

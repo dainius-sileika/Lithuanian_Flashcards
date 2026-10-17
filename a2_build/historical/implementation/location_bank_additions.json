@@ -1,0 +1,398 @@
+{
+ "_about": "Twelve location-bank entries to MERGE into style_lab/research/location_bank.json 'locations' (same schema). go_settings.assign() raises on an unknown location_id, so these must land before settings_rows.csv is applied. Descriptions from a2_build/historical/real_places.md; each place is described by features, never named in the prompt (naming_the_place_helps=false except the Town Hall square).",
+ "locations": [
+  {
+   "id": "kaunas_justice_palace",
+   "name": "Kaunas — Palace of Justice and Seimas (1925–30)",
+   "region": "Kaunas",
+   "kind": "public building",
+   "signature_features": [
+    "heavy three-storey neoclassical corner block",
+    "ground-floor arcade of round arches at the entrance",
+    "tall windows, plain cornice, low hipped roof",
+    "inside: marble columns with folk-carved capitals; tall skylit hall"
+   ],
+   "prompt_phrase": "heavy three-storey neoclassical corner block with a ground-floor arcade of round arches at the entrance, tall windows above, a plain cornice and a low hipped roof",
+   "state_1981": "Built 1925–28/30 (E. A. Frykas) for the Ministry of Justice and the Supreme Tribunal; Seimas from 1936; Kaunas Philharmonic today. In a free 1981 the Supreme Tribunal (or the Seimas) still sits here.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [
+    "Latin motto over the arcade is not drawn (no lettering).",
+    "State emblem inside may be the Cross of Vytis or the Vytis (rule change 2026-10-17)."
+   ],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "medium",
+   "card_categories": [
+    "court",
+    "judge",
+    "lawyer",
+    "parliament"
+   ],
+   "sources": [
+    "https://www.vle.lt/straipsnis/kauno-architektura/",
+    "https://architectuul.com/architecture/the-ministry-of-justice-and-the-parliament-building",
+    "https://en.wikipedia.org/wiki/Kaunas_State_Philharmonic"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "arcade count and roof form (visual, from photographs)"
+   ],
+   "prompt_word_count": 26
+  },
+  {
+   "id": "kaunas_central_post_office",
+   "name": "Kaunas — Central Post Office (1930–32)",
+   "region": "Kaunas",
+   "kind": "public building",
+   "signature_features": [
+    "smooth pale rendered flat-roofed modernist block",
+    "very large windows in carved wooden frames",
+    "electric clock on the front",
+    "inside: tall hall, floor tiled like a woven linen towel, brass-railed counters"
+   ],
+   "prompt_phrase": "smooth pale rendered flat-roofed modernist block with very large windows set in carved wooden frames, a round clock on the front, a stepped central bay",
+   "state_1981": "Built 1930–32 (F. Vizbaras); UNESCO 2023. The main post office of Kaunas in any 1981.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "medium",
+   "card_categories": [
+    "post",
+    "letter",
+    "parcel",
+    "postman"
+   ],
+   "sources": [
+    "https://kaunas2022.eu/modernizmasateiciai/en/kauno-centrinis-pastas/index.html",
+    "https://kaunasin.lt/en/what-to-see/former-kaunas-central-post-office-palace/",
+    "https://en.wikipedia.org/wiki/Kaunas_Central_Post_Office",
+    "https://www.vle.lt/straipsnis/kauno-architektura/"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "the stepped central bay (visual)"
+   ],
+   "prompt_word_count": 25
+  },
+  {
+   "id": "kaunas_bank_of_lithuania",
+   "name": "Kaunas — Bank of Lithuania (1924–28)",
+   "region": "Kaunas",
+   "kind": "public building",
+   "signature_features": [
+    "monumental pale neoclassical corner building, three storeys, columned entrance",
+    "inside: black marble Ionic columns, granite stairs, coffered ceilings",
+    "great banking hall under a triangular glass skylight, chandeliers, grey geometric floor tiles"
+   ],
+   "prompt_phrase": "monumental pale stone-coloured neoclassical corner building of three storeys with a tall columned entrance and heavy cornice",
+   "state_1981": "Built 1924–28 (M. Songaila); still the Bank of Lithuania. The central bank of a free Lithuania, or its Kaunas branch.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "medium",
+   "card_categories": [
+    "bank",
+    "money",
+    "cashier"
+   ],
+   "sources": [
+    "https://autc.lt/en/architecture-object/?id=661",
+    "https://www.vle.lt/straipsnis/kauno-architektura/"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "column order on the façade (visual)"
+   ],
+   "prompt_word_count": 17
+  },
+  {
+   "id": "kaunas_war_museum",
+   "name": "Kaunas — War Museum and Čiurlionis Gallery (1936)",
+   "region": "Kaunas",
+   "kind": "landmark",
+   "signature_features": [
+    "long low pale block, classicism meeting early functionalism",
+    "tall square carillon bell tower at one end",
+    "garden with the Freedom Statue (winged figure on a tall plinth, Zikaras 1928) and an eternal flame",
+    "inside: the orange Lituanica hanging in a hall; old cannons; the art wing with Čiurlionis paintings and amber"
+   ],
+   "prompt_phrase": "long low pale museum block with a tall square bell tower at one end, a formal garden in front with a winged bronze figure striding on a tall plinth and a small eternal flame",
+   "state_1981": "Opened 16 Feb 1936 (V. Dubeneckis, K. Reisonas). In a free 1981 the garden statues the Soviets removed in the 1950s still stand, the Freedom Statue included.",
+   "exclude_built_after_1981_or_demolished": [
+    "Soviet-era removals never happened in the counterfactual"
+   ],
+   "free_lithuania_1981_adjustments": [
+    "Freedom Statue standing (removed 1950s, restored 1989 in reality)."
+   ],
+   "kitsch_risk": "medium",
+   "recognisability_at_card_scale": "high",
+   "card_categories": [
+    "museum",
+    "monument",
+    "gallery",
+    "sculpture",
+    "plane"
+   ],
+   "sources": [
+    "https://www.vle.lt/straipsnis/kauno-architektura/",
+    "https://en.wikipedia.org/wiki/Vytautas_the_Great_War_Museum",
+    "https://www.vle.lt/straipsnis/juozas-zikaras/"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [],
+   "prompt_word_count": 34
+  },
+  {
+   "id": "kaunas_sports_hall",
+   "name": "Kaunas — Sports Hall (1939)",
+   "region": "Kaunas",
+   "kind": "sports building",
+   "signature_features": [
+    "plain monumental box, austere plastered walls, portals with half-columns",
+    "inside: four great riveted steel arches carrying a shallow vaulted roof with triangular skylights",
+    "wooden stands round a parquet court, hoops on plain backboards"
+   ],
+   "prompt_phrase": "inside a great plain hall where four riveted steel arches carry a shallow vaulted roof with triangular skylights over a parquet basketball court ringed by wooden stands",
+   "state_1981": "Built 1938–39 (A. Rozenbliumas, S. Kudokas) in six months; first hall in Europe built for basketball; venue of the 1939 European championship Lithuania won. Kaunas's main hall in any 1981.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [
+    "No club lettering; a tricolour only."
+   ],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "medium",
+   "card_categories": [
+    "gym",
+    "basketball",
+    "team",
+    "sport"
+   ],
+   "sources": [
+    "https://www.vle.lt/straipsnis/kauno-sporto-hale/",
+    "https://autc.lt/en/architecture-object/?id=791",
+    "https://www.vle.lt/straipsnis/lietuvos-krepsinis/"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [],
+   "prompt_word_count": 27
+  },
+  {
+   "id": "kaunas_state_stadium",
+   "name": "Kaunas — State Stadium in Ąžuolynas (1925/1936)",
+   "region": "Kaunas",
+   "kind": "sports ground",
+   "signature_features": [
+    "oval cinder running track round a grass pitch",
+    "low tiered stands with one covered wooden grandstand",
+    "tall oaks of the park behind",
+    "tricolour on a mast"
+   ],
+   "prompt_phrase": "oval cinder running track round a grass pitch, low tiered stands with one covered wooden grandstand, tall oaks of a park behind, a yellow-green-red flag on a mast",
+   "state_1981": "Designed and built under Steponas Darius 1923–25, enlarged 1935–36 as the State Stadium; 1938 National Olympics. The counterfactual keeps the interwar wooden stands, not the 1969–79 Soviet concrete rebuild.",
+   "exclude_built_after_1981_or_demolished": [
+    "concrete half-ring of the 1969–79 rebuild"
+   ],
+   "free_lithuania_1981_adjustments": [
+    "interwar wooden grandstand kept"
+   ],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "low",
+   "card_categories": [
+    "stadium",
+    "football",
+    "player",
+    "fan"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Darius_and_Gir%C4%97nas_Stadium",
+    "https://www.vle.lt/straipsnis/steponas-darius/"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "appearance of the 1936 grandstand (visual)"
+   ],
+   "prompt_word_count": 28
+  },
+  {
+   "id": "kaunas_clinics",
+   "name": "Kaunas — University Clinics (1937–40)",
+   "region": "Kaunas",
+   "kind": "hospital",
+   "signature_features": [
+    "long pale rendered multi-storey wings, rows of identical windows, flat roofs",
+    "tall slender brick chimney",
+    "pines; canopied entrance"
+   ],
+   "prompt_phrase": "long pale rendered hospital wings with rows of identical windows and flat roofs, a tall slender brick chimney rising behind, pines, a canopied entrance",
+   "state_1981": "Built 1937–39 (U. Cassan, E. Ouchanoff, F. Bielinskis), opened 1940; six buildings. Lithuania's own big hospital in any 1981.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "low",
+   "card_categories": [
+    "hospital",
+    "doctor",
+    "nurse",
+    "ambulance"
+   ],
+   "sources": [
+    "https://www.vle.lt/straipsnis/kauno-architektura/",
+    "https://en.wikipedia.org/wiki/Kaunas_Clinics",
+    "https://kaunas2022.eu/modernizmasateiciai/en/vytauto-didziojo-universiteto-klinikos/index.html"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "render colour and window rhythm (visual)"
+   ],
+   "prompt_word_count": 24
+  },
+  {
+   "id": "kaunas_romuva_cinema",
+   "name": "Kaunas — Romuva cinema (1940)",
+   "region": "Kaunas",
+   "kind": "cinema",
+   "signature_features": [
+    "narrow modernist street front",
+    "tall vertical fin rising above the roofline (sign left blank)",
+    "rounded canopy over the doors, poster frames left blank"
+   ],
+   "prompt_phrase": "narrow pale modernist cinema front with a tall blank vertical fin rising above the roofline, a rounded canopy over the doors and empty poster frames",
+   "state_1981": "Opened 13 April 1940 (N. Mačiulskis); the oldest cinema still operating in Lithuania.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [
+    "fin and poster frames blank (no lettering)"
+   ],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "low",
+   "card_categories": [
+    "cinema"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Romuva_Cinema"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "the fin (visual)"
+   ],
+   "prompt_word_count": 25
+  },
+  {
+   "id": "kaunas_town_hall_square",
+   "name": "Kaunas — Town Hall square (\"White Swan\")",
+   "region": "Kaunas",
+   "kind": "square",
+   "signature_features": [
+    "wide paved old-town square",
+    "slender white town hall in the middle, 53 m tower stepping up in ever-smaller tiers to a thin spire",
+    "low two- and three-storey old houses and a church gable around"
+   ],
+   "prompt_phrase": "wide paved old-town square with a slender white town hall standing in the middle, its tower stepping up in ever-smaller tiers to a thin spire, low old houses and a church gable round the edges",
+   "state_1981": "Town hall begun 1542, baroque-classicist rebuild 1771–75. A wedding palace from 1973 in reality; a municipal office in the counterfactual; nothing visible changes.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "high",
+   "card_categories": [
+    "square",
+    "city",
+    "town",
+    "market"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kaunas_Town_Hall"
+   ],
+   "naming_the_place_helps": true,
+   "unverified_points": [
+    "Kaunas trolleybus along the square edge (system from 1965; keep or drop)"
+   ],
+   "prompt_word_count": 35
+  },
+  {
+   "id": "vilnius_philharmonic",
+   "name": "Vilnius — Philharmonic hall (1902)",
+   "region": "Vilnius",
+   "kind": "concert hall",
+   "signature_features": [
+    "three-storey eclectic corner building with a rounded corner bay and tall arched upper windows",
+    "inside: white-and-gilt concert hall with a balcony and a wide stage"
+   ],
+   "prompt_phrase": "inside a white-and-gilt concert hall of 1902 with a curved balcony on slender columns, tall arched windows along one side and a wide wooden stage",
+   "state_1981": "Built 1899–1902 as a theatre; the Great Seimas of Vilnius met there in 1905; the State Philharmonic since 1940.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "low",
+   "card_categories": [
+    "concert hall",
+    "concert",
+    "orchestra",
+    "music"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lithuanian_National_Philharmonic_Society"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "façade details and hall colours (visual)"
+   ],
+   "prompt_word_count": 25
+  },
+  {
+   "id": "kaunas_konrado_cafe",
+   "name": "Kaunas — Konrado kavinė, Laisvės alėja",
+   "region": "Kaunas",
+   "kind": "café",
+   "signature_features": [
+    "two-storey brick house on the lime boulevard",
+    "inside: wall mirrors, small round tables, a gramophone, an upright piano",
+    "plaster statue of a girl in a niche (1938–39 refit), a glass cake case"
+   ],
+   "prompt_phrase": "inside an interwar café on a lime boulevard: wall mirrors, small round tables, an upright piano and a gramophone, a plaster statue of a girl in a wall niche, a glass cake case, the clipped limes through the window",
+   "state_1981": "Café since 1862, the Konradas brothers from 1920, meeting place of the interwar writers; renamed Tulpė after the war, closed 2003. In a free 1981 it keeps its name (no lettering drawn anyway).",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "low",
+   "card_categories": [
+    "café",
+    "coffee",
+    "cake"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Konradas_Cafe"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [
+    "interior detail is from the 1938–39 refit as described in the source; not seen in a photograph"
+   ],
+   "prompt_word_count": 39
+  },
+  {
+   "id": "vilnius_rasos_cemetery",
+   "name": "Vilnius — Rasos cemetery",
+   "region": "Vilnius",
+   "kind": "cemetery",
+   "signature_features": [
+    "steep wooded hillside of old graves",
+    "iron and stone crosses among tall trees",
+    "small chapel; candles"
+   ],
+   "prompt_phrase": "steep wooded hillside of old graves with iron and stone crosses among tall trees, a small chapel on the slope, candles in glass lanterns",
+   "state_1981": "Burial place of Basanavičius (1927) and Čiurlionis (1911); in use throughout.",
+   "exclude_built_after_1981_or_demolished": [],
+   "free_lithuania_1981_adjustments": [],
+   "kitsch_risk": "low",
+   "recognisability_at_card_scale": "low",
+   "card_categories": [
+    "cemetery",
+    "funeral",
+    "All Souls"
+   ],
+   "sources": [
+    "https://www.vle.lt/straipsnis/jonas-basanavicius/",
+    "https://www.vle.lt/straipsnis/mikalojus-konstantinas-ciurlionis/"
+   ],
+   "naming_the_place_helps": false,
+   "unverified_points": [],
+   "prompt_word_count": 24
+  }
+ ]
+}
