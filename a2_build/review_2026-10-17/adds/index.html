@@ -1,0 +1,235 @@
+<title>A2 Additions and Fixes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&display=swap">
+<style>
+/* Layout: a GO training-album sheet — brick-red band on top, one plate per row:
+   picture left, the judging slip right; stacks to one column on a phone. */
+:root{
+  --paper:#ece3cc; --sheet:#f5efdf; --ink:#2b2520; --dun:#7d715a; --rule:#c9b994;
+  --red:#8a2b1c; --on-red:#f3ead6; --teal:#2f5f5a;
+  --ok:#3d7a4c; --mid:#b07a1e; --bad:#9a3220; --chipbg:#e2d7bb;
+  --serif:"PT Serif",Georgia,"Times New Roman",serif;
+  --narrow:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#221d19; --sheet:#2c2621; --ink:#ebe2cf; --dun:#b0a487; --rule:#4d4336;
+  --red:#7a2618; --on-red:#f3ead6; --teal:#86b5ae; --ok:#6fae7e; --mid:#d9a24a; --bad:#e07a62; --chipbg:#3a322a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#221d19; --sheet:#2c2621; --ink:#ebe2cf; --dun:#b0a487; --rule:#4d4336;
+  --red:#7a2618; --on-red:#f3ead6; --teal:#86b5ae; --ok:#6fae7e; --mid:#d9a24a; --bad:#e07a62; --chipbg:#3a322a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:16px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--red)}
+.band{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--red);color:var(--on-red);
+  padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.band h1{font-family:var(--narrow);font-weight:700;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;margin:0}
+.tally{display:flex;gap:12px;font-family:var(--narrow);font-size:.95rem;margin-left:auto;font-variant-numeric:tabular-nums}
+.tally b{font-size:1.25rem}
+.filters{display:flex;flex-wrap:wrap;gap:6px;width:100%}
+.filters button,.band .copy{font:inherit;font-family:var(--narrow);font-size:.85rem;letter-spacing:.04em;padding:3px 10px;border:1px solid var(--on-red);background:transparent;color:var(--on-red);border-radius:2px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--on-red);color:var(--red)}
+#status{font-family:var(--narrow);font-size:.8rem;opacity:.9;width:100%}
+main{max-width:1180px;margin:0 auto;padding-block:18px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+.lead{max-width:70ch}
+.lead p{margin:0 0 .6em}
+.general{background:var(--sheet);border:1px solid var(--rule);padding:12px 14px;display:grid;gap:6px}
+.general label{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;color:var(--dun)}
+textarea{width:100%;font:inherit;font-size:.95rem;background:transparent;color:var(--ink);border:1px solid var(--rule);padding:6px 8px;min-height:2.4em;resize:vertical;border-radius:2px}
+textarea:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.set{display:grid;gap:14px}
+.set-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;border-bottom:2px solid var(--red);padding-bottom:4px}
+.set-h h2{font-family:var(--narrow);font-weight:700;font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase;margin:0;color:var(--red)}
+.set-h .hint{color:var(--dun);font-style:italic}
+.set-h .stat{margin-left:auto;font-family:var(--narrow);font-variant-numeric:tabular-nums}
+.restage{font-family:var(--narrow);background:var(--bad);color:var(--sheet);padding:1px 8px;border-radius:2px}
+.plate{background:var(--sheet);border:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:0}
+.plate.hide{display:none}
+.plate.v-pass{box-shadow:inset 4px 0 0 var(--ok)} .plate.v-fail{box-shadow:inset 4px 0 0 var(--bad)}
+.pic{padding:10px;display:grid;gap:8px;align-content:start}
+.pic a{display:block} .pic img{width:100%;display:block;border:1px solid var(--rule)}
+.before{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:8px;align-items:start;font-family:var(--narrow);font-size:.8rem;color:var(--dun)}
+.slip{padding:12px 14px;border-left:1px dashed var(--rule);display:grid;gap:10px;align-content:start;min-width:0}
+.id{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.id .key{font-family:var(--narrow);color:var(--dun);font-variant-numeric:tabular-nums}
+.id .lt{font-size:1.45rem;font-weight:700}
+.id .pron{color:var(--dun)}
+.cap{font-family:var(--narrow);font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;border:1px solid var(--ink);padding:2px 8px;justify-self:start}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--narrow);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:2px;background:var(--chipbg);color:var(--ink)}
+.chip.PASS{background:var(--ok);color:var(--sheet)} .chip.WARN{background:var(--mid);color:var(--sheet)} .chip.FAIL{background:var(--bad);color:var(--sheet)}
+dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 10px;font-size:.92rem}
+dt{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.76rem;color:var(--dun);padding-top:.2em}
+dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.qa{font-size:.85rem;color:var(--dun)}
+.qa .f{color:var(--bad)}
+.judge{display:grid;gap:8px;border-top:1px solid var(--rule);padding-top:10px}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.row .lbl{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;width:7.5em;color:var(--dun)}
+.seg button,.tog{font:inherit;font-family:var(--narrow);font-size:.9rem;padding:4px 12px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px;min-height:34px}
+.seg{display:inline-flex}
+.seg button+button{border-left:none}
+.seg button[aria-pressed="true"][data-v="yes"],.seg button[aria-pressed="true"][data-v="ok"]{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.seg button[aria-pressed="true"][data-v="nearly"]{background:var(--mid);border-color:var(--mid);color:var(--sheet)}
+.seg button[aria-pressed="true"][data-v="no"],.seg button[aria-pressed="true"][data-v="redo"]{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.tog[aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.verdict{font-family:var(--narrow);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+.verdict.pass{color:var(--ok)} .verdict.fail{color:var(--bad)} .verdict.open{color:var(--dun)}
+#lbx{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
+#lbx img{max-width:98vw;max-height:94vh}
+@media (max-width:760px){.plate{grid-template-columns:minmax(0,1fr)}.slip{border-left:none;border-top:1px dashed var(--rule)}.tally{margin-left:0}}
+@media (prefers-reduced-motion:no-preference){.plate{transition:box-shadow .15s}}
+</style>
+
+<div class="band"><div class="band-in">
+  <h1 id="ttl"></h1>
+  <div class="tally" id="tally"></div>
+  <div class="filters" id="filters"></div>
+  <span id="status">Connecting to the review store…</span>
+</div></div>
+<main id="main">
+  <section class="lead" id="lead"></section>
+  <section class="general">
+    <label for="general">General notes on this batch</label>
+    <textarea id="general" placeholder="Anything that applies to the whole set: style, staging rules, what to change before the roll-out."></textarea>
+  </section>
+  <div id="sets"></div>
+</main>
+<div id="lbx" role="dialog" aria-label="Enlarged picture"><img id="lbimg" alt=""></div>
+
+<script>
+const MODE="adds", DATA=[{"k": "A2-1879", "group": "New A2 pictures", "lt": "juokingas", "pron": "juokìngas", "en": "funny", "forms": "juokingas ♂ · juokinga ♀", "gender": "M/F", "staging": "a man laughing helplessly at a clown's antics", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "A cat is depicted inside a cooking pot, an unusual and potentially incoherent scene.", "guess": "funny", "before": "", "rr": 0}, {"k": "A2-1880", "group": "New A2 pictures", "lt": "saulėta", "pron": "saulė́ta", "en": "sunny", "forms": "", "gender": "", "staging": "a bright full sun over a field, sharp shadows, a woman shading her eyes", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'sun', card teaches 'sunny'", "guess": "sun", "before": "", "rr": 0}, {"k": "A2-1883", "group": "New A2 pictures", "lt": "susirūpinęs", "pron": "susirū́pinęs", "en": "worried", "forms": "susirūpinęs ♂ · susirūpinusi ♀", "gender": "M/F", "staging": "a mother at a window at night, hand at her mouth, clock showing late", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "worried", "before": "", "rr": 0}, {"k": "A2-1884", "group": "New A2 pictures", "lt": "vienišas", "pron": "víenišas", "en": "lonely", "forms": "vienišas ♂ · vieniša ♀", "gender": "M/F", "staging": "an old woman at a table set for one, looking at a photograph", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'to miss someone', card teaches 'lonely'", "guess": "to miss someone", "before": "", "rr": 0}, {"k": "A2-1892", "group": "New A2 pictures", "lt": "triukšmingas", "pron": "triukšmìngas", "en": "noisy", "forms": "triukšmingas ♂ · triukšminga ♀", "gender": "M/F", "staging": "a street of roadworks and horns, a man with hands over his ears", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'noise', card teaches 'noisy'", "guess": "noise", "before": "", "rr": 0}, {"k": "A2-1893", "group": "New A2 pictures", "lt": "paslaugus", "pron": "paslaugùs", "en": "helpful; kind", "forms": "paslaugus ♂ · paslaugi ♀", "gender": "M/F", "staging": "a shop assistant carrying an old woman's bags to the door", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'help', card teaches 'helpful; kind'", "guess": "help", "before": "", "rr": 0}, {"k": "A2-1894", "group": "New A2 pictures", "lt": "nemandagus", "pron": "nemandagùs", "en": "rude", "forms": "nemandagus ♂ · nemandagi ♀", "gender": "M/F", "staging": "a man pushing past a queue, people glaring", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'queue', card teaches 'rude' | picture points at no single meaning (low confidence)", "guess": "queue", "before": "", "rr": 0}, {"k": "A2-1896", "group": "New A2 pictures", "lt": "išsigandęs", "pron": "išsigañdęs", "en": "scared; frightened", "forms": "išsigandęs ♂ · išsigandusi ♀", "gender": "M/F", "staging": "a child clutching a mother's coat as a large dog barks", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'afraid', card teaches 'scared; frightened'", "guess": "afraid", "before": "", "rr": 0}, {"k": "A2-1898", "group": "New A2 pictures", "lt": "mama", "pron": "mamà", "en": "mum; mom", "forms": "gen. mamos", "gender": "F", "staging": "a mother kneeling to button a small child's coat at a door", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'button', card teaches 'mum; mom'", "guess": "button", "before": "", "rr": 0}, {"k": "A2-1899", "group": "New A2 pictures", "lt": "tėtis", "pron": "tė̃tis", "en": "dad", "forms": "gen. tėčio", "gender": "M", "staging": "a father lifting a small boy onto his shoulders at a fair", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'on shoulders', card teaches 'dad'", "guess": "on shoulders", "before": "", "rr": 0}, {"k": "A2-1901", "group": "New A2 pictures", "lt": "renginys", "pron": "renginỹs", "en": "event", "forms": "gen. renginio", "gender": "M", "staging": "a town-square stage with a crowd, bunting, a poster board", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'festival', card teaches 'event'", "guess": "festival", "before": "", "rr": 0}, {"k": "A2-1903", "group": "New A2 pictures", "lt": "vidurnaktis", "pron": "vidùrnaktis", "en": "midnight", "forms": "gen. vidurnakčio", "gender": "M", "staging": "a tower clock at twelve, dark sky, a lone lit window", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'clock', card teaches 'midnight'", "guess": "clock", "before": "", "rr": 0}, {"k": "A2-1904", "group": "New A2 pictures", "lt": "rašomasis stalas", "pron": "", "en": "desk", "forms": "gen. rašomojo stalo", "gender": "M", "staging": "a writing desk with a lamp, inkpot and drawer", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "writing desk", "before": "", "rr": 0}, {"k": "A2-1905", "group": "New A2 pictures", "lt": "morka", "pron": "morkà", "en": "carrot", "forms": "gen. morkos", "gender": "F", "staging": "a bunch of carrots with green tops on a market table", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "carrot", "before": "", "rr": 0}, {"k": "A2-1906", "group": "New A2 pictures", "lt": "pupelės", "pron": "pupẽlės", "en": "bean(s)", "forms": "gen. pupelių", "gender": "F pl", "staging": "a bowl of white beans, a few pods beside", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "beans", "before": "", "rr": 0}, {"k": "A2-1907", "group": "New A2 pictures", "lt": "padažas", "pron": "pãdažas", "en": "sauce", "forms": "gen. padažo", "gender": "M", "staging": "a gravy boat pouring sauce over cutlets", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'gravy', card teaches 'sauce'", "guess": "gravy", "before": "", "rr": 0}, {"k": "A2-1908", "group": "New A2 pictures", "lt": "gitara", "pron": "gitarà", "en": "guitar", "forms": "gen. gitaros", "gender": "F", "staging": "a young man playing an acoustic guitar by a campfire", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "playing the guitar", "before": "", "rr": 0}, {"k": "A2-1909", "group": "New A2 pictures", "lt": "pianinas", "pron": "pianìnas", "en": "piano", "forms": "gen. pianino", "gender": "M", "staging": "an upright piano with a girl at the keys, sheet music open", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "piano", "before": "", "rr": 0}, {"k": "A2-1910", "group": "New A2 pictures", "lt": "žaislas", "pron": "žaĩslas", "en": "toy", "forms": "gen. žaislo", "gender": "M", "staging": "a wooden horse, a doll and a tin truck on a nursery floor", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "toys", "before": "", "rr": 0}, {"k": "A2-1911", "group": "New A2 pictures", "lt": "augintinis", "pron": "augìntinis", "en": "pet", "forms": "gen. augintinio", "gender": "M", "staging": "a girl feeding a hamster in a cage, a cat watching", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'hamster', card teaches 'pet'", "guess": "hamster", "before": "", "rr": 0}, {"k": "A2-1912", "group": "New A2 pictures", "lt": "papuošalai", "pron": "papuošalaĩ", "en": "jewellery", "forms": "gen. papuošalų", "gender": "M pl", "staging": "an open jewellery box: amber necklace, rings, earrings", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'jewelry', card teaches 'jewellery'", "guess": "jewelry", "before": "", "rr": 0}, {"k": "A2-1913", "group": "New A2 pictures", "lt": "dienoraštis", "pron": "dienóraštis", "en": "diary", "forms": "gen. dienoraščio", "gender": "M", "staging": "a girl writing in a small locked diary by lamplight", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'lock', card teaches 'diary'", "guess": "lock", "before": "", "rr": 0}, {"k": "A2-1914", "group": "New A2 pictures", "lt": "piešinys", "pron": "piešinỹs", "en": "drawing", "forms": "gen. piešinio", "gender": "M", "staging": "a child's crayon drawing pinned to a kitchen wall", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'family', card teaches 'drawing'", "guess": "family", "before": "", "rr": 0}, {"k": "A2-1915", "group": "New A2 pictures", "lt": "galerija", "pron": "galèrija", "en": "gallery", "forms": "gen. galerijos", "gender": "F", "staging": "a long white room of paintings, a couple looking at one", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "art gallery", "before": "", "rr": 0}, {"k": "A2-1916", "group": "New A2 pictures", "lt": "dailininkas", "pron": "daĩlininkas", "en": "painter; artist", "forms": "gen. dailininko", "gender": "M/F", "staging": "a painter at an easel on a riverbank", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'painting', card teaches 'painter; artist'", "guess": "painting", "before": "", "rr": 0}, {"k": "A2-1917", "group": "New A2 pictures", "lt": "pilotas", "pron": "pilòtas", "en": "pilot", "forms": "gen. piloto", "gender": "M/F", "staging": "a pilot in cap at the cockpit window of an airliner", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "pilot", "before": "", "rr": 0}, {"k": "A2-1918", "group": "New A2 pictures", "lt": "treneris", "pron": "trèneris", "en": "coach; trainer", "forms": "gen. trenerio", "gender": "M/F", "staging": "a trainer with whistle and stopwatch beside runners", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'stopwatch', card teaches 'coach; trainer'", "guess": "stopwatch", "before": "", "rr": 0}, {"k": "A2-1919", "group": "New A2 pictures", "lt": "nugalėtojas", "pron": "nugalė́tojas", "en": "winner", "forms": "gen. nugalėtojo", "gender": "M/F", "staging": "a runner breaking the tape, arms raised", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'win', card teaches 'winner'", "guess": "win", "before": "", "rr": 0}, {"k": "A2-1920", "group": "New A2 pictures", "lt": "prizas", "pron": "prìzas", "en": "prize", "forms": "gen. prizo", "gender": "M", "staging": "a cup and a wrapped prize handed over on a podium", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "prize", "before": "", "rr": 0}, {"k": "A2-1921", "group": "New A2 pictures", "lt": "įvartis", "pron": "į́vartis", "en": "goal (football)", "forms": "gen. įvarčio", "gender": "M", "staging": "a ball crossing the line past a diving goalkeeper", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "goal", "before": "", "rr": 0}, {"k": "A2-1922", "group": "New A2 pictures", "lt": "išpardavimas", "pron": "išpardavìmas", "en": "sale; for sale", "forms": "gen. išpardavimo", "gender": "M", "staging": "a shop window with crossed-out price tags and a crowd", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'shortage', card teaches 'sale; for sale'", "guess": "shortage", "before": "", "rr": 0}, {"k": "A2-1923", "group": "New A2 pictures", "lt": "viršus", "pron": "viršùs", "en": "top (of)", "forms": "gen. viršaus", "gender": "M", "staging": "a flag at the top of a hill, a path leading up", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'raising a flag', card teaches 'top (of)'", "guess": "raising a flag", "before": "", "rr": 0}, {"k": "A2-1924", "group": "New A2 pictures", "lt": "apačia", "pron": "apačià", "en": "bottom (of)", "forms": "gen. apačios", "gender": "F", "staging": "a ball at the bottom of a staircase, the stairs rising away", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'roll', card teaches 'bottom (of)'", "guess": "roll", "before": "", "rr": 0}, {"k": "A2-1926", "group": "New A2 pictures", "lt": "įranga", "pron": "į́ranga", "en": "equipment; gear", "forms": "gen. įrangos", "gender": "F", "staging": "skis, boots and poles laid out on a bench", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'skiing', card teaches 'equipment; gear'", "guess": "skiing", "before": "", "rr": 0}, {"k": "A2-1931", "group": "New A2 pictures", "lt": "banko kortelė", "pron": "", "en": "credit card", "forms": "gen. banko kortelės", "gender": "F", "staging": "a bank card held to a card reader at a till", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "pay by card", "before": "", "rr": 0}, {"k": "A2-1932", "group": "New A2 pictures", "lt": "valgomasis", "pron": "válgomasis", "en": "dining room", "forms": "gen. valgomojo", "gender": "M", "staging": "a table laid for six under a lamp, sideboard behind", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'family dinner', card teaches 'dining room'", "guess": "family dinner", "before": "", "rr": 0}, {"k": "A2-1933", "group": "New A2 pictures", "lt": "žadintuvas", "pron": "žadintùvas", "en": "alarm clock", "forms": "gen. žadintuvo", "gender": "M", "staging": "a twin-bell alarm clock ringing on a bedside table, a hand reaching", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "alarm clock", "before": "", "rr": 0}, {"k": "A2-1938", "group": "New A2 pictures", "lt": "pagrindinis patiekalas", "pron": "", "en": "main course", "forms": "gen. pagrindinio patiekalo", "gender": "M", "staging": "a waiter setting down a plate of cutlets and potatoes", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'serve', card teaches 'main course'", "guess": "serve", "before": "", "rr": 0}, {"k": "A2-1939", "group": "New A2 pictures", "lt": "turizmo informacijos centras", "pron": "", "en": "tourist information", "forms": "", "gender": "M", "staging": "a small office with maps in racks and an 'i' sign as object", "note": "", "ct": "the single lowercase letter \"i\" written once on the round information sign", "qa": "PASS", "fails": "", "warns": "", "guess": "tourist information", "before": "", "rr": 2}, {"k": "A2-1952", "group": "New A2 pictures", "lt": "belstis", "pron": "bélstis", "en": "to knock", "forms": "beldžiasi · beldėsi", "gender": "", "staging": "a hand knocking on a wooden door, knuckles raised", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "knock on the door", "before": "", "rr": 0}, {"k": "A2-1953", "group": "New A2 pictures", "lt": "slėpti(s)", "pron": "slė̃pti", "en": "to hide", "forms": "slepia · slėpė", "gender": "", "staging": "a child hiding behind a curtain, feet showing", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'hiding', card teaches 'to hide'", "guess": "hiding", "before": "", "rr": 0}, {"k": "A2-1956", "group": "New A2 pictures", "lt": "susituokti", "pron": "susituõkti", "en": "to get married", "forms": "susituokia · susituokė", "gender": "", "staging": "a couple at a registry table signing, rings on a cushion", "note": "", "ct": "", "qa": "WARN", "fails": "", "warns": "guessed 'wedding ceremony', card teaches 'to get married'", "guess": "wedding ceremony", "before": "", "rr": 0}, {"k": "A2-1957", "group": "New A2 pictures", "lt": "užpildyti (anketą)", "pron": "užpìldyti", "en": "to fill in (a form)", "forms": "užpildo · užpildė", "gender": "", "staging": "a man at a counter writing on a printed form", "note": "", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "fill out a form", "before": "", "rr": 0}, {"k": "290_vandenynas", "group": "Picture fixes (A1, re-rolled)", "lt": "vandenynas", "pron": "vandenýnas", "en": "ocean", "forms": "", "gender": "M", "staging": "open ocean water stretching to an empty horizon, no ship and no land in sight, a small globe inset showing the oceans", "note": "Subject phrase no longer asks for a steamship. Card note: Main picture: open ocean water to the horizon under a vast sky, deep blue swells, no land in sight, a whale's spout far off; the endless water is the subject. Insets: a globe turned to show the Pacific as mostly water; a sailing ship small on a huge sea; a wave breaking on a reef.", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "ocean", "before": "290_vandenynas_before.jpg", "rr": 1}, {"k": "318_sala", "group": "Picture fixes (A1, re-rolled)", "lt": "sala", "pron": "salà", "en": "island", "forms": "", "gender": "F", "staging": "a small island in a lake", "note": "Trakai castle setting line removed; plain lake island. Card note: Main picture: a small wooded island in a calm lake, grass and birches on it, water all round, a rowing boat pulled up on its shore, the far lake shore low in the distance; the island surrounded by water is the subject. Insets: the island seen from above as a shape in blue; a fisherman in a boat passing it; a heron on its shore.", "ct": "", "qa": "PASS", "fails": "", "warns": "", "guess": "island", "before": "318_sala_before.jpg", "rr": 1}, {"k": "336_kilogramas", "group": "Picture fixes (A1, re-rolled)", "lt": "kilogramas", "pron": "kilogrãmas", "en": "kilogram", "forms": "", "gender": "M", "staging": "a balance scale with a one-kilogram weight block on the pan", "note": "EU/LT flag clause removed from the subject phrase. Card note: Main picture: a market balance scale with a heavy iron one-kilogram weight on one pan and a bag of potatoes on the other, the pans level, the lettering declared in card_text cast on the weight; the kilogram weight is the subject. Insets: a bag of sugar; a hand holding the weight; a kitchen scale with its needle.", "ct": "the letters \"KG\" cast once on the kilogram weight and the numeral \"1\" beside them", "qa": "WARN", "fails": "", "warns": "guessed 'weigh', card teaches 'kilogram'", "guess": "weigh", "before": "336_kilogramas_before.jpg", "rr": 1}, {"k": "338_peda", "group": "Picture fixes (A1, re-rolled)", "lt": "pėda", "pron": "pėdà", "en": "foot", "forms": "", "gender": "F", "staging": "a ruler marked to a one-foot length laid beside a shoe", "note": "US/UK flag clause removed from the subject phrase. Card note: Main picture: a wooden yardstick lying on a floor with the lettering declared in card_text along it and three foot-divisions marked, a shoe laid beside the first division for scale; the foot-length is the subject. Insets: a bare foot beside the ruler; a doorway with a man's height marked in feet; a tape measure.", "ct": "the word \"YARD\" written once at the end of the yardstick and the numerals \"1\", \"2\", \"3\" at the three foot-divisions", "qa": "WARN", "fails": "", "warns": "guessed 'yard', card teaches 'foot' | The yard-marked ruler is used with visibly inconsistent scale: the shoe and person appear implausibly large relative to a yard.", "guess": "yard", "before": "338_peda_before.jpg", "rr": 1}, {"k": "339_svaras", "group": "Picture fixes (A1, re-rolled)", "lt": "svaras", "pron": "svàras", "en": "pound", "forms": "", "gender": "M", "staging": "a balance scale with a one-pound weight block on the pan", "note": "US/UK flag clause removed from the subject phrase and the card-note inset; rolled twice (the first still drew flags). Card note: Main picture: a balance scale with a one-pound weight on one pan, the lettering declared in card_text cast on the weight, a bag of flour on the other pan, the pans level; the pound weight is the subject. Insets: a butcher weighing meat; a hand holding the weight; a kitchen scale with its needle.", "ct": "the letters \"LB\" cast once on the pound weight and the numeral \"1\" beside them", "qa": "WARN", "fails": "", "warns": "guessed 'weigh', card teaches 'pound'", "guess": "weigh", "before": "339_svaras_before.jpg", "rr": 2}], EXTRA={};
+const COL = MODE==='pilot' ? 'pilot' : 'adds_review', META = MODE==='pilot' ? 'pilot_meta/general' : 'adds_meta/general';
+const LS='go_review_'+COL;
+const $=id=>document.getElementById(id);
+const el=(t,a={},...kids)=>{const e=document.createElement(t);for(const[k,v]of Object.entries(a)){if(k==='class')e.className=v;else if(k.startsWith('on'))e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)}for(const c of kids){if(c==null)continue;e.append(c.nodeType?c:document.createTextNode(c))}return e};
+let V={}, G={text:'',updatedAt:''}, db=null, timers={}, F='all';
+try{const s=JSON.parse(localStorage.getItem(LS)||'{}');V=s.V||{};G=s.G||G}catch(e){}
+function local(){try{localStorage.setItem(LS,JSON.stringify({V,G}))}catch(e){}}
+function status(t,warn){const s=$('status');s.textContent=t;s.style.fontWeight=warn?'700':''}
+
+// ---- verdict logic (PILOT_24: pass = Situation yes/nearly, Neighbour no, Stray none)
+function verdict(k){const v=V[k]||{};
+  if(MODE==='pilot'){ if(v.neighbour_fail||v.stray||v.situation==='no')return'fail'; if(v.situation==='yes'||v.situation==='nearly')return'pass'; return'open'}
+  return v.verdict==='ok'?'pass':v.verdict==='redo'?'fail':'open'}
+const VTXT={pass:'Passes',fail:MODE==='pilot'?'Fails':'Redo',open:'Not judged yet'};
+
+async function push(k){const v=V[k];v.updatedAt=new Date().toISOString();local();
+  if(!db){status('Saved in this browser only — the review store is not connected',true);return}
+  try{await db.doc(COL+'/'+k).set(Object.assign({key:k},v));status('Saved · '+new Date().toLocaleTimeString())}
+  catch(e){status('Could not save to the review store ('+(e.code||'error')+'); kept in this browser',true)}}
+async function pushG(){G.updatedAt=new Date().toISOString();local();if(!db)return;
+  try{await db.doc(META).set(G);status('Notes saved · '+new Date().toLocaleTimeString())}catch(e){status('Notes kept in this browser only ('+(e.code||'error')+')',true)}}
+function set(k,patch){V[k]=Object.assign({},V[k]||{},patch);paint();push(k)}
+
+function plate(c){
+  const qa=el('div',{class:'qa'});
+  if(c.fails)qa.append(el('div',{class:'f'},'QA fail: '+c.fails));
+  if(c.warns)qa.append(el('div',{},'QA notes: '+c.warns));
+  if(c.nb&&MODE==='pilot')qa.append(el('div',{},'Neighbour test (machine) picked: '+c.nb));
+  if(c.guess)qa.append(el('div',{},'Read cold as: '+c.guess));
+  const chips=el('div',{class:'chips'});
+  if(c.qa)chips.append(el('span',{class:'chip '+c.qa},'QA '+c.qa));
+  if(c.fmt)chips.append(el('span',{class:'chip'},c.fmt));
+  if(c.rr)chips.append(el('span',{class:'chip'},'re-rolled ×'+c.rr));
+  if(c.ct)chips.append(el('span',{class:'chip'},'lettering declared'));
+  const facts=el('dl',{});
+  const add=(t,d)=>{if(d){facts.append(el('dt',{},t),el('dd',{},d))}};
+  add('Staging',c.staging); add('Insets',c.insets);
+  if(MODE==='pilot'){add('Must see',c.cue);add('Must not read as',(c.conf||[]).join('; '))}
+  else{add('Forms',c.forms);add('Lettering',c.ct);add('What changed',c.note)}
+  const judge=el('div',{class:'judge'});
+  if(MODE==='pilot'){
+    const seg=el('div',{class:'seg',role:'group','aria-label':'Situation'});
+    for(const[v,t]of[['yes','Yes'],['nearly','Nearly'],['no','No']])seg.append(el('button',{type:'button','data-v':v,'data-k':c.k,'data-f':'situation',onclick:()=>set(c.k,{situation:(V[c.k]||{}).situation===v?'':v})},t));
+    judge.append(el('div',{class:'row'},el('span',{class:'lbl'},'Situation'),seg));
+    judge.append(el('div',{class:'row'},el('span',{class:'lbl'},'Neighbour'),
+      el('button',{type:'button',class:'tog','data-k':c.k,'data-f':'neighbour_fail',onclick:()=>set(c.k,{neighbour_fail:!(V[c.k]||{}).neighbour_fail})},'Could pass for the neighbour')));
+    judge.append(el('div',{class:'row'},el('span',{class:'lbl'},'Stray act'),
+      el('button',{type:'button',class:'tog','data-k':c.k,'data-f':'stray',onclick:()=>set(c.k,{stray:!(V[c.k]||{}).stray})},'Bubble, lettering or a wrong gesture')));
+  }else{
+    const seg=el('div',{class:'seg',role:'group','aria-label':'Verdict'});
+    for(const[v,t]of[['ok','OK'],['redo','Redo']])seg.append(el('button',{type:'button','data-v':v,'data-k':c.k,'data-f':'verdict',onclick:()=>set(c.k,{verdict:(V[c.k]||{}).verdict===v?'':v})},t));
+    judge.append(el('div',{class:'row'},el('span',{class:'lbl'},'Verdict'),seg));
+  }
+  const ta=el('textarea',{id:'note-'+c.k,'aria-label':'Note for '+c.k,placeholder:'Note for this card'});
+  ta.addEventListener('input',()=>{V[c.k]=Object.assign({},V[c.k]||{},{note:ta.value});local();clearTimeout(timers[c.k]);timers[c.k]=setTimeout(()=>push(c.k),800)});
+  judge.append(ta, el('div',{class:'verdict open','data-verdict':c.k},''));
+  const img=el('a',{href:'media/'+c.k+'.jpg',onclick:e=>{e.preventDefault();$('lbimg').src='media/'+c.k+'.jpg';$('lbx').style.display='flex'}},el('img',{src:'media/'+c.k+'.jpg',alt:c.en+' — picture',loading:'lazy',width:'1024',height:'683'}));
+  const pic=el('div',{class:'pic'},img);
+  if(c.before){pic.append(el('div',{class:'before'},el('a',{href:'media/'+c.before,onclick:e=>{e.preventDefault();$('lbimg').src='media/'+c.before;$('lbx').style.display='flex'}},el('img',{src:'media/'+c.before,alt:'previous version',loading:'lazy'})),el('span',{},'Before: the version these fixes replace (kept in out_deck_f62/_rerolled/).')))}
+  return el('article',{class:'plate',id:'p-'+c.k,'data-k':c.k},pic,
+    el('div',{class:'slip'},el('div',{class:'id'},el('span',{class:'key'},c.k),el('span',{class:'lt'},c.lt),el('span',{class:'pron'},c.pron&&c.pron!==c.lt?c.pron:'')),
+      el('div',{class:'cap',title:'English caption (bottom band)'},c.en),chips,facts,qa,judge));
+}
+
+function build(){
+  const title = MODE==='pilot' ? 'Bubble-free pilot' : 'A2 additions & fixes';
+  $('ttl').textContent=title;
+  const lead=$('lead');
+  if(MODE==='pilot'){
+    lead.append(el('p',{},'The 24 hardest bubble-free phrase cards and 10 extras (9 question words, 374 galvoti), drawn under the new situation grammar: no speech bubble, no floating symbol, the English caption carries the words. Judge each plate as the learner meets it, caption in the bottom band.'),
+      el('p',{},'A card passes with Situation yes or nearly, not mistakable for its neighbour, and no stray act. Three or more failures in one set mean the staging rule is wrong, not the render: the set header turns red and the remaining ~133 cards wait.'));
+  }else{
+    lead.append(el('p',{},'The 43 picture cards added from the English A1–A2 benchmark (A2-1879 to A2-1957), drawn from their subject phrases with the F6.2 house style, and the five A1 re-rolls whose data was fixed today (290, 318, 336, 338, 339). Mark OK or Redo; a note on a Redo says what to change.'));
+  }
+  const groups = MODE==='pilot' ? EXTRA.sets.map(s=>s.name) : [...new Set(DATA.map(c=>c.set||c.group))];
+  const hints = MODE==='pilot' ? Object.fromEntries(EXTRA.sets.map(s=>[s.name,s.hint])) : {};
+  for(const g of groups){
+    const cards=DATA.filter(c=>(c.set||c.group)===g);
+    const sec=el('section',{class:'set','data-set':g},el('div',{class:'set-h'},el('h2',{},g),el('span',{class:'hint'},hints[g]||''),el('span',{class:'stat','data-stat':g},'')));
+    cards.forEach(c=>sec.append(plate(c)));
+    $('sets').append(sec);
+  }
+  const fl=$('filters');
+  for(const[f,t]of[['all','All '+DATA.length],['open','Not judged'],['fail',MODE==='pilot'?'Failed':'Redo'],['qa','QA warn or fail']]){
+    fl.append(el('button',{type:'button','aria-pressed':String(f==='all'),onclick:e=>{F=f;fl.querySelectorAll('button[aria-pressed]').forEach(b=>b.setAttribute('aria-pressed',String(b===e.currentTarget)));paint()}},t))}
+  fl.append(el('button',{type:'button',class:'copy',onclick:copySummary},'Copy summary'));
+  const g=$('general'); g.value=G.text||'';
+  g.addEventListener('input',()=>{G.text=g.value;local();clearTimeout(timers.__g);timers.__g=setTimeout(pushG,900)});
+  $('lbx').onclick=()=>{$('lbx').style.display='none'};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')$('lbx').style.display='none'});
+}
+
+function paint(){
+  let n={pass:0,fail:0,open:0};
+  for(const c of DATA){const v=V[c.k]||{}, vd=verdict(c.k); n[vd]++;
+    const p=$('p-'+c.k); p.classList.toggle('v-pass',vd==='pass'); p.classList.toggle('v-fail',vd==='fail');
+    p.querySelectorAll('button[data-f]').forEach(b=>{const f=b.dataset.f;b.setAttribute('aria-pressed',String(b.dataset.v?v[f]===b.dataset.v:!!v[f]))});
+    const ta=$('note-'+c.k); if(ta&&document.activeElement!==ta&&(v.note||'')!==ta.value)ta.value=v.note||'';
+    const vt=p.querySelector('[data-verdict]'); vt.textContent=VTXT[vd]; vt.className='verdict '+vd;
+    let show=true; if(F==='open')show=vd==='open'; else if(F==='fail')show=vd==='fail'; else if(F==='qa')show=c.qa==='WARN'||c.qa==='FAIL';
+    p.classList.toggle('hide',!show)}
+  document.querySelectorAll('[data-stat]').forEach(s=>{const g=s.dataset.stat;const cs=DATA.filter(c=>(c.set||c.group)===g);
+    const f=cs.filter(c=>verdict(c.k)==='fail').length, ok=cs.filter(c=>verdict(c.k)==='pass').length;
+    s.textContent=cs.length+' cards · '+ok+' pass · '+f+(MODE==='pilot'?' fail':' redo');
+    const old=s.parentNode.querySelector('.restage'); if(old)old.remove();
+    if(MODE==='pilot'&&f>=3)s.parentNode.append(el('span',{class:'restage'},'Re-stage this set'))});
+  $('tally').innerHTML='';
+  $('tally').append(el('span',{},el('b',{},String(n.pass)),' pass'),el('span',{},el('b',{},String(n.fail)),MODE==='pilot'?' fail':' redo'),el('span',{},el('b',{},String(n.open)),' to judge'));
+  const g=$('general'); if(document.activeElement!==g&&(G.text||'')!==g.value)g.value=G.text||'';
+}
+
+function copySummary(){
+  const lines=DATA.map(c=>{const v=V[c.k]||{};const vd=verdict(c.k);
+    const bits=MODE==='pilot'?[v.situation?'situation '+v.situation:'',v.neighbour_fail?'neighbour FAIL':'',v.stray?'stray act':'']:[v.verdict||''];
+    return c.k+'\t'+c.en+'\t'+VTXT[vd]+'\t'+bits.filter(Boolean).join(', ')+(v.note?'\t'+v.note:'')});
+  const t=lines.join('\n')+(G.text?'\n\nGeneral: '+G.text:'');
+  navigator.clipboard.writeText(t).then(()=>status('Summary of '+DATA.length+' cards copied'),()=>status('Copy was refused by this view; the verdicts are saved in the review store',true));
+}
+
+build(); paint();
+(async()=>{
+  db = window.claude?.use ? await window.claude.use('db') : null;
+  if(!db){status('Not connected: verdicts stay in this browser. Use "Copy summary" to pass them on.',true);return}
+  try{
+    const snap=await db.collection(COL).limit(500).get(); let n=0;
+    snap.docs.forEach(d=>{const x=d.data();if(!x||!x.key)return;const mine=V[x.key];
+      if(!mine||!mine.updatedAt||(x.updatedAt||'')>=mine.updatedAt){const{key,...rest}=x;V[x.key]=rest;n++}});
+    const gd=await db.doc(META).get(); const gx=gd&&gd.exists?gd.data():null;
+    if(gx&&(!G.updatedAt||(gx.updatedAt||'')>=G.updatedAt))G=gx;
+    local(); paint(); status('Connected · '+n+' saved verdicts loaded · saves as you go');
+  }catch(e){status('Could not read the review store ('+(e.code||'error')+'); working from this browser',true)}
+})();
+</script>

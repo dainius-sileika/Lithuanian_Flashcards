@@ -113,3 +113,25 @@ Same cloze model; fields filled differently: `Word` = the full Lithuanian senten
 1. Data: −as → −os on the 118; re-run the rule engine's output against kirtis.info for every rule-derived form (the API answers "K." for a genitive, "esam.l. IIIasm." for pres3); fix the 9 prons and 6 encodings; move A1 verb accents into `pron`; feminine forms for the colours; display glosses.
 2. Templates: anchor, order, fonts, bands per the owner's decisions; cloze hint on tap; sentence fields.
 3. Rebuild and re-screenshot with `render_backs.py` (extend the sample list), light and night, phone width, before packaging.
+
+## Applied 2026-10-17 (executor) — data only, templates untouched
+
+`a2_build/src/fix_backs_data.py` (idempotent; log `backs_audit/data_fixes_applied.csv`, 313 field changes).
+Every new form checked against kirtis.info's analyser (`https://kirtis.info/api/krc/<form>`).
+
+- **Genitives**: the 118 feminine *-a* nouns now end in *-os* (111 on the A2 list, 7 now in `deferred_B1.csv`).
+  Re-checking every rule-derived genitive found five more wrong: *kulkšnis → kulkšnies*, *rugsėjis → rugsėjo*,
+  *priežastis → priežasties*, *pėstysis → pėsčiojo*, *nepažįstamasis → nepažįstamojo*. 690 others confirmed;
+  8 not in kirtis stay unconfirmed (*atidarytuvas, flomasteris, respiratorius, rankinė, skalbyklė, koldūnas,
+  raktų pakabukas, meniu*).
+- **Gender**: *kulkšnis* M→F, *priežastis* M→F, *dėdė* F→M, *metai* → M pl. (*kolega* stays F: common gender.)
+- **Adjectives keep both forms** (owner, 2026-10-17): every A2 adjective with a feminine now has gender `M/F`
+  (124 rows); all 123 A2 feminines and all 64 A1 feminines confirmed; *veikiantė → veikianti*; added *tokia pat,
+  kitokia, tam tikra*. The 10 A1 colours lost their noun genitive (*raudono*) and gained the feminine
+  (*raudona, žalia, mėlyna, geltona, ruda, rožinė, oranžinė, juoda, balta, pilka*). Job nouns untouched.
+  **Display** ("didelis ♂ · didelė ♀", symbol beside each form) is a template change in `build_apkg.py`, which
+  this pass did not touch: the data now supports it (gender `M/F` + `fem` on every adjective with a pair).
+- **Stress**: the 9 A1 prons without a mark (*minià, taikà, kortẽlė, datà, lė̃tas, seklùs, jì, jū̃s, jiẽ*).
+- **Encoding**: the 6 *i + U+0307 + accent* prons normalised (*tėvaĩ, kareĩvis, praeĩti, gamìnti, ìlgas, ilgaĩ*).
+- Not done (not high severity, or design): A1 verb headword accents, display glosses, sentence Gloss field,
+  plate numbering, section names.
