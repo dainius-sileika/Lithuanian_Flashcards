@@ -1,0 +1,57 @@
+# Audit tables — output of: python3 build_study_order_v2.py --report  (2026-10-17)
+# Positions are in the whole order (A1 subdeck 1–1042, then A2 subdeck). old = study_order.csv, new = study_order_v2.csv.
+
+study_order_v2.csv: 2285 rows (1042 A1 subdeck, 1188 A2 subdeck, 55 sentences)
+
+== Telling words: position in the whole order (old study_order.csv -> v2) ==
+word              gloss                old   new   subs  press  tier block
+duona             bread                  5     5   2044   1992  T0   A1 subdeck
+alus              beer                 146    26    829   1311  T0   A1 subdeck
+vanduo            water                  4     4    268    226  T0   A1 subdeck
+kava              coffee                 8    15    627   2209  T0   A1 subdeck
+pienas            milk                   7    17   1573    950  T0   A1 subdeck
+obuolys           apple                 51    27   2531   None  T0   A1 subdeck
+sriuba            soup                 103    28   2247   None  T0   A1 subdeck
+mėsa              meat                1536   690   1194   1600  T2   A1 subdeck
+bulvė             potato              1549   843   2454   2271  T2   A1 subdeck
+batai             shoes                 40    22   1446   4962  T0   A1 subdeck
+kiaulė            pig                  310   837   1554   2118  T2   A1 subdeck
+karvė             cow                  226   890   2119   2903  T2   A1 subdeck
+pelė              mouse                345   900   3308   None  T2   A1 subdeck
+šuo               dog                   39    24    347   1181  T0   A1 subdeck
+prezidentas       president            318   724    567    175  T3   A1 subdeck
+teismas           court                372   662    632     76  T3   A1 subdeck
+asmuo             person (formal)      389   804   1250     53  T3   A1 subdeck
+branduolinis      nuclear              459  1773   2652   1221  T3   A2 subdeck
+pragaras          hell                 518  1655   1014   None  T3   A2 subdeck
+Labas             hello               1007  1097     85   None  T0   A2 subdeck
+Ačiū              thank you           1017  1098     72    719  T0   A2 subdeck
+Prašau            please              1016  1110    158    678  T0   A2 subdeck
+Kiek kainuoja?    how much?           1035  1133   2152   1718  T0   A2 subdeck
+aš                I                    470  1089      1     16  T0   A2 subdeck
+taip              yes                  472  1087     10     40  T0   A2 subdeck
+vienas            one                  584    29     40     61  T0   A1 subdeck
+šiandien          today                555   330    164    391  T0   A1 subdeck
+pirmadienis       Monday               560   340   2211    731  T1   A1 subdeck
+galėti            can                  650   131     20     11  T0   A1 subdeck
+kalbėti           speak               1212    30    107    151  T0   A1 subdeck
+suprasti          understand          1217   241     71    265  T0   A1 subdeck
+važiuoti          go (by vehicle)     1476    44    171    710  T0   A1 subdeck
+tualetas          toilet              1557   325    769   2877  T1   A1 subdeck
+euras             euro                1429   544   3692    581  T0   A1 subdeck
+vaistinė          pharmacy             978  1338  10308   2163  T1   A2 subdeck
+višta             hen                 1305   886   2296   None  T2   A1 subdeck
+antis             duck                2241  1034   3627   None  T2   A1 subdeck
+
+== Spearman rank correlation of the order with each source (words only) ==
+old order  vs subtitle rank 0.352 (n=2230) | vs press rank 0.145 (n=1402, words in the press top 3000)
+v2 order   vs subtitle rank 0.554 (n=2230) | vs press rank 0.359 (n=1402, words in the press top 3000)
+v2 order vs old order 0.616
+
+== First 100 of the A1 subdeck ==
+žmogus, vyras, moteris, vanduo, duona, batonas, válgyti, gérti, eĩti, didelis, mažas, vaikas, namas, draugas, kava, arbata, pienas, šeima, parduotuvė, dìrbti, miestas, batai, autobusas, šuo, katė, alus, obuolys, sriuba, vienas, kalbėti, du, padėti, duoti, trys, darbas, naujas, senas, rytas, ranka, pirmas, Atsiprašau…, Kur yra tualetas?, sakýti, važiuoti, matýti, keturi, penki, mokykla, kelias, tėvas, šimtas, Skanaus, Į sveikatą!, grįžti, ràsti, aukštas, žemas, tūkstantis, šeši, žiūrė́ti, gražus, bjaurus, Ar turite…?, Kas tai?, paskutinis, laukti, galva, girdė́ti, septyni, naktis, automobilis, tėvai, sveikas, sergantis, Kas tas žmogus?, Viskas gerai, akis, mokė́ti, sūnus, antras, Kuri valanda?, knyga, gatvė, maistas, telefonas, Kur galiu rasti…?, Kiek jums metų?, jaunas, senas, žaĩsti, rašýti, ieškoti, durys, brangus, pigus, aštuoni, Kur gyvenate?, Kuo dirbate?, bankas, greitas
+
+== First 100 of the A2 subdeck ==
+taip, ne, aš, tu, jis, geras, blogas, pinigai, kaina, Labas, Ačiū, manyti*, galima*, ji, mes, jūs, pasaulis, kainuoti*, negalėti*, pusė, Prašau, Laba diena, galvóti, mylė́ti, jie, tai, kuo*, atvykti*, sveikata*, nebūti*, pora, Viso gero, Iki, Pusė trijų, oras, mókytis, kelionė, kai kuri*, tokia*, pati*, nežinoti*, keltis, Nesuprantu, Kiek kainuoja?, keliauti, daina, liga, metras, juos*, taigi*, jiems*, klausyti*, sportas, Kur yra…?, Labas rytas, sąskaita, Naujieji metai, mókyti, klausti, jokia*, labiau*, galimas*, vienąkart*, Be penkių trys, Labas vakaras, Sveiki, Penkios po trijų, sirgti, prekė, rinktis, atsakyti*, jaustis*, paimti*, šiek tiek*, piktas, Labai ačiū, Nėra už ką, muzika, avarija, laikraštis, alkanas, rajonas*, narys*, darbo vieta*, tikras*, tvarkyti, Sąskaitą, prašau, Norėčiau…, komanda, vaistai, pavargęs, data, keisti*, metų laikas*, draudimas*, išvykti*, laimė́ti, Ar kalbate angliškai?, Kaip sekasi?, lipti
+
+(* = cloze/pair reading card)
