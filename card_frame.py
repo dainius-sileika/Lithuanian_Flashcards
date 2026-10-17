@@ -157,7 +157,7 @@ BACK = (f'<div class="sf-card">{_PIC_FRAME}'
         '{{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}'
         '{{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}'
         '{{#fem}}<div class="forms">{{fem}}</div>{{/fem}}'   # adjectives: "m ♂ · f ♀" (build_apkg)
-        '<hr id="answer"><div class="gloss">{{english}}</div></div>'
+        '<hr id="answer"><div class="gloss">{{english}}</div>{{#usage}}<div class="usage">{{usage}}</div>{{/usage}}</div>'
         f'</div>{FIT_JS}')
 
 # --- cloze note ("Lietuvių GO Cloze"): A2 cloze/pair rows and sentence cards ----------
@@ -178,7 +178,7 @@ CLOZE_BACK = (f'<div class="sf-card">{_CLOZE_FRAME}'
               '{{#Pron}}<div class="pron">{{Pron}}</div>{{/Pron}}{{Audio}}{{SentenceAudio}}'
               '{{#Gender}}<div class="gender">{{Gender}}</div>{{/Gender}}'
               '{{#Forms}}<div class="forms">{{Forms}}</div>{{/Forms}}'
-              '<hr id="answer"><div class="gloss">{{Gloss}}</div></div>'
+              '<hr id="answer"><div class="gloss">{{Gloss}}</div>{{#Usage}}<div class="usage">{{Usage}}</div>{{/Usage}}</div>'
               f'</div>{FIT_JS}')
 
 
@@ -228,7 +228,7 @@ def proposed_backs(pic="thumb"):
             '{{#gen_sg}}<span class="forms">{{lithuanian}} · <b>{{gen_sg}}</b></span>{{/gen_sg}}'
             '{{#pres3}}<span class="forms">{{lithuanian}} · <b>{{pres3}}</b> · <b>{{past3}}</b></span>{{/pres3}}'
             '{{#fem}}<span class="forms pb-adj">{{fem}}</span>{{/fem}}</div>'
-            '<div class="gloss">{{english}}</div></div>'
+            '<div class="gloss">{{english}}</div>{{#usage}}<div class="usage">{{usage}}</div>{{/usage}}</div>'
             '<div class="sf-pic pb-pic">{{image}}</div>'
             + _pb_close("number", "english") + FIT_JS)
     cloze = (_pb_open("Category", pic)
@@ -237,7 +237,7 @@ def proposed_backs(pic="thumb"):
              '<div class="pb-say">{{#Pron}}<span class="pron">{{Pron}}</span>{{/Pron}}{{Audio}}{{SentenceAudio}}</div>'
              '<div class="pb-gram">{{#Gender}}<span class="gender">{{Gender}}</span>{{/Gender}}'
              '{{#Forms}}<span class="forms pb-forms">{{Forms}}</span>{{/Forms}}</div>'
-             '<div class="gloss">{{Gloss}}</div>'
+             '<div class="gloss">{{Gloss}}</div>{{#Usage}}<div class="usage">{{Usage}}</div>{{/Usage}}'
              '<div class="hint">{{SentenceEN}}</div></div>'
              '{{#Image}}<div class="sf-pic pb-pic">{{Image}}</div>{{/Image}}'
              + _pb_close("Number", "Gloss") + FIT_JS + PB_BOLD_JS)

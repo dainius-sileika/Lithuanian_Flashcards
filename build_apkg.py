@@ -30,8 +30,13 @@ to a fixed-percentage crop and are listed in build_reports/frame_flags.csv.
 
 Field lists, model ids, deck ids and note GUIDs are unchanged, so v2.1 updates v2.0
 notes in place; only templates, CSS and media differ.
+
+2026-10-18 (pilot round 2): one field appended to each note type, `usage` (picture) and
+`Usage` (cloze), shown on the back under the gloss as a small italic line. Model ids,
+deck ids and GUIDs are unchanged; the field change is a schema change, so existing users
+delete the deck and import the new package (owner: deck coherence over old study history).
 """
-import argparse, genanki, csv, hashlib, json, os
+import argparse, genanki, csv, hashlib, html, json, os
 import card_frame
 import frame_crop
 
@@ -47,11 +52,11 @@ BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA<
         '{{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}'
         '{{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}'
         '{{#fem}}<div class="forms">{{fem}}</div>{{/fem}}'
-        '<hr id="answer"><div class="gloss">{{english}}</div></div>'
+        '<hr id="answer"><div class="gloss">{{english}}</div>{{#usage}}<div class="usage">{{usage}}</div>{{/usage}}</div>'
         '<div class="bar bottom"><span>{{category}}</span><span>{{number}}</span></div></div>')
 
 GO_FIELDS = ['key', 'lithuanian', 'english', 'gender', 'gen_sg',
-             'pres3', 'past3', 'fem', 'number', 'category', 'image', 'audio', 'pron']
+             'pres3', 'past3', 'fem', 'number', 'category', 'image', 'audio', 'pron', 'usage']
 model = genanki.Model(
     1607392913, "Lietuvių GO",
     fields=[{'name': n} for n in GO_FIELDS],
@@ -80,10 +85,10 @@ CLOZE_BACK = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ 
               '{{#Pron}}<div class="pron">{{Pron}}</div>{{/Pron}}{{Audio}}{{SentenceAudio}}'
               '{{#Gender}}<div class="gender">{{Gender}}</div>{{/Gender}}'
               '{{#Forms}}<div class="forms">{{Forms}}</div>{{/Forms}}'
-              '<hr id="answer"><div class="gloss">{{Gloss}}</div></div>'
+              '<hr id="answer"><div class="gloss">{{Gloss}}</div>{{#Usage}}<div class="usage">{{Usage}}</div>{{/Usage}}</div>'
               '<div class="bar bottom"><span>{{Category}}</span><span>{{Number}}</span></div></div>')
 CLOZE_FIELDS = ['Text', 'SentenceEN', 'Word', 'Pron', 'Gender', 'Forms',
-                'Gloss', 'Number', 'Category', 'Audio', 'Key', 'SentenceAudio', 'Image']
+                'Gloss', 'Number', 'Category', 'Audio', 'Key', 'SentenceAudio', 'Image', 'Usage']
 cloze_model = genanki.Model(
     1607392914, "Lietuvių GO Cloze", model_type=genanki.Model.CLOZE,
     fields=[{'name': n} for n in CLOZE_FIELDS],
@@ -128,6 +133,42 @@ A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", "audio_a2")
 # Sentence cards (picture + cloze), see a2_build/sentences/design.md
 SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
 SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", "out_deck_sent,images_sent").split(",")
+# Back-of-card usage notes (pilot round 2, a2_build/pilot_round2/CONTEXT_NOTES.md; owner
+# 2026-10-17: on the backs now). One line under the gloss: the register / near-synonym note,
+# then the tu/jus variant as a second line. Only rows the planner verified against a read
+# source (high) or marked medium go on a back; "unverified" rows wait for the owner
+# (a2_build/context_notes_unverified.csv).
+CONTEXT_NOTES = os.environ.get("CONTEXT_NOTES", "a2_build/context_notes.csv")
+USAGE_CONFIDENCE = {"high", "medium"}
+
+
+def load_usage(path=CONTEXT_NOTES):
+    """card key -> HTML for the usage field ('' for every other card)."""
+    out = {}
+    if not path or not os.path.exists(path):
+        return out
+    for r in csv.DictReader(open(path, encoding="utf-8")):
+        if (r.get("confidence") or "").strip().lower() not in USAGE_CONFIDENCE:
+            continue
+        line = html.escape(r["context_line"].strip(), quote=False)
+        v = (r.get("variant_tu_jus") or "").strip()
+        if v:
+            line += "<br>" + html.escape(v, quote=False)
+        out[r["key"].strip()] = line
+    return out
+
+
+USAGE = load_usage()
+USAGE_USED = set()          # keys whose note got a usage line in this build
+
+
+def usage_for(k):
+    u = USAGE.get(k, "")
+    if u:
+        USAGE_USED.add(k)
+    return u
+
+
 # Study order (new-card position): study_order.csv, made by build_study_order_v2.py
 # (usefulness-first order adopted 2026-10-17; the v1 generator is in deprecated/).
 STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
@@ -150,6 +191,8 @@ STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
 #    collections, and no field is added to carry it (a new field would be a schema
 #    change: "conflicting" notes on import unless note types are merged, then a
 #    one-way sync).
+#  * 2026-10-18: the owner accepted that schema change for the usage notes (one field
+#    appended per note type, CONTEXT_NOTES below); the delete-and-reimport advice covers it.
 
 # Images are stored as WebP in the repo (compact). Some Anki clients/older Qt
 # builds don't render WebP inside cards, so for the importable deck we transcode
@@ -379,7 +422,8 @@ def add_a2_notes(DECKS, media, order=None):
                         adjective_forms(r["lithuanian_TARGET"], r.get("lt_pron", ""), r["fem"])
                         if adj else r.get("fem", ""),
                         k.replace("A2-", ""), r.get("category", ""),
-                        f'<img class="art" src="{img_name}">', audf, r.get("lt_pron", "")]))
+                        f'<img class="art" src="{img_name}">', audf, r.get("lt_pron", ""),
+                        usage_for(k)]))
             media.append(img_path); counts["image"] += 1
         elif route in ("CLOZE", "PAIR"):
             text, n = cloze_text(r.get("example_lt", ""))
@@ -391,7 +435,7 @@ def add_a2_notes(DECKS, media, order=None):
                 model=cloze_model, tags=tags, guid=genanki.guid_for(k), due=due,
                 fields=[text, r.get("example_en", ""), r["lithuanian_TARGET"], r.get("lt_pron", ""),
                         gmark, a2_forms(r), r["english"],
-                        k.replace("A2-", ""), r.get("category", ""), audf, k, saudf, ""]))
+                        k.replace("A2-", ""), r.get("category", ""), audf, k, saudf, "", usage_for(k)]))
             counts["cloze"] += 1
             if saudf:
                 media.append(saud)
@@ -431,7 +475,7 @@ def add_sentence_notes(DECKS, media, order=None):
         target.add_note(genanki.Note(
             model=cloze_model, tags=[level, "SENT"], guid=genanki.guid_for(k), due=order.get(k, 0),
             fields=[text, r["en"], "", "", "", "", r.get("grammar_point", ""),
-                    k.replace("S-", "S "), "Sakiniai", "", k, audf, img]))
+                    k.replace("S-", "S "), "Sakiniai", "", k, audf, img, usage_for(k)]))
         counts["sentence"] += 1
     return counts
 
@@ -476,7 +520,7 @@ def main(frame="standard"):
             guid=genanki.guid_for(k), due=order.get(k, 0),
             fields=[k, r['lithuanian'], r['english'], gmark, r['gen_sg'],
                     r['pres3'], r['past3'], fem, r['number'], r['category'],
-                    f'<img class="art" src="{img_name}">', audf, r.get('pron', '')]))
+                    f'<img class="art" src="{img_name}">', audf, r.get('pron', ''), usage_for(k)]))
         media.append(img_path)
         if os.path.exists(aud):
             media.append(aud)
@@ -514,7 +558,7 @@ def main(frame="standard"):
     counts = {lv: len(d.notes) for lv, d in built.items()}
     print(f"built {out} — {len(media)} media files | subdecks: {counts} | "
           f"A1 rows without image: {len(skipped)} | A2 list: {a2_counts} | sentences: {s_counts} | "
-          f"study order: {len(order)} positions")
+          f"study order: {len(order)} positions | usage notes: {len(USAGE_USED)} of {len(USAGE)}")
     return out
 
 
