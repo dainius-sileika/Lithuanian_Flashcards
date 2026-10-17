@@ -1,20 +1,5 @@
 [
  {
-  "id": "font2",
-  "group": "Needs you now",
-  "title": "Typeface: Brygada 1918 or today's pair",
-  "ask": "A focused comparison as you asked, with Brygada's story (an interwar Polish face found as unused matrices in Łódź in 2015, revived for Poland's 2018 centenary) and which I'd pick: Brygada, because it stacks ė̃ and ū̃ correctly and belongs to the deck's world. Answer on that page.",
-  "options": [
-   "Answered on that page"
-  ],
-  "links": [
-   {
-    "label": "Open Brygada or Current",
-    "href": "https://claude.ai/artifact/6z8DxFe1ESRoa4Ke8XALxM"
-   }
-  ]
- },
- {
   "id": "t-audio",
   "group": "Later (parked)",
   "title": "Record the audio (parked)",
