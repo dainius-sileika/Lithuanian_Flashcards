@@ -165,7 +165,8 @@ def describe_situation(client, path, srow):
     import random
     seen = _ask(client, path, SIT_PROMPT)
     cap = srow["english"]
-    opts = [cap] + [c for c in srow.get("confusables", []) if c and c != cap]
+    # a "(merge)" partner shares this very image by design — not a neighbour
+    opts = [cap] + [c for c in srow.get("confusables", []) if c and c != cap and "(merge)" not in c]
     if len(opts) > 1:
         rnd = random.Random(cap)          # stable order per card
         rnd.shuffle(opts)
@@ -183,6 +184,7 @@ def judge_situation(seen, row, srow):
     r2["english"] = r2.get("english") or srow["english"]
     s2 = dict(seen); s2["punctuation"] = []; s2["confidence"] = "high"; s2["guess"] = ""
     fails, warns = judge(s2, r2)
+    warns = [w for w in warns if not w.startswith("question card shows no")]
     for b in seen.get("bubbles") or []:
         fails.append(f"BUBBLE/FLOATING SYMBOL: {b}")
     for p in seen.get("punctuation") or []:
@@ -190,8 +192,12 @@ def judge_situation(seen, row, srow):
             fails.append(f"floating punctuation {p!r}")
     nb = seen.get("neighbour") or {}
     best = (nb.get("best") or "").strip()
-    if best and best != srow["english"] and best in (srow.get("confusables") or []):
-        fails.append(f"NEIGHBOUR TEST: reads as {best!r} (margin {nb.get('margin', '?')})")
+    if (best and best != srow["english"] and best in (srow.get("confusables") or [])
+            and "(merge)" not in best):
+        # a clear win for a neighbour is a hard fail; a slight one (near-synonyms such as
+        # Thank you / Thank you very much) is left to the owner's neighbour toggle
+        msg = f"NEIGHBOUR TEST: reads as {best!r} (margin {nb.get('margin', '?')})"
+        (fails if (nb.get("margin") or "") == "clear" else warns).append(msg)
     elif best == srow["english"] and (nb.get("margin") or "") == "none":
         warns.append(f"neighbour test: no margin over {nb.get('runner_up')!r}")
     fit = seen.get("fit") or {}
@@ -203,7 +209,7 @@ def judge_situation(seen, row, srow):
         warns.append(f"cue not visible: {srow.get('cue')}")
     for a in fit.get("stray_acts") or []:
         warns.append(f"stray act: {a}")
-    if fit.get("two_panels_ok") is False:
+    if fit.get("two_panels_ok") is False and srow.get("format") == "situation_2":
         warns.append("two panels: people/scale/answer do not match")
     return fails, warns
 

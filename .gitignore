@@ -90,3 +90,7 @@ out_deck_sent/_rerolled/
 out_deck_a2/_rerolled/
 out_phrases_a2/_sheets/
 *.apkg
+out_phrases_v3/*.png
+out_phrases_v3/_rerolled/
+out_phrases_v3/_sheets/
+out_phrases_v3/review_pub/*/media/

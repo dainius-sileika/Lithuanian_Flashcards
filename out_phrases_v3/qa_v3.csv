@@ -1,0 +1,35 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+374_galvoti,galvoti,WARN,,Writing on the papers is illegible and appears as pseudo-text.,to think,,to think,yes
+A2-0108,kas,PASS,,,someone at the door,,who,yes
+A2-0110,kur,PASS,,,pocket,,where,yes
+A2-0111,kada,PASS,,,schedule,,when,yes
+A2-0112,kaip,PASS,,,tie a knot,,how,yes
+A2-0113,kodėl,PASS,,,wilted flowers,,why,yes
+A2-0114,kiek,WARN,,NEIGHBOUR TEST: reads as 'how much does it cost (phrase)' (margin slight),buying apples,,how much does it cost (phrase),yes
+A2-0115,koks,FAIL,NEIGHBOUR TEST: reads as 'which (kuris)' (margin clear),stray act: a pointing finger,cup,,which (kuris),yes
+A2-0116,kuris,PASS,,,bus stop,,which,yes
+A2-0117,kieno,PASS,,,coat,,whose,yes
+A2-0348,Labas,PASS,,,hello,,Hello (informal),yes
+A2-0349,Sveiki,WARN,,stray act: a wave,enter,,Hello (formal/plural),yes
+A2-0350,Labas rytas,PASS,,,yawn,,Good morning,yes
+A2-0351,Laba diena,PASS,,,grocery store,,Good day,yes
+A2-0352,Labas vakaras,WARN,,"The strip on the lower-right cabinet appears to contain garbled, unreadable pseudo-lettering.",welcome,,Good evening,yes
+A2-0358,Ačiū,WARN,,NEIGHBOUR TEST: reads as 'Thank you very much' (margin slight),coat rack,,Thank you very much,yes
+A2-0360,Nėra už ką,WARN,,stray act: a hand on the chest,Thank you,,You're welcome (not at all),yes
+A2-0362,Atleiskite,WARN,,"NEIGHBOUR TEST: reads as 'Excuse me, please…' (margin slight)",riding the bus,,"Excuse me, please…",yes
+A2-0377,Kiek kainuoja?,PASS,,,bread,,How much is it? (merge),yes
+A2-0383,Ar galite man padėti?,WARN,,"NEIGHBOUR TEST: reads as 'Could you help me, please?' (margin slight)",helping,,"Could you help me, please?",yes
+A2-0881,Atsiprašau,PASS,,,broken,,I'm sorry,yes
+A2-0882,Nieko tokio,WARN,,"NEIGHBOUR TEST: reads as ""it's nothing"" (margin slight)",wave,,it's nothing,yes
+A2-0887,Sėkmės!,PASS,,,student,,Good luck!,yes
+A2-0895,Geros kelionės,WARN,,stray act: a wave,waving goodbye,,Good luck on the trip,yes
+A2-0896,Kas tai?,PASS,,,open the box,,,yes
+A2-0897,Kas tas žmogus?,WARN,,stray act: a thumb-up,to point,,,yes
+A2-0898,Kur yra tualetas?,PASS,,,Where is the bathroom?,,Where is the toilet?,yes
+A2-0900,Nekalbu lietuviškai,WARN,,"NEIGHBOUR TEST: reads as ""I don't understand"" (margin slight) | stray act: raised palm",I don't understand,,I don't understand,yes
+A2-0903,"Užrašykite, prašau",PASS,,,to write,,,yes
+A2-0905,Kaip lietuviškai …?,WARN,,stray act: a pointing finger,spoon,,How do you say … in Lithuanian?,yes
+A2-0906,Man reikia pagalbos,PASS,,,to help,,I need help,yes
+A2-0907,Iškvieskite gydytoją!,PASS,,,call an ambulance,,Call a doctor!,yes
+A2-0909,Kur galiu rasti…?,PASS,,,Where is it?,,Where can I find…?,yes
+A2-0928,Kiek kainuoja bilietas?,PASS,,,pay,,How much does the ticket cost?,yes
