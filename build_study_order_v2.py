@@ -102,7 +102,19 @@ LANE_CAP_OVERRIDE = {"phrases": 2}
 FIRST_CLOZE, CLOZE_CAP, FIRST_PHRASE, FIRST_COLOURS = 100, 4, 40, 40
 A2_FIRST_CLOZE = 30     # the A2 block also opens with picture cards (owner: deck coherence), 2026-10-17
 SEPARATION = 60
-PIN_AFTER = {"531_batonas": "182_duona"}
+# 2026-10-18 additions round 2 (a2_build/additions_round2/order_adjacency.csv): mama/teta after
+# motina/dede, the family pairs, top/bottom and the two cloze pairs sit next to each other.
+PIN_AFTER = {"531_batonas": "182_duona",
+             "A2-1898": "082_motina",
+             "A2-1899": "083_tevas",
+             "081_dukra": "080_sunus",
+             "089_sesuo": "088_brolis",
+             "092_senele": "091_senelis",
+             "A2-0581": "A2-0582",
+             "094_zmona": "093_vyras",
+             "A2-1924": "A2-1923",
+             "A2-1874": "A2-1873",
+             "A2-1891": "A2-1890"}
 
 
 # --- text helpers --------------------------------------------------------------
@@ -390,7 +402,11 @@ def schedule(block, a1_rules):
     while len(placed) < len(pool):
         pick = next((c for c in pool if c["key"] not in placed and eligible(c, len(out))), None)
         if pick is None:                            # constraints deadlock at the tail: relax
-            pick = next(c for c in pool if c["key"] not in placed)
+            # ...but never past a pin: a pinned card still waits for its anchor (2026-10-18:
+            # the two cloze pairs of additions round 2 were placed ahead of their anchors here)
+            pick = (next((c for c in pool if c["key"] not in placed
+                          and not (c["key"] in pinned and pinned[c["key"]] not in placed)), None)
+                    or next(c for c in pool if c["key"] not in placed))
         if pick["category"] == "Color" and not colours_done:
             for c in sorted(colours, key=lambda c: c["number"]):
                 if c["key"] not in placed:
