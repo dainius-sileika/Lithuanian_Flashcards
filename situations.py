@@ -39,24 +39,33 @@ SITUATIONS = {'Yes / no': {'ids': [],
  "I'm sorry": {'ids': ['A2-0881'],
                'lithuanian': 'Atsiprašau',
                'format': 'situation',
-               'scene': 'a man with bowed head and hands spread over a cup he has just broken on a kitchen '
-                        'floor, a woman looking on',
-               'cue': 'the broken cup and the bowed head',
-               'confusables': ['Excuse me', 'No problem'],
+               'scene': 'a boy of about eight stands in a kitchen doorway with a football under his left '
+                        'arm, head bowed, eyes raised to his grandmother; behind him, through the doorway '
+                        'into the yard, a window of the house with one pane broken; the grandmother in an '
+                        'apron stands facing him with a dishcloth in her hands, looking at him, more tired '
+                        'than angry; no bubble, no lettering',
+               'cue': 'the bowed head of the child, the football, the broken pane',
+               'confusables': ['Excuse me (formal)', 'No problem', 'Excuse me, please…'],
                'merge_with': '',
-               'render': 'yes',
+               'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
                'note': '',
                'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                'gaze': 'conversation'},
  'No problem': {'ids': ['A2-0882'],
                 'lithuanian': 'Nieko tokio',
                 'format': 'situation_2',
-                'scene': 'LEFT: a boy showing a scuffed borrowed book to its owner, shoulders up; RIGHT: the '
-                         'owner waving it off with a relaxed open hand and a smile',
-                'cue': 'the easy wave after a small mishap',
-                'confusables': ["I'm sorry", "it's nothing"],
+                'scene': "LEFT: a living room; a boy of about six has just bumped his mother's easel, which "
+                         'tilts, a jar of brush-water tipping and brushes falling to the rug; the boy stands '
+                         'frozen with both hands up, looking at his mother; the mother in a painting smock '
+                         'stands at the easel with a brush in her RIGHT hand and turns toward him. RIGHT: '
+                         'the same room, same positions, easel, window and rug in the same places; the '
+                         'mother, brush still in her right hand, waves her LEFT hand loosely at the spilt '
+                         'jar with a relaxed smile, looking at the boy; the boy looks up at her, shoulders '
+                         'dropping',
+                'cue': "the mother's easy wave at the spilt paints",
+                'confusables': ["I'm sorry", "it's nothing", "You're welcome (not at all)"],
                 'merge_with': '',
-                'render': 'yes',
+                'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
                 'note': '',
                 'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                 'gaze': 'conversation'},
@@ -203,11 +212,18 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Good luck on the trip': {'ids': ['A2-0895'],
                            'lithuanian': 'Geros kelionės',
                            'format': 'situation',
-                           'scene': 'a family waving a young woman onto a train, suitcase on the step',
-                           'cue': 'train and suitcase',
-                           'confusables': ['Good luck!'],
+                           'scene': 'a railway platform; a young woman stands on the step of a carriage, a '
+                                    'suitcase in her left hand, turned toward her family and waving with her '
+                                    'right; on the platform the mother stands in front waving with her own '
+                                    'RIGHT arm raised high, the father beside her with both hands in his '
+                                    "coat pockets, a younger brother in a blue coat holding the mother's "
+                                    'LEFT hand; every arm joins its own shoulder and no arm crosses in front '
+                                    'of another person; all three look at the young woman',
+                           'cue': "train, suitcase on the step, the mother's own raised arm",
+                           'confusables': ['Good luck!', 'Goodbye'],
                            'merge_with': '',
-                           'render': 'yes',
+                           'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 '
+                                     'row)',
                            'note': '',
                            'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                            'gaze': 'conversation'},
@@ -499,11 +515,15 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Good evening': {'ids': ['A2-0352'],
                   'lithuanian': 'Labas vakaras',
                   'format': 'situation',
-                  'scene': 'a guest arriving at a lit doorway at dusk, the host opening the door, lamps on',
-                  'cue': 'dusk, lamps lit',
-                  'confusables': ['Good night'],
+                  'scene': 'a guest in an overcoat arriving at a lit doorway at dusk, the host holding the '
+                           "door open with his left hand; the guest's RIGHT hand is extended toward the host "
+                           "for a handshake and the host's right hand reaches to take it; the two look at "
+                           "each other's faces; warm lamplight inside the hall, the sky outside deep dusk, a "
+                           'lit window beside the door',
+                  'cue': 'dusk sky, lamps lit, the extended hand at the door',
+                  'confusables': ['Good night', 'Nice to meet you'],
                   'merge_with': '',
-                  'render': 'yes',
+                  'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
                   'note': '',
                   'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                   'gaze': 'conversation'},
@@ -590,24 +610,36 @@ SITUATIONS = {'Yes / no': {'ids': [],
  "You're welcome (not at all)": {'ids': ['A2-0360'],
                                  'lithuanian': 'Nėra už ką',
                                  'format': 'situation_2',
-                                 'scene': 'LEFT: a man handing a dropped glove back to a woman; RIGHT: she '
-                                          'presses her hand to her chest, he waves it off with a light smile',
-                                 'cue': 'the wave-off after thanks',
-                                 'confusables': ['No problem', "it's nothing"],
+                                 'scene': 'LEFT: on a pavement a man holds out a dropped glove in his right '
+                                          'hand to a woman who reaches for it with her right hand; both look '
+                                          'at each other. RIGHT: same pavement, same two people in the same '
+                                          'places; the woman, glove now in her hand, presses her left hand '
+                                          'flat to her chest in thanks and looks at the man; the man waves '
+                                          'his right hand loosely in a light wave-off and smiles at her, his '
+                                          'face turned fully toward her and not toward the viewer; same '
+                                          'shopfront behind them in both panels',
+                                 'cue': 'his loose wave-off, aimed at her, after her thanks',
+                                 'confusables': ['No problem', "it's nothing", 'Thank you'],
                                  'merge_with': '',
-                                 'render': 'yes',
+                                 'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the '
+                                           'round-1 row)',
                                  'note': '',
                                  'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                                  'gaze': 'conversation'},
  'Excuse me (formal)': {'ids': ['A2-0362'],
                         'lithuanian': 'Atleiskite',
                         'format': 'situation',
-                        'scene': 'a man in a hat edging past seated passengers on a crowded trolleybus, hand '
-                                 'half raised, head slightly bowed',
-                        'cue': 'formal dress, trolleybus',
-                        'confusables': ['Excuse me, please…'],
+                        'scene': 'inside a crowded trolleybus, standing passengers holding the overhead '
+                                 'rail; a man in a hat and overcoat has just bumped shoulders with a woman '
+                                 'in a headscarf who holds a shopping bag; she is half turned toward him; he '
+                                 'holds the rail with his left hand and raises his right hand flat toward '
+                                 'her in apology, head slightly bowed, eyes on her face; she looks back at '
+                                 'him; the crowd presses around them, windows and poles of a 1981 '
+                                 'trolleybus; no bubble, no lettering',
+                        'cue': 'the bump on the crowded trolleybus, hat and coat, flat raised hand',
+                        'confusables': ['Excuse me, please…', "I'm sorry"],
                         'merge_with': '',
-                        'render': 'yes',
+                        'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
                         'note': '',
                         'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                         'gaze': 'conversation'},
@@ -777,12 +809,16 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'How much does it cost?': {'ids': ['A2-0377'],
                             'lithuanian': 'Kiek kainuoja?',
                             'format': 'situation',
-                            'scene': 'a shopper at a market stall lifting a loaf and looking at the '
-                                     'stallholder with raised eyebrows, purse in the other hand',
-                            'cue': 'loaf lifted, purse ready',
-                            'confusables': ['How much is it? (merge)'],
+                            'scene': 'a shopper at a market stall lifting a loaf of bread in her LEFT hand, '
+                                     'her RIGHT hand holding her purse open; she looks straight at the '
+                                     "stallholder's face with raised eyebrows, asking; the stallholder "
+                                     'behind the stall looks back at her across the loaves; neither looks '
+                                     'toward the viewer; no bubble, no lettering',
+                            'cue': 'loaf lifted, purse open, her eyes on the seller',
+                            'confusables': ['How much is it? (merge)', 'how much/many'],
                             'merge_with': '',
-                            'render': 'yes',
+                            'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 '
+                                      'row)',
                             'note': '',
                             'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                             'gaze': 'conversation'},
@@ -835,12 +871,17 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Can you help me?': {'ids': ['A2-0383'],
                       'lithuanian': 'Ar galite man padėti?',
                       'format': 'situation',
-                      'scene': 'a woman with a heavy case at the foot of station stairs looking up at a '
-                               'passing man, one hand out',
-                      'cue': 'heavy case, stairs, hand out',
+                      'scene': 'a woman at the foot of a station staircase, her LEFT hand gripping the '
+                               'handle of a heavy suitcase that rests on the bottom step, fingers closed '
+                               'round the handle, her RIGHT hand held out toward a man who has stopped two '
+                               'steps above her; she looks up at his face, he looks down at hers; the '
+                               'suitcase stays in her grip and nobody else touches it. Insets: a close-up of '
+                               "the same suitcase's worn leather handle in her gloved left hand; the station "
+                               'clock above the stairs',
+                      'cue': 'heavy case in her left hand, stairs, right hand out to him',
                       'confusables': ['Could you help me, please?', 'I need help'],
                       'merge_with': '',
-                      'render': 'yes',
+                      'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
                       'note': '',
                       'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                       'gaze': 'conversation'},
@@ -1672,25 +1713,37 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Who is that?': {'ids': ['A2-0897'],
                   'lithuanian': 'Kas tas žmogus?',
                   'format': 'situation_2',
-                  'scene': 'LEFT: a man on a street corner nodding toward a passer-by and looking at his '
-                           'companion; RIGHT: the companion pointing openly at the passer-by and explaining',
-                  'cue': 'nod toward a person -> pointing',
-                  'confusables': [],
+                  'scene': 'LEFT: two men stand side by side on a street corner, the man in a brown suit on '
+                           'the LEFT and the man in a blue jacket on the RIGHT, both facing the street; the '
+                           'brown-suited man nods toward a passer-by across the street while looking at his '
+                           "companion's face; the blue-jacketed man looks at the brown-suited man. RIGHT: "
+                           'the same corner, the same two men in the same places, brown still left and blue '
+                           'still right, neither in front of or behind the other; the blue-jacketed man '
+                           'points openly at the passer-by with his right hand and looks at the brown-suited '
+                           'man as he explains; the brown-suited man looks at him',
+                  'cue': 'nod toward a person -> companion pointing and explaining',
+                  'confusables': ['who (kas)', 'What is this?'],
                   'merge_with': '',
-                  'render': 'yes',
+                  'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
                   'note': '',
                   'source_file': 'bubbles.py',
                   'gaze': 'conversation'},
  'Where is the toilet?': {'ids': ['A2-0898'],
                           'lithuanian': 'Kur yra tualetas?',
                           'format': 'situation_2',
-                          'scene': 'LEFT: a man in a public corridor, legs slightly crossed, asking an '
-                                   'attendant with an open palm; RIGHT: the attendant pointing down the '
-                                   'corridor to a door with the man/woman pictograms (sign = object)',
-                          'cue': 'corridor -> pictogram door',
-                          'confusables': ['Where is…?'],
+                          'scene': 'LEFT: a public corridor with a tiled floor; at its far end, already '
+                                   'visible, a door bearing the man and woman pictograms (sign = object, no '
+                                   'letters); a man stands with legs slightly crossed asking an attendant in '
+                                   'a white smock with an open palm, looking at her face; she looks at him. '
+                                   'RIGHT: the same corridor from the same viewpoint, the same pictogram '
+                                   'door at the far end, the same two people in the same places; the '
+                                   'attendant points down the corridor at the door with her right hand and '
+                                   'looks at the man; he looks where she points',
+                          'cue': 'corridor with the pictogram door in both panels',
+                          'confusables': ['Where is…?', 'Where can I find…?'],
                           'merge_with': '',
-                          'render': 'yes',
+                          'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 '
+                                    'row)',
                           'note': '',
                           'source_file': 'bubbles.py',
                           'gaze': 'conversation'},
@@ -1708,13 +1761,22 @@ SITUATIONS = {'Yes / no': {'ids': [],
  "I don't speak Lithuanian": {'ids': ['A2-0900'],
                               'lithuanian': 'Nekalbu lietuviškai',
                               'format': 'situation_2',
-                              'scene': 'LEFT: a tourist at a shop counter with a hand flat over his mouth '
-                                       'and a shrug; RIGHT: the shopkeeper nodding and speaking slowly with '
-                                       'an open patient hand',
-                              'cue': 'hand over mouth -> patient speaking',
-                              'confusables': ["I don't understand"],
+                              'scene': 'LEFT: a shop; a wooden counter runs across the picture with its full '
+                                       'top visible; the shopkeeper in a white smock stands fully behind it, '
+                                       "cut off only by the counter's top edge, never merged with it; a "
+                                       'tourist with a shoulder bag stands in front of the counter with his '
+                                       'RIGHT hand flat over his mouth and his shoulders shrugged, looking '
+                                       "at the shopkeeper's face; the shopkeeper looks at him. RIGHT: the "
+                                       'same counter, the same two people in the same places; the shopkeeper '
+                                       'nods and speaks slowly with an open patient right hand, eyes on the '
+                                       'tourist; the tourist has lowered his hand and looks at the '
+                                       'shopkeeper; nobody looks toward the viewer',
+                              'cue': "hand over mouth -> the shopkeeper's slow patient hand, counter clearly "
+                                     'between them',
+                              'confusables': ["I don't understand", 'I can speak a little'],
                               'merge_with': '',
-                              'render': 'yes',
+                              'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the '
+                                        'round-1 row)',
                               'note': '',
                               'source_file': 'bubbles.py',
                               'gaze': 'conversation'},
@@ -1817,13 +1879,21 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'How much does the ticket cost?': {'ids': ['A2-0928'],
                                     'lithuanian': 'Kiek kainuoja bilietas?',
                                     'format': 'situation_2',
-                                    'scene': 'LEFT: a traveller at a ticket window pointing at a plain '
-                                             'ticket and opening her purse; RIGHT: the clerk counting coins '
-                                             'onto the counter beside the ticket',
-                                    'cue': 'ticket + purse -> coins counted',
-                                    'confusables': ['How much does it cost?'],
+                                    'scene': 'LEFT: a traveller at a station ticket window points with her '
+                                             'LEFT hand at a plain ticket lying on the counter and opens her '
+                                             'purse with her RIGHT, looking through the window at the '
+                                             "clerk's face; the clerk looks back at her. RIGHT: the same "
+                                             'window, the same two people in the same places; the clerk, '
+                                             'eyes on the traveller, slides a few coins across the counter '
+                                             'to lie beside the ticket with his right hand; she looks at '
+                                             'him; the same window frame, grille and poster-free wall in '
+                                             'both panels',
+                                    'cue': 'ticket + purse -> coins beside the ticket, the two looking at '
+                                           'each other',
+                                    'confusables': ['How much does it cost?', 'Where do I have to change?'],
                                     'merge_with': '',
-                                    'render': 'yes',
+                                    'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the '
+                                              'round-1 row)',
                                     'note': '',
                                     'source_file': 'bubbles.py',
                                     'gaze': 'conversation'},
@@ -1887,32 +1957,37 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'why': {'ids': ['A2-0113'],
          'lithuanian': 'kodėl',
          'format': 'situation',
-         'scene': 'a child pointing at a vase of wilted flowers on a windowsill and looking up at her mother '
-                  'with a puzzled face; no bubble, no lettering',
-         'cue': 'puzzled look toward a cause',
-         'confusables': ['what kind of'],
+         'scene': 'MAIN: a classroom in a Vilnius school; a pupil of about ten sits at a desk by the window, '
+                  'twisted round to point with her right hand out through the window at heavy rain streaking '
+                  'the glass, her face puzzled and turned up to the teacher; the teacher, a woman in a plain '
+                  'jacket, stands beside the desk looking down at the pupil, a closed textbook in her left '
+                  'hand; the other pupils look at the window. Insets: the same teacher at the chalkboard, '
+                  'chalk in hand, drawing a cloud over a hill with rain falling from it and a sun to one '
+                  'side while the pupil watches from her desk; a plain textbook diagram of how clouds and '
+                  'rain form - a lake, thin wavy vapour lines rising, a cloud, rain falling back to the '
+                  'ground - drawn as a schoolbook figure with no lettering',
+         'cue': 'pupil pointing at the rain and looking up at the teacher; the rain-cloud drawings',
+         'confusables': ['what kind of', 'how'],
          'merge_with': '',
-         'render': 'yes — owner decision 2026-10-17: question-word cards keep a picture (supersedes the "no '
-                   'image" row above)',
-         'note': 'kodėl/kaip/koks/kuris are not picturable as words — the scene shows the situation the word '
-                 'is used in; the English caption in the band carries the meaning',
+         'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
+         'note': '',
          'source_file': 'deck_builder.py QUESTION_BUBBLE',
-         'gaze': 'default'},
+         'gaze': 'conversation'},
  'how much/many': {'ids': ['A2-0114'],
                    'lithuanian': 'kiek',
                    'format': 'situation',
-                   'scene': 'a shopper at a market stall holding out an open palm of coins toward a seller '
-                            'weighing apples on a balance scale; no bubble, no lettering',
-                   'cue': 'coins and scales',
+                   'scene': 'a shopper at a market stall holding out her RIGHT hand, palm up with a few '
+                            'coins on it, toward the seller; her LEFT hand holds the handle of a shopping '
+                            'basket at her side; the seller stands behind the stall weighing apples on a '
+                            "balance scale and looks at the coins in her hand; she looks at the seller's "
+                            'face; no bubble, no lettering',
+                   'cue': 'coins on the right palm, the balance scale',
                    'confusables': ['how much does it cost (phrase)'],
                    'merge_with': '',
-                   'render': 'yes — owner decision 2026-10-17: question-word cards keep a picture '
-                             '(supersedes the "no image" row above)',
-                   'note': 'kodėl/kaip/koks/kuris are not picturable as words — the scene shows the '
-                           'situation the word is used in; the English caption in the band carries the '
-                           'meaning',
+                   'render': 'yes — pilot round 2 (owner review 2026-10-17; supersedes the round-1 row)',
+                   'note': '',
                    'source_file': 'deck_builder.py QUESTION_BUBBLE',
-                   'gaze': 'default'},
+                   'gaze': 'conversation'},
  'what kind of': {'ids': ['A2-0115'],
                   'lithuanian': 'koks',
                   'format': 'situation',
