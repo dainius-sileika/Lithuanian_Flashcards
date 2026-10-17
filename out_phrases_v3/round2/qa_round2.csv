@@ -1,0 +1,15 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+A2-0113,kodėl,WARN,,NEIGHBOUR TEST: reads as 'what kind of' (margin slight),weather,,what kind of,yes
+A2-0114,kiek,FAIL,NEIGHBOUR TEST: reads as 'how much does it cost (phrase)' (margin clear),,weighing apples,,how much does it cost (phrase),yes
+A2-0352,Labas vakaras,WARN,,NEIGHBOUR TEST: reads as 'Nice to meet you' (margin slight) | stray act: a handshake,welcome,,Nice to meet you,yes
+A2-0360,Nėra už ką,WARN,,stray act: hand on the chest,thank you,,You're welcome (not at all),yes
+A2-0362,Atleiskite,WARN,,"NEIGHBOUR TEST: reads as 'Excuse me, please…' (margin slight)",crowded,,"Excuse me, please…",yes
+A2-0377,Kiek kainuoja?,PASS,,,bread,,How much does it cost?,yes
+A2-0383,Ar galite man padėti?,WARN,,"NEIGHBOUR TEST: reads as 'Could you help me, please?' (margin slight)",railway station,,"Could you help me, please?",yes
+A2-0881,Atsiprašau,FAIL,GAZE: speakers do not look at each other (The mother looks at the boy; the boy looks down; neither looks at the viewer.),,break a window,,I'm sorry,yes
+A2-0882,Nieko tokio,WARN,,stray act: the boy raises both palms in the left panel,spill paint,,No problem,yes
+A2-0895,Geros kelionės,FAIL,NEIGHBOUR TEST: reads as 'Goodbye' (margin clear),,farewell,,Goodbye,yes
+A2-0897,Kas tas žmogus?,WARN,,stray act: a thumb gesture over the shoulder,pointing,,Who is that?,yes
+A2-0898,Kur yra tualetas?,WARN,,stray act: a pointing finger,pointing,,Where is the toilet?,yes
+A2-0900,Nekalbu lietuviškai,PASS,,,to ask,,I don't speak Lithuanian,yes
+A2-0928,Kiek kainuoja bilietas?,PASS,,,pay,,How much does the ticket cost?,yes

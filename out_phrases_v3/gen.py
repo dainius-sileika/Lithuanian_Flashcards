@@ -11,6 +11,7 @@ NOT touched; they move to _superseded/ only after the owner passes the pilot.
     ONLY=A2-0882,A2-0360 timeout 178 python -u out_phrases_v3/gen.py 20 6  # chosen keys
     ONLY=pilot timeout 178 python -u out_phrases_v3/gen.py 20 6            # the 34 of PILOT_24.md
     REROLL=A2-0882 timeout 178 python -u out_phrases_v3/gen.py 20 2        # old png -> _rerolled/<key>.r<n>.png
+    V3_OUT=out_phrases_v3/round2 ONLY=A2-0113,... timeout 178 python -u out_phrases_v3/gen.py 100 4   # pilot round 2
 
 Append-only ledger/gen_log are kept in ~/a2_work/v3_* (outside the Proton-synced tree) and
 copied in once per call. Last ledger row per key = current picture.
@@ -22,7 +23,10 @@ os.chdir(ROOT); sys.path.insert(0, ROOT)
 import go_generator as g, deck_builder as db, gen_phrases as gp
 from situations import SITUATIONS, BY_ID, renders
 
-OUT = "out_phrases_v3"
+# V3_OUT=out_phrases_v3/round2 (pilot round 2, 2026-10-17): renders go to a subfolder and
+# never over round 1; its append-only logs are ~/a2_work/v3_round2_* (TAG below).
+OUT = os.environ.get("V3_OUT", "out_phrases_v3")
+TAG = "v3" if OUT == "out_phrases_v3" else "v3_" + os.path.basename(OUT.rstrip("/"))
 MODEL = g.OPENAI_MODEL
 SIZE, QUALITY = "1536x1024", g.OPENAI_QUALITY
 BUDGET = float(sys.argv[1]) if len(sys.argv) > 1 else 15
@@ -85,8 +89,8 @@ os.environ.setdefault("OPENAI_API_KEY", open(".openai_key.txt").read().strip())
 c = OpenAI()
 t0 = time.time(); lock = threading.Lock()
 LOCAL = os.path.expanduser("~/a2_work"); os.makedirs(LOCAL, exist_ok=True)
-log = open(f"{LOCAL}/v3_gen_log.jsonl", "a")
-lf, lw = g.GOGenerator.open_ledger(f"{LOCAL}/v3_ledger.csv")
+log = open(f"{LOCAL}/{TAG}_gen_log.jsonl", "a")
+lf, lw = g.GOGenerator.open_ledger(f"{LOCAL}/{TAG}_ledger.csv")
 
 
 def run(j):
@@ -128,10 +132,10 @@ with ThreadPoolExecutor(W) as ex:
     list(ex.map(run, todo))
 lf.close(); log.close()
 import shutil
-for name in ("v3_ledger.csv", "v3_gen_log.jsonl"):
+for name in (f"{TAG}_ledger.csv", f"{TAG}_gen_log.jsonl"):
     for w_try in range(6):
         try:
-            shutil.copyfile(f"{LOCAL}/{name}", f"{OUT}/{name.replace('v3_', '')}"); break
+            shutil.copyfile(f"{LOCAL}/{name}", f"{OUT}/{name.replace(TAG + '_', '')}"); break
         except OSError:
             time.sleep(2 * (w_try + 1))
 left = [j["key"] for j in jobs if (not ONLY or j["key"] in ONLY) and not os.path.exists(f"{OUT}/{j['key']}.png")]
