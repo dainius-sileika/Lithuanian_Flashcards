@@ -1,20 +1,25 @@
 [
-{"id":"pilot-verdict","group":"Pilot pictures","title":"Verdict on the 34 bubble-free pilot cards","ask":"Score each card on the pilot page (situation, neighbour test, stray act). A pass releases the other ~133 bubble cards and the 69 new phrase cards for drawing.","options":["Pass: roll out","Pass with fixes (see note)","Fail: rethink"],"links":[{"label":"Open the pilot page","href":"https://claude.ai/artifact/AVoEVmiY3YdLM1VvHvSE6D"},{"label":"Pilot plan and rubric","href":"#doc-pilot"}]},
-{"id":"koks","group":"Pilot pictures","title":"A new scene for koks (what kind of)","ask":"It keeps reading as kuris (which) after two redraws. The current scene is a customer hesitating over three cups of different shapes. Suggest a scene, or let Fable propose three.","options":["Let Fable propose three"],"links":[{"label":"Pilot page (card A2-0115)","href":"https://claude.ai/artifact/AVoEVmiY3YdLM1VvHvSE6D"}]},
-{"id":"insets","group":"Pilot pictures","title":"Small inset panels on single-scene cards","ask":"Most single-scene pilot cards still carry small inset panels, because the house-style opening sentence describes insets. Keep them, or make single scenes truly single?","options":["Keep insets","Remove insets on scene cards"],"links":[{"label":"Pilot page","href":"https://claude.ai/artifact/AVoEVmiY3YdLM1VvHvSE6D"}]},
-{"id":"additions","group":"Pilot pictures","title":"Look over the 43 new pictures and 5 redraws","ask":"New A2 words from the English benchmark, plus vandenynas, sala and the three flag cards redrawn. All pass the automatic check.","options":["All fine","Some need redraws (marked on the page)"],"links":[{"label":"Open the additions page","href":"https://claude.ai/artifact/DguRLAm5r1rBuBEPuoT696"}]},
-{"id":"sections","group":"Card fronts","title":"Section names in the top band","ask":"Cards are grouped into 20 sections (I–XX), e.g. \"Section VI · food\", \"Section XIX · phrases\". Rename or regroup any?","options":["Fine as they are","Changes in note"],"links":[{"label":"See them on cards","href":"#doc-frames"}]},
-{"id":"cloze-caption","group":"Card fronts","title":"English caption on fill-in-the-blank cards","ask":"Picture cards show the English in the bottom band. Should fill-in-the-blank (cloze) fronts show it too? Showing it gives the meaning away along with the sentence; hiding it keeps the sentence as the only cue.","options":["Show it","Hide it"],"links":[]},
-{"id":"font","group":"Card fronts","title":"Typeface","ask":"PT Serif can't draw the tilde and grave stress marks (as in ė̃); those letters fall back to Old Standard TT and look slightly different. Keep PT Serif, or switch to a typeface that covers every mark?","options":["Keep PT Serif","Switch typeface"],"links":[{"label":"See cards","href":"#doc-frames"}]},
-{"id":"plates","group":"Card backs","title":"Plate numbers for A2","ask":"Should A2 continue the count (1001 onward) or restart as \"A2 · 0001\"? Right now the deck uses three numbering systems.","options":["Continue: 1001 onward","Restart: A2 · 0001"],"links":[{"label":"Backs audit","href":"#doc-backs"}]},
-{"id":"phrase-lines","group":"Card backs","title":"Formal/informal lines on phrase backs","ask":"Add the tu/jūs variant and register lines to phrase backs now, or after you've recorded the audio?","options":["Now","After the audio"],"links":[{"label":"Backs audit","href":"#doc-backs"}]},
-{"id":"back-picture","group":"Card backs","title":"Picture on the back","ask":"Repeat the full picture on the back (as now), or a small thumbnail so the word sits near the top?","options":["Full picture","Thumbnail"],"links":[{"label":"Current backs","href":"#doc-frames"},{"label":"Backs audit","href":"#doc-backs"}]},
-{"id":"back-redesign","group":"Card backs","title":"Approve the back redesign","ask":"Word large at the top, then stress, audio, gender and forms (the taught form in bold), then a smaller meaning line, then the picture.","options":["Approve","Changes in note"],"links":[{"label":"Backs audit, section 2","href":"#doc-backs"}]},
-{"id":"faces","group":"Historical places and figures","title":"Faces or surroundings","ask":"Heads in our pictures are 40–80 px of flat paint, so a likeness of Darius won't read as Darius. Recommended: suggest figures through their world (the orange Lituanica, Žemaitė's headscarf and pen, the real buildings). Or try named faces.","options":["Surroundings (recommended)","Try faces"],"links":[{"label":"Historical report","href":"#doc-historical"}]},
-{"id":"president","group":"Historical places and figures","title":"President card","ask":"Adamkus is a living person in a public deck, and wouldn't have been president in 1981. Options: an unnamed interwar statesman before the Seimas building (recommended), Grinius, or Adamkus.","options":["Unnamed statesman","Grinius","Adamkus"],"links":[{"label":"Historical report","href":"#doc-historical"}]},
-{"id":"hist-test","group":"Historical places and figures","title":"Approve the ~$0.14 test","ask":"Six test pictures: the Lituanica, Žemaitė, the Sports Hall, the Palace of Justice, and one try each at Adamkus and Grinius by name.","options":["Approve","Not yet"],"links":[{"label":"Historical report","href":"#doc-historical"}]},
-{"id":"swaps","group":"Historical places and figures","title":"Four corrections to existing cards","ask":"Hospital → the 1939 Kaunas Clinics; the Soviet-era Maironis statue → the 1928 Freedom Statue; the Vytis removed from the Seimas card (flag-only rule); the tram removed from A2-0722 (Lithuania had no trams in 1981).","options":["Approve all","Some (see note)"],"links":[{"label":"Historical report","href":"#doc-historical"}]},
-{"id":"places","group":"Historical places and figures","title":"Which of the 26 new real places to adopt","ask":"Mostly interwar Kaunas: Palace of Justice, Central Post Office, Bank of Lithuania, War Museum, Sports Hall, State Stadium, Town Hall square, Vilnius Philharmonic, Romuva, Konrado kavinė and more.","options":["Adopt all","Some (see note)"],"links":[{"label":"Historical report","href":"#doc-historical"}]},
-{"id":"t-import","group":"Your own tasks","title":"Delete the old deck and import v2.1","ask":"Lietuviu_Flashcards_v2.1_A1.apkg and …_A2.apkg are in the project folder on your Mac.","options":["Done"],"links":[]},
-{"id":"t-audio","group":"Your own tasks","title":"Record the audio","ask":"Use recorder_A2.html in a2_build on your Mac; include a re-record of 265 lūpos.","options":["Done"],"links":[]}
+ {
+  "id": "backs-type",
+  "group": "Card backs and type",
+  "title": "Backs and Type: three decisions on one page",
+  "ask": "Current vs proposed backs (6 cards), thumbnail vs full picture (3 cards), and the deck in five typefaces. Noto Serif and Brygada 1918 are the only ones that place the tilde correctly over ė and ū; the current mix and Old Standard TT let it collide. Answer on that page.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Backs and Type",
+    "href": "https://claude.ai/artifact/456zuA9JMgC46NZMwad5CF"
+   }
+  ]
+ },
+ {
+  "id": "t-audio",
+  "group": "Later (parked)",
+  "title": "Record the audio (parked)",
+  "ask": "Parked at your request: recorder_A2.html in a2_build on your Mac, including a re-record of 265 lūpos. Nothing needed now.",
+  "options": [],
+  "links": []
+ }
 ]

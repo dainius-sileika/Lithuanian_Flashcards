@@ -18,6 +18,6 @@ for p, cap in shots:
 t = open("template.html", encoding="utf-8").read()
 j = lambda o: json.dumps(o, ensure_ascii=False).replace("</", "<\\/")
 t = (t.replace("__ITEMS__", j(json.load(open("items.json", encoding="utf-8"))))
-      .replace("__DOCS__", j(D)).replace("__SHOTS__", "\n".join(fig)).replace("__UPDATED__", "17 Oct 2026, 15:30"))
+      .replace("__DOCS__", j(D)).replace("__SHOTS__", "\n".join(fig)).replace("__UPDATED__", __import__("datetime").datetime.now(__import__("zoneinfo").ZoneInfo("Europe/Vilnius")).strftime("%-d %b %Y, %H:%M")))
 open("review_desk.html", "w", encoding="utf-8").write(t)
 print(len(t), sorted(os.listdir("img")))
