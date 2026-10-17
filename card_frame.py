@@ -168,7 +168,7 @@ _CLOZE_PIC = ('{{#Image}}<div class="sf-pic">{{Image}}</div>{{/Image}}'
               '{{^Image}}<div class="sf-panel"><div class="cloze-text">{{cloze:Text}}</div>'
               '<div class="hint">{{SentenceEN}}</div></div>{{/Image}}')
 _CLOZE_FRAME = _frame("Category", "Number", "Gloss", _CLOZE_PIC)
-CLOZE_FRONT = (f'<div class="sf-card">{_CLOZE_FRAME}'
+CLOZE_FRONT = (f'<div class="sf-card sf-cloze-front">{_CLOZE_FRAME}'
                '{{#Image}}<div class="cloze-text">{{cloze:Text}}</div>{{/Image}}'
                f'</div>{FIT_JS}')
 CLOZE_BACK = (f'<div class="sf-card">{_CLOZE_FRAME}'

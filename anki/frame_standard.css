@@ -110,6 +110,8 @@
 .sf-en:empty { display: none; }
 /* sentence cards: English on the back only (a2_build/sentences/design.md) */
 .sf[data-tags~="SENT"] .sf-en { display: none; }
+/* owner 2026-10-17: no English caption on cloze FRONTS (the sentence is the only cue); shown on the back */
+.sf-cloze-front .sf-en { visibility: hidden; }
 
 /* answer side, under the frame */
 .sf-card .answer { padding: 14px 18px 18px; }
