@@ -1,5 +1,65 @@
 [
  {
+  "id": "fable-credits",
+  "group": "Needs you now",
+  "title": "Fable is out of usage credits: wait, or let Opus finish the planning?",
+  "ask": "Fable stopped partway through the historical plan. Done: the place descriptions and settings rows. Not done: the likeness and Vytis rule text, the six-picture test plan, and the Lithuanian section names. The drawing work (Opus) carries on. Either wait for Fable credits to return or be topped up, or let Opus write those three planning pieces.",
+  "options": [
+   "Wait for Fable",
+   "Let Opus finish them"
+  ],
+  "links": [
+   {
+    "label": "Usage settings",
+    "href": "https://claude.ai/settings/usage"
+   }
+  ]
+ },
+ {
+  "id": "ciurlionis",
+  "group": "Needs you now",
+  "title": "Which Čiurlionis painting for A2-1915",
+  "ask": "\"Between Worlds\" is the title of the Dulwich Picture Gallery's 2022–23 Čiurlionis exhibition, not of a single painting. Fable proposes Karalių pasaka (The Kings' Fairy Tale, 1909); the alternative is Rex (1909). Both are public domain.",
+  "options": [
+   "Karalių pasaka",
+   "Rex",
+   "Other (note)"
+  ],
+  "links": [
+   {
+    "label": "Dulwich: Between Worlds",
+    "href": "https://www.dulwichpicturegallery.org.uk/explore/exhibition-archive/mk-ciurlionis-between-worlds/"
+   },
+   {
+    "label": "Čiurlionis museum on the show",
+    "href": "https://ciurlionis.lt/activity/exhibitions/exhibition-of-m-k-ciurlions-creation-in-london"
+   }
+  ]
+ },
+ {
+  "id": "prasau-calque",
+  "group": "Needs you now",
+  "title": "\"…, prašau\" at the end of a request",
+  "ask": "The etiquette reference Fable checked (Kniūkšta, ed., Kalbos etiketas, 2004) calls a command with prašau at the end, as in Užrašykite, prašau, a Russian-pattern borrowing. It recommends Prašom užrašyti (prašom + the infinitive) instead. Everyday speech uses the end-position form all the time, and we couldn't check the language commission's current position (vlkk.lt blocked access). Four cards use it: pakartokite, užrašykite, kalbėkite lėčiau, sėskitės. Either way, the note on the back will give the recommended form.",
+  "options": [
+   "Keep as spoken",
+   "Switch to recommended form",
+   "Teach both (note on back)"
+  ],
+  "links": []
+ },
+ {
+  "id": "family-order",
+  "group": "Needs you now",
+  "title": "mama / tėtis before or after motina / tėvas?",
+  "ask": "The mother and father cards will now sit together in the study order. Right now the everyday words (mama, tėtis) come straight after the formal ones (motina, tėvas). Reverse it so the everyday word comes first?",
+  "options": [
+   "Formal first (as now)",
+   "Everyday first"
+  ],
+  "links": []
+ },
+ {
   "id": "backs-type",
   "group": "Card backs and type",
   "title": "Backs and Type: three decisions on one page",
