@@ -1,0 +1,47 @@
+/* ===========================================================================
+   PROPOSED back of card (a2_build/BACKS_AUDIT.md §2) — PREVIEW ONLY.
+   Not used by build_apkg.py. frame_preview.py --back proposed appends this after the
+   package's own CSS (go_theme.css + frame_standard.css) and swaps in the templates from
+   card_frame.proposed_backs(). Order on the back, production first:
+     top band (section) · anchor · WORD · stress + audio · gender + forms (taught form
+     bold) · meaning (smaller) · picture (full plate width, or a thumbnail) · bottom band
+   =========================================================================== */
+
+/* the back is one framed page: red head band, cream body inside the side borders,
+   red foot band ("pav. N" · English), exactly as the front's frame */
+.pb .pb-body { background: var(--sf-cream); color: var(--ink, #2c2620); display: flow-root; }  /* flow-root: the thumbnail's margin stays inside the cream */
+.pb hr#answer { border: 0; height: 0; margin: 0; }          /* anchor only: reveal lands on the word */
+
+.pb .answer { padding: 16px 16px 4px; text-align: center; }
+.pb .word {
+  font-size: 2.6rem; line-height: 1.05; font-weight: 700; letter-spacing: .005em;
+  margin: .1em 0 0; overflow-wrap: anywhere;
+}
+.pb .pb-say { margin-top: .3em; line-height: 1.2; }
+.pb .pb-say:empty, .pb .pb-gram:empty { display: none; }
+.pb .pron { font-size: 1.25rem; font-style: italic; color: var(--teal, #3c5e5a); margin: 0; }
+
+/* gender symbol and the forms on one line */
+.pb .pb-gram { margin-top: .45em; line-height: 1.25; }
+.pb .gender { display: inline; margin: 0 .25em 0 0; }
+.pb .gender .g { font-size: 1.5rem; margin: 0 .04em; vertical-align: -.12em; }
+.pb .forms {
+  display: inline; margin: 0;
+  font-variant: normal; letter-spacing: 0; font-size: 1.2rem; color: var(--ink, #2c2620);
+}
+.pb .forms b { font-weight: 700; }
+.pb .forms .g { font-size: 1.1em; }
+.pb .pb-adj .fp + .fp { font-weight: 700; }                 /* adjectives: the feminine is the taught form */
+
+.pb .gloss { margin-top: .7em; font-size: 1.05rem; color: #5a5047; }
+.pb .hint { font-size: .98rem; font-style: italic; opacity: .8; margin: .35em 0 0; }
+.pb .cloze-text { font-size: 1.35rem; line-height: 1.3; margin: 0; padding: 14px 16px 0; text-align: center; }
+
+/* the picture, last */
+.pb .pb-pic { line-height: 0; }
+.pb-full .pb-pic { margin-top: 16px; }                       /* edge to edge, closes into the foot band */
+.pb-thumb .pb-pic {
+  width: 56%; margin: 16px auto 16px;
+  outline: 1px solid rgba(149, 47, 37, .45); outline-offset: 0;
+}
+.pb .pb-body > .answer:last-child { padding-bottom: 16px; }

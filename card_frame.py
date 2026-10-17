@@ -182,6 +182,73 @@ CLOZE_BACK = (f'<div class="sf-card">{_CLOZE_FRAME}'
               f'</div>{FIT_JS}')
 
 
+# --- PROPOSED back (a2_build/BACKS_AUDIT.md §2) — preview only ---------------------------
+# Not used by build_apkg.py (the default build is unchanged). frame_preview.py --back proposed
+# swaps these in for the backs of both note types, with anki/back_proposed.css appended.
+# Same fields as today, so adopting it later would be a template/CSS change only.
+# pic: "thumb" (picture at ~56 % width, the audit's proposal) or "full" (full plate width).
+# The forms line bolds the taught form: in the template for gen_sg / pres3 / past3, in CSS
+# for the adjective pair (the feminine), and by a small script for the cloze Forms field,
+# which is plain text "laikas · laiko" (everything after the first " · " is bolded).
+PB_BOLD_JS = """<script>
+(function () {
+  var els = document.querySelectorAll('.pb-forms');
+  for (var i = 0; i < els.length; i++) {
+    var e = els[i];
+    if (e.querySelector('b, .fp')) continue;
+    var p = e.innerHTML.split(' \\u00b7 ');
+    if (p.length < 2) continue;
+    e.innerHTML = p[0] + ' \\u00b7 ' + p.slice(1).map(function (s) { return '<b>' + s + '</b>'; }).join(' \\u00b7 ');
+  }
+})();
+</script>"""
+
+
+def _pb_open(cat, pic):
+    return (f'<div class="sf-card pb pb-{pic}"><div class="sf" data-tags="{{{{Tags}}}}">'
+            f'<div class="sf-top"><span class="sf-sec" data-cat="{{{{text:{cat}}}}}"></span></div>'
+            '<hr id="answer"><div class="pb-body">')
+
+
+def _pb_close(num, cap):
+    return ('</div>'
+            f'<div class="sf-bot"><span class="sf-pav">pav. {{{{{num}}}}}</span>'
+            f'<span class="sf-lead"></span><span class="sf-en">{{{{{cap}}}}}</span></div>'
+            '</div></div>')
+
+
+def proposed_backs(pic="thumb"):
+    """(picture-note back, cloze-note back) of the proposed design; pic = thumb | full."""
+    if pic not in ("thumb", "full"):
+        raise ValueError(f"pic: expected thumb or full, got {pic!r}")
+    back = (_pb_open("category", pic)
+            + '<div class="answer"><div class="word">{{lithuanian}}</div>'
+            '<div class="pb-say">{{#pron}}<span class="pron">{{pron}}</span>{{/pron}}{{audio}}</div>'
+            '<div class="pb-gram">{{#gender}}<span class="gender">{{gender}}</span>{{/gender}}'
+            '{{#gen_sg}}<span class="forms">{{lithuanian}} · <b>{{gen_sg}}</b></span>{{/gen_sg}}'
+            '{{#pres3}}<span class="forms">{{lithuanian}} · <b>{{pres3}}</b> · <b>{{past3}}</b></span>{{/pres3}}'
+            '{{#fem}}<span class="forms pb-adj">{{fem}}</span>{{/fem}}</div>'
+            '<div class="gloss">{{english}}</div></div>'
+            '<div class="sf-pic pb-pic">{{image}}</div>'
+            + _pb_close("number", "english") + FIT_JS)
+    cloze = (_pb_open("Category", pic)
+             + '<div class="cloze-text">{{cloze:Text}}</div>'
+             '<div class="answer"><div class="word">{{Word}}</div>'
+             '<div class="pb-say">{{#Pron}}<span class="pron">{{Pron}}</span>{{/Pron}}{{Audio}}{{SentenceAudio}}</div>'
+             '<div class="pb-gram">{{#Gender}}<span class="gender">{{Gender}}</span>{{/Gender}}'
+             '{{#Forms}}<span class="forms pb-forms">{{Forms}}</span>{{/Forms}}</div>'
+             '<div class="gloss">{{Gloss}}</div>'
+             '<div class="hint">{{SentenceEN}}</div></div>'
+             '{{#Image}}<div class="sf-pic pb-pic">{{Image}}</div>{{/Image}}'
+             + _pb_close("Number", "Gloss") + FIT_JS + PB_BOLD_JS)
+    return back, cloze
+
+
+def proposed_css():
+    here = os.path.dirname(os.path.abspath(__file__))
+    return open(os.path.join(here, "anki", "back_proposed.css"), encoding="utf-8").read()
+
+
 def unmapped(categories_with_tags):
     """[(category, tags)] -> sorted categories that no section covers."""
     return sorted({c for c, t in categories_with_tags if c and section_of(c, t) is None})
