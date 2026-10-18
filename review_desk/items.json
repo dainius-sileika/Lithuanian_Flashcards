@@ -1,5 +1,61 @@
 [
  {
+  "id": "histtest",
+  "group": "Needs you now",
+  "title": "Historical Test: six pictures to judge",
+  "ask": "The Lituanica, the author card, the 1939 Sports Hall, the courthouse with the Cross of Vytis, the president (Adamkus) with the Vytis, and the Freedom Statue. The image model accepted the Adamkus prompt. Each picture has its judging questions on the page. Your verdict decides whether the historical places roll out to the A1 cards, and whether the emblem rule (Vytis allowed) replaces the flags-only rule.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Historical Test",
+    "href": "https://claude.ai/artifact/HyXgC3WshJceyH4JXBHBDr"
+   }
+  ]
+ },
+ {
+  "id": "handfix",
+  "group": "Needs you now",
+  "title": "Hand Fixes: 36 before and after",
+  "ask": "32 inset-only edits and 4 redraws from the hand scan; the automatic check found no remaining hand, limb or prop problem on any of them. Three couldn't be fixed and keep their old picture: 512 jis and A2-1433, where each edit erased the hand instead of repainting it, and A2-1252, which the image service's safety filter refused. Mark OK, or redo for a full redraw.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Hand Fixes",
+    "href": "https://claude.ai/artifact/7nzsZ88kikZj9XftaSbauH"
+   }
+  ]
+ },
+ {
+  "id": "phraseadd",
+  "group": "Needs you now",
+  "title": "Phrase Additions: 64 new A2 phrase cards",
+  "ask": "Drawn from Fable's scenes, with your 5 duplicates and overlaps held back. The automatic check passed 41, marked 13 borderline and failed 10; most failures come from the scene descriptions, not the drawing.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Phrase Additions",
+    "href": "https://claude.ai/artifact/2SKvFKTuxKjS3xPD1YEDxM"
+   }
+  ]
+ },
+ {
+  "id": "stress58",
+  "group": "Needs you now",
+  "title": "Stress marks for 58 phrases (a speaker's call)",
+  "ask": "91 phrase stresses were filled from the kirtis dictionary. Words with two possible stresses (yra: yrà / ỹra, gerai, tai, the -ti infinitives) and words kirtis lacks (ačiū, iki, labanakt, šiandien, dėkui, gaila) were left open; nothing was guessed. The table below has each phrase with its candidates. Write the stressed phrase in the note, one per line, for example 'A2-0348 Lãbas'.",
+  "options": [
+   "Notes written"
+  ],
+  "links": [],
+  "detail": "| id | phrase | kirtis partial | open words (kirtis candidates) |\n|---|---|---|---|\n| A2-0136 | į | į | no stressed word |\n| A2-1058 | vis dar | vis dar | no stressed word |\n| A2-0348 | Labas | Labas | Labas: labàs / lãbas |\n| A2-0350 | Labas rytas | Labas rýtas | Labas: labàs / lãbas |\n| A2-0351 | Laba diena | Laba diena | Laba: labà / lãba; diena: dienà / diẽna |\n| A2-0352 | Labas vakaras | Labas vãkaras | Labas: labàs / lãbas |\n| A2-0353 | Labanakt | Labanakt | Labanakt: no analysis |\n| A2-0355 | Iki pasimatymo | Iki pasimãtymo | Iki: no analysis |\n| A2-0356 | Iki | Iki | Iki: no analysis |\n| A2-0358 | Ačiū | Ačiū | Ačiū: no analysis |\n| A2-0359 | Labai ačiū | Lãbai ačiū | ačiū: no analysis |\n| A2-0363 | Malonu susipažinti | Malonù susipažinti | susipažinti: susipažintì / susipažìnti |\n| A2-0365 | Man gerai | Mán gerai | gerai: geraĩ / gẽrai |\n| A2-0378 | Kur yra…? | Kur yra…? | yra: yrà / ỹra |\n| A2-0382 | Ar yra…? | Ar yra…? | yra: yrà / ỹra |\n| A2-0383 | Ar galite man padėti? | Ar gãlite mán padėti? | padėti: padėtì / padė́ti |\n| A2-0887 | Sėkmės! | Sėkmės! | Sėkmės: sėkmė̃s / sė̃kmės |\n| A2-0893 | Iki rytojaus | Iki rytójaus | Iki: no analysis |\n| A2-0894 | Geros dienos | Geros dienos | Geros: gerõs / gẽros; dienos: dienõs / diẽnos |\n| A2-0895 | Geros kelionės | Geros keliõnės | Geros: gerõs / gẽros |\n| A2-0896 | Kas tai? | Kàs tai? | tai: taĩ / tái |\n| A2-0898 | Kur yra tualetas? | Kur yra tualètas? | yra: yrà / ỹra |\n| A2-0899 | Kiek tai kainuoja? | Kiek tai kainúoja? | tai: taĩ / tái |\n| A2-0900 | Nekalbu lietuviškai | Nekalbu lietùviškai | Nekalbu: nekalbù / nèkalbu |\n| A2-0904 | Ką tai reiškia? | Ką̃ tai réiškia? | tai: taĩ / tái |\n| A2-0909 | Kur galiu rasti…? | Kur galiù rasti…? | rasti: rastì / ràsti |\n| A2-0910 | Mano vardas Dainius | Mãno var̃das Dainius | Dainius: dainiùs / daĩnius |\n| A2-0913 | Man dvidešimt metų | Mán dvìdešimt metų | metų: mètų / mẽtų |\n| A2-0917 | Norėčiau kavos | Norė́čiau kavos | kavos: kavõs / kãvos |\n| A2-0921 | Tai mano namas | Tai mãno nãmas | Tai: taĩ / tái |\n| A2-0922 | Čia yra parduotuvė | Čia yra parduotùvė | Čia: no analysis; yra: yrà / ỹra |\n| A2-0923 | Šiandien šalta | Šiandien šalta | Šiandien: no analysis; šalta: šaltà / šálta |\n| A2-0925 | Trečia valanda | Trečia valanda | Trečia: trečià / trẽčia; valanda: valandà / vãlanda |\n| A2-0926 | Kur tu eini? | Kur tù eini? | eini: einì / eĩni / éini |\n| A2-0954 | Ar galiu mokėti kortele? | Ar galiù mokė́ti kortele? | kortele: kortelè / kortẽle |\n| A2-0957 | Kaip nuvykti į…? | Kaip nuvykti į…? | nuvykti: nuvyktì / nuvỹkti |\n| A2-1150 | gaila | gaila | gaila: no analysis |\n| A2-1157 | Kiek jums metų? | Kiek jùms metų? | metų: mètų / mẽtų |\n| A2-1160 | Ką veiki? | Ką̃ veiki? | veiki: veikì / véiki |\n| A2-1161 | Viskas gerai | Vìskas gerai | gerai: geraĩ / gẽrai |\n| A2-1163 | Laimingų Naujųjų metų! | Laimìngų Naujų̃jų metų! | metų: mètų / mẽtų |\n| A2-1178 | dėkui | dėkui | dėkui: no analysis |\n| A2-1182 | labai gerai | lãbai gerai | gerai: geraĩ / gẽrai |\n| A2-1193 | Kuri valanda? | Kurì valanda? | valanda: valandà / vãlanda |\n| A2-1620 | na | na | no stressed word |\n| A2-1897 | noriu gerti | nóriu gerti | gerti: gertì / gérti |\n| A2-1959 | važiuoti dviračiu | važiúoti dviračiu | dviračiu: dviračiù / dvìračiu |\n| A2-1983 | Čia (yra) mano draugas. / Susipažinkite — tai… | Čia (yra) mãno draũgas. / Susipažìnkite — tai… | Čia: no analysis; yra: yrà / ỹra; tai: taĩ / tái |\n| A2-1987 | Ačiū, ne. | Ačiū, ne. | Ačiū: no analysis |\n| A2-1989 | Ar nori arbatos? / Ar norite arbatos? | Ar nori arbãtos? / Ar nórite arbãtos? | nori: norì / nóri |\n| A2-1993 | Ar galima? | Ar galima? | galima: galimà / gãlima |\n| A2-1994 | Galima. / Prašom. | Galima. / Prãšom. | Galima: galimà / gãlima |\n| A2-2003 | Man šalta. / Man karšta. | Mán šalta. / Mán karšta. | šalta: šaltà / šálta; karšta: karštà / kar̃šta / káršta |\n| A2-2006 | Ar toli? / Netoli. | Ar tõli? / Netoli. | Netoli: no analysis |\n| A2-2009 | Viskas, ačiū. | Vìskas, ačiū. | ačiū: no analysis |\n| A2-2019 | Iki greito! / Iki vėliau! | Iki greĩto! / Iki vė́liau! | Iki: no analysis; Iki: no analysis |\n| A2-2023 | Atsiprašau, ar čia laisva? | Atsiprašaũ, ar čia laisva? | čia: no analysis; laisva: laisvà / laĩsva |\n| A2-2026 | Vieną bilietą į Kauną, prašau. | Víeną bìlietą į Kauną, prašaũ. | Kauną: kaũną / káuną |"
+ },
+ {
   "id": "a1-wrapup",
   "group": "Decisions for A1 wrap-up",
   "title": "The A1 wrap-up checklist (read, then the decisions below)",
