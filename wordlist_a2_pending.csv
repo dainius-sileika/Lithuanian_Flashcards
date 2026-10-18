@@ -373,7 +373,7 @@ A2-0371,P-D,phrases (A2 core),A2,Basics,I don't understand,PHRASE,phrase,no,Nesu
 A2-0372,P-D,phrases (A2 core),A2,Basics,I understand,PHRASE,phrase,no,Suprantu,,,,,,,,,pending,,LT proposed — verify
 A2-0373,P-D,phrases (A2 core),A2,Basics,I don't know,PHRASE,phrase,no,Nežinau,,,,,,,,,pending,,LT proposed — verify
 A2-0374,P-D,phrases (A2 core),A2,Basics,Could you repeat?,PHRASE,phrase,no,Ar galite pakartoti?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
-A2-0375,P-D,phrases (A2 core),A2,Basics,"Speak more slowly, please",PHRASE,phrase,no,"Kalbėkite lėčiau, prašau",,,n/a (phrase),,,,,,pending,,LT proposed — verify
+A2-0375,P-D,phrases (A2 core),A2,Basics,"Speak more slowly, please",PHRASE,phrase,no,Prašom kalbėti lėčiau,,,n/a (phrase),,,,,,pending,,LT proposed — verify
 A2-0376,P-D,phrases (A2 core),A2,Basics,What does … mean?,PHRASE,phrase,no,Ką reiškia…?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
 A2-0377,P-D,phrases (A2 core),A2,Getting by,How much does it cost?,PHRASE,phrase,no,Kiek kainuoja?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
 A2-0378,P-D,phrases (A2 core),A2,Getting by,Where is…?,PHRASE,phrase,no,Kur yra…?,,,n/a (phrase),,,,,,pending,,LT proposed — verify
@@ -900,8 +900,8 @@ A2-0898,P-G,phrases & sentences,A1,Getting by,Where is the toilet?,PHRASE,phrase
 A2-0899,P-G,phrases & sentences,A1,Getting by,How much is it?,PHRASE,phrase,no,Kiek tai kainuoja?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
 A2-0900,P-G,phrases & sentences,A1,Getting by,I don't speak Lithuanian,PHRASE,phrase,no,Nekalbu lietuviškai,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
 A2-0901,P-G,phrases & sentences,A1,Getting by,A little,PHRASE,phrase,no,Truputį,,,,,,,,,pending,,LT owner-confirmed (priority pack)
-A2-0902,P-G,phrases & sentences,A1,Getting by,Please repeat,PHRASE,phrase,no,"Pakartokite, prašau",,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
-A2-0903,P-G,phrases & sentences,A1,Getting by,"Write it down, please",PHRASE,phrase,no,"Užrašykite, prašau",,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0902,P-G,phrases & sentences,A1,Getting by,Please repeat,PHRASE,phrase,no,Prašom pakartoti,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
+A2-0903,P-G,phrases & sentences,A1,Getting by,"Write it down, please",PHRASE,phrase,no,Prašom užrašyti,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
 A2-0904,P-G,phrases & sentences,A1,Getting by,What does it mean?,PHRASE,phrase,no,Ką tai reiškia?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
 A2-0905,P-G,phrases & sentences,A1,Getting by,How do you say … in Lithuanian?,PHRASE,phrase,no,Kaip lietuviškai …?,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)
 A2-0906,P-G,phrases & sentences,A1,Getting by,I need help,PHRASE,phrase,no,Man reikia pagalbos,,,n/a (phrase),,,,,,pending,,LT owner-confirmed (priority pack)

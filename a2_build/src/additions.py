@@ -202,7 +202,7 @@ ADD = [
  ('Kuo dirbate?','What do you do (for work)?','PHRASE','PHRASE','A1','Basics','added',None,''),
  ('Ar turite…?','Do you have…?','PHRASE','PHRASE','A1','Getting by','added',None,''),
  ('Užeikite!','Come in!','PHRASE','PHRASE','A1','Formulas','added',None,''),
- ('Sėskitės, prašau','Sit down, please','PHRASE','PHRASE','A1','Formulas','added',None,''),
+ ('Prašom sėstis','Sit down, please','PHRASE','PHRASE','A1','Formulas','added',None,''),
  ('Su šventėmis!','Happy holidays!','PHRASE','PHRASE','A1','Formulas','added',None,''),
  ('Linksmų Kalėdų!','Merry Christmas!','PHRASE','PHRASE','A1','Formulas','added',None,''),
  ('Laimingų Naujųjų metų!','Happy New Year!','PHRASE','PHRASE','A1','Formulas','added',None,''),

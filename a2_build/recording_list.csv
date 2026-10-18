@@ -843,7 +843,7 @@ take,file_name,kind,study_order,lithuanian,english,say
 842,A2-0372.mp3,word,1030,Suprantu,I understand,Suprantu
 843,A2-0373.mp3,word,1031,Nežinau,I don't know,Nežinau
 844,A2-0374.mp3,word,1032,Ar galite pakartoti?,Could you repeat?,Ar galite pakartoti?
-845,A2-0375.mp3,word,1033,"Kalbėkite lėčiau, prašau","Speak more slowly, please","Kalbėkite lėčiau, prašau"
+845,A2-0375.mp3,word,1033,Prašom kalbėti lėčiau,"Speak more slowly, please",Prašom kalbėti lėčiau
 846,A2-0376.mp3,word,1034,Ką reiškia…?,What does … mean?,Ką reiškia…?
 847,A2-0377.mp3,word,1035,Kiek kainuoja?,How much does it cost?,Kiek kainuoja?
 848,A2-0378.mp3,word,1036,Kur yra…?,Where is…?,Kur yra…?
@@ -877,8 +877,8 @@ take,file_name,kind,study_order,lithuanian,english,say
 876,A2-0899.mp3,word,1064,Kiek tai kainuoja?,How much is it?,Kiek tai kainuoja?
 877,A2-0900.mp3,word,1065,Nekalbu lietuviškai,I don't speak Lithuanian,Nekalbu lietuviškai
 878,A2-0901.mp3,word,1066,Truputį,A little,Truputį
-879,A2-0902.mp3,word,1067,"Pakartokite, prašau",Please repeat,"Pakartokite, prašau"
-880,A2-0903.mp3,word,1068,"Užrašykite, prašau","Write it down, please","Užrašykite, prašau"
+879,A2-0902.mp3,word,1067,Prašom pakartoti,Please repeat,Prašom pakartoti
+880,A2-0903.mp3,word,1068,Prašom užrašyti,"Write it down, please",Prašom užrašyti
 881,A2-0904.mp3,word,1069,Ką tai reiškia?,What does it mean?,Ką tai reiškia?
 882,A2-0905.mp3,word,1070,Kaip lietuviškai …?,How do you say … in Lithuanian?,Kaip lietuviškai …?
 883,A2-0906.mp3,word,1071,Man reikia pagalbos,I need help,Man reikia pagalbos
@@ -1019,7 +1019,7 @@ take,file_name,kind,study_order,lithuanian,english,say
 1018,A2-1163.mp3,word,1166,Laimingų Naujųjų metų!,Happy New Year!,Laimingų Naujųjų metų!
 1019,A2-1164.mp3,word,1167,Linksmų Kalėdų!,Merry Christmas!,Linksmų Kalėdų!
 1020,A2-1165.mp3,word,1168,Su šventėmis!,Happy holidays!,Su šventėmis!
-1021,A2-1166.mp3,word,1169,"Sėskitės, prašau","Sit down, please","Sėskitės, prašau"
+1021,A2-1166.mp3,word,1169,Prašom sėstis,"Sit down, please",Prašom sėstis
 1022,A2-1167.mp3,word,1170,Užeikite!,Come in!,Užeikite!
 1023,A2-1168.mp3,word,1171,Ar turite…?,Do you have…?,Ar turite…?
 1024,A2-1169.mp3,word,1172,minutėlė,just a minute,minutė̃lė · minutėlės
@@ -1855,7 +1855,7 @@ take,file_name,kind,study_order,lithuanian,english,say
 1854,A2-1688.mp3,word,1799,paskambinti,to phone (perf.),paskam̃binti
 1855,A2-1688_s.mp3,sentence,1799,Paskambink man vakare.,Call me in the evening.,Paskambink man vakare.
 1856,A2-1674.mp3,word,1800,pakartoti,to repeat,pakartóti
-1857,A2-1674_s.mp3,sentence,1800,"Pakartokite, prašau.",Please repeat.,"Pakartokite, prašau."
+1857,A2-1674_s.mp3,sentence,1800,"Prašom pakartoti.",Please repeat.,"Prašom pakartoti."
 1858,A2-1683.mp3,word,1801,pasidaryti,to become; make for oneself,pasidarýti
 1859,A2-1683_s.mp3,sentence,1801,Pasidariau arbatos.,I made myself some tea.,Pasidariau arbatos.
 1860,A2-1720.mp3,word,1802,važinėti,to drive around,važinė́ti · važinė́ja · važinė́jo
@@ -1994,7 +1994,7 @@ take,file_name,kind,study_order,lithuanian,english,say
 1993,A2-1573.mp3,word,1869,pensija,pension,peñsija · pensijas
 1994,A2-1573_s.mp3,sentence,1869,Senelis gauna pensiją.,Grandfather receives a pension.,Senelis gauna pensiją.
 1995,A2-1713.mp3,word,1870,sėstis,to sit down,sė́stis
-1996,A2-1713_s.mp3,sentence,1870,"Sėskitės, prašau.","Sit down, please.","Sėskitės, prašau."
+1996,A2-1713_s.mp3,sentence,1870,"Prašom sėstis.","Sit down, please.","Prašom sėstis."
 1997,A2-1716.mp3,word,1871,užlieti kaimynus,to flood the neighbours,užlietì kaimýnus
 1998,A2-1716_s.mp3,sentence,1871,Užliejau kaimynus.,I flooded the neighbours.,Užliejau kaimynus.
 1999,A2-1717.mp3,word,1872,užsirašyti,to make an appointment; sign up; note down,užsirašýti

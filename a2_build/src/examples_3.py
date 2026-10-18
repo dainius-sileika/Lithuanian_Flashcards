@@ -309,7 +309,7 @@ EX = {
  'išmokti': ('{Išmokau} naują žodį.', 'I learned a new word.'),
  'paaiškinti': ('{Paaiškink} man taisyklę.', 'Explain the rule to me.'),
  'pailsėti': ('Reikia {pailsėti}.', 'One needs to have a rest.'),
- 'pakartoti': ('{Pakartokite}, prašau.', 'Please repeat.'),
+ 'pakartoti': ('Prašom {pakartoti}.', 'Please repeat.'),
  'pakeisti': ('Noriu {pakeisti} bilietą.', 'I want to change the ticket.'),
  'pakviesti': ('{Pakviečiau} draugus.', 'I invited friends.'),
  'parašyti': ('{Parašiau} laišką.', 'I wrote a letter.'),

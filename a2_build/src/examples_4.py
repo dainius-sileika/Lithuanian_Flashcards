@@ -37,7 +37,7 @@ EX = {
  'plaukioti': ('Vaikai {plaukioja} ežere.', 'The children are swimming about in the lake.'),
  'džiovinti': ('{Džiovinu} plaukus.', 'I am drying my hair.'),
  'gultis': ('Einu {gultis}.', 'I am going to lie down (to bed).'),
- 'sėstis': ('{Sėskitės}, prašau.', 'Sit down, please.'),
+ 'sėstis': ('Prašom {sėstis}.', 'Sit down, please.'),
  'pietauti': ('{Pietaujame} dvyliktą.', 'We have lunch at twelve.'),
  'pusryčiauti': ('{Pusryčiauju} septintą.', 'I have breakfast at seven.'),
  'vakarieniauti': ('{Vakarieniaujame} kartu.', 'We have dinner together.'),

@@ -234,7 +234,7 @@ SURVIVAL_PHRASES = ["Labas", "Ačiū", "Prašau", "Laba diena", "Atsiprašau", "
                     "Kur yra…?", "Labas rytas", "Labas vakaras", "Sveiki", "Labai ačiū", "Nėra už ką", "Kur yra tualetas?",
                     "Sąskaitą, prašau", "Norėčiau…", "Ar kalbate angliškai?", "Kaip sekasi?", "Man gerai", "Nežinau",
                     "Mano vardas…", "Aš esu iš…", "Labanakt", "Iki pasimatymo", "Atleiskite", "Malonu susipažinti",
-                    "Skanaus", "Į sveikatą!", "Ar galite man padėti?", "Ar galite pakartoti?", "Kalbėkite lėčiau, prašau"]
+                    "Skanaus", "Į sveikatą!", "Ar galite man padėti?", "Ar galite pakartoti?", "Prašom kalbėti lėčiau"]
 SURVIVAL_PHRASE_INDEX = {plain(w): i for i, w in enumerate(SURVIVAL_PHRASES)}
 CORE = {
  "people": ["103_zmogus", "086_vyras", "087_moteris", "101_vaikas", "099_berniukas", "100_mergaite", "090_seima", "082_motina", "083_tevas", "080_sunus", "081_dukra", "088_brolis", "089_sesuo", "104_draugas", "084_tevai", "092_senele", "091_senelis", "085_kudikis", "098_kaimynas"],
