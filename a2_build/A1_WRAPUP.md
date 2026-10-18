@@ -26,7 +26,7 @@ Rule in force throughout (NEEDS_YOUR_REVIEW.md): generate → `qa_images.py` →
 | B3 | **Stress marks**: `accents_todo_kirtis.csv` has 1 `FILL_ME` left; the 9 unmarked A1 prons were fixed on 2026-10-17; confirm every A1-tagged row has a `pron` with a mark (script) | executor | 0 |
 | B4 | **Glosses**: the 355 A2-list rows whose English field carries editorial notes (BACKS_AUDIT §1.7) — split display gloss from note for the A1-tagged ones first (the `english_alt`/`notes` columns exist) | planner proposes the split, **owner** skims it | 0 |
 | B5 | **Usage notes**: 80 on the backs, 10 owner-approved as written; nothing left here unless the owner wants notes on more cards | — | 0 |
-| B6 | **Study order**: adopted 2026-10-17 (v2); add the 10 PIN_AFTER pairs from `a2_build/additions_round2/order_adjacency.csv` (done in data on 2026-10-18? — the executor confirms the pins are in `build_study_order_v2.py` and rebuilds `study_order.csv`); **owner** confirms the first 40 positions once more after the retag | executor, owner | 0 |
+| B6 | **Study order**: adopted 2026-10-17 (v2); the 10 PIN_AFTER pairs from `a2_build/additions_round2/order_adjacency.csv` are in `build_study_order_v2.py` (commit ba23568); rebuild `study_order.csv` after the retag and the pins; **owner** confirms the first 40 positions once more after the retag | executor, owner | 0 |
 
 ## C. Backs, frame and typography
 
