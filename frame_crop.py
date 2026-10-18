@@ -44,6 +44,24 @@ SIDE_RUN_MAX = 0.018       # a row whose red run from the edge is longer is pict
 # Set to the thickest drawn bands measured (top 7.6 %, bottom 10.8 %, sides 1.4 %) so a
 # fallback never leaves a red sliver; it costs a little picture instead.
 FALLBACK = {"top": 0.078, "bottom": 0.110, "left": 0.015, "right": 0.015}
+# 2026-10-18 (A1_WRAPUP C3): the ten pictures of build_reports/frame_flags.csv whose side border
+# the detector cannot find. Measured on the current files: the picture starts this many source
+# pixels (of 1536) in from the edge, after a plain paper margin (or at the edge itself); the
+# fixed 1.5 % fallback either left a cream sliver or cut a little picture. Applied by key
+# (detect_frame(im, key)); both sides where a paper margin was measured, so the crop is even.
+SIDE_OVERRIDES = {
+    "A2-1231": {"left": 10, "right": 15}, "A2-1282": {"left": 12, "right": 12},
+    "A2-1394": {"left": 15, "right": 15}, "A2-1427": {"left": 21, "right": 21},
+    "036_mokykla": {"left": 15, "right": 15}, "423_rasyti": {"left": 21, "right": 27},
+    "438_nesti": {"left": 33, "right": 33}, "530_lydyti": {"left": 27, "right": 27},
+    "S-0034": {"left": 33, "right": 27}, "S-0045": {"left": 45, "right": 42},
+}
+
+
+def override_tag(key):
+    """Short marker for build_apkg's transcode stamp, so an override re-crops only its own card."""
+    o = SIDE_OVERRIDES.get(key)
+    return "" if not o else " ov" + ",".join(f"{k[0]}{v}" for k, v in sorted(o.items()))
 
 
 @dataclass
@@ -205,7 +223,7 @@ def _side_from_edge(side, fringe, dark, n, ink_rules=False):
     return edge, True, too_long
 
 
-def detect_frame(im) -> Detection:
+def detect_frame(im, key=None) -> Detection:
     """Detect the drawn frame of a PIL image. Never raises on odd pictures: what it
     cannot find falls back to FALLBACK and is listed in .fallback/.reasons."""
     a = np.asarray(im.convert("RGB"), dtype=np.int16)
@@ -258,6 +276,15 @@ def detect_frame(im) -> Detection:
             det.left = v
         else:
             det.right = W - v
+    for name, px in SIDE_OVERRIDES.get(key, {}).items():
+        v = int(round(px * W / 1536))
+        if name == "left":
+            det.left = v
+        else:
+            det.right = W - v
+        if name in det.fallback:
+            det.fallback.remove(name)
+        det.reasons.append(f"{name}: override {px}px (SIDE_OVERRIDES)")
     return det
 
 

@@ -349,7 +349,7 @@ def media_image(k, src=None):
     # settings), recorded in a sidecar. Keyed by filename alone, a re-rolled
     # card silently shipped its old picture. The standard frame adds the crop
     # version and keeps the detection on the sidecar's second line (for the report).
-    stamp = f"{_sha1(src)} {ext} {IMG_WIDTH}" + (f" crop{frame_crop.FRAME_CROP_VERSION}" if std else "")
+    stamp = f"{_sha1(src)} {ext} {IMG_WIDTH}" + (f" crop{frame_crop.FRAME_CROP_VERSION}{frame_crop.override_tag(k)}" if std else "")
     side = dst + ".src"
     det = None
     cached = False
@@ -366,7 +366,7 @@ def media_image(k, src=None):
         with Image.open(src) as im0:
             im = im0.convert("RGB")
         if std:
-            det = frame_crop.detect_frame(im)          # at the source's own resolution
+            det = frame_crop.detect_frame(im, k)       # at the source's own resolution
             im = frame_crop.crop_framed(im, det)       # a new image; src is untouched
         if IMG_WIDTH and im.width > IMG_WIDTH:
             im = im.resize((IMG_WIDTH, round(im.height * IMG_WIDTH / im.width)),
