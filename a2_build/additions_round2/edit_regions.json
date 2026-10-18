@@ -1,0 +1,14 @@
+{
+  "_about": "Additions round 2 (2026-10-18): the regions edit_inset.py repaints, in 1536x1024 pixels. rect = [x0, y0, x1, y1] of a ruled inset box read off the PNG by eye (edit_inset.py snaps each edge to the drawn frame line within 12 px and masks the inside, 6 px clear of the frame); poly = a free polygon, not snapped (the painting canvas of A2-1915, drawn in perspective). insets = which 'Insets:' items of the staging line the edit draws (0-based); main = the clause of the main-picture sentence it draws instead.",
+  "A2-1879": {"regions": [{"rect": [1072, 514, 1503, 912]}], "insets": [1]},
+  "A2-1883": {"regions": [{"rect": [1071, 504, 1503, 917]}], "insets": [1]},
+  "A2-1884": {"regions": [{"rect": [1058, 510, 1503, 922]}], "insets": [1]},
+  "A2-1892": {"regions": [{"rect": [1165, 507, 1506, 843]}], "insets": [1]},
+  "A2-1898": {"regions": [{"rect": [1100, 70, 1506, 442]}, {"rect": [1096, 470, 1509, 930]}], "insets": [0, 1]},
+  "A2-1899": {"regions": [{"rect": [1077, 80, 1506, 486]}, {"rect": [1077, 508, 1506, 933]}], "insets": [0, 1]},
+  "A2-1911": {"regions": [{"rect": [1005, 70, 1497, 483]}, {"rect": [1050, 525, 1500, 922]}], "insets": [0, 1]},
+  "A2-1915": {"regions": [{"poly": [[681, 177], [1058, 128], [1058, 593], [681, 558]]}, {"rect": [1130, 87, 1503, 465]}], "insets": [0],
+              "main": "the large framed painting on the wall, seen at an angle, is Čiurlionis's Karalių pasaka (Fairy Tale of the Kings, 1909): two crowned figures in long robes, the left in blue and the right in red, bending over a small glowing globe held in the left figure's hands with a tiny village inside it, a dark forest of black trees behind them, the globe the only light in the canvas"},
+  "A2-1918": {"regions": [{"rect": [1132, 80, 1505, 466]}], "insets": [0]},
+  "A2-1926": {"regions": [{"rect": [1062, 72, 1512, 342]}, {"rect": [1062, 360, 1512, 678]}, {"rect": [1062, 695, 1512, 952]}], "insets": [0, 1, 2]}
+}
