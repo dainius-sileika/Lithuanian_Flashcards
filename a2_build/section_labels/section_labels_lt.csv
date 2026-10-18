@@ -1,0 +1,21 @@
+section,current_english,lithuanian_label,source,note
+I,people,I skyrius · žmonės,"žmonės (pl. of žmogus) — https://lt.wiktionary.org/wiki/žmonės (read 2026-10-17, HTTP 200); https://en.wiktionary.org/wiki/žmogus",
+II,animals,II skyrius · gyvūnai,gyvūnas — https://lt.wiktionary.org/wiki/gyvūnas ; https://en.wiktionary.org/wiki/gyvūnas,
+III,places,III skyrius · vietos,vieta — https://lt.wiktionary.org/wiki/vieta ; https://en.wiktionary.org/wiki/vieta,
+IV,transport,IV skyrius · transportas,transportas — https://en.wiktionary.org/wiki/transportas (Lithuanian section present); lt.wiktionary has no page,
+V,home,V skyrius · namai,namai (pl.) = home — https://lt.wiktionary.org/wiki/namai,namai in the plural is 'home'; namas (sg.) would be 'house'
+VI,food,VI skyrius · maistas,maistas — https://lt.wiktionary.org/wiki/maistas,the owner's own example
+VII,clothing,VII skyrius · drabužiai,drabužis — https://lt.wiktionary.org/wiki/drabužis ; https://en.wiktionary.org/wiki/drabužis,alternative 'apranga' (clothing as outfit) rejected: drabužiai is the deck's own gloss for the section's nouns
+VIII,body & health,VIII skyrius · kūnas ir sveikata,kūnas — https://lt.wiktionary.org/wiki/kūnas ; sveikata — https://lt.wiktionary.org/wiki/sveikata,
+IX,nature,IX skyrius · gamta,gamta — https://lt.wiktionary.org/wiki/gamta,
+X,work & school,X skyrius · darbas ir mokykla,darbas — https://lt.wiktionary.org/wiki/darbas ; mokykla — https://lt.wiktionary.org/wiki/mokykla,the section also holds 'Work & culture'; 'darbas ir mokykla' keeps the English label's pair
+XI,society,XI skyrius · visuomenė,visuomenė — https://lt.wiktionary.org/wiki/visuomenė ; https://en.wiktionary.org/wiki/visuomenė,
+XII,colours & materials,XII skyrius · spalvos ir medžiagos,spalva — https://lt.wiktionary.org/wiki/spalva ; medžiaga — https://lt.wiktionary.org/wiki/medžiaga ; https://en.wiktionary.org/wiki/medžiaga,
+XIII,numbers & time,XIII skyrius · skaičiai ir laikas,skaičius — https://lt.wiktionary.org/wiki/skaičius ; laikas — https://lt.wiktionary.org/wiki/laikas,
+XIV,actions,XIV skyrius · veiksmai,veiksmas — https://lt.wiktionary.org/wiki/veiksmas ; https://en.wiktionary.org/wiki/veiksmas,
+XV,qualities,XV skyrius · savybės,"savybė 'characteristic, attribute, trait, quality' — https://en.wiktionary.org/wiki/savybė (Lithuanian entry read 2026-10-17)","alternative 'būdvardžiai' (adjectives, the part of speech) rejected: the English labels name meanings, not parts of speech"
+XVI,things & ideas,XVI skyrius · daiktai ir sąvokos,"daiktas — https://lt.wiktionary.org/wiki/daiktas ; sąvoka (concept, notion) — https://lt.wiktionary.org/wiki/sąvoka",'idėjos' is the literal word but 'sąvokos' (concepts) is what the Abstract/Misc nouns are; owner may prefer 'daiktai ir idėjos' (https://en.wiktionary.org/wiki/idėja)
+XVII,feelings & opinions,XVII skyrius · jausmai ir nuomonės,"jausmas 'feeling, emotion' — https://en.wiktionary.org/wiki/jausmas ; nuomonė — https://lt.wiktionary.org/wiki/nuomonė",
+XVIII,small words,XVIII skyrius · pagalbiniai žodžiai,"pagalbinis 'auxiliary, supplementary' — https://en.wiktionary.org/wiki/pagalbinis ; žodis — https://lt.wiktionary.org/wiki/žodis","JUDGEMENT CALL. The grammar term 'tarnybiniai žodžiai' (https://lt.wiktionary.org/wiki/tarnybinis) covers only prepositions, conjunctions and particles; this section also holds pronouns, question words and adverbs, so the technical term would be wrong. 'pagalbiniai žodžiai' (helper words) is plain and true. Alternative: 'smulkieji žodžiai'."
+XIX,phrases,XIX skyrius · frazės,"frazė 'baigtą mintį reiškiantis žodžių junginys, posakis' — https://www.vle.lt/straipsnis/fraze/ (read 2026-10-17); no wiktionary page","alternative 'posakiai' (sayings, expressions) is narrower"
+XX,sentences,XX skyrius · sakiniai,sakinys — https://lt.wiktionary.org/wiki/sakinys ; the category value is already 'Sakiniai',
