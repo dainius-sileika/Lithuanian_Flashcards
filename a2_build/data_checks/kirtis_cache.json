@@ -1,0 +1,8117 @@
+{
+"vaistinės": [
+{
+"word": "Váistinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Váistinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Váistinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Váistinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Váistinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Váistinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"svarbi": [
+{
+"word": "Svarbì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Svar̃bi",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"įdomi": [
+{
+"word": "Įdomì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Įdõmi",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Į̃domi",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Į̃domi",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Į̃domi",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"pavojinga": [
+{
+"word": "Pavojìnga",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Pavojìnga",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Pavojìnga",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Pavojìnga",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"saugi": [
+{
+"word": "Saugì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Saũgi",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"uždaryta": [
+{
+"word": "Uždarýta",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.l.",
+"vnsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Uždarýta",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.l.",
+"vnsk.",
+"Įn.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Uždarýta",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.l.",
+"vnsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Uždarýta",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"būt.l.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"pilna": [
+{
+"word": "Pilnà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Pìlna",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Pilnà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Pìlna",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"tuščia": [
+{
+"word": "Tuščià",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Tuščià",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Tùščia",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Tùščia",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"kitokia": [
+{
+"word": "Kitókia",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Kitókia",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn."
+]
+},
+{
+"word": "Kitókia",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š."
+]
+}
+],
+"teisinga": [
+{
+"word": "Teisìnga",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Teisìnga",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Teisìnga",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Teisìnga",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"patogi": [
+{
+"word": "Patogì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Patõgi",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"skani": [
+{
+"word": "Skanì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Skãni",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"šviežia": [
+{
+"word": "Šviežià",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Šviežià",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Šviẽžia",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Šviẽžia",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"saldi": [
+{
+"word": "Sal̃di",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Saldì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Saldì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"rūgšti": [
+{
+"word": "Rū̃gšti",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Rūgštì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Rūgštì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"sūri": [
+{
+"word": "Sū̃ri",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Sūrì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Sūrì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Sūrì",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Sū̃ri",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Sū̃ri",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"tetos": [
+{
+"word": "Tetõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Tẽtos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Tẽtos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"dėdės": [
+{
+"word": "Dė̃dės",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Dė̃dės",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Dė̃dės",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Dė̃dės",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Vt.",
+"sutrmp."
+]
+}
+],
+"svečio": [
+{
+"word": "Svẽčio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Svẽčio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Svẽčio",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"pilvo": [
+{
+"word": "Pil̃vo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"aukšto": [
+{
+"word": "Aũkšto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Áukšto",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"lentynos": [
+{
+"word": "Lentýnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Lentýnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Lentýnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"spintos": [
+{
+"word": "Spìntos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Spìntos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Spìntos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"veidrodžio": [
+{
+"word": "Véidrodžio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"antklodės": [
+{
+"word": "Añtklodės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Añtklodės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Añtklodės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"pagalvės": [
+{
+"word": "Pagálvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Pagálvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Pagálvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"rankšluosčio": [
+{
+"word": "Rañkšluosčio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"kaimo": [
+{
+"word": "Káimo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"aikštės": [
+{
+"word": "Aikštė̃s",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Áikštės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Áikštės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Aikštė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Aikštė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"pašto": [
+{
+"word": "Pãšto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"muziejaus": [
+{
+"word": "Muziẽjaus",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"kino": [
+{
+"word": "Kìno",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"stotelės": [
+{
+"word": "Stotẽlės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Stotẽlės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Stotẽlės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"perėjos": [
+{
+"word": "Pérėjos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Pérėjos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Pérėjos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Perė́jos",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"vnsk.",
+"sngr.",
+"sutrmp."
+]
+},
+{
+"word": "Perė́jos",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"dgsk.",
+"sngr.",
+"sutrmp."
+]
+}
+],
+"šviesoforo": [
+{
+"word": "Šviesofòro",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"degalinės": [
+{
+"word": "Degalìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Degalìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Degalìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Degalìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Degalìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Degalìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"patiekalo": [
+{
+"word": "Pãtiekalo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"sumuštinio": [
+{
+"word": "Sumuštìnio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Sumuštìnio",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"sviesto": [
+{
+"word": "Svíesto",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"vnsk.",
+"K.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Svíesto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"jogurto": [
+{
+"word": "Jogùrto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"grybo": [
+{
+"word": "Grỹbo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"svogūno": [
+{
+"word": "Svogū̃no",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"kopūsto": [
+{
+"word": "Kopū̃sto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"agurko": [
+{
+"word": "Agur̃ko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"pomidoro": [
+{
+"word": "Pomidòro",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"kriaušės": [
+{
+"word": "Kriáušės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Kriáušės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Kriáušės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"megztinio": [
+{
+"word": "Megztìnio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Megztìnio",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"striukės": [
+{
+"word": "Striùkės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Striùkės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Striùkės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Striukė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Striukė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"šaliko": [
+{
+"word": "Šãliko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"diržo": [
+{
+"word": "Dir̃žo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Dir̃žo",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Dir̃žo",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"skėčio": [
+{
+"word": "Skė̃čio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"troleibuso": [
+{
+"word": "Troleibùso",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"motociklo": [
+{
+"word": "Motocìklo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"rato": [
+{
+"word": "Rãto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"vairuotojo": [
+{
+"word": "Vairúotojo",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"įvardž."
+]
+},
+{
+"word": "Vairúotojo",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"vnsk.",
+"K.",
+"įvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Vairúotojo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"keleivio": [
+{
+"word": "Keleĩvio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"lauko": [
+{
+"word": "Laũko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Laũko",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"tako": [
+{
+"word": "Tãko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"šakos": [
+{
+"word": "Šakõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Šãkos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Šãkos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Šakõs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Šakõs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"vištos": [
+{
+"word": "Vìštos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Vìštos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Vìštos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"vilko": [
+{
+"word": "Vil̃ko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Vil̃ko",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Vil̃ko",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"bitės": [
+{
+"word": "Bìtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Bìtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Bìtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"kliento": [
+{
+"word": "Klieñto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"ūkininko": [
+{
+"word": "Ū́kininko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"muzikanto": [
+{
+"word": "Muzikánto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"rašytojo": [
+{
+"word": "Rašýtojo",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"vnsk.",
+"K.",
+"įvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Rašýtojo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"klasės": [
+{
+"word": "Klãsės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Klãsės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Klãsės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"sąsiuvinio": [
+{
+"word": "Są́siuvinio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"liniuotės": [
+{
+"word": "Liniuõtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Liniuõtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Liniuõtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"žodyno": [
+{
+"word": "Žodýno",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"klausimo": [
+{
+"word": "Kláusimo",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būs.l.",
+"vnsk.",
+"K.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Kláusimo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"atsakymo": [
+{
+"word": "Atsãkymo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"klaidos": [
+{
+"word": "Klaidõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Klaĩdos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Klaĩdos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"žodžio": [
+{
+"word": "Žõdžio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"sakinio": [
+{
+"word": "Sakìnio",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Sãkinio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"istorijos": [
+{
+"word": "Istòrijos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Istòrijos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Istòrijos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"koncerto": [
+{
+"word": "Koncèrto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"paveikslo": [
+{
+"word": "Pavéikslo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"šventės": [
+{
+"word": "Šveñtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Šveñtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Šveñtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Šveñtės",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"vnsk.",
+"sngr.",
+"sutrmp."
+]
+},
+{
+"word": "Šveñtės",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"dgsk.",
+"sngr.",
+"sutrmp."
+]
+}
+],
+"vakarėlio": [
+{
+"word": "Vakarė̃lio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"pradžios": [
+{
+"word": "Pradžiõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Prãdžios",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Prãdžios",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"pabaigos": [
+{
+"word": "Pabaigõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Pãbaigos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Pãbaigos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"gimtadienio": [
+{
+"word": "Gimtãdienio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"plano": [
+{
+"word": "Plãno",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"idėjos": [
+{
+"word": "Idė́jos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Idė́jos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Idė́jos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"dalies": [
+{
+"word": "Daliẽs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"sėkmės": [
+{
+"word": "Sėkmė̃s",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Sė̃kmės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Sė̃kmės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"pavojaus": [
+{
+"word": "Pavõjaus",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Pavojaũs",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"pagalbos": [
+{
+"word": "Pagálbos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Pagálbos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Pagálbos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"informacijos": [
+{
+"word": "Informãcijos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Informãcijos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Informãcijos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"sąrašo": [
+{
+"word": "Są́rašo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"skaičiaus": [
+{
+"word": "Skaĩčiaus",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Skaičiaũs",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"Iasm.",
+"vnsk.",
+"sngr.",
+"sutrmp."
+]
+}
+],
+"euro": [
+{
+"word": "Eũro",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"cento": [
+{
+"word": "Ceñto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"dokumento": [
+{
+"word": "Dokumeñto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"bulvės": [
+{
+"word": "Bùlvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Bùlvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Bùlvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"dušo": [
+{
+"word": "Dùšo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"geležinkelio": [
+{
+"word": "Geležìnkelio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"išėjimo": [
+{
+"word": "Išėjìmo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"kavinės": [
+{
+"word": "Kavìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Kavìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Kavìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Kavìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Kavìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Kavìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"keptuvės": [
+{
+"word": "Keptùvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Keptùvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Keptùvės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"koridoriaus": [
+{
+"word": "Korìdoriaus",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"mokinio": [
+{
+"word": "Mokìnio",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Mókinio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"mėsos": [
+{
+"word": "Mėsõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Mė̃sos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Mė̃sos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"pardavėjo": [
+{
+"word": "pardavė́jo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"puodo": [
+{
+"word": "Púodo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"sofos": [
+{
+"word": "Sòfos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Sòfos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Sòfos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"stiklinės": [
+{
+"word": "Stiklìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Stiklìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Stiklìnės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Stiklìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Stiklìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Stiklìnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"suolo": [
+{
+"word": "Súolo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"tualeto": [
+{
+"word": "Tualèto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"vadovėlio": [
+{
+"word": "Vadovė̃lio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"valgyklos": [
+{
+"word": "Valgỹklos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Valgỹklos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Valgỹklos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"viryklės": [
+{
+"word": "Virỹklės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Virỹklės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Virỹklės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"įėjimo": [
+{
+"word": "Įėjìmo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"šaldytuvo": [
+{
+"word": "Šaldytùvo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"alkoholio": [
+{
+"word": "Alkohòlio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"centro": [
+{
+"word": "Ceñtro",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"daikto": [
+{
+"word": "Dáikto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"dalyko": [
+{
+"word": "Dalỹko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"dešinės": [
+{
+"word": "Dešinė̃s",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Dẽšinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Dẽšinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Dešinė̃s",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Dẽšinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Dẽšinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Dešinė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Dešinė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"gyvenimo": [
+{
+"word": "Gyvẽnimo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"nesngr."
+]
+},
+{
+"word": "Gyvẽnimo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"kairės": [
+{
+"word": "Kairė̃s",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Kaĩrės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Kaĩrės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Kairė̃s",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Kaĩrės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Kaĩrės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Kairė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Kairė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"kalbos": [
+{
+"word": "Kalbõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Kal̃bos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Kal̃bos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"laipsnio": [
+{
+"word": "Láipsnio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"merginos": [
+{
+"word": "Mergìnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Mergìnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Mergìnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Mérginos",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"vnsk.",
+"sngr.",
+"sutrmp."
+]
+},
+{
+"word": "Mérginos",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"dgsk.",
+"sngr.",
+"sutrmp."
+]
+}
+],
+"numerio": [
+{
+"word": "Nùmerio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"pažymėjimo": [
+{
+"word": "Pažymė́jimo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"politiko": [
+{
+"word": "Polìtiko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"pono": [
+{
+"word": "Põno",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"reklamos": [
+{
+"word": "Reklãmos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Reklãmos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Reklãmos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"salės": [
+{
+"word": "Sãlės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Sãlės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Sãlės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Salė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Salė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+},
+{
+"word": "Salė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Salė̃s",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"užsienio": [
+{
+"word": "Ùžsienio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"verslininko": [
+{
+"word": "Ver̃slininko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"meilės": [
+{
+"word": "Méilės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Méilės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Méilės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"kaklaraiščio": [
+{
+"word": "kaklãraiščio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"ugniagesio": [
+{
+"word": "Ùgniagesio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"lietuvos": [
+{
+"word": "Lietuvõs",
+"class": "dktv.",
+"state": [
+"T.",
+"mot.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"pilies": [
+{
+"word": "Piliẽs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Pilíes",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"sngr.",
+"sutrmp."
+]
+}
+],
+"sostinės": [
+{
+"word": "Sóstinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Sóstinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Sóstinės",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Sóstinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Sóstinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Sóstinės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"lito": [
+{
+"word": "Lìto",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"amerikiečio": [
+{
+"word": "Amerikiẽčio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"anglo": [
+{
+"word": "Ánglo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"latvio": [
+{
+"word": "Lãtvio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"lenko": [
+{
+"word": "Lénko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"lietuvio": [
+{
+"word": "Lietùvio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"ruso": [
+{
+"word": "Rùso",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"vokiečio": [
+{
+"word": "Vókiečio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"eglės": [
+{
+"word": "Ẽglės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Ẽglės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Ẽglės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"ponios": [
+{
+"word": "Poniõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Põnios",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Põnios",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"pirkėjo": [
+{
+"word": "pirkė́jo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"vėliavos": [
+{
+"word": "Vė̃liavos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Vė̃liavos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Vė̃liavos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"nuobodi": [
+{
+"word": "Núobodi",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Nuobodì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Nuobõdi",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"nemokama": [
+{
+"word": "Nemokamà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Nemókama",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Nemokamà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Nemókama",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+},
+{
+"word": "Nemokamà",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Nemókama",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Įn.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Nemokamà",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Nemókama",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"esam.l.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"pasiruošusi": [
+{
+"word": "Pasiruõšusi",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.kart.l.",
+"vnsk.",
+"V.",
+"neįvardž.",
+"sngr.",
+"veik.r."
+]
+},
+{
+"word": "Pasiruõšusi",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.kart.l.",
+"vnsk.",
+"Š.",
+"neįvardž.",
+"sngr.",
+"veik.r."
+]
+}
+],
+"šiukšliadėžės": [
+{
+"word": "Šiukšliãdėžės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Šiukšliãdėžės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Šiukšliãdėžės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"koldūno": {
+"error": "HTTP Error 404: Not Found"
+},
+"dešros": [
+{
+"word": "Dešrõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Dẽšros",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Dẽšros",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"medaus": [
+{
+"word": "Medaũs",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Medaũs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Medaũs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"uogos": [
+{
+"word": "Úogos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Úogos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Úogos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"tramvajaus": [
+{
+"word": "Tramvãjaus",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"sėdynės": [
+{
+"word": "Sėdỹnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Sėdỹnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Sėdỹnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"krūmo": [
+{
+"word": "Krū́mo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"avies": [
+{
+"word": "Aviẽs",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Aviẽs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"ožkos": [
+{
+"word": "Ožkõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Óžkos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Óžkos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"ančio": [
+{
+"word": "ánčio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "añčio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"triušio": [
+{
+"word": "Triùšio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"lapės": [
+{
+"word": "Lãpės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Lãpės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Lãpės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"lokio": [
+{
+"word": "Lókio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"voverės": [
+{
+"word": "Voverė̃s",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Vóverės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Vóverės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"varlės": [
+{
+"word": "Varlė̃s",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Var̃lės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Var̃lės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"gyvatės": [
+{
+"word": "Gyvãtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Gyvãtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Gyvãtės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"vabzdžio": [
+{
+"word": "Vãbzdžio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"drugelio": [
+{
+"word": "Drugẽlio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"voro": [
+{
+"word": "Vóro",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"statybininko": [
+{
+"word": "Statýbininko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"lentos": [
+{
+"word": "Lentõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Leñtos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Leñtos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"pomėgio": [
+{
+"word": "Pómėgio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"monetos": [
+{
+"word": "Monètos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Monètos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Monètos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"į": {
+"error": "HTTP Error 404: Not Found"
+},
+"tiek": [
+{
+"word": "Tiẽk",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"tiesiai": [
+{
+"word": "Tiẽsiai",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Tiẽsiai",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Tiẽsiai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+}
+],
+"toli": [
+{
+"word": "Tõli",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+}
+],
+"vis": {
+"error": "HTTP Error 404: Not Found"
+},
+"dar": {
+"error": "HTTP Error 404: Not Found"
+},
+"visai": [
+{
+"word": "Vìsai",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N."
+]
+}
+],
+"nė": {
+"error": "HTTP Error 404: Not Found"
+},
+"vienas": [
+{
+"word": "Víenas",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Víenas",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Víenas",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"G.",
+"neįvardž."
+]
+},
+{
+"word": "Víenas",
+"class": "sktv.",
+"state": [
+"vyr.gim.",
+"kiekin.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Víenas",
+"class": "sktv.",
+"state": [
+"vyr.gim.",
+"kiekin.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Víenas",
+"class": "sktv.",
+"state": [
+"mot.gim.",
+"kiekin.",
+"dgsk.",
+"G."
+]
+},
+{
+"word": "Víenas",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Víenas",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Víenas",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"G."
+]
+}
+],
+"labas": [
+{
+"word": "Lãbas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Lãbas",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Lãbas",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Labàs",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"G.",
+"neįvardž."
+]
+}
+],
+"sveiki": [
+{
+"word": "Sveikì",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Sveikì",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"rytas": [
+{
+"word": "Rýtas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"laba": [
+{
+"word": "Labà",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Labà",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn."
+]
+},
+{
+"word": "Lãba",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Labà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Labà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Lãba",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Lãba",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"diena": [
+{
+"word": "Dienà",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Dienà",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn."
+]
+},
+{
+"word": "Diẽna",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š."
+]
+}
+],
+"vakaras": [
+{
+"word": "Vãkaras",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"labanakt": {
+"error": "HTTP Error 404: Not Found"
+},
+"viso": [
+{
+"word": "Vìso",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Vìso",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Vìso",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"gero": [
+{
+"word": "Gẽro",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Gẽro",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"iki": {
+"error": "HTTP Error 404: Not Found"
+},
+"pasimatymo": [
+{
+"word": "Pasimãtymo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"prašau": [
+{
+"word": "Prašaũ",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"ačiū": {
+"error": "HTTP Error 404: Not Found"
+},
+"labai": [
+{
+"word": "Lãbai",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N."
+]
+},
+{
+"word": "Lãbai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+}
+],
+"nėra": [
+{
+"word": "Nėrà",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Nėrà",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"už": {
+"error": "HTTP Error 404: Not Found"
+},
+"ką": [
+{
+"word": "Ką̃",
+"class": "įvrd.",
+"state": [
+"G."
+]
+}
+],
+"atleiskite": [
+{
+"word": "Atléiskite",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"malonu": [
+{
+"word": "Malonù",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"susipažinti": [
+{
+"word": "Susipažìnti",
+"class": "vksm.",
+"state": [
+"sngr."
+]
+},
+{
+"word": "Susipažintì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"sngr.",
+"neveik.r."
+]
+},
+{
+"word": "Susipažintì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"sngr.",
+"neveik.r."
+]
+}
+],
+"kaip": {
+"error": "HTTP Error 404: Not Found"
+},
+"sekasi": [
+{
+"word": "Sẽkasi",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"sngr."
+]
+},
+{
+"word": "Sẽkasi",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"sngr."
+]
+}
+],
+"man": [
+{
+"word": "Mán",
+"class": "įvrd.",
+"state": [
+"vnsk.",
+"N."
+]
+}
+],
+"gerai": [
+{
+"word": "Geraĩ",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Geraĩ",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Gẽrai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+}
+],
+"koks": [
+{
+"word": "Kóks",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Kóks",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+}
+],
+"jūsų": [
+{
+"word": "Jū́sų",
+"class": "įvrd.",
+"state": [
+"dgsk.",
+"K."
+]
+}
+],
+"vardas": [
+{
+"word": "Var̃das",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"mano": [
+{
+"word": "Mãno",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Mãno",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"iš": [
+{
+"word": "ìš",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm."
+]
+}
+],
+"kur": {
+"error": "HTTP Error 404: Not Found"
+},
+"jūs": [
+{
+"word": "Jū̃s",
+"class": "įvrd.",
+"state": [
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Jū̃s",
+"class": "įvrd.",
+"state": [
+"dgsk.",
+"Š."
+]
+}
+],
+"aš": [
+{
+"word": "Àš",
+"class": "įvrd.",
+"state": [
+"vnsk.",
+"V."
+]
+}
+],
+"esu": [
+{
+"word": "Esù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"ar": {
+"error": "HTTP Error 404: Not Found"
+},
+"kalbate": [
+{
+"word": "Kal̃bate",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"angliškai": [
+{
+"word": "Ángliškai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+}
+],
+"nesuprantu": [
+{
+"word": "Nesuprantù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"suprantu": [
+{
+"word": "Suprantù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"nežinau": [
+{
+"word": "Nežinaũ",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"galite": [
+{
+"word": "Gãlite",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"pakartoti": [
+{
+"word": "Pakartóti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Pakartóti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Pakartóti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"prašom": [
+{
+"word": "Prãšom",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"dgsk.",
+"nesngr.",
+"sutrmp."
+]
+}
+],
+"kalbėti": [
+{
+"word": "Kalbė́ti",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Kalbė́ti",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Kalbė́ti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Kalbė́ti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Kalbė́ti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"lėčiau": [
+{
+"word": "lėčiaũ",
+"class": "prvks.",
+"state": [
+"aukšt. l."
+]
+},
+{
+"word": "lėčiaũ",
+"class": "bdvr.",
+"state": [
+"aukšt. l.",
+"bevrd.gim."
+]
+}
+],
+"reiškia": [
+{
+"word": "Réiškia",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Réiškia",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"kiek": {
+"error": "HTTP Error 404: Not Found"
+},
+"kainuoja": [
+{
+"word": "Kainúoja",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Kainúoja",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"yra": [
+{
+"word": "Yrà",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Yrà",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+},
+{
+"word": "Ỹra",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Ỹra",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"valandų": [
+{
+"word": "Valandų̃",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"K."
+]
+}
+],
+"norėčiau": [
+{
+"word": "Norė́čiau",
+"class": "vksm.",
+"state": [
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"sąskaitą": [
+{
+"word": "Są́skaitą",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"padėti": [
+{
+"word": "Padėtì",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Padėtì",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Padė́ti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Padėtì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Padėtì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"padėkite": [
+{
+"word": "Padė́kite",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"atsargiai": [
+{
+"word": "Atsar̃giai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+}
+],
+"pasiklydau": [
+{
+"word": "Pasiklýdau",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"Iasm.",
+"vnsk.",
+"sngr."
+]
+}
+],
+"atsiprašau": [
+{
+"word": "Atsiprašaũ",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"sngr."
+]
+}
+],
+"nieko": [
+{
+"word": "Niẽko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Niẽko",
+"class": "įvrd.",
+"state": [
+"K."
+]
+}
+],
+"tokio": [
+{
+"word": "Tókio",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"žinoma": [
+{
+"word": "Žìnoma",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Žìnoma",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Žìnoma",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Žìnoma",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+},
+{
+"word": "Žìnoma",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Žìnoma",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Įn.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Žìnoma",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Žìnoma",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"esam.l.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"akimirką": [
+{
+"word": "Akìmirką",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"atvykę": [
+{
+"word": "Atvỹkę",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.kart.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"veik.r."
+]
+},
+{
+"word": "Atvỹkę",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.kart.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"veik.r."
+]
+},
+{
+"word": "Atvỹkę",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"būt.kart.l.",
+"neįvardž.",
+"nesngr.",
+"veik.r."
+]
+}
+],
+"sveikatą": [
+{
+"word": "Sveikãtą",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"skanaus": [
+{
+"word": "Skanaũs",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Skanaũs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Skanaũs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"su": {
+"error": "HTTP Error 404: Not Found"
+},
+"gimtadieniu": [
+{
+"word": "Gimtãdieniu",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Įn."
+]
+}
+],
+"sveikinu": [
+{
+"word": "Svéikinu",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"greitai": [
+{
+"word": "Greĩtai",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N."
+]
+},
+{
+"word": "Greĩtai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+}
+],
+"pasveik": [
+{
+"word": "Pasveĩk",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"rytojaus": [
+{
+"word": "Rytójaus",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"geros": [
+{
+"word": "Gerõs",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Gẽros",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Gẽros",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"dienos": [
+{
+"word": "Dienõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Diẽnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Diẽnos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+},
+{
+"word": "Dienõs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Dienõs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"kelionės": [
+{
+"word": "Keliõnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Keliõnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Keliõnės",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"kas": [
+{
+"word": "Kàs",
+"class": "įvrd.",
+"state": [
+"V."
+]
+},
+{
+"word": "Kàs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Kàs",
+"class": "vksm.",
+"state": [
+"būs.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"tai": [
+{
+"word": "Tái",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+},
+{
+"word": "Taĩ",
+"class": "įvrd.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"tas": [
+{
+"word": "Tàs",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Tàs",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Tàs",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"G.",
+"neįvardž."
+]
+}
+],
+"žmogus": [
+{
+"word": "Žmogùs",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"tualetas": [
+{
+"word": "Tualètas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"nekalbu": [
+{
+"word": "Nekalbù",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+},
+{
+"word": "Nèkalbu",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"lietuviškai": [
+{
+"word": "Lietùviškai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+}
+],
+"truputį": [
+{
+"word": "Trupùtį",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G.",
+"neįvardž."
+]
+},
+{
+"word": "Trupùtį",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Trupùtį",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"užrašyti": [
+{
+"word": "Užrašýti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Užrašýti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Užrašýti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"reikia": [
+{
+"word": "Reĩkia",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"nesngr."
+]
+},
+{
+"word": "Reĩkia",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"nesngr."
+]
+}
+],
+"iškvieskite": [
+{
+"word": "iškviẽskite",
+"class": "vksm.",
+"state": [
+"Liep.",
+"IIasm.",
+"dgsk."
+]
+}
+],
+"gydytoją": [
+{
+"word": "Gýdytoją",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Gýdytoją",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"galiu": [
+{
+"word": "Galiù",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Įn."
+]
+},
+{
+"word": "Galiù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"rasti": [
+{
+"word": "Ràsti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Rastì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Rastì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"dainius": [
+{
+"word": "Daĩnius",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Dainiùs",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"G."
+]
+}
+],
+"gyvenu": [
+{
+"word": "Gyvenù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"vilniuje": [
+{
+"word": "Vìlniuje",
+"class": "dktv.",
+"state": [
+"T.",
+"vyr.gim.",
+"vnsk.",
+"Vt."
+]
+}
+],
+"dvidešimt": [
+{
+"word": "Dvìdešimt",
+"class": "sktv.",
+"state": [
+"kiekin."
+]
+}
+],
+"metų": [
+{
+"word": "Mẽtų",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"K."
+]
+},
+{
+"word": "Mẽtų",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"K."
+]
+},
+{
+"word": "Mètų",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"K."
+]
+},
+{
+"word": "Mẽtų",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G.",
+"neįvardž."
+]
+}
+],
+"turiu": [
+{
+"word": "Turiù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"brolį": [
+{
+"word": "Brólį",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"neturiu": [
+{
+"word": "Neturiù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"laiko": [
+{
+"word": "Laĩko",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Laĩko",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Laĩko",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"noriu": [
+{
+"word": "Nóriu",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Nóriu",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"valgyti": [
+{
+"word": "Válgyti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Válgyti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Válgyti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"kavos": [
+{
+"word": "Kavõs",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Kãvos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Kãvos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"vandens": [
+{
+"word": "Vandeñs",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"patinka": [
+{
+"word": "Patiñka",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Patiñka",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"šis": [
+{
+"word": "Šìs",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+}
+],
+"miestas": [
+{
+"word": "Miẽstas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"namas": [
+{
+"word": "Nãmas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"čia": {
+"error": "HTTP Error 404: Not Found"
+},
+"parduotuvė": [
+{
+"word": "Parduotùvė",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"šiandien": {
+"error": "HTTP Error 404: Not Found"
+},
+"šalta": [
+{
+"word": "Šálta",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"būt.l.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Šaltà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Šálta",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Šaltà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Šálta",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"trečia": [
+{
+"word": "Trečià",
+"class": "sktv.",
+"state": [
+"mot.gim.",
+"kelintin.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Trečià",
+"class": "sktv.",
+"state": [
+"mot.gim.",
+"kelintin.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Trẽčia",
+"class": "sktv.",
+"state": [
+"mot.gim.",
+"kelintin.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Trẽčia",
+"class": "sktv.",
+"state": [
+"bevrd.gim.",
+"kelintin.",
+"neįvardž."
+]
+}
+],
+"valanda": [
+{
+"word": "Valandà",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Vãlanda",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn."
+]
+},
+{
+"word": "Valandà",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š."
+]
+}
+],
+"tu": [
+{
+"word": "Tù",
+"class": "įvrd.",
+"state": [
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Tù",
+"class": "įvrd.",
+"state": [
+"vnsk.",
+"Š."
+]
+}
+],
+"eini": [
+{
+"word": "Einì",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Éini",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š."
+]
+},
+{
+"word": "Einì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Eĩni",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+}
+],
+"einu": [
+{
+"word": "Einù",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Einù",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"namo": [
+{
+"word": "Nãmo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"bilietas": [
+{
+"word": "Bìlietas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"mokėti": [
+{
+"word": "Mokė́ti",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Mokė́ti",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Mokė́ti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Mokė́ti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Mokė́ti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"kortele": [
+{
+"word": "Kortelè",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn."
+]
+},
+{
+"word": "Kortẽle",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š."
+]
+}
+],
+"nuvykti": [
+{
+"word": "Nuvỹkti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Nuvyktì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Nuvyktì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"gaila": {
+"error": "HTTP Error 404: Not Found"
+},
+"nemokamai": [
+{
+"word": "Nemókamai",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"N.",
+"neįvardž."
+]
+},
+{
+"word": "Nemókamai",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"N.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"jums": [
+{
+"word": "Jùms",
+"class": "įvrd.",
+"state": [
+"dgsk.",
+"N."
+]
+}
+],
+"kuo": [
+{
+"word": "Kuõ",
+"class": "įvrd.",
+"state": [
+"Įn."
+]
+}
+],
+"dirbate": [
+{
+"word": "Dìrbate",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"gyvenate": [
+{
+"word": "Gyvẽnate",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"veiki": [
+{
+"word": "Véiki",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Véiki",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Veikì",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"viskas": [
+{
+"word": "Vìskas",
+"class": "įvrd.",
+"state": [
+"V."
+]
+}
+],
+"savaitgalio": [
+{
+"word": "Saváitgalio",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"laimingų": [
+{
+"word": "Laimìngų",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Laimìngų",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"naujųjų": [
+{
+"word": "Naujų̃jų",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"K.",
+"įvardž."
+]
+},
+{
+"word": "Naujų̃jų",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"K.",
+"įvardž."
+]
+}
+],
+"linksmų": [
+{
+"word": "Linksmų̃",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"K.",
+"neįvardž."
+]
+},
+{
+"word": "Linksmų̃",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"kalėdų": [
+{
+"word": "Kalė̃dų",
+"class": "dktv.",
+"state": [
+"T.",
+"mot.gim.",
+"dgsk.",
+"K."
+]
+}
+],
+"šventėmis": [
+{
+"word": "Šveñtėmis",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Įn."
+]
+}
+],
+"sėstis": [
+{
+"word": "Sė́stis",
+"class": "vksm.",
+"state": [
+"sngr."
+]
+}
+],
+"užeikite": [
+{
+"word": "užeĩkite",
+"class": "vksm.",
+"state": [
+"Liep.",
+"IIasm.",
+"dgsk."
+]
+}
+],
+"turite": [
+{
+"word": "Tùrite",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"dėkui": {
+"error": "HTTP Error 404: Not Found"
+},
+"gelbėkit": [
+{
+"word": "Gélbėkit",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"dgsk.",
+"nesngr.",
+"sutrmp."
+]
+},
+{
+"word": "Gélbėkit",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"dgsk.",
+"nesngr.",
+"sutrmp."
+]
+}
+],
+"kuri": [
+{
+"word": "Kurì",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V."
+]
+},
+{
+"word": "Kurì",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"na": {
+"error": "HTTP Error 404: Not Found"
+},
+"nors": {
+"error": "HTTP Error 404: Not Found"
+},
+"pats": [
+{
+"word": "Pàts",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+}
+],
+"kitoje": [
+{
+"word": "Kitojè",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Vt."
+]
+}
+],
+"pusėje": [
+{
+"word": "Pùsėje",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Vt."
+]
+}
+],
+"gerti": [
+{
+"word": "Gérti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Gertì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Gertì",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"rašomasis": [
+{
+"word": "Rãšomasis",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V.",
+"įvardž."
+]
+},
+{
+"word": "Rãšomasis",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Š.",
+"įvardž."
+]
+},
+{
+"word": "Rãšomasis",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"esam.l.",
+"vnsk.",
+"V.",
+"įvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Rãšomasis",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"esam.l.",
+"vnsk.",
+"Š.",
+"įvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"stalas": [
+{
+"word": "Stãlas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"rašoma": [
+{
+"word": "Rãšoma",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Rãšoma",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Įn.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Rãšoma",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Rãšoma",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"esam.l.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"važiuoti": [
+{
+"word": "Važiúoti",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Važiúoti",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"dgsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Važiúoti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Važiúoti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Važiúoti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"dviračiu": [
+{
+"word": "Dvìračiu",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Įn."
+]
+},
+{
+"word": "Dviračiù",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+}
+],
+"reikėtų": [
+{
+"word": "Reikė́tų",
+"class": "vksm.",
+"state": [
+"IIIasm.",
+"nesngr."
+]
+}
+],
+"turėtum": [
+{
+"word": "Turė́tum",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Turė́tum",
+"class": "vksm.",
+"state": [
+"Iasm.",
+"dgsk.",
+"nesngr.",
+"sutrmp."
+]
+}
+],
+"galėtumėte": [
+{
+"word": "Galė́tumėte",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"draugas": [
+{
+"word": "Draũgas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"susipažinkite": [
+{
+"word": "Susipažìnkite",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"dgsk.",
+"sngr."
+]
+}
+],
+"ne": {
+"error": "HTTP Error 404: Not Found"
+},
+"nori": [
+{
+"word": "Norì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Norì",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Nóri",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Nóri",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Nóri",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"arbatos": [
+{
+"word": "Arbãtos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "Arbãtos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"V."
+]
+},
+{
+"word": "Arbãtos",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"dgsk.",
+"Š."
+]
+}
+],
+"norite": [
+{
+"word": "Nórite",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"nepatinka": [
+{
+"word": "Nepatiñka",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Nepatiñka",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"tau": [
+{
+"word": "Táu",
+"class": "įvrd.",
+"state": [
+"vnsk.",
+"N."
+]
+}
+],
+"galima": [
+{
+"word": "Galimà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Gãlima",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Galimà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Gãlima",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+},
+{
+"word": "Galimà",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Gãlima",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Įn.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Galimà",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"esam.l.",
+"vnsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Gãlima",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"esam.l.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"supranti": [
+{
+"word": "Suprantì",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"suprantate": [
+{
+"word": "Suprañtate",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"tavo": [
+{
+"word": "tàvo",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+},
+{
+"word": "tàvo",
+"class": "įvrd.",
+"state": [
+"vnsk.",
+"K."
+]
+}
+],
+"telefono": [
+{
+"word": "Telefòno",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"numeris": [
+{
+"word": "Nùmeris",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"adresas": [
+{
+"word": "Ãdresas",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"karšta": [
+{
+"word": "Karštà",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.l.",
+"vnsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Karštà",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.l.",
+"vnsk.",
+"Įn.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Kar̃šta",
+"class": "dlv.",
+"state": [
+"mot.gim.",
+"būt.l.",
+"vnsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Kar̃šta",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"būt.l.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Káršta",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Káršta",
+"class": "vksm.",
+"state": [
+"esam.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+},
+{
+"word": "Káršta",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"būt.l.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Karštà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Káršta",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Karštà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Káršta",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"pavargau": [
+{
+"word": "Pavargaũ",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"dešinėje": [
+{
+"word": "Dešinėjè",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Vt."
+]
+},
+{
+"word": "Dešinėjè",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Vt.",
+"neįvardž."
+]
+}
+],
+"sukite": [
+{
+"word": "Sùkite",
+"class": "vksm.",
+"state": [
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"dešinę": [
+{
+"word": "Dẽšinę",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Dẽšinę",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G.",
+"neįvardž."
+]
+}
+],
+"kairę": [
+{
+"word": "Kaĩrę",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Kaĩrę",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G.",
+"neįvardž."
+]
+}
+],
+"netoli": {
+"error": "HTTP Error 404: Not Found"
+},
+"vieną": [
+{
+"word": "Víeną",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Víeną",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G.",
+"neįvardž."
+]
+},
+{
+"word": "Víeną",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G.",
+"neįvardž."
+]
+},
+{
+"word": "Víeną",
+"class": "sktv.",
+"state": [
+"vyr.gim.",
+"kiekin.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Víeną",
+"class": "sktv.",
+"state": [
+"mot.gim.",
+"kiekin.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Víeną",
+"class": "įvrd.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G."
+]
+},
+{
+"word": "Víeną",
+"class": "įvrd.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"kavą": [
+{
+"word": "Kãvą",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"ko": [
+{
+"word": "Kõ",
+"class": "įvrd.",
+"state": [
+"K."
+]
+}
+],
+"greito": [
+{
+"word": "Greĩto",
+"class": "bdvr.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K.",
+"neįvardž."
+]
+}
+],
+"vėliau": [
+{
+"word": "Vė́liau",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"Iasm.",
+"vnsk.",
+"nesngr."
+]
+}
+],
+"sakėte": [
+{
+"word": "Sãkėte",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"laisva": [
+{
+"word": "Laisvà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Laisvà",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Įn.",
+"neįvardž."
+]
+},
+{
+"word": "Laĩsva",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"Š.",
+"neįvardž."
+]
+},
+{
+"word": "Laĩsva",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+],
+"sumokėti": [
+{
+"word": "Sumokė́ti",
+"class": "vksm.",
+"state": [
+"nesngr."
+]
+},
+{
+"word": "Sumokė́ti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Sumokė́ti",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"neveik.r."
+]
+}
+],
+"bilietą": [
+{
+"word": "Bìlietą",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"kauną": [
+{
+"word": "Káuną",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"esam.l.",
+"dgsk.",
+"V.",
+"neįvardž.",
+"nesngr.",
+"veik.r."
+]
+},
+{
+"word": "Káuną",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"esam.l.",
+"dgsk.",
+"Š.",
+"neįvardž.",
+"nesngr.",
+"veik.r."
+]
+},
+{
+"word": "Káuną",
+"class": "dlv.",
+"state": [
+"bevrd.gim.",
+"esam.l.",
+"neįvardž.",
+"nesngr.",
+"veik.r."
+]
+},
+{
+"word": "Kaũną",
+"class": "dktv.",
+"state": [
+"T.",
+"vyr.gim.",
+"vnsk.",
+"G."
+]
+}
+],
+"gydytojo": [
+{
+"word": "Gýdytojo",
+"class": "dlv.",
+"state": [
+"vyr.gim.",
+"būt.l.",
+"vnsk.",
+"K.",
+"įvardž.",
+"nesngr.",
+"neveik.r."
+]
+},
+{
+"word": "Gýdytojo",
+"class": "dktv.",
+"state": [
+"vyr.gim.",
+"vnsk.",
+"K."
+]
+}
+],
+"vaistinė": [
+{
+"word": "Váistinė",
+"class": "bdvr.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V.",
+"neįvardž."
+]
+},
+{
+"word": "Váistinė",
+"class": "dktv.",
+"state": [
+"mot.gim.",
+"vnsk.",
+"V."
+]
+}
+],
+"buvo": [
+{
+"word": "Bùvo",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"vnsk.",
+"nesngr."
+]
+},
+{
+"word": "Bùvo",
+"class": "vksm.",
+"state": [
+"būt.kart.l.",
+"IIIasm.",
+"dgsk.",
+"nesngr."
+]
+}
+],
+"skanu": [
+{
+"word": "Skanù",
+"class": "bdvr.",
+"state": [
+"bevrd.gim.",
+"neįvardž."
+]
+}
+]
+}

@@ -1,0 +1,418 @@
+{
+ "A2-0136": {
+  "lt": "į",
+  "partial": "į",
+  "why": [
+   "no stressed word"
+  ]
+ },
+ "A2-1058": {
+  "lt": "vis dar",
+  "partial": "vis dar",
+  "why": [
+   "no stressed word"
+  ]
+ },
+ "A2-0348": {
+  "lt": "Labas",
+  "partial": "Labas",
+  "why": [
+   "Labas: labàs / lãbas"
+  ]
+ },
+ "A2-0350": {
+  "lt": "Labas rytas",
+  "partial": "Labas rýtas",
+  "why": [
+   "Labas: labàs / lãbas"
+  ]
+ },
+ "A2-0351": {
+  "lt": "Laba diena",
+  "partial": "Laba diena",
+  "why": [
+   "Laba: labà / lãba",
+   "diena: dienà / diẽna"
+  ]
+ },
+ "A2-0352": {
+  "lt": "Labas vakaras",
+  "partial": "Labas vãkaras",
+  "why": [
+   "Labas: labàs / lãbas"
+  ]
+ },
+ "A2-0353": {
+  "lt": "Labanakt",
+  "partial": "Labanakt",
+  "why": [
+   "Labanakt: no analysis"
+  ]
+ },
+ "A2-0355": {
+  "lt": "Iki pasimatymo",
+  "partial": "Iki pasimãtymo",
+  "why": [
+   "Iki: no analysis"
+  ]
+ },
+ "A2-0356": {
+  "lt": "Iki",
+  "partial": "Iki",
+  "why": [
+   "Iki: no analysis"
+  ]
+ },
+ "A2-0358": {
+  "lt": "Ačiū",
+  "partial": "Ačiū",
+  "why": [
+   "Ačiū: no analysis"
+  ]
+ },
+ "A2-0359": {
+  "lt": "Labai ačiū",
+  "partial": "Lãbai ačiū",
+  "why": [
+   "ačiū: no analysis"
+  ]
+ },
+ "A2-0363": {
+  "lt": "Malonu susipažinti",
+  "partial": "Malonù susipažinti",
+  "why": [
+   "susipažinti: susipažintì / susipažìnti"
+  ]
+ },
+ "A2-0365": {
+  "lt": "Man gerai",
+  "partial": "Mán gerai",
+  "why": [
+   "gerai: geraĩ / gẽrai"
+  ]
+ },
+ "A2-0378": {
+  "lt": "Kur yra…?",
+  "partial": "Kur yra…?",
+  "why": [
+   "yra: yrà / ỹra"
+  ]
+ },
+ "A2-0382": {
+  "lt": "Ar yra…?",
+  "partial": "Ar yra…?",
+  "why": [
+   "yra: yrà / ỹra"
+  ]
+ },
+ "A2-0383": {
+  "lt": "Ar galite man padėti?",
+  "partial": "Ar gãlite mán padėti?",
+  "why": [
+   "padėti: padėtì / padė́ti"
+  ]
+ },
+ "A2-0887": {
+  "lt": "Sėkmės!",
+  "partial": "Sėkmės!",
+  "why": [
+   "Sėkmės: sėkmė̃s / sė̃kmės"
+  ]
+ },
+ "A2-0893": {
+  "lt": "Iki rytojaus",
+  "partial": "Iki rytójaus",
+  "why": [
+   "Iki: no analysis"
+  ]
+ },
+ "A2-0894": {
+  "lt": "Geros dienos",
+  "partial": "Geros dienos",
+  "why": [
+   "Geros: gerõs / gẽros",
+   "dienos: dienõs / diẽnos"
+  ]
+ },
+ "A2-0895": {
+  "lt": "Geros kelionės",
+  "partial": "Geros keliõnės",
+  "why": [
+   "Geros: gerõs / gẽros"
+  ]
+ },
+ "A2-0896": {
+  "lt": "Kas tai?",
+  "partial": "Kàs tai?",
+  "why": [
+   "tai: taĩ / tái"
+  ]
+ },
+ "A2-0898": {
+  "lt": "Kur yra tualetas?",
+  "partial": "Kur yra tualètas?",
+  "why": [
+   "yra: yrà / ỹra"
+  ]
+ },
+ "A2-0899": {
+  "lt": "Kiek tai kainuoja?",
+  "partial": "Kiek tai kainúoja?",
+  "why": [
+   "tai: taĩ / tái"
+  ]
+ },
+ "A2-0900": {
+  "lt": "Nekalbu lietuviškai",
+  "partial": "Nekalbu lietùviškai",
+  "why": [
+   "Nekalbu: nekalbù / nèkalbu"
+  ]
+ },
+ "A2-0904": {
+  "lt": "Ką tai reiškia?",
+  "partial": "Ką̃ tai réiškia?",
+  "why": [
+   "tai: taĩ / tái"
+  ]
+ },
+ "A2-0909": {
+  "lt": "Kur galiu rasti…?",
+  "partial": "Kur galiù rasti…?",
+  "why": [
+   "rasti: rastì / ràsti"
+  ]
+ },
+ "A2-0910": {
+  "lt": "Mano vardas Dainius",
+  "partial": "Mãno var̃das Dainius",
+  "why": [
+   "Dainius: dainiùs / daĩnius"
+  ]
+ },
+ "A2-0913": {
+  "lt": "Man dvidešimt metų",
+  "partial": "Mán dvìdešimt metų",
+  "why": [
+   "metų: mètų / mẽtų"
+  ]
+ },
+ "A2-0917": {
+  "lt": "Norėčiau kavos",
+  "partial": "Norė́čiau kavos",
+  "why": [
+   "kavos: kavõs / kãvos"
+  ]
+ },
+ "A2-0921": {
+  "lt": "Tai mano namas",
+  "partial": "Tai mãno nãmas",
+  "why": [
+   "Tai: taĩ / tái"
+  ]
+ },
+ "A2-0922": {
+  "lt": "Čia yra parduotuvė",
+  "partial": "Čia yra parduotùvė",
+  "why": [
+   "Čia: no analysis",
+   "yra: yrà / ỹra"
+  ]
+ },
+ "A2-0923": {
+  "lt": "Šiandien šalta",
+  "partial": "Šiandien šalta",
+  "why": [
+   "Šiandien: no analysis",
+   "šalta: šaltà / šálta"
+  ]
+ },
+ "A2-0925": {
+  "lt": "Trečia valanda",
+  "partial": "Trečia valanda",
+  "why": [
+   "Trečia: trečià / trẽčia",
+   "valanda: valandà / vãlanda"
+  ]
+ },
+ "A2-0926": {
+  "lt": "Kur tu eini?",
+  "partial": "Kur tù eini?",
+  "why": [
+   "eini: einì / eĩni / éini"
+  ]
+ },
+ "A2-0954": {
+  "lt": "Ar galiu mokėti kortele?",
+  "partial": "Ar galiù mokė́ti kortele?",
+  "why": [
+   "kortele: kortelè / kortẽle"
+  ]
+ },
+ "A2-0957": {
+  "lt": "Kaip nuvykti į…?",
+  "partial": "Kaip nuvykti į…?",
+  "why": [
+   "nuvykti: nuvyktì / nuvỹkti"
+  ]
+ },
+ "A2-1150": {
+  "lt": "gaila",
+  "partial": "gaila",
+  "why": [
+   "gaila: no analysis"
+  ]
+ },
+ "A2-1157": {
+  "lt": "Kiek jums metų?",
+  "partial": "Kiek jùms metų?",
+  "why": [
+   "metų: mètų / mẽtų"
+  ]
+ },
+ "A2-1160": {
+  "lt": "Ką veiki?",
+  "partial": "Ką̃ veiki?",
+  "why": [
+   "veiki: veikì / véiki"
+  ]
+ },
+ "A2-1161": {
+  "lt": "Viskas gerai",
+  "partial": "Vìskas gerai",
+  "why": [
+   "gerai: geraĩ / gẽrai"
+  ]
+ },
+ "A2-1163": {
+  "lt": "Laimingų Naujųjų metų!",
+  "partial": "Laimìngų Naujų̃jų metų!",
+  "why": [
+   "metų: mètų / mẽtų"
+  ]
+ },
+ "A2-1178": {
+  "lt": "dėkui",
+  "partial": "dėkui",
+  "why": [
+   "dėkui: no analysis"
+  ]
+ },
+ "A2-1182": {
+  "lt": "labai gerai",
+  "partial": "lãbai gerai",
+  "why": [
+   "gerai: geraĩ / gẽrai"
+  ]
+ },
+ "A2-1193": {
+  "lt": "Kuri valanda?",
+  "partial": "Kurì valanda?",
+  "why": [
+   "valanda: valandà / vãlanda"
+  ]
+ },
+ "A2-1620": {
+  "lt": "na",
+  "partial": "na",
+  "why": [
+   "no stressed word"
+  ]
+ },
+ "A2-1897": {
+  "lt": "noriu gerti",
+  "partial": "nóriu gerti",
+  "why": [
+   "gerti: gertì / gérti"
+  ]
+ },
+ "A2-1959": {
+  "lt": "važiuoti dviračiu",
+  "partial": "važiúoti dviračiu",
+  "why": [
+   "dviračiu: dviračiù / dvìračiu"
+  ]
+ },
+ "A2-1983": {
+  "lt": "Čia (yra) mano draugas. / Susipažinkite — tai…",
+  "partial": "Čia (yra) mãno draũgas. / Susipažìnkite — tai…",
+  "why": [
+   "Čia: no analysis",
+   "yra: yrà / ỹra",
+   "tai: taĩ / tái"
+  ]
+ },
+ "A2-1987": {
+  "lt": "Ačiū, ne.",
+  "partial": "Ačiū, ne.",
+  "why": [
+   "Ačiū: no analysis"
+  ]
+ },
+ "A2-1989": {
+  "lt": "Ar nori arbatos? / Ar norite arbatos?",
+  "partial": "Ar nori arbãtos? / Ar nórite arbãtos?",
+  "why": [
+   "nori: norì / nóri"
+  ]
+ },
+ "A2-1993": {
+  "lt": "Ar galima?",
+  "partial": "Ar galima?",
+  "why": [
+   "galima: galimà / gãlima"
+  ]
+ },
+ "A2-1994": {
+  "lt": "Galima. / Prašom.",
+  "partial": "Galima. / Prãšom.",
+  "why": [
+   "Galima: galimà / gãlima"
+  ]
+ },
+ "A2-2003": {
+  "lt": "Man šalta. / Man karšta.",
+  "partial": "Mán šalta. / Mán karšta.",
+  "why": [
+   "šalta: šaltà / šálta",
+   "karšta: karštà / kar̃šta / káršta"
+  ]
+ },
+ "A2-2006": {
+  "lt": "Ar toli? / Netoli.",
+  "partial": "Ar tõli? / Netoli.",
+  "why": [
+   "Netoli: no analysis"
+  ]
+ },
+ "A2-2009": {
+  "lt": "Viskas, ačiū.",
+  "partial": "Vìskas, ačiū.",
+  "why": [
+   "ačiū: no analysis"
+  ]
+ },
+ "A2-2019": {
+  "lt": "Iki greito! / Iki vėliau!",
+  "partial": "Iki greĩto! / Iki vė́liau!",
+  "why": [
+   "Iki: no analysis",
+   "Iki: no analysis"
+  ]
+ },
+ "A2-2023": {
+  "lt": "Atsiprašau, ar čia laisva?",
+  "partial": "Atsiprašaũ, ar čia laisva?",
+  "why": [
+   "čia: no analysis",
+   "laisva: laisvà / laĩsva"
+  ]
+ },
+ "A2-2026": {
+  "lt": "Vieną bilietą į Kauną, prašau.",
+  "partial": "Víeną bìlietą į Kauną, prašaũ.",
+  "why": [
+   "Kauną: kaũną / káuną"
+  ]
+ }
+}

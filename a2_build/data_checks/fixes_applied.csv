@@ -1,0 +1,107 @@
+id,lithuanian,field,old,new,source
+A2-0102,meniu,gender,,M,kirtis.info vyr.gim.
+A2-0613,laiptai,gender,,M pl,kirtis.info vyr.gim. dgsk. V.; vyr.gim. dgsk. Š.
+A2-0719,akiniai,gender,,M pl,kirtis.info vyr.gim. dgsk. V.; vyr.gim. dgsk. Š.
+A2-0724,taksi,gender,,M,kirtis.info vyr.gim. vnsk. Š.
+A2-0820,atostogos,gender,,F pl,kirtis.info mot.gim. dgsk. V.; mot.gim. dgsk. Š.
+A2-1387,vaisiai,gender,,M pl,kirtis.info vyr.gim. dgsk. V.; vyr.gim. dgsk. Š.
+A2-1557,namai,gender,,M pl,kirtis.info vyr.gim. dgsk. V.; vyr.gim. dgsk. Š.
+A2-1563,orai,gender,,M pl,kirtis.info vyr.gim. dgsk. V.; vyr.gim. dgsk. Š.
+A2-1754,šortai,gender,,M pl,kirtis.info vyr.gim. dgsk. Š.; vyr.gim. dgsk. V.
+A2-1758,makaronai,gender,,M pl,kirtis.info vyr.gim. dgsk. V.; vyr.gim. dgsk. Š.
+A2-1800,žmonės,gender,,M pl,kirtis.info vyr.gim. dgsk. V.; vyr.gim. dgsk. Š.
+A2-0635,žirklės,gender,,F pl,kirtis.info mot.gim. dgsk. V.; mot.gim. dgsk. Š.
+A2-1046,tiek,lt_pron,,tiẽk,kirtis.info per word
+A2-1047,tiesiai,lt_pron,,tiẽsiai,kirtis.info per word
+A2-1050,toli,lt_pron,,tõli,kirtis.info per word
+A2-1059,visai,lt_pron,,vìsai,kirtis.info per word
+A2-1122,nė vienas,lt_pron,,nė víenas,kirtis.info per word
+A2-0349,Sveiki,lt_pron,,Sveikì,kirtis.info per word
+A2-0354,Viso gero,lt_pron,,Vìso gẽro,kirtis.info per word
+A2-0357,Prašau,lt_pron,,Prašaũ,kirtis.info per word
+A2-0360,Nėra už ką,lt_pron,,Nėrà už ką̃,kirtis.info per word
+A2-0362,Atleiskite,lt_pron,,Atléiskite,kirtis.info per word
+A2-0364,Kaip sekasi?,lt_pron,,Kaip sẽkasi?,kirtis.info per word
+A2-0366,Koks jūsų vardas?,lt_pron,,Kóks jū́sų var̃das?,kirtis.info per word
+A2-0367,Mano vardas…,lt_pron,,Mãno var̃das…,kirtis.info per word
+A2-0368,Iš kur jūs?,lt_pron,,Ìš kur jū̃s?,kirtis.info per word
+A2-0369,Aš esu iš…,lt_pron,,Àš esù ìš…,kirtis.info per word
+A2-0370,Ar kalbate angliškai?,lt_pron,,Ar kal̃bate ángliškai?,kirtis.info per word
+A2-0371,Nesuprantu,lt_pron,,Nesuprantù,kirtis.info per word
+A2-0372,Suprantu,lt_pron,,Suprantù,kirtis.info per word
+A2-0373,Nežinau,lt_pron,,Nežinaũ,kirtis.info per word
+A2-0374,Ar galite pakartoti?,lt_pron,,Ar gãlite pakartóti?,kirtis.info per word
+A2-0375,Prašom kalbėti lėčiau,lt_pron,,Prãšom kalbė́ti lėčiaũ,kirtis.info per word
+A2-0376,Ką reiškia…?,lt_pron,,Ką̃ réiškia…?,kirtis.info per word
+A2-0377,Kiek kainuoja?,lt_pron,,Kiek kainúoja?,kirtis.info per word
+A2-0379,Kiek valandų?,lt_pron,,Kiek valandų̃?,kirtis.info per word
+A2-0380,Norėčiau…,lt_pron,,Norė́čiau…,kirtis.info per word
+A2-0381,"Sąskaitą, prašau",lt_pron,,"Są́skaitą, prašaũ",kirtis.info per word
+A2-0384,Padėkite!,lt_pron,,Padė́kite!,kirtis.info per word
+A2-0385,Atsargiai!,lt_pron,,Atsar̃giai!,kirtis.info per word
+A2-0386,Aš pasiklydau,lt_pron,,Àš pasiklýdau,kirtis.info per word
+A2-0880,Atsiprašau…,lt_pron,,Atsiprašaũ…,kirtis.info per word
+A2-0881,Atsiprašau,lt_pron,,Atsiprašaũ,kirtis.info per word
+A2-0882,Nieko tokio,lt_pron,,Niẽko tókio,kirtis.info per word
+A2-0883,Žinoma,lt_pron,,Žìnoma,kirtis.info per word
+A2-0884,Akimirką,lt_pron,,Akìmirką,kirtis.info per word
+A2-0885,Prašom,lt_pron,,Prãšom,kirtis.info per word
+A2-0886,Sveiki atvykę!,lt_pron,,Sveikì atvỹkę!,kirtis.info per word
+A2-0888,Į sveikatą!,lt_pron,,Į sveikãtą!,kirtis.info per word
+A2-0889,Skanaus,lt_pron,,Skanaũs,kirtis.info per word
+A2-0890,Su gimtadieniu!,lt_pron,,Su gimtãdieniu!,kirtis.info per word
+A2-0891,Sveikinu!,lt_pron,,Svéikinu!,kirtis.info per word
+A2-0892,Greitai pasveik!,lt_pron,,Greĩtai pasveĩk!,kirtis.info per word
+A2-0897,Kas tas žmogus?,lt_pron,,Kàs tàs žmogùs?,kirtis.info per word
+A2-0901,Truputį,lt_pron,,Trupùtį,kirtis.info per word
+A2-0902,Prašom pakartoti,lt_pron,,Prãšom pakartóti,kirtis.info per word
+A2-0903,Prašom užrašyti,lt_pron,,Prãšom užrašýti,kirtis.info per word
+A2-0905,Kaip lietuviškai …?,lt_pron,,Kaip lietùviškai …?,kirtis.info per word
+A2-0906,Man reikia pagalbos,lt_pron,,Mán reĩkia pagálbos,kirtis.info per word
+A2-0907,Iškvieskite gydytoją!,lt_pron,,Iškviẽskite gýdytoją!,kirtis.info per word
+A2-0911,Aš esu iš Lietuvos,lt_pron,,Àš esù ìš Lietuvõs,kirtis.info per word
+A2-0912,Aš gyvenu Vilniuje,lt_pron,,Àš gyvenù Vìlniuje,kirtis.info per word
+A2-0914,Aš turiu brolį,lt_pron,,Àš turiù brólį,kirtis.info per word
+A2-0915,Neturiu laiko,lt_pron,,Neturiù laĩko,kirtis.info per word
+A2-0916,Noriu valgyti,lt_pron,,Nóriu válgyti,kirtis.info per word
+A2-0918,Galiu truputį kalbėti,lt_pron,,Galiù trupùtį kalbė́ti,kirtis.info per word
+A2-0919,Man reikia vandens,lt_pron,,Mán reĩkia vandeñs,kirtis.info per word
+A2-0920,Man patinka šis miestas,lt_pron,,Mán patiñka šìs miẽstas,kirtis.info per word
+A2-0927,Einu namo,lt_pron,,Einù nãmo,kirtis.info per word
+A2-0928,Kiek kainuoja bilietas?,lt_pron,,Kiek kainúoja bìlietas?,kirtis.info per word
+A2-0929,"Nesuprantu, atsiprašau",lt_pron,,"Nesuprantù, atsiprašaũ",kirtis.info per word
+A2-1152,nemokamai,lt_pron,,nemókamai,kirtis.info per word
+A2-1158,Kuo dirbate?,lt_pron,,Kuõ dìrbate?,kirtis.info per word
+A2-1159,Kur gyvenate?,lt_pron,,Kur gyvẽnate?,kirtis.info per word
+A2-1162,Gero savaitgalio!,lt_pron,,Gẽro saváitgalio!,kirtis.info per word
+A2-1164,Linksmų Kalėdų!,lt_pron,,Linksmų̃ Kalė̃dų!,kirtis.info per word
+A2-1165,Su šventėmis!,lt_pron,,Su šveñtėmis!,kirtis.info per word
+A2-1166,Prašom sėstis,lt_pron,,Prãšom sė́stis,kirtis.info per word
+A2-1167,Užeikite!,lt_pron,,Užeĩkite!,kirtis.info per word
+A2-1168,Ar turite…?,lt_pron,,Ar tùrite…?,kirtis.info per word
+A2-1181,Gelbėkit!,lt_pron,,Gélbėkit!,kirtis.info per word
+A2-1865,kas nors,lt_pron,,kàs nors,kirtis.info per word
+A2-1867,tas pats,lt_pron,,tàs pàts,kirtis.info per word
+A2-1878,kitoje pusėje,lt_pron,,kitojè pùsėje,kirtis.info per word
+A2-1904,rašomasis stalas,lt_pron,,rãšomasis stãlas,kirtis.info per word
+A2-1944,Kaip rašoma?,lt_pron,,Kaip rãšoma?,kirtis.info per word
+A2-1975,reikėtų / turėtum,lt_pron,,reikė́tų / turė́tum,kirtis.info per word
+A2-1976,Ar galėtumėte…?,lt_pron,,Ar galė́tumėte…?,kirtis.info per word
+A2-1977,norėčiau,lt_pron,,norė́čiau,kirtis.info per word
+A2-1980,reikia / turiu,lt_pron,,reĩkia / turiù,kirtis.info per word
+A2-1990,Man nepatinka…,lt_pron,,Mán nepatiñka…,kirtis.info per word
+A2-1992,Ar tau patinka…? / Ar jums patinka…?,lt_pron,,Ar táu patiñka…? / Ar jùms patiñka…?,kirtis.info per word
+A2-1996,Ar supranti? / Ar suprantate?,lt_pron,,Ar suprantì? / Ar suprañtate?,kirtis.info per word
+A2-2001,Koks tavo / jūsų telefono numeris?,lt_pron,,Kóks tàvo / jū́sų telefòno nùmeris?,kirtis.info per word
+A2-2002,Koks jūsų adresas?,lt_pron,,Kóks jū́sų ãdresas?,kirtis.info per word
+A2-2004,Pavargau.,lt_pron,,Pavargaũ.,kirtis.info per word
+A2-2005,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,lt_pron,,Dešinėjè. / Sùkite į dẽšinę. / Sùkite į kaĩrę.,kirtis.info per word
+A2-2007,"Vieną kavą, prašau.",lt_pron,,"Víeną kãvą, prašaũ.",kirtis.info per word
+A2-2008,Dar ko nors?,lt_pron,,Dar kõ nors?,kirtis.info per word
+A2-2020,"Atsiprašau, ką sakėte?",lt_pron,,"Atsiprašaũ, ką̃ sãkėte?",kirtis.info per word
+A2-2024,Norėčiau sumokėti.,lt_pron,,Norė́čiau sumokė́ti.,kirtis.info per word
+A2-2030,Man reikia gydytojo. / Kur vaistinė?,lt_pron,,Mán reĩkia gýdytojo. / Kur váistinė?,kirtis.info per word
+A2-2041,Buvo labai skanu.,lt_pron,,Bùvo lãbai skanù.,kirtis.info per word
+A2-0670,salotos,gender,,F pl,kirtis.info lists mot.gim. dgsk. V. (also a singular reading of another form); plural-only use here
+A2-1239,daržovės,gender,,F pl,kirtis.info lists mot.gim. dgsk. V. (also a singular reading of another form); plural-only use here
+A2-1753,šlepetės,gender,,F pl,kirtis.info lists mot.gim. dgsk. V. (also a singular reading of another form); plural-only use here
