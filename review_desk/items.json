@@ -1,5 +1,20 @@
 [
  {
+  "id": "rollout",
+  "group": "Needs you now",
+  "title": "Roll-out Review: 133 new scene cards and 6 hand fixes",
+  "ask": "The rest of the speech-bubble cards, redrawn as plain scenes under the new rules, with insets kept. The automatic check passed 83, marked 31 borderline and failed 19. Most of the 19 fail on how the scene was described, not on the drawing:\n- six pairs of phrases whose scenes look alike;\n- three descriptions that ask for marks the check forbids (sound lines, motion marks, arrows);\n- four with a downward look that fails the gaze check.\n\nThe 6 hand fixes are inset-only edits. Two still read as their neighbour: A2-0352 as 'Nice to meet you', and A2-0895 as 'Goodbye'. Mark each card ok or redo on the page.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Roll-out Review",
+    "href": "https://claude.ai/artifact/6AMcXu3Zmc734iCZnx85gK"
+   }
+  ]
+ },
+ {
   "id": "t-audio",
   "group": "Later (parked)",
   "title": "Record the audio (parked)",
