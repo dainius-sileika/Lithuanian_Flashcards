@@ -38,3 +38,56 @@ Data before rendering (`restage_bubbles.csv`, `situations.py` regenerated):
 - Prompts are built exactly as for pilot round 2 (`gen.py` → `build_situation_call`): a card whose
   staging lists no insets gets no inset sentence and no PANEL_CONTINUITY sentence, and the model
   still draws the house insets (as on 0352/0377, which passed). The QA coherence check runs on all.
+
+### Renders and QA
+
+133 cards rendered into `out_phrases_v3/` (gpt-image-2.5-sunburst, medium, 1536×1024), then QA'd with
+the round-2 checks (`qa_rollout.csv` there; reads sent as 1152×768 JPEG by `~/a2_work/qa_fast.py`).
+Every hard FAIL was re-rolled, at most twice: 42 after the first pass, 25 after the second; 200
+renders in all. Every version is kept in `out_phrases_v3/_rerolled/<key>.r<n>.png` (r1 = first
+render). Where an earlier roll scored better than the last one (fewer hard fails, then fewer warnings),
+it was put back as the current picture and the last roll moved to `_rerolled/` — 7 cards, logged in
+`out_phrases_v3/picks.jsonl` (for those, the last ledger row is not the current picture).
+
+Result: **83 PASS · 31 WARN · 19 FAIL**. The 19 FAILs after two re-rolls:
+
+| key | Lithuanian | failing check |
+|---|---|---|
+| A2-0357 | Prašau | neighbour |
+| A2-0359 | Labai ačiū | gaze |
+| A2-0375 | Prašom kalbėti lėčiau | symbol/arrow |
+| A2-0894 | Geros dienos | neighbour |
+| A2-0919 | Man reikia vandens | symbol/arrow |
+| A2-0955 | Kur reikia persėsti? | neighbour |
+| A2-0957 | Kaip nuvykti į…? | continuity |
+| A2-0959 | Eikite tiesiai | continuity |
+| A2-1148 | aišku | neighbour |
+| A2-1149 | atsargiai | continuity |
+| A2-1150 | gaila | gaze |
+| A2-1165 | Su šventėmis! | neighbour |
+| A2-1167 | Užeikite! | continuity |
+| A2-1171 | alio | gaze |
+| A2-1179 | dėmesio | continuity, symbol/arrow |
+| A2-1184 | Negali būti! | continuity |
+| A2-1187 | Sudie | neighbour |
+| A2-1191 | šiaip sau | symbol/arrow |
+| A2-1197 | susipažinti | neighbour |
+
+Most of these are staging-level and repeat on all three rolls: the neighbour pairs (Prašau/Here you are,
+Have a nice day/Goodbye, Sudie/Viso gero, Happy holidays/Merry Christmas, Where do I change/Which
+platform, Get acquainted/Nice to meet you); stagings that ask for the forbidden mark itself (1179
+"loudspeaker with sound lines", 0375 "slow patting motion", 0919's three-step strip draws arrows);
+and staged downward looks that the gaze rule reads as "not looking at each other" (0359 deep bow,
+1150, 1149, 1171). The continuity fails are mostly insets drawn as a later moment of the same scene.
+
+### Old bubble pictures
+
+All 167 situation keys now resolve to `out_phrases_v3` (round2 first) in `build_apkg.py`
+(A1, A2 and sentence image paths). The 201 bubble pictures they replace moved to
+`out_phrases/_superseded/` (53), `out_phrases_a2/_superseded/` (147) and
+`out_deck_f62/_superseded/374_galvoti.png`; list in `superseded_moved.txt`. Bubble pictures with no
+replacement stay where they were (A2-0899/0901/0902/0904 merged or not rendered; 0384, 1153, 1193).
+The 69 PHRASE-route benchmark additions were not rendered (no staging yet).
+
+Spend (estimate from the project's per-image rate, $0.0135 a render; edits unverified at ≈ $0.02–0.04):
+200 renders ≈ $2.70, 6 edits ≈ $0.15, QA 582 calls on gpt-5.6-luna (824k in / 219k out tokens) ≈ $0.43.

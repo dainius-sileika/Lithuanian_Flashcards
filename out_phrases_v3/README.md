@@ -25,3 +25,10 @@ Renders paid: 37 (34 first passes + 3 re-rolls: A2-0114 ×1, A2-0115 ×2; old ve
   (thumb-up), Kaip lietuviškai …? (pointing finger). Pseudo-text on papers: 374, A2-0352.
 - Observation: most single scenes still carry 2–3 small insets, because the house-style lead
   describes insets; the situation grammar asks for one scene. Owner to judge on the page.
+
+## Roll-out (2026-10-18)
+
+The remaining 133 restaged cards are now rendered here under the round-2 rules, with QA in
+`qa_rollout.csv`, re-roll history in `_rerolled/` and `picks.jsonl`. Details:
+`a2_build/rollout/README.md`. Pilot round 2's versions of its 14 cards are in `round2/` and take
+precedence in the build.

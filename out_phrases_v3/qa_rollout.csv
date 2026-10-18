@@ -1,0 +1,134 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+A2-0262,klausti,WARN,,stray act: a raised palm | stray act: a hand cupped near the mouth,ask,,to ask,yes
+A2-0353,Labanakt,PASS,,,tuck in,,Good night,yes
+A2-0354,Viso gero,PASS,,,goodbye,,Goodbye,yes
+A2-0355,Iki pasimatymo,WARN,,NEIGHBOUR TEST: reads as 'Goodbye' (margin slight),get on the bus,,Goodbye,yes
+A2-0356,Iki,PASS,,,goodbye,,Bye (informal),yes
+A2-0357,Prašau,FAIL,NEIGHBOUR TEST: reads as 'Here you are' (margin clear),,parcel,,Here you are,yes
+A2-0359,Labai ačiū,FAIL,GAZE: speakers do not look at each other (The man in the main scene looks down at their clasped hands while the nurse looks toward him; nobody looks at the viewer.),stray act: a raised palm,shake hands,,Thank you very much,yes
+A2-0363,Malonu susipažinti,PASS,,,handshake,,Nice to meet you,yes
+A2-0364,Kaip sekasi?,PASS,,,to meet,,How are you?,yes
+A2-0365,Man gerai,WARN,,NEIGHBOUR TEST: reads as 'Everything is fine' (margin slight) | stray act: drinking from a cup | stray act: handling a concrete block,construction worker,,Everything is fine,yes
+A2-0366,Koks jūsų vardas?,PASS,,,reception desk,,What is your name?,yes
+A2-0367,Mano vardas…,WARN,,NEIGHBOUR TEST: reads as 'My name is Dainius (merge: one image)' (margin slight),check in,,My name is Dainius (merge: one image),yes
+A2-0368,Iš kur jūs?,PASS,,,travel,,Where are you from?,yes
+A2-0369,Aš esu iš…,PASS,,,I,,,yes
+A2-0370,Ar kalbate angliškai?,WARN,,stray act: a pointing finger,hotel check-in,,Do you speak English?,yes
+A2-0371,Nesuprantu,WARN,,"NEIGHBOUR TEST: reads as ""I don't understand, sorry"" (margin slight)",at the market,,"I don't understand, sorry",yes
+A2-0372,Suprantu,WARN,,"NEIGHBOUR TEST: reads as 'Of course' (margin slight) | caption fit: nearly | cue not visible: nod, lit face | stray act: a raised pointing finger",buying groceries,,Of course,nearly
+A2-0373,Nežinau,WARN,,caption fit: nearly | cue not visible: palms up plus head shake,asking for directions,,I don't know,nearly
+A2-0374,Ar galite pakartoti?,PASS,,,telephone call,,Could you repeat?,yes
+A2-0375,Prašom kalbėti lėčiau,FAIL,"BUBBLE/FLOATING SYMBOL: {'type': 'motion symbols', 'count': 2, 'description': 'Two black downward arrows beside the hands.'}",stray act: bowed head,down,,"Speak more slowly, please",yes
+A2-0376,Ką reiškia…?,PASS,,,read,,,yes
+A2-0378,Kur yra…?,WARN,,NEIGHBOUR TEST: reads as 'How do I get to…?' (margin slight) | stray act: a pointing finger,asking for directions,,How do I get to…?,yes
+A2-0379,Kiek valandų?,WARN,,neighbour test: no margin over 'What time is it? (alternative)',What time is it?,,What time is it?,yes
+A2-0380,Norėčiau…,PASS,,,pastry,,I would like…,yes
+A2-0381,"Sąskaitą, prašau",PASS,,,the bill,,"The bill, please",yes
+A2-0382,Ar yra…?,WARN,,NEIGHBOUR TEST: reads as 'Do you have…?' (margin slight),hotel,,Do you have…?,yes
+A2-0385,Atsargiai!,PASS,,,slipping,,Be careful!,yes
+A2-0386,Aš pasiklydau,PASS,,,map,,I'm lost,yes
+A2-0426,kalbėti,PASS,,,talking,,to speak,yes
+A2-0803,klausimas,WARN,,stray act: raised palm,ask,,question,yes
+A2-0880,Atsiprašau…,PASS,,,Excuse me,,"Excuse me, please…",yes
+A2-0883,Žinoma,WARN,,NEIGHBOUR TEST: reads as 'gladly' (margin slight),lend a book,,gladly,yes
+A2-0884,Akimirką,PASS,,,grocery shop,,just a minute,yes
+A2-0885,Prašom,PASS,,,package,,Here you are,yes
+A2-0886,Sveiki atvykę!,PASS,,,welcome,,Welcome!,yes
+A2-0888,Į sveikatą!,PASS,,,Cheers,,Cheers!,yes
+A2-0889,Skanaus,PASS,,,soup,,,yes
+A2-0890,Su gimtadieniu!,PASS,,,birthday party,,Happy birthday!,yes
+A2-0891,Sveikinu!,WARN,,stray act: a hug,graduation,,Congratulations!,yes
+A2-0892,Greitai pasveik!,PASS,,,take care of someone,,,yes
+A2-0893,Iki rytojaus,PASS,,,calendar,,See you tomorrow,yes
+A2-0894,Geros dienos,FAIL,NEIGHBOUR TEST: reads as 'Goodbye' (margin clear),,bread,,Goodbye,yes
+A2-0910,Mano vardas Dainius,WARN,,stray act: writing with a pen,introduce yourself,,My name is Dainius,yes
+A2-0911,Aš esu iš Lietuvos,PASS,,,train journey,,I am from Lithuania,yes
+A2-0912,Aš gyvenu Vilniuje,PASS,,,key,,I live in Vilnius,yes
+A2-0913,Man dvidešimt metų,PASS,,,birthday,,I am twenty years old,yes
+A2-0914,Aš turiu brolį,PASS,,,father,,,yes
+A2-0915,Neturiu laiko,PASS,,,put on a coat,,,yes
+A2-0916,Noriu valgyti,WARN,,stray act: eating with a spoon,hungry,,I want to eat,yes
+A2-0917,Norėčiau kavos,WARN,,stray act: pouring coffee | stray act: drinking from a cup,coffee,,I would like coffee,yes
+A2-0918,Galiu truputį kalbėti,WARN,,NEIGHBOUR TEST: reads as 'A little' (margin slight),a little,,A little,yes
+A2-0919,Man reikia vandens,FAIL,"BUBBLE/FLOATING SYMBOL: {'type': 'arrow', 'count': 2, 'description': 'Two black right-pointing arrows between the panels.'}",,drink,,I need water,yes
+A2-0920,Man patinka šis miestas,PASS,,,fall in love,,I like this city,yes
+A2-0921,Tai mano namas,PASS,,,house,,This is my house,yes
+A2-0922,Čia yra parduotuvė,WARN,,stray act: handing a package,grocery store,,There is a shop here,yes
+A2-0923,Šiandien šalta,WARN,,"NEIGHBOUR TEST: reads as ""I'm cold"" (margin slight)",cold,,I'm cold,yes
+A2-0925,Trečia valanda,WARN,,stray act: a pointing finger,leave,,It is three o'clock,yes
+A2-0926,Kur tu eini?,PASS,,,farewell,,Where are you going?,yes
+A2-0927,Einu namo,PASS,,,go home,,,yes
+A2-0929,"Nesuprantu, atsiprašau",WARN,,"NEIGHBOUR TEST: reads as ""I don't understand"" (margin slight) | stray act: scratching the head | stray act: handing over a document | stray act: walking away",confused,,I don't understand,yes
+A2-0950,Ar galėtumėte man padėti?,PASS,,,fill out a form,,"Could you help me, please?",yes
+A2-0951,Norėčiau rezervuoti kambarį,WARN,,NEIGHBOUR TEST: reads as 'I have a reservation' (margin slight) | stray act: a pointing finger,checking into a hotel,,I have a reservation,yes
+A2-0952,Ar yra laisvas staliukas?,PASS,,,restaurant,,Is there a table free?,yes
+A2-0953,Imsiu šitą,PASS,,,sweater,,,yes
+A2-0954,Ar galiu mokėti kortele?,PASS,,,pay by card,,,yes
+A2-0955,Kur reikia persėsti?,FAIL,NEIGHBOUR TEST: reads as 'Which platform?' (margin clear),,boarding a train,,Which platform?,yes
+A2-0956,Kada atsidaro?,PASS,,,What time is it?,,What time does it open?,yes
+A2-0957,Kaip nuvykti į…?,FAIL,"CONTINUITY: The panels preserve the two men, their clothing, and the street setting, but the map visible in the main and upper-right panels is absent in the lower-right walking panel.",,asking for directions,,How do I get to…?,yes
+A2-0958,Kairėje,PASS,,,pointing,,It's on the left,yes
+A2-0959,Eikite tiesiai,FAIL,"CONTINUITY: The repeated street scene changes the people shown: the man appears only in the main panel, while the insets show the woman alone and then a road arrow.",,point the way,,Go straight ahead,yes
+A2-0960,Esu užsiregistravęs pas gydytoją,PASS,,,date,,I have an appointment (with the doctor),yes
+A2-0961,Blogai jaučiuosi,PASS,,,sick,,I don't feel well,yes
+A2-0962,Čia skauda,PASS,,,stomach ache,,It hurts here,yes
+A2-0963,Esu alergiškas…,PASS,,,nut allergy,,,yes
+A2-0964,Ar galite ką nors rekomenduoti?,WARN,,NEIGHBOUR TEST: reads as 'What would you recommend?' (margin slight),menu,,What would you recommend?,yes
+A2-1145,atidaryta,PASS,,,hang a sign,,open (sign on a door),yes
+A2-1146,draudžiama,WARN,,stray act: a raised palm,no smoking,,forbidden (sign),yes
+A2-1147,leidžiama,PASS,,,walking the dog,,allowed (sign),yes
+A2-1148,aišku,FAIL,NEIGHBOUR TEST: reads as 'Of course (merge: one image)' (margin clear),,eat,,Of course (merge: one image),yes
+A2-1149,atsargiai,FAIL,CONTINUITY: The lower inset repeats the stairwell scene but places the man farther up the stairs and reverses the apparent left-right arrangement of the man and woman.,stray act: a raised palm,going down the stairs,,,yes
+A2-1150,gaila,FAIL,"GAZE: speakers do not look at each other (The woman looks toward the man, while the man looks down at the flowers.)",,welcome,,a pity; sorry,yes
+A2-1151,mielai,PASS,,,wash the dishes,,gladly,yes
+A2-1152,nemokamai,PASS,,,museum,,,yes
+A2-1154,puiku,PASS,,,goal,,great!,yes
+A2-1155,įdomu,PASS,,,watch,,,yes
+A2-1156,šaunu,PASS,,,bicycle,,cool!; great!,yes
+A2-1157,Kiek jums metų?,PASS,,,doctor,,How old are you? (formal),yes
+A2-1158,Kuo dirbate?,PASS,,,tool bag,,,yes
+A2-1159,Kur gyvenate?,PASS,,,apartment building,,Where do you live?,yes
+A2-1160,Ką veiki?,PASS,,,telephone,,,yes
+A2-1161,Viskas gerai,WARN,,"NEIGHBOUR TEST: reads as ""I'm fine"" (margin slight)",goodbye,,I'm fine,yes
+A2-1162,Gero savaitgalio!,PASS,,,go fishing,12 | 6,Have a good weekend!,yes
+A2-1163,Laimingų Naujųjų metų!,PASS,,,New Year's Eve,12 | 12,Happy New Year!,yes
+A2-1164,Linksmų Kalėdų!,PASS,,,gift,,Merry Christmas!,yes
+A2-1165,Su šventėmis!,FAIL,NEIGHBOUR TEST: reads as 'Merry Christmas!' (margin clear),,gift,,Merry Christmas!,yes
+A2-1166,Prašom sėstis,PASS,,,sit down,,,yes
+A2-1167,Užeikite!,FAIL,"CONTINUITY: The panels show a progression in the same home, but the woman changes from a blue coat to a red top and her handbag disappears.",,welcome,,Come in!,yes
+A2-1168,Ar turite…?,PASS,,,pharmacist,,Do you have…?,yes
+A2-1169,minutėlė,PASS,,,one moment,,Just a moment,yes
+A2-1170,šaunuolis,PASS,,,bicycle repair,,good lad; well done,yes
+A2-1171,alio,FAIL,"GAZE: speakers do not look at each other (The woman looks toward the receiver, and the man looks downward while holding his receiver; neither looks at the other or at the viewer.)",,telephone,,hello (on the phone),yes
+A2-1172,be abejo,WARN,,NEIGHBOUR TEST: reads as 'Of course' (margin slight),discussing a map,,Of course,yes
+A2-1173,darbo valandos,PASS,,,bakery,12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11,working hours; opening hours,yes
+A2-1174,dingo elektra,PASS,,,power outage,,,yes
+A2-1175,drabužiai moterims,PASS,,,dress,,women's clothing,yes
+A2-1176,drabužiai vaikams,PASS,,,sweater,,children's clothing,yes
+A2-1177,drabužiai vyrams,PASS,,,suit,,men's clothing,yes
+A2-1178,dėkui,PASS,,,give up one's seat,,Thank you,yes
+A2-1179,dėmesio,FAIL,CONTINUITY: The inset repeats the station travelers but changes their visible order and positions relative to the main scene. | BUBBLE/FLOATING SYMBOL: Radiating sound lines beside the mounted megaphone,,train station,,,yes
+A2-1180,eiti miegoti,PASS,,,bedtime,,to go to bed,yes
+A2-1181,Gelbėkit!,WARN,,"neighbour test: no margin over 'Help! (Gelbėkit, merge)'",rescue,,Help!,yes
+A2-1182,labai gerai,WARN,,NEIGHBOUR TEST: reads as 'good lad' (margin slight),correct,,good lad,yes
+A2-1183,Man patiko!,PASS,,,watch a movie,,I liked it!,yes
+A2-1184,Negali būti!,FAIL,"CONTINUITY: The inset repeats the woman reading a letter, but shows her seated alone in different clothing/position rather than standing with the man.",,a letter,,No way!,yes
+A2-1185,nieko baisaus,PASS,,,stop,,,yes
+A2-1186,pietų pertrauka,PASS,,,eating,,lunch break,yes
+A2-1187,Sudie,FAIL,NEIGHBOUR TEST: reads as 'Goodbye (Viso gero) — merge or give Sudie the solemn station scene' (margin clear),,waving goodbye,,Goodbye (Viso gero) — merge or give Sudie the solemn station scene,yes
+A2-1188,trūko vamzdis,PASS,,,leak,,,yes
+A2-1189,vieta prie lango,PASS,,,airplane,,window seat,yes
+A2-1190,vieta prie tako,PASS,,,armrest,,aisle seat,yes
+A2-1191,šiaip sau,FAIL,"BUBBLE/FLOATING SYMBOL: {'type': 'motion symbols', 'description': ""Two curved arrows showing the man's flat hand moving side to side.""}",,no,,so-so,yes
+A2-1192,Be penkių trys,PASS,,,put on a coat,12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11,Five to three,yes
+A2-1194,Penkios po trijų,PASS,,,tea,11 | 12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,Five past three,yes
+A2-1195,Pusė trijų,PASS,,,half past two,12 | 11 | 1 | 10 | 2 | 9 | 3 | 8 | 4 | 7 | 5 | 6 | 12 | 11 | 1 | 10 | 2 | 9 | 3 | 8 | 4 | 7 | 5 | 6 | 12 | 11 | 1 | 10 | 2 | 9 | 3 | 8 | 4 | 7 | 5 | 6,Half past two (lit. half of the third),yes
+A2-1196,atrodo,PASS,,,umbrella,,it seems; looks,yes
+A2-1197,susipažinti,FAIL,NEIGHBOUR TEST: reads as 'Nice to meet you' (margin clear),stray act: a handshake,introduce,,Nice to meet you,yes
+A2-1465,nuostabus,PASS,,,beautiful view,,wonderful,yes
+S-0014,,PASS,,,bread,,How much does the bread cost?,yes
+S-0017,,PASS,,,asking for directions,,Do you speak Lithuanian?,yes
+S-0018,,WARN,,"NEIGHBOUR TEST: reads as ""I don't know"" (margin slight)",I don't understand,,I don't know,yes
+S-0026,,PASS,,,train station,,Where is the station?,yes
+S-0051,,WARN,,stray act: unwrapping a present,five,,,yes
+yes_no,,PASS,,,turn your head,,,

@@ -101,3 +101,6 @@ out_phrases_v3/round2/_rerolled/
 a2_build/pilot_round2/page/media/
 _handscan/
 a2_build/additions_round2/page/media/
+
+# superseded bubble pictures (2026-10-18 roll-out), kept on disk, not in git
+**/_superseded/*.png

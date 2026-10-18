@@ -143,13 +143,16 @@ A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
 # Image sources, first hit wins. The A1 deck prefers the F6.2 re-render (out_deck_f62) and
 # falls back to the 1.5 masters in images/; override with comma-separated env vars, e.g.
 # A1_IMAGE_DIRS=_cloud_media/f62,images  A2_IMAGE_DIRS=_cloud_media/a2,_cloud_media/phrases
-A1_IMAGE_DIRS = os.environ.get("A1_IMAGE_DIRS", "out_deck_f62,images").split(",")
+# 2026-10-18 roll-out: the bubble-free situation renders come first (out_phrases_v3/round2 =
+# pilot round 2, out_phrases_v3 = pilot round 1 + roll-out); the bubble pictures they replace
+# moved to <dir>/_superseded/ (a2_build/rollout/README.md).
+A1_IMAGE_DIRS = os.environ.get("A1_IMAGE_DIRS", "out_phrases_v3,out_deck_f62,images").split(",")
 A2_IMAGE_DIRS = os.environ.get("A2_IMAGE_DIRS",
-                               "out_deck_a2,out_phrases_a2,images_a2,out_phrases").split(",")
+                               "out_phrases_v3/round2,out_phrases_v3,out_deck_a2,out_phrases_a2,images_a2,out_phrases").split(",")
 A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", "audio_a2")
 # Sentence cards (picture + cloze), see a2_build/sentences/design.md
 SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
-SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", "out_deck_sent,images_sent").split(",")
+SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", "out_phrases_v3,out_deck_sent,images_sent").split(",")
 # Back-of-card usage notes (pilot round 2, a2_build/pilot_round2/CONTEXT_NOTES.md; owner
 # 2026-10-17: on the backs now). One line under the gloss: the register / near-synonym note,
 # then the tu/jus variant as a second line. Only rows the planner verified against a read
