@@ -9,7 +9,7 @@ Nothing here changes a note type's FIELDS (that would break updating in place on
 re-import): the section label is worked out in CSS from the note's existing Category
 field and its tags, via attribute selectors generated from SECTIONS below.
 
-SECTIONS is the one place to edit the running heads. Each entry: numeral, English label
+SECTIONS is the one place to edit the running heads. Each entry: numeral, Lithuanian label
 (shown in small caps), and the Category values (A1 cards_anki.csv / A2 a2_wordlist.csv /
 sentences) it covers. ROUTE_SECTIONS overrides by note tag: every PHRASE-route note is a
 phrase whatever its category, every sentence card (tag SENT) a sentence. A category
@@ -17,28 +17,34 @@ missing from SECTIONS is shown as it is (build_apkg prints a warning listing the
 """
 import os
 
+# 2026-10-18: labels in Lithuanian (a2_build/section_labels/section_labels_lt.csv; owner 2026-10-17
+# "a bit more passive Lithuanian"). XVIII and XVI are the planner's first choices, still open with
+# the owner: XVIII "pagalbiniai žodžiai" (alt. "smulkieji žodžiai"), XVI "daiktai ir sąvokos"
+# (alt. "daiktai ir idėjos"). The English labels were: people, animals, places, transport, home,
+# food, clothing, body & health, nature, work & school, society, colours & materials, numbers &
+# time, actions, qualities, things & ideas, feelings & opinions, small words, phrases, sentences.
 SECTIONS = [
-    ("I", "people", ["People", "Nationalities", "Languages"]),
-    ("II", "animals", ["Animal"]),
-    ("III", "places", ["Location", "Travel"]),
-    ("IV", "transport", ["Transportation"]),
-    ("V", "home", ["Home", "Electronics", "Technology"]),
-    ("VI", "food", ["Food", "Beverages"]),
-    ("VII", "clothing", ["Clothing"]),
-    ("VIII", "body & health", ["Body", "Health"]),
-    ("IX", "nature", ["Nature"]),
-    ("X", "work & school", ["Job", "Jobs", "Work & school", "Work & culture"]),
-    ("XI", "society", ["Society", "Money & admin", "Shopping", "Art"]),
-    ("XII", "colours & materials", ["Color", "Materials"]),
-    ("XIII", "numbers & time", ["Numbers", "Math", "Time"]),
-    ("XIV", "actions", ["Verbs", "Modal & core verbs"]),
-    ("XV", "qualities", ["Adjectives"]),
-    ("XVI", "things & ideas", ["Nouns", "Abstract", "Misc"]),
-    ("XVII", "feelings & opinions", ["Feelings", "Opinion & discourse"]),
-    ("XVIII", "small words", ["Pronouns", "Question words", "Prepositions", "Conjunctions", "Adverbs"]),
-    ("XIX", "phrases", ["Phrases", "Greetings", "Politeness", "Basics", "Getting by", "Formulas",
+    ("I", "žmonės", ["People", "Nationalities", "Languages"]),
+    ("II", "gyvūnai", ["Animal"]),
+    ("III", "vietos", ["Location", "Travel"]),
+    ("IV", "transportas", ["Transportation"]),
+    ("V", "namai", ["Home", "Electronics", "Technology"]),
+    ("VI", "maistas", ["Food", "Beverages"]),
+    ("VII", "drabužiai", ["Clothing"]),
+    ("VIII", "kūnas ir sveikata", ["Body", "Health"]),
+    ("IX", "gamta", ["Nature"]),
+    ("X", "darbas ir mokykla", ["Job", "Jobs", "Work & school", "Work & culture"]),
+    ("XI", "visuomenė", ["Society", "Money & admin", "Shopping", "Art"]),
+    ("XII", "spalvos ir medžiagos", ["Color", "Materials"]),
+    ("XIII", "skaičiai ir laikas", ["Numbers", "Math", "Time"]),
+    ("XIV", "veiksmai", ["Verbs", "Modal & core verbs"]),
+    ("XV", "savybės", ["Adjectives"]),
+    ("XVI", "daiktai ir sąvokos", ["Nouns", "Abstract", "Misc"]),
+    ("XVII", "jausmai ir nuomonės", ["Feelings", "Opinion & discourse"]),
+    ("XVIII", "pagalbiniai žodžiai", ["Pronouns", "Question words", "Prepositions", "Conjunctions", "Adverbs"]),
+    ("XIX", "frazės", ["Phrases", "Greetings", "Politeness", "Basics", "Getting by", "Formulas",
                         "Transactions", "Core patterns", "Extended patterns"]),
-    ("XX", "sentences", ["Sakiniai"]),
+    ("XX", "sakiniai", ["Sakiniai"]),
 ]
 ROUTE_SECTIONS = {"PHRASE": "XIX", "SENT": "XX"}     # note tag -> numeral
 
@@ -69,17 +75,17 @@ def section_of(category, tags=()):
 
 
 def section_css():
-    """Attribute-selector rules that print 'Section N ·' and the label in the top band."""
+    """Attribute-selector rules that print 'N skyrius ·' and the label in the top band."""
     out = ["/* --- section labels, generated from card_frame.SECTIONS --- */"]
     by_num = {n: lab for n, lab, _ in SECTIONS}
     for n, lab, cats in SECTIONS:
         for c in cats:
             sel = f'.sf-sec[data-cat={_css_str(c)}]'
-            out.append(f'{sel}::before{{content:{_css_str(f"Section {n} ·")}}}'
+            out.append(f'{sel}::before{{content:{_css_str(f"{n} skyrius ·")}}}'
                        f'{sel}::after{{content:{_css_str(lab)}}}')
     for tag, n in ROUTE_SECTIONS.items():
         sel = f'.sf[data-tags~={_css_str(tag)}] .sf-sec'
-        out.append(f'{sel}::before{{content:{_css_str(f"Section {n} ·")}}}'
+        out.append(f'{sel}::before{{content:{_css_str(f"{n} skyrius ·")}}}'
                    f'{sel}::after{{content:{_css_str(by_num[n])}}}')
     return "\n".join(out) + "\n"
 
