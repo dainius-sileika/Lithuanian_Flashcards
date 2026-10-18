@@ -43,6 +43,9 @@ button[aria-pressed="true"] { background: var(--red); color: var(--red-ink); bor
 button:focus-visible, textarea:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
 textarea { width: 100%; box-sizing: border-box; min-height: 44px; font: 15px/1.45 var(--font-body); color: var(--ink);
   background: var(--page); border: 1px solid var(--rule); border-radius: 3px; padding: 7px 9px; resize: vertical; }
+.idetail summary { cursor: pointer; color: var(--red); font-weight: 700; font-size: 14px; }
+.idetail .md { font-size: 14px; overflow-wrap: anywhere; }
+.idetail .md table { border-collapse: collapse; font-size: 13px; } .idetail .md td, .idetail .md th { border: 1px solid var(--rule); padding: 3px 6px; vertical-align: top; }
 .saved { font-size: 12px; color: var(--ink-soft); min-height: 16px; }
 details.doc { background: var(--paper); border: 1px solid var(--rule); margin-bottom: 10px; }
 details.doc > summary { cursor: pointer; padding: 10px 14px; font: 700 16px var(--font-body); list-style: none; display: flex; justify-content: space-between; gap: 10px; }
@@ -105,6 +108,7 @@ function render() {
       return `<article class="item${isAnswered(i.id) ? " answered" : ""}" id="item-${i.id}">
         <div class="head"><span class="num">${i.n}.</span><h3>${esc(i.title)}</h3></div>
         <p class="ask">${esc(i.ask)}</p>
+        ${i.detail ? `<details class="idetail"><summary>Show details</summary><div class="md">${window.marked ? marked.parse(i.detail) : esc(i.detail)}</div></details>` : ""}
         ${i.links.length ? `<div class="links">${i.links.map(l => `<a href="${esc(l.href)}"${l.href.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>${esc(l.label)}</a>`).join("")}</div>` : ""}
         <div class="chips" role="group" aria-label="Answer">${i.options.map(o => `<button type="button" data-id="${i.id}" data-choice="${esc(o)}" aria-pressed="${s.choice === o}">${esc(o)}</button>`).join("")}</div>
         <textarea data-note="${i.id}" aria-label="Note for ${esc(i.title)}" placeholder="Note (optional)">${esc(s.note || "")}</textarea>

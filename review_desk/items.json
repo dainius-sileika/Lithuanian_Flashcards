@@ -1,5 +1,47 @@
 [
  {
+  "id": "pilot2",
+  "group": "Needs you now",
+  "title": "Pilot round 2: 14 redrawn cards",
+  "ask": "Drawn under the new rules: speakers look at each other, the scene stays consistent across panels, and hands belong to the right people. Each card sits next to its round-1 picture and your note. The automatic check passed 3 and flagged 8 as borderline. Three still fail after two retries because of how they were staged: A2-0114 kiek and A2-0895 geros kelionės (neighbour test), and A2-0881 atsiprašau (the staged bowed head can never meet the other person's eyes). The page also shows phrase backs with the new usage notes.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Pilot Round 2",
+    "href": "https://claude.ai/artifact/L8RAjTX84hQvouHi6kviVb"
+   }
+  ]
+ },
+ {
+  "id": "adds2",
+  "group": "Needs you now",
+  "title": "Additions round 2: 14 redrawn cards",
+  "ask": "Your 13 redraws plus A2-1915 with Karalių pasaka; the Lituanica card still waits for the historical rules. 10 were inset-only edits (nothing outside the inset changed) and 4 were full redraws. A2-1918's stopwatch edit is flagged by the continuity check for its start and finish insets; judge it on the page.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Additions Round 2",
+    "href": "https://claude.ai/artifact/456PRBLwy6F8oxmLYEmapc"
+   }
+  ]
+ },
+ {
+  "id": "usage-unverified",
+  "group": "Needs you now",
+  "title": "10 usage notes Fable couldn't source",
+  "ask": "70 sourced notes are already on the phrase backs. These 10 weren't backed by a source Fable could read: the synonym clusters žinoma / aišku / be abejo, akimirką / minutėlė, puiku / šaunu / nuostabus, plus nieko baisaus and Kiek tai kainuoja? Your Lithuanian is the best check here.",
+  "options": [
+   "Approve all as written",
+   "Some wrong (note)"
+  ],
+  "links": [],
+  "detail": "| Card | Lithuanian | Draft note |\n|---|---|---|\n| A2-1185 | nieko baisaus | It's nothing / never mind (lit. 'nothing terrible'): fills the same slot as nieko tokio, reassuring someone who apologises or worries. |\n| A2-0883 | Žinoma | Of course — the neutral agreement word (lit. 'known'). Aišku is brisker ('clear!'), be abejo ('without doubt') more emphatic. |\n| A2-1148 | aišku | Of course; clearly — as an answer, a brisk colloquial 'sure, obviously'; as an adverb, 'clearly'. Neutral cousin: žinoma. |\n| A2-1172 | be abejo | Undoubtedly / of course — 'without doubt'; a shade more emphatic and formal than žinoma. |\n| A2-0884 | Akimirką | Just a moment — accusative of akimirka 'an instant'; a shop assistant's or receptionist's word. Minutėlę! is the warmer diminutive twin; both fit tu and jūs. |\n| A2-1169 | minutėlė | Just a minute — said as Minutėlę! (accusative), the diminutive making it friendly; akimirką is the plainer twin. |\n| A2-1154 | puiku | Great! — neuter adjective used as an exclamation; neutral register. Šaunu is more colloquial, nuostabu/nuostabus stronger ('wonderful'), labai gerai the sober 'very good'. |\n| A2-1156 | šaunu | Cool! / great! — colloquial, youthful; puiku is the neutral equivalent. Šaunuolis (the person) is 'good lad / well done'. |\n| A2-1465 | nuostabus | Wonderful — stronger than puiku; as an exclamation the neuter nuostabu! The card's form is the masculine adjective. |\n| A2-0899 | Kiek tai kainuoja? | How much is it? — the same question as Kiek kainuoja? with tai ('this/that') said out loud; one picture serves both. |"
+ },
+ {
   "id": "t-audio",
   "group": "Later (parked)",
   "title": "Record the audio (parked)",
