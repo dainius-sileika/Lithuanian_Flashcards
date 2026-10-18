@@ -381,6 +381,18 @@ def media_image(k, src=None):
         FRAME_FLAGS.append((f"{os.path.basename(os.path.dirname(src))}/{k}", det))
     return dst, name
 
+def plate_number(key, a1_number=""):
+    """One plate sequence for the "pav. N" in the bottom band (owner 2026-10-17, BACKS_AUDIT §1.10):
+    A1 1-531 (the wordlist number), A2 from 1001 (A2-0001 -> 1001 ... A2-2045 -> 3045),
+    sentence cards from 4001 (S-0001 -> 4001), clear of the A2 range even as it grows to A2-2999.
+    The Number field is display only (GUIDs come from the key), so a re-import updates it in place."""
+    if key.startswith("A2-"):
+        return str(1000 + int(key[3:]))
+    if key.startswith("S-"):
+        return str(4000 + int(key[2:]))
+    return a1_number
+
+
 def cloze_text(example_lt):
     """'Aš {esu} mokytojas.' -> 'Aš {{c1::esu}} mokytojas.' (first braces only; later
     braces become c2, c3 so a sentence may blank two forms)."""
@@ -442,7 +454,7 @@ def add_a2_notes(DECKS, media, order=None):
                         r.get("gen_sg", ""), r.get("pres3", ""), r.get("past3", ""),
                         adjective_forms(r["lithuanian_TARGET"], r.get("lt_pron", ""), r["fem"])
                         if adj else r.get("fem", ""),
-                        k.replace("A2-", ""), r.get("category", ""),
+                        plate_number(k), r.get("category", ""),
                         f'<img class="art" src="{img_name}">', audf, r.get("lt_pron", ""),
                         usage_for(k)]))
             media.append(img_path); counts["image"] += 1
@@ -456,7 +468,7 @@ def add_a2_notes(DECKS, media, order=None):
                 model=cloze_model, tags=tags, guid=genanki.guid_for(k), due=due,
                 fields=[text, r.get("example_en", ""), r["lithuanian_TARGET"], r.get("lt_pron", ""),
                         gmark, a2_forms(r), r["english"],
-                        k.replace("A2-", ""), r.get("category", ""), audf, k, saudf, "", usage_for(k)]))
+                        plate_number(k), r.get("category", ""), audf, k, saudf, "", usage_for(k)]))
             counts["cloze"] += 1
             if saudf:
                 media.append(saud)
@@ -496,7 +508,7 @@ def add_sentence_notes(DECKS, media, order=None):
         target.add_note(genanki.Note(
             model=cloze_model, tags=[level, "SENT"], guid=genanki.guid_for(k), due=order.get(k, 0),
             fields=[text, r["en"], "", "", "", "", r.get("grammar_point", ""),
-                    k.replace("S-", "S "), "Sakiniai", "", k, audf, img, usage_for(k)]))
+                    plate_number(k), "Sakiniai", "", k, audf, img, usage_for(k)]))
         counts["sentence"] += 1
     return counts
 

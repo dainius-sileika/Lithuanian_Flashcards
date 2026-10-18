@@ -52,10 +52,9 @@ ROUTE_SECTIONS = {"PHRASE": "XIX", "SENT": "XX"}     # note tag -> numeral
 FONT_FILES = ["_Brygada1918-Regular.ttf", "_Brygada1918-Italic.ttf", "_Brygada1918-Bold.ttf"]
 FONT_DIR = "fonts"
 
-# TODO(owner decision): the deck has three plate numberings -- A1 "1".."531", A2 "0001"
-# (from the A2-xxxx key) and sentences "S 0001" -- shown as "pav. N" in the bottom band.
-# Unifying them is out of scope for the frame change and awaits the owner's decision
-# (see a2_build/BACKS_AUDIT.md item 10). The Number fields are used as they are.
+# Plate numbers ("pav. N" in the bottom band): one sequence since 2026-10-18 (owner decision
+# 2026-10-17): A1 1-531, A2 from 1001 (A2-0001 -> 1001), sentences from 4001 (S-0001 -> 4001);
+# build_apkg.plate_number() fills the Number field.
 
 
 def _css_str(s):
