@@ -26,3 +26,7 @@ Append one line per image to your output CSV (path given in your task) as you go
 - **key:** the file name without `.jpg`.
 
 Write a header line first. Work through the whole batch, then reply with a summary only: the number of images checked, and the counts of ok, minor and glitch.
+
+## Fix plan (planner, 2026-10-18)
+
+`fix_plan.csv`: one row per flagged card in `flagged_all.csv` (40: 3 glitches, 37 minor). 34 masked edits (the inset or a free polygon over the hand, with a one-sentence repaint instruction, through `a2_build/additions_round2/edit_inset.py`; the A1 masters in `images/*.webp` need a `dir` entry and a PNG round-trip in that tool), 5 re-rolls with a staging tweak (a third hand, mismatched arms, an oar across the hull — faults that a mask cannot isolate), 1 already covered by the Part B re-roll (035). The two floating-object glitches (A2-0823, A2-1447) are tried as edits first with a named re-roll fallback. Owner review: the edits are purely corrective, no owner decision needed; the five re-rolls change nothing but the hands. Cost: ≈ 34 edits + 5 re-rolls with QA ≈ $1.50–2.00.

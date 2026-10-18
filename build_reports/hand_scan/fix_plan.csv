@@ -1,0 +1,41 @@
+key,verdict,where,fix,region (edit_regions.json entry),instruction / staging tweak,note
+035_teismas,minor,main,reroll (already planned),—,Part B re-roll in the Palace of Justice (a2_build/historical/implementation/staging_rows.csv): add to that staging 'the gavel a single short wooden mallet held in his right fist'.,Covered by the historical re-roll; no separate edit.
+083_tevas,minor,inset1,masked edit,inset1 (boy on shoulders),"Repaint the boy's hands: exactly two hands, both resting on the father's shoulders; nothing touches the cap brim.","A1 master (images/083_tevas.webp, 1536x1024): the edit tool needs a 'dir' for images/ and a PNG round-trip (webp -> png -> edit -> webp); same for every A1 row below."
+091_senelis,minor,main,masked edit,poly: the bench edge at the girl's right hip,Remove the stray hand: the bench edge is bare wood; the girl's two hands stay clasped in her lap.,
+129_dangus,minor,main,masked edit,poly: Christ's raised right hand,"Repaint the raised right hand with a natural thumb and five fingers, palm toward the viewer.","Religious figure: keep the gesture, change only the thumb."
+156_lenktynes,minor,inset1,masked edit,inset1 (finish tape),"Repaint the runner's left hand whole, above the tape, fingers together; the tape passes in front of his chest, not through the hand.",
+174_vynas,minor,inset2,masked edit,inset2 (wine glass),Repaint the glass with its stem continuing straight down from the bowl between the fingers to the foot; the hand holds the stem.,
+182_duona,minor,inset3,masked edit,inset3 (woman eating soup),"Repaint the woman's left arm: it rests on the table, hand holding a piece of bread beside the bowl; nothing at her shoulder.",
+271_nugara,minor,inset2,masked edit,"inset2 (back view, hand on lower back)","Repaint the hand on the lower back as a LEFT hand: thumb toward the spine, fingers toward the hip.",
+291_upe,minor,main,reroll with staging tweak,—,"Staging add: 'the rower holds both oars, each oar leaving the boat over its own side through a rowlock, blades in the water'; the river stays the subject.",An oar across the hull cannot be masked out cleanly.
+388_sokti,minor,main,masked edit,poly: the hand on the hurdle,Repaint the hand planted on the hurdle rail with five separate fingers gripping the top bar.,
+400_sprogti,minor,main,masked edit,poly: the second hand and its pale sleeve on the detonator box,Repaint the sleeve in the same dark blue as his jacket so both hands belong to the one man on the plunger.,
+403_myleti,minor,main + inset (bottom right),reroll with staging tweak,—,"Staging add: 'her right hand rests flat on his shoulder, five fingers visible; in the close inset his one hand cups her cheek and no other fingers appear'. Two regions on one card: re-roll is cheaper than two edits.",
+413_tuoktis,minor,main,masked edit,poly: the ring-exchange hands,"Repaint the two hands only: the groom's right hand holds the bride's left hand by the fingertips and slides a ring onto her finger; two hands, ten fingers, nothing behind them.","If the edit tangles again, re-roll with that sentence in the staging."
+423_rasyti,minor,inset1,masked edit,inset1 (pen grip),"Repaint as one right hand holding the pen: thumb and index on the barrel, middle finger beneath, one skin tone.",
+440_deveti,minor,main,masked edit,poly: the left coat sleeve and cuff,"Repaint the left sleeve with a hand emerging from the cuff, relaxed at his side.",
+445_kelti,minor,inset1,masked edit,inset1 (crate close-up),Remove the blob under the crate: plain crate slats between the two lifting hands.,
+456_karstas,minor,inset2,masked edit,inset2 (ladle hand),"Repaint the hand on the ladle handle with four curled fingers and one thumb, clean knuckles.",
+459_vesus,minor,main,masked edit,poly: the left forearm on the knee,"Repaint the forearm ending in a relaxed hand hanging over the knee, five fingers.",
+472_laimingas,minor,main,masked edit,poly: the sad man's left forearm on the table,Repaint the forearm ending in a hand resting flat on the table.,
+494_minkstas,minor,main,masked edit,poly: the pointing hand,"Repaint the pointing hand: index extended, three fingers curled, one thumb; five digits.",
+512_jis,minor,main,masked edit,poly: the open hand at the waist,"Repaint the open hand with five separated fingers, palm up.",
+A2-0209,glitch,main,reroll with staging tweak,—,"Staging add: 'the father carries the suitcase in his RIGHT hand and holds the folded map in his LEFT; two hands only, both arms from his own shoulders'. GLITCH: a third hand cannot be masked without redrawing the torso.",out_deck_a2 path; ANATOMY_PROPS_RULE applies on the re-roll.
+A2-0268,minor,main,masked edit,poly: the banknote fan and the coin palm,"Repaint so the fan of notes is held between the thumb and fingers of the other hand, coins cupped in the first.",
+A2-0473,minor,inset3,masked edit,inset3 (drinking glass),"Repaint the glass meeting the lips, rim below the nose.",
+A2-0568,minor,main,masked edit,poly: the spoon hand at the inset border,Repaint the spoon hand with a forearm and sleeve coming from the figure's own shoulder; or remove the hand and set the spoon in the bowl.,
+A2-0660,minor,inset2,masked edit,inset2 (adult/child clasped hands),"Repaint the clasp: the adult's right hand holds the child's left hand, two hands only, the child's fingers inside the adult's.",
+A2-0679,minor,main,reroll with staging tweak,—,"Staging add: 'one woman at the table spreads butter: her LEFT hand in a sweater sleeve holds the bread, her RIGHT hand in the same sleeve holds the knife'. Two arms that do not match need the whole figure redrawn.",
+A2-0823,glitch,main,"masked edit (first), reroll fallback",poly: the raised fist and green sleeve between the two dancers,"Remove the fist and sleeve: the gap between the man in the white shirt and the woman in blue shows the room behind. GLITCH; if the edit leaves a seam, re-roll with 'every raised arm belongs to a visible dancer'.",
+A2-1220,minor,main,masked edit,poly: the bottle-holding hand,"Repaint the hand round the bottle neck as a natural LEFT hand: thumb on the near side, fingers wrapping behind.",
+A2-1231,minor,main,masked edit,poly: the mug and the standing woman's hands,Repaint the mug held in her LEFT hand while her RIGHT dangles the strainer into it.,
+A2-1247,minor,inset2,masked edit,inset2 (boy sharpening),"Repaint the boy's two hands: one holds the sharpener, the other turns the single pencil; no other pencils in the fists.",
+A2-1252,minor,main,masked edit,poly: the soap hand and its wrist,"Repaint the soap hand with its wrist and forearm coming from the opposite shoulder, crossing the chest to wash the near shoulder.",
+A2-1309,minor,inset2,masked edit,inset2 (medal presenter),"Repaint the presenter's near hand on the medal ribbon at the athlete's chest, clear of the face.",
+A2-1333,minor,main,masked edit,poly: the two hands on the radiator,"Repaint the pair as a left and a right hand, thumbs toward each other, palms on the radiator fins.",Same fault as A2-1411; one instruction serves both.
+A2-1411,minor,main,masked edit,poly: the two hands at the heater,"Repaint the pair as a left and a right hand, thumbs toward each other, palms toward the heater.",
+A2-1416,minor,inset3,masked edit,inset3 (dancers' clasped hands),Repaint the clasp with the partner's arm reaching to the second hand; each hand on its own arm.,
+A2-1431,minor,inset2,masked edit,inset2 (mirror),"Repaint the mirror reflection to show the raised arm and the hand at the hat brim, mirrored.",
+A2-1433,minor,inset1,masked edit,inset1 (the empty glove),"Repaint the loose glove lying flat and limp on the table, fingers slack, clearly empty.",
+A2-1447,glitch,main,"masked edit (first), reroll fallback",poly: the briefcase and the open hand above it,"Repaint the running man's hand closed round the briefcase handle, the case swinging from it. GLITCH; if the grip still floats, re-roll with 'the briefcase gripped in his RIGHT hand, its weight on that hand' (ANATOMY_PROPS_RULE wording).",
+A2-1817,minor,main,masked edit,poly: the gift box and the holding hand,"Repaint the box held in both hands, one under each side; or the one hand flat under its centre.",
