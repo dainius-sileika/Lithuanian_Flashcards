@@ -1,0 +1,7 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+A2-0352,Labas vakaras,WARN,,NEIGHBOUR TEST: reads as 'Nice to meet you' (margin slight) | stray act: a handshake,welcome,,Nice to meet you,yes
+A2-0377,Kiek kainuoja?,PASS,,,bread,,How much does it cost?,yes
+A2-0895,Geros kelionės,FAIL,NEIGHBOUR TEST: reads as 'Goodbye' (margin clear),,goodbye,,Goodbye,yes
+A2-1894,nemandagus,PASS,,,rude,,,
+A2-1911,augintinis,PASS,,,pets,,,
+A2-1915,galerija,PASS,,,art gallery,,,

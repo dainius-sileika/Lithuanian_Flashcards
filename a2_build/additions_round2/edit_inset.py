@@ -22,6 +22,15 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 os.chdir(ROOT); sys.path.insert(0, ROOT)
 import go_generator as g
 OUT = "out_deck_a2"
+# 2026-10-18 roll-out: a region entry may name its own folder ("dir"), free staging text for
+# cards outside a2_staging.json ("staging"; situation cards), and "gaze": "conversation" to use
+# the conversation lead. Logs per folder: out_deck_a2 -> ~/a2_work/ledger.csv, gen_log.jsonl;
+# out_phrases_v3/round2 -> ~/a2_work/v3_round2_ledger.csv, v3_round2_gen_log.jsonl.
+LOGS = {"out_deck_a2": "", "out_phrases_v3/round2": "v3_round2_", "out_phrases_v3": "v3_"}
+
+
+def dir_of(key):
+    return REG[key].get("dir", OUT)
 MODEL = os.environ.get("GO_EDIT_MODEL", g.OPENAI_MODEL)
 REG = json.load(open(os.path.join(HERE, "edit_regions.json"), encoding="utf-8"))
 STAGING = json.load(open("a2_build/a2_staging.json", encoding="utf-8"))["notes"]
@@ -65,8 +74,11 @@ def insets_of(staging):
 
 
 def prompt_for(key):
-    st = STAGING[key]; ins = insets_of(st); spec = REG[key]
-    parts = [g.CONCEPT_LEAD,
+    spec = REG[key]; st = STAGING.get(key) or spec.get("staging", ""); ins = insets_of(st)
+    lead = g.CONCEPT_LEAD
+    if spec.get("gaze") == "conversation":
+        lead = g._conversation_lead(g.CONCEPT_LEAD, g.STYLE_SUFFIX)[0]
+    parts = [lead,
              "EDIT of an existing card: repaint ONLY the masked area(s) and leave everything outside them "
              "exactly as it is, matching the existing ink outlines, matte gouache fills, halftone, palette and "
              "aged cream paper so the repainted part is indistinguishable in style from the rest of the card."]
@@ -92,7 +104,7 @@ def main():
         os.environ.setdefault("OPENAI_API_KEY", open(".openai_key.txt").read().strip())
         client = OpenAI(timeout=170, max_retries=0)
     for key in keys:
-        src = f"{OUT}/{key}.png"
+        D = dir_of(key); src = f"{D}/{key}.png"; T = LOGS.get(D, "")
         im, mask, boxes = make_mask(key, src)
         prompt = prompt_for(key)
         if dry:
@@ -119,26 +131,29 @@ def main():
         diff = float(np.abs(np.asarray(new).astype(int) - np.asarray(im).astype(int)).mean(axis=2)[out_mask].mean())
         soft = mask.filter(ImageFilter.GaussianBlur(1.5))
         comp = Image.composite(new, im, soft)
-        os.makedirs(f"{OUT}/_rerolled", exist_ok=True)
+        os.makedirs(f"{D}/_rerolled", exist_ok=True)
         n = 1
-        while os.path.exists(f"{OUT}/_rerolled/{key}.r{n}.png"):
+        while os.path.exists(f"{D}/_rerolled/{key}.r{n}.png"):
             n += 1
-        os.replace(src, f"{OUT}/_rerolled/{key}.r{n}.png")
-        comp.save(f"{OUT}/{key}.tmp.png"); os.replace(f"{OUT}/{key}.tmp.png", src)
-        new.save(f"{OUT}/_rerolled/{key}.edit_raw{n}.png")
+        os.replace(src, f"{D}/_rerolled/{key}.r{n}.png")
+        comp.save(f"{D}/{key}.tmp.png"); os.replace(f"{D}/{key}.tmp.png", src)
+        new.save(f"{D}/_rerolled/{key}.edit_raw{n}.png")
         u = r.usage.model_dump() if getattr(r, "usage", None) else None
-        with open(f"{LOCAL}/ledger.csv", "a", newline="", encoding="utf-8") as f:
+        with open(f"{LOCAL}/{T}ledger.csv", "a", newline="", encoding="utf-8") as f:
             csv.writer(f).writerow([key, "", "", f"openai/{MODEL} edit", "1536x1024", f"{key}.png",
                                     f"EDIT mask={json.dumps(boxes)} :: {prompt}"])
-        with open(f"{LOCAL}/gen_log.jsonl", "a") as f:
+        with open(f"{LOCAL}/{T}gen_log.jsonl", "a") as f:
             f.write(json.dumps({"key": key, "model": MODEL, "edit": True, "s": round(time.time() - t), "usage": u,
                                 "outside_diff": round(diff, 2), "prev": f"_rerolled/{key}.r{n}.png",
                                 "t": time.strftime("%H:%M:%S")}) + "\n")
         print("OK", key, round(time.time() - t), "s outside_diff", round(diff, 2), flush=True)
     if not dry:
         import shutil
-        for name in ("ledger.csv", "gen_log.jsonl"):
-            shutil.copyfile(f"{LOCAL}/{name}", f"{OUT}/{name}")
+        for D in sorted({dir_of(k) for k in keys}):
+            T = LOGS.get(D, "")
+            for name in ("ledger.csv", "gen_log.jsonl"):
+                if os.path.exists(f"{LOCAL}/{T}{name}"):
+                    shutil.copyfile(f"{LOCAL}/{T}{name}", f"{D}/{name}")
 
 
 if __name__ == "__main__":

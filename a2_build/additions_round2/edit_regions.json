@@ -1,14 +1,365 @@
 {
-  "_about": "Additions round 2 (2026-10-18): the regions edit_inset.py repaints, in 1536x1024 pixels. rect = [x0, y0, x1, y1] of a ruled inset box read off the PNG by eye (edit_inset.py snaps each edge to the drawn frame line within 12 px and masks the inside, 6 px clear of the frame); poly = a free polygon, not snapped (the painting canvas of A2-1915, drawn in perspective). insets = which 'Insets:' items of the staging line the edit draws (0-based); main = the clause of the main-picture sentence it draws instead.",
-  "A2-1879": {"regions": [{"rect": [1072, 514, 1503, 912]}], "insets": [1]},
-  "A2-1883": {"regions": [{"rect": [1071, 504, 1503, 917]}], "insets": [1]},
-  "A2-1884": {"regions": [{"rect": [1058, 510, 1503, 922]}], "insets": [1]},
-  "A2-1892": {"regions": [{"rect": [1165, 507, 1506, 843]}], "insets": [1]},
-  "A2-1898": {"regions": [{"rect": [1100, 70, 1506, 442]}, {"rect": [1096, 470, 1509, 930]}], "insets": [0, 1]},
-  "A2-1899": {"regions": [{"rect": [1077, 80, 1506, 486]}, {"rect": [1077, 508, 1506, 933]}], "insets": [0, 1]},
-  "A2-1911": {"regions": [{"rect": [1005, 70, 1497, 483]}, {"rect": [1050, 525, 1500, 922]}], "insets": [0, 1]},
-  "A2-1915": {"regions": [{"poly": [[681, 177], [1058, 128], [1058, 593], [681, 558]]}, {"rect": [1130, 87, 1503, 465]}], "insets": [0],
-              "main": "the large framed painting on the wall, seen at an angle, is Čiurlionis's Karalių pasaka (Fairy Tale of the Kings, 1909): two crowned figures in long robes, the left in blue and the right in red, bending over a small glowing globe held in the left figure's hands with a tiny village inside it, a dark forest of black trees behind them, the globe the only light in the canvas"},
-  "A2-1918": {"regions": [{"rect": [1132, 80, 1505, 466]}], "insets": [0]},
-  "A2-1926": {"regions": [{"rect": [1062, 72, 1512, 342]}, {"rect": [1062, 360, 1512, 678]}, {"rect": [1062, 695, 1512, 952]}], "insets": [0, 1, 2]}
+ "_about": "Additions round 2 (2026-10-18): the regions edit_inset.py repaints, in 1536x1024 pixels. rect = [x0, y0, x1, y1] of a ruled inset box read off the PNG by eye (edit_inset.py snaps each edge to the drawn frame line within 12 px and masks the inside, 6 px clear of the frame); poly = a free polygon, not snapped (the painting canvas of A2-1915, drawn in perspective). insets = which 'Insets:' items of the staging line the edit draws (0-based); main = the clause of the main-picture sentence it draws instead.",
+ "A2-1879": {
+  "regions": [
+   {
+    "rect": [
+     1072,
+     514,
+     1503,
+     912
+    ]
+   }
+  ],
+  "insets": [
+   1
+  ]
+ },
+ "A2-1883": {
+  "regions": [
+   {
+    "rect": [
+     1071,
+     504,
+     1503,
+     917
+    ]
+   }
+  ],
+  "insets": [
+   1
+  ]
+ },
+ "A2-1884": {
+  "regions": [
+   {
+    "rect": [
+     1058,
+     510,
+     1503,
+     922
+    ]
+   }
+  ],
+  "insets": [
+   1
+  ]
+ },
+ "A2-1892": {
+  "regions": [
+   {
+    "rect": [
+     1165,
+     507,
+     1506,
+     843
+    ]
+   }
+  ],
+  "insets": [
+   1
+  ]
+ },
+ "A2-1898": {
+  "regions": [
+   {
+    "rect": [
+     1100,
+     70,
+     1506,
+     442
+    ]
+   },
+   {
+    "rect": [
+     1096,
+     470,
+     1509,
+     930
+    ]
+   }
+  ],
+  "insets": [
+   0,
+   1
+  ]
+ },
+ "A2-1899": {
+  "regions": [
+   {
+    "rect": [
+     1077,
+     80,
+     1506,
+     486
+    ]
+   },
+   {
+    "rect": [
+     1077,
+     508,
+     1506,
+     933
+    ]
+   }
+  ],
+  "insets": [
+   0,
+   1
+  ]
+ },
+ "A2-1911": {
+  "regions": [
+   {
+    "poly": [
+     [
+      488,
+      492
+     ],
+     [
+      1022,
+      492
+     ],
+     [
+      1022,
+      896
+     ],
+     [
+      488,
+      896
+     ]
+    ]
+   }
+  ],
+  "insets": [],
+  "main": "a simple wire hamster cage on a blue plastic base standing on the table: evenly spaced straight vertical bars and a flat wire roof, every bar straight and continuous; a small wooden house and a running wheel stand INSIDE the cage on the bedding, nothing passes through the bars; a golden hamster inside on its hind legs takes a slice of cucumber that the girl holds out between her thumb and forefinger through the bars of the roof, her hand whole with five fingers and joined to her red sleeve"
+ },
+ "A2-1915": {
+  "regions": [
+   {
+    "poly": [
+     [
+      681,
+      177
+     ],
+     [
+      1058,
+      128
+     ],
+     [
+      1058,
+      593
+     ],
+     [
+      681,
+      558
+     ]
+    ]
+   },
+   {
+    "rect": [
+     1130,
+     87,
+     1503,
+     465
+    ]
+   }
+  ],
+  "insets": [
+   0
+  ],
+  "main": "the large framed painting on the wall, seen at an angle, is a Čiurlionis-style fairy-tale painting in his soft blue-green symbolist tempera manner of 1909: on the LEFT a QUEEN - a young beardless woman with long loose hair under a slender pointed crown, in a long pale-blue gown - and on the RIGHT a KING - a bearded man in a tall crown and a long red robe; the two bend toward each other over a small glowing globe with a tiny village inside it, held in the queen's cupped hands, a dark forest of tall black trees behind them, the globe the only light in the canvas"
+ },
+ "A2-1918": {
+  "regions": [
+   {
+    "rect": [
+     1132,
+     80,
+     1505,
+     466
+    ]
+   }
+  ],
+  "insets": [
+   0
+  ]
+ },
+ "A2-1926": {
+  "regions": [
+   {
+    "rect": [
+     1062,
+     72,
+     1512,
+     342
+    ]
+   },
+   {
+    "rect": [
+     1062,
+     360,
+     1512,
+     678
+    ]
+   },
+   {
+    "rect": [
+     1062,
+     695,
+     1512,
+     952
+    ]
+   }
+  ],
+  "insets": [
+   0,
+   1,
+   2
+  ]
+ },
+ "_about_2026-10-18": "Roll-out redraws (owner verdicts 2026-10-18): dir = folder of the PNG when not out_deck_a2; staging = the line used for cards outside a2_staging.json (situation cards, from restage_bubbles.csv); gaze = conversation for spoken moments; inset_labels names the inset boxes when the staging has no 'Insets:' list.",
+ "A2-0377": {
+  "dir": "out_phrases_v3/round2",
+  "gaze": "conversation",
+  "staging": "Main picture: a shopper at a market stall lifting a loaf of bread in her LEFT hand, her RIGHT hand holding her purse open; she looks at the stallholder; the stallholder looks back. Insets: a close-up of the shopper's two hands holding her small brown purse open by its metal frame against her red coat, each hand with one thumb and four fingers, exactly five, every finger joined to its own hand and nothing extra; (keep) the stall seen from further off.",
+  "regions": [
+   {
+    "poly": [
+     [
+      276,
+      500
+     ],
+     [
+      494,
+      500
+     ],
+     [
+      494,
+      668
+     ],
+     [
+      276,
+      668
+     ]
+    ]
+   },
+   {
+    "rect": [
+     1139,
+     92,
+     1507,
+     432
+    ]
+   }
+  ],
+  "insets": [
+   0
+  ],
+  "main": "the shopper's RIGHT hand, low at her waist, holds her small brown purse open, fingers closed round its metal frame: one thumb and four fingers, exactly five, nothing extra, joined to her red coat sleeve"
+ },
+ "A2-0352": {
+  "dir": "out_phrases_v3/round2",
+  "gaze": "conversation",
+  "staging": "a guest in an overcoat arriving at a lit doorway at dusk, the host holding the door open with his left hand and shaking the guest's hand",
+  "regions": [
+   {
+    "poly": [
+     [
+      650,
+      690
+     ],
+     [
+      962,
+      690
+     ],
+     [
+      962,
+      904
+     ],
+     [
+      650,
+      904
+     ]
+    ]
+   }
+  ],
+  "insets": [],
+  "main": "the host's legs and two shoes: he stands upright on the floorboards of the lit hall just inside the doorway, both shoes fully visible and flat on the striped runner a little behind the low wooden threshold; his feet are whole and in front of nothing, not hidden by, cut by or merged into the threshold, the door jamb or the door leaf; the threshold and the stone step outside run straight across under the doorway, the door jambs stand straight on either side of him"
+ },
+ "A2-0895": {
+  "dir": "out_phrases_v3/round2",
+  "gaze": "conversation",
+  "staging": "a railway platform; a young woman on the carriage step waving; on the platform the mother waving with her right arm raised, the father beside her, a younger brother in a blue coat holding the mother's LEFT hand",
+  "regions": [
+   {
+    "poly": [
+     [
+      447,
+      712
+     ],
+     [
+      551,
+      712
+     ],
+     [
+      551,
+      830
+     ],
+     [
+      447,
+      830
+     ]
+    ]
+   }
+  ],
+  "insets": [],
+  "main": "the mother's LEFT hand hangs at her side and holds the younger brother's RIGHT hand: their two hands clasped palm to palm, her fingers wrapped round his small hand, each hand drawn whole with one thumb and four fingers and joined to its own arm - hers to her green coat sleeve, his to his blue coat sleeve"
+ },
+ "A2-1894": {
+  "regions": [
+   {
+    "poly": [
+     [
+      408,
+      262
+     ],
+     [
+      500,
+      262
+     ],
+     [
+      500,
+      380
+     ],
+     [
+      408,
+      380
+     ]
+    ]
+   },
+   {
+    "poly": [
+     [
+      102,
+      505
+     ],
+     [
+      196,
+      505
+     ],
+     [
+      196,
+      580
+     ],
+     [
+      102,
+      580
+     ]
+    ]
+   }
+  ],
+  "insets": [],
+  "main": "the woman's two hands: her raised hand is up at shoulder height, palm flat against the glass of the swinging door to catch it, a natural relaxed hand with one thumb and four fingers joined to her red coat sleeve; her other hand, low at her side, grips the handles of both shopping bags, fingers closed round them"
+ }
 }
