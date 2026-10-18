@@ -26,3 +26,15 @@ The ten rows in `a2_build/context_notes.csv` marked `unverified` now carry `owne
 the English gloss was dropped as in 5ec1a76 (e.g. "Of course — the neutral agreement word" →
 "The neutral agreement word"); literal meanings and alternative glosses stay.
 `a2_build/context_notes_unverified.csv` is retired (its rows live in context_notes.csv).
+
+## Step 3: roll-out of the restaged bubble cards
+
+Data before rendering (`restage_bubbles.csv`, `situations.py` regenerated):
+- `gaze` = `default` on 27 rows where nobody speaks to anyone (signs, clocks, lone figures, the
+  three-panel water card, the clothing floors, the loudspeaker): they keep the house gaze, as the
+  round-2 rule says for non-speaking cards. The other 106 take the conversation gaze by default.
+- Handedness (RULES §c3): only the three handshakes are named (both RIGHT hands: 0891, 0363, 1197).
+  Pointing and the rest are left as staged.
+- Prompts are built exactly as for pilot round 2 (`gen.py` → `build_situation_call`): a card whose
+  staging lists no insets gets no inset sentence and no PANEL_CONTINUITY sentence, and the model
+  still draws the house insets (as on 0352/0377, which passed). The QA coherence check runs on all.
