@@ -234,6 +234,28 @@ ANATOMY_PROPS_RULE = (
     "whole and each face is its own."
 )
 
+# 2026-10-18 historical places and figures (a2_build/historical/). Owner: "surroundings,
+# but try faces as best you can". PRECEDENT_RULE carries a real Lithuanian thing or
+# building by its features; LIKENESS_RULE, on listed cards only, asks for a named face
+# at a named period. Both are additive segments: a card that passes neither renders
+# exactly as before. Per-card values: historical.py (likeness_args.json).
+PRECEDENT_RULE = (
+    "This card quietly evokes a real Lithuanian precedent: {description}. It is carried "
+    "by features alone - the shape and materials of the building, the cut and colour of "
+    "period dress, the livery, struts and engine of an aircraft, the kit of a team - and "
+    "never by lettering, a name, a plaque or a badge. The precedent sits inside the album's "
+    "1981 world and is drawn in the same flat matte ink as everything around it; it "
+    "supports the card's word and does not replace it."
+)
+
+LIKENESS_RULE = (
+    "The {role} is drawn in the likeness of {name} as {pronoun} looked in {period}: "
+    "{features}. Carry the likeness in the face, hair, build and bearing, printed flat in "
+    "the album style at the same scale as the other figures - a recognisable person "
+    "drawn by the same anonymous hand, not a portrait. No name, caption, plaque or "
+    "lettering identifies the person anywhere in the picture."
+)
+
 # 0.9: flag-only, occasional. No intricate heraldry (it garbles like text did).
 FLAG_RULE = (
     "If any national emblem is shown at all, use ONLY a small Lithuanian "
@@ -254,7 +276,25 @@ FLAG_RULE_IMPERIAL = (
     "If any flags appear, use ONLY a small United States flag (stars and stripes) "
     "together with a small United Kingdom Union Jack, side by side. No coats of "
     "arms, no other national flags.")
-FLAG_RULES = {"eu": FLAG_RULE_EU, "imperial": FLAG_RULE_IMPERIAL}
+# 2026-10-18: flag-first, no longer flag-only, on the routed cards only (FLAG_RULES["emblem"],
+# deck_builder.FLAG_OVERRIDE). Owner: the Vytis is fine, the Cross of Vytis easier to draw and
+# "leans patriotic". Heraldry garbled under gpt-image-1.5 (0.9); promote this text to the
+# default FLAG_RULE only after the T4 (Cross) and T5 (Vytis) tests pass the owner's eye.
+# Columns of Gediminas and every other badge stay out.
+FLAG_RULE_EMBLEM = (
+    "If any national emblem is shown at all, prefer a small Lithuanian tricolor flag "
+    "(a horizontal yellow band on top, green in the middle, red on the bottom), placed "
+    "small and only where it fits naturally. Where the scene itself calls for a state "
+    "emblem - a courtroom wall, a parliament chamber, a podium, a uniform, a public "
+    "building - it may carry the Cross of Vytis, a plain double-barred cross drawn once "
+    "as one clean simple shape, or, only where a wall or banner gives it room, the "
+    "Vytis: a white armoured knight on a white rearing horse, sword raised in his right "
+    "hand and a shield on his left arm, on a plain red field, drawn large, clean and "
+    "simple with no fine detail. Never more than one emblem in a picture; do NOT include "
+    "the Columns of Gediminas or any other heraldic badge. Do not put a flag or emblem "
+    "on every card - many cards need none at all."
+)
+FLAG_RULES = {"eu": FLAG_RULE_EU, "imperial": FLAG_RULE_IMPERIAL, "emblem": FLAG_RULE_EMBLEM}
 
 NO_TEXT_RULE = (
     "Render NO text, NO lettering, NO numbers, NO words, NO labels and NO "
@@ -331,7 +371,7 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
                    inset_note="", text=False, people="worker", extra="",
                    glyph=False, flag="lt", exact_text="", composition="vignette",
                    staging="", setting="", motion_strip=False, situation=False,
-                   gaze="default", panels=1):
+                   gaze="default", panels=1, precedent="", likeness=""):
     """F6.1 assembly order (production_spec_F6_1.json): lead, subject, per-card
     staging, class scene, setting, dress, inset rules, plausibility, arrows,
     text rules, bars, flag, anatomy, extra, suffix."""
@@ -347,6 +387,10 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
     if setting:
         segs.append(setting)
         segs.append(SETTING_GUARD)
+    if precedent:
+        segs.append(PRECEDENT_RULE.format(description=precedent))
+    if likeness:
+        segs.append(likeness)          # already formatted LIKENESS_RULE text, one per figure
     segs.append(MAIN_MEANING_RULE)
     segs.append(FIGURE_DRESS.get(people, FIGURE_DRESS["worker"]))
     segs.append(DISTINCT_FACES_RULE)
@@ -438,14 +482,16 @@ def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
                  glyph=False,
                  extra="", backend="openai", flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
-                 motion_strip=False, situation=False, gaze="default", panels=1):
+                 motion_strip=False, situation=False, gaze="default", panels=1,
+                 precedent="", likeness=""):
     if backend == "openai":
         return _prompt_openai(subject, scene, labels, exclude, insets,
                               inset_note, text, people, extra, glyph=glyph,
                               flag=flag, exact_text=exact_text,
                               composition=composition, staging=staging,
                               setting=setting, motion_strip=motion_strip,
-                              situation=situation, gaze=gaze, panels=panels)
+                              situation=situation, gaze=gaze, panels=panels,
+                              precedent=precedent, likeness=likeness)
     return _prompt_zimage(subject, scene, overlays, extra)
 
 
@@ -551,7 +597,8 @@ class GOGenerator:
                  glyph=False,
                  extra="", out_dir=".", filename=None, flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
-                 motion_strip=False, situation=False, gaze="default", panels=1):
+                 motion_strip=False, situation=False, gaze="default", panels=1,
+                 precedent="", likeness=""):
         prompt = build_prompt(subject, scene=scene, labels=labels,
                               exclude=exclude, insets=insets, inset_note=inset_note,
                               text=text, people=people, overlays=overlays,
@@ -559,7 +606,8 @@ class GOGenerator:
                               flag=flag, exact_text=exact_text,
                               composition=composition, staging=staging,
                               setting=setting, motion_strip=motion_strip,
-                              situation=situation, gaze=gaze, panels=panels)
+                              situation=situation, gaze=gaze, panels=panels,
+                              precedent=precedent, likeness=likeness)
         os.makedirs(out_dir, exist_ok=True)
         if filename is None:
             filename = "go_" + hashlib.md5(subject.encode()).hexdigest()[:8] + ".png"

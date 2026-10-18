@@ -31,7 +31,7 @@ key,location_id,mode,why
 032_viesbutis,palanga,exterior,"resort hotel among pines near the sea; pier far off, doorman and guest in front"
 033_restoranas,vilnius_old_town,interior,small Old Town restaurant; cobbled lane and tower through the window
 034_ukis,zemaitija_village,exterior,"the farmstead drawn as a Žemaitija troba with half-hipped roof, pond, trees"
-035_teismas,,,generic by rule or no fitting place in bank
+035_teismas,kaunas_justice_palace,interior,2026-10-18 historical: REPLACE (was generic). Courtroom inside the Palace of Justice; the arcaded front in one inset. A1 note starts 'Main picture:' so prepare_settings skips the bank line — the place is also written into the staging (staging_rows.csv).
 036_mokykla,vilnius_zverynas,exterior,"schoolhouse on a street of wooden villas and limes; the villas are surroundings, not a rival building"
 037_biuras,kaunas_modernism,interior,office room; modernist facade across the street through the window
 038_kambarys,,,generic by rule or no fitting place in bank
@@ -44,12 +44,12 @@ key,location_id,mode,why
 045_parduotuve,vilnius_old_town,exterior,small shopfront in a curving cobbled lane
 046_teatras,kaunas_laisves_aleja,exterior,columned theatre facade on the lime boulevard (the 1892 theatre stands there); theatre is the subject
 047_biblioteka,kaunas_modernism,exterior,library as a pale 1930s building with ribbon windows
-048_ligonine,vilnius_antakalnis,exterior,hospital with ambulance; pines and the twin-towered church glimpsed beyond — surroundings only
+048_ligonine,kaunas_clinics,exterior,2026-10-18 historical: SWAP from vilnius_antakalnis (1970s Soviet block) to the 1939 Kaunas Clinics; ambulance at the canopied entrance. Approved 2026-10-17.
 049_baznycia,,,hand_staged: already carries its own Lithuanian detail
 050_turgus,vilnius_kalvariju_market,exterior,"open stalls under a long low roof, headscarved sellers"
 053_zeme,,,close-up or cosmic subject; no earthly place fits
 054_kosmosas,,,generic by rule or no fitting place in bank
-055_bankas,kaunas_modernism,exterior,bank with columned entrance in the interwar banking quarter
+055_bankas,kaunas_bank_of_lithuania,interior,2026-10-18 historical: REFINE (was kaunas_modernism exterior): the hall under the glass skylight is in the staging; the columned front is the inset.
 080_sunus,,,figure card with arrows; a place would compete with the subject
 081_dukra,,,figure card with arrows; a place would compete with the subject
 082_motina,,,figure card with arrows; a place would compete with the subject
@@ -75,8 +75,8 @@ key,location_id,mode,why
 103_zmogus,,,figure card with arrows; a place would compete with the subject
 104_draugas,kaunas_old_town_confluence,exterior,"two friends on the grassy river point, castle tower and town-hall spire behind"
 105_auka,,,figure card with arrows; a place would compete with the subject
-106_zaidejas,vilnius_vingis,exterior,"players on the park sports ground (stadium 1954), pines behind"
-107_sirgalius,,,figure card with arrows; a place would compete with the subject
+106_zaidejas,kaunas_state_stadium,exterior,"2026-10-18 historical: SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
+107_sirgalius,kaunas_state_stadium,exterior,2026-10-18 historical: NEW: fans in the covered wooden grandstand of the State Stadium.
 108_minia,,,hand_staged: already carries its own Lithuanian detail
 110_mokytojas,,,hand_staged: already carries its own Lithuanian detail
 111_studentas,vilnius_old_town,interior,lecture hall; baroque tower through the tall window
@@ -236,3 +236,18 @@ key,location_id,mode,why
 506_tamsus,,,abstract attribute
 507_sviesus,,,abstract attribute
 530_lydyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+A2-0085,kaunas_railway_station,interior,"2026-10-18 historical: NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
+A2-0645,kaunas_town_hall_square,exterior,2026-10-18 historical: NEW: the square itself is the subject; the tiered white tower in the middle.
+A2-0649,kaunas_central_post_office,interior,2026-10-18 historical: NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset.
+A2-0652,kaunas_war_museum,interior,2026-10-18 historical: NEW: the hall with the orange monoplane hanging overhead and the amber cases in the staging; the tower and garden in one inset.
+A2-0653,kaunas_romuva_cinema,inset,2026-10-18 historical: NEW: inset only — the cinema front with the blank fin; the auditorium stays the main picture.
+A2-0656,kaunas_sports_hall,exterior,"2026-10-18 historical: NEW: the 1939 hall interior is the whole scene (prompt_phrase is an interior; mode 'exterior' only means the plain 'Setting: Lithuania, 1981, …' line)."
+A2-0658,vilnius_rasos_cemetery,exterior,2026-10-18 historical: NEW: Rasos hillside.
+A2-1282,kaunas_konrado_cafe,exterior,"2026-10-18 historical: NEW: interior prompt_phrase (mirrors, piano, plaster girl in the niche, cake case); plain setting line."
+A2-1293,vilnius_philharmonic,exterior,2026-10-18 historical: NEW: the white-and-gilt hall; the corner building with the rounded bay in one inset (staging).
+A2-0812,vilnius_philharmonic,exterior,"2026-10-18 historical: NEW: concert in the same hall; rotate the viewpoint (from the balcony) so 0812, 1293 and 1747 are not one picture."
+A2-1747,vilnius_philharmonic,exterior,"2026-10-18 historical: NEW: orchestra on the same stage, seen from the stalls' front row."
+A2-1297,kaunas_sports_hall,exterior,2026-10-18 historical: NEW: basketball under the four arches; players in plain white kit with a tricolour band (kit colours unverified — executor checks a 1939 team photograph first).
+A2-1260,kaunas_state_stadium,exterior,2026-10-18 historical: NEW: football on the State Stadium pitch.
+A2-1360,kaunas_laisves_aleja,interior,"2026-10-18 historical: NEW: performance inside the 1892 Kaunas theatre (red velvet, tiered boxes in the staging); the boulevard outside glimpsed."
+A2-1769,kaunas_war_museum,exterior,"2026-10-18 historical: SWAP (approved): the monument is the Freedom Statue in the museum garden, the bell tower behind; the Soviet-era seated poet (Jokūbonis 1977) is dropped."

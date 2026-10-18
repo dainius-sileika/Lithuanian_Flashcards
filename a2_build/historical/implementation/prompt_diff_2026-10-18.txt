@@ -1,0 +1,89 @@
+Prompt diff, historical rules + bank/settings merge + test staging (2026-10-18). All 1,400 production prompts rebuilt before and after (A1 521, A2 657, sentences 55, situations 167); only the cards below change.
+
+=== A1 012_lektuvas
+-Draw it in clear static side profile
++Main picture: an orange single-engine high-wing monoplane with wide aerofoil-shaped struts bracing the wing to the fuselage, a ring-cowled radial engine, a two-bladed propeller and fixed undercarriage with two spoked wheels, standing on a grass airfield before a wooden hangar; two men in leather flying jackets and soft flying helmets beside it, one checking the engine; the aircraft is the subject
++Insets: the same plane in level flight over grey sea; the cockpit windows from outside; a passenger airliner of 1981 on an apron with a small tricolour on its tail
++This card quietly evokes a real Lithuanian precedent: an orange single-engine high-wing monoplane with wide aerofoil-shaped wing struts, a ring-cowled radial engine and two spoked wheels
++It is carried by features alone - the shape and materials of the building, the cut and colour of period dress, the livery, struts and engine of an aircraft, the kit of a team - and never by lettering, a name, a plaque or a badge
++The precedent sits inside the album's 1981 world and is drawn in the same flat matte ink as everything around it; it supports the card's word and does not replace it
++The man checking the engine is drawn in the likeness of Steponas Darius as he looked in 1933: a man of 37 with a broad, square face, a strong jaw and a straight nose, light eyes under level brows, clean-shaven, in a leather flying jacket with a soft flying helmet pushed back
++Carry the likeness in the face, hair, build and bearing, printed flat in the album style at the same scale as the other figures - a recognisable person drawn by the same anonymous hand, not a portrait
++No name, caption, plaque or lettering identifies the person anywhere in the picture
++The second man, beside the wing strut is drawn in the likeness of Stasys Girėnas as he looked in 1933: a man of 39 with a narrower, longer oval face, a long straight nose and a small firm mouth, clean-shaven, in the same leather flying kit
++Carry the likeness in the face, hair, build and bearing, printed flat in the album style at the same scale as the other figures - a recognisable person drawn by the same anonymous hand, not a portrait
++No name, caption, plaque or lettering identifies the person anywhere in the picture
+-Include 2 to 3 small supporting insets: a close-up of a key part — a wheel, the engine, or a fitting; the vehicle in use, driven or loaded by ordinary people
++Include small supporting insets exactly as listed after 'Insets:' in the staging above, each a different detail, angle or example; none repeats the main picture
+
+=== A1 035_teismas
+-Main picture: a courtroom seen from the gallery: a judge in a dark robe at a raised bench with a gavel, a clerk below, a witness at a stand, lawyers at two tables, the public on benches; the judge at the bench is the subject
+-Insets: the gavel on its block; the courthouse front with columns; the scales of justice
++Main picture: a courtroom seen from the gallery inside a tall interwar hall lit from above by skylights, marble columns with carved folk-pattern capitals along the walls: a judge in a dark robe at a raised bench, the gavel a single short wooden mallet held in his right fist, a clerk below, a witness at a stand, lawyers at two tables, the public on benches; a plain double-barred cross hangs on the wall behind the bench; the judge at the bench is the subject
++Insets: the gavel on its block; the courthouse front — a heavy neoclassical corner block with a ground-floor arcade of round arches; the scales of justice
+-If any national emblem is shown at all, use ONLY a small Lithuanian tricolor flag (a horizontal yellow band on top, green in the middle, red on the bottom), placed small and only where it fits naturally
+-Do NOT include coats of arms, the Vytis knight, the Columns of Gediminas, or any other heraldic emblem or badge
+-Do not put a flag on every card — many cards need no emblem at all
++If any national emblem is shown at all, prefer a small Lithuanian tricolor flag (a horizontal yellow band on top, green in the middle, red on the bottom), placed small and only where it fits naturally
++Where the scene itself calls for a state emblem - a courtroom wall, a parliament chamber, a podium, a uniform, a public building - it may carry the Cross of Vytis, a plain double-barred cross drawn once as one clean simple shape, or, only where a wall or banner gives it room, the Vytis: a white armoured knight on a white rearing horse, sword raised in his right hand and a shield on his left arm, on a plain red field, drawn large, clean and simple with no fine detail
++Never more than one emblem in a picture; do NOT include the Columns of Gediminas or any other heraldic badge
++Do not put a flag or emblem on every card - many cards need none at all
+
+=== A1 097_prezidentas
+-Main picture: a man president at a podium draped with the tricolour speaking toward the hall with a raised hand, near-frontal; beside him a woman president seated at a side table signing a document, head bent to the page
+-Insets: the president shaking a hand before a crowd; the tricolour on a flagpole before a government building; a motorcade with small flags
++Main picture: a man president at a podium draped with the tricolour speaking toward the hall with a raised hand, near-frontal — a tall trim man in his seventies with grey-white hair combed straight back, a broad open face and a warm closed-mouth smile, no spectacles, in a grey suit and tie; on the wall behind the podium, drawn large, clean and simple, the Vytis — a white armoured knight on a white rearing horse, sword raised, on a red field; beside him a woman president seated at a side table signing a document, head bent to the page
++Insets: the president shaking a hand before a crowd; the tricolour on a flagpole before a heavy neoclassical building with an arcaded entrance; a motorcade with small flags
++This card quietly evokes a real Lithuanian precedent: a heavy neoclassical corner block with a ground-floor arcade of round arches
++It is carried by features alone - the shape and materials of the building, the cut and colour of period dress, the livery, struts and engine of an aircraft, the kit of a team - and never by lettering, a name, a plaque or a badge
++The precedent sits inside the album's 1981 world and is drawn in the same flat matte ink as everything around it; it supports the card's word and does not replace it
++The man president at the podium is drawn in the likeness of Valdas Adamkus as he looked in his years as president, 1998-2009: a tall trim man in his seventies, grey-white hair combed straight back from a high forehead, a broad open face with a warm closed-mouth smile and deep lines at the mouth, no spectacles, a grey suit and a patterned tie
++Carry the likeness in the face, hair, build and bearing, printed flat in the album style at the same scale as the other figures - a recognisable person drawn by the same anonymous hand, not a portrait
++No name, caption, plaque or lettering identifies the person anywhere in the picture
+-If any national emblem is shown at all, use ONLY a small Lithuanian tricolor flag (a horizontal yellow band on top, green in the middle, red on the bottom), placed small and only where it fits naturally
+-Do NOT include coats of arms, the Vytis knight, the Columns of Gediminas, or any other heraldic emblem or badge
+-Do not put a flag on every card — many cards need no emblem at all
++If any national emblem is shown at all, prefer a small Lithuanian tricolor flag (a horizontal yellow band on top, green in the middle, red on the bottom), placed small and only where it fits naturally
++Where the scene itself calls for a state emblem - a courtroom wall, a parliament chamber, a podium, a uniform, a public building - it may carry the Cross of Vytis, a plain double-barred cross drawn once as one clean simple shape, or, only where a wall or banner gives it room, the Vytis: a white armoured knight on a white rearing horse, sword raised in his right hand and a shield on his left arm, on a plain red field, drawn large, clean and simple with no fine detail
++Never more than one emblem in a picture; do NOT include the Columns of Gediminas or any other heraldic badge
++Do not put a flag or emblem on every card - many cards need none at all
+
+=== A1 106_zaidejas
+-Setting: Lithuania, 1981, tall pines on a river terrace, a great concrete band-shell stage facing a sloping field, river bend behind
++Setting: Lithuania, 1981, oval cinder running track round a grass pitch, low tiered stands with one covered wooden grandstand, tall oaks of a park behind, a yellow-green-red flag on a mast
+
+=== A1 107_sirgalius
++Setting: Lithuania, 1981, oval cinder running track round a grass pitch, low tiered stands with one covered wooden grandstand, tall oaks of a park behind, a yellow-green-red flag on a mast
++People stand inside the place: feet on its ground, scaled to its doors, furniture and vehicles, lit by the same flat light, with the setting continuing behind and between them
++The setting stays behind and around the subject and never competes with it
+
+=== A1 123_autorius
+-Main picture: a man and a woman author each at a typewriter at a shared desk piled with manuscript pages, one pulling a finished page from the machine, the other reading a page; a shelf behind holds many copies of the same thick book with a blank spine
+-The writers at their typewriters are the subject
++Main picture: a man and a woman author at a shared desk piled with manuscript pages — the woman an old woman in a dark dress with a pale headscarf tied under the chin, writing with a pen on loose sheets; the man lean and clean-shaven, in his forties, high forehead, hair swept back, in a dark suit and tie, at a typewriter pulling out a finished page; a shelf behind holds many copies of the same thick book with a blank spine
++The writers at their desk are the subject
++The woman author is drawn in the likeness of Žemaitė (Julija Žymantienė) as she looked in about 1910-1920: an old woman with a broad, deeply lined, weathered face and a level gaze, a pale patterned headscarf tied under the chin, a dark dress
++Carry the likeness in the face, hair, build and bearing, printed flat in the album style at the same scale as the other figures - a recognisable person drawn by the same anonymous hand, not a portrait
++No name, caption, plaque or lettering identifies the person anywhere in the picture
++The man author is drawn in the likeness of Kazys Binkis as he looked in the 1930s: a lean clean-shaven man with dark hair swept back from a high forehead, a narrow face and intent dark eyes, in a dark suit, white shirt and dark tie
++Carry the likeness in the face, hair, build and bearing, printed flat in the album style at the same scale as the other figures - a recognisable person drawn by the same anonymous hand, not a portrait
++No name, caption, plaque or lettering identifies the person anywhere in the picture
+
+=== A2 A2-1297
+-Draw it clearly and centered for identification
++Main picture: a basketball game under four great riveted steel arches with triangular skylights, wooden stands full round the parquet court — a player leaping to shoot at a hoop on a plain backboard, another blocking, both in plain white sleeveless shirts and white shorts with a diagonal yellow-green-red band across the chest, canvas boots; one of the players is very tall
++The shot at the hoop is the subject
++Insets: the ball on the rim; a player dribbling; the scoreboard (declared lettering)
++This card quietly evokes a real Lithuanian precedent: the 1939 champions in plain white kit with a diagonal tricolour band, under the four great riveted steel arches of an interwar sports hall
++It is carried by features alone - the shape and materials of the building, the cut and colour of period dress, the livery, struts and engine of an aircraft, the kit of a team - and never by lettering, a name, a plaque or a badge
++The precedent sits inside the album's 1981 world and is drawn in the same flat matte ink as everything around it; it supports the card's word and does not replace it
+
+=== A2 A2-1769
+-Main picture: an interwar bronze of a seated poet in a frock coat with an open book on his knee, on a plain grey granite plinth in a small park with lindens and a bench, fresh flowers laid at the base, a pigeon on the plinth, a couple passing
+-The quiet seated figure on its plinth is the subject
++Main picture: an interwar bronze monument — a winged female figure striding forward on a tall stone plinth, broken chains in one hand and a raised banner in the other — standing in a formal museum garden with a small eternal flame before it and a tall square bell tower behind, fresh flowers laid at the base, a pigeon on the plinth, a couple passing
++The striding figure on its plinth is the subject
++This card quietly evokes a real Lithuanian precedent: a winged female figure striding forward on a tall stone plinth, broken chains in one hand and a raised banner in the other, in a museum garden with a tall square bell tower behind
++It is carried by features alone - the shape and materials of the building, the cut and colour of period dress, the livery, struts and engine of an aircraft, the kit of a team - and never by lettering, a name, a plaque or a badge
++The precedent sits inside the album's 1981 world and is drawn in the same flat matte ink as everything around it; it supports the card's word and does not replace it
+

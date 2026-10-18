@@ -1,0 +1,7 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+012_lektuvas,lėktuvas,WARN,,"guessed 'airplane', card teaches 'plane'",airplane,,,
+035_teismas,teismas,WARN,,"guessed 'courtroom', card teaches 'court'",courtroom,,,
+097_prezidentas,prezidentas/prezidentė,WARN,,"guessed 'Lithuania', card teaches 'president'",Lithuania,,,
+123_autorius,autorius/autorė,WARN,,"guessed 'writing', card teaches 'author' | Text on the papers and book pages is mostly tiny, illegible, or garbled.",writing,,,
+A2-1297,krepšinis,PASS,,,basketball,78:75,,
+A2-1769,paminklas,PASS,,,monument,,,

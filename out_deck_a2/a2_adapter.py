@@ -145,6 +145,19 @@ def build_call_a2(r, staging):
                 filename=f"{key}.png"), cls
 
 
+
+# 2026-10-18 historical places and figures: precedent= / likeness= for the A2 cards active in
+# a2_build/historical/implementation/likeness_args.json (historical.py); others unchanged.
+import historical as _hist
+_build_call_a2_base = build_call_a2
+
+
+def build_call_a2(r, staging):
+    kw, cls = _build_call_a2_base(r, staging)
+    kw.update(_hist.hist_args(r["id"]))
+    return kw, cls
+
+
 if __name__ == "__main__":
     import go_generator as g
     rows, staging = load_rows()
