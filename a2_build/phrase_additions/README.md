@@ -12,3 +12,17 @@ Decisions for the owner:
 - **Gestures to deconflict** across the old set: the farewell hand signs of 0355/0356/0893 against 2019 (two-finger salute) and 2018 (two mirrored hands); the hand-on-chest of 0367/0910 against 2022 (standing, name card). The `confusables` column says which stagings to check.
 
 Cost: 65 renders (after merges) with up to two re-rolls ≈ $1.80–2.60, QA ≈ $0.30.
+
+## Rendered (executor, 2026-10-18)
+
+- The 69 staging rows are appended to `a2_build/restage_bubbles.csv` (situations.py regenerated: 231 renders).
+  A2-1944 and A2-1958 stay "no (merge)" (A2-1995 and A2-1991 carry them). A2-2007, A2-2012, A2-2020 are set to
+  "hold (owner: merge with …?)" and were **not** rendered. A2-2002 got `card_text` "7" (the plan's example).
+- Prompt check: all 1,400 existing prompts unchanged; 64 new situation prompts.
+- 64 cards rendered into `out_phrases_v3/` by `out_phrases_v3/gen.py` (gpt-image-2.5-sunburst, medium); QA with the
+  round-2 situation checks (`~/a2_work/qa_fast.py`, report `qa_phraseadd.csv`). Every hard FAIL re-rolled up to twice
+  (17, then 10; 91 renders in all), best roll kept by `pick_best.py` (3 restored, `out_phrases_v3/picks.jsonl`).
+- Result: **41 PASS · 13 WARN · 10 FAIL.** The 10: gaze on cards where the sufferer looks down by design (1934, 1935,
+  2004), neighbour reads (1986 → "What time is it?", 1996 → "I don't understand", 2029 → "Go straight ahead"),
+  two-panel cards whose panels are different scenes by design (1997, 2003), the inset of 2042, arrows on 1991.
+- Review page **Phrase Additions** (db `phraseadd`): https://claude.ai/artifact/2SKvFKTuxKjS3xPD1YEDxM — `build_page.py`.

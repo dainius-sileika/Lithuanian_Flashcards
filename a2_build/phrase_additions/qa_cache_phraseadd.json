@@ -1,0 +1,3426 @@
+{
+ "A2-1897:07f776ab045c6c8c:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "hot",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "thirsty (I am thirsty)",
+   "runner_up": "I need water (A2-0919, now a steaming radiator and a canister)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I want to eat (A2-0916)",
+   "I need water (A2-0919, now a steaming radiator and a canister)",
+   "thirsty (I am thirsty)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": null,
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1934:1342996dee6daf42:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "stomachache",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "stomach ache",
+   "runner_up": "headache (A2-1935)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "It hurts here (A2-0962, a finger on one spot)",
+   "stomach ache",
+   "headache (A2-1935)"
+  ],
+  "fit": {
+   "fit": "nearly",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The woman looks at the man, while the man looks down toward his belly."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1935:f460a9bc53b9b687:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "headache",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "headache",
+   "runner_up": "I don't feel well (A2-0961)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I don't feel well (A2-0961)",
+   "headache",
+   "stomach ache (A2-1934)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The woman with the headache has her eyes shut while the other woman looks at her; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1946:b6b6c37a3affb85c:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "coffee or tea",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I don't know (A2-0373, likely a shrug too — here smiling, two offered things)",
+   "runner_up": "to mind (I don't mind)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "I prefer… (A2-1991, one cup chosen)",
+   "to mind (I don't mind)",
+   "I don't know (A2-0373, likely a shrug too — here smiling, two offered things)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a pointing finger"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The customer and server look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1983:4c776e13de9a63ed:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "hat",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "This is… (introducing someone)",
+   "runner_up": "Nice to meet you (A2-0363, the handshake)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Let me introduce myself (A2-2022, hand on own chest)",
+   "Nice to meet you (A2-0363, the handshake)",
+   "to get acquainted (A2-1197, dog-walkers)",
+   "This is… (introducing someone)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The standing men look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1984:21dd2fde04fef09b:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "paint shop",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Can I help you? / How can I help?",
+   "runner_up": "I'm just looking",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Can you help me? (A2-0383, the customer asks)",
+   "Can I help you? / How can I help?",
+   "I'm just looking (A2-2034, the customer's palm raised to the assistant — the answer to this card)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The assistant and customer face and look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1985:54bd7e7d10507911:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "coffee shop",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": true,
+   "note": "The main scene and upper-right inset show the same café entrance with matching awning, door, lamp, and plants."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Let's go… / Shall we…?",
+   "runner_up": "I would like coffee (A2-0917)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Where are you going? (A2-0926)",
+   "I would like coffee (A2-0917)",
+   "Let's go… / Shall we…?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "Both men look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1987:02fd7fe33518d152:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "tea",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "No, thank you (declining)",
+   "runner_up": "Thank you (A2-0358)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Thank you (A2-0358)",
+   "No, thank you (declining)",
+   "Would you like…? (A2-1989, the same scene a moment earlier: the cup held out)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1986:a68374b86535d6f5:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "watch",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What time is it? (A2-0379, asked of a stranger)",
+   "runner_up": "See you tomorrow (A2-0893 — check its staging for a watch)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Shall we meet at…? (arranging)",
+   "What time is it? (A2-0379, asked of a stranger)",
+   "See you tomorrow (A2-0893 — check its staging for a watch)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The two women face and look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1988:f9fac70c2676715b:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "receive a letter",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Unfortunately I can't (declining an invitation)",
+   "runner_up": "I don't have time (A2-0915)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Unfortunately I can't (declining an invitation)",
+   "I don't have time (A2-0915)",
+   "No, thank you (A2-1987, the covered cup)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The visitor looks at the woman, and the woman looks back at the visitor."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1989:e9530c00fe3cae37:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "tea",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Would you like…? (offering)",
+   "runner_up": "Here you are (A2-0885, a parcel across a counter)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Would you like…? (offering)",
+   "Here you are (A2-0885, a parcel across a counter)",
+   "No, thank you (A2-1987)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman looks at the man, and the man looks at the woman."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1990:da4e850182a9a9a7:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "I don't like fish.",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I don't like…",
+   "runner_up": "Do you like…? (A2-1992, the host's raised eyebrows while the guest tastes)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I liked it! (A2-1183)",
+   "I don't like…",
+   "Do you like…? (A2-1992, the host's raised eyebrows while the guest tastes)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a raised palm"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The boy and woman look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1992:535605fc92dd92ff:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "taste the soup",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Bon appétit (A2-0889)",
+   "runner_up": "Do you like…?",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Do you like…?",
+   "I don't like… (A2-1990)",
+   "Bon appétit (A2-0889)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The cook looks at the taster, and the taster looks up toward the cook."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1991:eb54f8a1ac94218b:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "move left and right",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [
+   "left-pointing arrow",
+   "right-pointing arrow",
+   "left-pointing arrow",
+   "right-pointing arrow"
+  ],
+  "neighbour": {
+   "best": "I prefer… / I like … more",
+   "runner_up": "I don't mind (shrug at two cups)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I would like coffee (A2-0917)",
+   "I don't mind (A2-1946, shrug at two cups)",
+   "I prefer… / I like … more"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and man are looking at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1993:c1256aeb82044480:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "chair",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "May I? / Is it allowed?",
+   "runner_up": "Is this seat free? (A2-2023, a train seat with a bag on it)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Is this seat free? (A2-2023, a train seat with a bag on it)",
+   "Yes, you may (A2-1994, the next moment)",
+   "May I? / Is it allowed?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a raised palm"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The standing man and seated man look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1995:e35f2b9e2473856e:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "fill out a form",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Write it down, please (A2-0903, two panels)",
+   "runner_up": "How do you spell it? / Spell it, please",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Write it down, please (A2-0903, two panels)",
+   "How do you spell it? / Spell it, please",
+   "What is your name? (A2-0366)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1994:576f7e52d1f9c0c9:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "sit down",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Sit down, please (A2-1166)",
+   "runner_up": "Please / Prašau (A2-0357, now a held door for a pram)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Please / Prašau (A2-0357, now a held door for a pram)",
+   "Sit down, please (A2-1166)",
+   "May I? (A2-1993)",
+   "Yes, you may. / Go ahead."
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The seated man looks toward the standing man, who looks down toward him."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1996:985f940acd624fbc:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "think",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I don't understand (A2-0371)",
+   "runner_up": "Do you understand? / Is that clear?",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Do you understand? / Is that clear?",
+   "I understand (A2-0372)",
+   "I don't understand (A2-0371)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a pointing finger"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The teacher looks toward the foreground pupil, and the pupil looks toward the teacher; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1997:e6826d1978482bba:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "telephone",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Who's calling? (A2-1998, hand over the mouthpiece)",
+   "runner_up": "Could I speak to…? (phone)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Who's calling? (A2-1998, hand over the mouthpiece)",
+   "Could I speak to…? (phone)",
+   "hello on the phone (A2-1171, lone woman lifting the receiver)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The man looks off to the side, while the woman looks up toward the stairs."
+   },
+   "panels": {
+    "same_people": false,
+    "same_positions": false,
+    "same_background": false,
+    "props_consistent": true,
+    "right_answers_left": true,
+    "note": "The left panel shows the man calling downstairs; the right panel shows the woman answering upstairs."
+   },
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1998:d15a00ab80b98f11:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "telephone",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": true,
+   "note": "The inset panels consistently show close-ups of the woman and man from the main scene with matching clothing and setting."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Who's calling? (phone)",
+   "runner_up": "Hold on a moment (A2-1999)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Hold on a moment (A2-1999)",
+   "Who's calling? (phone)",
+   "Could I speak to…? (A2-1997)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman turns and looks toward the man, and the man looks toward her."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1999:4908294794f6e1b3:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "hotel receptionist",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Hold on a moment (phone)",
+   "runner_up": "Who's calling? (A2-1998)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Hold on a moment (phone)",
+   "Who's calling? (A2-1998)",
+   "Just a moment (A2-0884, no telephone — check its staging)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman looks at the man, and the man looks toward the woman."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2002:bb05121fb3e945e0:sit:r2": {
+  "lettering": [
+   "7",
+   "7"
+  ],
+  "punctuation": [],
+  "guess": "seven",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What is your address?",
+   "runner_up": "Where do you live?",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Where do you live? (A2-1159 — check its staging)",
+   "What is your address?",
+   "Where is…? (A2-0378)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman face and look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2001:f9612314e4eba299:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "phone number",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": true,
+   "note": "The telephone booth and caller shown in the inset match the booth and caller in the main scene."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What is your phone number?",
+   "runner_up": "How old are you? (A2-1157, fingers counted — here a pad and a kiosk)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "What is your phone number?",
+   "What is your address? (A2-2002, house number plate)",
+   "How old are you? (A2-1157, fingers counted — here a pad and a kiosk)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a pointing finger"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2000:9952aabd2c187437:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "telephone",
+  "confidence": "high",
+  "problems": [
+   "The main telephone receiver appears split into a top earpiece and a separate lower mouthpiece rather than one connected handset."
+  ],
+  "coherence": {
+   "applies": true,
+   "consistent": false,
+   "note": "The repeated inset shows the same man and clothing, but the main scene includes a telephone receiver while the inset shows both hands empty."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Wrong number",
+   "runner_up": "Pardon?",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Wrong number",
+   "hello on the phone (A2-1171, receiver to the ear, mouth opening)",
+   "Pardon? (A2-2020)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": true,
+    "note": "The main man looks at the receiver; the smaller inset figure looks toward the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2003:a9e91c06c73a6cc4:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "cold and hot",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'm cold / I'm hot",
+   "runner_up": "hot/cold adjective cards",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "hot/cold adjective cards",
+   "I'm cold / I'm hot",
+   "It is cold today (A2-0923, the weather, not the body)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": null,
+   "panels": {
+    "same_people": false,
+    "same_positions": false,
+    "same_background": false,
+    "props_consistent": false,
+    "right_answers_left": true,
+    "note": "The left panel shows a bundled woman hugging herself indoors; the right shows a man fanning himself with a cap outdoors."
+   },
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2004:53893150b9833312:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "construction worker",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'm tired",
+   "runner_up": "to go to bed (A2-1180)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I'm tired",
+   "to go to bed (A2-1180)",
+   "Everything is fine (A2-1161)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The standing man looks at the seated man, while the seated man looks downward."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2005:31ef385332da8736:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "point",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": true,
+   "note": "The inset repeats the pointing arm and the same street corner with matching signpost and buildings."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "On the right / turn right / turn left",
+   "runner_up": "Go straight ahead (A2-0959)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Go straight ahead (A2-0959)",
+   "On the right / turn right / turn left",
+   "keep 0958's pointer on the LEFT and this one on the RIGHT)",
+   "It's on the left (A2-0958 — the mirror"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The older man and the younger man look toward each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2006:dd31f087110f9f2f:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "a little",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Is it far? / Not far",
+   "runner_up": "How do I get to…? (A2-0957, map)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "How do I get to…? (A2-0957, map)",
+   "Is it far? / Not far",
+   "Go straight ahead (A2-0959)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The standing man and the cyclist face and look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2009:d9851434594d0260:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "buying groceries",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "That's all, thanks",
+   "runner_up": "Thank you",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Thank you (A2-0358)",
+   "That's all, thanks",
+   "Anything else? (A2-2008)"
+  ],
+  "fit": {
+   "fit": "nearly",
+   "cue_visible": false,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The customer and vendor face and look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2008:de5aab83479a2283:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "vegetable market",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Anything else?",
+   "runner_up": "That's all, thanks",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Do you have…? (A2-1168)",
+   "That's all, thanks (A2-2009, the next moment)",
+   "Anything else?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The seller and customer look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2010:0d32e0caee06fa9a:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "taxi fare",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Keep the change",
+   "runner_up": "Stop here, please (A2-2029, inside the taxi, pointing at the kerb)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Stop here, please (A2-2029, inside the taxi, pointing at the kerb)",
+   "Keep the change",
+   "How much does it cost? (A2-0377)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The driver looks toward the standing man, and the standing man looks toward the driver and the coins."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2011:5d993ce283fb01e2:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "coin",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Where can I find…? (A2-0909, two panels)",
+   "runner_up": "Where can I buy…?",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Where can I find…? (A2-0909, two panels)",
+   "Is there…? (A2-0382)",
+   "Where can I buy…?",
+   "Do you have…? (A2-1168)"
+  ],
+  "fit": {
+   "fit": "nearly",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The man looks toward the woman, while the woman looks down at the small object in her hand."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2014:c18dd54994b941bc:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "comfort",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Don't worry",
+   "runner_up": "worried / susirūpinęs (A2-1883, mother at the window)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "it's nothing",
+   "never mind (A2-1185)",
+   "worried / susirūpinęs (A2-1883, mother at the window)",
+   "Don't worry"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The nurse and the woman look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2013:25de2f7c3fb6b705:sit:r2": {
+  "lettering": [
+   "12",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11"
+  ],
+  "punctuation": [],
+  "guess": "arrive late",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'm late / sorry I'm late",
+   "runner_up": "I'm sorry (A2-0881, the boy with the football)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I'm late / sorry I'm late",
+   "Excuse me (A2-0362, the trolleybus bump)",
+   "I'm sorry (A2-0881, the boy with the football)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The entering man looks toward the seated group, and the seated people look toward him."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2016:fca5ffd4bb0c7061:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "hurt knee",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What's the matter? / What happened?",
+   "runner_up": "I need help (A2-0906)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "I need help (A2-0906)",
+   "What's the matter? / What happened?",
+   "Help! (A2-1181)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The kneeling man and the seated child look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2015:68c2900e7e429ef7:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "ballet",
+  "confidence": "medium",
+  "problems": [
+   "Large blank bands obscure parts of the ballet poster images."
+  ],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What a pity!",
+   "runner_up": "No way!",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "a pity / gaila (A2-1150, now the dropped ice cream and the brother)",
+   "What a pity!",
+   "No way! (A2-1184)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2017:a69e7dc3253244b6:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "Easter",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Happy holidays / Happy Easter",
+   "runner_up": "Merry Christmas",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Happy holidays / Happy Easter",
+   "Happy holidays / Su šventėmis (A2-1165, snow, sprig of fir, a counter)",
+   "Merry Christmas (A2-1164)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The elderly woman and boy look toward each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2018:a3522a0ed84548ef:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "hello",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Goodbye",
+   "runner_up": "Same to you",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Have a good weekend (A2-1162)",
+   "Goodbye (A2-0354, one man waving back at a woman on a step) — here both hands up, both men at the gate, no bag",
+   "Same to you"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and man look at each other while raising their hands."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2019:3b315d4585617564:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "two",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "See you tomorrow (A2-0893)",
+   "runner_up": "See you soon / later",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "See you tomorrow (A2-0893) — check their gestures and give each a different hand sign",
+   "See you soon / later",
+   "Bye (A2-0356)",
+   "See you (A2-0355)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2021:57b2a93f391b955c:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "handshake",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Good idea / OK, agreed",
+   "runner_up": "Nice to meet you (A2-0363, a handshake with an introducer in a meeting room) — here no third person, a cart and scales",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Nice to meet you (A2-0363, a handshake with an introducer in a meeting room) — here no third person, a cart and scales",
+   "Good idea / OK, agreed",
+   "Of course (A2-0883)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "Both men face and look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2022:f574c9f72dc370b7:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "introduce oneself",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "My name is… (A2-0367, A2-0910 — check their stagings",
+   "runner_up": "Let me introduce myself",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "This is… (A2-1983, palm toward another person)",
+   "Let me introduce myself",
+   "if either has a hand on the chest, give this card the standing-up and the name card)",
+   "My name is… (A2-0367, A2-0910 — check their stagings"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The standing man and the seated people look toward one another; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2023:f584f5a5b70f7cee:sit:r2": {
+  "lettering": [
+   "9"
+  ],
+  "punctuation": [],
+  "guess": "luggage",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Excuse me, is this seat free?",
+   "runner_up": "window seat / aisle seat",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Excuse me, is this seat free?",
+   "May I? (A2-1993, a café chair, hand on its back)",
+   "window seat / aisle seat (A2-1189/1190)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2024:3360fb5fba1165bd:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "money",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'd like to pay",
+   "runner_up": "Can I pay by card? (A2-0954)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "The bill, please (A2-0381, a restaurant)",
+   "I'd like to pay",
+   "Can I pay by card? (A2-0954)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and shopkeeper face and look toward each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2025:e7e4e0ddde3a207e:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "key",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I have a reservation",
+   "runner_up": "I would like to book a room",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "I would like to book a room (A2-0951)",
+   "I have a reservation",
+   "Do you have…? (A2-1168)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a pointing finger"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and clerk look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2026:94bf88906a6f1e45:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "buy a ticket",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "One ticket to Kaunas, please",
+   "runner_up": "How much does the ticket cost? (A2-0928, two panels, money)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "One coffee (A2-2007, if kept)",
+   "How much does the ticket cost? (A2-0928, two panels, money)",
+   "One ticket to Kaunas, please",
+   "Which platform? (A2-2027)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and ticket clerk look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2027:e1e599907d501153:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "ticket",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Which platform?",
+   "runner_up": "Where do I have to change? (A2-0955, now aboard with a map)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Where do I have to change? (A2-0955, now aboard with a map)",
+   "Which platform?",
+   "Where is…? (A2-0378)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The porter and woman look at each other; no one looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2028:e27df9ab07e8ae8d:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "boarding a bus",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": true,
+   "note": "The lower inset repeats the woman boarding the same bus; the upper inset is a close-up of the bus front."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Does this bus go to…?",
+   "runner_up": "Where do I have to change? (A2-0955)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Where do I have to change? (A2-0955)",
+   "Does this bus go to…?",
+   "Stop here, please (A2-2029)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman looks toward the driver, and the driver looks back at her."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2030:dc8be35f8250bd30:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "pharmacy",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I need a doctor / pharmacy",
+   "runner_up": "It hurts here",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I need a doctor / pharmacy",
+   "Call a doctor! (A2-0907, two panels, urgent)",
+   "I don't feel well (A2-0961)",
+   "It hurts here (A2-0962)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2029:4c0734b7ded0f3a6:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "pointing",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Go straight ahead (A2-0959)",
+   "runner_up": "Stop here, please (taxi)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Go straight ahead (A2-0959)",
+   "Stop here, please (taxi)",
+   "Keep the change (A2-2010, outside the taxi)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The passenger looks toward the driver, who looks back at her in the rear-view mirror."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2031:67742da14698447a:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "fever",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I have a temperature / a cold",
+   "runner_up": "I don't feel well",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I don't feel well (A2-0961)",
+   "Get well soon (A2-0892, visitor with flowers)",
+   "I have a temperature / a cold"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and man look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2032:5964515b6ffbac59:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "twice a day",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Take this twice a day (pharmacy)",
+   "runner_up": "I need a doctor / pharmacy (A2-2030)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Take this twice a day (pharmacy)",
+   "I'm allergic to… (A2-0963)",
+   "I need a doctor / pharmacy (A2-2030)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The pharmacist and customer look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2034:118781ce5a7ee557:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "coat",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "No, thank you",
+   "runner_up": "I'm just looking (shop)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Can I help you? (A2-1984, the assistant's open hand — the question this answers)",
+   "I'm just looking (shop)",
+   "No, thank you (A2-1987, the covered cup)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and the male shop assistant look at each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2033:b1875d634058d8d6:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "say goodbye",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Have a good journey (A2-0895, now the conductor and the suitcase at a train)",
+   "runner_up": "Enjoy! / Have fun!",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Enjoy! / Have fun!",
+   "Have a good journey (A2-0895, now the conductor and the suitcase at a train)",
+   "Have a good weekend (A2-1162)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a wave"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and the boy in the bus look toward each other; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2037:e513108555dd8857:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "sweater",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Do you have it in another colour / size?",
+   "runner_up": "I'll take this one (A2-0953)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Do you have it in another colour / size?",
+   "I'll take this one (A2-0953)",
+   "Can I try it on? (A2-2035)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The customer and shop assistant look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2036:32751ec4bea4f6d0:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "sleeve",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "It's too big / too small",
+   "runner_up": "Can I try it on? (A2-2035)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "It's too big / too small",
+   "big / small adjective cards",
+   "Can I try it on? (A2-2035)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2035:23b391bb065f14a4:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "fitting room",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Can I try it on?",
+   "runner_up": "It's too big (A2-2036)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Can I try it on?",
+   "It's too big (A2-2036)",
+   "Do you have it in another colour? (A2-2037)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and man look at each other; the woman and her reflection look at each other in the inset."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2038:d398f26b5b11a777:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "menu",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'll have the soup (ordering)",
+   "runner_up": "I would like… (A2-0380)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I'll have the soup (ordering)",
+   "I would like… (A2-0380)",
+   "What would you recommend? (A2-2012, the menu turned to the waiter)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The woman looks toward the waiter, while the waiter looks down at his notepad."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2039:aa8f5b86fe5f7c3d:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "waiter",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": true,
+   "note": "The close-up inset matches the main waiter’s clothing and the folders he is carrying."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Could we have the menu?",
+   "runner_up": "The bill, please",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Is there a table free? (A2-0952, at the door)",
+   "The bill, please (A2-0381, after the meal)",
+   "Could we have the menu?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a pointing finger"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": true,
+    "note": "The seated man and woman look at each other; the waiter looks toward the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2040:972b5433b98b5944:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "the bill",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Is service included?",
+   "runner_up": "The bill, please",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Keep the change (A2-2010, taxi)",
+   "The bill, please (A2-0381, asking for it)",
+   "Is service included?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The customer and waiter look toward each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2041:e7f0dc6c5bf4b974:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "full",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "It was delicious",
+   "runner_up": "I liked it!",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I liked it! (A2-1183 — check its staging)",
+   "Bon appétit (A2-0889, before the meal)",
+   "It was delicious"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The diner and cook look toward each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2043:f98bc1e52adf6120:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "watch",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "How long does it take?",
+   "runner_up": "Is it far?",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "How long does it take?",
+   "What time is it? (A2-0379, asked of a stranger, no road)",
+   "Is it far? (A2-2006, finger and thumb)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The seated woman and standing woman look at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2044:e391efaef987e271:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "umbrella",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What's the weather like?",
+   "runner_up": "the weather / oras noun card",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "It is cold today (A2-0923)",
+   "the weather / oras noun card",
+   "What's the weather like?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The man looks toward the rainy window while speaking on the telephone."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2042:7a65c15039de794b:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "camera",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": false,
+   "note": "The inset repeats the setting and couple but omits the photographer and changes the couple's positions."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Can you take a photo of us?",
+   "runner_up": "the camera / photograph noun cards",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Can you help me? (A2-0383)",
+   "the camera / photograph noun cards",
+   "Can you take a photo of us?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "an arm around the woman's shoulder"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and the photographer look at each other; the woman looks toward the photographer, and nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2045:f82f9fb0ed5872c5:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "give flowers",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Happy name day",
+   "runner_up": "Congratulations",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Happy birthday (A2-0890, cake and candles)",
+   "Congratulations (A2-0891 — check its staging)",
+   "Happy name day"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The people look toward one another and the flowers; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1934:cf12fd00d1f94005:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "stomachache",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "stomach ache",
+   "runner_up": "It hurts here (A2-0962, a finger on one spot)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "It hurts here (A2-0962, a finger on one spot)",
+   "stomach ache",
+   "headache (A2-1935)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a hand on the other person's shoulder"
+   ],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The woman looks at the man, while the man looks downward rather than at her; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1935:e975c1d7e2432b43:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "headache",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "headache",
+   "runner_up": "I don't feel well (A2-0961)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I don't feel well (A2-0961)",
+   "headache",
+   "stomach ache (A2-1934)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "offering a glass of water"
+   ],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The man looks at the woman; her eyes are shut and she looks nowhere."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1986:2a0be28935aace6f:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "wristwatch",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What time is it? (A2-0379, asked of a stranger)",
+   "runner_up": "See you tomorrow (A2-0893 — check its staging for a watch)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Shall we meet at…? (arranging)",
+   "What time is it? (A2-0379, asked of a stranger)",
+   "See you tomorrow (A2-0893 — check its staging for a watch)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "Both women look directly at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1994:c5d0b21b1b1beb1f:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "chair",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Sit down, please",
+   "runner_up": "Yes, you may. / Go ahead.",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Please / Prašau (A2-0357, now a held door for a pram)",
+   "Sit down, please (A2-1166)",
+   "May I? (A2-1993)",
+   "Yes, you may. / Go ahead."
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The seated man looks up at the standing man, who looks down toward him."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1991:f4c4defa9b447506:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "left and right",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [
+   {
+    "type": "arrow",
+    "direction": "left",
+    "location": "near the woman's glass in the main scene"
+   },
+   {
+    "type": "arrow",
+    "direction": "right",
+    "location": "near the coffee cup in the main scene"
+   },
+   {
+    "type": "arrow",
+    "direction": "left",
+    "location": "beside the glass in the upper-right inset"
+   },
+   {
+    "type": "arrow",
+    "direction": "right",
+    "location": "beside the coffee cup in the lower-right inset"
+   }
+  ],
+  "neighbour": {
+   "best": "I prefer… / I like … more",
+   "runner_up": "I don't mind (shrug at two cups)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I would like coffee (A2-0917)",
+   "I don't mind (A2-1946, shrug at two cups)",
+   "I prefer… / I like … more"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and man look directly at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1995:769e8540765a5f75:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "fill out a form",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Write it down, please (A2-0903, two panels)",
+   "runner_up": "How do you spell it? / Spell it, please",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Write it down, please (A2-0903, two panels)",
+   "How do you spell it? / Spell it, please",
+   "What is your name? (A2-0366)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The man and woman face and look toward each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1996:649b5c9cebe497dd:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "think",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I don't understand (A2-0371)",
+   "runner_up": "Do you understand? / Is that clear?",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Do you understand? / Is that clear?",
+   "I understand (A2-0372)",
+   "I don't understand (A2-0371)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a pointing finger"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The teacher looks toward the frowning pupil, and the pupil looks toward the teacher."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2000:5a2b501074491dc2:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "telephone",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Wrong number",
+   "runner_up": "Pardon?",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Wrong number",
+   "hello on the phone (A2-1171, receiver to the ear, mouth opening)",
+   "Pardon? (A2-2020)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "raised palms"
+   ],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": true,
+    "note": "The man in the main scene looks at the receiver; the inset man looks toward the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1997:71c1ea80c5b4e2fd:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "telephone",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "hello on the phone (A2-1171, lone woman lifting the receiver)",
+   "runner_up": "Could I speak to…? (phone)",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Who's calling? (A2-1998, hand over the mouthpiece)",
+   "Could I speak to…? (phone)",
+   "hello on the phone (A2-1171, lone woman lifting the receiver)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The man looks sideways while the woman looks upward toward the stairwell; neither looks directly at the other or at the viewer."
+   },
+   "panels": {
+    "same_people": false,
+    "same_positions": true,
+    "same_background": false,
+    "props_consistent": true,
+    "right_answers_left": true,
+    "note": "The left panel shows the man on the phone, while the woman in the separate stairwell panel calls upstairs."
+   },
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2004:fe6f6002fb260f2d:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "construction worker",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'm tired",
+   "runner_up": "to go to bed (A2-1180)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I'm tired",
+   "to go to bed (A2-1180)",
+   "Everything is fine (A2-1161)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "offering a bottle"
+   ],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The standing man looks toward the seated man, while the seated man looks downward rather than at him."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2003:e7f06a09745d42d4:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "cold and hot",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'm cold / I'm hot",
+   "runner_up": "hot/cold adjective cards",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "hot/cold adjective cards",
+   "I'm cold / I'm hot",
+   "It is cold today (A2-0923, the weather, not the body)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": null,
+   "panels": {
+    "same_people": false,
+    "same_positions": false,
+    "same_background": false,
+    "props_consistent": false,
+    "right_answers_left": false,
+    "note": "The left panel shows a cold woman hugging herself; the right shows a hot man fanning himself with a cap."
+   },
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2011:e1ec24e8e52737ae:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "coin",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Where can I buy…?",
+   "runner_up": "Do you have…?",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Where can I find…? (A2-0909, two panels)",
+   "Is there…? (A2-0382)",
+   "Where can I buy…?",
+   "Do you have…? (A2-1168)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and the shopkeeper look at each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2029:bf6039c76c1170fa:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "pointing",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Go straight ahead (A2-0959)",
+   "runner_up": "Stop here, please (taxi)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Go straight ahead (A2-0959)",
+   "Stop here, please (taxi)",
+   "Keep the change (A2-2010, outside the taxi)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The passenger and driver look toward each other; neither looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2038:fdabbbec3c2fd1a8:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "menu",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'll have the soup (ordering)",
+   "runner_up": "I would like… (A2-0380)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I'll have the soup (ordering)",
+   "I would like… (A2-0380)",
+   "What would you recommend? (A2-2012, the menu turned to the waiter)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman looks at the waiter, and the waiter looks at the woman."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2033:55cc2dc0be1eeaee:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "camping trip",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Have a good journey (A2-0895, now the conductor and the suitcase at a train)",
+   "runner_up": "Enjoy! / Have fun!",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "Enjoy! / Have fun!",
+   "Have a good journey (A2-0895, now the conductor and the suitcase at a train)",
+   "Have a good weekend (A2-1162)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman looks toward the boy at the bus, and the boy looks back toward her."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2039:6df18fb67abdc663:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "menu",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Could we have the menu?",
+   "runner_up": "The bill, please",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Is there a table free? (A2-0952, at the door)",
+   "The bill, please (A2-0381, after the meal)",
+   "Could we have the menu?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [
+    "a pointing finger"
+   ],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The diners look toward the waiter, and the waiter looks back toward them; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2042:c907ac9b065127f6:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "camera",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": false,
+   "note": "The inset repeats the couple and church scene but omits the photographer and camera interaction visible in the main scene."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Can you take a photo of us?",
+   "runner_up": "the camera / photograph noun cards",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Can you help me? (A2-0383)",
+   "the camera / photograph noun cards",
+   "Can you take a photo of us?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The younger man and older man face and look toward each other while the camera is being handed over."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1934:a3fbc727cfa708d0:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "stomachache",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "stomach ache",
+   "runner_up": "headache (A2-1935)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "It hurts here (A2-0962, a finger on one spot)",
+   "stomach ache",
+   "headache (A2-1935)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The woman looks at the man, while the man looks downward."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1935:9314464694735bd5:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "headache",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "headache",
+   "runner_up": "I don't feel well (A2-0961)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I don't feel well (A2-0961)",
+   "headache",
+   "stomach ache (A2-1934)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The man looks toward the woman, while the woman has her eyes shut."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1986:c3cadee06bd4709f:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "time",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "What time is it? (A2-0379, asked of a stranger)",
+   "runner_up": "Shall we meet at…? (arranging)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Shall we meet at…? (arranging)",
+   "What time is it? (A2-0379, asked of a stranger)",
+   "See you tomorrow (A2-0893 — check its staging for a watch)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "Both women look directly at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1996:5a1a75c3019cf475:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "thinking",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I don't understand (A2-0371)",
+   "runner_up": "Do you understand? / Is that clear?",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Do you understand? / Is that clear?",
+   "I understand (A2-0372)",
+   "I don't understand (A2-0371)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The teacher and foreground pupil look toward each other; the other students also look toward the lesson rather than at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1991:bbaf1e865e1fb498:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "pass",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [
+   {
+    "type": "arrow",
+    "text": "←"
+   },
+   {
+    "type": "arrow",
+    "text": "→"
+   }
+  ],
+  "neighbour": {
+   "best": "I prefer… / I like … more",
+   "runner_up": "I don't mind (A2-1946, shrug at two cups)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I would like coffee (A2-0917)",
+   "I don't mind (A2-1946, shrug at two cups)",
+   "I prefer… / I like … more"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The woman and man look directly at each other."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-1997:361cbcea4cd0a4a6:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "telephone",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": false,
+   "note": "The two panels show different people and clothing using the telephone in the same hallway setting."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Who's calling? (A2-1998, hand over the mouthpiece)",
+   "runner_up": "Could I speak to…? (phone)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Who's calling? (A2-1998, hand over the mouthpiece)",
+   "Could I speak to…? (phone)",
+   "hello on the phone (A2-1171, lone woman lifting the receiver)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": true,
+    "note": "The man on the left looks toward the viewer, while the woman on the right looks up the staircase."
+   },
+   "panels": {
+    "same_people": false,
+    "same_positions": false,
+    "same_background": false,
+    "props_consistent": true,
+    "right_answers_left": false,
+    "note": "The left panel shows a man in an entry hall; the right shows a woman in a stair hall, with each holding a telephone receiver."
+   },
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2003:bc301d512011274a:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "hot and cold",
+  "confidence": "medium",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'm cold / I'm hot",
+   "runner_up": "hot/cold adjective cards",
+   "margin": "slight"
+  },
+  "neighbour_options": [
+   "hot/cold adjective cards",
+   "I'm cold / I'm hot",
+   "It is cold today (A2-0923, the weather, not the body)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": null,
+   "panels": {
+    "same_people": false,
+    "same_positions": false,
+    "same_background": false,
+    "props_consistent": false,
+    "right_answers_left": false,
+    "note": "The left panel shows a woman hugging herself indoors, while the right shows a man fanning himself with a cap outdoors."
+   },
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2004:128f3b41bcfed35b:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "tired",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": false
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "I'm tired",
+   "runner_up": "to go to bed (A2-1180)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "I'm tired",
+   "to go to bed (A2-1180)",
+   "Everything is fine (A2-1161)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The standing man looks toward the seated man, while the seated man looks downward with closed or lowered eyes."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2029:4c8ddcd74a89b82e:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "taxi",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": true,
+   "note": "The upper-right inset repeats the same street view with the car and pedestrians in matching positions; the lower-right inset is a close-up of the taxi meter."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Go straight ahead (A2-0959)",
+   "runner_up": "Stop here, please (taxi)",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Go straight ahead (A2-0959)",
+   "Stop here, please (taxi)",
+   "Keep the change (A2-2010, outside the taxi)"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": true,
+    "anyone_at_viewer": false,
+    "note": "The passenger looks toward the driver, and the driver looks toward the passenger."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ },
+ "A2-2042:74f3faf87567f438:sit:r2": {
+  "lettering": [],
+  "punctuation": [],
+  "guess": "take a picture",
+  "confidence": "high",
+  "problems": [],
+  "coherence": {
+   "applies": true,
+   "consistent": false,
+   "note": "The top inset repeats the plaza scene with the couple, but the photographer and camera are absent."
+  },
+  "bubbles": [],
+  "neighbour": {
+   "best": "Can you take a photo of us?",
+   "runner_up": "the camera / photograph noun cards",
+   "margin": "clear"
+  },
+  "neighbour_options": [
+   "Can you help me? (A2-0383)",
+   "the camera / photograph noun cards",
+   "Can you take a photo of us?"
+  ],
+  "fit": {
+   "fit": "yes",
+   "cue_visible": true,
+   "stray_acts": [],
+   "speakers": {
+    "look_at_each_other": false,
+    "anyone_at_viewer": false,
+    "note": "The man looks toward the photographer/camera, the photographer looks down at the camera, and the woman looks toward the man; nobody looks at the viewer."
+   },
+   "panels": null,
+   "limbs_ok": true,
+   "limbs_note": "",
+   "props_ok": true,
+   "props_note": ""
+  }
+ }
+}

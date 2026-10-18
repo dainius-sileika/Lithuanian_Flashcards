@@ -1,0 +1,65 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+A2-1897,noriu gerti,PASS,,,hot,,thirsty (I am thirsty),yes
+A2-1934,skauda pilvą,FAIL,"GAZE: speakers do not look at each other (The woman looks at the man, while the man looks downward.)",,stomachache,,stomach ache,yes
+A2-1935,skauda galvą,FAIL,"GAZE: speakers do not look at each other (The man looks toward the woman, while the woman has her eyes shut.)",,headache,,headache,yes
+A2-1946,Man nesvarbu / Neprieštarauju,WARN,,"NEIGHBOUR TEST: reads as ""I don't know (A2-0373, likely a shrug too — here smiling, two offered things)"" (margin slight) | stray act: a pointing finger",coffee or tea,,"I don't know (A2-0373, likely a shrug too — here smiling, two offered things)",yes
+A2-1983,Čia (yra) mano draugas. / Susipažinkite — tai…,PASS,,,hat,,This is… (introducing someone),yes
+A2-1984,Kuo galiu padėti?,PASS,,,paint shop,,Can I help you? / How can I help?,yes
+A2-1985,Eime į kavinę! / Gal eikime į kavinę?,PASS,,,coffee shop,,Let's go… / Shall we…?,yes
+A2-1986,Susitikime šeštą. / Gal susitinkam rytoj?,FAIL,"NEIGHBOUR TEST: reads as 'What time is it? (A2-0379, asked of a stranger)' (margin clear)",,time,,"What time is it? (A2-0379, asked of a stranger)",yes
+A2-1987,"Ačiū, ne.",PASS,,,tea,,"No, thank you (declining)",yes
+A2-1988,"Deja, negaliu.",PASS,,,receive a letter,,Unfortunately I can't (declining an invitation),yes
+A2-1989,Ar nori arbatos? / Ar norite arbatos?,PASS,,,tea,,Would you like…? (offering),yes
+A2-1990,Man nepatinka…,WARN,,stray act: a raised palm,I don't like fish.,,I don't like…,yes
+A2-1991,Man labiau patinka arbata.,FAIL,"BUBBLE/FLOATING SYMBOL: {'type': 'arrow', 'text': '←'} | BUBBLE/FLOATING SYMBOL: {'type': 'arrow', 'text': '→'}",,pass,,I prefer… / I like … more,yes
+A2-1992,Ar tau patinka…? / Ar jums patinka…?,WARN,,NEIGHBOUR TEST: reads as 'Bon appétit (A2-0889)' (margin slight),taste the soup,,Bon appétit (A2-0889),yes
+A2-1993,Ar galima?,WARN,,stray act: a raised palm,chair,,May I? / Is it allowed?,yes
+A2-1994,Galima. / Prašom.,PASS,,,chair,,"Sit down, please",yes
+A2-1995,"Kaip rašoma? / Paraidžiui, prašau.",WARN,,"NEIGHBOUR TEST: reads as 'Write it down, please (A2-0903, two panels)' (margin slight)",fill out a form,,"Write it down, please (A2-0903, two panels)",yes
+A2-1996,Ar supranti? / Ar suprantate?,FAIL,"NEIGHBOUR TEST: reads as ""I don't understand (A2-0371)"" (margin clear)",,thinking,,I don't understand (A2-0371),yes
+A2-1997,Ar galėčiau kalbėti su Jonu?,FAIL,"CONTINUITY: same_people, same_background (The left panel shows the man on the phone, while the woman in the separate stairwell panel calls upstairs.)","NEIGHBOUR TEST: reads as 'hello on the phone (A2-1171, lone woman lifting the receiver)' (margin slight)",telephone,,"hello on the phone (A2-1171, lone woman lifting the receiver)",yes
+A2-1998,Kas skambina?,PASS,,,telephone,,Who's calling? (phone),yes
+A2-1999,Palaukite minutėlę.,PASS,,,hotel receptionist,,Hold on a moment (phone),yes
+A2-2000,Jūs ne ten pataikėte.,WARN,,stray act: raised palms,telephone,,Wrong number,yes
+A2-2001,Koks tavo / jūsų telefono numeris?,WARN,,stray act: a pointing finger,phone number,,What is your phone number?,yes
+A2-2002,Koks jūsų adresas?,PASS,,,seven,7 | 7,What is your address?,yes
+A2-2003,Man šalta. / Man karšta.,FAIL,"CONTINUITY: same_people, same_positions, same_background, props_consistent (The left panel shows a bundled woman hugging herself indoors; the right shows a man fanning himself with a cap outdoors.)",,cold and hot,,I'm cold / I'm hot,yes
+A2-2004,Pavargau.,FAIL,"GAZE: speakers do not look at each other (The standing man looks toward the seated man, while the seated man looks downward with closed or lowered eyes.)",,tired,,I'm tired,yes
+A2-2005,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,PASS,,,point,,On the right / turn right / turn left,yes
+A2-2006,Ar toli? / Netoli.,PASS,,,a little,,Is it far? / Not far,yes
+A2-2008,Dar ko nors?,PASS,,,vegetable market,,Anything else?,yes
+A2-2009,"Viskas, ačiū.",WARN,,caption fit: nearly | cue not visible: the purse snapped shut and the nod,buying groceries,,"That's all, thanks",nearly
+A2-2010,Grąžos nereikia.,PASS,,,taxi fare,,Keep the change,yes
+A2-2011,Kur galiu nusipirkti…?,PASS,,,coin,,Where can I buy…?,yes
+A2-2013,"Atsiprašau, kad vėluoju.",PASS,,,arrive late,12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11,I'm late / sorry I'm late,yes
+A2-2014,Nesijaudink. / Nesijaudinkite.,PASS,,,comfort,,Don't worry,yes
+A2-2015,Kaip gaila!,WARN,,Large blank bands obscure parts of the ballet poster images.,ballet,,What a pity!,yes
+A2-2016,Kas atsitiko?,PASS,,,hurt knee,,What's the matter? / What happened?,yes
+A2-2017,Linksmų Velykų!,PASS,,,Easter,,Happy holidays / Happy Easter,yes
+A2-2018,Ir jums! / Ir tau!,PASS,,,hello,,Goodbye,yes
+A2-2019,Iki greito! / Iki vėliau!,PASS,,,two,,See you tomorrow (A2-0893),yes
+A2-2021,"Gerai, sutarta.",PASS,,,handshake,,"Good idea / OK, agreed",yes
+A2-2022,Leiskite prisistatyti.,WARN,,"NEIGHBOUR TEST: reads as 'My name is… (A2-0367, A2-0910 — check their stagings' (margin slight)",introduce oneself,,"My name is… (A2-0367, A2-0910 — check their stagings",yes
+A2-2023,"Atsiprašau, ar čia laisva?",PASS,,,luggage,9,"Excuse me, is this seat free?",yes
+A2-2024,Norėčiau sumokėti.,PASS,,,money,,I'd like to pay,yes
+A2-2025,Turiu rezervaciją.,WARN,,stray act: a pointing finger,key,,I have a reservation,yes
+A2-2026,"Vieną bilietą į Kauną, prašau.",PASS,,,buy a ticket,,"One ticket to Kaunas, please",yes
+A2-2027,Kuris peronas?,PASS,,,ticket,,Which platform?,yes
+A2-2028,Ar šis autobusas važiuoja į centrą?,PASS,,,boarding a bus,,Does this bus go to…?,yes
+A2-2029,"Sustokite čia, prašau.",FAIL,NEIGHBOUR TEST: reads as 'Go straight ahead (A2-0959)' (margin clear),,taxi,,Go straight ahead (A2-0959),yes
+A2-2030,Man reikia gydytojo. / Kur vaistinė?,PASS,,,pharmacy,,I need a doctor / pharmacy,yes
+A2-2031,Karščiuoju. / Peršalau.,PASS,,,fever,,I have a temperature / a cold,yes
+A2-2032,Gerkite du kartus per dieną.,PASS,,,twice a day,,Take this twice a day (pharmacy),yes
+A2-2033,Gero poilsio! / Smagiai praleisti laiką!,WARN,,"NEIGHBOUR TEST: reads as 'Have a good journey (A2-0895, now the conductor and the suitcase at a train)' (margin slight)",camping trip,,"Have a good journey (A2-0895, now the conductor and the suitcase at a train)",yes
+A2-2034,"Tik žiūriu, ačiū.",PASS,,,coat,,"No, thank you",yes
+A2-2035,Ar galiu pasimatuoti?,PASS,,,fitting room,,Can I try it on?,yes
+A2-2036,Per didelis. / Per mažas.,PASS,,,sleeve,,It's too big / too small,yes
+A2-2037,Ar turite kitos spalvos? / kito dydžio?,PASS,,,sweater,,Do you have it in another colour / size?,yes
+A2-2038,"Man sriubos, prašau.",PASS,,,menu,,I'll have the soup (ordering),yes
+A2-2039,Ar galėtume gauti meniu?,WARN,,stray act: a pointing finger,menu,,Could we have the menu?,yes
+A2-2040,Ar aptarnavimas įskaičiuotas?,PASS,,,the bill,,Is service included?,yes
+A2-2041,Buvo labai skanu.,PASS,,,full,,It was delicious,yes
+A2-2042,Ar galite mus nufotografuoti?,FAIL,CONTINUITY: The inset repeats the couple and church scene but omits the photographer and camera interaction visible in the main scene.,,camera,,Can you take a photo of us?,yes
+A2-2043,Kiek laiko užtrunka?,PASS,,,watch,,How long does it take?,yes
+A2-2044,Koks oras?,PASS,,,umbrella,,What's the weather like?,yes
+A2-2045,Su vardadieniu!,PASS,,,give flowers,,Happy name day,yes

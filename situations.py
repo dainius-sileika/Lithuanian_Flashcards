@@ -2147,7 +2147,1118 @@ SITUATIONS = {'Yes / no': {'ids': [],
                         'row above)',
               'note': '',
               'source_file': 'deck_builder.py NOUN_STAGING',
-              'gaze': 'default'}}
+              'gaze': 'default'},
+ 'thirsty (I am thirsty)': {'ids': ['A2-1897'],
+                            'lithuanian': 'noriu gerti',
+                            'format': 'situation',
+                            'scene': 'a hayfield in July; a sweating man in a shirt open at the neck has '
+                                     'stopped raking and wipes his brow with his LEFT forearm while looking '
+                                     'at a stoppered water bottle lying in the shade of a hay cart ten paces '
+                                     'away; his tongue touches his dry lips; a woman on the cart looks at '
+                                     'him. Insets: the bottle in the shade; a dog panting under the cart',
+                            'cue': 'the look at the bottle out of reach, the sweat, the dry lips',
+                            'confusables': ['I need water (A2-0919, now a steaming radiator and a canister)',
+                                            'I want to eat (A2-0916)'],
+                            'merge_with': '',
+                            'render': 'yes',
+                            'note': '',
+                            'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                            'gaze': 'default'},
+ 'stomach ache': {'ids': ['A2-1934'],
+                  'lithuanian': 'skauda pilvą',
+                  'format': 'situation',
+                  'scene': 'a kitchen; a man bent double on a chair, both arms wrapped round his stomach, '
+                           'face screwed up; his wife stands beside him with her RIGHT hand on his shoulder, '
+                           'looking at his face; a half-eaten plate of mushrooms on the table. Insets: a '
+                           'hot-water bottle; a cup of herbal tea',
+                  'cue': 'both arms round the belly, the bent back',
+                  'confusables': ['It hurts here (A2-0962, a finger on one spot)', 'headache (A2-1935)'],
+                  'merge_with': '',
+                  'render': 'yes',
+                  'note': '',
+                  'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                  'gaze': 'conversation'},
+ 'headache': {'ids': ['A2-1935'],
+              'lithuanian': 'skauda galvą',
+              'format': 'situation',
+              'scene': 'an office; a woman at a desk pressing the fingertips of both hands to her temples, '
+                       'eyes shut, papers pushed aside; a colleague leaning in from the next desk looks at '
+                       'her and holds out a glass of water. Insets: a strip of tablets; the desk lamp '
+                       'switched off',
+              'cue': 'both hands at the temples, eyes shut',
+              'confusables': ['stomach ache (A2-1934)', "I don't feel well (A2-0961)"],
+              'merge_with': '',
+              'render': 'yes',
+              'note': '',
+              'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+              'gaze': 'conversation'},
+ 'to spell (How do you spell it?)': {'ids': ['A2-1944'],
+                                     'lithuanian': 'Kaip rašoma?',
+                                     'format': 'situation',
+                                     'scene': 'MERGE with A2-1995 (same phrase, same scene); if kept, render '
+                                              '1995 only',
+                                     'cue': '—',
+                                     'confusables': ['A2-1995 is the same phrase'],
+                                     'merge_with': 'A2-1995',
+                                     'render': 'no (merge)',
+                                     'note': '',
+                                     'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                     'gaze': 'conversation'},
+ "to mind (I don't mind)": {'ids': ['A2-1946'],
+                            'lithuanian': 'Man nesvarbu / Neprieštarauju',
+                            'format': 'situation',
+                            'scene': 'a café counter; the waitress holds up two cups, a tall glass of tea in '
+                                     'her LEFT hand and a small coffee cup in her RIGHT, looking at the '
+                                     'customer; the customer, a young woman, gives a pleasant one-shoulder '
+                                     'shrug with both palms turned up and smiles at her. Insets: the two '
+                                     'cups side by side; a coin spun on a table',
+                            'cue': 'the easy shrug, both palms up, two equal choices',
+                            'confusables': ['I prefer… (A2-1991, one cup chosen)',
+                                            "I don't know (A2-0373, likely a shrug too — here smiling, two "
+                                            'offered things)'],
+                            'merge_with': '',
+                            'render': 'yes',
+                            'note': '',
+                            'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                            'gaze': 'conversation'},
+ 'would prefer; prefer': {'ids': ['A2-1958'],
+                          'lithuanian': 'labiau patinka (man labiau patinka)',
+                          'format': 'situation',
+                          'scene': 'MERGE with A2-1991 (same meaning, same picture); if kept, render 1991 '
+                                   'only',
+                          'cue': '—',
+                          'confusables': ['A2-1991'],
+                          'merge_with': 'A2-1991',
+                          'render': 'no (merge)',
+                          'note': '',
+                          'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                          'gaze': 'conversation'},
+ 'This is… (introducing someone)': {'ids': ['A2-1983'],
+                                    'lithuanian': 'Čia (yra) mano draugas. / Susipažinkite — tai…',
+                                    'format': 'situation',
+                                    'scene': 'a living room; a host stands beside a friend he has just '
+                                             'brought in and presents him to a seated couple with his RIGHT '
+                                             "palm open toward the friend's chest; the friend holds his cap "
+                                             'in both hands and looks at the couple; the couple look at the '
+                                             "friend; nobody shakes hands. Insets: the friend's cap in his "
+                                             'hands; two cups being set out',
+                                    'cue': 'the open palm toward the newcomer, no handshake',
+                                    'confusables': ['Nice to meet you (A2-0363, the handshake)',
+                                                    'to get acquainted (A2-1197, dog-walkers)',
+                                                    'Let me introduce myself (A2-2022, hand on own chest)'],
+                                    'merge_with': '',
+                                    'render': 'yes',
+                                    'note': '',
+                                    'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                    'gaze': 'conversation'},
+ 'Can I help you? / How can I help?': {'ids': ['A2-1984'],
+                                       'lithuanian': 'Kuo galiu padėti?',
+                                       'format': 'situation',
+                                       'scene': 'a hardware shop; a customer studies a shelf of tins, back '
+                                                'half-turned; the shop assistant in a grey work coat has '
+                                                'come up beside her and inclines his head toward her with '
+                                                'his RIGHT hand open toward the shelf, looking at her face; '
+                                                'she turns her head to him. Insets: the shelf of tins; a '
+                                                'paper bag being folded',
+                                       'cue': 'the assistant approaching with an open hand, the customer '
+                                              'still browsing',
+                                       'confusables': ['Can you help me? (A2-0383, the customer asks)',
+                                                       "I'm just looking (A2-2034, the customer's palm "
+                                                       'raised to the assistant — the answer to this card)'],
+                                       'merge_with': '',
+                                       'render': 'yes',
+                                       'note': '',
+                                       'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                       'gaze': 'conversation'},
+ "Let's go… / Shall we…?": {'ids': ['A2-1985'],
+                            'lithuanian': 'Eime į kavinę! / Gal eikime į kavinę?',
+                            'format': 'situation',
+                            'scene': 'a town pavement; a man has half-turned toward a café door with an '
+                                     'awning and beckons his friend with his RIGHT hand, thumb over his '
+                                     'shoulder at the door, eyebrows up; the friend, hands in his pockets, '
+                                     'looks at him and grins. Insets: the café door with its awning; two '
+                                     'cups on a saucer',
+                            'cue': 'the thumb over the shoulder at the door, the half-turn',
+                            'confusables': ['Where are you going? (A2-0926)',
+                                            'I would like coffee (A2-0917)'],
+                            'merge_with': '',
+                            'render': 'yes',
+                            'note': '',
+                            'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                            'gaze': 'conversation'},
+ 'Shall we meet at…? (arranging)': {'ids': ['A2-1986'],
+                                    'lithuanian': 'Susitikime šeštą. / Gal susitinkam rytoj?',
+                                    'format': 'situation',
+                                    'scene': 'a square below a tower clock; two women parting, one taps the '
+                                             'face of her wristwatch with her RIGHT index finger and looks '
+                                             'at the other; the other nods, looking at her; the tower clock '
+                                             'shows six. Insets: the wristwatch face; the tower clock',
+                                    'cue': 'the finger tapping the watch, the clock behind',
+                                    'confusables': ['See you tomorrow (A2-0893 — check its staging for a '
+                                                    'watch)',
+                                                    'What time is it? (A2-0379, asked of a stranger)'],
+                                    'merge_with': '',
+                                    'render': 'yes',
+                                    'note': '',
+                                    'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                    'gaze': 'conversation'},
+ 'No, thank you (declining)': {'ids': ['A2-1987'],
+                               'lithuanian': 'Ačiū, ne.',
+                               'format': 'situation',
+                               'scene': "a sitting room; the host lifts a teapot over a guest's cup; the "
+                                        'guest raises his RIGHT hand flat over the cup, palm down, and '
+                                        'shakes his head slightly with a smile, looking at the host; the '
+                                        'host looks at him. Insets: the flat hand over the cup close; the '
+                                        'teapot set down',
+                               'cue': 'the flat hand covering the cup',
+                               'confusables': ['Would you like…? (A2-1989, the same scene a moment earlier: '
+                                               'the cup held out)',
+                                               'Thank you (A2-0358)'],
+                               'merge_with': '',
+                               'render': 'yes',
+                               'note': '',
+                               'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                               'gaze': 'conversation'},
+ "Unfortunately I can't (declining an invitation)": {'ids': ['A2-1988'],
+                                                     'lithuanian': 'Deja, negaliu.',
+                                                     'format': 'situation',
+                                                     'scene': "a flat's doorway; a neighbour holds out a "
+                                                              'folded blank invitation card; the woman at '
+                                                              'the door shakes her head slowly with a '
+                                                              'regretful smile, her RIGHT hand on her chest, '
+                                                              'her LEFT holding a mop (she is in the middle '
+                                                              'of housework), looking at the neighbour. '
+                                                              'Insets: the folded card; a wall calendar with '
+                                                              'one day ringed, no lettering',
+                                                     'cue': 'the regretful smile with the hand on the chest '
+                                                            "and the mop: wants to, can't",
+                                                     'confusables': ['No, thank you (A2-1987, the covered '
+                                                                     'cup)',
+                                                                     "I don't have time (A2-0915)"],
+                                                     'merge_with': '',
+                                                     'render': 'yes',
+                                                     'note': '',
+                                                     'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                                     'gaze': 'conversation'},
+ 'Would you like…? (offering)': {'ids': ['A2-1989'],
+                                 'lithuanian': 'Ar nori arbatos? / Ar norite arbatos?',
+                                 'format': 'situation',
+                                 'scene': 'the same sitting room as A2-1987; the host holds out a full cup '
+                                          'on its saucer in both hands toward a seated guest, eyebrows '
+                                          'raised, looking at him; the guest looks at the cup. Insets: the '
+                                          'teapot steaming; a plate of biscuits',
+                                 'cue': 'the offered cup in both hands, eyebrows up',
+                                 'confusables': ['No, thank you (A2-1987)',
+                                                 'Here you are (A2-0885, a parcel across a counter)'],
+                                 'merge_with': '',
+                                 'render': 'yes',
+                                 'note': '',
+                                 'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                 'gaze': 'conversation'},
+ "I don't like…": {'ids': ['A2-1990'],
+                   'lithuanian': 'Man nepatinka…',
+                   'format': 'situation',
+                   'scene': 'a dinner table; a boy of ten pushes a plate of boiled fish away with both '
+                            'hands, nose wrinkled, mouth turned down, looking at his mother; she stands with '
+                            'the serving dish and looks at him. Insets: the fish on the plate; a fork laid '
+                            'down',
+                   'cue': 'the plate pushed away, the wrinkled nose',
+                   'confusables': ["Do you like…? (A2-1992, the host's raised eyebrows while the guest "
+                                   'tastes)',
+                                   'I liked it! (A2-1183)'],
+                   'merge_with': '',
+                   'render': 'yes',
+                   'note': '',
+                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                   'gaze': 'conversation'},
+ 'I prefer… / I like … more': {'ids': ['A2-1991'],
+                               'lithuanian': 'Man labiau patinka arbata.',
+                               'format': 'situation',
+                               'scene': 'a kitchen table; a tray with a cup of coffee and a glass of tea; a '
+                                        'woman draws the glass of tea toward herself with her RIGHT hand and '
+                                        'pushes the coffee an inch away with her LEFT, looking at her host '
+                                        'with a smile; the host looks at her. Insets: the glass of tea '
+                                        'close; the coffee cup left on the tray',
+                               'cue': 'one drawn in, one pushed away',
+                               'confusables': ["I don't mind (A2-1946, shrug at two cups)",
+                                               'I would like coffee (A2-0917)'],
+                               'merge_with': '',
+                               'render': 'yes',
+                               'note': '',
+                               'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                               'gaze': 'conversation'},
+ 'Do you like…?': {'ids': ['A2-1992'],
+                   'lithuanian': 'Ar tau patinka…? / Ar jums patinka…?',
+                   'format': 'situation',
+                   'scene': 'a kitchen; a guest tastes soup from a spoon, eyes to the ceiling, thinking; the '
+                            'cook stands with the ladle, eyebrows raised, head tilted, looking at the '
+                            "guest's face. Insets: the spoon; the pot on the stove",
+                   'cue': "the cook's raised eyebrows watching the taster",
+                   'confusables': ["I don't like… (A2-1990)", 'Bon appétit (A2-0889)'],
+                   'merge_with': '',
+                   'render': 'yes',
+                   'note': '',
+                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                   'gaze': 'conversation'},
+ 'May I? / Is it allowed?': {'ids': ['A2-1993'],
+                             'lithuanian': 'Ar galima?',
+                             'format': 'situation',
+                             'scene': 'a crowded café; a man stands with his RIGHT hand on the back of a '
+                                      'free chair at a table where a stranger sits reading, his head '
+                                      'inclined in a question, looking at the stranger; the stranger looks '
+                                      'up at him. Insets: the free chair; a hand half-raised in a question',
+                             'cue': 'the hand on the chair back and the questioning tilt',
+                             'confusables': ['Yes, you may (A2-1994, the next moment)',
+                                             'Is this seat free? (A2-2023, a train seat with a bag on it)'],
+                             'merge_with': '',
+                             'render': 'yes',
+                             'note': '',
+                             'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                             'gaze': 'conversation'},
+ 'Yes, you may. / Go ahead.': {'ids': ['A2-1994'],
+                               'lithuanian': 'Galima. / Prašom.',
+                               'format': 'situation',
+                               'scene': 'the same café table as A2-1993, same chair, same reading stranger: '
+                                        'he nods and turns his RIGHT hand palm up toward the free chair, '
+                                        'looking at the standing man, who begins to pull it out. Insets: the '
+                                        'open palm toward the chair; the newspaper folded aside',
+                               'cue': 'the nod and the palm turned to the chair',
+                               'confusables': ['May I? (A2-1993)',
+                                               'Please / Prašau (A2-0357, now a held door for a pram)',
+                                               'Sit down, please (A2-1166)'],
+                               'merge_with': '',
+                               'render': 'yes',
+                               'note': '',
+                               'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                               'gaze': 'conversation'},
+ 'How do you spell it? / Spell it, please': {'ids': ['A2-1995'],
+                                             'lithuanian': 'Kaip rašoma? / Paraidžiui, prašau.',
+                                             'format': 'situation',
+                                             'scene': 'a registry counter; a clerk with her pen stopped over '
+                                                      'a printed form looks up at a foreign visitor; the '
+                                                      'visitor, passport in his LEFT hand, counts off '
+                                                      'letters on the fingers of his RIGHT hand, one finger '
+                                                      'at a time, looking at her; the form stays blank. '
+                                                      'Insets: the pen over the blank line; the passport '
+                                                      'closed',
+                                             'cue': 'letters counted off on the fingers',
+                                             'confusables': ['Write it down, please (A2-0903, two panels)',
+                                                             'What is your name? (A2-0366)'],
+                                             'merge_with': '',
+                                             'render': 'yes',
+                                             'note': '',
+                                             'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                             'gaze': 'conversation'},
+ 'Do you understand? / Is that clear?': {'ids': ['A2-1996'],
+                                         'lithuanian': 'Ar supranti? / Ar suprantate?',
+                                         'format': 'situation',
+                                         'scene': 'a classroom; the teacher has paused at the board, chalk '
+                                                  'in her RIGHT hand, and turned to a pupil in the front row '
+                                                  'with her eyebrows raised; the pupil frowns at the board, '
+                                                  'chin on his fist; the other pupils look at the teacher. '
+                                                  'Insets: a plain geometry figure on the board, no '
+                                                  "lettering; the pupil's furrowed brow close",
+                                         'cue': "the teacher's pause and raised eyebrows, the pupil's frown",
+                                         'confusables': ["I don't understand (A2-0371)",
+                                                         'I understand (A2-0372)'],
+                                         'merge_with': '',
+                                         'render': 'yes',
+                                         'note': '',
+                                         'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                         'gaze': 'conversation'},
+ 'Could I speak to…? (phone)': {'ids': ['A2-1997'],
+                                'lithuanian': 'Ar galėčiau kalbėti su Jonu?',
+                                'format': 'situation_2',
+                                'scene': 'LEFT: a man at a hallway telephone, receiver to his ear, his free '
+                                         'hand turning his cap, eyes into the middle distance. RIGHT: '
+                                         'another hallway; a woman holds the receiver away from her ear and '
+                                         'calls up a staircase with her LEFT hand cupped at her mouth; the '
+                                         'same moment, two places, each panel its own room',
+                                'cue': 'the two hallways: the asker and the caller-up-the-stairs',
+                                'confusables': ["Who's calling? (A2-1998, hand over the mouthpiece)",
+                                                'hello on the phone (A2-1171, lone woman lifting the '
+                                                'receiver)'],
+                                'merge_with': '',
+                                'render': 'yes',
+                                'note': '',
+                                'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                'gaze': 'default'},
+ "Who's calling? (phone)": {'ids': ['A2-1998'],
+                            'lithuanian': 'Kas skambina?',
+                            'format': 'situation',
+                            'scene': 'a hallway; a woman holds the receiver with her RIGHT hand and covers '
+                                     'the mouthpiece with her LEFT palm, head turned to a man in the '
+                                     'sitting-room doorway, eyebrows up; he looks at her and shrugs. Insets: '
+                                     'the covered mouthpiece close; the man in the doorway',
+                            'cue': 'the palm over the mouthpiece and the head turned away from the phone',
+                            'confusables': ['Could I speak to…? (A2-1997)', 'Hold on a moment (A2-1999)'],
+                            'merge_with': '',
+                            'render': 'yes',
+                            'note': '',
+                            'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                            'gaze': 'conversation'},
+ 'Hold on a moment (phone)': {'ids': ['A2-1999'],
+                              'lithuanian': 'Palaukite minutėlę.',
+                              'format': 'situation',
+                              'scene': 'a hotel reception; the receptionist holds the receiver lowered to '
+                                       'her collarbone with her LEFT hand and raises the index finger of her '
+                                       'RIGHT hand to a guest who has just come up to the desk, looking at '
+                                       'him; he waits, hat in hand. Insets: the raised finger close; the '
+                                       'desk bell',
+                              'cue': 'the receiver lowered and one finger up to a second person',
+                              'confusables': ['Just a moment (A2-0884, no telephone — check its staging)',
+                                              "Who's calling? (A2-1998)"],
+                              'merge_with': '',
+                              'render': 'yes',
+                              'note': '',
+                              'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                              'gaze': 'conversation'},
+ 'Wrong number': {'ids': ['A2-2000'],
+                  'lithuanian': 'Jūs ne ten pataikėte.',
+                  'format': 'situation',
+                  'scene': "a kitchen; a man in an apron holds the receiver a hand's width from his ear and "
+                           'looks at it with a puzzled frown, his other hand open and empty; nobody else in '
+                           'the room. Insets: the telephone on the wall; a shrug of one shoulder',
+                  'cue': 'the receiver held away and looked at',
+                  'confusables': ['hello on the phone (A2-1171, receiver to the ear, mouth opening)',
+                                  'Pardon? (A2-2020)'],
+                  'merge_with': '',
+                  'render': 'yes',
+                  'note': '',
+                  'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                  'gaze': 'default'},
+ 'What is your phone number?': {'ids': ['A2-2001'],
+                                'lithuanian': 'Koks tavo / jūsų telefono numeris?',
+                                'format': 'situation',
+                                'scene': 'a park bench; a young man holds a small notepad and pencil ready, '
+                                         'pencil tip on the page, looking at the young woman beside him; she '
+                                         'looks at him and counts something off on her fingers; the pad is '
+                                         'turned so its page is edge-on and blank; a telephone kiosk behind '
+                                         'them. Insets: the kiosk; the pencil and pad closed',
+                                'cue': 'pencil poised on a blank pad, the kiosk behind',
+                                'confusables': ['What is your address? (A2-2002, house number plate)',
+                                                'How old are you? (A2-1157, fingers counted — here a pad and '
+                                                'a kiosk)'],
+                                'merge_with': '',
+                                'render': 'yes',
+                                'note': '',
+                                'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                'gaze': 'conversation'},
+ 'What is your address?': {'ids': ['A2-2002'],
+                           'lithuanian': 'Koks jūsų adresas?',
+                           'format': 'situation',
+                           'scene': 'a village street; a postman with a parcel under his LEFT arm asks an '
+                                    'old woman at her gate; she points with her RIGHT hand at the enamel '
+                                    'number plate on her house wall, which reads the numeral declared in '
+                                    'card_text; he looks where she points. Insets: the number plate close; '
+                                    'the parcel',
+                           'cue': 'the finger at the house-number plate',
+                           'confusables': ['Where is…? (A2-0378)',
+                                           'Where do you live? (A2-1159 — check its staging)'],
+                           'merge_with': '',
+                           'render': 'yes',
+                           'note': '',
+                           'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                           'gaze': 'conversation'},
+ "I'm cold / I'm hot": {'ids': ['A2-2003'],
+                        'lithuanian': 'Man šalta. / Man karšta.',
+                        'format': 'situation_2',
+                        'scene': 'LEFT: a woman indoors by a frosted window hugging herself, shoulders up, '
+                                 'breath faintly visible, a cold stove behind. RIGHT: a man on a sunlit '
+                                 'bench fanning his face with his cap, collar open, a glass of water beside '
+                                 'him; two different people, two places, each panel complete',
+                        'cue': 'the hug and the fanning cap, side by side',
+                        'confusables': ['It is cold today (A2-0923, the weather, not the body)',
+                                        'hot/cold adjective cards'],
+                        'merge_with': '',
+                        'render': 'yes',
+                        'note': '',
+                        'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                        'gaze': 'default'},
+ "I'm tired": {'ids': ['A2-2004'],
+               'lithuanian': 'Pavargau.',
+               'format': 'situation',
+               'scene': 'a building site at the end of the day; a worker sits slumped on a plank bench, legs '
+                        'out, cap pushed back, eyes half shut, both arms hanging, spade leaning beside him; '
+                        'a mate standing by looks at him and offers a flask. Insets: the spade in the earth; '
+                        'boots unlaced',
+               'cue': 'the slump, the hanging arms',
+               'confusables': ['to go to bed (A2-1180)', 'Everything is fine (A2-1161)'],
+               'merge_with': '',
+               'render': 'yes',
+               'note': '',
+               'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+               'gaze': 'conversation'},
+ 'On the right / turn right / turn left': {'ids': ['A2-2005'],
+                                           'lithuanian': 'Dešinėje. / Sukite į dešinę. / Sukite į kairę.',
+                                           'format': 'situation',
+                                           'scene': 'a street corner; a passer-by in a cap points with his '
+                                                    'whole RIGHT arm straight to the right down the side '
+                                                    'street, looking at a visitor; the visitor holds a '
+                                                    'lowered folded map and looks down the street he points '
+                                                    'to; a blank street-sign post on the corner. Insets: the '
+                                                    'pointing arm close; the corner with its sign post',
+                                           'cue': 'the whole arm to the right at a corner',
+                                           'confusables': ["It's on the left (A2-0958 — the mirror",
+                                                           "keep 0958's pointer on the LEFT and this one on "
+                                                           'the RIGHT)',
+                                                           'Go straight ahead (A2-0959)'],
+                                           'merge_with': '',
+                                           'render': 'yes',
+                                           'note': '',
+                                           'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                           'gaze': 'conversation'},
+ 'Is it far? / Not far': {'ids': ['A2-2006'],
+                          'lithuanian': 'Ar toli? / Netoli.',
+                          'format': 'situation',
+                          'scene': 'a village road; a visitor with a suitcase asks a man on a bicycle; the '
+                                   'cyclist holds up his RIGHT hand with finger and thumb a centimetre apart '
+                                   'and nods toward the church tower a field away, looking at the visitor; '
+                                   'the visitor looks at the gap between his fingers. Insets: the finger and '
+                                   'thumb close; the tower across the field',
+                          'cue': 'the finger-and-thumb gap, the tower within sight',
+                          'confusables': ['How do I get to…? (A2-0957, map)', 'Go straight ahead (A2-0959)'],
+                          'merge_with': '',
+                          'render': 'yes',
+                          'note': '',
+                          'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                          'gaze': 'conversation'},
+ 'One coffee, please (ordering)': {'ids': ['A2-2007'],
+                                   'lithuanian': 'Vieną kavą, prašau.',
+                                   'format': 'situation',
+                                   'scene': 'MERGE CANDIDATE with A2-0917 Norėčiau kavos (same café order). '
+                                            'If kept: a café counter; a customer holds up ONE finger of his '
+                                            'RIGHT hand to the barista, looking at her; she looks at him '
+                                            'while a cup fills under the machine spout. Insets: the single '
+                                            'raised finger; the cup under the spout',
+                                   'cue': 'the one finger at the counter',
+                                   'confusables': ['I would like coffee (A2-0917)',
+                                                   'One ticket to Kaunas (A2-2026, one finger at a ticket '
+                                                   'window — different window, a train behind)'],
+                                   'merge_with': 'A2-0917 (owner decision)',
+                                   'render': 'hold (owner: merge with A2-0917?)',
+                                   'note': '',
+                                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                   'gaze': 'conversation'},
+ 'Anything else?': {'ids': ['A2-2008'],
+                    'lithuanian': 'Dar ko nors?',
+                    'format': 'situation',
+                    'scene': "a market stall; the stallholder, a woman in an apron, has filled a customer's "
+                             'string bag and holds it half-offered in her LEFT hand, her RIGHT hand open '
+                             'palm-up over the piled vegetables, eyebrows raised, looking at the customer; '
+                             'the customer looks at the goods. Insets: the open hand over the goods; the '
+                             'full string bag',
+                    'cue': 'the bag ready and the open hand over the rest',
+                    'confusables': ["That's all, thanks (A2-2009, the next moment)",
+                                    'Do you have…? (A2-1168)'],
+                    'merge_with': '',
+                    'render': 'yes',
+                    'note': '',
+                    'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                    'gaze': 'conversation'},
+ "That's all, thanks": {'ids': ['A2-2009'],
+                        'lithuanian': 'Viskas, ačiū.',
+                        'format': 'situation',
+                        'scene': 'the same stall as A2-2008, same two people, same positions: the customer '
+                                 'closes her purse with both hands and gives a small nod, looking at the '
+                                 'stallholder; the stallholder hands over the bag. Insets: the purse clasp '
+                                 'closing; the bag passing between them',
+                        'cue': 'the purse snapped shut and the nod',
+                        'confusables': ['Anything else? (A2-2008)', 'Thank you (A2-0358)'],
+                        'merge_with': '',
+                        'render': 'yes',
+                        'note': '',
+                        'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                        'gaze': 'conversation'},
+ 'Keep the change': {'ids': ['A2-2010'],
+                     'lithuanian': 'Grąžos nereikia.',
+                     'format': 'situation',
+                     'scene': 'a taxi at a kerb; through the open passenger door the driver, half-turned in '
+                              'his seat, holds out a few coins on his open RIGHT palm; the passenger, '
+                              'already standing on the pavement with his bag, waves them off with his RIGHT '
+                              'hand, palm toward the driver, and smiles at him; the driver looks at him. '
+                              "Insets: the coins on the palm; the taxi's roof sign as a plain blank box",
+                     'cue': 'coins offered and waved off',
+                     'confusables': ['How much does it cost? (A2-0377)',
+                                     'Stop here, please (A2-2029, inside the taxi, pointing at the kerb)'],
+                     'merge_with': '',
+                     'render': 'yes',
+                     'note': '',
+                     'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                     'gaze': 'conversation'},
+ 'Where can I buy…?': {'ids': ['A2-2011'],
+                       'lithuanian': 'Kur galiu nusipirkti…?',
+                       'format': 'situation',
+                       'scene': 'a street kiosk; a visitor holds up a small flat battery between finger and '
+                                'thumb toward the kiosk seller, eyebrows up; the seller leans out and points '
+                                'with his RIGHT arm along the street, looking at her; she looks at the '
+                                'battery. Insets: the battery close; the kiosk window with blank magazines',
+                       'cue': 'a small object held up and an arm pointing away down the street',
+                       'confusables': ['Where can I find…? (A2-0909, two panels)',
+                                       'Is there…? (A2-0382)',
+                                       'Do you have…? (A2-1168)'],
+                       'merge_with': '',
+                       'render': 'yes',
+                       'note': '',
+                       'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                       'gaze': 'conversation'},
+ 'What would you recommend?': {'ids': ['A2-2012'],
+                               'lithuanian': 'Ką rekomenduotumėte?',
+                               'format': 'situation',
+                               'scene': 'MERGE CANDIDATE with A2-0964 Ar galite ką nors rekomenduoti? If '
+                                        'kept: a restaurant; a diner holds the open menu toward the waiter '
+                                        'and looks up at him with a questioning tilt; the waiter bends and '
+                                        'points with his RIGHT index finger to one line of the menu, looking '
+                                        'at the page; the menu lines are plain rules, no lettering. Insets: '
+                                        'the finger on the menu line; a dish on a tray',
+                               'cue': 'the menu turned to the waiter and his finger on a line',
+                               'confusables': ['Can you recommend something? (A2-0964)',
+                                               "I'll have the soup (A2-2038, the diner taps the menu, the "
+                                               'waiter writes)'],
+                               'merge_with': 'A2-0964 (owner decision)',
+                               'render': 'hold (owner: merge with A2-0964?)',
+                               'note': '',
+                               'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                               'gaze': 'conversation'},
+ "I'm late / sorry I'm late": {'ids': ['A2-2013'],
+                               'lithuanian': 'Atsiprašau, kad vėluoju.',
+                               'format': 'situation',
+                               'scene': 'a meeting room; a man hurries in through the door, coat half off '
+                                        'one shoulder, his RIGHT hand raised flat in apology, looking at the '
+                                        'seated people; six people at a long table turn their heads to him; '
+                                        'the wall clock shows a quarter past. Insets: the clock face; the '
+                                        'door still swinging',
+                               'cue': 'the hurried entrance, the raised flat hand, the clock',
+                               'confusables': ["I'm sorry (A2-0881, the boy with the football)",
+                                               'Excuse me (A2-0362, the trolleybus bump)'],
+                               'merge_with': '',
+                               'render': 'yes',
+                               'note': '',
+                               'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                               'gaze': 'conversation'},
+ "Don't worry": {'ids': ['A2-2014'],
+                 'lithuanian': 'Nesijaudink. / Nesijaudinkite.',
+                 'format': 'situation',
+                 'scene': 'a hospital corridor; an anxious young woman sits on a bench twisting a '
+                          "handkerchief; a nurse sits beside her, her RIGHT hand laid over the young woman's "
+                          'hands, looking at her face with a calm smile; the young woman looks at the nurse. '
+                          'Insets: the hands together close; a closed ward door with a round window',
+                 'cue': 'the hand laid over the fretting hands, the calm face',
+                 'confusables': ["it's nothing",
+                                 'never mind (A2-1185)',
+                                 'worried / susirūpinęs (A2-1883, mother at the window)'],
+                 'merge_with': '',
+                 'render': 'yes',
+                 'note': '',
+                 'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                 'gaze': 'conversation'},
+ 'What a pity!': {'ids': ['A2-2015'],
+                  'lithuanian': 'Kaip gaila!',
+                  'format': 'situation',
+                  'scene': 'outside a theatre; a woman in a good coat stands before a poster frame on which '
+                           'a diagonal blank strip has been pasted across a picture of a dancer; she presses '
+                           "her RIGHT hand to her cheek, mouth open in a small 'oh'; her companion beside "
+                           'her looks at her and spreads his hands. Insets: the pasted strip across the '
+                           'poster close; two tickets in a gloved hand',
+                  'cue': 'the hand to the cheek before the cancelled poster',
+                  'confusables': ['a pity / gaila (A2-1150, now the dropped ice cream and the brother)',
+                                  'No way! (A2-1184)'],
+                  'merge_with': '',
+                  'render': 'yes',
+                  'note': '',
+                  'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                  'gaze': 'conversation'},
+ "What's the matter? / What happened?": {'ids': ['A2-2016'],
+                                         'lithuanian': 'Kas atsitiko?',
+                                         'format': 'situation',
+                                         'scene': 'a pavement; a child sits holding a grazed knee, a fallen '
+                                                  'bicycle beside her; a man kneels in front of her on one '
+                                                  'knee, both hands open toward her, head tilted, looking at '
+                                                  'her face; she looks at him with wet eyes. Insets: the '
+                                                  'bicycle on its side; a handkerchief being offered',
+                                         'cue': 'the kneeling man with open hands at the fallen child',
+                                         'confusables': ['I need help (A2-0906)', 'Help! (A2-1181)'],
+                                         'merge_with': '',
+                                         'render': 'yes',
+                                         'note': '',
+                                         'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                         'gaze': 'conversation'},
+ 'Happy holidays / Happy Easter': {'ids': ['A2-2017'],
+                                   'lithuanian': 'Linksmų Velykų!',
+                                   'format': 'situation',
+                                   'scene': 'a family table in spring light; a grandmother hands a painted '
+                                            'egg across the table to a small boy; a dish of painted eggs, a '
+                                            'willow sprig with catkins in a jar, a plaited loaf; both look '
+                                            'at each other. Insets: two children knocking eggs together; the '
+                                            'willow catkins close',
+                                   'cue': 'the painted eggs and the catkin willow',
+                                   'confusables': ['Happy holidays / Su šventėmis (A2-1165, snow, sprig of '
+                                                   'fir, a counter)',
+                                                   'Merry Christmas (A2-1164)'],
+                                   'merge_with': '',
+                                   'render': 'yes',
+                                   'note': '',
+                                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                   'gaze': 'conversation'},
+ 'Same to you': {'ids': ['A2-2018'],
+                 'lithuanian': 'Ir jums! / Ir tau!',
+                 'format': 'situation',
+                 'scene': 'two neighbours parting at a garden gate; the one inside the gate has just spoken '
+                          'and the one outside answers with his RIGHT hand raised open at shoulder height '
+                          'and a broad smile, looking back at him; the first looks at him and raises his own '
+                          'hand; a basket of apples on the gatepost. Insets: the two raised hands close; the '
+                          'apples',
+                 'cue': 'two mirrored raised hands and smiles at a gate',
+                 'confusables': ['Goodbye (A2-0354, one man waving back at a woman on a step) — here both '
+                                 'hands up, both men at the gate, no bag',
+                                 'Have a good weekend (A2-1162)'],
+                 'merge_with': '',
+                 'render': 'yes',
+                 'note': '',
+                 'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                 'gaze': 'conversation'},
+ 'See you soon / later': {'ids': ['A2-2019'],
+                          'lithuanian': 'Iki greito! / Iki vėliau!',
+                          'format': 'situation',
+                          'scene': 'an office at lunchtime; a man leaves through the door with his jacket '
+                                   'slung over his RIGHT shoulder and lifts two fingers of his LEFT hand in '
+                                   'a casual salute to a colleague at a desk, looking at her; she looks up '
+                                   'from her typewriter and nods; a wall clock shows twelve. Insets: the '
+                                   'two-finger salute close; his empty chair with the jacket gone',
+                          'cue': 'the casual two-finger salute, jacket over the shoulder, midday',
+                          'confusables': ['Bye (A2-0356)',
+                                          'See you (A2-0355)',
+                                          'See you tomorrow (A2-0893) — check their gestures and give each a '
+                                          'different hand sign'],
+                          'merge_with': '',
+                          'render': 'yes',
+                          'note': '',
+                          'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                          'gaze': 'conversation'},
+ "Pardon? (didn't hear)": {'ids': ['A2-2020'],
+                           'lithuanian': 'Atsiprašau, ką sakėte?',
+                           'format': 'situation',
+                           'scene': 'a market; an old man leans toward a stallholder with his head turned so '
+                                    'his RIGHT ear is toward her, his RIGHT hand cupped behind that ear, '
+                                    'eyebrows up; the stallholder, a step back behind her boxes, looks at '
+                                    'him with her mouth open mid-word. Insets: the cupped ear close; the '
+                                    "stall's scales",
+                           'cue': 'the head turned ear-first, not the face',
+                           'confusables': ['Could you repeat? (A2-0374, a woman at a telephone kiosk, hand '
+                                           'behind the ear) — the same gesture',
+                                           'if QA reads it as 0374, MERGE and keep 0374'],
+                           'merge_with': '',
+                           'render': 'hold (owner: merge with A2-0374?)',
+                           'note': '',
+                           'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                           'gaze': 'conversation'},
+ 'Good idea / OK, agreed': {'ids': ['A2-2021'],
+                            'lithuanian': 'Gerai, sutarta.',
+                            'format': 'situation',
+                            'scene': 'a farm yard; two farmers shake hands (both RIGHT hands) across a cart '
+                                     'of potato sacks, each with his other hand on the cart rail, both '
+                                     'nodding and looking at each other; a set of scales and a folded '
+                                     'banknote on the sack between them. Insets: the handshake over the '
+                                     'sacks close; the scales',
+                            'cue': 'a handshake over goods and money: a bargain struck',
+                            'confusables': ['Nice to meet you (A2-0363, a handshake with an introducer in a '
+                                            'meeting room) — here no third person, a cart and scales',
+                                            'Of course (A2-0883)'],
+                            'merge_with': '',
+                            'render': 'yes',
+                            'note': '',
+                            'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                            'gaze': 'conversation'},
+ 'Let me introduce myself': {'ids': ['A2-2022'],
+                             'lithuanian': 'Leiskite prisistatyti.',
+                             'format': 'situation',
+                             'scene': 'a conference room; a man has risen from his chair at a long table, '
+                                      'RIGHT hand flat on his chest, LEFT hand on the chair back, looking at '
+                                      'the people across the table; they look at him; a blank name card on '
+                                      'the table before him. Insets: the hand on the chest close; the blank '
+                                      'name card',
+                             'cue': 'standing up at a table with the hand on his own chest',
+                             'confusables': ['My name is… (A2-0367, A2-0910 — check their stagings',
+                                             'if either has a hand on the chest, give this card the '
+                                             'standing-up and the name card)',
+                                             'This is… (A2-1983, palm toward another person)'],
+                             'merge_with': '',
+                             'render': 'yes',
+                             'note': '',
+                             'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                             'gaze': 'conversation'},
+ 'Excuse me, is this seat free?': {'ids': ['A2-2023'],
+                                   'lithuanian': 'Atsiprašau, ar čia laisva?',
+                                   'format': 'situation',
+                                   'scene': 'a train compartment; a woman reads by the window with a handbag '
+                                            'on the seat beside her; a passenger with a small case stands in '
+                                            'the compartment doorway and points with his RIGHT hand at the '
+                                            "bag's seat, eyebrows up, looking at her; she looks up at him. "
+                                            'Insets: the bag on the seat; the luggage rack',
+                                   'cue': 'a train seat with a bag on it, pointed at',
+                                   'confusables': ['May I? (A2-1993, a café chair, hand on its back)',
+                                                   'window seat / aisle seat (A2-1189/1190)'],
+                                   'merge_with': '',
+                                   'render': 'yes',
+                                   'note': '',
+                                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                   'gaze': 'conversation'},
+ "I'd like to pay": {'ids': ['A2-2024'],
+                     'lithuanian': 'Norėčiau sumokėti.',
+                     'format': 'situation',
+                     'scene': 'a grocery counter; a customer sets a wrapped loaf and a bottle on the counter '
+                              'and opens her purse toward the shopkeeper with both hands, looking at him; he '
+                              'reaches for the till. Insets: the open purse close; the till drawer',
+                     'cue': 'the purse opened over the goods at a shop counter',
+                     'confusables': ['The bill, please (A2-0381, a restaurant)',
+                                     'Can I pay by card? (A2-0954)'],
+                     'merge_with': '',
+                     'render': 'yes',
+                     'note': '',
+                     'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                     'gaze': 'conversation'},
+ 'I have a reservation': {'ids': ['A2-2025'],
+                          'lithuanian': 'Turiu rezervaciją.',
+                          'format': 'situation',
+                          'scene': 'a hotel desk; a traveller with a suitcase at her feet rests her RIGHT '
+                                   'hand on the desk and looks at the receptionist; the receptionist runs '
+                                   'his finger down an open ledger of plain ruled lines and looks up at her '
+                                   'with a nod; a row of keys on hooks behind him. Insets: the finger on the '
+                                   'ledger line; a key with a numbered-looking blank tag',
+                          'cue': 'the ledger being checked, the keys behind',
+                          'confusables': ['I would like to book a room (A2-0951)', 'Do you have…? (A2-1168)'],
+                          'merge_with': '',
+                          'render': 'yes',
+                          'note': '',
+                          'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                          'gaze': 'conversation'},
+ 'One ticket to Kaunas, please': {'ids': ['A2-2026'],
+                                  'lithuanian': 'Vieną bilietą į Kauną, prašau.',
+                                  'format': 'situation',
+                                  'scene': 'a station ticket window; a passenger holds up ONE finger of his '
+                                           'RIGHT hand to the clerk behind the glass and looks at her; she '
+                                           'looks at him, hand on the ticket roll; through the hall doors a '
+                                           'green train. Insets: the ticket coming out of the slot; the '
+                                           "clerk's hand on the roll",
+                                  'cue': 'one finger at a ticket window with a train behind',
+                                  'confusables': ['How much does the ticket cost? (A2-0928, two panels, '
+                                                  'money)',
+                                                  'One coffee (A2-2007, if kept)',
+                                                  'Which platform? (A2-2027)'],
+                                  'merge_with': '',
+                                  'render': 'yes',
+                                  'note': '',
+                                  'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                  'gaze': 'conversation'},
+ 'Which platform?': {'ids': ['A2-2027'],
+                     'lithuanian': 'Kuris peronas?',
+                     'format': 'situation',
+                     'scene': 'a station hall; a passenger holding a ticket looks between two '
+                              'numbered-looking blank platform signs hanging over two arches, and asks a '
+                              'porter, who points with his RIGHT arm through the left arch, looking at her; '
+                              'a departures board as a blank panel. Insets: the two platform arches; the '
+                              'ticket in her hand',
+                     'cue': "two platform arches and the porter's arm choosing one",
+                     'confusables': ['Where do I have to change? (A2-0955, now aboard with a map)',
+                                     'Where is…? (A2-0378)'],
+                     'merge_with': '',
+                     'render': 'yes',
+                     'note': '',
+                     'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                     'gaze': 'conversation'},
+ 'Does this bus go to…?': {'ids': ['A2-2028'],
+                           'lithuanian': 'Ar šis autobusas važiuoja į centrą?',
+                           'format': 'situation',
+                           'scene': 'a bus stop; a passenger stands at the open front door of a bus, one '
+                                    'foot on the step, and asks the driver, pointing ahead down the road '
+                                    'with her RIGHT arm; the driver, hands on the wheel, looks at her and '
+                                    'nods. Insets: the blank route board over the windscreen; the open door '
+                                    'with its step',
+                           'cue': 'one foot on the step, the question to the driver, the arm pointing ahead',
+                           'confusables': ['Where do I have to change? (A2-0955)',
+                                           'Stop here, please (A2-2029)'],
+                           'merge_with': '',
+                           'render': 'yes',
+                           'note': '',
+                           'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                           'gaze': 'conversation'},
+ 'Stop here, please (taxi)': {'ids': ['A2-2029'],
+                              'lithuanian': 'Sustokite čia, prašau.',
+                              'format': 'situation',
+                              'scene': 'inside a taxi; the passenger in the back seat leans forward between '
+                                       "the front seats and points with her RIGHT hand past the driver's "
+                                       'shoulder at the kerb outside the windscreen; the driver glances at '
+                                       'her in the mirror; a chequered band on the dashboard. Insets: the '
+                                       'kerb through the windscreen; the meter as a blank box',
+                              'cue': 'leaning forward in the back seat, the finger at the kerb',
+                              'confusables': ['Keep the change (A2-2010, outside the taxi)',
+                                              'Go straight ahead (A2-0959)'],
+                              'merge_with': '',
+                              'render': 'yes',
+                              'note': '',
+                              'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                              'gaze': 'conversation'},
+ 'I need a doctor / pharmacy': {'ids': ['A2-2030'],
+                                'lithuanian': 'Man reikia gydytojo. / Kur vaistinė?',
+                                'format': 'situation',
+                                'scene': 'a street; a pale man holds his RIGHT side with his RIGHT hand and '
+                                         'leans on a lamp post, asking a passer-by; the passer-by, a woman '
+                                         'with a shopping bag, points with her RIGHT arm toward a shopfront '
+                                         'with a green cross sign a few doors away, looking at him; he looks '
+                                         "where she points. Insets: the green cross sign close; a doctor's "
+                                         'bag',
+                                'cue': 'the hand pressed to the side and the green cross pointed to',
+                                'confusables': ['Call a doctor! (A2-0907, two panels, urgent)',
+                                                "I don't feel well (A2-0961)",
+                                                'It hurts here (A2-0962)'],
+                                'merge_with': '',
+                                'render': 'yes',
+                                'note': '',
+                                'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                'gaze': 'conversation'},
+ 'I have a temperature / a cold': {'ids': ['A2-2031'],
+                                   'lithuanian': 'Karščiuoju. / Peršalau.',
+                                   'format': 'situation',
+                                   'scene': 'a bedroom; a woman propped on pillows holds a thermometer out '
+                                            'toward her husband, her other hand clutching a handkerchief, '
+                                            'nose red, blanket to her chin; he sits on the bed edge with a '
+                                            'steaming mug and looks at her face; she looks at him. Insets: '
+                                            'the thermometer close; a bowl of lemons and honey',
+                                   'cue': 'the thermometer shown, the red nose, the handkerchief',
+                                   'confusables': ['Get well soon (A2-0892, visitor with flowers)',
+                                                   "I don't feel well (A2-0961)"],
+                                   'merge_with': '',
+                                   'render': 'yes',
+                                   'note': '',
+                                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                   'gaze': 'conversation'},
+ 'Take this twice a day (pharmacy)': {'ids': ['A2-2032'],
+                                      'lithuanian': 'Gerkite du kartus per dieną.',
+                                      'format': 'situation',
+                                      'scene': 'a pharmacy counter; the pharmacist in a white coat holds up '
+                                               'TWO fingers of her RIGHT hand beside a small pill box she '
+                                               'holds in her LEFT, looking at the customer; on the box a '
+                                               'small sun and a small crescent moon are drawn as symbols; '
+                                               'the customer nods, looking at the fingers. Insets: the box '
+                                               'with the sun and moon close; a glass of water with a tablet '
+                                               'beside it',
+                                      'cue': 'two fingers and the sun-and-moon box',
+                                      'confusables': ["I'm allergic to… (A2-0963)",
+                                                      'I need a doctor / pharmacy (A2-2030)'],
+                                      'merge_with': '',
+                                      'render': 'yes',
+                                      'note': '',
+                                      'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                      'gaze': 'conversation'},
+ 'Enjoy! / Have fun!': {'ids': ['A2-2033'],
+                        'lithuanian': 'Gero poilsio! / Smagiai praleisti laiką!',
+                        'format': 'situation',
+                        'scene': 'a school yard; children with rucksacks climb into a coach; a mother at the '
+                                 'door waves both hands high and laughs, looking at her son at a window; the '
+                                 'boy at the window waves back with a grin; a rolled tent on the roof rack. '
+                                 'Insets: the tent on the roof rack; a fishing rod poking from a rucksack',
+                        'cue': 'children off on an outing, a coach with camping kit, both hands up in glee',
+                        'confusables': ['Have a good journey (A2-0895, now the conductor and the suitcase at '
+                                        'a train)',
+                                        'Have a good weekend (A2-1162)'],
+                        'merge_with': '',
+                        'render': 'yes',
+                        'note': '',
+                        'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                        'gaze': 'conversation'},
+ "I'm just looking (shop)": {'ids': ['A2-2034'],
+                             'lithuanian': 'Tik žiūriu, ačiū.',
+                             'format': 'situation',
+                             'scene': 'a clothes shop; a customer between two rails of coats raises her '
+                                      'RIGHT palm gently toward an approaching assistant, with a polite '
+                                      'smile, her LEFT hand still on a hanger, looking at him; the assistant '
+                                      'stops and inclines his head. Insets: the raised palm close; a hanger '
+                                      'on the rail',
+                             'cue': 'the gentle raised palm to the approaching assistant',
+                             'confusables': ["Can I help you? (A2-1984, the assistant's open hand — the "
+                                             'question this answers)',
+                                             'No, thank you (A2-1987, the covered cup)'],
+                             'merge_with': '',
+                             'render': 'yes',
+                             'note': '',
+                             'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                             'gaze': 'conversation'},
+ 'Can I try it on?': {'ids': ['A2-2035'],
+                      'lithuanian': 'Ar galiu pasimatuoti?',
+                      'format': 'situation',
+                      'scene': 'a clothes shop; a woman holds a dress against herself by the shoulders and '
+                               'looks at the assistant with raised eyebrows, then toward the fitting-room '
+                               'curtain; the assistant looks at her and gestures with his RIGHT hand to the '
+                               'curtain. Insets: the fitting-room curtain half drawn; a mirror',
+                      'cue': 'the dress held against herself, the curtain',
+                      'confusables': ['Do you have it in another colour? (A2-2037)',
+                                      "It's too big (A2-2036)"],
+                      'merge_with': '',
+                      'render': 'yes',
+                      'note': '',
+                      'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                      'gaze': 'conversation'},
+ "It's too big / too small": {'ids': ['A2-2036'],
+                              'lithuanian': 'Per didelis. / Per mažas.',
+                              'format': 'situation',
+                              'scene': 'a clothes shop; a man in a jacket whose sleeves hang past his '
+                                       'fingertips and whose shoulders droop stands before a mirror and '
+                                       'turns to the assistant, holding up both overlong sleeves; the '
+                                       'assistant looks at the sleeves and presses her lips together. '
+                                       'Insets: a boy in a jacket whose sleeves stop at the forearm; the '
+                                       'sleeve over the hand close',
+                              'cue': 'the sleeves over the hands, and in the inset the sleeves too short',
+                              'confusables': ['Can I try it on? (A2-2035)', 'big / small adjective cards'],
+                              'merge_with': '',
+                              'render': 'yes',
+                              'note': '',
+                              'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                              'gaze': 'conversation'},
+ 'Do you have it in another colour / size?': {'ids': ['A2-2037'],
+                                              'lithuanian': 'Ar turite kitos spalvos? / kito dydžio?',
+                                              'format': 'situation',
+                                              'scene': 'a clothes shop counter; a customer holds up a blue '
+                                                       'jumper by the shoulders toward the assistant and '
+                                                       'looks at her; the assistant, looking at the '
+                                                       'customer, reaches with her RIGHT hand to a shelf '
+                                                       'behind her where the same jumper lies folded in red '
+                                                       'and in green. Insets: the folded jumpers in three '
+                                                       'colours; a size label as a blank tag',
+                                              'cue': 'the same garment in other colours on the shelf behind',
+                                              'confusables': ["I'll take this one (A2-0953)",
+                                                              'Can I try it on? (A2-2035)'],
+                                              'merge_with': '',
+                                              'render': 'yes',
+                                              'note': '',
+                                              'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                              'gaze': 'conversation'},
+ "I'll have the soup (ordering)": {'ids': ['A2-2038'],
+                                   'lithuanian': 'Man sriubos, prašau.',
+                                   'format': 'situation',
+                                   'scene': 'a canteen-restaurant; a diner taps a line of the menu with her '
+                                            'RIGHT index finger and looks up at the waiter; the waiter '
+                                            'writes on his pad (page turned away), looking at her; a '
+                                            'steaming bowl passes on a tray behind. Insets: the finger on '
+                                            'the menu line; the steaming bowl',
+                                   'cue': 'the finger tapping the menu, the waiter writing',
+                                   'confusables': ['What would you recommend? (A2-2012, the menu turned to '
+                                                   'the waiter)',
+                                                   'I would like… (A2-0380)'],
+                                   'merge_with': '',
+                                   'render': 'yes',
+                                   'note': '',
+                                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                   'gaze': 'conversation'},
+ 'Could we have the menu?': {'ids': ['A2-2039'],
+                             'lithuanian': 'Ar galėtume gauti meniu?',
+                             'format': 'situation',
+                             'scene': 'a restaurant; a couple sit at a laid table with nothing on it but '
+                                      'cutlery and a candle; the man raises his RIGHT hand, index finger up, '
+                                      'toward a waiter crossing the room, looking at him; the waiter turns '
+                                      'his head toward them, a stack of menus under his arm. Insets: the '
+                                      "empty laid table close; the menus under the waiter's arm",
+                             'cue': "the empty table and the menus still under the waiter's arm",
+                             'confusables': ['Is there a table free? (A2-0952, at the door)',
+                                             'The bill, please (A2-0381, after the meal)'],
+                             'merge_with': '',
+                             'render': 'yes',
+                             'note': '',
+                             'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                             'gaze': 'conversation'},
+ 'Is service included?': {'ids': ['A2-2040'],
+                          'lithuanian': 'Ar aptarnavimas įskaičiuotas?',
+                          'format': 'situation',
+                          'scene': 'a restaurant table after the meal; a diner holds a small bill slip with '
+                                   'a column of short ruled lines and points at its bottom line with his '
+                                   'RIGHT index finger, looking up at the waiter with a question; the waiter '
+                                   'bends to look at the slip. Insets: the finger on the bottom line close; '
+                                   'a coin left on the saucer',
+                          'cue': 'the finger on the last line of the bill',
+                          'confusables': ['The bill, please (A2-0381, asking for it)',
+                                          'Keep the change (A2-2010, taxi)'],
+                          'merge_with': '',
+                          'render': 'yes',
+                          'note': '',
+                          'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                          'gaze': 'conversation'},
+ 'It was delicious': {'ids': ['A2-2041'],
+                      'lithuanian': 'Buvo labai skanu.',
+                      'format': 'situation',
+                      'scene': 'a kitchen doorway of a small restaurant; a diner has pushed back his empty '
+                               'plate, scraped clean, and turns in his chair to the cook in the doorway, '
+                               'RIGHT hand on his stomach, nodding with a broad smile; the cook in her apron '
+                               "smiles back at him. Insets: the clean plate close; the cook's ladle",
+                      'cue': 'the clean plate and the hand on the full stomach, the cook thanked',
+                      'confusables': ['Bon appétit (A2-0889, before the meal)',
+                                      'I liked it! (A2-1183 — check its staging)'],
+                      'merge_with': '',
+                      'render': 'yes',
+                      'note': '',
+                      'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                      'gaze': 'conversation'},
+ 'Can you take a photo of us?': {'ids': ['A2-2042'],
+                                 'lithuanian': 'Ar galite mus nufotografuoti?',
+                                 'format': 'situation',
+                                 'scene': 'a square before a white church front; a couple hands a camera to '
+                                          'a passer-by: the man holds it out with his RIGHT hand, the '
+                                          'passer-by takes it with both; the couple look at the passer-by, '
+                                          'the passer-by at the camera. Insets: the couple posed arm in arm '
+                                          'before the church; the camera close',
+                                 'cue': 'the camera handed over, the church behind',
+                                 'confusables': ['Can you help me? (A2-0383)',
+                                                 'the camera / photograph noun cards'],
+                                 'merge_with': '',
+                                 'render': 'yes',
+                                 'note': '',
+                                 'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                                 'gaze': 'conversation'},
+ 'How long does it take?': {'ids': ['A2-2043'],
+                            'lithuanian': 'Kiek laiko užtrunka?',
+                            'format': 'situation',
+                            'scene': 'a country bus; a traveller in a window seat taps her wristwatch with '
+                                     'her RIGHT index finger and then points out of the window along the '
+                                     'road ahead with the same hand, eyebrows up, looking at the conductor '
+                                     'in the aisle; the conductor looks at her and holds up three fingers. '
+                                     'Insets: the watch face; the road ahead through the windscreen',
+                            'cue': 'the watch tapped and the road pointed at, the fingers in answer',
+                            'confusables': ['What time is it? (A2-0379, asked of a stranger, no road)',
+                                            'Is it far? (A2-2006, finger and thumb)'],
+                            'merge_with': '',
+                            'render': 'yes',
+                            'note': '',
+                            'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                            'gaze': 'conversation'},
+ "What's the weather like?": {'ids': ['A2-2044'],
+                              'lithuanian': 'Koks oras?',
+                              'format': 'situation',
+                              'scene': 'a hallway; a man with a packed suitcase at his feet holds the '
+                                       'telephone receiver with his LEFT hand and looks out of the window at '
+                                       'heavy rain, his RIGHT hand lifting the curtain; nobody else in the '
+                                       'room. Insets: the rain on the window pane close; an umbrella in the '
+                                       'stand',
+                              'cue': 'the receiver, the suitcase, the rain looked at',
+                              'confusables': ['It is cold today (A2-0923)', 'the weather / oras noun card'],
+                              'merge_with': '',
+                              'render': 'yes',
+                              'note': '',
+                              'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                              'gaze': 'default'},
+ 'Happy name day': {'ids': ['A2-2045'],
+                    'lithuanian': 'Su vardadieniu!',
+                    'format': 'situation',
+                    'scene': 'an office; two colleagues present a small bunch of garden flowers across a '
+                             'desk to a seated woman, who takes them with both hands and looks up at them; '
+                             'behind her a wall calendar with one day ringed, no lettering; no cake, no '
+                             'candles. Insets: the ringed day on the calendar; the flowers in a glass on the '
+                             'desk',
+                    'cue': 'flowers at work and the ringed calendar day; no cake',
+                    'confusables': ['Happy birthday (A2-0890, cake and candles)',
+                                    'Congratulations (A2-0891 — check its staging)'],
+                    'merge_with': '',
+                    'render': 'yes',
+                    'note': '',
+                    'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
+                    'gaze': 'conversation'}}
 
 BY_ID = {'374': 'to think',
  'A2-0108': 'who',
@@ -2315,6 +3426,75 @@ BY_ID = {'374': 'to think',
  'A2-1196': 'it seems; looks',
  'A2-1197': 'to get acquainted',
  'A2-1465': 'wonderful',
+ 'A2-1897': 'thirsty (I am thirsty)',
+ 'A2-1934': 'stomach ache',
+ 'A2-1935': 'headache',
+ 'A2-1944': 'to spell (How do you spell it?)',
+ 'A2-1946': "to mind (I don't mind)",
+ 'A2-1958': 'would prefer; prefer',
+ 'A2-1983': 'This is… (introducing someone)',
+ 'A2-1984': 'Can I help you? / How can I help?',
+ 'A2-1985': "Let's go… / Shall we…?",
+ 'A2-1986': 'Shall we meet at…? (arranging)',
+ 'A2-1987': 'No, thank you (declining)',
+ 'A2-1988': "Unfortunately I can't (declining an invitation)",
+ 'A2-1989': 'Would you like…? (offering)',
+ 'A2-1990': "I don't like…",
+ 'A2-1991': 'I prefer… / I like … more',
+ 'A2-1992': 'Do you like…?',
+ 'A2-1993': 'May I? / Is it allowed?',
+ 'A2-1994': 'Yes, you may. / Go ahead.',
+ 'A2-1995': 'How do you spell it? / Spell it, please',
+ 'A2-1996': 'Do you understand? / Is that clear?',
+ 'A2-1997': 'Could I speak to…? (phone)',
+ 'A2-1998': "Who's calling? (phone)",
+ 'A2-1999': 'Hold on a moment (phone)',
+ 'A2-2000': 'Wrong number',
+ 'A2-2001': 'What is your phone number?',
+ 'A2-2002': 'What is your address?',
+ 'A2-2003': "I'm cold / I'm hot",
+ 'A2-2004': "I'm tired",
+ 'A2-2005': 'On the right / turn right / turn left',
+ 'A2-2006': 'Is it far? / Not far',
+ 'A2-2007': 'One coffee, please (ordering)',
+ 'A2-2008': 'Anything else?',
+ 'A2-2009': "That's all, thanks",
+ 'A2-2010': 'Keep the change',
+ 'A2-2011': 'Where can I buy…?',
+ 'A2-2012': 'What would you recommend?',
+ 'A2-2013': "I'm late / sorry I'm late",
+ 'A2-2014': "Don't worry",
+ 'A2-2015': 'What a pity!',
+ 'A2-2016': "What's the matter? / What happened?",
+ 'A2-2017': 'Happy holidays / Happy Easter',
+ 'A2-2018': 'Same to you',
+ 'A2-2019': 'See you soon / later',
+ 'A2-2020': "Pardon? (didn't hear)",
+ 'A2-2021': 'Good idea / OK, agreed',
+ 'A2-2022': 'Let me introduce myself',
+ 'A2-2023': 'Excuse me, is this seat free?',
+ 'A2-2024': "I'd like to pay",
+ 'A2-2025': 'I have a reservation',
+ 'A2-2026': 'One ticket to Kaunas, please',
+ 'A2-2027': 'Which platform?',
+ 'A2-2028': 'Does this bus go to…?',
+ 'A2-2029': 'Stop here, please (taxi)',
+ 'A2-2030': 'I need a doctor / pharmacy',
+ 'A2-2031': 'I have a temperature / a cold',
+ 'A2-2032': 'Take this twice a day (pharmacy)',
+ 'A2-2033': 'Enjoy! / Have fun!',
+ 'A2-2034': "I'm just looking (shop)",
+ 'A2-2035': 'Can I try it on?',
+ 'A2-2036': "It's too big / too small",
+ 'A2-2037': 'Do you have it in another colour / size?',
+ 'A2-2038': "I'll have the soup (ordering)",
+ 'A2-2039': 'Could we have the menu?',
+ 'A2-2040': 'Is service included?',
+ 'A2-2041': 'It was delicious',
+ 'A2-2042': 'Can you take a photo of us?',
+ 'A2-2043': 'How long does it take?',
+ 'A2-2044': "What's the weather like?",
+ 'A2-2045': 'Happy name day',
  'S-0014': 'How much does the bread cost?',
  'S-0017': 'Do you speak Lithuanian?',
  'S-0018': 'I do not understand.',
