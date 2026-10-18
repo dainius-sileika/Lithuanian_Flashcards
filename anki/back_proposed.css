@@ -1,8 +1,8 @@
 /* ===========================================================================
-   PROPOSED back of card (a2_build/BACKS_AUDIT.md §2) — PREVIEW ONLY.
-   Not used by build_apkg.py. frame_preview.py --back proposed appends this after the
-   package's own CSS (go_theme.css + frame_standard.css) and swaps in the templates from
-   card_frame.proposed_backs(). Order on the back, production first:
+   PROPOSED back of card (a2_build/BACKS_AUDIT.md §2) — the DEFAULT back since 2026-10-18
+   (owner: "proposed" + "thumb"). build_apkg.set_frame() appends this after the package's
+   own CSS (go_theme.css + frame_standard.css) and uses the templates from
+   card_frame.proposed_backs("thumb"); build_apkg.py --back current restores the old back. Order on the back, production first:
      top band (section) · anchor · WORD · stress + audio · gender + forms (taught form
      bold) · meaning (smaller) · picture (full plate width, or a thumbnail) · bottom band
    =========================================================================== */

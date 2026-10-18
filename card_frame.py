@@ -182,9 +182,10 @@ CLOZE_BACK = (f'<div class="sf-card">{_CLOZE_FRAME}'
               f'</div>{FIT_JS}')
 
 
-# --- PROPOSED back (a2_build/BACKS_AUDIT.md §2) — preview only ---------------------------
-# Not used by build_apkg.py (the default build is unchanged). frame_preview.py --back proposed
-# swaps these in for the backs of both note types, with anki/back_proposed.css appended.
+# --- PROPOSED back (a2_build/BACKS_AUDIT.md §2) — the DEFAULT back since 2026-10-18 ---------
+# build_apkg.set_frame() uses proposed_backs("thumb") + anki/back_proposed.css for both note types
+# (owner: "proposed" + "thumb"); BACK above stays reachable with build_apkg.py --back current.
+# frame_preview.py renders whatever the package carries; its --back proposed re-applies these.
 # Same fields as today, so adopting it later would be a template/CSS change only.
 # pic: "thumb" (picture at ~56 % width, the audit's proposal) or "full" (full plate width).
 # The forms line bolds the taught form: in the template for gen_sg / pres3 / past3, in CSS

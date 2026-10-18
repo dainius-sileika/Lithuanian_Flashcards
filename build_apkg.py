@@ -99,18 +99,35 @@ cloze_model = genanki.Model(
 # swaps the two models' templates and CSS for the standard-bands ones. Same model ids and
 # FIELDS either way: only templates/CSS change, so a re-import updates notes in place.
 FRAME = "standard"
+# 2026-10-18 (owner, Backs and Type review: "proposed" + "thumb"): the standard frame's backs are
+# the proposed design (card_frame.proposed_backs, a2_build/BACKS_AUDIT.md §2) with the picture
+# as a thumbnail; --back current (or BACK_STYLE=current) keeps the previous standard back.
+BACK_STYLE = os.environ.get("BACK_STYLE", "proposed")
+BACK_PIC = os.environ.get("BACK_PIC", "thumb")
 STD_CSS = card_frame.standard_css(CSS)
 STD_CLOZE_CSS = STD_CSS + CLOZE_CSS[len(CSS):]
 FRAME_FLAGS = []          # [(name, frame_crop.Detection)] collected while transcoding
 
 
-def set_frame(mode):
-    """Point the two models at the drawn (v2.0) or standard-bands (v2.1) templates."""
-    global FRAME
+def set_frame(mode, back=None):
+    """Point the two models at the drawn (v2.0) or standard-bands (v2.1) templates; in the
+    standard frame `back` picks the proposed back (default) or the previous one ("current")."""
+    global FRAME, BACK_STYLE
     if mode not in ("standard", "drawn"):
         raise SystemExit(f"--frame: expected standard or drawn, got {mode!r}")
+    if back:
+        BACK_STYLE = back
+    if BACK_STYLE not in ("proposed", "current"):
+        raise SystemExit(f"--back: expected proposed or current, got {BACK_STYLE!r}")
     FRAME = mode
-    if mode == "standard":
+    if mode == "standard" and BACK_STYLE == "proposed":
+        pb, pc = card_frame.proposed_backs(BACK_PIC)
+        pcss = "\n" + card_frame.proposed_css()
+        model.templates = [{'name': 'Card', 'qfmt': card_frame.FRONT, 'afmt': pb}]
+        model.css = STD_CSS + pcss
+        cloze_model.templates = [{'name': 'Cloze', 'qfmt': card_frame.CLOZE_FRONT, 'afmt': pc}]
+        cloze_model.css = STD_CLOZE_CSS + pcss
+    elif mode == "standard":
         model.templates = [{'name': 'Card', 'qfmt': card_frame.FRONT, 'afmt': card_frame.BACK}]
         model.css = STD_CSS
         cloze_model.templates = [{'name': 'Cloze', 'qfmt': card_frame.CLOZE_FRONT,
@@ -483,8 +500,8 @@ def add_sentence_notes(DECKS, media, order=None):
 REPORT_DIR = os.environ.get("REPORT_DIR", "build_reports")
 
 
-def main(frame="standard"):
-    set_frame(frame)
+def main(frame="standard", back=None):
+    set_frame(frame, back)
     FRAME_FLAGS.clear()
     os.makedirs(TMP, exist_ok=True)
     # 1.7.9 — one deck, split into CEFR subdecks. Studying the parent studies
@@ -568,4 +585,8 @@ if __name__ == "__main__":
                     help="standard: trim the drawn frame off copies of the pictures and redraw "
                          "it in CSS at one fixed width (default, v2.1); drawn: the pictures' "
                          "own frame and the v2.0 templates")
-    main(ap.parse_args().frame)
+    ap.add_argument("--back", choices=["proposed", "current"], default=None,
+                    help="standard frame only: proposed = the redesigned back with a thumbnail (default, "
+                         "owner 2026-10-18); current = the previous standard back")
+    a = ap.parse_args()
+    main(a.frame, a.back)
