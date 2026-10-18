@@ -5,10 +5,10 @@ key,verdict,where,issue
 397_degti,ok,-,
 398_tirpti,ok,-,
 399_kasti,ok,-,
-400_sprogti,ok,-,
+400_sprogti,minor,main,second hand on the detonator box comes from a pale beige sleeve that doesn't match his dark blue jacket; reads like a stray arm
 401_sedeti,ok,-,
 402_stoveti,ok,-,
-403_myleti,ok,-,
+403_myleti,minor,main,"woman's hand over the man's shoulder is a mitten-like blob with barely formed fingers; bottom-right inset also has stray fingertips curling over the back of the woman's head, separate from the man's hand at her ear"
 404_praeiti,ok,-,
 405_pjauti,ok,-,
 407_guleti,ok,-,
@@ -17,7 +17,7 @@ key,verdict,where,issue
 410_pabusti,ok,-,
 411_dainuoti,ok,-,
 412_skaiciuoti,ok,-,
-413_tuoktis,minor,main,"ring exchange: the couple's hands merge into a tangled cluster with too many indistinct fingers below the ring; inset3 (hand over hand with ring) also looks to have five long fingers on the top hand"
+413_tuoktis,minor,main,ring-exchange hands are a tangle: extra fingertips poke up behind the bride's fingers and a clump of knuckles sits under the groom's hand; hard to tell whose fingers are whose
 414_melstis,ok,-,
 415_laimeti,ok,-,
 416_pralaimeti,ok,-,
@@ -27,7 +27,7 @@ key,verdict,where,issue
 420_gaminti,ok,-,
 421_atidaryti,ok,-,
 422_uzdaryti,ok,-,
-423_rasyti,ok,-,
+423_rasyti,minor,inset1,"pen-grip close-up reads like two hands: a pinker index finger on the left of the pen and a yellower thumb on the right, with extra curled fingers underneath"
 424_skambinti,ok,-,
 425_sukti,ok,-,
 426_statyti,ok,-,
@@ -42,12 +42,12 @@ key,verdict,where,issue
 437_traukti,ok,-,
 438_nesti,ok,-,
 439_lauzyti,ok,-,
-440_deveti,ok,-,
+440_deveti,minor,main,left coat sleeve sticks out stiffly as if an arm were inside but ends in an empty cuff; no hand visible
 441_kabinti,ok,-,
 442_purtyti,ok,-,
 443_pasirasyti,ok,-,
 444_musti,ok,-,
-445_kelti,ok,-,
+445_kelti,minor,inset1,crate close-up: a stray skin-coloured blob pokes out under the middle of the crate between the two lifting hands
 446_ilgas,ok,-,
 447_trumpas,ok,-,
 448_aukstas,ok,-,
@@ -57,10 +57,10 @@ key,verdict,where,issue
 453_mazas,ok,-,
 454_letas,ok,-,
 455_greitas,ok,-,
-456_karstas,ok,-,
+456_karstas,minor,inset2,"ladle hand: curled fingers under the thumb are lumpy, with surplus knuckles"
 457_saltas,ok,-,
 458_siltas,ok,-,
-459_vesus,ok,-,
+459_vesus,minor,main,man's left forearm resting on his knee ends in a fingerless stub; no hand drawn
 460_naujas,ok,-,
 461_senas,ok,-,
 462_jaunas,ok,-,
@@ -71,7 +71,7 @@ key,verdict,where,issue
 469_sveikas,ok,-,
 470_garsus,ok,-,
 471_tylus,ok,-,
-472_laimingas,ok,-,
+472_laimingas,minor,main,sad man's left forearm on the table ends in a smooth fingerless skin blob tucked under his other elbow
 473_liudnas,ok,-,
 476_kurcias,ok,-,
 477_aklas,ok,-,
@@ -89,7 +89,7 @@ key,verdict,where,issue
 491_laisvas,ok,-,
 492_aukstas,ok,-,
 493_zemas,ok,-,
-494_minkstas,ok,-,
+494_minkstas,minor,main,"pointing hand has a digit too many: three curled fingers, the index, an extra fingertip tucked beside the index, and a thumb behind"
 495_kietas,ok,-,
 496_gilus,ok,-,
 497_seklus,ok,-,
@@ -106,7 +106,7 @@ key,verdict,where,issue
 508_branduolinis,ok,-,
 509_garsus,ok,-,
 511_tu,ok,-,
-512_jis,ok,-,
+512_jis,minor,main,open hand gesturing at waist: fingers merge into one slab with only faint dividing lines
 515_mes,ok,-,
 517_jie,ok,-,
 528_serti,ok,-,
