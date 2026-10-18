@@ -1,0 +1,59 @@
+OK 083_tevas 23 s outside_diff 7.1
+OK 091_senelis 21 s outside_diff 7.34
+OK 129_dangus 21 s outside_diff 5.07
+OK 083_tevas 21 s outside_diff 6.82
+OK 091_senelis 22 s outside_diff 7.43
+OK 083_tevas 22 s outside_diff 7.22
+OK 083_tevas 24 s outside_diff 7.52
+OK 083_tevas 22 s outside_diff 6.91
+OK 156_lenktynes 19 s outside_diff 5.13
+OK 174_vynas 20 s outside_diff 6.1
+OK 182_duona 19 s outside_diff 7.76
+OK 271_nugara 19 s outside_diff 5.8
+OK 388_sokti 20 s outside_diff 6.52
+OK 400_sprogti 21 s outside_diff 6.72
+OK 413_tuoktis 22 s outside_diff 5.88
+OK 423_rasyti 24 s outside_diff 5.45
+OK 440_deveti 21 s outside_diff 5.52
+OK 445_kelti 21 s outside_diff 5.81
+OK 456_karstas 17 s outside_diff 5.23
+OK 459_vesus 21 s outside_diff 6.3
+OK 472_laimingas 25 s outside_diff 6.83
+OK 494_minkstas 21 s outside_diff 5.56
+OK 512_jis 18 s outside_diff 5.23
+OK A2-0268 22 s outside_diff 6.94
+OK A2-0473 19 s outside_diff 8.02
+OK A2-0568 19 s outside_diff 7.85
+OK A2-0660 22 s outside_diff 5.35
+OK A2-0823 24 s outside_diff 5.8
+OK A2-1220 25 s outside_diff 4.53
+OK A2-1231 23 s outside_diff 5.61
+OK A2-1247 21 s outside_diff 6.42
+ERR A2-1252 BadRequestError Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_d26d567cf8cf4611a4dd2b3aea47de54.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked
+OK A2-1309 20 s outside_diff 23.06
+OK A2-1333 21 s outside_diff 5.97
+OK A2-1411 21 s outside_diff 5.79
+OK A2-1416 22 s outside_diff 11.77
+OK A2-1431 22 s outside_diff 6.26
+OK A2-1433 21 s outside_diff 8.63
+OK A2-1447 19 s outside_diff 6.18
+OK A2-1817 20 s outside_diff 6.81
+ERR A2-0660 empty/transparent fill in the mask (alpha<200 0.00, std 0.4)
+ERR A2-1309 empty/transparent fill in the mask (alpha<200 0.00, std 3.0)
+ERR A2-1416 empty/transparent fill in the mask (alpha<200 0.00, std 0.2)
+OK 156_lenktynes 22 s outside_diff 5.84
+OK 271_nugara 17 s outside_diff 5.27
+OK 512_jis 18 s outside_diff 3.76
+ERR A2-0660 empty/transparent fill in the mask (alpha<200 0.00, std 0.9)
+OK A2-1309 25 s outside_diff 22.23
+OK A2-1416 23 s outside_diff 8.02
+OK A2-0268 21 s outside_diff 5.42
+OK A2-0568 20 s outside_diff 7.84
+OK A2-1231 22 s outside_diff 5.45
+OK A2-0660 20 s outside_diff 5.31
+OK A2-1433 21 s outside_diff 7.58
+OK A2-1416 34 s outside_diff 17.72
+OK A2-0568 28 s outside_diff 6.57
+OK A2-1433 35 s outside_diff 7.78
+OK 512_jis 24 s outside_diff 4.69
+OK 271_nugara 24 s outside_diff 4.9

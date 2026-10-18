@@ -1,0 +1,908 @@
+{
+ "_about": "Hand-scan fixes (build_reports/hand_scan/fix_plan.csv, 2026-10-18): masked edits run by a2_build/additions_round2/edit_inset.py with GO_EDIT_REGIONS=a2_build/hand_fixes/edit_regions.json. Coordinates in 1536x1024 px, read off the current pictures (the build's first-hit file: out_deck_f62 for A1 keys, out_deck_a2 for A2 keys); poly = unsnapped polygon over the hand, rect = a whole ruled inset (snapped). instruction = the fix_plan sentence adapted to the mask.",
+ "083_tevas": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      1288,
+      122
+     ],
+     [
+      1412,
+      122
+     ],
+     [
+      1412,
+      245
+     ],
+     [
+      1360,
+      245
+     ],
+     [
+      1288,
+      182
+     ]
+    ]
+   }
+  ],
+  "instruction": "the top of the father's flat grey tweed cap and, to its right, the boy's left arm in its blue jacket sleeve: the sleeve runs from the boy's shoulder down past the cap to the hand that rests on the father's shoulder below; there is NO hand and NO fingers on the cap",
+  "prefill": "blur"
+ },
+ "091_senelis": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      805,
+      610
+     ],
+     [
+      895,
+      610
+     ],
+     [
+      895,
+      715
+     ],
+     [
+      805,
+      715
+     ]
+    ]
+   }
+  ],
+  "instruction": "the hem of the girl's red coat and the bare grey wooden edge of the bench, with the green grass and shrubs behind; there is NO hand and NO fingers here. The girl's only two hands are the ones clasped in her lap",
+  "prefill": "blur"
+ },
+ "129_dangus": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      335,
+      585
+     ],
+     [
+      465,
+      585
+     ],
+     [
+      465,
+      690
+     ],
+     [
+      335,
+      690
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint Christ's raised right hand, open, palm up toward the viewer, with a natural thumb and four fingers, the same gentle welcoming gesture"
+ },
+ "156_lenktynes": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      1066,
+      235
+     ],
+     [
+      1142,
+      235
+     ],
+     [
+      1142,
+      348
+     ],
+     [
+      1066,
+      348
+     ]
+    ]
+   }
+  ],
+  "instruction": "the runner's left arm reaches forward and ends in ONE whole hand held just above the red finish tape, fingers together; below the tape only the crowd in the stands, no fingers and no hand below the tape",
+  "prefill": "blur"
+ },
+ "174_vynas": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      1075,
+      650
+     ],
+     [
+      1165,
+      650
+     ],
+     [
+      1172,
+      700
+     ],
+     [
+      1150,
+      755
+     ],
+     [
+      1075,
+      755
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the lower part of the wine glass and the hand: the stem continues straight down from the bowl between the man's fingers to a round foot; his hand holds the glass by the stem"
+ },
+ "182_duona": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      1420,
+      765
+     ],
+     [
+      1500,
+      765
+     ],
+     [
+      1500,
+      885
+     ],
+     [
+      1440,
+      885
+     ],
+     [
+      1420,
+      840
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the young woman's left arm: it rests on the table, her hand holding a piece of dark rye bread beside her soup bowl; nothing at her shoulder"
+ },
+ "271_nugara": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      1150,
+      680
+     ],
+     [
+      1365,
+      680
+     ],
+     [
+      1365,
+      798
+     ],
+     [
+      1150,
+      798
+     ]
+    ]
+   }
+  ],
+  "instruction": "a natural LEFT hand pressed flat on the small of the back, thumb toward the spine, fingers toward the hip, on the same off-white cream shirt as the rest of the back, the cloth matching the surrounding shirt exactly in colour and shading",
+  "prefill": "blur"
+ },
+ "388_sokti": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      480,
+      430
+     ],
+     [
+      585,
+      430
+     ],
+     [
+      585,
+      490
+     ],
+     [
+      480,
+      490
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the hand planted on the hurdle as a natural hand with five separate fingers gripping the top wooden rail"
+ },
+ "400_sprogti": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      488,
+      505
+     ],
+     [
+      580,
+      505
+     ],
+     [
+      580,
+      548
+     ],
+     [
+      488,
+      560
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the second hand's sleeve in the same dark blue as the man's work jacket, so both hands on the plunger box clearly belong to the one man"
+ },
+ "413_tuoktis": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      540,
+      430
+     ],
+     [
+      725,
+      430
+     ],
+     [
+      725,
+      565
+     ],
+     [
+      540,
+      565
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the two hands only: the groom's right hand holds the bride's left hand by the fingertips and slides a gold ring onto her ring finger; two hands, ten fingers, nothing behind them"
+ },
+ "423_rasyti": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "rect": [
+     1188,
+     72,
+     1508,
+     340
+    ]
+   }
+  ],
+  "instruction": "one right hand holding a fountain pen, writing lines on paper: thumb and index finger on the barrel, middle finger beneath, one skin tone, no other hand"
+ },
+ "440_deveti": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      165,
+      470
+     ],
+     [
+      285,
+      470
+     ],
+     [
+      285,
+      580
+     ],
+     [
+      165,
+      580
+     ]
+    ]
+   }
+  ],
+  "instruction": "paint a natural hand emerging from the cuff of the outstretched left coat sleeve, relaxed, fingers slightly open, as he slips his arm into the coat"
+ },
+ "445_kelti": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      1215,
+      190
+     ],
+     [
+      1405,
+      190
+     ],
+     [
+      1405,
+      250
+     ],
+     [
+      1215,
+      250
+     ]
+    ]
+   }
+  ],
+  "instruction": "plain wooden crate slats and the crate's straight lower edge, with the warehouse floor below; NO blob, no extra object between the two lifting hands",
+  "prefill": "blur"
+ },
+ "456_karstas": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      1355,
+      495
+     ],
+     [
+      1500,
+      495
+     ],
+     [
+      1500,
+      620
+     ],
+     [
+      1355,
+      620
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the hand on the ladle handle with four curled fingers and one thumb, clean knuckles, the sleeve coming in from the right edge"
+ },
+ "459_vesus": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      390,
+      345
+     ],
+     [
+      500,
+      345
+     ],
+     [
+      500,
+      420
+     ],
+     [
+      390,
+      420
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the end of the man's forearm resting on his crossed knee so it ends in a relaxed hand hanging over the knee, five fingers"
+ },
+ "472_laimingas": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      890,
+      665
+     ],
+     [
+      1010,
+      665
+     ],
+     [
+      1010,
+      755
+     ],
+     [
+      890,
+      755
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the sad man's left forearm so it ends in a natural hand resting flat on the table under his other arm"
+ },
+ "494_minkstas": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      345,
+      480
+     ],
+     [
+      570,
+      480
+     ],
+     [
+      570,
+      700
+     ],
+     [
+      345,
+      700
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the pointing hand: index finger extended pressing into the blue cushion, three fingers curled, one thumb; five digits, attached to the red sleeve"
+ },
+ "512_jis": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "poly": [
+     [
+      300,
+      530
+     ],
+     [
+      545,
+      530
+     ],
+     [
+      545,
+      685
+     ],
+     [
+      300,
+      685
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint this open right hand coming out of the brown jacket cuff: palm up, thumb on top, four separate fingers stretched out toward the man on the right, the gesture of presenting someone; a whole hand of normal size"
+ },
+ "A2-0268": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      480,
+      575
+     ],
+     [
+      640,
+      575
+     ],
+     [
+      640,
+      745
+     ],
+     [
+      480,
+      745
+     ]
+    ]
+   }
+  ],
+  "instruction": "the pink 10-litas banknote continues across this area down into the customer's hand: its lower corner is pinched between his thumb on top and his fingers below; the pink paper with its fine engraved pattern fills most of this area and the coins stay cupped in his palm"
+ },
+ "A2-0473": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      1170,
+      640
+     ],
+     [
+      1320,
+      640
+     ],
+     [
+      1325,
+      790
+     ],
+     [
+      1170,
+      790
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the drinking glass meeting the young man's lips, its rim below his nose, tilted as he drinks"
+ },
+ "A2-0568": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      985,
+      45
+     ],
+     [
+      1172,
+      45
+     ],
+     [
+      1172,
+      322
+     ],
+     [
+      985,
+      322
+     ]
+    ]
+   }
+  ],
+  "instruction": "the long silver spoon handle rises to the upper right into an adult's right hand that grips its end; the wrist and forearm, in a knitted sleeve, rise straight up out of the top edge of the picture; the whole hand and forearm stay inside this area, to the left of the inset frame",
+  "prefill": "blur"
+ },
+ "A2-0660": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      1235,
+      420
+     ],
+     [
+      1445,
+      420
+     ],
+     [
+      1445,
+      602
+     ],
+     [
+      1235,
+      602
+     ]
+    ]
+   }
+  ],
+  "instruction": "the clasped hands: the adult's right hand, coming from the red-brown coat sleeve at the upper left, holds the child's left hand, which comes from the blue sleeve at the right; two hands only, the child's small fingers wrapped inside the adult's palm"
+ },
+ "A2-0823": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      170,
+      240
+     ],
+     [
+      232,
+      240
+     ],
+     [
+      232,
+      340
+     ],
+     [
+      175,
+      340
+     ]
+    ]
+   }
+  ],
+  "instruction": "the room behind the dancers: the warm lamp-lit wall and curtain; there is NO fist, NO arm and NO sleeve in this gap between the man in the white shirt and the woman in blue",
+  "prefill": "blur"
+ },
+ "A2-1220": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      570,
+      485
+     ],
+     [
+      1030,
+      485
+     ],
+     [
+      1030,
+      945
+     ],
+     [
+      570,
+      945
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the hand round the brown beer bottle as a natural LEFT hand: thumb on the near side, four fingers wrapping behind the bottle, knuckles clean, the wrist leaving the picture at the bottom right"
+ },
+ "A2-1231": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      790,
+      430
+     ],
+     [
+      945,
+      430
+     ],
+     [
+      945,
+      610
+     ],
+     [
+      790,
+      610
+     ]
+    ]
+   }
+  ],
+  "instruction": "the standing young woman's two hands: the hand on her near side holds the handle of the white enamel kettle on the stool, her other hand holds a white mug with a red flower just above the stool; each hand joined to its own arm, nothing floating in the air"
+ },
+ "A2-1247": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      1095,
+      690
+     ],
+     [
+      1350,
+      690
+     ],
+     [
+      1350,
+      840
+     ],
+     [
+      1095,
+      840
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the boy's two hands: one holds the small metal sharpener, the other turns a single pencil in it; no other pencils in his fists"
+ },
+ "A2-1252": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      640,
+      570
+     ],
+     [
+      840,
+      570
+     ],
+     [
+      840,
+      730
+     ],
+     [
+      640,
+      730
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the soap hand with its wrist and forearm coming from her opposite shoulder, crossing in front of her to wash the near shoulder"
+ },
+ "A2-1309": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "rect": [
+     1045,
+     413,
+     1503,
+     660
+    ]
+   }
+  ],
+  "instruction": "the woman presenter's near hand settles the medal ribbon at the athlete's chest, clear of his face; the athlete bows his head slightly, his face fully visible"
+ },
+ "A2-1333": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      475,
+      495
+     ],
+     [
+      720,
+      495
+     ],
+     [
+      720,
+      705
+     ],
+     [
+      475,
+      705
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the pair as one left and one right hand, thumbs toward each other, palms flat on the radiator fins"
+ },
+ "A2-1411": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      435,
+      485
+     ],
+     [
+      700,
+      485
+     ],
+     [
+      700,
+      700
+     ],
+     [
+      435,
+      700
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the pair as one left and one right hand, thumbs toward each other, palms toward the glowing heater"
+ },
+ "A2-1416": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      1150,
+      700
+     ],
+     [
+      1400,
+      700
+     ],
+     [
+      1400,
+      860
+     ],
+     [
+      1150,
+      860
+     ]
+    ]
+   }
+  ],
+  "instruction": "the folk-dance couple's arms and hands: the man's raised hand clasps the woman's raised hand, her arm reaching up to it from her own shoulder; his other hand rests on her back and her other hand on his shoulder; four hands, each joined to its own arm"
+ },
+ "A2-1431": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      1340,
+      372
+     ],
+     [
+      1497,
+      372
+     ],
+     [
+      1497,
+      615
+     ],
+     [
+      1340,
+      615
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the mirror reflection so it mirrors the man in front: the raised arm and the hand at the hat brim appear in the reflection on the mirrored side"
+ },
+ "A2-1433": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      1112,
+      62
+     ],
+     [
+      1300,
+      62
+     ],
+     [
+      1300,
+      215
+     ],
+     [
+      1112,
+      215
+     ]
+    ]
+   }
+  ],
+  "instruction": "a limp, empty grey knitted glove hanging down from the fingers that pull its cuff: the glove flattened, its five fingers drooping slack and bent, clearly with no hand inside it"
+ },
+ "A2-1447": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      50,
+      400
+     ],
+     [
+      285,
+      400
+     ],
+     [
+      285,
+      645
+     ],
+     [
+      50,
+      645
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the running man's hand closed round the briefcase handle, the case swinging from it below his hand, its weight on that hand"
+ },
+ "A2-1817": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      430,
+      470
+     ],
+     [
+      610,
+      470
+     ],
+     [
+      610,
+      595
+     ],
+     [
+      430,
+      595
+     ]
+    ]
+   }
+  ],
+  "instruction": "repaint the man's hand flat under the centre of the gift box, palm up, the box resting on it as he offers it"
+ }
+}

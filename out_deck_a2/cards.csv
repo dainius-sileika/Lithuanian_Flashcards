@@ -56,12 +56,12 @@ A2-0068,devyniasdešimt,ninety,devýniasdešimt,,A2-0068,Numbers,A2-0068.png
 A2-0069,šimtas,hundred,šim̃tas,,A2-0069,Numbers,A2-0069.png
 A2-0070,tūkstantis,thousand,tū́kstantis,,A2-0070,Numbers,A2-0070.png
 A2-0071,milijonas,million,milijõnas,,A2-0071,Numbers,A2-0071.png
-A2-0072,pirmas,first,pìrmas,,A2-0072,Numbers,A2-0072.png
-A2-0073,antras,second (2nd),añtras,,A2-0073,Numbers,A2-0073.png
-A2-0074,trečias,third,trẽčias,,A2-0074,Numbers,A2-0074.png
-A2-0075,ketvirtas,fourth,ketvir̃tas,,A2-0075,Numbers,A2-0075.png
-A2-0076,penktas,fifth,peñktas,,A2-0076,Numbers,A2-0076.png
-A2-0077,paskutinis,last,paskutìnis,,A2-0077,Numbers,A2-0077.png
+A2-0072,pirmas,first,pìrmas,M/F,A2-0072,Numbers,A2-0072.png
+A2-0073,antras,second (2nd),añtras,M/F,A2-0073,Numbers,A2-0073.png
+A2-0074,trečias,third,trẽčias,M/F,A2-0074,Numbers,A2-0074.png
+A2-0075,ketvirtas,fourth,ketvir̃tas,M/F,A2-0075,Numbers,A2-0075.png
+A2-0076,penktas,fifth,peñktas,M/F,A2-0076,Numbers,A2-0076.png
+A2-0077,paskutinis,last,paskutìnis,M/F,A2-0077,Numbers,A2-0077.png
 A2-0084,adresas,address,ãdresas,M,A2-0084,Society,A2-0084.png
 A2-0085,kasa,ticket office,kasà,F,A2-0085,Location,A2-0085.png
 A2-0087,piniginė,wallet,pinigìnė,F,A2-0087,Home,A2-0087.png
@@ -105,7 +105,7 @@ A2-0288,tvarkyti,to tidy up,tvarkýti,,A2-0288,Home,A2-0288.png
 A2-0289,taisyti,to repair,taisýti,,A2-0289,Home,A2-0289.png
 A2-0291,keltis,to wake up,kéltis,,A2-0291,Home,A2-0291.png
 A2-0292,rengtis,to get dressed,reñgtis,,A2-0292,Home,A2-0292.png
-A2-0300,pavargęs,tired,pavar̃gęs,,A2-0300,Feelings,A2-0300.png
+A2-0300,pavargęs,tired,pavar̃gęs,M/F,A2-0300,Feelings,A2-0300.png
 A2-0322,spausti,"to click, press",spáusti,,A2-0322,Technology,A2-0322.png
 A2-0323,siųsti,to send,sių̃sti,,A2-0323,Technology,A2-0323.png
 A2-0325,įjungti,to switch on,įjùngti,,A2-0325,Technology,A2-0325.png
@@ -135,17 +135,17 @@ A2-0487,sverti,to weigh,sver̃ti,,A2-0487,Verbs,A2-0487.png
 A2-0494,padėti,to help,padė́ti,,A2-0494,Verbs,A2-0494.png
 A2-0501,švęsti,to celebrate,švę̃sti,,A2-0501,Verbs,A2-0501.png
 A2-0504,gimti,to be born,gìmti,,A2-0504,Verbs,A2-0504.png
-A2-0533,uždarytas,closed,uždarýtas,,A2-0533,Adjectives,A2-0533.png
-A2-0534,pilnas,full,pìlnas,,A2-0534,Adjectives,A2-0534.png
-A2-0535,tuščias,empty,tùščias,,A2-0535,Adjectives,A2-0535.png
-A2-0540,klaidingas,"wrong, incorrect",klaidìngas,,A2-0540,Adjectives,A2-0540.png
-A2-0559,patogus,comfortable,patogùs,,A2-0559,Adjectives,A2-0559.png
-A2-0564,skanus,delicious,skanùs,,A2-0564,Adjectives,A2-0564.png
-A2-0566,šviežias,fresh,šviẽžias,,A2-0566,Adjectives,A2-0566.png
-A2-0568,saldus,sweet,saldùs,,A2-0568,Adjectives,A2-0568.png
-A2-0569,rūgštus,sour,rūgštùs,,A2-0569,Adjectives,A2-0569.png
-A2-0570,sūrus,salty,sūrùs,,A2-0570,Adjectives,A2-0570.png
-A2-0572,aštrus,spicy,aštrùs,,A2-0572,Adjectives,A2-0572.png
+A2-0533,uždarytas,closed,uždarýtas,M/F,A2-0533,Adjectives,A2-0533.png
+A2-0534,pilnas,full,pìlnas,M/F,A2-0534,Adjectives,A2-0534.png
+A2-0535,tuščias,empty,tùščias,M/F,A2-0535,Adjectives,A2-0535.png
+A2-0540,klaidingas,"wrong, incorrect",klaidìngas,M/F,A2-0540,Adjectives,A2-0540.png
+A2-0559,patogus,comfortable,patogùs,M/F,A2-0559,Adjectives,A2-0559.png
+A2-0564,skanus,delicious,skanùs,M/F,A2-0564,Adjectives,A2-0564.png
+A2-0566,šviežias,fresh,šviẽžias,M/F,A2-0566,Adjectives,A2-0566.png
+A2-0568,saldus,sweet,saldùs,M/F,A2-0568,Adjectives,A2-0568.png
+A2-0569,rūgštus,sour,rūgštùs,M/F,A2-0569,Adjectives,A2-0569.png
+A2-0570,sūrus,salty,sūrùs,M/F,A2-0570,Adjectives,A2-0570.png
+A2-0572,aštrus,spicy,aštrùs,M/F,A2-0572,Adjectives,A2-0572.png
 A2-0578,paauglys,teenager,paauglỹs,M,A2-0578,People,A2-0578.png
 A2-0589,svečias,guest,svẽčias,M,A2-0589,People,A2-0589.png
 A2-0595,pora,couple,porà,F,A2-0595,People,A2-0595.png
@@ -243,19 +243,19 @@ A2-0821,šventė,festival,šveñtė,F,A2-0821,Work & culture,A2-0821.png
 A2-0823,vakarėlis,party,vakarė̃lis,M,A2-0823,Work & culture,A2-0823.png
 A2-0831,gimtadienis,birthday,gimtãdienis,M,A2-0831,Abstract,A2-0831.png
 A2-0865,centas,cent,ceñtas,M,A2-0865,Money & admin,A2-0865.png
-A2-1198,alkanas,hungry,alkãnas,,A2-1198,Adjectives,A2-1198.png
-A2-1199,apvalus,round,apvalùs,,A2-1199,Adjectives,A2-1199.png
-A2-1200,išjungtas,switched off,išjùngtas,,A2-1200,Adjectives,A2-1200.png
-A2-1201,keptas,fried; baked,kẽptas,,A2-1201,Adjectives,A2-1201.png
-A2-1202,linksmas,cheerful,liñksmas,,A2-1202,Adjectives,A2-1202.png
-A2-1203,lygus,flat; even; equal,lýgus,,A2-1203,Adjectives,A2-1203.png
-A2-1205,rūkytas,smoked,rūkýtas,,A2-1205,Adjectives,A2-1205.png
-A2-1206,sulūžęs,broken,sulū́žęs,,A2-1206,Adjectives,A2-1206.png
-A2-1207,tvarkingas,tidy,tvarkìngas,,A2-1207,Adjectives,A2-1207.png
-A2-1208,violetinis,purple,violètinis,,A2-1208,Adjectives,A2-1208.png
-A2-1209,virtas,boiled,vìrtas,,A2-1209,Adjectives,A2-1209.png
-A2-1210,įjungtas,switched on,įjùngtas,,A2-1210,Adjectives,A2-1210.png
-A2-1212,švelnus,soft; gentle,švelnùs,,A2-1212,Adjectives,A2-1212.png
+A2-1198,alkanas,hungry,alkãnas,M/F,A2-1198,Adjectives,A2-1198.png
+A2-1199,apvalus,round,apvalùs,M/F,A2-1199,Adjectives,A2-1199.png
+A2-1200,išjungtas,switched off,išjùngtas,M/F,A2-1200,Adjectives,A2-1200.png
+A2-1201,keptas,fried; baked,kẽptas,M/F,A2-1201,Adjectives,A2-1201.png
+A2-1202,linksmas,cheerful,liñksmas,M/F,A2-1202,Adjectives,A2-1202.png
+A2-1203,lygus,flat; even; equal,lýgus,M/F,A2-1203,Adjectives,A2-1203.png
+A2-1205,rūkytas,smoked,rūkýtas,M/F,A2-1205,Adjectives,A2-1205.png
+A2-1206,sulūžęs,broken,sulū́žęs,M/F,A2-1206,Adjectives,A2-1206.png
+A2-1207,tvarkingas,tidy,tvarkìngas,M/F,A2-1207,Adjectives,A2-1207.png
+A2-1208,violetinis,purple,violètinis,M/F,A2-1208,Adjectives,A2-1208.png
+A2-1209,virtas,boiled,vìrtas,M/F,A2-1209,Adjectives,A2-1209.png
+A2-1210,įjungtas,switched on,įjùngtas,M/F,A2-1210,Adjectives,A2-1210.png
+A2-1212,švelnus,soft; gentle,švelnùs,M/F,A2-1212,Adjectives,A2-1212.png
 A2-1213,administratorius,receptionist; administrator,administrãtorius,M,A2-1213,Nouns,A2-1213.png
 A2-1214,alkoholiniai gėrimai,alcoholic drinks,alkohòliniai gė́rimai,,A2-1214,Nouns,A2-1214.png
 A2-1215,alėja,avenue (tree-lined walk),alė́ja,F,A2-1215,Nouns,A2-1215.png
@@ -493,8 +493,8 @@ A2-1535,kilometras,kilometre,kilomètras,M,A2-1535,Nouns,A2-1535.png
 A2-1544,laipsnis,degree,láipsnis,M,A2-1544,Nouns,A2-1544.png
 A2-1547,litras,litre,lìtras,M,A2-1547,Nouns,A2-1547.png
 A2-1729,meilė,love,méilė,F,A2-1729,Abstract,A2-1729.png
-A2-1744,tiesus,straight,tiesùs,,A2-1744,Adjectives,A2-1744.png
-A2-1745,vidutinis,"medium, average",vidutìnis,,A2-1745,Adjectives,A2-1745.png
+A2-1744,tiesus,straight,tiesùs,M/F,A2-1744,Adjectives,A2-1744.png
+A2-1745,vidutinis,"medium, average",vidutìnis,M/F,A2-1745,Adjectives,A2-1745.png
 A2-1747,orkestras,orchestra,orkèstras,M,A2-1747,Art,A2-1747.png
 A2-1748,pasaka,fairy tale,pãsaka,F,A2-1748,Art,A2-1748.png
 A2-1749,gira,gira (kvass),girà,F,A2-1749,Beverages,A2-1749.png
@@ -544,7 +544,7 @@ A2-0227,pakuoti,to pack,pakúoti,,A2-0227,Travel,A2-0227.png
 A2-0236,slaugytoja,nurse,slaugýtoja,F,A2-0236,Health,A2-0236.png
 A2-0252,namų darbai,homework,namų̃ darbaĩ,,A2-0252,Work & school,A2-0252.png
 A2-0286,skalbiniai,laundry,skalbiniaĩ,,A2-0286,Home,A2-0286.png
-A2-0309,tingus,lazy,tingùs,,A2-0309,Feelings,A2-0309.png
+A2-0309,tingus,lazy,tingùs,M/F,A2-0309,Feelings,A2-0309.png
 A2-0319,baterija,battery (cell),batèrija,F,A2-0319,Technology,A2-0319.png
 A2-0329,šalna,frost,šalnà,F,A2-0329,Nature,A2-0329.png
 A2-0332,bala,puddle,balà,F,A2-0332,Nature,A2-0332.png
@@ -555,10 +555,10 @@ A2-0466,griauti,to destroy,griáuti,,A2-0466,Verbs,A2-0466.png
 A2-0472,pripildyti,to fill,pripìldyti,,A2-0472,Verbs,A2-0472.png
 A2-0473,ištuštinti,to empty,ištùštinti,,A2-0473,Verbs,A2-0473.png
 A2-0479,rišti,to tie,rìšti,,A2-0479,Verbs,A2-0479.png
-A2-0571,kartus,bitter,kartùs,,A2-0571,Adjectives,A2-0571.png
+A2-0571,kartus,bitter,kartùs,M/F,A2-0571,Adjectives,A2-0571.png
 A2-0603,alkūnė,elbow,alkū́nė,F,A2-0603,Body,A2-0603.png
 A2-0604,riešas,wrist,ríešas,M,A2-0604,Body,A2-0604.png
-A2-0605,kulkšnis,ankle,kulkšnìs,M,A2-0605,Body,A2-0605.png
+A2-0605,kulkšnis,ankle,kulkšnìs,F,A2-0605,Body,A2-0605.png
 A2-0606,nagas,nail,nãgas,M,A2-0606,Body,A2-0606.png
 A2-0609,raumuo,muscle,raumuõ,M,A2-0609,Body,A2-0609.png
 A2-0624,stalčius,drawer,stálčius,M,A2-0624,Home,A2-0624.png

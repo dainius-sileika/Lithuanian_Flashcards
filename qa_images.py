@@ -163,6 +163,27 @@ Answer ONLY about what is visible. Return strict JSON:
                 furniture, a counter or a vehicle. If false, say which in "props_note".
   "props_note": one line, or "".
 """
+# 2026-10-18 hand-scan fixes: `--limbs` gives every NON-situation card the limb/prop part of the
+# round-2 fit call as one extra caption-blind call (situation cards already have it), cache key
+# "<key>:<hash>:limbs". limbs_ok / props_ok false are hard FAILs as on situation cards; a malformed
+# hand (finger count, fused or melted fingers) is a WARN with the model's note.
+LIMBS_PROMPT = """You are inspecting an illustration from a language-learning flashcard deck.
+Look closely at EVERY hand and arm in the main picture and in every inset panel.
+Answer ONLY about what is visible. Return strict JSON:
+  "limbs_ok":   true | false — every arm and hand is attached to the right body
+                (no third hand, no floating or disembodied hand, no arm crossing onto
+                another person, no hand on the wrong side). If false, say which in "limbs_note".
+  "limbs_note": one line, or "".
+  "props_ok":   true | false — every object that someone holds is visibly in that
+                person's grip (not floating beside the hand, fingers not passing through it).
+                If false, say which in "props_note".
+  "props_note": one line, or "".
+  "hands_ok":   true | false — every clearly visible hand has natural anatomy: five
+                fingers, no fused, melted or extra fingers, thumb on the correct side.
+                Ignore hands too small to judge. If false, say which in "hands_note".
+  "hands_note": one line, or "".
+"""
+
 CONVERSATION_LINE = ("In this picture someone speaks to someone else; the deck's rule is that "
                      "they look at each other and nobody looks at the viewer.")
 
@@ -209,6 +230,17 @@ def describe_situation(client, path, srow):
         caption=cap, cue=srow.get("cue") or "(none given)",
         conversation_line=(CONVERSATION_LINE if srow.get("gaze", "conversation") == "conversation" else "")))
     return seen
+
+
+def judge_limbs(lm):
+    fails, warns = [], []
+    if lm.get("limbs_ok") is False:
+        fails.append(f"LIMBS: {lm.get('limbs_note') or 'a limb is on the wrong body'}")
+    if lm.get("props_ok") is False:
+        fails.append(f"PROPS: {lm.get('props_note') or 'a held object is not in the grip'}")
+    if lm.get("hands_ok") is False:
+        warns.append(f"HANDS: {lm.get('hands_note') or 'a malformed hand'}")
+    return fails, warns
 
 
 def judge_situation(seen, row, srow):
@@ -460,6 +492,7 @@ def main():
     out_csv = args[args.index("--csv") + 1] if "--csv" in args else None
     budget = float(args[args.index("--budget") + 1]) if "--budget" in args else 1e9
     recheck = "--recheck" in args
+    limbs = "--limbs" in args
 
     if not os.getenv("OPENAI_API_KEY") and os.path.exists(".openai_key.txt"):
         os.environ["OPENAI_API_KEY"] = open(".openai_key.txt").read().strip()
@@ -477,6 +510,10 @@ def main():
         path = os.path.join(folder, f)
         key = os.path.splitext(f)[0]
         ck = f"{key}:{file_hash(path)}" + (":sit:r2" if situation_row(key) else "")
+        if limbs and not situation_row(key):
+            lk = f"{key}:{file_hash(path)}:limbs"
+            if lk not in cache:
+                todo.append((key, path, lk))
         if ck in cache:
             continue
         todo.append((key, path, ck))
@@ -498,7 +535,8 @@ def main():
     hard_stop = False
     if todo:
         ex = ThreadPoolExecutor(max_workers=int(os.environ.get("QA_WORKERS", "8")))
-        futs = {(ex.submit(describe_situation, client, p, situation_row(k)) if situation_row(k)
+        futs = {(ex.submit(_ask, client, p, LIMBS_PROMPT) if ck.endswith(":limbs")
+                 else ex.submit(describe_situation, client, p, situation_row(k)) if situation_row(k)
                  else ex.submit(describe, client, p)): (k, ck) for k, p, ck in todo}
         for fut in as_completed(futs):
             k, ck = futs[fut]
@@ -537,6 +575,13 @@ def main():
             fails, warns = judge_situation(seen, row, srow)
         else:
             fails, warns = judge(seen, row)
+        if limbs and not srow and not seen.get("error"):
+            lk = f"{key}:{file_hash(os.path.join(folder, f))}:limbs"
+            lm = cache.get(lk) or {}
+            if not lm:
+                warns.append("limbs check missing (rerun): " + str((errors.get(lk) or {}).get("error", ""))[:120])
+            else:
+                lf, lw = judge_limbs(lm); fails += lf; warns += lw
         status = "FAIL" if fails else ("WARN" if warns else "PASS")
         nfail += bool(fails)
         nwarn += bool(warns and not fails)

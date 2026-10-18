@@ -82,7 +82,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 081_dukra,dukra,daughter,dukrà,F,81,People,081_dukra.png
 082_motina,motina,mother,mótina,F,82,People,082_motina.png
 083_tevas,tėvas,father,tė́vas,M,83,People,083_tevas.png
-084_tevai,tėvai,parent,tėvai̇̃,M pl,84,People,084_tevai.png
+084_tevai,tėvai,parent,tėvaĩ,M pl,84,People,084_tevai.png
 085_kudikis,kūdikis,baby,kū̃dikis,M,85,People,085_kudikis.png
 086_vyras,vyras,man,výras,M,86,People,086_vyras.png
 087_moteris,moteris,woman,móteris,F,87,People,087_moteris.png
@@ -106,7 +106,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 105_auka,auka,victim,aukà,F,105,People,105_auka.png
 106_zaidejas,žaidėjas/žaidėja,player,žaidė́jas,M/F,106,People,106_zaidejas.png
 107_sirgalius,sirgalius/sirgalė,fan (sports),sirgãlius,M/F,107,People,107_sirgalius.png
-108_minia,minia,crowd,minia,F,108,People,108_minia.png
+108_minia,minia,crowd,minià,F,108,People,108_minia.png
 109_asmuo,asmuo,person,asmuõ,M,109,People,109_asmuo.png
 110_mokytojas,mokytojas/mokytoja,teacher,mókytojas,M/F,110,Job,110_mokytojas.png
 111_studentas,studentas/studentė,student,studeñtas,M/F,111,Job,111_studentas.png
@@ -119,7 +119,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 118_policininkas,policininkas/policininkė,police officer,polìcininkas,M/F,118,Job,118_policininkas.png
 119_policija,policija,police force,polìcija,F,119,Job,119_policija.png
 120_kariuomene,kariuomenė,army,kariúomenė,F,120,Job,120_kariuomene.png
-121_kareivis,kareivis,soldier,karei̇̃vis,M,121,Job,121_kareivis.png
+121_kareivis,kareivis,soldier,kareĩvis,M,121,Job,121_kareivis.png
 122_menininkas,menininkas/menininkė,artist,mẽnininkas,M/F,122,Job,122_menininkas.png
 123_autorius,autorius/autorė,author,áutorius,M/F,123,Job,123_autorius.png
 124_vadovas,vadovas/vadovė,manager,vadõvas,M/F,124,Job,124_vadovas.png
@@ -146,7 +146,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 145_technologija,technologija,technology,technològija,,145,Society,145_technologija.png
 146_energija,energija,energy,ener̃gija,,146,Society,146_energija.png
 147_karas,karas,war,kãras,,147,Society,147_karas.png
-148_taika,taika,peace,taika,,148,Society,148_taika.png
+148_taika,taika,peace,taikà,,148,Society,148_taika.png
 149_puolimas,puolimas,attack,puolìmas,,149,Society,149_puolimas.png
 150_rinkimai,rinkimai,election,rinkìmai,,150,Society,150_rinkimai.png
 151_zurnalas,žurnalas,magazine,žurnãlas,,151,Society,151_zurnalas.png
@@ -241,7 +241,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 240_krepsys,krepšys,bag,krepšỹs,M,240,Home,240_krepsys.png
 241_deze,dėžė,box,dėžė̃,F,241,Home,241_deze.png
 242_dovana,dovana,gift,dovanà,F,242,Home,242_dovana.png
-243_kortele,kortelė,card,kortelė,F,243,Home,243_kortele.png
+243_kortele,kortelė,card,kortẽlė,F,243,Home,243_kortele.png
 244_ziedas,žiedas,ring,žíedas,M,244,Home,244_ziedas.png
 245_irankis,įrankis,tool,į́rankis,M,245,Home,245_irankis.png
 246_laikrodis,laikrodis,clock,laĩkrodis,M,246,Electronics,246_laikrodis.png
@@ -342,7 +342,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 341_apskritimas,apskritimas,circle,apskritìmas,M,341,Math,341_apskritimas.png
 342_kvadratas,kvadratas,square,kvadrãtas,M,342,Math,342_kvadratas.png
 343_temperatura,temperatūra,temperature,temperatūrà,F,343,Math,343_temperatura.png
-344_data,data,date,data,,344,Math,344_data.png
+344_data,data,date,datà,,344,Math,344_data.png
 345_svoris,svoris,weight,svõris,,345,Math,345_svoris.png
 346_krastas,kraštas,edge,krãštas,M,346,Math,346_krastas.png
 347_kampas,kampas,corner,kam̃pas,M,347,Math,347_kampas.png
@@ -402,7 +402,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 401_sedeti,sėdėti,sit,sėdė́ti,,401,Verbs,401_sedeti.png
 402_stoveti,stovėti,stand,stovė́ti,,402,Verbs,402_stoveti.png
 403_myleti,mylėti,love,mylė́ti,,403,Verbs,403_myleti.png
-404_praeiti,praeiti,pass by,praei̇̃ti,,404,Verbs,404_praeiti.png
+404_praeiti,praeiti,pass by,praeĩti,,404,Verbs,404_praeiti.png
 405_pjauti,pjauti,cut,pjáuti,,405,Verbs,405_pjauti.png
 406_mustis,muštis,fight,mùštis,,406,Verbs,406_mustis.png
 407_guleti,gulėti,lie down,gulė́ti,,407,Verbs,407_guleti.png
@@ -418,7 +418,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 417_maisyti,maišyti,mix,maišýti,,417,Verbs,417_maisyti.png
 418_lenkti,lenkti,bend,leñkti,,418,Verbs,418_lenkti.png
 419_plauti,plauti,wash,pláuti,,419,Verbs,419_plauti.png
-420_gaminti,gaminti,cook,gami̇̀nti,,420,Verbs,420_gaminti.png
+420_gaminti,gaminti,cook,gamìnti,,420,Verbs,420_gaminti.png
 421_atidaryti,atidaryti,open,atidarýti,,421,Verbs,421_atidaryti.png
 422_uzdaryti,uždaryti,close,uždarýti,,422,Verbs,422_uzdaryti.png
 423_rasyti,rašyti,write,rašýti,,423,Verbs,423_rasyti.png
@@ -444,7 +444,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 443_pasirasyti,pasirašyti,sign,pasirašýti,,443,Verbs,443_pasirasyti.png
 444_musti,mušti,beat,mùšti,,444,Verbs,444_musti.png
 445_kelti,kelti,lift,kélti,,445,Verbs,445_kelti.png
-446_ilgas,ilgas/ilga,long,i̇̀lgas,M/F,446,Adjectives,446_ilgas.png
+446_ilgas,ilgas/ilga,long,ìlgas,M/F,446,Adjectives,446_ilgas.png
 447_trumpas,trumpas/trumpa,short-long,trum̃pas,M/F,447,Adjectives,447_trumpas.png
 448_aukstas,aukštas/aukšta,tall,áukštas,M/F,448,Adjectives,448_aukstas.png
 449_zemas,žemas/žema,short-tall,žẽmas,M/F,449,Adjectives,449_zemas.png
@@ -452,7 +452,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 451_siauras,siauras/siaura,narrow,siaũras,M/F,451,Adjectives,451_siauras.png
 452_didelis,didelis/didelė,big,dìdelis,M/F,452,Adjectives,452_didelis.png
 453_mazas,mažas/maža,small,mãžas,M/F,453,Adjectives,453_mazas.png
-454_letas,lėtas/lėta,slow,lėtas,M/F,454,Adjectives,454_letas.png
+454_letas,lėtas/lėta,slow,lė̃tas,M/F,454,Adjectives,454_letas.png
 455_greitas,greitas/greita,fast,greĩtas,M/F,455,Adjectives,455_greitas.png
 456_karstas,karštas/karšta,hot,kárštas,M/F,456,Adjectives,456_karstas.png
 457_saltas,šaltas/šalta,cold,šáltas,M/F,457,Adjectives,457_saltas.png
@@ -495,7 +495,7 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 494_minkstas,minkštas/minkšta,soft,mìnkštas,M/F,494,Adjectives,494_minkstas.png
 495_kietas,kietas/kieta,hard,kíetas,M/F,495,Adjectives,495_kietas.png
 496_gilus,gilus/gili,deep,gilùs,M/F,496,Adjectives,496_gilus.png
-497_seklus,seklus/sekli,shallow,seklus,M/F,497,Adjectives,497_seklus.png
+497_seklus,seklus/sekli,shallow,seklùs,M/F,497,Adjectives,497_seklus.png
 498_svarus,švarus/švari,clean,švarùs,M/F,498,Adjectives,498_svarus.png
 499_purvinas,purvinas/purvina,dirty,pur̃vinas,M/F,499,Adjectives,499_purvinas.png
 500_stiprus,stiprus/stipri,strong,stiprùs,M/F,500,Adjectives,500_stiprus.png
@@ -511,11 +511,11 @@ key,lithuanian,english,lt_pron,gender,number,category,image_file
 510_as,aš,I,àš,,510,Pronouns,510_as.png
 511_tu,tu,you sg,tù,,511,Pronouns,511_tu.png
 512_jis,jis,he,jìs,,512,Pronouns,512_jis.png
-513_ji,ji,she,ji,,513,Pronouns,513_ji.png
+513_ji,ji,she,jì,,513,Pronouns,513_ji.png
 514_tai,tai,it,taĩ,,514,Pronouns,514_tai.png
 515_mes,mes,we,mẽs,,515,Pronouns,515_mes.png
-516_jus,jūs,you pl,jūs,,516,Pronouns,516_jus.png
-517_jie,jie,they,jie,,517,Pronouns,517_jie.png
+516_jus,jūs,you pl,jū̃s,,516,Pronouns,516_jus.png
+517_jie,jie,they,jiẽ,,517,Pronouns,517_jie.png
 528_serti,šerti,feed (animals),šérti,,528,Verbs,528_serti.png
 529_lesinti,lesinti,feed (birds),lẽsinti,,529,Verbs,529_lesinti.png
 530_lydyti,lydyti,melt (something),lýdyti,,530,Verbs,530_lydyti.png
