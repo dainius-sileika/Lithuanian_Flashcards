@@ -153,10 +153,11 @@ SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", "out_deck_sent,images_sent")
 # Back-of-card usage notes (pilot round 2, a2_build/pilot_round2/CONTEXT_NOTES.md; owner
 # 2026-10-17: on the backs now). One line under the gloss: the register / near-synonym note,
 # then the tu/jus variant as a second line. Only rows the planner verified against a read
-# source (high) or marked medium go on a back; "unverified" rows wait for the owner
-# (a2_build/context_notes_unverified.csv).
+# source (high) or marked medium go on a back, and so do the rows the owner approved
+# as written ("owner-approved", 2026-10-18: the ten former "unverified" rows, whose list
+# a2_build/context_notes_unverified.csv was retired once they moved into context_notes.csv).
 CONTEXT_NOTES = os.environ.get("CONTEXT_NOTES", "a2_build/context_notes.csv")
-USAGE_CONFIDENCE = {"high", "medium"}
+USAGE_CONFIDENCE = {"high", "medium", "owner-approved"}
 
 
 def load_usage(path=CONTEXT_NOTES):

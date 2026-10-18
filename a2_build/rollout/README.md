@@ -17,3 +17,12 @@ beside it. Regions and clauses: `edit_regions.json`.
 | A2-1915 | "two kings … one must be a queen, on the left, and then a king, on the right" | the painting on the wall + the upper inset: a Čiurlionis-style fairy tale, a queen (left, blue) and a king (right, red) over the glowing globe; `a2_staging.json` line updated | PASS |
 
 Cost: 6 edits.
+
+## Step 2: the ten unverified usage notes — owner: "Approve all as written"
+
+The ten rows in `a2_build/context_notes.csv` marked `unverified` now carry `owner-approved`
+(their source notes keep what was and was not read, plus the approval). `build_apkg.py`
+`USAGE_CONFIDENCE` accepts `owner-approved`, so all 80 notes go on the backs. The leading repeat of
+the English gloss was dropped as in 5ec1a76 (e.g. "Of course — the neutral agreement word" →
+"The neutral agreement word"); literal meanings and alternative glosses stay.
+`a2_build/context_notes_unverified.csv` is retired (its rows live in context_notes.csv).
