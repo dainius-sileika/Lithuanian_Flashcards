@@ -9,18 +9,18 @@
    fallback for clients without container queries (Chromium < 105, Safari < 16).
    =========================================================================== */
 
-@font-face { font-family: "PT Serif"; font-style: normal; font-weight: 400; src: url("_PTSerif-Regular.ttf"); }
-@font-face { font-family: "PT Serif"; font-style: italic; font-weight: 400; src: url("_PTSerif-Italic.ttf"); }
-@font-face { font-family: "PT Serif"; font-style: normal; font-weight: 700; src: url("_PTSerif-Bold.ttf"); }
-@font-face { font-family: "Old Standard TT"; font-style: normal; font-weight: 400; src: url("_OldStandardTT-Regular.ttf"); }
+/* Brygada 1918 throughout (owner 2026-10-18); covers every Lithuanian letter and the combining
+   grave, acute, tilde and dot with mark positioning, so no fallback face is needed (fonts/README.md) */
+@font-face { font-family: "Brygada 1918"; font-style: normal; font-weight: 400; src: url("_Brygada1918-Regular.ttf"); }
+@font-face { font-family: "Brygada 1918"; font-style: italic; font-weight: 400; src: url("_Brygada1918-Italic.ttf"); }
+@font-face { font-family: "Brygada 1918"; font-style: normal; font-weight: 700; src: url("_Brygada1918-Bold.ttf"); }
 
 :root {
   --sf-red: #952f25;
   --sf-ink: #f1e3c6;
   --sf-cream: #ead6b4;
-  /* PT Serif lacks U+0300, U+0303, U+0307 and ĩ ũ ẽ ỹ: Old Standard TT renders those clusters */
-  --sf-body: "PT Serif", "Old Standard TT", Georgia, "Noto Serif", serif;
-  --sf-display: "Old Standard TT", "PT Serif", Georgia, serif;
+  --sf-body: "Brygada 1918", Georgia, serif;
+  --sf-display: "Brygada 1918", Georgia, serif;
 }
 
 .card {

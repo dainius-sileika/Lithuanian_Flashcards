@@ -17,7 +17,7 @@
 
 /* whole card = a page torn from the manual */
 .card{
-  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  font-family: "Brygada 1918", Georgia, serif;
   color: var(--ink);
   background: var(--paper);
   /* faint four-colour-offset halftone dot + paper mottle */
@@ -83,7 +83,7 @@
 hr#answer{ border:0; border-top:1px dashed rgba(151,48,31,.45); margin:12px 0; }
 
 /* corner "page number", like a manual plate */
-.plate{ font-family: Georgia, serif; font-weight:700; color: var(--paper); }
+.plate{ font-family: "Brygada 1918", Georgia, serif; font-weight:700; color: var(--paper); }
 
 .night_mode .card{ filter:none; }  /* keep the paper look even in night mode */
 

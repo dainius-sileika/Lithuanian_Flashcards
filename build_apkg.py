@@ -21,8 +21,8 @@ v2.1 (2026-10-17) — standard bands. The drawn red frame of every picture varie
 thickness (bottom band 4-10 % of the height), so by default the builder trims it off a
 COPY of each picture (frame_crop.py; the sources are never written) and the note types
 redraw the frame in CSS at one fixed width (card_frame.py + anki/frame_standard.css):
-top band = section label, bottom band = "pav. N" · leader · English caption. PT Serif
-and Old Standard TT ship as media (fonts/). Pictures where detection fails fall back
+top band = section label, bottom band = "pav. N" · leader · English caption. Brygada 1918
+(regular, italic, bold; 2026-10-18) ships as media (fonts/). Pictures where detection fails fall back
 to a fixed-percentage crop and are listed in build_reports/frame_flags.csv.
 
     python3 build_apkg.py                    # --frame standard (default)

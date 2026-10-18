@@ -42,8 +42,8 @@ SECTIONS = [
 ]
 ROUTE_SECTIONS = {"PHRASE": "XIX", "SENT": "XX"}     # note tag -> numeral
 
-FONT_FILES = ["_PTSerif-Regular.ttf", "_PTSerif-Italic.ttf", "_PTSerif-Bold.ttf",
-              "_OldStandardTT-Regular.ttf"]
+# Brygada 1918 throughout (owner 2026-10-18); PT Serif + Old Standard TT are in fonts/_superseded/
+FONT_FILES = ["_Brygada1918-Regular.ttf", "_Brygada1918-Italic.ttf", "_Brygada1918-Bold.ttf"]
 FONT_DIR = "fonts"
 
 # TODO(owner decision): the deck has three plate numberings -- A1 "1".."531", A2 "0001"

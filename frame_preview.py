@@ -48,7 +48,7 @@ REVIEW_FONT_SRC = {                                                 # local file
 # Old Standard TT as the fallback for the clusters PT Serif lacks). Files starting with "_"
 # are the deck's shipped fonts in fonts/, the rest are review faces in fonts/review/.
 FONT_OPTIONS = {
-    "current": ("PT Serif + Old Standard TT fallback (today)", []),
+    "current": ("Brygada 1918 (the package's own faces since 2026-10-18)", []),
     "oldstandard": ("Old Standard TT only", [("_OldStandardTT-Regular.ttf", "400", "normal"),
                                              ("OldStandard-Italic.ttf", "400", "italic"),
                                              ("OldStandard-Bold.ttf", "700", "normal")]),
@@ -72,7 +72,10 @@ def fetch_review_fonts():
 
 
 def font_path(name):
-    return os.path.join(HERE, "fonts", name) if name.startswith("_") else os.path.join(REVIEW_FONT_DIR, name)
+    if not name.startswith("_"):
+        return os.path.join(REVIEW_FONT_DIR, name)
+    p = os.path.join(HERE, "fonts", name)                       # shipped faces; the old pair moved
+    return p if os.path.exists(p) else os.path.join(HERE, "fonts", "_superseded", name)
 
 
 def font_css(key, hdir):
