@@ -91,3 +91,7 @@ The 69 PHRASE-route benchmark additions were not rendered (no staging yet).
 
 Spend (estimate from the project's per-image rate, $0.0135 a render; edits unverified at ≈ $0.02–0.04):
 200 renders ≈ $2.70, 6 edits ≈ $0.15, QA 582 calls on gpt-5.6-luna (824k in / 219k out tokens) ≈ $0.43.
+
+## Review page
+
+**Roll-out Review** — https://claude.ai/artifact/6AMcXu3Zmc734iCZnx85gK (db `rollout`, `rollout_meta/general`; empty at publish). Source in `page/`.

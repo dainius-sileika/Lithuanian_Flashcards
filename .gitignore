@@ -104,3 +104,4 @@ a2_build/additions_round2/page/media/
 
 # superseded bubble pictures (2026-10-18 roll-out), kept on disk, not in git
 **/_superseded/*.png
+a2_build/rollout/page/media/
