@@ -1,0 +1,54 @@
+category,a1_base_rows,a2_list_rows,sentence_rows,a2_routes,section,topic,label_lt,tag,in_card_frame_sections,note
+Languages,0,7,0,CLOZE:7,I,zmones,žmonės,lt::topic::zmones,yes,→ I žmonės
+Nationalities,0,9,0,CLOZE:9,I,zmones,žmonės,lt::topic::zmones,yes,→ I žmonės
+People,30,18,0,CLOZE:15 IMG:3,I,zmones,žmonės,lt::topic::zmones,yes,
+Animal,10,0,0,,II,gyvunai,gyvūnai,lt::topic::gyvunai,yes,
+Location,33,24,0,CLOZE:1 IMG:23,III,vietos,vietos,lt::topic::vietos,yes,
+Travel,0,17,0,CLOZE:8 IMG:9,III,vietos,vietos,lt::topic::vietos,yes,→ III vietos with Location
+Transportation,13,13,0,CLOZE:2 IMG:11,IV,transportas,transportas,lt::topic::transportas,yes,
+Electronics,12,0,0,,V,namai,namai,lt::topic::namai,yes,→ V
+Home,36,40,0,CLOZE:3 IMG:37,V,namai,namai,lt::topic::namai,yes,
+Technology,0,12,0,CLOZE:7 IMG:5,V,namai,namai,lt::topic::namai,yes,→ V namai with Home and Electronics
+Beverages,8,1,0,IMG:1,VI,maistas,maistas,lt::topic::maistas,yes,→ VI maistas with Food
+Food,30,36,0,IMG:36,VI,maistas,maistas,lt::topic::maistas,yes,
+Clothing,12,16,0,IMG:16,VII,drabuziai,drabužiai,lt::topic::drabuziai,yes,
+Body,31,9,0,CLOZE:1 IMG:8,VIII,kunas_ir_sveikata,kūnas ir sveikata,lt::topic::kunas_ir_sveikata,yes,
+Health,0,15,0,CLOZE:8 IMG:7,VIII,kunas_ir_sveikata,kūnas ir sveikata,lt::topic::kunas_ir_sveikata,yes,→ VIII with Body
+Nature,33,45,0,CLOZE:1 IMG:44,IX,gamta,gamta,lt::topic::gamta,yes,
+Job,18,0,0,,X,darbas_ir_mokykla,darbas ir mokykla,lt::topic::darbas_ir_mokykla,yes,A1 base spelling; same section as Jobs / Work & school / Work & culture
+Jobs,0,1,0,IMG:1,X,darbas_ir_mokykla,darbas ir mokykla,lt::topic::darbas_ir_mokykla,yes,A2-list spelling of Job (1 row) — same topic
+Work & culture,0,29,0,CLOZE:10 IMG:19,X,darbas_ir_mokykla,darbas ir mokykla,lt::topic::darbas_ir_mokykla,yes,A2 list; merges under X
+Work & school,0,21,0,CLOZE:15 IMG:6,X,darbas_ir_mokykla,darbas ir mokykla,lt::topic::darbas_ir_mokykla,yes,A2 list; merges with Job/Jobs/Work & culture under X
+Art,6,2,0,IMG:2,XI,visuomene,visuomenė,lt::topic::visuomene,yes,→ XI visuomenė
+Money & admin,0,12,0,CLOZE:9 IMG:3,XI,visuomene,visuomenė,lt::topic::visuomene,yes,→ XI visuomenė
+Shopping,0,10,0,CLOZE:3 IMG:7,XI,visuomene,visuomenė,lt::topic::visuomene,yes,→ XI visuomenė
+Society,38,24,0,CLOZE:15 IMG:9,XI,visuomene,visuomenė,lt::topic::visuomene,yes,
+Color,11,0,0,,XII,spalvos_ir_medziagos,spalvos ir medžiagos,lt::topic::spalvos_ir_medziagos,yes,→ XII with Materials
+Materials,12,0,0,,XII,spalvos_ir_medziagos,spalvos ir medžiagos,lt::topic::spalvos_ir_medziagos,yes,
+Math,14,0,0,,XIII,skaiciai_ir_laikas,skaičiai ir laikas,lt::topic::skaiciai_ir_laikas,yes,14 A1-base rows at level A2 → XIII
+Numbers,0,48,0,CLOZE:11 IMG:37,XIII,skaiciai_ir_laikas,skaičiai ir laikas,lt::topic::skaiciai_ir_laikas,yes,→ XIII
+Time,0,50,0,CLOZE:19 IMG:27 PHRASE:4,XIII,skaiciai_ir_laikas,skaičiai ir laikas,lt::topic::skaiciai_ir_laikas,yes,→ XIII
+Modal & core verbs,0,15,0,CLOZE:15,XIV,veiksmai,veiksmai,lt::topic::veiksmai,yes,→ XIV veiksmai with Verbs
+Verbs,86,317,0,CLOZE:209 IMG:72 PAIR:34 PHRASE:2,XIV,veiksmai,veiksmai,lt::topic::veiksmai,yes,POS bucket kept as section XIV veiksmai (owner); POS tag carries the grammar
+Adjectives,64,123,0,CLOZE:85 IMG:35 PHRASE:3,XV,savybes,savybės,lt::topic::savybes,yes,POS bucket kept as section XV savybės (owner)
+Abstract,0,38,0,CLOZE:36 IMG:2,XVI,daiktai_ir_savokos,daiktai ir sąvokos,lt::topic::daiktai_ir_savokos,yes,→ XVI with Nouns and Misc
+Misc,16,0,0,,XVI,daiktai_ir_savokos,daiktai ir sąvokos,lt::topic::daiktai_ir_savokos,yes,→ XVI
+Nouns,0,385,0,CLOZE:148 IMG:235 PHRASE:2,XVI,daiktai_ir_savokos,daiktai ir sąvokos,lt::topic::daiktai_ir_savokos,yes,"385 rows: a part-of-speech bucket, not a topic. Section XVI daiktai ir sąvokos by owner decision; POS carried by lt::pos::noun. A later pass may re-topic these rows by hand."
+Feelings,0,19,0,CLOZE:17 IMG:2,XVII,jausmai_ir_nuomones,jausmai ir nuomonės,lt::topic::jausmai_ir_nuomones,yes,
+Opinion & discourse,0,20,0,CLOZE:20,XVII,jausmai_ir_nuomones,jausmai ir nuomonės,lt::topic::jausmai_ir_nuomones,yes,→ XVII with Feelings
+Adverbs,0,126,0,CLOZE:118 PHRASE:8,XVIII,pagalbiniai_zodziai,pagalbiniai žodžiai,lt::topic::pagalbiniai_zodziai,yes,POS bucket → XVIII pagalbiniai žodžiai (owner 2026-10-19)
+Conjunctions,0,19,0,CLOZE:19,XVIII,pagalbiniai_zodziai,pagalbiniai žodžiai,lt::topic::pagalbiniai_zodziai,yes,→ XVIII
+Prepositions,0,30,0,CLOZE:30,XVIII,pagalbiniai_zodziai,pagalbiniai žodžiai,lt::topic::pagalbiniai_zodziai,yes,→ XVIII
+Pronouns,8,65,0,CLOZE:65,XVIII,pagalbiniai_zodziai,pagalbiniai žodžiai,lt::topic::pagalbiniai_zodziai,yes,→ XVIII
+Question words,0,12,0,CLOZE:12,XVIII,pagalbiniai_zodziai,pagalbiniai žodžiai,lt::topic::pagalbiniai_zodziai,yes,→ XVIII
+Basics,0,18,0,PHRASE:18,XIX,frazes,frazės,lt::topic::frazes,yes,→ XIX frazės
+Core patterns,0,19,0,PHRASE:19,XIX,frazes,frazės,lt::topic::frazes,yes,→ XIX frazės
+Extended patterns,0,28,0,CLOZE:28,XIX,frazes,frazės,lt::topic::frazes,yes,"→ XIX frazės (CLOZE rows: section by category, i.e. XIX)"
+Formulas,0,22,0,PHRASE:22,XIX,frazes,frazės,lt::topic::frazes,yes,→ XIX frazės (merge with Phrases)
+Functions,0,67,0,PHRASE:67,XIX,frazes,frazės,lt::topic::frazes,NO (add),"NOT in card_frame.SECTIONS today (67 rows); all PHRASE route, so the ROUTE_SECTIONS override puts them in XIX. Add it to XIX explicitly."
+Getting by,0,24,0,PHRASE:24,XIX,frazes,frazės,lt::topic::frazes,yes,→ XIX frazės
+Greetings,0,9,0,PHRASE:9,XIX,frazes,frazės,lt::topic::frazes,yes,→ XIX frazės
+Phrases,0,21,0,CLOZE:1 PHRASE:20,XIX,frazes,frazės,lt::topic::frazes,yes,PHRASE-route rows are XIX whatever the category (card_frame.ROUTE_SECTIONS); 1 CLOZE row keeps XIX by category
+Politeness,0,6,0,PHRASE:6,XIX,frazes,frazės,lt::topic::frazes,yes,→ XIX frazės
+Transactions,0,15,0,PHRASE:15,XIX,frazes,frazės,lt::topic::frazes,yes,→ XIX frazės
+Sakiniai,0,0,55,,XX,sakiniai,sakiniai,lt::topic::sakiniai,yes,sentence cards (tag SENT today) → XX sakiniai
