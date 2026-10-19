@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # What needs *your* eyes right now
 
 This file is the single answer to "where's the bottleneck?". It is rewritten

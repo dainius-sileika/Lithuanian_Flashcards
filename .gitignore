@@ -29,7 +29,6 @@ out_deck/*.png
 out_deck_f62/*.png
 out_deck_f62/review/media/
 out_deck_f62/_sheets/
-deprecated/card_images_pre_1.7/
 
 qa_crop*.png
 
@@ -45,11 +44,13 @@ audio_test/
 # accent-fetch working caches
 _accents_*.tsv
 
-# transient apkg media (transcoded jpg)
+# transient apkg media (transcoded jpg) and the QA cache
 _apkg_media/
+_qa/
 
-# raw recording sessions (masters kept locally)
-deprecated/recordings_raw/
+# raw recording sessions (masters kept locally; deprecated/ folded into _archive/ 2026-10-19)
+_archive/deprecated/recordings_raw/
+_archive/deprecated/inbox_done/
 Inbox/
 
 # session working dirs
@@ -105,3 +106,6 @@ a2_build/additions_round2/page/media/
 # superseded bubble pictures (2026-10-18 roll-out), kept on disk, not in git
 **/_superseded/*.png
 a2_build/rollout/page/media/
+
+# tidy 2026-10-19: files staged for the owner to delete (see _TO_DELETE/MANIFEST.csv)
+_TO_DELETE/
