@@ -3,16 +3,16 @@
 *Executor, 2026-10-19. The sheet: `recorder_A2.html` at the repo root. Its list: `a2_build/recording_list.csv`. Both come from `python3 build_recorder.py A2`.*
 
 ## What is on the sheet
-The sheet lists every take that the current deck still needs: **2,849 takes**. The A1 subdeck comes first, then A2, each in study order (`study_order.csv`).
+The sheet lists every take that the current deck still needs: **2,849 takes**. The A1 subdeck comes first, then A2, each in study order (`study_order.csv`, study order v3; same order as `a2_build/study_order/recording_order_v3.csv`).
 
 | | takes | of which |
 |---|---|---|
-| **A1** (takes 1–954) | **954** | 920 new · 18 replace the synthetic voice · 16 re-takes |
-| **A2** (takes 955–2,849) | **1,895** | 1,820 new · 75 replace the synthetic voice |
+| **A1** (takes 1–980) | **980** | 945 new · 19 replace the synthetic voice · 16 re-takes |
+| **A2** (takes 981–2,849) | **1,869** | 1,795 new · 74 replace the synthetic voice |
 | kinds | | 1,813 words · 981 example sentences (`<id>_s`) · 55 sentence cards (`S-####`) |
 
 These takes are not on the sheet:
-- the 415 A1 cards and 150 A2-list cards whose July takes still match the card;
+- the 415 base-deck cards and 150 A2-list cards whose July takes still match the card;
 - the 31 B1-deferred rows and the 4 merged-away keys.
 
 **Re-takes (16, all A1; a red "re-take" badge shows the old words):**
@@ -35,7 +35,7 @@ The other wording changes were never recorded, so they appear as ordinary new ta
 
 **Phone:** opening the file on a phone does not work, because the microphone and the stored takes need a web address. Record on the Mac.
 
-**Session size:** about **100 takes**, roughly 30 minutes at ~15 s a take. The A1 share is about 4 hours in all, so 9–10 sessions. Stop when your voice tires; the sheet resumes where you left off.
+**Session size:** about **100 takes**, roughly 30 minutes at ~15 s a take. The A1 share is about 4 hours in all, so about 10 sessions. Stop when your voice tires; the sheet resumes where you left off.
 
 ## After each session: Export new
 - Click **⬇ Export new takes**. You get one ZIP with only the takes recorded since the last export (`lt_A2_takes_<date>_batch.zip`). Batches add up; a re-recorded take goes out again in the next batch.

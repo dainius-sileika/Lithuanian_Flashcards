@@ -43,7 +43,7 @@ Rule in force throughout (NEEDS_YOUR_REVIEW.md): generate → `qa_images.py` →
 
 | # | item | who | what exactly | cost |
 |---|------|-----|--------------|------|
-| D1 | **Record the A1-level takes** (corrected 2026-10-19): `recorder_A2.html` now lists every take the deck still needs, A1 first — **954 A1 takes** (920 new, 18 replacing the synthetic voice, 16 re-takes incl. 265 *lūpos*, 249, A2-0033, A2-0104, A2-0902/0903 and the ten colours) of 2,849; see `a2_build/RECORDING_GUIDE.md` | **owner** | his time: ≈ 4 hours for the A1 share at ~15 s a take |
+| D1 | **Record the A1-level takes** (corrected 2026-10-19): `recorder_A2.html` now lists every take the deck still needs, A1 first — **980 A1 takes** (945 new, 19 replacing the synthetic voice, 16 re-takes incl. 265 *lūpos*, 249, A2-0033, A2-0104, A2-0902/0903 and the ten colours) of 2,849; see `a2_build/RECORDING_GUIDE.md` | **owner** | his time: ≈ 4 hours for the A1 share at ~15 s a take |
 | D2 | **Ingest**: ZIP → `audio_a2/<key>.mp3` (ffmpeg, `-q:a 4`), `audio_source.tsv` updated, loudness check against the 674 existing A1 files | executor | 0 |
 | D3 | **Decision**: ship A1 v2.2 without the new audio (the 520 base cards have audio; the A1-tagged additions would be silent) or wait for D1 | **owner** — **DECIDED 2026-10-19: "Release now, audio later"** (ship v2.2 A1 without waiting for D1; the new takes go into a later update) | 0 |
 

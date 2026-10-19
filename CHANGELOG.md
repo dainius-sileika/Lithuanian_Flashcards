@@ -12,8 +12,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 ### Fixed (2026-10-19 — recorder: the generator is the source of the take list)
 - **`build_recorder.py A2`** now derives the sheet from what `build_apkg.py` emits (same lists, image /
   cloze inclusion and audio paths) instead of the A2 list alone, and drops every take that already
-  exists: **2,849 takes** (A1 954 = 920 new, 18 replace the synthetic voice, 16 re-takes; A2 1,895 =
-  1,820 new, 75 replace the synthetic voice), A1 subdeck first, then study order. Re-takes are detected,
+  exists: **2,849 takes** (A1 980 = 945 new, 19 replace the synthetic voice, 16 re-takes; A2 1,869 =
+  1,795 new, 74 replace the synthetic voice; levels and order per study order v3), A1 subdeck first, then study order. Re-takes are detected,
   not hand-listed: `audio_source.tsv` gains `file` and `said` (what each take actually says, backfilled
   from the commits that brought the July takes in) and a take is listed again when its words no longer
   match the card, accent-blind. Reconciliation with the hand-edited list (2,692) and the 2026-10-12
