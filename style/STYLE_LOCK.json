@@ -2,10 +2,10 @@
  "_": "GO style lock — the look-defining constants of the Lietuvių Flashcards pipeline, recorded by tools/style_lock.py. Do not edit by hand; `tools/style_lock.py update` after a spec bump.",
  "style_hash": "ae72a30c53bdf8561c83e67a1373ce5363893f077c230619805fd16fcaf2a9f9",
  "style_hash_short": "ae72a30c53bd",
- "spec_version": "3.2.0",
+ "spec_version": "3.2.1",
  "updated": "2026-10-19",
  "forced": false,
- "note": "spec 3.2.0: Study order v3: dependency ordering (words before the sentences that use them), lane pressure against tail runs, PAIRS adjacency, look-alike separation, sentence cards in their own subdeck, 44 re-tiers (retier_v3.csv); build_study_order_v3.py replaces v2, audit as code",
+ "note": "spec 3.2.1: §9: the A1 release is v3.0 (major), not v2.2",
  "item_count": 106,
  "items": {
   "engine.OPENAI_MODEL.default": {
