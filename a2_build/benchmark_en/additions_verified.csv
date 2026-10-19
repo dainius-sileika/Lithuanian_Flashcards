@@ -80,7 +80,7 @@ P-078,A2-1940,kaimynystė,N,CLOZE,verified,f,kaimynystės,,,,kaimynỹstė,kirti
 P-079,A2-1941,nekęsti (+gen),V,CLOZE,verified,,,,nekenčia,nekentė,nekę̃sti,kirtis.info,,https://kirtis.info/api/krc/nek%C4%99sti https://en.wiktionary.org/wiki/nek%C4%99sti#Lithuanian https://kirtis.info/api/krc/neken%C4%8Dia
 P-080,A2-1942,prisijungti (prie),V,CLOZE,verified,,,,prisijungia,prisijungė,prisijùngti,kirtis.info,,https://kirtis.info/api/krc/prisijungti https://kirtis.info/api/krc/prisijungia
 P-081,A2-1943,apibūdinti,V,CLOZE,verified,,,,apibūdina,apibūdino,apibū̃dinti,kirtis.info,,https://kirtis.info/api/krc/apib%C5%ABdinti https://kirtis.info/api/krc/apib%C5%ABdina
-P-082,A2-1944,Kaip rašoma?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://en.wiktionary.org/wiki/Kaip#Lithuanian https://kirtis.info/api/krc/ra%C5%A1oma
+P-082,A2-1944,Kaip rašoma?,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),merged into A2-1995 2026-10-19,https://en.wiktionary.org/wiki/Kaip#Lithuanian https://kirtis.info/api/krc/ra%C5%A1oma
 P-083,A2-1945,priklausyti (nuo),V,CLOZE,verified,,,,priklauso,priklausė,priklausýti,kirtis.info,,https://kirtis.info/api/krc/priklausyti https://en.wiktionary.org/wiki/priklausyti#Lithuanian https://kirtis.info/api/krc/priklauso
 P-084,A2-1946,Man nesvarbu / Neprieštarauju,PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/man https://kirtis.info/api/krc/nesvarbu https://kirtis.info/api/krc/neprie%C5%A1tarauju
 P-085,A2-1947,kurti,V,CLOZE,verified,,,,kuria,kūrė,kùrti,kirtis.info,,https://kirtis.info/api/krc/kurti https://en.wiktionary.org/wiki/kurti#Lithuanian https://kirtis.info/api/krc/kuria
@@ -94,7 +94,7 @@ P-092,A2-1954,pasiekti,V,CLOZE,verified,,,,pasiekia,pasiekė,pasíekti,kirtis.i
 P-093,A2-1955,užaugti,V,CLOZE,verified,,,,užauga,užaugo,užáugti,kirtis.info,,https://kirtis.info/api/krc/u%C5%BEaugti https://kirtis.info/api/krc/u%C5%BEauga
 P-094,A2-1956,susituokti,V,IMG,verified,,,,susituokia,susituokė,susituõkti,kirtis.info,,https://kirtis.info/api/krc/susituokti https://kirtis.info/api/krc/susituokia
 P-095,A2-1957,užpildyti (anketą),V,IMG,verified,,,,užpildo,užpildė,užpìldyti,kirtis.info,,https://kirtis.info/api/krc/u%C5%BEpildyti https://kirtis.info/api/krc/u%C5%BEpildo
-P-096,A2-1958,labiau patinka (man labiau patinka),PHRASE,PHRASE,verified,,,,,,,n/a (phrase),,https://kirtis.info/api/krc/labiau https://kirtis.info/api/krc/patinka
+P-096,A2-1958,labiau patinka (man labiau patinka),PHRASE,PHRASE,verified,,,,,,,n/a (phrase),merged into A2-1991 2026-10-19,https://kirtis.info/api/krc/labiau https://kirtis.info/api/krc/patinka
 P-097,A2-1959,važiuoti dviračiu,V phrase,CLOZE,verified,,,,važiuoja,važiavo,,,,https://kirtis.info/api/krc/va%C5%BEiuoti https://en.wiktionary.org/wiki/va%C5%BEiuoti#Lithuanian https://kirtis.info/api/krc/va%C5%BEiuoja
 P-098,A2-1960,praktikuotis,V,CLOZE,verified,,,,praktikuojasi,praktikavosi,praktikúotis,kirtis.info,reflexive praktikuojasi/praktikavosi built regularly on kirtis-confirmed praktikuoja/praktikavo (kirtis has no -si forms of this verb),https://kirtis.info/api/krc/praktikuoja https://kirtis.info/api/krc/praktikavo
 P-099,A2-1961,atpažinti,V,CLOZE,verified,,,,atpažįsta,atpažino,atpažìnti,kirtis.info,"not in kirtis/Wiktionary, accepted by hand as regular form: neatpažinau",https://kirtis.info/api/krc/atpa%C5%BEinti https://kirtis.info/api/krc/atpa%C5%BE%C4%AFsta

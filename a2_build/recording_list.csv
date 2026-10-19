@@ -957,7 +957,7 @@ take,file_name,kind,study_order,lithuanian,english,say
 956,A2-0961.mp3,word,1124,Blogai jaučiuosi,I don't feel well,Blogai jaučiuosi
 957,A2-0962.mp3,word,1125,Čia skauda,It hurts here,Čia skauda
 958,A2-0963.mp3,word,1126,Esu alergiškas…,I'm allergic to…,Esu alergiškas…
-959,A2-0964.mp3,word,1127,Ar galite ką nors rekomenduoti?,Can you recommend something?,Ar galite ką nors rekomenduoti?
+959,A2-0964.mp3,word,1127,Ar galite ką nors parekomenduoti?,Can you recommend something?,Ar galite ką nors parekomenduoti?
 960,A2-0965.mp3,word,1128,Vakar nuėjau į parduotuvę,Yesterday I went to the shop,Vakar nuėjau į parduotuvę
 961,A2-0965_s.mp3,sentence,1128,Vakar nuėjau į parduotuvę.,Yesterday I went to the shop.,Vakar nuėjau į parduotuvę.
 962,A2-0966.mp3,word,1129,Buvau namuose,I was at home,Buvau namuose
@@ -1002,7 +1002,6 @@ take,file_name,kind,study_order,lithuanian,english,say
 1001,A2-1146.mp3,word,1149,draudžiama,forbidden (sign),draudžiamà
 1002,A2-1147.mp3,word,1150,leidžiama,allowed (sign),leidžiamà
 1003,A2-1148.mp3,word,1151,aišku,of course; clearly,áišku
-1004,A2-1149.mp3,word,1152,atsargiai,"carefully; ""careful!""",atsargiai
 1005,A2-1150.mp3,word,1153,gaila,a pity; sorry,gaila
 1006,A2-1151.mp3,word,1154,mielai,gladly,mielaĩ
 1007,A2-1152.mp3,word,1155,nemokamai,free of charge,nemokamai
@@ -1040,7 +1039,6 @@ take,file_name,kind,study_order,lithuanian,english,say
 1039,A2-1184.mp3,word,1187,Negali būti!,No way!,Negali būti!
 1040,A2-1185.mp3,word,1188,nieko baisaus,it's nothing; never mind,nieko baisaus
 1041,A2-1186.mp3,word,1189,pietų pertrauka,lunch break,pietų pertrauka
-1042,A2-1187.mp3,word,1190,Sudie,goodbye,Sudie
 1043,A2-1188.mp3,word,1191,trūko vamzdis,a pipe has burst,trūko vamzdis
 1044,A2-1189.mp3,word,1192,vieta prie lango,window seat,vieta prie lango
 1045,A2-1190.mp3,word,1193,vieta prie tako,aisle seat,vieta prie tako
@@ -1855,7 +1853,7 @@ take,file_name,kind,study_order,lithuanian,english,say
 1854,A2-1688.mp3,word,1799,paskambinti,to phone (perf.),paskam̃binti
 1855,A2-1688_s.mp3,sentence,1799,Paskambink man vakare.,Call me in the evening.,Paskambink man vakare.
 1856,A2-1674.mp3,word,1800,pakartoti,to repeat,pakartóti
-1857,A2-1674_s.mp3,sentence,1800,"Prašom pakartoti.",Please repeat.,"Prašom pakartoti."
+1857,A2-1674_s.mp3,sentence,1800,Prašom pakartoti.,Please repeat.,Prašom pakartoti.
 1858,A2-1683.mp3,word,1801,pasidaryti,to become; make for oneself,pasidarýti
 1859,A2-1683_s.mp3,sentence,1801,Pasidariau arbatos.,I made myself some tea.,Pasidariau arbatos.
 1860,A2-1720.mp3,word,1802,važinėti,to drive around,važinė́ti · važinė́ja · važinė́jo
@@ -1994,7 +1992,7 @@ take,file_name,kind,study_order,lithuanian,english,say
 1993,A2-1573.mp3,word,1869,pensija,pension,peñsija · pensijas
 1994,A2-1573_s.mp3,sentence,1869,Senelis gauna pensiją.,Grandfather receives a pension.,Senelis gauna pensiją.
 1995,A2-1713.mp3,word,1870,sėstis,to sit down,sė́stis
-1996,A2-1713_s.mp3,sentence,1870,"Prašom sėstis.","Sit down, please.","Prašom sėstis."
+1996,A2-1713_s.mp3,sentence,1870,Prašom sėstis.,"Sit down, please.",Prašom sėstis.
 1997,A2-1716.mp3,word,1871,užlieti kaimynus,to flood the neighbours,užlietì kaimýnus
 1998,A2-1716_s.mp3,sentence,1871,Užliejau kaimynus.,I flooded the neighbours.,Užliejau kaimynus.
 1999,A2-1717.mp3,word,1872,užsirašyti,to make an appointment; sign up; note down,užsirašýti

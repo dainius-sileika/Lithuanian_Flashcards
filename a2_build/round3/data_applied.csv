@@ -1,0 +1,191 @@
+file,key,field,old,new
+a2_build/a2_wordlist.csv,A2-0136,lt_pron,į,į̃
+a2_build/a2_wordlist.csv,A2-0136,check,stress: Wiktionary only,"stress: Wiktionary only; stress: high — http://lkz.lt/?zodis=%C4%AF&lns=-1&les=-1 (homonym 2, į̃ praep.); https://en.wiktionary.org/wiki/%C4%AF#Lithuanian (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1058,lt_pron,,vìs dár
+a2_build/a2_wordlist.csv,A2-1058,check,"stress: multiword, not all parts found","stress: multiword, not all parts found; stress: high — http://lkz.lt/?zodis=vis&lns=-1&les=-1 (1 vìs adv.); https://en.wiktionary.org/wiki/dar#Lithuanian (head dár) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0348,lt_pron,,Lãbas
+a2_build/a2_wordlist.csv,A2-0348,check,,"stress: high — http://lkz.lt/?zodis=labas&lns=-1&les=-1 (homonym 2: lãbas interj. 'sveikinimasis') (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0350,lt_pron,,Lãbas rýtas
+a2_build/a2_wordlist.csv,A2-0350,check,,"stress: high — http://lkz.lt/?zodis=rytas&lns=-1&les=-1 (s.v. 1 rýtas: 'lãbas rýtas R 259; lãbą rýtą DŽ') (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0351,lt_pron,,Labà dienà
+a2_build/a2_wordlist.csv,A2-0351,check,,"stress: high — http://lkz.lt/?zodis=diena&lns=-1&les=-1 (s.v. 1 dienà: 'labà dienà; lãbą diẽną … sakoma sveikinantis') (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0352,lt_pron,,Lãbas vãkaras
+a2_build/a2_wordlist.csv,A2-0352,check,,"stress: high — http://lkz.lt/?zodis=vakaras&lns=-1&les=-1 (s.v. vãkaras: 'lãbas vãkaras; lãbą vãkarą DŽ') (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0353,lt_pron,,Labãnakt
+a2_build/a2_wordlist.csv,A2-0353,check,,"stress: high — http://lkz.lt/?zodis=labanakt&lns=-1&les=-1 (labãnakt interj.) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0355,lt_pron,,Ikì pasimãtymo
+a2_build/a2_wordlist.csv,A2-0355,check,,"stress: high — http://lkz.lt/?zodis=iki&lns=-1&les=-1 (1 ikì praep., variant ìki); https://kirtis.info/api/krc/pasimatymo (Pasimãtymo K.) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0356,lt_pron,,Ikì
+a2_build/a2_wordlist.csv,A2-0356,check,,"stress: medium — http://lkz.lt/?zodis=iki&lns=-1&les=-1 (ikì, variant ìki); https://en.wiktionary.org/wiki/iki#Lithuanian (lt-pr iki̇̀, ìki) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0358,lt_pron,,Ãčiū
+a2_build/a2_wordlist.csv,A2-0358,check,,"stress: high — http://lkz.lt/?zodis=a%C4%8Di%C5%AB&lns=-1&les=-1 (ãčiū interj.); https://en.wiktionary.org/wiki/a%C4%8Di%C5%AB#Lithuanian (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0359,lt_pron,,Labaĩ ãčiū
+a2_build/a2_wordlist.csv,A2-0359,check,,"stress: high — https://en.wiktionary.org/wiki/labai#Lithuanian (adverb labaĩ; lãbai is the adjective's dative); http://lkz.lt/?zodis=a%C4%8Di%C5%AB&lns=-1&les=-1 (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0363,lt_pron,,Malonù susipažìnti
+a2_build/a2_wordlist.csv,A2-0363,check,,"stress: high — https://kirtis.info/api/krc/malonu (Malonù bevrd.); https://kirtis.info/api/krc/susipa%C5%BEinti (Susipažìnti vksm.; the -tì form is the participle) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0365,lt_pron,,Mán geraĩ
+a2_build/a2_wordlist.csv,A2-0365,check,,"stress: high — https://kirtis.info/api/krc/man; https://en.wiktionary.org/wiki/gerai#Lithuanian (adverb geraĩ; gẽrai = adj. dative); http://lkz.lt/?zodis=geras&lns=-1&les=-1 ( (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0378,lt_pron,,Kur̃ yrà…?
+a2_build/a2_wordlist.csv,A2-0378,check,,"stress: high — https://en.wiktionary.org/wiki/kur#Lithuanian (kur̃); https://en.wiktionary.org/wiki/b%C5%ABti#Lithuanian (conjugation: 3rd person yrà) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0382,lt_pron,,Ar̃ yrà…?
+a2_build/a2_wordlist.csv,A2-0382,check,,"stress: high — https://en.wiktionary.org/wiki/ar#Lithuanian (ar̃); https://en.wiktionary.org/wiki/b%C5%ABti#Lithuanian (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0383,lt_pron,,Ar̃ gãlite mán padė́ti?
+a2_build/a2_wordlist.csv,A2-0383,check,,"stress: high — https://kirtis.info/api/krc/galite (Gãlite IIasm. dgsk.); https://kirtis.info/api/krc/pad%C4%97ti (Padė́ti vksm.; padėtì = participle); https://en.wiktionary.or (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0887,lt_pron,,Sėkmė̃s!
+a2_build/a2_wordlist.csv,A2-0887,check,,"stress: high — https://kirtis.info/api/krc/s%C4%97km%C4%97s (Sėkmė̃s vnsk. K.); http://lkz.lt/?zodis=s%C4%97km%C4%97&lns=-1&les=-1 (sėkmė̃ (4): 'Be sėkmė̃s') (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0893,lt_pron,,Ikì rytójaus
+a2_build/a2_wordlist.csv,A2-0893,check,,"stress: high — http://lkz.lt/?zodis=iki&lns=-1&les=-1; https://kirtis.info/api/krc/rytojaus (Rytójaus K.); http://lkz.lt/?zodis=rytojus&lns=-1&les=-1 (rytójus (1)) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0894,lt_pron,,Gerõs dienõs
+a2_build/a2_wordlist.csv,A2-0894,check,,"stress: high — https://kirtis.info/api/krc/geros (Gerõs mot. vnsk. K.); https://kirtis.info/api/krc/dienos (Dienõs vnsk. K.) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0895,lt_pron,,Gerõs keliõnės
+a2_build/a2_wordlist.csv,A2-0895,check,,"stress: high — https://kirtis.info/api/krc/geros; https://kirtis.info/api/krc/kelion%C4%97s (Keliõnės K.); http://lkz.lt/?zodis=kelion%C4%97&lns=-1&les=-1 (keliõnė (2)) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0896,lt_pron,,Kàs taĩ?
+a2_build/a2_wordlist.csv,A2-0896,check,,"stress: high — https://kirtis.info/api/krc/kas (Kàs įvrd.); https://en.wiktionary.org/wiki/tai#Lithuanian (taĩ); tái = feminine dative of tàs (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0898,lt_pron,,Kur̃ yrà tualètas?
+a2_build/a2_wordlist.csv,A2-0898,check,,"stress: high — https://en.wiktionary.org/wiki/kur#Lithuanian; https://en.wiktionary.org/wiki/b%C5%ABti#Lithuanian; https://kirtis.info/api/krc/tualetas (Tualètas) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0899,lt_pron,,Kíek taĩ kainúoja?
+a2_build/a2_wordlist.csv,A2-0899,check,,"stress: high — https://en.wiktionary.org/wiki/kiek#Lithuanian (kíek); https://en.wiktionary.org/wiki/tai#Lithuanian; https://kirtis.info/api/krc/kainuoja (Kainúoja) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0900,lt_pron,,Nekalbù lietùviškai
+a2_build/a2_wordlist.csv,A2-0900,check,,"stress: medium — https://kirtis.info/api/krc/nesuprantu (Nesuprantù) and https://kirtis.info/api/krc/ne%C5%BEinau (Nežinaũ) show kirtis keeping end stress under ne- for 1sg form (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0904,lt_pron,,Ką̃ taĩ réiškia?
+a2_build/a2_wordlist.csv,A2-0904,check,,"stress: high — https://kirtis.info/api/krc/k%C4%85 (Ką̃); https://en.wiktionary.org/wiki/tai#Lithuanian; https://kirtis.info/api/krc/rei%C5%A1kia (Réiškia) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0909,lt_pron,,Kur̃ galiù ràsti…?
+a2_build/a2_wordlist.csv,A2-0909,check,,"stress: high — https://kirtis.info/api/krc/galiu (Galiù vksm.); https://kirtis.info/api/krc/rasti (Ràsti vksm.; rastì = participle); https://en.wiktionary.org/wiki/rasti#Lithu (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0910,lt_pron,,Màno var̃das Daĩnius
+a2_build/a2_wordlist.csv,A2-0910,check,,"stress: medium — http://lkz.lt/?zodis=mano&lns=-1&les=-1 (màno pron. pos.; 'mãno K' as a variant); https://en.wiktionary.org/wiki/mano#Lithuanian (màno); https://kirtis.info/api (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0913,lt_pron,,Mán dvìdešimt mẽtų
+a2_build/a2_wordlist.csv,A2-0913,check,,"stress: high — https://kirtis.info/api/krc/dvide%C5%A1imt (Dvìdešimt); https://kirtis.info/api/krc/met%C5%B3 (Mẽtų vyr. dgsk. K.); http://lkz.lt/?zodis=metai&lns=-1&les=-1 (mẽ (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0917,lt_pron,,Norė́čiau kavõs
+a2_build/a2_wordlist.csv,A2-0917,check,,"stress: high — https://kirtis.info/api/krc/nor%C4%97%C4%8Diau (Norė́čiau); https://kirtis.info/api/krc/kavos (Kavõs vnsk. K.); http://lkz.lt/?zodis=kava&lns=-1&les=-1 (1 kavà  (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0921,lt_pron,,Taĩ màno nãmas
+a2_build/a2_wordlist.csv,A2-0921,check,,"stress: high — https://en.wiktionary.org/wiki/tai#Lithuanian; http://lkz.lt/?zodis=mano&lns=-1&les=-1 (màno); https://kirtis.info/api/krc/namas (Nãmas) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0922,lt_pron,,Čià yrà parduotùvė
+a2_build/a2_wordlist.csv,A2-0922,check,,"stress: high — http://lkz.lt/?zodis=%C4%8Dia&lns=-1&les=-1 (1 čià adv.); https://en.wiktionary.org/wiki/%C4%8Dia#Lithuanian (čià); https://kirtis.info/api/krc/parduotuv%C4%97  (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0923,lt_pron,,Šiañdien šálta
+a2_build/a2_wordlist.csv,A2-0923,check,,"stress: high — http://lkz.lt/?zodis=%C5%A1iandien&lns=-1&les=-1 (šiañdien adv.; dialect variant šiandiẽn); https://en.wiktionary.org/wiki/%C5%A1iandien#Lithuanian (šiañdien);  (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0925,lt_pron,,Trečià valandà
+a2_build/a2_wordlist.csv,A2-0925,check,,"stress: high — https://kirtis.info/api/krc/tre%C4%8Dia (Trečià mot. V.); https://kirtis.info/api/krc/valanda (Valandà V.); https://en.wiktionary.org/wiki/tre%C4%8Dias#Lithuani (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0926,lt_pron,,Kur̃ tù einì?
+a2_build/a2_wordlist.csv,A2-0926,check,,"stress: high — https://en.wiktionary.org/wiki/kur#Lithuanian; https://kirtis.info/api/krc/tu (Tù); https://kirtis.info/api/krc/eini (Einì esam. IIasm.); https://en.wiktionary. (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0954,lt_pron,,Ar̃ galiù mokė́ti kortelè?
+a2_build/a2_wordlist.csv,A2-0954,check,,"stress: high — https://kirtis.info/api/krc/galiu; https://kirtis.info/api/krc/mok%C4%97ti (Mokė́ti); https://kirtis.info/api/krc/kortele (Kortelè vnsk. Įn.); http://lkz.lt/?zo (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0957,lt_pron,,Kaĩp nuvỹkti į̃…?
+a2_build/a2_wordlist.csv,A2-0957,check,,"stress: high — http://lkz.lt/?zodis=kaip&lns=-1&les=-1 (1 kaĩp adv.); https://kirtis.info/api/krc/nuvykti (Nuvỹkti vksm.; nuvyktì = participle); http://lkz.lt/?zodis=%C4%AF&ln (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1150,lt_pron,,gaĩla
+a2_build/a2_wordlist.csv,A2-1150,check,"stress: NOT FOUND (Wiktionary, kirtis.info) — needs DLKŽ lookup","stress: NOT FOUND (Wiktionary, kirtis.info) — needs DLKŽ lookup; stress: high — http://lkz.lt/?zodis=gaila&lns=-1&les=-1 (homonym 2: gaĩla adv. 'ima gailesys; skaudu') (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1157,lt_pron,,Kíek jùms mẽtų?
+a2_build/a2_wordlist.csv,A2-1157,check,,"stress: high — https://en.wiktionary.org/wiki/kiek#Lithuanian; https://kirtis.info/api/krc/jums (Jùms); https://kirtis.info/api/krc/met%C5%B3 (Mẽtų) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1160,lt_pron,,Ką̃ veikì?
+a2_build/a2_wordlist.csv,A2-1160,check,,"stress: high — https://kirtis.info/api/krc/k%C4%85; https://kirtis.info/api/krc/veiki (Veikì esam. IIasm.); https://en.wiktionary.org/wiki/veikti#Lithuanian (conjugation 2s=ve (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1161,lt_pron,,Vìskas geraĩ
+a2_build/a2_wordlist.csv,A2-1161,check,,"stress: high — https://kirtis.info/api/krc/viskas (Vìskas); https://en.wiktionary.org/wiki/gerai#Lithuanian (geraĩ) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1163,lt_pron,,Laimìngų Naujų̃jų mẽtų!
+a2_build/a2_wordlist.csv,A2-1163,check,,"stress: high — https://kirtis.info/api/krc/laiming%C5%B3 (Laimìngų K.); https://kirtis.info/api/krc/nauj%C5%B3j%C5%B3 (Naujų̃jų K. įvardž.); https://kirtis.info/api/krc/met%C5 (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1178,lt_pron,,dė̃kui
+a2_build/a2_wordlist.csv,A2-1178,check,,"stress: high — http://lkz.lt/?zodis=d%C4%97kui&lns=-1&les=-1 (dė̃kui interj.) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1182,lt_pron,,labaĩ geraĩ
+a2_build/a2_wordlist.csv,A2-1182,check,,"stress: high — https://en.wiktionary.org/wiki/labai#Lithuanian (labaĩ); https://en.wiktionary.org/wiki/gerai#Lithuanian (geraĩ) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1193,lt_pron,,Kurì valandà?
+a2_build/a2_wordlist.csv,A2-1193,check,,"stress: high — https://kirtis.info/api/krc/kuri (Kurì įvrd. mot. V.); https://kirtis.info/api/krc/valanda (Valandà V.) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1620,lt_pron,,nà
+a2_build/a2_wordlist.csv,A2-1620,check,,"stress: high — http://lkz.lt/?zodis=na&lns=-1&les=-1 (1 nà interj., 2 nà prt.) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1897,lt_pron,,nóriu gérti
+a2_build/a2_wordlist.csv,A2-1897,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/noriu (Nóriu vksm.); https://kirtis.info/api/krc/gerti (Gérti vksm.; gertì = participle); https://en.wiktionary.org/wiki/gerti#Lithu (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1959,lt_pron,,važiúoti dvìračiu
+a2_build/a2_wordlist.csv,A2-1959,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/va%C5%BEiuoti (Važiúoti); https://kirtis.info/api/krc/dvira%C4%8Diu (Dvìračiu dktv. Įn.); https://en.wiktionary.org/wiki/dviratis#Li (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1983,lt_pron,,Čià (yrà) màno draũgas. / Susipažìnkite — taĩ…
+a2_build/a2_wordlist.csv,A2-1983,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — http://lkz.lt/?zodis=%C4%8Dia&lns=-1&les=-1; https://en.wiktionary.org/wiki/b%C5%ABti#Lithuanian; http://lkz.lt/?zodis=mano&lns=-1&les=-1; https://kirtis.info/a (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1987,lt_pron,,"Ãčiū, nè."
+a2_build/a2_wordlist.csv,A2-1987,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — http://lkz.lt/?zodis=a%C4%8Di%C5%AB&lns=-1&les=-1; https://en.wiktionary.org/wiki/ne#Lithuanian (nè) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1989,lt_pron,,Ar̃ nóri arbãtos? / Ar̃ nórite arbãtos?
+a2_build/a2_wordlist.csv,A2-1989,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/nori (Nóri esam. IIasm.; Norì = feminine of norùs); https://en.wiktionary.org/wiki/nor%C4%97ti#Lithuanian (norė́ti, nóri, norė́jo —  (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1993,lt_pron,,Ar̃ gãlima?
+a2_build/a2_wordlist.csv,A2-1993,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/galima (Gãlima bevrd.; Galimà = feminine nominative) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-1994,lt_pron,,Gãlima. / Prãšom.
+a2_build/a2_wordlist.csv,A2-1994,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/galima; https://kirtis.info/api/krc/pra%C5%A1om (Prãšom); https://en.wiktionary.org/wiki/pra%C5%A1om#Lithuanian (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-2003,lt_pron,,Mán šálta. / Mán káršta.
+a2_build/a2_wordlist.csv,A2-2003,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/man; https://kirtis.info/api/krc/%C5%A1alta (Šálta bevrd.); https://en.wiktionary.org/wiki/kar%C5%A1tas#Lithuanian (lt-adj kárštas,  (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-2006,lt_pron,,Ar̃ tolì? / Netolì.
+a2_build/a2_wordlist.csv,A2-2006,check,"not in kirtis/Wiktionary, accepted by hand as regular form: Netoli","not in kirtis/Wiktionary, accepted by hand as regular form: Netoli; stress: high — http://lkz.lt/?zodis=toli&lns=-1&les=-1 (tolì adv.); http://lkz.lt/?zodis=netoli&lns=-1&les=-1 (1 netolì adv., 2 netolì praep.) (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-2009,lt_pron,,"Vìskas, ãčiū."
+a2_build/a2_wordlist.csv,A2-2009,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/viskas; http://lkz.lt/?zodis=a%C4%8Di%C5%AB&lns=-1&les=-1 (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-2019,lt_pron,,Ikì greĩto! / Ikì vėliaũ!
+a2_build/a2_wordlist.csv,A2-2019,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — http://lkz.lt/?zodis=iki&lns=-1&les=-1; https://kirtis.info/api/krc/greito (Greĩto K.); https://en.wiktionary.org/wiki/v%C4%97liau#Lithuanian (comparative adver (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-2023,lt_pron,,"Atsiprašaũ, ar̃ čià laĩsva?"
+a2_build/a2_wordlist.csv,A2-2023,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/atsipra%C5%A1au (Atsiprašaũ); https://en.wiktionary.org/wiki/ar#Lithuanian; http://lkz.lt/?zodis=%C4%8Dia&lns=-1&les=-1; https://kir (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-2026,lt_pron,,"Víeną bìlietą į̃ Kaũną, prašaũ."
+a2_build/a2_wordlist.csv,A2-2026,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: high — https://kirtis.info/api/krc/vien%C4%85 (Víeną); https://kirtis.info/api/krc/biliet%C4%85 (Bìlietą G.); https://kirtis.info/api/krc/Kaun%C4%85 (Kaũną dktv. T. G. (2026-10-19, stress_58_resolved.csv)"
+a2_build/a2_wordlist.csv,A2-0964,lithuanian_TARGET,Ar galite ką nors rekomenduoti?,Ar galite ką nors parekomenduoti?
+a2_build/a2_wordlist.csv,A2-0964,example_lt,Ar galite ką nors rekomenduoti?,Ar galite ką nors parekomenduoti?
+a2_build/a2_wordlist.csv,A2-0964,lt_pron,,Ar̃ gãlite ką̃ nórs parekomendúoti?
+a2_build/a2_wordlist.csv,A2-0964,notes,LT proposed — verify,LT proposed — verify; owner 2026-10-19: perfective; LKŽ parekomenduoti
+a2_build/a2_wordlist.csv,A2-0964,english_alt,,Ar galite ką nors pasiūlyti? (everyday variant)
+a2_build/a2_wordlist.csv,A2-0964,check,,"stress: ar̃ en.wiktionary; gãlite, ką̃ kirtis; nórs, parekomendúoti LKŽ (2026-10-19)"
+a2_build/a2_wordlist.csv,A2-0354,english_alt,,"goodbye (solemn, final: Sudie)"
+a2_build/a2_wordlist.csv,A2-0354,notes,LT proposed — verify,LT proposed — verify; absorbs A2-1187 Sudie (owner 2026-10-19; back-of-card note)
+a2_build/a2_wordlist.csv,A2-0385,english_alt,,carefully; careful!
+a2_build/a2_wordlist.csv,A2-0385,notes,LT proposed — verify,LT proposed — verify; absorbs A2-1149 atsargiai (adverb); one picture: icy walk — rollout_round3/restage.csv
+a2_build/a2_wordlist.csv,A2-1995,english_alt,,to spell
+a2_build/a2_wordlist.csv,A2-1995,notes,benchmark addition P-133 (threshold_function 6.7; function); Lithuanian verified 2026-10-17 — a2_build/benchmark_en/additions_verified.csv; tu/jūs: both forms given or needed,benchmark addition P-133 (threshold_function 6.7; function); Lithuanian verified 2026-10-17 — a2_build/benchmark_en/additions_verified.csv; tu/jūs: both forms given or needed; absorbs A2-1944 (P-082 'to spell'); benchmark coverage of P-082 is this card
+a2_build/a2_wordlist.csv,A2-1991,english_alt,,would prefer; prefer
+a2_build/a2_wordlist.csv,A2-1991,notes,benchmark addition P-129 (threshold_function 2.27; function); Lithuanian verified 2026-10-17 — a2_build/benchmark_en/additions_verified.csv; merged with 'would prefer' above — one note,benchmark addition P-129 (threshold_function 2.27; function); Lithuanian verified 2026-10-17 — a2_build/benchmark_en/additions_verified.csv; merged with 'would prefer' above — one note; absorbs A2-1958 (P-096) 2026-10-19
+a2_build/a2_wordlist.csv,A2-0385,lt_pron,Atsar̃giai!,Atsargiaĩ!
+a2_build/a2_wordlist.csv,A2-0385,check,stress: kirtis.info per word (2026-10-18) — verify phrase stress,"stress: kirtis.info per word (2026-10-18) — verify phrase stress; stress: LKŽ adverb form, 2026-10-19 (http://lkz.lt/?zodis=atsargus&lns=-1&les=-1)"
+a2_build/a2_wordlist.csv,A2-1995,lt_pron,,"Kaip rãšoma? / Paraidžiui, prašaũ."
+a2_build/a2_wordlist.csv,A2-1995,check,verified: kirtis.info / en.wiktionary,"verified: kirtis.info / en.wiktionary; stress: rãšoma from A2-1944, prašaũ kirtis; paraidžiui unverified (2026-10-19)"
+a2_build/a2_wordlist.csv,A2-1187,(row),present,moved to merged_keys.csv (merged into A2-0354)
+a2_build/a2_wordlist.csv,A2-1149,(row),present,moved to merged_keys.csv (merged into A2-0385)
+a2_build/a2_wordlist.csv,A2-1944,(row),present,moved to merged_keys.csv (merged into A2-1995)
+a2_build/a2_wordlist.csv,A2-1958,(row),present,moved to merged_keys.csv (merged into A2-1991)
+a2_build/id_map.csv,A2-0964,lithuanian_TARGET,Ar galite ką nors rekomenduoti?,Ar galite ką nors parekomenduoti?
+a2_build/id_map.csv,A2-1149,merged_into,,A2-0385
+a2_build/id_map.csv,A2-1187,merged_into,,A2-0354
+a2_build/id_map.csv,A2-1944,merged_into,,A2-1995
+a2_build/id_map.csv,A2-1958,merged_into,,A2-1991
+a2_build/context_notes.csv,A2-0354,context_line,"The neutral everyday farewell, accepted standard, fits anyone. Viso labo is the more Lithuanian variant; the clipped viso! is teenage talk; viso geriausio is familiar and not for people you respect.","The neutral everyday farewell, accepted standard, fits anyone. Viso labo is the more Lithuanian variant; the clipped viso! is teenage talk; viso geriausio is familiar and not for people you respect. Sudie — a solemn, final goodbye (from su Dievu, 'with God'); the old word, kept today for long or last partings."
+a2_build/context_notes.csv,A2-0354,source_note,"Kniūkšta (ed.), Kompiuterinis lietuvių kalbos žinynas, ch. 'Kalbos etiketas' (Šviesa 2004) §3","Kniūkšta (ed.), Kompiuterinis lietuvių kalbos žinynas, ch. 'Kalbos etiketas' (Šviesa 2004) §3 | Sudie: Kniūkšta (ed.), Kompiuterinis lietuvių kalbos žinynas, ch. 'Kalbos etiketas' (Šviesa 2004) §3 ('Geriausia, lietuviškiausia atsisveikinti… sudiev! arba sudie!'); Jasiūnaitė 1997 §29 on its decline under atheist propaganda (https://journals.vu.lt/kalbotyra/article/download/31319/30283/73015); 'final partings' rests on en.wiktionary 'sudie' glossing 'adieu' — medium."
+a2_build/context_notes.csv,A2-1187,(row),present,removed (folded into A2-0354)
+a2_build/context_notes.csv,A2-0964,lithuanian,Ar galite ką nors rekomenduoti?,Ar galite ką nors parekomenduoti?
+a2_build/context_notes.csv,A2-0964,variant_tu_jus,tu: Ar gali ką nors rekomenduoti?,tu: Ar gali ką nors parekomenduoti?
+a2_build/context_notes.csv,A2-0964,context_line,"Jūs form, as to a waiter. Conditional galėtumėte is softer; the tu form gali is for a friend.","Jūs form, as to a waiter. Conditional galėtumėte is softer; the tu form gali is for a friend. Everyday speech often says pasiūlyti instead."
+a2_build/context_notes.csv,A2-0964,source_note,galėti forms — conjugation table read on en.wiktionary; rekomenduoti has no en.wiktionary entry,galėti forms — conjugation table read on en.wiktionary; rekomenduoti has no en.wiktionary entry | parekomenduoti: LKŽ s.v. rekomenduoti (http://lkz.lt/?zodis=rekomenduoti&lns=-1&les=-1); pasiūlyti as the everyday verb: Tatoeba lemma search (rollout_round3/NOTE_0964_parekomenduoti.md)
+a2_build/restage_bubbles.csv,A2-0964,lithuanian,Ar galite ką nors rekomenduoti?,Ar galite ką nors parekomenduoti?
+a2_build/restage_bubbles.csv,A2-1149,render,yes,no (merged into A2-0385)
+a2_build/restage_bubbles.csv,A2-1149,merge_with,,A2-0385
+a2_build/restage_bubbles.csv,A2-1149,new_staging,"a man on a staircase with a loose step, testing it with one foot, hand on the rail",MERGED into A2-0385
+a2_build/restage_bubbles.csv,A2-1187,render,yes,no (merged into A2-0354)
+a2_build/restage_bubbles.csv,A2-1187,merge_with,,A2-0354
+a2_build/restage_bubbles.csv,A2-1187,new_staging,"a railway platform, a woman waving a handkerchief after a departing train",MERGED into A2-0354
+a2_build/restage_bubbles.csv,A2-2007,render,hold (owner: merge with A2-0917?),yes
+a2_build/restage_bubbles.csv,A2-2007,merge_with,A2-0917 (owner decision),
+a2_build/restage_bubbles.csv,A2-2007,new_staging,"MERGE CANDIDATE with A2-0917 Norėčiau kavos (same café order). If kept: a café counter; a customer holds up ONE finger of his RIGHT hand to the barista, looking at her; she looks at him while a cup fills under the machine spout. Insets: the single raised finger; the cup under the spout","a café counter; a customer holds up ONE finger of his RIGHT hand to the barista, looking at her; she looks at him while a cup fills under the machine spout. Insets: the single raised finger; the cup under the spout"
+a2_build/restage_bubbles.csv,A2-2012,render,hold (owner: merge with A2-0964?),yes
+a2_build/restage_bubbles.csv,A2-2012,merge_with,A2-0964 (owner decision),
+a2_build/restage_bubbles.csv,A2-2012,new_staging,"MERGE CANDIDATE with A2-0964 Ar galite ką nors rekomenduoti? If kept: a restaurant; a diner holds the open menu toward the waiter and looks up at him with a questioning tilt; the waiter bends and points with his RIGHT index finger to one line of the menu, looking at the page; the menu lines are plain rules, no lettering. Insets: the finger on the menu line; a dish on a tray","a restaurant; a diner holds the open menu toward the waiter and looks up at him with a questioning tilt; the waiter bends and points with his RIGHT index finger to one line of the menu, looking at the page; the menu lines are plain rules, no lettering. Insets: the finger on the menu line; a dish on a tray"
+a2_build/restage_bubbles.csv,A2-2020,render,hold (owner: merge with A2-0374?),yes
+a2_build/restage_bubbles.csv,A2-0367,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-0371,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-0372,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-0373,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-0929,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-0950,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1148,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1150,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1172,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1191,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1155,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1160,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1178,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1189,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,S-0018,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-0385,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-1946,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-2001,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-2003,(row),,round-3 staging appended
+a2_build/restage_bubbles.csv,A2-2029,(row),,round-3 staging appended
+a2_build/recording_list.csv,A2-0964,lithuanian,Ar galite ką nors rekomenduoti?,Ar galite ką nors parekomenduoti?
+a2_build/recording_list.csv,A2-0964,say,Ar galite ką nors rekomenduoti?,Ar galite ką nors parekomenduoti?
+a2_build/recording_list.csv,A2-1149,(take),1004,dropped (merged)
+a2_build/recording_list.csv,A2-1187,(take),1042,dropped (merged)
+a2_build/benchmark_en/additions_verified.csv,P-082,notes,,merged into A2-1995 2026-10-19
+a2_build/benchmark_en/additions_verified.csv,P-096,notes,,merged into A2-1991 2026-10-19
