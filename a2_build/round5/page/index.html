@@ -1,0 +1,235 @@
+<title>Round 5 Fixes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&display=swap">
+<style>
+/* Layout: a GO training-album sheet — brick-red band on top, one plate per row:
+   picture left, the judging slip right; stacks to one column on a phone. */
+:root{
+  --paper:#ece3cc; --sheet:#f5efdf; --ink:#2b2520; --dun:#7d715a; --rule:#c9b994;
+  --red:#8a2b1c; --on-red:#f3ead6; --teal:#2f5f5a;
+  --ok:#3d7a4c; --mid:#b07a1e; --bad:#9a3220; --chipbg:#e2d7bb;
+  --serif:"PT Serif",Georgia,"Times New Roman",serif;
+  --narrow:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#221d19; --sheet:#2c2621; --ink:#ebe2cf; --dun:#b0a487; --rule:#4d4336;
+  --red:#7a2618; --on-red:#f3ead6; --teal:#86b5ae; --ok:#6fae7e; --mid:#d9a24a; --bad:#e07a62; --chipbg:#3a322a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#221d19; --sheet:#2c2621; --ink:#ebe2cf; --dun:#b0a487; --rule:#4d4336;
+  --red:#7a2618; --on-red:#f3ead6; --teal:#86b5ae; --ok:#6fae7e; --mid:#d9a24a; --bad:#e07a62; --chipbg:#3a322a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:16px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--red)}
+.band{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--red);color:var(--on-red);
+  padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.band h1{font-family:var(--narrow);font-weight:700;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;margin:0}
+.tally{display:flex;gap:12px;font-family:var(--narrow);font-size:.95rem;margin-left:auto;font-variant-numeric:tabular-nums}
+.tally b{font-size:1.25rem}
+.filters{display:flex;flex-wrap:wrap;gap:6px;width:100%}
+.filters button,.band .copy{font:inherit;font-family:var(--narrow);font-size:.85rem;letter-spacing:.04em;padding:3px 10px;border:1px solid var(--on-red);background:transparent;color:var(--on-red);border-radius:2px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--on-red);color:var(--red)}
+#status{font-family:var(--narrow);font-size:.8rem;opacity:.9;width:100%}
+main{max-width:1180px;margin:0 auto;padding-block:18px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+.lead{max-width:70ch}
+.lead p{margin:0 0 .6em}
+.general{background:var(--sheet);border:1px solid var(--rule);padding:12px 14px;display:grid;gap:6px}
+.general label{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;color:var(--dun)}
+textarea{width:100%;font:inherit;font-size:.95rem;background:transparent;color:var(--ink);border:1px solid var(--rule);padding:6px 8px;min-height:2.4em;resize:vertical;border-radius:2px}
+textarea:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.set{display:grid;gap:14px}
+.set-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;border-bottom:2px solid var(--red);padding-bottom:4px}
+.set-h h2{font-family:var(--narrow);font-weight:700;font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase;margin:0;color:var(--red)}
+.set-h .hint{color:var(--dun);font-style:italic}
+.set-h .stat{margin-left:auto;font-family:var(--narrow);font-variant-numeric:tabular-nums}
+.restage{font-family:var(--narrow);background:var(--bad);color:var(--sheet);padding:1px 8px;border-radius:2px}
+.plate{background:var(--sheet);border:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:0}
+.plate.hide{display:none}
+.plate.v-pass{box-shadow:inset 4px 0 0 var(--ok)} .plate.v-fail{box-shadow:inset 4px 0 0 var(--bad)}
+.pic{padding:10px;display:grid;gap:8px;align-content:start}
+.pic a{display:block} .pic img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:8px}
+.pair figure{margin:0;display:grid;gap:3px;min-width:0;align-content:start}
+.pair figcaption,.zoomcap{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;color:var(--dun)}
+.pair figure.after figcaption{color:var(--teal);font-weight:700}
+.zoom{display:grid;gap:3px}
+.q{font-size:.92rem}
+.before{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:10px;align-items:start}
+.before .bl{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;color:var(--dun);display:block;margin-bottom:2px}
+.before q{font-style:italic;quotes:"\201C" "\201D";font-size:.92rem}
+.slip{padding:12px 14px;border-left:1px dashed var(--rule);display:grid;gap:10px;align-content:start;min-width:0}
+.id{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.id .key{font-family:var(--narrow);color:var(--dun);font-variant-numeric:tabular-nums}
+.id .lt{font-size:1.45rem;font-weight:700}
+.id .pron{color:var(--dun)}
+.cap{font-family:var(--narrow);font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;border:1px solid var(--ink);padding:2px 8px;justify-self:start}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--narrow);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:2px;background:var(--chipbg);color:var(--ink)}
+.chip.PASS{background:var(--ok);color:var(--sheet)} .chip.WARN{background:var(--mid);color:var(--sheet)} .chip.FAIL{background:var(--bad);color:var(--sheet)}
+dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 10px;font-size:.92rem}
+dt{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.76rem;color:var(--dun);padding-top:.2em}
+dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.qa{font-size:.85rem;color:var(--dun)}
+.qa .f{color:var(--bad)}
+.judge{display:grid;gap:8px;border-top:1px solid var(--rule);padding-top:10px}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.row .lbl{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;width:7.5em;color:var(--dun)}
+.seg button,.tog{font:inherit;font-family:var(--narrow);font-size:.9rem;padding:4px 12px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px;min-height:34px}
+.seg{display:inline-flex}
+.seg button+button{border-left:none}
+.seg button[aria-pressed="true"][data-v="yes"],.seg button[aria-pressed="true"][data-v="ok"]{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.seg button[aria-pressed="true"][data-v="nearly"]{background:var(--mid);border-color:var(--mid);color:var(--sheet)}
+.seg button[aria-pressed="true"][data-v="no"],.seg button[aria-pressed="true"][data-v="redo"]{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.tog[aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.verdict{font-family:var(--narrow);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+.verdict.pass{color:var(--ok)} .verdict.fail{color:var(--bad)} .verdict.open{color:var(--dun)}
+#lbx{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
+#lbx img{max-width:98vw;max-height:94vh}
+@media (max-width:760px){.plate{grid-template-columns:minmax(0,1fr)}.slip{border-left:none;border-top:1px dashed var(--rule)}.tally{margin-left:0}}
+@media (prefers-reduced-motion:no-preference){.plate{transition:box-shadow .15s}}
+.answers{max-width:70ch;margin:0 0 1.6em;padding:12px 16px;border:1px solid var(--rule);border-radius:2px}.answers h2{font-family:var(--narrow);font-size:1rem;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .6em}.answers h3{font-size:1.05rem;margin:0 0 .5em}.answers p{margin:0 0 .7em}.answers a{color:var(--teal)}.pic img{width:100%;height:auto}
+</style>
+
+<div class="band"><div class="band-in">
+  <h1 id="ttl"></h1>
+  <div class="tally" id="tally"></div>
+  <div class="filters" id="filters"></div>
+  <span id="status">Connecting to the review store…</span>
+</div></div>
+<main id="main">
+  <section class="answers" aria-labelledby="ans-h"><h2 id="ans-h">Your question</h2><h3>055 bankas: is the outside building historical?</h3><p><b>The building it is meant to be is historical; the drawing does not show it.</b> The card's settings row and staging place it in the <b>Bank of Lithuania</b> in Kaunas (Maironio g. 25 / K. Donelaičio g. 85; architect Mykolas Songaila; cornerstone 12 March 1925, opened 8 December 1928). The main picture is drawn as that bank's Operations Hall under its triangular skylight, which you called a good location. The outside inset was written loosely ("the bank's pale neoclassical corner front with its tall columned entrance") and the engine drew a generic portico: six columns under a flat entablature on a square corner.</p><p>The real building has a <b>rounded corner</b> at the crossing of the two streets, a granite base, and <b>Kajetonas Sklėrius's sculpture group</b> (allegories of Agriculture, Industry and Warfare) on the pediment above the attic on the Maironio street side. None of that is in the inset. No source I read describes a columned portico outside; the deck's own location entry already lists the façade's column order as unverified. So your courthouse reading is fair, and it matters here: 035 teismas is staged with the Kaunas Palace of Justice front in an inset, so a columned front on 055 points at the court card.</p><p>Sources: <a href="https://www.pinigumuziejus.lt/en/news/bank-of-lithuania-buildings-in-kaunas">Money Museum, Bank of Lithuania buildings in Kaunas</a> (rounded corner, granite, sculpture group); <a href="https://www.pinigumuziejus.lt/en/eguide/the-bank-of-lithuanias-building-in-kaunas">Money Museum e-guide</a> (architect, dates, corner of Donelaičio and Maironio). I could not check a photograph of the façade from here.</p><p>Your call on the 055 card below: <b>OK</b> keeps it. <b>Redo</b> re-rolls it whole with the inset rewritten to the verified marks (rounded corner, sculpture group on the pediment), or with that inset replaced by another bank detail such as the vault door; say which in the note.</p></section>
+  <section class="lead" id="lead"></section>
+  <section class="general">
+    <label for="general">General notes on this batch</label>
+    <textarea id="general" placeholder="Anything that applies to the whole set."></textarea>
+  </section>
+  <div id="sets"></div>
+</main>
+<div id="lbx" role="dialog" aria-label="Enlarged picture"><img id="lbimg" alt=""></div>
+
+<script>
+const MODE='review', DATA=[{"k": "083_tevas", "group": "Re-rolled whole", "lt": "tėvas", "pron": "tė́vas", "en": "father", "imgs": [{"src": "r5_083_tevas_0.jpg", "label": "Round 4 (judged)"}, {"src": "r5_083_tevas_1.jpg", "label": "New", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "replace the third panel with an image that isn't a closeup of the hands"], ["Done", "Whole re-roll. Inset 3 is now the family: father, mother and the boy on a bench before their house. No hand close-up anywhere. The main picture is new too, since nothing is patched any more."], ["Extra check", "inset 3 read as a family on a bench, not a hand close-up; hands and limbs ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "father"}, {"k": "413_tuoktis", "group": "Re-rolled whole", "lt": "tuoktis", "pron": "tuõktis", "en": "marry", "imgs": [{"src": "r5_413_tuoktis_0.jpg", "label": "Round 4 (judged)"}, {"src": "r5_413_tuoktis_1.jpg", "label": "Try 1 · picked", "cls": "after"}, {"src": "r5_413_tuoktis_2.jpg", "label": "Try 2"}, {"src": "r5_413_tuoktis_3.jpg", "label": "Try 3"}], "zoom": "", "chips": ["3 tries"], "facts": [["Your note", "I like the staging of the first, failed, roll - the putting on of the ring. Let's try again, hopefully, no hand glitches"], ["Done", "The first round-3 staging is back word for word (the groom slides the ring on, her hand held out flat and still; insets: ring box, signing the register, guests throwing grain). Three whole re-rolls; try 1 has the cleanest hands and the insets as staged, so it is the card. Try 3 drew a hand close-up inset again. All three are kept."], ["Extra check", "hands and limbs ok on all three tries"]], "qa": "WARN", "fails": "", "warns": "guessed 'wedding', card teaches 'marry'", "guess": "wedding"}, {"k": "A2-0085", "group": "Re-rolled whole", "lt": "kasa", "pron": "kasà", "en": "ticket office", "imgs": [{"src": "r5_A2-0085_0.jpg", "label": "Round 3 station (hand through the glass)"}, {"src": "r5_A2-0085_1.jpg", "label": "New", "cls": "after"}], "zoom": "", "chips": ["Kaunas station"], "facts": [["Your note", "Let's try the kaunas train station again, but re-roll, since in the kaunas station one, the vendor is reaching through the glass"], ["Done", "The Kaunas station rows round 4 reverted are back (settings row and staging: the 1953 hall with square pilasters and a coffered ceiling). Re-rolled with the clerk seated behind the glass, both hands on her own counter, pushing the ticket and change out through the slot at the foot of the window."], ["Extra check", "clerk's hands stay on her side of the glass, on the counter"]], "qa": "PASS", "fails": "", "warns": "", "guess": "train ticket"}, {"k": "A2-0359", "group": "Re-rolled whole", "lt": "Labai ačiū", "pron": "Labaĩ ãčiū", "en": "Thank you very much", "imgs": [{"src": "r5_A2-0359_0.jpg", "label": "Round 4 (main you kept)"}, {"src": "r5_A2-0359_1.jpg", "label": "New", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "first insert should show man when he was a patient, second insert should show him exiting the hospital, main image stays"], ["Done", "Masked edits are off, so the whole picture was re-rolled with the main scene written as it was drawn in round 4 and the two new insets: the same man earlier in pyjamas in a hospital bed with the same nurse; the same man walking out through the hospital's front doors. The main scene came out close to round 4 but is a new drawing, so both are shown."], ["Extra check", "insets read as the patient in bed and the man leaving the hospital; hands and limbs ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "hospital visit"}, {"k": "A2-0925", "group": "Re-rolled whole", "lt": "Trečia valanda", "pron": "Trečià valandà", "en": "It is three o'clock", "imgs": [{"src": "r5_A2-0925_0.jpg", "label": "Round 4 (judged)"}, {"src": "r5_A2-0925_1.jpg", "label": "Try 1 (QA gaze fail)", "cls": "after"}, {"src": "r5_A2-0925_2.jpg", "label": "New", "cls": "after"}], "zoom": "", "chips": ["2 tries"], "facts": [["Your note", "Even worse - stop editing and just reroll"], ["Done", "Re-rolled with the planner's fallback staging: both arms already in the coat sleeves, buttoning it with his right hand, a cap in his left; she points at the clock at three. Try 1 failed QA (both looked at the clock instead of at each other); try 2 has them look at each other."], ["Extra check", "hands and limbs ok"]], "qa": "WARN", "fails": "", "warns": "stray act: a pointing finger | stray act: a hand on the chest", "guess": "three o'clock"}, {"k": "A2-1167", "group": "Re-rolled whole", "lt": "Užeikite!", "pron": "Užeĩkite!", "en": "Come in!", "imgs": [{"src": "r5_A2-1167_0.jpg", "label": "First version (panels you liked)"}, {"src": "r5_A2-1167_1.jpg", "label": "Round 4 (main you liked)"}, {"src": "r5_A2-1167_2.jpg", "label": "New", "cls": "after"}], "zoom": "", "chips": ["2 tries"], "facts": [["Your note", "panels in first image were better, while main image of reroll is without error; model the panels after the first image"], ["Done", "Round-4 main scene kept as staged (normal-height door, host two paces inside, visitor with a cake tin) with the first version's insets: she hangs her coat while he stands by; the two of them at tea with a teapot and biscuits. Try 1 failed QA continuity (coat in the main picture, red jumper in the insets); try 2 names the red jumper under her coat."], ["Extra check", "door of ordinary height, host clear of the frame; hands and limbs ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "welcoming a guest"}, {"k": "A2-1431", "group": "Re-rolled whole", "lt": "matuotis", "pron": "matúotis", "en": "to try on", "imgs": [{"src": "r5_A2-1431_0.jpg", "label": "Round 4 (judged)"}, {"src": "r5_A2-1431_1.jpg", "label": "New", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Imperfect masking, bleeds outside of borders"], ["Done", "Whole re-roll with the same staging. Inset 1 is a foot sliding into a new shoe with the laces loose and the box beside it; no shoehorn."], ["Extra check", "no shoehorn; the hand in the shoe inset is whole and nothing crosses a frame"]], "qa": "WARN", "fails": "", "warns": "guessed 'tailor', card teaches 'to try on'", "guess": "tailor"}, {"k": "A2-2002", "group": "Re-rolled whole", "lt": "Koks jūsų adresas?", "pron": "Kóks jū́sų ãdresas?", "en": "What is your address?", "imgs": [{"src": "r5_A2-2002_0.jpg", "label": "Round 4 (judged)"}, {"src": "r5_A2-2002_1.jpg", "label": "New", "cls": "after"}], "zoom": "r5_A2-2002_zoom.jpg", "chips": ["lettering declared"], "facts": [["Your note", "reroll, this patching of images isn't working; staging is good otherwise"], ["Done", "Whole re-roll with the same staging, the right hand written in: raised at the plate, palm turned out, index finger up, the other fingers folded; her left hand rests on the gate. The declared \"7\" reads back."], ["Extra check", "palm out, natural; left hand natural"]], "qa": "PASS", "fails": "", "warns": "", "guess": "seven"}, {"k": "A2-2010", "group": "Re-rolled whole", "lt": "Grąžos nereikia.", "pron": "", "en": "Keep the change", "imgs": [{"src": "r5_A2-2010_0.jpg", "label": "Round 4 (judged)"}, {"src": "r5_A2-2010_1.jpg", "label": "New", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Hand is good, but now the chair is mangled"], ["Done", "Whole re-roll, same staging: the driver in the front-left seat reaches back with his right hand, palm up, coins on it; the passenger waves them off."], ["Extra check", "the offered hand reads as a right hand; seats and door whole"]], "qa": "PASS", "fails": "", "warns": "", "guess": "taxi fare"}, {"k": "A2-0660", "group": "Restored", "lt": "perėja", "pron": "pérėja", "en": "crossing", "imgs": [{"src": "r5_A2-0660_0.jpg", "label": "Round 4 re-roll (rejected)"}, {"src": "r5_A2-0660_1.jpg", "label": "Restored: round 3", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Original is better - the angle is odd in the re-roll, and the man crossing the street seems to be coming out of the car, and the car is on the crosswalk"], ["Done", "The round-3 picture is back: the one you judged \"faces and hands are good\" on Round 3 Fixes and saw on the left of Round 4 Fixes. Its staging note went back with it. The round-4 re-roll is kept. The very first render (October 11) is also kept, untouched."]], "qa": "PASS", "fails": "", "warns": "", "guess": "pedestrian crossing"}, {"k": "055_bankas", "group": "Your question", "lt": "bankas", "pron": "bánkas", "en": "bank", "imgs": [{"src": "r5_055_bankas_0.jpg", "label": "Current card"}], "zoom": "", "chips": [], "facts": [["Your note", "Is the outside building historical? If it is, fine, but otherwise, it looks like it could be a courthouse"], ["Done", "Answered at the top of the page. OK keeps the card as it is; Redo re-rolls it whole with the outside inset rewritten (say in the note: the real corner, or another bank detail instead)."]], "qa": "", "fails": "", "warns": "", "guess": ""}], EXTRA={"col": "round5", "title": "Round 5 fixes", "hints": {"Re-rolled whole": "the picture you judged beside the new one; nothing was patched", "Restored": "you preferred the earlier picture; the rejected one is kept", "Your question": "your question; the answer is above"}, "lead": ["Everything done on your Round 4 Fixes verdicts. As you asked, nothing was patched: 9 cards were re-rolled whole and A2-0660 is back to its round-3 picture. Every earlier version is kept in the _rerolled folders.", "QA (cold read, hands and limbs, plus the specific check your note asked for): 0 fail, 3 with notes. Two first tries failed (0925 gaze, 1167 coat colour) and were re-rolled once more. Spec 3.1.0 now carries the direction rule, main actors only, for new renders, and the whole-re-roll working rule. Mark OK or Redo; a note on a Redo says what to change."]};
+const COL = EXTRA.col, META = EXTRA.col+'_meta/general';
+const LS='go_review_'+COL; let ME='';
+const $=id=>document.getElementById(id);
+const el=(t,a={},...kids)=>{const e=document.createElement(t);for(const[k,v]of Object.entries(a)){if(k==='class')e.className=v;else if(k.startsWith('on'))e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)}for(const c of kids){if(c==null)continue;e.append(c.nodeType?c:document.createTextNode(c))}return e};
+let V={}, G={text:'',updatedAt:''}, db=null, timers={}, F='all';
+try{const s=JSON.parse(localStorage.getItem(LS)||'{}');V=s.V||{};G=s.G||G}catch(e){}
+function local(){try{localStorage.setItem(LS,JSON.stringify({V,G}))}catch(e){}}
+function status(t,warn){const s=$('status');s.textContent=t;s.style.fontWeight=warn?'700':''}
+
+// ---- verdict logic (PILOT_24: pass = Situation yes/nearly, Neighbour no, Stray none)
+function verdict(k){const v=V[k]||{};
+  if(MODE==='pilot'){ if(v.neighbour_fail||v.stray||v.situation==='no')return'fail'; if(v.situation==='yes'||v.situation==='nearly')return'pass'; return'open'}
+  return v.verdict==='ok'?'pass':v.verdict==='redo'?'fail':'open'}
+const VTXT={pass:'Passes',fail:MODE==='pilot'?'Fails':'Redo',open:'Not judged yet'};
+
+async function push(k){const v=V[k];v.updatedAt=new Date().toISOString();local();
+  if(!db){status('Saved in this browser only — the review store is not connected',true);return}
+  try{await db.doc(COL+'/'+k).set(Object.assign({key:k},v,ME?{by:ME}:{}));status('Saved · '+new Date().toLocaleTimeString())}
+  catch(e){status('Could not save to the review store ('+(e.code||'error')+'); kept in this browser',true)}}
+async function pushG(){G.updatedAt=new Date().toISOString();local();if(!db)return;
+  try{await db.doc(META).set(Object.assign({},G,ME?{by:ME}:{}));status('Notes saved · '+new Date().toLocaleTimeString())}catch(e){status('Notes kept in this browser only ('+(e.code||'error')+')',true)}}
+function set(k,patch){V[k]=Object.assign({},V[k]||{},patch);paint();push(k)}
+
+function plate(c){
+  const qa=el('div',{class:'qa'});
+  if(c.fails)qa.append(el('div',{class:'f'},'QA fail: '+c.fails));
+  if(c.warns)qa.append(el('div',{},'QA notes: '+c.warns));
+  if(c.nb&&MODE==='pilot')qa.append(el('div',{},'Neighbour test (machine) picked: '+c.nb));
+  if(c.guess)qa.append(el('div',{},'Read cold as: '+c.guess));
+  const chips=el('div',{class:'chips'});
+  if(c.qa)chips.append(el('span',{class:'chip '+c.qa},'QA '+c.qa));
+  if(c.fmt)chips.append(el('span',{class:'chip'},c.fmt));
+  if(c.rr)chips.append(el('span',{class:'chip'},'re-rolled ×'+c.rr));
+  if(c.ct)chips.append(el('span',{class:'chip'},'lettering declared'));
+  for(const x of (c.chips||[]))chips.append(el('span',{class:'chip'},x));
+  const facts=el('dl',{});
+  for(const[t,d]of (c.facts||[]))if(d)facts.append(el('dt',{},t),el('dd',{},d));
+  const judge=el('div',{class:'judge'});
+  for(const q of (c.questions||[])){
+    const seg=el('div',{class:'seg',role:'group','aria-label':q.text});
+    for(const[v,t]of q.opts)seg.append(el('button',{type:'button','data-v':v,'data-k':c.k,'data-f':'q_'+q.id,onclick:()=>set(c.k,{['q_'+q.id]:(V[c.k]||{})['q_'+q.id]===v?'':v})},t));
+    judge.append(el('div',{class:'q'},q.text),el('div',{class:'row'},seg));
+  }
+  const seg=el('div',{class:'seg',role:'group','aria-label':'Verdict'});
+  for(const[v,t]of[['ok','OK'],['redo','Redo']])seg.append(el('button',{type:'button','data-v':v,'data-k':c.k,'data-f':'verdict',onclick:()=>set(c.k,{verdict:(V[c.k]||{}).verdict===v?'':v})},t));
+  judge.append(el('div',{class:'row'},el('span',{class:'lbl'},'Verdict'),seg));
+  const ta=el('textarea',{id:'note-'+c.k,'aria-label':'Note for '+c.k,placeholder:'Note for this card'});
+  ta.addEventListener('input',()=>{V[c.k]=Object.assign({},V[c.k]||{},{note:ta.value});local();clearTimeout(timers[c.k]);timers[c.k]=setTimeout(()=>push(c.k),800)});
+  judge.append(ta, el('div',{class:'verdict open','data-verdict':c.k},''));
+  const zoom=(f)=>e=>{e.preventDefault();$('lbimg').src='media/'+f;$('lbx').style.display='flex'};
+  const pic=el('div',{class:'pic'});
+  const fig=(f)=>el('figure',{class:f.cls||''},el('a',{href:'media/'+f.src,onclick:zoom(f.src)},el('img',{src:'media/'+f.src,alt:c.en+': '+f.label,loading:'lazy',width:String(f.w||800),height:String(f.h||533)})),el('figcaption',{},f.label));
+  pic.append(el('div',{class:'pair'},...(c.imgs||[]).map(fig)));
+  if(c.zoom)pic.append(el('div',{class:'zoom'},el('a',{href:'media/'+c.zoom,onclick:zoom(c.zoom)},el('img',{src:'media/'+c.zoom,alt:'close-up of the repainted area, before and after',loading:'lazy'})),el('span',{class:'zoomcap'},'Close-up of the repainted area · before | after')));
+  return el('article',{class:'plate',id:'p-'+c.k,'data-k':c.k},pic,
+    el('div',{class:'slip'},el('div',{class:'id'},el('span',{class:'key'},c.k),el('span',{class:'lt'},c.lt),el('span',{class:'pron'},c.pron&&c.pron!==c.lt?c.pron:'')),
+      el('div',{class:'cap',title:'English caption (bottom band)'},c.en),chips,facts,qa,judge));
+}
+
+function build(){
+  $('ttl').textContent=EXTRA.title;
+  const lead=$('lead');
+  EXTRA.lead.forEach(t=>lead.append(el('p',{},t)));
+  const groups = [...new Set(DATA.map(c=>c.set||c.group))];
+  const hints = EXTRA.hints||{};
+  for(const g of groups){
+    const cards=DATA.filter(c=>(c.set||c.group)===g);
+    const sec=el('section',{class:'set','data-set':g},el('div',{class:'set-h'},el('h2',{},g),el('span',{class:'hint'},hints[g]||''),el('span',{class:'stat','data-stat':g},'')));
+    cards.forEach(c=>sec.append(plate(c)));
+    $('sets').append(sec);
+  }
+  const fl=$('filters');
+  for(const[f,t]of[['all','All '+DATA.length],['open','Not judged'],['fail',MODE==='pilot'?'Failed':'Redo'],['qa','QA warn or fail']]){
+    fl.append(el('button',{type:'button','aria-pressed':String(f==='all'),onclick:e=>{F=f;fl.querySelectorAll('button[aria-pressed]').forEach(b=>b.setAttribute('aria-pressed',String(b===e.currentTarget)));paint()}},t))}
+  fl.append(el('button',{type:'button',class:'copy',onclick:copySummary},'Copy summary'));
+  const g=$('general'); g.value=G.text||'';
+  g.addEventListener('input',()=>{G.text=g.value;local();clearTimeout(timers.__g);timers.__g=setTimeout(pushG,900)});
+  $('lbx').onclick=()=>{$('lbx').style.display='none'};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')$('lbx').style.display='none'});
+}
+
+function paint(){
+  let n={pass:0,fail:0,open:0};
+  for(const c of DATA){const v=V[c.k]||{}, vd=verdict(c.k); n[vd]++;
+    const p=$('p-'+c.k); p.classList.toggle('v-pass',vd==='pass'); p.classList.toggle('v-fail',vd==='fail');
+    p.querySelectorAll('button[data-f]').forEach(b=>{const f=b.dataset.f;b.setAttribute('aria-pressed',String(b.dataset.v?v[f]===b.dataset.v:!!v[f]))});
+    const ta=$('note-'+c.k); if(ta&&document.activeElement!==ta&&(v.note||'')!==ta.value)ta.value=v.note||'';
+    const vt=p.querySelector('[data-verdict]'); vt.textContent=VTXT[vd]; vt.className='verdict '+vd;
+    let show=true; if(F==='open')show=vd==='open'; else if(F==='fail')show=vd==='fail'; else if(F==='qa')show=c.qa==='WARN'||c.qa==='FAIL';
+    p.classList.toggle('hide',!show)}
+  document.querySelectorAll('[data-stat]').forEach(s=>{const g=s.dataset.stat;const cs=DATA.filter(c=>(c.set||c.group)===g);
+    const f=cs.filter(c=>verdict(c.k)==='fail').length, ok=cs.filter(c=>verdict(c.k)==='pass').length;
+    s.textContent=cs.length+' cards · '+ok+' pass · '+f+(MODE==='pilot'?' fail':' redo');
+    const old=s.parentNode.querySelector('.restage'); if(old)old.remove();
+    if(MODE==='pilot'&&f>=3)s.parentNode.append(el('span',{class:'restage'},'Re-stage this set'))});
+  $('tally').innerHTML='';
+  $('tally').append(el('span',{},el('b',{},String(n.pass)),' pass'),el('span',{},el('b',{},String(n.fail)),MODE==='pilot'?' fail':' redo'),el('span',{},el('b',{},String(n.open)),' to judge'));
+  const g=$('general'); if(document.activeElement!==g&&(G.text||'')!==g.value)g.value=G.text||'';
+}
+
+function copySummary(){
+  const lines=DATA.map(c=>{const v=V[c.k]||{};const vd=verdict(c.k);
+    const bits=[v.verdict||'',...(c.questions||[]).map(q=>v['q_'+q.id]?q.id+': '+v['q_'+q.id]:'')];
+    return c.k+'\t'+c.en+'\t'+VTXT[vd]+'\t'+bits.filter(Boolean).join(', ')+(v.note?'\t'+v.note:'')});
+  const t=lines.join('\n')+(G.text?'\n\nGeneral: '+G.text:'');
+  navigator.clipboard.writeText(t).then(()=>status('Summary of '+DATA.length+' cards copied'),()=>status('Copy was refused by this view; the verdicts are saved in the review store',true));
+}
+
+build(); paint();
+(async()=>{
+  db = window.claude?.use ? await window.claude.use('db') : null;
+  try{const u = window.claude?.use ? await window.claude.use('user') : null; if(u&&u.id)ME=await u.id()}catch(e){}
+  if(!db){status('Not connected: verdicts stay in this browser. Use "Copy summary" to pass them on.',true);return}
+  try{
+    const snap=await db.collection(COL).limit(500).get(); let n=0;
+    snap.docs.forEach(d=>{const x=d.data();if(!x||!x.key)return;const mine=V[x.key];
+      if(!mine||!mine.updatedAt||(x.updatedAt||'')>=mine.updatedAt){const{key,...rest}=x;V[x.key]=rest;n++}});
+    const gd=await db.doc(META).get(); const gx=gd&&gd.exists?gd.data():null;
+    if(gx&&(!G.updatedAt||(gx.updatedAt||'')>=G.updatedAt))G=gx;
+    local(); paint(); status('Connected · '+n+' saved verdicts loaded · saves as you go');
+  }catch(e){status('Could not read the review store ('+(e.code||'error')+'); working from this browser',true)}
+})();
+</script>

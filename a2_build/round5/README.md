@@ -29,3 +29,21 @@ the glass; 1431 no shoehorn, hand ok, nothing outside the frame; 2002 palm out, 
 0359 insets = patient in bed / leaving the hospital; 1167 door normal, host clear.
 
 Spend (project rates): 13 renders ≈ $0.18; ≈ 30 QA calls ≈ $0.10–0.25.
+
+## Spec 3.1.0 (tag `spec-v3.1.0`, commit ad18ae0)
+`DIRECTION_RULE` (main actors left to right; main figures only, not background; new renders only), routing
+`go_generator.direction_applies()` + `deck_builder.DIRECTION_FREE_ROWS` (19 side/direction cards), `situation_2` and
+LEFT/RIGHT-named stagings exempt; `FIT_PROMPT` "direction" → WARN. 98 of 1,465 prompts gain the sentence, nothing else
+changes. Working rule "whole re-roll, not masked edits, unless the owner asks" in spec §10. Erratum: 3.0.1 should have
+been a minor release; recorded in the changelog and `docs/VERSIONS.md`, not renumbered. The round-5 renders above were
+drawn under 3.0.1 (ledger stamps).
+
+## 055 bankas — the owner's question
+Intended place is historical: Bank of Lithuania, Kaunas (Maironio g. 25 / K. Donelaičio g. 85; M. Songaila; 1925–28).
+The inset as drawn is a generic six-column portico on a square corner; the real building has a rounded corner, granite
+base and K. Sklėrius's sculpture group on the pediment (Money Museum pages). The courthouse reading is fair and a
+neighbour risk (035 teismas, Palace of Justice front). Owner decides OK / Redo on the page.
+
+## Review page
+**Round 5 Fixes** — https://claude.ai/artifact/G7cthB38f62czrxB6sek1z (private; db `round5`, notes `round5_meta/general`;
+both empty after publish). Rebuild: `python3 a2_build/round5/build_page.py` (media in `page/media/`, not committed).
