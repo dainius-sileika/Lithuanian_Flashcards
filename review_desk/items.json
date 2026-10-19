@@ -3,7 +3,7 @@
   "id": "t-audio-ready",
   "group": "Your own tasks",
   "title": "Record the audio: the recorder is ready",
-  "ask": "On the Mac, open recorder_A2.html in Chrome. It sits at the root of the 51.04 Lithuanian Flashcard Project folder (Finder → Open With → Google Chrome; not the phone). The sheet has 2,849 takes: A1 first (takes 1–980: 945 new, 19 replacing the synthetic voice, 16 re-takes), then A2 (1,869). About 100 takes a session, roughly 30 minutes; A1 is about 10 sessions. After each session press Export new and tell me; the full one-page guide is below. Six cards are silent until you re-record them (265 lūpos, 249 mobilusis telefonas, A2-0033 rugsėjis, A2-0104 čekis, A2-0902 and A2-0903 Prašom…).",
+  "ask": "On the Mac, open recorder_A2.html in Chrome. It sits at the root of the 51.04 Lithuanian Flashcard Project folder (Finder → Open With → Google Chrome; not the phone). The sheet has 2,849 takes: A1 first (takes 1–980: 945 new, 19 replacing the synthetic voice, 16 re-takes), then A2 (1,869). About 100 takes a session, roughly 30 minutes; A1 is about 10 sessions. After each session press Export new and tell me; the full one-page guide is below. Six cards are silent until you re-record them (265 lūpos, 249 mobilusis telefonas, A2-0033 rugsėjis, A2-0104 čekis, A2-0902 and A2-0903 Prašom…). Card IDs are being renamed to one consistent scheme (your decision tonight). Takes you record before that lands will carry over: the next recorder moves them to the new names, and nothing is lost.",
   "options": [
    "Started",
    "Session done, exported"
