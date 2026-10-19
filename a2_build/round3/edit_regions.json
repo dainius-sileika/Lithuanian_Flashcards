@@ -489,5 +489,85 @@
    }
   ],
   "instruction": "the clerk's RIGHT hand, coming from her blue sleeve at the upper left, rests flat on top of the paper ticket roll, fingers together along the roll and the thumb on the near side; one hand with one thumb and four fingers; below the hand, the machine's plain metal spindle and side plate, with no fingers or other hand parts there"
+ },
+ "A2-2001": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a park bench; a young man holds a small notepad and pencil ready, looking at the young woman beside him; she counts off on her fingers; a telephone kiosk behind them",
+  "regions": [
+   {
+    "poly": [
+     [
+      992,
+      158
+     ],
+     [
+      1140,
+      158
+     ],
+     [
+      1140,
+      352
+     ],
+     [
+      992,
+      352
+     ]
+    ]
+   }
+  ],
+  "instruction": "the inside of the empty telephone kiosk: the black wall telephone with its receiver on the hook, the glass panes and the park trees seen through them; NOBODY inside the kiosk",
+  "regions_pass1": [
+   {
+    "poly": [
+     [
+      1288,
+      180
+     ],
+     [
+      1478,
+      180
+     ],
+     [
+      1478,
+      425
+     ],
+     [
+      1288,
+      425
+     ]
+    ]
+   }
+  ],
+  "instruction_pass1": "inside the telephone kiosk stands the SAME young man as in the main picture - short brown hair, no hat, brown jacket over a blue pullover - alone, the black receiver to his ear in his LEFT hand and the small open notepad in his RIGHT hand, reading from it; nobody else"
+ },
+ "A2-2003": {
+  "dir": "out_phrases_v3",
+  "gaze": "default",
+  "staging": "LEFT: a woman indoors by a frosted window, cold. RIGHT: a man on a bench in hot summer sun fanning himself with his cap",
+  "regions": [
+   {
+    "poly": [
+     [
+      790,
+      84
+     ],
+     [
+      930,
+      84
+     ],
+     [
+      930,
+      215
+     ],
+     [
+      790,
+      215
+     ]
+    ]
+   }
+  ],
+  "instruction": "a big bright yellow SUN drawn as a round disc high in the clear pale summer sky, a plain clean circle with a soft glow, no rays drawn as lines, no face"
  }
 }

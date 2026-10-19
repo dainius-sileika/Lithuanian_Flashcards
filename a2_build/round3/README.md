@@ -81,3 +81,32 @@ copies now match the folder.
 
 Section labels: owner chose "pagalbiniai + sąvokos (as applied)" — already in `card_frame.SECTIONS`. Release: "Release now,
 audio later" — recorded in `A1_WRAPUP.md` D3 (no action yet).
+
+## 5. Planner's round-3 plans (coordinator, 2026-10-19)
+
+All data changes are in one idempotent script, `a2_build/src/apply_round3.py` (run after `apply_benchmark.py`; a second
+run changes nothing), logged row by row in `data_applied.csv`.
+
+**Merges** (`a2_build/merges_2026-10-19.md`, applied as written): Sudie A2-1187 → Viso gero A2-0354 (back note appended to
+0354's usage line with the 1187 sources; the 1187 note removed); atsargiai A2-1149 → Atsargiai! A2-0385 (pron Atsargiaĩ!,
+LKŽ); A2-1944 → A2-1995 (1995 survives, pron "Kaip rãšoma? / Paraidžiui, prašaũ.", paraidžiui unverified); A2-1958 →
+A2-1991 (1991 survives). The four rows moved verbatim to `a2_build/merged_keys.csv` (+ merged_into/on/note); `id_map.csv`
+has a `merged_into` column; restage rows of 1187/1149 read "no (merged into …)"; takes 1004 and 1042 dropped from
+`recording_list.csv`; benchmark P-082/P-096 noted. The three overlaps (2007, 2012, 2020) are back to render = yes and were
+rendered for the first time. `study_order.csv` rebuilt: 2,437 → 2,433 positions, exactly the four absorbed keys gone.
+Test build (`build_apkg.py` to a scratch file): 2,433 notes, 0 rows without an image, 79/79 usage notes.
+
+**Stresses:** all 58 rows of `stress_58_resolved.csv` written to `lt_pron` (55 high, 3 medium: A2-0356 Ikì, A2-0900
+Nekalbù lietùviškai, A2-0910 Màno var̃das Daĩnius — listed on the review page for the owner).
+
+**A2-0964:** "Ar galite ką nors parekomenduoti?" (pron Ar̃ gãlite ką̃ nórs parekomendúoti?) in the word list, example
+(cloze source), id_map, restage row, recording list; usage note: tu variant "Ar gali ką nors parekomenduoti?", plus
+"Everyday speech often says pasiūlyti instead." with the LKŽ / Tatoeba sources.
+
+**Restaging** (`rollout_round3/restage.csv`, 20 cards, rows appended to `restage_bubbles.csv`): 18 re-rolls into
+`out_phrases_v3/`, 2 masked edits — A2-2001 (the kiosk inset now shows the same young man; second pass emptied the kiosk
+behind them, where a stranger stood) and A2-2003 (a sun disc added to the right panel). Every hard FAIL that a re-roll can
+change was re-rolled (0372, 0950 once; 1946, 2029 twice); every version is in `_rerolled/`. QA (`qa_restage.csv`, 23 cards
+incl. the three overlaps): 14 PASS, 5 WARN, 4 FAIL, no limb/prop/hand finding. The 4 FAILs are what the staging asks for:
+GAZE on 1148 (the husband looks at the prints) and 2012 (the waiter looks at the menu line), NEIGHBOUR on 1178 (dėkui read as
+"Thank you", a synonym), CONTINUITY on 2003 (two different people by design).

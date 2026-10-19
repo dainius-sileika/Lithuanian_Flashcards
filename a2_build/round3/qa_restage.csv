@@ -1,0 +1,24 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+A2-0367,Mano vardas…,WARN,,"cue not visible: a circle of chairs, one person standing and introducing himself to the group with a hand on his chest — no desk, no ledger, no name card | stray act: writing in a notebook",introduce yourself,,Let me introduce myself,yes
+A2-0371,Nesuprantu,PASS,,,classroom,,What does … mean?,yes
+A2-0372,Suprantu,PASS,,,study,,I understand,yes
+A2-0373,Nežinau,PASS,,,interview,,I don't know,yes
+A2-0385,Atsargiai!,PASS,,,slippery,,Be careful!,yes
+A2-0929,"Nesuprantu, atsiprašau",WARN,,"NEIGHBOUR TEST: reads as 'Nekalbu lietuviškai (A2-0900, the tourist speaks, hand over his mouth, in a shop)' (margin slight)",directions,,"Nekalbu lietuviškai (A2-0900, the tourist speaks, hand over his mouth, in a shop)",yes
+A2-0950,Ar galėtumėte man padėti?,PASS,,,fill out a form,,"Write it down, please",yes
+A2-1148,aišku,FAIL,"GAZE: speakers do not look at each other (The woman looks toward the man, while the man looks down at the muddy trail.)",caption fit: nearly | stray act: the man scratching his head,mop,,of course; clearly,nearly
+A2-1150,gaila,PASS,,,shelter,,a pity; sorry,yes
+A2-1155,įdomu,PASS,,,mineral,,interesting; I wonder,yes
+A2-1160,Ką veiki?,PASS,,,neighbor,,What are you doing? / What are you up to?,yes
+A2-1172,be abejo,WARN,,stray act: a hand on the chest,late,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,I understand,yes
+A2-1178,dėkui,FAIL,"NEIGHBOUR TEST: reads as 'Thank you (A2-0358, one hand flat on the chest, slight bow — here the bus, the seat and the sequence)' (margin clear)",,give up one's seat,,"Thank you (A2-0358, one hand flat on the chest, slight bow — here the bus, the seat and the sequence)",yes
+A2-1189,vieta prie lango,WARN,,"The newspaper and paper ticket contain lines resembling text, but no words are legible.",ticket,,Is this seat free?,yes
+A2-1191,šiaip sau,PASS,,,movie theater,,so-so,yes
+A2-1946,Man nesvarbu / Neprieštarauju,PASS,,,Coffee or tea?,,to mind (I don't mind),yes
+A2-2001,Koks tavo / jūsų telefono numeris?,WARN,,stray act: a pointing finger | stray act: a hand on the chest,telephone number,,What is your phone number?,yes
+A2-2003,Man šalta. / Man karšta.,FAIL,"CONTINUITY: same_people, same_positions, same_background, props_consistent (The panels show different people, settings, and props: a cold woman indoors and a hot man outdoors.)",,hot and cold,,I'm cold / I'm hot,yes
+A2-2007,"Vieną kavą, prašau.",PASS,,,one,,"One coffee, please (ordering)",yes
+A2-2012,Ką rekomenduotumėte?,FAIL,"GAZE: speakers do not look at each other (The customer looks at the waiter, while the waiter looks down at the menu.)",NEIGHBOUR TEST: reads as 'Can you recommend something? (A2-0964)' (margin slight) | caption fit: nearly,menu,,Can you recommend something? (A2-0964),nearly
+A2-2020,"Atsiprašau, ką sakėte?",PASS,,,listen,,Pardon? (didn't hear),yes
+A2-2029,"Sustokite čia, prašau.",PASS,,,taxi,,"Stop here, please (taxi)",yes
+S-0018,,PASS,,,hand mixer,,I do not understand.,yes
