@@ -1,5 +1,20 @@
 [
  {
+  "id": "round3",
+  "group": "Needs you now",
+  "title": "Round 3 Fixes: 94 cards, the last picture review before the A1 build",
+  "ask": "Everything you sent back, in one place:\n- the hand-fix redos, and the 8 originals you preferred, restored;\n- the anatomy fixes;\n- the historical cards: the courthouse with the flag, the hospital, bank, stadium, the 1939 team, and Basanavičius, Čiurlionis and Gustaitis, plus 16 A2 places;\n- your new scenes: the meeting, the eureka moment, the foreigner, the icy pavement, the seat given up, and the usage-based scenes for aišku, gaila, be abejo and šiaip sau;\n- the merges, and parekomenduoti.\n\nThree stresses need your ear: Iki (ikì or ìki), Nekalbu, and Mano vardas Dainius. The automatic check found no hand or limb problems; its remaining failures are the known gaze and neighbour reads.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Round 3 Fixes",
+    "href": "https://claude.ai/artifact/BNKF1PDRDbh3aSss8TwBVj"
+   }
+  ]
+ },
+ {
   "id": "t-audio",
   "group": "Later (parked)",
   "title": "Record the audio (after the A1 release)",
