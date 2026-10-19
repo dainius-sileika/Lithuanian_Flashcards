@@ -1,0 +1,4 @@
+012_lektuvas: a2_build/historical/test/012_lektuvas.png -> out_deck_f62/012_lektuvas.png; shipped picture -> out_deck_f62/_rerolled/012_lektuvas.r1.png
+097_prezidentas: a2_build/historical/test/097_prezidentas.png -> out_deck_f62/097_prezidentas.png; shipped picture -> out_deck_f62/_rerolled/097_prezidentas.r4.png
+A2-1297: a2_build/historical/test/A2-1297.png -> out_deck_a2/A2-1297.png; shipped picture -> out_deck_a2/_rerolled/A2-1297.r1.png
+A2-1769: a2_build/historical/test/A2-1769.png -> out_deck_a2/A2-1769.png; shipped picture -> out_deck_a2/_rerolled/A2-1769.r2.png

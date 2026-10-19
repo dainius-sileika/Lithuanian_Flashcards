@@ -251,3 +251,7 @@ A2-1297,kaunas_sports_hall,exterior,2026-10-18 historical: NEW: basketball under
 A2-1260,kaunas_state_stadium,exterior,2026-10-18 historical: NEW: football on the State Stadium pitch.
 A2-1360,kaunas_laisves_aleja,interior,"2026-10-18 historical: NEW: performance inside the 1892 Kaunas theatre (red velvet, tiered boxes in the staging); the boulevard outside glimpsed."
 A2-1769,kaunas_war_museum,exterior,"2026-10-18 historical: SWAP (approved): the monument is the Freedom Statue in the museum garden, the bell tower behind; the Soviet-era seated poet (Jokūbonis 1977) is dropped."
+138_komanda,kaunas_sports_hall,exterior,"2026-10-19 historical A5: OPTIONAL, with the likeness plan: the team becomes the 1939 basketball champions lined up under the arches (likeness_cards.csv). If the owner keeps the football team, drop this row."
+A2-0667,kaunas_bank_of_lithuania,interior,2026-10-19 historical A5: OPTIONAL: a branch hall; the Bank's columned front glimpsed. Low priority.
+A2-1326,kaunas_central_post_office,inset,2026-10-19 historical A5: OPTIONAL: the postman's one inset shows him leaving the post office front.
+A2-1357,kaunas_war_museum,inset,2026-10-19 historical A5: NEW (optional): one inset shows the winged Freedom figure on its plinth as the example of a sculpture; the main picture keeps the sculptor at work.

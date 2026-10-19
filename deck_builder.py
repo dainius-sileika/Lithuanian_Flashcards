@@ -145,7 +145,10 @@ FLAG_OVERRIDE = {334: "eu", 335: "eu", 336: "eu",
                  337: "imperial", 338: "imperial", 339: "imperial"}
 # 2026-10-18 historical places (a2_build/historical/implementation/RULES_precedent_likeness.md §3b):
 # the emblem allowance (Cross of Vytis / Vytis) on the six-render test cards only, until T4/T5 pass.
-FLAG_OVERRIDE.update({35: "emblem", 97: "emblem"})
+# 2026-10-19 owner verdicts on the test: the Vytis on 097 prezidentas is accepted; 035 teismas takes the
+# tricolour flag instead of the Cross ("Don't use the cross for the courthouse, use the flag"). So the
+# emblem rule reaches 097 only; every other card stays flag-only (default FLAG_RULE).
+FLAG_OVERRIDE.update({97: "emblem"})
 
 # ---------------------------------------------------------------------------
 # 1.7 — per-row noun staging (the guessability pass, Dainius QA of cards

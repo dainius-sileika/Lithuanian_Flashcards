@@ -2,7 +2,7 @@
 
 Review page **Historical Test** (private artifact, db `histtest`, notes `histtest_meta/general`):
 https://claude.ai/artifact/HyXgC3WshJceyH4JXBHBDr — the six renders beside the shipped card, the plan's judging
-questions per render (yes / partly / no) and OK / Redo. **A5 (roll-out) waits for the owner's verdict.**
+questions per render (yes / partly / no) and OK / Redo. **Owner verdict 2026-10-19: 012, 097, A2-1297, A2-1769 passed; 123 keep original; 035 redo with the flag. A5 rolled out — see a2_build/round3/README.md §3.**
 
 ## Applied
 - `go_generator.py`: `PRECEDENT_RULE`, `LIKENESS_RULE` (text of RULES_precedent_likeness.md §1), `FLAG_RULE_EMBLEM`

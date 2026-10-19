@@ -1,12 +1,15 @@
 {
- "_about": "Per-card precedent/likeness values for go_generator PRECEDENT_RULE / LIKENESS_RULE, read by historical.py. Only keys listed in 'active' reach a prompt (2026-10-18: the six-render test T1-T6; the A5 roll-out adds the rest after the owner passes the test). Face features checked 2026-10-18 against the Wikipedia/Commons portraits (Adamkus official portrait: no spectacles, broad smiling face; Darius broad square face; Girenas narrower oval face; Binkis wears a tie) and corrected from the planner's draft; precedent texts name no place.",
+ "_about": "Per-card precedent/likeness values for go_generator PRECEDENT_RULE / LIKENESS_RULE, read by historical.py. Only keys listed in 'active' reach a prompt (2026-10-18: the six-render test T1-T6; the A5 roll-out adds the rest after the owner passes the test). Face features checked 2026-10-18 against the Wikipedia/Commons portraits (Adamkus official portrait: no spectacles, broad smiling face; Darius broad square face; Girenas narrower oval face; Binkis wears a tie) and corrected from the planner's draft; precedent texts name no place. 2026-10-19 (A5 roll-out, owner verdicts): 123_autorius removed from active (owner: keep the original card); 113, 122, A2-0782 (owner: 'All three') and 138 (owner: 'Yes, the 1939 basketball team') added. Their face words come from the planner's likeness_cards.csv; the executor could not view the portraits this round, so they stay UNVERIFIED (Basanavičius's beard and bald forehead, Čiurlionis's moustache are the familiar portrait features).",
  "active": [
   "012_lektuvas",
-  "123_autorius",
   "097_prezidentas",
   "035_teismas",
   "A2-1297",
-  "A2-1769"
+  "A2-1769",
+  "113_gydytojas",
+  "122_menininkas",
+  "A2-0782",
+  "138_komanda"
  ],
  "cards": {
   "012_lektuvas": {
@@ -70,6 +73,54 @@
   "A2-1769": {
    "precedent": "a winged female figure striding forward on a tall stone plinth, broken chains in one hand and a raised banner in the other, in a museum garden with a tall square bell tower behind",
    "likeness": []
+  },
+  "113_gydytojas": {
+   "precedent": "",
+   "likeness": [
+    {
+     "role": "man doctor",
+     "name": "Jonas Basanavičius",
+     "pronoun": "he",
+     "period": "about 1918-1927",
+     "features": "an elderly man with a very long full white beard and moustache, a high bald forehead and deep-set eyes, a dark frock coat under his white coat"
+    }
+   ]
+  },
+  "122_menininkas": {
+   "precedent": "the canvas on his easel shows two crowned figures, a queen and a king, bending over a small glowing globe in a dark forest - a symbolist fairy-tale painting in deep blues and greens",
+   "likeness": [
+    {
+     "role": "man artist",
+     "name": "Mikalojus Konstantinas Čiurlionis",
+     "pronoun": "he",
+     "period": "about 1905-1910",
+     "features": "a slim man of about thirty with dark hair swept back from the forehead and a dark moustache, an intent gaze, a dark jacket"
+    }
+   ]
+  },
+  "A2-0782": {
+   "precedent": "a plan-and-elevation drawing of a small low-wing monoplane on the drawing board",
+   "likeness": [
+    {
+     "role": "engineer",
+     "name": "Antanas Gustaitis",
+     "pronoun": "he",
+     "period": "the 1930s",
+     "features": "a lean man in his thirties with dark hair parted at the side and a calm narrow face, in a plain uniform jacket without insignia"
+    }
+   ]
+  },
+  "138_komanda": {
+   "precedent": "the 1939 champions in plain white kit with a diagonal tricolour band, under the four great riveted steel arches of an interwar sports hall",
+   "likeness": [
+    {
+     "role": "very tall centre in the middle of the back row",
+     "name": "Pranas Lubinas",
+     "pronoun": "he",
+     "period": "1939",
+     "features": "a very tall, broad young man with dark hair, head and shoulders above the rest of the row, in the same plain white sleeveless shirt with a diagonal tricolour band"
+    }
+   ]
   }
  }
 }
