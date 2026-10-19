@@ -1,6 +1,6 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.1.0** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.2.0** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
@@ -151,14 +151,30 @@ Read this file first in a new session; change the code, then this file, in the s
 - A2-0964: *Ar galite ką nors parekomenduoti?* (owner 2026-10-19).
 - Stress marks are sourced (Wiktionary / kirtis.info / LKŽ), never generated; `a2_build/stress_58_resolved.csv`.
 
-## 8. Study order v2 (`build_study_order_v2.py` → `study_order.csv`, adopted 2026-10-17)
-- Usefulness first: a hand-ordered `SURVIVAL` list, then score = 0.6·ln(subtitle rank) + 0.4·ln(press rank)
-  + tier offset − 0.3 if in the VU A1/A2 lexicon. Lane mixing `LANE_CAP 3 / WINDOW 10`; pictures first
-  (`FIRST_CLOZE 100`, `FIRST_PHRASE 40`, `FIRST_COLOURS 40`); the **A2 block also opens with pictures**
-  (`A2_FIRST_CLOZE 30`); confusables `SEPARATION 60`; sequences keep order; antonym pairs adjacent.
-- **62 survival items retagged A1** (`a2_build/study_order/retag_A1.csv`). **Family pins** and other
-  neighbours in `PIN_AFTER` (batonas after duona, mama after motina, tėtis after tėvas, dukra after sūnus,
-  sesuo after brolis, senelė after senelis, žmona after vyras, …). `build_apkg` writes the position to `due`.
+## 8. Study order v3 (`build_study_order_v3.py` → `study_order.csv`, adopted 2026-10-19; v2 2026-10-17 is history)
+- Usefulness first, as v2: a hand-ordered `SURVIVAL` list, then score = 0.6·ln(subtitle rank) + 0.4·ln(press rank)
+  + tier offset − 0.3 if in the VU A1/A2 lexicon. Lane mixing `LANE_CAP 3 / WINDOW 10` plus **lane pressure**
+  (a lane behind its share is pulled forward, `LANE_PULL 0.08`, clipped ±2), so no subdeck ends in a run of one
+  kind. Pictures first: A1 `FIRST_CLOZE 100`, `FIRST_PHRASE 20` (greetings from card 20, a phrase every 4+ cards),
+  `FIRST_COLOURS 40`; A2 `A2_FIRST_CLOZE 30`; the reading-card cap per 10 follows the subdeck's share (4–8).
+- **Dependencies:** a cloze, pair or sentence card waits until every word of its sentence is taught by an
+  earlier card (same subdeck or earlier; surface form or simplemma lemma, listed forms, ne- + known verb; names
+  ignored); the needed word is pulled to (reading card's score + 1); cycles broken by score. Sentence cards
+  are scheduled inside their own subdeck, right after the last of their words.
+- **Pairs:** `PIN_AFTER` (batonas after duona, the family pairs …), the Fluent Forever adjective pairs and the
+  list's "pair with" `PAIRS` sit adjacent. **Confusables:** same headword `SEPARATION 60`, look-alikes (edit
+  distance 1, ≥ 4 letters, paradigms exempt) `LOOKALIKE_SEPARATION 30`. Sequences keep order.
+- **Re-tiers** `a2_build/study_order/retier_v3.csv` (44 cards, one reason each; `--apply-retier` writes the
+  `level` into `cards_anki.csv`, `master_wordlist.csv`, `a2_build/a2_wordlist.csv`): 16 A2 → A1 (words A1
+  sentences need: manyti, vėluoti, likti …; split antonym partners piktas, abi, linksmas, šiemet), 28 A1 → A2
+  (rare Fluent Forever leftovers: plaštaka, lydyti, išlenktas …). The 62-item retag of 2026-10-17 stands.
+- **Audit as code:** `--audit FILE` measures any order (coverage, forward dependencies, pairs, confusables,
+  pacing, Spearman vs the corpora); `--report` compares the new order with the one it replaces
+  (`a2_build/study_order/AUDIT_v3.txt`, `REPORT_order_v3.md`). v2 → v3: forward dependencies 172 → 43 (37 left
+  are A1 sentences needing an A2-only word), pairs apart 14 → 0, longest tail run 119 → 11.
+- **Recording order** `a2_build/study_order/recording_order_v3.csv`: A1 first, then A2, each in study order.
+- Keys and GUIDs never move; deck v3.0 is delete-and-reimport, and from v3.0 on keys/GUIDs are frozen.
+  `build_apkg` writes the position to `due`.
 
 ## 9. Packages, versioning, release
 - Version scheme: packages `Lietuviu_Flashcards_v<APKG_VERSION>_<level>.apkg` (`APKG_VERSION` default
@@ -208,6 +224,7 @@ Read this file first in a new session; change the code, then this file, in the s
 - Procedure for any change to the aesthetic: `docs/HOW_TO_CHANGE_THE_LOOK.md`.
 
 ## Spec changelog
+- **3.2.0 — 2026-10-19.** Study order v3: dependency ordering (words before the sentences that use them), lane pressure against tail runs, PAIRS adjacency, look-alike separation, sentence cards in their own subdeck, 44 re-tiers (retier_v3.csv); build_study_order_v3.py replaces v2, audit as code
 - **3.1.0 — 2026-10-19.** rule added: DIRECTION_RULE (main figures travel left to right; main actors only, not background; DIRECTION_FREE_ROWS, situation_2 and LEFT/RIGHT-named stagings exempt; new renders only; FIT_PROMPT direction WARN); working rule: fix by whole re-roll, not masked edits, unless the owner asks for an edit. Erratum: 3.0.1 added a rule (posters/signs) and should have been a minor release; it is not renumbered.
 - **3.0.1 — 2026-10-19.** wording: emblem rule dormant (097 restored, no shipped Vytis); poster/sign rule (real period work, declared card_text, QA read-back, no blank posters); go_grammars.py (SCENE_TAIL, compose_class, category grammars) added to the style lock as six new items
 - **3.0.0 — 2026-10-19.** First versioned release: the 2026-10-19 de facto spec (F6.2 house style, v2.1
