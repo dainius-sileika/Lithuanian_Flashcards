@@ -1,5 +1,38 @@
 [
  {
+  "id": "todelete",
+  "group": "Housekeeping",
+  "title": "Delete _TO_DELETE (3.5 GB)?",
+  "ask": "Fable moved 5,986 files that nothing uses into _TO_DELETE in the project folder; each file has a line in MANIFEST.csv giving the reason. The biggest items are 522 pre-F6.2 picture masters (1.5 GB; the WebP copies the deck falls back on are kept), the old v1/v2.0 packages, scratch folders and old review-page builds. A test build before and after the move gave the identical package. Delete the folder yourself when you're happy.",
+  "options": [
+   "I'll delete it",
+   "Keep some (note)"
+  ],
+  "links": []
+ },
+ {
+  "id": "stylelab",
+  "group": "Housekeeping",
+  "title": "style_lab/ experiment renders (1.1 GB)",
+  "ask": "The style experiments from September and October (F5–F6.2 surveys, spot checks). One small subfolder, research/, is still read by the pipeline and stays. Move the experiment renders to _TO_DELETE, or keep them as a record of how the style was chosen?",
+  "options": [
+   "Move renders to _TO_DELETE",
+   "Keep as a record"
+  ],
+  "links": []
+ },
+ {
+  "id": "emblem",
+  "group": "Housekeeping",
+  "title": "Vytis: allowed generally, or only on the president card?",
+  "ask": "On 17 October you wrote that the Vytis is fine and that the Cross of Vytis 'leans patriotic, which I like'; on the courthouse you then asked for the flag instead of the cross. The code currently allows the emblem on the president card only, and everywhere else stays flag-only. Should other patriotic settings (a ceremony, the Seimas, a military band) be allowed the Vytis or the Cross where it fits?",
+  "options": [
+   "Allowed where it fits, not the courthouse",
+   "President card only (as now)"
+  ],
+  "links": []
+ },
+ {
   "id": "round3",
   "group": "Needs you now",
   "title": "Round 3 Fixes: 94 cards, the last picture review before the A1 build",
