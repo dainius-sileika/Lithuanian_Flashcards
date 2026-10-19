@@ -47,11 +47,28 @@
   "links": []
  },
  {
-  "id": "r7-wait",
+  "id": "r7",
   "group": "Pictures",
-  "title": "A2-0359 is being redrawn (no flowers in the first inset)",
-  "ask": "Your Round 6 note: the flowers come after his release, so the hospital-bed inset can't show any. A whole re-roll is running with the bed inset explicitly flower-free; the leaving inset keeps the Round 6 fix. A Round 7 page will replace this item.",
-  "options": [],
+  "title": "Round 7: A2-0359 Labai ačiū, redrawn without flowers in the bed inset",
+  "ask": "Whole re-roll; the bed inset now has only a glass of water and a towel on the table, and a blind check found no flowers there (the same check found the vase on the Round 6 picture). Main scene and leaving inset unchanged. One thing to look at: in the main scene only one of his hands shows at the stems; the other is under the paper wrap, as in Round 6. The page shows the old and new bed insets side by side.",
+  "options": [
+   "Answered on that page"
+  ],
+  "links": [
+   {
+    "label": "Open Round 7 Fixes",
+    "href": "https://claude.ai/artifact/Jd2n1Nmk3p7Zr8K9bEyiqQ"
+   }
+  ]
+ },
+ {
+  "id": "todelete-r7",
+  "group": "Housekeeping",
+  "title": "Scratch files to delete: _TO_DELETE/round7_scratch",
+  "ask": "Preview crops and staged page media from Round 7, in the 51.04 folder under _TO_DELETE/round7_scratch/. Safe to delete whenever you like.",
+  "options": [
+   "Deleted"
+  ],
   "links": []
  }
 ]
