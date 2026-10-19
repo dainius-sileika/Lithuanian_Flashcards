@@ -1,0 +1,39 @@
+{
+ "apkg_version": "3.0",
+ "spec_version": "3.2.0",
+ "style_hash": "ae72a30c53bdf8561c83e67a1373ce5363893f077c230619805fd16fcaf2a9f9",
+ "style_hash_short": "ae72a30c53bd",
+ "style_lock_hash": "ae72a30c53bdf8561c83e67a1373ce5363893f077c230619805fd16fcaf2a9f9",
+ "style_drift": [],
+ "git_commit": "4ddbfe8",
+ "date": "2026-10-19T13:59:11+00:00",
+ "package": "Lietuviu_Flashcards_v3.0_A1.apkg",
+ "package_sha256": "a390a735c28fbe7eb9d8868ccee091410649ef95422000d0295e62a4084d975a",
+ "levels": [
+  "A1"
+ ],
+ "frame": "standard",
+ "back": "proposed",
+ "back_pic": "thumb",
+ "counts": {
+  "A1": 1186
+ },
+ "media_files": 1424,
+ "media_hash": "545f12afb856a523dfd87d14ee8061e7ee09e5d608ac8e2efa1aa8fccbbff057",
+ "description": "Lietuvių Flashcards v3.0 · design spec 3.2.0 · style ae72a30c53bd · built 2026-10-19 · 4ddbfe8",
+ "a1_rows_without_image": 0,
+ "a2": {
+  "image": 876,
+  "cloze": 981,
+  "skipped_no_image": 0,
+  "skipped_no_sentence": 0
+ },
+ "sentences": {
+  "sentence": 55,
+  "sentence_with_image": 55
+ },
+ "study_order_positions": 2433,
+ "usage_notes": 79,
+ "frame_flagged": 10,
+ "smoke_limit": null
+}
