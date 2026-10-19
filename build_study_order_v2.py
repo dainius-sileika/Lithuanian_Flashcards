@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 """build_study_order_v2.py — the learning order of the deck, written to study_order.csv.
 
+SUPERSEDED 2026-10-19 by build_study_order_v3.py (dependency ordering, lane pressure, pairs, re-tiers);
+kept as history. Running this file would overwrite study_order.csv with the v2 order.
+
     python3 build_study_order_v2.py                 # regenerates study_order.csv
     python3 build_study_order_v2.py --report        # also prints the audit tables
     python3 build_study_order_v2.py --rebuild-subs <lt_full.txt>

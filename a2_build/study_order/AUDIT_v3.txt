@@ -1,0 +1,181 @@
+# Audit tables — output of: OLD_ORDER=<v2 study_order.csv> python3 build_study_order_v3.py --report  (2026-10-19). Positions are in the whole order (A1 subdeck first, then A2). The previous order is audited with its own A1/A2 split; the new one after retier_v3.csv.
+study_order.csv: 2433 rows (1186 A1 subdeck, 1247 A2 subdeck; 55 of them sentence cards); a2_build/study_order/recording_order_v3.csv: recording order
+
+==== previous study_order.csv (v2, commit 5b1f43f): 2433 positioned cards (1198 A1, 1235 A2; 55 sentences) ====
+coverage: 0 keys without a position []; 0 positions for unknown keys []; positions 1..N, no gaps, no duplicates
+blocks: 1095 A1 cards positioned after the first A2 card
+dependencies: 1979 word uses in reading cards point at a deck card; 172 point FORWARD (> 20 later: 168, > 50 later: 155); 58 of them are A1 cards needing a word taught only in A2; 93 uses of words no card teaches (87 distinct)
+  forward dependencies (card @pos: word <- teaching card @pos):
+    A2-0200  @  507 A1 ketinti                            močiutę          <- A2-0976  Ketinu aplankyti močiu A2 @2421
+    A2-0164  @  305 A1 taip pat                           lietuvių         <- A2-1482  lietuvių kalba         A2 @2194
+    A2-0002  @  267 A1 valanda                            trunka           <- A2-1858  trukti                 A2 @2007
+    A2-1526  @  717 A1 kairė                              pasukite         <- A2-1689  pasukti į dešinę / deš A2 @2386
+    A2-0174  @  245 A1 jau                                paruošta         <- A2-1843  paruošti               A2 @1908
+    A2-1593  @  765 A1 salė                               didžiojoje       <- A2-0973  Šis didesnis nei tas   A2 @2418
+    A2-1527  @  571 A1 kalba                              lietuvių         <- A2-1482  lietuvių kalba         A2 @2194
+    A2-1506  @  763 A1 dešinė                             pasukite         <- A2-1689  pasukti į dešinę / deš A2 @2386
+    A2-1902  @  696 A1 veikla                             lauke            <- A2-1016  lauke                  A2 @2294
+    A2-1071  @  405 A1 kol                                palauk           <- A2-1999  Palaukite minutėlę.    A2 @1981
+    A2-0003  @  453 A1 minutė                             palaukite        <- A2-1999  Palaukite minutėlę.    A2 @1981
+    A2-1106  @  221 A1 kai kuris                          nemėgsta         <- A2-1662  nemėgti                A2 @1697
+    A2-1013  @  472 A1 kur nors                           eime             <- A2-1985  Eime į kavinę! / Gal e A2 @1947
+    A2-0159  @  144 A1 kad                                teisus           <- A2-1475  teisus                 A2 @1566
+    A2-1779  @  776 A1 lietuvis                           lietuvė          <- A2-1482  lietuvių kalba         A2 @2194
+    S-0022   @  880 A1 Lauke {lyja}.                      lauke            <- A2-1016  lauke                  A2 @2294
+    A2-1941  @  672 A1 nekęsti (+gen)                     šalčio           <- A2-1618  šaltis                 A2 @2063
+    A2-0201  @  461 A1 bandyti                            išmokti          <- A2-1643  išmokti                A2 @1829
+    A2-0500  @  839 A1 lankyti                            lietuvių         <- A2-1482  lietuvių kalba         A2 @2194
+    A2-0160  @  233 A1 jei                                maudytis         <- A2-1432  maudytis               A2 @1570
+    A2-1881  @  922 A1 mėgstamiausias                     valgis           <- A2-1613  valgis                 A2 @2230
+    A2-0161  @  207 A1 kai                                paskambinsiu     <- A2-1688  paskambinti            A2 @1488
+    A2-0200  @  507 A1 ketinti                            aplankyti        <- A2-1216  aplankas               A2 @1722
+    A2-1694  @  941 A1 pietauti                           dvyliktą         <- A2-1794  dvyliktas              A2 @2095
+    A2-1082  @  393 A1 pagal                              receptą          <- A2-0230  receptas               A2 @1523
+    A2-0159  @  144 A1 kad                                manau            <- A2-1656  manyti                 A2 @1254
+    A2-0113  @  192 A1 kodėl                              vėluoji          <- A2-1447  vėluoti                A2 @1296
+    A2-1696  @  628 A1 prasidėti                          pamoka           <- A2-0250  pamoka                 A2 @1721
+    A2-0151  @  205 A1 dėl                                vėluoju          <- A2-1447  vėluoti                A2 @1296
+    A2-0500  @  839 A1 lankyti                            kursus           <- A2-1541  kursas                 A2 @1928
+    A2-1003  @ 1322 A2 juk                                žinai            <- A2-0939  Kiek žinau             A2 @2379
+    A2-0808  @  590 A1 istorija                           papasakok        <- A2-1841  papasakoti             A2 @1621
+    A2-1881  @  922 A1 mėgstamiausias                     cepelinai        <- A2-1234  cepelinai              A2 @1953
+    A2-0157  @  304 A1 nes                                likau            <- A2-1825  likti                  A2 @1332
+    A2-1682  @  296 A1 pasakyti                           tiesą            <- A2-0848  tiesa                  A2 @1300
+    A2-1792  @  719 A1 devintas                           pamoka           <- A2-0250  pamoka                 A2 @1721
+    S-0046   @  120 A2 Aš {neturiu} pinigų.               neturiu          <- A2-0915  Neturiu laiko          A1 @1111
+    A2-0335  @ 1378 A2 vyriausybė                         priėmė           <- A2-1699  priimti į darbą        A2 @2364
+    A2-1592  @  817 A1 reklama                            televiziją       <- A2-1804  televizija             A2 @1787
+    A2-0158  @  367 A1 todėl                              likau            <- A2-1825  likti                  A2 @1332
+    A2-0155  @  154 A1 bet                                neturiu          <- A2-0915  Neturiu laiko          A1 @1111
+    A2-0147  @  206 A1 apie                               orą              <- A2-1563  orai                   A1 @1151
+    A2-0162  @  295 A1 nors                               sirgo            <- A2-0239  sirgti                 A2 @1225
+    A2-1877  @  378 A1 prieš (+acc)                       atvažiavau       <- A2-1627  atvažiuoti             A2 @1301
+    A2-1130  @  232 A1 toks                               oras             <- A2-1563  orai                   A1 @1151
+    A2-0208  @  368 A1 atrodyti                           pavargęs         <- A2-0300  pavargęs               A2 @1238
+    A2-0171  @  439 A1 visada                             vėluoja          <- A2-1447  vėluoti                A2 @1296
+    A2-1073  @  366 A1 nei                                kaunas           <- A2-2026  Vieną bilietą į Kauną, A1 @1204
+    A2-0163  @  332 A1 tačiau                             saulėta          <- A2-1880  saulėta                A1 @1164
+    A2-1070  @  518 A1 kadangi                            likome           <- A2-1825  likti                  A2 @1332
+    A2-0002  @  267 A1 valanda                            kelionė          <- A2-0895  Geros kelionės         A1 @1080
+    A2-0582  @  496 A1 dėdė                               atvažiuoja       <- A2-1627  atvažiuoti             A2 @1301
+    A2-0779  @  784 A1 klientas                           teisus           <- A2-1475  teisus                 A2 @1566
+    A2-0001  @  330 A1 laikas                             neturiu          <- A2-0915  Neturiu laiko          A1 @1111
+    A2-1973  @  840 A1 faktas                             nuomonė          <- A2-0835  nuomonė                A2 @1576
+    A2-1098  @  381 A1 joks                               neturiu          <- A2-0915  Neturiu laiko          A1 @1111
+    A2-0190  @  606 A1 greitai                            atvažiuos        <- A2-1627  atvažiuoti             A2 @1301
+    A2-0184  @  145 A1 gerai                              lietuviškai      <- A2-0900  Nekalbu lietuviškai    A1 @832
+    A2-0436  @  625 A1 atsiprašyti                        vėluoju          <- A2-1447  vėluoti                A2 @1296
+    A2-0115  @  170 A1 koks                               tavo             <- A2-0119  tavo                   A1 @830
+pairs: 1 PIN_AFTER not adjacent [('089_sesuo', '088_brolis', 2)]; 1 FF adjective pairs not adjacent [('malonus', 'piktas', 771, 'A1', 'A2')]; 12 noted pairs not adjacent [('arti', 'toli', 303), ('aukštyn', 'žemyn', 187), ('netyčia', 'tyčia', 225), ('į vidų', 'viduje', 4), ('leidžiama', 'draudžiama', 6), ('išjungtas', 'įjungtas', 65), ('gazuotas vanduo', 'negazuotas vanduo', 543), ('išėjimas', 'įėjimas', 137), ('kvepėti', 'smirdėti', 218), ('kvailas', 'protingas', 252), ('sotus', 'alkanas', 996), ('pirkėjas', 'pardavėjas', 440)]; 4 pairs split across subdecks [('abi', 'abu', 'A2', 'A1'), ('šiemet', 'pernai', 'A2', 'A1'), ('linksmas', 'liūdnas', 'A2', 'A1'), ('malonus', 'piktas', 'A1', 'A2')]
+confusables: 2 same-headword pairs closer than 60 [('žemė', 620, 621), ('dešinėje', 1140, 1188)]; 10 look-alike pairs closer than 30: padavėjas/pardavėjas (26), pienas/vienas (21), ausis/sausis (7), šiltas/šitas (18), visi/visai (13), prie/prieš (12), keisti/leisti (11), kinas/kitas (5), šitas/litas (24), dainininkas/dailininkas (11)
+pacing A1: longest same-lane run (31, 'phrases'), longest run of picture cards 100, densest 20-window ('phrases', 20); first reading card at 101, first phrase at 41; first 140 lanes [('verbs', 25), ('phrases', 18), ('function', 17), ('adjectives', 16), ('numbers', 13), ('food', 10)], routes [('IMG', 105), ('PHRASE', 18), ('CLOZE', 13), ('SENT', 4)]
+  greetings A1: [('Labas', 41), ('Laba diena', 56), ('Viso gero', 67), ('Iki', 78), ('Labas rytas', 100), ('Labas vakaras', 104), ('Sveiki', 114), ('Labanakt', 188)]
+pacing A2: longest same-lane run (31, 'nouns'), longest run of reading cards 119, densest 20-window ('nouns', 20); first reading card at 1, first phrase at 29; first 140 lanes [('verbs', 18), ('sentences', 17), ('home', 12), ('rest', 10), ('nouns', 10), ('transport', 8)], routes [('IMG', 78), ('CLOZE', 35), ('SENT', 17), ('PHRASE', 9), ('PAIR', 1)]
+frequency: Spearman with subtitle rank 0.494 (n=2378), with press rank 0.341 (n=1480); median subtitle rank of the first 100 A1 cards 189, of A1 cards 101-400 400
+
+==== new study_order.csv: 2433 positioned cards (1186 A1, 1247 A2; 55 sentences) ====
+coverage: 0 keys without a position []; 0 positions for unknown keys []; positions 1..N, no gaps, no duplicates
+blocks: 0 A1 cards positioned after the first A2 card
+dependencies: 1979 word uses in reading cards point at a deck card; 43 point FORWARD (> 20 later: 43, > 50 later: 42); 37 of them are A1 cards needing a word taught only in A2; 93 uses of words no card teaches (87 distinct)
+  forward dependencies (card @pos: word <- teaching card @pos):
+    A2-0160  @  373 A1 jei                                maudytis         <- A2-1432  maudytis               A2 @2059
+    A2-0200  @  494 A1 ketinti                            močiutę          <- A2-0976  Ketinu aplankyti močiu A2 @2087
+    A2-0174  @  157 A1 jau                                paruošta         <- A2-1843  paruošti               A2 @1673
+    A2-0002  @  377 A1 valanda                            trunka           <- A2-1858  trukti                 A2 @1793
+    A2-1013  @  404 A1 kur nors                           eime             <- A2-1985  Eime į kavinę! / Gal e A2 @1799
+    A2-1526  @  576 A1 kairė                              pasukite         <- A2-1689  pasukti į dešinę / deš A2 @1950
+    S-0023   @  640 A1 Saulė {šviečia}.                   šviečia          <- A2-1725  šviesti                A2 @2009
+    A2-0159  @  171 A1 kad                                teisus           <- A2-1475  teisus                 A2 @1487
+    A2-1506  @  642 A1 dešinė                             pasukite         <- A2-1689  pasukti į dešinę / deš A2 @1950
+    A2-1696  @  422 A1 prasidėti                          pamoka           <- A2-0250  pamoka                 A2 @1683
+    A2-1792  @  427 A1 devintas                           pamoka           <- A2-0250  pamoka                 A2 @1683
+    A2-1106  @  334 A1 kai kuris                          nemėgsta         <- A2-1662  nemėgti                A2 @1542
+    A2-0201  @  449 A1 bandyti                            išmokti          <- A2-1643  išmokti                A2 @1629
+    A2-0200  @  494 A1 ketinti                            aplankyti        <- A2-1216  aplankas               A2 @1643
+    A2-1881  @ 1078 A1 mėgstamiausias                     cepelinai        <- A2-1234  cepelinai              A2 @2195
+    A2-1103  @  167 A1 jį                                 pažįstu          <- A2-1693  pažinti                A2 @1255
+    A2-1881  @ 1078 A1 mėgstamiausias                     valgis           <- A2-1613  valgis                 A2 @2162
+    A2-1082  @  628 A1 pagal                              receptą          <- A2-0230  receptas               A2 @1708
+    A2-1941  @  686 A1 nekęsti (+gen)                     šalčio           <- A2-1618  šaltis                 A2 @1759
+    A2-1593  @  835 A1 salė                               didžiojoje       <- A2-0973  Šis didesnis nei tas   A2 @1891
+    A2-1592  @  743 A1 reklama                            televiziją       <- A2-1804  televizija             A2 @1782
+    A2-1682  @  279 A1 pasakyti                           tiesą            <- A2-0848  tiesa                  A2 @1274
+    A2-0808  @  506 A1 istorija                           papasakok        <- A2-1841  papasakoti             A2 @1472
+    A2-1694  @ 1067 A1 pietauti                           dvyliktą         <- A2-1794  dvyliktas              A2 @2011
+    S-0020   @  296 A1 Man {patinka} muzika.              muzika           <- 169_muzika muzika                 A2 @1227
+    A2-1120  @  515 A1 mus                                pakviesk         <- A2-1676  pakviesti              A2 @1429
+    A2-1947  @  367 A1 kurti                              muziką           <- 169_muzika muzika                 A2 @1227
+    A2-1977  @  687 A1 norėčiau                           staliuką         <- A2-0952  Ar yra laisvas staliuk A2 @1479
+    A2-0779  @  736 A1 klientas                           teisus           <- A2-1475  teisus                 A2 @1487
+    A2-1973  @  783 A1 faktas                             nuomonė          <- A2-0835  nuomonė                A2 @1530
+    A2-1977  @  687 A1 norėčiau                           užsisakyti       <- A2-0273  užsisakyti             A2 @1316
+    A2-0500  @  873 A1 lankyti                            kursus           <- A2-1541  kursas                 A2 @1488
+    S-0035   @  778 A1 Paukštis {skrenda} virš miško.     virš             <- A2-1089  virš                   A2 @1385
+    A2-0192  @  614 A1 anksti                             keliuosi         <- A2-0291  keltis                 A2 @1197
+    A2-0804  @  284 A1 atsakymas                          teisingas        <- A2-0539  teisingas              A1 @789
+    A2-1593  @  835 A1 salė                               vyks             <- A2-1723  vykti                  A2 @1266
+    A2-1887  @  880 A1 asmeninis                          reikalas         <- A2-1590  reikalas               A2 @1244
+    A2-1033  @  855 A1 paprastai                          keliuosi         <- A2-0291  keltis                 A2 @1197
+    A2-1532  @ 1312 A2 kelių policija                     sustabdė         <- A2-1964  sustabdyti             A2 @1636
+    A2-0123  @  238 A1 jūsų                               numeris          <- A2-1561  numeris                A1 @521
+    A2-1661  @ 2126 A2 neišlaikyti egzamino               neišlaikė        <- A2-1949  neišlaikyti (egzamino) A2 @2187
+    A2-1093  @  294 A1 bet kas                            padaryti         <- A2-1672  padaryti               A1 @351
+    A2-0159  @  171 A1 kad                                manau            <- A2-1656  manyti                 A1 @194
+pairs: 0 PIN_AFTER not adjacent []; 0 FF adjective pairs not adjacent []; 0 noted pairs not adjacent []; 0 pairs split across subdecks []
+confusables: 0 same-headword pairs closer than 60 []; 0 look-alike pairs closer than 30: 
+pacing A1: longest same-lane run (11, 'colours'), longest run of picture cards 100, densest 20-window ('colours', 11); first reading card at 101, first phrase at 21; first 140 lanes [('verbs', 22), ('phrases', 22), ('function', 17), ('adjectives', 12), ('food', 10), ('people', 9)], routes [('IMG', 98), ('PHRASE', 22), ('CLOZE', 13), ('SENT', 7)]
+  greetings A1: [('Labas', 21), ('Laba diena', 36), ('Viso gero', 47), ('Iki', 54), ('Labas rytas', 77), ('Labas vakaras', 81), ('Sveiki', 88), ('Labanakt', 158)]
+pacing A2: longest same-lane run (6, 'nouns'), longest run of picture cards 23, densest 20-window ('nouns', 11); first reading card at 24, first phrase at 1; first 140 lanes [('nouns', 26), ('verbs', 23), ('phrases', 15), ('function', 10), ('adverbs', 9), ('society', 7)], routes [('CLOZE', 67), ('IMG', 51), ('PHRASE', 18), ('SENT', 3), ('PAIR', 1)]
+frequency: Spearman with subtitle rank 0.655 (n=2378), with press rank 0.425 (n=1480); median subtitle rank of the first 100 A1 cards 292, of A1 cards 101-400 216
+
+== Telling positions (whole order) ==
+word                gloss                        old        v3  level
+duona               bread                          5         6  A1
+alus                beer                          26        26  A1
+vanduo              water                          4         3  A1
+kava                coffee                        15        14  A1
+pienas              milk                          17        18  A1
+obuolys             apple                         27        28  A1
+sriuba              soup                          28        33  A1
+mėsa                meat                         681       695  A1
+bulvė               potato                       846       934  A1
+batai               shoes                         22        23  A1
+kiaulė              pig                          845       982  A1
+karvė               cow                          896      1031  A1
+šuo                 dog                           24        27  A1
+prezidentas         president                    714       960  A1
+teismas             court                        655       877  A1
+asmuo               person (formal)              794      1000  A1
+branduolinis        nuclear                     1756      2275  A2
+pragaras            hell                        1583      2119  A2
+Labas               hello                         41        21  A1
+Ačiū                thank you                     45        25  A1
+Prašau              please                        55        32  A1
+Atsiprašau          sorry                         66        43  A1
+Kiek kainuoja?      how much?                     89        65  A1
+Kur yra tualetas?   where is the toilet?         130       110  A1
+aš                  I                             31        31  A1
+taip                yes                           29        29  A1
+vienas              one                           38        52  A1
+šiandien            today                        254       215  A1
+pirmadienis         Monday                       374        84  A1
+galėti              can                          122       134  A1
+kalbėti             speak                         39        71  A1
+suprasti            understand                   182       193  A1
+važiuoti            go (by vehicle)               57        61  A1
+tualetas            toilet                       363       324  A1
+euras               euro                         464       260  A1
+vaistinė            pharmacy                     490       390  A1
+manyti              think                       1254       194  A1
+vėluoti             be late                     1296        94  A1
+plaštaka            palm                        1175      2420  A2
+lydyti              melt (sth)                  1179      2424  A2
+antis               duck                        1081      1133  A1
+
+== First 60 of the A1 subdeck (v3) ==
+žmogus, vyras, vanduo, moteris, valgyti, duona, batonas, gerti, didelis, mažas, eiti, vaikas, namas, kava, parduotuvė, draugas, arbata, pienas, dirbti, šeima, Labas, miestas, batai, autobusas, Ačiū, alus, šuo, obuolys, taip, katė, aš, Prašau, sriuba, ne, tu, Laba diena, jis, geras, blogas, pinigai, kaina, ji, Atsiprašau…, pirkti, mokytojas, mes, Viso gero, jūs, ligoninė, brolis, sesuo, vienas, jie, Iki, du, telefonas, tai, Nesuprantu, kaimynas, skambinti
+
+== First 60 of the A2 subdeck (v3) ==
+Ir jums! / Ir tau!, Ar galėtumėte man padėti?, pasaulis, pusė, rūkyti, pora, Imsiu šitą, Pusė trijų, oras, kelionė, keltis, Negali būti!, keliauti, naujieji metai, daina, sportas, liga, mokyti, metras, klausti, Kuo galiu padėti?, Be penkių trys, alkanas, sotus, Čia skauda, Penkios po trijų, prekė, laikraštis, autobusų stotis, rinktis, kuo, kai kuri, tokia, galima, negalėti, nebūti, kiek tau metų, laimėti, Per didelis. / Per mažas., avarija, muzika, pati, save, tai yra, darbo vieta, nežinoti, metų laikas, labiau, lipti, greitoji pagalba, tvarkyti, komanda, klausyti, vienąkart, atvykti, sveikata, paimti, reikalas, taigi, minutėlė
+
+re-tiered: 44 cards (Counter({'A2': 28, 'A1': 16}))

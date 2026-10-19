@@ -15,7 +15,7 @@ with it. The owner's open decisions live on the Review Desk (`review_desk/`).
 
 ```bash
 pip install genanki pillow openai
-python3 build_study_order_v2.py                  # -> study_order.csv
+python3 build_study_order_v3.py                  # -> study_order.csv (v2 kept as history)
 APKG_LEVELS=A1 python3 build_apkg.py             # -> Lietuviu_Flashcards_v2.1_A1.apkg (APKG_VERSION to bump)
 APKG_LEVELS=A2 python3 build_apkg.py
 ```
@@ -27,7 +27,7 @@ then a review page for the owner. Nothing ships without his verdict.
 
 | top level | what it is |
 |---|---|
-| **Pipeline code (root)** | `build_apkg.py` (the package), `card_frame.py` + `frame_crop.py` (standard bands, caption, section labels, cropping), `build_study_order_v2.py` (learning order), `go_generator.py` (prompt engine and rules), `go_grammars.py` (per-category grammars), `deck_builder.py` + `verb_flashcards.py` (A1 staging, used by the gen scripts), `situations.py` (generated bubble-free phrase staging), `gen_phrases.py`, `go_settings.py` (real places), `historical.py` (precedents/likenesses), `qa_images.py` (QA gate), `frame_preview.py` (screenshots), `build_recorder.py` (recording sheets) |
+| **Pipeline code (root)** | `build_apkg.py` (the package), `card_frame.py` + `frame_crop.py` (standard bands, caption, section labels, cropping), `build_study_order_v3.py` (learning order; v2 kept as history), `go_generator.py` (prompt engine and rules), `go_grammars.py` (per-category grammars), `deck_builder.py` + `verb_flashcards.py` (A1 staging, used by the gen scripts), `situations.py` (generated bubble-free phrase staging), `gen_phrases.py`, `go_settings.py` (real places), `historical.py` (precedents/likenesses), `qa_images.py` (QA gate), `frame_preview.py` (screenshots), `build_recorder.py` (recording sheets) |
 | **Data (root)** | `cards_anki.csv` (A1 cards), `master_wordlist.csv` + `card_notes.json` (A1 wordlist and staging), `study_order.csv`, `wordlist_a2_pending.csv` (A2 queue), `audio_source.tsv`, `accents_todo_kirtis.csv` (open stress item), `recorder_A2.html` (the owner's recording sheet) |
 | `a2_build/` | The A2 list and everything built around it: `a2_wordlist.csv`, `id_map.csv`, `merged_keys.csv`, `deferred_B1.csv`, `context_notes.csv` (usage lines), `restage_bubbles.csv`, `sentences/`, `study_order/`, `historical/`, `src/` (list builders and apply scripts), one folder per review round (`pilot_round2/`, `rollout*/`, `hand_fixes/`, `round3/` …) with its page builder, and the plans (`A1_WRAPUP.md` is current) |
 | `a2_rebase/` | The 2026-10-10 rebase of the A2 queue against the official lists; `a2_build/src/build_a2.py` reads it |

@@ -190,8 +190,8 @@ def usage_for(k):
     return u
 
 
-# Study order (new-card position): study_order.csv, made by build_study_order_v2.py
-# (usefulness-first order adopted 2026-10-17; the v1 generator is in deprecated/).
+# Study order (new-card position): study_order.csv, made by build_study_order_v3.py (2026-10-19;
+# v2 of 2026-10-17 kept as history, the v1 generator is in _archive/deprecated/).
 STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
 
 # IDENTITY — what keeps a learner's history across deck versions:

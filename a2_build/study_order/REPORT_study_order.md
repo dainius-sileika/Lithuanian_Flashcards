@@ -1,5 +1,7 @@
 # Study order: audit and proposal (2026-10-17)
 
+> Superseded by v3 on 2026-10-19: `REPORT_order_v3.md`, `AUDIT_v3.txt`, `build_study_order_v3.py`. Kept as history.
+
 `build_study_order_v2.py` → `study_order_v2.csv`, a proposal; nothing existing was changed. First 100 of each subdeck and the correlations: `AUDIT_tables.txt`.
 
 ## Verdict
