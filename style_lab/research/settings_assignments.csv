@@ -253,3 +253,4 @@ A2-1769,kaunas_war_museum,exterior,"2026-10-18 historical: SWAP (approved): the 
 138_komanda,kaunas_sports_hall,exterior,"2026-10-19 historical A5: OPTIONAL, with the likeness plan: the team becomes the 1939 basketball champions lined up under the arches (likeness_cards.csv). If the owner keeps the football team, drop this row."
 A2-0667,kaunas_bank_of_lithuania,interior,2026-10-19 historical A5: OPTIONAL: a branch hall; the Bank's columned front glimpsed. Low priority.
 A2-1357,kaunas_war_museum,inset,2026-10-19 historical A5: NEW (optional): one inset shows the winged Freedom figure on its plinth as the example of a sculpture; the main picture keeps the sculptor at work.
+A2-0085,kaunas_railway_station,interior,"2026-10-18 historical: NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed. Reinstated 2026-10-19 (round 5, owner: 'try the kaunas train station again')."

@@ -1,0 +1,11 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+083_tevas,tėvas,PASS,,,father,,,
+413_tuoktis,tuoktis,WARN,,"guessed 'wedding', card teaches 'marry'",wedding,,,
+A2-0085,kasa,PASS,,,train ticket,,,
+A2-0359,Labai ačiū,PASS,,,hospital visit,,Thank you very much,yes
+A2-0660,perėja,PASS,,,pedestrian crossing,,,
+A2-0925,Trečia valanda,WARN,,stray act: a pointing finger | stray act: a hand on the chest,three o'clock,12 | 12,It is three o'clock,yes
+A2-1167,Užeikite!,PASS,,,welcoming a guest,,Come in!,yes
+A2-1431,matuotis,WARN,,"guessed 'tailor', card teaches 'to try on'",tailor,,,
+A2-2002,Koks jūsų adresas?,PASS,,,seven,7 | 7,What is your address?,yes
+A2-2010,Grąžos nereikia.,PASS,,,taxi fare,,Keep the change,yes

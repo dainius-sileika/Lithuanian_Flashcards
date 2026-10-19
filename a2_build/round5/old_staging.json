@@ -1,0 +1,40 @@
+{
+ "_about": "Values replaced by a2_build/src/apply_round5.py (first run), by file and key.",
+ "old": {
+  "card_notes.json": {
+   "083_tevas": {
+    "note": "A father holding a small child's hand, both walking, the father in a flat cap looking ahead, the child looking up at him. Insets: a father lifting a child onto his shoulders; a father mending a bicycle with the child watching; a father's large hand holding a small one."
+   },
+   "413_tuoktis": {
+    "note": "A wedding before a registry official, seen at mid-distance so the figures are full-length: the bride in a white dress and veil holds a large bouquet of flowers in both hands against her waist; the groom in a dark suit stands at her side with his near arm round her back, his far hand at his side; the official, a woman in a dark dress with a tricolour sash across her chest, stands behind a desk holding an open register, facing the viewer; two gold rings lie on a small cushion on the desk; a few guests behind. The couple before the official is the subject. Insets: the two gold rings in an open ring box; the couple seen from behind walking out of the registry doors under a shower of thrown grain; a wedding car with white ribbons tied to its bonnet."
+   }
+  },
+  "a2_build/a2_staging.json": {
+   "A2-0085": {
+    "note": "Main picture: a small window in a tiled station wall with a counter, a woman clerk behind the glass handing a ticket and change across, a traveller with a suitcase receiving it, two people queued behind. The window with the exchange of ticket and money is the subject. Insets: a punched ticket; the brass window counter with coins; the queue seen from behind."
+   },
+   "A2-0660": {
+    "note": "Main picture: a zebra crossing seen at an angle — bold white stripes across the asphalt; a mother and her small boy walk across the stripes from the viewer's LEFT toward the RIGHT, both seen in profile heading right, the boy holding the strap of the mother's handbag; a man a few steps behind them also heading right; a Zhiguli stopped at the line on the near side; a crossing sign post. The striped crossing with people on it is the subject. Insets: the pedestrian signal light with only the green walking figure lit; a child's shoes stopping at the white kerb line; the stripes from above."
+   }
+  },
+  "a2_build/historical/implementation/settings_rows.csv": {
+   "A2-0085": {
+    "why": "REVERTED 2026-10-19 (owner): NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
+   }
+  },
+  "a2_build/restage_bubbles.csv": {
+   "A2-0359": {
+    "new_staging": "a hospital corridor; a discharged patient in his coat holds out a large bunch of flowers in a paper wrap to a nurse with BOTH hands, the paper wrap covering his fingers, head slightly inclined, eyes on her face; she receives it with her RIGHT hand on the stems and smiles at him; her LEFT hand holds a clipboard against her hip; nobody bows to the floor, no clasped hands. Insets: the bouquet close; the corridor door"
+   },
+   "A2-0925": {
+    "new_staging": "a woman pointing at a wall clock showing three to a man putting on his coat"
+   },
+   "A2-1167": {
+    "new_staging": "a flat's hallway seen from inside; an ordinary flat door of normal height, its top just above head height, stands open flat against the wall; the host, a middle-aged man in a cardigan, has stepped back two paces INTO the hallway, clear of the door and its frame, and sweeps his RIGHT arm inward toward the room, LEFT hand at his side; the visitor, a woman with a cake tin, stands outside on the doormat in the doorway, one foot on the threshold; they look at each other. Insets: the doormat with the visitor's shoes on it; the cake tin"
+   },
+   "A2-2002": {
+    "new_staging": "a village street; a postman with a parcel under his LEFT arm asks an old woman at her gate; she points with her RIGHT hand at the enamel number plate on her house wall, which reads the numeral declared in card_text; he looks where she points. Insets: the number plate close; the parcel"
+   }
+  }
+ }
+}

@@ -6,7 +6,7 @@ key,location_id,mode,why
 106_zaidejas,kaunas_state_stadium,exterior,"REVERTED 2026-10-19 (owner): SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
 107_sirgalius,kaunas_state_stadium,exterior,REVERTED 2026-10-19 (owner): NEW: fans in the covered wooden grandstand of the State Stadium.
 112_advokatas,kaunas_justice_palace,interior,OPTIONAL (not among the 26; inventory 'generic'): the lawyers' table in the same courtroom as 035 so the two cards rhyme.
-A2-0085,kaunas_railway_station,interior,"REVERTED 2026-10-19 (owner): NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
+A2-0085,kaunas_railway_station,interior,"REINSTATED 2026-10-19 (round 5, owner) after a round-4 revert: NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
 A2-0645,kaunas_town_hall_square,exterior,NEW: the square itself is the subject; the tiered white tower in the middle.
 A2-0649,kaunas_central_post_office,interior,NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset. | exterior inset dropped 2026-10-19 (owner)
 A2-1326,kaunas_central_post_office,inset,REVERTED 2026-10-19 (owner): OPTIONAL: the postman's one inset shows him leaving the post office front.

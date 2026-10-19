@@ -419,12 +419,16 @@ SITUATIONS = {'Yes / no': {'ids': [],
  "It is three o'clock": {'ids': ['A2-0925'],
                          'lithuanian': 'Trečia valanda',
                          'format': 'situation',
-                         'scene': 'a woman pointing at a wall clock showing three to a man putting on his '
-                                  'coat',
+                         'scene': 'a hallway; a man with BOTH arms already in the sleeves of his overcoat '
+                                  'buttons it at the chest with his RIGHT hand, his LEFT hand at his side '
+                                  'holding a flat cap; a woman beside him points with her RIGHT hand at a '
+                                  'round wall clock whose hands stand at exactly three and looks at him; he '
+                                  'looks back at her. Insets: the clock face at three; the man going out '
+                                  'through the front door, seen from behind',
                          'cue': 'clock at three',
                          'confusables': ['Five to three', 'Five past three'],
                          'merge_with': '',
-                         'render': 'yes',
+                         'render': 'yes — round 5 (supersedes the earlier rows)',
                          'note': '',
                          'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                          'gaze': 'conversation'},
@@ -622,17 +626,25 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Thank you very much': {'ids': ['A2-0359'],
                          'lithuanian': 'Labai ačiū',
                          'format': 'situation',
-                         'scene': 'a hospital corridor; a discharged patient in his coat holds out a large '
-                                  'bunch of flowers in a paper wrap to a nurse with BOTH hands, the paper '
-                                  'wrap covering his fingers, head slightly inclined, eyes on her face; she '
-                                  'receives it with her RIGHT hand on the stems and smiles at him; her LEFT '
-                                  'hand holds a clipboard against her hip; nobody bows to the floor, no '
-                                  'clasped hands. Insets: the bouquet close; the corridor door',
+                         'scene': 'a long hospital corridor with pale green walls below a white dado line, '
+                                  'closed doors on both sides and a tall window at the far end; a discharged '
+                                  'patient, a middle-aged man with greying hair in a long brown overcoat and '
+                                  'a checked scarf, holds out a large bunch of red and white flowers in a '
+                                  'white paper wrap to a nurse with BOTH hands, the paper wrap covering his '
+                                  'fingers, head slightly inclined, eyes on her face; the nurse, in a white '
+                                  'coat and a white cap, receives it with her RIGHT hand on the stems and '
+                                  'smiles at him; her LEFT hand holds a dark clipboard against her hip; an '
+                                  'older man in a dark jacket sits on a wooden bench by the wall behind '
+                                  'them; nobody bows to the floor, no clasped hands. Insets: the same man '
+                                  'some days earlier as a patient in striped pyjamas, sitting up in a '
+                                  'hospital bed, the same nurse standing beside the bed; the same man in his '
+                                  "brown overcoat walking out through the hospital's front doors onto the "
+                                  'steps, seen from behind',
                          'cue': 'flowers offered with both hands — thanks at full strength',
                          'confusables': ['Thank you (A2-0358, one hand flat on the chest, slight bow)',
                                          "You're welcome (A2-0360, glove, wave-off)"],
                          'merge_with': '',
-                         'render': 'yes — round 4 (supersedes the earlier rows)',
+                         'render': 'yes — round 5 (supersedes the earlier rows)',
                          'note': '',
                          'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                          'gaze': 'conversation'},
@@ -1495,13 +1507,17 @@ SITUATIONS = {'Yes / no': {'ids': [],
                        'just above head height, stands open flat against the wall; the host, a middle-aged '
                        'man in a cardigan, has stepped back two paces INTO the hallway, clear of the door '
                        'and its frame, and sweeps his RIGHT arm inward toward the room, LEFT hand at his '
-                       'side; the visitor, a woman with a cake tin, stands outside on the doormat in the '
-                       'doorway, one foot on the threshold; they look at each other. Insets: the doormat '
-                       "with the visitor's shoes on it; the cake tin",
+                       'side; the visitor, a woman in a grey winter coat over a red jumper, a red scarf at '
+                       'her neck, holding a cake tin, stands outside on the doormat in the doorway, one foot '
+                       'on the threshold; they look at each other. Insets (the same two people, same hair, '
+                       'same clothes; the coat comes off indoors and the red jumper shows): the visitor '
+                       'hanging her coat on a hook in the hallway, the host standing beside her; the host '
+                       'and the visitor sitting at a table with a white cloth over cups of tea, a teapot and '
+                       'a plate of biscuits',
               'cue': 'arm sweeping in from inside the flat',
               'confusables': ['Welcome! (A2-0886, both arms wide, family with suitcases)'],
               'merge_with': '',
-              'render': 'yes — round 4 (supersedes the earlier rows)',
+              'render': 'yes — round 5 (supersedes the earlier rows)',
               'note': '',
               'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
               'gaze': 'conversation'},
@@ -2771,15 +2787,18 @@ SITUATIONS = {'Yes / no': {'ids': [],
                            'lithuanian': 'Koks jūsų adresas?',
                            'format': 'situation',
                            'scene': 'a village street; a postman with a parcel under his LEFT arm asks an '
-                                    'old woman at her gate; she points with her RIGHT hand at the enamel '
-                                    'number plate on her house wall, which reads the numeral declared in '
-                                    'card_text; he looks where she points. Insets: the number plate close; '
-                                    'the parcel',
+                                    'old woman at her gate; she raises her RIGHT hand toward the enamel '
+                                    'number plate on her house wall, the PALM turned OUT toward the viewer, '
+                                    'the index finger extended up at the plate and the other three fingers '
+                                    'folded under the thumb, the wrist turning naturally from her brown '
+                                    'cardigan sleeve; her LEFT hand rests on the top rail of the gate; the '
+                                    'plate reads the numeral declared in card_text; he looks where she '
+                                    'points. Insets: the number plate close; the parcel',
                            'cue': 'the finger at the house-number plate',
                            'confusables': ['Where is…? (A2-0378)',
                                            'Where do you live? (A2-1159 — check its staging)'],
                            'merge_with': '',
-                           'render': 'yes',
+                           'render': 'yes — round 5 (supersedes the earlier rows)',
                            'note': '',
                            'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
                            'gaze': 'conversation'},
