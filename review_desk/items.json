@@ -1,5 +1,16 @@
 [
  {
+  "id": "direction",
+  "group": "Needs you now",
+  "title": "Make 'people move left to right' a standing rule?",
+  "ask": "From your note on A2-0660. Fable recommends yes, as the default for any card where people walk, ride, drive or carry something from one place to another, so the destination lies to the right, the way a page is read. Standing, sitting and talking figures aren't affected. It would apply only when a card is redrawn, with no redraws ordered just for this. Exceptions: cards whose meaning is a direction (right, left, back, return); two-panel conversations, where who speaks first fixes the sides; and scenes whose goal sits on the left for a reason. The automatic check would flag it as a warning, not a failure. If you approve, it goes into the spec as version 3.1.0.",
+  "options": [
+   "Yes, as drafted",
+   "No"
+  ],
+  "links": []
+ },
+ {
   "id": "t-audio",
   "group": "Later (parked)",
   "title": "Record the audio (after the A1 release)",
