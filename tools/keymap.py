@@ -8,9 +8,9 @@ only record linking the older names (001_suo, A2-0348, S-0001, and media-only al
 map, and this module follows the chain.
 
     import keymap
-    keymap.canonical("A2-0348")     -> "0020_labas"   (or the input itself when it is not an alias)
-    keymap.aliases("0020_labas")    -> ["A2-0348"]    (every older name, oldest first)
-    keymap.lookup(d, "0020_labas")  -> d[key] by the current key, else by any alias (for ledgers
+    keymap.canonical("A2-0348")     -> "0021_labas"   (or the input itself when it is not an alias)
+    keymap.aliases("0021_labas")    -> ["A2-0348"]    (every older name, oldest first)
+    keymap.lookup(d, "0021_labas")  -> d[key] by the current key, else by any alias (for ledgers
                                        and other append-only records that keep the old names)
 
 Readers of append-only records (ledgers, gen logs, QA sheets, build manifests) use lookup();
@@ -52,6 +52,17 @@ def canonical(key, fwd=None):
     while key in fwd and key not in seen:
         seen.add(key); key = fwd[key]
     return key
+
+
+def canonical_take(take):
+    """A recorder take key or media stem: '<key>' or '<key>_s' (example sentence) -> the same with the
+    current key ('A2-0002_s' -> '0261_valanda_s'). Unknown names come back unchanged."""
+    _load()
+    if take in _FORWARD:
+        return canonical(take)
+    if take.endswith("_s") and take[:-2] in _FORWARD:
+        return canonical(take[:-2]) + "_s"
+    return take
 
 
 def aliases(key):

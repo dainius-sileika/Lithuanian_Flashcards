@@ -119,6 +119,7 @@ HISTORY_PREFIXES = (
     "a2_build/audio/backfill_", "a2_rebase/", "style_lab/", "tools/",
     "out_deck_f62/", "out_deck_a2/", "out_deck_sent/", "out_phrases_v3/", "out_phrases_a2/",
     "a2_build/rename/",
+    "a2_build/proofread/",   # sheet out with the owner under the old keys; the returned sheet is mapped via keymap.py
 )
 HISTORY_FILES = {
     "CHANGELOG.md", "VERSIONS.md", "docs/VERSIONS.md", "docs/ANKIWEB_DESCRIPTION_A1_v3.0.md",

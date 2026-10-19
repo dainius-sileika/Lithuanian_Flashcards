@@ -1,0 +1,130 @@
+rename_keys.py — DRY RUN (nothing written)
+source order: study_order.csv (2433 cards) | lists: cards_anki.csv, a2_build/a2_wordlist.csv, a2_build/sentences/sentences.csv
+
+MAP
+  rows by status: alias 1, deferred 31, merged 4, renamed 2433
+  old families renamed: A2-#### 1857, S-#### 55, base NNN_slug 521
+  by level/kind: A1 cloze 334, A1 phrase 135, A1 picture 687, A1 sentence 35, A2 cloze 647, A2 phrase 84, A2 picture 491, A2 sentence 20
+  numbers: A1 1–1191, A2 1192–2433 (contiguous blocks)
+  slug collisions (same slug, different numbers — allowed): 31
+
+SAMPLE (first 12, then one of each family and kind)
+                103_zmogus -> 0001_zmogus                      A1 picture  žmogus
+                 086_vyras -> 0002_vyras                       A1 picture  vyras
+                177_vanduo -> 0003_vanduo                      A1 picture  vanduo
+               087_moteris -> 0004_moteris                     A1 picture  moteris
+               376_valgyti -> 0005_valgyti                     A1 picture  válgyti
+                 182_duona -> 0006_duona                       A1 picture  duona
+               531_batonas -> 0007_batonas                     A1 picture  batonas
+                 377_gerti -> 0008_gerti                       A1 picture  gérti
+               452_didelis -> 0009_didelis                     A1 picture  didelis
+                 453_mazas -> 0010_mazas                       A1 picture  mažas
+                  366_eiti -> 0011_eiti                        A1 picture  eĩti
+                101_vaikas -> 0012_vaikas                      A1 picture  vaikas
+                   A2-0042 -> 0052_vienas                      A1 picture  vienas
+                   A2-0348 -> 0021_labas                       A1 phrase   Labas
+                   A2-0154 -> 0105_ir                          A1 cloze    ir
+                    S-0002 -> 0101_moteris_valgo_duona         A1 sentence Moteris {valgo} duoną.
+                   A2-1500 -> 2431_belaidis_internetas         A2 cloze    belaidis internetas
+                   A2-1375 -> 2432_troleibusu_stotele          A2 picture  troleibusų stotelė
+                   A2-1269 -> 2433_greblys                     A2 picture  grėblys
+                   A2-1187 -> (none)                           merged: merged into A2-0354 -> 0047_viso_gero (2026-10-19)
+                   A2-1940 -> (none)                           deferred: B1 deferral; gets an appended key if ever promoted
+                 265_lupos -> 1124_lupos                       alias: media stem of 265_lupa (build_apkg.IMAGE_ALIAS)
+
+LIVE TEXT FILES THAT CHANGE (tokens replaced, column rewrites)
+    1044            cards_anki.csv
+       2  +521 col  master_wordlist.csv
+    1875            a2_build/a2_wordlist.csv
+     247            a2_build/sentences/sentences.csv
+    2433            study_order.csv
+       4            a2_build/merged_keys.csv
+    1865            a2_build/id_map.csv
+    1348            audio_source.tsv
+      90            a2_build/context_notes.csv
+      62            a2_build/study_order/retag_A1.csv
+      53            a2_build/study_order/retier_v3.csv
+     560    +2 col  a2_build/restage_bubbles.csv
+     381            a2_build/a2_staging.json
+     248            card_notes.json
+      55            a2_build/sentences/staging.json
+    2643            a2_build/audio/recorder_A2_afb2ebe2_script.json
+      58            a2_build/stress_58_resolved.csv
+     101            a2_build/deck_fixes.csv
+      21            a2_build/historical/implementation/likeness_args.json
+     255            style_lab/research/settings_assignments.csv
+      28            style/golden/manifest.csv
+      20            review_desk/items.json
+       9            build_apkg.py
+     406            build_study_order_v3.py
+      20            deck_builder.py
+      14            frame_crop.py
+      17            frame_preview.py
+       4            qa_images.py
+     700            situations.py
+       2            a2_build/src/build_situations.py
+      40            out_phrases_v3/gen.py
+       1            out_deck_sent/gen.py
+       1            out_deck_a2/a2_adapter.py
+       2            card_frame.py
+       6            anki/templates.md
+       9            a2_build/RECORDING_GUIDE.md
+      28            style/golden/README.md
+       2            style/golden/001_suo.prompt.txt
+       2            style/golden/005_karve.prompt.txt
+       2            style/golden/021_variklis.prompt.txt
+       2            style/golden/024_miestas.prompt.txt
+       2            style/golden/027_gatve.prompt.txt
+       2            style/golden/034_ukis.prompt.txt
+       2            style/golden/036_mokykla.prompt.txt
+       2            style/golden/057_kepure.prompt.txt
+       2            style/golden/069_raudonas.prompt.txt
+       2            style/golden/082_motina.prompt.txt
+       2            style/golden/092_senele.prompt.txt
+       2            style/golden/098_kaimynas.prompt.txt
+       2            style/golden/110_mokytojas.prompt.txt
+       2            style/golden/118_policininkas.prompt.txt
+       2            style/golden/137_vestuves.prompt.txt
+       2            style/golden/180_kiausinis.prompt.txt
+       2            style/golden/209_stalas.prompt.txt
+       2            style/golden/224_raktas.prompt.txt
+       2            style/golden/227_raide.prompt.txt
+       2            style/golden/366_eiti.prompt.txt
+       2            style/golden/374_galvoti.prompt.txt
+       2            style/golden/448_aukstas.prompt.txt
+       2            style/golden/A2-0044.prompt.txt
+       2            style/golden/A2-0220.prompt.txt
+       2            style/golden/A2-0262.prompt.txt
+       2            style/golden/A2-0729.prompt.txt
+       2            style/golden/A2-0906.prompt.txt
+       2            style/golden/S-0006.prompt.txt
+  14708 token replacements in 65 files
+
+TRACKED MEDIA (git mv)
+     518  audio/
+       2  audio/_superseded/
+     150  audio_a2/
+       4  audio_a2/_superseded/
+     520  images/
+      56  style/golden/
+         images/001_suo.webp -> images/0027_suo.webp
+         images/002_kate.webp -> images/0030_kate.webp
+         images/003_zuvis.webp -> images/0456_zuvis.webp
+         images/004_paukstis.webp -> images/0534_paukstis.webp
+  1250 files
+
+UNTRACKED MEDIA FOUND IN THIS CHECKOUT (the Mac has the rest; run --apply-media there)
+     565  _cloud_media/a2/
+     521  _cloud_media/f62/
+      57  _cloud_media/phrases/
+  1143 files here
+
+EXPECTED ON THE MAC (from the ledgers' last row per key; one picture per picture card):
+     522  out_deck_f62/  (ledger keys that are cards: 522 of 522)
+     668  out_deck_a2/  (ledger keys that are cards: 668 of 668)
+     233  out_phrases_v3/  (ledger keys that are cards: 233 of 234)
+      14  out_phrases_v3/round2/  (ledger keys that are cards: 14 of 14)
+      55  out_deck_sent/  (ledger keys that are cards: 55 of 55)
+
+GENERATED FILES TO REBUILD AFTERWARDS: a2_build/recording_list.csv, a2_build/study_order/recording_order_v3.csv, recorder_A2.html, build_reports/frame_bands.csv, build_reports/frame_flags.csv
+HISTORY IS NOT REWRITTEN: _archive/, docs/spec_history/, build_reports/, a2_build/round, a2_build/rollout, a2_build/pilot_round2/, a2_build/additions_round2/, a2_build/hand_fixes/, … (tools/keymap.py resolves old names)
