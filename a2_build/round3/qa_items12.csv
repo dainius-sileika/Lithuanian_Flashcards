@@ -1,0 +1,34 @@
+key,word,status,fails,warnings,guess,lettering,neighbour,fit
+083_tevas,tėvas,PASS,,,father and son,,,
+174_vynas,vynas,PASS,,,wine,,,
+271_nugara,nugara,PASS,,,back,,,
+388_sokti,šokti,PASS,,,jump over,,,
+413_tuoktis,tuoktis,WARN,,"guessed 'wedding', card teaches 'marry'",wedding,,,
+456_karstas,karštas/karšta,PASS,,,hot,,,
+459_vesus,vėsus/vėsi,WARN,,"guessed 'cold', card teaches 'cool' | Illegible or garbled lettering appears on the cabinet in the upper-left panel.",cold,,,
+472_laimingas,laimingas/laiminga,PASS,,,happy,,,
+A2-0359,Labai ačiū,FAIL,GAZE: speakers do not look at each other (The central man and nurse both look down toward their clasped hands rather than at each other's faces.),stray act: a raised palm,shake hands,,Thank you very much,yes
+A2-0377,Kiek kainuoja?,PASS,,,bread,,How much does it cost?,yes
+A2-0473,ištuštinti,PASS,,,empty,,,
+A2-0568,saldus,WARN,,"guessed 'honey', card teaches 'sweet'",honey,,,
+A2-0660,perėja,PASS,,,pedestrian crossing,,,
+A2-0888,Į sveikatą!,PASS,,,Cheers,,Cheers!,yes
+A2-0894,Geros dienos,FAIL,"CONTINUITY: The customer carries both bread and a bag of apples in the main panel, only bread in the upper inset, and only the apples in the lower inset. | NEIGHBOUR TEST: reads as 'Goodbye' (margin clear)",stray act: a wave,buy bread,,Goodbye,yes
+A2-0895,Geros kelionės,FAIL,CONTINUITY: The inset repeats the train-platform scene but omits the man and the woman on the train and shows the train farther away.,stray act: a wave,goodbye,,Good luck on the trip,yes
+A2-0917,Norėčiau kavos,WARN,,stray act: drinking from a cup | stray act: pouring coffee,coffee,,I would like coffee,yes
+A2-0925,Trečia valanda,WARN,,stray act: a pointing finger | stray act: a hand on the chest,leave at three o'clock,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,It is three o'clock,yes
+A2-1162,Gero savaitgalio!,PASS,,,leave work,12 | 3 | 6 | 9,Have a good weekend!,yes
+A2-1167,Užeikite!,PASS,,,a visit,,Come in!,yes
+A2-1184,Negali būti!,FAIL,CONTINUITY: The inset repeats the woman reading a letter but omits the seated man and changes the scene's positions and viewpoint.,caption fit: nearly,letter,,No way!,nearly
+A2-1185,nieko baisaus,PASS,,,stop,,,yes
+A2-1309,medalis,PASS,,,gold medal,,,
+A2-1411,šildytuvas,PASS,,,heater,,,
+A2-1416,šokėjas,FAIL,CONTINUITY: The bottom inset repeats the folk dancers but omits the accordion player and changes the dancers' spacing and positions.,"guessed 'dance', card teaches 'dancer'",dance,,,
+A2-1431,matuotis,WARN,,"guessed 'tailor', card teaches 'to try on'",tailor,,,
+A2-1817,dovanoti,WARN,,"guessed 'gift', card teaches 'to give (as a present)'",gift,,,
+A2-1934,skauda pilvą,FAIL,"GAZE: speakers do not look at each other (The woman looks at the man, while the man looks downward rather than at her.)",caption fit: nearly,stomachache,,stomach ache,nearly
+A2-2002,Koks jūsų adresas?,PASS,,,seven,7 | 7,What is your address?,yes
+A2-2010,Grąžos nereikia.,PASS,,,taxi fare,,Keep the change,yes
+A2-2022,Leiskite prisistatyti.,FAIL,"NEIGHBOUR TEST: reads as 'My name is… (A2-0367, A2-0910 — check their stagings' (margin clear)",,hand on heart,,"My name is… (A2-0367, A2-0910 — check their stagings",yes
+A2-2026,"Vieną bilietą į Kauną, prašau.",PASS,,,ticket,,"One ticket to Kaunas, please",yes
+S-0051,,PASS,,,five,,,yes

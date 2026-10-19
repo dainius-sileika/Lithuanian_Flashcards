@@ -1,0 +1,493 @@
+{
+ "083_tevas": {
+  "dir": "out_deck_f62",
+  "prefill": "blur",
+  "regions": [
+   {
+    "poly": [
+     [
+      1160,
+      700
+     ],
+     [
+      1440,
+      700
+     ],
+     [
+      1440,
+      935
+     ],
+     [
+      1160,
+      935
+     ]
+    ]
+   }
+  ],
+  "instruction": "a close-up of a father holding his small son's hand: the father's hand, coming from his brown jacket sleeve at the upper right, is an ordinary adult man's hand in natural proportion, only a little larger than the boy's; the boy's small hand, coming from his blue sleeve at the left, rests inside it; two hands in all, each with one thumb and four fingers"
+ },
+ "A2-0359": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a patient in a hospital corridor clasping a nurse's hand in both of his, deep bow",
+  "regions": [
+   {
+    "poly": [
+     [
+      555,
+      525
+     ],
+     [
+      725,
+      525
+     ],
+     [
+      725,
+      665
+     ],
+     [
+      555,
+      665
+     ]
+    ]
+   }
+  ],
+  "instruction": "the patient's two hands enfold the nurse's right hand: his right hand holds hers palm to palm and his left hand is laid over the back of her hand; her hand and wrist come from her own bare forearm and white sleeve on the right, his hands from his blue striped dressing-gown sleeves on the left; three hands in all, each drawn whole with one thumb and four fingers and no extra fingers"
+ },
+ "A2-0377": {
+  "dir": "out_phrases_v3/round2",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a shopper at a market stall lifting a loaf of bread in her LEFT hand, her RIGHT hand holding her purse open; she looks at the stallholder; the stallholder looks back",
+  "regions": [
+   {
+    "poly": [
+     [
+      1150,
+      185
+     ],
+     [
+      1440,
+      185
+     ],
+     [
+      1440,
+      355
+     ],
+     [
+      1150,
+      355
+     ]
+    ]
+   }
+  ],
+  "instruction": "a close-up of the shopper's two hands holding her small brown leather purse open by its metal clasp frame against her red coat: the purse body hangs below the frame, each hand grips one side of the frame from the outside with the thumb on top of the frame; no thumb or finger passes through the purse or its frame; each hand has one thumb and four fingers"
+ },
+ "A2-0888": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "four people at a table clinking glasses, mid-toast",
+  "regions": [
+   {
+    "poly": [
+     [
+      600,
+      545
+     ],
+     [
+      735,
+      545
+     ],
+     [
+      735,
+      630
+     ],
+     [
+      600,
+      630
+     ]
+    ]
+   }
+  ],
+  "instruction": "the young woman's right hand rises from her red cardigan sleeve, just below the young man's forearm, holding up her own small stemmed glass of clear liquid toward the other glasses; her hand has one thumb and four fingers wrapped round the glass, and the glass is clearly drawn, the same size and shape as the other three glasses"
+ },
+ "A2-0894": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a baker handing a loaf out of a morning doorway with a wave, sun low",
+  "regions": [
+   {
+    "poly": [
+     [
+      612,
+      646
+     ],
+     [
+      706,
+      650
+     ],
+     [
+      706,
+      748
+     ],
+     [
+      612,
+      748
+     ]
+    ]
+   }
+  ],
+  "instruction": "the man's right hand, a clearly drawn natural hand, hangs relaxed at his side out of his brown coat sleeve and holds the handles of a string shopping bag: four fingers curled round the handles and one thumb over them; the bag's string handles run down from the hand; draw the hand, never a blank box"
+ },
+ "A2-0917": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a woman at a cafe counter pointing at the coffee pot behind the server, purse open",
+  "regions": [
+   {
+    "poly": [
+     [
+      1243,
+      168
+     ],
+     [
+      1312,
+      168
+     ],
+     [
+      1312,
+      240
+     ],
+     [
+      1243,
+      240
+     ]
+    ]
+   }
+  ],
+  "instruction": "the fingers of the server's right hand curl round the small black tap handle: index and middle fingers over the top of the handle, the thumb on its near side; natural fingers with clear knuckles and nails, no extra or fused fingers"
+ },
+ "A2-0925": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a woman pointing at a wall clock showing three to a man putting on his coat",
+  "regions": [
+   {
+    "poly": [
+     [
+      655,
+      285
+     ],
+     [
+      1135,
+      285
+     ],
+     [
+      1135,
+      505
+     ],
+     [
+      655,
+      505
+     ]
+    ]
+   }
+  ],
+  "instruction": "the man is shrugging into his grey overcoat: one arm is already through its sleeve and hangs naturally down his side; with the other hand he reaches across his chest and pulls the coat's collar up onto the opposite shoulder; the coat drapes over his back; his white shirt, tie and dark pullover show in front; two arms only, each joined to its own shoulder, two hands"
+ },
+ "A2-1162": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "colleagues parting at an office door on a Friday evening, one with a fishing rod over his shoulder",
+  "regions": [
+   {
+    "poly": [
+     [
+      688,
+      58
+     ],
+     [
+      748,
+      58
+     ],
+     [
+      748,
+      935
+     ],
+     [
+      688,
+      935
+     ]
+    ]
+   }
+  ],
+  "instruction": "a plain painted wooden door frame (the jamb) runs straight from the floor up to the top edge on the hinge side of the open door, set in a pale office partition wall, so the door clearly hangs in a doorway; the door's own edge with its hinges stays just beside the frame"
+ },
+ "A2-1167": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a host opening a flat door wide and stepping back, arm sweeping inward, a visitor on the mat",
+  "regions": [
+   {
+    "poly": [
+     [
+      420,
+      85
+     ],
+     [
+      522,
+      85
+     ],
+     [
+      522,
+      850
+     ],
+     [
+      420,
+      850
+     ]
+    ]
+   }
+  ],
+  "instruction": "the open wooden door leaf stands beside the host, its edge a clean straight vertical line with the lock and the handle on it, and a clear strip of door frame between the door edge and the host's body; the host's near hand rests on the inside door handle; the host's body and the door never overlap or merge"
+ },
+ "A2-1184": {
+  "dir": "out_phrases_v3",
+  "gaze": "default",
+  "prefill": "blur",
+  "staging": "a woman in a kitchen with a letter in one hand, eyes wide",
+  "regions": [
+   {
+    "poly": [
+     [
+      690,
+      262
+     ],
+     [
+      832,
+      262
+     ],
+     [
+      832,
+      345
+     ],
+     [
+      770,
+      420
+     ],
+     [
+      775,
+      492
+     ],
+     [
+      690,
+      492
+     ]
+    ]
+   }
+  ],
+  "instruction": "the woman's lower face is visible: her mouth open in a small round O of disbelief, her chin; below it her neck and the open collar of her red flowered dress and the edge of her beige cardigan; there is NO hand at her face and no raised arm"
+ },
+ "A2-1185": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "two men who have bumped shoulders on a pavement, one waving it off with a relaxed palm",
+  "regions": [
+   {
+    "poly": [
+     [
+      1148,
+      195
+     ],
+     [
+      1220,
+      195
+     ],
+     [
+      1220,
+      300
+     ],
+     [
+      1148,
+      300
+     ]
+    ]
+   }
+  ],
+  "instruction": "the pale stone wall of the building behind the young man and the edge of his blue coat at the shoulder; there is NO hand and NO arm here"
+ },
+ "S-0051": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a grandfather bending to a small boy who holds up five fingers, a birthday cake with five candles on the table behind",
+  "regions": [
+   {
+    "poly": [
+     [
+      1262,
+      722
+     ],
+     [
+      1462,
+      722
+     ],
+     [
+      1462,
+      868
+     ],
+     [
+      1262,
+      868
+     ]
+    ]
+   }
+  ],
+  "instruction": "a small red toy lorry, clearly drawn: a red cab with two little windows, a red tipper body behind it and four round black wheels, standing by itself upright on the opened wrapping paper printed with coloured dots; NO hands and NO fingers inside this area, nothing touches the toy"
+ },
+ "A2-1934": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a kitchen; a man bent double on a chair, both arms wrapped round his stomach, face screwed up; his wife stands beside him with her RIGHT hand on his shoulder, looking at his face",
+  "regions": [
+   {
+    "poly": [
+     [
+      560,
+      352
+     ],
+     [
+      665,
+      352
+     ],
+     [
+      665,
+      432
+     ],
+     [
+      560,
+      432
+     ]
+    ]
+   }
+  ],
+  "instruction": "the wife's RIGHT hand rests on the man's shoulder: a natural hand from her red cardigan sleeve, four fingers lying over the top of his shoulder and the thumb behind; one thumb and four fingers"
+ },
+ "A2-2002": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a village street; a postman with a parcel under his LEFT arm asks an old woman at her gate; she points with her RIGHT hand at the enamel number plate on her house wall; he looks where she points",
+  "regions": [
+   {
+    "poly": [
+     [
+      788,
+      274
+     ],
+     [
+      868,
+      274
+     ],
+     [
+      868,
+      358
+     ],
+     [
+      788,
+      358
+     ]
+    ]
+   },
+   {
+    "poly": [
+     [
+      822,
+      632
+     ],
+     [
+      912,
+      632
+     ],
+     [
+      912,
+      716
+     ],
+     [
+      822,
+      716
+     ]
+    ]
+   }
+  ],
+  "instruction": "the old woman's two hands, drawn naturally: her RIGHT hand points up at the number plate with the index finger extended, the other three fingers curled into the palm and the thumb resting along them; her LEFT hand rests on the top of the wooden gate, four fingers curled over the top rail and the thumb on the near side; each hand has one thumb and four fingers and joins her brown cardigan sleeve"
+ },
+ "A2-2022": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a conference room; a man has risen from his chair at a long table, RIGHT hand flat on his chest, looking at the people across the table; they look at him",
+  "regions": [
+   {
+    "poly": [
+     [
+      778,
+      708
+     ],
+     [
+      882,
+      708
+     ],
+     [
+      882,
+      790
+     ],
+     [
+      778,
+      790
+     ]
+    ]
+   }
+  ],
+  "instruction": "the bespectacled man's two hands rest clasped on the table in front of him, fingers interlaced, each hand coming from his own dark jacket sleeve with a white shirt cuff; two hands, each with one thumb and four fingers"
+ },
+ "A2-2026": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a station ticket window; a passenger holds up ONE finger of his RIGHT hand to the clerk behind the glass; she looks at him, hand on the ticket roll",
+  "regions": [
+   {
+    "poly": [
+     [
+      1212,
+      180
+     ],
+     [
+      1412,
+      180
+     ],
+     [
+      1412,
+      300
+     ],
+     [
+      1335,
+      300
+     ],
+     [
+      1335,
+      338
+     ],
+     [
+      1212,
+      338
+     ]
+    ]
+   }
+  ],
+  "instruction": "the clerk's RIGHT hand, coming from her blue sleeve at the upper left, rests flat on top of the paper ticket roll, fingers together along the roll and the thumb on the near side; one hand with one thumb and four fingers; below the hand, the machine's plain metal spindle and side plate, with no fingers or other hand parts there"
+ }
+}

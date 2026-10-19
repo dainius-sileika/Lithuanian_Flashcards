@@ -131,7 +131,12 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Cheers!': {'ids': ['A2-0888'],
              'lithuanian': 'Į sveikatą!',
              'format': 'situation',
-             'scene': 'four people at a table clinking glasses, mid-toast',
+             'scene': 'four people seated round a festive table, two on each side, each raising ONE small '
+                      'glass of clear liquid in a toast: the four glasses are lifted toward the middle in an '
+                      'arc at face height, about to touch, each glass clearly separate and fully visible in '
+                      "its own owner's raised hand; four raised hands and four glasses, every hand joined to "
+                      'its own arm, no arm crossing in front of another person; they look at each other and '
+                      'smile',
              'cue': 'clinking glasses',
              'confusables': ['Bless you (same words)'],
              'merge_with': '',
@@ -201,7 +206,11 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Have a nice day': {'ids': ['A2-0894'],
                      'lithuanian': 'Geros dienos',
                      'format': 'situation',
-                     'scene': 'a baker handing a loaf out of a morning doorway with a wave, sun low',
+                     'scene': 'a baker in a white coat and headscarf in a morning shop doorway, sun low, has '
+                              'just handed a wrapped loaf to a customer and waves him off with her raised '
+                              'RIGHT hand, her LEFT hand on the door; the customer holds the loaf against '
+                              'his chest in both arms, a string bag of apples hanging from the crook of his '
+                              'LEFT arm; they look at each other',
                      'cue': 'morning light, shop doorway, wave',
                      'confusables': ['Good day', 'Goodbye'],
                      'merge_with': '',
@@ -216,8 +225,10 @@ SITUATIONS = {'Yes / no': {'ids': [],
                                     'suitcase in her left hand, turned toward her family and waving with her '
                                     'right; on the platform the mother stands in front waving with her own '
                                     'RIGHT arm raised high, the father beside her with both hands in his '
-                                    "coat pockets, a younger brother in a blue coat holding the mother's "
-                                    'LEFT hand; every arm joins its own shoulder and no arm crosses in front '
+                                    'coat pockets, a younger brother in a blue coat beside her waving a '
+                                    'small paper tricolour flag on a stick in his RIGHT hand, his other hand '
+                                    "in his coat pocket; the mother's LEFT hand holds the strap of her "
+                                    'handbag; every arm joins its own shoulder and no arm crosses in front '
                                     'of another person; all three look at the young woman',
                            'cue': "train, suitcase on the step, the mother's own raised arm",
                            'confusables': ['Good luck!', 'Goodbye'],
@@ -2673,11 +2684,15 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Keep the change': {'ids': ['A2-2010'],
                      'lithuanian': 'Grąžos nereikia.',
                      'format': 'situation',
-                     'scene': 'a taxi at a kerb; through the open passenger door the driver, half-turned in '
-                              'his seat, holds out a few coins on his open RIGHT palm; the passenger, '
-                              'already standing on the pavement with his bag, waves them off with his RIGHT '
-                              'hand, palm toward the driver, and smiles at him; the driver looks at him. '
-                              "Insets: the coins on the palm; the taxi's roof sign as a plain blank box",
+                     'scene': 'a yellow taxi at a kerb, seen from the pavement side; the rear passenger door '
+                              'on the kerb side stands open; the driver sits in the FRONT LEFT seat behind '
+                              'the steering wheel, on the far side of the car, and turns round in his seat, '
+                              'reaching back between the two front seats toward the open rear door with a '
+                              'few coins on his open RIGHT palm; the passenger, who has just got out of the '
+                              'back seat, stands on the pavement with his briefcase in his LEFT hand and '
+                              'waves the coins off with his RIGHT hand, palm toward the driver, smiling at '
+                              "him; the driver looks at him. Insets: the coins on the palm; the taxi's roof "
+                              'sign as a plain blank box',
                      'cue': 'coins offered and waved off',
                      'confusables': ['How much does it cost? (A2-0377)',
                                      'Stop here, please (A2-2029, inside the taxi, pointing at the kerb)'],
