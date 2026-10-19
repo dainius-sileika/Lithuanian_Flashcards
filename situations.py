@@ -622,12 +622,17 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Thank you very much': {'ids': ['A2-0359'],
                          'lithuanian': 'Labai ačiū',
                          'format': 'situation',
-                         'scene': "a patient in a hospital corridor clasping a nurse's hand in both of his, "
-                                  'deep bow',
-                         'cue': 'two-handed clasp, deep bow',
-                         'confusables': ['Thank you'],
+                         'scene': 'a hospital corridor; a discharged patient in his coat holds out a large '
+                                  'bunch of flowers in a paper wrap to a nurse with BOTH hands, the paper '
+                                  'wrap covering his fingers, head slightly inclined, eyes on her face; she '
+                                  'receives it with her RIGHT hand on the stems and smiles at him; her LEFT '
+                                  'hand holds a clipboard against her hip; nobody bows to the floor, no '
+                                  'clasped hands. Insets: the bouquet close; the corridor door',
+                         'cue': 'flowers offered with both hands — thanks at full strength',
+                         'confusables': ['Thank you (A2-0358, one hand flat on the chest, slight bow)',
+                                         "You're welcome (A2-0360, glove, wave-off)"],
                          'merge_with': '',
-                         'render': 'yes',
+                         'render': 'yes — round 4 (supersedes the earlier rows)',
                          'note': '',
                          'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                          'gaze': 'conversation'},
@@ -1420,12 +1425,18 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Have a good weekend!': {'ids': ['A2-1162'],
                           'lithuanian': 'Gero savaitgalio!',
                           'format': 'situation',
-                          'scene': 'colleagues parting at an office door on a Friday evening, one with a '
-                                   'fishing rod over his shoulder',
-                          'cue': 'fishing rod, office door',
-                          'confusables': ['Have a nice day'],
+                          'scene': 'an office corridor on a Friday evening; a man in a coat with a fishing '
+                                   'rod over his RIGHT shoulder stands in the corridor two steps outside the '
+                                   'open office door, the open door and its painted frame BEHIND him, '
+                                   'slightly to one side, so he overlaps nothing; inside the room, framed by '
+                                   'the doorway, a woman colleague at the threshold raises her RIGHT hand in '
+                                   'a parting wave; his LEFT hand holds a small tackle bag; they look at '
+                                   'each other. Insets: the rod and tackle bag; a desk calendar with the '
+                                   'Friday column (ticks only, no digits)',
+                          'cue': 'fishing rod, open office door behind him',
+                          'confusables': ['Have a nice day (A2-0894, baker and loaf)'],
                           'merge_with': '',
-                          'render': 'yes',
+                          'render': 'yes — round 4 (supersedes the earlier rows)',
                           'note': '',
                           'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                           'gaze': 'conversation'},
@@ -1480,12 +1491,17 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Come in!': {'ids': ['A2-1167'],
               'lithuanian': 'Užeikite!',
               'format': 'situation',
-              'scene': 'a host opening a flat door wide and stepping back, arm sweeping inward, a visitor on '
-                       'the mat',
-              'cue': 'arm sweeping in',
-              'confusables': ['Welcome!'],
+              'scene': "a flat's hallway seen from inside; an ordinary flat door of normal height, its top "
+                       'just above head height, stands open flat against the wall; the host, a middle-aged '
+                       'man in a cardigan, has stepped back two paces INTO the hallway, clear of the door '
+                       'and its frame, and sweeps his RIGHT arm inward toward the room, LEFT hand at his '
+                       'side; the visitor, a woman with a cake tin, stands outside on the doormat in the '
+                       'doorway, one foot on the threshold; they look at each other. Insets: the doormat '
+                       "with the visitor's shoes on it; the cake tin",
+              'cue': 'arm sweeping in from inside the flat',
+              'confusables': ['Welcome! (A2-0886, both arms wide, family with suitcases)'],
               'merge_with': '',
-              'render': 'yes',
+              'render': 'yes — round 4 (supersedes the earlier rows)',
               'note': '',
               'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
               'gaze': 'conversation'},
@@ -1539,24 +1555,26 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'undoubtedly': {'ids': ['A2-1172'],
                  'lithuanian': 'be abejo',
                  'format': 'situation',
-                 'scene': 'a small bedroom in the evening; a young man sits on the edge of his bed in shirt '
-                          'sleeves holding a wind-up alarm clock up toward the door in his LEFT hand, its '
-                          'hands set early, his RIGHT hand flat on his chest, chin up, confident half-smile, '
-                          'looking at his mother; his mother in a dressing gown stands in the doorway with '
-                          'her arms folded and one eyebrow raised in doubt, looking at him; a packed satchel '
-                          'and polished shoes stand ready by the door; NO table-slap, no raised finger',
-                 'cue': 'a doubter at the door and the assurance answered with the alarm clock held up: '
-                        "certainty against someone's doubt, a promise about the future",
+                 'scene': 'the Sartai races: a wide frozen lake under a white winter sky, an oval track '
+                          'marked on the ice with fir branches, a crowd of spectators in sheepskin coats, '
+                          'felt boots and fur hats along a rope rail; on the track three trotting horses '
+                          'pulling light two-wheeled sulkies with drivers, one horse clearly a length ahead; '
+                          'at the rail a man in a fur hat points with his RIGHT arm fully extended at the '
+                          'leading horse, looking at it; beside him his friend, holding a betting slip in '
+                          'his LEFT hand, gives one firm nod, chin tucked, and brings his RIGHT hand down '
+                          'flat in a short decisive chop, palm vertical; both men look at the horses; no '
+                          'raised index finger, no table, no clock. Insets: the leading trotter and sulky '
+                          'close; the betting slip as a plain blank ticket',
+                 'cue': "the leading horse pointed out and the companion's flat decisive chop — certainty "
+                        'about an outcome',
                  'confusables': ['Of course (A2-0883, librarian + book)',
                                  'aišku (A2-1148, mud trail)',
-                                 'Good night (A2-0353, bedside lamp off, moon) — here lamp on, both dressed, '
-                                 'nobody in bed',
                                  'I understand (A2-0372)'],
                  'merge_with': '',
-                 'render': 'yes — round 3 (supersedes the earlier rows)',
+                 'render': 'yes — round 4 (supersedes the earlier rows)',
                  'note': '',
                  'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
-                 'gaze': 'conversation'},
+                 'gaze': 'default'},
  'working hours; opening hours': {'ids': ['A2-1173'],
                                   'lithuanian': 'darbo valandos',
                                   'format': 'situation',
@@ -1692,23 +1710,34 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'No way!': {'ids': ['A2-1184'],
              'lithuanian': 'Negali būti!',
              'format': 'situation',
-             'scene': 'a woman in a kitchen with a letter in one hand, other hand over her mouth, eyes wide',
-             'cue': 'letter, hand over mouth',
-             'confusables': ['interesting'],
+             'scene': 'a kitchen; a woman at the table has just opened a letter: she holds the unfolded '
+                      'letter in her LEFT hand at chest height and presses her RIGHT hand flat over her '
+                      'mouth, eyes wide, eyebrows high; the torn envelope lies on the table; two arms only, '
+                      'each joined to its own shoulder; nobody else in the room. Insets: the torn envelope '
+                      "on the table; the kitchen window with a postman's bicycle passing",
+             'cue': 'letter and the hand over the mouth',
+             'confusables': ['interesting', 'I wonder (A2-1155 įdomu)'],
              'merge_with': '',
-             'render': 'yes',
+             'render': 'yes — round 4 (supersedes the earlier rows)',
              'note': '',
              'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
-             'gaze': 'conversation'},
+             'gaze': 'default'},
  "it's nothing; never mind": {'ids': ['A2-1185'],
                               'lithuanian': 'nieko baisaus',
                               'format': 'situation',
-                              'scene': 'two men who have bumped shoulders on a pavement, one waving it off '
-                                       'with a relaxed palm',
-                              'cue': 'relaxed wave after a bump',
-                              'confusables': ['No problem (merge)'],
+                              'scene': 'a kitchen; a small girl stands stiff over a broken plate on the '
+                                       'floor, both hands pressed to her own cheeks, looking at her '
+                                       'grandmother; the grandmother, already crouching with a dustpan in '
+                                       'her LEFT hand, smiles up at the girl and lays her RIGHT hand on the '
+                                       "girl's shoulder; shards on the floor, a cat watching from a chair. "
+                                       'Insets: the shards and dustpan; the cat on the chair',
+                              'cue': 'the smile and the hand on the shoulder over the broken plate — no '
+                                     'scolding',
+                              'confusables': ['Atsargiai! (A2-0385, before the fall, a warning)',
+                                              "You're welcome (A2-0360, glove, wave-off palm)",
+                                              'Atsiprašau (A2-0362, raised flat hand in a trolleybus)'],
                               'merge_with': '',
-                              'render': 'yes',
+                              'render': 'yes — round 4 (supersedes the earlier rows)',
                               'note': '',
                               'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                               'gaze': 'conversation'},
@@ -1782,12 +1811,13 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'so-so': {'ids': ['A2-1191'],
            'lithuanian': 'šiaip sau',
            'format': 'situation',
-           'scene': 'the steps outside a small cinema at dusk, a poster frame with a blank picture beside '
-                    'the door; two young men have just come out; one looks at the other with raised '
-                    'eyebrows, asking; the other answers with a one-shoulder half-shrug, mouth a straight '
-                    'line, and his RIGHT hand held out flat, palm down, fingers spread, tilted at a slant '
-                    'and perfectly STILL; his LEFT hand in his pocket; no motion lines, no arrows, no marks '
-                    'in the air; the asker looks at him',
+           'scene': 'the steps outside a small cinema at dusk, a printed film poster in the frame beside the '
+                    'door — a dark windmill on a hill against a stormy sky, a girl in white and a small '
+                    'horned silhouette, the title across the top in bold plain capitals; two young men have '
+                    'just come out; one looks at the other with raised eyebrows, asking; the other answers '
+                    'with a one-shoulder half-shrug, mouth a straight line, and his RIGHT hand held out '
+                    'flat, palm down, fingers spread, tilted at a slant and perfectly STILL; his LEFT hand '
+                    'in his pocket; no motion lines, no arrows, no marks in the air; the asker looks at him',
            'cue': 'a verdict on something just experienced: the still slanted flat hand and the straight '
                   'mouth — neither the thumb-up of Man gerai nor a shrug of not knowing',
            'confusables': ["I'm fine (A2-0365, thumb up and broad smile)",
@@ -1796,7 +1826,7 @@ SITUATIONS = {'Yes / no': {'ids': [],
                            "I don't mind (A2-1946, level hands, smiling)",
                            'Viskas gerai (A2-1161)'],
            'merge_with': '',
-           'render': 'yes — round 3 (supersedes the earlier rows)',
+           'render': 'yes — round 4 (supersedes the earlier rows)',
            'note': '',
            'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
            'gaze': 'conversation'},
@@ -2877,16 +2907,19 @@ SITUATIONS = {'Yes / no': {'ids': [],
                               'on the kerb side stands open; the driver sits in the FRONT LEFT seat behind '
                               'the steering wheel, on the far side of the car, and turns round in his seat, '
                               'reaching back between the two front seats toward the open rear door with a '
-                              'few coins on his open RIGHT palm; the passenger, who has just got out of the '
-                              'back seat, stands on the pavement with his briefcase in his LEFT hand and '
-                              'waves the coins off with his RIGHT hand, palm toward the driver, smiling at '
-                              "him; the driver looks at him. Insets: the coins on the palm; the taxi's roof "
-                              'sign as a plain blank box',
+                              'few coins on his open RIGHT palm — the palm faces up and the fingers point '
+                              'toward the open rear door; as on any right hand turned palm-up and reaching '
+                              'back, the THUMB lies on the side of the palm away from the viewer, toward the '
+                              'back of the car; one hand, one thumb, four fingers; the passenger, who has '
+                              'just got out of the back seat, stands on the pavement with his briefcase in '
+                              'his LEFT hand and waves the coins off with his RIGHT hand, palm toward the '
+                              'driver, smiling at him; the driver looks at him. Insets: the coins on the '
+                              "palm; the taxi's roof sign as a plain blank box",
                      'cue': 'coins offered and waved off',
                      'confusables': ['How much does it cost? (A2-0377)',
                                      'Stop here, please (A2-2029, inside the taxi, pointing at the kerb)'],
                      'merge_with': '',
-                     'render': 'yes',
+                     'render': 'yes — round 4 (supersedes the earlier rows)',
                      'note': '',
                      'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
                      'gaze': 'conversation'},
@@ -3075,18 +3108,19 @@ SITUATIONS = {'Yes / no': {'ids': [],
  'Let me introduce myself': {'ids': ['A2-2022'],
                              'lithuanian': 'Leiskite prisistatyti.',
                              'format': 'situation',
-                             'scene': 'a conference room; a man has risen from his chair at a long table, '
-                                      'RIGHT hand flat on his chest, LEFT hand on the chair back, looking at '
-                                      'the people across the table; they look at him; a blank name card on '
-                                      'the table before him. Insets: the hand on the chest close; the blank '
-                                      'name card',
+                             'scene': 'a conference room; a man has risen from his chair at a long table and '
+                                      'lays his RIGHT hand flat on his chest, fingers together and half '
+                                      'tucked under his jacket lapel so only the edge of the hand shows, his '
+                                      'LEFT hand resting on the chair back; the four people across the table '
+                                      'look at him, their hands BELOW the table edge or holding papers '
+                                      'upright in front of them; a blank name card stands on the table '
+                                      'before him. Insets: the blank name card; the empty pushed-back chair',
                              'cue': 'standing up at a table with the hand on his own chest',
-                             'confusables': ['My name is… (A2-0367, A2-0910 — check their stagings',
-                                             'if either has a hand on the chest, give this card the '
-                                             'standing-up and the name card)',
-                                             'This is… (A2-1983, palm toward another person)'],
+                             'confusables': ['My name is… (A2-0367, parish-hall circle',
+                                             'A2-0910, pointing at own chest while writing)',
+                                             'This is… (A2-1983)'],
                              'merge_with': '',
-                             'render': 'yes',
+                             'render': 'yes — round 4 (supersedes the earlier rows)',
                              'note': '',
                              'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
                              'gaze': 'conversation'},
@@ -3141,15 +3175,16 @@ SITUATIONS = {'Yes / no': {'ids': [],
                                   'scene': 'a station ticket window; a passenger holds up ONE finger of his '
                                            'RIGHT hand to the clerk behind the glass and looks at her; she '
                                            'looks at him, hand on the ticket roll; through the hall doors a '
-                                           'green train. Insets: the ticket coming out of the slot; the '
-                                           "clerk's hand on the roll",
+                                           'green train. Insets: through the round opening cut in the '
+                                           "ticket-window glass, the man's hand passing two folded banknotes "
+                                           'to the clerk; the ticket coming out of the slot',
                                   'cue': 'one finger at a ticket window with a train behind',
                                   'confusables': ['How much does the ticket cost? (A2-0928, two panels, '
                                                   'money)',
                                                   'One coffee (A2-2007, if kept)',
                                                   'Which platform? (A2-2027)'],
                                   'merge_with': '',
-                                  'render': 'yes',
+                                  'render': 'yes — round 4 (supersedes the earlier rows)',
                                   'note': '',
                                   'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
                                   'gaze': 'conversation'},
@@ -3200,7 +3235,8 @@ SITUATIONS = {'Yes / no': {'ids': [],
                                        'traffic keeping to the RIGHT, oncoming cars on the LEFT; the kerb, '
                                        "lamp posts and parked cars are on the car's RIGHT; the taxi's "
                                        'chequered band is on the outside of the door, seen through the open '
-                                       'window edge, not on the dashboard',
+                                       'window edge, not on the dashboard. Insets: the shop doorway through '
+                                       'the REAR side window, no hand',
                               'cue': "pointing sideways at a kerb level with the car, hand on the driver's "
                                      'shoulder — arrival, not direction; and a left-hand-drive car on the '
                                      'right side of the road',
@@ -3211,7 +3247,7 @@ SITUATIONS = {'Yes / no': {'ids': [],
                                               'Keep the change (A2-2010, outside the taxi, coins)',
                                               'On the right (A2-2005, street corner)'],
                               'merge_with': '',
-                              'render': 'yes — round 3 (supersedes the earlier rows)',
+                              'render': 'yes — round 4 (supersedes the earlier rows)',
                               'note': '',
                               'source_file': 'a2_build/a2_wordlist.csv (route PHRASE)',
                               'gaze': 'conversation'},

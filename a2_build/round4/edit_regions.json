@@ -1,0 +1,356 @@
+{
+ "083_tevas": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "ring": [
+     1076,
+     693,
+     1505,
+     941
+    ],
+    "width": 14
+   }
+  ],
+  "instruction": "the edge of this inset picture where it meets its thin ruled frame: blend the picture into the frame line so the paper tone, ink outlines, halftone and matte gouache match the rest of the card; continue exactly what is drawn there (the boy's blue denim sleeve, the father's brown jacket cuff and grey trousers, the green and ochre background); no new object, no new hand"
+ },
+ "A2-0925": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a woman pointing at a wall clock showing three to a man putting on his coat",
+  "regions": [
+   {
+    "poly": [
+     [
+      800,
+      280
+     ],
+     [
+      975,
+      280
+     ],
+     [
+      975,
+      430
+     ],
+     [
+      800,
+      430
+     ]
+    ]
+   }
+  ],
+  "instruction": "the man's LEFT arm is already inside the grey coat sleeve; the cuff of the sleeve hangs over his knuckles so only the tips of four fingers and no thumb show below it, gripping the coat's collar edge at his shoulder; one hand, drawn small; the sleeve joins his shoulder"
+ },
+ "A2-1431": {
+  "dir": "out_deck_a2",
+  "prefill": "blur",
+  "regions": [
+   {
+    "rect": [
+     1150,
+     58,
+     1510,
+     342
+    ]
+   }
+  ],
+  "instruction": "a man's foot in a dark sock sliding into a new brown shoe, the shoe's laces loose, the second shoe of the pair and its open box beside it on the shop floor; NO hands, NO shoehorn, nothing held"
+ },
+ "A2-2002": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "a village street; a postman with a parcel under his LEFT arm asks an old woman at her gate; she points with her RIGHT hand at the enamel number plate on her house wall; he looks where she points",
+  "regions": [
+   {
+    "poly": [
+     [
+      778,
+      282
+     ],
+     [
+      860,
+      282
+     ],
+     [
+      860,
+      372
+     ],
+     [
+      778,
+      372
+     ]
+    ]
+   }
+  ],
+  "instruction": "the old woman's RIGHT hand, raised toward the number plate with the PALM turned OUT toward the viewer, index finger extended upward at the plate, the other three fingers folded, the thumb resting across them; the wrist turns naturally from her brown cardigan sleeve; one hand with one thumb and four fingers"
+ },
+ "A2-2026": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a station ticket window; a passenger holds up ONE finger of his RIGHT hand to the clerk behind the glass",
+  "regions": [
+   {
+    "rect": [
+     1180,
+     93,
+     1508,
+     460
+    ]
+   }
+  ],
+  "instruction": "through the round opening cut in the ticket-window glass, a man's RIGHT hand passes two folded banknotes to the clerk; his hand comes from his dark coat sleeve on the near side, her RIGHT hand on the far side receives them palm-up; two hands only, each with one thumb and four fingers, drawn plainly; no lettering on the notes"
+ },
+ "A2-2029": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "prefill": "blur",
+  "staging": "inside a taxi; the passenger in the back points out of the RIGHT-side window at the kerb",
+  "regions": [
+   {
+    "poly": [
+     [
+      195,
+      800
+     ],
+     [
+      292,
+      800
+     ],
+     [
+      292,
+      856
+     ],
+     [
+      195,
+      856
+     ]
+    ]
+   }
+  ],
+  "instruction": "inside the taxi the driver's two hands rest on the steering wheel; through the open front window nothing sticks out: no arm and no hand outside the car; the window frame, the glass edge and the street behind it continue"
+ },
+ "S-0051": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a grandfather bending to a small boy who holds up five fingers, a birthday cake with five candles on the table behind. Insets: the same boy blowing out the candles",
+  "regions": [
+   {
+    "rect": [
+     1187,
+     509,
+     1509,
+     887
+    ]
+   }
+  ],
+  "instruction": "the same small boy as in the main picture, seen from the chest up, cheeks puffed, blowing toward the birthday cake; FIVE lit candles stand on the cake, widely spaced across its whole top: one at the far left edge, one at the left, one in the centre, one at the right, one at the far right edge — five candles, five small flames bending away from him; his hands are behind his back and out of the frame"
+ },
+ "A2-1191": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "the steps outside a small cinema at dusk, a printed film poster in the frame beside the door; two young men have just come out",
+  "exact_text": "\"VELNIO NUOTAKA\" on the cinema poster",
+  "regions": [
+   {
+    "poly": [
+     [
+      764,
+      204
+     ],
+     [
+      876,
+      224
+     ],
+     [
+      876,
+      488
+     ],
+     [
+      843,
+      488
+     ],
+     [
+      836,
+      466
+     ],
+     [
+      818,
+      442
+     ],
+     [
+      786,
+      415
+     ],
+     [
+      764,
+      398
+     ]
+    ]
+   },
+   {
+    "poly": [
+     [
+      1301,
+      545
+     ],
+     [
+      1340,
+      545
+     ],
+     [
+      1340,
+      650
+     ],
+     [
+      1301,
+      650
+     ]
+    ]
+   }
+  ],
+  "instruction": "inside the poster frame a printed film poster: a dark windmill on a hill against a stormy sky, a girl in white and a small horned silhouette beside it, and across the top in bold plain capitals the title VELNIO NUOTAKA — exactly those two words, no other lettering. In the small inset at the lower right the same poster hangs in the same frame, drawn small: the same windmill, girl and title"
+ },
+ "A2-1360": {
+  "dir": "out_deck_a2",
+  "exact_text": "\"MILŽINO PAUNKSMĖ\" on the playbill",
+  "regions": [
+   {
+    "poly": [
+     [
+      1250,
+      106
+     ],
+     [
+      1405,
+      106
+     ],
+     [
+      1405,
+      310
+     ],
+     [
+      1250,
+      310
+     ]
+    ]
+   }
+  ],
+  "instruction": "inside the playbill frame a printed theatre bill: a seated crowned king in a dark robe in the shadow of a tall looming figure, and above him in bold plain capitals the title MILŽINO PAUNKSMĖ, with the Ž and the Ė drawn exactly — those two words only, no other lettering"
+ },
+ "A2-0649": {
+  "dir": "out_deck_a2",
+  "regions": [
+   {
+    "poly": [
+     [
+      20,
+      661
+     ],
+     [
+      642,
+      661
+     ],
+     [
+      642,
+      952
+     ],
+     [
+      20,
+      952
+     ]
+    ]
+   }
+  ],
+  "instruction": "a plain blue post box on its post beside the post office door, a bundle of letters going into the slot; no building front, no clock"
+ },
+ "413_tuoktis": {
+  "dir": "out_deck_f62",
+  "regions": [
+   {
+    "rect": [
+     1064,
+     692,
+     1512,
+     958
+    ]
+   }
+  ],
+  "instruction": "a wedding car with white ribbons tied to its bonnet, parked at the kerb outside the registry, seen from the front three-quarters; no people, no hands"
+ },
+ "A2-2029b": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "inside a taxi; the passenger in the back points out of the RIGHT-side window at the kerb",
+  "regions": [
+   {
+    "poly": [
+     [
+      24,
+      704
+     ],
+     [
+      592,
+      704
+     ],
+     [
+      592,
+      956
+     ],
+     [
+      24,
+      956
+     ]
+    ]
+   }
+  ],
+  "instruction": "the view out of the taxi's REAR RIGHT-side window from the back seat: the window frame and the rolled-down glass edge, the kerb, a lamp post and a shop doorway level with the car outside; NO hand and NO arm in the inset"
+ },
+ "A2-2029c": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "inside a taxi; the passenger in the back points out of the RIGHT-side window at the kerb",
+  "regions": [
+   {
+    "poly": [
+     [
+      24,
+      704
+     ],
+     [
+      592,
+      704
+     ],
+     [
+      592,
+      956
+     ],
+     [
+      24,
+      956
+     ]
+    ]
+   }
+  ],
+  "instruction": "seen from the pavement, the yellow taxi has pulled in and stopped at the kerb beside the shop doorway; the car's window is empty: NO hand and NO arm comes out of any window; the rest of this inset stays as it is",
+  "prefill": "file:out_phrases_v3/_rerolled/A2-2029.r6.png"
+ },
+ "S-0051b": {
+  "dir": "out_phrases_v3",
+  "gaze": "conversation",
+  "staging": "a grandfather bending to a small boy who holds up five fingers, a birthday cake with five candles on the table behind. Insets: the same boy blowing out the candles",
+  "regions": [
+   {
+    "rect": [
+     1187,
+     509,
+     1509,
+     887
+    ]
+   }
+  ],
+  "instruction": "the same small boy as in the main picture, seen from the chest up, cheeks puffed, blowing out the five lit candles on the birthday cake; his hands are behind his back and out of the frame; five candles, five small flames bending away from him"
+ }
+}

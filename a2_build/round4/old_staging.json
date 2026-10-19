@@ -1,0 +1,147 @@
+{
+ "_about": "Values replaced by a2_build/src/apply_round4.py (first run), by file and key.",
+ "old": {
+  "card_notes.json": {
+   "097_prezidentas": {
+    "note": "Main picture: a man president at a podium draped with the tricolour speaking toward the hall with a raised hand, near-frontal — a tall trim man in his seventies with grey-white hair combed straight back, a broad open face and a warm closed-mouth smile, no spectacles, in a grey suit and tie; on the wall behind the podium, drawn large, clean and simple, the Vytis — a white armoured knight on a white rearing horse, sword raised, on a red field; beside him a woman president seated at a side table signing a document, head bent to the page. Insets: the president shaking a hand before a crowd; the tricolour on a flagpole before a heavy neoclassical building with an arcaded entrance; a motorcade with small flags."
+   },
+   "106_zaidejas": {
+    "note": "Main picture: a man and a woman player in plain jerseys and shorts on a grass pitch ringed by a cinder track, a low covered wooden grandstand and tall oaks behind, one dribbling the ball, the other running alongside; one glances toward the viewer. Insets: a basketball player shooting at a hoop; a chess player moving a piece; a volleyball player at the net."
+   },
+   "107_sirgalius": {
+    "note": "A man and a woman spectator in the covered wooden grandstand of a stadium holding a tricolour scarf up with both hands and shouting, the oak tops of a park showing past the stand's roof; one faces the viewer, the other looks at the pitch. Insets: the grass pitch and cinder track from the stand; a rattle and a scarf; a crowd of spectators."
+   },
+   "055_bankas": {
+    "note": "Main picture: a bank hall under a great triangular glass skylight, black marble columns and a coffered ceiling behind — a cashier seen full-face through a counter grille, the grille clearly in front of her with the counter ledge below it, counting banknotes onto the ledge for a customer standing on the near side; the counter with its grille is the subject. Insets: the bank's pale neoclassical corner front with its tall columned entrance; a savings book stamped; coins stacked on the counter."
+   },
+   "413_tuoktis": {
+    "note": "A couple exchanging rings before a registry official at a desk: the groom slides a gold ring onto the bride's ring finger - his right hand holds the ring, her left hand is held out flat and still, palm down, fingers slightly apart; only these two hands meet and every finger is clear; both look at the ring; the official faces the viewer. Insets: a pair of gold rings in an open ring box; the couple signing the register with plain strokes; guests throwing grain."
+   }
+  },
+  "a2_build/a2_staging.json": {
+   "A2-1326": {
+    "note": "Main picture: a postman in a uniform cap with a bulging shoulder bag handing letters to a woman at her garden gate, his bicycle leaning on the fence. The man delivering letters is the subject. Insets: the postman leaving the post office front - a smooth pale flat-roofed modernist block with very large windows in carved wooden frames and a round clock; the bag full of envelopes; the postman on his bicycle."
+   },
+   "A2-0085": {
+    "note": "Main picture: a small window in the tiled wall of a tall station hall with square pilasters and a coffered ceiling, a woman clerk behind the glass handing a ticket and change across, a traveller with a suitcase receiving it, two people queued behind. The window with the exchange of ticket and money is the subject. Insets: a punched ticket; the brass window counter with coins; the queue seen from behind under the high hall."
+   },
+   "A2-0660": {
+    "note": "Main picture: a zebra crossing seen at an angle - bold white stripes across the asphalt, a mother and child and a man crossing on them, the child holding the strap of the mother's handbag, a Zhiguli stopped at the line, a crossing sign post. The striped crossing with people on it is the subject. Insets: the pedestrian signal light with only the green walking figure lit; a child's shoes stopping at the white kerb line; the stripes from above."
+   },
+   "A2-1431": {
+    "note": "Main picture: a man in a clothes shop trying on a new jacket: he has one arm in its sleeve and is pulling it on over his shoulder while the assistant, a tape measure round her neck, holds the jacket up for him from behind; a second jacket hangs on the rail; no mirror anywhere in the picture. The garment being tried for size is the subject. Insets: a foot pushed into a new shoe with a shoehorn; a man trying on a hat, adjusting its brim with one hand, seen from the front, no mirror; a tape measure around a waist."
+   },
+   "A2-1360": {
+    "note": "Main picture: a theatre — actors in period costume on a lit stage before a painted backdrop, footlights, the red curtain half drawn, tiered boxes in red velvet and gilt along the walls, rows of audience in the dark. The acted scene on the stage is the subject. Insets: a playbill frame left blank; an actor bowing; opera glasses."
+   },
+   "A2-0649": {
+    "note": "Main picture: a post office hall — a tall wide room whose tiled floor is patterned like a woven linen towel, a row of brass-railed counters with clerks behind glass, a woman weighing a parcel on a letter scale, a man licking a stamp, sacks of mail, a blue post box by the door. The counters with letters and parcels are the subject. Insets: the post office front — a smooth pale flat-roofed modernist block with very large windows in carved wooden frames and a round clock; a postman's bicycle with bags; a bundle of letters tied with string."
+   }
+  },
+  "style_lab/research/settings_assignments.csv": {
+   "106_zaidejas": {
+    "location_id": "kaunas_state_stadium",
+    "why": "2026-10-18 historical: SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
+   },
+   "107_sirgalius": {
+    "location_id": "kaunas_state_stadium",
+    "mode": "exterior",
+    "why": "2026-10-18 historical: NEW: fans in the covered wooden grandstand of the State Stadium."
+   },
+   "A2-0085": {
+    "key": "A2-0085",
+    "location_id": "kaunas_railway_station",
+    "mode": "interior",
+    "why": "2026-10-18 historical: NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
+   },
+   "A2-0649": {
+    "why": "2026-10-18 historical: NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset."
+   },
+   "A2-1326": {
+    "key": "A2-1326",
+    "location_id": "kaunas_central_post_office",
+    "mode": "inset",
+    "why": "2026-10-19 historical A5: OPTIONAL: the postman's one inset shows him leaving the post office front."
+   }
+  },
+  "a2_build/historical/implementation/settings_rows.csv": {
+   "106_zaidejas": {
+    "why": "SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
+   },
+   "107_sirgalius": {
+    "why": "NEW: fans in the covered wooden grandstand of the State Stadium."
+   },
+   "A2-0085": {
+    "why": "NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
+   },
+   "A2-0649": {
+    "why": "NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset."
+   },
+   "A2-1326": {
+    "why": "OPTIONAL: the postman's one inset shows him leaving the post office front."
+   }
+  },
+  "a2_build/restage_bubbles.csv": {
+   "A2-0359": {
+    "new_staging": "a patient in a hospital corridor clasping a nurse's hand in both of his, deep bow",
+    "distinguishing_cue": "two-handed clasp, deep bow",
+    "confusables": "Thank you",
+    "gaze": ""
+   },
+   "A2-1162": {
+    "new_staging": "colleagues parting at an office door on a Friday evening, one with a fishing rod over his shoulder",
+    "distinguishing_cue": "fishing rod, office door",
+    "confusables": "Have a nice day",
+    "gaze": ""
+   },
+   "A2-1167": {
+    "new_staging": "a host opening a flat door wide and stepping back, arm sweeping inward, a visitor on the mat",
+    "distinguishing_cue": "arm sweeping in",
+    "confusables": "Welcome!",
+    "gaze": ""
+   },
+   "A2-1172": {
+    "new_staging": "a small bedroom in the evening; a young man sits on the edge of his bed in shirt sleeves holding a wind-up alarm clock up toward the door in his LEFT hand, its hands set early, his RIGHT hand flat on his chest, chin up, confident half-smile, looking at his mother; his mother in a dressing gown stands in the doorway with her arms folded and one eyebrow raised in doubt, looking at him; a packed satchel and polished shoes stand ready by the door; NO table-slap, no raised finger",
+    "distinguishing_cue": "a doubter at the door and the assurance answered with the alarm clock held up: certainty against someone's doubt, a promise about the future",
+    "confusables": "Of course (A2-0883, librarian + book); aišku (A2-1148, mud trail); Good night (A2-0353, bedside lamp off, moon) — here lamp on, both dressed, nobody in bed; I understand (A2-0372)",
+    "gaze": "conversation"
+   },
+   "A2-1184": {
+    "new_staging": "a woman in a kitchen with a letter in one hand, other hand over her mouth, eyes wide",
+    "distinguishing_cue": "letter, hand over mouth",
+    "confusables": "interesting",
+    "gaze": ""
+   },
+   "A2-1185": {
+    "new_staging": "two men who have bumped shoulders on a pavement, one waving it off with a relaxed palm",
+    "distinguishing_cue": "relaxed wave after a bump",
+    "confusables": "No problem (merge)",
+    "gaze": ""
+   },
+   "A2-2010": {
+    "new_staging": "a yellow taxi at a kerb, seen from the pavement side; the rear passenger door on the kerb side stands open; the driver sits in the FRONT LEFT seat behind the steering wheel, on the far side of the car, and turns round in his seat, reaching back between the two front seats toward the open rear door with a few coins on his open RIGHT palm; the passenger, who has just got out of the back seat, stands on the pavement with his briefcase in his LEFT hand and waves the coins off with his RIGHT hand, palm toward the driver, smiling at him; the driver looks at him. Insets: the coins on the palm; the taxi's roof sign as a plain blank box"
+   },
+   "A2-2022": {
+    "new_staging": "a conference room; a man has risen from his chair at a long table, RIGHT hand flat on his chest, LEFT hand on the chair back, looking at the people across the table; they look at him; a blank name card on the table before him. Insets: the hand on the chest close; the blank name card",
+    "confusables": "My name is… (A2-0367, A2-0910 — check their stagings; if either has a hand on the chest, give this card the standing-up and the name card); This is… (A2-1983, palm toward another person)"
+   },
+   "A2-1191": {
+    "new_staging": "the steps outside a small cinema at dusk, a poster frame with a blank picture beside the door; two young men have just come out; one looks at the other with raised eyebrows, asking; the other answers with a one-shoulder half-shrug, mouth a straight line, and his RIGHT hand held out flat, palm down, fingers spread, tilted at a slant and perfectly STILL; his LEFT hand in his pocket; no motion lines, no arrows, no marks in the air; the asker looks at him"
+   },
+   "A2-2026": {
+    "new_staging": "a station ticket window; a passenger holds up ONE finger of his RIGHT hand to the clerk behind the glass and looks at her; she looks at him, hand on the ticket roll; through the hall doors a green train. Insets: the ticket coming out of the slot; the clerk's hand on the roll"
+   },
+   "A2-2029": {
+    "new_staging": "inside a LEFT-HAND-DRIVE Volga taxi: the steering wheel and the driver in the LEFT front seat, the front passenger seat on the RIGHT empty; the passenger, a woman with a shopping bag, sits in the BACK on the RIGHT, behind the empty front seat; she leans forward, lays her LEFT hand lightly on the driver's RIGHT shoulder and points with her RIGHT hand out of the RIGHT-side window at the kerb and a shop doorway LEVEL with the car — sideways, not ahead through the windscreen; the driver's head turns toward the mirror and his eyes meet hers in it; through the windscreen the road ahead runs on with traffic keeping to the RIGHT, oncoming cars on the LEFT; the kerb, lamp posts and parked cars are on the car's RIGHT; the taxi's chequered band is on the outside of the door, seen through the open window edge, not on the dashboard"
+   }
+  },
+  "a2_build/a2_wordlist.csv": {
+   "A2-1191": {
+    "card_text": ""
+   },
+   "A2-1360": {
+    "card_text": ""
+   }
+  }
+ }
+}

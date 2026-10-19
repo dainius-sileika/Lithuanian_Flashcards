@@ -1,0 +1,5 @@
+097_prezidentas restored from out_deck_f62/_rerolled/097_prezidentas.r4.png | round-3 render -> out_deck_f62/_rerolled/097_prezidentas.r5.png
+106_zaidejas restored from out_deck_f62/_rerolled/106_zaidejas.r2.png | round-3 render -> out_deck_f62/_rerolled/106_zaidejas.r3.png
+107_sirgalius restored from out_deck_f62/_rerolled/107_sirgalius.r1.png | round-3 render -> out_deck_f62/_rerolled/107_sirgalius.r2.png
+A2-1326 restored from out_deck_a2/_rerolled/A2-1326.r1.png | round-3 render -> out_deck_a2/_rerolled/A2-1326.r2.png
+A2-0085 restored from out_deck_a2/_rerolled/A2-0085.r1.png | round-3 render -> out_deck_a2/_rerolled/A2-0085.r2.png

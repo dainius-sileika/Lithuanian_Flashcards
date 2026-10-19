@@ -1,0 +1,2 @@
+083_tevas: COMPOSITE 2026-10-19 (round 4, owner option 2): main-picture crop [257, 473, 487, 606] scaled x1.87 into inset 3 box [1076, 693, 1505, 941]; previous -> _rerolled/083_tevas.r7.png
+A2-2029: RESTORED 2026-10-19 (round 4): the side-window inset edit failed QA (NEIGHBOUR: reads as On the right) -> _rerolled/A2-2029.r7.png; round-3 picture _rerolled/A2-2029.r6.png back, to remove only the hand from inset 1

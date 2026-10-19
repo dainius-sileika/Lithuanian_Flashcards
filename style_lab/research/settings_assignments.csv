@@ -75,8 +75,8 @@ key,location_id,mode,why
 103_zmogus,,,figure card with arrows; a place would compete with the subject
 104_draugas,kaunas_old_town_confluence,exterior,"two friends on the grassy river point, castle tower and town-hall spire behind"
 105_auka,,,figure card with arrows; a place would compete with the subject
-106_zaidejas,kaunas_state_stadium,exterior,"2026-10-18 historical: SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
-107_sirgalius,kaunas_state_stadium,exterior,2026-10-18 historical: NEW: fans in the covered wooden grandstand of the State Stadium.
+106_zaidejas,vilnius_vingis,exterior,"players on the park sports ground (stadium 1954), pines behind"
+107_sirgalius,,,figure card with arrows; a place would compete with the subject
 108_minia,,,hand_staged: already carries its own Lithuanian detail
 110_mokytojas,,,hand_staged: already carries its own Lithuanian detail
 111_studentas,vilnius_old_town,interior,lecture hall; baroque tower through the tall window
@@ -236,9 +236,8 @@ key,location_id,mode,why
 506_tamsus,,,abstract attribute
 507_sviesus,,,abstract attribute
 530_lydyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-A2-0085,kaunas_railway_station,interior,"2026-10-18 historical: NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
 A2-0645,kaunas_town_hall_square,exterior,2026-10-18 historical: NEW: the square itself is the subject; the tiered white tower in the middle.
-A2-0649,kaunas_central_post_office,interior,2026-10-18 historical: NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset.
+A2-0649,kaunas_central_post_office,interior,2026-10-18 historical: NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset. Round 4: exterior inset dropped 2026-10-19 (owner); inset 1 is a post box.
 A2-0652,kaunas_war_museum,interior,2026-10-18 historical: NEW: the hall with the orange monoplane hanging overhead and the amber cases in the staging; the tower and garden in one inset.
 A2-0653,kaunas_romuva_cinema,inset,2026-10-18 historical: NEW: inset only — the cinema front with the blank fin; the auditorium stays the main picture.
 A2-0656,kaunas_sports_hall,exterior,"2026-10-18 historical: NEW: the 1939 hall interior is the whole scene (prompt_phrase is an interior; mode 'exterior' only means the plain 'Setting: Lithuania, 1981, …' line)."
@@ -253,5 +252,4 @@ A2-1360,kaunas_laisves_aleja,interior,"2026-10-18 historical: NEW: performance i
 A2-1769,kaunas_war_museum,exterior,"2026-10-18 historical: SWAP (approved): the monument is the Freedom Statue in the museum garden, the bell tower behind; the Soviet-era seated poet (Jokūbonis 1977) is dropped."
 138_komanda,kaunas_sports_hall,exterior,"2026-10-19 historical A5: OPTIONAL, with the likeness plan: the team becomes the 1939 basketball champions lined up under the arches (likeness_cards.csv). If the owner keeps the football team, drop this row."
 A2-0667,kaunas_bank_of_lithuania,interior,2026-10-19 historical A5: OPTIONAL: a branch hall; the Bank's columned front glimpsed. Low priority.
-A2-1326,kaunas_central_post_office,inset,2026-10-19 historical A5: OPTIONAL: the postman's one inset shows him leaving the post office front.
 A2-1357,kaunas_war_museum,inset,2026-10-19 historical A5: NEW (optional): one inset shows the winged Freedom figure on its plinth as the example of a sculpture; the main picture keeps the sculptor at work.

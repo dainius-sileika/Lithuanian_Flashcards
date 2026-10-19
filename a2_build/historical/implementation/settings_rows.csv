@@ -3,13 +3,13 @@ key,location_id,mode,why
 047_biblioteka,kaunas_modernism,exterior,"KEEP, no change (one of the 26 by count): no verified interwar library building; stays generic Kaunas modernism."
 048_ligonine,kaunas_clinics,exterior,SWAP from vilnius_antakalnis (1970s Soviet block) to the 1939 Kaunas Clinics; ambulance at the canopied entrance. Approved 2026-10-17.
 055_bankas,kaunas_bank_of_lithuania,interior,REFINE (was kaunas_modernism exterior): the hall under the glass skylight is in the staging; the columned front is the inset.
-106_zaidejas,kaunas_state_stadium,exterior,"SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
-107_sirgalius,kaunas_state_stadium,exterior,NEW: fans in the covered wooden grandstand of the State Stadium.
+106_zaidejas,kaunas_state_stadium,exterior,"REVERTED 2026-10-19 (owner): SWAP from vilnius_vingis: players on the interwar State Stadium pitch, wooden grandstand behind."
+107_sirgalius,kaunas_state_stadium,exterior,REVERTED 2026-10-19 (owner): NEW: fans in the covered wooden grandstand of the State Stadium.
 112_advokatas,kaunas_justice_palace,interior,OPTIONAL (not among the 26; inventory 'generic'): the lawyers' table in the same courtroom as 035 so the two cards rhyme.
-A2-0085,kaunas_railway_station,interior,"NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
+A2-0085,kaunas_railway_station,interior,"REVERTED 2026-10-19 (owner): NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed."
 A2-0645,kaunas_town_hall_square,exterior,NEW: the square itself is the subject; the tiered white tower in the middle.
-A2-0649,kaunas_central_post_office,interior,NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset.
-A2-1326,kaunas_central_post_office,inset,OPTIONAL: the postman's one inset shows him leaving the post office front.
+A2-0649,kaunas_central_post_office,interior,NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset. | exterior inset dropped 2026-10-19 (owner)
+A2-1326,kaunas_central_post_office,inset,REVERTED 2026-10-19 (owner): OPTIONAL: the postman's one inset shows him leaving the post office front.
 A2-0652,kaunas_war_museum,interior,NEW: the hall with the orange monoplane hanging overhead and the amber cases in the staging; the tower and garden in one inset.
 A2-0653,kaunas_romuva_cinema,inset,NEW: inset only — the cinema front with the blank fin; the auditorium stays the main picture.
 A2-0654,kaunas_state_stadium,exterior,NEW — DEFERRED: stadionas moved to the B1 pack on 2026-10-17 (a2_build/deferred_B1.csv). Row applies when the B1 pack ships.

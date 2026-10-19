@@ -80,6 +80,10 @@ def make_mask(key, src):
         if "rect" in r:
             b = snap(gray, r["rect"]); boxes.append(b)
             d.rectangle([b[0] + 6, b[1] + 6, b[2] - 6, b[3] - 6], fill=255)
+        elif "ring" in r:      # 2026-10-19 round 4: a border band only (seams of a pasted patch)
+            x0, y0, x1, y1 = r["ring"]; w = int(r.get("width", 14))
+            d.rectangle([x0, y0, x1, y1], fill=255); d.rectangle([x0 + w, y0 + w, x1 - w, y1 - w], fill=0)
+            boxes.append({"ring": r["ring"], "width": w})
         else:
             d.polygon([tuple(p) for p in r["poly"]], fill=255); boxes.append(r["poly"])
     return im, keep, boxes
@@ -111,7 +115,12 @@ def prompt_for(key):
                      + "; ".join(f"({lab[i] if i < len(lab) else i + 1} inset) {ins[i]}" for i in spec["insets"]) + ".")
     if "the same" in st:
         parts.append(g.PANEL_CONTINUITY_RULE)
-    parts += [g.NO_TEXT_RULE, g.ANATOMY_PROPS_RULE]
+    # 2026-10-19 round 4: an entry may declare lettering ("exact_text", the card's card_text) for a poster or
+    # playbill; the text exception then stands in for the no-text rule, as in a full render
+    if spec.get("exact_text"):
+        parts += [g._exact_text_rule(spec["exact_text"], spec.get("exclude", "")), g.ANATOMY_PROPS_RULE]
+    else:
+        parts += [g.NO_TEXT_RULE, g.ANATOMY_PROPS_RULE]
     return " ".join(parts)
 
 
@@ -140,6 +149,8 @@ def main():
         send = im
         if REG[key].get("prefill") == "blur":
             send = Image.composite(im.filter(ImageFilter.GaussianBlur(28)), im, mask.filter(ImageFilter.MaxFilter(9)))
+        elif str(REG[key].get("prefill", "")).startswith("file:"):   # 2026-10-19 round 4: an earlier version's pixels
+            send = Image.composite(Image.open(REG[key]["prefill"][5:]).convert("RGB"), im, mask)
         rgba = Image.new("RGBA", im.size, (0, 0, 0, 255)); rgba.putalpha(Image.eval(mask, lambda v: 0 if v else 255))
         mb = io.BytesIO(); rgba.save(mb, "PNG", optimize=True); mb.name = "mask.png"; mb.seek(0)
         ib = io.BytesIO(); send.save(ib, "JPEG", quality=92); ib.name = "image.jpg"; ib.seek(0)
@@ -196,7 +207,7 @@ def main():
                 shutil.copyfile(f"{D}/{name}", f"{LOCAL}/{T}{name}")
         u = r.usage.model_dump() if getattr(r, "usage", None) else None
         with open(f"{LOCAL}/{T}ledger.csv", "a", newline="", encoding="utf-8") as f:
-            csv.writer(f).writerow([key, "", "", f"openai/{MODEL} edit", "1536x1024", f"{key}{ext}",
+            g._LedgerWriter(csv.writer(f)).writerow([key, "", "", f"openai/{MODEL} edit", "1536x1024", f"{key}{ext}",
                                     f"EDIT mask={json.dumps(boxes)} :: {prompt}"])
         with open(f"{LOCAL}/{T}gen_log.jsonl", "a") as f:
             f.write(json.dumps({"key": key, "model": MODEL, "edit": True, "s": round(time.time() - t), "usage": u,
