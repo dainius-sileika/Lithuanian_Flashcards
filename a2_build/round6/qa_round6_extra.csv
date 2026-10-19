@@ -1,0 +1,5 @@
+image,check,result
+A2-0359 try 2,limbs,"{""limbs_ok"": true, ""limbs_note"": """", ""props_ok"": true, ""props_note"": """", ""hands_ok"": true, ""hands_note"": """"}"
+A2-0359 try 2,inset2_blind,"{""moving"": ""away from the building and down the steps"", ""faces"": ""viewer"", ""steps"": ""down"", ""carries"": ""a suitcase"", ""doors"": ""behind him"", ""reading"": ""leaving"", ""looks_at_viewer"": false, ""note"": ""He is descending the exterior steps with the entrance doors behind him.""}"
+round 5 (judged),limbs,"{""limbs_ok"": true, ""limbs_note"": """", ""props_ok"": true, ""props_note"": """", ""hands_ok"": true, ""hands_note"": """"}"
+round 5 (judged),inset2_blind,"{""moving"": ""toward the building entrance"", ""faces"": ""away"", ""steps"": ""up"", ""carries"": ""a suitcase"", ""doors"": ""in front of him"", ""reading"": ""entering"", ""looks_at_viewer"": false, ""note"": ""He is seen from behind ascending the steps toward the entrance doors.""}"

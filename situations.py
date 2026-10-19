@@ -637,14 +637,20 @@ SITUATIONS = {'Yes / no': {'ids': [],
                                   'older man in a dark jacket sits on a wooden bench by the wall behind '
                                   'them; nobody bows to the floor, no clasped hands. Insets: the same man '
                                   'some days earlier as a patient in striped pyjamas, sitting up in a '
-                                  'hospital bed, the same nurse standing beside the bed; the same man in his '
-                                  "brown overcoat walking out through the hospital's front doors onto the "
-                                  'steps, seen from behind',
+                                  'hospital bed, the same nurse standing beside the bed; the same man '
+                                  'LEAVING the hospital, with the same greying hair, the same long brown '
+                                  'overcoat buttoned and the checked scarf, a small brown leather bag in his '
+                                  'RIGHT hand, coming DOWN the front steps TOWARD the viewer and away from '
+                                  'the building, the front of his coat turned to us, his eyes lowered to the '
+                                  'steps in front of his feet (he does not look at the viewer), the hospital '
+                                  'entrance with its glass double doors BEHIND him at the top of the steps '
+                                  'and closing after him, his back to the building (he does not face or '
+                                  'approach the doors)',
                          'cue': 'flowers offered with both hands — thanks at full strength',
                          'confusables': ['Thank you (A2-0358, one hand flat on the chest, slight bow)',
                                          "You're welcome (A2-0360, glove, wave-off)"],
                          'merge_with': '',
-                         'render': 'yes — round 5 (supersedes the earlier rows)',
+                         'render': 'yes — round 6 (supersedes the earlier rows)',
                          'note': '',
                          'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                          'gaze': 'conversation'},
