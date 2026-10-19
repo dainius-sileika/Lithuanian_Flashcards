@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # Precedent, likeness and emblem rules — exact text for go_generator.py
 
 Plan only (2026-10-18). Nothing applied. Owner decisions of 2026-10-17 behind this text: places "adopt all"; faces "surroundings, but try faces as best you can"; president = Adamkus, "use the likeness of Adamkus when he was serving as president", anachronisms OK; "vytis is fine, although the vytis cross might be easier to draw, and leans patriotic, which I like"; tram stays; hospital → 1939 Kaunas Clinics and Maironis bronze → 1928 Freedom Statue approved.

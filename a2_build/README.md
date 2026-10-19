@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # a2_build — the A2 list, built 2026-10-11 (Fable), updated the same day for the owner's decisions
 
 Rebuild with `python3 a2_build/src/build_a2.py` (reads the decision modules in `src/`; stress lookups came from

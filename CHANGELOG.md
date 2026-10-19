@@ -1,3 +1,5 @@
+> Design parameters in force are stated in **docs/DESIGN_SPEC_CURRENT.md** (2026-10-19); this file is the log.
+
 # Changelog
 
 All notable changes to **Lietuvių Flashcards** are recorded here.

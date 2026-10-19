@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # Rule changes for pilot round 2 — exact text (Fable, 2026-10-17; for the executor)
 
 Scope rule, same as on 2026-10-17: these changes fire only when `generate(..., situation=True)`, i.e. for the rows of `restage_bubbles.csv`. Every other card's prompt stays byte-identical. Each block below says **NEW** (add) or **REPLACES** (and quotes the text it replaces). Nothing here has been applied; `go_generator.py`, `go_grammars.py`, `gen_phrases.py`, `qa_images.py` and the data are untouched in this commit.

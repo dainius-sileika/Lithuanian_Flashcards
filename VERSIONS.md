@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # VERSIONS — Lietuvių Flashcards
 
 **Current: 520-card beta — engine files 1.9.2 / wordlist 2.9, plus audio +

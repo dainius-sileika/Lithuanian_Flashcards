@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # Pilot round 1 — diagnosis (Fable, 2026-10-17)
 
 Source: the owner's per-card verdicts on the 34-card bubble-free pilot (`out_phrases_v3/`), read against the prompts in `out_phrases_v3/ledger.csv`, `go_generator.py`, `go_grammars.py`, `gen_phrases.py` and `qa_images.py`.

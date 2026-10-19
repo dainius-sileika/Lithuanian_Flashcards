@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # Re-staging the speech-bubble cards as pure situation pictures (Fable, 2026-10-17 — proposal only)
 
 Owner's decisions now in force: English caption on every front (template); frames redrawn at standard widths by the builder; section name in the top band, plate number and English in the bottom band; lettering inside images only where it is part of the object. Consequence: the picture no longer has to make the words guessable. Its job is the **situation**, and it must never suggest a different phrase than the caption.

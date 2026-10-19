@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # Audit of the card BACKS (Fable, 2026-10-17)
 
 Scope: every note type `build_apkg.py` builds — A1/A2 picture notes ("Lietuvių GO"), A2 phrase notes (same model), A2 cloze ("Lietuvių GO Cloze"), sentence cards (cloze model with Image). Read: `build_apkg.py` templates, `anki/go_theme.css`, `anki/templates.md`, `cards_anki.csv` (521), `a2_build/a2_wordlist.csv` (1,709), `a2_build/sentences/sentences.csv` (55). Rendered real backs with the live templates (`backs_audit/render_backs.py`, phone viewport 390×844 @2x, light and night mode); screenshots in `backs_audit/png/` (`_strip1..4.png` are side-by-side comparisons). Accuracy sample: 60 random notes (30 A1, 30 A2) checked against kirtis.info (Wiktionary rate-limits the cloud IP: 429 on every call) → `backs_audit/accuracy_sample_kirtis.csv`. Data errors → `backs_audit/data_errors.csv` (182 rows). Nothing fixed.

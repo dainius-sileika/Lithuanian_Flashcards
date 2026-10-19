@@ -1,3 +1,5 @@
+> Design parameters in force are stated in **docs/DESIGN_SPEC_CURRENT.md** (2026-10-19); this file is the log.
+
 # A1 wrap-up — what remains before the A1 subdeck is finished and released
 
 Planner, 2026-10-18. Owner's goal: "wrap up A1, then A2". The A1 subdeck today: 1,164 cards in `study_order.csv` (the 520-card base, the A2-list rows tagged A1 — including the 62 survival items retagged on 2026-10-17 — and 35 sentence cards), packaged as `Lietuviu_Flashcards_v2.1_A1.apkg` with the standard bands and the new backs. Tags: **owner** (only he can do or decide it), **executor** (runs renders, edits, builds), **planner** (writes the staging or plan). Costs are the project's own rates ($0.0135 a render, ≈ $0.02–0.04 an edit, QA ≈ $0.07 a card); "0" means no API spend.

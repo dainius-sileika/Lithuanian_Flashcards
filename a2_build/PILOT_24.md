@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # Pilot: 24 bubble-free renders + 10 extras (Fable, 2026-10-17)
 
 Owner decisions applied: single scenes, comics withdrawn; question-word cards keep a picture; 374 galvoti redrawn without the thought bubble; English caption in the bottom band, section name in English in the top band.

@@ -1,128 +1,53 @@
 # Lietuvių Flashcards
 
-**A 520-card illustrated Lithuanian vocabulary deck, drawn in the deadpan style of a 1980s Soviet civil-defence training manual.**
+An illustrated Lithuanian Anki deck (A0 → A2+), every picture drawn as a page from a 1981 Lithuanian
+civil-defence training album. Two subdecks (`Lietuvių Flashcards::A1`, `::A2`), picture cards, phrase
+cards, cloze and sentence cards, human-recorded audio for the A1 core.
 
-Every card teaches one Lithuanian word through a single, *guessable* illustration — no text is baked into the art. The vocabulary lives in a companion CSV so the words render as clean Anki fields. The art is deliberately, sincerely flat: calm instructional wall-chart illustration, muted offset-print colour, anonymous everyperson figures, the occasional small tricolor. The result reads like scanned pages from one fictional publication.
+**Start here:** `docs/DESIGN_SPEC_CURRENT.md` — the one authoritative statement of the design parameters
+in force (image engine, lettering and emblem rules, card front/back, study order, versioning, ways of
+working), sourced to the code. `docs/SPEC_RECONCILIATION_2026-10-19.md` says where older documents disagree
+with it. The owner's open decisions live on the Review Desk (`review_desk/`).
 
-<p align="center">
-  <img src="images/001_suo.webp"    width="240" alt="šuo — dog">
-  <img src="images/245_irankis.webp" width="240" alt="įrankis — tool">
-  <img src="images/296_saule.webp"   width="240" alt="saulė — sun">
-</p>
-<p align="center">
-  <img src="images/288_kunas.webp"   width="240" alt="kūnas — body">
-  <img src="images/454_letas.webp"    width="240" alt="lėtas — slow">
-  <img src="images/172_kava.webp"     width="240" alt="kava — coffee">
-</p>
-<p align="center">
-  <img src="images/316_ugnis.webp"    width="240" alt="ugnis — fire">
-  <img src="images/366_eiti.webp"     width="240" alt="eiti — to walk">
-  <img src="images/227_raide.webp"    width="240" alt="raidė — letter">
-</p>
-
-## Get the deck
-
-**Ready-made:** download **`Lietuviu_Flashcards.apkg`** from the
-[Releases](https://github.com/dainius-sileika/Lithuanian_Flashcards/releases) page
-and double-click it (or File → Import in Anki). It bundles all 520 illustrated
-cards, the GO theme, and Lithuanian audio — **human-recorded for the A1 core**
-(426 of 520 cards), synthesized elsewhere until the recordings are complete.
-
-**Build it yourself** from the source in this repo:
-```bash
-pip install genanki
-python3 build_apkg.py      # reads cards_anki.csv + images/ + audio/ + anki/go_theme.css
-```
-This writes `Lietuviu_Flashcards.apkg`. Card data is `cards_anki.csv` (word, gloss,
-gender, genitive/principal-parts/feminine forms, image, number); pronunciation
-audio (one mp3 per card) is in `audio/`; the styling is `anki/go_theme.css`
-(see `anki/templates.md` for the note-type layout).
-
-> **Stress accents** in the pronunciation field are sourced, not generated —
-> primarily from Wiktionary's stress-marked headwords, with the remainder from
-> [kirtis.info](https://kirtis.info). Each is accepted only if stripping its accent
-> marks exactly reproduces the plain headword, so a wrong-word match is impossible.
-> Coverage is 520/520. Vocabulary glosses and the verb principal parts have been
-> checked by a native speaker; the bulk noun genitives and adjective feminines
-> are rule-derived and still being spot-checked. See [CHANGELOG.md](CHANGELOG.md).
-
-## The idea
-
-The deck follows the [Fluent Forever](https://fluent-forever.com/) principle: learn words from **images**, not translations, so the foreign word attaches directly to a concept. Two design rules keep the images doing the teaching:
-
-- **Guessability gate** — if you *didn't* already know the target word, you should be able to infer it from the main image alone. Insets must support that meaning, never vote for a neighbouring word.
-- **No text in the art** — image models can't spell diacritic-heavy Lithuanian reliably, so the word is left to the Anki layer. The picture is pure illustration.
-
-The house style is **"deadpan civic procedure"**: the calm, patient temperature of a civil-defence poster teaching you to survive the unsurvivable with a friendly diagram and no wink. Figures are types, not individuals; the diagram is the voice (arrows, numbered insets, cross-sections). Population follows the setting — civilians at home and in shops, workers where work belongs, white coats at the hospital.
-
-## What's in the box
-
-| Path | What |
-|------|------|
-| `cards_anki.csv` | **The Anki data** (520 rows): word, gloss, gender, grammar forms (`gen_sg`/`pres3`/`past3`/`fem`), stress-accented `pron`, image + number. This is what `build_apkg.py` reads. |
-| `build_apkg.py` | Builds the importable `Lietuviu_Flashcards.apkg` from `cards_anki.csv` + `images/` + `audio/` + the theme. |
-| `images/` | The 520 finished cards as WebP (1536×1024, ~120 MB) — the distributed set. |
-| `audio/` | One pronunciation MP3 per card. A1 is human-recorded (full paradigm: headword + genitive / principal parts); the rest is Azure neural. `audio_source.tsv` says which is which. |
-| `anki/` | `go_theme.css` (card styling) + `templates.md` (note-type reference). |
-| `master_wordlist.csv` | The source wordlist (v2.9): 530 rows → 520 generable cards — target word, gloss, gender, pronunciation, per-card notes. |
-| `out_deck/ledger.csv` | The exact prompt + settings behind every card (full reproducibility). |
-| `out_deck/cards.csv` | Raw per-generation log (includes re-rolls; **not** the clean Anki source — use `cards_anki.csv`). |
-| `go_generator.py` | The "GO" image engine — house style, palette, prompt assembly. Backend: OpenAI gpt-image-1.5. |
-| `go_grammars.py` | Per-category visual grammars (the executable design bible). |
-| `deck_builder.py` | Production runner: routes every wordlist row, applies per-card staging overrides. |
-| `driver.py` | Parallel/batch runner; resumable; merges into `out_deck/`. |
-| `GO_STYLE_SPEC.md` | The canonical art specification (house style, grammars, rules). |
-| `NEEDS_YOUR_REVIEW.md` | **Start here if you're the owner** — the current bottleneck and exactly which file to check. |
-| `ROADMAP.md` | **The plan to A2** — gap analysis, phased build, outstanding work. |
-| `wordlist_a2_pending.csv` | The A2 queue: 984 proposed words/phrases/patterns, phased. |
-| `review_A1*.csv` | Open review packs awaiting the owner. |
-| `build_recorder.py` | Generates the voice-recorder sheet on demand (`python3 build_recorder.py A1 new`). |
-| `CHANGELOG.md` | **Release changelog** — what changed in each version. |
-| `VERSIONS.md` | Long-form production notes behind each release. |
-| `deprecated/` | Frozen older code/wordlist/spec versions for rollback. |
-
-## Categories
-
-Animals · Transportation · Locations · Clothing · Colours · Family & People · Jobs · Food & Drink · Home · Electronics · Body · Nature · Materials · Verbs · Adjectives — plus a handful of abstract/glyph cards.
-
-## The generation loop
-
-Cards are never pushed straight from the generator. Every batch runs the gate:
+## Build
 
 ```bash
-python3 gen_phrases.py 8 33                 # generate (or driver.py for the main deck)
-python3 qa_images.py out_phrases --csv _qa/qa_phrases.csv   # automated QA
-python3 build_review.py                     # -> review/new_cards_review.html
-#   ... owner opens the page and confirms ...
-#   ... only then: commit and push
+pip install genanki pillow openai
+python3 build_study_order_v2.py                  # -> study_order.csv
+APKG_LEVELS=A1 python3 build_apkg.py             # -> Lietuviu_Flashcards_v2.1_A1.apkg (APKG_VERSION to bump)
+APKG_LEVELS=A2 python3 build_apkg.py
 ```
+Generating or re-rolling pictures: the `gen.py` in each image folder (`out_deck_f62/gen.py`,
+`out_deck_a2/gen.py`, `out_deck_sent/gen.py`, `out_phrases_v3/gen.py`), then `python3 qa_images.py <folder>`,
+then a review page for the owner. Nothing ships without his verdict.
 
-`qa_images.py` enforces the two rules the deck lives by — **no text in the art**
-and **guessability** — by reading each image with a vision model that is never
-told the answer. It exits non-zero on failure, so it can gate the loop. It cannot
-judge whether an ambiguous picture is *acceptably* ambiguous; that is what the
-review page is for, and **the owner's confirmation comes before the push, not
-after**.
+## Map of the repository
 
-## Regenerating a card
-
-```bash
-pip3 install openai
-export OPENAI_API_KEY=sk-...
-python3 driver.py <Category> [N] [budget_seconds]   # e.g. python3 driver.py Verbs 5 40
-python3 driver.py --reroll 001_suo,245_irankis       # re-roll specific cards
-```
-The engine is model-independent by design: the grammars and staging survive a backend swap; only the prompt phrasing adapts.
+| top level | what it is |
+|---|---|
+| **Pipeline code (root)** | `build_apkg.py` (the package), `card_frame.py` + `frame_crop.py` (standard bands, caption, section labels, cropping), `build_study_order_v2.py` (learning order), `go_generator.py` (prompt engine and rules), `go_grammars.py` (per-category grammars), `deck_builder.py` + `verb_flashcards.py` (A1 staging, used by the gen scripts), `situations.py` (generated bubble-free phrase staging), `gen_phrases.py`, `go_settings.py` (real places), `historical.py` (precedents/likenesses), `qa_images.py` (QA gate), `frame_preview.py` (screenshots), `build_recorder.py` (recording sheets) |
+| **Data (root)** | `cards_anki.csv` (A1 cards), `master_wordlist.csv` + `card_notes.json` (A1 wordlist and staging), `study_order.csv`, `wordlist_a2_pending.csv` (A2 queue), `audio_source.tsv`, `accents_todo_kirtis.csv` (open stress item), `recorder_A2.html` (the owner's recording sheet) |
+| `a2_build/` | The A2 list and everything built around it: `a2_wordlist.csv`, `id_map.csv`, `merged_keys.csv`, `deferred_B1.csv`, `context_notes.csv` (usage lines), `restage_bubbles.csv`, `sentences/`, `study_order/`, `historical/`, `src/` (list builders and apply scripts), one folder per review round (`pilot_round2/`, `rollout*/`, `hand_fixes/`, `round3/` …) with its page builder, and the plans (`A1_WRAPUP.md` is current) |
+| `a2_rebase/` | The 2026-10-10 rebase of the A2 queue against the official lists; `a2_build/src/build_a2.py` reads it |
+| `sources/` | Frequency and lexicon sources (PERLSI 3000, VU A1/A2); PDFs not committed |
+| **Images by stage** | `images/` 1.x WebP masters (A1 fallback) · `out_deck_f62/` F6.2 A1 renders (current) · `out_deck_a2/` A2 pictures · `out_phrases_v3/` (+ `round2/`) bubble-free phrase and situation renders · `out_deck_sent/` sentence pictures · `out_phrases_a2/` the few remaining A2 phrase pictures. Each holds its `gen.py`, `ledger.csv` (every prompt), `plan.json`, QA csv and `_rerolled/` (previous versions, `<key>.r<n>.png`). PNGs are not committed. |
+| `audio/` | A1 mp3 (human-recorded core, Azure elsewhere); `audio_a2/` appears when the owner records |
+| `fonts/` | Brygada 1918 shipped as media; `_superseded/` the retired pair |
+| `anki/` | Card CSS (`go_theme.css`, `frame_standard.css`, `back_proposed.css`) and `templates.md` (v2.0 reference) |
+| `review_desk/` | The owner's Review Desk SOP, items and builder |
+| `build_reports/` | Build-time reports (frame flags, hand-scan results, previews used in reviews) |
+| `style_lab/` | The style experiments that settled F6.2 (dated folders with NOTES and analyses) and `research/` (location bank and settings assignments read by `go_settings.py`) |
+| `docs/` | `DESIGN_SPEC_CURRENT.md`, `SPEC_RECONCILIATION_2026-10-19.md`, `PLAYBOOK_flashcard_language_system.md` (method, reusable) |
+| `_archive/` | Kept history: `deprecated/` (1.6/1.7 code, specs, raw recording masters), `docs/` (superseded GO_STYLE_SPEC, ROADMAP, NEEDS_YOUR_REVIEW), `code/` (driver, build_review, bubbles), `review_packs/`, `out_deck_1.5/` (ledger of the 1.x masters), `recent_versions/` (the bubble pictures replaced on 2026-10-18) |
+| `_TO_DELETE/` | Everything judged an orphan on 2026-10-19, with `MANIFEST.csv` (path, size, category, reason). The owner deletes it; git-ignored. |
+| `_apkg_media/`, `_qa/`, `__pycache__/` | Caches (transcoded media, QA results); regenerate freely |
+| root | `CHANGELOG.md`, `VERSIONS.md` (release history), `ANKIWEB_DESCRIPTION.md`, `LICENSE` (CC BY-NC 4.0), the current `Lietuviu_Flashcards_v2.1_*.apkg` (not committed) |
 
 ## License
 
-**[CC BY-NC 4.0](LICENSE)** — free to use, share, and adapt for **non-commercial** purposes, **with attribution** and a link back. Applies to the artwork, wordlist, spec, and code.
+**[CC BY-NC 4.0](LICENSE)** — free to use, share and adapt for non-commercial purposes, with attribution
+and a link back. Applies to the artwork, wordlist, spec and code. The illustrations are AI-generated in a
+house style; the copyright status of such images is unsettled and this license states the author's intent.
 
 > "Lietuvių Flashcards" by Dainius Sileika, licensed under CC BY-NC 4.0.
 > Source: https://github.com/dainius-sileika/Lithuanian_Flashcards
-
-*Note: the illustrations were produced with OpenAI gpt-image-1.5. The copyright status of purely AI-generated images is legally unsettled; this license expresses the author's intent and covers the curated collection, wordlist, spec, and code. See [LICENSE](LICENSE) for detail.*
-
-## Status
-
-**Beta — complete deck.** 520/520 cards generated and QA'd (wordlist v2.9), each with audio and a stress-accented pronunciation. Accents are sourced (Wiktionary + kirtis.info), and the glosses and verb principal parts have been checked by a native speaker; rule-derived noun genitives and adjective feminines are still being spot-checked. Full-resolution PNG masters are kept locally; this repo carries the compressed WebP set, and the importable `.apkg` (JPEG images, for universal Anki compatibility) is distributed via Releases.

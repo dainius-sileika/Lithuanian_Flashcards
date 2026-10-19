@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # PLAN — finishing A2 (for the executor agent; written by Fable, 2026-10-12)
 
 You are an executor with no memory of this project. Everything you need is in this file and the

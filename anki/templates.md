@@ -1,3 +1,5 @@
+> **SUPERSEDED by docs/DESIGN_SPEC_CURRENT.md on 2026-10-19** — kept as history; where this file and the code disagree, the code and the spec are right.
+
 # Anki note type — "Lietuvių GO"
 
 **You normally don't need this.** `build_apkg.py` creates this note type
