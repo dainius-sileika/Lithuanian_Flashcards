@@ -1,24 +1,9 @@
 [
  {
-  "id": "round5",
-  "group": "Needs you now",
-  "title": "Round 5 Fixes: 10 cards, all full redraws",
-  "ask": "Nine full redraws (no patching): 083 (the third panel is now the family on a bench), 413 (the ring being put on, the cleanest of three tries), the Kaunas station with the clerk's hands on her counter, 0359 (patient, then leaving hospital; the main scene was redrawn too, so both versions are shown), 0925, 1167, 1431, 2002 and 2010. A2-0660 is back to the round-3 picture you praised. The automatic check found no failures. On 055: the bank was meant to be the Bank of Lithuania in Kaunas, but the inset shows a generic columned building, not its rounded corner and sculpture group, so your courthouse reading is fair. Mark 055 OK or Redo on the page.",
-  "options": [
-   "Answered on that page"
-  ],
-  "links": [
-   {
-    "label": "Open Round 5 Fixes",
-    "href": "https://claude.ai/artifact/G7cthB38f62czrxB6sek1z"
-   }
-  ]
- },
- {
   "id": "t-audio",
-  "group": "Later (parked)",
-  "title": "Record the audio (after the A1 release)",
-  "ask": "You chose to release A1 now and add audio later. When you have time: recorder_A2.html in a2_build on your Mac lists the takes in study order. The A1 share comes first (about 640 takes plus 35 sentences), then a re-take of 265 lūpos and the four Prašom phrases.",
+  "group": "Your own tasks",
+  "title": "Record the audio (the corrected recorder is being prepared)",
+  "ask": "The recorder on your Mac, recorder_A2.html, dates from 12 October. It misses the merges, the Prašom wording, parekomenduoti and the 182 new words. A corrected recorder and a one-page guide are being made now. This item will say 'ready' with the exact path and take counts, A1 first. Please don't start with the old one.",
   "options": [],
   "links": []
  }
