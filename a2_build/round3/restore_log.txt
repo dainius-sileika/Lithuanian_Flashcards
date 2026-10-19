@@ -1,0 +1,14 @@
+174_vynas restored from out_deck_f62/_rerolled/174_vynas.r1.png | failed edit -> _rerolled/174_vynas.r2.png
+388_sokti restored from out_deck_f62/_rerolled/388_sokti.r1.png | failed edit -> _rerolled/388_sokti.r2.png
+456_karstas restored from out_deck_f62/_rerolled/456_karstas.r1.png | failed edit -> _rerolled/456_karstas.r2.png
+472_laimingas restored from out_deck_f62/_rerolled/472_laimingas.r1.png | failed edit -> _rerolled/472_laimingas.r2.png
+A2-0473 restored from out_deck_a2/_rerolled/A2-0473.r1.png | failed edit -> _rerolled/A2-0473.r2.png
+A2-0568 restored from out_deck_a2/_rerolled/A2-0568.r1.png | failed edit -> _rerolled/A2-0568.r6.png
+A2-1411 restored from out_deck_a2/_rerolled/A2-1411.r1.png | failed edit -> _rerolled/A2-1411.r2.png
+A2-1817 restored from out_deck_a2/_rerolled/A2-1817.r1.png | failed edit -> _rerolled/A2-1817.r2.png
+A2-0894 failed edit -> out_phrases_v3/_rerolled/A2-0894.r4.png; restored out_phrases_v3/_rerolled/A2-0894.r3.png
+A2-0917 failed edit -> out_phrases_v3/_rerolled/A2-0917.r2.png; restored out_phrases_v3/_rerolled/A2-0917.r1.png
+S-0051 failed edit -> out_phrases_v3/_rerolled/S-0051.r2.png; restored out_phrases_v3/_rerolled/S-0051.r1.png
+A2-2026 failed edit -> out_phrases_v3/_rerolled/A2-2026.r2.png; restored out_phrases_v3/_rerolled/A2-2026.r1.png
+A2-0917 failed edit -> out_phrases_v3/_rerolled/A2-0917.r4.png; restored out_phrases_v3/_rerolled/A2-0917.r3.png
+A2-2026 failed edit -> out_phrases_v3/_rerolled/A2-2026.r4.png; restored out_phrases_v3/_rerolled/A2-2026.r3.png

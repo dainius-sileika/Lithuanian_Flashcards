@@ -72,7 +72,7 @@ A2-0094,pašto ženklas,stamp,pãšto žénklas,M,A2-0094,Society,A2-0094.png
 A2-0095,kioskas,newspaper stand,kiòskas,M,A2-0095,Location,A2-0095.png
 A2-0096,eilė,queue,eilė̃,F,A2-0096,Society,A2-0096.png
 A2-0100,užkandis,snack,ùžkandis,M,A2-0100,Food,A2-0100.png
-A2-0102,meniu,menu,meniù,,A2-0102,Food,A2-0102.png
+A2-0102,meniu,menu,meniù,M,A2-0102,Food,A2-0102.png
 A2-0104,čekis,receipt,čẽkis,M,A2-0104,Society,A2-0104.png
 A2-0105,nuolaida,discount,núolaida,F,A2-0105,Society,A2-0105.png
 A2-0107,grąža,change (money),grąžà,F,A2-0107,Society,A2-0107.png
@@ -152,7 +152,7 @@ A2-0595,pora,couple,porà,F,A2-0595,People,A2-0595.png
 A2-0600,gerklė,throat,gerklė̃,F,A2-0600,Body,A2-0600.png
 A2-0601,krūtinė,chest,krūtìnė,F,A2-0601,Body,A2-0601.png
 A2-0602,pilvas,stomach,pil̃vas,M,A2-0602,Body,A2-0602.png
-A2-0613,laiptai,stairs,láiptai,,A2-0613,Home,A2-0613.png
+A2-0613,laiptai,stairs,láiptai,M pl,A2-0613,Home,A2-0613.png
 A2-0615,balkonas,balcony,balkònas,M,A2-0615,Home,A2-0615.png
 A2-0618,garažas,garage,garãžas,M,A2-0618,Home,A2-0618.png
 A2-0623,lentyna,shelf,lentýna,F,A2-0623,Home,A2-0623.png
@@ -181,7 +181,7 @@ A2-0664,degalinė,petrol station,degalìnė,F,A2-0664,Location,A2-0664.png
 A2-0665,stovėjimo aikštelė,car park,stovė́jimo aikštẽlė,F,A2-0665,Location,A2-0665.png
 A2-0666,ambasada,embassy,ambasadà,F,A2-0666,Location,A2-0666.png
 A2-0668,patiekalas,meal,pãtiekalas,M,A2-0668,Food,A2-0668.png
-A2-0670,salotos,salad,salõtos,,A2-0670,Food,A2-0670.png
+A2-0670,salotos,salad,salõtos,F pl,A2-0670,Food,A2-0670.png
 A2-0671,sumuštinis,sandwich,sumuštìnis,M,A2-0671,Food,A2-0671.png
 A2-0672,košė,porridge,kõšė,F,A2-0672,Food,A2-0672.png
 A2-0673,blynai,pancakes,blynaĩ,M pl,A2-0673,Food,A2-0673.png
@@ -209,9 +209,9 @@ A2-0713,kojinės,socks,kójinės,F pl,A2-0713,Clothing,A2-0713.png
 A2-0715,basutės,sandals,basùtės,F pl,A2-0715,Clothing,A2-0715.png
 A2-0717,užtrauktukas,zip,užtrauktùkas,M,A2-0717,Clothing,A2-0717.png
 A2-0718,skėtis,umbrella,skė̃tis,M,A2-0718,Clothing,A2-0718.png
-A2-0719,akiniai,glasses,akiniaĩ,,A2-0719,Clothing,A2-0719.png
+A2-0719,akiniai,glasses,akiniaĩ,M pl,A2-0719,Clothing,A2-0719.png
 A2-0723,troleibusas,trolleybus,troleibùsas,M,A2-0723,Transportation,A2-0723.png
-A2-0724,taksi,taxi,taksì,,A2-0724,Transportation,A2-0724.png
+A2-0724,taksi,taxi,taksì,M,A2-0724,Transportation,A2-0724.png
 A2-0725,motociklas,motorbike,motocìklas,M,A2-0725,Transportation,A2-0725.png
 A2-0727,ratas,wheel,rãtas,M,A2-0727,Transportation,A2-0727.png
 A2-0729,vairuotojas,driver,vairúotojas,M,A2-0729,Transportation,A2-0729.png
@@ -282,7 +282,7 @@ A2-1235,chemija,chemistry,chèmija,F,A2-1235,Nouns,A2-1235.png
 A2-1236,dainininkas,singer,daininiñkas,M,A2-1236,Nouns,A2-1236.png
 A2-1237,darbininkas,worker,darbiniñkas,M,A2-1237,Nouns,A2-1237.png
 A2-1238,darbo drabužiai,work clothes,dárbo drabùžiai,,A2-1238,Nouns,A2-1238.png
-A2-1239,daržovės,vegetables,daržóvės,,A2-1239,Nouns,A2-1239.png
+A2-1239,daržovės,vegetables,daržóvės,F pl,A2-1239,Nouns,A2-1239.png
 A2-1240,daugiabutis,block of flats,daugiabùtis,M,A2-1240,Nouns,A2-1240.png
 A2-1241,debesis,cloud,debesìs,M,A2-1241,Nouns,A2-1241.png
 A2-1242,degtinė,vodka,degtìnė,F,A2-1242,Nouns,A2-1242.png
@@ -424,7 +424,7 @@ A2-1383,vagis,thief,vagìs,M,A2-1383,Nouns,A2-1383.png
 A2-1384,vagonas,carriage (train),vagònas,M,A2-1384,Nouns,A2-1384.png
 A2-1385,vaikų darželis,kindergarten,vaikų̃ daržẽlis,M,A2-1385,Nouns,A2-1385.png
 A2-1386,vairas,steering wheel,vaĩras,M,A2-1386,Nouns,A2-1386.png
-A2-1387,vaisiai,fruit,vaĩsiai,,A2-1387,Nouns,A2-1387.png
+A2-1387,vaisiai,fruit,vaĩsiai,M pl,A2-1387,Nouns,A2-1387.png
 A2-1388,vaistininkas,pharmacist,váistininkas,M,A2-1388,Nouns,A2-1388.png
 A2-1389,valgykla,canteen,valgyklà,F,A2-1389,Nouns,A2-1389.png
 A2-1390,vamzdis,pipe,vam̃zdis,M,A2-1390,Nouns,A2-1390.png
@@ -500,10 +500,10 @@ A2-1748,pasaka,fairy tale,pãsaka,F,A2-1748,Art,A2-1748.png
 A2-1749,gira,gira (kvass),girà,F,A2-1749,Beverages,A2-1749.png
 A2-1751,kaklaraištis,tie,kaklãraištis,M,A2-1751,Clothing,A2-1751.png
 A2-1752,pižama,pyjamas,pižamà,F,A2-1752,Clothing,A2-1752.png
-A2-1753,šlepetės,slippers,šlepẽtės,,A2-1753,Clothing,A2-1753.png
-A2-1754,šortai,shorts,šòrtai,,A2-1754,Clothing,A2-1754.png
+A2-1753,šlepetės,slippers,šlepẽtės,F pl,A2-1753,Clothing,A2-1753.png
+A2-1754,šortai,shorts,šòrtai,M pl,A2-1754,Clothing,A2-1754.png
 A2-1757,kugelis,potato pudding (kugelis),kùgelis,M,A2-1757,Food,A2-1757.png
-A2-1758,makaronai,pasta,makarõnai,,A2-1758,Food,A2-1758.png
+A2-1758,makaronai,pasta,makarõnai,M pl,A2-1758,Food,A2-1758.png
 A2-1759,taurė,wine glass; cup (trophy),taurė̃,F,A2-1759,Food,A2-1759.png
 A2-1760,pleistras,sticking plaster,pléistras,M,A2-1760,Health,A2-1760.png
 A2-1761,tvarstis,bandage,tvárstis,M,A2-1761,Health,A2-1761.png
@@ -564,7 +564,7 @@ A2-0609,raumuo,muscle,raumuõ,M,A2-0609,Body,A2-0609.png
 A2-0624,stalčius,drawer,stálčius,M,A2-0624,Home,A2-0624.png
 A2-0627,užuolaida,curtain,užúolaida,F,A2-0627,Home,A2-0627.png
 A2-0634,šukos,comb,šùkos,,A2-0634,Home,A2-0634.png
-A2-0635,žirklės,scissors,žìrklės,,A2-0635,Home,A2-0635.png
+A2-0635,žirklės,scissors,žìrklės,F pl,A2-0635,Home,A2-0635.png
 A2-0637,virvė,rope,vir̃vė,F,A2-0637,Home,A2-0637.png
 A2-0638,žvakė,candle,žvãkė,F,A2-0638,Home,A2-0638.png
 A2-0640,lemputė,bulb,lempùtė,F,A2-0640,Home,A2-0640.png
@@ -625,7 +625,7 @@ A2-1898,mama,mum; mom,mamà,F,A2-1898,Nouns,A2-1898.png
 A2-1899,tėtis,dad,tė̃tis,M,A2-1899,Nouns,A2-1899.png
 A2-1901,renginys,event,renginỹs,M,A2-1901,Nouns,A2-1901.png
 A2-1903,vidurnaktis,midnight,vidùrnaktis,M,A2-1903,Nouns,A2-1903.png
-A2-1904,rašomasis stalas,desk,,M,A2-1904,Nouns,A2-1904.png
+A2-1904,rašomasis stalas,desk,rãšomasis stãlas,M,A2-1904,Nouns,A2-1904.png
 A2-1905,morka,carrot,morkà,F,A2-1905,Nouns,A2-1905.png
 A2-1906,pupelės,bean(s),pupẽlės,F pl,A2-1906,Nouns,A2-1906.png
 A2-1907,padažas,sauce,pãdažas,M,A2-1907,Nouns,A2-1907.png
