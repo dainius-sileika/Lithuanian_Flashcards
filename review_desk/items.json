@@ -12,21 +12,6 @@
   "links": []
  },
  {
-  "id": "r6",
-  "group": "Pictures",
-  "title": "Round 6: one picture (A2-0359)",
-  "ask": "The last open picture for A1. Its new version is already in the v3.0 package; judge it on its page.",
-  "options": [
-   "Answered on that page"
-  ],
-  "links": [
-   {
-    "label": "Open Round 6",
-    "href": "https://claude.ai/artifact/VDVfrUATNXedrbHPVa6aFw"
-   }
-  ]
- },
- {
   "id": "release-a1",
   "group": "A1 v3.0 release",
   "title": "Try the A1 v3.0 package on your phone; upload after the rebuild",
@@ -51,15 +36,22 @@
   "links": []
  },
  {
-  "id": "dep37-lt",
-  "group": "A1 v3.0 release",
-  "title": "Four reworded sentences to glance at (Lithuanian)",
-  "ask": "Fable's fix for the 37 cards: 5 words move up to A1 (muzika, keltis, tiesa, teisus, šviesti) and 26 sentences are reworded with A1 words only; afterwards no A1 card needs an A2 word. Four rewordings need a native ear. Write your preferred wording in the note if one is off.\n1) A2-0002: Laukiu autobuso jau vieną {valandą}. I'd prefer: Jau {valandą} laukiu autobuso.\n2) A2-1013: Eikime {kur nors} valgyti. (pavalgyti is more idiomatic but not taught yet)\n3) A2-1592: Per televizorių daug {reklamos}. (or: Per televizorių rodo daug reklamos.)\n4) A2-1792: Autobusas {devintą} valandą. (elliptical, like the original)",
+  "id": "proofread",
+  "group": "Your own tasks",
+  "title": "Proofread the 1,255 deck sentences (round trip)",
+  "ask": "The files are in the 51.04 folder under a2_build/proofread/ (and attached in the chat): sentences_for_proofreading_v1.csv is the sheet to return; the two .txt files are for pasting into proofreading engines. Fill lt_corrected / en_corrected only where something should change, save it as sentences_for_proofreading_v1_returned.csv in the same folder, and tell me. The 27 rewordings from tonight (dep37) are already in the sheet, marked in the status column, including the four I asked you about.",
   "options": [
-   "All four as Fable wrote",
-   "Use my edits (note)"
+   "Returned"
   ],
-  "detail": "Full plan: a2_build/study_order/dep37_plan.md and dep37_plan.csv. Also adopted: A2-1725 becomes Mėnulis {šviečia}. so A1 does not show Saulė šviečia twice.",
+  "detail": "# Sentence proofreading round-trip (owner request 2026-10-19)\n\nEvery Lithuanian sentence and phrase in the deck (A1 + A2), 1,255 lines, in study order, A1 first:\ncloze sentences (981), phrase cards (219) and sentence cards (55). The 27 rewordings planned on 2026-10-19\n(`a2_build/study_order/dep37_plan.csv`, plus A2-1725 → *Mėnulis {šviečia}.*) are already in, marked in `status`.\n\n| file | for |\n|---|---|\n| `sentences_for_proofreading_v1.csv` | the working sheet: `lt_with_blank` (the blank is in braces), `lt_plain`, `target`, `en`, and empty `lt_corrected`, `en_corrected`, `note` columns to fill. UTF-8 with BOM, so Excel/Numbers read the diacritics. |\n| `sentences_lt_only_v1.txt` | key ⇥ Lithuanian, one per line, to paste into a proofreading engine |\n| `sentences_lt_en_v1.txt` | key ⇥ Lithuanian ⇥ English, for translation checkers |\n\nReturn: fill `lt_corrected` / `en_corrected` only where something should change (leave the rest empty), and save it as\n`sentences_for_proofreading_v1_returned.csv` in this folder. Keep the `key` column untouched: keys are being renamed to\none scheme, and the rename keeps an old→new map, so the returned sheet still applies after the rename.\nA correction that changes the blank word itself (`target`) is flagged for a decision, not applied silently.\n",
+  "links": []
+ },
+ {
+  "id": "r7-wait",
+  "group": "Pictures",
+  "title": "A2-0359 is being redrawn (no flowers in the first inset)",
+  "ask": "Your Round 6 note: the flowers come after his release, so the hospital-bed inset can't show any. A whole re-roll is running with the bed inset explicitly flower-free; the leaving inset keeps the Round 6 fix. A Round 7 page will replace this item.",
+  "options": [],
   "links": []
  }
 ]
