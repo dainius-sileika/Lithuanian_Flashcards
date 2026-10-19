@@ -1,0 +1,96 @@
+study_order.csv: 2433 rows (1191 A1 subdeck, 1242 A2 subdeck; 55 of them sentence cards); a2_build/study_order/recording_order_v3.csv: recording order
+
+==== previous study_order.csv: 2433 positioned cards (1186 A1, 1247 A2; 55 sentences) ====
+coverage: 0 keys without a position []; 0 positions for unknown keys []; positions 1..N, no gaps, no duplicates
+blocks: 0 A1 cards positioned after the first A2 card
+dependencies: 1979 word uses in reading cards point at a deck card; 13 point FORWARD (> 20 later: 13, > 50 later: 12); 7 of them are A1 cards needing a word taught only in A2; 92 uses of words no card teaches (86 distinct)
+  forward dependencies (card @pos: word <- teaching card @pos):
+    S-0023   @  640 A1 Saulė {šviečia}.                   šviečia          <- A2-1725  šviesti                A2 @2009
+    A2-1682  @  279 A1 pasakyti                           tiesą            <- A2-0848  tiesa                  A2 @1274
+    S-0020   @  296 A1 Man {patinka} muzika.              muzika           <- 169_muzika muzika                 A2 @1227
+    A2-1947  @  367 A1 kurti                              muziką           <- 169_muzika muzika                 A2 @1227
+    A2-0779  @  736 A1 klientas                           teisus           <- A2-1475  teisus                 A2 @1487
+    A2-0192  @  614 A1 anksti                             keliuosi         <- A2-0291  keltis                 A2 @1197
+    A2-0804  @  284 A1 atsakymas                          teisingas        <- A2-0539  teisingas              A1 @789
+    A2-1033  @  855 A1 paprastai                          keliuosi         <- A2-0291  keltis                 A2 @1197
+    A2-1532  @ 1312 A2 kelių policija                     sustabdė         <- A2-1964  sustabdyti             A2 @1636
+    A2-0123  @  238 A1 jūsų                               numeris          <- A2-1561  numeris                A1 @521
+    A2-1661  @ 2126 A2 neišlaikyti egzamino               neišlaikė        <- A2-1949  neišlaikyti (egzamino) A2 @2187
+    A2-1093  @  294 A1 bet kas                            padaryti         <- A2-1672  padaryti               A1 @351
+    A2-0159  @  171 A1 kad                                manau            <- A2-1656  manyti                 A1 @194
+pairs: 0 PIN_AFTER not adjacent []; 0 FF adjective pairs not adjacent []; 0 noted pairs not adjacent []; 0 pairs split across subdecks []
+confusables: 0 same-headword pairs closer than 60 []; 0 look-alike pairs closer than 30: 
+pacing A1: longest same-lane run (11, 'colours'), longest run of picture cards 100, densest 20-window ('colours', 11); first reading card at 101, first phrase at 21; first 140 lanes [('verbs', 22), ('phrases', 22), ('function', 17), ('adjectives', 12), ('food', 10), ('people', 9)], routes [('IMG', 98), ('PHRASE', 22), ('CLOZE', 13), ('SENT', 7)]
+  greetings A1: [('Labas', 21), ('Laba diena', 36), ('Viso gero', 47), ('Iki', 54), ('Labas rytas', 77), ('Labas vakaras', 81), ('Sveiki', 88), ('Labanakt', 158)]
+pacing A2: longest same-lane run (6, 'nouns'), longest run of picture cards 23, densest 20-window ('nouns', 11); first reading card at 24, first phrase at 1; first 140 lanes [('nouns', 26), ('verbs', 23), ('phrases', 15), ('function', 10), ('adverbs', 9), ('society', 7)], routes [('CLOZE', 67), ('IMG', 51), ('PHRASE', 18), ('SENT', 3), ('PAIR', 1)]
+frequency: Spearman with subtitle rank 0.655 (n=2378), with press rank 0.425 (n=1480); median subtitle rank of the first 100 A1 cards 292, of A1 cards 101-400 216
+
+==== new study_order.csv: 2433 positioned cards (1191 A1, 1242 A2; 55 sentences) ====
+coverage: 0 keys without a position []; 0 positions for unknown keys []; positions 1..N, no gaps, no duplicates
+blocks: 0 A1 cards positioned after the first A2 card
+dependencies: 1979 word uses in reading cards point at a deck card; 6 point FORWARD (> 20 later: 6, > 50 later: 4); 0 of them are A1 cards needing a word taught only in A2; 92 uses of words no card teaches (86 distinct)
+  forward dependencies (card @pos: word <- teaching card @pos):
+    A2-0804  @  285 A1 atsakymas                          teisingas        <- A2-0539  teisingas              A1 @796
+    A2-1532  @ 1314 A2 kelių policija                     sustabdė         <- A2-1964  sustabdyti             A2 @1630
+    A2-0123  @  237 A1 jūsų                               numeris          <- A2-1561  numeris                A1 @526
+    A2-1661  @ 2128 A2 neišlaikyti egzamino               neišlaikė        <- A2-1949  neišlaikyti (egzamino) A2 @2188
+    A2-1093  @  294 A1 bet kas                            padaryti         <- A2-1672  padaryti               A1 @340
+    A2-0159  @  171 A1 kad                                manau            <- A2-1656  manyti                 A1 @196
+pairs: 0 PIN_AFTER not adjacent []; 0 FF adjective pairs not adjacent []; 0 noted pairs not adjacent []; 0 pairs split across subdecks []
+confusables: 0 same-headword pairs closer than 60 []; 0 look-alike pairs closer than 30: 
+pacing A1: longest same-lane run (11, 'colours'), longest run of picture cards 100, densest 20-window ('colours', 11); first reading card at 101, first phrase at 21; first 140 lanes [('verbs', 23), ('phrases', 22), ('function', 17), ('adjectives', 12), ('people', 9), ('food', 9)], routes [('IMG', 98), ('PHRASE', 22), ('CLOZE', 13), ('SENT', 7)]
+  greetings A1: [('Labas', 21), ('Laba diena', 36), ('Viso gero', 47), ('Iki', 54), ('Labas rytas', 77), ('Labas vakaras', 81), ('Sveiki', 88), ('Labanakt', 158)]
+pacing A2: longest same-lane run (6, 'nouns'), longest run of picture cards 22, densest 20-window ('nouns', 9); first reading card at 23, first phrase at 1; first 140 lanes [('nouns', 26), ('verbs', 23), ('phrases', 16), ('function', 10), ('adverbs', 9), ('society', 8)], routes [('CLOZE', 67), ('IMG', 50), ('PHRASE', 19), ('SENT', 3), ('PAIR', 1)]
+frequency: Spearman with subtitle rank 0.656 (n=2378), with press rank 0.425 (n=1480); median subtitle rank of the first 100 A1 cards 278, of A1 cards 101-400 224
+
+== Telling positions (whole order) ==
+word                gloss                        old        v3  level
+duona               bread                          6         6  A1
+alus                beer                          26        26  A1
+vanduo              water                          3         3  A1
+kava                coffee                        14        14  A1
+pienas              milk                          18        18  A1
+obuolys             apple                         28        28  A1
+sriuba              soup                          33        33  A1
+mėsa                meat                         695       698  A1
+bulvė               potato                       934       937  A1
+batai               shoes                         23        23  A1
+kiaulė              pig                          982       986  A1
+karvė               cow                         1031      1035  A1
+šuo                 dog                           27        27  A1
+prezidentas         president                    960       964  A1
+teismas             court                        877       880  A1
+asmuo               person (formal)             1000      1003  A1
+branduolinis        nuclear                     2275      2276  A2
+pragaras            hell                        2119      2119  A2
+Labas               hello                         21        21  A1
+Ačiū                thank you                     25        25  A1
+Prašau              please                        32        32  A1
+Atsiprašau          sorry                         43        43  A1
+Kiek kainuoja?      how much?                     65        65  A1
+Kur yra tualetas?   where is the toilet?         110       110  A1
+aš                  I                             31        31  A1
+taip                yes                           29        29  A1
+vienas              one                           52        52  A1
+šiandien            today                        215       206  A1
+pirmadienis         Monday                        84        84  A1
+galėti              can                          134       137  A1
+kalbėti             speak                         71        72  A1
+suprasti            understand                   193       195  A1
+važiuoti            go (by vehicle)               61        61  A1
+tualetas            toilet                       324       322  A1
+euras               euro                         260       262  A1
+vaistinė            pharmacy                     390       388  A1
+manyti              think                        194       196  A1
+vėluoti             be late                       94       107  A1
+plaštaka            palm                        2420      2420  A2
+lydyti              melt (sth)                  2424      2426  A2
+antis               duck                        1133      1138  A1
+
+== First 60 of the A1 subdeck (v3) ==
+žmogus, vyras, vanduo, moteris, valgyti, duona, batonas, gerti, didelis, mažas, eiti, vaikas, namas, kava, parduotuvė, draugas, arbata, pienas, dirbti, šeima, Labas, miestas, batai, autobusas, Ačiū, alus, šuo, obuolys, taip, katė, aš, Prašau, sriuba, ne, tu, Laba diena, jis, geras, blogas, pinigai, kaina, ji, Atsiprašau…, pirkti, mokytojas, mes, Viso gero, jūs, ligoninė, brolis, sesuo, vienas, jie, Iki, du, telefonas, tai, Nesuprantu, skambinti, kaimynas
+
+== First 60 of the A2 subdeck (v3) ==
+Ir jums! / Ir tau!, Ar galėtumėte man padėti?, pasaulis, pusė, rūkyti, pora, Imsiu šitą, Pusė trijų, oras, kelionė, keliauti, Negali būti!, daina, naujieji metai, sportas, liga, mokyti, metras, klausti, Kuo galiu padėti?, Be penkių trys, alkanas, sotus, Penkios po trijų, Čia skauda, prekė, laikraštis, autobusų stotis, rinktis, laimėti, kuo, kai kuri, tokia, galima, negalėti, kiek tau metų, nebūti, tvarkyti, Per didelis. / Per mažas., avarija, greitoji pagalba, pati, save, nežinoti, tai yra, darbo vieta, metų laikas, labiau, lipti, komanda, Blogai jaučiuosi, minutėlė, klausyti, vienąkart, atvykti, sveikata, paimti, taigi, reikalas, siūlas
+
+re-tiered: 49 cards (Counter({'A2': 28, 'A1': 21}))
