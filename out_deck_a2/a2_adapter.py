@@ -155,6 +155,8 @@ _build_call_a2_base = build_call_a2
 def build_call_a2(r, staging):
     kw, cls = _build_call_a2_base(r, staging)
     kw.update(_hist.hist_args(r["id"]))
+    if r["id"] in db.DIRECTION_FREE_ROWS:       # spec 3.1.0 DIRECTION_RULE exemption
+        kw["direction"] = False
     return kw, cls
 
 

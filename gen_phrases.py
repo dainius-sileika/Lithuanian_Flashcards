@@ -92,6 +92,8 @@ def build_situation_call(row):
               gaze=s.get("gaze", "conversation"),
               panels=(2 if fmt == "situation_2" else 3 if fmt == "sequence" else 1),
               filename=f"{(row.get('id') or en).strip()}.png")
+    if any(i in db.DIRECTION_FREE_ROWS for i in s.get("ids", [])):   # spec 3.1.0 DIRECTION_RULE exemption
+        kw["direction"] = False
     return kw
 
 

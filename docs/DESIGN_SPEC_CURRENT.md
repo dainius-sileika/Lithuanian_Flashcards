@@ -1,6 +1,6 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.0.1** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.1.0** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
@@ -40,6 +40,18 @@ Read this file first in a new session; change the code, then this file, in the s
   each a clearly different moment), `INSET_MEANING_RULE` (an inset never votes for a neighbouring word),
   `PANEL_CONTINUITY_RULE` (deck-wide since 2026-10-17: repeated scenes keep people, clothes, positions and
   fixtures). Walking/running: `MOTION_STRIP_RULE` (`deck_builder.MOTION_STRIP_ROWS`).
+- **Direction of movement** (owner 2026-10-19, "Yes, as drafted" — `a2_build/round4/answers.md` §4; spec 3.1.0):
+  `DIRECTION_RULE` — when the **main figures** walk, run, ride, drive or carry something from one place to another
+  they travel from the viewer's LEFT toward the RIGHT, the way a page is read; figures who stand, sit or talk are not
+  affected, and it **applies to the main actors only, never to background figures** (owner: "it applies only to the
+  main actors in the image, not background"). Routing `go_generator.direction_applies()`: on for motion-strip cards
+  and for cards whose subject or staging carries a verb of motion; **off** for `deck_builder.DIRECTION_FREE_ROWS`
+  (cards whose meaning is a side or a direction: 425 sukti, A2-0995 dešinėje, A2-0958 Kairėje, A2-2005, A2-1506/1526,
+  A2-1689/1690, A2-1047/0959 tiesiai, A2-0405/1638/1680 grįžti/pareiti, A2-0423, A2-1061/1062, A2-1084, A2-1878,
+  A2-0212), for two-panel `situation_2` cards, and for any staging that names a side itself in capitals (LEFT/RIGHT —
+  the staging wins). Callers pass `direction=False` for the free rows (`deck_builder.build_call`,
+  `a2_adapter.build_call_a2`, `gen_phrases.build_situation_call`). **New renders only:** no card is re-rolled for
+  this rule ("No need to retcon old cards").
 - **Real places** (F6.1): a `Setting:` line from `go_settings.assign()` —
   `style_lab/research/settings_assignments.csv` over `style_lab/research/location_bank.json`
   (free Lithuania, 1981; anachronisms tolerated where the GO theme holds — owner, Oct 2026).
@@ -98,6 +110,8 @@ Read this file first in a new session; change the code, then this file, in the s
   read back exactly; **round-2 checks** (`FIT_PROMPT`: speakers' gaze on conversation cards, two-panel
   continuity, limb ownership and held props; `NEIGHBOUR_PROMPT`: no vote for a neighbouring word);
   `--limbs` gives every non-situation card the limb/prop call too (`LIMBS_PROMPT`, 2026-10-18 hand-scan).
+  Since 3.1.0 `FIT_PROMPT` also asks which way the main moving figures travel ("direction"); right-to-left on a card
+  that got `DIRECTION_RULE` is a **WARN**, never a FAIL.
   Rule in force: generate → QA → review page → owner confirms → commit/push.
 
 ## 6. Card front and back (v2.1 "standard bands", `card_frame.py`, `anki/frame_standard.css`)
@@ -168,6 +182,10 @@ Read this file first in a new session; change the code, then this file, in the s
   (renders, edits, builds) from written plans (`a2_build/PLAN_*.md`, `A1_WRAPUP.md` tags owner/planner/executor).
 - Positive prompting (state what to draw; never a condition in a prompt), audit before scale, one canonical
   spec (this file), version-track instead of overwrite.
+- **Fix by whole re-roll, not masked edits, unless the owner asks for an edit** (owner 2026-10-19, round 5: "this
+  patching of images isn't working"). A faulty picture is re-rolled whole from its staging (changed where needed);
+  masked/inpainted edits (`edit_inset.py`) and composites are used only when the owner asks for an edit. Every
+  version is kept in `_rerolled/`.
 
 ## 11. Versioning of this spec and of the look
 - **Spec version** (header line, semantic): **major** = the look or the card format changes; **minor** = a
@@ -190,6 +208,7 @@ Read this file first in a new session; change the code, then this file, in the s
 - Procedure for any change to the aesthetic: `docs/HOW_TO_CHANGE_THE_LOOK.md`.
 
 ## Spec changelog
+- **3.1.0 — 2026-10-19.** rule added: DIRECTION_RULE (main figures travel left to right; main actors only, not background; DIRECTION_FREE_ROWS, situation_2 and LEFT/RIGHT-named stagings exempt; new renders only; FIT_PROMPT direction WARN); working rule: fix by whole re-roll, not masked edits, unless the owner asks for an edit. Erratum: 3.0.1 added a rule (posters/signs) and should have been a minor release; it is not renumbered.
 - **3.0.1 — 2026-10-19.** wording: emblem rule dormant (097 restored, no shipped Vytis); poster/sign rule (real period work, declared card_text, QA read-back, no blank posters); go_grammars.py (SCENE_TAIL, compose_class, category grammars) added to the style lock as six new items
 - **3.0.0 — 2026-10-19.** First versioned release: the 2026-10-19 de facto spec (F6.2 house style, v2.1
   standard bands, proposed backs, Brygada 1918, situation grammar, emblem scope, study order v2), with the

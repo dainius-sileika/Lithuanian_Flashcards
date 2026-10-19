@@ -66,7 +66,7 @@ SETUP (keys live in YOUR environment, never in code or chat):
   Z-Image: export HF_TOKEN=hf_...         ; pip install gradio_client
 """
 from __future__ import annotations
-import os, sys, csv, time, shutil, argparse, hashlib, base64
+import os, re, sys, csv, time, shutil, argparse, hashlib, base64
 
 # ===========================================================================
 # CONCEPT-FORWARD encoding (backend="openai")
@@ -174,6 +174,26 @@ def _conversation_lead(lead, suffix):
 
 
 ARROW_RULE = 'Any arrow or callout, drawn in solid black ink, points only at the subject the card teaches or at the direction of its motion.'
+# Spec 3.1.0 (owner 2026-10-19, "Yes, as drafted" — a2_build/round4/answers.md §4): the main actors move the way a
+# page is read. Main figures only, never the background; new renders only (no card is re-rolled for it).
+# Routing: direction_applies() below — on for motion-strip cards and stagings with a verb of motion; off for
+# deck_builder.DIRECTION_FREE_ROWS (side/direction cards), two-panel situation_2 cards, and any staging that
+# names a side itself in capitals (LEFT / RIGHT: the staging wins). QA: FIT_PROMPT "direction" (WARN only).
+DIRECTION_RULE = "When the main figures walk, run, ride, drive or carry something from one place to another, they travel from the viewer's LEFT toward the RIGHT, the way a page is read; the place they are going to lies to the right of them. Figures who stand, sit or talk are not affected. This holds for the main figures only; people in the background go their own ways."
+_MOTION_RE = re.compile(r"\b(walks?|walking|runs?|running|rides?|riding|drives?|driving|cycles|cycling|carrying|"
+                        r"march(es|ing)?|hurr(ies|ying)|stroll(s|ing)?|jog(s|ging)?|travell?ing|"
+                        r"cross(es|ing) (on|over|the|a)|heading (home|toward|towards|to|for|off|out))\b", re.I)
+_SIDE_RE = re.compile(r"\b(LEFT|RIGHT)\b")          # capitals only: a staging that fixes sides itself
+
+
+def direction_applies(text, motion_strip=False, panels=1):
+    """True when DIRECTION_RULE is emitted for a card whose staging/subject is `text` (callers pass
+    direction=False for deck_builder.DIRECTION_FREE_ROWS)."""
+    if panels == 2 or _SIDE_RE.search(text or ""):
+        return False
+    return bool(motion_strip or _MOTION_RE.search(text or ""))
+
+
 SETTING_GUARD = 'People stand inside the place: feet on its ground, scaled to its doors, furniture and vehicles, lit by the same flat light, with the setting continuing behind and between them. The setting stays behind and around the subject and never competes with it.'
 
 # 2026-10-17 pilot round 2 — owner: "all panel cards needs a coherency check to make sure
@@ -371,7 +391,7 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
                    inset_note="", text=False, people="worker", extra="",
                    glyph=False, flag="lt", exact_text="", composition="vignette",
                    staging="", setting="", motion_strip=False, situation=False,
-                   gaze="default", panels=1, precedent="", likeness=""):
+                   gaze="default", panels=1, precedent="", likeness="", direction=None):
     """F6.1 assembly order (production_spec_F6_1.json): lead, subject, per-card
     staging, class scene, setting, dress, inset rules, plausibility, arrows,
     text rules, bars, flag, anatomy, extra, suffix."""
@@ -409,6 +429,10 @@ def _prompt_openai(subject, scene="", labels=None, exclude="", insets=True,
         segs.append(PANEL_CONTINUITY_RULE)
     segs.append(MATTE_RULE)
     segs.append(ARROW_RULE)
+    if direction is None:
+        direction = direction_applies(f"{subject} {staging}", motion_strip, panels)
+    if direction:
+        segs.append(DIRECTION_RULE)
     if glyph:
         segs.append(GLYPH_RULE)
         segs.append(BARS_RULE)
@@ -483,7 +507,7 @@ def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
                  extra="", backend="openai", flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
                  motion_strip=False, situation=False, gaze="default", panels=1,
-                 precedent="", likeness=""):
+                 precedent="", likeness="", direction=None):
     if backend == "openai":
         return _prompt_openai(subject, scene, labels, exclude, insets,
                               inset_note, text, people, extra, glyph=glyph,
@@ -491,7 +515,8 @@ def build_prompt(subject, scene="", labels=None, exclude="", insets=True,
                               composition=composition, staging=staging,
                               setting=setting, motion_strip=motion_strip,
                               situation=situation, gaze=gaze, panels=panels,
-                              precedent=precedent, likeness=likeness)
+                              precedent=precedent, likeness=likeness,
+                              direction=direction)
     return _prompt_zimage(subject, scene, overlays, extra)
 
 
@@ -661,7 +686,7 @@ class GOGenerator:
                  extra="", out_dir=".", filename=None, flag="lt", exact_text="",
                  composition="vignette", staging="", setting="",
                  motion_strip=False, situation=False, gaze="default", panels=1,
-                 precedent="", likeness=""):
+                 precedent="", likeness="", direction=None):
         prompt = build_prompt(subject, scene=scene, labels=labels,
                               exclude=exclude, insets=insets, inset_note=inset_note,
                               text=text, people=people, overlays=overlays,
@@ -670,7 +695,8 @@ class GOGenerator:
                               composition=composition, staging=staging,
                               setting=setting, motion_strip=motion_strip,
                               situation=situation, gaze=gaze, panels=panels,
-                              precedent=precedent, likeness=likeness)
+                              precedent=precedent, likeness=likeness,
+                              direction=direction)
         os.makedirs(out_dir, exist_ok=True)
         if filename is None:
             filename = "go_" + hashlib.md5(subject.encode()).hexdigest()[:8] + ".png"

@@ -61,6 +61,12 @@ try:
     from deck_builder import GLYPH_ROWS
 except Exception:
     GLYPH_ROWS = {227}
+# spec 3.1.0 DIRECTION_RULE: QA only WARNs, and only where the rule was emitted (go_generator.direction_applies)
+try:
+    from deck_builder import DIRECTION_FREE_ROWS
+    from go_generator import direction_applies
+except Exception:
+    DIRECTION_FREE_ROWS, direction_applies = set(), (lambda *a, **k: False)
 
 PROMPT = """You are inspecting an illustration from a language-learning flashcard deck.
 Answer ONLY about what is actually visible. Do not speculate about intent.
@@ -154,6 +160,10 @@ Answer ONLY about what is visible. Return strict JSON:
                   "right_answers_left": true|false,
                   "note": "what differs, one line"}};
                 null for a single scene.
+  "direction":  if the MAIN figures walk, run, ride, drive or carry something from one
+                place to another: which way they travel as the viewer sees it —
+                "left-to-right" | "right-to-left" | "toward or away"; null if the main
+                figures stand, sit or talk. Ignore background figures.
   "limbs_ok":   true | false — every arm and hand is attached to the right body
                 (no hand on another person's arm, no floating or shared limb).
                 If false, say which in "limbs_note".
@@ -302,6 +312,10 @@ def judge_situation(seen, row, srow):
         fails.append(f"LIMBS: {fit.get('limbs_note') or 'a limb is on the wrong body'}")
     if fit.get("props_ok") is False:
         fails.append(f"PROPS: {fit.get('props_note') or 'a carried object is not held / figure merged into furniture'}")
+    if ((fit.get("direction") or "").lower() == "right-to-left"
+            and not any(i in DIRECTION_FREE_ROWS for i in srow.get("ids") or [])
+            and direction_applies(srow.get("scene", ""), panels=2 if srow.get("format") == "situation_2" else 1)):
+        warns.append("direction: the main moving figures head right-to-left (DIRECTION_RULE, spec 3.1.0)")
     return fails, warns
 
 

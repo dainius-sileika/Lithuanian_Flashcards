@@ -73,6 +73,12 @@ FORMAL_ROWS = {46, 49, 137, 408}
 FULL_SCENE_ROWS = {383}
 # walking/running strips: explicit left/right alternation
 MOTION_STRIP_ROWS = {366, 367}
+# spec 3.1.0 DIRECTION_RULE exemptions: cards whose MEANING is a side or a direction (A1 ints, A2 ids).
+# go_generator.direction_applies() also leaves out two-panel situation_2 cards and LEFT/RIGHT-named stagings.
+DIRECTION_FREE_ROWS = {425,                                         # sukti (turn)
+                       "A2-0212", "A2-0405", "A2-0423", "A2-0958", "A2-0959", "A2-0995", "A2-1047", "A2-1061",
+                       "A2-1062", "A2-1084", "A2-1506", "A2-1526", "A2-1638", "A2-1680", "A2-1689", "A2-1690",
+                       "A2-1878", "A2-2005"}
 # verbs whose generic step-by-step motion strip still teaches the word (jump,
 # go out, throw, fall, bend, turn); every other verb without its own insets or
 # result panel gets VERB_INSET_DEFAULT (F6.2: dainuoti drew a conductor's
@@ -1278,7 +1284,8 @@ def build_call(key, r, cls):
                     # so the row's declared lettering never reached the prompt
                     exact_text=r.get("card_text", "").strip(),
                     exclude=r["lithuanian_TARGET"].strip(),
-                    filename=f"{key}.png")
+                    filename=f"{key}.png",
+                    **({"direction": False} if n in DIRECTION_FREE_ROWS else {}))
     scene, inset_note, _, people, insets = compose_class(cls, r["category"])
     n = int(r["#"])
 
@@ -1336,6 +1343,8 @@ def build_call(key, r, cls):
                 exclude=r["lithuanian_TARGET"].strip(),
                 flag=FLAG_OVERRIDE.get(n, "lt"),
                 filename=f"{key}.png")
+    if n in DIRECTION_FREE_ROWS:
+        kw["direction"] = False
     if n in SITUATION_ROWS:      # only then: every other row's kwargs are unchanged
         kw["situation"] = True
         kw["exclude"] = ""
