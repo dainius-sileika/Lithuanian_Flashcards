@@ -110,3 +110,12 @@ change was re-rolled (0372, 0950 once; 1946, 2029 twice); every version is in `_
 incl. the three overlaps): 14 PASS, 5 WARN, 4 FAIL, no limb/prop/hand finding. The 4 FAILs are what the staging asks for:
 GAZE on 1148 (the husband looks at the prints) and 2012 (the waiter looks at the menu line), NEIGHBOUR on 1178 (dėkui read as
 "Thank you", a synonym), CONTINUITY on 2003 (two different people by design).
+
+## 6. Review page and spend
+
+**Round 3 Fixes** — https://claude.ai/artifact/BNKF1PDRDbh3aSss8TwBVj (private; db `round3`, notes `round3_meta/general`;
+empty after publish). 94 cards: 8 restored, 8 redos, 17 anatomy, 30 historical, 20 restaged, 3 overlaps, 4 merges, 3 stresses
+to confirm, A2-0964. Rebuild: `python3 a2_build/round3/build_page.py` (media in `page/media/`, not committed).
+
+Spend (project rates; the edit price is unverified): 64 renders ≈ $0.86, 25 masked edits ≈ $0.50–1.00, ≈ 230 QA calls
+≈ $0.16 — about $1.5–2.0 in all.
