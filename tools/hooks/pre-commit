@@ -1,0 +1,16 @@
+#!/bin/sh
+# Lietuvių Flashcards — pre-commit: the style lock must match the code (docs/DESIGN_SPEC_CURRENT.md §11).
+# Install:  sh tools/install_hooks.sh      (hooks do not travel with clones)
+# Bypass once, knowingly:  git commit --no-verify
+ROOT=$(git rev-parse --show-toplevel)
+cd "$ROOT" || exit 1
+if ! python3 tools/style_lock.py check; then
+  echo "pre-commit: refused (style drift). Bump the spec and update the lock, see docs/HOW_TO_CHANGE_THE_LOOK.md." >&2
+  exit 1
+fi
+# a lock changed in the working tree but not staged would leave the commit with a stale lock
+if ! git diff --quiet -- style/STYLE_LOCK.json; then
+  echo "pre-commit: style/STYLE_LOCK.json is modified but not staged; git add it." >&2
+  exit 1
+fi
+exit 0

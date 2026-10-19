@@ -515,6 +515,69 @@ ZIMAGE_SPACE = "mcp-tools/Z-Image-Turbo"
 ZIMAGE_STEPS = 8
 
 
+# --- ledger provenance (spec 3.0.0, 2026-10-19) --------------------------------------
+# Every render records the design-spec version and the style hash in force when it was drawn,
+# so a picture can always be matched to the exact look that produced it (docs/DESIGN_SPEC_CURRENT.md
+# §11, tools/style_lock.py). Computed once per process from the live code; never fatal.
+LEDGER_BASE_COLUMNS = ["key", "subject", "seed", "backend", "size", "file", "prompt"]
+LEDGER_STAMP_COLUMNS = ["spec_version", "style_hash"]
+LEDGER_COLUMNS = LEDGER_BASE_COLUMNS + LEDGER_STAMP_COLUMNS
+_STAMP = None
+
+
+def style_stamp():
+    """(spec_version, style_hash_short) of the live code, or ("", "") if the lock tooling is absent."""
+    global _STAMP
+    if _STAMP is None:
+        try:
+            here = os.path.dirname(os.path.abspath(__file__))
+            tools = os.path.join(here, "tools")
+            if tools not in sys.path:
+                sys.path.insert(0, tools)
+            import style_lock
+            live = style_lock.fingerprint(style_lock.extract())
+            _STAMP = (style_lock.spec_version(), live["style_hash_short"])
+        except Exception as e:          # a render must never fail on provenance
+            print(f"WARNING: style stamp unavailable ({type(e).__name__}: {e}); ledger rows get empty stamps")
+            _STAMP = ("", "")
+    return _STAMP
+
+
+class _LedgerWriter:
+    """csv.writer that appends spec_version and style_hash to any row of the seven base fields."""
+    def __init__(self, raw):
+        self.raw = raw
+
+    def writerow(self, row):
+        row = list(row)
+        if len(row) == len(LEDGER_BASE_COLUMNS):
+            row += list(style_stamp())
+        return self.raw.writerow(row)
+
+    def writerows(self, rows):
+        for r in rows:
+            self.writerow(r)
+
+
+def _migrate_ledger(path):
+    """Add the stamp columns to a pre-3.0.0 ledger header, padding old rows with empty cells.
+    Existing columns and values are untouched; a ledger that already has them is left alone."""
+    with open(path, encoding="utf-8", newline="") as f:
+        rows = list(csv.reader(f))
+    if not rows or rows[0][:len(LEDGER_BASE_COLUMNS)] != LEDGER_BASE_COLUMNS:
+        return                                    # not a GO ledger; leave it
+    if all(c in rows[0] for c in LEDGER_STAMP_COLUMNS):
+        return
+    rows[0] = rows[0] + [c for c in LEDGER_STAMP_COLUMNS if c not in rows[0]]
+    width = len(rows[0])
+    tmp = path + ".migrating"
+    with open(tmp, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        for r in rows:
+            w.writerow(r + [""] * (width - len(r)) if len(r) < width else r)
+    os.replace(tmp, path)
+
+
 class GOGenerator:
     def __init__(self, backend="openai", ratio="4:3", quality=OPENAI_QUALITY,
                  steps=ZIMAGE_STEPS, verbose=True):
@@ -626,12 +689,18 @@ class GOGenerator:
 
     @staticmethod
     def open_ledger(path):
+        """Append-mode ledger. Columns: key, subject, seed, backend, size, file, prompt, and since
+        spec 3.0.0 (2026-10-19) spec_version and style_hash, filled in by the writer for every row
+        that carries the seven base fields (callers are unchanged). A ledger made before 3.0.0 is
+        migrated once: the two columns are added to its header and left empty on the old rows."""
         new = not os.path.exists(path)
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        if not new:
+            _migrate_ledger(path)
         f = open(path, "a", newline="", encoding="utf-8")
-        w = csv.writer(f)
+        w = _LedgerWriter(csv.writer(f))
         if new:
-            w.writerow(["key", "subject", "seed", "backend", "size", "file", "prompt"])
+            w.raw.writerow(LEDGER_COLUMNS)
         return f, w
 
     @staticmethod

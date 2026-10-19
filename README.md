@@ -6,7 +6,9 @@ cards, cloze and sentence cards, human-recorded audio for the A1 core.
 
 **Start here:** `docs/DESIGN_SPEC_CURRENT.md` — the one authoritative statement of the design parameters
 in force (image engine, lettering and emblem rules, card front/back, study order, versioning, ways of
-working), sourced to the code. `docs/SPEC_RECONCILIATION_2026-10-19.md` says where older documents disagree
+working), sourced to the code and versioned (spec 3.0.0; `style/STYLE_LOCK.json` is its fingerprint,
+`docs/HOW_TO_CHANGE_THE_LOOK.md` the procedure for touching the aesthetic). Once per clone:
+`sh tools/install_hooks.sh`. `docs/SPEC_RECONCILIATION_2026-10-19.md` says where older documents disagree
 with it. The owner's open decisions live on the Review Desk (`review_desk/`).
 
 ## Build
@@ -37,7 +39,9 @@ then a review page for the owner. Nothing ships without his verdict.
 | `review_desk/` | The owner's Review Desk SOP, items and builder |
 | `build_reports/` | Build-time reports (frame flags, hand-scan results, previews used in reviews) |
 | `style_lab/` | The style experiments that settled F6.2 (dated folders with NOTES and analyses) and `research/` (location bank and settings assignments read by `go_settings.py`) |
-| `docs/` | `DESIGN_SPEC_CURRENT.md`, `SPEC_RECONCILIATION_2026-10-19.md`, `PLAYBOOK_flashcard_language_system.md` (method, reusable) |
+| `docs/` | `DESIGN_SPEC_CURRENT.md` (versioned, `**Spec version X.Y.Z**`), `spec_history/` (frozen copies, tags `spec-vX.Y.Z`), `HOW_TO_CHANGE_THE_LOOK.md`, `VERSIONS.md` (deck ↔ spec ↔ style register), `SPEC_RECONCILIATION_2026-10-19.md`, `PLAYBOOK_flashcard_language_system.md` (method, reusable) |
+| `style/` | `STYLE_LOCK.json` (the look's fingerprint, hash per constant + one style hash) and `golden/` (the 28 reference pictures with their prompts) |
+| `tools/` | `style_lock.py` (check / update), `spec_release.py` (bump + snapshot + lock + tag), `golden_set.py`, `hooks/pre-commit` + `install_hooks.sh` |
 | `_archive/` | Kept history: `deprecated/` (1.6/1.7 code, specs, raw recording masters), `docs/` (superseded GO_STYLE_SPEC, ROADMAP, NEEDS_YOUR_REVIEW), `code/` (driver, build_review, bubbles), `review_packs/`, `out_deck_1.5/` (ledger of the 1.x masters), `recent_versions/` (the bubble pictures replaced on 2026-10-18) |
 | `_TO_DELETE/` | Everything judged an orphan on 2026-10-19, with `MANIFEST.csv` (path, size, category, reason). The owner deletes it; git-ignored. |
 | `_apkg_media/`, `_qa/`, `__pycache__/` | Caches (transcoded media, QA results); regenerate freely |

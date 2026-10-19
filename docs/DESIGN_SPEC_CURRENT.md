@@ -1,6 +1,8 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Dated 2026-10-19.** This is the one authoritative statement of the design parameters the pipeline
+**Spec version 3.0.0** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+
+This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
 when a doc and the code disagree, the code and the most recent owner decision win
 (`docs/SPEC_RECONCILIATION_2026-10-19.md` lists the disagreements found). Older specs
@@ -155,3 +157,26 @@ Read this file first in a new session; change the code, then this file, in the s
   (renders, edits, builds) from written plans (`a2_build/PLAN_*.md`, `A1_WRAPUP.md` tags owner/planner/executor).
 - Positive prompting (state what to draw; never a condition in a prompt), audit before scale, one canonical
   spec (this file), version-track instead of overwrite.
+
+## 11. Versioning of this spec and of the look
+- **Spec version** (header line, semantic): **major** = the look or the card format changes; **minor** = a
+  rule is added; **patch** = wording. `tools/spec_release.py --bump major|minor|patch --note "..."` bumps the
+  header, adds the changelog line below, freezes a copy as `docs/spec_history/DESIGN_SPEC_v<X.Y.Z>.md`,
+  commits and tags `spec-v<X.Y.Z>`. Frozen copies are never edited.
+- **Style lock** `style/STYLE_LOCK.json` (`tools/style_lock.py`): every look-defining constant (leads,
+  suffixes, every `*_RULE`, `FIGURE_DRESS`, hair wording, model/quality/size, QA prompts, frame CSS, band
+  colour and widths, fonts, section labels, templates) with a hash per item and one **style hash**.
+  `check` fails when the code drifts from the lock (pre-commit hook `tools/hooks/pre-commit`; `build_apkg.py`
+  refuses to build, `GO_ALLOW_STYLE_DRIFT=1` overrides and is logged in the build manifest). `update`
+  refuses unless the spec version was bumped.
+- **Golden set** `style/golden/` (24 exemplars + prompts): any new model or engine must reproduce them to
+  the owner's satisfaction before adoption (`style/golden/README.md`).
+- **Linkage:** each package build records APKG version, spec version, style hash, commit, counts and a
+  media hash in `build_reports/builds/<package>.json` and in the deck description; `docs/VERSIONS.md` is the
+  register deck ↔ spec ↔ style; every ledger row written since 3.0.0 carries `spec_version` and `style_hash`.
+- Procedure for any change to the aesthetic: `docs/HOW_TO_CHANGE_THE_LOOK.md`.
+
+## Spec changelog
+- **3.0.0 — 2026-10-19.** First versioned release: the 2026-10-19 de facto spec (F6.2 house style, v2.1
+  standard bands, proposed backs, Brygada 1918, situation grammar, emblem scope, study order v2), with the
+  style lock, golden set and build manifest introduced in §11.

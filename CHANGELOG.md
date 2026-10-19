@@ -9,6 +9,28 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 
 ## [Unreleased] — planning
 
+### Added (2026-10-19 — spec versioning, style lock, golden set)
+- **The design spec is versioned.** `docs/DESIGN_SPEC_CURRENT.md` carries `**Spec version 3.0.0**`
+  (major = look or card format, minor = a rule added, patch = wording) and a changelog section;
+  `tools/spec_release.py` bumps, freezes `docs/spec_history/DESIGN_SPEC_v<X.Y.Z>.md`, updates the
+  lock, commits and tags `spec-v<X.Y.Z>`. 3.0.0 = the 2026-10-19 de facto state, tag `spec-v3.0.0`.
+- **Style lock.** `tools/style_lock.py` records every look-defining constant (leads, suffixes, every
+  `*_RULE`, `FIGURE_DRESS`, hair wording, model/quality/size, QA prompts, frame CSS, band colour and
+  widths, fonts, section labels, templates, crop constants) in `style/STYLE_LOCK.json` with a hash per
+  item and one style hash (`9253f93aaa33`). `check` fails on drift (pre-commit hook
+  `tools/hooks/pre-commit`, `sh tools/install_hooks.sh`); `update` refuses without a spec bump;
+  `build_apkg.py` refuses to build on drift (`GO_ALLOW_STYLE_DRIFT=1` overrides, logged).
+- **Golden reference set** `style/golden/`: 28 exemplars with their exact prompts (24 pictures in the
+  repo, 4 situation/sentence pictures to copy from the local renders with `tools/golden_set.py`); any
+  engine change must reproduce them to the owner's satisfaction (`style/golden/README.md`).
+- **Linkage.** `build_apkg.py` stamps APKG version, spec version, style hash, commit and date into the
+  deck description and a manifest `build_reports/builds/<package>.json` (counts, media hash);
+  `--limit N` smoke-builds the stamp path. `docs/VERSIONS.md` is the register deck ↔ spec ↔ style.
+  `go_generator.GOGenerator.open_ledger` appends `spec_version` and `style_hash` to every ledger row
+  (older ledgers get the two empty columns on first write; callers unchanged).
+- `docs/HOW_TO_CHANGE_THE_LOOK.md`: the one-page procedure (propose → owner approves on the Review Desk
+  → code → spec → lock → release → golden comparison).
+
 ### Changed (2026-10-11 — F6.1 house style into production)
 - **New house style, F6.1**, settled by three blind owner surveys
   (`style_lab/2026-10-10_06..08`, Fable analyses in each `results/`). The old

@@ -36,7 +36,7 @@ notes in place; only templates, CSS and media differ.
 deck ids and GUIDs are unchanged; the field change is a schema change, so existing users
 delete the deck and import the new package (owner: deck coherence over old study history).
 """
-import argparse, genanki, csv, hashlib, html, json, os
+import argparse, genanki, csv, hashlib, html, json, os, sys
 import card_frame
 import frame_crop
 
@@ -515,8 +515,97 @@ def add_sentence_notes(DECKS, media, order=None):
 
 REPORT_DIR = os.environ.get("REPORT_DIR", "build_reports")
 
+# --- deck <-> spec <-> style linkage (spec 3.0.0, 2026-10-19; docs/DESIGN_SPEC_CURRENT.md §11) ----
+# A build refuses to run when the code has drifted from style/STYLE_LOCK.json, so no package can
+# ship an unrecorded look. GO_ALLOW_STYLE_DRIFT=1 overrides, and the drift is written into the
+# build manifest (build_reports/builds/<package>.json) and the deck description.
+_TOOLS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools")
+if _TOOLS not in sys.path:
+    sys.path.insert(0, _TOOLS)
+import style_lock  # noqa: E402
 
-def main(frame="standard", back=None):
+
+def git_commit():
+    """Short commit of the working tree, '+dirty' when it has uncommitted changes; '' outside git."""
+    import subprocess
+    try:
+        sha = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True,
+                             check=True).stdout.strip()
+        dirty = subprocess.run(["git", "status", "--porcelain", "--untracked-files=no"],
+                               capture_output=True, text=True).stdout.strip()
+        return sha + ("+dirty" if dirty else "")
+    except Exception:
+        return ""
+
+
+def style_gate():
+    """Run the style-lock check. Returns the stamp dict; exits on drift unless GO_ALLOW_STYLE_DRIFT=1."""
+    ok, msg, live = style_lock.verify()
+    lock = style_lock.load_lock() or {}
+    drift = []
+    if not ok:
+        print(msg)
+        if os.environ.get("GO_ALLOW_STYLE_DRIFT") != "1":
+            raise SystemExit("build_apkg: refused — the code does not match style/STYLE_LOCK.json. "
+                             "Release the spec and update the lock (docs/HOW_TO_CHANGE_THE_LOOK.md), "
+                             "or set GO_ALLOW_STYLE_DRIFT=1 to build anyway (logged in the manifest).")
+        changed, added, removed = style_lock.compare(live, lock) if lock else ([], list(live["items"]), [])
+        drift = changed + added + removed
+        print(f"WARNING: GO_ALLOW_STYLE_DRIFT=1 — building with {len(drift)} drifted style item(s); "
+              f"this is recorded in the manifest and the deck description")
+    import datetime
+    return {
+        "apkg_version": APKG_VERSION,
+        "spec_version": style_lock.spec_version(),
+        "style_hash": live["style_hash"],
+        "style_hash_short": live["style_hash_short"],
+        "style_lock_hash": lock.get("style_hash", ""),
+        "style_drift": drift,
+        "git_commit": git_commit(),
+        "date": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
+    }
+
+
+def deck_description(stamp):
+    d = (f"Lietuvių Flashcards v{stamp['apkg_version']} · design spec {stamp['spec_version']} · "
+         f"style {stamp['style_hash_short']} · built {stamp['date'][:10]}"
+         + (f" · {stamp['git_commit']}" if stamp["git_commit"] else ""))
+    if stamp["style_drift"]:
+        d += f" · STYLE DRIFT ALLOWED ({len(stamp['style_drift'])} items)"
+    return d
+
+
+def media_hash(files):
+    """sha256 over the sorted media names and their content hashes (the package's picture/audio identity)."""
+    h = hashlib.sha256()
+    for p in sorted(set(files), key=os.path.basename):
+        h.update(os.path.basename(p).encode("utf-8") + b"\0" + _sha1(p).encode() + b"\n")
+    return h.hexdigest()
+
+
+def write_manifest(out, stamp, counts, media, extra):
+    os.makedirs(f"{REPORT_DIR}/builds", exist_ok=True)
+    stem = os.path.splitext(os.path.basename(out))[0].replace("Lietuviu_Flashcards_", "")
+    path = f"{REPORT_DIR}/builds/{stem}.json"
+    doc = dict(stamp)
+    doc.update({
+        "package": os.path.basename(out),
+        "package_sha256": hashlib.sha256(open(out, "rb").read()).hexdigest() if os.path.exists(out) else "",
+        "levels": APKG_LEVELS, "frame": FRAME, "back": BACK_STYLE, "back_pic": BACK_PIC,
+        "counts": counts, "media_files": len(media), "media_hash": media_hash(media),
+        "description": deck_description(stamp),
+    })
+    doc.update(extra)
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
+    return path
+
+
+def main(frame="standard", back=None, limit=0):
+    """limit > 0: a smoke build of only the first `limit` A1 rows that have a picture (A2 and
+    sentences still read their lists); for testing the stamp and manifest path without the media."""
+    stamp = style_gate()
     set_frame(frame, back)
     FRAME_FLAGS.clear()
     os.makedirs(TMP, exist_ok=True)
@@ -524,18 +613,22 @@ def main(frame="standard", back=None):
     # everything; clicking A1 or A2 studies just that level. Cards also carry an
     # A1/A2 tag so custom filtered decks stay possible.
     DECKS = {
-        "A1": genanki.Deck(2059400112, "Lietuvių Flashcards::A1"),
-        "A2": genanki.Deck(2059400113, "Lietuvių Flashcards::A2"),
+        "A1": genanki.Deck(2059400112, "Lietuvių Flashcards::A1", description=deck_description(stamp)),
+        "A2": genanki.Deck(2059400113, "Lietuvių Flashcards::A2", description=deck_description(stamp)),
     }
     deck = DECKS["A1"]   # default for rows with no level set
     media = []
     order = load_study_order()
     skipped = []
+    n_a1 = 0
     for r in csv.DictReader(open("cards_anki.csv", encoding="utf-8")):
         k = r['key']; aud = f"audio/{k}.mp3"
+        if limit and n_a1 >= limit:
+            break
         img_path, img_name = media_image(k)
         if not img_path:
             skipped.append(k); continue
+        n_a1 += 1
         audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
         level = (r.get("level") or "A1").strip() or "A1"
         target = DECKS.get(level, DECKS["A1"])
@@ -592,6 +685,13 @@ def main(frame="standard", back=None):
     print(f"built {out} — {len(media)} media files | subdecks: {counts} | "
           f"A1 rows without image: {len(skipped)} | A2 list: {a2_counts} | sentences: {s_counts} | "
           f"study order: {len(order)} positions | usage notes: {len(USAGE_USED)} of {len(USAGE)}")
+    manifest = write_manifest(out, stamp, counts, media, {
+        "a1_rows_without_image": len(skipped), "a2": a2_counts, "sentences": s_counts,
+        "study_order_positions": len(order), "usage_notes": len(USAGE_USED),
+        "frame_flagged": n_flag if FRAME == "standard" else None, "smoke_limit": limit or None,
+    })
+    print(f"manifest {manifest} | spec {stamp['spec_version']} | style {stamp['style_hash_short']} | "
+          f"{stamp['git_commit']}")
     return out
 
 
@@ -604,5 +704,7 @@ if __name__ == "__main__":
     ap.add_argument("--back", choices=["proposed", "current"], default=None,
                     help="standard frame only: proposed = the redesigned back with a thumbnail (default, "
                          "owner 2026-10-18); current = the previous standard back")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="smoke build: only the first N A1 picture rows (tests the stamp/manifest path)")
     a = ap.parse_args()
-    main(a.frame, a.back)
+    main(a.frame, a.back, a.limit)
