@@ -46,3 +46,16 @@ pseudo-marks on the taxi's chequer band (2029, unchanged area).
 `qa_round4_extra.csv` (`qa_r4_extra.py`): the unchanged LIMBS_PROMPT on all 14 situation cards — all limbs/props/hands ok;
 2010 right hand; 0660 left-to-right; 055 face clear, bars ok; 413 no hand close-up; 2002 palm out, natural; 1162 frame behind;
 1167 door normal, host clear; 2029 no hand out of a window.
+
+## Spec 3.0.1 (tag `spec-v3.0.1`)
+`go_grammars.py` joined the style lock (six new items, no prompt changed); spec §2 describes the emblem allowance as
+dormant and adds the poster/sign rule; §3 drops 097 from the likeness list. The direction-of-movement rule was not added
+(owner's decision, `answers.md` §4).
+
+## Review page and spend
+**Round 4 Fixes** — https://claude.ai/artifact/MKfmPoGgWjMLmBMzEqpfnQ (private; db `round4`, notes `round4_meta/general`;
+both empty after publish). 26 cards + the planner's four answers. Rebuild: `python3 a2_build/round4/build_page.py`
+(media in `page/media/`, not committed).
+
+Spend (project rates; the edit price is unverified): 11 renders ≈ $0.15; 24 edit calls (15 kept, 9 returned empty
+fills) ≈ $0.50–1.00; ≈ 80 QA calls ≈ $0.30–0.60. Total ≈ $1.0–1.8.

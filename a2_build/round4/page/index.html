@@ -1,0 +1,235 @@
+<title>Round 4 Fixes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&display=swap">
+<style>
+/* Layout: a GO training-album sheet — brick-red band on top, one plate per row:
+   picture left, the judging slip right; stacks to one column on a phone. */
+:root{
+  --paper:#ece3cc; --sheet:#f5efdf; --ink:#2b2520; --dun:#7d715a; --rule:#c9b994;
+  --red:#8a2b1c; --on-red:#f3ead6; --teal:#2f5f5a;
+  --ok:#3d7a4c; --mid:#b07a1e; --bad:#9a3220; --chipbg:#e2d7bb;
+  --serif:"PT Serif",Georgia,"Times New Roman",serif;
+  --narrow:"PT Sans Narrow","Arial Narrow",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#221d19; --sheet:#2c2621; --ink:#ebe2cf; --dun:#b0a487; --rule:#4d4336;
+  --red:#7a2618; --on-red:#f3ead6; --teal:#86b5ae; --ok:#6fae7e; --mid:#d9a24a; --bad:#e07a62; --chipbg:#3a322a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#221d19; --sheet:#2c2621; --ink:#ebe2cf; --dun:#b0a487; --rule:#4d4336;
+  --red:#7a2618; --on-red:#f3ead6; --teal:#86b5ae; --ok:#6fae7e; --mid:#d9a24a; --bad:#e07a62; --chipbg:#3a322a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:16px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--red)}
+.band{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--red);color:var(--on-red);
+  padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.band h1{font-family:var(--narrow);font-weight:700;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;margin:0}
+.tally{display:flex;gap:12px;font-family:var(--narrow);font-size:.95rem;margin-left:auto;font-variant-numeric:tabular-nums}
+.tally b{font-size:1.25rem}
+.filters{display:flex;flex-wrap:wrap;gap:6px;width:100%}
+.filters button,.band .copy{font:inherit;font-family:var(--narrow);font-size:.85rem;letter-spacing:.04em;padding:3px 10px;border:1px solid var(--on-red);background:transparent;color:var(--on-red);border-radius:2px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--on-red);color:var(--red)}
+#status{font-family:var(--narrow);font-size:.8rem;opacity:.9;width:100%}
+main{max-width:1180px;margin:0 auto;padding-block:18px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+.lead{max-width:70ch}
+.lead p{margin:0 0 .6em}
+.general{background:var(--sheet);border:1px solid var(--rule);padding:12px 14px;display:grid;gap:6px}
+.general label{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;color:var(--dun)}
+textarea{width:100%;font:inherit;font-size:.95rem;background:transparent;color:var(--ink);border:1px solid var(--rule);padding:6px 8px;min-height:2.4em;resize:vertical;border-radius:2px}
+textarea:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.set{display:grid;gap:14px}
+.set-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;border-bottom:2px solid var(--red);padding-bottom:4px}
+.set-h h2{font-family:var(--narrow);font-weight:700;font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase;margin:0;color:var(--red)}
+.set-h .hint{color:var(--dun);font-style:italic}
+.set-h .stat{margin-left:auto;font-family:var(--narrow);font-variant-numeric:tabular-nums}
+.restage{font-family:var(--narrow);background:var(--bad);color:var(--sheet);padding:1px 8px;border-radius:2px}
+.plate{background:var(--sheet);border:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:0}
+.plate.hide{display:none}
+.plate.v-pass{box-shadow:inset 4px 0 0 var(--ok)} .plate.v-fail{box-shadow:inset 4px 0 0 var(--bad)}
+.pic{padding:10px;display:grid;gap:8px;align-content:start}
+.pic a{display:block} .pic img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:8px}
+.pair figure{margin:0;display:grid;gap:3px;min-width:0;align-content:start}
+.pair figcaption,.zoomcap{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;color:var(--dun)}
+.pair figure.after figcaption{color:var(--teal);font-weight:700}
+.zoom{display:grid;gap:3px}
+.q{font-size:.92rem}
+.before{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:10px;align-items:start}
+.before .bl{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;color:var(--dun);display:block;margin-bottom:2px}
+.before q{font-style:italic;quotes:"\201C" "\201D";font-size:.92rem}
+.slip{padding:12px 14px;border-left:1px dashed var(--rule);display:grid;gap:10px;align-content:start;min-width:0}
+.id{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.id .key{font-family:var(--narrow);color:var(--dun);font-variant-numeric:tabular-nums}
+.id .lt{font-size:1.45rem;font-weight:700}
+.id .pron{color:var(--dun)}
+.cap{font-family:var(--narrow);font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;border:1px solid var(--ink);padding:2px 8px;justify-self:start}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--narrow);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border-radius:2px;background:var(--chipbg);color:var(--ink)}
+.chip.PASS{background:var(--ok);color:var(--sheet)} .chip.WARN{background:var(--mid);color:var(--sheet)} .chip.FAIL{background:var(--bad);color:var(--sheet)}
+dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 10px;font-size:.92rem}
+dt{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.76rem;color:var(--dun);padding-top:.2em}
+dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.qa{font-size:.85rem;color:var(--dun)}
+.qa .f{color:var(--bad)}
+.judge{display:grid;gap:8px;border-top:1px solid var(--rule);padding-top:10px}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.row .lbl{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;width:7.5em;color:var(--dun)}
+.seg button,.tog{font:inherit;font-family:var(--narrow);font-size:.9rem;padding:4px 12px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px;min-height:34px}
+.seg{display:inline-flex}
+.seg button+button{border-left:none}
+.seg button[aria-pressed="true"][data-v="yes"],.seg button[aria-pressed="true"][data-v="ok"]{background:var(--ok);border-color:var(--ok);color:var(--sheet)}
+.seg button[aria-pressed="true"][data-v="nearly"]{background:var(--mid);border-color:var(--mid);color:var(--sheet)}
+.seg button[aria-pressed="true"][data-v="no"],.seg button[aria-pressed="true"][data-v="redo"]{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.tog[aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:var(--sheet)}
+.verdict{font-family:var(--narrow);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+.verdict.pass{color:var(--ok)} .verdict.fail{color:var(--bad)} .verdict.open{color:var(--dun)}
+#lbx{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
+#lbx img{max-width:98vw;max-height:94vh}
+@media (max-width:760px){.plate{grid-template-columns:minmax(0,1fr)}.slip{border-left:none;border-top:1px dashed var(--rule)}.tally{margin-left:0}}
+@media (prefers-reduced-motion:no-preference){.plate{transition:box-shadow .15s}}
+.answers{max-width:70ch;margin:0 0 1.6em;padding:12px 16px;border:1px solid var(--rule);border-radius:2px}.answers h2{font-family:var(--narrow);font-size:1rem;text-transform:uppercase;letter-spacing:.06em;margin:0 0 .6em}.answers dl{margin:0;display:grid;gap:.4em}.answers dt{font-weight:700;margin-top:.5em}.answers dd{margin:0}.pic img{width:100%;height:auto}
+</style>
+
+<div class="band"><div class="band-in">
+  <h1 id="ttl"></h1>
+  <div class="tally" id="tally"></div>
+  <div class="filters" id="filters"></div>
+  <span id="status">Connecting to the review store…</span>
+</div></div>
+<main id="main">
+  <section class="lead" id="lead"></section>
+  <section class="answers" aria-labelledby="ans-h"><h2 id="ans-h">The planner's four answers</h2><dl><dt>A2-0667 banko skyrius: is this a historical bank?</dt><dd>Half of it. The hall the people stand in is an invented branch office. The building seen through the window is real: the Bank of Lithuania head office in Kaunas (Mykolas Songaila, opened 1928). Its own hall is already the main picture of 055 bankas, so the two bank cards share one real place. No verified interwar branch interior exists to use instead. Planner&#x27;s advice: leave 0667 as it is.</dd><dt>A2-0649 paštas: a prettier historical post office, or drop the outside inset?</dt><dd>The Kaunas Central Post Office (Vizbaras, 1931) is famous for its hall, with the floor tiled like a woven linen towel, not for its plain flat-roofed front. Done as recommended: the hall stays as the main picture and the outside inset is now a post box. Lithuania&#x27;s one pretty historic post-office front is Klaipėda&#x27;s red-brick building of 1893; if you want it, it belongs on a different card, so the two post offices on one card are not different buildings.</dd><dt>122 menininkas (Čiurlionis): does the Vilnius setting suit him?</dt><dd>Yes. He lived in Vilnius in 1907–08, in a room in the Old Town a few hundred metres from the Vilnia and Užupis, and Karalių pasaka (1909) belongs to that period. The one liberty is the easel on the riverbank: he painted indoors from imagination, and the outdoor easel is there so the card reads as &quot;artist&quot;. Druskininkai would suit him better only on a fresh re-roll, which would put the face you liked at risk. Planner&#x27;s advice: leave the card.</dd><dt>Direction of movement: should &quot;main actors head right&quot; become a standing rule?</dt><dd>The planner proposes yes, as a default at re-roll only: figures who walk, ride, drive or carry something travel left to right, and the place they head for lies to their right. Exceptions: cards whose meaning is a side or direction (left, right, back, return), two-panel conversations, and scenes whose goal sits on the left. QA would flag it as a note, not a fail. Nothing has been added to the code or the spec: this is your decision (answers.md §4, also on the Review Desk). A2-0660 already heads right.</dd></dl></section>
+  <section class="general">
+    <label for="general">General notes on this batch</label>
+    <textarea id="general" placeholder="Anything that applies to the whole set."></textarea>
+  </section>
+  <div id="sets"></div>
+</main>
+<div id="lbx" role="dialog" aria-label="Enlarged picture"><img id="lbimg" alt=""></div>
+
+<script>
+const MODE='review', DATA=[{"k": "097_prezidentas", "group": "Originals restored", "lt": "prezidentas/prezidentė", "pron": "prezideñtas", "en": "president", "imgs": [{"src": "r4_097_prezidentas_before.jpg", "label": "Round 3 render (rejected)"}, {"src": "r4_097_prezidentas_after.jpg", "label": "Original, restored", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Actually, go back to the original. / Emblem: President card only (as now)."], ["Done", "The shipped picture is back: an anonymous man president, no likeness, no Vytis. 097 is out of the likeness list; the emblem allowance stays routed to 097 but is now dormant, so no card in the deck shows a Vytis."]], "qa": "WARN", "fails": "", "warns": "guessed 'independence', card teaches 'president'", "guess": "independence"}, {"k": "106_zaidejas", "group": "Originals restored", "lt": "žaidėjas/žaidėja", "pron": "žaidė́jas", "en": "player", "imgs": [{"src": "r4_106_zaidejas_before.jpg", "label": "Round 3 render (rejected)"}, {"src": "r4_106_zaidejas_after.jpg", "label": "Original, restored", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "I don't remember why we changed it, but the first one is better."], ["Done", "The shipped picture is back (football field). The staging note and the settings row went back to their old values (Vingis park sports ground), so the State Stadium will not return on a re-roll."]], "qa": "WARN", "fails": "", "warns": "guessed 'sports', card teaches 'player'", "guess": "sports"}, {"k": "107_sirgalius", "group": "Originals restored", "lt": "sirgalius/sirgalė", "pron": "sirgãlius", "en": "fan (sports)", "imgs": [{"src": "r4_107_sirgalius_before.jpg", "label": "Round 3 render (rejected)"}, {"src": "r4_107_sirgalius_after.jpg", "label": "Original, restored", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Original is better."], ["Done", "The shipped picture is back (stadium stand). The settings row is place-less again (\"a place would compete with the subject\")."]], "qa": "WARN", "fails": "", "warns": "guessed 'scarf', card teaches 'fan (sports)'", "guess": "scarf"}, {"k": "A2-1326", "group": "Originals restored", "lt": "paštininkas", "pron": "pãštininkas", "en": "postman", "imgs": [{"src": "r4_A2-1326_before.jpg", "label": "Round 3 render (rejected)"}, {"src": "r4_A2-1326_after.jpg", "label": "Original, restored", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "why was this changed? Original was better."], ["Done", "The shipped picture is back, with its letterbox inset. The optional post-office settings row was removed."]], "qa": "WARN", "fails": "", "warns": "guessed 'mail delivery', card teaches 'postman'", "guess": "mail delivery"}, {"k": "A2-0085", "group": "Originals restored", "lt": "kasa", "pron": "kasà", "en": "ticket office", "imgs": [{"src": "r4_A2-0085_before.jpg", "label": "Round 3 render (rejected)"}, {"src": "r4_A2-0085_after.jpg", "label": "Original, restored", "cls": "after"}], "zoom": "", "chips": ["planner's recommendation"], "facts": [["Your note", "Original is fine; not sure why we changed it, but if it's for the location, then fine."], ["Done", "Restored on the planner's recommendation: the change was for the location (the 1953 Kaunas station hall), which is the weakest real place in the bank for a free-1981 deck and unrecognisable at card size. Staging and settings row reverted. Say Redo if you would rather keep the station-hall version."]], "qa": "PASS", "fails": "", "warns": "", "guess": "ticket"}, {"k": "055_bankas", "group": "Re-rolls", "lt": "bankas", "pron": "bánkas", "en": "bank", "imgs": [{"src": "r4_055_bankas_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_055_bankas_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Good location, but glitch, woman's face breaks the metal bars; reroll"], ["Done", "Re-roll in the same Bank of Lithuania hall. The brass grille now stops at chest height with an open arch above the ledge, so nothing crosses the cashier's face. First roll."], ["Extra check", "specific check: The cashier's face is unobstructed, and the grille bars appear continuous and properly separated."]], "qa": "PASS", "fails": "", "warns": "", "guess": "bank"}, {"k": "413_tuoktis", "group": "Re-rolls", "lt": "tuoktis", "pron": "tuõktis", "en": "marry", "imgs": [{"src": "r4_413_tuoktis_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_413_tuoktis_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "main hands still distorted"], ["Done", "Re-roll: bride holding a large bouquet, groom's arm round her back, the official with a sash and the register, rings on a cushion. Hands are small and occupied. The new roll drew its third inset as a hand close-up, so one masked edit replaced it with the wedding car the staging asks for."], ["Extra check", "specific check: Hands are visible in the main scene and lower inset, but none are shown in a close-up."]], "qa": "WARN", "fails": "", "warns": "guessed 'wedding', card teaches 'marry'", "guess": "wedding"}, {"k": "A2-0660", "group": "Re-rolls", "lt": "perėja", "pron": "pérėja", "en": "crossing", "imgs": [{"src": "r4_A2-0660_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-0660_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Idea is good, faces and hands are good, but have the main actors, being the woman and the boy, be heading right, which is the natural direction for Western reading"], ["Done", "Re-roll with the same scene: the mother and the boy cross from left to right, both in profile heading right; strap, shoes inset and green-only signal kept."], ["Extra check", "specific check: The woman and small boy are walking across the crossing from the viewer’s left toward the right."]], "qa": "PASS", "fails": "", "warns": "", "guess": "pedestrian crossing"}, {"k": "A2-0359", "group": "Re-rolls", "lt": "Labai ačiū", "pron": "Labaĩ ãčiū", "en": "Thank you very much", "imgs": [{"src": "r4_A2-0359_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-0359_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "hands still mangled"], ["Done", "Re-roll with a new scene: the discharged patient holds out flowers in a paper wrap with both hands; the nurse takes them with one hand, clipboard in the other. No clasp, no deep bow."], ["Extra check", "hands and limbs: ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "bouquet"}, {"k": "A2-1162", "group": "Re-rolls", "lt": "Gero savaitgalio!", "pron": "Gẽro saváitgalio!", "en": "Have a good weekend!", "imgs": [{"src": "r4_A2-1162_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1162_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "No, the doorframe should be behind him"], ["Done", "Re-roll: the man with the rod stands two steps outside the open office door, so the door and its frame are behind him; his colleague waves from the threshold."], ["Extra check", "hands and limbs: ok · specific check: The man stands in front of the office doorway, partially obscuring the door frame."]], "qa": "WARN", "fails": "", "warns": "stray act: a wave", "guess": "fishing"}, {"k": "A2-1167", "group": "Re-rolls", "lt": "Užeikite!", "pron": "Užeĩkite!", "en": "Come in!", "imgs": [{"src": "r4_A2-1167_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1167_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "Re-roll, the door is huge the man is still stuck in the doorframe"], ["Done", "Re-roll: an ordinary-height door open flat against the wall, the host two paces inside the hallway, clear of the frame, sweeping his arm in; the visitor with a cake tin on the mat."], ["Extra check", "hands and limbs: ok · specific check: The door is ordinary height relative to the people, and the host is standing clear of the door frame."]], "qa": "PASS", "fails": "", "warns": "", "guess": "bringing a cake"}, {"k": "A2-1172", "group": "Re-rolls", "lt": "be abejo", "pron": "", "en": "undoubtedly", "imgs": [{"src": "r4_A2-1172_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1172_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": ["Sartai races"], "facts": [["Your note", "Have instead some men at a horse race or somesuch, with one man pointing to the leading horse, and the saying 'be abejo' with an appropriate hand gesture"], ["Done", "Your scenario, set at the Sartai trotting races on the frozen lake: one man points at the leading horse, his friend gives a firm nod and a flat decisive chop. Insets: the leading trotter; the betting slip (blank)."], ["Extra check", "hands and limbs: ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "horse race"}, {"k": "A2-1184", "group": "Re-rolls", "lt": "Negali būti!", "pron": "", "en": "No way!", "imgs": [{"src": "r4_A2-1184_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1184_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "edit still leaves part of the arm that was erased; reroll"], ["Done", "Re-roll: letter in her left hand, right hand flat over her mouth, eyes wide; both hands named, so no extra arm. Insets: the torn envelope; a postman cycling past the window."], ["Extra check", "hands and limbs: ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "surprised"}, {"k": "A2-1185", "group": "Re-rolls", "lt": "nieko baisaus", "pron": "", "en": "it's nothing; never mind", "imgs": [{"src": "r4_A2-1185_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1185_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "No, it's still weird, think of another scenario and redraw"], ["Done", "New scenario: a girl stands stiff over a broken plate, hands on her cheeks; her grandmother, crouching with the dustpan, smiles and lays a hand on her shoulder. No scolding."], ["Extra check", "hands and limbs: ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "broken"}, {"k": "A2-2010", "group": "Re-rolls", "lt": "Grąžos nereikia.", "pron": "", "en": "Keep the change", "imgs": [{"src": "r4_A2-2010_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-2010_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": ["deviation from plan"], "facts": [["Your note", "reroll, the driver is extending his right hand, but the hand is the left hand"], ["Done", "Re-roll with your staging, handedness pinned. One correction to the plan: it put the driver's thumb on the kerb side, but a right hand turned palm-up and reaching back to the rear door has its thumb toward the back of the car, away from the kerb. The staging says that; QA reads the offered hand as a right hand."], ["Extra check", "hands and limbs: ok · specific check: The palm-up hand has the thumb on the viewer's left, indicating an anatomically right hand."]], "qa": "PASS", "fails": "", "warns": "", "guess": "taxi"}, {"k": "A2-2022", "group": "Re-rolls", "lt": "Leiskite prisistatyti.", "pron": "", "en": "Let me introduce myself", "imgs": [{"src": "r4_A2-2022_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-2022_after.jpg", "label": "Re-rolled", "cls": "after"}], "zoom": "", "chips": [], "facts": [["Your note", "still mangled, re-roll if you have to"], ["Done", "Re-roll: the speaker's hand flat on his chest, half under the lapel; everyone across the table holds papers upright or keeps hands below the edge, so no hands rest on the table."], ["Extra check", "hands and limbs: ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "chair"}, {"k": "083_tevas", "group": "Masked edits", "lt": "tėvas", "pron": "tė́vas", "en": "father", "imgs": [{"src": "r4_083_tevas_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_083_tevas_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_083_tevas_zoom.jpg", "chips": [], "facts": [["Your note", "Insert 3 still had mangled fingers; better, use original, or take the hands from the main image"], ["Done", "Your option 2: the joined hands of the father and boy were cropped from the main picture (which you passed) and placed in inset 3, then one edit of the seam band only so the paper and ink match. No hands were generated."]], "qa": "WARN", "fails": "", "warns": "guessed 'holding hands', card teaches 'father'", "guess": "holding hands"}, {"k": "A2-0925", "group": "Masked edits", "lt": "Trečia valanda", "pron": "Trečià valandà", "en": "It is three o'clock", "imgs": [{"src": "r4_A2-0925_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-0925_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-0925_zoom.jpg", "chips": [], "facts": [["Your note", "Still bad, either fix the original image's, man's, left hand, or reroll if you can't patch it"], ["Done", "One tight edit of the hand at his collar: the sleeve cuff now hangs over the knuckles so only the fingertips show. If it still reads wrong, the fallback re-roll staging is written in the plan."], ["Extra check", "hands and limbs: ok"]], "qa": "WARN", "fails": "", "warns": "stray act: a pointing finger | stray act: a hand on the chest", "guess": "leave"}, {"k": "A2-1431", "group": "Masked edits", "lt": "matuotis", "pron": "matúotis", "en": "to try on", "imgs": [{"src": "r4_A2-1431_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1431_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-1431_zoom.jpg", "chips": [], "facts": [["Your note", "Good image, but shoe-horn in first insert is corrupt"], ["Done", "Inset 1 only: a foot in a dark sock sliding into a new shoe, laces loose, the box beside it. No hand, no shoehorn."]], "qa": "WARN", "fails": "", "warns": "guessed 'tailor', card teaches 'to try on'", "guess": "tailor"}, {"k": "A2-2002", "group": "Masked edits", "lt": "Koks jūsų adresas?", "pron": "Kóks jū́sų ãdresas?", "en": "What is your address?", "imgs": [{"src": "r4_A2-2002_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-2002_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-2002_zoom.jpg", "chips": ["lettering declared"], "facts": [["Your note", "woman's right hand is turned at an impossible angle, and needs to be palm-out; woman's left hand was fine, don't change it"], ["Done", "Her right hand only (the left hand was fenced off): palm turned out, index finger up at the plate. The declared \"7\" still reads back."], ["Extra check", "hands and limbs: ok · specific check: The raised right hand faces outward with one index finger extended, and its anatomy appears natural."]], "qa": "PASS", "fails": "", "warns": "", "guess": "seven"}, {"k": "A2-2026", "group": "Masked edits", "lt": "Vieną bilietą į Kauną, prašau.", "pron": "Víeną bìlietą į̃ Kaũną, prašaũ.", "en": "One ticket to Kaunas, please", "imgs": [{"src": "r4_A2-2026_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-2026_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-2026_zoom.jpg", "chips": [], "facts": [["Your note", "Just replace the first insert with the man's hand giving the woman money through the round opening"], ["Done", "Inset 1 replaced as you asked: the man's hand passes two folded banknotes to the clerk through the round opening in the glass."], ["Extra check", "hands and limbs: ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "buy a ticket"}, {"k": "A2-2029", "group": "Masked edits", "lt": "Sustokite čia, prašau.", "pron": "", "en": "Stop here, please (taxi)", "imgs": [{"src": "r4_A2-2029_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-2029_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-2029_zoom.jpg", "chips": ["deviation from plan"], "facts": [["Your note", "redo first panel insert - the woman is pointing through the rear mirror, but the insert shows her hand extending from the front window"], ["Done", "Inset 1 no longer shows a hand from the front window. The plan's view out of the rear side window was drawn first, but QA then read the whole card as \"On the right\" twice (round 3 passed). So the round-3 inset is back, with only the arm removed: the taxi at the kerb, no hand."], ["Extra check", "hands and limbs: ok · specific check: No hand or arm is visible outside the car window in the lower-left inset."]], "qa": "WARN", "fails": "", "warns": "The taxi has dark, garbled-looking markings on its rear and side that do not form readable words.", "guess": "taxi"}, {"k": "S-0051", "group": "Masked edits", "lt": "Kiek tau metų?", "pron": "", "en": "How old are you?", "imgs": [{"src": "r4_S-0051_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_S-0051_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_S-0051_zoom.jpg", "chips": [], "facts": [["Your note", "just reroll an image for the last insert"], ["Done", "Last inset replaced: the same boy blowing out the candles, hands out of sight. Two attempts drew four candles; the third has five."], ["Extra check", "hands and limbs: ok · specific check: The main cake has six lit candles, while the inset shows seven lit candles as the boy blows them out."]], "qa": "WARN", "fails": "", "warns": "stray act: blowing out candles", "guess": "five"}, {"k": "A2-1191", "group": "Masked edits", "lt": "šiaip sau", "pron": "", "en": "so-so", "imgs": [{"src": "r4_A2-1191_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1191_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-1191_zoom.jpg", "chips": ["lettering declared"], "facts": [["Your note", "Don't have blank posters; the engine is good enough to do text. However, posters need to be based on period fact, in this case, a period film"], ["Done", "The blank poster now shows Velnio nuotaka (1974, dir. Arūnas Žebriūnas), a folk-fantasy musical two young men could well have judged \"so-so\" in 1981. The same poster appears small in the lower inset. Title declared in card_text and read back exactly by QA."], ["Extra check", "hands and limbs: ok"]], "qa": "PASS", "fails": "", "warns": "", "guess": "cinema"}, {"k": "A2-1360", "group": "Masked edits", "lt": "spektaklis", "pron": "spektãklis", "en": "performance (theatre)", "imgs": [{"src": "r4_A2-1360_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-1360_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-1360_zoom.jpg", "chips": ["lettering declared"], "facts": [["Your note", "It's weird to have a blank poster; it's ok to render something there, perhaps a famous Lithuanian play"], ["Done", "The blank playbill now shows Balys Sruoga's Milžino paunksmė (1932), with Ž and Ė read back exactly by QA. Title declared in card_text."]], "qa": "WARN", "fails": "", "warns": "guessed 'theater', card teaches 'performance (theatre)'", "guess": "theater"}, {"k": "A2-0649", "group": "Masked edits", "lt": "paštas", "pron": "pãštas", "en": "post office", "imgs": [{"src": "r4_A2-0649_before.jpg", "label": "Round 3 picture (judged)"}, {"src": "r4_A2-0649_after.jpg", "label": "After the edit", "cls": "after"}], "zoom": "r4_A2-0649_zoom.jpg", "chips": [], "facts": [["Your note", "Is there a prettier historical post office that we could use? from the outside, the building is so so; or, don't use the outside insert"], ["Done", "Inset 1 (the plain modernist front) replaced by a man posting letters into the blue post box. The Kaunas hall with the linen-weave floor stays as the main picture."]], "qa": "PASS", "fails": "", "warns": "", "guess": "post office"}], EXTRA={"col": "round4", "title": "Round 4 fixes", "hints": {"Originals restored": "you preferred the original; the round-3 render is kept in _rerolled", "Re-rolls": "the picture you judged beside the new one", "Masked edits": "only the area over the problem was repainted; the close-up shows it"}, "lead": ["Everything done on your Round 3 Fixes verdicts, following the planner's round-4 plan: 5 originals restored, 11 re-rolls and 10 masked edits, including the two period posters.", "QA (cold read plus the hands-and-limbs check, and the same hands check on every phrase card): 0 fail, 12 with notes; no limb, prop or hand finding. The notes are guess wording and stray acts. Mark OK or Redo; a note on a Redo says what to change."]};
+const COL = EXTRA.col, META = EXTRA.col+'_meta/general';
+const LS='go_review_'+COL; let ME='';
+const $=id=>document.getElementById(id);
+const el=(t,a={},...kids)=>{const e=document.createElement(t);for(const[k,v]of Object.entries(a)){if(k==='class')e.className=v;else if(k.startsWith('on'))e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)}for(const c of kids){if(c==null)continue;e.append(c.nodeType?c:document.createTextNode(c))}return e};
+let V={}, G={text:'',updatedAt:''}, db=null, timers={}, F='all';
+try{const s=JSON.parse(localStorage.getItem(LS)||'{}');V=s.V||{};G=s.G||G}catch(e){}
+function local(){try{localStorage.setItem(LS,JSON.stringify({V,G}))}catch(e){}}
+function status(t,warn){const s=$('status');s.textContent=t;s.style.fontWeight=warn?'700':''}
+
+// ---- verdict logic (PILOT_24: pass = Situation yes/nearly, Neighbour no, Stray none)
+function verdict(k){const v=V[k]||{};
+  if(MODE==='pilot'){ if(v.neighbour_fail||v.stray||v.situation==='no')return'fail'; if(v.situation==='yes'||v.situation==='nearly')return'pass'; return'open'}
+  return v.verdict==='ok'?'pass':v.verdict==='redo'?'fail':'open'}
+const VTXT={pass:'Passes',fail:MODE==='pilot'?'Fails':'Redo',open:'Not judged yet'};
+
+async function push(k){const v=V[k];v.updatedAt=new Date().toISOString();local();
+  if(!db){status('Saved in this browser only — the review store is not connected',true);return}
+  try{await db.doc(COL+'/'+k).set(Object.assign({key:k},v,ME?{by:ME}:{}));status('Saved · '+new Date().toLocaleTimeString())}
+  catch(e){status('Could not save to the review store ('+(e.code||'error')+'); kept in this browser',true)}}
+async function pushG(){G.updatedAt=new Date().toISOString();local();if(!db)return;
+  try{await db.doc(META).set(Object.assign({},G,ME?{by:ME}:{}));status('Notes saved · '+new Date().toLocaleTimeString())}catch(e){status('Notes kept in this browser only ('+(e.code||'error')+')',true)}}
+function set(k,patch){V[k]=Object.assign({},V[k]||{},patch);paint();push(k)}
+
+function plate(c){
+  const qa=el('div',{class:'qa'});
+  if(c.fails)qa.append(el('div',{class:'f'},'QA fail: '+c.fails));
+  if(c.warns)qa.append(el('div',{},'QA notes: '+c.warns));
+  if(c.nb&&MODE==='pilot')qa.append(el('div',{},'Neighbour test (machine) picked: '+c.nb));
+  if(c.guess)qa.append(el('div',{},'Read cold as: '+c.guess));
+  const chips=el('div',{class:'chips'});
+  if(c.qa)chips.append(el('span',{class:'chip '+c.qa},'QA '+c.qa));
+  if(c.fmt)chips.append(el('span',{class:'chip'},c.fmt));
+  if(c.rr)chips.append(el('span',{class:'chip'},'re-rolled ×'+c.rr));
+  if(c.ct)chips.append(el('span',{class:'chip'},'lettering declared'));
+  for(const x of (c.chips||[]))chips.append(el('span',{class:'chip'},x));
+  const facts=el('dl',{});
+  for(const[t,d]of (c.facts||[]))if(d)facts.append(el('dt',{},t),el('dd',{},d));
+  const judge=el('div',{class:'judge'});
+  for(const q of (c.questions||[])){
+    const seg=el('div',{class:'seg',role:'group','aria-label':q.text});
+    for(const[v,t]of q.opts)seg.append(el('button',{type:'button','data-v':v,'data-k':c.k,'data-f':'q_'+q.id,onclick:()=>set(c.k,{['q_'+q.id]:(V[c.k]||{})['q_'+q.id]===v?'':v})},t));
+    judge.append(el('div',{class:'q'},q.text),el('div',{class:'row'},seg));
+  }
+  const seg=el('div',{class:'seg',role:'group','aria-label':'Verdict'});
+  for(const[v,t]of[['ok','OK'],['redo','Redo']])seg.append(el('button',{type:'button','data-v':v,'data-k':c.k,'data-f':'verdict',onclick:()=>set(c.k,{verdict:(V[c.k]||{}).verdict===v?'':v})},t));
+  judge.append(el('div',{class:'row'},el('span',{class:'lbl'},'Verdict'),seg));
+  const ta=el('textarea',{id:'note-'+c.k,'aria-label':'Note for '+c.k,placeholder:'Note for this card'});
+  ta.addEventListener('input',()=>{V[c.k]=Object.assign({},V[c.k]||{},{note:ta.value});local();clearTimeout(timers[c.k]);timers[c.k]=setTimeout(()=>push(c.k),800)});
+  judge.append(ta, el('div',{class:'verdict open','data-verdict':c.k},''));
+  const zoom=(f)=>e=>{e.preventDefault();$('lbimg').src='media/'+f;$('lbx').style.display='flex'};
+  const pic=el('div',{class:'pic'});
+  const fig=(f)=>el('figure',{class:f.cls||''},el('a',{href:'media/'+f.src,onclick:zoom(f.src)},el('img',{src:'media/'+f.src,alt:c.en+': '+f.label,loading:'lazy',width:String(f.w||800),height:String(f.h||533)})),el('figcaption',{},f.label));
+  pic.append(el('div',{class:'pair'},...(c.imgs||[]).map(fig)));
+  if(c.zoom)pic.append(el('div',{class:'zoom'},el('a',{href:'media/'+c.zoom,onclick:zoom(c.zoom)},el('img',{src:'media/'+c.zoom,alt:'close-up of the repainted area, before and after',loading:'lazy'})),el('span',{class:'zoomcap'},'Close-up of the repainted area · before | after')));
+  return el('article',{class:'plate',id:'p-'+c.k,'data-k':c.k},pic,
+    el('div',{class:'slip'},el('div',{class:'id'},el('span',{class:'key'},c.k),el('span',{class:'lt'},c.lt),el('span',{class:'pron'},c.pron&&c.pron!==c.lt?c.pron:'')),
+      el('div',{class:'cap',title:'English caption (bottom band)'},c.en),chips,facts,qa,judge));
+}
+
+function build(){
+  $('ttl').textContent=EXTRA.title;
+  const lead=$('lead');
+  EXTRA.lead.forEach(t=>lead.append(el('p',{},t)));
+  const groups = [...new Set(DATA.map(c=>c.set||c.group))];
+  const hints = EXTRA.hints||{};
+  for(const g of groups){
+    const cards=DATA.filter(c=>(c.set||c.group)===g);
+    const sec=el('section',{class:'set','data-set':g},el('div',{class:'set-h'},el('h2',{},g),el('span',{class:'hint'},hints[g]||''),el('span',{class:'stat','data-stat':g},'')));
+    cards.forEach(c=>sec.append(plate(c)));
+    $('sets').append(sec);
+  }
+  const fl=$('filters');
+  for(const[f,t]of[['all','All '+DATA.length],['open','Not judged'],['fail',MODE==='pilot'?'Failed':'Redo'],['qa','QA warn or fail']]){
+    fl.append(el('button',{type:'button','aria-pressed':String(f==='all'),onclick:e=>{F=f;fl.querySelectorAll('button[aria-pressed]').forEach(b=>b.setAttribute('aria-pressed',String(b===e.currentTarget)));paint()}},t))}
+  fl.append(el('button',{type:'button',class:'copy',onclick:copySummary},'Copy summary'));
+  const g=$('general'); g.value=G.text||'';
+  g.addEventListener('input',()=>{G.text=g.value;local();clearTimeout(timers.__g);timers.__g=setTimeout(pushG,900)});
+  $('lbx').onclick=()=>{$('lbx').style.display='none'};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')$('lbx').style.display='none'});
+}
+
+function paint(){
+  let n={pass:0,fail:0,open:0};
+  for(const c of DATA){const v=V[c.k]||{}, vd=verdict(c.k); n[vd]++;
+    const p=$('p-'+c.k); p.classList.toggle('v-pass',vd==='pass'); p.classList.toggle('v-fail',vd==='fail');
+    p.querySelectorAll('button[data-f]').forEach(b=>{const f=b.dataset.f;b.setAttribute('aria-pressed',String(b.dataset.v?v[f]===b.dataset.v:!!v[f]))});
+    const ta=$('note-'+c.k); if(ta&&document.activeElement!==ta&&(v.note||'')!==ta.value)ta.value=v.note||'';
+    const vt=p.querySelector('[data-verdict]'); vt.textContent=VTXT[vd]; vt.className='verdict '+vd;
+    let show=true; if(F==='open')show=vd==='open'; else if(F==='fail')show=vd==='fail'; else if(F==='qa')show=c.qa==='WARN'||c.qa==='FAIL';
+    p.classList.toggle('hide',!show)}
+  document.querySelectorAll('[data-stat]').forEach(s=>{const g=s.dataset.stat;const cs=DATA.filter(c=>(c.set||c.group)===g);
+    const f=cs.filter(c=>verdict(c.k)==='fail').length, ok=cs.filter(c=>verdict(c.k)==='pass').length;
+    s.textContent=cs.length+' cards · '+ok+' pass · '+f+(MODE==='pilot'?' fail':' redo');
+    const old=s.parentNode.querySelector('.restage'); if(old)old.remove();
+    if(MODE==='pilot'&&f>=3)s.parentNode.append(el('span',{class:'restage'},'Re-stage this set'))});
+  $('tally').innerHTML='';
+  $('tally').append(el('span',{},el('b',{},String(n.pass)),' pass'),el('span',{},el('b',{},String(n.fail)),MODE==='pilot'?' fail':' redo'),el('span',{},el('b',{},String(n.open)),' to judge'));
+  const g=$('general'); if(document.activeElement!==g&&(G.text||'')!==g.value)g.value=G.text||'';
+}
+
+function copySummary(){
+  const lines=DATA.map(c=>{const v=V[c.k]||{};const vd=verdict(c.k);
+    const bits=[v.verdict||'',...(c.questions||[]).map(q=>v['q_'+q.id]?q.id+': '+v['q_'+q.id]:'')];
+    return c.k+'\t'+c.en+'\t'+VTXT[vd]+'\t'+bits.filter(Boolean).join(', ')+(v.note?'\t'+v.note:'')});
+  const t=lines.join('\n')+(G.text?'\n\nGeneral: '+G.text:'');
+  navigator.clipboard.writeText(t).then(()=>status('Summary of '+DATA.length+' cards copied'),()=>status('Copy was refused by this view; the verdicts are saved in the review store',true));
+}
+
+build(); paint();
+(async()=>{
+  db = window.claude?.use ? await window.claude.use('db') : null;
+  try{const u = window.claude?.use ? await window.claude.use('user') : null; if(u&&u.id)ME=await u.id()}catch(e){}
+  if(!db){status('Not connected: verdicts stay in this browser. Use "Copy summary" to pass them on.',true);return}
+  try{
+    const snap=await db.collection(COL).limit(500).get(); let n=0;
+    snap.docs.forEach(d=>{const x=d.data();if(!x||!x.key)return;const mine=V[x.key];
+      if(!mine||!mine.updatedAt||(x.updatedAt||'')>=mine.updatedAt){const{key,...rest}=x;V[x.key]=rest;n++}});
+    const gd=await db.doc(META).get(); const gx=gd&&gd.exists?gd.data():null;
+    if(gx&&(!G.updatedAt||(gx.updatedAt||'')>=G.updatedAt))G=gx;
+    local(); paint(); status('Connected · '+n+' saved verdicts loaded · saves as you go');
+  }catch(e){status('Could not read the review store ('+(e.code||'error')+'); working from this browser',true)}
+})();
+</script>
