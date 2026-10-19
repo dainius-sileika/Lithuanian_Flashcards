@@ -10,7 +10,7 @@ The paste-ready HTML is `docs/ANKIWEB_DESCRIPTION_A1_v3.0.html`. The owner's dec
 
 **Lietuvių Flashcards — A1 (v3.0)**
 
-Lithuanian from zero to A1, learned through pictures, short phrases and sentences. This is the first of two subdecks. The A2 subdeck follows as a separate package.
+Lithuanian from zero to A1 through pictures, phrases and sentences. The first of two subdecks; A2 follows as a separate package.
 
 **What is in the deck**
 
@@ -23,21 +23,19 @@ Lithuanian from zero to A1, learned through pictures, short phrases and sentence
 
 **How a card works**
 
-The front shows a picture with an English caption in the band below it. The back gives the Lithuanian word with its stress mark, its gender and the forms you need (genitive, present and past, or the feminine), and the English gloss. Phrase cards add a short note on when to use the phrase. Cloze cards show a Lithuanian sentence with a blank and the English sentence as a hint. Sentence cards show a picture and a Lithuanian sentence with a blank.
+The front shows a picture with an English caption in the band below it. The back gives the Lithuanian word with its stress mark, gender and forms (genitive, present and past, or the feminine), and the English gloss. Phrase cards add a note on when to use the phrase. Cloze cards show a Lithuanian sentence with a blank and the English as a hint; sentence cards pair the blank with a picture.
 
 Stress marks are taken from Wiktionary, kirtis.info and the LKŽ, never guessed.
 
 **The pictures**
 
-The art is an original house style: a civil-defence training manual from a free Lithuania of 1981. The pictures are AI-generated in that style, and every one has been reviewed by hand. A few cards show real interwar places and people: the Lituanica with Darius and Girėnas, Basanavičius as the doctor, Čiurlionis as the artist, with a painting after one of his public-domain works on the easel.
+The art is an original house style: a civil-defence training manual from a free Lithuania of 1981. The pictures are AI-generated in that style and reviewed by hand. A few cards show real interwar places and people: the Lituanica with Darius and Girėnas, Basanavičius as the doctor, Čiurlionis as the artist, with a painting after one of his public-domain works on the easel.
 
 **Audio**
 
 {A1_HUMAN_AUDIO_COUNT} cards carry recordings by the author, a native speaker, reading the word and its forms. {A1_SYNTH_AUDIO_COUNT} older cards still use a synthetic voice, and the newer A1 cards are silent until the next update.
 
-**Fonts and display**
-
-Brygada 1918 (SIL Open Font Licence), embedded in the deck. In night mode, leave image inversion off.
+Fonts: Brygada 1918 (SIL Open Font Licence), embedded. In night mode, leave image inversion off.
 
 **Upgrading from an earlier version**
 
@@ -45,9 +43,9 @@ The note types changed in v3.0. Delete the old deck before importing this one; s
 
 **Licence and credits**
 
-CC BY-NC 4.0: free to use, share and adapt for non-commercial purposes, with credit and a link to the source. The word list starts from the Fluent Forever 625 and is extended from A1 English word lists. Pictures, data and recordings by the author.
+CC BY-NC 4.0: share and adapt for non-commercial use, with credit and a link to the source. Word list from the Fluent Forever 625, extended from A1 English word lists. Pictures, data and recordings by the author.
 
-Source, issues and build instructions: https://github.com/dainius-sileika/Lithuanian_Flashcards
+Source and issues: https://github.com/dainius-sileika/Lithuanian_Flashcards
 
 ---
 
