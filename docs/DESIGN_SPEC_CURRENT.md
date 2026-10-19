@@ -1,6 +1,6 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.2.1** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.3.0** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
@@ -173,7 +173,7 @@ Read this file first in a new session; change the code, then this file, in the s
   (`a2_build/study_order/AUDIT_v3.txt`, `REPORT_order_v3.md`). v2 → v3: forward dependencies 172 → 43 (37 left
   are A1 sentences needing an A2-only word), pairs apart 14 → 0, longest tail run 119 → 11.
 - **Recording order** `a2_build/study_order/recording_order_v3.csv`: A1 first, then A2, each in study order.
-- Keys and GUIDs never move; deck v3.0 is delete-and-reimport, and from v3.0 on keys/GUIDs are frozen.
+- Deck v3.0 is delete-and-reimport. Keys and GUIDs are **not yet frozen**: they lock once both A1 and A2 are signed off by the owner (owner, 2026-10-19: "day 0 of release"). Until then a key may change when that gives a cleaner deck; record every change in `a2_build/merged_keys.csv` or the plan that made it. After the lock, keys and GUIDs never move.
   `build_apkg` writes the position to `due`.
 
 ## 9. Packages, versioning, release
@@ -181,7 +181,7 @@ Read this file first in a new session; change the code, then this file, in the s
   `"2.1"`, env; `APKG_LEVELS=A1` or `A2`, one package per level under AnkiWeb's 250 MB cap);
   `versioned_out()` never overwrites — a repeat build gets `-1`, `-2`. Engine/data history uses
   `files X.Y.Z / wordlist N.M` (`CHANGELOG.md`, `VERSIONS.md`). Current packages: `Lietuviu_Flashcards_v2.1_A1.apkg`,
-  `_A2.apkg`; v1 and v2.0 are in `_TO_DELETE/`. The A1 release is **v3.0** (major, delete-and-reimport; card keys and GUIDs frozen from v3.0 on), built 2026-10-19 as `Lietuviu_Flashcards_v3.0_A1.apkg`; see `docs/VERSIONS.md`.
+  `_A2.apkg`; v1 and v2.0 are in `_TO_DELETE/`. The A1 release is **v3.0** (major, delete-and-reimport; card keys and GUIDs lock once A1 and A2 are both signed off), built 2026-10-19 as `Lietuviu_Flashcards_v3.0_A1.apkg`; see `docs/VERSIONS.md`.
 - **Release plan (owner 2026-10-19):** release **A1 now, audio later**; because the note types changed
   (usage field, backs, frame) this release is **delete-and-reimport** for existing users — deck coherence
   over old study history. A2 follows (`A1_WRAPUP.md` "A2 — the shorter list").
@@ -224,6 +224,7 @@ Read this file first in a new session; change the code, then this file, in the s
 - Procedure for any change to the aesthetic: `docs/HOW_TO_CHANGE_THE_LOOK.md`.
 
 ## Spec changelog
+- **3.3.0 — 2026-10-19.** Key/GUID freeze moved: keys lock once A1 and A2 are both signed off, not at v3.0 (owner, 2026-10-19)
 - **3.2.1 — 2026-10-19.** §9: the A1 release is v3.0 (major), not v2.2
 - **3.2.0 — 2026-10-19.** Study order v3: dependency ordering (words before the sentences that use them), lane pressure against tail runs, PAIRS adjacency, look-alike separation, sentence cards in their own subdeck, 44 re-tiers (retier_v3.csv); build_study_order_v3.py replaces v2, audit as code
 - **3.1.0 — 2026-10-19.** rule added: DIRECTION_RULE (main figures travel left to right; main actors only, not background; DIRECTION_FREE_ROWS, situation_2 and LEFT/RIGHT-named stagings exempt; new renders only; FIT_PROMPT direction WARN); working rule: fix by whole re-roll, not masked edits, unless the owner asks for an edit. Erratum: 3.0.1 added a rule (posters/signs) and should have been a minor release; it is not renumbered.

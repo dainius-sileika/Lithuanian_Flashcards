@@ -41,7 +41,7 @@ Fonts: Brygada 1918 (SIL Open Font Licence), embedded. In night mode, leave imag
 
 **Upgrading from an earlier version**
 
-The note types changed in v3.0. Delete the old deck before importing this one; study history from older versions does not carry over. From v3.0 onward the card IDs are stable, so future updates import in place and keep your progress.
+The note types changed in v3.0. Delete the old deck before importing this one; study history from older versions does not carry over. The card IDs will be locked once the A2 subdeck is out; from then on, updates import in place and keep your progress. Until then, an update may ask you to delete and re-import.
 
 **Licence and credits**
 

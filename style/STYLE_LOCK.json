@@ -2,10 +2,10 @@
  "_": "GO style lock — the look-defining constants of the Lietuvių Flashcards pipeline, recorded by tools/style_lock.py. Do not edit by hand; `tools/style_lock.py update` after a spec bump.",
  "style_hash": "ae72a30c53bdf8561c83e67a1373ce5363893f077c230619805fd16fcaf2a9f9",
  "style_hash_short": "ae72a30c53bd",
- "spec_version": "3.2.1",
+ "spec_version": "3.3.0",
  "updated": "2026-10-19",
  "forced": false,
- "note": "spec 3.2.1: §9: the A1 release is v3.0 (major), not v2.2",
+ "note": "spec 3.3.0: Key/GUID freeze moved: keys lock once A1 and A2 are both signed off, not at v3.0 (owner, 2026-10-19)",
  "item_count": 106,
  "items": {
   "engine.OPENAI_MODEL.default": {
