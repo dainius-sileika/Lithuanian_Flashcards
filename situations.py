@@ -637,11 +637,15 @@ SITUATIONS = {'Yes / no': {'ids': [],
                                   'older man in a dark jacket sits on a wooden bench by the wall behind '
                                   'them; nobody bows to the floor, no clasped hands. Insets: the same man '
                                   'some days earlier as a patient in striped pyjamas, sitting up in a '
-                                  'hospital bed, the same nurse standing beside the bed; the same man '
-                                  'LEAVING the hospital, with the same greying hair, the same long brown '
-                                  'overcoat buttoned and the checked scarf, a small brown leather bag in his '
-                                  'RIGHT hand, coming DOWN the front steps TOWARD the viewer and away from '
-                                  'the building, the front of his coat turned to us, his eyes lowered to the '
+                                  'hospital bed with plain white sheets, the same nurse in her white coat '
+                                  'and cap standing beside the bed with the dark clipboard in both hands, a '
+                                  'small bare bedside table holding only a glass of water and a folded white '
+                                  'towel, plain pale green walls (this moment is before his discharge: the '
+                                  'flowers appear only in the main scene); the same man LEAVING the '
+                                  'hospital, with the same greying hair, the same long brown overcoat '
+                                  'buttoned and the checked scarf, a small brown leather bag in his RIGHT '
+                                  'hand, coming DOWN the front steps TOWARD the viewer and away from the '
+                                  'building, the front of his coat turned to us, his eyes lowered to the '
                                   'steps in front of his feet (he does not look at the viewer), the hospital '
                                   'entrance with its glass double doors BEHIND him at the top of the steps '
                                   'and closing after him, his back to the building (he does not face or '
@@ -650,7 +654,7 @@ SITUATIONS = {'Yes / no': {'ids': [],
                          'confusables': ['Thank you (A2-0358, one hand flat on the chest, slight bow)',
                                          "You're welcome (A2-0360, glove, wave-off)"],
                          'merge_with': '',
-                         'render': 'yes — round 6 (supersedes the earlier rows)',
+                         'render': 'yes — round 7 (supersedes the earlier rows)',
                          'note': '',
                          'source_file': 'bubbles.py / a2_build/src/bubbles_a2.py',
                          'gaze': 'conversation'},
