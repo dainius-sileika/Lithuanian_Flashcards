@@ -1,31 +1,5 @@
 [
  {
-  "id": "round4",
-  "group": "Needs you now",
-  "title": "Round 4 Fixes: 26 cards, the last picture review before the A1 build",
-  "ask": "The 5 originals you asked for are back (president, 106, 107, A2-1326, and A2-0085 on Fable's advice). There are 11 redraws, including be abejo at the Sartai horse races and A2-0660 heading right. There are 10 targeted edits, including the two real posters: Velnio nuotaka and Milžino paunksmė. The post office is now its interior, with no outside inset. The automatic check found no hand, limb or prop problems; both poster titles read back exactly; the taxi driver's hand is a right hand. Three small deviations are noted on the page (2010, 2029, S-0051). Fable's answers to your bank, post office and Čiurlionis questions are at the top of the page.",
-  "options": [
-   "Answered on that page"
-  ],
-  "links": [
-   {
-    "label": "Open Round 4 Fixes",
-    "href": "https://claude.ai/artifact/MKfmPoGgWjMLmBMzEqpfnQ"
-   }
-  ]
- },
- {
-  "id": "direction",
-  "group": "Needs you now",
-  "title": "Make 'people move left to right' a standing rule?",
-  "ask": "From your note on A2-0660. Fable recommends yes, as the default for any card where people walk, ride, drive or carry something from one place to another, so the destination lies to the right, the way a page is read. Standing, sitting and talking figures aren't affected. It would apply only when a card is redrawn, with no redraws ordered just for this. Exceptions: cards whose meaning is a direction (right, left, back, return); two-panel conversations, where who speaks first fixes the sides; and scenes whose goal sits on the left for a reason. The automatic check would flag it as a warning, not a failure. If you approve, it goes into the spec as version 3.1.0.",
-  "options": [
-   "Yes, as drafted",
-   "No"
-  ],
-  "links": []
- },
- {
   "id": "t-audio",
   "group": "Later (parked)",
   "title": "Record the audio (after the A1 release)",
