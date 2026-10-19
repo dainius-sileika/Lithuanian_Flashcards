@@ -1,42 +1,54 @@
 #!/usr/bin/env python3
-"""Build recorder.html — a self-contained, offline browser recorder for the
-deck's wordlist. Shows one word at a time, records one clip per card key via the
-mic, persists to IndexedDB (resume across sessions), and exports a zip of clips
-named by card key (ready to drop into audio/ and rebuild the deck).
+"""Build a self-contained, offline browser recorder (one HTML file). It shows one card at a
+time, records one clip per take key from the microphone, keeps the clips in the browser's
+IndexedDB (so a session can be resumed), and exports a ZIP of clips named by take key.
 
-Reads cards_anki.csv directly, so the recorder can never drift out of step with
-the deck: re-run it after any wordlist change.
+    python3 build_recorder.py A2   ->  recorder_A2.html + a2_build/recording_list.csv   (THE sheet)
+        Despite the historical name this is the whole-deck sheet: every take the CURRENT
+        package still needs, A1 subdeck first, then A2, each in study order (study_order.csv).
+        The set is derived from what build_apkg.py emits (same lists, same inclusion rules,
+        same audio paths), never from a hand-kept list:
+          * one take per note, key = card key: cards_anki.csv rows -> audio/<key>.mp3,
+            A2-list rows and sentence cards (S-####) -> audio_a2/<key>.mp3;
+          * cloze/pair A2-list rows also take their example sentence, key <id>_s -> audio_a2/;
+          * a take is listed when audio_source.tsv has no human take for the key ("new"),
+            the key still has the synthesized voice ("replace-tts"), or the human take's
+            recorded words (`said`) no longer match the card's script, accent-blind ("retake";
+            source "superseded" = the old take is withdrawn from the package).
+        Merged-away keys (a2_build/merged_keys.csv) and B1 deferrals (a2_build/deferred_B1.csv)
+        are not in the lists build_apkg reads; they are checked and skipped here as a guard.
+        The page's IndexedDB name is fixed (DECK_SHEET_ID) so takes already in the browser
+        survive every regeneration; see a2_build/RECORDING_GUIDE.md.
+    python3 build_recorder.py          ->  recorder_all.html   (legacy: cards_anki.csv only)
+    python3 build_recorder.py A1 [new] ->  recorder_A1[_new].html (legacy July sheets)
 
-    python3 build_recorder.py     ->  recorder.html
-    python3 build_recorder.py A1 new   ->  recorder_A1_new.html (A1 words without a human take)
-    python3 build_recorder.py A2       ->  recorder_A2.html + a2_build/recording_list.csv
-        The A2 sheet is the A2 list (a2_build/a2_wordlist.csv) in study order, one take per
-        headword (key = the list id) and, for cloze rows, a second take of the example
-        sentence (key = id + "_s"), plus the sentence cards (a2_build/sentences, key S-####).
-        File names are these keys; build_apkg.py expects audio_a2/<key>.mp3 (convert the
-        exported webm/m4a with ffmpeg). Works on a phone: big buttons, takes are kept in the
-        browser between sessions, and "Export new" ships only what was not exported yet.
+Ingest (owner ZIP -> package): convert each clip to the `dest` path in recording_list.csv
+(ffmpeg ... -codec:a libmp3lame -q:a 4), move a replaced take to <dir>/_superseded/, and write
+the key's audio_source.tsv row as  key  human  <dest>  <said>  (said = the ZIP manifest's
+`said` column), so the next run of this script drops the take from the sheet.
 """
 import csv
+import hashlib
 import json
 import os
+import re
 import sys
+import unicodedata
 
 SRC = "cards_anki.csv"
 QUEUE = "wordlist_a2_pending.csv"
+AUDIO_SOURCE = "audio_source.tsv"
+LIST_OUT = "a2_build/recording_list.csv"
+MERGED = "a2_build/merged_keys.csv"
+DEFERRED = "a2_build/deferred_B1.csv"
+# The sheet the owner may already have recorded with (2026-10-12): its per-key script, so a
+# clip stored in the browser without a script stamp can be recognised as stale.
+LEGACY_SHEET = "a2_build/audio/recorder_A2_afb2ebe2_script.json"
+# IndexedDB name of the deck sheet = 'lt_recorder_' + DECK_SHEET_ID. NEVER change it: the
+# browser keeps the owner's takes under this name, keyed by take key; a new name would hide
+# them. (Until 2026-10-19 the id was a hash of the key list and changed on every regeneration.)
+DECK_SHEET_ID = "A2_afb2ebe2"
 
-# Which level(s) to record. `python3 build_recorder.py A1` builds an A1-only
-# sheet; no argument builds everything.
-LEVEL = sys.argv[1] if len(sys.argv) > 1 else ""
-# `python3 build_recorder.py A1 new` builds a sheet of ONLY the words that have
-# no human recording yet, so a follow-up session isn't cluttered with done work.
-ONLY_NEW = len(sys.argv) > 2 and sys.argv[2].lower() == "new"
-HUMAN = set()
-if ONLY_NEW and os.path.exists("audio_source.tsv"):
-    for _ln in open("audio_source.tsv", encoding="utf-8").read().splitlines()[1:]:
-        _p = _ln.split("\t")
-        if len(_p) >= 2 and _p[1].startswith("human"):
-            HUMAN.add(_p[0])
 
 def read_script(headword, row):
     """What the speaker should say for this card: the headword, then the forms
@@ -53,71 +65,191 @@ def read_script(headword, row):
         out.append({"label": "fem.", "form": row["fem"].strip()})
     return out
 
-WORDS = [
-    {"key": r["key"], "number": r["number"], "lt": r["lithuanian"],
-     "en": r["english"], "pron": r.get("pron", ""), "cat": r["category"],
-     "script": read_script(r.get("pron") or r["lithuanian"], r)}
-    for r in csv.DictReader(open(SRC, encoding="utf-8"))
-    if r["lithuanian"].strip() and (not LEVEL or r.get("level", "A1") == LEVEL)
-       and not (ONLY_NEW and r["key"] in HUMAN)
-]
 
-# Recording is gated on the WORD being final, not on the image existing — so
-# confirmed queue rows are included even before their images are generated.
-if os.path.exists(QUEUE):
-    for r in csv.DictReader(open(QUEUE, encoding="utf-8")):
-        if r.get("status") != "pending":
+def strip_accents(s):
+    """Remove the stress marks (grave, acute, tilde) and the soft-dot that i/j carry under
+    an accent (i̇̃), keeping the letters ą č ę ė į š ų ū ž."""
+    d = unicodedata.normalize("NFD", s or "")
+    out = []
+    for ch in d:
+        if ch in "̀́̃":
             continue
-        if LEVEL and r.get("level") != LEVEL:
+        if ch == "̇" and out and out[-1] in "iIjJ":
             continue
-        if "verify" in (r.get("notes", "") or "").lower():
-            continue                      # not owner-confirmed yet
-        if not r["lithuanian_TARGET"].strip():
-            continue
-        if ONLY_NEW and r["id"] in HUMAN:
-            continue
-        WORDS.append({"key": r["id"], "number": r["id"], "lt": r["lithuanian_TARGET"],
-                      "en": r["english"], "pron": r.get("lt_pron", ""),
-                      "cat": r["category"] + " (new)",
-                      "script": read_script(r.get("lt_pron") or r["lithuanian_TARGET"], r)})
+        out.append(ch)
+    return unicodedata.normalize("NFC", "".join(out)).strip()
 
-A2_MODE = LEVEL.upper() == "A2"
-if A2_MODE:
-    import re as _re
-    WORDS = []
-    order = {}
-    if os.path.exists("study_order.csv"):
-        order = {r["key"]: int(r["order"]) for r in csv.DictReader(open("study_order.csv", encoding="utf-8"))}
-    items = []
-    for r in csv.DictReader(open("a2_build/a2_wordlist.csv", encoding="utf-8")):
-        if not r["lithuanian_TARGET"].strip():
+
+def said_key(s):
+    """Comparison key for 'are these the same words?': accent-, case- and punctuation-blind;
+    parenthetical glosses dropped."""
+    s = re.sub(r"\([^)]*\)", " ", strip_accents(s)).lower()
+    s = re.sub(r"[.,!?;:„“”\"«»—–\-·]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def script_text(script):
+    return " · ".join(f["form"] for f in script)
+
+
+def load_audio_source(path=AUDIO_SOURCE):
+    """key -> {source, file, said}; reads the 2-column format of July 2026 as well."""
+    out = {}
+    if not os.path.exists(path):
+        return out
+    rows = list(csv.reader(open(path, encoding="utf-8"), delimiter="\t"))
+    head = rows[0] if rows else []
+    for r in rows[1:]:
+        if not r:
             continue
-        head = _re.sub(r"\s*\(.*\)", "", r["lithuanian_TARGET"]).strip()
+        d = dict(zip(head, r))
+        out[r[0]] = {"source": d.get("source", ""), "file": d.get("file", ""), "said": d.get("said", "")}
+    return out
+
+
+def ids(path, col="id"):
+    return {r[col] for r in csv.DictReader(open(path, encoding="utf-8"))} if os.path.exists(path) else set()
+
+
+def deck_takes():
+    """Every take the current package needs and does not have yet, with its status.
+    Returns (takes, stats, warnings)."""
+    import build_apkg as B   # same lists, image/sentence inclusion and audio paths as the build
+    order = B.load_study_order()
+    asrc = load_audio_source()
+    skip = ids(MERGED) | ids(DEFERRED)
+    warnings, takes = [], []
+    lv_rank = {"A1": 0, "A2": 1}
+
+    def add(key, kind, level, sub, lt, en, pron, script, dest, cat, number):
+        pos = order.get(key[:-2] if key.endswith("_s") else key)
+        if pos is None:
+            warnings.append(f"{key}: not in {B.STUDY_ORDER} (sorted last)")
+        say = script_text(script)
+        a = asrc.get(key)
+        status, was = None, ""
+        if a and a["source"] == "superseded":
+            status, was = "retake", a["said"]
+        elif a and a["source"].startswith("human"):
+            if a["file"] and a["file"] != dest:
+                warnings.append(f"{key}: human take at {a['file']}, but the build reads {dest}")
+            if not os.path.exists(a["file"] or dest):
+                warnings.append(f"{key}: audio_source says human, file missing -> listed as new")
+                status = "new"
+            elif not a["said"]:
+                warnings.append(f"{key}: human take without a `said` record, assumed current")
+            elif said_key(a["said"]) != said_key(say):
+                status, was = "retake", a["said"]
+        elif a and a["source"].startswith("azure"):
+            status = "replace-tts"
+        elif os.path.exists(dest):
+            warnings.append(f"{key}: {dest} exists but has no audio_source.tsv row, assumed current")
+        else:
+            status = "new"
+        if status:
+            takes.append({"key": key, "number": number, "lt": lt, "en": en, "pron": pron,
+                          "cat": cat, "kind": kind, "level": level, "status": status, "was": was,
+                          "say": say, "script": script, "dest": dest,
+                          "order": pos if pos is not None else "",
+                          "_sort": (lv_rank.get(level, 9), pos if pos is not None else 10**6, sub)})
+
+    # 1. cards_anki.csv (the 520 + batonas base), only rows the build finds a picture for
+    for r in csv.DictReader(open(SRC, encoding="utf-8")):
+        k = r["key"]
+        if not (B.find_image(B.IMAGE_ALIAS.get(k, k), B.A1_IMAGE_DIRS) or B.find_image(k, B.A1_IMAGE_DIRS)):
+            continue
+        level = (r.get("level") or "A1").strip() or "A1"
+        pron = r.get("pron", "") or r["lithuanian"]
+        add(k, "word", level, 0, r["lithuanian"], r["english"], r.get("pron", ""),
+            read_script(pron, r), f"audio/{k}.mp3", r["category"], r["number"])
+    # 2. the A2 list (IMG/PHRASE with a picture, CLOZE/PAIR with a cloze sentence)
+    for r in csv.DictReader(open(B.A2_LIST, encoding="utf-8")):
+        k, route = r["id"], r.get("route", "")
+        if k in skip:
+            warnings.append(f"{k}: merged/deferred key still in {B.A2_LIST} (skipped here)")
+            continue
+        if route in ("IMG", "PHRASE"):
+            if not B.find_a2_image(k):
+                continue
+        elif route in ("CLOZE", "PAIR"):
+            if not B.cloze_text(r.get("example_lt", ""))[1]:
+                continue
+        else:
+            continue
+        level = (r.get("level") or "A2").strip() or "A2"
+        head = re.sub(r"\s*\(.*\)", "", r["lithuanian_TARGET"]).strip()
         pron = r.get("lt_pron", "") or head
-        items.append((order.get(r["id"], 10**6), 0, {
-            "key": r["id"], "number": r["id"], "lt": head, "en": r["english"], "pron": pron,
-            "cat": r["category"] + " · " + r["route"].lower(), "kind": "word",
-            "script": read_script(pron, r)}))
-        if r.get("example_lt", "").strip() and r["route"] in ("CLOZE", "PAIR"):
+        add(k, "word", level, 0, head, r["english"], r.get("lt_pron", ""), read_script(pron, r),
+            f"{B.A2_AUDIO_DIR}/{k}.mp3", r["category"] + " · " + route.lower(), k)
+        if route in ("CLOZE", "PAIR"):
             sent = r["example_lt"].replace("{", "").replace("}", "")
-            items.append((order.get(r["id"], 10**6), 1, {
-                "key": r["id"] + "_s", "number": r["id"] + " s", "lt": sent, "en": r.get("example_en", ""),
-                "pron": "", "cat": "sentence for " + head, "kind": "sentence",
-                "script": [{"label": "", "form": sent}]}))
-    if os.path.exists("a2_build/sentences/sentences.csv"):
-        for r in csv.DictReader(open("a2_build/sentences/sentences.csv", encoding="utf-8")):
+            add(k + "_s", "sentence", level, 1, sent, r.get("example_en", ""), "",
+                [{"label": "", "form": sent}], f"{B.A2_AUDIO_DIR}/{k}_s.mp3", "sentence for " + head, k + " s")
+    # 3. sentence cards
+    if B.SENTENCES and os.path.exists(B.SENTENCES):
+        for r in csv.DictReader(open(B.SENTENCES, encoding="utf-8")):
+            if not B.cloze_text(r["lt"])[1]:
+                continue
             sent = r["lt"].replace("{", "").replace("}", "")
-            items.append((order.get(r["id"], 10**6), 2, {
-                "key": r["id"], "number": r["id"], "lt": sent, "en": r["en"], "pron": "",
-                "cat": "sentence card", "kind": "sentence", "script": [{"label": "", "form": sent}]}))
-    items.sort(key=lambda t: (t[0], t[1]))
-    WORDS = [w for _, _, w in items]
-    os.makedirs("a2_build", exist_ok=True)
-    with open("a2_build/recording_list.csv", "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f); w.writerow(["take", "file_name", "kind", "study_order", "lithuanian", "english", "say"])
-        for n, (o, _, it) in enumerate(items, 1):
-            w.writerow([n, it["key"] + ".mp3", it["kind"], o if o < 10**6 else "", it["lt"], it["en"],
-                        " · ".join(f["form"] for f in it["script"])])
+            level = (r.get("level") or "A2").strip() or "A2"
+            add(r["id"], "sentence", level, 2, sent, r["en"], "", [{"label": "", "form": sent}],
+                f"{B.A2_AUDIO_DIR}/{r['id']}.mp3", "sentence card", r["id"])
+    takes.sort(key=lambda t: t["_sort"])
+    for n, t in enumerate(takes, 1):
+        t["n"] = n
+        del t["_sort"]
+    # browser clips recorded with the 2026-10-12 sheet carry no script stamp: name the keys
+    # whose script has changed since, so the page sets those clips aside instead of using them
+    legacy = {}
+    if os.path.exists(LEGACY_SHEET):
+        legacy = json.load(open(LEGACY_SHEET, encoding="utf-8"))["said"]
+    for t in takes:
+        old = legacy.get(t["key"])
+        t["legacy_stale"] = bool(old is not None and said_key(old) != said_key(t["say"]))
+    stats = {}
+    for t in takes:
+        stats[(t["level"], t["status"])] = stats.get((t["level"], t["status"]), 0) + 1
+    return takes, stats, warnings
+
+
+def write_list(takes, path=LIST_OUT):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["take", "file_name", "dest", "level", "kind", "status", "study_order",
+                    "lithuanian", "english", "pron", "say", "was"])
+        for t in takes:
+            w.writerow([t["n"], t["key"] + ".mp3", t["dest"], t["level"], t["kind"], t["status"],
+                        t["order"], t["lt"], t["en"], t["pron"], t["say"], t["was"]])
+
+
+def legacy_words(level, only_new):
+    """The July sheets: cards_anki.csv (+ confirmed queue rows), optionally only keys
+    without a human take."""
+    human = {k for k, a in load_audio_source().items() if a["source"].startswith("human")} if only_new else set()
+    words = [
+        {"key": r["key"], "number": r["number"], "lt": r["lithuanian"],
+         "en": r["english"], "pron": r.get("pron", ""), "cat": r["category"],
+         "script": read_script(r.get("pron") or r["lithuanian"], r)}
+        for r in csv.DictReader(open(SRC, encoding="utf-8"))
+        if r["lithuanian"].strip() and (not level or r.get("level", "A1") == level)
+        and not (only_new and r["key"] in human)]
+    if os.path.exists(QUEUE):
+        for r in csv.DictReader(open(QUEUE, encoding="utf-8")):
+            if r.get("status") != "pending" or (level and r.get("level") != level):
+                continue
+            if "verify" in (r.get("notes", "") or "").lower() or not r["lithuanian_TARGET"].strip():
+                continue
+            if only_new and r["id"] in human:
+                continue
+            words.append({"key": r["id"], "number": r["id"], "lt": r["lithuanian_TARGET"],
+                          "en": r["english"], "pron": r.get("lt_pron", ""),
+                          "cat": r["category"] + " (new)",
+                          "script": read_script(r.get("lt_pron") or r["lithuanian_TARGET"], r)})
+    for w in words:
+        w["say"] = script_text(w["script"])
+    return words
+
 
 TEMPLATE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -171,6 +303,11 @@ TEMPLATE = r"""<!doctype html>
     button{padding:14px 16px;font-size:1.05rem;min-width:44%} .controls button.rec{min-width:100%}
     .grid{display:none} .jump{display:flex}
   }
+  .badge{display:inline-block;font-variant:small-caps;letter-spacing:.08em;font-size:.78rem;padding:1px 8px;border:1px solid var(--dun);margin:0 3px;color:var(--dun)}
+  .badge.lvA1{border-color:var(--teal);color:var(--teal)} .badge.lvA2{border-color:var(--red);color:var(--red)}
+  .badge.retake{background:var(--red);color:var(--paper);border-color:var(--red)}
+  .badge.tts{background:var(--teal);color:var(--paper);border-color:var(--teal)}
+  .was{font-size:.9rem;color:var(--red);margin-top:6px}
   .jump{display:none;gap:8px;justify-content:center;margin-top:10px;align-items:center}
   .jump input{font-size:1rem;padding:8px;width:7em;border:1px solid var(--dun);background:var(--paper2)}
 </style></head>
@@ -180,17 +317,18 @@ TEMPLATE = r"""<!doctype html>
 
   <div id="setup" class="card">
     <p style="font-size:1.1rem">For each card, read <b>every form shown in the dashed box</b> — the headword, then its genitive / principal parts — one clear breath apart.<br>One clip is saved per card; no editing needed.</p>
-    <p class="hint">Your recordings are saved in this browser as you go, so you can close the tab and resume later on the same computer. When finished (or partway), click <b>Export ZIP</b> and send it back.</p>
+    <p class="hint">Your recordings are saved in this browser as you go, so you can close the tab and resume later: same computer, same browser. When finished (or partway), click <b>Export new takes</b> and put the ZIP where the guide says (a2_build/RECORDING_GUIDE.md).</p>
     <div class="controls"><button class="rec big" id="start">Enable microphone &amp; start</button></div>
     <p class="status" id="setupStatus"></p>
   </div>
 
   <div id="app" style="display:none">
     <div class="card">
-      <div class="meta"><span id="numcat"></span></div>
+      <div class="meta"><span id="badges"></span> <span id="numcat"></span></div>
       <div class="word" id="lt"></div>
-      <div class="pron" id="pron"></div>
+      <div class="pron" id="pron" title="stressed form: say it this way"></div>
       <div class="en" id="en"></div>
+      <div class="was" id="was"></div>
       <div class="script" id="script"></div>
       <div class="bar"><div id="progress"></div></div>
       <div class="status" id="status">Not recorded yet</div>
@@ -215,6 +353,7 @@ TEMPLATE = r"""<!doctype html>
         <button id="export">⬇ Export all</button>
       </div>
       <p class="hint" id="exportInfo"></p>
+      <p class="hint" id="storeInfo"></p>
       <p class="hint">On a phone each export is one ZIP of the takes recorded since the last export — send it on and carry on; the batches add up. Files are named by card key.</p>
       <div class="jump"><label class="hint">go to take</label><input id="jumpTo" type="number" min="1"><button id="jumpBtn">Go</button></div>
       <div class="grid" id="grid"></div>
@@ -224,25 +363,49 @@ TEMPLATE = r"""<!doctype html>
 </div>
 <script>
 const WORDS = __WORDS__;
-const SHEET_ID = "__SHEET_ID__";        // unique per generated sheet
+const SHEET_ID = "__SHEET_ID__";        // IndexedDB name suffix; fixed for the deck sheet (never change)
 document.getElementById('count').textContent = "0 / " + WORDS.length;
 
-/* ---------- IndexedDB (persist clips so a long session can resume) ---------- */
+/* ---------- IndexedDB (persist clips so a long session can resume) ----------
+   DB 'lt_recorder_'+SHEET_ID, stores 'clips' (take key -> Blob) and 'meta'. Same scheme as the
+   2026-10-12 sheet, so its clips are found again. New meta keys: 'said:<key>' (the words a clip
+   was recorded for), 'superseded:<key>:<ms>' (a stale clip set aside, never deleted). */
 let db;
 function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open('lt_recorder_'+SHEET_ID,2);
-  r.onupgradeneeded=e=>{const d=e.target.result; d.createObjectStore('clips'); d.createObjectStore('meta');};
+  r.onupgradeneeded=e=>{const d=e.target.result;
+    if(!d.objectStoreNames.contains('clips'))d.createObjectStore('clips');
+    if(!d.objectStoreNames.contains('meta'))d.createObjectStore('meta');};
   r.onsuccess=e=>{db=e.target.result;res()};r.onerror=()=>rej(r.error);});}
 function putClip(k,b){return new Promise((res,rej)=>{const t=db.transaction('clips','readwrite');
   t.objectStore('clips').put(b,k);t.oncomplete=res;t.onerror=()=>rej(t.error);});}
 function getClip(k){return new Promise(res=>{const t=db.transaction('clips','readonly');
   const q=t.objectStore('clips').get(k);q.onsuccess=()=>res(q.result||null);q.onerror=()=>res(null);});}
-function getMeta(k){return new Promise(res=>{try{const t=db.transaction('meta','readonly');const q=t.objectStore('meta').get(k);q.onsuccess=()=>res(q.result||null);q.onerror=()=>res(null);}catch(e){res(null)}});}
+function delClip(k){return new Promise(res=>{const t=db.transaction('clips','readwrite');
+  t.objectStore('clips').delete(k);t.oncomplete=res;t.onerror=res;});}
+function getMeta(k){return new Promise(res=>{try{const t=db.transaction('meta','readonly');const q=t.objectStore('meta').get(k);q.onsuccess=()=>res(q.result===undefined?null:q.result);q.onerror=()=>res(null);}catch(e){res(null)}});}
 function putMeta(k,v){return new Promise(res=>{try{const t=db.transaction('meta','readwrite');t.objectStore('meta').put(v,k);t.oncomplete=res;t.onerror=res;}catch(e){res()}});}
-function doneKeys(){return new Promise(res=>{const t=db.transaction('clips','readonly');
-  const q=t.objectStore('clips').getAllKeys();q.onsuccess=()=>res(new Set(q.result));q.onerror=()=>res(new Set());});}
+function storeKeys(s){return new Promise(res=>{const t=db.transaction(s,'readonly');
+  const q=t.objectStore(s).getAllKeys();q.onsuccess=()=>res(q.result||[]);q.onerror=()=>res([]);});}
+
+/* A stored clip counts as a take only if it was recorded for the take's CURRENT words.
+   Stamped clips ('said:<key>') compare the stamp; an unstamped clip comes from the 2026-10-12
+   sheet and is stale when that sheet's words differed (w.ls). Stale clips move to meta
+   'superseded:<key>:<ms>' and leave with "Export all" (folder superseded/). */
+async function setAsideStale(){
+  let n=0;
+  for(const w of WORDS){
+    const b=await getClip(w.key); if(!b) continue;
+    const said=await getMeta('said:'+w.key);
+    const stale = said==null ? !!w.ls : said!==w.say;
+    if(stale){ await putMeta('superseded:'+w.key+':'+Date.now(), {blob:b, said:said||'(sheet of 2026-10-12)'});
+      await delClip(w.key); n++; }
+  }
+  return n;
+}
 
 /* ---------- recording ---------- */
 let stream,rec,chunks=[],MIME='',idx=0,done=new Set();
+const POS={}; WORDS.forEach((w,i)=>POS[w.key]=i);
 function pickMime(){for(const m of ['audio/webm;codecs=opus','audio/webm','audio/mp4','audio/ogg']){
   if(window.MediaRecorder&&MediaRecorder.isTypeSupported(m))return m;}return '';}
 function extFor(type){if(!type)return 'webm';if(type.includes('mp4')||type.includes('m4a')||type.includes('aac'))return 'm4a';
@@ -253,25 +416,36 @@ async function start(){
   try{stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false}});}
   catch(e){s.textContent="Could not access the microphone: "+e.message;return;}
   MIME=pickMime();
-  await openDB(); done=await doneKeys();
+  await openDB();
+  const stale=await setAsideStale();
+  const keys=await storeKeys('clips');
+  done=new Set(keys.filter(k=>k in POS));
+  const off=keys.length-done.size;
   document.getElementById('setup').style.display='none';
   document.getElementById('app').style.display='block';
   buildGrid();
-  // jump to first not-yet-recorded word
+  document.getElementById('storeInfo').textContent=
+    (done.size?done.size+" takes already in this browser. ":"")+
+    (stale?stale+" older clips were recorded for words that have since changed: set aside (in Export all). ":"")+
+    (off?off+" clips for cards no longer on the list are kept (in Export all).":"");
+  // jump to first not-yet-recorded take
   let f=WORDS.findIndex(w=>!done.has(w.key)); idx=f<0?0:f;
   render();
 }
 
 function startRec(){
   chunks=[]; rec=new MediaRecorder(stream, MIME?{mimeType:MIME}:undefined);
+  const w=WORDS[idx];
   rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};
   rec.onstop=async()=>{
     const blob=new Blob(chunks,{type:MIME||'audio/webm'});
-    await putClip(WORDS[idx].key, blob); done.add(WORDS[idx].key);
-    updateCell(idx); setPlayer(blob); setCount();
+    await putClip(w.key, blob); await putMeta('said:'+w.key, w.say); done.add(w.key);
+    // a re-recorded take must leave with the next "Export new" even if its key went before
+    const ex=new Set((await getMeta('exported'))||[]); if(ex.delete(w.key)) await putMeta('exported',[...ex]);
+    updateCell(POS[w.key]); if(WORDS[idx]===w) setPlayer(blob); setCount();
     document.getElementById('status').textContent="Recorded ✓ ("+Math.round(blob.size/1024)+" KB)";
     recBtn.classList.remove('recording'); recBtn.textContent='● Re-record';
-    if(document.getElementById('auto').checked) setTimeout(()=>go(1),350);
+    if(document.getElementById('auto').checked&&WORDS[idx]===w) setTimeout(()=>go(1),350);
   };
   rec.start(); recBtn.classList.add('recording'); recBtn.textContent='■ Stop';
   // pre-roll: the mic is live but we ask for silence first, so every take begins
@@ -284,18 +458,25 @@ function toggleRec(){ if(rec&&rec.state==='recording'){rec.stop();} else {startR
 
 /* ---------- UI ---------- */
 const recBtn=document.getElementById('recBtn'), playBtn=document.getElementById('playBtn'), player=document.getElementById('player');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function setPlayer(blob){ player.src=URL.createObjectURL(blob); player.style.display='block'; playBtn.disabled=false; }
 async function render(){
   const w=WORDS[idx];
+  let b='';
+  if(w.level) b+='<span class="badge lv'+w.level+'">'+w.level+'</span>';
+  if(w.status==='retake') b+='<span class="badge retake">re-take</span>';
+  if(w.status==='replace-tts') b+='<span class="badge tts">replaces synthetic voice</span>';
+  document.getElementById('badges').innerHTML=b;
   document.getElementById('numcat').textContent = "#"+w.number+"  ·  "+w.cat+"   ("+(idx+1)+" of "+WORDS.length+")";
   document.getElementById('lt').textContent=w.lt;
   document.getElementById('pron').textContent=w.pron||'';
   document.getElementById('en').textContent=w.en;
+  document.getElementById('was').textContent=w.was?("the old take said: "+w.was+" (now different)"):'';
   const sc=w.script&&w.script.length?w.script:[{label:'',form:w.pron||w.lt}];
   document.getElementById('script').className='script'+(w.kind==='sentence'?' sentence':'');
   document.getElementById('script').innerHTML =
     '<span class="lead">'+(w.kind==='sentence'?'read the sentence once, naturally':'say all of this, one breath apart')+'</span>' +
-    sc.map(f=>(f.label?'<span class="lab">'+f.label+'</span>':'')+'<b>'+f.form+'</b>')
+    sc.map(f=>(f.label?'<span class="lab">'+esc(f.label)+'</span>':'')+'<b>'+esc(f.form)+'</b>')
       .join('<span class="sep">·</span>');
   recBtn.classList.remove('recording');
   const clip=await getClip(w.key);
@@ -305,12 +486,15 @@ async function render(){
   const curCell=document.querySelectorAll('.cell')[idx]; if(curCell) curCell.scrollIntoView({block:'nearest'});
 }
 function go(d){ idx=Math.min(WORDS.length-1,Math.max(0,idx+d)); render(); }
+const NA1=WORDS.filter(w=>w.level==='A1').length;
 function setCount(){ document.getElementById('count').textContent=done.size+" / "+WORDS.length;
   document.getElementById('progress').style.width=(100*done.size/WORDS.length)+"%";
-  document.getElementById('exportInfo').textContent=done.size+" recorded, "+(WORDS.length-done.size)+" remaining"; }
+  const a1=WORDS.filter(w=>w.level==='A1'&&done.has(w.key)).length;
+  document.getElementById('exportInfo').textContent=done.size+" recorded, "+(WORDS.length-done.size)+" remaining"+
+    (NA1?" · A1: "+a1+" of "+NA1:""); }
 function buildGrid(){ const g=document.getElementById('grid'); g.innerHTML='';
   WORDS.forEach((w,i)=>{ const c=document.createElement('div'); c.className='cell'+(done.has(w.key)?' done':'');
-    c.textContent=w.number; c.title=w.lt; c.onclick=()=>{idx=i;render();}; g.appendChild(c); });
+    c.textContent=w.n||(i+1); c.title=w.key+' '+w.lt; c.onclick=()=>{idx=i;render();}; g.appendChild(c); });
   setCount(); }
 function updateCell(i){ const c=document.querySelectorAll('.cell')[i]; if(c)c.classList.add('done'); setCount(); }
 
@@ -321,6 +505,7 @@ document.getElementById('next').onclick=()=>go(1);
 document.getElementById('prev').onclick=()=>go(-1);
 document.addEventListener('keydown',e=>{
   if(document.getElementById('app').style.display==='none')return;
+  if(e.target&&e.target.tagName==='INPUT')return;
   if(e.code==='Space'){e.preventDefault();toggleRec();}
   else if(e.key==='p'||e.key==='P'){if(!playBtn.disabled){player.currentTime=0;player.play();}}
   else if(e.key==='ArrowRight'){go(1);} else if(e.key==='ArrowLeft'){go(-1);}
@@ -336,25 +521,36 @@ function makeZip(files){
   const u16=n=>[n&255,(n>>8)&255], u32=n=>[n&255,(n>>8)&255,(n>>16)&255,(n>>>24)&255];
   let parts=[],central=[],offset=0;
   for(const f of files){ const nb=enc.encode(f.name),crc=crc32(f.data),sz=f.data.length;
-    const lh=[].concat(u32(0x04034b50),u16(20),u16(0),u16(0),u16(dt),u16(dd),u32(crc),u32(sz),u32(sz),u16(nb.length),u16(0));
+    const lh=[].concat(u32(0x04034b50),u16(20),u16(0x0800),u16(0),u16(dt),u16(dd),u32(crc),u32(sz),u32(sz),u16(nb.length),u16(0));
     parts.push(new Uint8Array(lh),nb,f.data);
-    const ch=[].concat(u32(0x02014b50),u16(20),u16(20),u16(0),u16(0),u16(dt),u16(dd),u32(crc),u32(sz),u32(sz),u16(nb.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(offset));
+    const ch=[].concat(u32(0x02014b50),u16(20),u16(20),u16(0x0800),u16(0),u16(dt),u16(dd),u32(crc),u32(sz),u32(sz),u16(nb.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(offset));
     central.push(new Uint8Array(ch),nb); offset+=lh.length+nb.length+sz; }
   let cs=0; for(const c of central) cs+=c.length;
   const eo=[].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(cs),u32(offset),u16(0));
   return new Blob([...parts,...central,new Uint8Array(eo)],{type:'application/zip'});
 }
 document.getElementById('jumpBtn').onclick=()=>{const n=parseInt(document.getElementById('jumpTo').value,10); if(n>=1&&n<=WORDS.length){idx=n-1;render();}};
+const tsv=s=>String(s==null?'':s).replace(/[\t\n\r]/g,' ');
 async function doExport(onlyNew){
   const info=document.getElementById('exportInfo'); info.textContent="Packing…";
   const exported=new Set((await getMeta('exported'))||[]);
-  const files=[]; const man=["key\tword\tenglish\tfile"]; const shipped=[];
+  const files=[]; const man=["key\tdest\tlevel\tstatus\tsaid\tenglish\tfile"]; const shipped=[];
   for(const w of WORDS){ if(onlyNew&&exported.has(w.key))continue; const b=await getClip(w.key); if(!b)continue; shipped.push(w.key);
     const ext=extFor(b.type), name=w.key+"."+ext;
     files.push({name, data:new Uint8Array(await b.arrayBuffer())});
-    man.push(w.key+"\t"+w.lt+"\t"+w.en+"\t"+name); }
+    man.push([w.key,w.dest,w.level,w.status,(await getMeta('said:'+w.key))||w.say,w.en,name].map(tsv).join("\t")); }
+  if(!onlyNew){
+    // everything else in this browser: clips for cards no longer on the list, and set-aside stale clips
+    for(const k of await storeKeys('clips')){ if(k in POS) continue; const b=await getClip(k); if(!b) continue;
+      const name="off_list/"+k+"."+extFor(b.type); files.push({name,data:new Uint8Array(await b.arrayBuffer())});
+      man.push([k,'','','off-list',(await getMeta('said:'+k))||'','',name].map(tsv).join("\t")); }
+    for(const mk of await storeKeys('meta')){ if(typeof mk!=='string'||!mk.startsWith('superseded:')) continue;
+      const v=await getMeta(mk); if(!v||!v.blob) continue; const p=mk.split(':');
+      const name="superseded/"+p[1]+"."+p[2]+"."+extFor(v.blob.type); files.push({name,data:new Uint8Array(await v.blob.arrayBuffer())});
+      man.push([p[1],'','','superseded',v.said||'','',name].map(tsv).join("\t")); }
+  }
   if(!files.length){info.textContent=onlyNew?"Nothing new since the last export.":"Nothing recorded yet.";return;}
-  files.push({name:"manifest.tsv", data:new TextEncoder().encode(man.join("\n"))});
+  files.push({name:"manifest.tsv", data:new TextEncoder().encode(man.join("\n")+"\n")});
   const stamp=new Date().toISOString().replace(/[:T]/g,'-').slice(0,16);
   const blob=makeZip(files), url=URL.createObjectURL(blob), a=document.createElement('a');
   a.href=url; a.download="lt_"+SHEET_ID.split('_')[0]+"_takes_"+stamp+(onlyNew?"_batch":"_all")+".zip"; a.click();
@@ -366,11 +562,47 @@ document.getElementById('exportNew').onclick=()=>doExport(true);
 </script>
 </body></html>"""
 
-import hashlib
-sheet_id = (LEVEL or "all") + ("_new" if ONLY_NEW else "") + "_" + \
-    hashlib.md5(",".join(w["key"] for w in WORDS).encode()).hexdigest()[:8]
-html = (TEMPLATE.replace("__WORDS__", json.dumps(WORDS, ensure_ascii=False))
-                .replace("__SHEET_ID__", sheet_id))
-out = ("recorder_" + (LEVEL or "all") + ("_new" if ONLY_NEW else "") + ".html")
-open(out, "w", encoding="utf-8").write(html)
-print(f"wrote {out} — {len(WORDS)} words, {len(html)//1024} KB")
+
+def write_html(words, sheet_id, out):
+    html = (TEMPLATE.replace("__WORDS__", json.dumps(words, ensure_ascii=False))
+                    .replace("__SHEET_ID__", sheet_id))
+    open(out, "w", encoding="utf-8").write(html)
+    return len(html)
+
+
+def main(argv):
+    level = argv[1] if len(argv) > 1 else ""
+    only_new = len(argv) > 2 and argv[2].lower() == "new"
+    if level.upper() == "A2":
+        takes, stats, warnings = deck_takes()
+        write_list(takes)
+        fields = ("key", "number", "lt", "en", "pron", "cat", "kind", "level",
+                  "status", "was", "say", "script", "dest", "n")
+        words = []
+        for t in takes:
+            w = {k: t[k] for k in fields}
+            if t["legacy_stale"]:
+                w["ls"] = 1          # a clip from the 2026-10-12 sheet is stale for this take
+            words.append(w)
+        size = write_html(words, DECK_SHEET_ID, "recorder_A2.html")
+        print(f"wrote recorder_A2.html ({size // 1024} KB) + {LIST_OUT}: {len(takes)} takes, "
+              f"IndexedDB lt_recorder_{DECK_SHEET_ID}")
+        for lv in ("A1", "A2"):
+            parts = {s: n for (l, s), n in stats.items() if l == lv}
+            print(f"  {lv}: {sum(parts.values())}  " + ", ".join(f"{s} {n}" for s, n in sorted(parts.items())))
+        print(f"  kinds: word {sum(1 for t in takes if t['kind'] == 'word')}, "
+              f"example sentence {sum(1 for t in takes if t['key'].endswith('_s'))}, "
+              f"sentence card {sum(1 for t in takes if t['key'].startswith('S-'))}")
+        for w in warnings:
+            print("  warning:", w)
+        return
+    words = legacy_words(level, only_new)
+    sheet_id = (level or "all") + ("_new" if only_new else "") + "_" + \
+        hashlib.md5(",".join(w["key"] for w in words).encode()).hexdigest()[:8]
+    out = "recorder_" + (level or "all") + ("_new" if only_new else "") + ".html"
+    size = write_html(words, sheet_id, out)
+    print(f"wrote {out} — {len(words)} words, {size // 1024} KB")
+
+
+if __name__ == "__main__":
+    main(sys.argv)

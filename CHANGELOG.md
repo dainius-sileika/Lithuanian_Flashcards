@@ -9,6 +9,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); the project uses
 
 ## [Unreleased] — planning
 
+### Fixed (2026-10-19 — recorder: the generator is the source of the take list)
+- **`build_recorder.py A2`** now derives the sheet from what `build_apkg.py` emits (same lists, image /
+  cloze inclusion and audio paths) instead of the A2 list alone, and drops every take that already
+  exists: **2,849 takes** (A1 954 = 920 new, 18 replace the synthetic voice, 16 re-takes; A2 1,895 =
+  1,820 new, 75 replace the synthetic voice), A1 subdeck first, then study order. Re-takes are detected,
+  not hand-listed: `audio_source.tsv` gains `file` and `said` (what each take actually says, backfilled
+  from the commits that brought the July takes in) and a take is listed again when its words no longer
+  match the card, accent-blind. Reconciliation with the hand-edited list (2,692) and the 2026-10-12
+  generator (2,893): `a2_build/audio/reconciliation_2026-10-19.csv`.
+- **150 July owner takes of A2-list cards** sat in `audio/` where the build never looked (it reads A2-list
+  audio from `audio_a2/`); moved there (`git mv`), so they now ship. Six takes whose words are now wrong
+  were withdrawn to `<dir>/_superseded/` (265 lūpa, 249 gen. *mobilusis telefono*, A2-0033 *rugsėjio*,
+  A2-0104 *kvitas*, A2-0902/0903 *…, prašau*): those cards are silent until re-recorded.
+- **`recorder_A2.html`**: the IndexedDB name is pinned (`lt_recorder_A2_afb2ebe2`, the 2026-10-12 sheet's),
+  so regenerating never hides stored takes; clips are stamped with the words they were recorded for and a
+  stale clip is set aside, not deleted; "Export new" re-sends a re-recorded take; "Export all" includes
+  off-list and set-aside clips; level and re-take badges; the manifest carries `dest` and `said`.
+  Owner's page: `a2_build/RECORDING_GUIDE.md`; ZIPs go to `a2_build/audio/inbox/`.
+
 ### Added (2026-10-19 — spec versioning, style lock, golden set)
 - **The design spec is versioned.** `docs/DESIGN_SPEC_CURRENT.md` carries `**Spec version 3.0.0**`
   (major = look or card format, minor = a rule added, patch = wording) and a changelog section;
