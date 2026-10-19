@@ -76,3 +76,8 @@ on 0653, 0658, 1260, 1282, 1297 is the card_text each declares.
 Ledger note: `out_deck_f62/gen.py` keeps its own local ledger (`~/f62_work`) while `edit_inset.py` uses `~/a2_work/f62_*`;
 the two had drifted (each copy-back dropped the other's rows). They were merged (superset, nothing deleted) and both local
 copies now match the folder.
+
+## 4. Data decisions (no change needed)
+
+Section labels: owner chose "pagalbiniai + sąvokos (as applied)" — already in `card_frame.SECTIONS`. Release: "Release now,
+audio later" — recorded in `A1_WRAPUP.md` D3 (no action yet).
