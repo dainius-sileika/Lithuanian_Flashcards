@@ -1,8 +1,8 @@
-key: A2-0044
+key: 0079_trys
 ledger: out_deck_a2/ledger.csv
 backend: openai/gpt-image-2.5-sunburst
 size: 1536x1024
-file: A2-0044.png
+file: 0079_trys.png
 spec_version: (pre-3.0.0 render; spec 3.0.0 describes it)
 style_hash: (pre-lock render)
 

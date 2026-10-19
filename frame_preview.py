@@ -5,7 +5,7 @@ Renders the package's own note types (templates + CSS) and media with a small Mu
 subset ({{F}}, {{text:F}}, {{#F}}/{{^F}}, {{cloze:Text}}, {{Tags}}), so what is shown is
 what Anki gets, minus Anki's own chrome. Front and back of every chosen note.
 
-    python3 frame_preview.py PACKAGE.apkg [--keys 005_karve,A2-0001,...] [--out build_reports/frame_preview]
+    python3 frame_preview.py PACKAGE.apkg [--keys 1035_karve,0318_laikas,...] [--out build_reports/frame_preview]
 
 Writes <out>/html/ (pages + copies of the media they use; git-ignored) and
 <out>/phone_<key>.jpg (390 px wide, front over back) and <out>/desktop_all.jpg (1280 px,
@@ -25,8 +25,8 @@ Review switches (preview only; the package and the default build are untouched):
 import argparse, html, json, os, re, shutil, sqlite3, tempfile, urllib.request, zipfile
 import card_frame
 
-DEFAULT_KEYS = ["A2-0654", "A2-0035", "183_sriuba", "375_sakyti", "005_karve", "002_kate",
-                "531_batonas", "A2-1772", "A2-0270", "A2-0928", "A2-0888", "A2-0907", "A2-0001", "A2-1486", "A2-1741", "S-0001"]
+DEFAULT_KEYS = ["A2-0654", "0861_lapkritis", "0033_sriuba", "0094_sakyti", "1035_karve", "0030_kate",
+                "0007_batonas", "0609_litas", "0155_saskaita", "0855_kiek_kainuoja_bilietas", "0187_i_sveikata", "0647_iskvieskite_gydytoja", "0318_laikas", "1500_aikstele", "1909_smulkus", "0102_vyras_geria_kava"]
 CHROMIUM = os.environ.get("PW_CHROMIUM",
                           "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell")
 

@@ -1,8 +1,8 @@
-key: A2-0906
+key: 0247_man_reikia_pagalbos
 ledger: out_phrases_v3/ledger.csv
 backend: openai/gpt-image-2.5-sunburst
 size: 1536x1024
-file: A2-0906.png
+file: 0247_man_reikia_pagalbos.png
 spec_version: (pre-3.0.0 render; spec 3.0.0 describes it)
 style_hash: (pre-lock render)
 

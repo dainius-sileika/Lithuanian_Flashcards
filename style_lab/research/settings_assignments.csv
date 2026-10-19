@@ -1,256 +1,256 @@
 key,location_id,mode,why
-001_suo,,,animal shown alone; a place would compete
-002_kate,,,animal shown alone; a place would compete
-003_zuvis,aukstaitija_lakes,inset,carp = lake fish; small inset of a Labanoras lake with reeds
-004_paukstis,,,animal shown alone; a place would compete
-005_karve,suvalkija_farm,inset,dairy region; inset of flat fields and a tile-roofed farm
-006_kiaule,zemaitija_village,inset,pig yard at a Žemaitija troba; inset only
-007_pele,,,animal shown alone; a place would compete
-008_arklys,rumsiskes_farmstead,inset,working horse by a log granary and wattle fence; inset
-009_sparnas,,,animal shown alone; a place would compete
-011_traukinys,kaunas_railway_station,exterior,"train at the 1953 Kaunas station, clock tower behind, no emblems"
-012_lektuvas,,,object/part shown alone
-013_automobilis,kaunas_modernism,exterior,small 1970s saloon parked before a pale rounded-corner interwar facade
-014_sunkvezimis,nemunas_valley,exterior,flatbed truck on the riverside road under high wooded banks
-015_dviratis,siauliai,exterior,bicycle town (Vairas works); bicycle on the long straight street under the tall white spire
-016_autobusas,vilnius_lazdynai,exterior,city bus serving a 1970s panel district; buses ran there in 1981
-017_valtis,trakai_castle,exterior,rowing boat on Galvė with the red-brick island castle behind (famous silhouette)
-018_laivas,klaipeda_port_ferry,exterior,cargo ship hull and cranes across the strait
-019_padanga,,,object/part shown alone
-020_benzinas,,,object/part shown alone
-021_variklis,,,object/part shown alone
-022_bilietas,,,object/part shown alone
-024_miestas,,,hand_staged: already carries its own Lithuanian detail
-025_namas,,,hand_staged: already carries its own Lithuanian detail
-026_butas,vilnius_lazdynai,exterior,the block itself is a Lazdynai-type panel building; pines on the slope give the setting
-027_gatve,kaunas_laisves_aleja,exterior,"straight street with lamps = lime-lined boulevard; the alley is the street, not a rival"
-028_kelias,suvalkija_farm,exterior,"country road through flat fields, tree-ringed farmstead at the side"
-029_oro_uostas,,,generic by rule or no fitting place in bank
-030_stotis,panevezys,exterior,small station with platform on the narrow-gauge line; distinct from the Kaunas train card
-031_tiltas,vilnius_neris_embankment,exterior,"river bridge over the Neris; church towers one side, pale blocks the other; no bridge statues"
-032_viesbutis,palanga,exterior,"resort hotel among pines near the sea; pier far off, doorman and guest in front"
-033_restoranas,vilnius_old_town,interior,small Old Town restaurant; cobbled lane and tower through the window
-034_ukis,zemaitija_village,exterior,"the farmstead drawn as a Žemaitija troba with half-hipped roof, pond, trees"
-035_teismas,kaunas_justice_palace,interior,2026-10-18 historical: REPLACE (was generic). Courtroom inside the Palace of Justice; the arcaded front in one inset. A1 note starts 'Main picture:' so prepare_settings skips the bank line — the place is also written into the staging (staging_rows.csv).
-036_mokykla,vilnius_zverynas,exterior,"schoolhouse on a street of wooden villas and limes; the villas are surroundings, not a rival building"
-037_biuras,kaunas_modernism,interior,office room; modernist facade across the street through the window
-038_kambarys,,,generic by rule or no fitting place in bank
-039_miestelis,,,generic by rule or no fitting place in bank
-040_universitetas,vilnius_old_town,exterior,university building with portico; baroque towers and courtyard arch behind
-041_klubas,,,hand_staged: already carries its own Lithuanian detail
-042_baras,klaipeda_old_town,interior,small port bar; timber-framed warehouse through the window
-043_parkas,vilnius_vingis,exterior,park paths and benches under tall pines on the river terrace; stage shell far off
-044_stovykla,aukstaitija_lakes,exterior,tents on a lake shore between pine hills
-045_parduotuve,vilnius_old_town,exterior,small shopfront in a curving cobbled lane
-046_teatras,kaunas_laisves_aleja,exterior,columned theatre facade on the lime boulevard (the 1892 theatre stands there); theatre is the subject
-047_biblioteka,kaunas_modernism,exterior,library as a pale 1930s building with ribbon windows
-048_ligonine,kaunas_clinics,exterior,2026-10-18 historical: SWAP from vilnius_antakalnis (1970s Soviet block) to the 1939 Kaunas Clinics; ambulance at the canopied entrance. Approved 2026-10-17.
-049_baznycia,,,hand_staged: already carries its own Lithuanian detail
-050_turgus,vilnius_kalvariju_market,exterior,"open stalls under a long low roof, headscarved sellers"
-053_zeme,,,close-up or cosmic subject; no earthly place fits
-054_kosmosas,,,generic by rule or no fitting place in bank
-055_bankas,kaunas_bank_of_lithuania,interior,2026-10-18 historical: REFINE (was kaunas_modernism exterior): the hall under the glass skylight is in the staging; the columned front is the inset.
-080_sunus,,,figure card with arrows; a place would compete with the subject
-081_dukra,,,figure card with arrows; a place would compete with the subject
-082_motina,,,figure card with arrows; a place would compete with the subject
-083_tevas,kaunas_funicular,exterior,"father and child at the funicular platform; small boxy car behind, no text"
-084_tevai,,,figure card with arrows; a place would compete with the subject
-085_kudikis,,,figure card with arrows; a place would compete with the subject
-086_vyras,,,figure card with arrows; a place would compete with the subject
-087_moteris,,,figure card with arrows; a place would compete with the subject
-088_brolis,,,figure card with arrows; a place would compete with the subject
-089_sesuo,,,figure card with arrows; a place would compete with the subject
-090_seima,,,hand_staged: already carries its own Lithuanian detail
-091_senelis,aukstaitija_village,exterior,grandfather and child on a bench before gable-end log houses
-092_senele,,,hand_staged: already carries its own Lithuanian detail
-093_vyras,,,figure card with arrows; a place would compete with the subject
-094_zmona,,,figure card with arrows; a place would compete with the subject
-095_karalius,,,figure card with arrows; a place would compete with the subject
-096_karaliene,,,figure card with arrows; a place would compete with the subject
-097_prezidentas,,,figure card with arrows; a place would compete with the subject
-098_kaimynas,suvalkija_farm,exterior,neighbours over a garden fence between tree-ringed farmsteads
-099_berniukas,,,figure card with arrows; a place would compete with the subject
-100_mergaite,,,figure card with arrows; a place would compete with the subject
-102_suauges,,,figure card with arrows; a place would compete with the subject
-103_zmogus,,,figure card with arrows; a place would compete with the subject
-104_draugas,kaunas_old_town_confluence,exterior,"two friends on the grassy river point, castle tower and town-hall spire behind"
-105_auka,,,figure card with arrows; a place would compete with the subject
-106_zaidejas,vilnius_vingis,exterior,"players on the park sports ground (stadium 1954), pines behind"
-107_sirgalius,,,figure card with arrows; a place would compete with the subject
-108_minia,,,hand_staged: already carries its own Lithuanian detail
-110_mokytojas,,,hand_staged: already carries its own Lithuanian detail
-111_studentas,vilnius_old_town,interior,lecture hall; baroque tower through the tall window
-112_advokatas,,,figure card with arrows; a place would compete with the subject
-113_gydytojas,,,hand_staged: already carries its own Lithuanian detail
-114_pacientas,druskininkai,interior,two beds in a sanatorium ward; pines and the Nemunas bank through the window
-115_padavejas,,,figure card with arrows; a place would compete with the subject
-116_sekretorius,,,figure card with arrows; a place would compete with the subject
-117_kunigas,vilnius_cathedral,exterior,priest on the cathedral steps; white colonnade with its three pediment statues (counterfactual marker)
-118_policininkas,panevezys,exterior,officers directing traffic on a flat small-city street
-119_policija,,,figure card with arrows; a place would compete with the subject
-120_kariuomene,,,figure card with arrows; a place would compete with the subject
-121_kareivis,,,figure card with arrows; a place would compete with the subject
-122_menininkas,vilnius_uzupis,exterior,"artists at easels above the Vilnia, crooked houses on the slope"
-123_autorius,,,figure card with arrows; a place would compete with the subject
-124_vadovas,,,figure card with arrows; a place would compete with the subject
-125_zurnalistas,vilnius_tv_tower,exterior,reporters with microphone at the foot of the new 1980 tower
-126_aktorius,,,figure card with arrows; a place would compete with the subject
-137_vestuves,,,hand_staged: already carries its own Lithuanian detail
-147_karas,,,hand_staged: already carries its own Lithuanian detail
-180_kiausinis,,,food/utensil shown alone
-181_suris,,,food/utensil shown alone
-182_duona,,,hand_staged: already carries its own Lithuanian detail
-183_sriuba,,,food/utensil shown alone
-184_tortas,,,food/utensil shown alone
-185_vistiena,,,food/utensil shown alone
-186_kiauliena,,,food/utensil shown alone
-187_jautiena,,,food/utensil shown alone
-188_obuolys,zemaitija_village,inset,apple with an inset of a farm orchard behind a troba
-189_bananas,,,food/utensil shown alone
-190_apelsinas,,,food/utensil shown alone
-191_citrina,,,food/utensil shown alone
-192_kukuruzai,,,food/utensil shown alone
-193_ryziai,,,food/utensil shown alone
-194_aliejus,,,food/utensil shown alone
-195_tepalas,,,food/utensil shown alone
-196_sekla,,,food/utensil shown alone
-197_peilis,,,food/utensil shown alone
-198_saukstas,,,food/utensil shown alone
-199_sakute,,,food/utensil shown alone
-200_lekste,,,food/utensil shown alone
-201_puodelis,,,food/utensil shown alone
-202_pusryciai,vilnius_zverynas,interior,breakfast table; morning sun through a wooden villa window with limes
-203_pietus,klaipeda_port_ferry,interior,canteen lunch; cranes and a ship hull through the window at noon
-204_vakariene,,,food/utensil shown alone
-205_cukrus,,,food/utensil shown alone
-206_druska,,,food/utensil shown alone
-207_butelis,,,food/utensil shown alone
-212_sapnas,,,abstract attribute
-280_kraujas,,,body-focused
-289_jura,palanga,exterior,sea and shore with the long wooden pier (1882/1932 version) running out
-290_vandenynas,,,close-up or cosmic subject; no earthly place fits
-291_upe,neris_valley,exterior,river curving through a deep wooded valley with a sandy bluff
-292_kalnas,,,close-up or cosmic subject; no earthly place fits
-293_lietus,vilnius_old_town,exterior,"rain on wet cobbles, figure with umbrella, towers dim in the rain"
-294_sniegas,aukstaitija_village,exterior,snow on a street village of gable-end log houses
-295_medis,,,close-up or cosmic subject; no earthly place fits
-296_saule,suvalkija_farm,exterior,sun with rays above flat fields and a tree-ringed farmstead
-297_menulis,,,close-up or cosmic subject; no earthly place fits
-299_zeme,,,close-up or cosmic subject; no earthly place fits
-300_miskas,dzukija_pine_forest,exterior,forest edge = straight red pines on pale sand and lichen
-301_dangus,cepkeliai_bog,exterior,wide sky over the flattest horizon in the bank; sparse stunted pines keep it quiet
-302_augalas,,,close-up or cosmic subject; no earthly place fits
-303_vejas,nida_curonian_spit,exterior,"wind: bent pines, blown scarf, a carved weathervane (vėtrungė) spinning on a fisherman house"
-304_zeme,,,close-up or cosmic subject; no earthly place fits
-305_gele,,,close-up or cosmic subject; no earthly place fits
-306_slenis,nemunas_valley,exterior,river valley between high wooded banks
-307_saknis,,,close-up or cosmic subject; no earthly place fits
-308_ezeras,aukstaitija_lakes,exterior,"calm lake between pine hills, reeds, wooden boat"
-309_zvaigzde,,,close-up or cosmic subject; no earthly place fits
-310_zole,,,close-up or cosmic subject; no earthly place fits
-311_lapas,,,close-up or cosmic subject; no earthly place fits
-313_smelis,nida_curonian_spit,exterior,"sand pouring, the great bare dune behind"
-314_papludimys,palanga,exterior,beach with marram dunes; the pier small in the distance (subject already names Palanga/Nida)
-315_banga,,,close-up or cosmic subject; no earthly place fits
-316_ugnis,,,close-up or cosmic subject; no earthly place fits
-317_ledas,,,close-up or cosmic subject; no earthly place fits
-318_sala,,,"plain lake island; the Trakai castle line made the castle the subject (owner 2026-10-12, fixed 2026-10-17)"
-319_kalva,kernave,exterior,low grassy hill = one of the flat-topped mounds above the Neris
-363_dirbti,vilnius_neris_embankment,exterior,"road repair on the embankment road, river and bridge behind"
-364_zaisti,vilnius_lazdynai,exterior,children with a ball in a panel-block courtyard with simple play equipment
-365_groti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-366_eiti,,,hand_staged: already carries its own Lithuanian detail
-367_begti,siauliai,exterior,"runner on the long straight pedestrian street, spire behind"
-368_vairuoti,dzukija_pine_forest,exterior,truck cab from the side on a sandy forest road between pines
-369_skristi,cepkeliai_bog,exterior,"bird in level flight over the open bog, the lowest horizon in the bank"
-370_plaukti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-371_eiti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-372_sustoti,panevezys,exterior,walker halted at a lowered barrier of the narrow-gauge level crossing
-373_sekti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-375_sakyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-376_valgyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-377_gerti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-378_zudyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-380_sypsotis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-381_juoktis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-382_verkti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-383_pirkti,,,hand_staged: already carries its own Lithuanian detail
-384_moketi,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-385_parduoti,trakai_karaim_street,interior,small shop counter from the clerk side; three-window gables through the window
-386_sauti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-388_sokti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-389_uostyti,vilnius_kalvariju_market,exterior,flower stall at the market
-390_girdeti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-391_klausytis,dzukija_village,interior,listening to a tabletop radio by a log wall; two-colour shutters at the window
-392_ragauti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-393_liesti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-394_matyti,aukstaitija_village,exterior,open field with a distant water tower beside the village line
-395_ziureti,vilnius_tv_tower,interior,watching television in a flat; the tower with its disc visible through the window
-396_buciuoti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-397_degti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-398_tirpti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-399_kasti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-400_sprogti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-401_sedeti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-402_stoveti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-404_praeiti,kaunas_laisves_aleja,exterior,walking past a kiosk on the lime boulevard
-405_pjauti,rumsiskes_farmstead,exterior,sawing on a sawhorse in a farm yard by the granary
-406_mustis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-407_guleti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-408_sokti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-409_miegoti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-410_pabusti,trakai_karaim_street,interior,waking in a small wooden house; morning sun through the three gable windows
-411_dainuoti,vilnius_vingis,exterior,"small choir on the great band-shell stage, pines behind; tricolour only"
-412_skaiciuoti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-413_tuoktis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-417_maisyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-418_lenkti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-419_plauti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-420_gaminti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-421_atidaryti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-422_uzdaryti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-423_rasyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-424_skambinti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-425_sukti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-426_statyti,zemaitija_village,exterior,raising a timber house frame beside an old troba
-428_augti,dzukija_village,exterior,"garden bed before a log pirkia, pines behind"
-429_piesti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-430_maitinti,rumsiskes_farmstead,exterior,scattering grain to chickens in a farm yard with wattle fence
-431_gaudyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-432_mesti,klaipeda_port_ferry,exterior,"throwing sacks in a dockside loading yard, cranes behind"
-433_valyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-434_rasti,vilnius_zverynas,exterior,hide-and-seek in a wooden-villa garden
-435_kristi,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-436_stumti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-437_traukti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-438_nesti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-439_lauzyti,dzukija_village,exterior,firewood yard at a forest village
-440_deveti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-441_kabinti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-442_purtyti,suvalkija_farm,exterior,shaking an apple tree in the orchard rows of a farmstead
-443_pasirasyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-444_musti,vilnius_lazdynai,exterior,beating a rug on the courtyard rack between panel blocks
-445_kelti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-464_geras,,,abstract attribute
-465_blogas,,,abstract attribute
-506_tamsus,,,abstract attribute
-507_sviesus,,,abstract attribute
-530_lydyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
-A2-0645,kaunas_town_hall_square,exterior,2026-10-18 historical: NEW: the square itself is the subject; the tiered white tower in the middle.
-A2-0649,kaunas_central_post_office,interior,2026-10-18 historical: NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset. Round 4: exterior inset dropped 2026-10-19 (owner); inset 1 is a post box.
-A2-0652,kaunas_war_museum,interior,2026-10-18 historical: NEW: the hall with the orange monoplane hanging overhead and the amber cases in the staging; the tower and garden in one inset.
-A2-0653,kaunas_romuva_cinema,inset,2026-10-18 historical: NEW: inset only — the cinema front with the blank fin; the auditorium stays the main picture.
-A2-0656,kaunas_sports_hall,exterior,"2026-10-18 historical: NEW: the 1939 hall interior is the whole scene (prompt_phrase is an interior; mode 'exterior' only means the plain 'Setting: Lithuania, 1981, …' line)."
-A2-0658,vilnius_rasos_cemetery,exterior,2026-10-18 historical: NEW: Rasos hillside.
-A2-1282,kaunas_konrado_cafe,exterior,"2026-10-18 historical: NEW: interior prompt_phrase (mirrors, piano, plaster girl in the niche, cake case); plain setting line."
-A2-1293,vilnius_philharmonic,exterior,2026-10-18 historical: NEW: the white-and-gilt hall; the corner building with the rounded bay in one inset (staging).
-A2-0812,vilnius_philharmonic,exterior,"2026-10-18 historical: NEW: concert in the same hall; rotate the viewpoint (from the balcony) so 0812, 1293 and 1747 are not one picture."
-A2-1747,vilnius_philharmonic,exterior,"2026-10-18 historical: NEW: orchestra on the same stage, seen from the stalls' front row."
-A2-1297,kaunas_sports_hall,exterior,2026-10-18 historical: NEW: basketball under the four arches; players in plain white kit with a tricolour band (kit colours unverified — executor checks a 1939 team photograph first).
-A2-1260,kaunas_state_stadium,exterior,2026-10-18 historical: NEW: football on the State Stadium pitch.
-A2-1360,kaunas_laisves_aleja,interior,"2026-10-18 historical: NEW: performance inside the 1892 Kaunas theatre (red velvet, tiered boxes in the staging); the boulevard outside glimpsed."
-A2-1769,kaunas_war_museum,exterior,"2026-10-18 historical: SWAP (approved): the monument is the Freedom Statue in the museum garden, the bell tower behind; the Soviet-era seated poet (Jokūbonis 1977) is dropped."
-138_komanda,kaunas_sports_hall,exterior,"2026-10-19 historical A5: OPTIONAL, with the likeness plan: the team becomes the 1939 basketball champions lined up under the arches (likeness_cards.csv). If the owner keeps the football team, drop this row."
-A2-0667,kaunas_bank_of_lithuania,interior,2026-10-19 historical A5: OPTIONAL: a branch hall; the Bank's columned front glimpsed. Low priority.
-A2-1357,kaunas_war_museum,inset,2026-10-19 historical A5: NEW (optional): one inset shows the winged Freedom figure on its plinth as the example of a sculpture; the main picture keeps the sculptor at work.
-A2-0085,kaunas_railway_station,interior,"2026-10-18 historical: NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed. Reinstated 2026-10-19 (round 5, owner: 'try the kaunas train station again')."
+0027_suo,,,animal shown alone; a place would compete
+0030_kate,,,animal shown alone; a place would compete
+0456_zuvis,aukstaitija_lakes,inset,carp = lake fish; small inset of a Labanoras lake with reeds
+0534_paukstis,,,animal shown alone; a place would compete
+1035_karve,suvalkija_farm,inset,dairy region; inset of flat fields and a tile-roofed farm
+0986_kiaule,zemaitija_village,inset,pig yard at a Žemaitija troba; inset only
+1049_pele,,,animal shown alone; a place would compete
+0953_arklys,rumsiskes_farmstead,inset,working horse by a log granary and wattle fence; inset
+2271_sparnas,,,animal shown alone; a place would compete
+0451_traukinys,kaunas_railway_station,exterior,"train at the 1953 Kaunas station, clock tower behind, no emblems"
+0335_lektuvas,,,object/part shown alone
+0190_automobilis,kaunas_modernism,exterior,small 1970s saloon parked before a pale rounded-corner interwar facade
+0905_sunkvezimis,nemunas_valley,exterior,flatbed truck on the riverside road under high wooded banks
+0554_dviratis,siauliai,exterior,bicycle town (Vairas works); bicycle on the long straight street under the tall white spire
+0024_autobusas,vilnius_lazdynai,exterior,city bus serving a 1970s panel district; buses ran there in 1981
+0955_valtis,trakai_castle,exterior,rowing boat on Galvė with the red-brick island castle behind (famous silhouette)
+0517_laivas,klaipeda_port_ferry,exterior,cargo ship hull and cranes across the strait
+1173_padanga,,,object/part shown alone
+1176_benzinas,,,object/part shown alone
+1096_variklis,,,object/part shown alone
+0097_bilietas,,,object/part shown alone
+0022_miestas,,,hand_staged: already carries its own Lithuanian detail
+0013_namas,,,hand_staged: already carries its own Lithuanian detail
+0332_butas,vilnius_lazdynai,exterior,the block itself is a Lazdynai-type panel building; pines on the slope give the setting
+0175_gatve,kaunas_laisves_aleja,exterior,"straight street with lamps = lime-lined boulevard; the alley is the street, not a rival"
+0197_kelias,suvalkija_farm,exterior,"country road through flat fields, tree-ringed farmstead at the side"
+1111_oro_uostas,,,generic by rule or no fitting place in bank
+0074_stotis,panevezys,exterior,small station with platform on the narrow-gauge line; distinct from the Kaunas train card
+0071_tiltas,vilnius_neris_embankment,exterior,"river bridge over the Neris; church towers one side, pale blocks the other; no bridge statues"
+0511_viesbutis,palanga,exterior,"resort hotel among pines near the sea; pier far off, doorman and guest in front"
+0421_restoranas,vilnius_old_town,interior,small Old Town restaurant; cobbled lane and tower through the window
+1074_ukis,zemaitija_village,exterior,"the farmstead drawn as a Žemaitija troba with half-hipped roof, pond, trees"
+0880_teismas,kaunas_justice_palace,interior,2026-10-18 historical: REPLACE (was generic). Courtroom inside the Palace of Justice; the arcaded front in one inset. A1 note starts 'Main picture:' so prepare_settings skips the bank line — the place is also written into the staging (staging_rows.csv).
+0130_mokykla,vilnius_zverynas,exterior,"schoolhouse on a street of wooden villas and limes; the villas are surroundings, not a rival building"
+0862_biuras,kaunas_modernism,interior,office room; modernist facade across the street through the window
+0310_kambarys,,,generic by rule or no fitting place in bank
+0600_miestelis,,,generic by rule or no fitting place in bank
+1093_universitetas,vilnius_old_town,exterior,university building with portico; baroque towers and courtyard arch behind
+0980_klubas,,,hand_staged: already carries its own Lithuanian detail
+0495_baras,klaipeda_old_town,interior,small port bar; timber-framed warehouse through the window
+0465_parkas,vilnius_vingis,exterior,park paths and benches under tall pines on the river terrace; stage shell far off
+1164_stovykla,aukstaitija_lakes,exterior,tents on a lake shore between pine hills
+0015_parduotuve,vilnius_old_town,exterior,small shopfront in a curving cobbled lane
+0828_teatras,kaunas_laisves_aleja,exterior,columned theatre facade on the lime boulevard (the 1892 theatre stands there); theatre is the subject
+0969_biblioteka,kaunas_modernism,exterior,library as a pale 1930s building with ribbon windows
+0049_ligonine,kaunas_clinics,exterior,2026-10-18 historical: SWAP from vilnius_antakalnis (1970s Soviet block) to the 1939 Kaunas Clinics; ambulance at the canopied entrance. Approved 2026-10-17.
+0134_baznycia,,,hand_staged: already carries its own Lithuanian detail
+0730_turgus,vilnius_kalvariju_market,exterior,"open stalls under a long low roof, headscarved sellers"
+0454_zeme,,,close-up or cosmic subject; no earthly place fits
+2287_kosmosas,,,generic by rule or no fitting place in bank
+0287_bankas,kaunas_bank_of_lithuania,interior,2026-10-18 historical: REFINE (was kaunas_modernism exterior): the hall under the glass skylight is in the staging; the columned front is the inset.
+0311_sunus,,,figure card with arrows; a place would compete with the subject
+0312_dukra,,,figure card with arrows; a place would compete with the subject
+0400_motina,,,figure card with arrows; a place would compete with the subject
+0221_tevas,kaunas_funicular,exterior,"father and child at the funicular platform; small boxy car behind, no text"
+0257_tevai,,,figure card with arrows; a place would compete with the subject
+0611_kudikis,,,figure card with arrows; a place would compete with the subject
+0002_vyras,,,figure card with arrows; a place would compete with the subject
+0004_moteris,,,figure card with arrows; a place would compete with the subject
+0050_brolis,,,figure card with arrows; a place would compete with the subject
+0051_sesuo,,,figure card with arrows; a place would compete with the subject
+0020_seima,,,hand_staged: already carries its own Lithuanian detail
+0522_senelis,aukstaitija_village,exterior,grandfather and child on a bench before gable-end log houses
+0523_senele,,,hand_staged: already carries its own Lithuanian detail
+0822_vyras,,,figure card with arrows; a place would compete with the subject
+0823_zmona,,,figure card with arrows; a place would compete with the subject
+1080_karalius,,,figure card with arrows; a place would compete with the subject
+1159_karaliene,,,figure card with arrows; a place would compete with the subject
+0964_prezidentas,,,figure card with arrows; a place would compete with the subject
+0060_kaimynas,suvalkija_farm,exterior,neighbours over a garden fence between tree-ringed farmsteads
+0430_berniukas,,,figure card with arrows; a place would compete with the subject
+0367_mergaite,,,figure card with arrows; a place would compete with the subject
+1144_suauges,,,figure card with arrows; a place would compete with the subject
+0001_zmogus,,,figure card with arrows; a place would compete with the subject
+0016_draugas,kaunas_old_town_confluence,exterior,"two friends on the grassy river point, castle tower and town-hall spire behind"
+1132_auka,,,figure card with arrows; a place would compete with the subject
+2256_zaidejas,vilnius_vingis,exterior,"players on the park sports ground (stadium 1954), pines behind"
+2348_sirgalius,,,figure card with arrows; a place would compete with the subject
+2286_minia,,,hand_staged: already carries its own Lithuanian detail
+0045_mokytojas,,,hand_staged: already carries its own Lithuanian detail
+0333_studentas,vilnius_old_town,interior,lecture hall; baroque tower through the tall window
+0692_advokatas,,,figure card with arrows; a place would compete with the subject
+0245_gydytojas,,,hand_staged: already carries its own Lithuanian detail
+0765_pacientas,druskininkai,interior,two beds in a sanatorium ward; pines and the Nemunas bank through the window
+0713_padavejas,,,figure card with arrows; a place would compete with the subject
+0997_sekretorius,,,figure card with arrows; a place would compete with the subject
+0978_kunigas,vilnius_cathedral,exterior,priest on the cathedral steps; white colonnade with its three pediment statues (counterfactual marker)
+0407_policininkas,panevezys,exterior,officers directing traffic on a flat small-city street
+0368_policija,,,figure card with arrows; a place would compete with the subject
+0808_kariuomene,,,figure card with arrows; a place would compete with the subject
+0777_kareivis,,,figure card with arrows; a place would compete with the subject
+1044_menininkas,vilnius_uzupis,exterior,"artists at easels above the Vilnia, crooked houses on the slope"
+0906_autorius,,,figure card with arrows; a place would compete with the subject
+0574_vadovas,,,figure card with arrows; a place would compete with the subject
+0857_zurnalistas,vilnius_tv_tower,exterior,reporters with microphone at the foot of the new 1980 tower
+0941_aktorius,,,figure card with arrows; a place would compete with the subject
+0850_vestuves,,,hand_staged: already carries its own Lithuanian detail
+1684_karas,,,hand_staged: already carries its own Lithuanian detail
+0452_kiausinis,,,food/utensil shown alone
+0520_suris,,,food/utensil shown alone
+0006_duona,,,hand_staged: already carries its own Lithuanian detail
+0033_sriuba,,,food/utensil shown alone
+0870_tortas,,,food/utensil shown alone
+0607_vistiena,,,food/utensil shown alone
+1115_kiauliena,,,food/utensil shown alone
+1071_jautiena,,,food/utensil shown alone
+0028_obuolys,zemaitija_village,inset,apple with an inset of a farm orchard behind a troba
+0990_bananas,,,food/utensil shown alone
+1125_apelsinas,,,food/utensil shown alone
+1152_citrina,,,food/utensil shown alone
+1168_kukuruzai,,,food/utensil shown alone
+1177_ryziai,,,food/utensil shown alone
+1097_aliejus,,,food/utensil shown alone
+1108_tepalas,,,food/utensil shown alone
+1026_sekla,,,food/utensil shown alone
+0489_peilis,,,food/utensil shown alone
+0882_saukstas,,,food/utensil shown alone
+0947_sakute,,,food/utensil shown alone
+0717_lekste,,,food/utensil shown alone
+0506_puodelis,,,food/utensil shown alone
+0586_pusryciai,vilnius_zverynas,interior,breakfast table; morning sun through a wooden villa window with limes
+0301_pietus,klaipeda_port_ferry,interior,canteen lunch; cranes and a ship hull through the window at noon
+0330_vakariene,,,food/utensil shown alone
+0243_cukrus,,,food/utensil shown alone
+0575_druska,,,food/utensil shown alone
+0464_butelis,,,food/utensil shown alone
+1617_sapnas,,,abstract attribute
+0712_kraujas,,,body-focused
+0254_jura,palanga,exterior,sea and shore with the long wooden pier (1882/1932 version) running out
+1119_vandenynas,,,close-up or cosmic subject; no earthly place fits
+0095_upe,neris_valley,exterior,river curving through a deep wooded valley with a sandy bluff
+0714_kalnas,,,close-up or cosmic subject; no earthly place fits
+0085_lietus,vilnius_old_town,exterior,"rain on wet cobbles, figure with umbrella, towers dim in the rain"
+0319_sniegas,aukstaitija_village,exterior,snow on a street village of gable-end log houses
+0341_medis,,,close-up or cosmic subject; no earthly place fits
+0324_saule,suvalkija_farm,exterior,sun with rays above flat fields and a tree-ringed farmstead
+0419_menulis,,,close-up or cosmic subject; no earthly place fits
+0667_zeme,,,close-up or cosmic subject; no earthly place fits
+0111_miskas,dzukija_pine_forest,exterior,forest edge = straight red pines on pale sand and lichen
+0376_dangus,cepkeliai_bog,exterior,wide sky over the flattest horizon in the bank; sparse stunted pines keep it quiet
+0835_augalas,,,close-up or cosmic subject; no earthly place fits
+0433_vejas,nida_curonian_spit,exterior,"wind: bent pines, blown scarf, a carved weathervane (vėtrungė) spinning on a fisherman house"
+0727_zeme,,,close-up or cosmic subject; no earthly place fits
+0064_gele,,,close-up or cosmic subject; no earthly place fits
+2229_slenis,nemunas_valley,exterior,river valley between high wooded banks
+2342_saknis,,,close-up or cosmic subject; no earthly place fits
+0496_ezeras,aukstaitija_lakes,exterior,"calm lake between pine hills, reeds, wooden boat"
+0279_zvaigzde,,,close-up or cosmic subject; no earthly place fits
+0551_zole,,,close-up or cosmic subject; no earthly place fits
+0785_lapas,,,close-up or cosmic subject; no earthly place fits
+0944_smelis,nida_curonian_spit,exterior,"sand pouring, the great bare dune behind"
+0883_papludimys,palanga,exterior,beach with marram dunes; the pier small in the distance (subject already names Palanga/Nida)
+2152_banga,,,close-up or cosmic subject; no earthly place fits
+0445_ugnis,,,close-up or cosmic subject; no earthly place fits
+0648_ledas,,,close-up or cosmic subject; no earthly place fits
+0994_sala,,,"plain lake island; the Trakai castle line made the castle the subject (owner 2026-10-12, fixed 2026-10-17)"
+2208_kalva,kernave,exterior,low grassy hill = one of the flat-topped mounds above the Neris
+0019_dirbti,vilnius_neris_embankment,exterior,"road repair on the embankment road, river and bridge behind"
+0256_zaisti,vilnius_lazdynai,exterior,children with a ball in a panel-block courtyard with simple play equipment
+0540_groti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0011_eiti,,,hand_staged: already carries its own Lithuanian detail
+0323_begti,siauliai,exterior,"runner on the long straight pedestrian street, spire behind"
+0484_vairuoti,dzukija_pine_forest,exterior,truck cab from the side on a sandy forest road between pines
+0467_skristi,cepkeliai_bog,exterior,"bird in level flight over the open bog, the lowest horizon in the bank"
+0519_plaukti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0298_eiti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0507_sustoti,panevezys,exterior,walker halted at a lowered barrier of the narrow-gauge level crossing
+1072_sekti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0094_sakyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0005_valgyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0008_gerti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1009_zudyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0608_sypsotis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0587_juoktis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0675_verkti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0044_pirkti,,,hand_staged: already carries its own Lithuanian detail
+0235_moketi,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0658_parduoti,trakai_karaim_street,interior,small shop counter from the clerk side; three-window gables through the window
+1021_sauti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0743_sokti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1051_uostyti,vilnius_kalvariju_market,exterior,flower stall at the market
+0070_girdeti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0989_klausytis,dzukija_village,interior,listening to a tabletop radio by a log wall; two-colour shutters at the window
+1167_ragauti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0942_liesti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0066_matyti,aukstaitija_village,exterior,open field with a distant water tower beside the village line
+0211_ziureti,vilnius_tv_tower,interior,watching television in a flat; the tower with its disc visible through the window
+0886_buciuoti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0967_degti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+2398_tirpti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1046_kasti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+2262_sprogti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0354_sedeti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0365_stoveti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0903_praeiti,kaunas_laisves_aleja,exterior,walking past a kiosk on the lime boulevard
+1034_pjauti,rumsiskes_farmstead,exterior,sawing on a sawhorse in a farm yard by the granary
+2338_mustis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0852_guleti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0442_sokti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0089_miegoti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0655_pabusti,trakai_karaim_street,interior,waking in a small wooden house; morning sun through the three gable windows
+0497_dainuoti,vilnius_vingis,exterior,"small choir on the great band-shell stage, pines behind; tricolour only"
+0845_skaiciuoti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1098_tuoktis,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1121_maisyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+2349_lenkti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0718_plauti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0531_gaminti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0396_atidaryti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0462_uzdaryti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0265_rasyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0059_skambinti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0829_sukti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0767_statyti,zemaitija_village,exterior,raising a timber house frame beside an old troba
+0866_augti,dzukija_village,exterior,"garden bed before a log pirkia, pines behind"
+1014_piesti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1089_maitinti,rumsiskes_farmstead,exterior,scattering grain to chickens in a farm yard with wattle fence
+0950_gaudyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0342_mesti,klaipeda_port_ferry,exterior,"throwing sacks in a dockside loading yard, cranes behind"
+0977_valyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0177_rasti,vilnius_zverynas,exterior,hide-and-seek in a wooden-villa garden
+0756_kristi,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1117_stumti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0779_traukti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0500_nesti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+1126_lauzyti,dzukija_village,exterior,firewood yard at a forest village
+0995_deveti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+2219_kabinti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+2409_purtyti,suvalkija_farm,exterior,shaking an apple tree in the orchard rows of a farmstead
+1028_pasirasyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0840_musti,vilnius_lazdynai,exterior,beating a rug on the courtyard rack between panel blocks
+0701_kelti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0038_geras,,,abstract attribute
+0039_blogas,,,abstract attribute
+0898_tamsus,,,abstract attribute
+0899_sviesus,,,abstract attribute
+2426_lydyti,,,"interior/abstract staging (canteen, corridor, office, yard); place would not read"
+0567_aikste,kaunas_town_hall_square,exterior,2026-10-18 historical: NEW: the square itself is the subject; the tiered white tower in the middle.
+0429_pastas,kaunas_central_post_office,interior,2026-10-18 historical: NEW: hall with the linen-weave tiled floor and brass-railed counters in the staging; the modernist front with the clock in one inset. Round 4: exterior inset dropped 2026-10-19 (owner); inset 1 is a post box.
+0657_muziejus,kaunas_war_museum,interior,2026-10-18 historical: NEW: the hall with the orange monoplane hanging overhead and the amber cases in the staging; the tower and garden in one inset.
+0234_kinas,kaunas_romuva_cinema,inset,2026-10-18 historical: NEW: inset only — the cinema front with the blank fin; the auditorium stays the main picture.
+0757_sporto_sale,kaunas_sports_hall,exterior,"2026-10-18 historical: NEW: the 1939 hall interior is the whole scene (prompt_phrase is an interior; mode 'exterior' only means the plain 'Setting: Lithuania, 1981, …' line)."
+1628_kapines,vilnius_rasos_cemetery,exterior,2026-10-18 historical: NEW: Rasos hillside.
+0985_kavine,kaunas_konrado_cafe,exterior,"2026-10-18 historical: NEW: interior prompt_phrase (mirrors, piano, plaster girl in the niche, cake case); plain setting line."
+1640_koncertu_sale,vilnius_philharmonic,exterior,2026-10-18 historical: NEW: the white-and-gilt hall; the corner building with the rounded bay in one inset (staging).
+0837_koncertas,vilnius_philharmonic,exterior,"2026-10-18 historical: NEW: concert in the same hall; rotate the viewpoint (from the balcony) so 0812, 1293 and 1747 are not one picture."
+2008_orkestras,vilnius_philharmonic,exterior,"2026-10-18 historical: NEW: orchestra on the same stage, seen from the stalls' front row."
+1405_krepsinis,kaunas_sports_hall,exterior,2026-10-18 historical: NEW: basketball under the four arches; players in plain white kit with a tricolour band (kit colours unverified — executor checks a 1939 team photograph first).
+1274_futbolas,kaunas_state_stadium,exterior,2026-10-18 historical: NEW: football on the State Stadium pitch.
+1419_spektaklis,kaunas_laisves_aleja,interior,"2026-10-18 historical: NEW: performance inside the 1892 Kaunas theatre (red velvet, tiered boxes in the staging); the boulevard outside glimpsed."
+1573_paminklas,kaunas_war_museum,exterior,"2026-10-18 historical: SWAP (approved): the monument is the Freedom Statue in the museum garden, the bell tower behind; the Soviet-era seated poet (Jokūbonis 1977) is dropped."
+1241_komanda,kaunas_sports_hall,exterior,"2026-10-19 historical A5: OPTIONAL, with the likeness plan: the team becomes the 1939 basketball champions lined up under the arches (likeness_cards.csv). If the owner keeps the football team, drop this row."
+1307_banko_skyrius,kaunas_bank_of_lithuania,interior,2026-10-19 historical A5: OPTIONAL: a branch hall; the Bank's columned front glimpsed. Low priority.
+1871_skulptura,kaunas_war_museum,inset,2026-10-19 historical A5: NEW (optional): one inset shows the winged Freedom figure on its plinth as the example of a sculpture; the main picture keeps the sculptor at work.
+0703_kasa,kaunas_railway_station,interior,"2026-10-18 historical: NEW: ticket window inside the 1953 station hall (square pilasters, coffered ceiling); the station front glimpsed. Reinstated 2026-10-19 (round 5, owner: 'try the kaunas train station again')."

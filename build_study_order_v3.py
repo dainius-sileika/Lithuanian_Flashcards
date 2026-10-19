@@ -9,6 +9,13 @@
                                                      # cards_anki.csv, master_wordlist.csv and a2_build/a2_wordlist.csv
     python3 build_study_order_v3.py --rebuild-subs <lt_full.txt>   # re-derives the subtitle lemma list
 
+AFTER THE RENAME (2026-10-20, spec §12): study_order.csv is the AUTHORITY, not this builder. Every key
+is NNNN_slug, its number = the card's position in the order the rename was derived from; this builder
+breaks ties on that number now (it used the digits of the A2-#### id), so a regeneration is not expected
+to reproduce the order bit for bit. Pre-lock, a regeneration means a second rename (key_map_v2,
+tools/rename_keys.py); after the lock this builder is a proposal tool only and the order file is
+edited by hand (new cards append). `--audit` stays valid on any order file.
+
 Deck v3.0 (2026-10-19). build_apkg.py reads study_order.csv and gives every note its `order` as the
 new-card position (Anki `due`). Keys and GUIDs never change; v3.0 is a delete-and-reimport release, so
 the whole order may move; from v3.0 on keys and GUIDs are frozen. build_study_order_v2.py stays in the
@@ -88,10 +95,10 @@ SEPARATION, LOOKALIKE_SEPARATION = 60, 30
 READING = ("CLOZE", "PAIR", "SENT")
 
 # Pinned neighbours (a pinned card waits for its anchor, then follows it directly).
-PIN_AFTER = {"531_batonas": "182_duona",
-             "A2-1898": "082_motina", "A2-1899": "083_tevas", "081_dukra": "080_sunus", "089_sesuo": "088_brolis",
-             "092_senele": "091_senelis", "A2-0581": "A2-0582", "094_zmona": "093_vyras",
-             "A2-1924": "A2-1923", "A2-1874": "A2-1873", "A2-1891": "A2-1890"}
+PIN_AFTER = {"0007_batonas": "0006_duona",
+             "0401_mama": "0400_motina", "0222_tetis": "0221_tevas", "0312_dukra": "0311_sunus", "0051_sesuo": "0050_brolis",
+             "0523_senele": "0522_senelis", "0549_teta": "0548_dede", "0823_zmona": "0822_vyras",
+             "1309_apacia": "1308_virsus", "1899_garsiai": "1898_tyliai", "2388_vienvietis": "2387_dvivietis"}
 # Antonym / counterpart pairs by plain headword (the A2 list's "pair with" notes, 2026-10-19); whichever is
 # scheduled first pulls the other straight after it. Pairs split across subdecks are reported, not forced.
 PAIRS = [("arti", "toli"), ("aukštyn", "žemyn"), ("netyčia", "tyčia"), ("į vidų", "viduje"), ("abi", "abu"),
@@ -200,12 +207,12 @@ TYPE_LANE = {"N": "nouns", "V": "verbs", "A": "adjectives", "ADV": "adverbs", "P
              "PHRASE": "phrases", "SENTENCE": "phrases"}
 
 # --- tiers (judged; carried over from v2) -----------------------------------------
-SURVIVAL = ["103_zmogus", "086_vyras", "087_moteris", "177_vanduo", "182_duona", "376_valgyti", "377_gerti",
-            "101_vaikas", "172_kava", "173_arbata", "366_eiti", "452_didelis", "453_mazas", "025_namas", "178_pienas",
-            "175_alus", "104_draugas", "090_seima", "045_parduotuve", "363_dirbti", "024_miestas", "188_obuolys",
-            "183_sriuba", "064_batai", "016_autobusas", "001_suo", "002_kate",
-            "354_taip", "355_ne", "510_as", "511_tu", "512_jis", "513_ji", "515_mes", "516_jus", "517_jie", "514_tai",
-            "464_geras", "465_blogas", "133_pinigai", "160_kaina"]
+SURVIVAL = ["0001_zmogus", "0002_vyras", "0004_moteris", "0003_vanduo", "0006_duona", "0005_valgyti", "0008_gerti",
+            "0012_vaikas", "0014_kava", "0017_arbata", "0011_eiti", "0009_didelis", "0010_mazas", "0013_namas", "0018_pienas",
+            "0026_alus", "0016_draugas", "0020_seima", "0015_parduotuve", "0019_dirbti", "0022_miestas", "0028_obuolys",
+            "0033_sriuba", "0023_batai", "0024_autobusas", "0027_suo", "0030_kate",
+            "0029_taip", "0034_ne", "0031_as", "0035_tu", "0037_jis", "0042_ji", "0046_mes", "0048_jus", "0053_jie", "0057_tai",
+            "0038_geras", "0039_blogas", "0040_pinigai", "0041_kaina"]
 SURVIVAL_INDEX = {k: i for i, k in enumerate(SURVIVAL)}
 SURVIVAL_PHRASES = ["Labas", "Ačiū", "Prašau", "Laba diena", "Atsiprašau", "Viso gero", "Iki", "Nesuprantu", "Kiek kainuoja?",
                     "Kur yra…?", "Labas rytas", "Labas vakaras", "Sveiki", "Labai ačiū", "Nėra už ką", "Kur yra tualetas?",
@@ -214,24 +221,24 @@ SURVIVAL_PHRASES = ["Labas", "Ačiū", "Prašau", "Laba diena", "Atsiprašau", "
                     "Skanaus", "Į sveikatą!", "Ar galite man padėti?", "Ar galite pakartoti?", "Prašom kalbėti lėčiau"]
 SURVIVAL_PHRASE_INDEX = {plain(w): i for i, w in enumerate(SURVIVAL_PHRASES)}
 CORE = {
- "people": ["103_zmogus", "086_vyras", "087_moteris", "101_vaikas", "099_berniukas", "100_mergaite", "090_seima", "082_motina", "083_tevas", "080_sunus", "081_dukra", "088_brolis", "089_sesuo", "104_draugas", "084_tevai", "092_senele", "091_senelis", "085_kudikis", "098_kaimynas"],
- "food": ["177_vanduo", "182_duona", "178_pienas", "172_kava", "173_arbata", "180_kiausinis", "181_suris", "188_obuolys", "183_sriuba", "206_druska", "205_cukrus", "176_sultys", "175_alus", "202_pusryciai", "203_pietus", "204_vakariene", "208_maistas", "179_gerimas", "198_saukstas", "197_peilis", "199_sakute", "200_lekste", "201_puodelis", "207_butelis", "185_vistiena", "184_mesa", "186_jautiena", "187_kiauliena", "189_bulve", "190_pomidoras", "191_morka", "192_darzove", "193_vaisius", "194_pyragas", "195_saldainis", "196_ledai"],
- "verbs": ["376_valgyti", "377_gerti", "366_eiti", "363_dirbti", "409_miegoti", "394_matyti", "375_sakyti", "395_ziureti", "390_girdeti", "423_rasyti", "383_pirkti", "384_moketi", "401_sedeti", "402_stoveti", "367_begti", "420_gaminti", "419_plauti", "421_atidaryti", "422_uzdaryti", "424_skambinti", "403_myleti", "387_mokytis", "374_galvoti", "427_mokyti", "380_sypsotis", "381_juoktis", "382_verkti", "410_pabusti", "438_nesti", "434_rasti", "364_zaisti", "365_groti", "408_sokti", "411_dainuoti", "368_vairuoti", "370_plaukti", "369_skristi", "372_sustoti"],
- "home": ["025_namas", "038_kambarys", "209_stalas", "210_kede", "211_lova", "214_durys", "213_langas", "216_virtuve", "217_vonia", "215_miegamasis", "222_knyga", "236_telefonas", "224_raktas", "226_laiskas", "218_piestukas", "219_rasiklis", "230_popierius", "221_muilas", "240_krepsys", "242_dovana", "246_laikrodis", "247_lempa", "251_kompiuteris", "256_televizorius"],
- "adjectives": ["452_didelis", "453_mazas", "460_naujas", "461_senas", "474_grazus", "475_bjaurus", "456_karstas", "457_saltas", "458_siltas", "459_vesus", "484_brangus", "485_pigus", "498_svarus", "499_purvinas", "472_laimingas", "473_liudnas", "462_jaunas", "463_senas", "448_aukstas", "449_zemas", "446_ilgas", "447_trumpas", "455_greitas", "454_letas", "469_sveikas", "468_sergantis", "464_geras", "465_blogas"],
- "places": ["024_miestas", "027_gatve", "045_parduotuve", "036_mokykla", "050_turgus", "030_stotis", "048_ligonine", "049_baznycia", "043_parkas", "033_restoranas", "042_baras", "026_butas", "039_miestelis", "028_kelias", "031_tiltas", "055_bankas", "032_viesbutis"],
- "body": ["258_galva", "277_ranka", "276_koja", "263_akis", "264_burna", "266_nosis", "268_ausis", "267_dantis", "262_plaukai", "260_veidas", "279_sirdis", "273_pirstas", "288_kunas"],
- "nature": ["296_saule", "293_lietus", "294_sniegas", "295_medis", "305_gele", "291_upe", "308_ezeras", "289_jura", "300_miskas", "301_dangus", "303_vejas", "297_menulis", "309_zvaigzde", "316_ugnis", "310_zole"],
- "transport": ["016_autobusas", "013_automobilis", "011_traukinys", "015_dviratis", "022_bilietas", "012_lektuvas"],
- "animals": ["001_suo", "002_kate", "004_paukstis", "003_zuvis"],
- "clothing": ["064_batai", "063_kelnes", "061_marskiniai", "066_paltas", "057_kepure", "058_suknele", "060_sijonas"],
- "jobs": ["110_mokytojas", "113_gydytojas", "111_studentas", "115_padavejas", "118_policininkas", "127_darbas"],
- "electronics": ["236_telefonas", "251_kompiuteris", "256_televizorius", "246_laikrodis", "247_lempa", "257_radijas", "255_fotoaparatas"],
- "society": ["133_pinigai", "160_kaina", "132_vaistai", "152_laikrastis", "155_sportas", "169_muzika", "167_daina", "312_oras", "284_liga", "298_pasaulis", "344_data", "340_puse", "336_kilogramas", "334_metras", "343_temperatura", "464_geras", "465_blogas", "479_piktas"],
+ "people": ["0001_zmogus", "0002_vyras", "0004_moteris", "0012_vaikas", "0430_berniukas", "0367_mergaite", "0020_seima", "0400_motina", "0221_tevas", "0311_sunus", "0312_dukra", "0050_brolis", "0051_sesuo", "0016_draugas", "0257_tevai", "0523_senele", "0522_senelis", "0611_kudikis", "0060_kaimynas"],
+ "food": ["0003_vanduo", "0006_duona", "0018_pienas", "0014_kava", "0017_arbata", "0452_kiausinis", "0520_suris", "0028_obuolys", "0033_sriuba", "0575_druska", "0243_cukrus", "0532_sultys", "0026_alus", "0586_pusryciai", "0301_pietus", "0330_vakariene", "0212_maistas", "0355_gerimas", "0882_saukstas", "0489_peilis", "0947_sakute", "0717_lekste", "0506_puodelis", "0464_butelis", "0607_vistiena", "184_mesa", "186_jautiena", "187_kiauliena", "189_bulve", "190_pomidoras", "191_morka", "192_darzove", "193_vaisius", "194_pyragas", "195_saldainis", "196_ledai"],
+ "verbs": ["0005_valgyti", "0008_gerti", "0011_eiti", "0019_dirbti", "0089_miegoti", "0066_matyti", "0094_sakyti", "0211_ziureti", "0070_girdeti", "0265_rasyti", "0044_pirkti", "0235_moketi", "0354_sedeti", "0365_stoveti", "0323_begti", "0531_gaminti", "0718_plauti", "0396_atidaryti", "0462_uzdaryti", "0059_skambinti", "0082_myleti", "0100_mokytis", "0223_galvoti", "1208_mokyti", "0608_sypsotis", "0587_juoktis", "0675_verkti", "0655_pabusti", "0500_nesti", "0177_rasti", "0256_zaisti", "0540_groti", "0442_sokti", "0497_dainuoti", "0484_vairuoti", "0519_plaukti", "0467_skristi", "0507_sustoti"],
+ "home": ["0013_namas", "0310_kambarys", "0063_stalas", "0244_kede", "0343_lova", "0210_durys", "0346_langas", "0443_virtuve", "0412_vonia", "0704_miegamasis", "0062_knyga", "0056_telefonas", "0133_raktas", "0166_laiskas", "0801_piestukas", "0689_rasiklis", "0375_popierius", "0827_muilas", "0475_krepsys", "0431_dovana", "0485_laikrodis", "0754_lempa", "0398_kompiuteris", "0588_televizorius"],
+ "adjectives": ["0009_didelis", "0010_mazas", "0108_naujas", "0109_senas", "0075_grazus", "0076_bjaurus", "0068_karstas", "0067_saltas", "0122_siltas", "0123_vesus", "0267_brangus", "0268_pigus", "0486_svarus", "0487_purvinas", "0385_laimingas", "0386_liudnas", "0202_jaunas", "0201_senas", "0178_aukstas", "0179_zemas", "0363_ilgas", "0364_trumpas", "0289_greitas", "0290_letas", "0232_sveikas", "0233_sergantis", "0038_geras", "0039_blogas"],
+ "places": ["0022_miestas", "0175_gatve", "0015_parduotuve", "0130_mokykla", "0730_turgus", "0074_stotis", "0049_ligonine", "0134_baznycia", "0465_parkas", "0421_restoranas", "0495_baras", "0332_butas", "0600_miestelis", "0197_kelias", "0071_tiltas", "0287_bankas", "0511_viesbutis"],
+ "body": ["0174_galva", "0145_ranka", "0321_koja", "0200_akis", "0673_burna", "0544_nosis", "0576_ausis", "0478_dantis", "0783_plaukai", "0309_veidas", "0278_sirdis", "0518_pirstas", "0266_kunas"],
+ "nature": ["0324_saule", "0085_lietus", "0319_sniegas", "0341_medis", "0064_gele", "0095_upe", "0496_ezeras", "0254_jura", "0111_miskas", "0376_dangus", "0433_vejas", "0419_menulis", "0279_zvaigzde", "0445_ugnis", "0551_zole"],
+ "transport": ["0024_autobusas", "0190_automobilis", "0451_traukinys", "0554_dviratis", "0097_bilietas", "0335_lektuvas"],
+ "animals": ["0027_suo", "0030_kate", "0534_paukstis", "0456_zuvis"],
+ "clothing": ["0023_batai", "0353_kelnes", "0668_marskiniai", "0397_paltas", "0556_kepure", "0422_suknele", "0793_sijonas"],
+ "jobs": ["0045_mokytojas", "0245_gydytojas", "0333_studentas", "0713_padavejas", "0407_policininkas", "0080_darbas"],
+ "electronics": ["0056_telefonas", "0398_kompiuteris", "0588_televizorius", "0485_laikrodis", "0754_lempa", "0432_radijas", "0804_fotoaparatas"],
+ "society": ["0040_pinigai", "0041_kaina", "0510_vaistai", "1218_laikrastis", "1206_sportas", "0299_muzika", "1204_daina", "1200_oras", "1207_liga", "1194_pasaulis", "1254_data", "1195_puse", "1362_kilogramas", "1209_metras", "1295_temperatura", "0038_geras", "0039_blogas", "0498_piktas"],
 }
 CORE_T1 = {k for ks in CORE.values() for k in ks}
-DEMOTE = {"109_asmuo", "035_teismas", "105_auka", "052_pastatas", "054_kosmosas", "056_vieta", "051_salis", "044_stovykla", "041_klubas", "040_universitetas", "029_oro_uostas", "034_ukis", "023_transportas", "019_padanga", "020_benzinas", "021_variklis", "009_sparnas", "010_gyvunas", "404_praeiti", "373_sekti", "378_zudyti", "386_sauti", "400_sprogti", "398_tirpti", "406_mustis", "442_purtyti", "443_pasirasyti", "418_lenkti", "530_lydyti", "107_sirgalius", "106_zaidejas", "095_karalius", "096_karaliene", "097_prezidentas", "102_suauges", "108_minia", "093_vyras", "094_zmona", "067_deme", "068_drabuziai", "065_kisene", "062_marskineliai", "059_kostiumas", "079_spalva", "283_prakaitas", "281_smegenys", "269_asara", "272_kojos_pirstas", "275_plastaka", "270_liezuvis", "261_barzda", "290_vandenynas", "306_slenis", "307_saknis", "319_kalva", "318_sala", "315_banga", "321_gamta", "304_zeme", "299_zeme", "476_kurcias", "477_aklas", "486_plokscias", "487_islenktas", "488_vyriskas", "489_moteriskas", "490_ankstas", "491_laisvas", "492_aukstas", "493_zemas", "502_negyvas", "503_gyvas", "508_branduolinis",
-          "128_religija", "129_dangus", "130_pragaras", "131_mirtis", "134_doleris", "135_banknotas", "136_santuoka", "139_santykiai", "140_rase", "141_seksas", "142_lytis", "143_zmogzudyste", "144_kalejimas", "145_technologija", "146_energija", "147_karas", "148_taika", "149_puolimas", "150_rinkimai", "153_nuodai", "154_ginklas", "156_lenktynes", "161_sutartis", "162_narkotikas", "164_mokslas", "165_dievas", "171_menas", "227_raide", "250_tinklas", "320_karstis", "337_colis", "338_peda", "339_svaras", "341_apskritimas", "342_kvadratas", "346_krastas", "347_kampas", "350_priebalsis", "351_balsis", "362_rastas", "414_melstis", "528_serti", "529_lesinti"}
+DEMOTE = {"1003_asmuo", "0880_teismas", "1132_auka", "1062_pastatas", "2287_kosmosas", "0610_vieta", "0843_salis", "1164_stovykla", "0980_klubas", "1093_universitetas", "1111_oro_uostas", "1074_ukis", "1128_transportas", "1173_padanga", "1176_benzinas", "1096_variklis", "2271_sparnas", "1100_gyvunas", "0903_praeiti", "1072_sekti", "1009_zudyti", "1021_sauti", "2262_sprogti", "2398_tirpti", "2338_mustis", "2409_purtyti", "1028_pasirasyti", "2349_lenkti", "2426_lydyti", "2348_sirgalius", "2256_zaidejas", "1080_karalius", "1159_karaliene", "0964_prezidentas", "1144_suauges", "2286_minia", "0822_vyras", "0823_zmona", "2334_deme", "1143_drabuziai", "1170_kisene", "1153_marskineliai", "1129_kostiumas", "0627_spalva", "2361_prakaitas", "1105_smegenys", "2329_asara", "1131_kojos_pirstas", "2420_plastaka", "1158_liezuvis", "1181_barzda", "1119_vandenynas", "2229_slenis", "2342_saknis", "2208_kalva", "0994_sala", "2152_banga", "1090_gamta", "0727_zeme", "0667_zeme", "2240_kurcias", "2239_aklas", "2407_plokscias", "2408_islenktas", "2311_vyriskas", "2312_moteriskas", "1055_ankstas", "1054_laisvas", "0831_aukstas", "0832_zemas", "0972_negyvas", "0971_gyvas", "2276_branduolinis",
+          "2326_religija", "2041_dangus", "2119_pragaras", "1872_mirtis", "1924_doleris", "2393_banknotas", "2227_santuoka", "2182_santykiai", "2339_rase", "2105_seksas", "2365_lytis", "2174_zmogzudyste", "1946_kalejimas", "2207_technologija", "2016_energija", "1684_karas", "2195_taika", "2279_puolimas", "2144_rinkimai", "2376_nuodai", "1673_ginklas", "2246_lenktynes", "1837_sutartis", "2129_narkotikas", "1988_mokslas", "1518_dievas", "2003_menas", "2275_raide", "2094_tinklas", "2083_karstis", "2328_colis", "2139_peda", "2196_svaras", "2403_apskritimas", "2353_kvadratas", "2106_krastas", "2124_kampas", "2419_priebalsis", "2421_balsis", "2241_rastas", "2282_melstis", "2404_serti", "2425_lesinti"}
 T0_CATEGORIES = {"Greetings", "Politeness", "Question words", "Basics", "Getting by"}
 T0_WORDS = {"nulis", "vienas", "du", "trys", "keturi", "penki", "šeši", "septyni", "aštuoni", "devyni", "dešimt",
             "dvidešimt", "šimtas", "tūkstantis",
@@ -293,13 +300,15 @@ def load_cards(old, retier):
     cards = []
     for r in rd("cards_anki.csv"):
         cards.append({"key": r["key"], "lt": r["lithuanian"], "en": r["english"], "category": r["category"],
-                      "number": int(r["number"]), "level": (r.get("level") or "A1"), "route": "IMG", "source": "deck",
+                      "number": int(r["ff_no"]), "level": (r.get("level") or "A1"), "route": "IMG", "source": "deck",
                       "phase": "", "type": "", "ex": "", "words": "",
                       "forms": [r.get(f, "") for f in ("gen_sg", "pres3", "past3", "fem")]})
     if os.path.exists(os.path.join(ROOT, A2_LIST)):
         for r in rd(A2_LIST):
             cards.append({"key": r["id"], "lt": r["lithuanian_TARGET"], "en": r["english"], "category": r["category"],
-                          "number": 10000 + int(re.sub(r"\D", "", r["id"]) or 0),
+                          # tie-break: the key's number (since the rename of 2026-10-20 = the study position
+                          # at the rename; before it, the digits of the A2-#### id)
+                          "number": 10000 + (int(r["id"][:4]) if r["id"][:4].isdigit() else 0),
                           "level": (r.get("level") or "A2").strip() or "A2", "route": r.get("route", ""),
                           "source": "list", "phase": r.get("phase", ""), "type": r.get("type", ""),
                           "ex": r.get("example_lt", "") if r.get("route") in ("CLOZE", "PAIR") else "", "words": "",
@@ -397,7 +406,7 @@ def build_dependencies(cards):
             else:
                 c["outside"].append(t)
         for k in c["words"].split():                                 # sentences.csv words_used, when it names a key
-            if re.match(r"^(\d{3}_|A2-|S-)", k) and k not in {x for _, ks in c["deps"] for x in ks}:
+            if re.match(r"^\d{4}_", k) and k not in {x for _, ks in c["deps"] for x in ks}:
                 c["deps"].append((k, [k]))
     return cards
 
@@ -845,15 +854,16 @@ def apply_retier(retier):
         with open(os.path.join(ROOT, path), "w", encoding="utf-8", newline="") as f:
             w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
     # master_wordlist.csv is keyed by the A1 number
-    num_to_level = {int(k[:3]): v for k, v in retier.items() if re.match(r"^\d{3}_", k)}
+    # master_wordlist.csv carries the card key in its `key` column since the rename (2026-10-20)
     rows = rd("master_wordlist.csv"); fields = list(rows[0].keys())
     for r in rows:
-        n = int(r["#"]) if r["#"].isdigit() else None
-        if n in num_to_level and r["level"] != num_to_level[n]:
-            r["level"] = num_to_level[n]; changed["master_wordlist.csv"] += 1
+        k = (r.get("key") or "").strip()
+        if k in retier and r["level"] != retier[k]:
+            r["level"] = retier[k]; changed["master_wordlist.csv"] += 1
     with open(os.path.join(ROOT, "master_wordlist.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
-    sent_keys = {k: v for k, v in retier.items() if k.startswith("S-")}
+    sent_ids = {r["id"] for r in rd(SENTENCES)} if os.path.exists(os.path.join(ROOT, SENTENCES)) else set()
+    sent_keys = {k: v for k, v in retier.items() if k in sent_ids}
     if sent_keys and os.path.exists(os.path.join(ROOT, SENTENCES)):
         rows = rd(SENTENCES); fields = list(rows[0].keys())
         for r in rows:

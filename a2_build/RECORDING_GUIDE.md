@@ -19,13 +19,13 @@ These takes are not on the sheet:
 - The words are now wrong, so the old take has been withdrawn and the card is silent until you re-record it:
   - 265 *lūpos* (was *lūpa*);
   - 249 *mobilusis telefonas · mobiliojo telefono* (the old genitive was wrong);
-  - A2-0033 *rugsėjis · rugsėjo* (was *rugsėjio*);
-  - A2-0104 *čekis* (was *kvitas*);
-  - A2-0902 *Prašom pakartoti*;
-  - A2-0903 *Prašom užrašyti*.
+  - 0836_rugsejis *rugsėjis · rugsėjo* (was *rugsėjio*);
+  - 0923_cekis *čekis* (was *kvitas*);
+  - 0521_prasom_pakartoti *Prašom pakartoti*;
+  - 0565_prasom_uzrasyti *Prašom užrašyti*.
 - The ten colours (069–078) said the genitive (*raudonas · raudono*). The card now shows the feminine (*raudonas · raudona*). The old takes are correct Lithuanian and stay in the deck until you replace them.
 
-The other wording changes were never recorded, so they appear as ordinary new takes in their new wording: A2-0375 *Prašom kalbėti lėčiau*, A2-1166 *Prašom sėstis*, A2-0964 *…parekomenduoti?*, A2-1674_s, A2-1713_s.
+The other wording changes were never recorded, so they appear as ordinary new takes in their new wording: 0203_prasom_kalbeti_leciau *Prašom kalbėti lėčiau*, 1029_prasom_sestis *Prašom sėstis*, 2136_ar_galite_ka_nors *…parekomenduoti?*, 1653_pakartoti_s, 1112_sestis_s.
 
 ## How to record
 1. **On the Mac**, open this file in **Chrome**: `~/Library/CloudStorage/ProtonDrive-…/50-59 Languages & Learning Method/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/recorder_A2.html`. You can double-click it in Finder and choose *Open With → Google Chrome*. Use the same browser every time, because your takes are kept in that browser's storage. Safari and Firefox are untested for local files.

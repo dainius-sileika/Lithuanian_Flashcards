@@ -3,15 +3,15 @@ every restaged card of situations.py (generated from a2_build/restage_bubbles.cs
 by gen_phrases.build_situation_call -> go_generator.build_prompt(situation=True) on the
 production model (gpt-image-2.5-sunburst, medium, 1536x1024) into out_phrases_v3/<id>.png.
 374 galvoti goes through its own A1 production path (deck_builder.build_call, which now
-passes situation=True for SITUATION_ROWS) and is written as out_phrases_v3/374_galvoti.png.
-The bubble renders in out_phrases/, out_phrases_a2/ and out_deck_f62/374_galvoti.png are
+passes situation=True for SITUATION_ROWS) and is written as out_phrases_v3/0223_galvoti.png.
+The bubble renders in out_phrases/, out_phrases_a2/ and out_deck_f62/0223_galvoti.png are
 NOT touched; they move to _superseded/ only after the owner passes the pilot.
 
     python out_phrases_v3/gen.py 0 0 --plan                                # plan.json only
-    ONLY=A2-0882,A2-0360 timeout 178 python -u out_phrases_v3/gen.py 20 6  # chosen keys
+    ONLY=0356_nieko_tokio,0099_nera_uz_ka timeout 178 python -u out_phrases_v3/gen.py 20 6  # chosen keys
     ONLY=pilot timeout 178 python -u out_phrases_v3/gen.py 20 6            # the 34 of PILOT_24.md
-    REROLL=A2-0882 timeout 178 python -u out_phrases_v3/gen.py 20 2        # old png -> _rerolled/<key>.r<n>.png
-    V3_OUT=out_phrases_v3/round2 ONLY=A2-0113,... timeout 178 python -u out_phrases_v3/gen.py 100 4   # pilot round 2
+    REROLL=0356_nieko_tokio timeout 178 python -u out_phrases_v3/gen.py 20 2        # old png -> _rerolled/<key>.r<n>.png
+    V3_OUT=out_phrases_v3/round2 ONLY=0274_kodel,... timeout 178 python -u out_phrases_v3/gen.py 100 4   # pilot round 2
 
 Append-only ledger/gen_log are kept in ~/a2_work/v3_* (outside the Proton-synced tree) and
 copied in once per call. Last ledger row per key = current picture.
@@ -32,10 +32,10 @@ SIZE, QUALITY = "1536x1024", g.OPENAI_QUALITY
 BUDGET = float(sys.argv[1]) if len(sys.argv) > 1 else 15
 W = int(sys.argv[2]) if len(sys.argv) > 2 else 6
 REROLL = [k for k in os.environ.get("REROLL", "").split(",") if k]
-PILOT = ("A2-0882 A2-0360 A2-0896 A2-0897 A2-0898 A2-0900 A2-0903 A2-0905 A2-0906 A2-0907 A2-0909 "
-         "A2-0928 A2-0348 A2-0349 A2-0350 A2-0351 A2-0352 A2-0358 A2-0881 A2-0362 A2-0377 A2-0887 "
-         "A2-0895 A2-0383 A2-0108 A2-0110 A2-0111 A2-0112 A2-0113 A2-0114 A2-0115 A2-0116 A2-0117 "
-         "374_galvoti").split()
+PILOT = ("0356_nieko_tokio 0099_nera_uz_ka 0231_kas_tai 0242_kas_tas_zmogus 0110_kur_yra_tualetas 0269_nekalbu_lietuviskai 0565_prasom_uzrasyti 1058_kaip_lietuviskai 0247_man_reikia_pagalbos 0647_iskvieskite_gydytoja 0291_kur_galiu_rasti "
+         "0855_kiek_kainuoja_bilietas 0021_labas 0088_sveiki 0077_labas_rytas 0036_laba_diena 0081_labas_vakaras 0025_aciu 0103_atsiprasau 0169_atleiskite 0065_kiek_kainuoja 0755_sekmes "
+         "0768_geros_keliones 0191_ar_galite_man_padeti 0215_kas 0204_kur 0428_kada 0150_kaip 0274_kodel 0347_kiek 0238_koks 0217_kuris 0138_kieno "
+         "0223_galvoti").split()
 _only = os.environ.get("ONLY", "")
 ONLY = PILOT if _only == "pilot" else [k for k in _only.split(",") if k]
 

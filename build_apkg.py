@@ -14,8 +14,8 @@ a2_build/a2_wordlist.csv; set A2_LIST="" to skip it). Its IMG and PHRASE rows be
 picture cards of the same note type once their image exists (looked up by id in
 A2_IMAGE_DIRS: images_a2/<id>.webp, out_phrases/<id>.png, ...); its CLOZE and PAIR
 rows become native Anki cloze notes ("Lietuvių GO Cloze") built from example_lt,
-where the {braces} mark the blank — these need no image. Every A2 note is tagged
-with its level, route and phase and goes to the A1/A2 subdeck by its level.
+where the {braces} mark the blank — these need no image. Every note carries the lt:: tags
+(tags_for below) and goes to the A1/A2 subdeck by its level.
 
 v2.1 (2026-10-17) — standard bands. The drawn red frame of every picture varies a lot in
 thickness (bottom band 4-10 % of the height), so by default the builder trims it off a
@@ -195,18 +195,22 @@ def usage_for(k):
 STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
 
 # IDENTITY — what keeps a learner's history across deck versions:
-#  * note GUID = genanki.guid_for(<card key>) — the permanent key (001_suo, A2-0108),
+#  * note GUID = genanki.guid_for(<card key>) — the permanent key (0027_suo, 0215_kas),
 #    never the row position, the picture or the text. Re-importing a new version
 #    updates the note's fields in place and keeps its cards' scheduling.
 #  * model ids (1607392913 picture, 1607392914 cloze) and deck ids (2059400112/3) are
 #    constants; changing any of them would make Anki treat the notes as new.
-#  * a key is never reused or renamed; a card that changes meaning keeps its key
-#    (265_lupa now teaches lūpos). A row that moves between note types (picture ↔
-#    cloze) cannot be updated in place — Anki will report a note-type conflict; avoid.
+#  * keys are NNNN_slug (spec §12): the number is the card's study-order position when the
+#    key was minted (the rename of 2026-10-20 renamed every card once, pre-lock; history in
+#    a2_build/rename/key_map_v1.csv, read through tools/keymap.py). Once A1 and A2 are signed
+#    off a key is never reused or renamed; a card that changes meaning keeps its key
+#    (1124_lupos teaches lūpos; its slug was taken from the headword at the rename). A row that moves
+#    between note types (picture ↔ cloze) cannot be updated in place — Anki will report a
+#    note-type conflict; it becomes a new card.
 #  * the study order (`due`) is applied to NEW cards at import; Anki does not move
-#    cards a user already has (confirmed in its importer source), and the Key/Number
-#    field is the wordlist number, not the study position, so sorting by it and
-#    repositioning only reproduces the wordlist. Owner 2026-10-17: deck coherence
+#    cards a user already has (confirmed in its importer source). The Number field is the
+#    key's number (= the study position at the rename; cards added later append, so it is a
+#    stable name, not a live position). Owner 2026-10-17: deck coherence
 #    over old study history — the advice to an existing user is simply to delete the
 #    deck and import the new package; the order is not retrofitted onto old
 #    collections, and no field is added to carry it (a new field would be a schema
@@ -236,10 +240,41 @@ APKG_LEVELS = [l.strip() for l in os.environ.get("APKG_LEVELS", "A1,A2").split("
 APKG_OUT = os.environ.get("APKG_OUT",
                           f"Lietuviu_Flashcards_v{APKG_VERSION}_{APKG_LEVELS[0]}.apkg" if len(APKG_LEVELS) == 1
                           else f"Lietuviu_Flashcards_v{APKG_VERSION}.apkg")   # never the old file
-# A1 keys whose current render sits under a different file name: deck_builder derives the
-# render key from the headword, and 265 was retargeted lūpa -> lūpos (2026-10-11) while
-# the note key stays 265_lupa (identity rule below). Looked up first, then the key itself.
-IMAGE_ALIAS = {"265_lupa": "265_lupos"}
+# (IMAGE_ALIAS, the lūpa -> lūpos render stem, retired with the rename of 2026-10-20: every media
+# file is named by its card key; the old render stem is an `alias` row in a2_build/rename/key_map_v1.csv.)
+
+# --- tags (spec §12, 2026-10-20) ------------------------------------------------------------
+# Four hierarchical tags per note: lt::level::A1|A2, lt::kind::picture|phrase|cloze|sentence,
+# lt::pos::<part of speech> (words only) and lt::topic::<section slug>. The topic is the section
+# the card's top band shows: category -> topic from a2_build/rename/topic_map_v1.csv, except that
+# phrase and sentence notes show XIX/XX whatever their category (card_frame.ROUTE_SECTIONS), so
+# their topic is frazes/sakiniai and the tag never disagrees with the running head.
+# An unmapped category fails the build.
+TOPIC_MAP = "a2_build/rename/topic_map_v1.csv"
+TOPIC = {r["category"]: r["topic"] for r in csv.DictReader(open(TOPIC_MAP, encoding="utf-8"))}
+POS = {"N": "noun", "V": "verb", "A": "adjective", "ADV": "adverb", "P": "pronoun", "NUM": "numeral",
+       "PREP": "preposition", "CONJ": "conjunction", "Q": "question"}
+KIND_TOPIC = {"phrase": "frazes", "sentence": "sakiniai"}
+KIND_OF_ROUTE = {"IMG": "picture", "PHRASE": "phrase", "CLOZE": "cloze", "PAIR": "cloze"}
+
+
+def tags_for(level, kind, pos_code, category):
+    if kind in KIND_TOPIC:
+        topic = KIND_TOPIC[kind]
+    elif category in TOPIC:
+        topic = TOPIC[category]
+    else:
+        raise SystemExit(f"tags: category {category!r} is not in {TOPIC_MAP}; map it before building")
+    t = [f"lt::level::{level}", f"lt::kind::{kind}", f"lt::topic::{topic}"]
+    if kind not in KIND_TOPIC and pos_code in POS:
+        t.insert(2, f"lt::pos::{POS[pos_code]}")
+    return t
+
+
+def a1_types():
+    """A1 picture rows' part of speech: master_wordlist.csv `type`, joined on its `key` column."""
+    return {r["key"]: r["type"] for r in csv.DictReader(open("master_wordlist.csv", encoding="utf-8"))
+            if (r.get("key") or "").strip()}
 
 def gender_mark(g):
     """1.9 — gender as a symbol, not a letter: blue Mars for masculine, red
@@ -336,7 +371,7 @@ def versioned_out(path):
 def media_image(k, src=None):
     """Transcode (and, in the standard frame, crop) one picture into the media staging
     folder TMP; returns (path, media file name). The source is only ever read."""
-    src = src or find_image(IMAGE_ALIAS.get(k, k), A1_IMAGE_DIRS) or find_image(k, A1_IMAGE_DIRS)
+    src = src or find_image(k, A1_IMAGE_DIRS)
     if not src or not os.path.exists(src):
         return None, None
     ext = "webp" if IMG_FMT == "webp" else "jpg"
@@ -381,16 +416,13 @@ def media_image(k, src=None):
         FRAME_FLAGS.append((f"{os.path.basename(os.path.dirname(src))}/{k}", det))
     return dst, name
 
-def plate_number(key, a1_number=""):
-    """One plate sequence for the "pav. N" in the bottom band (owner 2026-10-17, BACKS_AUDIT §1.10):
-    A1 1-531 (the wordlist number), A2 from 1001 (A2-0001 -> 1001 ... A2-2045 -> 3045),
-    sentence cards from 4001 (S-0001 -> 4001), clear of the A2 range even as it grows to A2-2999.
-    The Number field is display only (GUIDs come from the key), so a re-import updates it in place."""
-    if key.startswith("A2-"):
-        return str(1000 + int(key[3:]))
-    if key.startswith("S-"):
-        return str(4000 + int(key[2:]))
-    return a1_number
+def plate_number(key):
+    """The "pav. N" in the bottom band = the key's number, for every note type (spec §12, 2026-10-20):
+    0021_labas -> "21". Until spec 3.3.0 there were three sequences (A1 1-531 by wordlist row, A2 from
+    1001, sentences from 4001). The Number field is display only (GUIDs come from the key)."""
+    if not (len(key) > 5 and key[:4].isdigit() and key[4] == "_"):
+        raise SystemExit(f"plate_number: {key!r} is not an NNNN_slug key")
+    return str(int(key[:4]))
 
 
 def cloze_text(example_lt):
@@ -437,7 +469,7 @@ def add_a2_notes(DECKS, media, order=None):
         due = order.get(k, 0)
         level = (r.get("level") or "A2").strip() or "A2"
         target = DECKS.get(level, DECKS["A2"])
-        tags = [level, route, r.get("phase", "").replace("-", "")]
+        tags = tags_for(level, KIND_OF_ROUTE.get(route, route.lower()), r.get("type", ""), r.get("category", ""))
         aud = f"{A2_AUDIO_DIR}/{k}.mp3"
         audf = f"[sound:{k}.mp3]" if os.path.exists(aud) else ""
         adj = is_adjective(r.get("gender", ""), r.get("fem", ""))
@@ -506,7 +538,7 @@ def add_sentence_notes(DECKS, media, order=None):
         if audf:
             media.append(aud)
         target.add_note(genanki.Note(
-            model=cloze_model, tags=[level, "SENT"], guid=genanki.guid_for(k), due=order.get(k, 0),
+            model=cloze_model, tags=tags_for(level, "sentence", "", "Sakiniai"), guid=genanki.guid_for(k), due=order.get(k, 0),
             fields=[text, r["en"], "", "", "", "", r.get("grammar_point", ""),
                     plate_number(k), "Sakiniai", "", k, audf, img, usage_for(k)]))
         counts["sentence"] += 1
@@ -621,6 +653,7 @@ def main(frame="standard", back=None, limit=0):
     order = load_study_order()
     skipped = []
     n_a1 = 0
+    a1_pos = a1_types()
     for r in csv.DictReader(open("cards_anki.csv", encoding="utf-8")):
         k = r['key']; aud = f"audio/{k}.mp3"
         if limit and n_a1 >= limit:
@@ -639,13 +672,13 @@ def main(frame="standard", back=None, limit=0):
         fem = adjective_forms(r['lithuanian'], r.get('pron', ''), r['fem']) if adj else r['fem']
         target.add_note(genanki.Note(
             model=model,
-            tags=[level],
+            tags=tags_for(level, "picture", a1_pos.get(k, ""), r['category']),
             # STABLE identity: guid derived from the card key, never random, so
             # re-importing an updated deck updates cards in place (keeps study
             # history / scheduling) instead of creating duplicates.
             guid=genanki.guid_for(k), due=order.get(k, 0),
             fields=[k, r['lithuanian'], r['english'], gmark, r['gen_sg'],
-                    r['pres3'], r['past3'], fem, r['number'], r['category'],
+                    r['pres3'], r['past3'], fem, plate_number(k), r['category'],
                     f'<img class="art" src="{img_name}">', audf, r.get('pron', ''), usage_for(k)]))
         media.append(img_path)
         if os.path.exists(aud):

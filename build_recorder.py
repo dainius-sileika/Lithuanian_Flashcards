@@ -9,7 +9,7 @@ IndexedDB (so a session can be resumed), and exports a ZIP of clips named by tak
         The set is derived from what build_apkg.py emits (same lists, same inclusion rules,
         same audio paths), never from a hand-kept list:
           * one take per note, key = card key: cards_anki.csv rows -> audio/<key>.mp3,
-            A2-list rows and sentence cards (S-####) -> audio_a2/<key>.mp3;
+            A2-list rows and sentence cards (sentences.csv) -> audio_a2/<key>.mp3;
           * cloze/pair A2-list rows also take their example sentence, key <id>_s -> audio_a2/;
           * a take is listed when audio_source.tsv has no human take for the key ("new"),
             the key still has the synthesized voice ("replace-tts"), or the human take's
@@ -22,10 +22,13 @@ IndexedDB (so a session can be resumed), and exports a ZIP of clips named by tak
     python3 build_recorder.py          ->  recorder_all.html   (legacy: cards_anki.csv only)
     python3 build_recorder.py A1 [new] ->  recorder_A1[_new].html (legacy July sheets)
 
-Ingest (owner ZIP -> package): convert each clip to the `dest` path in recording_list.csv
-(ffmpeg ... -codec:a libmp3lame -q:a 4), move a replaced take to <dir>/_superseded/, and write
-the key's audio_source.tsv row as  key  human  <dest>  <said>  (said = the ZIP manifest's
-`said` column), so the next run of this script drops the take from the sheet.
+Ingest (owner ZIP -> package): python3 tools/ingest_takes.py <zip> — converts each clip to the
+`dest` path in recording_list.csv (ffmpeg ... -codec:a libmp3lame -q:a 4), moves a replaced take to
+<dir>/_superseded/, and writes the key's audio_source.tsv row as  key  human  <dest>  <said>
+(said = the ZIP manifest's `said` column), so the next run of this script drops the take from
+the sheet. ZIPs exported before the key rename (2026-10-20) name clips by the old keys; the
+script maps them through tools/keymap.py. The page itself moves stored clips to their new keys
+on start (migrateKeys, KEY_MAP from a2_build/rename/key_map_v*.csv).
 """
 import csv
 import hashlib
@@ -48,6 +51,29 @@ LEGACY_SHEET = "a2_build/audio/recorder_A2_afb2ebe2_script.json"
 # browser keeps the owner's takes under this name, keyed by take key; a new name would hide
 # them. (Until 2026-10-19 the id was a hash of the key list and changed on every regeneration.)
 DECK_SHEET_ID = "A2_afb2ebe2"
+
+
+def key_number(k):
+    """The number shown on the take ('#21' for 0021_labas): the key's number = the card's plate."""
+    return str(int(k[:4])) if k[:4].isdigit() else k
+
+
+def key_map_for_page():
+    """old take key -> current take key, over every a2_build/rename/key_map_v*.csv (chains followed):
+    '<old>' -> '<new>' and '<old>_s' -> '<new>_s' for every renamed card and media alias. Embedded in
+    the page so clips stored under a pre-rename key move to their new key on start (migrateKeys)."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
+    import keymap
+    out = {}
+    for p in keymap.maps():
+        for r in csv.DictReader(open(p, encoding="utf-8")):
+            old, new = r["old_key"].strip(), (r.get("new_key") or "").strip()
+            if not old or not new or old == new or r.get("status") not in ("renamed", "alias"):
+                continue
+            cur = keymap.canonical(old)
+            out[old] = cur
+            out[old + "_s"] = cur + "_s"
+    return out
 
 
 def read_script(headword, row):
@@ -156,12 +182,12 @@ def deck_takes():
     # 1. cards_anki.csv (the 520 + batonas base), only rows the build finds a picture for
     for r in csv.DictReader(open(SRC, encoding="utf-8")):
         k = r["key"]
-        if not (B.find_image(B.IMAGE_ALIAS.get(k, k), B.A1_IMAGE_DIRS) or B.find_image(k, B.A1_IMAGE_DIRS)):
+        if not B.find_image(k, B.A1_IMAGE_DIRS):
             continue
         level = (r.get("level") or "A1").strip() or "A1"
         pron = r.get("pron", "") or r["lithuanian"]
         add(k, "word", level, 0, r["lithuanian"], r["english"], r.get("pron", ""),
-            read_script(pron, r), f"audio/{k}.mp3", r["category"], r["number"])
+            read_script(pron, r), f"audio/{k}.mp3", r["category"], key_number(k))
     # 2. the A2 list (IMG/PHRASE with a picture, CLOZE/PAIR with a cloze sentence)
     for r in csv.DictReader(open(B.A2_LIST, encoding="utf-8")):
         k, route = r["id"], r.get("route", "")
@@ -180,11 +206,11 @@ def deck_takes():
         head = re.sub(r"\s*\(.*\)", "", r["lithuanian_TARGET"]).strip()
         pron = r.get("lt_pron", "") or head
         add(k, "word", level, 0, head, r["english"], r.get("lt_pron", ""), read_script(pron, r),
-            f"{B.A2_AUDIO_DIR}/{k}.mp3", r["category"] + " · " + route.lower(), k)
+            f"{B.A2_AUDIO_DIR}/{k}.mp3", r["category"] + " · " + route.lower(), key_number(k))
         if route in ("CLOZE", "PAIR"):
             sent = r["example_lt"].replace("{", "").replace("}", "")
             add(k + "_s", "sentence", level, 1, sent, r.get("example_en", ""), "",
-                [{"label": "", "form": sent}], f"{B.A2_AUDIO_DIR}/{k}_s.mp3", "sentence for " + head, k + " s")
+                [{"label": "", "form": sent}], f"{B.A2_AUDIO_DIR}/{k}_s.mp3", "sentence for " + head, key_number(k) + " s")
     # 3. sentence cards
     if B.SENTENCES and os.path.exists(B.SENTENCES):
         for r in csv.DictReader(open(B.SENTENCES, encoding="utf-8")):
@@ -193,7 +219,7 @@ def deck_takes():
             sent = r["lt"].replace("{", "").replace("}", "")
             level = (r.get("level") or "A2").strip() or "A2"
             add(r["id"], "sentence", level, 2, sent, r["en"], "", [{"label": "", "form": sent}],
-                f"{B.A2_AUDIO_DIR}/{r['id']}.mp3", "sentence card", r["id"])
+                f"{B.A2_AUDIO_DIR}/{r['id']}.mp3", "sentence card", key_number(r["id"]))
     takes.sort(key=lambda t: t["_sort"])
     for n, t in enumerate(takes, 1):
         t["n"] = n
@@ -364,6 +390,8 @@ TEMPLATE = r"""<!doctype html>
 <script>
 const WORDS = __WORDS__;
 const SHEET_ID = "__SHEET_ID__";        // IndexedDB name suffix; fixed for the deck sheet (never change)
+// old take key -> current take key (the key rename of 2026-10-20, a2_build/rename/key_map_v*.csv)
+const KEY_MAP = __KEY_MAP__;
 document.getElementById('count').textContent = "0 / " + WORDS.length;
 
 /* ---------- IndexedDB (persist clips so a long session can resume) ----------
@@ -403,6 +431,35 @@ async function setAsideStale(){
   return n;
 }
 
+/* The key rename (2026-10-20, spec §12): a clip stored under a card's old key (an A2-list id, a
+   three-digit base key, a sentence id, and their '_s' sentence takes) MOVES to its new key, with its 'said:' stamp; a
+   'migrated:<old>' meta records the move. If a clip already exists under the new key (recorded
+   after the rename) the old one is set aside as 'superseded:<old>:<ms>' and leaves with Export all
+   under its new name. Nothing is dropped (the superseded rule). Runs before setAsideStale(). */
+async function migrateKeys(){
+  let moved=0, aside=0;
+  for(const k of await storeKeys('clips')){
+    const nk=KEY_MAP[k]; if(!nk||nk===k) continue;
+    const b=await getClip(k); if(!b) continue;
+    const said=await getMeta('said:'+k);
+    if(!(await getClip(nk))){
+      await putClip(nk,b);
+      if(!(await getClip(nk))) continue;               // write not confirmed: leave the old clip alone
+      if(said!=null) await putMeta('said:'+nk,said);
+      await putMeta('migrated:'+k,{to:nk,at:Date.now(),said:said});
+      await delClip(k); moved++;
+    } else {
+      await putMeta('superseded:'+k+':'+Date.now(),{blob:b,said:said||'(recorded under the old key '+k+')',to:nk});
+      await putMeta('migrated:'+k,{to:nk,at:Date.now(),superseded:true});
+      await delClip(k); aside++;
+    }
+  }
+  const ex=(await getMeta('exported'))||[];
+  const ex2=[...new Set(ex.map(k=>KEY_MAP[k]||k))];
+  if(ex2.length!==ex.length||ex2.some((k,i)=>k!==ex[i])) await putMeta('exported',ex2);
+  return {moved,aside};
+}
+
 /* ---------- recording ---------- */
 let stream,rec,chunks=[],MIME='',idx=0,done=new Set();
 const POS={}; WORDS.forEach((w,i)=>POS[w.key]=i);
@@ -417,6 +474,7 @@ async function start(){
   catch(e){s.textContent="Could not access the microphone: "+e.message;return;}
   MIME=pickMime();
   await openDB();
+  const mig=await migrateKeys();
   const stale=await setAsideStale();
   const keys=await storeKeys('clips');
   done=new Set(keys.filter(k=>k in POS));
@@ -425,6 +483,8 @@ async function start(){
   document.getElementById('app').style.display='block';
   buildGrid();
   document.getElementById('storeInfo').textContent=
+    (mig.moved?mig.moved+" takes carried over from the old card keys. ":"")+
+    (mig.aside?mig.aside+" old-key clips had a newer take under the new key: set aside (in Export all). ":"")+
     (done.size?done.size+" takes already in this browser. ":"")+
     (stale?stale+" older clips were recorded for words that have since changed: set aside (in Export all). ":"")+
     (off?off+" clips for cards no longer on the list are kept (in Export all).":"");
@@ -545,9 +605,9 @@ async function doExport(onlyNew){
       const name="off_list/"+k+"."+extFor(b.type); files.push({name,data:new Uint8Array(await b.arrayBuffer())});
       man.push([k,'','','off-list',(await getMeta('said:'+k))||'','',name].map(tsv).join("\t")); }
     for(const mk of await storeKeys('meta')){ if(typeof mk!=='string'||!mk.startsWith('superseded:')) continue;
-      const v=await getMeta(mk); if(!v||!v.blob) continue; const p=mk.split(':');
-      const name="superseded/"+p[1]+"."+p[2]+"."+extFor(v.blob.type); files.push({name,data:new Uint8Array(await v.blob.arrayBuffer())});
-      man.push([p[1],'','','superseded',v.said||'','',name].map(tsv).join("\t")); }
+      const v=await getMeta(mk); if(!v||!v.blob) continue; const p=mk.split(':'); const sk=KEY_MAP[p[1]]||p[1];
+      const name="superseded/"+sk+"."+p[2]+"."+extFor(v.blob.type); files.push({name,data:new Uint8Array(await v.blob.arrayBuffer())});
+      man.push([sk,'','','superseded',v.said||'','',name].map(tsv).join("\t")); }
   }
   if(!files.length){info.textContent=onlyNew?"Nothing new since the last export.":"Nothing recorded yet.";return;}
   files.push({name:"manifest.tsv", data:new TextEncoder().encode(man.join("\n")+"\n")});
@@ -563,8 +623,9 @@ document.getElementById('exportNew').onclick=()=>doExport(true);
 </body></html>"""
 
 
-def write_html(words, sheet_id, out):
+def write_html(words, sheet_id, out, key_map=None):
     html = (TEMPLATE.replace("__WORDS__", json.dumps(words, ensure_ascii=False))
+                    .replace("__KEY_MAP__", json.dumps(key_map or {}, ensure_ascii=False, separators=(",", ":")))
                     .replace("__SHEET_ID__", sheet_id))
     open(out, "w", encoding="utf-8").write(html)
     return len(html)
@@ -584,15 +645,21 @@ def main(argv):
             if t["legacy_stale"]:
                 w["ls"] = 1          # a clip from the 2026-10-12 sheet is stale for this take
             words.append(w)
-        size = write_html(words, DECK_SHEET_ID, "recorder_A2.html")
+        kmap = key_map_for_page()
+        size = write_html(words, DECK_SHEET_ID, "recorder_A2.html", kmap)
         print(f"wrote recorder_A2.html ({size // 1024} KB) + {LIST_OUT}: {len(takes)} takes, "
-              f"IndexedDB lt_recorder_{DECK_SHEET_ID}")
+              f"IndexedDB lt_recorder_{DECK_SHEET_ID}; key map {len(kmap)} old take keys")
         for lv in ("A1", "A2"):
             parts = {s: n for (l, s), n in stats.items() if l == lv}
             print(f"  {lv}: {sum(parts.values())}  " + ", ".join(f"{s} {n}" for s, n in sorted(parts.items())))
         print(f"  kinds: word {sum(1 for t in takes if t['kind'] == 'word')}, "
               f"example sentence {sum(1 for t in takes if t['key'].endswith('_s'))}, "
-              f"sentence card {sum(1 for t in takes if t['key'].startswith('S-'))}")
+              f"sentence card {sum(1 for t in takes if t['kind'] == 'sentence' and not t['key'].endswith('_s'))}")
+        for lv in ("A1",):
+            a = [t for t in takes if t["level"] == lv]
+            print(f"  {lv} takes by kind: word {sum(1 for t in a if t['kind'] == 'word')}, "
+                  f"example sentence {sum(1 for t in a if t['key'].endswith('_s'))}, "
+                  f"sentence card {sum(1 for t in a if t['kind'] == 'sentence' and not t['key'].endswith('_s'))}")
         for w in warnings:
             print("  warning:", w)
         return

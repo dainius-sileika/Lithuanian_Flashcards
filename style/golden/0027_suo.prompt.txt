@@ -1,8 +1,8 @@
-key: 001_suo
+key: 0027_suo
 ledger: out_deck_f62/ledger.csv
 backend: openai/gpt-image-2.5-sunburst
 size: 1536x1024
-file: 001_suo.png
+file: 0027_suo.png
 spec_version: (pre-3.0.0 render; spec 3.0.0 describes it)
 style_hash: (pre-lock render)
 

@@ -1,5 +1,5 @@
 """Sentence-card pictures (2026-10-12): one picture per row of
-a2_build/sentences/sentences.csv (S-0001...), drawn by the production prompt path
+a2_build/sentences/sentences.csv (0102_vyras_geria_kava...), drawn by the production prompt path
 (a2_adapter.build_call_a2 -> go_generator.build_prompt) on the production model
 (gpt-image-2.5-sunburst, medium, 1536x1024) into out_deck_sent/<id>.png, where
 build_apkg looks (SENT_IMAGE_DIRS). Copied from out_deck_a2/gen.py; only the row

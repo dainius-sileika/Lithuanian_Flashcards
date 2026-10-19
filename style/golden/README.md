@@ -25,13 +25,13 @@ Spec: `docs/DESIGN_SPEC_CURRENT.md` (§1, §4, §6, §11). Lock: `style/STYLE_LO
 ## The groups
 | group | keys | why |
 |---|---|---|
-| vignette · animals and objects | 001_suo, 005_karve, 224_raktas, 180_kiausinis, 057_kepure, 209_stalas | `CONCEPT_LEAD`: subject on bare light paper, surroundings fading out, 2–3 ruled insets |
-| vignette · people | 082_motina, 092_senele, 110_mokytojas, 118_policininkas, 137_vestuves, 021_variklis, 098_kaimynas | the four dress classes, the hair wording (092), professional text exception (110), gaze, Setting lines |
-| full scene · places | 027_gatve, 036_mokykla, 034_ukis, 024_miestas | `CONCEPT_LEAD_SCENE`: the scene fills the panel edge to edge with its own sky and ground |
-| verbs and qualities | 366_eiti, 448_aukstas, 069_raudonas, 227_raide, A2-0044 | motion strip, contrast adjective, no-inset colour card, the glyph exception, a number text exception |
-| A2 vignettes | A2-0220, A2-0729 | the same look on the A2 list (Sunburst, 2026-10-11/12) |
-| situations (bubble-free) | A2-0262 *, 374_galvoti *, A2-0906 * | conversation gaze with insets, house gaze on a non-speaking situation, a two-panel `situation_2` under `PANEL_CONTINUITY_RULE` |
-| sentence cards | S-0006 * | a sentence picture for a cloze card |
+| vignette · animals and objects | 0027_suo, 1035_karve, 0133_raktas, 0452_kiausinis, 0556_kepure, 0063_stalas | `CONCEPT_LEAD`: subject on bare light paper, surroundings fading out, 2–3 ruled insets |
+| vignette · people | 0400_motina, 0523_senele, 0045_mokytojas, 0407_policininkas, 0850_vestuves, 1096_variklis, 0060_kaimynas | the four dress classes, the hair wording (092), professional text exception (110), gaze, Setting lines |
+| full scene · places | 0175_gatve, 0130_mokykla, 1074_ukis, 0022_miestas | `CONCEPT_LEAD_SCENE`: the scene fills the panel edge to edge with its own sky and ground |
+| verbs and qualities | 0011_eiti, 0178_aukstas, 0617_raudonas, 2275_raide, 0079_trys | motion strip, contrast adjective, no-inset colour card, the glyph exception, a number text exception |
+| A2 vignettes | 1406_turistas, 0379_vairuotojas | the same look on the A2 list (Sunburst, 2026-10-11/12) |
+| situations (bubble-free) | 1210_klausti *, 0223_galvoti *, 0247_man_reikia_pagalbos * | conversation gaze with insets, house gaze on a non-speaking situation, a two-panel `situation_2` under `PANEL_CONTINUITY_RULE` |
+| sentence cards | 0747_mama_gamina_vakariene * | a sentence picture for a cloze card |
 
 \* **Pending pictures (4).** The cloud clone holds only the 2026-10-11 renders; the bubble-free situation
 cards (`out_phrases_v3/`, 2026-10-18) and the sentence pictures (`out_deck_sent/`) exist on the owner's

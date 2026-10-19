@@ -1,8 +1,8 @@
-key: S-0006
+key: 0747_mama_gamina_vakariene
 ledger: out_deck_sent/ledger.csv
 backend: openai/gpt-image-2.5-sunburst
 size: 1536x1024
-file: S-0006.png
+file: 0747_mama_gamina_vakariene.png
 spec_version: (pre-3.0.0 render; spec 3.0.0 describes it)
 style_hash: (pre-lock render)
 

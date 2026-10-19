@@ -31,7 +31,12 @@ MIRROR = {"out_deck_f62": "_cloud_media/f62", "out_deck_a2": "_cloud_media/a2"}
 
 
 def ledger_row(key):
-    """(last ledger row for key, number of rows) from the first ledger, in build order, that has it."""
+    """(last ledger row for key, number of rows) from the first ledger, in build order, that has it.
+    Ledgers are append-only history and keep the names a card had when it was rendered (spec §12):
+    the row matches the current key or any older name of it (tools/keymap.py)."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import keymap
+    names = {keymap.canonical(key)} | set(keymap.aliases(key)) | {key}
     for d in LEDGERS:
         p = os.path.join(ROOT, d, "ledger.csv")
         if not os.path.exists(p):
@@ -39,7 +44,7 @@ def ledger_row(key):
         hit, n = None, 0
         with open(p, encoding="utf-8", newline="") as fh:
             for r in csv.DictReader(fh):
-                if r.get("key") == key:
+                if r.get("key") in names:
                     hit, n = dict(r, _ledger=p[len(ROOT) + 1:], _dir=d), n + 1
         if hit:
             return hit, n

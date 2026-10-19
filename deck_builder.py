@@ -35,7 +35,8 @@ whole picture deck (or any slice of it) through the frozen GO pipeline:
 
 Fixes carried from the 1.5.1 audit:
   - collision-proof keys: {row#}_{ascii-slug} (eiti x2, sokti x2, peda x2,
-    vyras x2, zeme x2, senas x2 would otherwise overwrite each other)
+    vyras x2, zeme x2, senas x2 would otherwise overwrite each other).
+    Since 2026-10-20 (spec §12) the key is master_wordlist.csv `key` (NNNN_slug), not derived here.
   - card numbers come from the wordlist '#' column (no BASE_NUMBER)
   - cards.csv now carries lt_pron + gender for the Anki layer
   - --only for the QA re-roll pass; --category for block-by-block production
@@ -46,7 +47,7 @@ Run:
   python deck_builder.py --dry-run                 # plan + prompts, no API
   python deck_builder.py --trial 6                 # first 6 eligible rows
   python deck_builder.py --category Animal         # one category block
-  python deck_builder.py --only 001_suo,113_gydytojas   # re-roll pass
+  python deck_builder.py --only 0027_suo,0245_gydytojas   # re-roll pass
   python deck_builder.py                           # the full deck
 """
 from __future__ import annotations
@@ -76,9 +77,9 @@ MOTION_STRIP_ROWS = {366, 367}
 # spec 3.1.0 DIRECTION_RULE exemptions: cards whose MEANING is a side or a direction (A1 ints, A2 ids).
 # go_generator.direction_applies() also leaves out two-panel situation_2 cards and LEFT/RIGHT-named stagings.
 DIRECTION_FREE_ROWS = {425,                                         # sukti (turn)
-                       "A2-0212", "A2-0405", "A2-0423", "A2-0958", "A2-0959", "A2-0995", "A2-1047", "A2-1061",
-                       "A2-1062", "A2-1084", "A2-1506", "A2-1526", "A2-1638", "A2-1680", "A2-1689", "A2-1690",
-                       "A2-1878", "A2-2005"}
+                       "1435_kryptis", "0120_grizti", "2177_apsisukti", "1275_kaireje", "1252_eikite_tiesiai", "1038_desineje", "0922_tiesiai", "2031_i_lauka",
+                       "1537_i_vidu", "1587_priesais", "0642_desine", "0580_kaire", "1310_grizti_namo", "2084_pareiti", "1953_pasukti_i_desine", "1962_pasukti_i_kaire",
+                       "0788_kitoje_puseje", "1099_desineje"}
 # verbs whose generic step-by-step motion strip still teaches the word (jump,
 # go out, throw, fall, bend, turn); every other verb without its own insets or
 # result panel gets VERB_INSET_DEFAULT (F6.2: dainuoti drew a conductor's
@@ -1251,7 +1252,12 @@ def eligible(rows, include_pending=False):
             cls = "verb"
         else:
             cls = route(r["category"], r["type"], r["flags"])
-        key = f"{n:03d}_{slug(r['lithuanian_TARGET'])}"
+        # spec §12 (2026-10-20): the card key is master_wordlist.csv `key` (NNNN_slug), no longer
+        # derived from the row number; a generable row without a key is a data error.
+        key = (r.get("key") or "").strip()
+        if not key:
+            raise SystemExit(f"deck_builder: master_wordlist.csv row #{n} ({r['lithuanian_TARGET']}) has no `key`; "
+                             "mint one with tools/rename_keys.py --mint")
         out.append((key, r, cls))
     return out, skipped
 

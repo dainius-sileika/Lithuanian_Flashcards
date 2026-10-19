@@ -1,17 +1,17 @@
 {
- "_about": "Per-card precedent/likeness values for go_generator PRECEDENT_RULE / LIKENESS_RULE, read by historical.py. Only keys listed in 'active' reach a prompt (2026-10-18: the six-render test T1-T6; the A5 roll-out adds the rest after the owner passes the test). Face features checked 2026-10-18 against the Wikipedia/Commons portraits (Adamkus official portrait: no spectacles, broad smiling face; Darius broad square face; Girenas narrower oval face; Binkis wears a tie) and corrected from the planner's draft; precedent texts name no place. 2026-10-19 (A5 roll-out, owner verdicts): 123_autorius removed from active (owner: keep the original card); 113, 122, A2-0782 (owner: 'All three') and 138 (owner: 'Yes, the 1939 basketball team') added. Their face words come from the planner's likeness_cards.csv; the executor could not view the portraits this round, so they stay UNVERIFIED (Basanavičius's beard and bald forehead, Čiurlionis's moustache are the familiar portrait features). 2026-10-19 (round 4, owner 'go back to the original'): 097_prezidentas removed from active; the shipped picture (no likeness, no Vytis) is back and its entry stays here for the record.",
+ "_about": "Per-card precedent/likeness values for go_generator PRECEDENT_RULE / LIKENESS_RULE, read by historical.py. Only keys listed in 'active' reach a prompt (2026-10-18: the six-render test T1-T6; the A5 roll-out adds the rest after the owner passes the test). Face features checked 2026-10-18 against the Wikipedia/Commons portraits (Adamkus official portrait: no spectacles, broad smiling face; Darius broad square face; Girenas narrower oval face; Binkis wears a tie) and corrected from the planner's draft; precedent texts name no place. 2026-10-19 (A5 roll-out, owner verdicts): 0906_autorius removed from active (owner: keep the original card); 113, 122, 2263_inzinierius (owner: 'All three') and 138 (owner: 'Yes, the 1939 basketball team') added. Their face words come from the planner's likeness_cards.csv; the executor could not view the portraits this round, so they stay UNVERIFIED (Basanavičius's beard and bald forehead, Čiurlionis's moustache are the familiar portrait features). 2026-10-19 (round 4, owner 'go back to the original'): 0964_prezidentas removed from active; the shipped picture (no likeness, no Vytis) is back and its entry stays here for the record.",
  "active": [
-  "012_lektuvas",
-  "035_teismas",
-  "A2-1297",
-  "A2-1769",
-  "113_gydytojas",
-  "122_menininkas",
-  "A2-0782",
-  "138_komanda"
+  "0335_lektuvas",
+  "0880_teismas",
+  "1405_krepsinis",
+  "1573_paminklas",
+  "0245_gydytojas",
+  "1044_menininkas",
+  "2263_inzinierius",
+  "1241_komanda"
  ],
  "cards": {
-  "012_lektuvas": {
+  "0335_lektuvas": {
    "precedent": "an orange single-engine high-wing monoplane with wide aerofoil-shaped wing struts, a ring-cowled radial engine and two spoked wheels",
    "likeness": [
     {
@@ -30,7 +30,7 @@
     }
    ]
   },
-  "097_prezidentas": {
+  "0964_prezidentas": {
    "precedent": "a heavy neoclassical corner block with a ground-floor arcade of round arches",
    "likeness": [
     {
@@ -42,7 +42,7 @@
     }
    ]
   },
-  "123_autorius": {
+  "0906_autorius": {
    "precedent": "",
    "likeness": [
     {
@@ -61,19 +61,19 @@
     }
    ]
   },
-  "035_teismas": {
+  "0880_teismas": {
    "precedent": "",
    "likeness": []
   },
-  "A2-1297": {
+  "1405_krepsinis": {
    "precedent": "the 1939 champions in plain white kit with a diagonal tricolour band, under the four great riveted steel arches of an interwar sports hall",
    "likeness": []
   },
-  "A2-1769": {
+  "1573_paminklas": {
    "precedent": "a winged female figure striding forward on a tall stone plinth, broken chains in one hand and a raised banner in the other, in a museum garden with a tall square bell tower behind",
    "likeness": []
   },
-  "113_gydytojas": {
+  "0245_gydytojas": {
    "precedent": "",
    "likeness": [
     {
@@ -85,7 +85,7 @@
     }
    ]
   },
-  "122_menininkas": {
+  "1044_menininkas": {
    "precedent": "the canvas on his easel shows two crowned figures, a queen and a king, bending over a small glowing globe in a dark forest - a symbolist fairy-tale painting in deep blues and greens",
    "likeness": [
     {
@@ -97,7 +97,7 @@
     }
    ]
   },
-  "A2-0782": {
+  "2263_inzinierius": {
    "precedent": "a plan-and-elevation drawing of a small low-wing monoplane on the drawing board",
    "likeness": [
     {
@@ -109,7 +109,7 @@
     }
    ]
   },
-  "138_komanda": {
+  "1241_komanda": {
    "precedent": "the 1939 champions in plain white kit with a diagonal tricolour band, under the four great riveted steel arches of an interwar sports hall",
    "likeness": [
     {

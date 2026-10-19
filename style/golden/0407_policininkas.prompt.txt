@@ -1,8 +1,8 @@
-key: 118_policininkas
+key: 0407_policininkas
 ledger: out_deck_f62/ledger.csv
 backend: openai/gpt-image-2.5-sunburst
 size: 1536x1024
-file: 118_policininkas.png
+file: 0407_policininkas.png
 spec_version: (pre-3.0.0 render; spec 3.0.0 describes it)
 style_hash: (pre-lock render)
 

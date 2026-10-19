@@ -66,7 +66,7 @@ with open(OUT, "w", encoding="utf-8") as f:
             'SITUATIONS: english gloss -> {ids, lithuanian, format ("situation" | "situation_2" |\n'
             '  "sequence" | "" = no image), scene, cue, confusables, merge_with, render, note, source_file,\n'
             '  gaze ("conversation" | "default")}\n'
-            'BY_ID: card id ("A2-0882", "374", "S-0014") -> english gloss\n"""\n')
+            'BY_ID: card id ("0356_nieko_tokio", "0223_galvoti", "0104_kiek_kainuoja_duona") -> english gloss\n"""\n')
     f.write("SITUATIONS = " + pprint.pformat(sit, width=110, sort_dicts=False) + "\n\n")
     f.write("BY_ID = " + pprint.pformat(by_id, width=110) + "\n\n\n")
     f.write('def renders(en):\n    """True if this gloss gets its own situation render."""\n'

@@ -1,29 +1,29 @@
 key,group,what_it_shows,english
-001_suo,vignette · animals and objects,animal vignette on bare paper with two insets; brush-ink outline and matte gouache,dog
-005_karve,vignette · animals and objects,animal vignette with a Setting line (farm) fading into the paper,cow
-224_raktas,vignette · animals and objects,plain object vignette; the subject large and central; insets as use,key
-180_kiausinis,vignette · animals and objects,food vignette; sliced view allowed; cream paper tone,egg
-057_kepure,vignette · animals and objects,clothing vignette with a wearer; headwear detail,hat
-209_stalas,vignette · animals and objects,furniture vignette; open margins; insets of use,table
-082_motina,vignette · people,civilian woman and child; the younger woman's hair straight; near-frontal lone-figure gaze,mother
-092_senele,vignette · people,older woman under a cotton headscarf (hair wording); civilian dress,grandmother
-110_mokytojas,vignette · people,professional class (teacher with pupils) and a declared text exception (ABC / 2+3=5),teacher
-118_policininkas,vignette · people,professional class (plain service uniform) with a Setting line,police officer
-137_vestuves,vignette · people,formal class (Sunday best); no insets; the small tricolour where it fits,wedding
-021_variklis,vignette · people,worker class (blue-grey work clothes; flat cap); machine drawn whole,engine
-098_kaimynas,vignette · people,civilians at a village fence; Setting line; one or two faces to the viewer,neighbour
-027_gatve,full scene · places,CONCEPT_LEAD_SCENE: a street filling the panel edge to edge with sky and ground,street
-036_mokykla,full scene · places,full scene of a school with its own background; insets below,school
-034_ukis,full scene · places,full scene with the worker class on a collective farm,farm
-024_miestas,full scene · places,city scene; crowd of distinct individuals; trolleybus and tiled roofs,city
-366_eiti,verbs and qualities,MOTION_STRIP_RULE: three phases left to right; the single black arrow,to walk
-448_aukstas,verbs and qualities,adjective by contrast (tall vs short man); arrow on the subject,tall
-069_raudonas,verbs and qualities,colour card: no insets; the colour carried by plain objects,red
-227_raide,verbs and qualities,GLYPH_RULE: the one permitted letterform as the subject,letter
-A2-0044,verbs and qualities,text exception on a number card (the numeral 3) in the period print style,three
-A2-0220,A2 vignettes,A2 picture card: professional class (tourist with a camera) before a real Vilnius church,tourist
-A2-0729,A2 vignettes,A2 picture card: driver at the wheel of a period bus; interior scene,driver
-A2-0262,situations (bubble-free),situation card with insets; CONVERSATION_GAZE_RULE: speakers look at each other; no bubble,to ask
-374_galvoti,situations (bubble-free),non-speaking situation card: house gaze kept; insets of thought without symbols,to think
-A2-0906,situations (bubble-free),two-panel situation_2: ask -> visible answer; PANEL_CONTINUITY_RULE,I need help
-S-0006,sentence cards,sentence picture (cloze card): the scene carries the sentence; no English on the front,Mum is cooking dinner
+0027_suo,vignette · animals and objects,animal vignette on bare paper with two insets; brush-ink outline and matte gouache,dog
+1035_karve,vignette · animals and objects,animal vignette with a Setting line (farm) fading into the paper,cow
+0133_raktas,vignette · animals and objects,plain object vignette; the subject large and central; insets as use,key
+0452_kiausinis,vignette · animals and objects,food vignette; sliced view allowed; cream paper tone,egg
+0556_kepure,vignette · animals and objects,clothing vignette with a wearer; headwear detail,hat
+0063_stalas,vignette · animals and objects,furniture vignette; open margins; insets of use,table
+0400_motina,vignette · people,civilian woman and child; the younger woman's hair straight; near-frontal lone-figure gaze,mother
+0523_senele,vignette · people,older woman under a cotton headscarf (hair wording); civilian dress,grandmother
+0045_mokytojas,vignette · people,professional class (teacher with pupils) and a declared text exception (ABC / 2+3=5),teacher
+0407_policininkas,vignette · people,professional class (plain service uniform) with a Setting line,police officer
+0850_vestuves,vignette · people,formal class (Sunday best); no insets; the small tricolour where it fits,wedding
+1096_variklis,vignette · people,worker class (blue-grey work clothes; flat cap); machine drawn whole,engine
+0060_kaimynas,vignette · people,civilians at a village fence; Setting line; one or two faces to the viewer,neighbour
+0175_gatve,full scene · places,CONCEPT_LEAD_SCENE: a street filling the panel edge to edge with sky and ground,street
+0130_mokykla,full scene · places,full scene of a school with its own background; insets below,school
+1074_ukis,full scene · places,full scene with the worker class on a collective farm,farm
+0022_miestas,full scene · places,city scene; crowd of distinct individuals; trolleybus and tiled roofs,city
+0011_eiti,verbs and qualities,MOTION_STRIP_RULE: three phases left to right; the single black arrow,to walk
+0178_aukstas,verbs and qualities,adjective by contrast (tall vs short man); arrow on the subject,tall
+0617_raudonas,verbs and qualities,colour card: no insets; the colour carried by plain objects,red
+2275_raide,verbs and qualities,GLYPH_RULE: the one permitted letterform as the subject,letter
+0079_trys,verbs and qualities,text exception on a number card (the numeral 3) in the period print style,three
+1406_turistas,A2 vignettes,A2 picture card: professional class (tourist with a camera) before a real Vilnius church,tourist
+0379_vairuotojas,A2 vignettes,A2 picture card: driver at the wheel of a period bus; interior scene,driver
+1210_klausti,situations (bubble-free),situation card with insets; CONVERSATION_GAZE_RULE: speakers look at each other; no bubble,to ask
+0223_galvoti,situations (bubble-free),non-speaking situation card: house gaze kept; insets of thought without symbols,to think
+0247_man_reikia_pagalbos,situations (bubble-free),two-panel situation_2: ask -> visible answer; PANEL_CONTINUITY_RULE,I need help
+0747_mama_gamina_vakariene,sentence cards,sentence picture (cloze card): the scene carries the sentence; no English on the front,Mum is cooking dinner

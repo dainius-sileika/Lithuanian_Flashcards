@@ -199,8 +199,8 @@ CONVERSATION_LINE = ("In this picture someone speaks to someone else; the deck's
 
 
 def situation_row(key):
-    """The situations.py entry for an image key ('A2-0882', '374_galvoti'), or None."""
-    en = _SIT_ID.get(key) or _SIT_ID.get(key.split("_")[0])
+    """The situations.py entry for an image key ('0356_nieko_tokio', '0223_galvoti'), or None."""
+    en = _SIT_ID.get(key)
     s = _SIT.get(en) if en else None
     if s and s.get("format") and s.get("render", "").startswith("yes"):
         return dict(s, english=en)
@@ -352,17 +352,16 @@ def file_hash(path):
 
 
 def card_id(r):
-    """One id per card across all three sources: A2 queue rows by `id`
-    ('A2-0882'), the main wordlist by `#` (151 -> '151'), cards_anki by the
-    numeric prefix of `key` ('151_zurnalas' -> '151')."""
+    """One id per card across all three sources, the card key (spec §12, 2026-10-20): A2 list rows
+    by `id`, cards_anki and master_wordlist by `key` (master gained the column at the rename).
+    Master rows without a card (superseded colours, category-multi) get 'ff<#>', which joins
+    nothing. No numeric-prefix fallback: '0151_...' is study position 151, not wordlist row 151."""
     if (r.get("id") or "").strip():
         return r["id"].strip()
-    if (r.get("#") or "").strip():
-        return f"{int(r['#']):03d}"
     if (r.get("key") or "").strip():
-        return r["key"].strip().split("_")[0]
-    if (r.get("number") or "").strip():
-        return f"{int(r['number']):03d}"
+        return r["key"].strip()
+    if (r.get("#") or "").strip():
+        return f"ff{int(r['#'])}"
     return ""
 
 
@@ -425,7 +424,7 @@ def judge(seen, row):
 
     fails, warns = [], []
     try:
-        is_glyph = int(row.get("#") or row.get("number") or 0) in GLYPH_ROWS
+        is_glyph = int(row.get("#") or row.get("ff_no") or 0) in GLYPH_ROWS
     except ValueError:
         is_glyph = False
     allow_words = set(words_of(allowed)) | {plain(x) for x in re.split(r"[,;/]", allowed) if x.strip()}
@@ -582,7 +581,7 @@ def main():
         seen = cache.get(ck) or errors.get(ck)
         if not seen:
             continue
-        row = meta.get(key.split("_")[0]) or meta.get(key) or {}
+        row = meta.get(key) or {}
         if seen.get("error"):
             fails, warns = [f"QA error: {seen['error']}"], []
         elif srow:

@@ -11,8 +11,9 @@ field and its tags, via attribute selectors generated from SECTIONS below.
 
 SECTIONS is the one place to edit the running heads. Each entry: numeral, Lithuanian label
 (shown in small caps), and the Category values (A1 cards_anki.csv / A2 a2_wordlist.csv /
-sentences) it covers. ROUTE_SECTIONS overrides by note tag: every PHRASE-route note is a
-phrase whatever its category, every sentence card (tag SENT) a sentence. A category
+sentences) it covers. ROUTE_SECTIONS overrides by note tag: every phrase note (tag
+lt::kind::phrase) is a phrase whatever its category, every sentence card (lt::kind::sentence)
+a sentence (spec §12, 2026-10-20; until 3.3.0 the tags were PHRASE and SENT). A category
 missing from SECTIONS is shown as it is (build_apkg prints a warning listing them).
 """
 import os
@@ -43,18 +44,18 @@ SECTIONS = [
     ("XVII", "jausmai ir nuomonės", ["Feelings", "Opinion & discourse"]),
     ("XVIII", "pagalbiniai žodžiai", ["Pronouns", "Question words", "Prepositions", "Conjunctions", "Adverbs"]),
     ("XIX", "frazės", ["Phrases", "Greetings", "Politeness", "Basics", "Getting by", "Formulas",
-                        "Transactions", "Core patterns", "Extended patterns"]),
+                        "Transactions", "Core patterns", "Extended patterns", "Functions"]),
     ("XX", "sakiniai", ["Sakiniai"]),
 ]
-ROUTE_SECTIONS = {"PHRASE": "XIX", "SENT": "XX"}     # note tag -> numeral
+ROUTE_SECTIONS = {"lt::kind::phrase": "XIX", "lt::kind::sentence": "XX"}     # note tag -> numeral
 
 # Brygada 1918 throughout (owner 2026-10-18); PT Serif + Old Standard TT are in fonts/_superseded/
 FONT_FILES = ["_Brygada1918-Regular.ttf", "_Brygada1918-Italic.ttf", "_Brygada1918-Bold.ttf"]
 FONT_DIR = "fonts"
 
-# Plate numbers ("pav. N" in the bottom band): one sequence since 2026-10-18 (owner decision
-# 2026-10-17): A1 1-531, A2 from 1001 (A2-0001 -> 1001), sentences from 4001 (S-0001 -> 4001);
-# build_apkg.plate_number() fills the Number field.
+# Plate numbers ("pav. N" in the bottom band) = the key's number for every note type (spec §12,
+# 2026-10-20: 0021_labas -> pav. 21); build_apkg.plate_number() fills the Number field. (2026-10-18
+# to 3.3.0: A1 1-531 by wordlist row, A2 from 1001, sentences from 4001.)
 
 
 def _css_str(s):

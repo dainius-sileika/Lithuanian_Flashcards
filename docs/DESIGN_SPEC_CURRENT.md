@@ -1,6 +1,6 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.3.0** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.4.0** · dated 2026-10-20 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
@@ -119,9 +119,10 @@ Read this file first in a new session; change the code, then this file, in the s
   sources never written; failures → `build_reports/frame_flags.csv`) and redrawn in CSS at one width.
 - **Top band:** Lithuanian section label `"N skyrius · <label>"` from `card_frame.SECTIONS` (I žmonės … XX
   sakiniai; XVI *daiktai ir sąvokos*, XVIII *pagalbiniai žodžiai* — owner 2026-10-19), chosen by the
-  note's Category field and `ROUTE_SECTIONS` tags (PHRASE → XIX frazės, SENT → XX sakiniai).
+  note's Category field and `ROUTE_SECTIONS` tags (`lt::kind::phrase` → XIX frazės, `lt::kind::sentence` → XX
+  sakiniai; §12). `Functions` belongs to XIX.
 - **Bottom band:** `pav. N` · leader · **English caption** (the `english` / `Gloss` field). Plate numbers
-  are one sequence (`build_apkg.plate_number`): A1 1–531, A2 1001+ (A2-0001 → 1001), sentences 4001+.
+  are the key's number (§12; `build_apkg.plate_number`: `0021_labas` → pav. 21), for every note type.
 - **Cloze fronts hide the English caption** (`.sf-cloze-front .sf-en { visibility: hidden }`); the
   cloze sentence sits on a paper panel inside the frame (or under the picture on sentence cards).
 - **Back (default since 2026-10-18):** `card_frame.proposed_backs("thumb")` + `anki/back_proposed.css`
@@ -131,24 +132,28 @@ Read this file first in a new session; change the code, then this file, in the s
   (`build_apkg.adjective_forms`). `--back current` and `--frame drawn` keep the older looks reachable.
 - **Typography:** Brygada 1918 regular/italic/bold throughout, shipped as media `fonts/_Brygada1918-*.ttf`
   (`card_frame.FONT_FILES`); PT Serif / Old Standard TT retired to `fonts/_superseded/`.
-- **Note types:** "Lietuvių GO" (`GO_FIELDS`, 14 fields incl. `usage`) and "Lietuvių GO Cloze"; model ids,
-  deck ids and GUIDs (`genanki.guid_for(key)`) never change. Decks: `Lietuvių Flashcards::A1` / `::A2`.
+- **Note types:** "Lietuvių GO" (`GO_FIELDS`, 14 fields incl. `usage`) and "Lietuvių GO Cloze"; model ids
+  and deck ids never change; GUIDs are `genanki.guid_for(key)` and change only with a key (§12: once, at the
+  rename of 2026-10-20, then frozen at the A1+A2 lock). Decks: `Lietuvių Flashcards::A1` / `::A2`.
 
 ## 7. Content and data
-- A1 base: `cards_anki.csv` (520 cards, built from `master_wordlist.csv` + `card_notes.json` staging).
-  A2 list: `a2_build/a2_wordlist.csv` (built by `a2_build/src/build_a2.py` from `wordlist_a2_pending.csv`,
-  `a2_rebase/*`, `sources/*`; ids reserved in `a2_build/id_map.csv`). Sentences: `a2_build/sentences/sentences.csv`.
+- A1 base: `cards_anki.csv` (521 cards, built from `master_wordlist.csv` + `card_notes.json` staging; its
+  `ff_no` column is the Fluent Forever row, a data join only). A2 list: `a2_build/a2_wordlist.csv` (first built
+  by `build_a2.py`, edited directly since 2026-10-11; the builder is retired to `_archive/deprecated/a2_src_2026-10/`;
+  `a2_build/id_map.csv` registers the current keys). Sentences: `a2_build/sentences/sentences.csv`. Keys: §12.
 - **Image resolution order** (`build_apkg.A1_IMAGE_DIRS` / `A2_IMAGE_DIRS` / `SENT_IMAGE_DIRS`, first hit wins):
   A1 `out_phrases_v3, out_deck_f62, images`; A2 `out_phrases_v3/round2, out_phrases_v3, out_deck_a2,
   out_phrases_a2, images_a2, out_phrases`; sentences `out_phrases_v3, out_deck_sent, images_sent`.
   `images/` holds the 1.x WebP masters as the A1 fallback; the pre-F6.2 PNGs are in `_TO_DELETE/out_deck/`.
-- **Merges** (owner 2026-10-19, `a2_build/merged_keys.csv`): A2-1187 Sudie → A2-0354 Viso gero (back note),
-  A2-1149 atsargiai → A2-0385 Atsargiai!, A2-1944 → A2-1995, A2-1958 → A2-1991. The surviving key keeps its
-  GUID; the absorbed id stays reserved (`id_map.csv` `merged_into`). **B1 deferrals:** 31 rows in
+- **Merges** (owner 2026-10-19, `a2_build/merged_keys.csv`): A2-1187 Sudie → A2-0354 Viso gero (now
+  `0047_viso_gero`, back note), A2-1149 atsargiai → A2-0385 Atsargiai! (`0344_atsargiai`), A2-1944 → A2-1995
+  (`2221_kaip_rasoma`), A2-1958 → A2-1991 (`1727_man_labiau_patinka_arbata`). The absorbed id stays reserved
+  under its old name (`id_map.csv` `merged_into`; `status=merged` in the key map). **B1 deferrals:** 31 rows in
   `a2_build/deferred_B1.csv`, out of the A2 build.
 - **Prašom + infinitive** (owner 2026-10-18, `a2_build/PRASOM_SWITCH_2026-10-18.md`): the four postposed
-  *prašau* phrases (A2-0902/0903/0375/1166) and two cloze examples now read *Prašom pakartoti* etc.
-- A2-0964: *Ar galite ką nors parekomenduoti?* (owner 2026-10-19).
+  *prašau* phrases (`0521_prasom_pakartoti`, `0565_prasom_uzrasyti`, `0203_prasom_kalbeti_leciau`,
+  `1029_prasom_sestis`; formerly A2-0902/0903/0375/1166) and two cloze examples now read *Prašom pakartoti* etc.
+- `2136_ar_galite_ka_nors` (formerly A2-0964): *Ar galite ką nors parekomenduoti?* (owner 2026-10-19).
 - Stress marks are sourced (Wiktionary / kirtis.info / LKŽ), never generated; `a2_build/stress_58_resolved.csv`.
 
 ## 8. Study order v3 (`build_study_order_v3.py` → `study_order.csv`, adopted 2026-10-19; v2 2026-10-17 is history)
@@ -164,16 +169,21 @@ Read this file first in a new session; change the code, then this file, in the s
 - **Pairs:** `PIN_AFTER` (batonas after duona, the family pairs …), the Fluent Forever adjective pairs and the
   list's "pair with" `PAIRS` sit adjacent. **Confusables:** same headword `SEPARATION 60`, look-alikes (edit
   distance 1, ≥ 4 letters, paradigms exempt) `LOOKALIKE_SEPARATION 30`. Sequences keep order.
-- **Re-tiers** `a2_build/study_order/retier_v3.csv` (44 cards, one reason each; `--apply-retier` writes the
-  `level` into `cards_anki.csv`, `master_wordlist.csv`, `a2_build/a2_wordlist.csv`): 16 A2 → A1 (words A1
-  sentences need: manyti, vėluoti, likti …; split antonym partners piktas, abi, linksmas, šiemet), 28 A1 → A2
-  (rare Fluent Forever leftovers: plaštaka, lydyti, išlenktas …). The 62-item retag of 2026-10-17 stands.
+- **Re-tiers** `a2_build/study_order/retier_v3.csv` (49 cards, one reason each; `--apply-retier` writes the
+  `level` into `cards_anki.csv`, `master_wordlist.csv` (by its `key` column), `a2_build/a2_wordlist.csv`): 21 A2 → A1
+  (words A1 sentences need: manyti, vėluoti, likti …, and dep37 of 2026-10-20: muzika, keltis, tiesa, teisus,
+  šviesti; split antonym partners piktas, abi, linksmas, šiemet), 28 A1 → A2 (rare Fluent Forever leftovers:
+  plaštaka, lydyti, išlenktas …). The 62-item retag of 2026-10-17 stands.
 - **Audit as code:** `--audit FILE` measures any order (coverage, forward dependencies, pairs, confusables,
   pacing, Spearman vs the corpora); `--report` compares the new order with the one it replaces
   (`a2_build/study_order/AUDIT_v3.txt`, `REPORT_order_v3.md`). v2 → v3: forward dependencies 172 → 43 (37 left
-  are A1 sentences needing an A2-only word), pairs apart 14 → 0, longest tail run 119 → 11.
+  are A1 sentences needing an A2-only word), pairs apart 14 → 0, longest tail run 119 → 11. dep37 (2026-10-20,
+  `a2_build/study_order/dep37_plan.md`, `AUDIT_v3_1.txt`): 5 words to A1 and 27 example sentences reworded →
+  **0 A1 cards need an A2-only word**, 6 forward dependencies left (4 A1-internal cycle cases, 2 A2).
 - **Recording order** `a2_build/study_order/recording_order_v3.csv`: A1 first, then A2, each in study order.
-- Deck v3.0 is delete-and-reimport. Keys and GUIDs are **not yet frozen**: they lock once both A1 and A2 are signed off by the owner (owner, 2026-10-19: "day 0 of release"). Until then a key may change when that gives a cleaner deck; record every change in `a2_build/merged_keys.csv` or the plan that made it. After the lock, keys and GUIDs never move.
+- Deck v3.0 is delete-and-reimport. Keys and GUIDs are **not yet frozen**: they lock once both A1 and A2 are signed off by the owner (owner, 2026-10-19: "day 0 of release"). Until then a key may change when that gives a cleaner deck; record every change in `a2_build/merged_keys.csv`, a key map (§12) or the plan that made it. After the lock, keys and GUIDs never move.
+- **Since the rename (2026-10-20) `study_order.csv` is the authority**, not the builder: the key numbers were
+  taken from it, and the builder now breaks ties on those numbers, so a regeneration need not reproduce it.
   `build_apkg` writes the position to `due`.
 
 ## 9. Packages, versioning, release
@@ -223,7 +233,47 @@ Read this file first in a new session; change the code, then this file, in the s
   register deck ↔ spec ↔ style; every ledger row written since 3.0.0 carries `spec_version` and `style_hash`.
 - Procedure for any change to the aesthetic: `docs/HOW_TO_CHANGE_THE_LOOK.md`.
 
+## 12. Keys, plate numbers and tags (2026-10-20; `tools/rename_keys.py`, `a2_build/rename/`)
+- **One key namespace.** Every card key is `NNNN_slug`: a four-digit number and the ASCII-folded headword
+  (phrases and sentences: their first words, ≤ 4 words / 32 characters; `rename_keys.slug`). The number is
+  the card's study-order position when the key was minted (`study_order.csv`, A1 block 0001–1191 then A2 block
+  1192–2433 at the rename of 2026-10-20); the slug is a reading aid, not an identifier — two cards may share one,
+  and it is never re-derived when a headword is corrected.
+- **Keys do not encode the level, the kind, the list or the batch.** Those are tags (below) and the subdeck.
+- **Lock.** Keys, and with them GUIDs (`genanki.guid_for(key)`), are frozen once A1 and A2 are both signed
+  off. After the lock a key never changes or is reused; a card that changes meaning keeps its key; a card
+  that would change note type is a new card. **New cards append:** `tools/rename_keys.py --mint "<headword>"`
+  gives max number in use + 1 and the slug; the card is scheduled wherever the order puts it, so after
+  additions the number is a stable name, not a position.
+- **History of names.** Every earlier name of a card (`001_suo`, `A2-0348`, `S-0001`, media aliases such as
+  `265_lupos`) is in `a2_build/rename/key_map_v<N>.csv` (append-only; never edited or deleted). Append-only
+  records (ledgers, gen logs, QA sheets, build manifests, reports, round folders, the spec history, the
+  proofreading sheet sent before the rename) are never rewritten; they are read through `tools/keymap.py`
+  (`canonical`, `canonical_take`, `aliases`, `lookup`). Live data carries the current key only.
+- **Media names follow the key**: `<key>.png|webp|jpg`, `<key>.mp3`, `<key>_s.mp3` (example sentence),
+  `<key>_sf<v>.jpg` (cropped copy), `_rerolled/<key>.r<n>.png`, `style/golden/<key>.jpg` + `.prompt.txt`.
+  Recorder take keys are `<key>` and `<key>_s`; the recorder page carries the key map and re-keys stored
+  clips on start (move, never delete); `tools/ingest_takes.py` maps exported file names the same way.
+- **Plate number.** `pav. N` in the bottom band is the key's number, for every note type
+  (`build_apkg.plate_number`), rendered from the `number`/`Number` field by the frame CSS; no picture carries
+  a number. The Fluent Forever row (`master_wordlist.csv` `#`, `cards_anki.csv` `ff_no`) is a data join only
+  and is not shown. (Until 3.3.0: A1 1–531 by wordlist row, A2 1001+, sentences 4001+.)
+- **Tags.** Hierarchical tags per note: `lt::level::A1|A2`; `lt::kind::picture|phrase|cloze|sentence`;
+  `lt::pos::noun|verb|adjective|adverb|pronoun|numeral|preposition|conjunction|question` (words only; phrases
+  and sentences have none); `lt::topic::<section slug>` — one of the twenty top-band sections, ASCII-slugged
+  (`zmones` … `sakiniai`), from `a2_build/rename/topic_map_v1.csv` (category → topic; an unmapped category
+  fails the build). The topic is always the section the card's top band shows: the label is chosen by the
+  Category field, overridden to XIX/XX by `lt::kind::phrase` / `lt::kind::sentence` (`card_frame.ROUTE_SECTIONS`),
+  so phrase notes are tagged `lt::topic::frazes` and sentence notes `lt::topic::sakiniai` whatever their category.
+  The former `route` (IMG/PHRASE/CLOZE/PAIR/SENT) and `phase` (PA … PL) tags are retired.
+- **Tooling.** `tools/rename_keys.py` (dry run by default; `--apply`, `--apply-media`, `--verify`, `--mint`)
+  is the only way keys are renamed; `--verify` fails on any old key outside history, on unclassified files
+  and on media missing under the new name. `tools/verify_apkg.py --against OLD --key-map key_map_v1.csv`
+  compares a package with one built before a rename (GUIDs changed exactly as mapped; fields modulo key,
+  number, media names and tags) and checks plate = key number and the tags on every note.
+
 ## Spec changelog
+- **3.4.0 — 2026-10-20.** §12 added: one NNNN_slug key namespace (numbers from the study order at the rename of 2026-10-20, slugs from the headword), plate number = key number for all note types, hierarchical lt:: tags with the 20-section topic map (topic = the section shown), key history in a2_build/rename/key_map_v1.csv read through tools/keymap.py; SECTIONS gains Functions, ROUTE_SECTIONS keyed by lt::kind tags; §7/§8 updated for the rename and dep37 (owner decision 2026-10-19: rename everything so it's consistent)
 - **3.3.0 — 2026-10-19.** Key/GUID freeze moved: keys lock once A1 and A2 are both signed off, not at v3.0 (owner, 2026-10-19)
 - **3.2.1 — 2026-10-19.** §9: the A1 release is v3.0 (major), not v2.2
 - **3.2.0 — 2026-10-19.** Study order v3: dependency ordering (words before the sentences that use them), lane pressure against tail runs, PAIRS adjacency, look-alike separation, sentence cards in their own subdeck, 44 re-tiers (retier_v3.csv); build_study_order_v3.py replaces v2, audit as code

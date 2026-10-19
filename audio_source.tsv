@@ -1,675 +1,675 @@
 key	source	file	said
-001_suo	human	audio/001_suo.mp3	šuo · šuns
-002_kate	human	audio/002_kate.mp3	katė · katės
-003_zuvis	human	audio/003_zuvis.mp3	žuvis · žuvies
-004_paukstis	human	audio/004_paukstis.mp3	paukštis · paukščio
-005_karve	human	audio/005_karve.mp3	karvė · karvės
-006_kiaule	human	audio/006_kiaule.mp3	kiaulė · kiaulės
-007_pele	human	audio/007_pele.mp3	pelė · pelės
-008_arklys	human	audio/008_arklys.mp3	arklys · arklio
-009_sparnas	human	audio/009_sparnas.mp3	sparnas · sparno
-010_gyvunas	human	audio/010_gyvunas.mp3	gyvūnas · gyvūno
-011_traukinys	human	audio/011_traukinys.mp3	traukinys · traukinio
-012_lektuvas	human	audio/012_lektuvas.mp3	lėktuvas · lėktuvo
-013_automobilis	human	audio/013_automobilis.mp3	automobilis · automobilio
-014_sunkvezimis	human	audio/014_sunkvezimis.mp3	sunkvežimis · sunkvežimio
-015_dviratis	human	audio/015_dviratis.mp3	dviratis · dviračio
-016_autobusas	human	audio/016_autobusas.mp3	autobusas · autobuso
-017_valtis	human	audio/017_valtis.mp3	valtis · valties
-018_laivas	human	audio/018_laivas.mp3	laivas · laivo
-019_padanga	human	audio/019_padanga.mp3	padanga · padangos
-020_benzinas	human	audio/020_benzinas.mp3	benzinas · benzino
-021_variklis	human	audio/021_variklis.mp3	variklis · variklio
-022_bilietas	human	audio/022_bilietas.mp3	bilietas · bilieto
-023_transportas	human	audio/023_transportas.mp3	transportas · transporto
-024_miestas	human	audio/024_miestas.mp3	miestas · miesto
-025_namas	human	audio/025_namas.mp3	namas · namo
-026_butas	human	audio/026_butas.mp3	butas · buto
-027_gatve	human	audio/027_gatve.mp3	gatvė · gatvės
-028_kelias	human	audio/028_kelias.mp3	kelias · kelio
-029_oro_uostas	human	audio/029_oro_uostas.mp3	oro uostas · oro uosto
-030_stotis	human	audio/030_stotis.mp3	stotis · stoties
-031_tiltas	human	audio/031_tiltas.mp3	tiltas · tilto
-032_viesbutis	human	audio/032_viesbutis.mp3	viešbutis · viešbučio
-033_restoranas	human	audio/033_restoranas.mp3	restoranas · restorano
-034_ukis	human	audio/034_ukis.mp3	ūkis · ūkio
-035_teismas	human	audio/035_teismas.mp3	teismas · teismo
-036_mokykla	human	audio/036_mokykla.mp3	mokykla · mokyklos
-037_biuras	human	audio/037_biuras.mp3	biuras · biuro
-038_kambarys	human	audio/038_kambarys.mp3	kambarys · kambario
-039_miestelis	human	audio/039_miestelis.mp3	miestelis · miestelio
-040_universitetas	human	audio/040_universitetas.mp3	universitetas · universiteto
-041_klubas	human	audio/041_klubas.mp3	klubas · klubo
-042_baras	human	audio/042_baras.mp3	baras · baro
-043_parkas	human	audio/043_parkas.mp3	parkas · parko
-044_stovykla	human	audio/044_stovykla.mp3	stovykla · stovyklos
-045_parduotuve	human	audio/045_parduotuve.mp3	parduotuvė · parduotuvės
-046_teatras	human	audio/046_teatras.mp3	teatras · teatro
-047_biblioteka	human	audio/047_biblioteka.mp3	biblioteka · bibliotekos
-048_ligonine	human	audio/048_ligonine.mp3	ligoninė · ligoninės
-049_baznycia	human	audio/049_baznycia.mp3	bažnyčia · bažnyčios
-050_turgus	human	audio/050_turgus.mp3	turgus · turgaus
-051_salis	human	audio/051_salis.mp3	šalis · šalies
-052_pastatas	human	audio/052_pastatas.mp3	pastatas · pastato
-053_zeme	human	audio/053_zeme.mp3	žemė · žemės
-054_kosmosas	human	audio/054_kosmosas.mp3	kosmosas · kosmoso
-055_bankas	human	audio/055_bankas.mp3	bankas · banko
-056_vieta	human	audio/056_vieta.mp3	vieta · vietos
-057_kepure	human	audio/057_kepure.mp3	kepurė · kepurės
-058_suknele	human	audio/058_suknele.mp3	suknelė · suknelės
-059_kostiumas	human	audio/059_kostiumas.mp3	kostiumas · kostiumo
-060_sijonas	human	audio/060_sijonas.mp3	sijonas · sijono
-061_marskiniai	human	audio/061_marskiniai.mp3	marškiniai · marškinių
-062_marskineliai	human	audio/062_marskineliai.mp3	marškinėliai · marškinėlių
-063_kelnes	human	audio/063_kelnes.mp3	kelnės · kelnių
-064_batai	human	audio/064_batai.mp3	batai · batų
-065_kisene	human	audio/065_kisene.mp3	kišenė · kišenės
-066_paltas	human	audio/066_paltas.mp3	paltas · palto
-067_deme	human	audio/067_deme.mp3	dėmė · dėmės
-068_drabuziai	human	audio/068_drabuziai.mp3	drabužiai · drabužių
-069_raudonas	human	audio/069_raudonas.mp3	raudonas · raudono
-070_zalias	human	audio/070_zalias.mp3	žalias · žalio
-071_melynas	human	audio/071_melynas.mp3	mėlynas · mėlyno
-072_geltonas	human	audio/072_geltonas.mp3	geltonas · geltono
-073_rudas	human	audio/073_rudas.mp3	rudas · rudo
-074_rozinis	human	audio/074_rozinis.mp3	rožinis · rožinio
-075_oranzinis	human	audio/075_oranzinis.mp3	oranžinis · oranžinio
-076_juodas	human	audio/076_juodas.mp3	juodas · juodo
-077_baltas	human	audio/077_baltas.mp3	baltas · balto
-078_pilkas	human	audio/078_pilkas.mp3	pilkas · pilko
-079_spalva	human	audio/079_spalva.mp3	spalva · spalvos
-080_sunus	human	audio/080_sunus.mp3	sūnus · sūnaus
-081_dukra	human	audio/081_dukra.mp3	dukra · dukros
-082_motina	human	audio/082_motina.mp3	motina · motinos
-083_tevas	human	audio/083_tevas.mp3	tėvas · tėvo
-084_tevai	human	audio/084_tevai.mp3	tėvai · tėvų
-085_kudikis	human	audio/085_kudikis.mp3	kūdikis · kūdikio
-086_vyras	human	audio/086_vyras.mp3	vyras · vyro
-087_moteris	human	audio/087_moteris.mp3	moteris · moters
-088_brolis	human	audio/088_brolis.mp3	brolis · brolio
-089_sesuo	human	audio/089_sesuo.mp3	sesuo · sesers
-090_seima	human	audio/090_seima.mp3	šeima · šeimos
-091_senelis	human	audio/091_senelis.mp3	senelis · senelio
-092_senele	human	audio/092_senele.mp3	senelė · senelės
-093_vyras	human	audio/093_vyras.mp3	vyras · vyro
-094_zmona	human	audio/094_zmona.mp3	žmona · žmonos
-095_karalius	human	audio/095_karalius.mp3	karalius · karaliaus
-096_karaliene	human	audio/096_karaliene.mp3	karalienė · karalienės
-097_prezidentas	human	audio/097_prezidentas.mp3	prezidentas · prezidento
-098_kaimynas	human	audio/098_kaimynas.mp3	kaimynas · kaimyno
-099_berniukas	human	audio/099_berniukas.mp3	berniukas · berniuko
-100_mergaite	human	audio/100_mergaite.mp3	mergaitė · mergaitės
-101_vaikas	human	audio/101_vaikas.mp3	vaikas · vaiko
-102_suauges	human	audio/102_suauges.mp3	suaugęs · suaugusio
-103_zmogus	human	audio/103_zmogus.mp3	žmogus · žmogaus
-104_draugas	human	audio/104_draugas.mp3	draugas · draugo
-105_auka	human	audio/105_auka.mp3	auka · aukos
-106_zaidejas	human	audio/106_zaidejas.mp3	žaidėjas · žaidėjo
-107_sirgalius	human	audio/107_sirgalius.mp3	sirgalius · sirgaliaus
-108_minia	human	audio/108_minia.mp3	minia · minios
-109_asmuo	human	audio/109_asmuo.mp3	asmuo · asmens
-110_mokytojas	human	audio/110_mokytojas.mp3	mokytojas · mokytojo
-111_studentas	human	audio/111_studentas.mp3	studentas · studento
-112_advokatas	human	audio/112_advokatas.mp3	advokatas · advokato
-113_gydytojas	human	audio/113_gydytojas.mp3	gydytojas · gydytojo
-114_pacientas	human	audio/114_pacientas.mp3	pacientas · paciento
-115_padavejas	human	audio/115_padavejas.mp3	padavėjas · padavėjo
-116_sekretorius	human	audio/116_sekretorius.mp3	sekretorius · sekretoriaus
-117_kunigas	human	audio/117_kunigas.mp3	kunigas · kunigo
-118_policininkas	human	audio/118_policininkas.mp3	policininkas · policininko
-119_policija	human	audio/119_policija.mp3	policija · policijos
-120_kariuomene	human	audio/120_kariuomene.mp3	kariuomenė · kariuomenės
-121_kareivis	human	audio/121_kareivis.mp3	kareivis · kareivio
-122_menininkas	human	audio/122_menininkas.mp3	menininkas · menininko
-123_autorius	human	audio/123_autorius.mp3	autorius · autoriaus
-124_vadovas	human	audio/124_vadovas.mp3	vadovas · vadovo
-125_zurnalistas	human	audio/125_zurnalistas.mp3	žurnalistas · žurnalisto
-126_aktorius	human	audio/126_aktorius.mp3	aktorius · aktoriaus
-127_darbas	human	audio/127_darbas.mp3	darbas · darbo
-128_religija	azure-neural	audio/128_religija.mp3	
-129_dangus	azure-neural	audio/129_dangus.mp3	
-130_pragaras	azure-neural	audio/130_pragaras.mp3	
-131_mirtis	azure-neural	audio/131_mirtis.mp3	
-132_vaistai	azure-neural	audio/132_vaistai.mp3	
-133_pinigai	azure-neural	audio/133_pinigai.mp3	
-134_doleris	azure-neural	audio/134_doleris.mp3	
-135_banknotas	azure-neural	audio/135_banknotas.mp3	
-136_santuoka	azure-neural	audio/136_santuoka.mp3	
-137_vestuves	human	audio/137_vestuves.mp3	vestuvės · vestuvių
-138_komanda	azure-neural	audio/138_komanda.mp3	
-139_santykiai	azure-neural	audio/139_santykiai.mp3	
-140_rase	azure-neural	audio/140_rase.mp3	
-141_seksas	azure-neural	audio/141_seksas.mp3	
-142_lytis	azure-neural	audio/142_lytis.mp3	
-143_zmogzudyste	azure-neural	audio/143_zmogzudyste.mp3	
-144_kalejimas	azure-neural	audio/144_kalejimas.mp3	
-145_technologija	azure-neural	audio/145_technologija.mp3	
-146_energija	azure-neural	audio/146_energija.mp3	
-147_karas	azure-neural	audio/147_karas.mp3	
-148_taika	azure-neural	audio/148_taika.mp3	
-149_puolimas	azure-neural	audio/149_puolimas.mp3	
-150_rinkimai	azure-neural	audio/150_rinkimai.mp3	
-151_zurnalas	azure-neural	audio/151_zurnalas.mp3	
-152_laikrastis	azure-neural	audio/152_laikrastis.mp3	
-153_nuodai	azure-neural	audio/153_nuodai.mp3	
-154_ginklas	azure-neural	audio/154_ginklas.mp3	
-155_sportas	azure-neural	audio/155_sportas.mp3	
-156_lenktynes	azure-neural	audio/156_lenktynes.mp3	
-157_manksta	azure-neural	audio/157_manksta.mp3	
-158_kamuolys	azure-neural	audio/158_kamuolys.mp3	
-159_zaidimas	azure-neural	audio/159_zaidimas.mp3	
-160_kaina	azure-neural	audio/160_kaina.mp3	
-161_sutartis	azure-neural	audio/161_sutartis.mp3	
-162_narkotikas	azure-neural	audio/162_narkotikas.mp3	
-163_zenklas	human	audio/163_zenklas.mp3	ženklas · ženklo
-164_mokslas	azure-neural	audio/164_mokslas.mp3	
-165_dievas	azure-neural	audio/165_dievas.mp3	
-166_grupe	human	audio/166_grupe.mp3	grupė · grupės
-167_daina	azure-neural	audio/167_daina.mp3	
-168_instrumentas	human	audio/168_instrumentas.mp3	instrumentas · instrumento
-169_muzika	azure-neural	audio/169_muzika.mp3	
-170_filmas	human	audio/170_filmas.mp3	filmas · filmo
-171_menas	azure-neural	audio/171_menas.mp3	
-172_kava	human	audio/172_kava.mp3	kava · kavos
-173_arbata	human	audio/173_arbata.mp3	arbata · arbatos
-174_vynas	human	audio/174_vynas.mp3	vynas · vyno
-175_alus	human	audio/175_alus.mp3	alus · alaus
-176_sultys	human	audio/176_sultys.mp3	sultys · sulčių
-177_vanduo	human	audio/177_vanduo.mp3	vanduo · vandens
-178_pienas	human	audio/178_pienas.mp3	pienas · pieno
-179_gerimas	human	audio/179_gerimas.mp3	gėrimas · gėrimo
-180_kiausinis	human	audio/180_kiausinis.mp3	kiaušinis · kiaušinio
-181_suris	human	audio/181_suris.mp3	sūris · sūrio
-182_duona	human	audio/182_duona.mp3	duona · duonos
-183_sriuba	human	audio/183_sriuba.mp3	sriuba · sriubos
-184_tortas	human	audio/184_tortas.mp3	tortas · torto
-185_vistiena	human	audio/185_vistiena.mp3	vištiena · vištienos
-186_kiauliena	human	audio/186_kiauliena.mp3	kiauliena · kiaulienos
-187_jautiena	human	audio/187_jautiena.mp3	jautiena · jautienos
-188_obuolys	human	audio/188_obuolys.mp3	obuolys · obuolio
-189_bananas	human	audio/189_bananas.mp3	bananas · banano
-190_apelsinas	human	audio/190_apelsinas.mp3	apelsinas · apelsino
-191_citrina	human	audio/191_citrina.mp3	citrina · citrinos
-192_kukuruzai	human	audio/192_kukuruzai.mp3	kukurūzai · kukurūzų
-193_ryziai	human	audio/193_ryziai.mp3	ryžiai · ryžių
-194_aliejus	human	audio/194_aliejus.mp3	aliejus · aliejaus
-195_tepalas	human	audio/195_tepalas.mp3	tepalas · tepalo
-196_sekla	human	audio/196_sekla.mp3	sėkla · sėklos
-197_peilis	human	audio/197_peilis.mp3	peilis · peilio
-198_saukstas	human	audio/198_saukstas.mp3	šaukštas · šaukšto
-199_sakute	human	audio/199_sakute.mp3	šakutė · šakutės
-200_lekste	human	audio/200_lekste.mp3	lėkštė · lėkštės
-201_puodelis	human	audio/201_puodelis.mp3	puodelis · puodelio
-202_pusryciai	human	audio/202_pusryciai.mp3	pusryčiai · pusryčių
-203_pietus	human	audio/203_pietus.mp3	pietūs · pietų
-204_vakariene	human	audio/204_vakariene.mp3	vakarienė · vakarienės
-205_cukrus	human	audio/205_cukrus.mp3	cukrus · cukraus
-206_druska	human	audio/206_druska.mp3	druska · druskos
-207_butelis	human	audio/207_butelis.mp3	butelis · butelio
-208_maistas	human	audio/208_maistas.mp3	maistas · maisto
-209_stalas	human	audio/209_stalas.mp3	stalas · stalo
-210_kede	human	audio/210_kede.mp3	kėdė · kėdės
-211_lova	human	audio/211_lova.mp3	lova · lovos
-212_sapnas	azure-neural	audio/212_sapnas.mp3	
-213_langas	human	audio/213_langas.mp3	langas · lango
-214_durys	human	audio/214_durys.mp3	durys · durų
-215_miegamasis	human	audio/215_miegamasis.mp3	miegamasis · miegamojo
-216_virtuve	human	audio/216_virtuve.mp3	virtuvė · virtuvės
-217_vonia	human	audio/217_vonia.mp3	vonia · vonios
-218_piestukas	human	audio/218_piestukas.mp3	pieštukas · pieštuko
-219_rasiklis	human	audio/219_rasiklis.mp3	rašiklis · rašiklio
-220_nuotrauka	human	audio/220_nuotrauka.mp3	nuotrauka · nuotraukos
-221_muilas	human	audio/221_muilas.mp3	muilas · muilo
-222_knyga	human	audio/222_knyga.mp3	knyga · knygos
-223_puslapis	human	audio/223_puslapis.mp3	puslapis · puslapio
-224_raktas	human	audio/224_raktas.mp3	raktas · rakto
-225_dazai	human	audio/225_dazai.mp3	dažai · dažų
-226_laiskas	human	audio/226_laiskas.mp3	laiškas · laiško
-227_raide	azure-neural	audio/227_raide.mp3	
-228_rastelis	human	audio/228_rastelis.mp3	raštelis · raštelio
-229_siena	human	audio/229_siena.mp3	siena · sienos
-230_popierius	human	audio/230_popierius.mp3	popierius · popieriaus
-231_grindys	human	audio/231_grindys.mp3	grindys · grindų
-232_lubos	human	audio/232_lubos.mp3	lubos · lubų
-233_stogas	human	audio/233_stogas.mp3	stogas · stogo
-234_baseinas	human	audio/234_baseinas.mp3	baseinas · baseino
-235_spyna	human	audio/235_spyna.mp3	spyna · spynos
-236_telefonas	human	audio/236_telefonas.mp3	telefonas · telefono
-237_sodas	human	audio/237_sodas.mp3	sodas · sodo
-238_kiemas	human	audio/238_kiemas.mp3	kiemas · kiemo
-239_adata	human	audio/239_adata.mp3	adata · adatos
-240_krepsys	human	audio/240_krepsys.mp3	krepšys · krepšio
-241_deze	human	audio/241_deze.mp3	dėžė · dėžės
-242_dovana	human	audio/242_dovana.mp3	dovana · dovanos
-243_kortele	human	audio/243_kortele.mp3	kortelė · kortelės
-244_ziedas	human	audio/244_ziedas.mp3	žiedas · žiedo
-245_irankis	human	audio/245_irankis.mp3	įrankis · įrankio
-246_laikrodis	human	audio/246_laikrodis.mp3	laikrodis · laikrodžio
-247_lempa	human	audio/247_lempa.mp3	lempa · lempos
-248_ventiliatorius	human	audio/248_ventiliatorius.mp3	ventiliatorius · ventiliatoriaus
-249_mobilusis_telefonas	superseded	audio/_superseded/249_mobilusis_telefonas.mp3	mobilusis telefonas · mobilusis telefono
-250_tinklas	azure-neural	audio/250_tinklas.mp3	
-251_kompiuteris	human	audio/251_kompiuteris.mp3	kompiuteris · kompiuterio
-252_programa	azure-neural	audio/252_programa.mp3	
-253_nesiojamasis_kompiuteris	human	audio/253_nesiojamasis_kompiuteris.mp3	nešiojamasis kompiuteris · nešiojamojo kompiuterio
-254_ekranas	human	audio/254_ekranas.mp3	ekranas · ekrano
-255_fotoaparatas	human	audio/255_fotoaparatas.mp3	fotoaparatas · fotoaparato
-256_televizorius	human	audio/256_televizorius.mp3	televizorius · televizoriaus
-257_radijas	human	audio/257_radijas.mp3	radijas · radijo
-258_galva	human	audio/258_galva.mp3	galva · galvos
-259_kaklas	human	audio/259_kaklas.mp3	kaklas · kaklo
-260_veidas	human	audio/260_veidas.mp3	veidas · veido
-261_barzda	human	audio/261_barzda.mp3	barzda · barzdos
-262_plaukai	human	audio/262_plaukai.mp3	plaukai · plaukų
-263_akis	human	audio/263_akis.mp3	akis · akies
-264_burna	human	audio/264_burna.mp3	burna · burnos
-265_lupa	superseded	audio/_superseded/265_lupa.mp3	lūpa · lūpos
-266_nosis	human	audio/266_nosis.mp3	nosis · nosies
-267_dantis	human	audio/267_dantis.mp3	dantis · danties
-268_ausis	human	audio/268_ausis.mp3	ausis · ausies
-269_asara	human	audio/269_asara.mp3	ašara · ašaros
-270_liezuvis	human	audio/270_liezuvis.mp3	liežuvis · liežuvio
-271_nugara	human	audio/271_nugara.mp3	nugara · nugaros
-272_kojos_pirstas	human	audio/272_kojos_pirstas.mp3	kojos pirštas · kojos piršto
-273_pirstas	human	audio/273_pirstas.mp3	pirštas · piršto
-274_peda	human	audio/274_peda.mp3	pėda · pėdos
-275_plastaka	human	audio/275_plastaka.mp3	plaštaka · plaštakos
-276_koja	human	audio/276_koja.mp3	koja · kojos
-277_ranka	human	audio/277_ranka.mp3	ranka · rankos
-278_petys	human	audio/278_petys.mp3	petys · peties
-279_sirdis	human	audio/279_sirdis.mp3	širdis · širdies
-280_kraujas	human	audio/280_kraujas.mp3	kraujas · kraujo
-281_smegenys	human	audio/281_smegenys.mp3	smegenys · smegenų
-282_kelis	human	audio/282_kelis.mp3	kelis · kelio
-283_prakaitas	human	audio/283_prakaitas.mp3	prakaitas · prakaito
-284_liga	azure-neural	audio/284_liga.mp3	
-285_kaulas	human	audio/285_kaulas.mp3	kaulas · kaulo
-286_balsas	azure-neural	audio/286_balsas.mp3	
-287_oda	human	audio/287_oda.mp3	oda · odos
-288_kunas	human	audio/288_kunas.mp3	kūnas · kūno
-289_jura	human	audio/289_jura.mp3	jūra · jūros
-290_vandenynas	human	audio/290_vandenynas.mp3	vandenynas · vandenyno
-291_upe	human	audio/291_upe.mp3	upė · upės
-292_kalnas	human	audio/292_kalnas.mp3	kalnas · kalno
-293_lietus	human	audio/293_lietus.mp3	lietus · lietaus
-294_sniegas	human	audio/294_sniegas.mp3	sniegas · sniego
-295_medis	human	audio/295_medis.mp3	medis · medžio
-296_saule	human	audio/296_saule.mp3	saulė · saulės
-297_menulis	human	audio/297_menulis.mp3	mėnulis · mėnulio
-298_pasaulis	azure-neural	audio/298_pasaulis.mp3	
-299_zeme	human	audio/299_zeme.mp3	Žemė · Žemės
-300_miskas	human	audio/300_miskas.mp3	miškas · miško
-301_dangus	human	audio/301_dangus.mp3	dangus · dangaus
-302_augalas	human	audio/302_augalas.mp3	augalas · augalo
-303_vejas	human	audio/303_vejas.mp3	vėjas · vėjo
-304_zeme	human	audio/304_zeme.mp3	žemė · žemės
-305_gele	human	audio/305_gele.mp3	gėlė · gėlės
-306_slenis	human	audio/306_slenis.mp3	slėnis · slėnio
-307_saknis	human	audio/307_saknis.mp3	šaknis · šaknies
-308_ezeras	human	audio/308_ezeras.mp3	ežeras · ežero
-309_zvaigzde	human	audio/309_zvaigzde.mp3	žvaigždė · žvaigždės
-310_zole	human	audio/310_zole.mp3	žolė · žolės
-311_lapas	human	audio/311_lapas.mp3	lapas · lapo
-312_oras	azure-neural	audio/312_oras.mp3	
-313_smelis	human	audio/313_smelis.mp3	smėlis · smėlio
-314_papludimys	human	audio/314_papludimys.mp3	paplūdimys · paplūdimio
-315_banga	human	audio/315_banga.mp3	banga · bangos
-316_ugnis	human	audio/316_ugnis.mp3	ugnis · ugnies
-317_ledas	human	audio/317_ledas.mp3	ledas · ledo
-318_sala	human	audio/318_sala.mp3	sala · salos
-319_kalva	human	audio/319_kalva.mp3	kalva · kalvos
-320_karstis	azure-neural	audio/320_karstis.mp3	
-321_gamta	human	audio/321_gamta.mp3	gamta · gamtos
-322_stiklas	human	audio/322_stiklas.mp3	stiklas · stiklo
-323_metalas	human	audio/323_metalas.mp3	metalas · metalo
-324_plastikas	human	audio/324_plastikas.mp3	plastikas · plastiko
-325_mediena	human	audio/325_mediena.mp3	mediena · medienos
-326_akmuo	human	audio/326_akmuo.mp3	akmuo · akmens
-327_deimantas	human	audio/327_deimantas.mp3	deimantas · deimanto
-328_molis	human	audio/328_molis.mp3	molis · molio
-329_dulkes	human	audio/329_dulkes.mp3	dulkės · dulkių
-330_auksas	human	audio/330_auksas.mp3	auksas · aukso
-331_varis	human	audio/331_varis.mp3	varis · vario
-332_sidabras	human	audio/332_sidabras.mp3	sidabras · sidabro
-333_medziaga	human	audio/333_medziaga.mp3	medžiaga · medžiagos
-334_metras	azure-neural	audio/334_metras.mp3	
-335_centimetras	azure-neural	audio/335_centimetras.mp3	
-336_kilogramas	azure-neural	audio/336_kilogramas.mp3	
-337_colis	azure-neural	audio/337_colis.mp3	
-338_peda	azure-neural	audio/338_peda.mp3	
-339_svaras	azure-neural	audio/339_svaras.mp3	
-340_puse	azure-neural	audio/340_puse.mp3	
-341_apskritimas	azure-neural	audio/341_apskritimas.mp3	
-342_kvadratas	azure-neural	audio/342_kvadratas.mp3	
-343_temperatura	azure-neural	audio/343_temperatura.mp3	
-344_data	azure-neural	audio/344_data.mp3	
-345_svoris	azure-neural	audio/345_svoris.mp3	
-346_krastas	azure-neural	audio/346_krastas.mp3	
-347_kampas	azure-neural	audio/347_kampas.mp3	
-348_zemelapis	human	audio/348_zemelapis.mp3	žemėlapis · žemėlapio
-349_taskas	human	audio/349_taskas.mp3	taškas · taško
-350_priebalsis	azure-neural	audio/350_priebalsis.mp3	
-351_balsis	azure-neural	audio/351_balsis.mp3	
-352_sviesa	azure-neural	audio/352_sviesa.mp3	
-353_garsas	azure-neural	audio/353_garsas.mp3	
-354_taip	azure-neural	audio/354_taip.mp3	
-355_ne	azure-neural	audio/355_ne.mp3	
-356_gabalas	azure-neural	audio/356_gabalas.mp3	
-357_skausmas	azure-neural	audio/357_skausmas.mp3	
-358_suzalojimas	human	audio/358_suzalojimas.mp3	sužalojimas · sužalojimo
-359_zaizda	human	audio/359_zaizda.mp3	žaizda · žaizdos
-360_skyle	human	audio/360_skyle.mp3	skylė · skylės
-361_vaizdas	human	audio/361_vaizdas.mp3	vaizdas · vaizdo
-362_rastas	azure-neural	audio/362_rastas.mp3	
-363_dirbti	human	audio/363_dirbti.mp3	dirbti · dirba · dirbo
-364_zaisti	human	audio/364_zaisti.mp3	žaisti · žaidžia · žaidė
-365_groti	human	audio/365_groti.mp3	groti · groja · grojo
-366_eiti	human	audio/366_eiti.mp3	eiti · eina · ėjo
-367_begti	human	audio/367_begti.mp3	bėgti · bėga · bėgo
-368_vairuoti	human	audio/368_vairuoti.mp3	vairuoti · vairuoja · vairavo
-369_skristi	human	audio/369_skristi.mp3	skristi · skrenda · skrido
-370_plaukti	human	audio/370_plaukti.mp3	plaukti · plaukia · plaukė
-371_eiti	human	audio/371_eiti.mp3	eiti · eina · ėjo
-372_sustoti	human	audio/372_sustoti.mp3	sustoti · sustoja · sustojo
-373_sekti	human	audio/373_sekti.mp3	sekti · seka · sekė
-374_galvoti	azure-neural	audio/374_galvoti.mp3	
-375_sakyti	human	audio/375_sakyti.mp3	sakyti · sako · sakė
-376_valgyti	human	audio/376_valgyti.mp3	valgyti · valgo · valgė
-377_gerti	human	audio/377_gerti.mp3	gerti · geria · gėrė
-378_zudyti	human	audio/378_zudyti.mp3	žudyti · žudo · žudė
-379_mirti	human	audio/379_mirti.mp3	mirti · miršta · mirė
-380_sypsotis	human	audio/380_sypsotis.mp3	šypsotis · šypsosi · šypsojosi
-381_juoktis	human	audio/381_juoktis.mp3	juoktis · juokiasi · juokėsi
-382_verkti	human	audio/382_verkti.mp3	verkti · verkia · verkė
-383_pirkti	human	audio/383_pirkti.mp3	pirkti · perka · pirko
-384_moketi	human	audio/384_moketi.mp3	mokėti · moka · mokėjo
-385_parduoti	human	audio/385_parduoti.mp3	parduoti · parduoda · pardavė
-386_sauti	human	audio/386_sauti.mp3	šauti · šauna · šovė
-387_mokytis	azure-neural	audio/387_mokytis.mp3	
-388_sokti	human	audio/388_sokti.mp3	šokti · šoka · šoko
-389_uostyti	human	audio/389_uostyti.mp3	uostyti · uosto · uostė
-390_girdeti	human	audio/390_girdeti.mp3	girdėti · girdi · girdėjo
-391_klausytis	human	audio/391_klausytis.mp3	klausytis · klausosi · klausėsi
-392_ragauti	human	audio/392_ragauti.mp3	ragauti · ragauja · ragavo
-393_liesti	human	audio/393_liesti.mp3	liesti · liečia · lietė
-394_matyti	human	audio/394_matyti.mp3	matyti · mato · matė
-395_ziureti	human	audio/395_ziureti.mp3	žiūrėti · žiūri · žiūrėjo
-396_buciuoti	human	audio/396_buciuoti.mp3	bučiuoti · bučiuoja · bučiavo
-397_degti	human	audio/397_degti.mp3	degti · dega · degė
-398_tirpti	human	audio/398_tirpti.mp3	tirpti · tirpsta · tirpo
-399_kasti	human	audio/399_kasti.mp3	kasti · kasa · kasė
-400_sprogti	human	audio/400_sprogti.mp3	sprogti · sprogsta · sprogo
-401_sedeti	human	audio/401_sedeti.mp3	sėdėti · sėdi · sėdėjo
-402_stoveti	human	audio/402_stoveti.mp3	stovėti · stovi · stovėjo
-403_myleti	azure-neural	audio/403_myleti.mp3	
-404_praeiti	human	audio/404_praeiti.mp3	praeiti · praeina · praėjo
-405_pjauti	human	audio/405_pjauti.mp3	pjauti · pjauna · pjovė
-406_mustis	human	audio/406_mustis.mp3	muštis · mušasi · mušėsi
-407_guleti	human	audio/407_guleti.mp3	gulėti · guli · gulėjo
-408_sokti	human	audio/408_sokti.mp3	šokti · šoka · šoko
-409_miegoti	human	audio/409_miegoti.mp3	miegoti · miega · miegojo
-410_pabusti	human	audio/410_pabusti.mp3	pabusti · pabunda · pabudo
-411_dainuoti	human	audio/411_dainuoti.mp3	dainuoti · dainuoja · dainavo
-412_skaiciuoti	human	audio/412_skaiciuoti.mp3	skaičiuoti · skaičiuoja · skaičiavo
-413_tuoktis	human	audio/413_tuoktis.mp3	tuoktis · tuokiasi · tuokėsi
-414_melstis	azure-neural	audio/414_melstis.mp3	
-415_laimeti	azure-neural	audio/415_laimeti.mp3	
-416_pralaimeti	azure-neural	audio/416_pralaimeti.mp3	
-417_maisyti	human	audio/417_maisyti.mp3	maišyti · maišo · maišė
-418_lenkti	human	audio/418_lenkti.mp3	lenkti · lenkia · lenkė
-419_plauti	human	audio/419_plauti.mp3	plauti · plauna · plovė
-420_gaminti	human	audio/420_gaminti.mp3	gaminti · gamina · gamino
-421_atidaryti	human	audio/421_atidaryti.mp3	atidaryti · atidaro · atidarė
-422_uzdaryti	human	audio/422_uzdaryti.mp3	uždaryti · uždaro · uždarė
-423_rasyti	human	audio/423_rasyti.mp3	rašyti · rašo · rašė
-424_skambinti	human	audio/424_skambinti.mp3	skambinti · skambina · skambino
-425_sukti	human	audio/425_sukti.mp3	sukti · suka · suko
-426_statyti	human	audio/426_statyti.mp3	statyti · stato · statė
-427_mokyti	azure-neural	audio/427_mokyti.mp3	
-428_augti	human	audio/428_augti.mp3	augti · auga · augo
-429_piesti	human	audio/429_piesti.mp3	piešti · piešia · piešė
-430_maitinti	human	audio/430_maitinti.mp3	maitinti · maitina · maitino
-431_gaudyti	human	audio/431_gaudyti.mp3	gaudyti · gaudo · gaudė
-432_mesti	human	audio/432_mesti.mp3	mesti · meta · metė
-433_valyti	human	audio/433_valyti.mp3	valyti · valo · valė
-434_rasti	human	audio/434_rasti.mp3	rasti · randa · rado
-435_kristi	human	audio/435_kristi.mp3	kristi · krinta · krito
-436_stumti	human	audio/436_stumti.mp3	stumti · stumia · stūmė
-437_traukti	human	audio/437_traukti.mp3	traukti · traukia · traukė
-438_nesti	human	audio/438_nesti.mp3	nešti · neša · nešė
-439_lauzyti	human	audio/439_lauzyti.mp3	laužyti · laužo · laužė
-440_deveti	human	audio/440_deveti.mp3	dėvėti · dėvi · dėvėjo
-441_kabinti	human	audio/441_kabinti.mp3	kabinti · kabina · kabino
-442_purtyti	human	audio/442_purtyti.mp3	purtyti · purto · purtė
-443_pasirasyti	human	audio/443_pasirasyti.mp3	pasirašyti · pasirašo · pasirašė
-444_musti	human	audio/444_musti.mp3	mušti · muša · mušė
-445_kelti	human	audio/445_kelti.mp3	kelti · kelia · kėlė
-446_ilgas	human	audio/446_ilgas.mp3	ilgas · ilga
-447_trumpas	human	audio/447_trumpas.mp3	trumpas · trumpa
-448_aukstas	human	audio/448_aukstas.mp3	aukštas · aukšta
-449_zemas	human	audio/449_zemas.mp3	žemas · žema
-450_platus	human	audio/450_platus.mp3	platus · plati
-451_siauras	human	audio/451_siauras.mp3	siauras · siaura
-452_didelis	human	audio/452_didelis.mp3	didelis · didelė
-453_mazas	human	audio/453_mazas.mp3	mažas · maža
-454_letas	human	audio/454_letas.mp3	lėtas · lėta
-455_greitas	human	audio/455_greitas.mp3	greitas · greita
-456_karstas	human	audio/456_karstas.mp3	karštas · karšta
-457_saltas	human	audio/457_saltas.mp3	šaltas · šalta
-458_siltas	human	audio/458_siltas.mp3	šiltas · šilta
-459_vesus	human	audio/459_vesus.mp3	vėsus · vėsi
-460_naujas	human	audio/460_naujas.mp3	naujas · nauja
-461_senas	human	audio/461_senas.mp3	senas · sena
-462_jaunas	human	audio/462_jaunas.mp3	jaunas · jauna
-463_senas	human	audio/463_senas.mp3	senas · sena
-464_geras	azure-neural	audio/464_geras.mp3	
-465_blogas	azure-neural	audio/465_blogas.mp3	
-466_slapias	human	audio/466_slapias.mp3	šlapias · šlapia
-467_sausas	human	audio/467_sausas.mp3	sausas · sausa
-468_sergantis	human	audio/468_sergantis.mp3	sergantis · serganti
-469_sveikas	human	audio/469_sveikas.mp3	sveikas · sveika
-470_garsus	human	audio/470_garsus.mp3	garsus · garsi
-471_tylus	human	audio/471_tylus.mp3	tylus · tyli
-472_laimingas	human	audio/472_laimingas.mp3	laimingas · laiminga
-473_liudnas	human	audio/473_liudnas.mp3	liūdnas · liūdna
-474_grazus	human	audio/474_grazus.mp3	gražus · graži
-475_bjaurus	human	audio/475_bjaurus.mp3	bjaurus · bjauri
-476_kurcias	human	audio/476_kurcias.mp3	kurčias · kurčia
-477_aklas	human	audio/477_aklas.mp3	aklas · akla
-478_malonus	human	audio/478_malonus.mp3	malonus · maloni
-479_piktas	azure-neural	audio/479_piktas.mp3	
-480_turtingas	human	audio/480_turtingas.mp3	turtingas · turtinga
-481_neturtingas	human	audio/481_neturtingas.mp3	neturtingas · neturtinga
-482_storas	human	audio/482_storas.mp3	storas · stora
-483_plonas	human	audio/483_plonas.mp3	plonas · plona
-484_brangus	human	audio/484_brangus.mp3	brangus · brangi
-485_pigus	human	audio/485_pigus.mp3	pigus · pigi
-486_plokscias	human	audio/486_plokscias.mp3	plokščias · plokščia
-487_islenktas	human	audio/487_islenktas.mp3	išlenktas · išlenkta
-488_vyriskas	human	audio/488_vyriskas.mp3	vyriškas · vyriška
-489_moteriskas	human	audio/489_moteriskas.mp3	moteriškas · moteriška
-490_ankstas	human	audio/490_ankstas.mp3	ankštas · ankšta
-491_laisvas	human	audio/491_laisvas.mp3	laisvas · laisva
-492_aukstas	human	audio/492_aukstas.mp3	aukštas · aukšta
-493_zemas	human	audio/493_zemas.mp3	žemas · žema
-494_minkstas	human	audio/494_minkstas.mp3	minkštas · minkšta
-495_kietas	human	audio/495_kietas.mp3	kietas · kieta
-496_gilus	human	audio/496_gilus.mp3	gilus · gili
-497_seklus	human	audio/497_seklus.mp3	seklus · sekli
-498_svarus	human	audio/498_svarus.mp3	švarus · švari
-499_purvinas	human	audio/499_purvinas.mp3	purvinas · purvina
-500_stiprus	human	audio/500_stiprus.mp3	stiprus · stipri
-501_silpnas	human	audio/501_silpnas.mp3	silpnas · silpna
-502_negyvas	human	audio/502_negyvas.mp3	negyvas · negyva
-503_gyvas	human	audio/503_gyvas.mp3	gyvas · gyva
-504_sunkus	human	audio/504_sunkus.mp3	sunkus · sunki
-505_lengvas	human	audio/505_lengvas.mp3	lengvas · lengva
-506_tamsus	human	audio/506_tamsus.mp3	tamsus · tamsi
-507_sviesus	human	audio/507_sviesus.mp3	šviesus · šviesi
-508_branduolinis	azure-neural	audio/508_branduolinis.mp3	
-509_garsus	azure-neural	audio/509_garsus.mp3	
-510_as	azure-neural	audio/510_as.mp3	
-511_tu	azure-neural	audio/511_tu.mp3	
-512_jis	azure-neural	audio/512_jis.mp3	
-513_ji	azure-neural	audio/513_ji.mp3	
-514_tai	azure-neural	audio/514_tai.mp3	
-515_mes	azure-neural	audio/515_mes.mp3	
-516_jus	azure-neural	audio/516_jus.mp3	
-517_jie	azure-neural	audio/517_jie.mp3	
-528_serti	azure-neural	audio/528_serti.mp3	
-529_lesinti	azure-neural	audio/529_lesinti.mp3	
-530_lydyti	human	audio/530_lydyti.mp3	lydyti · lydo · lydė
-A2-0001	human	audio_a2/A2-0001.mp3	laikas · laiko
-A2-0002	human	audio_a2/A2-0002.mp3	valanda · valandos
-A2-0003	human	audio_a2/A2-0003.mp3	minutė · minutės
-A2-0004	human	audio_a2/A2-0004.mp3	sekundė · sekundės
-A2-0005	human	audio_a2/A2-0005.mp3	diena · dienos
-A2-0006	human	audio_a2/A2-0006.mp3	savaitė · savaitės
-A2-0007	human	audio_a2/A2-0007.mp3	mėnuo · mėnesio
-A2-0008	human	audio_a2/A2-0008.mp3	metai · metų
-A2-0009	human	audio_a2/A2-0009.mp3	savaitgalis · savaitgalio
-A2-0010	human	audio_a2/A2-0010.mp3	rytas · ryto
-A2-0011	human	audio_a2/A2-0011.mp3	popietė · popietės
-A2-0012	human	audio_a2/A2-0012.mp3	vakaras · vakaro
-A2-0013	human	audio_a2/A2-0013.mp3	naktis · nakties
-A2-0014	human	audio_a2/A2-0014.mp3	šiandien
-A2-0015	human	audio_a2/A2-0015.mp3	vakar
-A2-0016	human	audio_a2/A2-0016.mp3	rytoj
-A2-0017	human	audio_a2/A2-0017.mp3	dabar
-A2-0018	human	audio_a2/A2-0018.mp3	pirmadienis · pirmadienio
-A2-0019	human	audio_a2/A2-0019.mp3	antradienis · antradienio
-A2-0020	human	audio_a2/A2-0020.mp3	trečiadienis · trečiadienio
-A2-0021	human	audio_a2/A2-0021.mp3	ketvirtadienis · ketvirtadienio
-A2-0022	human	audio_a2/A2-0022.mp3	penktadienis · penktadienio
-A2-0023	human	audio_a2/A2-0023.mp3	šeštadienis · šeštadienio
-A2-0024	human	audio_a2/A2-0024.mp3	sekmadienis · sekmadienio
-A2-0025	human	audio_a2/A2-0025.mp3	sausis · sausio
-A2-0026	human	audio_a2/A2-0026.mp3	vasaris · vasario
-A2-0027	human	audio_a2/A2-0027.mp3	kovas · kovo
-A2-0028	human	audio_a2/A2-0028.mp3	balandis · balandžio
-A2-0029	human	audio_a2/A2-0029.mp3	gegužė · gegužės
-A2-0030	human	audio_a2/A2-0030.mp3	birželis · birželio
-A2-0031	human	audio_a2/A2-0031.mp3	liepa · liepos
-A2-0032	human	audio_a2/A2-0032.mp3	rugpjūtis · rugpjūčio
-A2-0033	superseded	audio_a2/_superseded/A2-0033.mp3	rugsėjis · rugsėjio
-A2-0034	human	audio_a2/A2-0034.mp3	spalis · spalio
-A2-0035	human	audio_a2/A2-0035.mp3	lapkritis · lapkričio
-A2-0036	human	audio_a2/A2-0036.mp3	gruodis · gruodžio
-A2-0037	human	audio_a2/A2-0037.mp3	pavasaris · pavasario
-A2-0038	human	audio_a2/A2-0038.mp3	vasara · vasaros
-A2-0039	human	audio_a2/A2-0039.mp3	ruduo · rudens
-A2-0040	human	audio_a2/A2-0040.mp3	žiema · žiemos
-A2-0041	human	audio_a2/A2-0041.mp3	nulis
-A2-0042	human	audio_a2/A2-0042.mp3	vienas
-A2-0043	human	audio_a2/A2-0043.mp3	du
-A2-0044	human	audio_a2/A2-0044.mp3	trys
-A2-0045	human	audio_a2/A2-0045.mp3	keturi
-A2-0046	human	audio_a2/A2-0046.mp3	penki
-A2-0047	human	audio_a2/A2-0047.mp3	šeši
-A2-0048	human	audio_a2/A2-0048.mp3	septyni
-A2-0049	human	audio_a2/A2-0049.mp3	aštuoni
-A2-0050	human	audio_a2/A2-0050.mp3	devyni
-A2-0051	human	audio_a2/A2-0051.mp3	dešimt
-A2-0052	human	audio_a2/A2-0052.mp3	vienuolika
-A2-0053	human	audio_a2/A2-0053.mp3	dvylika
-A2-0054	human	audio_a2/A2-0054.mp3	trylika
-A2-0055	human	audio_a2/A2-0055.mp3	keturiolika
-A2-0056	human	audio_a2/A2-0056.mp3	penkiolika
-A2-0057	human	audio_a2/A2-0057.mp3	šešiolika
-A2-0058	human	audio_a2/A2-0058.mp3	septyniolika
-A2-0059	human	audio_a2/A2-0059.mp3	aštuoniolika
-A2-0060	human	audio_a2/A2-0060.mp3	devyniolika
-A2-0061	human	audio_a2/A2-0061.mp3	dvidešimt
-A2-0062	human	audio_a2/A2-0062.mp3	trisdešimt
-A2-0063	human	audio_a2/A2-0063.mp3	keturiasdešimt
-A2-0064	human	audio_a2/A2-0064.mp3	penkiasdešimt
-A2-0065	human	audio_a2/A2-0065.mp3	šešiasdešimt
-A2-0066	human	audio_a2/A2-0066.mp3	septyniasdešimt
-A2-0067	human	audio_a2/A2-0067.mp3	aštuoniasdešimt
-A2-0068	human	audio_a2/A2-0068.mp3	devyniasdešimt
-A2-0069	human	audio_a2/A2-0069.mp3	šimtas
-A2-0070	human	audio_a2/A2-0070.mp3	tūkstantis
-A2-0071	human	audio_a2/A2-0071.mp3	milijonas
-A2-0072	human	audio_a2/A2-0072.mp3	pirmas · pirma
-A2-0073	human	audio_a2/A2-0073.mp3	antras · antra
-A2-0074	human	audio_a2/A2-0074.mp3	trečias · trečia
-A2-0075	human	audio_a2/A2-0075.mp3	ketvirtas · ketvirta
-A2-0076	human	audio_a2/A2-0076.mp3	penktas · penkta
-A2-0077	human	audio_a2/A2-0077.mp3	paskutinis · paskutinė
-A2-0078	human	audio_a2/A2-0078.mp3	vardas · vardo
-A2-0079	human	audio_a2/A2-0079.mp3	pavardė · pavardės
-A2-0080	human	audio_a2/A2-0080.mp3	amžius · amžiaus
-A2-0084	human	audio_a2/A2-0084.mp3	adresas · adreso
-A2-0085	human	audio_a2/A2-0085.mp3	kasa · kasos
-A2-0086	human	audio_a2/A2-0086.mp3	raktų pakabukas · raktų pakabuko
-A2-0087	human	audio_a2/A2-0087.mp3	piniginė · piniginės
-A2-0089	human	audio_a2/A2-0089.mp3	lagaminas · lagamino
-A2-0090	human	audio_a2/A2-0090.mp3	pasas · paso
-A2-0093	human	audio_a2/A2-0093.mp3	atvirukas · atviruko
-A2-0094	human	audio_a2/A2-0094.mp3	pašto ženklas · pašto ženklo
-A2-0095	human	audio_a2/A2-0095.mp3	kioskas · kiosko
-A2-0096	human	audio_a2/A2-0096.mp3	eilė · eilės
-A2-0100	human	audio_a2/A2-0100.mp3	užkandis · užkandžio
-A2-0101	human	audio_a2/A2-0101.mp3	desertas · deserto
-A2-0102	human	audio_a2/A2-0102.mp3	meniu · meniu
-A2-0104	superseded	audio_a2/_superseded/A2-0104.mp3	kvitas · kvito
-A2-0105	human	audio_a2/A2-0105.mp3	nuolaida · nuolaidos
-A2-0106	human	audio_a2/A2-0106.mp3	dydis · dydžio
-A2-0107	human	audio_a2/A2-0107.mp3	grąža · grąžos
-A2-0114	human	audio_a2/A2-0114.mp3	kiek
-A2-0882	human	audio_a2/A2-0882.mp3	Nieko tokio
-A2-0896	human	audio_a2/A2-0896.mp3	Kas tai?
-A2-0909	human	audio_a2/A2-0909.mp3	Kur galiu rasti…?
-A2-0921	human	audio_a2/A2-0921.mp3	Tai mano namas
-A2-0920	human	audio_a2/A2-0920.mp3	Man patinka šis miestas
-A2-0897	human	audio_a2/A2-0897.mp3	Kas tas žmogus?
-A2-0883	human	audio_a2/A2-0883.mp3	Žinoma
-A2-0115	human	audio_a2/A2-0115.mp3	koks
-A2-0117	human	audio_a2/A2-0117.mp3	kieno
-A2-0895	human	audio_a2/A2-0895.mp3	Geros kelionės
-A2-0881	human	audio_a2/A2-0881.mp3	Atsiprašau
-A2-0922	human	audio_a2/A2-0922.mp3	Čia yra parduotuvė
-A2-0923	human	audio_a2/A2-0923.mp3	Šiandien šalta
-A2-0880	human	audio_a2/A2-0880.mp3	Atsiprašau…
-A2-0894	human	audio_a2/A2-0894.mp3	Geros dienos
-A2-0116	human	audio_a2/A2-0116.mp3	kuris
-A2-0890	human	audio_a2/A2-0890.mp3	Su gimtadieniu!
-A2-0884	human	audio_a2/A2-0884.mp3	Akimirką
-A2-0112	human	audio_a2/A2-0112.mp3	kaip
-A2-0927	human	audio_a2/A2-0927.mp3	Einu namo
-A2-0926	human	audio_a2/A2-0926.mp3	Kur tu eini?
-A2-0113	human	audio_a2/A2-0113.mp3	kodėl
-A2-0885	human	audio_a2/A2-0885.mp3	Prašom
-A2-0891	human	audio_a2/A2-0891.mp3	Sveikinu!
-A2-0887	human	audio_a2/A2-0887.mp3	Sėkmės!
-A2-0893	human	audio_a2/A2-0893.mp3	Iki rytojaus
-A2-0111	human	audio_a2/A2-0111.mp3	kada
-A2-0918	human	audio_a2/A2-0918.mp3	Galiu truputį kalbėti
-A2-0919	human	audio_a2/A2-0919.mp3	Man reikia vandens
-A2-0925	human	audio_a2/A2-0925.mp3	Trečia valanda
-A2-0110	human	audio_a2/A2-0110.mp3	kur
-A2-0892	human	audio_a2/A2-0892.mp3	Greitai pasveik!
-A2-0886	human	audio_a2/A2-0886.mp3	Sveiki atvykę!
-A2-0928	human	audio_a2/A2-0928.mp3	Kiek kainuoja bilietas?
-A2-0914	human	audio_a2/A2-0914.mp3	Aš turiu brolį
-A2-0900	human	audio_a2/A2-0900.mp3	Nekalbu lietuviškai
-A2-0901	human	audio_a2/A2-0901.mp3	Truputį
-A2-0915	human	audio_a2/A2-0915.mp3	Neturiu laiko
-A2-0929	human	audio_a2/A2-0929.mp3	Nesuprantu, atsiprašau
-A2-0108	human	audio_a2/A2-0108.mp3	kas
-A2-0888	human	audio_a2/A2-0888.mp3	Į sveikatą!
-A2-0903	superseded	audio_a2/_superseded/A2-0903.mp3	Užrašykite, prašau
-A2-0917	human	audio_a2/A2-0917.mp3	Norėčiau kavos
-A2-0916	human	audio_a2/A2-0916.mp3	Noriu valgyti
-A2-0902	superseded	audio_a2/_superseded/A2-0902.mp3	Pakartokite, prašau
-A2-0889	human	audio_a2/A2-0889.mp3	Skanaus
-A2-0899	human	audio_a2/A2-0899.mp3	Kiek tai kainuoja?
-A2-0906	human	audio_a2/A2-0906.mp3	Man reikia pagalbos
-A2-0912	human	audio_a2/A2-0912.mp3	Aš gyvenu Vilniuje
-A2-0913	human	audio_a2/A2-0913.mp3	Man dvidešimt metų
-A2-0907	human	audio_a2/A2-0907.mp3	Iškvieskite gydytoją!
-A2-0898	human	audio_a2/A2-0898.mp3	Kur yra tualetas?
-A2-0911	human	audio_a2/A2-0911.mp3	Aš esu iš Lietuvos
-A2-0905	human	audio_a2/A2-0905.mp3	Kaip lietuviškai …?
-A2-0904	human	audio_a2/A2-0904.mp3	Ką tai reiškia?
-A2-0910	human	audio_a2/A2-0910.mp3	Mano vardas Dainius
+0027_suo	human	audio/0027_suo.mp3	šuo · šuns
+0030_kate	human	audio/0030_kate.mp3	katė · katės
+0456_zuvis	human	audio/0456_zuvis.mp3	žuvis · žuvies
+0534_paukstis	human	audio/0534_paukstis.mp3	paukštis · paukščio
+1035_karve	human	audio/1035_karve.mp3	karvė · karvės
+0986_kiaule	human	audio/0986_kiaule.mp3	kiaulė · kiaulės
+1049_pele	human	audio/1049_pele.mp3	pelė · pelės
+0953_arklys	human	audio/0953_arklys.mp3	arklys · arklio
+2271_sparnas	human	audio/2271_sparnas.mp3	sparnas · sparno
+1100_gyvunas	human	audio/1100_gyvunas.mp3	gyvūnas · gyvūno
+0451_traukinys	human	audio/0451_traukinys.mp3	traukinys · traukinio
+0335_lektuvas	human	audio/0335_lektuvas.mp3	lėktuvas · lėktuvo
+0190_automobilis	human	audio/0190_automobilis.mp3	automobilis · automobilio
+0905_sunkvezimis	human	audio/0905_sunkvezimis.mp3	sunkvežimis · sunkvežimio
+0554_dviratis	human	audio/0554_dviratis.mp3	dviratis · dviračio
+0024_autobusas	human	audio/0024_autobusas.mp3	autobusas · autobuso
+0955_valtis	human	audio/0955_valtis.mp3	valtis · valties
+0517_laivas	human	audio/0517_laivas.mp3	laivas · laivo
+1173_padanga	human	audio/1173_padanga.mp3	padanga · padangos
+1176_benzinas	human	audio/1176_benzinas.mp3	benzinas · benzino
+1096_variklis	human	audio/1096_variklis.mp3	variklis · variklio
+0097_bilietas	human	audio/0097_bilietas.mp3	bilietas · bilieto
+1128_transportas	human	audio/1128_transportas.mp3	transportas · transporto
+0022_miestas	human	audio/0022_miestas.mp3	miestas · miesto
+0013_namas	human	audio/0013_namas.mp3	namas · namo
+0332_butas	human	audio/0332_butas.mp3	butas · buto
+0175_gatve	human	audio/0175_gatve.mp3	gatvė · gatvės
+0197_kelias	human	audio/0197_kelias.mp3	kelias · kelio
+1111_oro_uostas	human	audio/1111_oro_uostas.mp3	oro uostas · oro uosto
+0074_stotis	human	audio/0074_stotis.mp3	stotis · stoties
+0071_tiltas	human	audio/0071_tiltas.mp3	tiltas · tilto
+0511_viesbutis	human	audio/0511_viesbutis.mp3	viešbutis · viešbučio
+0421_restoranas	human	audio/0421_restoranas.mp3	restoranas · restorano
+1074_ukis	human	audio/1074_ukis.mp3	ūkis · ūkio
+0880_teismas	human	audio/0880_teismas.mp3	teismas · teismo
+0130_mokykla	human	audio/0130_mokykla.mp3	mokykla · mokyklos
+0862_biuras	human	audio/0862_biuras.mp3	biuras · biuro
+0310_kambarys	human	audio/0310_kambarys.mp3	kambarys · kambario
+0600_miestelis	human	audio/0600_miestelis.mp3	miestelis · miestelio
+1093_universitetas	human	audio/1093_universitetas.mp3	universitetas · universiteto
+0980_klubas	human	audio/0980_klubas.mp3	klubas · klubo
+0495_baras	human	audio/0495_baras.mp3	baras · baro
+0465_parkas	human	audio/0465_parkas.mp3	parkas · parko
+1164_stovykla	human	audio/1164_stovykla.mp3	stovykla · stovyklos
+0015_parduotuve	human	audio/0015_parduotuve.mp3	parduotuvė · parduotuvės
+0828_teatras	human	audio/0828_teatras.mp3	teatras · teatro
+0969_biblioteka	human	audio/0969_biblioteka.mp3	biblioteka · bibliotekos
+0049_ligonine	human	audio/0049_ligonine.mp3	ligoninė · ligoninės
+0134_baznycia	human	audio/0134_baznycia.mp3	bažnyčia · bažnyčios
+0730_turgus	human	audio/0730_turgus.mp3	turgus · turgaus
+0843_salis	human	audio/0843_salis.mp3	šalis · šalies
+1062_pastatas	human	audio/1062_pastatas.mp3	pastatas · pastato
+0454_zeme	human	audio/0454_zeme.mp3	žemė · žemės
+2287_kosmosas	human	audio/2287_kosmosas.mp3	kosmosas · kosmoso
+0287_bankas	human	audio/0287_bankas.mp3	bankas · banko
+0610_vieta	human	audio/0610_vieta.mp3	vieta · vietos
+0556_kepure	human	audio/0556_kepure.mp3	kepurė · kepurės
+0422_suknele	human	audio/0422_suknele.mp3	suknelė · suknelės
+1129_kostiumas	human	audio/1129_kostiumas.mp3	kostiumas · kostiumo
+0793_sijonas	human	audio/0793_sijonas.mp3	sijonas · sijono
+0668_marskiniai	human	audio/0668_marskiniai.mp3	marškiniai · marškinių
+1153_marskineliai	human	audio/1153_marskineliai.mp3	marškinėliai · marškinėlių
+0353_kelnes	human	audio/0353_kelnes.mp3	kelnės · kelnių
+0023_batai	human	audio/0023_batai.mp3	batai · batų
+1170_kisene	human	audio/1170_kisene.mp3	kišenė · kišenės
+0397_paltas	human	audio/0397_paltas.mp3	paltas · palto
+2334_deme	human	audio/2334_deme.mp3	dėmė · dėmės
+1143_drabuziai	human	audio/1143_drabuziai.mp3	drabužiai · drabužių
+0617_raudonas	human	audio/0617_raudonas.mp3	raudonas · raudono
+0618_zalias	human	audio/0618_zalias.mp3	žalias · žalio
+0619_melynas	human	audio/0619_melynas.mp3	mėlynas · mėlyno
+0620_geltonas	human	audio/0620_geltonas.mp3	geltonas · geltono
+0621_rudas	human	audio/0621_rudas.mp3	rudas · rudo
+0622_rozinis	human	audio/0622_rozinis.mp3	rožinis · rožinio
+0623_oranzinis	human	audio/0623_oranzinis.mp3	oranžinis · oranžinio
+0624_juodas	human	audio/0624_juodas.mp3	juodas · juodo
+0625_baltas	human	audio/0625_baltas.mp3	baltas · balto
+0626_pilkas	human	audio/0626_pilkas.mp3	pilkas · pilko
+0627_spalva	human	audio/0627_spalva.mp3	spalva · spalvos
+0311_sunus	human	audio/0311_sunus.mp3	sūnus · sūnaus
+0312_dukra	human	audio/0312_dukra.mp3	dukra · dukros
+0400_motina	human	audio/0400_motina.mp3	motina · motinos
+0221_tevas	human	audio/0221_tevas.mp3	tėvas · tėvo
+0257_tevai	human	audio/0257_tevai.mp3	tėvai · tėvų
+0611_kudikis	human	audio/0611_kudikis.mp3	kūdikis · kūdikio
+0002_vyras	human	audio/0002_vyras.mp3	vyras · vyro
+0004_moteris	human	audio/0004_moteris.mp3	moteris · moters
+0050_brolis	human	audio/0050_brolis.mp3	brolis · brolio
+0051_sesuo	human	audio/0051_sesuo.mp3	sesuo · sesers
+0020_seima	human	audio/0020_seima.mp3	šeima · šeimos
+0522_senelis	human	audio/0522_senelis.mp3	senelis · senelio
+0523_senele	human	audio/0523_senele.mp3	senelė · senelės
+0822_vyras	human	audio/0822_vyras.mp3	vyras · vyro
+0823_zmona	human	audio/0823_zmona.mp3	žmona · žmonos
+1080_karalius	human	audio/1080_karalius.mp3	karalius · karaliaus
+1159_karaliene	human	audio/1159_karaliene.mp3	karalienė · karalienės
+0964_prezidentas	human	audio/0964_prezidentas.mp3	prezidentas · prezidento
+0060_kaimynas	human	audio/0060_kaimynas.mp3	kaimynas · kaimyno
+0430_berniukas	human	audio/0430_berniukas.mp3	berniukas · berniuko
+0367_mergaite	human	audio/0367_mergaite.mp3	mergaitė · mergaitės
+0012_vaikas	human	audio/0012_vaikas.mp3	vaikas · vaiko
+1144_suauges	human	audio/1144_suauges.mp3	suaugęs · suaugusio
+0001_zmogus	human	audio/0001_zmogus.mp3	žmogus · žmogaus
+0016_draugas	human	audio/0016_draugas.mp3	draugas · draugo
+1132_auka	human	audio/1132_auka.mp3	auka · aukos
+2256_zaidejas	human	audio/2256_zaidejas.mp3	žaidėjas · žaidėjo
+2348_sirgalius	human	audio/2348_sirgalius.mp3	sirgalius · sirgaliaus
+2286_minia	human	audio/2286_minia.mp3	minia · minios
+1003_asmuo	human	audio/1003_asmuo.mp3	asmuo · asmens
+0045_mokytojas	human	audio/0045_mokytojas.mp3	mokytojas · mokytojo
+0333_studentas	human	audio/0333_studentas.mp3	studentas · studento
+0692_advokatas	human	audio/0692_advokatas.mp3	advokatas · advokato
+0245_gydytojas	human	audio/0245_gydytojas.mp3	gydytojas · gydytojo
+0765_pacientas	human	audio/0765_pacientas.mp3	pacientas · paciento
+0713_padavejas	human	audio/0713_padavejas.mp3	padavėjas · padavėjo
+0997_sekretorius	human	audio/0997_sekretorius.mp3	sekretorius · sekretoriaus
+0978_kunigas	human	audio/0978_kunigas.mp3	kunigas · kunigo
+0407_policininkas	human	audio/0407_policininkas.mp3	policininkas · policininko
+0368_policija	human	audio/0368_policija.mp3	policija · policijos
+0808_kariuomene	human	audio/0808_kariuomene.mp3	kariuomenė · kariuomenės
+0777_kareivis	human	audio/0777_kareivis.mp3	kareivis · kareivio
+1044_menininkas	human	audio/1044_menininkas.mp3	menininkas · menininko
+0906_autorius	human	audio/0906_autorius.mp3	autorius · autoriaus
+0574_vadovas	human	audio/0574_vadovas.mp3	vadovas · vadovo
+0857_zurnalistas	human	audio/0857_zurnalistas.mp3	žurnalistas · žurnalisto
+0941_aktorius	human	audio/0941_aktorius.mp3	aktorius · aktoriaus
+0080_darbas	human	audio/0080_darbas.mp3	darbas · darbo
+2326_religija	azure-neural	audio/2326_religija.mp3	
+2041_dangus	azure-neural	audio/2041_dangus.mp3	
+2119_pragaras	azure-neural	audio/2119_pragaras.mp3	
+1872_mirtis	azure-neural	audio/1872_mirtis.mp3	
+0510_vaistai	azure-neural	audio/0510_vaistai.mp3	
+0040_pinigai	azure-neural	audio/0040_pinigai.mp3	
+1924_doleris	azure-neural	audio/1924_doleris.mp3	
+2393_banknotas	azure-neural	audio/2393_banknotas.mp3	
+2227_santuoka	azure-neural	audio/2227_santuoka.mp3	
+0850_vestuves	human	audio/0850_vestuves.mp3	vestuvės · vestuvių
+1241_komanda	azure-neural	audio/1241_komanda.mp3	
+2182_santykiai	azure-neural	audio/2182_santykiai.mp3	
+2339_rase	azure-neural	audio/2339_rase.mp3	
+2105_seksas	azure-neural	audio/2105_seksas.mp3	
+2365_lytis	azure-neural	audio/2365_lytis.mp3	
+2174_zmogzudyste	azure-neural	audio/2174_zmogzudyste.mp3	
+1946_kalejimas	azure-neural	audio/1946_kalejimas.mp3	
+2207_technologija	azure-neural	audio/2207_technologija.mp3	
+2016_energija	azure-neural	audio/2016_energija.mp3	
+1684_karas	azure-neural	audio/1684_karas.mp3	
+2195_taika	azure-neural	audio/2195_taika.mp3	
+2279_puolimas	azure-neural	audio/2279_puolimas.mp3	
+2144_rinkimai	azure-neural	audio/2144_rinkimai.mp3	
+1639_zurnalas	azure-neural	audio/1639_zurnalas.mp3	
+1218_laikrastis	azure-neural	audio/1218_laikrastis.mp3	
+2376_nuodai	azure-neural	audio/2376_nuodai.mp3	
+1673_ginklas	azure-neural	audio/1673_ginklas.mp3	
+1206_sportas	azure-neural	audio/1206_sportas.mp3	
+2246_lenktynes	azure-neural	audio/2246_lenktynes.mp3	
+2300_manksta	azure-neural	audio/2300_manksta.mp3	
+1705_kamuolys	azure-neural	audio/1705_kamuolys.mp3	
+1318_zaidimas	azure-neural	audio/1318_zaidimas.mp3	
+0041_kaina	azure-neural	audio/0041_kaina.mp3	
+1837_sutartis	azure-neural	audio/1837_sutartis.mp3	
+2129_narkotikas	azure-neural	audio/2129_narkotikas.mp3	
+0797_zenklas	human	audio/0797_zenklas.mp3	ženklas · ženklo
+1988_mokslas	azure-neural	audio/1988_mokslas.mp3	
+1518_dievas	azure-neural	audio/1518_dievas.mp3	
+0453_grupe	human	audio/0453_grupe.mp3	grupė · grupės
+1204_daina	azure-neural	audio/1204_daina.mp3	
+1079_instrumentas	human	audio/1079_instrumentas.mp3	instrumentas · instrumento
+0299_muzika	azure-neural	audio/0299_muzika.mp3	
+0141_filmas	human	audio/0141_filmas.mp3	filmas · filmo
+2003_menas	azure-neural	audio/2003_menas.mp3	
+0014_kava	human	audio/0014_kava.mp3	kava · kavos
+0017_arbata	human	audio/0017_arbata.mp3	arbata · arbatos
+0792_vynas	human	audio/0792_vynas.mp3	vynas · vyno
+0026_alus	human	audio/0026_alus.mp3	alus · alaus
+0532_sultys	human	audio/0532_sultys.mp3	sultys · sulčių
+0003_vanduo	human	audio/0003_vanduo.mp3	vanduo · vandens
+0018_pienas	human	audio/0018_pienas.mp3	pienas · pieno
+0355_gerimas	human	audio/0355_gerimas.mp3	gėrimas · gėrimo
+0452_kiausinis	human	audio/0452_kiausinis.mp3	kiaušinis · kiaušinio
+0520_suris	human	audio/0520_suris.mp3	sūris · sūrio
+0006_duona	human	audio/0006_duona.mp3	duona · duonos
+0033_sriuba	human	audio/0033_sriuba.mp3	sriuba · sriubos
+0870_tortas	human	audio/0870_tortas.mp3	tortas · torto
+0607_vistiena	human	audio/0607_vistiena.mp3	vištiena · vištienos
+1115_kiauliena	human	audio/1115_kiauliena.mp3	kiauliena · kiaulienos
+1071_jautiena	human	audio/1071_jautiena.mp3	jautiena · jautienos
+0028_obuolys	human	audio/0028_obuolys.mp3	obuolys · obuolio
+0990_bananas	human	audio/0990_bananas.mp3	bananas · banano
+1125_apelsinas	human	audio/1125_apelsinas.mp3	apelsinas · apelsino
+1152_citrina	human	audio/1152_citrina.mp3	citrina · citrinos
+1168_kukuruzai	human	audio/1168_kukuruzai.mp3	kukurūzai · kukurūzų
+1177_ryziai	human	audio/1177_ryziai.mp3	ryžiai · ryžių
+1097_aliejus	human	audio/1097_aliejus.mp3	aliejus · aliejaus
+1108_tepalas	human	audio/1108_tepalas.mp3	tepalas · tepalo
+1026_sekla	human	audio/1026_sekla.mp3	sėkla · sėklos
+0489_peilis	human	audio/0489_peilis.mp3	peilis · peilio
+0882_saukstas	human	audio/0882_saukstas.mp3	šaukštas · šaukšto
+0947_sakute	human	audio/0947_sakute.mp3	šakutė · šakutės
+0717_lekste	human	audio/0717_lekste.mp3	lėkštė · lėkštės
+0506_puodelis	human	audio/0506_puodelis.mp3	puodelis · puodelio
+0586_pusryciai	human	audio/0586_pusryciai.mp3	pusryčiai · pusryčių
+0301_pietus	human	audio/0301_pietus.mp3	pietūs · pietų
+0330_vakariene	human	audio/0330_vakariene.mp3	vakarienė · vakarienės
+0243_cukrus	human	audio/0243_cukrus.mp3	cukrus · cukraus
+0575_druska	human	audio/0575_druska.mp3	druska · druskos
+0464_butelis	human	audio/0464_butelis.mp3	butelis · butelio
+0212_maistas	human	audio/0212_maistas.mp3	maistas · maisto
+0063_stalas	human	audio/0063_stalas.mp3	stalas · stalo
+0244_kede	human	audio/0244_kede.mp3	kėdė · kėdės
+0343_lova	human	audio/0343_lova.mp3	lova · lovos
+1617_sapnas	azure-neural	audio/1617_sapnas.mp3	
+0346_langas	human	audio/0346_langas.mp3	langas · lango
+0210_durys	human	audio/0210_durys.mp3	durys · durų
+0704_miegamasis	human	audio/0704_miegamasis.mp3	miegamasis · miegamojo
+0443_virtuve	human	audio/0443_virtuve.mp3	virtuvė · virtuvės
+0412_vonia	human	audio/0412_vonia.mp3	vonia · vonios
+0801_piestukas	human	audio/0801_piestukas.mp3	pieštukas · pieštuko
+0689_rasiklis	human	audio/0689_rasiklis.mp3	rašiklis · rašiklio
+0566_nuotrauka	human	audio/0566_nuotrauka.mp3	nuotrauka · nuotraukos
+0827_muilas	human	audio/0827_muilas.mp3	muilas · muilo
+0062_knyga	human	audio/0062_knyga.mp3	knyga · knygos
+0935_puslapis	human	audio/0935_puslapis.mp3	puslapis · puslapio
+0133_raktas	human	audio/0133_raktas.mp3	raktas · rakto
+1092_dazai	human	audio/1092_dazai.mp3	dažai · dažų
+0166_laiskas	human	audio/0166_laiskas.mp3	laiškas · laiško
+2275_raide	azure-neural	audio/2275_raide.mp3	
+1102_rastelis	human	audio/1102_rastelis.mp3	raštelis · raštelio
+0577_siena	human	audio/0577_siena.mp3	siena · sienos
+0375_popierius	human	audio/0375_popierius.mp3	popierius · popieriaus
+0839_grindys	human	audio/0839_grindys.mp3	grindys · grindų
+1109_lubos	human	audio/1109_lubos.mp3	lubos · lubų
+0963_stogas	human	audio/0963_stogas.mp3	stogas · stogo
+0991_baseinas	human	audio/0991_baseinas.mp3	baseinas · baseino
+1070_spyna	human	audio/1070_spyna.mp3	spyna · spynos
+0056_telefonas	human	audio/0056_telefonas.mp3	telefonas · telefono
+0868_sodas	human	audio/0868_sodas.mp3	sodas · sodo
+0920_kiemas	human	audio/0920_kiemas.mp3	kiemas · kiemo
+1077_adata	human	audio/1077_adata.mp3	adata · adatos
+0475_krepsys	human	audio/0475_krepsys.mp3	krepšys · krepšio
+0752_deze	human	audio/0752_deze.mp3	dėžė · dėžės
+0431_dovana	human	audio/0431_dovana.mp3	dovana · dovanos
+0771_kortele	human	audio/0771_kortele.mp3	kortelė · kortelės
+0900_ziedas	human	audio/0900_ziedas.mp3	žiedas · žiedo
+1027_irankis	human	audio/1027_irankis.mp3	įrankis · įrankio
+0485_laikrodis	human	audio/0485_laikrodis.mp3	laikrodis · laikrodžio
+0754_lempa	human	audio/0754_lempa.mp3	lempa · lempos
+2294_ventiliatorius	human	audio/2294_ventiliatorius.mp3	ventiliatorius · ventiliatoriaus
+1082_mobilusis_telefonas	superseded	audio/_superseded/1082_mobilusis_telefonas.mp3	mobilusis telefonas · mobilusis telefono
+2094_tinklas	azure-neural	audio/2094_tinklas.mp3	
+0398_kompiuteris	human	audio/0398_kompiuteris.mp3	kompiuteris · kompiuterio
+1253_programa	azure-neural	audio/1253_programa.mp3	
+1187_nesiojamasis_kompiuteris	human	audio/1187_nesiojamasis_kompiuteris.mp3	nešiojamasis kompiuteris · nešiojamojo kompiuterio
+0988_ekranas	human	audio/0988_ekranas.mp3	ekranas · ekrano
+0804_fotoaparatas	human	audio/0804_fotoaparatas.mp3	fotoaparatas · fotoaparato
+0588_televizorius	human	audio/0588_televizorius.mp3	televizorius · televizoriaus
+0432_radijas	human	audio/0432_radijas.mp3	radijas · radijo
+0174_galva	human	audio/0174_galva.mp3	galva · galvos
+0976_kaklas	human	audio/0976_kaklas.mp3	kaklas · kaklo
+0309_veidas	human	audio/0309_veidas.mp3	veidas · veido
+1181_barzda	human	audio/1181_barzda.mp3	barzda · barzdos
+0783_plaukai	human	audio/0783_plaukai.mp3	plaukai · plaukų
+0200_akis	human	audio/0200_akis.mp3	akis · akies
+0673_burna	human	audio/0673_burna.mp3	burna · burnos
+1124_lupos	superseded	audio/_superseded/1124_lupos.mp3	lūpa · lūpos
+0544_nosis	human	audio/0544_nosis.mp3	nosis · nosies
+0478_dantis	human	audio/0478_dantis.mp3	dantis · danties
+0576_ausis	human	audio/0576_ausis.mp3	ausis · ausies
+2329_asara	human	audio/2329_asara.mp3	ašara · ašaros
+1158_liezuvis	human	audio/1158_liezuvis.mp3	liežuvis · liežuvio
+0860_nugara	human	audio/0860_nugara.mp3	nugara · nugaros
+1131_kojos_pirstas	human	audio/1131_kojos_pirstas.mp3	kojos pirštas · kojos piršto
+0518_pirstas	human	audio/0518_pirstas.mp3	pirštas · piršto
+0918_peda	human	audio/0918_peda.mp3	pėda · pėdos
+2420_plastaka	human	audio/2420_plastaka.mp3	plaštaka · plaštakos
+0321_koja	human	audio/0321_koja.mp3	koja · kojos
+0145_ranka	human	audio/0145_ranka.mp3	ranka · rankos
+1048_petys	human	audio/1048_petys.mp3	petys · peties
+0278_sirdis	human	audio/0278_sirdis.mp3	širdis · širdies
+0712_kraujas	human	audio/0712_kraujas.mp3	kraujas · kraujo
+1105_smegenys	human	audio/1105_smegenys.mp3	smegenys · smegenų
+0599_kelis	human	audio/0599_kelis.mp3	kelis · kelio
+2361_prakaitas	human	audio/2361_prakaitas.mp3	prakaitas · prakaito
+1207_liga	azure-neural	audio/1207_liga.mp3	
+1007_kaulas	human	audio/1007_kaulas.mp3	kaulas · kaulo
+1427_balsas	azure-neural	audio/1427_balsas.mp3	
+0874_oda	human	audio/0874_oda.mp3	oda · odos
+0266_kunas	human	audio/0266_kunas.mp3	kūnas · kūno
+0254_jura	human	audio/0254_jura.mp3	jūra · jūros
+1119_vandenynas	human	audio/1119_vandenynas.mp3	vandenynas · vandenyno
+0095_upe	human	audio/0095_upe.mp3	upė · upės
+0714_kalnas	human	audio/0714_kalnas.mp3	kalnas · kalno
+0085_lietus	human	audio/0085_lietus.mp3	lietus · lietaus
+0319_sniegas	human	audio/0319_sniegas.mp3	sniegas · sniego
+0341_medis	human	audio/0341_medis.mp3	medis · medžio
+0324_saule	human	audio/0324_saule.mp3	saulė · saulės
+0419_menulis	human	audio/0419_menulis.mp3	mėnulis · mėnulio
+1194_pasaulis	azure-neural	audio/1194_pasaulis.mp3	
+0667_zeme	human	audio/0667_zeme.mp3	Žemė · Žemės
+0111_miskas	human	audio/0111_miskas.mp3	miškas · miško
+0376_dangus	human	audio/0376_dangus.mp3	dangus · dangaus
+0835_augalas	human	audio/0835_augalas.mp3	augalas · augalo
+0433_vejas	human	audio/0433_vejas.mp3	vėjas · vėjo
+0727_zeme	human	audio/0727_zeme.mp3	žemė · žemės
+0064_gele	human	audio/0064_gele.mp3	gėlė · gėlės
+2229_slenis	human	audio/2229_slenis.mp3	slėnis · slėnio
+2342_saknis	human	audio/2342_saknis.mp3	šaknis · šaknies
+0496_ezeras	human	audio/0496_ezeras.mp3	ežeras · ežero
+0279_zvaigzde	human	audio/0279_zvaigzde.mp3	žvaigždė · žvaigždės
+0551_zole	human	audio/0551_zole.mp3	žolė · žolės
+0785_lapas	human	audio/0785_lapas.mp3	lapas · lapo
+1200_oras	azure-neural	audio/1200_oras.mp3	
+0944_smelis	human	audio/0944_smelis.mp3	smėlis · smėlio
+0883_papludimys	human	audio/0883_papludimys.mp3	paplūdimys · paplūdimio
+2152_banga	human	audio/2152_banga.mp3	banga · bangos
+0445_ugnis	human	audio/0445_ugnis.mp3	ugnis · ugnies
+0648_ledas	human	audio/0648_ledas.mp3	ledas · ledo
+0994_sala	human	audio/0994_sala.mp3	sala · salos
+2208_kalva	human	audio/2208_kalva.mp3	kalva · kalvos
+2083_karstis	azure-neural	audio/2083_karstis.mp3	
+1090_gamta	human	audio/1090_gamta.mp3	gamta · gamtos
+0928_stiklas	human	audio/0928_stiklas.mp3	stiklas · stiklo
+0913_metalas	human	audio/0913_metalas.mp3	metalas · metalo
+1146_plastikas	human	audio/1146_plastikas.mp3	plastikas · plastiko
+1103_mediena	human	audio/1103_mediena.mp3	mediena · medienos
+0809_akmuo	human	audio/0809_akmuo.mp3	akmuo · akmens
+1001_deimantas	human	audio/1001_deimantas.mp3	deimantas · deimanto
+1162_molis	human	audio/1162_molis.mp3	molis · molio
+1133_dulkes	human	audio/1133_dulkes.mp3	dulkės · dulkių
+0705_auksas	human	audio/0705_auksas.mp3	auksas · aukso
+1118_varis	human	audio/1118_varis.mp3	varis · vario
+1031_sidabras	human	audio/1031_sidabras.mp3	sidabras · sidabro
+0563_medziaga	human	audio/0563_medziaga.mp3	medžiaga · medžiagos
+1209_metras	azure-neural	audio/1209_metras.mp3	
+2074_centimetras	azure-neural	audio/2074_centimetras.mp3	
+1362_kilogramas	azure-neural	audio/1362_kilogramas.mp3	
+2328_colis	azure-neural	audio/2328_colis.mp3	
+2139_peda	azure-neural	audio/2139_peda.mp3	
+2196_svaras	azure-neural	audio/2196_svaras.mp3	
+1195_puse	azure-neural	audio/1195_puse.mp3	
+2403_apskritimas	azure-neural	audio/2403_apskritimas.mp3	
+2353_kvadratas	azure-neural	audio/2353_kvadratas.mp3	
+1295_temperatura	azure-neural	audio/1295_temperatura.mp3	
+1254_data	azure-neural	audio/1254_data.mp3	
+1717_svoris	azure-neural	audio/1717_svoris.mp3	
+2106_krastas	azure-neural	audio/2106_krastas.mp3	
+2124_kampas	azure-neural	audio/2124_kampas.mp3	
+0863_zemelapis	human	audio/0863_zemelapis.mp3	žemėlapis · žemėlapio
+0671_taskas	human	audio/0671_taskas.mp3	taškas · taško
+2419_priebalsis	azure-neural	audio/2419_priebalsis.mp3	
+2421_balsis	azure-neural	audio/2421_balsis.mp3	
+1397_sviesa	azure-neural	audio/1397_sviesa.mp3	
+1516_garsas	azure-neural	audio/1516_garsas.mp3	
+0029_taip	azure-neural	audio/0029_taip.mp3	
+0034_ne	azure-neural	audio/0034_ne.mp3	
+1460_gabalas	azure-neural	audio/1460_gabalas.mp3	
+1615_skausmas	azure-neural	audio/1615_skausmas.mp3	
+2158_suzalojimas	human	audio/2158_suzalojimas.mp3	sužalojimas · sužalojimo
+0800_zaizda	human	audio/0800_zaizda.mp3	žaizda · žaizdos
+0816_skyle	human	audio/0816_skyle.mp3	skylė · skylės
+0606_vaizdas	human	audio/0606_vaizdas.mp3	vaizdas · vaizdo
+2241_rastas	azure-neural	audio/2241_rastas.mp3	
+0019_dirbti	human	audio/0019_dirbti.mp3	dirbti · dirba · dirbo
+0256_zaisti	human	audio/0256_zaisti.mp3	žaisti · žaidžia · žaidė
+0540_groti	human	audio/0540_groti.mp3	groti · groja · grojo
+0011_eiti	human	audio/0011_eiti.mp3	eiti · eina · ėjo
+0323_begti	human	audio/0323_begti.mp3	bėgti · bėga · bėgo
+0484_vairuoti	human	audio/0484_vairuoti.mp3	vairuoti · vairuoja · vairavo
+0467_skristi	human	audio/0467_skristi.mp3	skristi · skrenda · skrido
+0519_plaukti	human	audio/0519_plaukti.mp3	plaukti · plaukia · plaukė
+0298_eiti	human	audio/0298_eiti.mp3	eiti · eina · ėjo
+0507_sustoti	human	audio/0507_sustoti.mp3	sustoti · sustoja · sustojo
+1072_sekti	human	audio/1072_sekti.mp3	sekti · seka · sekė
+0223_galvoti	azure-neural	audio/0223_galvoti.mp3	
+0094_sakyti	human	audio/0094_sakyti.mp3	sakyti · sako · sakė
+0005_valgyti	human	audio/0005_valgyti.mp3	valgyti · valgo · valgė
+0008_gerti	human	audio/0008_gerti.mp3	gerti · geria · gėrė
+1009_zudyti	human	audio/1009_zudyti.mp3	žudyti · žudo · žudė
+0638_mirti	human	audio/0638_mirti.mp3	mirti · miršta · mirė
+0608_sypsotis	human	audio/0608_sypsotis.mp3	šypsotis · šypsosi · šypsojosi
+0587_juoktis	human	audio/0587_juoktis.mp3	juoktis · juokiasi · juokėsi
+0675_verkti	human	audio/0675_verkti.mp3	verkti · verkia · verkė
+0044_pirkti	human	audio/0044_pirkti.mp3	pirkti · perka · pirko
+0235_moketi	human	audio/0235_moketi.mp3	mokėti · moka · mokėjo
+0658_parduoti	human	audio/0658_parduoti.mp3	parduoti · parduoda · pardavė
+1021_sauti	human	audio/1021_sauti.mp3	šauti · šauna · šovė
+0100_mokytis	azure-neural	audio/0100_mokytis.mp3	
+0743_sokti	human	audio/0743_sokti.mp3	šokti · šoka · šoko
+1051_uostyti	human	audio/1051_uostyti.mp3	uostyti · uosto · uostė
+0070_girdeti	human	audio/0070_girdeti.mp3	girdėti · girdi · girdėjo
+0989_klausytis	human	audio/0989_klausytis.mp3	klausytis · klausosi · klausėsi
+1167_ragauti	human	audio/1167_ragauti.mp3	ragauti · ragauja · ragavo
+0942_liesti	human	audio/0942_liesti.mp3	liesti · liečia · lietė
+0066_matyti	human	audio/0066_matyti.mp3	matyti · mato · matė
+0211_ziureti	human	audio/0211_ziureti.mp3	žiūrėti · žiūri · žiūrėjo
+0886_buciuoti	human	audio/0886_buciuoti.mp3	bučiuoti · bučiuoja · bučiavo
+0967_degti	human	audio/0967_degti.mp3	degti · dega · degė
+2398_tirpti	human	audio/2398_tirpti.mp3	tirpti · tirpsta · tirpo
+1046_kasti	human	audio/1046_kasti.mp3	kasti · kasa · kasė
+2262_sprogti	human	audio/2262_sprogti.mp3	sprogti · sprogsta · sprogo
+0354_sedeti	human	audio/0354_sedeti.mp3	sėdėti · sėdi · sėdėjo
+0365_stoveti	human	audio/0365_stoveti.mp3	stovėti · stovi · stovėjo
+0082_myleti	azure-neural	audio/0082_myleti.mp3	
+0903_praeiti	human	audio/0903_praeiti.mp3	praeiti · praeina · praėjo
+1034_pjauti	human	audio/1034_pjauti.mp3	pjauti · pjauna · pjovė
+2338_mustis	human	audio/2338_mustis.mp3	muštis · mušasi · mušėsi
+0852_guleti	human	audio/0852_guleti.mp3	gulėti · guli · gulėjo
+0442_sokti	human	audio/0442_sokti.mp3	šokti · šoka · šoko
+0089_miegoti	human	audio/0089_miegoti.mp3	miegoti · miega · miegojo
+0655_pabusti	human	audio/0655_pabusti.mp3	pabusti · pabunda · pabudo
+0497_dainuoti	human	audio/0497_dainuoti.mp3	dainuoti · dainuoja · dainavo
+0845_skaiciuoti	human	audio/0845_skaiciuoti.mp3	skaičiuoti · skaičiuoja · skaičiavo
+1098_tuoktis	human	audio/1098_tuoktis.mp3	tuoktis · tuokiasi · tuokėsi
+2282_melstis	azure-neural	audio/2282_melstis.mp3	
+1221_laimeti	azure-neural	audio/1221_laimeti.mp3	
+1494_pralaimeti	azure-neural	audio/1494_pralaimeti.mp3	
+1121_maisyti	human	audio/1121_maisyti.mp3	maišyti · maišo · maišė
+2349_lenkti	human	audio/2349_lenkti.mp3	lenkti · lenkia · lenkė
+0718_plauti	human	audio/0718_plauti.mp3	plauti · plauna · plovė
+0531_gaminti	human	audio/0531_gaminti.mp3	gaminti · gamina · gamino
+0396_atidaryti	human	audio/0396_atidaryti.mp3	atidaryti · atidaro · atidarė
+0462_uzdaryti	human	audio/0462_uzdaryti.mp3	uždaryti · uždaro · uždarė
+0265_rasyti	human	audio/0265_rasyti.mp3	rašyti · rašo · rašė
+0059_skambinti	human	audio/0059_skambinti.mp3	skambinti · skambina · skambino
+0829_sukti	human	audio/0829_sukti.mp3	sukti · suka · suko
+0767_statyti	human	audio/0767_statyti.mp3	statyti · stato · statė
+1208_mokyti	azure-neural	audio/1208_mokyti.mp3	
+0866_augti	human	audio/0866_augti.mp3	augti · auga · augo
+1014_piesti	human	audio/1014_piesti.mp3	piešti · piešia · piešė
+1089_maitinti	human	audio/1089_maitinti.mp3	maitinti · maitina · maitino
+0950_gaudyti	human	audio/0950_gaudyti.mp3	gaudyti · gaudo · gaudė
+0342_mesti	human	audio/0342_mesti.mp3	mesti · meta · metė
+0977_valyti	human	audio/0977_valyti.mp3	valyti · valo · valė
+0177_rasti	human	audio/0177_rasti.mp3	rasti · randa · rado
+0756_kristi	human	audio/0756_kristi.mp3	kristi · krinta · krito
+1117_stumti	human	audio/1117_stumti.mp3	stumti · stumia · stūmė
+0779_traukti	human	audio/0779_traukti.mp3	traukti · traukia · traukė
+0500_nesti	human	audio/0500_nesti.mp3	nešti · neša · nešė
+1126_lauzyti	human	audio/1126_lauzyti.mp3	laužyti · laužo · laužė
+0995_deveti	human	audio/0995_deveti.mp3	dėvėti · dėvi · dėvėjo
+2219_kabinti	human	audio/2219_kabinti.mp3	kabinti · kabina · kabino
+2409_purtyti	human	audio/2409_purtyti.mp3	purtyti · purto · purtė
+1028_pasirasyti	human	audio/1028_pasirasyti.mp3	pasirašyti · pasirašo · pasirašė
+0840_musti	human	audio/0840_musti.mp3	mušti · muša · mušė
+0701_kelti	human	audio/0701_kelti.mp3	kelti · kelia · kėlė
+0363_ilgas	human	audio/0363_ilgas.mp3	ilgas · ilga
+0364_trumpas	human	audio/0364_trumpas.mp3	trumpas · trumpa
+0178_aukstas	human	audio/0178_aukstas.mp3	aukštas · aukšta
+0179_zemas	human	audio/0179_zemas.mp3	žemas · žema
+1017_platus	human	audio/1017_platus.mp3	platus · plati
+1018_siauras	human	audio/1018_siauras.mp3	siauras · siaura
+0009_didelis	human	audio/0009_didelis.mp3	didelis · didelė
+0010_mazas	human	audio/0010_mazas.mp3	mažas · maža
+0290_letas	human	audio/0290_letas.mp3	lėtas · lėta
+0289_greitas	human	audio/0289_greitas.mp3	greitas · greita
+0068_karstas	human	audio/0068_karstas.mp3	karštas · karšta
+0067_saltas	human	audio/0067_saltas.mp3	šaltas · šalta
+0122_siltas	human	audio/0122_siltas.mp3	šiltas · šilta
+0123_vesus	human	audio/0123_vesus.mp3	vėsus · vėsi
+0108_naujas	human	audio/0108_naujas.mp3	naujas · nauja
+0109_senas	human	audio/0109_senas.mp3	senas · sena
+0202_jaunas	human	audio/0202_jaunas.mp3	jaunas · jauna
+0201_senas	human	audio/0201_senas.mp3	senas · sena
+0038_geras	azure-neural	audio/0038_geras.mp3	
+0039_blogas	azure-neural	audio/0039_blogas.mp3	
+1069_slapias	human	audio/1069_slapias.mp3	šlapias · šlapia
+1068_sausas	human	audio/1068_sausas.mp3	sausas · sausa
+0233_sergantis	human	audio/0233_sergantis.mp3	sergantis · serganti
+0232_sveikas	human	audio/0232_sveikas.mp3	sveikas · sveika
+0682_garsus	human	audio/0682_garsus.mp3	garsus · garsi
+0681_tylus	human	audio/0681_tylus.mp3	tylus · tyli
+0385_laimingas	human	audio/0385_laimingas.mp3	laimingas · laiminga
+0386_liudnas	human	audio/0386_liudnas.mp3	liūdnas · liūdna
+0075_grazus	human	audio/0075_grazus.mp3	gražus · graži
+0076_bjaurus	human	audio/0076_bjaurus.mp3	bjaurus · bjauri
+2240_kurcias	human	audio/2240_kurcias.mp3	kurčias · kurčia
+2239_aklas	human	audio/2239_aklas.mp3	aklas · akla
+0499_malonus	human	audio/0499_malonus.mp3	malonus · maloni
+0498_piktas	azure-neural	audio/0498_piktas.mp3	
+0945_turtingas	human	audio/0945_turtingas.mp3	turtingas · turtinga
+0946_neturtingas	human	audio/0946_neturtingas.mp3	neturtingas · neturtinga
+0848_storas	human	audio/0848_storas.mp3	storas · stora
+0849_plonas	human	audio/0849_plonas.mp3	plonas · plona
+0267_brangus	human	audio/0267_brangus.mp3	brangus · brangi
+0268_pigus	human	audio/0268_pigus.mp3	pigus · pigi
+2407_plokscias	human	audio/2407_plokscias.mp3	plokščias · plokščia
+2408_islenktas	human	audio/2408_islenktas.mp3	išlenktas · išlenkta
+2311_vyriskas	human	audio/2311_vyriskas.mp3	vyriškas · vyriška
+2312_moteriskas	human	audio/2312_moteriskas.mp3	moteriškas · moteriška
+1055_ankstas	human	audio/1055_ankstas.mp3	ankštas · ankšta
+1054_laisvas	human	audio/1054_laisvas.mp3	laisvas · laisva
+0831_aukstas	human	audio/0831_aukstas.mp3	aukštas · aukšta
+0832_zemas	human	audio/0832_zemas.mp3	žemas · žema
+0734_minkstas	human	audio/0734_minkstas.mp3	minkštas · minkšta
+0733_kietas	human	audio/0733_kietas.mp3	kietas · kieta
+0814_gilus	human	audio/0814_gilus.mp3	gilus · gili
+0815_seklus	human	audio/0815_seklus.mp3	seklus · sekli
+0486_svarus	human	audio/0486_svarus.mp3	švarus · švari
+0487_purvinas	human	audio/0487_purvinas.mp3	purvinas · purvina
+0596_stiprus	human	audio/0596_stiprus.mp3	stiprus · stipri
+0597_silpnas	human	audio/0597_silpnas.mp3	silpnas · silpna
+0972_negyvas	human	audio/0972_negyvas.mp3	negyvas · negyva
+0971_gyvas	human	audio/0971_gyvas.mp3	gyvas · gyva
+0473_sunkus	human	audio/0473_sunkus.mp3	sunkus · sunki
+0474_lengvas	human	audio/0474_lengvas.mp3	lengvas · lengva
+0898_tamsus	human	audio/0898_tamsus.mp3	tamsus · tamsi
+0899_sviesus	human	audio/0899_sviesus.mp3	šviesus · šviesi
+2276_branduolinis	azure-neural	audio/2276_branduolinis.mp3	
+1340_garsus	azure-neural	audio/1340_garsus.mp3	
+0031_as	azure-neural	audio/0031_as.mp3	
+0035_tu	azure-neural	audio/0035_tu.mp3	
+0037_jis	azure-neural	audio/0037_jis.mp3	
+0042_ji	azure-neural	audio/0042_ji.mp3	
+0057_tai	azure-neural	audio/0057_tai.mp3	
+0046_mes	azure-neural	audio/0046_mes.mp3	
+0048_jus	azure-neural	audio/0048_jus.mp3	
+0053_jie	azure-neural	audio/0053_jie.mp3	
+2404_serti	azure-neural	audio/2404_serti.mp3	
+2425_lesinti	azure-neural	audio/2425_lesinti.mp3	
+2426_lydyti	human	audio/2426_lydyti.mp3	lydyti · lydo · lydė
+0318_laikas	human	audio_a2/0318_laikas.mp3	laikas · laiko
+0261_valanda	human	audio_a2/0261_valanda.mp3	valanda · valandos
+0590_minute	human	audio_a2/0590_minute.mp3	minutė · minutės
+0561_sekunde	human	audio_a2/0561_sekunde.mp3	sekundė · sekundės
+0172_diena	human	audio_a2/0172_diena.mp3	diena · dienos
+0457_savaite	human	audio_a2/0457_savaite.mp3	savaitė · savaitės
+0394_menuo	human	audio_a2/0394_menuo.mp3	mėnuo · mėnesio
+0229_metai	human	audio_a2/0229_metai.mp3	metai · metų
+0664_savaitgalis	human	audio_a2/0664_savaitgalis.mp3	savaitgalis · savaitgalio
+0163_rytas	human	audio_a2/0163_rytas.mp3	rytas · ryto
+1037_popiete	human	audio_a2/1037_popiete.mp3	popietė · popietės
+0199_vakaras	human	audio_a2/0199_vakaras.mp3	vakaras · vakaro
+0246_naktis	human	audio_a2/0246_naktis.mp3	naktis · nakties
+0206_siandien	human	audio_a2/0206_siandien.mp3	šiandien
+0316_vakar	human	audio_a2/0316_vakar.mp3	vakar
+0295_rytoj	human	audio_a2/0295_rytoj.mp3	rytoj
+0170_dabar	human	audio_a2/0170_dabar.mp3	dabar
+0084_pirmadienis	human	audio_a2/0084_pirmadienis.mp3	pirmadienis · pirmadienio
+0636_antradienis	human	audio_a2/0636_antradienis.mp3	antradienis · antradienio
+0646_treciadienis	human	audio_a2/0646_treciadienis.mp3	trečiadienis · trečiadienio
+0659_ketvirtadienis	human	audio_a2/0659_ketvirtadienis.mp3	ketvirtadienis · ketvirtadienio
+0683_penktadienis	human	audio_a2/0683_penktadienis.mp3	penktadienis · penktadienio
+0694_sestadienis	human	audio_a2/0694_sestadienis.mp3	šeštadienis · šeštadienio
+0742_sekmadienis	human	audio_a2/0742_sekmadienis.mp3	sekmadienis · sekmadienio
+0378_sausis	human	audio_a2/0378_sausis.mp3	sausis · sausio
+0409_vasaris	human	audio_a2/0409_vasaris.mp3	vasaris · vasario
+0411_kovas	human	audio_a2/0411_kovas.mp3	kovas · kovo
+0423_balandis	human	audio_a2/0423_balandis.mp3	balandis · balandžio
+0434_geguze	human	audio_a2/0434_geguze.mp3	gegužė · gegužės
+0780_birzelis	human	audio_a2/0780_birzelis.mp3	birželis · birželio
+0791_liepa	human	audio_a2/0791_liepa.mp3	liepa · liepos
+0825_rugpjutis	human	audio_a2/0825_rugpjutis.mp3	rugpjūtis · rugpjūčio
+0836_rugsejis	superseded	audio_a2/_superseded/0836_rugsejis.mp3	rugsėjis · rugsėjio
+0844_spalis	human	audio_a2/0844_spalis.mp3	spalis · spalio
+0861_lapkritis	human	audio_a2/0861_lapkritis.mp3	lapkritis · lapkričio
+0872_gruodis	human	audio_a2/0872_gruodis.mp3	gruodis · gruodžio
+0086_pavasaris	human	audio_a2/0086_pavasaris.mp3	pavasaris · pavasario
+0090_vasara	human	audio_a2/0090_vasara.mp3	vasara · vasaros
+0096_ruduo	human	audio_a2/0096_ruduo.mp3	ruduo · rudens
+0098_ziema	human	audio_a2/0098_ziema.mp3	žiema · žiemos
+0476_nulis	human	audio_a2/0476_nulis.mp3	nulis
+0052_vienas	human	audio_a2/0052_vienas.mp3	vienas
+0055_du	human	audio_a2/0055_du.mp3	du
+0079_trys	human	audio_a2/0079_trys.mp3	trys
+0087_keturi	human	audio_a2/0087_keturi.mp3	keturi
+0091_penki	human	audio_a2/0091_penki.mp3	penki
+0224_sesi	human	audio_a2/0224_sesi.mp3	šeši
+0300_septyni	human	audio_a2/0300_septyni.mp3	septyni
+0345_astuoni	human	audio_a2/0345_astuoni.mp3	aštuoni
+0357_devyni	human	audio_a2/0357_devyni.mp3	devyni
+0377_desimt	human	audio_a2/0377_desimt.mp3	dešimt
+0875_vienuolika	human	audio_a2/0875_vienuolika.mp3	vienuolika
+0889_dvylika	human	audio_a2/0889_dvylika.mp3	dvylika
+0956_trylika	human	audio_a2/0956_trylika.mp3	trylika
+0983_keturiolika	human	audio_a2/0983_keturiolika.mp3	keturiolika
+0992_penkiolika	human	audio_a2/0992_penkiolika.mp3	penkiolika
+0999_sesiolika	human	audio_a2/0999_sesiolika.mp3	šešiolika
+1008_septyniolika	human	audio_a2/1008_septyniolika.mp3	septyniolika
+1016_astuoniolika	human	audio_a2/1016_astuoniolika.mp3	aštuoniolika
+1073_devyniolika	human	audio_a2/1073_devyniolika.mp3	devyniolika
+0131_dvidesimt	human	audio_a2/0131_dvidesimt.mp3	dvidešimt
+0142_trisdesimt	human	audio_a2/0142_trisdesimt.mp3	trisdešimt
+0915_keturiasdesimt	human	audio_a2/0915_keturiasdesimt.mp3	keturiasdešimt
+0925_penkiasdesimt	human	audio_a2/0925_penkiasdesimt.mp3	penkiasdešimt
+1047_sesiasdesimt	human	audio_a2/1047_sesiasdesimt.mp3	šešiasdešimt
+1061_septyniasdesimt	human	audio_a2/1061_septyniasdesimt.mp3	septyniasdešimt
+1086_astuoniasdesimt	human	audio_a2/1086_astuoniasdesimt.mp3	aštuoniasdešimt
+1113_devyniasdesimt	human	audio_a2/1113_devyniasdesimt.mp3	devyniasdešimt
+0186_simtas	human	audio_a2/0186_simtas.mp3	šimtas
+0189_tukstantis	human	audio_a2/0189_tukstantis.mp3	tūkstantis
+0529_milijonas	human	audio_a2/0529_milijonas.mp3	milijonas
+0119_pirmas	human	audio_a2/0119_pirmas.mp3	pirmas · pirma
+0144_antras	human	audio_a2/0144_antras.mp3	antras · antra
+0152_trecias	human	audio_a2/0152_trecias.mp3	trečias · trečia
+0156_ketvirtas	human	audio_a2/0156_ketvirtas.mp3	ketvirtas · ketvirta
+0164_penktas	human	audio_a2/0164_penktas.mp3	penktas · penkta
+0255_paskutinis	human	audio_a2/0255_paskutinis.mp3	paskutinis · paskutinė
+0383_vardas	human	audio_a2/0383_vardas.mp3	vardas · vardo
+0641_pavarde	human	audio_a2/0641_pavarde.mp3	pavardė · pavardės
+0514_amzius	human	audio_a2/0514_amzius.mp3	amžius · amžiaus
+0073_adresas	human	audio_a2/0073_adresas.mp3	adresas · adreso
+0703_kasa	human	audio_a2/0703_kasa.mp3	kasa · kasos
+1151_raktu_pakabukas	human	audio_a2/1151_raktu_pakabukas.mp3	raktų pakabukas · raktų pakabuko
+0508_pinigine	human	audio_a2/0508_pinigine.mp3	piniginė · piniginės
+0578_lagaminas	human	audio_a2/0578_lagaminas.mp3	lagaminas · lagamino
+0907_pasas	human	audio_a2/0907_pasas.mp3	pasas · paso
+1145_atvirukas	human	audio_a2/1145_atvirukas.mp3	atvirukas · atviruko
+1004_pasto_zenklas	human	audio_a2/1004_pasto_zenklas.mp3	pašto ženklas · pašto ženklo
+0952_kioskas	human	audio_a2/0952_kioskas.mp3	kioskas · kiosko
+0709_eile	human	audio_a2/0709_eile.mp3	eilė · eilės
+0691_uzkandis	human	audio_a2/0691_uzkandis.mp3	užkandis · užkandžio
+0965_desertas	human	audio_a2/0965_desertas.mp3	desertas · deserto
+0731_meniu	human	audio_a2/0731_meniu.mp3	meniu · meniu
+0923_cekis	superseded	audio_a2/_superseded/0923_cekis.mp3	kvitas · kvito
+1067_nuolaida	human	audio_a2/1067_nuolaida.mp3	nuolaida · nuolaidos
+0735_dydis	human	audio_a2/0735_dydis.mp3	dydis · dydžio
+1123_graza	human	audio_a2/1123_graza.mp3	grąža · grąžos
+0347_kiek	human	audio_a2/0347_kiek.mp3	kiek
+0356_nieko_tokio	human	audio_a2/0356_nieko_tokio.mp3	Nieko tokio
+0231_kas_tai	human	audio_a2/0231_kas_tai.mp3	Kas tai?
+0291_kur_galiu_rasti	human	audio_a2/0291_kur_galiu_rasti.mp3	Kur galiu rasti…?
+0420_tai_mano_namas	human	audio_a2/0420_tai_mano_namas.mp3	Tai mano namas
+0275_man_patinka_sis_miestas	human	audio_a2/0275_man_patinka_sis_miestas.mp3	Man patinka šis miestas
+0242_kas_tas_zmogus	human	audio_a2/0242_kas_tas_zmogus.mp3	Kas tas žmogus?
+0374_zinoma	human	audio_a2/0374_zinoma.mp3	Žinoma
+0238_koks	human	audio_a2/0238_koks.mp3	koks
+0138_kieno	human	audio_a2/0138_kieno.mp3	kieno
+0768_geros_keliones	human	audio_a2/0768_geros_keliones.mp3	Geros kelionės
+0103_atsiprasau	human	audio_a2/0103_atsiprasau.mp3	Atsiprašau
+0674_cia_yra_parduotuve	human	audio_a2/0674_cia_yra_parduotuve.mp3	Čia yra parduotuvė
+0887_siandien_salta	human	audio_a2/0887_siandien_salta.mp3	Šiandien šalta
+0043_atsiprasau	human	audio_a2/0043_atsiprasau.mp3	Atsiprašau…
+0444_geros_dienos	human	audio_a2/0444_geros_dienos.mp3	Geros dienos
+0217_kuris	human	audio_a2/0217_kuris.mp3	kuris
+0878_su_gimtadieniu	human	audio_a2/0878_su_gimtadieniu.mp3	Su gimtadieniu!
+0847_akimirka	human	audio_a2/0847_akimirka.mp3	Akimirką
+0150_kaip	human	audio_a2/0150_kaip.mp3	kaip
+0488_einu_namo	human	audio_a2/0488_einu_namo.mp3	Einu namo
+0440_kur_tu_eini	human	audio_a2/0440_kur_tu_eini.mp3	Kur tu eini?
+0274_kodel	human	audio_a2/0274_kodel.mp3	kodėl
+0463_prasom	human	audio_a2/0463_prasom.mp3	Prašom
+0810_sveikinu	human	audio_a2/0810_sveikinu.mp3	Sveikinu!
+0755_sekmes	human	audio_a2/0755_sekmes.mp3	Sėkmės!
+0961_iki_rytojaus	human	audio_a2/0961_iki_rytojaus.mp3	Iki rytojaus
+0428_kada	human	audio_a2/0428_kada.mp3	kada
+0778_galiu_truputi_kalbeti	human	audio_a2/0778_galiu_truputi_kalbeti.mp3	Galiu truputį kalbėti
+0595_man_reikia_vandens	human	audio_a2/0595_man_reikia_vandens.mp3	Man reikia vandens
+0864_trecia_valanda	human	audio_a2/0864_trecia_valanda.mp3	Trečia valanda
+0204_kur	human	audio_a2/0204_kur.mp3	kur
+1169_greitai_pasveik	human	audio_a2/1169_greitai_pasveik.mp3	Greitai pasveik!
+0789_sveiki_atvyke	human	audio_a2/0789_sveiki_atvyke.mp3	Sveiki atvykę!
+0855_kiek_kainuoja_bilietas	human	audio_a2/0855_kiek_kainuoja_bilietas.mp3	Kiek kainuoja bilietas?
+0707_as_turiu_broli	human	audio_a2/0707_as_turiu_broli.mp3	Aš turiu brolį
+0269_nekalbu_lietuviskai	human	audio_a2/0269_nekalbu_lietuviskai.mp3	Nekalbu lietuviškai
+0455_truputi	human	audio_a2/0455_truputi.mp3	Truputį
+0253_neturiu_laiko	human	audio_a2/0253_neturiu_laiko.mp3	Neturiu laiko
+0552_nesuprantu_atsiprasau	human	audio_a2/0552_nesuprantu_atsiprasau.mp3	Nesuprantu, atsiprašau
+0215_kas	human	audio_a2/0215_kas.mp3	kas
+0187_i_sveikata	human	audio_a2/0187_i_sveikata.mp3	Į sveikatą!
+0565_prasom_uzrasyti	superseded	audio_a2/_superseded/0565_prasom_uzrasyti.mp3	Užrašykite, prašau
+0871_noreciau_kavos	human	audio_a2/0871_noreciau_kavos.mp3	Norėčiau kavos
+0637_noriu_valgyti	human	audio_a2/0637_noriu_valgyti.mp3	Noriu valgyti
+0521_prasom_pakartoti	superseded	audio_a2/_superseded/0521_prasom_pakartoti.mp3	Pakartokite, prašau
+0180_skanaus	human	audio_a2/0180_skanaus.mp3	Skanaus
+0573_kiek_tai_kainuoja	human	audio_a2/0573_kiek_tai_kainuoja.mp3	Kiek tai kainuoja?
+0247_man_reikia_pagalbos	human	audio_a2/0247_man_reikia_pagalbos.mp3	Man reikia pagalbos
+1012_as_gyvenu_vilniuje	human	audio_a2/1012_as_gyvenu_vilniuje.mp3	Aš gyvenu Vilniuje
+0819_man_dvidesimt_metu	human	audio_a2/0819_man_dvidesimt_metu.mp3	Man dvidešimt metų
+0647_iskvieskite_gydytoja	human	audio_a2/0647_iskvieskite_gydytoja.mp3	Iškvieskite gydytoją!
+0110_kur_yra_tualetas	human	audio_a2/0110_kur_yra_tualetas.mp3	Kur yra tualetas?
+1179_as_esu_is_lietuvos	human	audio_a2/1179_as_esu_is_lietuvos.mp3	Aš esu iš Lietuvos
+1058_kaip_lietuviskai	human	audio_a2/1058_kaip_lietuviskai.mp3	Kaip lietuviškai …?
+0408_ka_tai_reiskia	human	audio_a2/0408_ka_tai_reiskia.mp3	Ką tai reiškia?
+1149_mano_vardas_dainius	human	audio_a2/1149_mano_vardas_dainius.mp3	Mano vardas Dainius

@@ -14,7 +14,7 @@ Differences from the A1 wordlist, handled here and nowhere else:
   - adjectives (type A, incl. ordinals) get the A1 adjective insets rule
     (deck_builder.adj_inset_note); cardinal numerals (type NUM) are routed
     'attribute' with the staging's own insets.
-  - card_text of the cardinal numerals A2-0041..0071 reads 'the numeral for "zero"'
+  - card_text of the cardinal numerals 0476_nulis..0071 reads 'the numeral for "zero"'
     in the list — the quoted word is English and would be lettered as such. The
     adapter rewrites it to the digit string ("0", "1", ... "100", "1000",
     "1 000 000"); listed in README for the A2 builder to fix at source.

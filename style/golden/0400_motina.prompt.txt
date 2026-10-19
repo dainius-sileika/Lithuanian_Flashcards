@@ -1,8 +1,8 @@
-key: 082_motina
+key: 0400_motina
 ledger: out_deck_f62/ledger.csv
 backend: openai/gpt-image-2.5-sunburst
 size: 1536x1024
-file: 082_motina.png
+file: 0400_motina.png
 spec_version: (pre-3.0.0 render; spec 3.0.0 describes it)
 style_hash: (pre-lock render)
 

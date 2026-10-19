@@ -337,7 +337,7 @@ def rewrite_master(text, rows, a1_rows):
     for r in a1_rows:           # cards_anki (old keys): number -> old key -> new key
         m = rows.get(r["key"])
         if m and m["new_key"]:
-            bynum[str(int(r["number"]))] = m["new_key"]
+            bynum[str(int(r.get("ff_no") or r["number"]))] = m["new_key"]
     out = io.StringIO(); w = csv.DictWriter(out, fieldnames=fields, lineterminator=_eol(text))
     w.writeheader(); n = 0
     for r in rd_:
@@ -354,7 +354,7 @@ def rewrite_restage_ids(text, rows, a1_rows):
     for r in a1_rows:
         m = rows.get(r["key"])
         if m and m["new_key"]:
-            bynum[str(int(r["number"]))] = m["new_key"]
+            bynum[str(int(r.get("ff_no") or r["number"]))] = m["new_key"]
     buf = io.StringIO(text); rd_ = csv.DictReader(buf)
     out = io.StringIO(); w = csv.DictWriter(out, fieldnames=rd_.fieldnames, lineterminator=_eol(text))
     w.writeheader(); n = 0

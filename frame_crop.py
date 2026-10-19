@@ -50,11 +50,11 @@ FALLBACK = {"top": 0.078, "bottom": 0.110, "left": 0.015, "right": 0.015}
 # fixed 1.5 % fallback either left a cream sliver or cut a little picture. Applied by key
 # (detect_frame(im, key)); both sides where a paper margin was measured, so the crop is even.
 SIDE_OVERRIDES = {
-    "A2-1231": {"left": 10, "right": 15}, "A2-1282": {"left": 12, "right": 12},
-    "A2-1394": {"left": 15, "right": 15}, "A2-1427": {"left": 21, "right": 21},
-    "036_mokykla": {"left": 15, "right": 15}, "423_rasyti": {"left": 21, "right": 27},
-    "438_nesti": {"left": 33, "right": 33}, "530_lydyti": {"left": 27, "right": 27},
-    "S-0034": {"left": 33, "right": 27}, "S-0045": {"left": 45, "right": 42},
+    "1947_bendrabutis": {"left": 10, "right": 15}, "0985_kavine": {"left": 12, "right": 12},
+    "2203_vasarnamis": {"left": 15, "right": 15}, "1794_fotografuoti": {"left": 21, "right": 21},
+    "0130_mokykla": {"left": 15, "right": 15}, "0265_rasyti": {"left": 21, "right": 27},
+    "0500_nesti": {"left": 33, "right": 33}, "2426_lydyti": {"left": 27, "right": 27},
+    "0690_vyras_vairuoja_automobili": {"left": 33, "right": 27}, "1579_jie_perka_bilietus": {"left": 45, "right": 42},
 }
 
 
@@ -145,16 +145,16 @@ def _band_from_edge(red, fringe, dark, n, min_thick, ink_rules=False):
 
     1. the OUTERMOST run of near-full red lines (>= min_thick, starting in the outer
        6 %) is the band -- not the innermost: a red carpet or a brick wall further in
-       must not win (141_seksas);
+       must not win (2105_seksas);
     2. its inner edge is followed per column (wavy, anti-aliased edges);
     3. a thin second red rule after a small cream gap is part of the frame (double
-       rule, 215_miegamasis), and so is a thin black ink rule after a gap when the
+       rule, 0704_miegamasis), and so is a thin black ink rule after a gap when the
        picture has the phrase-card frame (ink_rules)."""
     zone = int(n * 0.16)
     frac = red[:zone].mean(1)
     gap_lim = max(3, int(round(n * 0.016)))
     # rules separated by a hairline of cream belong together (an outer thin rule, a
-    # cream hairline, then the band: A2-0069, 367_begti and most phrase cards)
+    # cream hairline, then the band: 0186_simtas, 0323_begti and most phrase cards)
     merged = []
     for s, e in _runs(frac > 0.6):
         if merged and s - merged[-1][1] <= gap_lim:
