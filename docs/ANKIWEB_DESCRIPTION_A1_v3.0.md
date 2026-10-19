@@ -1,9 +1,11 @@
 # AnkiWeb description — Lietuvių Flashcards, A1 subdeck, release v3.0
 
-Drafted 2026-10-19 (A1_WRAPUP item F1; planner drafts, **owner approves the text**). The counts are
-placeholders in braces: the final study order v3 may move a few cards between A1 and A2, so they are
-filled in from the build manifest (`build_reports/builds/Lietuviu_Flashcards_v3.0_A1.apkg.json`) after
-the build. The values the data gave on 2026-10-19 are listed at the end for reference.
+Drafted 2026-10-19 (A1_WRAPUP item F1; planner drafts, **owner approves the text**). The counts were
+filled in 2026-10-19 from the built package `Lietuviu_Flashcards_v3.0_A1.apkg` (manifest
+`build_reports/builds/v3.0_A1.json`; per-card list `build_reports/builds/v3.0_A1_keys.tsv`): 1,186 notes =
+685 picture (419 base + 266 A2-list IMG) + 135 phrase + 331 cloze + 35 sentence; audio 547 human,
+19 azure-neural, 620 silent. **If the package is rebuilt after the A1 recordings, recount the audio line.**
+The order-v2 estimates are kept at the end for reference.
 The paste-ready HTML is `docs/ANKIWEB_DESCRIPTION_A1_v3.0.html`. The owner's decisions follow the text.
 
 ---
@@ -14,12 +16,12 @@ Lithuanian from zero to A1 through pictures, phrases and sentences. The first of
 
 **What is in the deck**
 
-{A1_CARD_COUNT} cards, ordered by usefulness: survival words and everyday phrases come first.
+1,186 cards, ordered by usefulness: survival words and everyday phrases come first.
 
-- {A1_PICTURE_COUNT} picture cards for words
-- {A1_PHRASE_COUNT} phrase cards (greetings, thanks, asking for things)
-- {A1_CLOZE_COUNT} cloze cards for function words and forms
-- {A1_SENTENCE_COUNT} sentence cards with a picture
+- 685 picture cards for words
+- 135 phrase cards (greetings, thanks, asking for things)
+- 331 cloze cards for function words and forms
+- 35 sentence cards with a picture
 
 **How a card works**
 
@@ -33,7 +35,7 @@ The art is an original house style: a civil-defence training manual from a free 
 
 **Audio**
 
-{A1_HUMAN_AUDIO_COUNT} cards carry recordings by the author, a native speaker, reading the word and its forms. {A1_SYNTH_AUDIO_COUNT} older cards still use a synthetic voice, and the newer A1 cards are silent until the next update.
+547 cards carry recordings by the author, a native speaker, reading the word and its forms. 19 older cards still use a synthetic voice, and the other 620 are silent until the next update.
 
 Fonts: Brygada 1918 (SIL Open Font Licence), embedded. In night mode, leave image inversion off.
 
