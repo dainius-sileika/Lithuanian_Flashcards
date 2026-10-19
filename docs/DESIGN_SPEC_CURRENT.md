@@ -1,6 +1,6 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.0.0** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.0.1** · dated 2026-10-19 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
@@ -50,20 +50,31 @@ Read this file first in a new session; change the code, then this file, in the s
   through `go_generator._exact_text_rule()` (unconditional spec, the target word excluded), and
   **verified by QA rule 3** (`qa_images.py`: every quoted string must read back exactly). Prices are in
   **litai** (`"2 Lt 40 ct"`), never roubles. Glyph cards (letter/consonant/vowel) use `GLYPH_RULE`.
+- **Posters, playbills and signs** (owner 2026-10-19, round 4): when a picture shows a poster, playbill or
+  sign, it shows a **real period Lithuanian work** — a film, play or the like that a free Lithuania of 1981
+  could plausibly show (no Soviet-convention titles) — with its title **declared** in the row's `card_text`
+  and **read back exactly by QA rule 3**. Blank posters and empty frames are avoided. First uses: A2-1191
+  *šiaip sau* — `"VELNIO NUOTAKA"` (Žebriūnas, 1974); A2-1360 *spektaklis* — `"MILŽINO PAUNKSMĖ"` (Sruoga,
+  1932) (`a2_build/round4/answers.md`, appendix).
 - **Emblems:** default `FLAG_RULE` — at most a small tricolour, not on every card, no heraldry.
   `FLAG_RULES["eu"]` / `["imperial"]` on the measurement cards 334–339 (`deck_builder.FLAG_OVERRIDE`).
-  `FLAG_RULES["emblem"]` (Cross of Vytis / Vytis allowed) reaches **097 prezidentas only**
-  (`FLAG_OVERRIDE.update({97: "emblem"})`): owner 2026-10-19 accepted the Vytis on 097 and chose the
-  **flag, not the Cross, for 035 teismas**. Columns of Gediminas and every other badge stay out.
+  `FLAG_RULES["emblem"]` (Cross of Vytis / Vytis allowed) is routed to **097 prezidentas only**
+  (`FLAG_OVERRIDE.update({97: "emblem"})`, "President card only (as now)" — owner 2026-10-19) and is
+  **dormant**: in round 4 the owner put the shipped 097 picture back (an anonymous president, no likeness,
+  no Vytis), so **no shipped card shows a Vytis**; the allowance acts only on a future 097 re-roll. 035
+  teismas carries the **flag, not the Cross** (owner 2026-10-19). Columns of Gediminas and every other
+  badge stay out.
 
 ## 3. Historical precedents and likenesses (2026-10-18/19)
 - `PRECEDENT_RULE` evokes a real Lithuanian thing by features only (never a name or plaque);
   `LIKENESS_RULE` asks for a named face at a named period on listed cards only. Per-card values:
   `historical.py` reading `a2_build/historical/implementation/likeness_args.json` (`active`:
-  012 lėktuvas = the Lituanica with Darius and Girėnas, 097 = Adamkus as he looked in office, 035 teismas,
-  A2-1297, A2-1769, 113 gydytojas, 122 menininkas (Čiurlionis), A2-0782, 138 komanda (1939 team);
-  123 autorius kept as shipped and inactive). 26 real A2 places adopted (`a2_build/historical/real_places.md`,
-  `settings_rows.csv`). Rules text: `a2_build/historical/implementation/RULES_precedent_likeness.md`
+  012 lėktuvas = the Lituanica with Darius and Girėnas, 035 teismas, A2-1297, A2-1769, 113 gydytojas,
+  122 menininkas (Čiurlionis), A2-0782, 138 komanda (1939 team); 123 autorius and **097 prezidentas**
+  kept as shipped and inactive — 097's Adamkus test render was withdrawn by the owner in round 4,
+  2026-10-19). 26 real A2 places adopted (`a2_build/historical/real_places.md`, `settings_rows.csv`);
+  round 4 reverted four of the roll-out's place rows at the owner's word (106, 107 State Stadium,
+  A2-1326 post-office inset, A2-0085 railway station hall — rows marked REVERTED). Rules text: `a2_build/historical/implementation/RULES_precedent_likeness.md`
   (applied; the code is the truth).
 
 ## 4. Situation grammar (bubble-free phrase cards, 2026-10-17)
@@ -165,7 +176,9 @@ Read this file first in a new session; change the code, then this file, in the s
   commits and tags `spec-v<X.Y.Z>`. Frozen copies are never edited.
 - **Style lock** `style/STYLE_LOCK.json` (`tools/style_lock.py`): every look-defining constant (leads,
   suffixes, every `*_RULE`, `FIGURE_DRESS`, hair wording, model/quality/size, QA prompts, frame CSS, band
-  colour and widths, fonts, section labels, templates) with a hash per item and one **style hash**.
+  colour and widths, fonts, section labels, templates; since 3.0.1 also `go_grammars.py` — `SCENE_TAIL`,
+  the category grammars `NOUN_GRAMMARS` / `CAT2CLASS` / `PEOPLE_CLASS` / `NO_INSET_CLASSES` and the output
+  of `compose_class` for every class and category) with a hash per item and one **style hash**.
   `check` fails when the code drifts from the lock (pre-commit hook `tools/hooks/pre-commit`; `build_apkg.py`
   refuses to build, `GO_ALLOW_STYLE_DRIFT=1` overrides and is logged in the build manifest). `update`
   refuses unless the spec version was bumped.
@@ -177,6 +190,7 @@ Read this file first in a new session; change the code, then this file, in the s
 - Procedure for any change to the aesthetic: `docs/HOW_TO_CHANGE_THE_LOOK.md`.
 
 ## Spec changelog
+- **3.0.1 — 2026-10-19.** wording: emblem rule dormant (097 restored, no shipped Vytis); poster/sign rule (real period work, declared card_text, QA read-back, no blank posters); go_grammars.py (SCENE_TAIL, compose_class, category grammars) added to the style lock as six new items
 - **3.0.0 — 2026-10-19.** First versioned release: the 2026-10-19 de facto spec (F6.2 house style, v2.1
   standard bands, proposed backs, Brygada 1918, situation grammar, emblem scope, study order v2), with the
   style lock, golden set and build manifest introduced in §11.

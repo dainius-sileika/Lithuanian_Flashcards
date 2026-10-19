@@ -5,7 +5,9 @@ Every constant that shapes the pictures and the card frame is extracted from the
 stored with its value and a SHA-256 per item, and folded into one overall style hash:
 
   prompt.*     go_generator leads, suffixes, every *_RULE text, FIGURE_DRESS, the hair wording,
-               the gaze sentences, the text-exception template, five canonical prompt assemblies
+               the gaze sentences, the text-exception template, five canonical prompt assemblies;
+               go_grammars (spec 3.0.1): SCENE_TAIL, the category grammars (NOUN_GRAMMARS, CAT2CLASS,
+               PEOPLE_CLASS, NO_INSET_CLASSES) and compose_class's output for every class and category
   engine.*     image model default, quality, size, ratio
   qa.*         qa_images model default and every QA prompt
   frame.*      anki/*.css (text), the band colour and widths parsed from frame_standard.css,
@@ -33,7 +35,7 @@ SPEC = os.path.join(ROOT, "docs", "DESIGN_SPEC_CURRENT.md")
 SPEC_VERSION_RE = re.compile(r"^\*\*Spec version (\d+\.\d+\.\d+)", re.M)
 
 # the files whose text feeds the lock (used by the hook and spec_release to stage them)
-SOURCE_FILES = ["go_generator.py", "qa_images.py", "card_frame.py", "frame_crop.py", "build_apkg.py",
+SOURCE_FILES = ["go_generator.py", "go_grammars.py", "qa_images.py", "card_frame.py", "frame_crop.py", "build_apkg.py",
                 "anki/go_theme.css", "anki/frame_standard.css", "anki/back_proposed.css",
                 "fonts/_Brygada1918-Regular.ttf", "fonts/_Brygada1918-Italic.ttf", "fonts/_Brygada1918-Bold.ttf"]
 
@@ -80,6 +82,7 @@ def extract() -> dict:
     import card_frame as cf
     import frame_crop as fc
     import qa_images as qa
+    import go_grammars as gg
 
     items = {}
 
@@ -124,6 +127,17 @@ def extract() -> dict:
     }
     for name, kw in assemblies.items():
         put(f"prompt.assembly.{name}", g.build_prompt(**kw), gsrc)
+
+    # --- category grammars (go_grammars.py; added to the lock in spec 3.0.1) -----------------
+    ggsrc = "go_grammars.py"
+    put("prompt.grammar.SCENE_TAIL", gg.SCENE_TAIL, ggsrc)
+    put("prompt.grammar.NOUN_GRAMMARS", gg.NOUN_GRAMMARS, ggsrc)
+    put("prompt.grammar.CAT2CLASS", gg.CAT2CLASS, ggsrc)
+    put("prompt.grammar.PEOPLE_CLASS", dict(gg.PEOPLE_CLASS, _default=gg.DEFAULT_PEOPLE), ggsrc)
+    put("prompt.grammar.NO_INSET_CLASSES", sorted(gg.NO_INSET_CLASSES), ggsrc)
+    put("prompt.grammar.compose_class",
+        {"class:" + c: list(gg.compose_class(c)) for c in sorted(gg.NOUN_GRAMMARS)}
+        | {"category:" + c: list(gg.compose_noun(c)) for c in sorted(gg.CAT2CLASS)}, ggsrc)
 
     # --- engine --------------------------------------------------------------------------
     put("engine.OPENAI_MODEL.default", _source_default(gsrc, "OPENAI_MODEL"), gsrc)
