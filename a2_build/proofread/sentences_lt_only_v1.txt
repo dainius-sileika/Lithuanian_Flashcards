@@ -1,0 +1,1255 @@
+A2-0348	Labas
+A2-0358	Ačiū
+A2-0357	Prašau
+A2-0351	Laba diena
+A2-0880	Atsiprašau…
+A2-0354	Viso gero
+A2-0356	Parduotuvė dirba iki dešimtos.
+A2-0371	Nesuprantu
+A2-0377	Kiek kainuoja?
+A2-0378	Kur yra…?
+A2-0350	Labas rytas
+A2-0352	Labas vakaras
+A2-0349	Sveiki
+A2-0359	Labai ačiū
+A2-0360	Nėra už ką
+S-0002	Moteris valgo duoną.
+S-0001	Vyras geria kavą.
+A2-0881	Atsiprašau
+S-0014	Kiek kainuoja duona?
+A2-0154	Perku duoną ir pieną.
+A2-0194	Aš esu mokytojas.
+A2-0898	Kur yra tualetas?
+S-0031	Mes einame namo.
+A2-0118	Tai mano brolis.
+A2-0381	Sąskaitą, prašau
+A2-0127	Tas vyras yra mano kaimynas.
+A2-0136	Einu į parduotuvę.
+S-0013	Mes perkame pieną.
+A2-0380	Norėčiau…
+S-0016	Aš noriu arbatos.
+A2-0138	Geriu kavą su pienu.
+A2-0370	Ar kalbate angliškai?
+S-0024	Aš esu mokytojas.
+A2-0195	Aš turiu du vaikus.
+A2-0137	Jis yra iš Kauno.
+A2-0364	Kaip sekasi?
+A2-0196	Ar galite man padėti?
+A2-0178	Čia yra mano namas.
+A2-0365	Man gerai
+A2-0117	Kieno tai knyga?
+A2-1137	Kam tu skambini?
+A2-1138	Ko norite, arbatos ar kavos?
+A2-0373	Nežinau
+S-0025	Jis dirba ligoninėje.
+S-0008	Aš turiu brolį.
+A2-0367	Mano vardas…
+S-0010	Mano vardas yra Jonas.
+A2-0121	Jos vardas Rūta.
+A2-0112	Kaip tau sekasi?
+A2-0369	Aš esu iš…
+A2-0165	Ar tu kalbi angliškai?
+A2-0174	Vaikas jau miega.
+A2-0353	Labanakt
+A2-0197	Noriu valgyti.
+A2-0124	Jų vaikai jau dideli.
+A2-1094	Padovanojau jai gėlių.
+A2-0355	Iki pasimatymo
+A2-1103	Aš jį matau.
+A2-0017	Dabar esu namie.
+A2-0362	Atleiskite
+A2-0005	Gražios dienos!
+A2-0159	Manau, kad jis namie.
+A2-1117	Man šalta.
+A2-0363	Malonu susipažinti
+A2-1118	Ar mane girdi?
+A2-0446	Aš nežinau.
+A2-0889	Skanaus
+S-0012	Jis važiuoja autobusu.
+A2-1482	Mokausi lietuvių kalbos.
+A2-0175	Aš dar nevalgiau.
+A2-0888	Į sveikatą!
+A2-0144	Einame per tiltą.
+A2-0126	Šis stalas per mažas.
+A2-0383	Ar galite man padėti?
+A2-0179	Stotis yra ten.
+A2-0447	Ar supranti?
+A2-1656	Manau, kad taip.
+A2-0374	Ar galite pakartoti?
+A2-0110	Kur yra stotis?
+A2-0186	Turiu daug darbo.
+A2-0375	Prašom kalbėti lėčiau
+A2-0499	Aš gyvenu Vilniuje.
+A2-1501	Gyvenu miesto centre.
+A2-0116	Kuris autobusas važiuoja į centrą?
+A2-1159	Kur gyvenate?
+S-0009	Mes gyvename Vilniuje.
+S-0030	Aš gyvenu name.
+A2-1983	Čia (yra) mano draugas. / Susipažinkite — tai…
+A2-0108	Kas čia gyvena?
+A2-0014	Šiandien pirmadienis.
+A2-0166	Šiandien labai šalta.
+A2-0382	Ar yra…?
+A2-1128	Aš tave myliu.
+A2-0129	Tie žmonės laukia autobuso.
+A2-1168	Ar turite…?
+A2-1126	Ta moteris – mano mokytoja.
+A2-0008	Man trisdešimt metų.
+A2-0205	Man patinka šis miestas.
+A2-0896	Kas tai?
+A2-1074	Aš dirbu, o jis mokosi.
+S-0018	Aš nesuprantu.
+A2-2001	Koks tavo / jūsų telefono numeris?
+A2-0123	Koks jūsų telefono numeris?
+A2-0115	Koks tavo adresas?
+A2-1563	Kokie šiandien orai?
+A2-0897	Kas tas žmogus?
+A2-1866	Ką dar norėtumėte?
+S-0021	Šiandien šalta.
+A2-0906	Man reikia pagalbos
+A2-0198	Man reikia pagalbos.
+A2-1095	Jam reikia pagalbos.
+S-0019	Man reikia vandens.
+A2-0915	Neturiu laiko
+A2-0155	Noriu eiti, bet neturiu laiko.
+A2-1099	Ko jums reikia?
+A2-0368	Iš kur jūs?
+A2-0864	Tai kainuoja du eurus.
+A2-0176	Turiu tik penkis eurus.
+A2-0135	Aš dirbau visą dieną.
+A2-1161	Viskas gerai
+S-0026	Kur yra stotis?
+A2-1688	Paskambink man vakare.
+A2-0900	Nekalbu lietuviškai
+A2-0184	Jis gerai kalba lietuviškai.
+S-0017	Ar tu kalbi lietuviškai?
+A2-0113	Kodėl tu vėluoji?
+A2-0920	Man patinka šis miestas
+A2-1127	Ar tau patinka?
+A2-1682	Pasakyk man tiesą.
+A2-1160	Ką veiki?
+A2-1116	Ką tu veiki?
+A2-0804	Teisingas atsakymas!
+A2-1800	Gatvėje daug žmonių.
+A2-1193	Kuri valanda?
+A2-0372	Suprantu
+A2-1635	Gavau laišką.
+A2-0524	Knyga labai įdomi.
+A2-0909	Kur galiu rasti…?
+A2-1093	Tai gali padaryti bet kas.
+A2-0016	Rytoj nedirbu.
+S-0020	Man patinka muzika.
+A2-1059	Visai nešalta.
+A2-0125	Aš myliu savo šeimą.
+A2-0384	Padėkite!
+A2-1622	Ateik rytoj.
+A2-0168	Aš tikrai ateisiu.
+S-0027	Stotis yra ten.
+A2-0366	Koks jūsų vardas?
+A2-1814	Ką darai?
+A2-0151	Vėluoju dėl lietaus.
+A2-1157	Kiek jums metų?
+A2-0015	Vakar buvau kine.
+A2-1698	Prašau pagalbos.
+A2-0147	Kalbame apie orą.
+A2-1158	Kuo dirbate?
+A2-0001	Neturiu laiko.
+A2-0206	Mėgstu skaityti.
+A2-0161	Kai grįšiu, paskambinsiu.
+A2-0188	Einame per tiltą.
+A2-1104	Kai kas jau išėjo.
+A2-0208	Tu atrodai pavargęs.
+A2-1106	Kai kurie žmonės mėgsta žiemą.
+A2-1994	Galima. / Prašom.
+A2-0612	Gyvenu trečiame aukšte.
+A2-0518	Tai labai svarbu.
+A2-0992	Galime susitikti bet kur.
+A2-0385	Atsargiai!
+A2-0114	Kiek kainuoja bilietas?
+A2-1114	Iki kito karto!
+A2-1178	Dėkui!
+A2-1005	Kai kur dar yra sniego.
+A2-1130	Toks geras oras!
+A2-1672	Ką padaryti?
+A2-0882	Nieko tokio
+A2-0171	Ji visada vėluoja.
+A2-0272	Kiek kainuoja duona?
+A2-0128	Šie batai man patinka.
+A2-1521	Gyvenimas gražus.
+A2-1134	Ši knyga įdomi.
+A2-0379	Kiek valandų?
+A2-0172	Aš niekada negeriu kavos.
+A2-1947	Ji kuria muziką.
+A2-1102	Mačiau ją vakar.
+A2-0203	Darbą baigiu penktą valandą.
+A2-0160	Jei bus šilta, eisime į mišką.
+A2-0895	Geros kelionės
+A2-0002	Laukiu autobuso jau vieną valandą.
+A2-0177	Jis vėl pavėlavo.
+A2-0883	Žinoma
+A2-0078	Mano vardas Jonas.
+A2-1557	Mano namai – Vilniuje.
+A2-1655	Šiandien lyja.
+A2-0167	Gal rytoj lis.
+A2-0143	Mokykla yra už bažnyčios.
+A2-1825	Šiandien lieku namie.
+A2-0007	Dirbu čia vieną mėnesį.
+A2-0132	Visi jau atėjo.
+A2-1993	Ar galima?
+S-0011	Ji eina į mokyklą.
+A2-1580	Laba diena, pone!
+A2-1013	Eikime kur nors valgyti.
+A2-1642	Imk obuolį.
+A2-0141	Katė miega po stalu.
+A2-0376	Ką reiškia…?
+A2-0199	Tu privalai eiti į mokyklą.
+A2-0833	Koks tavo planas?
+A2-0904	Ką tai reiškia?
+A2-1797	Šiandien kovo šešta.
+A2-1795	Gyvenu septintame aukšte.
+A2-1791	Dabar aštunta valanda.
+A2-0202	Pradedu dirbti aštuntą valandą.
+A2-1696	Filmas prasideda aštuntą.
+A2-0145	Dirbu nuo aštuntos valandos.
+A2-1792	Autobusas devintą valandą.
+A2-0111	Kada prasideda filmas?
+A2-0921	Tai mano namas
+A2-0207	Jis tapo gydytoju.
+A2-0169	Mes dažnai einame į kiną.
+A2-0536	Mano paltas toks pat kaip tavo.
+A2-0241	Kaip jautiesi?
+A2-0119	Kur tavo raktai?
+A2-0926	Kur tu eini?
+A2-1793	Šiandien gegužės dešimta.
+A2-1503	Tai svarbus dalykas.
+A2-0874	Jūsų dokumentus, prašau.
+A2-0201	Bandau kalbėti lietuviškai.
+A2-0131	Niekas nežino atsakymo.
+A2-0894	Geros dienos
+A2-0006	Kitą savaitę važiuoju į Kauną.
+A2-1527	Lietuvių kalba sena.
+A2-0901	Truputį
+A2-1131	Viskas gerai.
+A2-1046	Kodėl tiek brangu?
+A2-1124	Aš pats tai padarysiu.
+A2-1627	Rytoj atvažiuoja svečiai.
+A2-0153	Katė miega po stalu.
+A2-0885	Prašom
+A2-0806	Ką reiškia šis žodis?
+A2-0146	Parduotuvė dirba iki dešimtos.
+A2-1125	Pažiūrėk į save.
+A2-1042	Tada aš buvau vaikas.
+A2-0844	Tai tik dalis darbo.
+A2-1077	Turiu kelis klausimus.
+A2-1502	Kas tai per daiktas?
+A2-1027	Net vaikas tai supranta.
+A2-1182	Labai gerai!
+A2-0142	Susitinkame prie stoties.
+A2-0122	Mūsų namas yra prie upės.
+A2-1551	Jo mergina – studentė.
+A2-0162	Jis atėjo, nors sirgo.
+A2-0200	Vasarą ketinu važiuoti į Kauną.
+A2-0927	Einu namo
+A2-0157	Likau namie, nes lijo.
+A2-0187	Ji valgo mažai.
+A2-0164	Aš taip pat mokausi lietuvių kalbos.
+A2-1867	Mes gyvename tame pačiame name.
+A2-0808	Skaitau įdomią istoriją.
+A2-1119	Mums patinka Vilnius.
+A2-0080	Koks jūsų amžius?
+A2-2026	Vieną bilietą į Kauną, prašau.
+A2-1120	Ar matai mus?
+A2-0156	Arbatos arba kavos?
+A2-0182	Gyvename kartu su tėvais.
+A2-0149	Nusiplauk rankas prieš valgį.
+A2-1561	Koks tavo telefono numeris?
+S-0007	Tėvas skaito knygą.
+A2-1865	Ar kas nors skambino?
+A2-0163	Buvo šalta, tačiau saulėta.
+A2-0902	Prašom pakartoti
+A2-0140	Knyga yra ant stalo.
+A2-1142	Pavalgysime, o paskui eisime.
+A2-2023	Atsiprašau, ar čia laisva?
+A2-1058	Aš vis dar laukiu.
+A2-1115	Kokia šiandien diena?
+A2-1069	Jeigu nori, ateik.
+A2-1196	Atrodo, lis.
+A2-1121	Nieko nematau.
+A2-0857	Man reikia pagalbos.
+A2-2008	Dar ko nors?
+A2-1624	Atleiskite, kur čia paštas?
+A2-0582	Dėdė atvažiuoja rytoj.
+A2-0581	Mano teta gyvena Kaune.
+A2-0991	Skambink bet kada.
+A2-1677	Palikau raktus namie.
+A2-0929	Nesuprantu, atsiprašau
+A2-1004	Ar buvai kada nors Nidoje?
+A2-1472	Puikus oras!
+A2-0004	Tik vieną sekundę!
+A2-0139	Arbata be cukraus, prašau.
+A2-1073	Kaunas mažesnis nei Vilnius.
+A2-0903	Prašom užrašyti
+A2-0158	Lijo, todėl likau namie.
+A2-0859	Kur gauti informacijos?
+S-0005	Katė sėdi ant stalo.
+A2-0204	Tęskite, prašau.
+A2-1526	Eikite į kairę.
+A2-0899	Kiek tai kainuoja?
+A2-1877	Atvažiavau prieš metus.
+A2-1050	Stotis toli?
+A2-0987	Stotis arti.
+A2-1999	Palaukite minutėlę.
+A2-0003	Palaukite penkias minutes.
+A2-1076	Laukiau keletą minučių.
+S-0032	Berniukas rašo laišką.
+A2-1681	Parodyk man nuotraukas.
+A2-1135	Šita kėdė laisva.
+A2-1976	Ar galėtumėte man padėti?
+A2-1799	Laba diena, ponia!
+A2-0919	Man reikia vandens
+A2-0462	Ką tai reiškia?
+A2-1064	Štai tavo raktai.
+A2-1828	Aš moku plaukti.
+A2-1608	Mano brolis gyvena užsienyje.
+A2-1098	Neturiu jokio plano.
+A2-0192	Keliuosi anksti.
+A2-1675	Noriu pakeisti bilietą.
+A2-1113	Kiekvienas turi vardą.
+A2-1082	Viskas pagal planą.
+A2-1930	Linkiu sėkmės!
+A2-0436	Atsiprašau, kad vėluoju.
+A2-0150	Einu pas gydytoją.
+A2-0997	Galbūt rytoj.
+A2-2009	Viskas, ačiū.
+A2-0916	Noriu valgyti
+A2-0805	Padariau klaidą.
+S-0023	Saulė šviečia.
+A2-0079	Kokia jūsų pavardė?
+A2-1506	Eikite į dešinę.
+A2-1071	Palauk, kol grįšiu.
+A2-0907	Iškvieskite gydytoją!
+A2-0190	Autobusas atvažiuos greitai.
+A2-0824	Filmo pradžia – aštuntą.
+A2-0130	Kažkas skambina į duris.
+S-0003	Vaikas miega lovoje.
+A2-1620	Na, einam!
+A2-1974	Nėra prasmės laukti.
+A2-0009	Ką veiki savaitgalį?
+A2-1181	Gelbėkit!
+A2-1000	Laukiau ilgai.
+A2-0922	Čia yra parduotuvė
+S-0004	Šuo bėga parke.
+A2-0148	Bankas yra tarp pašto ir vaistinės.
+A2-0993	Jau beveik vidurnaktis.
+A2-1941	Aš nekenčiu žiemos.
+A2-1977	Norėčiau eiti namo.
+A2-0173	Kartais dirbu šeštadieniais.
+A2-1101	Malonu jus matyti.
+A2-1987	Ačiū, ne.
+A2-0825	Tai dar ne pabaiga.
+S-0034	Vyras vairuoja automobilį.
+A2-1490	Negeriu alkoholio.
+A2-1148	Aišku!
+A2-1679	Parašiau laišką.
+A2-0914	Aš turiu brolį
+A2-1779	Aš lietuvis, o ji – lietuvė.
+A2-0531	Aš pasiruošęs.
+A2-1975	Tau reikėtų daugiau miegoti.
+S-0006	Mama gamina vakarienę.
+A2-1001	Aš irgi noriu kavos.
+A2-0106	Kokio dydžio jums reikia?
+A2-1980	Man reikia eiti.
+A2-1122	Nė vienas neatėjo.
+A2-1811	Kas atsitiko?
+A2-0779	Klientas visada teisus.
+A2-0862	Tai didelis skaičius.
+A2-0999	Jau gana!
+A2-1996	Ar supranti? / Ar suprantate?
+A2-1592	Per televizorių daug reklamos.
+A2-1092	Abu broliai dirba.
+A2-1091	Abi seserys gyvena Kaune.
+A2-0435	Dėkoju už pagalbą.
+A2-0527	Ledas pavojingas.
+A2-1163	Laimingų Naujųjų metų!
+A2-1136	Šitas batas per mažas.
+A2-0537	Šis butas kitoks.
+A2-0887	Sėkmės!
+A2-0185	Šiandien blogai jaučiuosi.
+A2-1781	Jis rusas.
+A2-0451	Pasirinkau raudoną suknelę.
+A2-1900	Mano partnerė dirba ligoninėje.
+A2-0386	Aš pasiklydau
+A2-0528	Čia saugu.
+A2-0861	Parašyk pirkinių sąrašą.
+A2-1473	Mes labai skirtingi.
+A2-0918	Galiu truputį kalbėti
+S-0035	Paukštis skrenda danguje.
+A2-1973	Tai įdomus faktas.
+A2-1878	Bankas yra kitoje gatvės pusėje.
+A2-0886	Sveiki atvykę!
+A2-1830	Nuėjau į parduotuvę.
+A2-0539	Atsakymas teisingas.
+A2-0464	Naudoju žodyną.
+A2-2006	Ar toli? / Netoli.
+A2-1052	Turbūt lis.
+A2-1819	Išgerk arbatos.
+S-0029	Senelė sėdi ant kėdės.
+A2-0891	Sveikinu!
+A2-1150	Gaila, kad negali ateiti.
+A2-1704	Vaikai renka grybus.
+A2-0191	Paskambinsiu vėliau.
+A2-0913	Man dvidešimt metų
+A2-0820	Rugpjūtį turiu atostogas.
+A2-0120	Jo žmona dirba ligoninėje.
+A2-1108	Atėjo kažkoks vyras.
+A2-1593	Koncertas bus didelėje salėje.
+A2-1831	Nusipirkau naują paltą.
+A2-1165	Su šventėmis!
+A2-1009	Raktai kažkur čia.
+A2-0884	Akimirką
+A2-0834	Turiu idėją.
+A2-1617	Mano brolis – verslininkas.
+A2-0928	Kiek kainuoja bilietas?
+A2-1033	Paprastai keliuosi septintą.
+A2-1823	Kalbamės su kaimynu.
+A2-0925	Trečia valanda
+A2-1885	Oras šiandien tobulas.
+S-0015	Duona kainuoja vieną litą.
+A2-0854	Sėkmės!
+A2-0917	Norėčiau kavos
+A2-0500	Lankau draugą ligoninėje.
+A2-1868	Šįvakar einame į kiną.
+A2-0890	Su gimtadieniu!
+A2-0437	Sveikinu su gimtadieniu!
+A2-1887	Tai asmeninis klausimas.
+A2-0923	Šiandien šalta
+A2-1774	Mano draugas – amerikietis.
+A2-1070	Kadangi lijo, likome namie.
+A2-1572	Parodykite pažymėjimą.
+A2-1164	Linksmų Kalėdų!
+A2-1942	Ar galiu prisijungti prie jūsų?
+A2-0181	Šiandien niekur neinu.
+A2-0954	Ar galiu mokėti kortele?
+A2-1078	Praėjo kelios dienos.
+A2-1579	Jis žinomas politikas.
+A2-1167	Užeikite!
+A2-1144	Šiemet žiema šilta.
+A2-1034	Pernai buvau Nidoje.
+A2-1072	Jis vyresnis negu aš.
+A2-0957	Kaip nuvykti į…?
+A2-1047	Eikite tiesiai.
+A2-1992	Ar tau patinka…? / Ar jums patinka…?
+A2-0855	Pavojus! Ledas plonas.
+A2-1162	Gero savaitgalio!
+A2-0189	Turime pakankamai laiko.
+A2-1834	Paduok druską.
+A2-1897	noriu gerti
+A2-1775	Jis anglas.
+A2-2024	Norėčiau sumokėti.
+A2-0193	Vakar grįžau vėlai.
+A2-0893	Iki rytojaus
+A2-2019	Iki greito! / Iki vėliau!
+A2-0152	Eikite link upės.
+A2-1782	Ji ištekėjo už vokiečio.
+A2-0180	Sniego buvo visur.
+A2-2020	Atsiprašau, ką sakėte?
+A2-1886	Reikia papildomos lovos.
+A2-1972	Kokia šio žodžio reikšmė?
+A2-1990	Man nepatinka…
+A2-1016	Vaikai žaidžia lauke.
+A2-1902	Mėgstu veiklą lauke.
+A2-0912	Aš gyvenu Vilniuje
+A2-1771	Vilnius – Lietuvos sostinė.
+A2-0807	Parašyk vieną sakinį.
+A2-2002	Koks jūsų adresas?
+A2-0170	Jis retai valgo mėsą.
+S-0028	Vaikai žaidžia kieme.
+A2-1719	Vakarieniaujame kartu.
+A2-1166	Prašom sėstis
+A2-0995	Bankas yra dešinėje.
+S-0022	Lauke lyja.
+A2-2041	Buvo labai skanu.
+A2-1778	Mano kaimynas – lenkas.
+A2-2030	Man reikia gydytojo. / Kur vaistinė?
+A2-0905	Kaip lietuviškai …?
+A2-1943	Ar galite apibūdinti tą žmogų?
+A2-1694	Pietaujame pirmą valandą.
+A2-2007	Vieną kavą, prašau.
+A2-1881	Mano mėgstamiausias gėrimas — kava.
+A2-1959	Į darbą važiuoju dviračiu.
+A2-2004	Pavargau.
+A2-1152	Įėjimas nemokamai.
+A2-0525	Filmas buvo nuobodus.
+A2-2003	Man šalta. / Man karšta.
+A2-2005	Dešinėje. / Sukite į dešinę. / Sukite į kairę.
+A2-1713	Prašom sėstis.
+S-0033	Mergaitė piešia gėlę.
+A2-1989	Ar nori arbatos? / Ar norite arbatos?
+A2-0529	Įėjimas nemokamas.
+A2-0183	Mokame atskirai.
+A2-1145	Parduotuvė atidaryta.
+A2-1701	Pusryčiauju septintą.
+A2-0530	Šiandien esu užimtas.
+A2-0910	Mano vardas Dainius
+A2-0892	Greitai pasveik!
+A2-1707	Žiemą sninga.
+A2-1639	Einu gultis.
+A2-0911	Aš esu iš Lietuvos
+A2-1960	Reikia daugiau praktikuotis.
+A2-1777	Jis latvis iš Rygos.
+A2-0816	Mano pomėgis – žvejyba.
+A2-1018	Ar kalbate lietuviškai?
+A2-0848	Tai tiesa.
+A2-1475	Tu teisus.
+A2-1725	Mėnulis šviečia.
+A2-2018	Ir jums! / Ir tau!
+A2-0950	Ar galėtumėte man padėti?
+A2-0953	Imsiu šitą
+A2-1195	Pusė trijų
+A2-1184	Negali būti!
+A2-1984	Kuo galiu padėti?
+A2-1192	Be penkių trys
+A2-1742	Esu sotus, ačiū.
+A2-0962	Čia skauda
+A2-1194	Penkios po trijų
+A2-1139	Kuo jūs dirbate?
+A2-1105	Kai kurios parduotuvės uždarytos.
+A2-1129	Tokia graži diena!
+A2-0998	Ar čia galima rūkyti?
+A2-1660	Šiandien negaliu ateiti.
+A2-1659	Jo nėra namie.
+S-0051	Kiek tau metų?
+A2-2036	Per didelis. / Per mažas.
+A2-1123	Ji pati tai padarė.
+A2-1864	Nusipirkau sau knygą.
+A2-0941	Ateisiu po darbo, tai yra šeštą.
+A2-1504	Mano darbo vieta – centre.
+A2-1667	Nežinau.
+A2-1552	Koks tavo mėgstamiausias metų laikas?
+A2-1014	Man labiau patinka arbata.
+A2-1650	Klausau radijo.
+A2-1057	Buvau ten vienąkart.
+A2-0224	Traukinys atvyksta laiku.
+A2-0228	Į sveikatą!
+A2-1836	Paimk skėtį.
+A2-1590	Turiu svarbų reikalą.
+A2-1075	Taigi, pradedam.
+A2-1169	Minutėlę!
+A2-0961	Blogai jaučiuosi
+A2-0959	Eikite tiesiai
+A2-0520	Ar tai galima?
+A2-0261	Atsakyk į klausimą.
+S-0046	Aš neturiu pinigų.
+A2-0541	Tai tikra istorija.
+A2-1096	Jiems skauda kojas.
+A2-1693	Aš jį pažįstu.
+A2-1100	Pažįstu juos.
+A2-1197	Malonu susipažinti.
+A2-1063	Kalbu šiek tiek lietuviškai.
+A2-0495	Tėvai leidžia man eiti.
+A2-0591	Gyvenu naujame rajone.
+A2-0594	Esu klubo narys.
+A2-1566	Panele, atsiprašau!
+A2-1723	Kur vyksta koncertas?
+A2-1978	Gali būti, kad jis vėluoja.
+A2-1712	Jis jau sveiksta.
+A2-1665	Nesuprantu.
+A2-0931	Manau, kad jis ateis.
+A2-0877	Turiu darbo leidimą.
+A2-1824	Laikau vaistus šaldytuve.
+A2-1600	Didelė suma.
+A2-1154	Puiku!
+A2-0958	Vaistinė yra kairėje.
+A2-0336	Toks yra įstatymas.
+S-0055	Aš noriu valgyti.
+A2-1699	Mane priėmė į darbą.
+A2-0225	Išvykstame rytoj ryte.
+A2-1143	Seniai nesimatėme!
+A2-0452	Tikiuosi, kad bus gražu.
+A2-1610	Jos vaikinas iš Kauno.
+A2-2044	Koks oras?
+A2-0275	Keičiu pinigus banke.
+A2-0538	Jis panašus į tėvą.
+A2-1453	Turime bendrą virtuvę.
+A2-0431	Aš sutinku su tavimi.
+A2-1048	Aš tiesiog pavargau.
+A2-0341	Turiu problemą.
+A2-1097	Nėra jokios problemos.
+A2-0939	Kiek žinau, parduotuvė uždaryta.
+A2-1003	Juk tu žinai!
+A2-1638	Vakare grįžtu namo.
+A2-1732	Viskas aišku.
+A2-1625	Jį atleido iš darbo.
+A2-1806	Galvoju apie ateitį.
+A2-1532	Mane sustabdė kelių policija.
+A2-1170	Šaunuolis!
+A2-1606	Dar truputį cukraus.
+A2-1684	Pasilik dar valandą.
+A2-1876	Lyja, bet mes vis tiek eisime.
+A2-1090	Sėsk šalia manęs.
+A2-0498	Liftas neveikia.
+A2-1871	Rytoj tikriausiai lis.
+A2-1569	Turiu pasimatymą.
+A2-1171	Alio, kas kalba?
+A2-1554	Kalbėjo švietimo ministras.
+A2-1840	Noriu pamatyti jūrą.
+A2-0876	Čia reikia jūsų parašo.
+A2-1465	Oras nuostabus.
+A2-0448	Aš tavimi tikiu.
+A2-1140	Iš pradžių buvo sunku.
+A2-1970	Geras pasiūlymas!
+A2-1851	Nepyk ant manęs.
+A2-0949	Ar tu pyksti? – Žinoma, ne.
+A2-1507	Mokyklos direktorius griežtas.
+A2-1663	Man nepatinka šis filmas.
+S-0038	Ji moka dainuoti.
+A2-0276	Išleidau visus pinigus.
+A2-1570	Koks filmo pavadinimas?
+A2-1147	Fotografuoti leidžiama.
+A2-1146	Rūkyti draudžiama.
+A2-1173	Darbo valandos: nuo aštuntos iki penktos.
+A2-0463	Tai priklauso nuo oro.
+A2-0847	Yra kitas būdas.
+A2-1565	Sunki padėtis.
+A2-1085	Žiūriu pro langą.
+A2-0242	Man skauda galvą.
+A2-1628	Filmas baigėsi vėlai.
+A2-1555	Ministras pirmininkas atvyko į Kauną.
+A2-1870	Iš tikrųjų aš nesu iš Vilniaus.
+A2-1459	Ji labai miela.
+A2-1582	Parašiau prašymą.
+A2-0733	Koks greitis leidžiamas?
+A2-0244	Dirbame prie naujo projekto.
+A2-0871	Atlyginimą gaunu kas mėnesį.
+A2-1488	Šiandien akcija – trečias nemokamai.
+A2-1180	Laikas eiti miegoti.
+A2-1857	Noriu sužinoti kainą.
+A2-1736	Tai kvailas klausimas.
+A2-0306	Mano sesė labai protinga.
+A2-1954	Traukinys pasiekė Klaipėdą vidurdienį.
+A2-1550	Vilniaus meras atidarė tiltą.
+A2-0450	Nusprendžiau likti namie.
+A2-1969	Mano žinios dar menkos.
+A2-1686	Pasimatysime rytoj.
+S-0042	Aš matau jūrą.
+A2-1089	Lempa kabo virš stalo.
+A2-1815	Dingo mano raktai.
+A2-1556	Moku mokesčius.
+A2-0990	Palauk bent minutę.
+A2-1738	Tai paprastas klausimas.
+A2-1183	Man patiko!
+A2-1715	Šis dydis man tinka.
+A2-1705	Kaip sekasi?
+S-0043	Vaikas girdi muziką.
+A2-0342	Tai geras sprendimas.
+A2-0335	Vyriausybė priėmė sprendimą.
+A2-1545	Rytoj mano laisva diena.
+A2-0932	Man atrodo, lis.
+A2-0493	Saugok sveikatą.
+A2-0558	Tai keista.
+A2-1708	Jis sugeba viską.
+A2-1107	Skambino kažkokia moteris.
+A2-0583	Jis mano pusbrolis.
+A2-1945	Tai priklauso nuo oro.
+A2-1568	Jis – partijos narys.
+A2-2034	Tik žiūriu, ačiū.
+A2-1037	Jaučiuosi puikiai.
+A2-1700	Leiskite pristatyti – mano žmona.
+A2-0843	Viskas tvarkoje.
+A2-1474	Yra tam tikra tvarka.
+A2-0301	Jis visada ramus.
+A2-1839	Galiu paklausti?
+A2-1537	Laimėjau konkursą.
+A2-1179	Dėmesio! Traukinys vėluoja.
+S-0041	Draugas skambina man.
+A2-0555	Tai pagrindinė gatvė.
+A2-1676	Pakviečiau draugus.
+A2-0858	Ši paslauga nemokama.
+A2-1875	Aš visiškai sutinku.
+A2-0212	Kuria kryptimi eiti?
+A2-1599	Jis geras specialistas.
+A2-1110	Kažkuris iš mūsų turi eiti.
+A2-1739	Tai rimta problema.
+A2-1854	Stengiuosi kalbėti lietuviškai.
+A2-0346	Turiu galimybę dirbti užsienyje.
+A2-1835	Pagalvok apie tai.
+A2-0989	Padėk knygą aukščiau.
+A2-1573	Senelis gauna pensiją.
+A2-1088	Vietoj kavos gersiu arbatą.
+A2-1452	Langas atidarytas.
+A2-0416	Mokytoja veda vaikus į muziejų.
+A2-0347	Tokia taisyklė.
+A2-1670	Paaiškink man taisyklę.
+A2-1041	Man sunku.
+A2-1616	Rytoj – krepšinio varžybos.
+A2-1191	Kaip sekasi? – Šiaip sau.
+A2-1809	Atiduok knygą.
+A2-1080	Vaikai bėga aplink stalą.
+A2-0978	Nežinau, ar jis ateis.
+S-0047	Mes valgome pietus.
+A2-1844	Pasiimk skėtį.
+A2-1798	Jaunimas mėgsta muziką.
+A2-1512	Turiu galvos skausmą.
+A2-1153	Nuostabu!
+A2-1498	Gavau baudą.
+A2-1841	Papasakok apie save.
+A2-0334	Lietuva – nepriklausoma valstybė.
+A2-0933	– Eime į kiną? – Sutinku.
+A2-1669	Nustok rūkyti.
+A2-1464	Tai normalu.
+A2-1607	Padariau užduotį.
+A2-0952	Ar yra laisvas staliukas?
+A2-1863	Dauguma žmonių čia kalba lietuviškai.
+A2-1730	Gera mintis!
+A2-1847	Patikrink bilietą.
+A2-0344	Duok man pavyzdį.
+A2-1045	Teisingai!
+A2-1541	Esu antrame kurse.
+A2-2014	Nesijaudink. / Nesijaudinkite.
+A2-1630	Dalyvauju kursuose.
+A2-1925	Reikia saugoti aplinką.
+A2-1709	Susitarėme susitikti penktą.
+A2-0248	Dirbu didelėje įmonėje.
+A2-1079	Laukiau pusantros valandos.
+A2-0459	Įsivaizduok, kad esi jūroje.
+A2-1486	Vaikai žaidžia aikštelėje.
+A2-2015	Kaip gaila!
+A2-1151	Mielai!
+A2-0460	Pastebėjau klaidą.
+A2-1927	Mano lietuvių kalbos lygis — A2.
+A2-1477	Liftas veikiantis.
+A2-1728	Neturiu jėgų.
+A2-1963	Draugai mane palaiko.
+A2-0240	Gydytojas gydo ligonius.
+A2-1603	Rytoj rašome testą.
+A2-1935	skauda galvą
+A2-1853	Nespėju į autobusą.
+A2-1531	Ar turite kelionės draudimą?
+A2-0986	Anksčiau gyvenau kaime.
+S-0053	Autobusas atvažiuoja.
+A2-1846	Pastatyk krepšį ant stalo.
+A2-0731	Centre didelis eismas.
+A2-1560	Tai netiesa.
+A2-1946	Man nesvarbu / Neprieštarauju
+A2-1845	Ką pasiūlytumėte?
+A2-1534	Koks kiekis?
+A2-0519	Man reikalingas žodynas.
+A2-0444	Verčiu tekstą į lietuvių kalbą.
+A2-0835	Mano nuomone, jis teisus.
+A2-0937	Arbatos ar kavos? – Nesvarbu.
+A2-1597	Geras skonis!
+A2-1155	Įdomu, kas ten gyvena.
+A2-1733	Koks baisus oras!
+A2-1584	Dešimt procentų nuolaida.
+A2-1842	Paprašyk sąskaitos.
+A2-0778	Įmonėje dirba šimtas darbuotojų.
+A2-0868	Turiu banko sąskaitą.
+A2-1662	Nemėgstu žiemos.
+A2-1583	Susitinkame prekybos centre.
+A2-1185	Nieko baisaus.
+A2-1692	Kažkas pavogė mano dviratį.
+A2-1567	Vaistus gerti du kartus per parą.
+A2-1056	Katė yra viduje.
+A2-1062	Užeikite į vidų.
+A2-0945	Pagaliau atėjai!
+A2-1820	Išgirdau triukšmą.
+A2-1538	Rytoj – kraujo tyrimai.
+A2-1714	Kaip tarti šį žodį?
+A2-1479	Mokausi anglų kalbos.
+A2-0343	Kokia priežastis?
+A2-1133	Būna visokių žmonių.
+A2-1536	Gera kokybė.
+A2-1848	Pažadėjau ateiti.
+A2-0556	Šiandien ypatinga diena.
+A2-1988	Deja, negaliu.
+A2-1671	Pabūk su manimi.
+S-0049	Ryte aš geriu kavą.
+A2-0841	Koks rezultatas?
+A2-0458	Planuoju kelionę.
+A2-1528	Jis – kandidatas į merus.
+A2-0283	Buto nuoma brangi.
+A2-1010	Padaryk kitaip.
+A2-2011	Kur galiu nusipirkti…?
+A2-0878	Registracija prasideda devintą.
+A2-1838	Pakelk ranką.
+A2-0293	Tai geras jausmas.
+S-0045	Jie perka bilietus.
+A2-1530	Bilietus pirkau kelionių agentūroje.
+A2-1829	Galiu pasinaudoti telefonu?
+A2-1084	Bankas yra priešais stotį.
+A2-1673	Reikia pailsėti.
+A2-0946	Beje, rytoj šventė.
+A2-1006	Kasdien einu į darbą.
+A2-1081	Dirbame kasdien, išskyrus sekmadienį.
+A2-1585	Profesorius skaito paskaitą.
+A2-1833	Pabandyk dar kartą.
+A2-0550	Tai viešas parkas.
+A2-0938	Ar eisi? – Priklauso nuo oro.
+A2-1678	Pamečiau pinigus.
+A2-1803	Laisvė svarbiausia.
+A2-1068	Lipame žemyn.
+A2-0988	Lipame aukštyn.
+A2-1575	Dabar pertrauka.
+S-0044	Katė miega ant lovos.
+A2-2032	Gerkite du kartus per dieną.
+A2-1837	Man pakanka.
+A2-1691	Labai pavargau.
+A2-0213	Atstumas iki Kauno – šimtas kilometrų.
+A2-1746	Čia parduoda įvairias prekes.
+A2-0592	Vilniaus gyventojai mėgsta savo miestą.
+A2-1604	Tai sena tradicija.
+A2-0491	Sutvarkyk kambarį.
+A2-2016	Kas atsitiko?
+A2-1683	Pasidariau arbatos.
+A2-0246	Mano kolega serga.
+A2-1750	Koks tavo ūgis?
+A2-0972	Eičiau, jei turėčiau laiko.
+A2-1643	Išmokau naują žodį.
+A2-0840	Mano tikslas – išmokti lietuviškai.
+A2-1510	Gavau elektroninį laišką.
+A2-1964	Policija sustabdė mašiną.
+A2-1735	Aš kaltas.
+A2-0433	Jis žada ateiti.
+A2-0935	Jūs teisus, taip ir yra.
+A2-0554	Krepšinis – nacionalinis sportas.
+A2-1654	Šiandien laukiame svečių.
+A2-1576	Užsisakėme picą.
+A2-1641	Senelis guli ligoninėje.
+A2-1740	Buvo smagu.
+A2-1017	Jis lengvai išmoko.
+A2-1087	Stalas stovi vidury kambario.
+A2-1674	Prašom pakartoti.
+A2-0940	Mėgstu vaisius, pavyzdžiui, obuolius.
+A2-1612	Man reikia vaistų nuo skausmo.
+A2-0432	Jis nesutinka dirbti šeštadienį.
+A2-1888	Vilniuje yra tarptautinis oro uostas.
+A2-0850	Tai paslaptis.
+A2-1872	Dažniausiai keliuosi septintą.
+A2-1860	Mėgstu vaikščioti po miestą.
+A2-1141	Kasmet važiuoju į Nidą.
+A2-1588	Palauk pusvalandį.
+A2-0440	Ką man patartum?
+A2-1734	Tai didžiulis miestas.
+A2-0249	Rytoj turiu darbo pokalbį.
+A2-0966	Vakar vakare buvau namuose.
+A2-1843	Paruošiau pietus.
+A2-1086	Susitinkame ties banku.
+A2-1611	Jūsų vairuotojo pažymėjimą, prašau.
+A2-1189	Norėčiau vietos prie lango.
+A2-1648	Orai keičiasi.
+A2-1060	Mėgstu vaisius, ypač obuolius.
+A2-1822	Rytoj išvažiuoju į Kauną.
+A2-0250	Pamoka prasideda aštuntą.
+A2-0839	Kokia proga?
+A2-0551	Tai privatus kiemas.
+A2-1929	Man patinka jos stilius.
+A2-1998	Kas skambina?
+A2-0428	Senelis pasakoja apie karą.
+A2-1882	Man pasisekė: radau butą.
+S-0040	Tėvai dirba sode.
+A2-1025	Man negerai.
+A2-1466	Darbas padarytas.
+A2-1621	Gydytojas apžiūrėjo ligonį.
+A2-1548	Tai dabar mada.
+A2-1174	Dingo elektra.
+A2-0214	Traukinio atvykimas – devintą valandą.
+A2-0429	Aptarsime tai rytoj.
+A2-0345	Koks skirtumas?
+A2-0296	Vaikas drebėjo iš baimės.
+A2-0942	Viena vertus, pigu, kita vertus, toli.
+A2-1644	Gydytojas išrašė vaistų.
+A2-0230	Gydytojas išrašė receptą.
+A2-1743	Lietuvių kalba sudėtinga.
+A2-1849	Perskaičiau knygą.
+A2-1727	Turiu bėdą.
+A2-0943	Pigu, kita vertus, toli.
+S-0037	Aš nemoku plaukti.
+A2-1687	Einam pasivaikščioti.
+A2-0263	Mokytojas kartoja naują žodį.
+A2-1156	Šaunu!
+A2-1813	Mėgstu bendrauti su žmonėmis.
+A2-1461	Jis nesveikas.
+A2-0506	Kiek jis uždirba?
+A2-0947	Deja, bilietų nebėra.
+A2-1015	Jis laisvai kalba lietuviškai.
+A2-1802	Lietuvių kultūra sena.
+A2-0457	Labiau mėgstu arbatą nei kavą.
+A2-1971	Situacija sudėtinga.
+A2-1821	Išsiunčiau laišką.
+A2-0311	Namie neturiu interneto.
+S-0036	Žuvis plaukia upėje.
+A2-1476	Jis vedęs.
+A2-0496	Čia draudžiama rūkyti.
+A2-1083	Einame palei upę.
+A2-2028	Ar šis autobusas važiuoja į centrą?
+A2-1951	Jis trenkė kamuolį į sieną.
+A2-0490	Kontrolierius tikrina bilietus.
+A2-1609	Įvyko vagystė.
+A2-1755	Man gėda.
+A2-0994	Būtinai ateik!
+A2-1469	Esu patenkintas.
+A2-0827	Palauk akimirką.
+A2-1991	Man labiau patinka arbata.
+A2-1571	Koks jūsų pašto kodas?
+A2-1808	Aplankiau senelę.
+A2-1618	Lauke didelis šaltis.
+A2-1646	Jaučiu šaltį.
+A2-0260	Mokytoja aiškina taisyklę.
+A2-1962	Mes išsprendėme problemą.
+A2-0557	Tai įprasta diena.
+A2-1175	Drabužiai moterims – antrame aukšte.
+A2-1559	Įvyko nelaimingas atsitikimas.
+A2-1711	Jį sužeidė.
+A2-1594	Einu į savivaldybę.
+S-0052	Man trisdešimt metų.
+A2-1810	Atsistokite, prašau.
+A2-0548	Tai natūralus medus.
+A2-0930	Mano nuomone, filmas geras.
+A2-1176	Drabužiai vaikams
+A2-1529	Jo tėvas – karininkas.
+A2-0406	Pereikite gatvę per perėją.
+A2-1513	Laikrodis turi garantiją.
+A2-1804	Žiūriu televiziją.
+A2-1040	Jis sunkiai dirba.
+A2-0470	Pridėk druskos.
+A2-0521	Tai neįmanoma.
+A2-1177	Drabužiai vyrams
+A2-0956	Kada atsidaro?
+A2-1540	Lankau lietuvių kalbos kursus.
+A2-1955	Aš užaugau kaime.
+A2-1543	Gavau kvietimą į vestuves.
+A2-1858	Kiek trunka kelionė?
+S-0048	Vakare mes žiūrime televizorių.
+A2-1026	Man nelabai patinka.
+A2-0826	Kambario viduryje stovi stalas.
+A2-1985	Eime į kavinę! / Gal eikime į kavinę?
+A2-0936	Eime pasivaikščioti? – Gera mintis!
+A2-1596	Mačiau skelbimą laikraštyje.
+A2-1508	Mūsų dėstytojas labai įdomiai pasakoja.
+A2-0471	Pašalinkite klaidą.
+A2-1658	Ar galiu mokėti kortele?
+A2-0238	Turiu vizitą pas gydytoją.
+A2-0215	Išvykimas iš Vilniaus – septintą ryto.
+A2-1484	Senelis kalba rusų kalba.
+A2-1591	Reisas vėluoja.
+A2-1024	Turiu nedaug laiko.
+A2-1937	Nenaudoju socialinių tinklų.
+A2-1706	Šiukšlės smirda.
+A2-1652	Gėlės gražiai kvepia.
+A2-0290	Savaitgalį ilsiuosi.
+A2-1186	Pietų pertrauka: nuo dvyliktos iki pirmos.
+A2-1491	Lietuvos ambasadorius Kanadoje
+A2-1132	Parduoda visokias prekes.
+A2-1497	Kur čia bankomatas?
+A2-0492	Mama ruošia vakarienę.
+A2-1002	Ateik iškart.
+A2-1773	Kokia jūsų pilietybė?
+A2-0846	Kokios rūšies sūris?
+A2-0967	Rytoj dirbsiu.
+A2-1720	Važinėju dviračiu.
+A2-1525	Žiūrėk mūsų interneto svetainėje.
+A2-0256	Turiu darbo patirties.
+A2-1021	Tai kainuoja maždaug dešimt eurų.
+A2-1524	Perskaityk instrukciją.
+A2-0421	Nuleisk rankas.
+A2-2029	Sustokite čia, prašau.
+A2-1965	Kas organizuoja šventę?
+A2-0314	Parašyk man žinutę.
+A2-1546	Ką veiki laisvalaikiu?
+A2-1756	Šiandien gera nuotaika.
+A2-1647	Įjunk šviesą.
+A2-1515	Jūsų gimimo data?
+A2-1895	Mano piniginė dingo.
+A2-0963	Esu alergiškas…
+A2-0505	Jie augina tris vaikus.
+A2-0838	Geras pasirinkimas!
+A2-1516	Gimimo vieta – Vilnius.
+A2-1029	Atsiprašau, netyčia.
+A2-1053	Jis tai padarė tyčia.
+A2-1780	Ji – prancūzė.
+A2-0503	Jie išsiskyrė pernai.
+A2-0265	Pamiršau raktus.
+A2-1812	Atvežiau bulvių iš kaimo.
+A2-1505	Užpildžiau deklaraciją.
+A2-0211	Man reikia vizos.
+A2-0977	Ji paklausė, kur aš gyvenu.
+A2-1039	Staiga pradėjo lyti.
+A2-1637	Mašina dažnai genda.
+A2-2013	Atsiprašau, kad vėluoju.
+A2-0546	Krepšinis Lietuvoje labai populiarus.
+A2-0245	Mano alga nedidelė.
+A2-1549	Matematika man sunki.
+A2-1112	Kelintas aukštas?
+A2-0411	Persikėlėme į Vilnių.
+A2-1731	Turiu vieną norą.
+A2-0985	Kalbėkite aiškiai.
+A2-0543	Tai realus planas.
+A2-0973	Šis didesnis nei tas.
+A2-1968	Svarbus gebėjimas — klausyti.
+A2-1717	Užsirašiau pas gydytoją.
+A2-1873	Kalbėkite tyliai, vaikas miega.
+A2-1874	Nekalbėk taip garsiai.
+A2-1816	Domiuosi istorija.
+A2-0960	Esu užsiregistravęs pas gydytoją
+A2-1454	Gerbiamas direktoriau,
+A2-0509	Aš tau skolingas dešimt eurų.
+A2-1587	Ji mano pusseserė.
+A2-0251	Rytoj laikau egzaminą.
+A2-0828	Tai sunkus laikotarpis.
+A2-1645	Šiukšles išveža pirmadieniais.
+A2-1485	Mokausi vokiečių kalbos.
+A2-2037	Ar turite kitos spalvos? / kito dydžio?
+A2-1961	Aš jo neatpažinau.
+A2-1741	Ar turite smulkių pinigų?
+A2-1522	Atsiųskite gyvenimo aprašymą.
+A2-0305	Kaimynai labai draugiški.
+A2-1861	Autobusas veža keleivius.
+A2-0944	Pirmiausia nusiplauk rankas.
+A2-1796	Susitinkame vienuoliktą valandą.
+A2-0441	Aš tave perspėjau.
+A2-0851	Mano svajonė – pamatyti jūrą.
+A2-1605	Trečdalis klasės serga.
+A2-1664	Nesinervink.
+A2-1051	Papasakok trumpai.
+A2-1889	Tai neįprastas vardas.
+A2-1623	Susitikimą atidėjome.
+A2-1629	Rytais bėgioju parke.
+A2-0308	Jis drąsus žmogus.
+A2-1499	Jis dabar bedarbis.
+A2-0257	Studijuoju universitete.
+A2-1855	Vaikas susirgo.
+A2-1483	Ji moka prancūzų kalbą.
+A2-0264	Atsimenu tavo vardą.
+A2-2043	Kiek laiko užtrunka?
+A2-0517	Vakare noriu atsipalaiduoti.
+A2-1066	Šįryt lijo.
+A2-1487	Ji studijuoja Muzikos akademijoje.
+A2-0590	Prie durų stovėjo nepažįstamasis.
+A2-0968	Paskambinsiu tau vėliau.
+A2-1689	Prie banko pasukite į dešinę.
+A2-0836	Ačiū už patarimą.
+A2-0526	Tai naudingas patarimas.
+A2-1019	Kalbėkite lėtai.
+A2-1520	Sergu gripu.
+A2-1690	Prie pašto pasukite į kairę.
+A2-0317	Pamiršau slaptažodį.
+A2-1478	Ji – vidutinio amžiaus moteris.
+A2-0584	Mano sūnėnas mokosi mokykloje.
+A2-1190	Vieta prie tako, prašau.
+A2-0461	Lyginu kainas.
+A2-1028	Gyvenu netoli stoties.
+A2-1936	Sūnus žaidžia kompiuterinius žaidimus.
+A2-0338	Kokios naujienos?
+A2-0542	Šis auksas netikras.
+A2-1653	Rytoj laikau egzaminą.
+A2-0330	Orų prognozė rytoj – lietus.
+A2-1979	Čia galima rūkyti?
+A2-1722	Vogti negalima.
+A2-1614	Kokia čia valiuta?
+A2-1467	Pagaminta Lietuvoje.
+A2-1030	Niekaip negaliu užmigti.
+A2-1695	Vaikai plaukioja ežere.
+A2-0934	Aš nesutinku su tavimi.
+A2-0860	Tai smulki detalė.
+A2-1619	Šildymas brangus.
+A2-1726	Pažymėk teisingą atsakymą.
+S-0054	Traukinys išvažiuoja devintą valandą.
+A2-1172	Be abejo!
+A2-1514	Kaip nuvykti į geležinkelio stotį?
+A2-1574	Senelis – pensininkas.
+A2-0408	Leidžiamės laiptais žemyn.
+A2-1869	Neseniai persikėliau į Vilnių.
+A2-1581	Padaryk pratimą.
+A2-0553	Mokausi užsienio kalbų.
+A2-1966	Oras paveikė mano nuotaiką.
+A2-1595	Vakarinis seansas – aštuntą.
+A2-1492	Turiu asmens tapatybės kortelę.
+A2-1188	Trūko vamzdis!
+A2-1794	Pietūs dvyliktą valandą.
+A2-1517	Sūnus mokosi gimnazijoje.
+A2-1718	Užsiregistravau pas gydytoją.
+A2-1007	Kažkada čia buvo mokykla.
+A2-1511	Mėgstu fiziką.
+A2-1928	Kitas semestras prasideda rugsėjį.
+A2-0974	Tai geriausias restoranas mieste.
+A2-1111	Kelinta valanda?
+A2-0852	Turiu gerą atmintį.
+A2-0455	Aš stebiuosi, kad jis atėjo.
+A2-0585	Dukterėčiai penki metai.
+A2-2022	Leiskite prisistatyti.
+A2-0544	Tai modernus pastatas.
+A2-1061	Vaikai išbėgo į lauką.
+A2-0453	Mama nerimauja, kai vėluoju.
+A2-0948	Laimei, autobusas dar neišvažiavo.
+A2-0307	Mokytojas turi būti kantrus.
+A2-1049	Nežinau tiksliai.
+A2-1455	Tai internetinė parduotuvė.
+A2-1626	Vasarą atostogauju prie jūros.
+A2-1480	Mano gimtoji kalba – lietuvių.
+A2-0456	Mėgaujuosi saule.
+A2-1737	Medinis namas.
+A2-0996	Valgau dukart per dieną.
+A2-1856	Sutaupiau šimtą eurų.
+A2-1934	skauda pilvą
+A2-0552	Tai vietinis alus.
+A2-1710	Susižeidžiau koją.
+A2-0875	Užpildykite anketą.
+A2-0842	Tai didelis pokytis.
+A2-1589	Pusę kilogramo sūrio, prašau.
+A2-2031	Karščiuoju. / Peršalau.
+A2-1456	Jis išsiskyręs.
+A2-0297	Pyktis nepadeda.
+A2-1489	Turiu alergiją riešutams.
+A2-1950	Padavėja mus greitai aptarnavo.
+A2-0515	Vaikai varžosi, kas greitesnis.
+A2-1967	Didelis privalumas — centras arti.
+A2-1542	Butas – penkiasdešimt kvadratinių metrų.
+A2-1460	Klientas nepatenkintas.
+A2-2000	Jūs ne ten pataikėte.
+A2-1666	Ji nešioja akinius.
+A2-1023	Tai naudinga žinoti.
+A2-1680	Parėjau namo vėlai.
+A2-1471	Popierinis maišelis.
+A2-0439	Jis visada skundžiasi.
+A2-0976	Ketinu aplankyti močiutę.
+A2-1850	Močiutė prižiūri vaikus.
+A2-1067	Pakabink paveikslą žemiau.
+A2-1481	Ji kalba ispanų kalba.
+A2-2021	Gerai, sutarta.
+A2-0430	Mes ilgai diskutavome.
+A2-0232	Turiu peršalimą.
+A2-0849	Tai melas!
+A2-2042	Ar galite mus nufotografuoti?
+A2-0777	Mano darbdavys geras žmogus.
+A2-1044	Tamsiai žalias paltas.
+A2-0981	Čia negalima rūkyti.
+A2-0415	Palydėsiu tave iki stoties.
+A2-1986	Susitikime šeštą. / Gal susitinkam rytoj?
+A2-1457	Ji ištekėjusi.
+A2-1661	Jis neišlaikė egzamino.
+A2-1564	Kambaryje yra oro kondicionierius.
+A2-1948	Kas išrado telefoną?
+A2-1458	Tai madingas paltas.
+A2-1601	Geros darbo sąlygos.
+A2-0964	Ar galite ką nors parekomenduoti?
+A2-0303	Man nuobodu.
+A2-1553	Butelį mineralinio vandens, prašau.
+A2-1657	Mama maudo kūdikį.
+A2-2033	Gero poilsio! / Smagiai praleisti laiką!
+A2-0259	Ji dėsto istoriją.
+A2-1697	Mama prausia vaiką.
+A2-2038	Man sriubos, prašau.
+A2-0516	Treniruojuosi tris kartus per savaitę.
+A2-1539	Man aukštas kraujospūdis.
+A2-1613	Skanus valgis.
+A2-1470	Plastikinis maišelis.
+A2-0304	Pardavėja labai mandagi.
+A2-1065	Šviesiai mėlynas dangus.
+A2-2039	Ar galėtume gauti meniu?
+A2-1631	Ar turite ką deklaruoti?
+A2-0979	Lengviau, nei maniau.
+A2-0423	Apsisuk ir eik atgal.
+A2-0226	Noriu rezervuoti kambarį.
+S-0050	Naktį šviečia mėnulis.
+A2-0409	Artinasi žiema.
+A2-0560	Kėdė nepatogi.
+A2-0955	Kur reikia persėsti?
+A2-1949	Jis neišlaikė egzamino.
+A2-1859	Man trūksta laiko.
+A2-1036	Poryt – šeštadienis.
+A2-0951	Norėčiau rezervuoti kambarį
+A2-0545	Cepelinai – tradicinis patiekalas.
+A2-0468	Noriu pagerinti savo lietuvių kalbą.
+A2-1577	Vaikas žaidžia planšete.
+A2-2012	Ką rekomenduotumėte?
+A2-0511	Dalinamės kambariu.
+A2-0481	Rudenį deginame lapus.
+A2-1468	Atėjo pagyvenęs vyras.
+A2-1716	Užliejau kaimynus.
+A2-1496	Laikau baigiamąjį egzaminą.
+A2-0965	Vakar nuėjau į parduotuvę.
+A2-1012	Parašei klaidingai.
+A2-1463	Jis nevedęs.
+A2-1651	Nukopijuokite dokumentą.
+A2-1995	Kaip rašoma? / Paraidžiui, prašau.
+A2-0510	Nuomojuosi butą centre.
+A2-1109	Kažkuri iš jų žino.
+A2-1636	Reikia gauti vizą.
+S-0039	Mes mokomės lietuvių kalbos.
+A2-1685	Galiu pasimatuoti?
+A2-1721	Vežuosi lagaminą.
+A2-1640	Jam reikia gultis į ligoninę.
+A2-1997	Ar galėčiau kalbėti su Jonu?
+A2-0299	Ji turi gerą charakterį.
+A2-1533	Ketvirtadalis valandos.
+A2-0418	Kavą išsinešti, prašau.
+A2-1008	Turiu kažkiek pinigų.
+A2-0410	Traukinys tolsta.
+A2-1578	Einu į polikliniką.
+A2-0313	Koks tavo el. paštas?
+A2-0295	Jos akyse buvo liūdesys.
+A2-1558	Negazuoto vandens, prašau.
+A2-2017	Linksmų Velykų!
+A2-1634	Skalbiniai džiūsta lauke.
+A2-0565	Sriuba neskani.
+A2-0853	Tai blogas įprotis.
+A2-0984	Susitinkame šeštą valandą.
+A2-1519	Lietuvių gramatika sunki.
+A2-2035	Ar galiu pasimatuoti?
+A2-1055	Užvakar buvo šventė.
+A2-0302	Prieš egzaminą esu nervingas.
+A2-0983	Domiuosi istorija.
+A2-1598	Turiu slogą.
+A2-1022	Lauke minus penki.
+A2-1032	Pagarbiai, Jonas
+A2-0971	Jei lis, liksiu namie.
+A2-0233	Vaikui prasidėjo karščiavimas.
+A2-1633	Džiovinu plaukus.
+A2-1602	Kokia jūsų tautybė?
+A2-0298	Jis pažiūrėjo į mane su nuostaba.
+A2-0567	Duona pasenusi.
+A2-0474	Uždenk puodą.
+A2-0497	Gydytojas liepė gulėti.
+A2-0982	Reikia rezervuoti iš anksto.
+A2-1703	Reikia registruotis iš anksto.
+A2-1494	Įrašyk failą į atmintuką.
+A2-1495	Darželio auklėtoja labai gera.
+A2-2010	Grąžos nereikia.
+A2-1649	Einu kirptis.
+A2-1668	Nudegiau ranką.
+A2-1523	Sudėk indus į indaplovę.
+A2-0507	Galiu pasiskolinti tavo knygą?
+A2-1462	Ji netekėjusi.
+A2-1493	Gavau brandos atestatą.
+A2-0980	Knygą parašė lietuvis.
+A2-1632	Reikia draustis prieš kelionę.
+A2-1724	Be skėčio sušlapsi.
+A2-2040	Ar aptarnavimas įskaičiuotas?
+A2-1054	Užpernai buvau Latvijoje.
+A2-2045	Su vardadieniu!
+A2-0443	Ji šnabžda man į ausį.
+A2-1776	Jis estas iš Talino.
+A2-2025	Turiu rezervaciją.
+A2-0562	Autobusas perpildytas.
+A2-0508	Paskolink man dešimt eurų.
+A2-0321	Atsisiunčiu nuotraukas.
+A2-2027	Kuris peronas?
+A2-1890	Norėčiau dviviečio kambario.
+A2-1891	Ar turite vienvietį kambarį?
+A2-1702	Vakare rakinu duris.
+A2-0315	Atsisiųsk šią programėlę.
+A2-1043	Kalbėk taisyklingai.
+A2-0488	Gydytojas matuoja temperatūrą.
+A2-0310	Lietuviai – darbštūs žmonės.
+A2-1981	Vaikystėje žaisdavau kieme.
+A2-0975	Metus mokausi lietuvių kalbos.
+A2-0482	Mėsą šaldome šaldiklyje.
+A2-1509	Džiovyklė sugedo.
+A2-0970	Niekada nebuvau Latvijoje.
+A2-0320	Ar turi telefono kroviklį?
+A2-1982	Kaunas mažesnis už Vilnių.
+A2-1586	Puslitrį pieno, prašau.
+A2-1615	Kur yra valiutos keitykla?
+A2-1562	Ar turite nuolaidų kortelę?
+A2-0969	Anksčiau gyvendavau Kaune.
+A2-1500	Ar čia yra belaidis internetas?
