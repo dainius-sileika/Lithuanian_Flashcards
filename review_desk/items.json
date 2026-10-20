@@ -15,7 +15,7 @@
   "id": "release-a1-rc3",
   "group": "A1 v3.0 release",
   "title": "The final A1 package: try it on your phone, then upload",
-  "ask": "Lietuviu_Flashcards_v3.0_A1.apkg, in the top level of the 51.04 folder (140.8 MB): 1,191 cards with the new IDs, tags and picture numbers, the 37-card fix, and your corrections. It passed every check and a test import into Anki. 1) On the phone, delete the old deck, import this one, and look at about 20 cards. 2) Approve the AnkiWeb description (next item). 3) Upload it; I can't do that step. Audio: 547 cards in your voice, 20 synthetic, 624 silent. If you record the A1 words first, I can rebuild before you upload. The two earlier builds from last night are kept in _archive/builds/ as release candidates 1 and 2.",
+  "ask": "Lietuviu_Flashcards_v3.0_A1.apkg, in the top level of the 51.04 folder (140.8 MB): 1,191 cards with the new IDs, tags and picture numbers, the 37-card fix, and your corrections. It passed every check and a test import into Anki. A rebuild with the kosėti forms is running now; wait for it before uploading (this item will say). 1) On the phone, delete the old deck, import this one, and look at about 20 cards. 2) Approve the AnkiWeb description (next item). 3) Upload it; I can't do that step. Audio: 547 cards in your voice, 20 synthetic, 624 silent. If you record the A1 words first, I can rebuild before you upload. The two earlier builds from last night are kept in _archive/builds/ as release candidates 1 and 2.",
   "options": [
    "Imported, looks right",
    "Found problems (see note)",
@@ -65,12 +65,9 @@
  {
   "id": "koseti",
   "group": "A1 v3.0 release",
-  "title": "One card needs its verb forms: kosėti (to cough)",
-  "ask": "Its present and past forms were garbage left over from a parsing error (\"{{l\", \"lt\"), so they are withdrawn: the back now shows only kósėti · to cough. I couldn't look them up because fetching the page needs your permission while you're away. Either paste this link into the chat so I can fetch it: https://en.wiktionary.org/wiki/kos%C4%97ti — or write the stressed present and past 3rd person in the note, with the source you took them from.",
-  "options": [
-   "Link pasted in chat",
-   "Forms in my note"
-  ],
+  "title": "kosėti forms: received, being added",
+  "ask": "From the Wiktionary page you pasted: kósėti, present kósi (also kósti, kósėja), past kósėjo. The package is being rebuilt with them (release candidate 4); the A1 package item will say when it's ready. Nothing to do.",
+  "options": [],
   "links": []
  },
  {
