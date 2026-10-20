@@ -32,3 +32,17 @@ First reading cards, 101–104: *Moteris valgo duoną · Vyras geria kavą.*
 ## For the recorder
 
 `recording_order_v3.csv`: every card in study order, A1 first, with the sentence for cloze cards. The re-tiers change which recordings count as A1; `recording_list.csv` and the recorder sheets were not touched.
+
+## Hand edit, 2026-10-20 (rc3): 0331 back beside 0366
+
+The 2026-10-20 regeneration (after the proofreading return) put **0331_kelinta_valanda** (*Kelinta valanda?*) at
+1,069, because a phrase ranks as its rarest word and *kelinta* is rare. It is the alternative to
+**0366_kiek_valandu** (*Kiek valandų?*), so by the pair-adjacent rule it now sits straight after it:
+**0366 @ 365, 0331 @ 366**. The cards that were at 366–1,068 each move down one place (704 rows renumbered in
+`study_order.csv` and `recording_order_v3.csv`); nothing else changed and no key number changed.
+
+Done by hand because a regeneration is not a no-op: a full run with the pin moves 455 positions (the greedy
+scheduler's lane caps cascade). The pair is also in the builder as `PIN_AFTER["0331_kelinta_valanda"] =
+"0366_kiek_valandu"`, so any later regeneration keeps it. `old_order` was left as the previous builder run wrote it.
+Audit: `AUDIT_v3_3.txt` (before/after, `--audit`): 0 A1 cards needing an A2-only word, the same 6 forward
+dependencies (none involves 0331), 0 pins/pairs not adjacent.

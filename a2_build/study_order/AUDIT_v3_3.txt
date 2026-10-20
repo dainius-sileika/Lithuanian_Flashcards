@@ -1,0 +1,130 @@
+AUDIT v3.3 (2026-10-20): 0331_kelinta_valanda moved by hand to straight after 0366_kiek_valandu (pair-adjacent rule; PIN_AFTER entry added to build_study_order_v3.py).
+Commands: python3 build_study_order_v3.py --audit <study_order.csv at 90559a6>  then  --audit study_order.csv  (no regeneration).
+
+######## BEFORE: study_order.csv at 90559a6 ########
+
+==== study_order_90559a6.csv: 2433 positioned cards (1191 A1, 1242 A2; 55 sentences) ====
+coverage: 0 keys without a position []; 0 positions for unknown keys []; positions 1..N, no gaps, no duplicates
+blocks: 0 A1 cards positioned after the first A2 card
+dependencies: 1992 word uses in reading cards point at a deck card; 6 point FORWARD (> 20 later: 6, > 50 later: 4); 0 of them are A1 cards needing a word taught only in A2; 92 uses of words no card teaches (86 distinct)
+  forward dependencies (card @pos: word <- teaching card @pos):
+    0285_atsakymas @  285 A1 atsakymas                          teisingas        <- 0796_teisingas teisingas              A1 @795
+    1314_keliu_policija @ 1314 A2 kelių policija                     sustabdė         <- 1630_sustabdyti sustabdyti             A2 @1630
+    0237_jusu @  237 A1 jūsų                               numeris          <- 0526_numeris numeris                A1 @527
+    2128_neislaikyti_egzamino @ 2128 A2 neišlaikyti egzamino               neišlaikė        <- 2188_neislaikyti neišlaikyti (egzamino) A2 @2188
+    0294_bet_kas @  294 A1 bet kas                            padaryti         <- 0340_padaryti padaryti               A1 @340
+    0171_kad @  171 A1 kad                                manau            <- 0196_manyti manyti                 A1 @196
+pairs: 1 PIN_AFTER not adjacent [('0331_kelinta_valanda', '0366_kiek_valandu', 704)]; 0 FF adjective pairs not adjacent []; 0 noted pairs not adjacent []; 0 pairs split across subdecks []
+confusables: 0 same-headword pairs closer than 60 []; 0 look-alike pairs closer than 30: 
+pacing A1: longest same-lane run (11, 'colours'), longest run of picture cards 100, densest 20-window ('colours', 11); first reading card at 101, first phrase at 21; first 140 lanes [('verbs', 23), ('phrases', 22), ('function', 17), ('adjectives', 12), ('people', 9), ('food', 9)], routes [('IMG', 98), ('PHRASE', 22), ('CLOZE', 13), ('SENT', 7)]
+  greetings A1: [('Labas', 21), ('Laba diena', 36), ('Viso gero', 47), ('Iki', 54), ('Labas rytas', 77), ('Labas vakaras', 81), ('Sveiki', 88), ('Labanakt', 158)]
+pacing A2: longest same-lane run (6, 'nouns'), longest run of picture cards 22, densest 20-window ('nouns', 9); first reading card at 23, first phrase at 1; first 140 lanes [('nouns', 26), ('verbs', 23), ('phrases', 16), ('function', 10), ('adverbs', 9), ('society', 8)], routes [('CLOZE', 67), ('IMG', 50), ('PHRASE', 19), ('SENT', 3), ('PAIR', 1)]
+frequency: Spearman with subtitle rank 0.655 (n=2378), with press rank 0.425 (n=1478); median subtitle rank of the first 100 A1 cards 278, of A1 cards 101-400 227
+
+== Telling positions (whole order) ==
+word                gloss                 study_order_90559a6.csv  level
+duona               bread                          6  A1
+alus                beer                          26  A1
+vanduo              water                          3  A1
+kava                coffee                        14  A1
+pienas              milk                          18  A1
+obuolys             apple                         28  A1
+sriuba              soup                          33  A1
+mėsa                meat                         698  A1
+bulvė               potato                       936  A1
+batai               shoes                         23  A1
+kiaulė              pig                          984  A1
+karvė               cow                         1034  A1
+šuo                 dog                           27  A1
+prezidentas         president                    963  A1
+teismas             court                        879  A1
+asmuo               person (formal)             1002  A1
+branduolinis        nuclear                     2276  A2
+pragaras            hell                        2119  A2
+Labas               hello                         21  A1
+Ačiū                thank you                     25  A1
+Prašau              please                        32  A1
+Atsiprašau          sorry                         43  A1
+Kiek kainuoja?      how much?                     65  A1
+Kur yra tualetas?   where is the toilet?         110  A1
+aš                  I                             31  A1
+taip                yes                           29  A1
+vienas              one                           52  A1
+šiandien            today                        206  A1
+pirmadienis         Monday                        84  A1
+galėti              can                          137  A1
+kalbėti             speak                         72  A1
+suprasti            understand                   195  A1
+važiuoti            go (by vehicle)               61  A1
+tualetas            toilet                       322  A1
+euras               euro                         262  A1
+vaistinė            pharmacy                     389  A1
+manyti              think                        196  A1
+vėluoti             be late                      107  A1
+plaštaka            palm                        2421  A2
+lydyti              melt (sth)                  2426  A2
+antis               duck                        1138  A1
+
+######## AFTER: study_order.csv (this commit) ########
+
+==== study_order.csv: 2433 positioned cards (1191 A1, 1242 A2; 55 sentences) ====
+coverage: 0 keys without a position []; 0 positions for unknown keys []; positions 1..N, no gaps, no duplicates
+blocks: 0 A1 cards positioned after the first A2 card
+dependencies: 1992 word uses in reading cards point at a deck card; 6 point FORWARD (> 20 later: 6, > 50 later: 4); 0 of them are A1 cards needing a word taught only in A2; 92 uses of words no card teaches (86 distinct)
+  forward dependencies (card @pos: word <- teaching card @pos):
+    0285_atsakymas @  285 A1 atsakymas                          teisingas        <- 0796_teisingas teisingas              A1 @796
+    1314_keliu_policija @ 1314 A2 kelių policija                     sustabdė         <- 1630_sustabdyti sustabdyti             A2 @1630
+    0237_jusu @  237 A1 jūsų                               numeris          <- 0526_numeris numeris                A1 @528
+    2128_neislaikyti_egzamino @ 2128 A2 neišlaikyti egzamino               neišlaikė        <- 2188_neislaikyti neišlaikyti (egzamino) A2 @2188
+    0294_bet_kas @  294 A1 bet kas                            padaryti         <- 0340_padaryti padaryti               A1 @340
+    0171_kad @  171 A1 kad                                manau            <- 0196_manyti manyti                 A1 @196
+pairs: 0 PIN_AFTER not adjacent []; 0 FF adjective pairs not adjacent []; 0 noted pairs not adjacent []; 0 pairs split across subdecks []
+confusables: 0 same-headword pairs closer than 60 []; 0 look-alike pairs closer than 30: 
+pacing A1: longest same-lane run (11, 'colours'), longest run of picture cards 100, densest 20-window ('colours', 11); first reading card at 101, first phrase at 21; first 140 lanes [('verbs', 23), ('phrases', 22), ('function', 17), ('adjectives', 12), ('people', 9), ('food', 9)], routes [('IMG', 98), ('PHRASE', 22), ('CLOZE', 13), ('SENT', 7)]
+  greetings A1: [('Labas', 21), ('Laba diena', 36), ('Viso gero', 47), ('Iki', 54), ('Labas rytas', 77), ('Labas vakaras', 81), ('Sveiki', 88), ('Labanakt', 158)]
+pacing A2: longest same-lane run (6, 'nouns'), longest run of picture cards 22, densest 20-window ('nouns', 9); first reading card at 23, first phrase at 1; first 140 lanes [('nouns', 26), ('verbs', 23), ('phrases', 16), ('function', 10), ('adverbs', 9), ('society', 8)], routes [('CLOZE', 67), ('IMG', 50), ('PHRASE', 19), ('SENT', 3), ('PAIR', 1)]
+frequency: Spearman with subtitle rank 0.654 (n=2378), with press rank 0.425 (n=1478); median subtitle rank of the first 100 A1 cards 278, of A1 cards 101-400 227
+
+== Telling positions (whole order) ==
+word                gloss                 study_order.csv  level
+duona               bread                          6  A1
+alus                beer                          26  A1
+vanduo              water                          3  A1
+kava                coffee                        14  A1
+pienas              milk                          18  A1
+obuolys             apple                         28  A1
+sriuba              soup                          33  A1
+mėsa                meat                         699  A1
+bulvė               potato                       937  A1
+batai               shoes                         23  A1
+kiaulė              pig                          985  A1
+karvė               cow                         1035  A1
+šuo                 dog                           27  A1
+prezidentas         president                    964  A1
+teismas             court                        880  A1
+asmuo               person (formal)             1003  A1
+branduolinis        nuclear                     2276  A2
+pragaras            hell                        2119  A2
+Labas               hello                         21  A1
+Ačiū                thank you                     25  A1
+Prašau              please                        32  A1
+Atsiprašau          sorry                         43  A1
+Kiek kainuoja?      how much?                     65  A1
+Kur yra tualetas?   where is the toilet?         110  A1
+aš                  I                             31  A1
+taip                yes                           29  A1
+vienas              one                           52  A1
+šiandien            today                        206  A1
+pirmadienis         Monday                        84  A1
+galėti              can                          137  A1
+kalbėti             speak                         72  A1
+suprasti            understand                   195  A1
+važiuoti            go (by vehicle)               61  A1
+tualetas            toilet                       322  A1
+euras               euro                         262  A1
+vaistinė            pharmacy                     390  A1
+manyti              think                        196  A1
+vėluoti             be late                      107  A1
+plaštaka            palm                        2421  A2
+lydyti              melt (sth)                  2426  A2
+antis               duck                        1138  A1

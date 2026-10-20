@@ -98,7 +98,9 @@ READING = ("CLOZE", "PAIR", "SENT")
 PIN_AFTER = {"0007_batonas": "0006_duona",
              "0401_mama": "0400_motina", "0222_tetis": "0221_tevas", "0312_dukra": "0311_sunus", "0051_sesuo": "0050_brolis",
              "0523_senele": "0522_senelis", "0549_teta": "0548_dede", "0823_zmona": "0822_vyras",
-             "1309_apacia": "1308_virsus", "1899_garsiai": "1898_tyliai", "2388_vienvietis": "2387_dvivietis"}
+             "1309_apacia": "1308_virsus", "1899_garsiai": "1898_tyliai", "2388_vienvietis": "2387_dvivietis",
+             # pair-adjacent rule (2026-10-20): the alternative time question follows Kiek valandų?
+             "0331_kelinta_valanda": "0366_kiek_valandu"}
 # Antonym / counterpart pairs by plain headword (the A2 list's "pair with" notes, 2026-10-19); whichever is
 # scheduled first pulls the other straight after it. Pairs split across subdecks are reported, not forced.
 PAIRS = [("arti", "toli"), ("aukštyn", "žemyn"), ("netyčia", "tyčia"), ("į vidų", "viduje"), ("abi", "abu"),

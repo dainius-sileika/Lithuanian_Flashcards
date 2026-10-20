@@ -364,710 +364,710 @@ rec_order,study_order,key,level,route,lithuanian,sentence_to_record
 363,363,0362_gyvenimas,A1,CLOZE,gyvenimas,Gyvenimas gražus.
 364,364,0365_stoveti,A1,IMG,stovė́ti,
 365,365,0366_kiek_valandu,A1,PHRASE,Kiek valandų?,
-366,366,0367_mergaite,A1,IMG,mergaitė,
-367,367,0368_policija,A1,IMG,policija,
-368,368,0378_sausis,A1,IMG,sausis,
-369,369,0396_atidaryti,A1,IMG,atidarýti,
-370,370,0369_si,A1,CLOZE,ši,Ši knyga įdomi.
-371,371,0371_niekada,A1,CLOZE,niekada,Aš niekada negeriu kavos.
-372,372,0370_kurti,A1,CLOZE,kurti,Ji kuria muziką.
-373,373,0372_ja,A1,CLOZE,ją,Mačiau ją vakar.
-374,374,0380_jei,A1,CLOZE,jei,"Jei bus šilta, eisime į mišką."
-375,375,0374_zinoma,A1,PHRASE,Žinoma,
-376,376,0375_popierius,A1,IMG,popierius,
-377,377,0376_dangus,A1,IMG,dangus,
-378,378,0377_desimt,A1,IMG,dešimt,
-379,379,0409_vasaris,A1,IMG,vasaris,
-380,380,0379_vairuotojas,A1,IMG,vairuotojas,
-381,381,0373_baigti,A1,CLOZE,baigti,Darbą baigiu penktą valandą.
-382,382,0392_vel,A1,CLOZE,vėl,Jis vėl pavėlavo.
-383,383,0383_vardas,A1,CLOZE,vardas,Mano vardas Jonas.
-384,384,0381_lyti,A1,CLOZE,lyti,Šiandien lyja.
-385,385,0382_gal,A1,CLOZE,gal,Gal rytoj lis.
-386,386,0385_laimingas,A1,IMG,laimingas,
-387,387,0386_liudnas,A1,IMG,liūdnas,
-388,388,0387_linksmas,A1,IMG,linksmas,
-389,389,0388_vaistine,A1,IMG,vaistinė,
-390,390,0389_ar_galima,A1,PHRASE,Ar galima?,
-391,391,0390_kaimas,A1,IMG,kaimas,
-392,392,0384_likti,A1,CLOZE,likti,Šiandien lieku namie.
-393,393,0391_namai,A1,CLOZE,namai,Mano namai – Vilniuje.
-394,394,0393_uz,A1,CLOZE,už,Mokykla yra už bažnyčios.
-395,395,0394_menuo,A1,CLOZE,mėnuo,Dirbu čia vieną mėnesį.
-396,396,0395_ji_eina_i_mokykla,A1,SENT,Ji {eina} į mokyklą.,Ji eina į mokyklą.
-397,397,0397_paltas,A1,IMG,paltas,
-398,398,0398_kompiuteris,A1,IMG,kompiuteris,
-399,399,0399_ka_reiskia,A1,PHRASE,Ką reiškia…?,
-400,400,0400_motina,A1,IMG,motina,
-401,401,0401_mama,A1,IMG,mama,
-402,402,0407_policininkas,A1,IMG,policininkas,
-403,403,0402_visi,A1,CLOZE,visi,Visi jau atėjo.
-404,404,0403_imti,A1,CLOZE,imti,Imk obuolį.
-405,405,0404_kur_nors,A1,CLOZE,kur nors,Eikime kur nors valgyti.
-406,406,0405_privaleti,A1,CLOZE,privalėti,Tu privalai eiti į mokyklą.
-407,407,0406_po,A1,CLOZE,po,Katė miega po stalu.
-408,408,0408_ka_tai_reiskia,A1,PHRASE,Ką tai reiškia?,
-409,409,0411_kovas,A1,IMG,kovas,
-410,410,0410_ratas,A1,IMG,ratas,
-411,411,0423_balandis,A1,IMG,balandis,
-412,412,0412_vonia,A1,IMG,vonia,
-413,413,0418_pilnas,A1,IMG,pilnas,
-414,414,0413_sestas,A1,CLOZE,šeštas,Šiandien kovo šešta.
-415,415,0414_septintas,A1,CLOZE,septintas,Gyvenu septintame aukšte.
-416,416,0415_astuntas,A1,CLOZE,aštuntas,Dabar aštunta valanda.
-417,417,0416_pradeti,A1,CLOZE,pradėti,Pradedu dirbti aštuntą valandą.
-418,418,0417_prasideti,A1,CLOZE,prasidėti,Filmas prasideda aštuntą.
-419,419,0419_menulis,A1,IMG,mėnulis,
-420,420,0420_tai_mano_namas,A1,PHRASE,Tai mano namas,
-421,421,0421_restoranas,A1,IMG,restoranas,
-422,422,0422_suknele,A1,IMG,suknelė,
-423,423,0434_geguze,A1,IMG,gegužė,
-424,424,0430_berniukas,A1,IMG,berniukas,
-425,425,0424_nuo,A1,CLOZE,nuo,Dirbu nuo aštuntos valandos.
-426,426,0425_ponas,A1,CLOZE,ponas,"Laba diena, pone!"
-427,427,0426_devintas,A1,CLOZE,devintas,Autobusas devintą valandą.
-428,428,0427_tapti,A1,CLOZE,tapti,Jis tapo gydytoju.
-429,429,0435_desimtas,A1,CLOZE,dešimtas,Šiandien gegužės dešimta.
-430,430,0429_pastas,A1,IMG,paštas,
-431,431,0431_dovana,A1,IMG,dovana,
-432,432,0432_radijas,A1,IMG,radijas,
-433,433,0433_vejas,A1,IMG,vėjas,
-434,434,0441_sumustinis,A1,IMG,sumuštinis,
-435,435,0440_kur_tu_eini,A1,PHRASE,Kur tu eini?,
-436,436,0428_kada,A1,CLOZE,kada,Kada prasideda filmas?
-437,437,0436_daznai,A1,CLOZE,dažnai,Mes dažnai einame į kiną.
-438,438,0437_toks_pat,A1,CLOZE,toks pat,Mano paltas toks pat kaip tavo.
-439,439,0438_planas,A1,CLOZE,planas,Koks tavo planas?
-440,440,0439_jaustis,A1,CLOZE,jaustis,Kaip jautiesi?
-441,441,0442_sokti,A1,IMG,šókti,
-442,442,0443_virtuve,A1,IMG,virtuvė,
-443,443,0444_geros_dienos,A1,PHRASE,Geros dienos,
-444,444,0445_ugnis,A1,IMG,ugnis,
-445,445,0451_traukinys,A1,IMG,traukinys,
-446,446,0453_grupe,A1,IMG,grupė,
-447,447,0446_tavo,A1,CLOZE,tavo,Kur tavo raktai?
-448,448,0447_dalykas,A1,CLOZE,dalykas,Tai svarbus dalykas.
-449,449,0448_bandyti,A1,CLOZE,bandyti,Bandau kalbėti lietuviškai.
-450,450,0449_dokumentas,A1,CLOZE,dokumentas,"Jūsų dokumentus, prašau."
-451,451,0457_savaite,A1,CLOZE,savaitė,Kitą savaitę važiuoju į Kauną.
-452,452,0452_kiausinis,A1,IMG,kiaušinis,
-453,453,0454_zeme,A1,IMG,žemė,
-454,454,0455_truputi,A1,PHRASE,Truputį,
-455,455,0456_zuvis,A1,IMG,žuvis,
-456,456,0462_uzdaryti,A1,IMG,uždarýti,
-457,457,0464_butelis,A1,IMG,butelis,
-458,458,0450_niekas,A1,CLOZE,niekas,Niekas nežino atsakymo.
-459,459,0458_kalba,A1,CLOZE,kalba,Lietuvių kalba sena.
-460,460,0459_viskas,A1,CLOZE,viskas,Viskas gerai.
-461,461,0460_tiek,A1,CLOZE,tiek,Kodėl tiek brangu?
-462,462,0461_pats,A1,CLOZE,pats,Aš pats tai padarysiu.
-463,463,0463_prasom,A1,PHRASE,Prašom,
-464,464,0465_parkas,A1,IMG,parkas,
-465,465,0466_svecias,A1,IMG,svečias,
-466,466,0467_skristi,A1,IMG,skrìsti,
-467,467,0475_krepsys,A1,IMG,krepšys,
-468,468,0473_sunkus,A1,IMG,sunkus,
-469,469,0474_lengvas,A1,IMG,lengvas,
-470,470,0468_atvaziuoti,A1,CLOZE,atvažiuoti,Rytoj atvažiuoja svečiai.
-471,471,0469_po,A1,CLOZE,po,Katė miega po stalu.
-472,472,0470_zodis,A1,CLOZE,žodis,Ką reiškia šis žodis?
-473,473,0471_iki,A1,CLOZE,iki,Parduotuvė dirba iki dešimtos.
-474,474,0472_saves,A1,CLOZE,savęs,Pažiūrėk į save.
-475,475,0476_nulis,A1,IMG,nulis,
-476,476,0478_dantis,A1,IMG,dantis,
-477,477,0477_labai_gerai,A1,PHRASE,labai gerai,
-478,478,0485_laikrodis,A1,IMG,laikrodis,
-479,479,0484_vairuoti,A1,IMG,vairúoti,
-480,480,0489_peilis,A1,IMG,peilis,
-481,481,0479_tada,A1,CLOZE,tada,Tada aš buvau vaikas.
-482,482,0480_tevas_skaito_knyga,A1,SENT,Tėvas {skaito} knygą.,Tėvas skaito knygą.
-483,483,0481_keli,A1,CLOZE,keli,Turiu kelis klausimus.
-484,484,0482_daiktas,A1,CLOZE,daiktas,Kas tai per daiktas?
-485,485,0483_dalis,A1,CLOZE,dalis,Tai tik dalis darbo.
-486,486,0486_svarus,A1,IMG,švarus,
-487,487,0487_purvinas,A1,IMG,purvinas,
-488,488,0488_einu_namo,A1,PHRASE,Einu namo,
-489,489,0497_dainuoti,A1,IMG,dainúoti,
-490,490,0495_baras,A1,IMG,baras,
-491,491,0496_ezeras,A1,IMG,ežeras,
-492,492,0490_net,A1,CLOZE,net,Net vaikas tai supranta.
-493,493,0491_prie,A1,CLOZE,prie,Susitinkame prie stoties.
-494,494,0492_musu,A1,CLOZE,mūsų,Mūsų namas yra prie upės.
-495,495,0494_mergina,A1,CLOZE,mergina,Jo mergina – studentė.
-496,496,0501_nors,A1,CLOZE,nors,"Jis atėjo, nors sirgo."
-497,497,0500_nesti,A1,IMG,nèšti,
-498,498,0498_piktas,A1,IMG,piktas,
-499,499,0499_malonus,A1,IMG,malonus,
-500,500,0507_sustoti,A1,IMG,sustóti,
-501,501,0506_puodelis,A1,IMG,puodelis,
-502,502,0508_pinigine,A1,IMG,piniginė,
-503,503,0503_mazai,A1,CLOZE,mažai,Ji valgo mažai.
-504,504,0502_nes,A1,CLOZE,nes,"Likau namie, nes lijo."
-505,505,0504_taip_pat,A1,CLOZE,taip pat,Aš taip pat mokausi lietuvių kalbos.
-506,506,0493_ketinti,A1,CLOZE,ketinti,Vasarą ketinu važiuoti į Kauną.
-507,507,0512_tas_pats,A1,CLOZE,tas pats,Mes gyvename tame pačiame name.
-508,508,0509_viena_bilieta_i_kauna,A1,PHRASE,"Vieną bilietą į Kauną, prašau.",
-509,509,0510_vaistai,A1,IMG,vaistai,
-510,510,0511_viesbutis,A1,IMG,viešbutis,
-511,511,0517_laivas,A1,IMG,laivas,
-512,512,0518_pirstas,A1,IMG,pirštas,
-513,513,0522_senelis,A1,IMG,senelis,
-514,514,0523_senele,A1,IMG,senelė,
-515,515,0513_mums,A1,CLOZE,mums,Mums patinka Vilnius.
-516,516,0515_mus,A1,CLOZE,mus,Ar matai mus?
-517,517,0505_istorija,A1,CLOZE,istorija,Skaitau įdomią istoriją.
-518,518,0525_arba,A1,CLOZE,arba,Arbatos arba kavos?
-519,519,0516_kartu,A1,CLOZE,kartu,Gyvename kartu su tėvais.
-520,520,0519_plaukti,A1,IMG,plaũkti,
-521,521,0520_suris,A1,IMG,sūris,
-522,522,0521_prasom_pakartoti,A1,PHRASE,Prašom pakartoti,
-523,523,0529_milijonas,A1,IMG,milijonas,
-524,524,0531_gaminti,A1,IMG,gamìnti,
-525,525,0533_dirzas,A1,IMG,diržas,
-526,526,0524_pries,A1,CLOZE,prieš,Nusiplauk rankas prieš valgį.
-527,527,0526_numeris,A1,CLOZE,numeris,Koks tavo telefono numeris?
-528,528,0527_kas_nors,A1,CLOZE,kas nors,Ar kas nors skambino?
-529,529,0535_taciau,A1,CLOZE,tačiau,"Buvo šalta, tačiau saulėta."
-530,530,0539_paskui,A1,CLOZE,paskui,"Pavalgysime, o paskui eisime."
-531,531,0530_atsiprasau_ar_cia_laisva,A1,PHRASE,"Atsiprašau, ar čia laisva?",
-532,532,0540_groti,A1,IMG,gróti,
-533,533,0532_sultys,A1,IMG,sultys,
-534,534,0534_paukstis,A1,IMG,paukštis,
-535,535,0541_veidrodis,A1,IMG,veidrodis,
-536,536,0543_tuscias,A1,IMG,tuščias,
-537,537,0536_ant,A1,CLOZE,ant,Knyga yra ant stalo.
-538,538,0548_dede,A1,CLOZE,dėdė,Dėdė atvažiuoja rytoj.
-539,539,0549_teta,A1,CLOZE,teta,Mano teta gyvena Kaune.
-540,540,0537_vis_dar,A1,CLOZE,vis dar,Aš vis dar laukiu.
-541,541,0528_atleisti,A1,CLOZE,atleisti,"Atleiskite, kur čia paštas?"
-542,542,0542_dar_ko_nors,A1,PHRASE,Dar ko nors?,
-543,543,0544_nosis,A1,IMG,nosis,
-544,544,0545_atrodo,A1,PHRASE,atrodo,
-545,545,0551_zole,A1,IMG,žolė,
-546,546,0554_dviratis,A1,IMG,dviratis,
-547,547,0553_patiekalas,A1,IMG,patiekalas,
-548,548,0538_kokia,A1,CLOZE,kokia,Kokia šiandien diena?
-549,549,0546_jeigu,A1,CLOZE,jeigu,"Jeigu nori, ateik."
-550,550,0547_nieko,A1,CLOZE,nieko,Nieko nematau.
-551,551,0557_palikti,A1,CLOZE,palikti,Palikau raktus namie.
-552,552,0550_bet_kada,A1,CLOZE,bet kada,Skambink bet kada.
-553,553,0552_nesuprantu_atsiprasau,A1,PHRASE,"Nesuprantu, atsiprašau",
-554,554,0555_uzdarytas,A1,IMG,uždarytas,
-555,555,0556_kepure,A1,IMG,kepurė,
-556,556,0562_pilvas,A1,IMG,pilvas,
-557,557,0563_medziaga,A1,IMG,medžiaga,
-558,558,0566_nuotrauka,A1,IMG,nuotrauka,
-559,559,0561_sekunde,A1,CLOZE,sekundė,Tik vieną sekundę!
-560,560,0558_pagalba,A1,CLOZE,pagalba,Man reikia pagalbos.
-561,561,0559_puikus,A1,CLOZE,puikus,Puikus oras!
-562,562,0560_kada_nors,A1,CLOZE,kada nors,Ar buvai kada nors Nidoje?
-563,563,0568_kate_sedi_ant_stalo,A1,SENT,Katė {sėdi} ant stalo.,Katė sėdi ant stalo.
-564,564,0564_ieiti,A1,IMG,įeiti,
-565,565,0565_prasom_uzrasyti,A1,PHRASE,Prašom užrašyti,
-566,566,0567_aikste,A1,IMG,aikštė,
-567,567,0574_vadovas,A1,IMG,vadovas,
-568,568,0575_druska,A1,IMG,druska,
-569,569,0573_kiek_tai_kainuoja,A1,PHRASE,Kiek tai kainuoja?,
-570,570,0569_be,A1,CLOZE,be,"Arbata be cukraus, prašau."
-571,571,0748_skaicius,A1,CLOZE,skaičius,Tai didelis skaičius.
-572,572,0514_amzius,A1,CLOZE,amžius,Amžius – tik skaičius.
-573,573,0570_nei,A1,CLOZE,nei,Kaunas mažesnis nei Vilnius.
-574,574,0571_todel,A1,CLOZE,todėl,"Lijo, todėl likau namie."
-575,575,0576_ausis,A1,IMG,ausis,
-576,576,0577_siena,A1,IMG,siena,
-577,577,0578_lagaminas,A1,IMG,lagaminas,
-578,578,0584_palaukite_minutele,A1,PHRASE,Palaukite minutėlę.,
-579,579,0585_centas,A1,IMG,centas,
-580,580,0598_laipsnis,A1,IMG,laipsnis,
-581,581,0590_minute,A1,CLOZE,minutė,Palaukite penkias minutes.
-582,582,0592_keletas,A1,CLOZE,keletas,Laukiau keletą minučių.
-583,583,0579_testi,A1,CLOZE,tęsti,"Tęskite, prašau."
-584,584,0572_berniukas_raso_laiska,A1,SENT,Berniukas {rašo} laišką.,Berniukas rašo laišką.
-585,585,0581_toli,A1,CLOZE,toli,Stotis toli?
-586,586,0582_arti,A1,CLOZE,arti,Stotis arti.
-587,587,0586_pusryciai,A1,IMG,pusryčiai,
-588,588,0587_juoktis,A1,IMG,juõktis,
-589,589,0588_televizorius,A1,IMG,televizorius,
-590,590,0589_klase,A1,IMG,klasė,
-591,591,0595_man_reikia_vandens,A1,PHRASE,Man reikia vandens,
-592,592,0596_stiprus,A1,IMG,stiprus,
-593,593,0597_silpnas,A1,IMG,silpnas,
-594,594,0591_pries,A1,CLOZE,prieš (+acc),Atvažiavau prieš metus.
-595,595,0594_parodyti,A1,CLOZE,parodyti,Parodyk man nuotraukas.
-596,596,0580_kaire,A1,CLOZE,kairė,Eikite į kairę.
-597,597,0593_man_patinka_muzika,A1,SENT,Man {patinka} muzika.,Man patinka muzika.
-598,598,0601_reiksti,A1,CLOZE,reikšti,Ką tai reiškia?
-599,599,0599_kelis,A1,IMG,kelis,
-600,600,0600_miestelis,A1,IMG,miestelis,
-601,601,0606_vaizdas,A1,IMG,vaizdas,
-602,602,0611_kudikis,A1,IMG,kūdikis,
-603,603,0607_vistiena,A1,IMG,vištiena,
-604,604,0609_litas,A1,IMG,litas,
-605,605,0602_ar_galetumete,A1,CLOZE,Ar galėtumėte…?,Ar galėtumėte man padėti?
-606,606,0604_stai,A1,CLOZE,štai,Štai tavo raktai.
-607,607,0583_informacija,A1,CLOZE,informacija,Kur gauti informacijos?
-608,608,0612_moketi,A1,CLOZE,mokėti (plaukti),Aš moku plaukti.
-609,609,0605_sita,A1,CLOZE,šita,Šita kėdė laisva.
-610,610,0636_antradienis,A1,IMG,antradienis,
-611,611,0610_vieta,A1,IMG,vieta,
-612,612,0608_sypsotis,A1,IMG,šypsótis,
-613,613,0670_mokinys,A1,IMG,mokinys,
-614,614,0617_raudonas,A1,IMG,raudonas,
-615,615,0618_zalias,A1,IMG,žalias,
-616,616,0619_melynas,A1,IMG,mėlynas,
-617,617,0620_geltonas,A1,IMG,geltonas,
-618,618,0621_rudas,A1,IMG,rudas,
-619,619,0622_rozinis,A1,IMG,rožinis,
-620,620,0623_oranzinis,A1,IMG,oranžinis,
-621,621,0624_juodas,A1,IMG,juodas,
-622,622,0625_baltas,A1,IMG,baltas,
-623,623,0626_pilkas,A1,IMG,pilkas,
-624,624,0627_spalva,A1,IMG,spalva,
-625,625,0616_pakeisti,A1,PAIR,pakeisti,Noriu pakeisti bilietą.
-626,626,0603_ponia,A1,CLOZE,ponia,"Laba diena, ponia!"
-627,627,0615_anksti,A1,CLOZE,anksti,Keliuosi anksti.
-628,628,0613_uzsienis,A1,CLOZE,užsienis,Mano brolis gyvena užsienyje.
-629,629,0614_joks,A1,CLOZE,joks,Neturiu jokio plano.
-630,630,0633_viskas_aciu,A1,PHRASE,"Viskas, ačiū.",
-631,631,0638_mirti,A1,IMG,mir̃ti,
-632,632,0634_sviestas,A1,IMG,sviestas,
-633,633,0635_pagalve,A1,IMG,pagalvė,
-634,634,0646_treciadienis,A1,IMG,trečiadienis,
-635,635,0637_noriu_valgyti,A1,PHRASE,Noriu valgyti,
-636,636,0628_kiekvienas,A1,CLOZE,kiekvienas,Kiekvienas turi vardą.
-637,637,0629_pagal,A1,CLOZE,pagal,Viskas pagal planą.
-638,638,0630_atsiprasyti,A1,CLOZE,atsiprašyti,"Atsiprašau, kad vėluoju."
-639,639,0639_galbut,A1,CLOZE,galbūt,Galbūt rytoj.
-640,640,0632_pas,A1,CLOZE,pas,Einu pas gydytoją.
-641,641,0644_bijoti,A1,IMG,bijoti,
-642,642,0645_laiptai,A1,IMG,laiptai,
-643,643,0659_ketvirtadienis,A1,IMG,ketvirtadienis,
-644,644,0648_ledas,A1,IMG,ledas,
-645,645,0662_svente,A1,IMG,šventė,
-646,646,0647_iskvieskite_gydytoja,A1,PHRASE,Iškvieskite gydytoją!,
-647,647,0631_sekme,A1,CLOZE,sėkmė,Linkiu sėkmės!
-648,648,0641_pavarde,A1,CLOZE,pavardė,Kokia jūsų pavardė?
-649,649,0643_kol,A1,CLOZE,kol,"Palauk, kol grįšiu."
-650,650,0650_greitai,A1,CLOZE,greitai,Autobusas atvažiuos greitai.
-651,651,0640_klaida,A1,CLOZE,klaida,Padariau klaidą.
-652,652,0649_juokingas,A1,IMG,juokingas,
-653,653,0655_pabusti,A1,IMG,pabùsti,
-654,654,0660_gelbekit,A1,PHRASE,Gelbėkit!,
-655,655,0656_keleivis,A1,IMG,keleivis,
-656,656,0657_muziejus,A1,IMG,muziejus,
-657,657,0658_parduoti,A1,IMG,pardúoti,
-658,658,0642_desine,A1,CLOZE,dešinė,Eikite į dešinę.
-659,659,0651_vaikas_miega_lovoje,A1,SENT,Vaikas {miega} lovoje.,Vaikas miega lovoje.
-660,660,0652_kazkas,A1,CLOZE,kažkas,Kažkas skambina į duris.
-661,661,0653_na,A1,CLOZE,na,"Na, einam!"
-662,662,0664_savaitgalis,A1,CLOZE,savaitgalis,Ką veiki savaitgalį?
-663,663,0663_ranksluostis,A1,IMG,rankšluostis,
-664,664,0665_rodyti,A1,IMG,rodyti,
-665,665,0666_skanus,A1,IMG,skanus,
-666,666,0667_zeme,A1,IMG,Žemė,
-667,667,0668_marskiniai,A1,IMG,marškiniai,
-668,668,0683_penktadienis,A1,IMG,penktadienis,
-669,669,0654_pradzia,A1,CLOZE,pradžia,Filmo pradžia – aštuntą.
-670,670,0661_prasme,A1,CLOZE,prasmė,Nėra prasmės laukti.
-671,671,0669_suo_bega_parke,A1,SENT,Šuo {bėga} parke.,Šuo bėga parke.
-672,672,0671_taskas,A1,IMG,taškas,
-673,673,0672_vakarelis,A1,IMG,vakarėlis,
-674,674,0674_cia_yra_parduotuve,A1,PHRASE,Čia yra parduotuvė,
-675,675,0675_verkti,A1,IMG,ver̃kti,
-676,676,0673_burna,A1,IMG,burna,
-677,677,0676_ilgai,A1,CLOZE,ilgai,Laukiau ilgai.
-678,678,0677_svogunas,A1,IMG,svogūnas,
-679,679,0678_tarp,A1,CLOZE,tarp,Bankas yra tarp pašto ir vaistinės.
-680,680,0680_noreciau,A1,CLOZE,norėčiau,Norėčiau eiti namo.
-681,681,0681_tylus,A1,IMG,tylus,
-682,682,0682_garsus,A1,IMG,garsus,
-683,683,0694_sestadienis,A1,IMG,šeštadienis,
-684,684,0695_kartais,A1,CLOZE,kartais,Kartais dirbu šeštadieniais.
-685,685,0684_nekesti,A1,CLOZE,nekęsti (+gen),Aš nekenčiu žiemos.
-686,686,0686_vidurnaktis,A1,IMG,vidurnaktis,
-687,687,0685_taksi,A1,IMG,taksi,
-688,688,0688_laukas,A1,IMG,laukas,
-689,689,0689_rasiklis,A1,IMG,rašiklis,
-690,690,0690_vyras_vairuoja_automobili,A1,SENT,Vyras {vairuoja} automobilį.,Vyras vairuoja automobilį.
-691,691,0691_uzkandis,A1,IMG,užkandis,
-692,692,0692_advokatas,A1,IMG,advokatas,
-693,693,0693_aciu_ne,A1,PHRASE,"Ačiū, ne.",
-694,694,0709_eile,A1,IMG,eilė,
-695,695,0696_kviesti,A1,IMG,kviesti,
-696,696,0687_beveik,A1,CLOZE,beveik,Jau beveik vidurnaktis.
-697,697,0697_jus,A1,CLOZE,jus,Malonu jus matyti.
-698,698,0698_mesa,A1,IMG,mėsa,
-699,699,0699_teisus,A1,CLOZE,teisus,Tu teisus.
-700,700,0700_striuke,A1,IMG,striukė,
-701,701,0701_kelti,A1,IMG,kélti,
-702,702,0702_pomidoras,A1,IMG,pomidoras,
-703,703,0703_kasa,A1,IMG,kasa,
-704,704,0704_miegamasis,A1,IMG,miegamasis,
-705,705,0705_auksas,A1,IMG,auksas,
-706,706,0706_parasyti,A1,PAIR,parašyti,Parašiau laišką.
-707,707,0707_as_turiu_broli,A1,PHRASE,Aš turiu brolį,
-708,708,0708_pabaiga,A1,CLOZE,pabaiga,Tai dar ne pabaiga.
-709,709,0710_alkoholis,A1,CLOZE,alkoholis,Negeriu alkoholio.
-710,710,0711_aisku,A1,PHRASE,aišku,
-711,711,0712_kraujas,A1,IMG,kraujas,
-712,712,0713_padavejas,A1,IMG,padavėjas,
-713,713,0714_kalnas,A1,IMG,kalnas,
-714,714,0715_antklode,A1,IMG,antklodė,
-715,715,0717_lekste,A1,IMG,lėkštė,
-716,716,0716_reiketu,A1,CLOZE,reikėtų / turėtum,Tau reikėtų daugiau miegoti.
-717,717,0718_plauti,A1,IMG,pláuti,
-718,718,0719_pilis,A1,IMG,pilis,
-719,719,0720_motociklas,A1,IMG,motociklas,
-720,720,0721_isejimas,A1,IMG,išėjimas,
-721,721,0722_iejimas,A1,IMG,įėjimas,
-722,722,0723_reikia,A1,CLOZE,reikia / turiu,Man reikia eiti.
-723,723,0724_irgi,A1,CLOZE,irgi,Aš irgi noriu kavos.
-724,724,0679_meile,A1,IMG,meilė,
-725,725,0725_pasiruoses,A1,CLOZE,pasiruošęs,Aš pasiruošęs.
-726,726,0727_zeme,A1,IMG,žemė,
-727,727,0728_atsitikti,A1,CLOZE,atsitikti,Kas atsitiko?
-728,728,0726_lietuvis,A1,CLOZE,lietuvis,"Aš lietuvis, o ji – lietuvė."
-729,729,0729_kaklaraistis,A1,IMG,kaklaraištis,
-730,730,0730_turgus,A1,IMG,turgus,
-731,731,0731_meniu,A1,IMG,meniu,
-732,732,0742_sekmadienis,A1,IMG,sekmadienis,
-733,733,0735_dydis,A1,CLOZE,dydis,Kokio dydžio jums reikia?
-734,734,0736_ne_vienas,A1,CLOZE,nė vienas,Nė vienas neatėjo.
-735,735,0732_gimti,A1,IMG,gimti,
-736,736,0737_klientas,A1,CLOZE,klientas,Klientas visada teisus.
-737,737,0740_ar_supranti,A1,PHRASE,Ar supranti? / Ar suprantate?,
-738,738,0738_gana,A1,CLOZE,gana,Jau gana!
-739,739,0739_dekoti,A1,CLOZE,dėkoti,Dėkoju už pagalbą.
-740,740,0733_kietas,A1,IMG,kietas,
-741,741,0734_minkstas,A1,IMG,minkštas,
-742,742,0741_megztinis,A1,IMG,megztinis,
-743,743,0743_sokti,A1,IMG,šókti,
-744,744,0747_mama_gamina_vakariene,A1,SENT,Mama {gamina} vakarienę.,Mama gamina vakarienę.
-745,745,0759_reklama,A1,CLOZE,reklama,Per televizorių daug reklamos.
-746,746,0744_salotos,A1,IMG,salotos,
-747,747,0749_abu,A1,CLOZE,abu,Abu broliai dirba.
-748,748,0750_abi,A1,CLOZE,abi,Abi seserys gyvena Kaune.
-749,749,0751_laimingu_naujuju_metu,A1,PHRASE,Laimingų Naujųjų metų!,
-750,750,0753_sitas,A1,CLOZE,šitas,Šitas batas per mažas.
-751,751,0752_deze,A1,IMG,dėžė,
-752,752,0745_pirkejas,A1,IMG,pirkėjas,
-753,753,0746_pardavejas,A1,IMG,pardavėjas,
-754,754,0755_sekmes,A1,PHRASE,Sėkmės!,
-755,755,0758_pavojingas,A1,CLOZE,pavojingas,Ledas pavojingas.
-756,756,0756_kristi,A1,IMG,krìsti,
-757,757,0757_sporto_sale,A1,IMG,sporto salė,
-758,758,0754_lempa,A1,IMG,lempa,
-759,759,0760_kopustas,A1,IMG,kopūstas,
-760,760,0761_blogai,A1,CLOZE,blogai,Šiandien blogai jaučiuosi.
-761,761,0762_kitoks,A1,CLOZE,kitoks,Šis butas kitoks.
-762,762,0764_pasirinkti,A1,CLOZE,pasirinkti,Pasirinkau raudoną suknelę.
-763,763,0763_as_pasiklydau,A1,PHRASE,Aš pasiklydau,
-764,764,0765_pacientas,A1,IMG,pacientas,
-765,765,0769_partneris,A1,CLOZE,partneris,Mano partnerė dirba ligoninėje.
-766,766,0766_akiniai,A1,IMG,akiniai,
-767,767,0767_statyti,A1,IMG,statýti,
-768,768,0770_rusas,A1,CLOZE,rusas,Jis rusas.
-769,769,0768_geros_keliones,A1,PHRASE,Geros kelionės,
-770,770,0780_birzelis,A1,IMG,birželis,
-771,771,0772_paukstis_skrenda_danguje,A1,SENT,Paukštis {skrenda} danguje.,Paukštis skrenda danguje.
-772,772,0773_saugus,A1,CLOZE,saugus,Čia saugu.
-773,773,0771_kortele,A1,IMG,kortelė,
-774,774,0774_takas,A1,IMG,takas,
-775,775,0775_atnesti,A1,IMG,atnešti,
-776,776,0776_grybas,A1,IMG,grybas,
-777,777,0777_kareivis,A1,IMG,kareivis,
-778,778,0778_galiu_truputi_kalbeti,A1,PHRASE,Galiu truputį kalbėti,
-779,779,0779_traukti,A1,IMG,tráukti,
-780,780,0791_liepa,A1,IMG,liepa,
-781,781,0781_skirtingas,A1,CLOZE,skirtingas,Mes labai skirtingi.
-782,782,0782_sarasas,A1,CLOZE,sąrašas,Parašyk pirkinių sąrašą.
-783,783,0783_plaukai,A1,IMG,plaukai,
-784,784,0784_stotele,A1,IMG,stotelė,
-785,785,0785_lapas,A1,IMG,lapas,
-786,786,0786_faktas,A1,CLOZE,faktas,Tai įdomus faktas.
-787,787,0787_nueiti,A1,PAIR,nueiti,Nuėjau į parduotuvę.
-788,788,0788_kitoje_puseje,A1,CLOZE,kitoje pusėje,Bankas yra kitoje gatvės pusėje.
-789,789,0789_sveiki_atvyke,A1,PHRASE,Sveiki atvykę!,
-790,790,0790_lentyna,A1,IMG,lentyna,
-791,791,0792_vynas,A1,IMG,vynas,
-792,792,0793_sijonas,A1,IMG,sijonas,
-793,793,0794_zodynas,A1,IMG,žodynas,
-794,794,0795_naudoti,A1,CLOZE,naudoti,Naudoju žodyną.
-795,795,0796_teisingas,A1,CLOZE,teisingas,Atsakymas teisingas.
-796,796,0797_zenklas,A1,IMG,ženklas,
-797,797,0798_ar_toli,A1,PHRASE,Ar toli? / Netoli.,
-798,798,0800_zaizda,A1,IMG,žaizda,
-799,799,0799_turbut,A1,CLOZE,turbūt,Turbūt lis.
-800,800,0801_piestukas,A1,IMG,pieštukas,
-801,801,0802_senele_sedi_ant_kedes,A1,SENT,Senelė {sėdi} ant kėdės.,Senelė sėdi ant kėdės.
-802,802,0804_fotoaparatas,A1,IMG,fotoaparatas,
-803,803,0803_dusas,A1,IMG,dušas,
-804,804,0805_degaline,A1,IMG,degalinė,
-805,805,0806_isgerti,A1,PAIR,išgerti,Išgerk arbatos.
-806,806,0807_kojines,A1,IMG,kojinės,
-807,807,0808_kariuomene,A1,IMG,kariuomenė,
-808,808,0809_akmuo,A1,IMG,akmuo,
-809,809,0811_gaila,A1,PHRASE,gaila,
-810,810,0810_sveikinu,A1,PHRASE,Sveikinu!,
-811,811,0812_spinta,A1,IMG,spinta,
-812,812,0825_rugpjutis,A1,IMG,rugpjūtis,
-813,813,0826_atostogos,A1,CLOZE,atostogos,Rugpjūtį turiu atostogas.
-814,814,0813_rinkti,A1,CLOZE,rinkti,Vaikai renka grybus.
-815,815,0814_gilus,A1,IMG,gilus,
-816,816,0815_seklus,A1,IMG,seklus,
-817,817,0816_skyle,A1,IMG,skylė,
-818,818,0818_veliau,A1,CLOZE,vėliau,Paskambinsiu vėliau.
-819,819,0819_man_dvidesimt_metu,A1,PHRASE,Man dvidešimt metų,
-820,820,0820_skubeti,A1,IMG,skubėti,
-821,821,0822_vyras,A1,IMG,vyras,
-822,822,0823_zmona,A1,IMG,žmona,
-823,823,0824_jo,A1,CLOZE,jo,Jo žmona dirba ligoninėje.
-824,824,0821_agurkas,A1,IMG,agurkas,
-825,825,0836_rugsejis,A1,IMG,rugsėjis,
-826,826,0827_muilas,A1,IMG,muilas,
-827,827,0828_teatras,A1,IMG,teatras,
-828,828,0829_sukti,A1,IMG,sùkti,
-829,829,0830_sofa,A1,IMG,sofa,
-830,830,0817_kazkoks,A1,CLOZE,kažkoks,Atėjo kažkoks vyras.
-831,831,0831_aukstas,A1,IMG,aukštas,
-832,832,0832_zemas,A1,IMG,žemas,
-833,833,0833_jogurtas,A1,IMG,jogurtas,
-834,834,0834_nusipirkti,A1,PAIR,nusipirkti,Nusipirkau naują paltą.
-835,835,0835_augalas,A1,IMG,augalas,
-836,836,0844_spalis,A1,IMG,spalis,
-837,837,0837_koncertas,A1,IMG,koncertas,
-838,838,0838_sale,A1,CLOZE,salė,Koncertas bus didelėje salėje.
-839,839,0839_grindys,A1,IMG,grindys,
-840,840,0840_musti,A1,IMG,mùšti,
-841,841,0841_su_sventemis,A1,PHRASE,Su šventėmis!,
-842,842,0842_kazkur,A1,CLOZE,kažkur,Raktai kažkur čia.
-843,843,0843_salis,A1,IMG,šalis,
-844,844,0861_lapkritis,A1,IMG,lapkritis,
-845,845,0845_skaiciuoti,A1,IMG,skaičiúoti,
-846,846,0846_kriause,A1,IMG,kriaušė,
-847,847,0847_akimirka,A1,PHRASE,Akimirką,
-848,848,0848_storas,A1,IMG,storas,
-849,849,0849_plonas,A1,IMG,plonas,
-850,850,0850_vestuves,A1,IMG,vestuvės,
-851,851,0851_verslininkas,A1,CLOZE,verslininkas,Mano brolis – verslininkas.
-852,852,0852_guleti,A1,IMG,gulė́ti,
-853,853,0853_pirstines,A1,IMG,pirštinės,
-854,854,0854_ideja,A1,CLOZE,idėja,Turiu idėją.
-855,855,0855_kiek_kainuoja_bilietas,A1,PHRASE,Kiek kainuoja bilietas?,
-856,856,0856_duona_kainuoja_viena_lita,A1,SENT,Duona {kainuoja} vieną litą.,Duona kainuoja vieną litą.
-857,857,0857_zurnalistas,A1,IMG,žurnalistas,
-858,858,0858_kalbetis,A1,CLOZE,kalbėtis,Kalbamės su kaimynu.
-859,859,0859_paprastai,A1,CLOZE,paprastai,Paprastai keliuosi septintą.
-860,860,0860_nugara,A1,IMG,nugara,
-861,861,0872_gruodis,A1,IMG,gruodis,
-862,862,0862_biuras,A1,IMG,biuras,
-863,863,0863_zemelapis,A1,IMG,žemėlapis,
-864,864,0864_trecia_valanda,A1,PHRASE,Trečia valanda,
-865,865,0865_renginys,A1,IMG,renginys,
-866,866,0866_augti,A1,IMG,áugti,
-867,867,0867_tobulas,A1,CLOZE,tobulas,Oras šiandien tobulas.
-868,868,0868_sodas,A1,IMG,sodas,
-869,869,0869_sekme,A1,CLOZE,sėkmė,Sėkmės!
-870,870,0870_tortas,A1,IMG,tortas,
-871,871,0871_noreciau_kavos,A1,PHRASE,Norėčiau kavos,
-872,872,0873_lankyti,A1,CLOZE,lankyti,Lankau draugą ligoninėje.
-873,873,0874_oda,A1,IMG,oda,
-874,874,0875_vienuolika,A1,IMG,vienuolika,
-875,875,0876_koridorius,A1,IMG,koridorius,
-876,876,0877_sivakar,A1,CLOZE,šįvakar,Šįvakar einame į kiną.
-877,877,0878_su_gimtadieniu,A1,PHRASE,Su gimtadieniu!,
-878,878,0879_sveikinti,A1,CLOZE,sveikinti,Sveikinu su gimtadieniu!
-879,879,0880_teismas,A1,IMG,teismas,
-880,880,0881_paveikslas,A1,IMG,paveikslas,
-881,881,0882_saukstas,A1,IMG,šaukštas,
-882,882,0883_papludimys,A1,IMG,paplūdimys,
-883,883,0885_sketis,A1,IMG,skėtis,
-884,884,0884_asmeninis,A1,CLOZE,asmeninis,Tai asmeninis klausimas.
-885,885,0888_dantu_pasta,A1,IMG,dantų pasta,
-886,886,0886_buciuoti,A1,IMG,bučiúoti,
-887,887,0887_siandien_salta,A1,PHRASE,Šiandien šalta,
-888,888,0889_dvylika,A1,IMG,dvylika,
-889,889,0890_gimtadienis,A1,IMG,gimtadienis,
-890,890,0891_kadangi,A1,CLOZE,kadangi,"Kadangi lijo, likome namie."
-891,891,0893_pazymejimas,A1,CLOZE,pažymėjimas,Parodykite pažymėjimą.
-892,892,0892_prisijungti,A1,CLOZE,prisijungti (prie),Ar galiu prisijungti prie jūsų?
-893,893,0897_amerikietis,A1,CLOZE,amerikietis,Mano draugas – amerikietis.
-894,894,0894_medus,A1,IMG,medus,
-895,895,0895_linksmu_kaledu,A1,PHRASE,Linksmų Kalėdų!,
-896,896,0896_niekur,A1,CLOZE,niekur,Šiandien niekur neinu.
-897,897,0898_tamsus,A1,IMG,tamsus,
-898,898,0899_sviesus,A1,IMG,šviesus,
-899,899,0900_ziedas,A1,IMG,žiedas,
-900,900,0901_vilkas,A1,IMG,vilkas,
-901,901,0910_siemet,A1,CLOZE,šiemet,Šiemet žiema šilta.
-902,902,0911_pernai,A1,CLOZE,pernai,Pernai buvau Nidoje.
-903,903,0902_ar_galiu_moketi_kortele,A1,PHRASE,Ar galiu mokėti kortele?,
-904,904,0903_praeiti,A1,IMG,praeĩti,
-905,905,0904_kelios,A1,CLOZE,kelios,Praėjo kelios dienos.
-906,906,0905_sunkvezimis,A1,IMG,sunkvežimis,
-907,907,0906_autorius,A1,IMG,autorius,
-908,908,0907_pasas,A1,IMG,pasas,
-909,909,0908_politikas,A1,CLOZE,politikas,Jis žinomas politikas.
-910,910,0909_uzeikite,A1,PHRASE,Užeikite!,
-911,911,0912_deti,A1,IMG,dėti,
-912,912,0913_metalas,A1,IMG,metalas,
-913,913,0914_desra,A1,IMG,dešra,
-914,914,0915_keturiasdesimt,A1,IMG,keturiasdešimt,
-915,915,0916_negu,A1,CLOZE,negu,Jis vyresnis negu aš.
-916,916,0918_peda,A1,IMG,pėda,
-917,917,0917_kaip_nuvykti_i,A1,PHRASE,Kaip nuvykti į…?,
-918,918,0919_vista,A1,IMG,višta,
-919,919,0920_kiemas,A1,IMG,kiemas,
-920,920,0921_virti,A1,IMG,virti,
-921,921,0922_tiesiai,A1,CLOZE,tiesiai,Eikite tiesiai.
-922,922,0923_cekis,A1,IMG,čekis,
-923,923,0924_ar_tau_patinka,A1,PHRASE,Ar tau patinka…? / Ar jums patinka…?,
-924,924,0925_penkiasdesimt,A1,IMG,penkiasdešimt,
-925,925,0926_sedyne,A1,IMG,sėdynė,
-926,926,0927_uzrasyti,A1,IMG,užrašyti,
-927,927,0928_stiklas,A1,IMG,stiklas,
-928,928,0929_saldytuvas,A1,IMG,šaldytuvas,
-929,929,0931_pavojus,A1,CLOZE,pavojus,Pavojus! Ledas plonas.
-930,930,0930_patogus,A1,IMG,patogus,
-931,931,0932_blynai,A1,IMG,blynai,
-932,932,0933_sortai,A1,IMG,šortai,
-933,933,0934_gero_savaitgalio,A1,PHRASE,Gero savaitgalio!,
-934,934,0935_puslapis,A1,IMG,puslapis,
-935,935,0936_paduoti,A1,CLOZE,paduoti,Paduok druską.
-936,936,0937_bulve,A1,IMG,bulvė,
-937,937,0939_pakankamai,A1,CLOZE,pakankamai,Turime pakankamai laiko.
-938,938,0938_saldus,A1,IMG,saldus,
-939,939,0940_noriu_gerti,A1,PHRASE,noriu gerti,
-940,940,0941_aktorius,A1,IMG,aktorius,
-941,941,0942_liesti,A1,IMG,liẽsti,
-942,942,0943_dantu_sepetelis,A1,IMG,dantų šepetėlis,
-943,943,0944_smelis,A1,IMG,smėlis,
-944,944,0945_turtingas,A1,IMG,turtingas,
-945,945,0946_neturtingas,A1,IMG,neturtingas,
-946,946,0947_sakute,A1,IMG,šakutė,
-947,947,0948_anglas,A1,CLOZE,anglas,Jis anglas.
-948,948,0952_kioskas,A1,IMG,kioskas,
-949,949,0949_noreciau_sumoketi,A1,PHRASE,Norėčiau sumokėti.,
-950,950,0950_gaudyti,A1,IMG,gáudyti,
-951,951,0951_gelezinkelis,A1,IMG,geležinkelis,
-952,952,0953_arklys,A1,IMG,arklys,
-953,953,0955_valtis,A1,IMG,valtis,
-954,954,0954_velai,A1,CLOZE,vėlai,Vakar grįžau vėlai.
-955,955,0956_trylika,A1,IMG,trylika,
-956,956,0957_salikas,A1,IMG,šalikas,
-957,957,0958_kepti,A1,IMG,kepti,
-958,958,0959_makaronai,A1,IMG,makaronai,
-959,959,0960_moneta,A1,IMG,moneta,
-960,960,0961_iki_rytojaus,A1,PHRASE,Iki rytojaus,
-961,961,0963_stogas,A1,IMG,stogas,
-962,962,0962_svesti,A1,IMG,švęsti,
-963,963,0964_prezidentas,A1,IMG,prezidentas,
-964,964,0965_desertas,A1,IMG,desertas,
-965,965,0968_rasytojas,A1,IMG,rašytojas,
-966,966,0966_iki_greito,A1,PHRASE,Iki greito! / Iki vėliau!,
-967,967,0967_degti,A1,IMG,dègti,
-968,968,0969_biblioteka,A1,IMG,biblioteka,
-969,969,0970_saka,A1,IMG,šaka,
-970,970,0971_gyvas,A1,IMG,gyvas,
-971,971,0972_negyvas,A1,IMG,negyvas,
-972,972,0973_saukti,A1,IMG,šaukti,
-973,973,0974_link,A1,CLOZE,link,Eikite link upės.
-974,974,0975_stikline,A1,IMG,stiklinė,
-975,975,0976_kaklas,A1,IMG,kaklas,
-976,976,0977_valyti,A1,IMG,valýti,
-977,977,0978_kunigas,A1,IMG,kunigas,
-978,978,0979_visur,A1,CLOZE,visur,Sniego buvo visur.
-979,979,0980_klubas,A1,IMG,klubas,
-980,980,0981_vokietis,A1,CLOZE,vokietis,Ji ištekėjo už vokiečio.
-981,981,0983_keturiolika,A1,IMG,keturiolika,
-982,982,0982_dovanoti,A1,IMG,dovanoti,
-983,983,0984_bite,A1,IMG,bitė,
-984,984,0986_kiaule,A1,IMG,kiaulė,
-985,985,0985_kavine,A1,IMG,kavinė,
-986,986,0988_ekranas,A1,IMG,ekranas,
-987,987,0987_atsiprasau_ka_sakete,A1,PHRASE,"Atsiprašau, ką sakėte?",
-988,988,0989_klausytis,A1,IMG,klausýtis,
-989,989,0990_bananas,A1,IMG,bananas,
-990,990,0991_baseinas,A1,IMG,baseinas,
-991,991,0992_penkiolika,A1,IMG,penkiolika,
-992,992,0993_papildomas,A1,CLOZE,papildomas,Reikia papildomos lovos.
-993,993,0994_sala,A1,IMG,sala,
-994,994,0996_reiksme,A1,CLOZE,reikšmė,Šis žodis turi dvi reikšmes.
-995,995,0995_deveti,A1,IMG,dėvė́ti,
-996,996,0997_sekretorius,A1,IMG,sekretorius,
-997,997,0999_sesiolika,A1,IMG,šešiolika,
-998,998,0998_sviezias,A1,IMG,šviežias,
-999,999,1001_deimantas,A1,IMG,deimantas,
-1000,1000,1000_man_nepatinka,A1,PHRASE,Man nepatinka…,
-1001,1001,1002_pereja,A1,IMG,perėja,
-1002,1002,1003_asmuo,A1,IMG,asmuo,
-1003,1003,1004_pasto_zenklas,A1,IMG,pašto ženklas,
-1004,1004,1005_lauke,A1,CLOZE,lauke,Vaikai žaidžia lauke.
-1005,1005,1007_kaulas,A1,IMG,kaulas,
-1006,1006,1008_septyniolika,A1,IMG,septyniolika,
-1007,1007,1009_zudyti,A1,IMG,žudýti,
-1008,1008,1010_gyvate,A1,IMG,gyvatė,
-1009,1009,1011_braskes,A1,IMG,braškės,
-1010,1010,1022_puodas,A1,IMG,puodas,
-1011,1011,1012_as_gyvenu_vilniuje,A1,PHRASE,Aš gyvenu Vilniuje,
-1012,1012,1013_sostine,A1,CLOZE,sostinė,Vilnius – Lietuvos sostinė.
-1013,1013,1014_piesti,A1,IMG,piẽšti,
-1014,1014,1015_vaikai_zaidzia_kieme,A1,SENT,Vaikai {žaidžia} kieme.,Vaikai žaidžia kieme.
-1015,1015,1016_astuoniolika,A1,IMG,aštuoniolika,
-1016,1016,1017_platus,A1,IMG,platus,
-1017,1017,1018_siauras,A1,IMG,siauras,
-1018,1018,1019_vynuoges,A1,IMG,vynuogės,
-1019,1019,1020_sakinys,A1,CLOZE,sakinys,Parašyk vieną sakinį.
-1020,1020,1021_sauti,A1,IMG,šáuti,
-1021,1021,1023_koks_jusu_adresas,A1,PHRASE,Koks jūsų adresas?,
-1022,1022,1024_retai,A1,CLOZE,retai,Jis retai valgo mėsą.
-1023,1023,1025_vakarieniauti,A1,CLOZE,vakarieniauti,Vakarieniaujame kartu.
-1024,1024,1037_popiete,A1,IMG,popietė,
-1025,1025,1027_irankis,A1,IMG,įrankis,
-1026,1026,1026_sekla,A1,IMG,sėkla,
-1027,1027,1028_pasirasyti,A1,IMG,pasirašýti,
-1028,1028,1030_veliava,A1,IMG,vėliava,
-1029,1029,1029_prasom_sestis,A1,PHRASE,Prašom sėstis,
-1030,1030,1031_sidabras,A1,IMG,sidabras,
-1031,1031,1032_lauke_lyja,A1,SENT,Lauke {lyja}.,Lauke lyja.
-1032,1032,1033_ukininkas,A1,IMG,ūkininkas,
-1033,1033,1034_pjauti,A1,IMG,pjáuti,
-1034,1034,1035_karve,A1,IMG,karvė,
-1035,1035,1036_klaidingas,A1,IMG,klaidingas,
-1036,1036,1038_desineje,A1,CLOZE,dešinėje,Bankas yra dešinėje.
-1037,1037,1039_vysnios,A1,IMG,vyšnios,
-1038,1038,1041_lokys,A1,IMG,lokys,
-1039,1039,1040_uzrakinti,A1,IMG,užrakinti,
-1040,1040,1043_sviesoforas,A1,IMG,šviesoforas,
-1041,1041,1042_buvo_labai_skanu,A1,PHRASE,Buvo labai skanu.,
-1042,1042,1044_menininkas,A1,IMG,menininkas,
-1043,1043,1052_vaisiai,A1,IMG,vaisiai,
-1044,1044,1045_zirkles,A1,IMG,žirklės,
-1045,1045,1047_sesiasdesimt,A1,IMG,šešiasdešimt,
-1046,1046,1046_kasti,A1,IMG,kàsti,
-1047,1047,1048_petys,A1,IMG,petys,
-1048,1048,1049_pele,A1,IMG,pelė,
-1049,1049,1050_lenkas,A1,CLOZE,lenkas,Mano kaimynas – lenkas.
-1050,1050,1051_uostyti,A1,IMG,úostyti,
-1051,1051,1053_man_reikia_gydytojo,A1,PHRASE,Man reikia gydytojo. / Kur vaistinė?,
-1052,1052,1054_laisvas,A1,IMG,laisvas,
-1053,1053,1055_ankstas,A1,IMG,ankštas,
-1054,1054,1056_koldunas,A1,IMG,koldūnas,
-1055,1055,1057_voras,A1,IMG,voras,
-1056,1056,1006_uzsiemimas,A1,CLOZE,užsiėmimas,Mėgstu užsiėmimus lauke.
-1057,1057,1058_kaip_lietuviskai,A1,PHRASE,Kaip lietuviškai …?,
-1058,1058,1059_apibudinti,A1,CLOZE,apibūdinti,Ar galite apibūdinti tą žmogų?
-1059,1059,1060_muzikantas,A1,IMG,muzikantas,
-1060,1060,1061_septyniasdesimt,A1,IMG,septyniasdešimt,
-1061,1061,1062_pastatas,A1,IMG,pastatas,
-1062,1062,1063_troleibusas,A1,IMG,troleibusas,
-1063,1063,1064_gitara,A1,IMG,gitara,
-1064,1064,1065_triusis,A1,IMG,triušis,
-1065,1065,1066_pietauti,A1,CLOZE,pietauti,Pietaujame pirmą valandą.
-1066,1066,1067_nuolaida,A1,IMG,nuolaida,
-1067,1067,1068_sausas,A1,IMG,sausas,
-1068,1068,1069_slapias,A1,IMG,šlapias,
-1069,1069,0331_kelinta_valanda,A1,PHRASE,Kelinta valanda?,
+366,366,0331_kelinta_valanda,A1,PHRASE,Kelinta valanda?,
+367,367,0367_mergaite,A1,IMG,mergaitė,
+368,368,0368_policija,A1,IMG,policija,
+369,369,0378_sausis,A1,IMG,sausis,
+370,370,0396_atidaryti,A1,IMG,atidarýti,
+371,371,0369_si,A1,CLOZE,ši,Ši knyga įdomi.
+372,372,0371_niekada,A1,CLOZE,niekada,Aš niekada negeriu kavos.
+373,373,0370_kurti,A1,CLOZE,kurti,Ji kuria muziką.
+374,374,0372_ja,A1,CLOZE,ją,Mačiau ją vakar.
+375,375,0380_jei,A1,CLOZE,jei,"Jei bus šilta, eisime į mišką."
+376,376,0374_zinoma,A1,PHRASE,Žinoma,
+377,377,0375_popierius,A1,IMG,popierius,
+378,378,0376_dangus,A1,IMG,dangus,
+379,379,0377_desimt,A1,IMG,dešimt,
+380,380,0409_vasaris,A1,IMG,vasaris,
+381,381,0379_vairuotojas,A1,IMG,vairuotojas,
+382,382,0373_baigti,A1,CLOZE,baigti,Darbą baigiu penktą valandą.
+383,383,0392_vel,A1,CLOZE,vėl,Jis vėl pavėlavo.
+384,384,0383_vardas,A1,CLOZE,vardas,Mano vardas Jonas.
+385,385,0381_lyti,A1,CLOZE,lyti,Šiandien lyja.
+386,386,0382_gal,A1,CLOZE,gal,Gal rytoj lis.
+387,387,0385_laimingas,A1,IMG,laimingas,
+388,388,0386_liudnas,A1,IMG,liūdnas,
+389,389,0387_linksmas,A1,IMG,linksmas,
+390,390,0388_vaistine,A1,IMG,vaistinė,
+391,391,0389_ar_galima,A1,PHRASE,Ar galima?,
+392,392,0390_kaimas,A1,IMG,kaimas,
+393,393,0384_likti,A1,CLOZE,likti,Šiandien lieku namie.
+394,394,0391_namai,A1,CLOZE,namai,Mano namai – Vilniuje.
+395,395,0393_uz,A1,CLOZE,už,Mokykla yra už bažnyčios.
+396,396,0394_menuo,A1,CLOZE,mėnuo,Dirbu čia vieną mėnesį.
+397,397,0395_ji_eina_i_mokykla,A1,SENT,Ji {eina} į mokyklą.,Ji eina į mokyklą.
+398,398,0397_paltas,A1,IMG,paltas,
+399,399,0398_kompiuteris,A1,IMG,kompiuteris,
+400,400,0399_ka_reiskia,A1,PHRASE,Ką reiškia…?,
+401,401,0400_motina,A1,IMG,motina,
+402,402,0401_mama,A1,IMG,mama,
+403,403,0407_policininkas,A1,IMG,policininkas,
+404,404,0402_visi,A1,CLOZE,visi,Visi jau atėjo.
+405,405,0403_imti,A1,CLOZE,imti,Imk obuolį.
+406,406,0404_kur_nors,A1,CLOZE,kur nors,Eikime kur nors valgyti.
+407,407,0405_privaleti,A1,CLOZE,privalėti,Tu privalai eiti į mokyklą.
+408,408,0406_po,A1,CLOZE,po,Katė miega po stalu.
+409,409,0408_ka_tai_reiskia,A1,PHRASE,Ką tai reiškia?,
+410,410,0411_kovas,A1,IMG,kovas,
+411,411,0410_ratas,A1,IMG,ratas,
+412,412,0423_balandis,A1,IMG,balandis,
+413,413,0412_vonia,A1,IMG,vonia,
+414,414,0418_pilnas,A1,IMG,pilnas,
+415,415,0413_sestas,A1,CLOZE,šeštas,Šiandien kovo šešta.
+416,416,0414_septintas,A1,CLOZE,septintas,Gyvenu septintame aukšte.
+417,417,0415_astuntas,A1,CLOZE,aštuntas,Dabar aštunta valanda.
+418,418,0416_pradeti,A1,CLOZE,pradėti,Pradedu dirbti aštuntą valandą.
+419,419,0417_prasideti,A1,CLOZE,prasidėti,Filmas prasideda aštuntą.
+420,420,0419_menulis,A1,IMG,mėnulis,
+421,421,0420_tai_mano_namas,A1,PHRASE,Tai mano namas,
+422,422,0421_restoranas,A1,IMG,restoranas,
+423,423,0422_suknele,A1,IMG,suknelė,
+424,424,0434_geguze,A1,IMG,gegužė,
+425,425,0430_berniukas,A1,IMG,berniukas,
+426,426,0424_nuo,A1,CLOZE,nuo,Dirbu nuo aštuntos valandos.
+427,427,0425_ponas,A1,CLOZE,ponas,"Laba diena, pone!"
+428,428,0426_devintas,A1,CLOZE,devintas,Autobusas devintą valandą.
+429,429,0427_tapti,A1,CLOZE,tapti,Jis tapo gydytoju.
+430,430,0435_desimtas,A1,CLOZE,dešimtas,Šiandien gegužės dešimta.
+431,431,0429_pastas,A1,IMG,paštas,
+432,432,0431_dovana,A1,IMG,dovana,
+433,433,0432_radijas,A1,IMG,radijas,
+434,434,0433_vejas,A1,IMG,vėjas,
+435,435,0441_sumustinis,A1,IMG,sumuštinis,
+436,436,0440_kur_tu_eini,A1,PHRASE,Kur tu eini?,
+437,437,0428_kada,A1,CLOZE,kada,Kada prasideda filmas?
+438,438,0436_daznai,A1,CLOZE,dažnai,Mes dažnai einame į kiną.
+439,439,0437_toks_pat,A1,CLOZE,toks pat,Mano paltas toks pat kaip tavo.
+440,440,0438_planas,A1,CLOZE,planas,Koks tavo planas?
+441,441,0439_jaustis,A1,CLOZE,jaustis,Kaip jautiesi?
+442,442,0442_sokti,A1,IMG,šókti,
+443,443,0443_virtuve,A1,IMG,virtuvė,
+444,444,0444_geros_dienos,A1,PHRASE,Geros dienos,
+445,445,0445_ugnis,A1,IMG,ugnis,
+446,446,0451_traukinys,A1,IMG,traukinys,
+447,447,0453_grupe,A1,IMG,grupė,
+448,448,0446_tavo,A1,CLOZE,tavo,Kur tavo raktai?
+449,449,0447_dalykas,A1,CLOZE,dalykas,Tai svarbus dalykas.
+450,450,0448_bandyti,A1,CLOZE,bandyti,Bandau kalbėti lietuviškai.
+451,451,0449_dokumentas,A1,CLOZE,dokumentas,"Jūsų dokumentus, prašau."
+452,452,0457_savaite,A1,CLOZE,savaitė,Kitą savaitę važiuoju į Kauną.
+453,453,0452_kiausinis,A1,IMG,kiaušinis,
+454,454,0454_zeme,A1,IMG,žemė,
+455,455,0455_truputi,A1,PHRASE,Truputį,
+456,456,0456_zuvis,A1,IMG,žuvis,
+457,457,0462_uzdaryti,A1,IMG,uždarýti,
+458,458,0464_butelis,A1,IMG,butelis,
+459,459,0450_niekas,A1,CLOZE,niekas,Niekas nežino atsakymo.
+460,460,0458_kalba,A1,CLOZE,kalba,Lietuvių kalba sena.
+461,461,0459_viskas,A1,CLOZE,viskas,Viskas gerai.
+462,462,0460_tiek,A1,CLOZE,tiek,Kodėl tiek brangu?
+463,463,0461_pats,A1,CLOZE,pats,Aš pats tai padarysiu.
+464,464,0463_prasom,A1,PHRASE,Prašom,
+465,465,0465_parkas,A1,IMG,parkas,
+466,466,0466_svecias,A1,IMG,svečias,
+467,467,0467_skristi,A1,IMG,skrìsti,
+468,468,0475_krepsys,A1,IMG,krepšys,
+469,469,0473_sunkus,A1,IMG,sunkus,
+470,470,0474_lengvas,A1,IMG,lengvas,
+471,471,0468_atvaziuoti,A1,CLOZE,atvažiuoti,Rytoj atvažiuoja svečiai.
+472,472,0469_po,A1,CLOZE,po,Katė miega po stalu.
+473,473,0470_zodis,A1,CLOZE,žodis,Ką reiškia šis žodis?
+474,474,0471_iki,A1,CLOZE,iki,Parduotuvė dirba iki dešimtos.
+475,475,0472_saves,A1,CLOZE,savęs,Pažiūrėk į save.
+476,476,0476_nulis,A1,IMG,nulis,
+477,477,0478_dantis,A1,IMG,dantis,
+478,478,0477_labai_gerai,A1,PHRASE,labai gerai,
+479,479,0485_laikrodis,A1,IMG,laikrodis,
+480,480,0484_vairuoti,A1,IMG,vairúoti,
+481,481,0489_peilis,A1,IMG,peilis,
+482,482,0479_tada,A1,CLOZE,tada,Tada aš buvau vaikas.
+483,483,0480_tevas_skaito_knyga,A1,SENT,Tėvas {skaito} knygą.,Tėvas skaito knygą.
+484,484,0481_keli,A1,CLOZE,keli,Turiu kelis klausimus.
+485,485,0482_daiktas,A1,CLOZE,daiktas,Kas tai per daiktas?
+486,486,0483_dalis,A1,CLOZE,dalis,Tai tik dalis darbo.
+487,487,0486_svarus,A1,IMG,švarus,
+488,488,0487_purvinas,A1,IMG,purvinas,
+489,489,0488_einu_namo,A1,PHRASE,Einu namo,
+490,490,0497_dainuoti,A1,IMG,dainúoti,
+491,491,0495_baras,A1,IMG,baras,
+492,492,0496_ezeras,A1,IMG,ežeras,
+493,493,0490_net,A1,CLOZE,net,Net vaikas tai supranta.
+494,494,0491_prie,A1,CLOZE,prie,Susitinkame prie stoties.
+495,495,0492_musu,A1,CLOZE,mūsų,Mūsų namas yra prie upės.
+496,496,0494_mergina,A1,CLOZE,mergina,Jo mergina – studentė.
+497,497,0501_nors,A1,CLOZE,nors,"Jis atėjo, nors sirgo."
+498,498,0500_nesti,A1,IMG,nèšti,
+499,499,0498_piktas,A1,IMG,piktas,
+500,500,0499_malonus,A1,IMG,malonus,
+501,501,0507_sustoti,A1,IMG,sustóti,
+502,502,0506_puodelis,A1,IMG,puodelis,
+503,503,0508_pinigine,A1,IMG,piniginė,
+504,504,0503_mazai,A1,CLOZE,mažai,Ji valgo mažai.
+505,505,0502_nes,A1,CLOZE,nes,"Likau namie, nes lijo."
+506,506,0504_taip_pat,A1,CLOZE,taip pat,Aš taip pat mokausi lietuvių kalbos.
+507,507,0493_ketinti,A1,CLOZE,ketinti,Vasarą ketinu važiuoti į Kauną.
+508,508,0512_tas_pats,A1,CLOZE,tas pats,Mes gyvename tame pačiame name.
+509,509,0509_viena_bilieta_i_kauna,A1,PHRASE,"Vieną bilietą į Kauną, prašau.",
+510,510,0510_vaistai,A1,IMG,vaistai,
+511,511,0511_viesbutis,A1,IMG,viešbutis,
+512,512,0517_laivas,A1,IMG,laivas,
+513,513,0518_pirstas,A1,IMG,pirštas,
+514,514,0522_senelis,A1,IMG,senelis,
+515,515,0523_senele,A1,IMG,senelė,
+516,516,0513_mums,A1,CLOZE,mums,Mums patinka Vilnius.
+517,517,0515_mus,A1,CLOZE,mus,Ar matai mus?
+518,518,0505_istorija,A1,CLOZE,istorija,Skaitau įdomią istoriją.
+519,519,0525_arba,A1,CLOZE,arba,Arbatos arba kavos?
+520,520,0516_kartu,A1,CLOZE,kartu,Gyvename kartu su tėvais.
+521,521,0519_plaukti,A1,IMG,plaũkti,
+522,522,0520_suris,A1,IMG,sūris,
+523,523,0521_prasom_pakartoti,A1,PHRASE,Prašom pakartoti,
+524,524,0529_milijonas,A1,IMG,milijonas,
+525,525,0531_gaminti,A1,IMG,gamìnti,
+526,526,0533_dirzas,A1,IMG,diržas,
+527,527,0524_pries,A1,CLOZE,prieš,Nusiplauk rankas prieš valgį.
+528,528,0526_numeris,A1,CLOZE,numeris,Koks tavo telefono numeris?
+529,529,0527_kas_nors,A1,CLOZE,kas nors,Ar kas nors skambino?
+530,530,0535_taciau,A1,CLOZE,tačiau,"Buvo šalta, tačiau saulėta."
+531,531,0539_paskui,A1,CLOZE,paskui,"Pavalgysime, o paskui eisime."
+532,532,0530_atsiprasau_ar_cia_laisva,A1,PHRASE,"Atsiprašau, ar čia laisva?",
+533,533,0540_groti,A1,IMG,gróti,
+534,534,0532_sultys,A1,IMG,sultys,
+535,535,0534_paukstis,A1,IMG,paukštis,
+536,536,0541_veidrodis,A1,IMG,veidrodis,
+537,537,0543_tuscias,A1,IMG,tuščias,
+538,538,0536_ant,A1,CLOZE,ant,Knyga yra ant stalo.
+539,539,0548_dede,A1,CLOZE,dėdė,Dėdė atvažiuoja rytoj.
+540,540,0549_teta,A1,CLOZE,teta,Mano teta gyvena Kaune.
+541,541,0537_vis_dar,A1,CLOZE,vis dar,Aš vis dar laukiu.
+542,542,0528_atleisti,A1,CLOZE,atleisti,"Atleiskite, kur čia paštas?"
+543,543,0542_dar_ko_nors,A1,PHRASE,Dar ko nors?,
+544,544,0544_nosis,A1,IMG,nosis,
+545,545,0545_atrodo,A1,PHRASE,atrodo,
+546,546,0551_zole,A1,IMG,žolė,
+547,547,0554_dviratis,A1,IMG,dviratis,
+548,548,0553_patiekalas,A1,IMG,patiekalas,
+549,549,0538_kokia,A1,CLOZE,kokia,Kokia šiandien diena?
+550,550,0546_jeigu,A1,CLOZE,jeigu,"Jeigu nori, ateik."
+551,551,0547_nieko,A1,CLOZE,nieko,Nieko nematau.
+552,552,0557_palikti,A1,CLOZE,palikti,Palikau raktus namie.
+553,553,0550_bet_kada,A1,CLOZE,bet kada,Skambink bet kada.
+554,554,0552_nesuprantu_atsiprasau,A1,PHRASE,"Nesuprantu, atsiprašau",
+555,555,0555_uzdarytas,A1,IMG,uždarytas,
+556,556,0556_kepure,A1,IMG,kepurė,
+557,557,0562_pilvas,A1,IMG,pilvas,
+558,558,0563_medziaga,A1,IMG,medžiaga,
+559,559,0566_nuotrauka,A1,IMG,nuotrauka,
+560,560,0561_sekunde,A1,CLOZE,sekundė,Tik vieną sekundę!
+561,561,0558_pagalba,A1,CLOZE,pagalba,Man reikia pagalbos.
+562,562,0559_puikus,A1,CLOZE,puikus,Puikus oras!
+563,563,0560_kada_nors,A1,CLOZE,kada nors,Ar buvai kada nors Nidoje?
+564,564,0568_kate_sedi_ant_stalo,A1,SENT,Katė {sėdi} ant stalo.,Katė sėdi ant stalo.
+565,565,0564_ieiti,A1,IMG,įeiti,
+566,566,0565_prasom_uzrasyti,A1,PHRASE,Prašom užrašyti,
+567,567,0567_aikste,A1,IMG,aikštė,
+568,568,0574_vadovas,A1,IMG,vadovas,
+569,569,0575_druska,A1,IMG,druska,
+570,570,0573_kiek_tai_kainuoja,A1,PHRASE,Kiek tai kainuoja?,
+571,571,0569_be,A1,CLOZE,be,"Arbata be cukraus, prašau."
+572,572,0748_skaicius,A1,CLOZE,skaičius,Tai didelis skaičius.
+573,573,0514_amzius,A1,CLOZE,amžius,Amžius – tik skaičius.
+574,574,0570_nei,A1,CLOZE,nei,Kaunas mažesnis nei Vilnius.
+575,575,0571_todel,A1,CLOZE,todėl,"Lijo, todėl likau namie."
+576,576,0576_ausis,A1,IMG,ausis,
+577,577,0577_siena,A1,IMG,siena,
+578,578,0578_lagaminas,A1,IMG,lagaminas,
+579,579,0584_palaukite_minutele,A1,PHRASE,Palaukite minutėlę.,
+580,580,0585_centas,A1,IMG,centas,
+581,581,0598_laipsnis,A1,IMG,laipsnis,
+582,582,0590_minute,A1,CLOZE,minutė,Palaukite penkias minutes.
+583,583,0592_keletas,A1,CLOZE,keletas,Laukiau keletą minučių.
+584,584,0579_testi,A1,CLOZE,tęsti,"Tęskite, prašau."
+585,585,0572_berniukas_raso_laiska,A1,SENT,Berniukas {rašo} laišką.,Berniukas rašo laišką.
+586,586,0581_toli,A1,CLOZE,toli,Stotis toli?
+587,587,0582_arti,A1,CLOZE,arti,Stotis arti.
+588,588,0586_pusryciai,A1,IMG,pusryčiai,
+589,589,0587_juoktis,A1,IMG,juõktis,
+590,590,0588_televizorius,A1,IMG,televizorius,
+591,591,0589_klase,A1,IMG,klasė,
+592,592,0595_man_reikia_vandens,A1,PHRASE,Man reikia vandens,
+593,593,0596_stiprus,A1,IMG,stiprus,
+594,594,0597_silpnas,A1,IMG,silpnas,
+595,595,0591_pries,A1,CLOZE,prieš (+acc),Atvažiavau prieš metus.
+596,596,0594_parodyti,A1,CLOZE,parodyti,Parodyk man nuotraukas.
+597,597,0580_kaire,A1,CLOZE,kairė,Eikite į kairę.
+598,598,0593_man_patinka_muzika,A1,SENT,Man {patinka} muzika.,Man patinka muzika.
+599,599,0601_reiksti,A1,CLOZE,reikšti,Ką tai reiškia?
+600,600,0599_kelis,A1,IMG,kelis,
+601,601,0600_miestelis,A1,IMG,miestelis,
+602,602,0606_vaizdas,A1,IMG,vaizdas,
+603,603,0611_kudikis,A1,IMG,kūdikis,
+604,604,0607_vistiena,A1,IMG,vištiena,
+605,605,0609_litas,A1,IMG,litas,
+606,606,0602_ar_galetumete,A1,CLOZE,Ar galėtumėte…?,Ar galėtumėte man padėti?
+607,607,0604_stai,A1,CLOZE,štai,Štai tavo raktai.
+608,608,0583_informacija,A1,CLOZE,informacija,Kur gauti informacijos?
+609,609,0612_moketi,A1,CLOZE,mokėti (plaukti),Aš moku plaukti.
+610,610,0605_sita,A1,CLOZE,šita,Šita kėdė laisva.
+611,611,0636_antradienis,A1,IMG,antradienis,
+612,612,0610_vieta,A1,IMG,vieta,
+613,613,0608_sypsotis,A1,IMG,šypsótis,
+614,614,0670_mokinys,A1,IMG,mokinys,
+615,615,0617_raudonas,A1,IMG,raudonas,
+616,616,0618_zalias,A1,IMG,žalias,
+617,617,0619_melynas,A1,IMG,mėlynas,
+618,618,0620_geltonas,A1,IMG,geltonas,
+619,619,0621_rudas,A1,IMG,rudas,
+620,620,0622_rozinis,A1,IMG,rožinis,
+621,621,0623_oranzinis,A1,IMG,oranžinis,
+622,622,0624_juodas,A1,IMG,juodas,
+623,623,0625_baltas,A1,IMG,baltas,
+624,624,0626_pilkas,A1,IMG,pilkas,
+625,625,0627_spalva,A1,IMG,spalva,
+626,626,0616_pakeisti,A1,PAIR,pakeisti,Noriu pakeisti bilietą.
+627,627,0603_ponia,A1,CLOZE,ponia,"Laba diena, ponia!"
+628,628,0615_anksti,A1,CLOZE,anksti,Keliuosi anksti.
+629,629,0613_uzsienis,A1,CLOZE,užsienis,Mano brolis gyvena užsienyje.
+630,630,0614_joks,A1,CLOZE,joks,Neturiu jokio plano.
+631,631,0633_viskas_aciu,A1,PHRASE,"Viskas, ačiū.",
+632,632,0638_mirti,A1,IMG,mir̃ti,
+633,633,0634_sviestas,A1,IMG,sviestas,
+634,634,0635_pagalve,A1,IMG,pagalvė,
+635,635,0646_treciadienis,A1,IMG,trečiadienis,
+636,636,0637_noriu_valgyti,A1,PHRASE,Noriu valgyti,
+637,637,0628_kiekvienas,A1,CLOZE,kiekvienas,Kiekvienas turi vardą.
+638,638,0629_pagal,A1,CLOZE,pagal,Viskas pagal planą.
+639,639,0630_atsiprasyti,A1,CLOZE,atsiprašyti,"Atsiprašau, kad vėluoju."
+640,640,0639_galbut,A1,CLOZE,galbūt,Galbūt rytoj.
+641,641,0632_pas,A1,CLOZE,pas,Einu pas gydytoją.
+642,642,0644_bijoti,A1,IMG,bijoti,
+643,643,0645_laiptai,A1,IMG,laiptai,
+644,644,0659_ketvirtadienis,A1,IMG,ketvirtadienis,
+645,645,0648_ledas,A1,IMG,ledas,
+646,646,0662_svente,A1,IMG,šventė,
+647,647,0647_iskvieskite_gydytoja,A1,PHRASE,Iškvieskite gydytoją!,
+648,648,0631_sekme,A1,CLOZE,sėkmė,Linkiu sėkmės!
+649,649,0641_pavarde,A1,CLOZE,pavardė,Kokia jūsų pavardė?
+650,650,0643_kol,A1,CLOZE,kol,"Palauk, kol grįšiu."
+651,651,0650_greitai,A1,CLOZE,greitai,Autobusas atvažiuos greitai.
+652,652,0640_klaida,A1,CLOZE,klaida,Padariau klaidą.
+653,653,0649_juokingas,A1,IMG,juokingas,
+654,654,0655_pabusti,A1,IMG,pabùsti,
+655,655,0660_gelbekit,A1,PHRASE,Gelbėkit!,
+656,656,0656_keleivis,A1,IMG,keleivis,
+657,657,0657_muziejus,A1,IMG,muziejus,
+658,658,0658_parduoti,A1,IMG,pardúoti,
+659,659,0642_desine,A1,CLOZE,dešinė,Eikite į dešinę.
+660,660,0651_vaikas_miega_lovoje,A1,SENT,Vaikas {miega} lovoje.,Vaikas miega lovoje.
+661,661,0652_kazkas,A1,CLOZE,kažkas,Kažkas skambina į duris.
+662,662,0653_na,A1,CLOZE,na,"Na, einam!"
+663,663,0664_savaitgalis,A1,CLOZE,savaitgalis,Ką veiki savaitgalį?
+664,664,0663_ranksluostis,A1,IMG,rankšluostis,
+665,665,0665_rodyti,A1,IMG,rodyti,
+666,666,0666_skanus,A1,IMG,skanus,
+667,667,0667_zeme,A1,IMG,Žemė,
+668,668,0668_marskiniai,A1,IMG,marškiniai,
+669,669,0683_penktadienis,A1,IMG,penktadienis,
+670,670,0654_pradzia,A1,CLOZE,pradžia,Filmo pradžia – aštuntą.
+671,671,0661_prasme,A1,CLOZE,prasmė,Nėra prasmės laukti.
+672,672,0669_suo_bega_parke,A1,SENT,Šuo {bėga} parke.,Šuo bėga parke.
+673,673,0671_taskas,A1,IMG,taškas,
+674,674,0672_vakarelis,A1,IMG,vakarėlis,
+675,675,0674_cia_yra_parduotuve,A1,PHRASE,Čia yra parduotuvė,
+676,676,0675_verkti,A1,IMG,ver̃kti,
+677,677,0673_burna,A1,IMG,burna,
+678,678,0676_ilgai,A1,CLOZE,ilgai,Laukiau ilgai.
+679,679,0677_svogunas,A1,IMG,svogūnas,
+680,680,0678_tarp,A1,CLOZE,tarp,Bankas yra tarp pašto ir vaistinės.
+681,681,0680_noreciau,A1,CLOZE,norėčiau,Norėčiau eiti namo.
+682,682,0681_tylus,A1,IMG,tylus,
+683,683,0682_garsus,A1,IMG,garsus,
+684,684,0694_sestadienis,A1,IMG,šeštadienis,
+685,685,0695_kartais,A1,CLOZE,kartais,Kartais dirbu šeštadieniais.
+686,686,0684_nekesti,A1,CLOZE,nekęsti (+gen),Aš nekenčiu žiemos.
+687,687,0686_vidurnaktis,A1,IMG,vidurnaktis,
+688,688,0685_taksi,A1,IMG,taksi,
+689,689,0688_laukas,A1,IMG,laukas,
+690,690,0689_rasiklis,A1,IMG,rašiklis,
+691,691,0690_vyras_vairuoja_automobili,A1,SENT,Vyras {vairuoja} automobilį.,Vyras vairuoja automobilį.
+692,692,0691_uzkandis,A1,IMG,užkandis,
+693,693,0692_advokatas,A1,IMG,advokatas,
+694,694,0693_aciu_ne,A1,PHRASE,"Ačiū, ne.",
+695,695,0709_eile,A1,IMG,eilė,
+696,696,0696_kviesti,A1,IMG,kviesti,
+697,697,0687_beveik,A1,CLOZE,beveik,Jau beveik vidurnaktis.
+698,698,0697_jus,A1,CLOZE,jus,Malonu jus matyti.
+699,699,0698_mesa,A1,IMG,mėsa,
+700,700,0699_teisus,A1,CLOZE,teisus,Tu teisus.
+701,701,0700_striuke,A1,IMG,striukė,
+702,702,0701_kelti,A1,IMG,kélti,
+703,703,0702_pomidoras,A1,IMG,pomidoras,
+704,704,0703_kasa,A1,IMG,kasa,
+705,705,0704_miegamasis,A1,IMG,miegamasis,
+706,706,0705_auksas,A1,IMG,auksas,
+707,707,0706_parasyti,A1,PAIR,parašyti,Parašiau laišką.
+708,708,0707_as_turiu_broli,A1,PHRASE,Aš turiu brolį,
+709,709,0708_pabaiga,A1,CLOZE,pabaiga,Tai dar ne pabaiga.
+710,710,0710_alkoholis,A1,CLOZE,alkoholis,Negeriu alkoholio.
+711,711,0711_aisku,A1,PHRASE,aišku,
+712,712,0712_kraujas,A1,IMG,kraujas,
+713,713,0713_padavejas,A1,IMG,padavėjas,
+714,714,0714_kalnas,A1,IMG,kalnas,
+715,715,0715_antklode,A1,IMG,antklodė,
+716,716,0717_lekste,A1,IMG,lėkštė,
+717,717,0716_reiketu,A1,CLOZE,reikėtų / turėtum,Tau reikėtų daugiau miegoti.
+718,718,0718_plauti,A1,IMG,pláuti,
+719,719,0719_pilis,A1,IMG,pilis,
+720,720,0720_motociklas,A1,IMG,motociklas,
+721,721,0721_isejimas,A1,IMG,išėjimas,
+722,722,0722_iejimas,A1,IMG,įėjimas,
+723,723,0723_reikia,A1,CLOZE,reikia / turiu,Man reikia eiti.
+724,724,0724_irgi,A1,CLOZE,irgi,Aš irgi noriu kavos.
+725,725,0679_meile,A1,IMG,meilė,
+726,726,0725_pasiruoses,A1,CLOZE,pasiruošęs,Aš pasiruošęs.
+727,727,0727_zeme,A1,IMG,žemė,
+728,728,0728_atsitikti,A1,CLOZE,atsitikti,Kas atsitiko?
+729,729,0726_lietuvis,A1,CLOZE,lietuvis,"Aš lietuvis, o ji – lietuvė."
+730,730,0729_kaklaraistis,A1,IMG,kaklaraištis,
+731,731,0730_turgus,A1,IMG,turgus,
+732,732,0731_meniu,A1,IMG,meniu,
+733,733,0742_sekmadienis,A1,IMG,sekmadienis,
+734,734,0735_dydis,A1,CLOZE,dydis,Kokio dydžio jums reikia?
+735,735,0736_ne_vienas,A1,CLOZE,nė vienas,Nė vienas neatėjo.
+736,736,0732_gimti,A1,IMG,gimti,
+737,737,0737_klientas,A1,CLOZE,klientas,Klientas visada teisus.
+738,738,0740_ar_supranti,A1,PHRASE,Ar supranti? / Ar suprantate?,
+739,739,0738_gana,A1,CLOZE,gana,Jau gana!
+740,740,0739_dekoti,A1,CLOZE,dėkoti,Dėkoju už pagalbą.
+741,741,0733_kietas,A1,IMG,kietas,
+742,742,0734_minkstas,A1,IMG,minkštas,
+743,743,0741_megztinis,A1,IMG,megztinis,
+744,744,0743_sokti,A1,IMG,šókti,
+745,745,0747_mama_gamina_vakariene,A1,SENT,Mama {gamina} vakarienę.,Mama gamina vakarienę.
+746,746,0759_reklama,A1,CLOZE,reklama,Per televizorių daug reklamos.
+747,747,0744_salotos,A1,IMG,salotos,
+748,748,0749_abu,A1,CLOZE,abu,Abu broliai dirba.
+749,749,0750_abi,A1,CLOZE,abi,Abi seserys gyvena Kaune.
+750,750,0751_laimingu_naujuju_metu,A1,PHRASE,Laimingų Naujųjų metų!,
+751,751,0753_sitas,A1,CLOZE,šitas,Šitas batas per mažas.
+752,752,0752_deze,A1,IMG,dėžė,
+753,753,0745_pirkejas,A1,IMG,pirkėjas,
+754,754,0746_pardavejas,A1,IMG,pardavėjas,
+755,755,0755_sekmes,A1,PHRASE,Sėkmės!,
+756,756,0758_pavojingas,A1,CLOZE,pavojingas,Ledas pavojingas.
+757,757,0756_kristi,A1,IMG,krìsti,
+758,758,0757_sporto_sale,A1,IMG,sporto salė,
+759,759,0754_lempa,A1,IMG,lempa,
+760,760,0760_kopustas,A1,IMG,kopūstas,
+761,761,0761_blogai,A1,CLOZE,blogai,Šiandien blogai jaučiuosi.
+762,762,0762_kitoks,A1,CLOZE,kitoks,Šis butas kitoks.
+763,763,0764_pasirinkti,A1,CLOZE,pasirinkti,Pasirinkau raudoną suknelę.
+764,764,0763_as_pasiklydau,A1,PHRASE,Aš pasiklydau,
+765,765,0765_pacientas,A1,IMG,pacientas,
+766,766,0769_partneris,A1,CLOZE,partneris,Mano partnerė dirba ligoninėje.
+767,767,0766_akiniai,A1,IMG,akiniai,
+768,768,0767_statyti,A1,IMG,statýti,
+769,769,0770_rusas,A1,CLOZE,rusas,Jis rusas.
+770,770,0768_geros_keliones,A1,PHRASE,Geros kelionės,
+771,771,0780_birzelis,A1,IMG,birželis,
+772,772,0772_paukstis_skrenda_danguje,A1,SENT,Paukštis {skrenda} danguje.,Paukštis skrenda danguje.
+773,773,0773_saugus,A1,CLOZE,saugus,Čia saugu.
+774,774,0771_kortele,A1,IMG,kortelė,
+775,775,0774_takas,A1,IMG,takas,
+776,776,0775_atnesti,A1,IMG,atnešti,
+777,777,0776_grybas,A1,IMG,grybas,
+778,778,0777_kareivis,A1,IMG,kareivis,
+779,779,0778_galiu_truputi_kalbeti,A1,PHRASE,Galiu truputį kalbėti,
+780,780,0779_traukti,A1,IMG,tráukti,
+781,781,0791_liepa,A1,IMG,liepa,
+782,782,0781_skirtingas,A1,CLOZE,skirtingas,Mes labai skirtingi.
+783,783,0782_sarasas,A1,CLOZE,sąrašas,Parašyk pirkinių sąrašą.
+784,784,0783_plaukai,A1,IMG,plaukai,
+785,785,0784_stotele,A1,IMG,stotelė,
+786,786,0785_lapas,A1,IMG,lapas,
+787,787,0786_faktas,A1,CLOZE,faktas,Tai įdomus faktas.
+788,788,0787_nueiti,A1,PAIR,nueiti,Nuėjau į parduotuvę.
+789,789,0788_kitoje_puseje,A1,CLOZE,kitoje pusėje,Bankas yra kitoje gatvės pusėje.
+790,790,0789_sveiki_atvyke,A1,PHRASE,Sveiki atvykę!,
+791,791,0790_lentyna,A1,IMG,lentyna,
+792,792,0792_vynas,A1,IMG,vynas,
+793,793,0793_sijonas,A1,IMG,sijonas,
+794,794,0794_zodynas,A1,IMG,žodynas,
+795,795,0795_naudoti,A1,CLOZE,naudoti,Naudoju žodyną.
+796,796,0796_teisingas,A1,CLOZE,teisingas,Atsakymas teisingas.
+797,797,0797_zenklas,A1,IMG,ženklas,
+798,798,0798_ar_toli,A1,PHRASE,Ar toli? / Netoli.,
+799,799,0800_zaizda,A1,IMG,žaizda,
+800,800,0799_turbut,A1,CLOZE,turbūt,Turbūt lis.
+801,801,0801_piestukas,A1,IMG,pieštukas,
+802,802,0802_senele_sedi_ant_kedes,A1,SENT,Senelė {sėdi} ant kėdės.,Senelė sėdi ant kėdės.
+803,803,0804_fotoaparatas,A1,IMG,fotoaparatas,
+804,804,0803_dusas,A1,IMG,dušas,
+805,805,0805_degaline,A1,IMG,degalinė,
+806,806,0806_isgerti,A1,PAIR,išgerti,Išgerk arbatos.
+807,807,0807_kojines,A1,IMG,kojinės,
+808,808,0808_kariuomene,A1,IMG,kariuomenė,
+809,809,0809_akmuo,A1,IMG,akmuo,
+810,810,0811_gaila,A1,PHRASE,gaila,
+811,811,0810_sveikinu,A1,PHRASE,Sveikinu!,
+812,812,0812_spinta,A1,IMG,spinta,
+813,813,0825_rugpjutis,A1,IMG,rugpjūtis,
+814,814,0826_atostogos,A1,CLOZE,atostogos,Rugpjūtį turiu atostogas.
+815,815,0813_rinkti,A1,CLOZE,rinkti,Vaikai renka grybus.
+816,816,0814_gilus,A1,IMG,gilus,
+817,817,0815_seklus,A1,IMG,seklus,
+818,818,0816_skyle,A1,IMG,skylė,
+819,819,0818_veliau,A1,CLOZE,vėliau,Paskambinsiu vėliau.
+820,820,0819_man_dvidesimt_metu,A1,PHRASE,Man dvidešimt metų,
+821,821,0820_skubeti,A1,IMG,skubėti,
+822,822,0822_vyras,A1,IMG,vyras,
+823,823,0823_zmona,A1,IMG,žmona,
+824,824,0824_jo,A1,CLOZE,jo,Jo žmona dirba ligoninėje.
+825,825,0821_agurkas,A1,IMG,agurkas,
+826,826,0836_rugsejis,A1,IMG,rugsėjis,
+827,827,0827_muilas,A1,IMG,muilas,
+828,828,0828_teatras,A1,IMG,teatras,
+829,829,0829_sukti,A1,IMG,sùkti,
+830,830,0830_sofa,A1,IMG,sofa,
+831,831,0817_kazkoks,A1,CLOZE,kažkoks,Atėjo kažkoks vyras.
+832,832,0831_aukstas,A1,IMG,aukštas,
+833,833,0832_zemas,A1,IMG,žemas,
+834,834,0833_jogurtas,A1,IMG,jogurtas,
+835,835,0834_nusipirkti,A1,PAIR,nusipirkti,Nusipirkau naują paltą.
+836,836,0835_augalas,A1,IMG,augalas,
+837,837,0844_spalis,A1,IMG,spalis,
+838,838,0837_koncertas,A1,IMG,koncertas,
+839,839,0838_sale,A1,CLOZE,salė,Koncertas bus didelėje salėje.
+840,840,0839_grindys,A1,IMG,grindys,
+841,841,0840_musti,A1,IMG,mùšti,
+842,842,0841_su_sventemis,A1,PHRASE,Su šventėmis!,
+843,843,0842_kazkur,A1,CLOZE,kažkur,Raktai kažkur čia.
+844,844,0843_salis,A1,IMG,šalis,
+845,845,0861_lapkritis,A1,IMG,lapkritis,
+846,846,0845_skaiciuoti,A1,IMG,skaičiúoti,
+847,847,0846_kriause,A1,IMG,kriaušė,
+848,848,0847_akimirka,A1,PHRASE,Akimirką,
+849,849,0848_storas,A1,IMG,storas,
+850,850,0849_plonas,A1,IMG,plonas,
+851,851,0850_vestuves,A1,IMG,vestuvės,
+852,852,0851_verslininkas,A1,CLOZE,verslininkas,Mano brolis – verslininkas.
+853,853,0852_guleti,A1,IMG,gulė́ti,
+854,854,0853_pirstines,A1,IMG,pirštinės,
+855,855,0854_ideja,A1,CLOZE,idėja,Turiu idėją.
+856,856,0855_kiek_kainuoja_bilietas,A1,PHRASE,Kiek kainuoja bilietas?,
+857,857,0856_duona_kainuoja_viena_lita,A1,SENT,Duona {kainuoja} vieną litą.,Duona kainuoja vieną litą.
+858,858,0857_zurnalistas,A1,IMG,žurnalistas,
+859,859,0858_kalbetis,A1,CLOZE,kalbėtis,Kalbamės su kaimynu.
+860,860,0859_paprastai,A1,CLOZE,paprastai,Paprastai keliuosi septintą.
+861,861,0860_nugara,A1,IMG,nugara,
+862,862,0872_gruodis,A1,IMG,gruodis,
+863,863,0862_biuras,A1,IMG,biuras,
+864,864,0863_zemelapis,A1,IMG,žemėlapis,
+865,865,0864_trecia_valanda,A1,PHRASE,Trečia valanda,
+866,866,0865_renginys,A1,IMG,renginys,
+867,867,0866_augti,A1,IMG,áugti,
+868,868,0867_tobulas,A1,CLOZE,tobulas,Oras šiandien tobulas.
+869,869,0868_sodas,A1,IMG,sodas,
+870,870,0869_sekme,A1,CLOZE,sėkmė,Sėkmės!
+871,871,0870_tortas,A1,IMG,tortas,
+872,872,0871_noreciau_kavos,A1,PHRASE,Norėčiau kavos,
+873,873,0873_lankyti,A1,CLOZE,lankyti,Lankau draugą ligoninėje.
+874,874,0874_oda,A1,IMG,oda,
+875,875,0875_vienuolika,A1,IMG,vienuolika,
+876,876,0876_koridorius,A1,IMG,koridorius,
+877,877,0877_sivakar,A1,CLOZE,šįvakar,Šįvakar einame į kiną.
+878,878,0878_su_gimtadieniu,A1,PHRASE,Su gimtadieniu!,
+879,879,0879_sveikinti,A1,CLOZE,sveikinti,Sveikinu su gimtadieniu!
+880,880,0880_teismas,A1,IMG,teismas,
+881,881,0881_paveikslas,A1,IMG,paveikslas,
+882,882,0882_saukstas,A1,IMG,šaukštas,
+883,883,0883_papludimys,A1,IMG,paplūdimys,
+884,884,0885_sketis,A1,IMG,skėtis,
+885,885,0884_asmeninis,A1,CLOZE,asmeninis,Tai asmeninis klausimas.
+886,886,0888_dantu_pasta,A1,IMG,dantų pasta,
+887,887,0886_buciuoti,A1,IMG,bučiúoti,
+888,888,0887_siandien_salta,A1,PHRASE,Šiandien šalta,
+889,889,0889_dvylika,A1,IMG,dvylika,
+890,890,0890_gimtadienis,A1,IMG,gimtadienis,
+891,891,0891_kadangi,A1,CLOZE,kadangi,"Kadangi lijo, likome namie."
+892,892,0893_pazymejimas,A1,CLOZE,pažymėjimas,Parodykite pažymėjimą.
+893,893,0892_prisijungti,A1,CLOZE,prisijungti (prie),Ar galiu prisijungti prie jūsų?
+894,894,0897_amerikietis,A1,CLOZE,amerikietis,Mano draugas – amerikietis.
+895,895,0894_medus,A1,IMG,medus,
+896,896,0895_linksmu_kaledu,A1,PHRASE,Linksmų Kalėdų!,
+897,897,0896_niekur,A1,CLOZE,niekur,Šiandien niekur neinu.
+898,898,0898_tamsus,A1,IMG,tamsus,
+899,899,0899_sviesus,A1,IMG,šviesus,
+900,900,0900_ziedas,A1,IMG,žiedas,
+901,901,0901_vilkas,A1,IMG,vilkas,
+902,902,0910_siemet,A1,CLOZE,šiemet,Šiemet žiema šilta.
+903,903,0911_pernai,A1,CLOZE,pernai,Pernai buvau Nidoje.
+904,904,0902_ar_galiu_moketi_kortele,A1,PHRASE,Ar galiu mokėti kortele?,
+905,905,0903_praeiti,A1,IMG,praeĩti,
+906,906,0904_kelios,A1,CLOZE,kelios,Praėjo kelios dienos.
+907,907,0905_sunkvezimis,A1,IMG,sunkvežimis,
+908,908,0906_autorius,A1,IMG,autorius,
+909,909,0907_pasas,A1,IMG,pasas,
+910,910,0908_politikas,A1,CLOZE,politikas,Jis žinomas politikas.
+911,911,0909_uzeikite,A1,PHRASE,Užeikite!,
+912,912,0912_deti,A1,IMG,dėti,
+913,913,0913_metalas,A1,IMG,metalas,
+914,914,0914_desra,A1,IMG,dešra,
+915,915,0915_keturiasdesimt,A1,IMG,keturiasdešimt,
+916,916,0916_negu,A1,CLOZE,negu,Jis vyresnis negu aš.
+917,917,0918_peda,A1,IMG,pėda,
+918,918,0917_kaip_nuvykti_i,A1,PHRASE,Kaip nuvykti į…?,
+919,919,0919_vista,A1,IMG,višta,
+920,920,0920_kiemas,A1,IMG,kiemas,
+921,921,0921_virti,A1,IMG,virti,
+922,922,0922_tiesiai,A1,CLOZE,tiesiai,Eikite tiesiai.
+923,923,0923_cekis,A1,IMG,čekis,
+924,924,0924_ar_tau_patinka,A1,PHRASE,Ar tau patinka…? / Ar jums patinka…?,
+925,925,0925_penkiasdesimt,A1,IMG,penkiasdešimt,
+926,926,0926_sedyne,A1,IMG,sėdynė,
+927,927,0927_uzrasyti,A1,IMG,užrašyti,
+928,928,0928_stiklas,A1,IMG,stiklas,
+929,929,0929_saldytuvas,A1,IMG,šaldytuvas,
+930,930,0931_pavojus,A1,CLOZE,pavojus,Pavojus! Ledas plonas.
+931,931,0930_patogus,A1,IMG,patogus,
+932,932,0932_blynai,A1,IMG,blynai,
+933,933,0933_sortai,A1,IMG,šortai,
+934,934,0934_gero_savaitgalio,A1,PHRASE,Gero savaitgalio!,
+935,935,0935_puslapis,A1,IMG,puslapis,
+936,936,0936_paduoti,A1,CLOZE,paduoti,Paduok druską.
+937,937,0937_bulve,A1,IMG,bulvė,
+938,938,0939_pakankamai,A1,CLOZE,pakankamai,Turime pakankamai laiko.
+939,939,0938_saldus,A1,IMG,saldus,
+940,940,0940_noriu_gerti,A1,PHRASE,noriu gerti,
+941,941,0941_aktorius,A1,IMG,aktorius,
+942,942,0942_liesti,A1,IMG,liẽsti,
+943,943,0943_dantu_sepetelis,A1,IMG,dantų šepetėlis,
+944,944,0944_smelis,A1,IMG,smėlis,
+945,945,0945_turtingas,A1,IMG,turtingas,
+946,946,0946_neturtingas,A1,IMG,neturtingas,
+947,947,0947_sakute,A1,IMG,šakutė,
+948,948,0948_anglas,A1,CLOZE,anglas,Jis anglas.
+949,949,0952_kioskas,A1,IMG,kioskas,
+950,950,0949_noreciau_sumoketi,A1,PHRASE,Norėčiau sumokėti.,
+951,951,0950_gaudyti,A1,IMG,gáudyti,
+952,952,0951_gelezinkelis,A1,IMG,geležinkelis,
+953,953,0953_arklys,A1,IMG,arklys,
+954,954,0955_valtis,A1,IMG,valtis,
+955,955,0954_velai,A1,CLOZE,vėlai,Vakar grįžau vėlai.
+956,956,0956_trylika,A1,IMG,trylika,
+957,957,0957_salikas,A1,IMG,šalikas,
+958,958,0958_kepti,A1,IMG,kepti,
+959,959,0959_makaronai,A1,IMG,makaronai,
+960,960,0960_moneta,A1,IMG,moneta,
+961,961,0961_iki_rytojaus,A1,PHRASE,Iki rytojaus,
+962,962,0963_stogas,A1,IMG,stogas,
+963,963,0962_svesti,A1,IMG,švęsti,
+964,964,0964_prezidentas,A1,IMG,prezidentas,
+965,965,0965_desertas,A1,IMG,desertas,
+966,966,0968_rasytojas,A1,IMG,rašytojas,
+967,967,0966_iki_greito,A1,PHRASE,Iki greito! / Iki vėliau!,
+968,968,0967_degti,A1,IMG,dègti,
+969,969,0969_biblioteka,A1,IMG,biblioteka,
+970,970,0970_saka,A1,IMG,šaka,
+971,971,0971_gyvas,A1,IMG,gyvas,
+972,972,0972_negyvas,A1,IMG,negyvas,
+973,973,0973_saukti,A1,IMG,šaukti,
+974,974,0974_link,A1,CLOZE,link,Eikite link upės.
+975,975,0975_stikline,A1,IMG,stiklinė,
+976,976,0976_kaklas,A1,IMG,kaklas,
+977,977,0977_valyti,A1,IMG,valýti,
+978,978,0978_kunigas,A1,IMG,kunigas,
+979,979,0979_visur,A1,CLOZE,visur,Sniego buvo visur.
+980,980,0980_klubas,A1,IMG,klubas,
+981,981,0981_vokietis,A1,CLOZE,vokietis,Ji ištekėjo už vokiečio.
+982,982,0983_keturiolika,A1,IMG,keturiolika,
+983,983,0982_dovanoti,A1,IMG,dovanoti,
+984,984,0984_bite,A1,IMG,bitė,
+985,985,0986_kiaule,A1,IMG,kiaulė,
+986,986,0985_kavine,A1,IMG,kavinė,
+987,987,0988_ekranas,A1,IMG,ekranas,
+988,988,0987_atsiprasau_ka_sakete,A1,PHRASE,"Atsiprašau, ką sakėte?",
+989,989,0989_klausytis,A1,IMG,klausýtis,
+990,990,0990_bananas,A1,IMG,bananas,
+991,991,0991_baseinas,A1,IMG,baseinas,
+992,992,0992_penkiolika,A1,IMG,penkiolika,
+993,993,0993_papildomas,A1,CLOZE,papildomas,Reikia papildomos lovos.
+994,994,0994_sala,A1,IMG,sala,
+995,995,0996_reiksme,A1,CLOZE,reikšmė,Šis žodis turi dvi reikšmes.
+996,996,0995_deveti,A1,IMG,dėvė́ti,
+997,997,0997_sekretorius,A1,IMG,sekretorius,
+998,998,0999_sesiolika,A1,IMG,šešiolika,
+999,999,0998_sviezias,A1,IMG,šviežias,
+1000,1000,1001_deimantas,A1,IMG,deimantas,
+1001,1001,1000_man_nepatinka,A1,PHRASE,Man nepatinka…,
+1002,1002,1002_pereja,A1,IMG,perėja,
+1003,1003,1003_asmuo,A1,IMG,asmuo,
+1004,1004,1004_pasto_zenklas,A1,IMG,pašto ženklas,
+1005,1005,1005_lauke,A1,CLOZE,lauke,Vaikai žaidžia lauke.
+1006,1006,1007_kaulas,A1,IMG,kaulas,
+1007,1007,1008_septyniolika,A1,IMG,septyniolika,
+1008,1008,1009_zudyti,A1,IMG,žudýti,
+1009,1009,1010_gyvate,A1,IMG,gyvatė,
+1010,1010,1011_braskes,A1,IMG,braškės,
+1011,1011,1022_puodas,A1,IMG,puodas,
+1012,1012,1012_as_gyvenu_vilniuje,A1,PHRASE,Aš gyvenu Vilniuje,
+1013,1013,1013_sostine,A1,CLOZE,sostinė,Vilnius – Lietuvos sostinė.
+1014,1014,1014_piesti,A1,IMG,piẽšti,
+1015,1015,1015_vaikai_zaidzia_kieme,A1,SENT,Vaikai {žaidžia} kieme.,Vaikai žaidžia kieme.
+1016,1016,1016_astuoniolika,A1,IMG,aštuoniolika,
+1017,1017,1017_platus,A1,IMG,platus,
+1018,1018,1018_siauras,A1,IMG,siauras,
+1019,1019,1019_vynuoges,A1,IMG,vynuogės,
+1020,1020,1020_sakinys,A1,CLOZE,sakinys,Parašyk vieną sakinį.
+1021,1021,1021_sauti,A1,IMG,šáuti,
+1022,1022,1023_koks_jusu_adresas,A1,PHRASE,Koks jūsų adresas?,
+1023,1023,1024_retai,A1,CLOZE,retai,Jis retai valgo mėsą.
+1024,1024,1025_vakarieniauti,A1,CLOZE,vakarieniauti,Vakarieniaujame kartu.
+1025,1025,1037_popiete,A1,IMG,popietė,
+1026,1026,1027_irankis,A1,IMG,įrankis,
+1027,1027,1026_sekla,A1,IMG,sėkla,
+1028,1028,1028_pasirasyti,A1,IMG,pasirašýti,
+1029,1029,1030_veliava,A1,IMG,vėliava,
+1030,1030,1029_prasom_sestis,A1,PHRASE,Prašom sėstis,
+1031,1031,1031_sidabras,A1,IMG,sidabras,
+1032,1032,1032_lauke_lyja,A1,SENT,Lauke {lyja}.,Lauke lyja.
+1033,1033,1033_ukininkas,A1,IMG,ūkininkas,
+1034,1034,1034_pjauti,A1,IMG,pjáuti,
+1035,1035,1035_karve,A1,IMG,karvė,
+1036,1036,1036_klaidingas,A1,IMG,klaidingas,
+1037,1037,1038_desineje,A1,CLOZE,dešinėje,Bankas yra dešinėje.
+1038,1038,1039_vysnios,A1,IMG,vyšnios,
+1039,1039,1041_lokys,A1,IMG,lokys,
+1040,1040,1040_uzrakinti,A1,IMG,užrakinti,
+1041,1041,1043_sviesoforas,A1,IMG,šviesoforas,
+1042,1042,1042_buvo_labai_skanu,A1,PHRASE,Buvo labai skanu.,
+1043,1043,1044_menininkas,A1,IMG,menininkas,
+1044,1044,1052_vaisiai,A1,IMG,vaisiai,
+1045,1045,1045_zirkles,A1,IMG,žirklės,
+1046,1046,1047_sesiasdesimt,A1,IMG,šešiasdešimt,
+1047,1047,1046_kasti,A1,IMG,kàsti,
+1048,1048,1048_petys,A1,IMG,petys,
+1049,1049,1049_pele,A1,IMG,pelė,
+1050,1050,1050_lenkas,A1,CLOZE,lenkas,Mano kaimynas – lenkas.
+1051,1051,1051_uostyti,A1,IMG,úostyti,
+1052,1052,1053_man_reikia_gydytojo,A1,PHRASE,Man reikia gydytojo. / Kur vaistinė?,
+1053,1053,1054_laisvas,A1,IMG,laisvas,
+1054,1054,1055_ankstas,A1,IMG,ankštas,
+1055,1055,1056_koldunas,A1,IMG,koldūnas,
+1056,1056,1057_voras,A1,IMG,voras,
+1057,1057,1006_uzsiemimas,A1,CLOZE,užsiėmimas,Mėgstu užsiėmimus lauke.
+1058,1058,1058_kaip_lietuviskai,A1,PHRASE,Kaip lietuviškai …?,
+1059,1059,1059_apibudinti,A1,CLOZE,apibūdinti,Ar galite apibūdinti tą žmogų?
+1060,1060,1060_muzikantas,A1,IMG,muzikantas,
+1061,1061,1061_septyniasdesimt,A1,IMG,septyniasdešimt,
+1062,1062,1062_pastatas,A1,IMG,pastatas,
+1063,1063,1063_troleibusas,A1,IMG,troleibusas,
+1064,1064,1064_gitara,A1,IMG,gitara,
+1065,1065,1065_triusis,A1,IMG,triušis,
+1066,1066,1066_pietauti,A1,CLOZE,pietauti,Pietaujame pirmą valandą.
+1067,1067,1067_nuolaida,A1,IMG,nuolaida,
+1068,1068,1068_sausas,A1,IMG,sausas,
+1069,1069,1069_slapias,A1,IMG,šlapias,
 1070,1070,1070_spyna,A1,IMG,spyna,
 1071,1071,1071_jautiena,A1,IMG,jautiena,
 1072,1072,1072_sekti,A1,IMG,sèkti,
