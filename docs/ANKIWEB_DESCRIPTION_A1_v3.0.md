@@ -1,10 +1,13 @@
 # AnkiWeb description — Lietuvių Flashcards, A1 subdeck, release v3.0
 
-Drafted 2026-10-19 (A1_WRAPUP item F1; planner drafts, **owner approves the text**). The counts were
-filled in 2026-10-19 from the built package `Lietuviu_Flashcards_v3.0_A1.apkg` (manifest
-`build_reports/builds/v3.0_A1.json`; per-card list `build_reports/builds/v3.0_A1_keys.tsv`): 1,186 notes =
-685 picture (419 base + 266 A2-list IMG) + 135 phrase + 331 cloze + 35 sentence; audio 547 human,
-19 azure-neural, 620 silent. **If the package is rebuilt after the A1 recordings, recount the audio line.**
+Drafted 2026-10-19 (A1_WRAPUP item F1; planner drafts, **owner approves the text**). Counts recounted
+2026-10-20 from the rebuilt package `Lietuviu_Flashcards_v3.0_A1.apkg` (after the key rename, dep37 and the
+proofreading return; manifest `build_reports/builds/v3.0_A1.json`, sha256 baf5ba41cd18…; per-card list
+`build_reports/builds/v3.0_A1_keys_rc2.tsv`): 1,191 notes = 687 picture (420 base + 267 A2-list IMG) +
+135 phrase + 334 cloze + 35 sentence; audio 547 human, 20 azure-neural, 624 silent (one audio file per note
+at most). The 2026-10-19 counts (1,186 notes; 685/135/331/35; 547/19/620) were those of the package now
+archived as rc1 (`build_reports/builds/v3.0_A1_rc1.json`). **If the package is rebuilt after the A1
+recordings, recount the audio line.**
 The order-v2 estimates are kept at the end for reference.
 The paste-ready HTML is `docs/ANKIWEB_DESCRIPTION_A1_v3.0.html`. The owner's decisions follow the text.
 
@@ -16,11 +19,11 @@ Lithuanian from zero to A1 through pictures, phrases and sentences. The first of
 
 **What is in the deck**
 
-1,186 cards, ordered by usefulness: survival words and everyday phrases come first.
+1,191 cards, ordered by usefulness: survival words and everyday phrases come first.
 
-- 685 picture cards for words
+- 687 picture cards for words
 - 135 phrase cards (greetings, thanks, asking for things)
-- 331 cloze cards for function words and forms
+- 334 cloze cards for function words and forms
 - 35 sentence cards with a picture
 
 **How a card works**
@@ -35,7 +38,7 @@ The art is an original house style: a civil-defence training manual from a free 
 
 **Audio**
 
-547 cards carry recordings by the author, a native speaker, reading the word and its forms. 19 older cards still use a synthetic voice, and the other 620 are silent until the next update.
+547 cards carry recordings by the author, a native speaker, reading the word and its forms. 20 older cards still use a synthetic voice, and the other 624 are silent until the next update.
 
 Fonts: Brygada 1918 (SIL Open Font Licence), embedded. In night mode, leave image inversion off.
 
