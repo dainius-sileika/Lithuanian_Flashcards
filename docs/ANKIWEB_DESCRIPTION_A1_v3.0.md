@@ -2,11 +2,11 @@
 
 Drafted 2026-10-19 (A1_WRAPUP item F1; planner drafts, **owner approves the text**). Counts recounted
 2026-10-20 from the rebuilt package `Lietuviu_Flashcards_v3.0_A1.apkg` (after the key rename, dep37 and the
-proofreading return; manifest `build_reports/builds/v3.0_A1.json`, sha256 07275424b886…; per-card list
-`build_reports/builds/v3.0_A1_keys_rc3.tsv`; rc3 of 2026-10-20 changed no count): 1,191 notes = 687 picture (420 base + 267 A2-list IMG) +
+proofreading return; manifest `build_reports/builds/v3.0_A1.json`, sha256 42e8456aeef1…; per-card list
+`build_reports/builds/v3.0_A1_keys_rc4.tsv`; rc3 and rc4 of 2026-10-20 changed no count): 1,191 notes = 687 picture (420 base + 267 A2-list IMG) +
 135 phrase + 334 cloze + 35 sentence; audio 547 human, 20 azure-neural, 624 silent (one audio file per note
 at most). The 2026-10-19 counts (1,186 notes; 685/135/331/35; 547/19/620) were those of the package now
-archived as rc1 (`build_reports/builds/v3.0_A1_rc1.json`); rc2 (`v3.0_A1_rc2.json`, sha256 baf5ba41cd18…) had the same counts as rc3. **If the package is rebuilt after the A1
+archived as rc1 (`build_reports/builds/v3.0_A1_rc1.json`); rc2 (`v3.0_A1_rc2.json`, sha256 baf5ba41cd18…) and rc3 (`v3.0_A1_rc3.json`, sha256 07275424b886…) had the same counts as rc4. **If the package is rebuilt after the A1
 recordings, recount the audio line.**
 The order-v2 estimates are kept at the end for reference.
 The paste-ready HTML is `docs/ANKIWEB_DESCRIPTION_A1_v3.0.html`. The owner's decisions follow the text.

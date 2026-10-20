@@ -1,0 +1,191 @@
+{
+ "package": "Lietuviu_Flashcards_v3.0_A1.apkg",
+ "bytes": 147602124,
+ "checks": {
+  "refs": {
+   "referenced": 1424,
+   "missing_from_media_map": [],
+   "n_missing": 0,
+   "sound_files": 567
+  },
+  "media_in_zip": {
+   "missing": [],
+   "n_missing": 0
+  },
+  "ascii_names": {
+   "non_ascii": [],
+   "n": 0
+  },
+  "size": {
+   "bytes": 147602124,
+   "MB": 140.8,
+   "under_250MB": true
+  },
+  "identity": {
+   "keys_not_NNNN_slug": [],
+   "n_bad_keys": 0,
+   "plate_not_key_number": [],
+   "n_bad_plates": 0,
+   "bad_tags": [],
+   "n_bad_tags": 0,
+   "level_tag_not_subdeck": [],
+   "n_bad_level": 0,
+   "without_image": [],
+   "n_without_image": 0,
+   "kinds": {
+    "picture": 687,
+    "cloze": 334,
+    "phrase": 135,
+    "sentence": 35
+   }
+  },
+  "guids": {
+   "against": "Lietuviu_Flashcards_v3.0_A1_rc3.apkg",
+   "key_map": true,
+   "old_notes": 1191,
+   "keys_in_both_after_mapping": 1191,
+   "changed_as_mapped": 0,
+   "changed_unexpectedly": [],
+   "n_changed_unexpectedly": 0,
+   "only_new": [],
+   "n_only_new": 0,
+   "only_old": [],
+   "n_only_old": 0,
+   "old_keys_not_in_map": [
+    "0001_zmogus",
+    "0002_vyras",
+    "0003_vanduo",
+    "0004_moteris",
+    "0005_valgyti",
+    "0006_duona",
+    "0007_batonas",
+    "0008_gerti",
+    "0009_didelis",
+    "0010_mazas",
+    "0011_eiti",
+    "0012_vaikas",
+    "0013_namas",
+    "0014_kava",
+    "0015_parduotuve",
+    "0016_draugas",
+    "0017_arbata",
+    "0018_pienas",
+    "0019_dirbti",
+    "0020_seima"
+   ]
+  },
+  "fields_modulo_rename": {
+   "n_notes_differing": 1,
+   "n_field_diffs": 2,
+   "by_field": {
+    "past3": 1,
+    "pres3": 1
+   },
+   "examples": [
+    [
+     "1130_koseti",
+     "pres3",
+     "",
+     "kósi"
+    ],
+    [
+     "1130_koseti",
+     "past3",
+     "",
+     "kósėjo"
+    ]
+   ]
+  }
+ },
+ "fail": [],
+ "notes": 1191,
+ "cards": 1191,
+ "media_files": 1427,
+ "deck_descriptions": {
+  "Lietuvių Flashcards::A1": "Lietuvių Flashcards v3.0 · design spec 3.4.0 · style 0885ded5e583 · built 2026-10-20 · f03e9cd"
+ },
+ "import_test": {
+  "anki_version": "26.09.3",
+  "notes": 1191,
+  "cards": 1191,
+  "import_log_new": 1191,
+  "decks": [
+   "Default",
+   "Lietuvių Flashcards",
+   "Lietuvių Flashcards::A1"
+  ],
+  "rendered": [
+   {
+    "card": 1792483278067,
+    "note_type": "Lietuvių GO",
+    "key": "0027_suo",
+    "q_len": 21038,
+    "a_len": 21376,
+    "files": [
+     "0027_suo.mp3",
+     "0027_suo_sf2.jpg"
+    ],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "pav. 27    dog",
+    "a_text": "šuo   šuõ [anki:play:a:0]    ♂   šuo ·  šuns    dog        pav. 27    dog"
+   },
+   {
+    "card": 1792483278889,
+    "note_type": "Lietuvių GO",
+    "key": "0899_sviesus",
+    "q_len": 21059,
+    "a_len": 21478,
+    "files": [
+     "0899_sviesus.mp3",
+     "0899_sviesus_sf2.jpg"
+    ],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "pav. 899    light-dark",
+    "a_text": "šviesus   šviesùs [anki:play:a:0]    šviesùs&#8239; ♂   ·  šviesi&#8239; ♀     light-dark        pav. 899    light-dark"
+   },
+   {
+    "card": 1792483278907,
+    "note_type": "Lietuvių GO Cloze",
+    "key": "0318_laikas",
+    "q_len": 21489,
+    "a_len": 22163,
+    "files": [
+     "0318_laikas.mp3"
+    ],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "Neturiu  [...] .  I have no time.    pav. 318    time",
+    "a_text": "Neturiu  laiko .   laikas   laĩkas [anki:play:a:0]    ♂   laikas · laiko   time  I have no time.     pav. 318    time"
+   },
+   {
+    "card": 1792483279395,
+    "note_type": "Lietuvių GO Cloze",
+    "key": "0283_ka",
+    "q_len": 21505,
+    "a_len": 22059,
+    "files": [],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "[...]  tu veiki?  What are you doing?    pav. 283    what (acc)",
+    "a_text": "Ką  tu veiki?   ką   ką̃     what (acc)  What are you doing?     pav. 283    what (acc)"
+   },
+   {
+    "card": 1792483280379,
+    "note_type": "Lietuvių GO Cloze",
+    "key": "0102_vyras_geria_kava",
+    "q_len": 21513,
+    "a_len": 22142,
+    "files": [
+     "0102_vyras_geria_kava_sf2.jpg"
+    ],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "pav. 102    present 3sg; accusative object    Vyras  [...]  kavą.",
+    "a_text": "Vyras  geria  kavą.         present 3sg; accusative object  The man is drinking coffee.        pav. 102    present 3sg; accusative object"
+   }
+  ]
+ },
+ "ok": true
+}

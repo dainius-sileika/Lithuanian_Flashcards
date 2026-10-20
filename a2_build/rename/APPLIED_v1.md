@@ -193,3 +193,42 @@ build commit that adds this section.
 Leftovers 1 and 3 above are resolved (0331 back early; koseti forms withdrawn). The koseti forms still need sourcing:
 *kósėti* · pres3 · past3 from Wiktionary or kirtis.info, entered in a2_wordlist.csv with the URL in `check`.
 `_TO_DELETE/rc3_transfer/rc3_fixes.patch` (the cloud → Mac transfer of 33ecbd2) can be deleted.
+
+## rc4 (2026-10-20, later the same day)
+
+Commits: a681da1 (koseti forms + recorder), f03e9cd (rc3 manifest renames), then the build commit that adds this section.
+
+- **1130_koseti, principal parts sourced.** The owner pasted the en.wiktionary page
+  (https://en.wiktionary.org/wiki/kos%C4%97ti, last edited 19 May 2026): "kósėti (third-person present tense kósi or
+  kósti or kósėja, third-person past tense kósėjo)"; and kirtis.info's analyser output: Kósėti (also Kosė́ti).
+  `a2_wordlist.csv`: **pres3 = kósi, past3 = kósėjo**, stressed and NFC like the other verb rows (78 of the 104 rows with
+  forms store them stressed; the rest are unaccented engine/legacy rows). In `check` the "forms withdrawn …" clause is
+  replaced by "principal parts: en.wiktionary (https://en.wiktionary.org/wiki/kos%C4%97ti, page of 19 May 2026, pasted by
+  owner 2026-10-20): pres3 kósi (also kósti, kósėja), past3 kósėjo". The earlier "principal parts: Wiktionary;" clause
+  before it is left as it was. A CSV round trip shows 3 fields changed in 1 row (check, pres3, past3), nothing else.
+  The alternative stress *kosė́ti* (kirtis.info) is not on the card; *kósėti* stays as `lt_pron`.
+- **Recorder** regenerated in the Proton folder (`build_recorder.py A2`): 2,849 takes (A1 988: new 952, replace-tts 20,
+  retake 16; A2 1,861), IndexedDB `lt_recorder_A2_afb2ebe2` and KEY_MAP (4,878) unchanged, migration untouched. Only the
+  WORDS line of `recorder_A2.html` and one row of `recording_list.csv` differ: take 943, 1130_koseti, say
+  "kósėti" → "kósėti · kósi · kósėjo" (script 3sg kósi, past kósėjo). The 2026-10-12 legacy script
+  ("kósėti · {{l · lt") stays as it is; it marks any old browser clip for this key as stale, as before.
+- **Proton sync**: `.git/index` was missing (Proton had renamed it to `.git/index 2`, 01:13, after the rc3 commit), so
+  `git status` showed 1,912 staged deletions. `index 2` moved to `.git/_sync_conflicts/index 2 (orphan copy 2026-10-20)`;
+  `fetch` + `reset --hard FETCH_HEAD` rebuilt the index; tree clean. No new "Edit conflict" file.
+- **rc3** = `_archive/builds/Lietuviu_Flashcards_v3.0_A1_rc3.apkg` on the Mac (sha256 07275424…, checked after the move);
+  manifests `v3.0_A1_rc3.json`, `v3.0_A1_rc3.verify.json`.
+- **`Lietuviu_Flashcards_v3.0_A1.apkg` (rc4)**, Proton folder root, not committed: **147,602,124 bytes, sha256
+  42e8456aeef1989d417fef4ca16a9ca54661b6fc615bd229ac7e6504eaf2bb31**; built from f03e9cd (clean tree, style lock
+  0885ded5e583 OK, no drift override, spec 3.4.0); 1,191 notes, 1,427 media, media hash unchanged (4777a602…). The manifest
+  differs from rc3's only in commit, date, sha256 and description. Same byte size as rc3 (uncompressed collection, same page count).
+- `verify_apkg.py --against …rc3.apkg --key-map key_map_v1.csv --render 5`: **ok, 0 FAIL**. GUIDs: 1,191 in both, 0 changed,
+  0 new, 0 missing. Fields: **1 note, 2 fields differ: 1130_koseti pres3 ``→`kósi`, past3 ``→`kósėjo`**, nothing else.
+  Refs 1,424 (567 sounds), 0 missing; names ASCII; identity 0/0/0/0/0; 140.8 MB.
+- Anki import test (anki 26.09.3): 1,191 notes / 1,191 cards new, Lietuvių Flashcards::A1; 5 renders (2 picture, 3 cloze),
+  every file resolved, no unresolved braces. The koseti back, rendered from an import of the package: "kosėti · kósėti ·
+  **kosėti · kósi · kósėjo** · to cough · pav. 1130", image `1130_koseti_sf2.jpg` resolved. 0093_duoti shows its forms the same way.
+- `build_reports/builds/v3.0_A1_keys_rc4.tsv` (`tools/apkg_keys_list.py`; the same tool reproduces the rc3 list byte for byte
+  from the rc3 package): **identical to the rc3 list** (due, GUIDs, images, audio unchanged). Counts unchanged: 687 picture +
+  135 phrase + 334 cloze + 35 sentence; audio 547 human, 20 azure-neural, 624 silent. The AnkiWeb .md provenance line cites rc4.
+
+The koseti item from the rc3 section is resolved. `_TO_DELETE/rc3_transfer/` can still be deleted.
