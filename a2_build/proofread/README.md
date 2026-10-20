@@ -14,3 +14,12 @@ Return: fill `lt_corrected` / `en_corrected` only where something should change 
 `sentences_for_proofreading_v1_returned.csv` in this folder. Keep the `key` column untouched: keys are being renamed to
 one scheme, and the rename keeps an old→new map, so the returned sheet still applies after the rename.
 A correction that changes the blank word itself (`target`) is flagged for a decision, not applied silently.
+
+## v2 (2026-10-20)
+
+The owner's returned sheet (`sentences_for_proofreading_v1_returned_spelling_structure_pass.csv`, 25 corrections)
+was planned in `returned_plan_v1.{csv,md}` and applied with `apply_returned_plan_v1.py`; five keys whose slug no
+longer matched were re-slugged (`a2_build/rename/key_map_v2.csv`). `export_v2.py` writes the same three files with
+the current keys and the corrections in: `sentences_for_proofreading_v2.csv`, `sentences_lt_only_v2.txt`,
+`sentences_lt_en_v2.txt` (1,255 lines; `status` marks the 26 corrected rows and carries v1's rewording marks).
+The v1 files are unchanged.

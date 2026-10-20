@@ -1,0 +1,6 @@
+old_key,new_key,number,slug,headword,level,kind,status,note
+0331_kuri_valanda,0331_kelinta_valanda,331,kelinta_valanda,Kelinta valanda?,A1,phrase,renamed,"re-slug after the proofreading return (a2_build/proofread/returned_plan_v1): EDIT, headword Kuri valanda? -> Kelinta valanda?; number kept"
+1006_veikla,1006_uzsiemimas,1006,uzsiemimas,užsiėmimas,A1,cloze,renamed,re-slug after the proofreading return (a2_build/proofread/returned_plan_v1): RETARGET veikla -> užsiėmimas; number kept
+2360_draustis,2360_apsidrausti,2360,apsidrausti,apsidrausti,A2,cloze,renamed,re-slug after the proofreading return (a2_build/proofread/returned_plan_v1): RETARGET draustis -> apsidrausti; number kept
+2410_metus_mokausi_lietuviu_kalbos,2410_jau_metus_mokausi_lietuviu,2410,jau_metus_mokausi_lietuviu,Jau metus mokausi lietuvių kalbos,A2,cloze,renamed,"re-slug after the proofreading return (a2_build/proofread/returned_plan_v1): EDIT, headword gains Jau; number kept"
+1543_ryte_as_geriu_kava,1543_rytais_geriu_kava,1543,rytais_geriu_kava,Rytais {geriu} kavą.,A2,sentence,renamed,"re-slug after the proofreading return (a2_build/proofread/returned_plan_v1): EDIT, sentence Ryte aš geriu kavą -> Rytais geriu kavą; number kept"

@@ -42,7 +42,7 @@ id,phrase,stressed,source,confidence,note
 0751_laimingu_naujuju_metu,Laimingų Naujųjų metų!,Laimìngų Naujų̃jų mẽtų!,https://kirtis.info/api/krc/laiming%C5%B3 (Laimìngų K.); https://kirtis.info/api/krc/nauj%C5%B3j%C5%B3 (Naujų̃jų K. įvardž.); https://kirtis.info/api/krc/met%C5%B3 (Mẽtų),high,
 0352_dekui,dėkui,dė̃kui,http://lkz.lt/?zodis=d%C4%97kui&lns=-1&les=-1 (dė̃kui interj.),high,
 0477_labai_gerai,labai gerai,labaĩ geraĩ,https://en.wiktionary.org/wiki/labai#Lithuanian (labaĩ); https://en.wiktionary.org/wiki/gerai#Lithuanian (geraĩ),high,the B3 partial 'lãbai' was the adjective dative — see 0359
-0331_kuri_valanda,Kuri valanda?,Kurì valandà?,https://kirtis.info/api/krc/kuri (Kurì įvrd. mot. V.); https://kirtis.info/api/krc/valanda (Valandà V.),high,
+0331_kelinta_valanda,Kuri valanda?,Kurì valandà?,https://kirtis.info/api/krc/kuri (Kurì įvrd. mot. V.); https://kirtis.info/api/krc/valanda (Valandà V.),high,
 0653_na,na,nà,"http://lkz.lt/?zodis=na&lns=-1&les=-1 (1 nà interj., 2 nà prt.)",high,nã (homonym 3) is only the call to a horse
 0940_noriu_gerti,noriu gerti,nóriu gérti,"https://kirtis.info/api/krc/noriu (Nóriu vksm.); https://kirtis.info/api/krc/gerti (Gérti vksm.; gertì = participle); https://en.wiktionary.org/wiki/gerti#Lithuanian (gérti, gẽria, gė́rė)",high,
 1085_vaziuoti_dviraciu,važiuoti dviračiu,važiúoti dvìračiu,https://kirtis.info/api/krc/va%C5%BEiuoti (Važiúoti); https://kirtis.info/api/krc/dvira%C4%8Diu (Dvìračiu dktv. Įn.); https://en.wiktionary.org/wiki/dviratis#Lithuanian (noun dvìratis (1); dvirãtis is the adjective 'two-wheeled'),high,

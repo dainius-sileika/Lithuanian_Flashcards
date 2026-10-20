@@ -13,6 +13,8 @@
                                                          # on data files whose keys are not all new-format, and on
                                                          # media missing under the new name
     python3 tools/rename_keys.py --map a2_build/rename/key_map_v1.csv --verify   # against a given map
+                                                         # (no --map: every key_map_v*.csv composed, so an amendment
+                                                         #  map such as key_map_v2 is checked together with v1)
     python3 tools/rename_keys.py --mint "šaukštelis"   # the key a new card gets: next free number + slug
 
 WHAT THE MAP IS
@@ -284,6 +286,25 @@ def load_map(path):
     return rows
 
 
+def all_map_paths():
+    return sorted(glob.glob(f"{RENAME_DIR}/key_map_v*.csv"), key=lambda p: int(p.rsplit("_v", 1)[1].split(".")[0]))
+
+
+def load_all_maps():
+    """Every map in version order, composed: an old name maps to the CURRENT key (chains followed), so
+    --verify without --map checks the names of every earlier map at once (key_map_v2 amends v1)."""
+    rows = OrderedDict()
+    for p in all_map_paths():
+        for k, r in load_map(p).items():
+            rows[k] = dict(r)
+    cur = {k: r["new_key"] for k, r in rows.items() if r["new_key"] and r["new_key"] != k}
+    for r in rows.values():
+        seen = set()
+        while r["new_key"] in cur and r["new_key"] not in seen:
+            seen.add(r["new_key"]); r["new_key"] = cur[r["new_key"]]
+    return rows
+
+
 def forward(rows):
     """old -> new for the rows that rename (status renamed/alias)."""
     return {k: r["new_key"] for k, r in rows.items() if r["new_key"] and r["new_key"] != k}
@@ -467,7 +488,9 @@ def verify(rows, media_dirs=None, quiet=False):
     fails, rep = [], []
     fwd = forward(rows)
     # merged-away and deferred ids have no new key and may stay where the data records them
-    allowed_old = {k for k, r in rows.items() if r["status"] in ("merged", "deferred")}
+    # (from every map: an amendment map such as key_map_v2 carries only its own renamed rows)
+    allowed_old = {k for p in all_map_paths() for k, r in load_map(p).items() if r["status"] in ("merged", "deferred")}
+    allowed_old |= {k for k, r in rows.items() if r["status"] in ("merged", "deferred")}
     # 1. live data files: every key new-format
     checks = [(A1_CARDS, "key"), (A2_LIST, "id"), (SENTENCES, "id"), (STUDY_ORDER, "key"),
               ("audio_source.tsv", "key"), ("a2_build/context_notes.csv", "key"), (MERGED, "merged_into"),
@@ -521,10 +544,11 @@ def verify(rows, media_dirs=None, quiet=False):
         fails.append(f"{len(leftovers)} media file(s) still under an old name, e.g. {[o for o, _ in leftovers[:5]]}")
     present = Counter()
     exts = ("png", "jpg", "webp", "mp3")
+    counted = set()
     for r in rows.values():
-        if r["status"] not in ("renamed", "unchanged"):
+        if r["status"] not in ("renamed", "unchanged") or r["new_key"] in counted:
             continue
-        k = r["new_key"]
+        k = r["new_key"]; counted.add(k)
         img = any(os.path.exists(os.path.join(d, f"{k}.{e}")) for d in dirs if os.path.isdir(d) for e in exts[:3])
         aud = any(os.path.exists(os.path.join(d, f"{k}.mp3")) for d in ("audio", "audio_a2"))
         present["image" if img else "no image here"] += 1
@@ -625,7 +649,7 @@ def main(argv=None):
                                 key=lambda p: int(p.rsplit("_v", 1)[1].split(".")[0])) or [None])[-1]
         if not path or not os.path.exists(path):
             raise SystemExit("no key map found; run --apply first (or pass --map)")
-        rows = load_map(path)
+        rows = load_map(path) if (a.map or a.apply_media) else load_all_maps()
         if a.apply_media:
             fwd = forward(rows)
             moves = plan_media(a.apply_media, fwd)
