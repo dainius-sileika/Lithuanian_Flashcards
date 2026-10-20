@@ -1,15 +1,19 @@
 # Recording guide (one page)
 
-*Executor, 2026-10-19. The sheet: `recorder_A2.html` at the repo root. Its list: `a2_build/recording_list.csv`. Both come from `python3 build_recorder.py A2`.*
+*Executor, 2026-10-19; counts updated 2026-10-20 after the key rename and the proofreading return. The sheet: `recorder_A2.html` at the repo root. Its list: `a2_build/recording_list.csv`. Both come from `python3 build_recorder.py A2`.*
 
 ## What is on the sheet
 The sheet lists every take that the current deck still needs: **2,849 takes**. The A1 subdeck comes first, then A2, each in study order (`study_order.csv`, study order v3; same order as `a2_build/study_order/recording_order_v3.csv`).
 
 | | takes | of which |
 |---|---|---|
-| **A1** (takes 1–980) | **980** | 945 new · 19 replace the synthetic voice · 16 re-takes |
-| **A2** (takes 981–2,849) | **1,869** | 1,795 new · 74 replace the synthetic voice |
-| kinds | | 1,813 words · 981 example sentences (`<id>_s`) · 55 sentence cards (`S-####`) |
+| **A1** (takes 1–988) | **988** | 952 new · 20 replace the synthetic voice · 16 re-takes |
+| **A2** (takes 989–2,849) | **1,861** | 1,788 new · 73 replace the synthetic voice |
+| kinds | | 1,813 words · 981 example sentences (`<key>_s`) · 55 sentence cards |
+
+By kind: **A1** 619 word takes · 334 example sentences · 35 sentence cards (369 sentence takes in all);
+**A2** 1,194 word takes · 647 example sentences · 20 sentence cards (667 sentence takes).
+Every take is named by its card key (`NNNN_slug`, spec §12); the number on the take is the card's plate number.
 
 These takes are not on the sheet:
 - the 415 base-deck cards and 150 A2-list cards whose July takes still match the card;
@@ -17,15 +21,19 @@ These takes are not on the sheet:
 
 **Re-takes (16, all A1; a red "re-take" badge shows the old words):**
 - The words are now wrong, so the old take has been withdrawn and the card is silent until you re-record it:
-  - 265 *lūpos* (was *lūpa*);
-  - 249 *mobilusis telefonas · mobiliojo telefono* (the old genitive was wrong);
+  - 1124_lupos *lūpos* (was *lūpa*);
+  - 1082_mobilusis_telefonas *mobilusis telefonas · mobiliojo telefono* (the old genitive was wrong);
   - 0836_rugsejis *rugsėjis · rugsėjo* (was *rugsėjio*);
   - 0923_cekis *čekis* (was *kvitas*);
   - 0521_prasom_pakartoti *Prašom pakartoti*;
   - 0565_prasom_uzrasyti *Prašom užrašyti*.
-- The ten colours (069–078) said the genitive (*raudonas · raudono*). The card now shows the feminine (*raudonas · raudona*). The old takes are correct Lithuanian and stay in the deck until you replace them.
+- The ten colours (0617_raudonas … 0626_pilkas) said the genitive (*raudonas · raudono*). The card now shows the feminine (*raudonas · raudona*). The old takes are correct Lithuanian and stay in the deck until you replace them.
 
 The other wording changes were never recorded, so they appear as ordinary new takes in their new wording: 0203_prasom_kalbeti_leciau *Prašom kalbėti lėčiau*, 1029_prasom_sestis *Prašom sėstis*, 2136_ar_galite_ka_nors *…parekomenduoti?*, 1653_pakartoti_s, 1112_sestis_s.
+
+The proofreading return of 2026-10-20 changed 26 sentences or headwords (`a2_build/proofread/returned_plan_v1.md`); none of them had been recorded, so they are ordinary new takes in the corrected wording (e.g. 0331_kelinta_valanda *Kelinta valanda?*, 1006_uzsiemimas *užsiėmimas*, 2360_apsidrausti *apsidrausti*, 2392_rakinti_s *Kai rakino duris, atėjo kaimynas.*).
+
+**Takes recorded under the old card names** (`A2-0348`, `001_suo`, `S-0001` …, and the five keys re-slugged on 2026-10-20) are not lost: when you click *Enable microphone & start*, the regenerated sheet moves each stored clip to its new key together with the words it was recorded for, and says how many it carried over. A clip whose words have since changed is set aside (in *Export all*, folder `superseded/`); nothing is deleted. Tested headless on 2026-10-20 (`a2_build/rename/recorder_migration_test_v2.txt`). Still: press **Export all** once in the old sheet before opening the new one, as a safety copy.
 
 ## How to record
 1. **On the Mac**, open this file in **Chrome**: `~/Library/CloudStorage/ProtonDrive-…/50-59 Languages & Learning Method/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/recorder_A2.html`. You can double-click it in Finder and choose *Open With → Google Chrome*. Use the same browser every time, because your takes are kept in that browser's storage. Safari and Firefox are untested for local files.

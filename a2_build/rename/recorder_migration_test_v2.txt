@@ -1,0 +1,104 @@
+STOREINFO: 6 takes carried over from the old card keys. 1 old-key clips had a newer take under the new key: set aside (in Export all). 4 takes already in this browser. 3 older clips were recorded for words that have since changed: set aside (in Export all). 1 clips for cards no longer on the list are kept (in Export all).
+{
+ "clips": {
+  "0021_labas": "BLOB:clip-of-A2-0348",
+  "0105_ir": "BLOB:clip-of-A2-0154",
+  "0105_ir_s": "BLOB:clip-of-A2-0154_s",
+  "0514_amzius_s": "BLOB:clip-of-0514_amzius_s",
+  "zzz_offlist": "BLOB:clip-of-zzz_offlist"
+ },
+ "meta": {
+  "exported": [
+   "0021_labas",
+   "zzz_offlist"
+  ],
+  "migrated:1006_veikla": {
+   "to": "1006_uzsiemimas",
+   "at": 1792456508172,
+   "said": "veiklà · veiklos"
+  },
+  "migrated:A2-0080_s": {
+   "to": "0514_amzius_s",
+   "at": 1792456508173,
+   "superseded": true
+  },
+  "migrated:A2-0154": {
+   "to": "0105_ir",
+   "at": 1792456508174,
+   "said": null
+  },
+  "migrated:A2-0154_s": {
+   "to": "0105_ir_s",
+   "at": 1792456508176,
+   "said": "Perku duoną ir pieną."
+  },
+  "migrated:A2-0348": {
+   "to": "0021_labas",
+   "at": 1792456508177,
+   "said": "Lãbas"
+  },
+  "migrated:A2-1193": {
+   "to": "0331_kelinta_valanda",
+   "at": 1792456508179,
+   "said": "Kurì valandà?"
+  },
+  "migrated:A2-1702_s": {
+   "to": "2392_rakinti_s",
+   "at": 1792456508181,
+   "said": "Vakare rakinu duris."
+  },
+  "said:0021_labas": "Lãbas",
+  "said:0105_ir_s": "Perku duoną ir pieną.",
+  "said:0331_kelinta_valanda": "Kurì valandà?",
+  "said:0514_amzius_s": "Amžius – tik skaičius.",
+  "said:1006_uzsiemimas": "veiklà · veiklos",
+  "said:1006_veikla": "veiklà · veiklos",
+  "said:2392_rakinti_s": "Vakare rakinu duris.",
+  "said:A2-0080_s": "Kõks jū́sų ámžius?",
+  "said:A2-0154_s": "Perku duoną ir pieną.",
+  "said:A2-0348": "Lãbas",
+  "said:A2-1193": "Kurì valandà?",
+  "said:A2-1702_s": "Vakare rakinu duris.",
+  "said:zzz_offlist": "x",
+  "superseded:0331_kelinta_valanda:1792456508281": {
+   "blob": "BLOB:clip-of-A2-1193",
+   "said": "Kurì valandà?"
+  },
+  "superseded:1006_uzsiemimas:1792456508279": {
+   "blob": "BLOB:clip-of-1006_veikla",
+   "said": "veiklà · veiklos"
+  },
+  "superseded:2392_rakinti_s:1792456508454": {
+   "blob": "BLOB:clip-of-A2-1702_s",
+   "said": "Vakare rakinu duris."
+  },
+  "superseded:A2-0080_s:1792456508173": {
+   "blob": "BLOB:clip-of-A2-0080_s",
+   "said": "Kõks jū́sų ámžius?",
+   "to": "0514_amzius_s"
+  }
+ }
+}
+ZIP: {
+ "0021_labas.webm": "clip-of-A2-0348",
+ "0105_ir.webm": "clip-of-A2-0154",
+ "0105_ir_s.webm": "clip-of-A2-0154_s",
+ "0514_amzius_s.webm": "clip-of-0514_amzius_s",
+ "off_list/zzz_offlist.webm": "clip-of-zzz_offlist",
+ "superseded/0331_kelinta_valanda.1792456508281.webm": "clip-of-A2-1193",
+ "superseded/1006_uzsiemimas.1792456508279.webm": "clip-of-1006_veikla",
+ "superseded/2392_rakinti_s.1792456508454.webm": "clip-of-A2-1702_s",
+ "superseded/0514_amzius_s.1792456508173.webm": "clip-of-A2-0080_s"
+}
+MANIFEST:
+key	dest	level	status	said	english	file
+0021_labas	audio_a2/0021_labas.mp3	A1	new	Lãbas	Hello (informal)	0021_labas.webm
+0105_ir	audio_a2/0105_ir.mp3	A1	new	ir̃	and	0105_ir.webm
+0105_ir_s	audio_a2/0105_ir_s.mp3	A1	new	Perku duoną ir pieną.	I am buying bread and milk.	0105_ir_s.webm
+0514_amzius_s	audio_a2/0514_amzius_s.mp3	A1	new	Amžius – tik skaičius.	Age is just a number.	0514_amzius_s.webm
+zzz_offlist			off-list	x		off_list/zzz_offlist.webm
+0331_kelinta_valanda			superseded	Kurì valandà?		superseded/0331_kelinta_valanda.1792456508281.webm
+1006_uzsiemimas			superseded	veiklà · veiklos		superseded/1006_uzsiemimas.1792456508279.webm
+2392_rakinti_s			superseded	Vakare rakinu duris.		superseded/2392_rakinti_s.1792456508454.webm
+0514_amzius_s			superseded	Kõks jū́sų ámžius?		superseded/0514_amzius_s.1792456508173.webm
+
