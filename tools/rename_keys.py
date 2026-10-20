@@ -74,7 +74,7 @@ SLUG_WORDS, SLUG_CHARS = 4, 32
 # A 3-digit base key cannot match inside a new NNNN_slug key: the token regexes forbid a digit before
 # the match, so 0001_suo never matches as 001_suo (token_re below is built from the map's exact keys).
 NEW_KEY_RE = re.compile(r"^\d{%d}_[a-z][a-z0-9_]*$" % WIDTH)
-MEDIA_SUFFIX = r"(_s|_sf\d+|\.r\d+|\.prompt)?"
+MEDIA_SUFFIX = r"(_s|_sf\d+|\.r\d+|\.edit_raw\d+|\.prompt)?"   # .edit_rawN: raw outputs of edit_inset.py in _rerolled/
 MEDIA_EXT = r"\.(png|jpg|jpeg|webp|mp3|m4a|webm|ogg|txt|src)"
 
 # ---------------------------------------------------------------------------------------------
