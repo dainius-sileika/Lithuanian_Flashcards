@@ -1,0 +1,1192 @@
+due	key	plate	level	kind	pos	topic	note_type	guid	image	audio	audio_source
+1	0001_zmogus	1	A1	picture	noun	zmones	Lietuvių GO	!.B2|aZx6	0001_zmogus_sf2.jpg	0001_zmogus.mp3	human
+2	0002_vyras	2	A1	picture	noun	zmones	Lietuvių GO	P^o*Vdven,	0002_vyras_sf2.jpg	0002_vyras.mp3	human
+3	0003_vanduo	3	A1	picture	noun	maistas	Lietuvių GO	suLarZtEPk	0003_vanduo_sf2.jpg	0003_vanduo.mp3	human
+4	0004_moteris	4	A1	picture	noun	zmones	Lietuvių GO	vF:{/dYdhk	0004_moteris_sf2.jpg	0004_moteris.mp3	human
+5	0005_valgyti	5	A1	picture	verb	veiksmai	Lietuvių GO	J7,m_<FO4Y	0005_valgyti_sf2.jpg	0005_valgyti.mp3	human
+6	0006_duona	6	A1	picture	noun	maistas	Lietuvių GO	f<kG`nK=o8	0006_duona_sf2.jpg	0006_duona.mp3	human
+7	0007_batonas	7	A1	picture	noun	maistas	Lietuvių GO	xRBvP~K9dE	0007_batonas_sf2.jpg		silent
+8	0008_gerti	8	A1	picture	verb	veiksmai	Lietuvių GO	uZn~6U2:+c	0008_gerti_sf2.jpg	0008_gerti.mp3	human
+9	0009_didelis	9	A1	picture	adjective	savybes	Lietuvių GO	r=40+DLN=;	0009_didelis_sf2.jpg	0009_didelis.mp3	human
+10	0010_mazas	10	A1	picture	adjective	savybes	Lietuvių GO	LHp+=x%r;@	0010_mazas_sf2.jpg	0010_mazas.mp3	human
+11	0011_eiti	11	A1	picture	verb	veiksmai	Lietuvių GO	HN^>`P$~Bm	0011_eiti_sf2.jpg	0011_eiti.mp3	human
+12	0012_vaikas	12	A1	picture	noun	zmones	Lietuvių GO	tG#yxzP,;a	0012_vaikas_sf2.jpg	0012_vaikas.mp3	human
+13	0013_namas	13	A1	picture	noun	vietos	Lietuvių GO	hD4$N0/3II	0013_namas_sf2.jpg	0013_namas.mp3	human
+14	0014_kava	14	A1	picture	noun	maistas	Lietuvių GO	PPv%J*WF5M	0014_kava_sf2.jpg	0014_kava.mp3	human
+15	0015_parduotuve	15	A1	picture	noun	vietos	Lietuvių GO	FO}[U^9xnc	0015_parduotuve_sf2.jpg	0015_parduotuve.mp3	human
+16	0016_draugas	16	A1	picture	noun	zmones	Lietuvių GO	I|C4x~t9((	0016_draugas_sf2.jpg	0016_draugas.mp3	human
+17	0017_arbata	17	A1	picture	noun	maistas	Lietuvių GO	Mpb(`n%)}f	0017_arbata_sf2.jpg	0017_arbata.mp3	human
+18	0018_pienas	18	A1	picture	noun	maistas	Lietuvių GO	sW=D]D7gpi	0018_pienas_sf2.jpg	0018_pienas.mp3	human
+19	0019_dirbti	19	A1	picture	verb	veiksmai	Lietuvių GO	BBDJ/i+9]J	0019_dirbti_sf2.jpg	0019_dirbti.mp3	human
+20	0020_seima	20	A1	picture	noun	zmones	Lietuvių GO	b6,7T};.Q/	0020_seima_sf2.jpg	0020_seima.mp3	human
+21	0021_labas	21	A1	phrase		frazes	Lietuvių GO	NHaonl3krM	0021_labas_sf2.jpg		silent
+22	0022_miestas	22	A1	picture	noun	vietos	Lietuvių GO	PMnwl!(8b/	0022_miestas_sf2.jpg	0022_miestas.mp3	human
+23	0023_batai	23	A1	picture	noun	drabuziai	Lietuvių GO	iI#+#EY/*l	0023_batai_sf2.jpg	0023_batai.mp3	human
+24	0024_autobusas	24	A1	picture	noun	transportas	Lietuvių GO	NnA87Y3UB[	0024_autobusas_sf2.jpg	0024_autobusas.mp3	human
+25	0025_aciu	25	A1	phrase		frazes	Lietuvių GO	l8qZY-{5ph	0025_aciu_sf2.jpg		silent
+26	0026_alus	26	A1	picture	noun	maistas	Lietuvių GO	C%|jNgTOP%	0026_alus_sf2.jpg	0026_alus.mp3	human
+27	0027_suo	27	A1	picture	noun	gyvunai	Lietuvių GO	B)%c1$gc@z	0027_suo_sf2.jpg	0027_suo.mp3	human
+28	0028_obuolys	28	A1	picture	noun	maistas	Lietuvių GO	dEK#/_peQo	0028_obuolys_sf2.jpg	0028_obuolys.mp3	human
+29	0029_taip	29	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	CSKSDUqGC^	0029_taip_sf2.jpg	0029_taip.mp3	azure-neural
+30	0030_kate	30	A1	picture	noun	gyvunai	Lietuvių GO	E^`;>xfm!v	0030_kate_sf2.jpg	0030_kate.mp3	human
+31	0031_as	31	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	ow3THds.oh	0031_as_sf2.jpg	0031_as.mp3	azure-neural
+32	0032_prasau	32	A1	phrase		frazes	Lietuvių GO	s8>.Cw19$(	0032_prasau_sf2.jpg		silent
+33	0033_sriuba	33	A1	picture	noun	maistas	Lietuvių GO	A#Um/PEYpU	0033_sriuba_sf2.jpg	0033_sriuba.mp3	human
+34	0034_ne	34	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	F1ALM!EGW[	0034_ne_sf2.jpg	0034_ne.mp3	azure-neural
+35	0035_tu	35	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	p+^$$s6:&V	0035_tu_sf2.jpg	0035_tu.mp3	azure-neural
+36	0036_laba_diena	36	A1	phrase		frazes	Lietuvių GO	L^JgJhu@>*	0036_laba_diena_sf2.jpg		silent
+37	0037_jis	37	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	O&:2t(0`w%	0037_jis_sf2.jpg	0037_jis.mp3	azure-neural
+38	0038_geras	38	A1	picture	adjective	savybes	Lietuvių GO	v4WztIwt;$	0038_geras_sf2.jpg	0038_geras.mp3	azure-neural
+39	0039_blogas	39	A1	picture	adjective	savybes	Lietuvių GO	qW?;Q`JRoZ	0039_blogas_sf2.jpg	0039_blogas.mp3	azure-neural
+40	0040_pinigai	40	A1	picture	noun	visuomene	Lietuvių GO	b8Icn_AcB&	0040_pinigai_sf2.jpg	0040_pinigai.mp3	azure-neural
+41	0041_kaina	41	A1	picture	noun	visuomene	Lietuvių GO	c:.Q3`K1+e	0041_kaina_sf2.jpg	0041_kaina.mp3	azure-neural
+42	0042_ji	42	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	Hi27f9x#@r	0042_ji_sf2.jpg	0042_ji.mp3	azure-neural
+43	0043_atsiprasau	43	A1	phrase		frazes	Lietuvių GO	y,{~cQ}HQb	0043_atsiprasau_sf2.jpg	0043_atsiprasau.mp3	human
+44	0044_pirkti	44	A1	picture	verb	veiksmai	Lietuvių GO	x=Zd*nB9q@	0044_pirkti_sf2.jpg	0044_pirkti.mp3	human
+45	0045_mokytojas	45	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	F-S@uH`F8&	0045_mokytojas_sf2.jpg	0045_mokytojas.mp3	human
+46	0046_mes	46	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	jWaQw?U~xW	0046_mes_sf2.jpg	0046_mes.mp3	azure-neural
+47	0047_viso_gero	47	A1	phrase		frazes	Lietuvių GO	A_di,TCC-R	0047_viso_gero_sf2.jpg		silent
+48	0048_jus	48	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	I5j8EO^h(y	0048_jus_sf2.jpg	0048_jus.mp3	azure-neural
+49	0049_ligonine	49	A1	picture	noun	vietos	Lietuvių GO	E+~fYsDHqG	0049_ligonine_sf2.jpg	0049_ligonine.mp3	human
+50	0050_brolis	50	A1	picture	noun	zmones	Lietuvių GO	j^j78RK.+7	0050_brolis_sf2.jpg	0050_brolis.mp3	human
+51	0051_sesuo	51	A1	picture	noun	zmones	Lietuvių GO	vG=HZ^ulF8	0051_sesuo_sf2.jpg	0051_sesuo.mp3	human
+52	0052_vienas	52	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	b9sAL,rylQ	0052_vienas_sf2.jpg	0052_vienas.mp3	human
+53	0053_jie	53	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	l=+pF_E$1q	0053_jie_sf2.jpg	0053_jie.mp3	azure-neural
+54	0054_iki	54	A1	phrase		frazes	Lietuvių GO	Ri&F<rnS/:	0054_iki_sf2.jpg		silent
+55	0055_du	55	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	DaLEk^ieJn	0055_du_sf2.jpg	0055_du.mp3	human
+56	0056_telefonas	56	A1	picture	noun	namai	Lietuvių GO	PFHcz7a[wv	0056_telefonas_sf2.jpg	0056_telefonas.mp3	human
+57	0057_tai	57	A1	picture	pronoun	pagalbiniai_zodziai	Lietuvių GO	rv}Trq|&tn	0057_tai_sf2.jpg	0057_tai.mp3	azure-neural
+58	0058_nesuprantu	58	A1	phrase		frazes	Lietuvių GO	rf!K{NE3?W	0058_nesuprantu_sf2.jpg		silent
+59	0059_skambinti	59	A1	picture	verb	veiksmai	Lietuvių GO	s.?A^s+F>g	0059_skambinti_sf2.jpg	0059_skambinti.mp3	human
+60	0060_kaimynas	60	A1	picture	noun	zmones	Lietuvių GO	1CJcgUQPR	0060_kaimynas_sf2.jpg	0060_kaimynas.mp3	human
+61	0061_vaziuoti	61	A1	picture	verb	veiksmai	Lietuvių GO	tDH[>|2#{;	0061_vaziuoti_sf2.jpg		silent
+62	0062_knyga	62	A1	picture	noun	namai	Lietuvių GO	q?5F.XK)x7	0062_knyga_sf2.jpg	0062_knyga.mp3	human
+63	0063_stalas	63	A1	picture	noun	namai	Lietuvių GO	v3im3.YJZb	0063_stalas_sf2.jpg	0063_stalas.mp3	human
+64	0064_gele	64	A1	picture	noun	gamta	Lietuvių GO	oejVg0fEL?	0064_gele_sf2.jpg	0064_gele.mp3	human
+65	0065_kiek_kainuoja	65	A1	phrase		frazes	Lietuvių GO	j43[r6s8Rg	0065_kiek_kainuoja_sf2.jpg		silent
+66	0066_matyti	66	A1	picture	verb	veiksmai	Lietuvių GO	J7yN+Ic)5E	0066_matyti_sf2.jpg	0066_matyti.mp3	human
+67	0067_saltas	67	A1	picture	adjective	savybes	Lietuvių GO	nyzn!X?ESa	0067_saltas_sf2.jpg	0067_saltas.mp3	human
+68	0068_karstas	68	A1	picture	adjective	savybes	Lietuvių GO	msU*AcyI`q	0068_karstas_sf2.jpg	0068_karstas.mp3	human
+69	0069_kur_yra	69	A1	phrase		frazes	Lietuvių GO	PrHwo{z-Ih	0069_kur_yra_sf2.jpg		silent
+70	0070_girdeti	70	A1	picture	verb	veiksmai	Lietuvių GO	oq@0bn$Q93	0070_girdeti_sf2.jpg	0070_girdeti.mp3	human
+71	0071_tiltas	71	A1	picture	noun	vietos	Lietuvių GO	BcR*h#Xdss	0071_tiltas_sf2.jpg	0071_tiltas.mp3	human
+72	0072_kalbeti	72	A1	picture	verb	veiksmai	Lietuvių GO	N%UB{m!X~d	0072_kalbeti_sf2.jpg		silent
+73	0073_adresas	73	A1	picture	noun	visuomene	Lietuvių GO	w,e}|f7f?X	0073_adresas_sf2.jpg	0073_adresas.mp3	human
+74	0074_stotis	74	A1	picture	noun	vietos	Lietuvių GO	h`D)g[L].	0074_stotis_sf2.jpg	0074_stotis.mp3	human
+75	0075_grazus	75	A1	picture	adjective	savybes	Lietuvių GO	E]sQcD$Z%3	0075_grazus_sf2.jpg	0075_grazus.mp3	human
+76	0076_bjaurus	76	A1	picture	adjective	savybes	Lietuvių GO	CRQI5Qp`l?	0076_bjaurus_sf2.jpg	0076_bjaurus.mp3	human
+77	0077_labas_rytas	77	A1	phrase		frazes	Lietuvių GO	sUQ3o+JJ7#	0077_labas_rytas_sf2.jpg		silent
+78	0078_padeti	78	A1	picture	verb	veiksmai	Lietuvių GO	K+rK`&s236	0078_padeti_sf2.jpg		silent
+79	0079_trys	79	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	n`IK11XuR	0079_trys_sf2.jpg	0079_trys.mp3	human
+80	0080_darbas	80	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	A?v#EWe}5*	0080_darbas_sf2.jpg	0080_darbas.mp3	human
+81	0081_labas_vakaras	81	A1	phrase		frazes	Lietuvių GO	y;)Vtf5`7f	0081_labas_vakaras_sf2.jpg		silent
+82	0082_myleti	82	A1	picture	verb	veiksmai	Lietuvių GO	A~g/bvjK/Q	0082_myleti_sf2.jpg	0082_myleti.mp3	azure-neural
+83	0083_laukti	83	A1	picture	verb	veiksmai	Lietuvių GO	MEHs%To,6C	0083_laukti_sf2.jpg		silent
+84	0084_pirmadienis	84	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	cV[mR7VKy(	0084_pirmadienis_sf2.jpg	0084_pirmadienis.mp3	human
+85	0085_lietus	85	A1	picture	noun	gamta	Lietuvių GO	tr-HYo7,`w	0085_lietus_sf2.jpg	0085_lietus.mp3	human
+86	0086_pavasaris	86	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	yY<em].$s0	0086_pavasaris_sf2.jpg	0086_pavasaris.mp3	human
+87	0087_keturi	87	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	o@{Eg,[cl@	0087_keturi_sf2.jpg	0087_keturi.mp3	human
+88	0088_sveiki	88	A1	phrase		frazes	Lietuvių GO	m*Ep[4civL	0088_sveiki_sf2.jpg		silent
+89	0089_miegoti	89	A1	picture	verb	veiksmai	Lietuvių GO	u<FgWX#pMo	0089_miegoti_sf2.jpg	0089_miegoti.mp3	human
+90	0090_vasara	90	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	hpF/LoAfDY	0090_vasara_sf2.jpg	0090_vasara.mp3	human
+91	0091_penki	91	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	c`9ITRmTf%	0091_penki_sf2.jpg	0091_penki.mp3	human
+92	0092_labai_aciu	92	A1	phrase		frazes	Lietuvių GO	r{uMR?.2[H	0092_labai_aciu_sf2.jpg		silent
+93	0093_duoti	93	A1	picture	verb	veiksmai	Lietuvių GO	B>uY0Q/iky	0093_duoti_sf2.jpg		silent
+94	0094_sakyti	94	A1	picture	verb	veiksmai	Lietuvių GO	xo&+d4]WKD	0094_sakyti_sf2.jpg	0094_sakyti.mp3	human
+95	0095_upe	95	A1	picture	noun	gamta	Lietuvių GO	A.-VEw2;V.	0095_upe_sf2.jpg	0095_upe.mp3	human
+96	0096_ruduo	96	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	MNhS4A_(l(	0096_ruduo_sf2.jpg	0096_ruduo.mp3	human
+97	0097_bilietas	97	A1	picture	noun	transportas	Lietuvių GO	I2_A9(CK(x	0097_bilietas_sf2.jpg	0097_bilietas.mp3	human
+98	0098_ziema	98	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	AcRH&,8*UF	0098_ziema_sf2.jpg	0098_ziema.mp3	human
+99	0099_nera_uz_ka	99	A1	phrase		frazes	Lietuvių GO	KZs1qUC/ro	0099_nera_uz_ka_sf2.jpg		silent
+100	0100_mokytis	100	A1	picture	verb	veiksmai	Lietuvių GO	G#o-g3kY1T	0100_mokytis_sf2.jpg	0100_mokytis.mp3	azure-neural
+101	0101_moteris_valgo_duona	101	A1	sentence		sakiniai	Lietuvių GO Cloze	qrREQ,[Sxn	0101_moteris_valgo_duona_sf2.jpg		silent
+102	0102_vyras_geria_kava	102	A1	sentence		sakiniai	Lietuvių GO Cloze	lx+N7)x*JP	0102_vyras_geria_kava_sf2.jpg		silent
+103	0103_atsiprasau	103	A1	phrase		frazes	Lietuvių GO	e<K=pB{Z01	0103_atsiprasau_sf2.jpg	0103_atsiprasau.mp3	human
+104	0104_kiek_kainuoja_duona	104	A1	sentence		sakiniai	Lietuvių GO Cloze	zS>WZw:8H!	0104_kiek_kainuoja_duona_sf2.jpg		silent
+105	0105_ir	105	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	OR1nYba--R			silent
+106	0106_buti	106	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	vU.fBF]/-T			silent
+107	0107_veluoti	107	A1	picture	verb	veiksmai	Lietuvių GO	A`1}*fT`7Q	0107_veluoti_sf2.jpg		silent
+108	0108_naujas	108	A1	picture	adjective	savybes	Lietuvių GO	e2Oye(LJVe	0108_naujas_sf2.jpg	0108_naujas.mp3	human
+109	0109_senas	109	A1	picture	adjective	savybes	Lietuvių GO	POLwl>8ZYo	0109_senas_sf2.jpg	0109_senas.mp3	human
+110	0110_kur_yra_tualetas	110	A1	phrase		frazes	Lietuvių GO	~dd9B)mEb	0110_kur_yra_tualetas_sf2.jpg	0110_kur_yra_tualetas.mp3	human
+111	0111_miskas	111	A1	picture	noun	gamta	Lietuvių GO	M<*bD0J5P)	0111_miskas_sf2.jpg	0111_miskas.mp3	human
+112	0112_mes_einame_namo	112	A1	sentence		sakiniai	Lietuvių GO Cloze	IcAsNThDT~	0112_mes_einame_namo_sf2.jpg		silent
+113	0113_mano	113	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	D>87bS[qz-			silent
+114	0114_saskaita_prasau	114	A1	phrase		frazes	Lietuvių GO	KKx$6A.(IW	0114_saskaita_prasau_sf2.jpg		silent
+115	0115_tas	115	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	e[WR$ta!So			silent
+116	0116_i	116	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	tM8,*?.xs@			silent
+117	0117_mes_perkame_piena	117	A1	sentence		sakiniai	Lietuvių GO Cloze	b}Szmi(p)U	0117_mes_perkame_piena_sf2.jpg		silent
+118	0118_iseiti	118	A1	picture	verb	veiksmai	Lietuvių GO	lX75P&oLQY	0118_iseiti_sf2.jpg		silent
+119	0119_pirmas	119	A1	picture	adjective	skaiciai_ir_laikas	Lietuvių GO	tkff?]APLY	0119_pirmas_sf2.jpg	0119_pirmas.mp3	human
+120	0120_grizti	120	A1	picture	verb	veiksmai	Lietuvių GO	NXy4y+3eL2	0120_grizti_sf2.jpg		silent
+121	0121_noreciau	121	A1	phrase		frazes	Lietuvių GO	PueoKNTnub	0121_noreciau_sf2.jpg		silent
+122	0122_siltas	122	A1	picture	adjective	savybes	Lietuvių GO	CFzMWa8Hng	0122_siltas_sf2.jpg	0122_siltas.mp3	human
+123	0123_vesus	123	A1	picture	adjective	savybes	Lietuvių GO	po<&~;_I7{	0123_vesus_sf2.jpg	0123_vesus.mp3	human
+124	0124_as_noriu_arbatos	124	A1	sentence		sakiniai	Lietuvių GO Cloze	B]^g6_cntD	0124_as_noriu_arbatos_sf2.jpg		silent
+125	0125_ar_kalbate_angliskai	125	A1	phrase		frazes	Lietuvių GO	G3/~d}RH6>	0125_ar_kalbate_angliskai_sf2.jpg		silent
+126	0126_su	126	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	`1osuXf!V			silent
+127	0127_as_esu_mokytojas	127	A1	sentence		sakiniai	Lietuvių GO Cloze	iGUd(/;Q=o	0127_as_esu_mokytojas_sf2.jpg		silent
+128	0128_tureti	128	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	vzx#^#Y/{o			silent
+129	0129_is	129	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	pH@3wmpb^c			silent
+130	0130_mokykla	130	A1	picture	noun	vietos	Lietuvių GO	B0sGt&-(p_	0130_mokykla_sf2.jpg	0130_mokykla.mp3	human
+131	0131_dvidesimt	131	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	GrySe.}WRB	0131_dvidesimt_sf2.jpg	0131_dvidesimt.mp3	human
+132	0132_kaip_sekasi	132	A1	phrase		frazes	Lietuvių GO	eX:@e4lgq:	0132_kaip_sekasi_sf2.jpg		silent
+133	0133_raktas	133	A1	picture	noun	namai	Lietuvių GO	D9i`@q|A<o	0133_raktas_sf2.jpg	0133_raktas.mp3	human
+134	0134_baznycia	134	A1	picture	noun	vietos	Lietuvių GO	Csom=%i@.]	0134_baznycia_sf2.jpg	0134_baznycia.mp3	human
+135	0135_cia	135	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	DJeBmp*hxm			silent
+136	0136_man_gerai	136	A1	phrase		frazes	Lietuvių GO	Cp^Bk2;HYM	0136_man_gerai_sf2.jpg		silent
+137	0137_galeti	137	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	Foh$}AS!{>			silent
+138	0138_kieno	138	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	w46t}PYg6i		0138_kieno.mp3	human
+139	0139_kam	139	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	P;bi0<hdUq			silent
+140	0140_ko	140	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	pf3nE0DhRW			silent
+141	0141_filmas	141	A1	picture	noun	visuomene	Lietuvių GO	uBf<5&?C7s	0141_filmas_sf2.jpg	0141_filmas.mp3	human
+142	0142_trisdesimt	142	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	vw+9In;gI*	0142_trisdesimt_sf2.jpg	0142_trisdesimt.mp3	human
+143	0143_nezinau	143	A1	phrase		frazes	Lietuvių GO	d=BQ~1mWJY	0143_nezinau_sf2.jpg		silent
+144	0144_antras	144	A1	picture	adjective	skaiciai_ir_laikas	Lietuvių GO	A<skL_fNK3	0144_antras_sf2.jpg	0144_antras.mp3	human
+145	0145_ranka	145	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	xX3ILyd.k6	0145_ranka_sf2.jpg	0145_ranka.mp3	human
+146	0146_jis_dirba_ligonineje	146	A1	sentence		sakiniai	Lietuvių GO Cloze	IWn0*Or=hA	0146_jis_dirba_ligonineje_sf2.jpg		silent
+147	0147_mano_vardas	147	A1	phrase		frazes	Lietuvių GO	xm#964/se~	0147_mano_vardas_sf2.jpg		silent
+148	0148_mano_vardas_yra_jonas	148	A1	sentence		sakiniai	Lietuvių GO Cloze	CuE6XJm=Y/	0148_mano_vardas_yra_jonas_sf2.jpg		silent
+149	0149_jos	149	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	j.PyZj:twp			silent
+150	0150_kaip	150	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	I*2DP^kGTl		0150_kaip.mp3	human
+151	0151_ar	151	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	I5J*cO$q{(			silent
+152	0152_trecias	152	A1	picture	adjective	skaiciai_ir_laikas	Lietuvių GO	C{,*7XCm^}	0152_trecias_sf2.jpg	0152_trecias.mp3	human
+153	0153_sirgti	153	A1	picture	verb	kunas_ir_sveikata	Lietuvių GO	wD@Skc3FtV	0153_sirgti_sf2.jpg		silent
+154	0154_as_esu_is	154	A1	phrase		frazes	Lietuvių GO	Ns!Am+$BS#	0154_as_esu_is_sf2.jpg		silent
+155	0155_saskaita	155	A1	picture	noun	visuomene	Lietuvių GO	O5;{3EC+OS	0155_saskaita_sf2.jpg		silent
+156	0156_ketvirtas	156	A1	picture	adjective	skaiciai_ir_laikas	Lietuvių GO	Cd0zoyE9&:	0156_ketvirtas_sf2.jpg	0156_ketvirtas.mp3	human
+157	0157_as_turiu_broli	157	A1	sentence		sakiniai	Lietuvių GO Cloze	DYATo0?)7M	0157_as_turiu_broli_sf2.jpg		silent
+158	0158_labanakt	158	A1	phrase		frazes	Lietuvių GO	Iipcgd)I=l	0158_labanakt_sf2.jpg		silent
+159	0159_jau	159	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	do8G--9JNi			silent
+160	0160_ju	160	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	g+m}UmY0&j			silent
+161	0161_noreti	161	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	DB[KWBSu<}			silent
+162	0162_jai	162	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	bw}84KC<H,			silent
+163	0163_rytas	163	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	F>gY@bb_mL	0163_rytas_sf2.jpg	0163_rytas.mp3	human
+164	0164_penktas	164	A1	picture	adjective	skaiciai_ir_laikas	Lietuvių GO	Hz/h+{N&T2	0164_penktas_sf2.jpg	0164_penktas.mp3	human
+165	0165_iki_pasimatymo	165	A1	phrase		frazes	Lietuvių GO	rYrL~17<1`	0165_iki_pasimatymo_sf2.jpg		silent
+166	0166_laiskas	166	A1	picture	noun	namai	Lietuvių GO	Dd^-3Shs(X	0166_laiskas_sf2.jpg	0166_laiskas.mp3	human
+167	0167_susitikti	167	A1	picture	verb	veiksmai	Lietuvių GO	zz1z=vHXMc	0167_susitikti_sf2.jpg		silent
+168	0168_ji	168	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	hz?-(_2Qo?			silent
+169	0169_atleiskite	169	A1	phrase		frazes	Lietuvių GO	lOkB{4}u1[	0169_atleiskite_sf2.jpg		silent
+170	0170_dabar	170	A1	cloze	adverb	skaiciai_ir_laikas	Lietuvių GO Cloze	bMkb/>k/XO		0170_dabar.mp3	human
+171	0171_kad	171	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	p2YYI<VOe)			silent
+172	0172_diena	172	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	hX(JG,GF0I		0172_diena.mp3	human
+173	0173_man	173	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	ubLSl.w}0%			silent
+174	0174_galva	174	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	dvHHJMC<m$	0174_galva_sf2.jpg	0174_galva.mp3	human
+175	0175_gatve	175	A1	picture	noun	vietos	Lietuvių GO	j&&SSVj=zJ	0175_gatve_sf2.jpg	0175_gatve.mp3	human
+176	0176_malonu_susipazinti	176	A1	phrase		frazes	Lietuvių GO	xd;F:(XNaz	0176_malonu_susipazinti_sf2.jpg		silent
+177	0177_rasti	177	A1	picture	verb	veiksmai	Lietuvių GO	u1M6zpmmHv	0177_rasti_sf2.jpg	0177_rasti.mp3	human
+178	0178_aukstas	178	A1	picture	adjective	savybes	Lietuvių GO	f@MzUgimFQ	0178_aukstas_sf2.jpg	0178_aukstas.mp3	human
+179	0179_zemas	179	A1	picture	adjective	savybes	Lietuvių GO	GcxsTH/[U=	0179_zemas_sf2.jpg	0179_zemas.mp3	human
+180	0180_skanaus	180	A1	phrase		frazes	Lietuvių GO	Gub$L~#koF	0180_skanaus_sf2.jpg	0180_skanaus.mp3	human
+181	0181_mane	181	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	JehpVk;R}D			silent
+182	0182_zinoti	182	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	JIvrgIg&,/			silent
+183	0183_jis_vaziuoja_autobusu	183	A1	sentence		sakiniai	Lietuvių GO Cloze	pNE.tBgAaR	0183_jis_vaziuoja_autobusu_sf2.jpg		silent
+184	0184_lietuviu_kalba	184	A1	cloze	noun	zmones	Lietuvių GO Cloze	oeeC|3E*/2			silent
+185	0185_dar	185	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	jvmgd{A|/)			silent
+186	0186_simtas	186	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	KWLb!Ri7_5	0186_simtas_sf2.jpg	0186_simtas.mp3	human
+187	0187_i_sveikata	187	A1	phrase		frazes	Lietuvių GO	jnhzv/K)=z	0187_i_sveikata_sf2.jpg	0187_i_sveikata.mp3	human
+188	0188_skaityti	188	A1	picture	verb	veiksmai	Lietuvių GO	M#`58KuF/S	0188_skaityti_sf2.jpg		silent
+189	0189_tukstantis	189	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	w`KipN`,.h	0189_tukstantis_sf2.jpg	0189_tukstantis.mp3	human
+190	0190_automobilis	190	A1	picture	noun	transportas	Lietuvių GO	w#/6A;To0W	0190_automobilis_sf2.jpg	0190_automobilis.mp3	human
+191	0191_ar_galite_man_padeti	191	A1	phrase		frazes	Lietuvių GO	mKtdt%^e(;	0191_ar_galite_man_padeti_sf2.jpg		silent
+192	0192_per	192	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	kb~]1+$!hU			silent
+193	0193_sis	193	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	vD3IO0gKz/			silent
+194	0194_ten	194	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	FwNzP6*Nm1			silent
+195	0195_suprasti	195	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	vfL~!(4*~S			silent
+196	0196_manyti	196	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	x..co&UY1v			silent
+197	0197_kelias	197	A1	picture	noun	vietos	Lietuvių GO	k:d:(`hgP@	0197_kelias_sf2.jpg	0197_kelias.mp3	human
+198	0198_ar_galite_pakartoti	198	A1	phrase		frazes	Lietuvių GO	B8qa)PNr3v	0198_ar_galite_pakartoti_sf2.jpg		silent
+199	0199_vakaras	199	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	C[9gJcN+o4	0199_vakaras_sf2.jpg	0199_vakaras.mp3	human
+200	0200_akis	200	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	JqVzJlhvd_	0200_akis_sf2.jpg	0200_akis.mp3	human
+201	0201_senas	201	A1	picture	adjective	savybes	Lietuvių GO	rMr4L9Q`nD	0201_senas_sf2.jpg	0201_senas.mp3	human
+202	0202_jaunas	202	A1	picture	adjective	savybes	Lietuvių GO	kQlu!UQ99k	0202_jaunas_sf2.jpg	0202_jaunas.mp3	human
+203	0203_prasom_kalbeti_leciau	203	A1	phrase		frazes	Lietuvių GO	xZ#siup>;-	0203_prasom_kalbeti_leciau_sf2.jpg		silent
+204	0204_kur	204	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	HR/Z&;pXIZ		0204_kur.mp3	human
+205	0205_daug	205	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	G7RIBx/yW>			silent
+206	0206_siandien	206	A1	cloze	adverb	skaiciai_ir_laikas	Lietuvių GO Cloze	K8E`%}SQYa		0206_siandien.mp3	human
+207	0207_labai	207	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	P&>`49]Tg$			silent
+208	0208_gyventi	208	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	b/:h)E$~a6			silent
+209	0209_kur_gyvenate	209	A1	phrase		frazes	Lietuvių GO	DW,c8?HJZ.	0209_kur_gyvenate_sf2.jpg		silent
+210	0210_durys	210	A1	picture	noun	namai	Lietuvių GO	meT9!:X1X/	0210_durys_sf2.jpg	0210_durys.mp3	human
+211	0211_ziureti	211	A1	picture	verb	veiksmai	Lietuvių GO	g/<w^h;8Ky	0211_ziureti_sf2.jpg	0211_ziureti.mp3	human
+212	0212_maistas	212	A1	picture	noun	maistas	Lietuvių GO	FjzU9tN@e-	0212_maistas_sf2.jpg	0212_maistas.mp3	human
+213	0213_sauleta	213	A1	picture	adjective	savybes	Lietuvių GO	m)Si1-$B#B	0213_sauleta_sf2.jpg		silent
+214	0214_cia_mano_draugas	214	A1	phrase		frazes	Lietuvių GO	gg`A3;n.C}	0214_cia_mano_draugas_sf2.jpg		silent
+215	0215_kas	215	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	lq4Vd}G}b0		0215_kas.mp3	human
+216	0216_centras	216	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	D2]Nu/:uZf			silent
+217	0217_kuris	217	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	H+!yx)@IOU		0217_kuris.mp3	human
+218	0218_mes_gyvename_vilniuje	218	A1	sentence		sakiniai	Lietuvių GO Cloze	ODR%}/c~%a	0218_mes_gyvename_vilniuje_sf2.jpg		silent
+219	0219_as_gyvenu_name	219	A1	sentence		sakiniai	Lietuvių GO Cloze	M]6mFO?v_R	0219_as_gyvenu_name_sf2.jpg		silent
+220	0220_ar_yra	220	A1	phrase		frazes	Lietuvių GO	k,(hcDLvrq	0220_ar_yra_sf2.jpg		silent
+221	0221_tevas	221	A1	picture	noun	zmones	Lietuvių GO	x/pq?:pTI@	0221_tevas_sf2.jpg	0221_tevas.mp3	human
+222	0222_tetis	222	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	faCT8p??1y	0222_tetis_sf2.jpg		silent
+223	0223_galvoti	223	A1	picture	verb	veiksmai	Lietuvių GO	Ga/#W@jlGp	0223_galvoti_sf2.jpg	0223_galvoti.mp3	azure-neural
+224	0224_sesi	224	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	KjhsXei91	0224_sesi_sf2.jpg	0224_sesi.mp3	human
+225	0225_ar_turite	225	A1	phrase		frazes	Lietuvių GO	g/n^/$;VVk	0225_ar_turite_sf2.jpg		silent
+226	0226_tave	226	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	rL,dPNU_V;			silent
+227	0227_tie	227	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	r$Ds+0sBp!			silent
+228	0228_ta	228	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	$^R}.!&*1			silent
+229	0229_metai	229	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	u0<Nlw2eYo		0229_metai.mp3	human
+230	0230_as_nesuprantu	230	A1	sentence		sakiniai	Lietuvių GO Cloze	NAcPzLs]MG	0230_as_nesuprantu_sf2.jpg		silent
+231	0231_kas_tai	231	A1	phrase		frazes	Lietuvių GO	vccJ#iU]Ge	0231_kas_tai_sf2.jpg	0231_kas_tai.mp3	human
+232	0232_sveikas	232	A1	picture	adjective	savybes	Lietuvių GO	xug[0vSt3.	0232_sveikas_sf2.jpg	0232_sveikas.mp3	human
+233	0233_sergantis	233	A1	picture	adjective	savybes	Lietuvių GO	lrnD!v7l7G	0233_sergantis_sf2.jpg	0233_sergantis.mp3	human
+234	0234_kinas	234	A1	picture	noun	vietos	Lietuvių GO	hn/)jE9mC)	0234_kinas_sf2.jpg		silent
+235	0235_moketi	235	A1	picture	verb	veiksmai	Lietuvių GO	x,azAsY_^y	0235_moketi_sf2.jpg	0235_moketi.mp3	human
+236	0236_koks_tavo	236	A1	phrase		frazes	Lietuvių GO	e;`Z*H*&qG	0236_koks_tavo_sf2.jpg		silent
+237	0237_jusu	237	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	ON/OFZt!Q4			silent
+238	0238_koks	238	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	z>J8]H?ZQk		0238_koks.mp3	human
+239	0239_orai	239	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	N;@;Bt-B=p			silent
+240	0240_patikti	240	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	BW1CCBUi}y			silent
+241	0241_o	241	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	A:a[b_g4Z:			silent
+242	0242_kas_tas_zmogus	242	A1	phrase		frazes	Lietuvių GO	k2/dh(?-,q	0242_kas_tas_zmogus_sf2.jpg	0242_kas_tas_zmogus.mp3	human
+243	0243_cukrus	243	A1	picture	noun	maistas	Lietuvių GO	I&&nJ+rraR	0243_cukrus_sf2.jpg	0243_cukrus.mp3	human
+244	0244_kede	244	A1	picture	noun	namai	Lietuvių GO	z}wxyPR<&c	0244_kede_sf2.jpg	0244_kede.mp3	human
+245	0245_gydytojas	245	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	KeJ=%G`Gb0	0245_gydytojas_sf2.jpg	0245_gydytojas.mp3	human
+246	0246_naktis	246	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	JqHd`fR>Uc	0246_naktis_sf2.jpg	0246_naktis.mp3	human
+247	0247_man_reikia_pagalbos	247	A1	phrase		frazes	Lietuvių GO	vIY5j;a1Qh	0247_man_reikia_pagalbos_sf2.jpg	0247_man_reikia_pagalbos.mp3	human
+248	0248_reiketi	248	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	BaBo+FO$[{			silent
+249	0249_jam	249	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	L-5>nh-(Eh			silent
+250	0250_dar	250	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	f?z&sAEZ$!			silent
+251	0251_man_reikia_vandens	251	A1	sentence		sakiniai	Lietuvių GO Cloze	yz-J/)g||L	0251_man_reikia_vandens_sf2.jpg		silent
+252	0252_jums	252	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	kaaei3t8Xt			silent
+253	0253_neturiu_laiko	253	A1	phrase		frazes	Lietuvių GO	jAj0TJl()[	0253_neturiu_laiko_sf2.jpg	0253_neturiu_laiko.mp3	human
+254	0254_jura	254	A1	picture	noun	gamta	Lietuvių GO	gW,}?!TCG*	0254_jura_sf2.jpg	0254_jura.mp3	human
+255	0255_paskutinis	255	A1	picture	adjective	skaiciai_ir_laikas	Lietuvių GO	lXr>~d]/|K	0255_paskutinis_sf2.jpg	0255_paskutinis.mp3	human
+256	0256_zaisti	256	A1	picture	verb	veiksmai	Lietuvių GO	gS[/863{VL	0256_zaisti_sf2.jpg	0256_zaisti.mp3	human
+257	0257_tevai	257	A1	picture	noun	zmones	Lietuvių GO	LnqEOk(tTL	0257_tevai_sf2.jpg	0257_tevai.mp3	human
+258	0258_is_kur_jus	258	A1	phrase		frazes	Lietuvių GO	n=(Ay^%[Cq	0258_is_kur_jus_sf2.jpg		silent
+259	0259_bet	259	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	HU/ztcTt%?			silent
+260	0260_siandien_salta	260	A1	sentence		sakiniai	Lietuvių GO Cloze	vcd2yJl~55	0260_siandien_salta_sf2.jpg		silent
+261	0261_valanda	261	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	D]d9dfFG`3		0261_valanda.mp3	human
+262	0262_euras	262	A1	cloze	noun	visuomene	Lietuvių GO Cloze	oo{f:Rt%zN			silent
+263	0263_tik	263	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	KyrtH:uIgR			silent
+264	0264_viskas_gerai	264	A1	phrase		frazes	Lietuvių GO	OtZ!cNnDHv	0264_viskas_gerai_sf2.jpg		silent
+265	0265_rasyti	265	A1	picture	verb	veiksmai	Lietuvių GO	AN>o+iA.@|	0265_rasyti_sf2.jpg	0265_rasyti.mp3	human
+266	0266_kunas	266	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	iz*BBwA1V`	0266_kunas_sf2.jpg	0266_kunas.mp3	human
+267	0267_brangus	267	A1	picture	adjective	savybes	Lietuvių GO	K0m{%&.Oag	0267_brangus_sf2.jpg	0267_brangus.mp3	human
+268	0268_pigus	268	A1	picture	adjective	savybes	Lietuvių GO	q[bMv.a[n4	0268_pigus_sf2.jpg	0268_pigus.mp3	human
+269	0269_nekalbu_lietuviskai	269	A1	phrase		frazes	Lietuvių GO	t-ocb7#}7{	0269_nekalbu_lietuviskai_sf2.jpg	0269_nekalbu_lietuviskai.mp3	human
+270	0270_gerai	270	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	g39[[>rIi!			silent
+271	0271_ar_tu_kalbi_lietuviskai	271	A1	sentence		sakiniai	Lietuvių GO Cloze	vo#4k##fao	0271_ar_tu_kalbi_lietuviskai_sf2.jpg		silent
+272	0272_visas	272	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	G[B!!|]iK2			silent
+273	0273_megti	273	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	QBof,M<`AV			silent
+274	0274_kodel	274	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	cxc>ttm_&h		0274_kodel.mp3	human
+275	0275_man_patinka_sis_miestas	275	A1	phrase		frazes	Lietuvių GO	EJrulo:@[[	0275_man_patinka_sis_miestas_sf2.jpg	0275_man_patinka_sis_miestas.mp3	human
+276	0276_ieskoti	276	A1	picture	verb	veiksmai	Lietuvių GO	mypA+Au6Qh	0276_ieskoti_sf2.jpg		silent
+277	0277_pavarges	277	A1	picture	adjective	jausmai_ir_nuomones	Lietuvių GO	cdzi2[}&%@	0277_pavarges_sf2.jpg		silent
+278	0278_sirdis	278	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	OiGFsD[$&J	0278_sirdis_sf2.jpg	0278_sirdis.mp3	human
+279	0279_zvaigzde	279	A1	picture	noun	gamta	Lietuvių GO	t:X$o=?3^<	0279_zvaigzde_sf2.jpg	0279_zvaigzde.mp3	human
+280	0280_ka_veiki	280	A1	phrase		frazes	Lietuvių GO	M|A@&1,Bs1	0280_ka_veiki_sf2.jpg		silent
+281	0281_tau	281	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	G/p]8*x~qL			silent
+282	0282_paskambinti	282	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	cyL[i$VXSp			silent
+283	0283_ka	283	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	J,#|-Fn97^			silent
+284	0284_kur_yra_stotis	284	A1	sentence		sakiniai	Lietuvių GO Cloze	D7c$4@&QM;	0284_kur_yra_stotis_sf2.jpg		silent
+285	0285_atsakymas	285	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	t<MvRi%Jqc			silent
+286	0286_suprantu	286	A1	phrase		frazes	Lietuvių GO	jnx9W<)Q=(	0286_suprantu_sf2.jpg		silent
+287	0287_bankas	287	A1	picture	noun	vietos	Lietuvių GO	t0Zk4y6Qn9	0287_bankas_sf2.jpg	0287_bankas.mp3	human
+288	0288_keltis	288	A1	picture	verb	namai	Lietuvių GO	s$]5(/dVz<	0288_keltis_sf2.jpg		silent
+289	0289_greitas	289	A1	picture	adjective	savybes	Lietuvių GO	Rec?WOyMhz	0289_greitas_sf2.jpg	0289_greitas.mp3	human
+290	0290_letas	290	A1	picture	adjective	savybes	Lietuvių GO	GkV~/,}u8s	0290_letas_sf2.jpg	0290_letas.mp3	human
+291	0291_kur_galiu_rasti	291	A1	phrase		frazes	Lietuvių GO	u}WjH9luxy	0291_kur_galiu_rasti_sf2.jpg	0291_kur_galiu_rasti.mp3	human
+292	0292_zmones	292	A1	cloze	noun	zmones	Lietuvių GO Cloze	L?($r&q$99			silent
+293	0293_gauti	293	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	s/NHN/wNkw			silent
+294	0294_bet_kas	294	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	G#33={_-dQ			silent
+295	0295_rytoj	295	A1	cloze	adverb	skaiciai_ir_laikas	Lietuvių GO Cloze	ws^4@0.|63		0295_rytoj.mp3	human
+296	0296_idomus	296	A1	cloze	adjective	savybes	Lietuvių GO Cloze	W-j*0)Kmx			silent
+297	0297_padekite	297	A1	phrase		frazes	Lietuvių GO	nf6*#A@#^P	0297_padekite_sf2.jpg		silent
+298	0298_eiti	298	A1	picture	verb	veiksmai	Lietuvių GO	xZY*{GfXmu	0298_eiti_sf2.jpg	0298_eiti.mp3	human
+299	0299_muzika	299	A1	picture	noun	visuomene	Lietuvių GO	s.I6lht]et	0299_muzika_sf2.jpg	0299_muzika.mp3	azure-neural
+300	0300_septyni	300	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	l.;%^Tflu|	0300_septyni_sf2.jpg	0300_septyni.mp3	human
+301	0301_pietus	301	A1	picture	noun	maistas	Lietuvių GO	sbQ5!#$mJ:	0301_pietus_sf2.jpg	0301_pietus.mp3	human
+302	0302_koks_jusu_vardas	302	A1	phrase		frazes	Lietuvių GO	C_}ESTPxSF	0302_koks_jusu_vardas_sf2.jpg		silent
+303	0303_stotis_yra_ten	303	A1	sentence		sakiniai	Lietuvių GO Cloze	N*0ODnDe].	0303_stotis_yra_ten_sf2.jpg		silent
+304	0304_savo	304	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	j}-&Q,C^vA			silent
+305	0305_ateiti	305	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	yoU&/`YZ=i			silent
+306	0306_tikrai	306	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	wk=uL(g.#!			silent
+307	0307_daryti	307	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	JBpmxWae6l			silent
+308	0308_kiek_jums_metu	308	A1	phrase		frazes	Lietuvių GO	p?`jx^uB)9	0308_kiek_jums_metu_sf2.jpg		silent
+309	0309_veidas	309	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	dyL9D$J6v)	0309_veidas_sf2.jpg	0309_veidas.mp3	human
+310	0310_kambarys	310	A1	picture	noun	vietos	Lietuvių GO	dMq#x+CF>R	0310_kambarys_sf2.jpg	0310_kambarys.mp3	human
+311	0311_sunus	311	A1	picture	noun	zmones	Lietuvių GO	LE/Mm$O|zs	0311_sunus_sf2.jpg	0311_sunus.mp3	human
+312	0312_dukra	312	A1	picture	noun	zmones	Lietuvių GO	HMfg[Mx?/.	0312_dukra_sf2.jpg	0312_dukra.mp3	human
+313	0313_kuo_dirbate	313	A1	phrase		frazes	Lietuvių GO	ib.Qn$*U[T	0313_kuo_dirbate_sf2.jpg		silent
+314	0314_visai	314	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	Ki!XF<Xddg			silent
+315	0315_del	315	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	M&l``Jp)&j			silent
+316	0316_vakar	316	A1	cloze	adverb	skaiciai_ir_laikas	Lietuvių GO Cloze	x?_#|t%NIs		0316_vakar.mp3	human
+317	0317_prasyti	317	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	qDu<y7^0,m			silent
+318	0318_laikas	318	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	gC_H!wG=3o		0318_laikas.mp3	human
+319	0319_sniegas	319	A1	picture	noun	gamta	Lietuvių GO	AU?bny@t)<	0319_sniegas_sf2.jpg	0319_sniegas.mp3	human
+320	0320_klausimas	320	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	q-nPK`1sHI	0320_klausimas_sf2.jpg		silent
+321	0321_koja	321	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	q~O_$z&u*}	0321_koja_sf2.jpg	0321_koja.mp3	human
+322	0322_tualetas	322	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	ur|TDb%Ege	0322_tualetas_sf2.jpg		silent
+323	0323_begti	323	A1	picture	verb	veiksmai	Lietuvių GO	HiLj(Q+uFj	0323_begti_sf2.jpg	0323_begti.mp3	human
+324	0324_saule	324	A1	picture	noun	gamta	Lietuvių GO	c.@r<-u}tQ	0324_saule_sf2.jpg	0324_saule.mp3	human
+325	0325_apie	325	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	t~;q.ho:R*			silent
+326	0326_kai	326	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	Jptx6GWe%?			silent
+327	0327_per	327	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	Ldc,|~(6(@			silent
+328	0328_atrodyti	328	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	F+$5(.2<lX			silent
+329	0329_kai_kas	329	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	jM[Bg=AFr[			silent
+330	0330_vakariene	330	A1	picture	noun	maistas	Lietuvių GO	g*#8!/#jm!	0330_vakariene_sf2.jpg	0330_vakariene.mp3	human
+331	0332_butas	332	A1	picture	noun	vietos	Lietuvių GO	Oe5z.#+g8@	0332_butas_sf2.jpg	0332_butas.mp3	human
+332	0333_studentas	333	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	f3vBS5AaZ@	0333_studentas_sf2.jpg	0333_studentas.mp3	human
+333	0335_lektuvas	335	A1	picture	noun	transportas	Lietuvių GO	i0tCPiO*Q(	0335_lektuvas_sf2.jpg	0335_lektuvas.mp3	human
+334	0334_galima	334	A1	phrase		frazes	Lietuvių GO	KkM2YL_@(A	0334_galima_sf2.jpg		silent
+335	0343_lova	343	A1	picture	noun	namai	Lietuvių GO	w4*Gxxs(jQ	0343_lova_sf2.jpg	0343_lova.mp3	human
+336	0337_kai_kuris	337	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	i0FmTa`uvn			silent
+337	0338_svarbus	338	A1	cloze	adjective	savybes	Lietuvių GO Cloze	GHs(H:DpIT			silent
+338	0339_bet_kur	339	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	K|mbo5HV7W			silent
+339	0336_aukstas	336	A1	cloze	noun	namai	Lietuvių GO Cloze	cBeRMm.q3u			silent
+340	0340_padaryti	340	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	DtGUP[1l?f			silent
+341	0341_medis	341	A1	picture	noun	gamta	Lietuvių GO	xv~SVsa_xL	0341_medis_sf2.jpg	0341_medis.mp3	human
+342	0342_mesti	342	A1	picture	verb	veiksmai	Lietuvių GO	bS,t^{?^!A	0342_mesti_sf2.jpg	0342_mesti.mp3	human
+343	0344_atsargiai	344	A1	phrase		frazes	Lietuvių GO	o]ox,1pI@N	0344_atsargiai_sf2.jpg		silent
+344	0345_astuoni	345	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	pFz0Dd&}!y	0345_astuoni_sf2.jpg	0345_astuoni.mp3	human
+345	0346_langas	346	A1	picture	noun	namai	Lietuvių GO	ur=L#ED_02	0346_langas_sf2.jpg	0346_langas.mp3	human
+346	0354_sedeti	354	A1	picture	verb	veiksmai	Lietuvių GO	KqXGG$VJ5)	0354_sedeti_sf2.jpg	0354_sedeti.mp3	human
+347	0347_kiek	347	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	M3Za/d#G:>		0347_kiek.mp3	human
+348	0348_kitas	348	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	ge5Y>dD`zP			silent
+349	0349_tiesa	349	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	x@WdY^2$*/			silent
+350	0351_kai_kur	351	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	orQZZJesZ}			silent
+351	0350_pasakyti	350	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	u7w:&u|jRM			silent
+352	0352_dekui	352	A1	phrase		frazes	Lietuvių GO	B,)/itMIr}	0352_dekui_sf2.jpg		silent
+353	0353_kelnes	353	A1	picture	noun	drabuziai	Lietuvių GO	hqPIo^Pt+5	0353_kelnes_sf2.jpg	0353_kelnes.mp3	human
+354	0355_gerimas	355	A1	picture	noun	maistas	Lietuvių GO	O])D=a3&Hj	0355_gerimas_sf2.jpg	0355_gerimas.mp3	human
+355	0357_devyni	357	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	f.T[Z-6qJ_	0357_devyni_sf2.jpg	0357_devyni.mp3	human
+356	0356_nieko_tokio	356	A1	phrase		frazes	Lietuvių GO	y5YZkVKS2G	0356_nieko_tokio_sf2.jpg	0356_nieko_tokio.mp3	human
+357	0363_ilgas	363	A1	picture	adjective	savybes	Lietuvių GO	gO&,Ea`zT?	0363_ilgas_sf2.jpg	0363_ilgas.mp3	human
+358	0364_trumpas	364	A1	picture	adjective	savybes	Lietuvių GO	rL+7]EM+nP	0364_trumpas_sf2.jpg	0364_trumpas.mp3	human
+359	0358_toks	358	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	x^N9.Fb4.B			silent
+360	0359_visada	359	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	hH>9~d*Z%X			silent
+361	0360_kainuoti	360	A1	cloze	verb	visuomene	Lietuvių GO Cloze	by6jnrBZt7			silent
+362	0361_sie	361	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	RgBx:HOAK8			silent
+363	0362_gyvenimas	362	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	C2=S[YjQ}V			silent
+364	0365_stoveti	365	A1	picture	verb	veiksmai	Lietuvių GO	Qc*KKF6iuu	0365_stoveti_sf2.jpg	0365_stoveti.mp3	human
+365	0366_kiek_valandu	366	A1	phrase		frazes	Lietuvių GO	r;m)Ls`r6e	0366_kiek_valandu_sf2.jpg		silent
+366	0331_kelinta_valanda	331	A1	phrase		frazes	Lietuvių GO	mV[oXvL}]=	0331_kelinta_valanda_sf2.jpg		silent
+367	0367_mergaite	367	A1	picture	noun	zmones	Lietuvių GO	E1lsR{!NQ*	0367_mergaite_sf2.jpg	0367_mergaite.mp3	human
+368	0368_policija	368	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	I1/eZE:zOP	0368_policija_sf2.jpg	0368_policija.mp3	human
+369	0378_sausis	378	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	Iuyn;~?j[&	0378_sausis_sf2.jpg	0378_sausis.mp3	human
+370	0396_atidaryti	396	A1	picture	verb	veiksmai	Lietuvių GO	Qa3-ArSdx;	0396_atidaryti_sf2.jpg	0396_atidaryti.mp3	human
+371	0369_si	369	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	p6t~sI@E=a			silent
+372	0371_niekada	371	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	LlA:]q?2I`			silent
+373	0370_kurti	370	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	xoMz$YlD1I			silent
+374	0372_ja	372	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	bxf>zY:Y,!			silent
+375	0380_jei	380	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	bfx+$&WW-q			silent
+376	0374_zinoma	374	A1	phrase		frazes	Lietuvių GO	h4((t6E*M}	0374_zinoma_sf2.jpg	0374_zinoma.mp3	human
+377	0375_popierius	375	A1	picture	noun	namai	Lietuvių GO	rUdY%hi-0e	0375_popierius_sf2.jpg	0375_popierius.mp3	human
+378	0376_dangus	376	A1	picture	noun	gamta	Lietuvių GO	NFKzAt<,.w	0376_dangus_sf2.jpg	0376_dangus.mp3	human
+379	0377_desimt	377	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	C_r8qEx3Af	0377_desimt_sf2.jpg	0377_desimt.mp3	human
+380	0409_vasaris	409	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	E%FB3&fJMk	0409_vasaris_sf2.jpg	0409_vasaris.mp3	human
+381	0379_vairuotojas	379	A1	picture	noun	transportas	Lietuvių GO	K{neT0]Pvl	0379_vairuotojas_sf2.jpg		silent
+382	0373_baigti	373	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	iau*pp&*hD			silent
+383	0392_vel	392	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	AG>Qre(PjN			silent
+384	0383_vardas	383	A1	cloze	noun	zmones	Lietuvių GO Cloze	uovP%lcr-W		0383_vardas.mp3	human
+385	0381_lyti	381	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	m?*I:U!+/]			silent
+386	0382_gal	382	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	LOXs>F9ca9			silent
+387	0385_laimingas	385	A1	picture	adjective	savybes	Lietuvių GO	G_L}mnqBY]	0385_laimingas_sf2.jpg	0385_laimingas.mp3	human
+388	0386_liudnas	386	A1	picture	adjective	savybes	Lietuvių GO	k1fCIT.o6W	0386_liudnas_sf2.jpg	0386_liudnas.mp3	human
+389	0387_linksmas	387	A1	picture	adjective	savybes	Lietuvių GO	D%nZ;P=-{/	0387_linksmas_sf2.jpg		silent
+390	0388_vaistine	388	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	bo3|vh##[r	0388_vaistine_sf2.jpg		silent
+391	0389_ar_galima	389	A1	phrase		frazes	Lietuvių GO	yaT?q]JU+.	0389_ar_galima_sf2.jpg		silent
+392	0390_kaimas	390	A1	picture	noun	vietos	Lietuvių GO	nw*ntdwoJ`	0390_kaimas_sf2.jpg		silent
+393	0384_likti	384	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	glTMsXl]sN			silent
+394	0391_namai	391	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	eE`b*ATlb8			silent
+395	0393_uz	393	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	nV*U@Eg62$			silent
+396	0394_menuo	394	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	el%x.Zf>$?		0394_menuo.mp3	human
+397	0395_ji_eina_i_mokykla	395	A1	sentence		sakiniai	Lietuvių GO Cloze	n2EjIBTim$	0395_ji_eina_i_mokykla_sf2.jpg		silent
+398	0397_paltas	397	A1	picture	noun	drabuziai	Lietuvių GO	d1Lbs*#*>X	0397_paltas_sf2.jpg	0397_paltas.mp3	human
+399	0398_kompiuteris	398	A1	picture	noun	namai	Lietuvių GO	P3rg:j81Jq	0398_kompiuteris_sf2.jpg	0398_kompiuteris.mp3	human
+400	0399_ka_reiskia	399	A1	phrase		frazes	Lietuvių GO	DAI4^?Y[va	0399_ka_reiskia_sf2.jpg		silent
+401	0400_motina	400	A1	picture	noun	zmones	Lietuvių GO	L%DbLJa!?J	0400_motina_sf2.jpg	0400_motina.mp3	human
+402	0401_mama	401	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	hiKwJ1{@iM	0401_mama_sf2.jpg		silent
+403	0407_policininkas	407	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	yQPEo@s-N7	0407_policininkas_sf2.jpg	0407_policininkas.mp3	human
+404	0402_visi	402	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	pgwsLJ:pBY			silent
+405	0403_imti	403	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	K3~[T?3=AM			silent
+406	0404_kur_nors	404	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	FHBVdPFM>S			silent
+407	0405_privaleti	405	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	P797]]|q3`			silent
+408	0406_po	406	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	bbREs19UQR			silent
+409	0408_ka_tai_reiskia	408	A1	phrase		frazes	Lietuvių GO	Gcg6Nr(FX3	0408_ka_tai_reiskia_sf2.jpg	0408_ka_tai_reiskia.mp3	human
+410	0411_kovas	411	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	Q`GG*Ri?3{	0411_kovas_sf2.jpg	0411_kovas.mp3	human
+411	0410_ratas	410	A1	picture	noun	transportas	Lietuvių GO	I&]-i;D6g4	0410_ratas_sf2.jpg		silent
+412	0423_balandis	423	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	m^{M,LN?Cy	0423_balandis_sf2.jpg	0423_balandis.mp3	human
+413	0412_vonia	412	A1	picture	noun	namai	Lietuvių GO	d1GxT!F+Uh	0412_vonia_sf2.jpg	0412_vonia.mp3	human
+414	0418_pilnas	418	A1	picture	adjective	savybes	Lietuvių GO	hEggN@B!AY	0418_pilnas_sf2.jpg		silent
+415	0413_sestas	413	A1	cloze	adjective	skaiciai_ir_laikas	Lietuvių GO Cloze	ADlh}TR[%o			silent
+416	0414_septintas	414	A1	cloze	adjective	skaiciai_ir_laikas	Lietuvių GO Cloze	xSezo}fG}j			silent
+417	0415_astuntas	415	A1	cloze	adjective	skaiciai_ir_laikas	Lietuvių GO Cloze	h/}.QC-Z4S			silent
+418	0416_pradeti	416	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	zpwAL8MkFC			silent
+419	0417_prasideti	417	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	bv/fjdj<O*			silent
+420	0419_menulis	419	A1	picture	noun	gamta	Lietuvių GO	I_|xcj~TB^	0419_menulis_sf2.jpg	0419_menulis.mp3	human
+421	0420_tai_mano_namas	420	A1	phrase		frazes	Lietuvių GO	Lc%ft[~?,L	0420_tai_mano_namas_sf2.jpg	0420_tai_mano_namas.mp3	human
+422	0421_restoranas	421	A1	picture	noun	vietos	Lietuvių GO	M1WPI(>lF&	0421_restoranas_sf2.jpg	0421_restoranas.mp3	human
+423	0422_suknele	422	A1	picture	noun	drabuziai	Lietuvių GO	mUa;z5A4=A	0422_suknele_sf2.jpg	0422_suknele.mp3	human
+424	0434_geguze	434	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	hUOA2MtR_S	0434_geguze_sf2.jpg	0434_geguze.mp3	human
+425	0430_berniukas	430	A1	picture	noun	zmones	Lietuvių GO	G=-7gJI,AH	0430_berniukas_sf2.jpg	0430_berniukas.mp3	human
+426	0424_nuo	424	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	d+#Kna@P71			silent
+427	0425_ponas	425	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	MuhV[qXdFr			silent
+428	0426_devintas	426	A1	cloze	adjective	skaiciai_ir_laikas	Lietuvių GO Cloze	Kzu[Y[rJjW			silent
+429	0427_tapti	427	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	t+>PITDp6(			silent
+430	0435_desimtas	435	A1	cloze	adjective	skaiciai_ir_laikas	Lietuvių GO Cloze	DOPEApkJt^			silent
+431	0429_pastas	429	A1	picture	noun	vietos	Lietuvių GO	o*n2[*Y+|k	0429_pastas_sf2.jpg		silent
+432	0431_dovana	431	A1	picture	noun	namai	Lietuvių GO	B~.g;>|q=K	0431_dovana_sf2.jpg	0431_dovana.mp3	human
+433	0432_radijas	432	A1	picture	noun	namai	Lietuvių GO	QbE=c,GLJk	0432_radijas_sf2.jpg	0432_radijas.mp3	human
+434	0433_vejas	433	A1	picture	noun	gamta	Lietuvių GO	sC#90[^1*M	0433_vejas_sf2.jpg	0433_vejas.mp3	human
+435	0441_sumustinis	441	A1	picture	noun	maistas	Lietuvių GO	uSTyif<`Y|	0441_sumustinis_sf2.jpg		silent
+436	0440_kur_tu_eini	440	A1	phrase		frazes	Lietuvių GO	N[3>Q@TDf^	0440_kur_tu_eini_sf2.jpg	0440_kur_tu_eini.mp3	human
+437	0428_kada	428	A1	cloze	question	pagalbiniai_zodziai	Lietuvių GO Cloze	Jc?/O~ZTK?		0428_kada.mp3	human
+438	0436_daznai	436	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	K+sFK@;SNL			silent
+439	0437_toks_pat	437	A1	cloze	adjective	savybes	Lietuvių GO Cloze	khRl|6H2s3			silent
+440	0438_planas	438	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	sH2hI_3Q?s			silent
+441	0439_jaustis	439	A1	cloze	verb	kunas_ir_sveikata	Lietuvių GO Cloze	k,dr}QhezA			silent
+442	0442_sokti	442	A1	picture	verb	veiksmai	Lietuvių GO	g)ha>X#%I+	0442_sokti_sf2.jpg	0442_sokti.mp3	human
+443	0443_virtuve	443	A1	picture	noun	namai	Lietuvių GO	FGoMlo)!gp	0443_virtuve_sf2.jpg	0443_virtuve.mp3	human
+444	0444_geros_dienos	444	A1	phrase		frazes	Lietuvių GO	zMQ~o(eKux	0444_geros_dienos_sf2.jpg	0444_geros_dienos.mp3	human
+445	0445_ugnis	445	A1	picture	noun	gamta	Lietuvių GO	QytR*4E,D8	0445_ugnis_sf2.jpg	0445_ugnis.mp3	human
+446	0451_traukinys	451	A1	picture	noun	transportas	Lietuvių GO	K9wu7Cg-L1	0451_traukinys_sf2.jpg	0451_traukinys.mp3	human
+447	0453_grupe	453	A1	picture	noun	visuomene	Lietuvių GO	g4Vj{mw};[	0453_grupe_sf2.jpg	0453_grupe.mp3	human
+448	0446_tavo	446	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	b$_k;XE&k;			silent
+449	0447_dalykas	447	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	ulXBk+GS,~			silent
+450	0448_bandyti	448	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	LmlDk1Xl;n			silent
+451	0449_dokumentas	449	A1	cloze	noun	visuomene	Lietuvių GO Cloze	yn2kP0O[={			silent
+452	0457_savaite	457	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	J0vY;JEj$?		0457_savaite.mp3	human
+453	0452_kiausinis	452	A1	picture	noun	maistas	Lietuvių GO	w0kT?951_i	0452_kiausinis_sf2.jpg	0452_kiausinis.mp3	human
+454	0454_zeme	454	A1	picture	noun	vietos	Lietuvių GO	jRw@b(s):Q	0454_zeme_sf2.jpg	0454_zeme.mp3	human
+455	0455_truputi	455	A1	phrase		frazes	Lietuvių GO	v0[2`>-Bc	0455_truputi_sf2.jpg	0455_truputi.mp3	human
+456	0456_zuvis	456	A1	picture	noun	gyvunai	Lietuvių GO	d~9eSl/eym	0456_zuvis_sf2.jpg	0456_zuvis.mp3	human
+457	0462_uzdaryti	462	A1	picture	verb	veiksmai	Lietuvių GO	K7blyZB+S+	0462_uzdaryti_sf2.jpg	0462_uzdaryti.mp3	human
+458	0464_butelis	464	A1	picture	noun	maistas	Lietuvių GO	x0^w3y5fGy	0464_butelis_sf2.jpg	0464_butelis.mp3	human
+459	0450_niekas	450	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	wNEo`+YZ!G			silent
+460	0458_kalba	458	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	i{m/@+,[%W			silent
+461	0459_viskas	459	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	EUjr.-d:n0			silent
+462	0460_tiek	460	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	z+/^`Yj:Eq			silent
+463	0461_pats	461	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	GEFfPy^s{?			silent
+464	0463_prasom	463	A1	phrase		frazes	Lietuvių GO	rN6sjk4(yH	0463_prasom_sf2.jpg	0463_prasom.mp3	human
+465	0465_parkas	465	A1	picture	noun	vietos	Lietuvių GO	Pzhw;|}&of	0465_parkas_sf2.jpg	0465_parkas.mp3	human
+466	0466_svecias	466	A1	picture	noun	zmones	Lietuvių GO	Oh+A!#JI}8	0466_svecias_sf2.jpg		silent
+467	0467_skristi	467	A1	picture	verb	veiksmai	Lietuvių GO	P[va7>HHM[	0467_skristi_sf2.jpg	0467_skristi.mp3	human
+468	0475_krepsys	475	A1	picture	noun	namai	Lietuvių GO	k|Ibg.iKb@	0475_krepsys_sf2.jpg	0475_krepsys.mp3	human
+469	0473_sunkus	473	A1	picture	adjective	savybes	Lietuvių GO	JJsRi2v,%6	0473_sunkus_sf2.jpg	0473_sunkus.mp3	human
+470	0474_lengvas	474	A1	picture	adjective	savybes	Lietuvių GO	Bz3wF*He13	0474_lengvas_sf2.jpg	0474_lengvas.mp3	human
+471	0468_atvaziuoti	468	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	O?jK9o`@8i			silent
+472	0469_po	469	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	Es6|Rdf?Qu			silent
+473	0470_zodis	470	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	LU)=Z,ZCFm			silent
+474	0471_iki	471	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	A.la0o:064			silent
+475	0472_saves	472	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	NfLZ8#wIL~			silent
+476	0476_nulis	476	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	BZN}qL2h!q	0476_nulis_sf2.jpg	0476_nulis.mp3	human
+477	0478_dantis	478	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	L|lTg:V|9L	0478_dantis_sf2.jpg	0478_dantis.mp3	human
+478	0477_labai_gerai	477	A1	phrase		frazes	Lietuvių GO	urvw~G{Xcr	0477_labai_gerai_sf2.jpg		silent
+479	0485_laikrodis	485	A1	picture	noun	namai	Lietuvių GO	cSZWAc!lLR	0485_laikrodis_sf2.jpg	0485_laikrodis.mp3	human
+480	0484_vairuoti	484	A1	picture	verb	veiksmai	Lietuvių GO	t~zFzUz8hX	0484_vairuoti_sf2.jpg	0484_vairuoti.mp3	human
+481	0489_peilis	489	A1	picture	noun	maistas	Lietuvių GO	On2yB?@V*M	0489_peilis_sf2.jpg	0489_peilis.mp3	human
+482	0479_tada	479	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	lTFn842:3k			silent
+483	0480_tevas_skaito_knyga	480	A1	sentence		sakiniai	Lietuvių GO Cloze	j91^;3duqs	0480_tevas_skaito_knyga_sf2.jpg		silent
+484	0481_keli	481	A1	cloze	numeral	skaiciai_ir_laikas	Lietuvių GO Cloze	LX_Z)egmQ$			silent
+485	0482_daiktas	482	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	yZTnK5=H11			silent
+486	0483_dalis	483	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	lwhb#Me,k6			silent
+487	0486_svarus	486	A1	picture	adjective	savybes	Lietuvių GO	hr{,v91]cw	0486_svarus_sf2.jpg	0486_svarus.mp3	human
+488	0487_purvinas	487	A1	picture	adjective	savybes	Lietuvių GO	Ma~?/u=xd;	0487_purvinas_sf2.jpg	0487_purvinas.mp3	human
+489	0488_einu_namo	488	A1	phrase		frazes	Lietuvių GO	zeo$ec;N/P	0488_einu_namo_sf2.jpg	0488_einu_namo.mp3	human
+490	0497_dainuoti	497	A1	picture	verb	veiksmai	Lietuvių GO	jrAiCkW;WO	0497_dainuoti_sf2.jpg	0497_dainuoti.mp3	human
+491	0495_baras	495	A1	picture	noun	vietos	Lietuvių GO	OqH:biq1VN	0495_baras_sf2.jpg	0495_baras.mp3	human
+492	0496_ezeras	496	A1	picture	noun	gamta	Lietuvių GO	v)%CCLco13	0496_ezeras_sf2.jpg	0496_ezeras.mp3	human
+493	0490_net	490	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	hc<r/RF#03			silent
+494	0491_prie	491	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	GUU;}svt+			silent
+495	0492_musu	492	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	Mz!vJ:1*[s			silent
+496	0494_mergina	494	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	Cb*w/~hzS/			silent
+497	0501_nors	501	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	vKXt~ATli%			silent
+498	0500_nesti	500	A1	picture	verb	veiksmai	Lietuvių GO	dyKAZqySM2	0500_nesti_sf2.jpg	0500_nesti.mp3	human
+499	0498_piktas	498	A1	picture	adjective	savybes	Lietuvių GO	wK]i#5/CTS	0498_piktas_sf2.jpg	0498_piktas.mp3	azure-neural
+500	0499_malonus	499	A1	picture	adjective	savybes	Lietuvių GO	GxZj1l}Rbc	0499_malonus_sf2.jpg	0499_malonus.mp3	human
+501	0507_sustoti	507	A1	picture	verb	veiksmai	Lietuvių GO	mF@]%j?#a+	0507_sustoti_sf2.jpg	0507_sustoti.mp3	human
+502	0506_puodelis	506	A1	picture	noun	maistas	Lietuvių GO	k6OCb(0Osd	0506_puodelis_sf2.jpg	0506_puodelis.mp3	human
+503	0508_pinigine	508	A1	picture	noun	namai	Lietuvių GO	Q+yHwsoX,I	0508_pinigine_sf2.jpg	0508_pinigine.mp3	human
+504	0503_mazai	503	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	yv9LkCcB;f			silent
+505	0502_nes	502	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	J94}lB)^!s			silent
+506	0504_taip_pat	504	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	RIklX{%~O			silent
+507	0493_ketinti	493	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	Pm$GS~Mggj			silent
+508	0512_tas_pats	512	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	coMsUBUd]=			silent
+509	0509_viena_bilieta_i_kauna	509	A1	phrase		frazes	Lietuvių GO	oQ0^1<hQ({	0509_viena_bilieta_i_kauna_sf2.jpg		silent
+510	0510_vaistai	510	A1	picture	noun	visuomene	Lietuvių GO	Ik<OFPK{hl	0510_vaistai_sf2.jpg	0510_vaistai.mp3	azure-neural
+511	0511_viesbutis	511	A1	picture	noun	vietos	Lietuvių GO	yU7=P:C<:T	0511_viesbutis_sf2.jpg	0511_viesbutis.mp3	human
+512	0517_laivas	517	A1	picture	noun	transportas	Lietuvių GO	b&e8oM#O_V	0517_laivas_sf2.jpg	0517_laivas.mp3	human
+513	0518_pirstas	518	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	b[PrE=vA[Q	0518_pirstas_sf2.jpg	0518_pirstas.mp3	human
+514	0522_senelis	522	A1	picture	noun	zmones	Lietuvių GO	H;KavU6M9t	0522_senelis_sf2.jpg	0522_senelis.mp3	human
+515	0523_senele	523	A1	picture	noun	zmones	Lietuvių GO	bqtdQbFlRs	0523_senele_sf2.jpg	0523_senele.mp3	human
+516	0513_mums	513	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	Fx39u5q5CK			silent
+517	0515_mus	515	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	x_wkUY2dfD			silent
+518	0505_istorija	505	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	cel.IjMZRJ			silent
+519	0525_arba	525	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	q{!^%^<TxG			silent
+520	0516_kartu	516	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	s>=9t0a%2-			silent
+521	0519_plaukti	519	A1	picture	verb	veiksmai	Lietuvių GO	FGM]<Y>ACQ	0519_plaukti_sf2.jpg	0519_plaukti.mp3	human
+522	0520_suris	520	A1	picture	noun	maistas	Lietuvių GO	r5a{[%Iomm	0520_suris_sf2.jpg	0520_suris.mp3	human
+523	0521_prasom_pakartoti	521	A1	phrase		frazes	Lietuvių GO	Q.m==|Qwg8	0521_prasom_pakartoti_sf2.jpg		silent
+524	0529_milijonas	529	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	IXoqtKwrDy	0529_milijonas_sf2.jpg	0529_milijonas.mp3	human
+525	0531_gaminti	531	A1	picture	verb	veiksmai	Lietuvių GO	nIFq=OKPs9	0531_gaminti_sf2.jpg	0531_gaminti.mp3	human
+526	0533_dirzas	533	A1	picture	noun	drabuziai	Lietuvių GO	D&*}E_F]9n	0533_dirzas_sf2.jpg		silent
+527	0524_pries	524	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	Lau.@X,813			silent
+528	0526_numeris	526	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	b_w,QYLToY			silent
+529	0527_kas_nors	527	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	g7dSDHZdWl			silent
+530	0535_taciau	535	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	x9b(]Llb^M			silent
+531	0539_paskui	539	A1	cloze	adverb	skaiciai_ir_laikas	Lietuvių GO Cloze	EasNBquhI3			silent
+532	0530_atsiprasau_ar_cia_laisva	530	A1	phrase		frazes	Lietuvių GO	hPNP1LY;xj	0530_atsiprasau_ar_cia_laisva_sf2.jpg		silent
+533	0540_groti	540	A1	picture	verb	veiksmai	Lietuvių GO	e?3^cLa~LF	0540_groti_sf2.jpg	0540_groti.mp3	human
+534	0532_sultys	532	A1	picture	noun	maistas	Lietuvių GO	hwYC>fPlL,	0532_sultys_sf2.jpg	0532_sultys.mp3	human
+535	0534_paukstis	534	A1	picture	noun	gyvunai	Lietuvių GO	Jj{;9xZ*<7	0534_paukstis_sf2.jpg	0534_paukstis.mp3	human
+536	0541_veidrodis	541	A1	picture	noun	namai	Lietuvių GO	i]lVy}`RqN	0541_veidrodis_sf2.jpg		silent
+537	0543_tuscias	543	A1	picture	adjective	savybes	Lietuvių GO	sU-rkS<X|8	0543_tuscias_sf2.jpg		silent
+538	0536_ant	536	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	pIXL((O-!N			silent
+539	0548_dede	548	A1	cloze	noun	zmones	Lietuvių GO Cloze	m1ipt$<xDe			silent
+540	0549_teta	549	A1	cloze	noun	zmones	Lietuvių GO Cloze	z&3RNig<vQ			silent
+541	0537_vis_dar	537	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	PVvAvseJ<2			silent
+542	0528_atleisti	528	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	P9)|7@zl3e			silent
+543	0542_dar_ko_nors	542	A1	phrase		frazes	Lietuvių GO	Lb05<B3|DT	0542_dar_ko_nors_sf2.jpg		silent
+544	0544_nosis	544	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	unFIGkpR=1	0544_nosis_sf2.jpg	0544_nosis.mp3	human
+545	0545_atrodo	545	A1	phrase		frazes	Lietuvių GO	yNvigyYXIa	0545_atrodo_sf2.jpg		silent
+546	0551_zole	551	A1	picture	noun	gamta	Lietuvių GO	B,1mY/+pKP	0551_zole_sf2.jpg	0551_zole.mp3	human
+547	0554_dviratis	554	A1	picture	noun	transportas	Lietuvių GO	s8>tOu&+&j	0554_dviratis_sf2.jpg	0554_dviratis.mp3	human
+548	0553_patiekalas	553	A1	picture	noun	maistas	Lietuvių GO	M_`4!Jy<62	0553_patiekalas_sf2.jpg		silent
+549	0538_kokia	538	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	wT+4d?kamx			silent
+550	0546_jeigu	546	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	rR|?=>#IL[			silent
+551	0547_nieko	547	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	Foz6LUZ~aO			silent
+552	0557_palikti	557	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	FPDB]u}APv			silent
+553	0550_bet_kada	550	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	JvmnyO2EHG			silent
+554	0552_nesuprantu_atsiprasau	552	A1	phrase		frazes	Lietuvių GO	Eo18dYQhSa	0552_nesuprantu_atsiprasau_sf2.jpg	0552_nesuprantu_atsiprasau.mp3	human
+555	0555_uzdarytas	555	A1	picture	adjective	savybes	Lietuvių GO	pIE_(sh%aT	0555_uzdarytas_sf2.jpg		silent
+556	0556_kepure	556	A1	picture	noun	drabuziai	Lietuvių GO	fV-A3yjZoT	0556_kepure_sf2.jpg	0556_kepure.mp3	human
+557	0562_pilvas	562	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	f*!0Ye=*`r	0562_pilvas_sf2.jpg		silent
+558	0563_medziaga	563	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	fqqP=eXbk:	0563_medziaga_sf2.jpg	0563_medziaga.mp3	human
+559	0566_nuotrauka	566	A1	picture	noun	namai	Lietuvių GO	KFv3w>1~r8	0566_nuotrauka_sf2.jpg	0566_nuotrauka.mp3	human
+560	0561_sekunde	561	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	saV?:5roz,		0561_sekunde.mp3	human
+561	0558_pagalba	558	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	eXR0B%MGR]			silent
+562	0559_puikus	559	A1	cloze	adjective	savybes	Lietuvių GO Cloze	oS<kI9{!@p			silent
+563	0560_kada_nors	560	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	rE^`ck&1H&			silent
+564	0568_kate_sedi_ant_stalo	568	A1	sentence		sakiniai	Lietuvių GO Cloze	B-1sZ/V:lY	0568_kate_sedi_ant_stalo_sf2.jpg		silent
+565	0564_ieiti	564	A1	picture	verb	veiksmai	Lietuvių GO	zs[C1S@&vA	0564_ieiti_sf2.jpg		silent
+566	0565_prasom_uzrasyti	565	A1	phrase		frazes	Lietuvių GO	zRBJQkZF6)	0565_prasom_uzrasyti_sf2.jpg		silent
+567	0567_aikste	567	A1	picture	noun	vietos	Lietuvių GO	n+fDkmUh#I	0567_aikste_sf2.jpg		silent
+568	0574_vadovas	574	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	gJk*VxN[?x	0574_vadovas_sf2.jpg	0574_vadovas.mp3	human
+569	0575_druska	575	A1	picture	noun	maistas	Lietuvių GO	L=epUFvstT	0575_druska_sf2.jpg	0575_druska.mp3	human
+570	0573_kiek_tai_kainuoja	573	A1	phrase		frazes	Lietuvių GO	KqB[~.F:(O	0573_kiek_tai_kainuoja_sf2.jpg	0573_kiek_tai_kainuoja.mp3	human
+571	0569_be	569	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	q*.Fo:4U?i			silent
+572	0748_skaicius	748	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	F,wjd}l94+			silent
+573	0514_amzius	514	A1	cloze	noun	zmones	Lietuvių GO Cloze	b9S#r%o~P[		0514_amzius.mp3	human
+574	0570_nei	570	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	cmxahtX^3c			silent
+575	0571_todel	571	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	g=+oJ/7X+Y			silent
+576	0576_ausis	576	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	J]}A)0:Z%V	0576_ausis_sf2.jpg	0576_ausis.mp3	human
+577	0577_siena	577	A1	picture	noun	namai	Lietuvių GO	l}IDTJCukE	0577_siena_sf2.jpg	0577_siena.mp3	human
+578	0578_lagaminas	578	A1	picture	noun	transportas	Lietuvių GO	NA)Z3[2)l7	0578_lagaminas_sf2.jpg	0578_lagaminas.mp3	human
+579	0584_palaukite_minutele	584	A1	phrase		frazes	Lietuvių GO	DeA1m$DV-g	0584_palaukite_minutele_sf2.jpg		silent
+580	0585_centas	585	A1	picture	noun	visuomene	Lietuvių GO	)r5NR[!g`	0585_centas_sf2.jpg		silent
+581	0598_laipsnis	598	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	gfK9|clo%5	0598_laipsnis_sf2.jpg		silent
+582	0590_minute	590	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	FFo@3s.rH8		0590_minute.mp3	human
+583	0592_keletas	592	A1	cloze	numeral	skaiciai_ir_laikas	Lietuvių GO Cloze	h*4$gy!+X5			silent
+584	0579_testi	579	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	sp7X)~>WSw			silent
+585	0572_berniukas_raso_laiska	572	A1	sentence		sakiniai	Lietuvių GO Cloze	Clp]?|%W#E	0572_berniukas_raso_laiska_sf2.jpg		silent
+586	0581_toli	581	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	LHcsZ-_%@Q			silent
+587	0582_arti	582	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	w}A)U-E|Ry			silent
+588	0586_pusryciai	586	A1	picture	noun	maistas	Lietuvių GO	zOt*edpa<z	0586_pusryciai_sf2.jpg	0586_pusryciai.mp3	human
+589	0587_juoktis	587	A1	picture	verb	veiksmai	Lietuvių GO	CkrT&76;(T	0587_juoktis_sf2.jpg	0587_juoktis.mp3	human
+590	0588_televizorius	588	A1	picture	noun	namai	Lietuvių GO	s0Nq,4cS+_	0588_televizorius_sf2.jpg	0588_televizorius.mp3	human
+591	0589_klase	589	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	ErP5`ka1Vb	0589_klase_sf2.jpg		silent
+592	0595_man_reikia_vandens	595	A1	phrase		frazes	Lietuvių GO	g%[HB7y#vg	0595_man_reikia_vandens_sf2.jpg	0595_man_reikia_vandens.mp3	human
+593	0596_stiprus	596	A1	picture	adjective	savybes	Lietuvių GO	ddlA$.//Wf	0596_stiprus_sf2.jpg	0596_stiprus.mp3	human
+594	0597_silpnas	597	A1	picture	adjective	savybes	Lietuvių GO	vZj:10?~w/	0597_silpnas_sf2.jpg	0597_silpnas.mp3	human
+595	0591_pries	591	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	f[4oeq7kWf			silent
+596	0594_parodyti	594	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	xUN5f=]qH1			silent
+597	0580_kaire	580	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	w^b~j*oe<J			silent
+598	0593_man_patinka_muzika	593	A1	sentence		sakiniai	Lietuvių GO Cloze	urQJKCEi%K	0593_man_patinka_muzika_sf2.jpg		silent
+599	0601_reiksti	601	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	OnvR8tOzPS			silent
+600	0599_kelis	599	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	MJ:7}f8S9`	0599_kelis_sf2.jpg	0599_kelis.mp3	human
+601	0600_miestelis	600	A1	picture	noun	vietos	Lietuvių GO	Mt=&6vJd%O	0600_miestelis_sf2.jpg	0600_miestelis.mp3	human
+602	0606_vaizdas	606	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	Di00*~:kOt	0606_vaizdas_sf2.jpg	0606_vaizdas.mp3	human
+603	0611_kudikis	611	A1	picture	noun	zmones	Lietuvių GO	h,G.V`#V7N	0611_kudikis_sf2.jpg	0611_kudikis.mp3	human
+604	0607_vistiena	607	A1	picture	noun	maistas	Lietuvių GO	Pu}7-_=Nu@	0607_vistiena_sf2.jpg	0607_vistiena.mp3	human
+605	0609_litas	609	A1	picture	noun	visuomene	Lietuvių GO	dCfr!@f!qz	0609_litas_sf2.jpg		silent
+606	0602_ar_galetumete	602	A1	cloze		frazes	Lietuvių GO Cloze	qp_fEex&+W			silent
+607	0604_stai	604	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	Q^h~]?*e-<			silent
+608	0583_informacija	583	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	Ab|,q3`0R			silent
+609	0612_moketi	612	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	spcaM(#Fw5			silent
+610	0605_sita	605	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	mV7y9MQ|S;			silent
+611	0636_antradienis	636	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	d3ih%AQGG/	0636_antradienis_sf2.jpg	0636_antradienis.mp3	human
+612	0610_vieta	610	A1	picture	noun	vietos	Lietuvių GO	ymJ~8m0M.<	0610_vieta_sf2.jpg	0610_vieta.mp3	human
+613	0608_sypsotis	608	A1	picture	verb	veiksmai	Lietuvių GO	fmY.ak:[kZ	0608_sypsotis_sf2.jpg	0608_sypsotis.mp3	human
+614	0670_mokinys	670	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	zm=krm+&@E	0670_mokinys_sf2.jpg		silent
+615	0617_raudonas	617	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	gFfUogmZ#(	0617_raudonas_sf2.jpg	0617_raudonas.mp3	human
+616	0618_zalias	618	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	l>?d6:h<Rp	0618_zalias_sf2.jpg	0618_zalias.mp3	human
+617	0619_melynas	619	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	swF3-4I{5x	0619_melynas_sf2.jpg	0619_melynas.mp3	human
+618	0620_geltonas	620	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	j}3P<+z`KN	0620_geltonas_sf2.jpg	0620_geltonas.mp3	human
+619	0621_rudas	621	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	bEGVrUy7rI	0621_rudas_sf2.jpg	0621_rudas.mp3	human
+620	0622_rozinis	622	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	z[M#}RGg`e	0622_rozinis_sf2.jpg	0622_rozinis.mp3	human
+621	0623_oranzinis	623	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	b%cu8oe?5^	0623_oranzinis_sf2.jpg	0623_oranzinis.mp3	human
+622	0624_juodas	624	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	Hj-nR^x*9x	0624_juodas_sf2.jpg	0624_juodas.mp3	human
+623	0625_baltas	625	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	pVgsE%93@@	0625_baltas_sf2.jpg	0625_baltas.mp3	human
+624	0626_pilkas	626	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	C{dpf@*5{c	0626_pilkas_sf2.jpg	0626_pilkas.mp3	human
+625	0627_spalva	627	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	m@^dq)Zt_9	0627_spalva_sf2.jpg	0627_spalva.mp3	human
+626	0616_pakeisti	616	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	pU-fZSC>?_			silent
+627	0603_ponia	603	A1	cloze	noun	zmones	Lietuvių GO Cloze	tR~Ehv6V,B			silent
+628	0615_anksti	615	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	I[P}pH(FfN			silent
+629	0613_uzsienis	613	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	b:bsT!5ZvE			silent
+630	0614_joks	614	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	J6=1UFVC0!			silent
+631	0633_viskas_aciu	633	A1	phrase		frazes	Lietuvių GO	cX[^@E>35:	0633_viskas_aciu_sf2.jpg		silent
+632	0638_mirti	638	A1	picture	verb	veiksmai	Lietuvių GO	MUl#@q#mcw	0638_mirti_sf2.jpg	0638_mirti.mp3	human
+633	0634_sviestas	634	A1	picture	noun	maistas	Lietuvių GO	mWE?>i:7.n	0634_sviestas_sf2.jpg		silent
+634	0635_pagalve	635	A1	picture	noun	namai	Lietuvių GO	PtEX@-l<KY	0635_pagalve_sf2.jpg		silent
+635	0646_treciadienis	646	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	w>UYTOnx}c	0646_treciadienis_sf2.jpg	0646_treciadienis.mp3	human
+636	0637_noriu_valgyti	637	A1	phrase		frazes	Lietuvių GO	N{KW9WMTKz	0637_noriu_valgyti_sf2.jpg	0637_noriu_valgyti.mp3	human
+637	0628_kiekvienas	628	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	hQktuB70X:			silent
+638	0629_pagal	629	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	J}9aX_s^X*			silent
+639	0630_atsiprasyti	630	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	kq>9DDWJ0a			silent
+640	0639_galbut	639	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	Qnq$k7%4,g			silent
+641	0632_pas	632	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	F61*6z?[jE			silent
+642	0644_bijoti	644	A1	picture	verb	veiksmai	Lietuvių GO	Ao-;E&cj8U	0644_bijoti_sf2.jpg		silent
+643	0645_laiptai	645	A1	picture	noun	namai	Lietuvių GO	k;T7G%OArg	0645_laiptai_sf2.jpg		silent
+644	0659_ketvirtadienis	659	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	dAHWlTxlEI	0659_ketvirtadienis_sf2.jpg	0659_ketvirtadienis.mp3	human
+645	0648_ledas	648	A1	picture	noun	gamta	Lietuvių GO	K(4oK5rbBM	0648_ledas_sf2.jpg	0648_ledas.mp3	human
+646	0662_svente	662	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	N,1|)1c92c	0662_svente_sf2.jpg		silent
+647	0647_iskvieskite_gydytoja	647	A1	phrase		frazes	Lietuvių GO	fORD-o?OPn	0647_iskvieskite_gydytoja_sf2.jpg	0647_iskvieskite_gydytoja.mp3	human
+648	0631_sekme	631	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	JN;^v6+&/2			silent
+649	0641_pavarde	641	A1	cloze	noun	zmones	Lietuvių GO Cloze	m4XLDraD0P		0641_pavarde.mp3	human
+650	0643_kol	643	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	hG:)dot6bQ			silent
+651	0650_greitai	650	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	K7=z^AtG**			silent
+652	0640_klaida	640	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	F[|1/(i$Cu			silent
+653	0649_juokingas	649	A1	picture	adjective	savybes	Lietuvių GO	q~|,i:6^38	0649_juokingas_sf2.jpg		silent
+654	0655_pabusti	655	A1	picture	verb	veiksmai	Lietuvių GO	f4XmR3=BJk	0655_pabusti_sf2.jpg	0655_pabusti.mp3	human
+655	0660_gelbekit	660	A1	phrase		frazes	Lietuvių GO	gDf!pA2ED,	0660_gelbekit_sf2.jpg		silent
+656	0656_keleivis	656	A1	picture	noun	transportas	Lietuvių GO	P-w5}GwtQ{	0656_keleivis_sf2.jpg		silent
+657	0657_muziejus	657	A1	picture	noun	vietos	Lietuvių GO	tt71K|)O|g	0657_muziejus_sf2.jpg		silent
+658	0658_parduoti	658	A1	picture	verb	veiksmai	Lietuvių GO	sPJ`Z{3l:h	0658_parduoti_sf2.jpg	0658_parduoti.mp3	human
+659	0642_desine	642	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	ggW3hs`IK9			silent
+660	0651_vaikas_miega_lovoje	651	A1	sentence		sakiniai	Lietuvių GO Cloze	H8JyVWVPZt	0651_vaikas_miega_lovoje_sf2.jpg		silent
+661	0652_kazkas	652	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	Ov2=Jsi}}-			silent
+662	0653_na	653	A1	cloze		frazes	Lietuvių GO Cloze	jeirO9s(*z			silent
+663	0664_savaitgalis	664	A1	cloze	noun	skaiciai_ir_laikas	Lietuvių GO Cloze	Nr6oO/<6EW		0664_savaitgalis.mp3	human
+664	0663_ranksluostis	663	A1	picture	noun	namai	Lietuvių GO	q>/d~snm6m	0663_ranksluostis_sf2.jpg		silent
+665	0665_rodyti	665	A1	picture	verb	veiksmai	Lietuvių GO	s`jzRQ$`%J	0665_rodyti_sf2.jpg		silent
+666	0666_skanus	666	A1	picture	adjective	savybes	Lietuvių GO	i:(qWSJMbs	0666_skanus_sf2.jpg		silent
+667	0667_zeme	667	A1	picture	noun	gamta	Lietuvių GO	B27B9u?0Xw	0667_zeme_sf2.jpg	0667_zeme.mp3	human
+668	0668_marskiniai	668	A1	picture	noun	drabuziai	Lietuvių GO	g[C@:iR)$y	0668_marskiniai_sf2.jpg	0668_marskiniai.mp3	human
+669	0683_penktadienis	683	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	z!Q=s>1P=?	0683_penktadienis_sf2.jpg	0683_penktadienis.mp3	human
+670	0654_pradzia	654	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	bXc[p#oFv~			silent
+671	0661_prasme	661	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	NL5obY5pS`			silent
+672	0669_suo_bega_parke	669	A1	sentence		sakiniai	Lietuvių GO Cloze	Hm:%1j.UjO	0669_suo_bega_parke_sf2.jpg		silent
+673	0671_taskas	671	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	dK4F^Ge(O,	0671_taskas_sf2.jpg	0671_taskas.mp3	human
+674	0672_vakarelis	672	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	uXG#;R~NeO	0672_vakarelis_sf2.jpg		silent
+675	0674_cia_yra_parduotuve	674	A1	phrase		frazes	Lietuvių GO	Dr1aE!I9[8	0674_cia_yra_parduotuve_sf2.jpg	0674_cia_yra_parduotuve.mp3	human
+676	0675_verkti	675	A1	picture	verb	veiksmai	Lietuvių GO	LLAg}`YE6u	0675_verkti_sf2.jpg	0675_verkti.mp3	human
+677	0673_burna	673	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	M;m:K_ykBz	0673_burna_sf2.jpg	0673_burna.mp3	human
+678	0676_ilgai	676	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	tMm!rj{U&,			silent
+679	0677_svogunas	677	A1	picture	noun	maistas	Lietuvių GO	H-jW[c![Jq	0677_svogunas_sf2.jpg		silent
+680	0678_tarp	678	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	pzW_06Uto7			silent
+681	0680_noreciau	680	A1	cloze		frazes	Lietuvių GO Cloze	haw49Fwo?g			silent
+682	0681_tylus	681	A1	picture	adjective	savybes	Lietuvių GO	M3l~6CKXwG	0681_tylus_sf2.jpg	0681_tylus.mp3	human
+683	0682_garsus	682	A1	picture	adjective	savybes	Lietuvių GO	qw*=x)O@`o	0682_garsus_sf2.jpg	0682_garsus.mp3	human
+684	0694_sestadienis	694	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	EC;_e%u1g6	0694_sestadienis_sf2.jpg	0694_sestadienis.mp3	human
+685	0695_kartais	695	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	ApaUE:NM5}			silent
+686	0684_nekesti	684	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	FA+*2gzNS~			silent
+687	0686_vidurnaktis	686	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	vM?^hX~?q/	0686_vidurnaktis_sf2.jpg		silent
+688	0685_taksi	685	A1	picture	noun	transportas	Lietuvių GO	zcS9&eIVW/	0685_taksi_sf2.jpg		silent
+689	0688_laukas	688	A1	picture	noun	gamta	Lietuvių GO	bszOv9!l|M	0688_laukas_sf2.jpg		silent
+690	0689_rasiklis	689	A1	picture	noun	namai	Lietuvių GO	v2tDmE%}VH	0689_rasiklis_sf2.jpg	0689_rasiklis.mp3	human
+691	0690_vyras_vairuoja_automobili	690	A1	sentence		sakiniai	Lietuvių GO Cloze	q`9q.;Zy5~	0690_vyras_vairuoja_automobili_sf2.jpg		silent
+692	0691_uzkandis	691	A1	picture	noun	maistas	Lietuvių GO	N8dlW*kLoi	0691_uzkandis_sf2.jpg	0691_uzkandis.mp3	human
+693	0692_advokatas	692	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	FO(1:dFVfP	0692_advokatas_sf2.jpg	0692_advokatas.mp3	human
+694	0693_aciu_ne	693	A1	phrase		frazes	Lietuvių GO	O_U|7a[A/F	0693_aciu_ne_sf2.jpg		silent
+695	0709_eile	709	A1	picture	noun	visuomene	Lietuvių GO	uzYwlnrBhO	0709_eile_sf2.jpg	0709_eile.mp3	human
+696	0696_kviesti	696	A1	picture	verb	veiksmai	Lietuvių GO	u7]m+LK),o	0696_kviesti_sf2.jpg		silent
+697	0687_beveik	687	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	M2ZC6A&b;W			silent
+698	0697_jus	697	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	h>pyt2hJU[			silent
+699	0698_mesa	698	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	jgex&Bzp7J	0698_mesa_sf2.jpg		silent
+700	0699_teisus	699	A1	cloze	adjective	savybes	Lietuvių GO Cloze	As|*m0UzYP			silent
+701	0700_striuke	700	A1	picture	noun	drabuziai	Lietuvių GO	pwyo(mltqY	0700_striuke_sf2.jpg		silent
+702	0701_kelti	701	A1	picture	verb	veiksmai	Lietuvių GO	f<*qL;NOB5	0701_kelti_sf2.jpg	0701_kelti.mp3	human
+703	0702_pomidoras	702	A1	picture	noun	maistas	Lietuvių GO	ct;-E)+!Ru	0702_pomidoras_sf2.jpg		silent
+704	0703_kasa	703	A1	picture	noun	vietos	Lietuvių GO	ky+4,XZ1n`	0703_kasa_sf2.jpg	0703_kasa.mp3	human
+705	0704_miegamasis	704	A1	picture	noun	namai	Lietuvių GO	MPblHA9dJZ	0704_miegamasis_sf2.jpg	0704_miegamasis.mp3	human
+706	0705_auksas	705	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	CCoy96*|dp	0705_auksas_sf2.jpg	0705_auksas.mp3	human
+707	0706_parasyti	706	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	y8?tZ>?{Gt			silent
+708	0707_as_turiu_broli	707	A1	phrase		frazes	Lietuvių GO	x<RATZa<i+	0707_as_turiu_broli_sf2.jpg	0707_as_turiu_broli.mp3	human
+709	0708_pabaiga	708	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	fJuC-H;Z-i			silent
+710	0710_alkoholis	710	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	ib{]b:Sb:w			silent
+711	0711_aisku	711	A1	phrase		frazes	Lietuvių GO	Clb86U0@xb	0711_aisku_sf2.jpg		silent
+712	0712_kraujas	712	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	L-Us@yuZtF	0712_kraujas_sf2.jpg	0712_kraujas.mp3	human
+713	0713_padavejas	713	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	QNO~HxmliD	0713_padavejas_sf2.jpg	0713_padavejas.mp3	human
+714	0714_kalnas	714	A1	picture	noun	gamta	Lietuvių GO	A%e6d}KaUJ	0714_kalnas_sf2.jpg	0714_kalnas.mp3	human
+715	0715_antklode	715	A1	picture	noun	namai	Lietuvių GO	M4_^Q$`_bK	0715_antklode_sf2.jpg		silent
+716	0717_lekste	717	A1	picture	noun	maistas	Lietuvių GO	g;vmo!zUh}	0717_lekste_sf2.jpg	0717_lekste.mp3	human
+717	0716_reiketu	716	A1	cloze		frazes	Lietuvių GO Cloze	Jzv_;yNB{A			silent
+718	0718_plauti	718	A1	picture	verb	veiksmai	Lietuvių GO	JC|kYMh)0s	0718_plauti_sf2.jpg	0718_plauti.mp3	human
+719	0719_pilis	719	A1	picture	noun	vietos	Lietuvių GO	Qd|>4]=+/$	0719_pilis_sf2.jpg		silent
+720	0720_motociklas	720	A1	picture	noun	transportas	Lietuvių GO	tgOS!>/ink	0720_motociklas_sf2.jpg		silent
+721	0721_isejimas	721	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	gSkFF6p4>w	0721_isejimas_sf2.jpg		silent
+722	0722_iejimas	722	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	I%!GWHIcmi	0722_iejimas_sf2.jpg		silent
+723	0723_reikia	723	A1	cloze		frazes	Lietuvių GO Cloze	gnHA~#[kyc			silent
+724	0724_irgi	724	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	A%[+:&8ey4			silent
+725	0679_meile	679	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	tG[m>NT{)x	0679_meile_sf2.jpg		silent
+726	0725_pasiruoses	725	A1	cloze	adjective	savybes	Lietuvių GO Cloze	ysZOF`.GHy			silent
+727	0727_zeme	727	A1	picture	noun	gamta	Lietuvių GO	iON}]KQ.Mz	0727_zeme_sf2.jpg	0727_zeme.mp3	human
+728	0728_atsitikti	728	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	l2E)/K_i&~			silent
+729	0726_lietuvis	726	A1	cloze	noun	zmones	Lietuvių GO Cloze	hPa]kjku<i			silent
+730	0729_kaklaraistis	729	A1	picture	noun	drabuziai	Lietuvių GO	Jwn&|?)?a@	0729_kaklaraistis_sf2.jpg		silent
+731	0730_turgus	730	A1	picture	noun	vietos	Lietuvių GO	J-UN#EI_S(	0730_turgus_sf2.jpg	0730_turgus.mp3	human
+732	0731_meniu	731	A1	picture	noun	maistas	Lietuvių GO	hP?7KXRNi9	0731_meniu_sf2.jpg	0731_meniu.mp3	human
+733	0742_sekmadienis	742	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	m?~Ju#d;mK	0742_sekmadienis_sf2.jpg	0742_sekmadienis.mp3	human
+734	0735_dydis	735	A1	cloze	noun	visuomene	Lietuvių GO Cloze	JU`f],L3SA		0735_dydis.mp3	human
+735	0736_ne_vienas	736	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	k}I{Wt>`E			silent
+736	0732_gimti	732	A1	picture	verb	veiksmai	Lietuvių GO	m?6Ajjg=gX	0732_gimti_sf2.jpg		silent
+737	0737_klientas	737	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	LR%/IzU$+H			silent
+738	0740_ar_supranti	740	A1	phrase		frazes	Lietuvių GO	uD#});dQv1	0740_ar_supranti_sf2.jpg		silent
+739	0738_gana	738	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	m3S8Z9~N.o			silent
+740	0739_dekoti	739	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	v/f1X&H[*|			silent
+741	0733_kietas	733	A1	picture	adjective	savybes	Lietuvių GO	kR_rXw02&e	0733_kietas_sf2.jpg	0733_kietas.mp3	human
+742	0734_minkstas	734	A1	picture	adjective	savybes	Lietuvių GO	w[[&s[N]gd	0734_minkstas_sf2.jpg	0734_minkstas.mp3	human
+743	0741_megztinis	741	A1	picture	noun	drabuziai	Lietuvių GO	sh~@]=0sJF	0741_megztinis_sf2.jpg		silent
+744	0743_sokti	743	A1	picture	verb	veiksmai	Lietuvių GO	ml|RO9Az2z	0743_sokti_sf2.jpg	0743_sokti.mp3	human
+745	0747_mama_gamina_vakariene	747	A1	sentence		sakiniai	Lietuvių GO Cloze	QILZj(ZTV%	0747_mama_gamina_vakariene_sf2.jpg		silent
+746	0759_reklama	759	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	E<KUS!)XY`			silent
+747	0744_salotos	744	A1	picture	noun	maistas	Lietuvių GO	BnHXHH6`7P	0744_salotos_sf2.jpg		silent
+748	0749_abu	749	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	i)H`,E/N+{			silent
+749	0750_abi	750	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	qhC1M8q^`}			silent
+750	0751_laimingu_naujuju_metu	751	A1	phrase		frazes	Lietuvių GO	GtI#iM73;#	0751_laimingu_naujuju_metu_sf2.jpg		silent
+751	0753_sitas	753	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	AaEpR6i:Vt			silent
+752	0752_deze	752	A1	picture	noun	namai	Lietuvių GO	b`Pq-0V?S_	0752_deze_sf2.jpg	0752_deze.mp3	human
+753	0745_pirkejas	745	A1	picture	noun	visuomene	Lietuvių GO	Os]T_c|g<e	0745_pirkejas_sf2.jpg		silent
+754	0746_pardavejas	746	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	IdHE|,6`F]	0746_pardavejas_sf2.jpg		silent
+755	0755_sekmes	755	A1	phrase		frazes	Lietuvių GO	hD~AV8=u)f	0755_sekmes_sf2.jpg	0755_sekmes.mp3	human
+756	0758_pavojingas	758	A1	cloze	adjective	savybes	Lietuvių GO Cloze	H<Xw`M6GN8			silent
+757	0756_kristi	756	A1	picture	verb	veiksmai	Lietuvių GO	g3q6uU?z],	0756_kristi_sf2.jpg	0756_kristi.mp3	human
+758	0757_sporto_sale	757	A1	picture	noun	vietos	Lietuvių GO	sXidwal&G!	0757_sporto_sale_sf2.jpg		silent
+759	0754_lempa	754	A1	picture	noun	namai	Lietuvių GO	u+Ea!sN-;T	0754_lempa_sf2.jpg	0754_lempa.mp3	human
+760	0760_kopustas	760	A1	picture	noun	maistas	Lietuvių GO	vtdPe=ael$	0760_kopustas_sf2.jpg		silent
+761	0761_blogai	761	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	r)*J*f}YL;			silent
+762	0762_kitoks	762	A1	cloze	adjective	savybes	Lietuvių GO Cloze	y<g`8yWAe@			silent
+763	0764_pasirinkti	764	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	wy6u^AK2hS			silent
+764	0763_as_pasiklydau	763	A1	phrase		frazes	Lietuvių GO	f7%5^.gf|%	0763_as_pasiklydau_sf2.jpg		silent
+765	0765_pacientas	765	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	i~39;UTE1t	0765_pacientas_sf2.jpg	0765_pacientas.mp3	human
+766	0769_partneris	769	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	d2>LH~|@P1			silent
+767	0766_akiniai	766	A1	picture	noun	drabuziai	Lietuvių GO	s`tHO4r5S6	0766_akiniai_sf2.jpg		silent
+768	0767_statyti	767	A1	picture	verb	veiksmai	Lietuvių GO	p1j5C6QC&Z	0767_statyti_sf2.jpg	0767_statyti.mp3	human
+769	0770_rusas	770	A1	cloze	noun	zmones	Lietuvių GO Cloze	dG;Xk4Y;/[			silent
+770	0768_geros_keliones	768	A1	phrase		frazes	Lietuvių GO	dSkYV51X`	0768_geros_keliones_sf2.jpg	0768_geros_keliones.mp3	human
+771	0780_birzelis	780	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	AZJh]avrU#	0780_birzelis_sf2.jpg	0780_birzelis.mp3	human
+772	0772_paukstis_skrenda_danguje	772	A1	sentence		sakiniai	Lietuvių GO Cloze	ke2?i?9IzD	0772_paukstis_skrenda_danguje_sf2.jpg		silent
+773	0773_saugus	773	A1	cloze	adjective	savybes	Lietuvių GO Cloze	A@1541k.ud			silent
+774	0771_kortele	771	A1	picture	noun	namai	Lietuvių GO	g=-dTC*X<-	0771_kortele_sf2.jpg	0771_kortele.mp3	human
+775	0774_takas	774	A1	picture	noun	gamta	Lietuvių GO	HB0A!Y1Jh5	0774_takas_sf2.jpg		silent
+776	0775_atnesti	775	A1	picture	verb	veiksmai	Lietuvių GO	F:>H{QYOT/	0775_atnesti_sf2.jpg		silent
+777	0776_grybas	776	A1	picture	noun	maistas	Lietuvių GO	HO5Z_(a-i6	0776_grybas_sf2.jpg		silent
+778	0777_kareivis	777	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	Fikw#6B`C?	0777_kareivis_sf2.jpg	0777_kareivis.mp3	human
+779	0778_galiu_truputi_kalbeti	778	A1	phrase		frazes	Lietuvių GO	MZJN)qCitL	0778_galiu_truputi_kalbeti_sf2.jpg	0778_galiu_truputi_kalbeti.mp3	human
+780	0779_traukti	779	A1	picture	verb	veiksmai	Lietuvių GO	t@E<@-K1Oz	0779_traukti_sf2.jpg	0779_traukti.mp3	human
+781	0791_liepa	791	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	gtk;eMD<6d	0791_liepa_sf2.jpg	0791_liepa.mp3	human
+782	0781_skirtingas	781	A1	cloze	adjective	savybes	Lietuvių GO Cloze	MM.$UoB^rH			silent
+783	0782_sarasas	782	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	r~/O#sooUm			silent
+784	0783_plaukai	783	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	kE#m:H2%WP	0783_plaukai_sf2.jpg	0783_plaukai.mp3	human
+785	0784_stotele	784	A1	picture	noun	vietos	Lietuvių GO	DMRh@xh/F@	0784_stotele_sf2.jpg		silent
+786	0785_lapas	785	A1	picture	noun	gamta	Lietuvių GO	zfOx@TP++J	0785_lapas_sf2.jpg	0785_lapas.mp3	human
+787	0786_faktas	786	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	q0/C^;@5}R			silent
+788	0787_nueiti	787	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	o~?)7cetj_			silent
+789	0788_kitoje_puseje	788	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	rniT3b~k3n			silent
+790	0789_sveiki_atvyke	789	A1	phrase		frazes	Lietuvių GO	f@2SH&Y&%u	0789_sveiki_atvyke_sf2.jpg	0789_sveiki_atvyke.mp3	human
+791	0790_lentyna	790	A1	picture	noun	namai	Lietuvių GO	ovRpn1a93$	0790_lentyna_sf2.jpg		silent
+792	0792_vynas	792	A1	picture	noun	maistas	Lietuvių GO	oJWchlV=Qj	0792_vynas_sf2.jpg	0792_vynas.mp3	human
+793	0793_sijonas	793	A1	picture	noun	drabuziai	Lietuvių GO	rn=^mJyBUJ	0793_sijonas_sf2.jpg	0793_sijonas.mp3	human
+794	0794_zodynas	794	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	wRatLfEUj4	0794_zodynas_sf2.jpg		silent
+795	0795_naudoti	795	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	g<{@hyy-;o			silent
+796	0796_teisingas	796	A1	cloze	adjective	savybes	Lietuvių GO Cloze	t{{uS>jXXw			silent
+797	0797_zenklas	797	A1	picture	noun	visuomene	Lietuvių GO	I!)W*j/m^T	0797_zenklas_sf2.jpg	0797_zenklas.mp3	human
+798	0798_ar_toli	798	A1	phrase		frazes	Lietuvių GO	wF>CrbW5pG	0798_ar_toli_sf2.jpg		silent
+799	0800_zaizda	800	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	CuqCi-J@G3	0800_zaizda_sf2.jpg	0800_zaizda.mp3	human
+800	0799_turbut	799	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	J7MY[mo,Ez			silent
+801	0801_piestukas	801	A1	picture	noun	namai	Lietuvių GO	Gj9r1O9@>+	0801_piestukas_sf2.jpg	0801_piestukas.mp3	human
+802	0802_senele_sedi_ant_kedes	802	A1	sentence		sakiniai	Lietuvių GO Cloze	ByqEQN(;;~	0802_senele_sedi_ant_kedes_sf2.jpg		silent
+803	0804_fotoaparatas	804	A1	picture	noun	namai	Lietuvių GO	D%F6$|7~[&	0804_fotoaparatas_sf2.jpg	0804_fotoaparatas.mp3	human
+804	0803_dusas	803	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	tMnL@`#/:V	0803_dusas_sf2.jpg		silent
+805	0805_degaline	805	A1	picture	noun	vietos	Lietuvių GO	wC_q.}ldm#	0805_degaline_sf2.jpg		silent
+806	0806_isgerti	806	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	kUSYSzb.&d			silent
+807	0807_kojines	807	A1	picture	noun	drabuziai	Lietuvių GO	vkHY{wsCMF	0807_kojines_sf2.jpg		silent
+808	0808_kariuomene	808	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	tb|mA8]&%Z	0808_kariuomene_sf2.jpg	0808_kariuomene.mp3	human
+809	0809_akmuo	809	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	q-yVCMjC=q	0809_akmuo_sf2.jpg	0809_akmuo.mp3	human
+810	0811_gaila	811	A1	phrase		frazes	Lietuvių GO	g3apsEmnrR	0811_gaila_sf2.jpg		silent
+811	0810_sveikinu	810	A1	phrase		frazes	Lietuvių GO	zzS<]&H1(.	0810_sveikinu_sf2.jpg	0810_sveikinu.mp3	human
+812	0812_spinta	812	A1	picture	noun	namai	Lietuvių GO	OW6V91NhmK	0812_spinta_sf2.jpg		silent
+813	0825_rugpjutis	825	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	t9#/w}NySi	0825_rugpjutis_sf2.jpg	0825_rugpjutis.mp3	human
+814	0826_atostogos	826	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	n[VSh&{L9(			silent
+815	0813_rinkti	813	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	NWa!>FX!TL			silent
+816	0814_gilus	814	A1	picture	adjective	savybes	Lietuvių GO	L@)SBw0d]@	0814_gilus_sf2.jpg	0814_gilus.mp3	human
+817	0815_seklus	815	A1	picture	adjective	savybes	Lietuvių GO	PLbnx5H-Mw	0815_seklus_sf2.jpg	0815_seklus.mp3	human
+818	0816_skyle	816	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	p5$AZfBx9M	0816_skyle_sf2.jpg	0816_skyle.mp3	human
+819	0818_veliau	818	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	QgK#e!,|(^			silent
+820	0819_man_dvidesimt_metu	819	A1	phrase		frazes	Lietuvių GO	LlI_%9>_AB	0819_man_dvidesimt_metu_sf2.jpg	0819_man_dvidesimt_metu.mp3	human
+821	0820_skubeti	820	A1	picture	verb	veiksmai	Lietuvių GO	l^D<^56g=V	0820_skubeti_sf2.jpg		silent
+822	0822_vyras	822	A1	picture	noun	zmones	Lietuvių GO	in10No[%U1	0822_vyras_sf2.jpg	0822_vyras.mp3	human
+823	0823_zmona	823	A1	picture	noun	zmones	Lietuvių GO	jy96(jEKq4	0823_zmona_sf2.jpg	0823_zmona.mp3	human
+824	0824_jo	824	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	Kj.FkNq+aU			silent
+825	0821_agurkas	821	A1	picture	noun	maistas	Lietuvių GO	tg0qQAm)1p	0821_agurkas_sf2.jpg		silent
+826	0836_rugsejis	836	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	soZ,En0rr|	0836_rugsejis_sf2.jpg		silent
+827	0827_muilas	827	A1	picture	noun	namai	Lietuvių GO	N>puTf`yMg	0827_muilas_sf2.jpg	0827_muilas.mp3	human
+828	0828_teatras	828	A1	picture	noun	vietos	Lietuvių GO	w&SgqN8IPJ	0828_teatras_sf2.jpg	0828_teatras.mp3	human
+829	0829_sukti	829	A1	picture	verb	veiksmai	Lietuvių GO	Geks4=?-L,	0829_sukti_sf2.jpg	0829_sukti.mp3	human
+830	0830_sofa	830	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	e#YVQzkkyC	0830_sofa_sf2.jpg		silent
+831	0817_kazkoks	817	A1	cloze	pronoun	pagalbiniai_zodziai	Lietuvių GO Cloze	lYTMXy,>lO			silent
+832	0831_aukstas	831	A1	picture	adjective	savybes	Lietuvių GO	AuuvCW(a00	0831_aukstas_sf2.jpg	0831_aukstas.mp3	human
+833	0832_zemas	832	A1	picture	adjective	savybes	Lietuvių GO	ndU%vV6!n^	0832_zemas_sf2.jpg	0832_zemas.mp3	human
+834	0833_jogurtas	833	A1	picture	noun	maistas	Lietuvių GO	JlRi)EIS>i	0833_jogurtas_sf2.jpg		silent
+835	0834_nusipirkti	834	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	h`auRX,#R#			silent
+836	0835_augalas	835	A1	picture	noun	gamta	Lietuvių GO	svBIbTJAq=	0835_augalas_sf2.jpg	0835_augalas.mp3	human
+837	0844_spalis	844	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	Bsmagd[nxM	0844_spalis_sf2.jpg	0844_spalis.mp3	human
+838	0837_koncertas	837	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	J:B|ivz!.E	0837_koncertas_sf2.jpg		silent
+839	0838_sale	838	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	fJTiNug+~@			silent
+840	0839_grindys	839	A1	picture	noun	namai	Lietuvių GO	l2(xPvfVr)	0839_grindys_sf2.jpg	0839_grindys.mp3	human
+841	0840_musti	840	A1	picture	verb	veiksmai	Lietuvių GO	qityn:wIQl	0840_musti_sf2.jpg	0840_musti.mp3	human
+842	0841_su_sventemis	841	A1	phrase		frazes	Lietuvių GO	zMgxF~E?T4	0841_su_sventemis_sf2.jpg		silent
+843	0842_kazkur	842	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	B;-7>XOXXy			silent
+844	0843_salis	843	A1	picture	noun	vietos	Lietuvių GO	P76U#GRfkp	0843_salis_sf2.jpg	0843_salis.mp3	human
+845	0861_lapkritis	861	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	CP/X8!vf2D	0861_lapkritis_sf2.jpg	0861_lapkritis.mp3	human
+846	0845_skaiciuoti	845	A1	picture	verb	veiksmai	Lietuvių GO	BT*[*TpQ$k	0845_skaiciuoti_sf2.jpg	0845_skaiciuoti.mp3	human
+847	0846_kriause	846	A1	picture	noun	maistas	Lietuvių GO	Pge}nBorq5	0846_kriause_sf2.jpg		silent
+848	0847_akimirka	847	A1	phrase		frazes	Lietuvių GO	Adjemf(L7k	0847_akimirka_sf2.jpg	0847_akimirka.mp3	human
+849	0848_storas	848	A1	picture	adjective	savybes	Lietuvių GO	J)^t%W{?Jf	0848_storas_sf2.jpg	0848_storas.mp3	human
+850	0849_plonas	849	A1	picture	adjective	savybes	Lietuvių GO	Qmsi)83}hS	0849_plonas_sf2.jpg	0849_plonas.mp3	human
+851	0850_vestuves	850	A1	picture	noun	visuomene	Lietuvių GO	G_d0J-(/sU	0850_vestuves_sf2.jpg	0850_vestuves.mp3	human
+852	0851_verslininkas	851	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	u`.GE/~afm			silent
+853	0852_guleti	852	A1	picture	verb	veiksmai	Lietuvių GO	KgUU5|wj4;	0852_guleti_sf2.jpg	0852_guleti.mp3	human
+854	0853_pirstines	853	A1	picture	noun	drabuziai	Lietuvių GO	DnH*U1ONE)	0853_pirstines_sf2.jpg		silent
+855	0854_ideja	854	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	Jlc<3j2Nae			silent
+856	0855_kiek_kainuoja_bilietas	855	A1	phrase		frazes	Lietuvių GO	(66P*e#Ze	0855_kiek_kainuoja_bilietas_sf2.jpg	0855_kiek_kainuoja_bilietas.mp3	human
+857	0856_duona_kainuoja_viena_lita	856	A1	sentence		sakiniai	Lietuvių GO Cloze	Lhx1g9()5c	0856_duona_kainuoja_viena_lita_sf2.jpg		silent
+858	0857_zurnalistas	857	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	ofHTD8C.0h	0857_zurnalistas_sf2.jpg	0857_zurnalistas.mp3	human
+859	0858_kalbetis	858	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	y_K-QwY*%6			silent
+860	0859_paprastai	859	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	dpiYi_G{/}			silent
+861	0860_nugara	860	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	vmfOQ)=$Gp	0860_nugara_sf2.jpg	0860_nugara.mp3	human
+862	0872_gruodis	872	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	rTu*Uxz}}9	0872_gruodis_sf2.jpg	0872_gruodis.mp3	human
+863	0862_biuras	862	A1	picture	noun	vietos	Lietuvių GO	dsk_.2au)~	0862_biuras_sf2.jpg	0862_biuras.mp3	human
+864	0863_zemelapis	863	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	Dw$S,q|_T7	0863_zemelapis_sf2.jpg	0863_zemelapis.mp3	human
+865	0864_trecia_valanda	864	A1	phrase		frazes	Lietuvių GO	oNu&N<Qt<+	0864_trecia_valanda_sf2.jpg	0864_trecia_valanda.mp3	human
+866	0865_renginys	865	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	yY_9f!Tkw&	0865_renginys_sf2.jpg		silent
+867	0866_augti	866	A1	picture	verb	veiksmai	Lietuvių GO	K=,8QFicIB	0866_augti_sf2.jpg	0866_augti.mp3	human
+868	0867_tobulas	867	A1	cloze	adjective	savybes	Lietuvių GO Cloze	jpL7Z%]%AZ			silent
+869	0868_sodas	868	A1	picture	noun	namai	Lietuvių GO	pG={/}]3n)	0868_sodas_sf2.jpg	0868_sodas.mp3	human
+870	0869_sekme	869	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	numrzz]:/Z			silent
+871	0870_tortas	870	A1	picture	noun	maistas	Lietuvių GO	xKht^cKPIO	0870_tortas_sf2.jpg	0870_tortas.mp3	human
+872	0871_noreciau_kavos	871	A1	phrase		frazes	Lietuvių GO	eGQ+FilpX*	0871_noreciau_kavos_sf2.jpg	0871_noreciau_kavos.mp3	human
+873	0873_lankyti	873	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	lV;,J`49)@			silent
+874	0874_oda	874	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	u0UA1kMsb	0874_oda_sf2.jpg	0874_oda.mp3	human
+875	0875_vienuolika	875	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	rpmA4Y1[@W	0875_vienuolika_sf2.jpg	0875_vienuolika.mp3	human
+876	0876_koridorius	876	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	N(?Qk_|^~l	0876_koridorius_sf2.jpg		silent
+877	0877_sivakar	877	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	s(+FN$}lLM			silent
+878	0878_su_gimtadieniu	878	A1	phrase		frazes	Lietuvių GO	Y|5gYQ%Xc	0878_su_gimtadieniu_sf2.jpg	0878_su_gimtadieniu.mp3	human
+879	0879_sveikinti	879	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	j^8HYj).O_			silent
+880	0880_teismas	880	A1	picture	noun	vietos	Lietuvių GO	MM[(Sh#(3>	0880_teismas_sf2.jpg	0880_teismas.mp3	human
+881	0881_paveikslas	881	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	pX4E)~5(pt	0881_paveikslas_sf2.jpg		silent
+882	0882_saukstas	882	A1	picture	noun	maistas	Lietuvių GO	gm`T79[Rh>	0882_saukstas_sf2.jpg	0882_saukstas.mp3	human
+883	0883_papludimys	883	A1	picture	noun	gamta	Lietuvių GO	c>|ID4D:Di	0883_papludimys_sf2.jpg	0883_papludimys.mp3	human
+884	0885_sketis	885	A1	picture	noun	drabuziai	Lietuvių GO	lj_ciIVNn~	0885_sketis_sf2.jpg		silent
+885	0884_asmeninis	884	A1	cloze	adjective	savybes	Lietuvių GO Cloze	HLucM*4F{6			silent
+886	0888_dantu_pasta	888	A1	picture	noun	namai	Lietuvių GO	NSHKNWIo~r	0888_dantu_pasta_sf2.jpg		silent
+887	0886_buciuoti	886	A1	picture	verb	veiksmai	Lietuvių GO	z/}NQ:+BBN	0886_buciuoti_sf2.jpg	0886_buciuoti.mp3	human
+888	0887_siandien_salta	887	A1	phrase		frazes	Lietuvių GO	M]_%!=n$NT	0887_siandien_salta_sf2.jpg	0887_siandien_salta.mp3	human
+889	0889_dvylika	889	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	uojr>OmVK]	0889_dvylika_sf2.jpg	0889_dvylika.mp3	human
+890	0890_gimtadienis	890	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	f03R#`g`U2	0890_gimtadienis_sf2.jpg		silent
+891	0891_kadangi	891	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	c+pT<{k3qG			silent
+892	0893_pazymejimas	893	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	qy%VLc<*;Y			silent
+893	0892_prisijungti	892	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	jT1,/yQs3+			silent
+894	0897_amerikietis	897	A1	cloze	noun	zmones	Lietuvių GO Cloze	y7kS$_l7q0			silent
+895	0894_medus	894	A1	picture	noun	maistas	Lietuvių GO	LjD1$5Wh.J	0894_medus_sf2.jpg		silent
+896	0895_linksmu_kaledu	895	A1	phrase		frazes	Lietuvių GO	CK`F?!h>7Y	0895_linksmu_kaledu_sf2.jpg		silent
+897	0896_niekur	896	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	mS13~g%;7C			silent
+898	0898_tamsus	898	A1	picture	adjective	savybes	Lietuvių GO	CVQu(lyMja	0898_tamsus_sf2.jpg	0898_tamsus.mp3	human
+899	0899_sviesus	899	A1	picture	adjective	savybes	Lietuvių GO	K{%VdK5{wl	0899_sviesus_sf2.jpg	0899_sviesus.mp3	human
+900	0900_ziedas	900	A1	picture	noun	namai	Lietuvių GO	O4FykdGNV,	0900_ziedas_sf2.jpg	0900_ziedas.mp3	human
+901	0901_vilkas	901	A1	picture	noun	gamta	Lietuvių GO	n&9Nz}0@9.	0901_vilkas_sf2.jpg		silent
+902	0910_siemet	910	A1	cloze	adverb	skaiciai_ir_laikas	Lietuvių GO Cloze	[]K54G1bO			silent
+903	0911_pernai	911	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	x//VkVlXke			silent
+904	0902_ar_galiu_moketi_kortele	902	A1	phrase		frazes	Lietuvių GO	O+5>m3!445	0902_ar_galiu_moketi_kortele_sf2.jpg		silent
+905	0903_praeiti	903	A1	picture	verb	veiksmai	Lietuvių GO	eOI-wv/Gl.	0903_praeiti_sf2.jpg	0903_praeiti.mp3	human
+906	0904_kelios	904	A1	cloze	numeral	skaiciai_ir_laikas	Lietuvių GO Cloze	jr0.*MHN7p			silent
+907	0905_sunkvezimis	905	A1	picture	noun	transportas	Lietuvių GO	vpMN@+JVH^	0905_sunkvezimis_sf2.jpg	0905_sunkvezimis.mp3	human
+908	0906_autorius	906	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	h@[-w<hkn!	0906_autorius_sf2.jpg	0906_autorius.mp3	human
+909	0907_pasas	907	A1	picture	noun	visuomene	Lietuvių GO	v>aag/:-p)	0907_pasas_sf2.jpg	0907_pasas.mp3	human
+910	0908_politikas	908	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	O/hQgbsz%S			silent
+911	0909_uzeikite	909	A1	phrase		frazes	Lietuvių GO	z<E&]xhZls	0909_uzeikite_sf2.jpg		silent
+912	0912_deti	912	A1	picture	verb	veiksmai	Lietuvių GO	k?@%nz6q._	0912_deti_sf2.jpg		silent
+913	0913_metalas	913	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	eA.3-q0:4W	0913_metalas_sf2.jpg	0913_metalas.mp3	human
+914	0914_desra	914	A1	picture	noun	maistas	Lietuvių GO	O,,ow49N.<	0914_desra_sf2.jpg		silent
+915	0915_keturiasdesimt	915	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	lz,[we&Pc:	0915_keturiasdesimt_sf2.jpg	0915_keturiasdesimt.mp3	human
+916	0916_negu	916	A1	cloze	conjunction	pagalbiniai_zodziai	Lietuvių GO Cloze	y:?>(_{~{2			silent
+917	0918_peda	918	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	I.}TJ]^|.`	0918_peda_sf2.jpg	0918_peda.mp3	human
+918	0917_kaip_nuvykti_i	917	A1	phrase		frazes	Lietuvių GO	m*?S].BB/_	0917_kaip_nuvykti_i_sf2.jpg		silent
+919	0919_vista	919	A1	picture	noun	gamta	Lietuvių GO	F-]R.Aa,P*	0919_vista_sf2.jpg		silent
+920	0920_kiemas	920	A1	picture	noun	namai	Lietuvių GO	FUJJh_Co2M	0920_kiemas_sf2.jpg	0920_kiemas.mp3	human
+921	0921_virti	921	A1	picture	verb	veiksmai	Lietuvių GO	P]1+xi3&p`	0921_virti_sf2.jpg		silent
+922	0922_tiesiai	922	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	Ocr?(3,?Ij			silent
+923	0923_cekis	923	A1	picture	noun	visuomene	Lietuvių GO	nH:nZ-pW_H	0923_cekis_sf2.jpg		silent
+924	0924_ar_tau_patinka	924	A1	phrase		frazes	Lietuvių GO	vwNjGvLzpR	0924_ar_tau_patinka_sf2.jpg		silent
+925	0925_penkiasdesimt	925	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	zFClEE[Y|k	0925_penkiasdesimt_sf2.jpg	0925_penkiasdesimt.mp3	human
+926	0926_sedyne	926	A1	picture	noun	transportas	Lietuvių GO	dJl6;@^2fN	0926_sedyne_sf2.jpg		silent
+927	0927_uzrasyti	927	A1	picture	verb	veiksmai	Lietuvių GO	JdERvLWS<x	0927_uzrasyti_sf2.jpg		silent
+928	0928_stiklas	928	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	MwPG.Nb!vn	0928_stiklas_sf2.jpg	0928_stiklas.mp3	human
+929	0929_saldytuvas	929	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	lE~_.D2W*p	0929_saldytuvas_sf2.jpg		silent
+930	0931_pavojus	931	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	hIQ_N0[h7$			silent
+931	0930_patogus	930	A1	picture	adjective	savybes	Lietuvių GO	gyH{rn9P&O	0930_patogus_sf2.jpg		silent
+932	0932_blynai	932	A1	picture	noun	maistas	Lietuvių GO	O1F;HU$cGm	0932_blynai_sf2.jpg		silent
+933	0933_sortai	933	A1	picture	noun	drabuziai	Lietuvių GO	DW,:_s,,{K	0933_sortai_sf2.jpg		silent
+934	0934_gero_savaitgalio	934	A1	phrase		frazes	Lietuvių GO	oUJ,^opA6?	0934_gero_savaitgalio_sf2.jpg		silent
+935	0935_puslapis	935	A1	picture	noun	namai	Lietuvių GO	m9Scd2;w5V	0935_puslapis_sf2.jpg	0935_puslapis.mp3	human
+936	0936_paduoti	936	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	cLc}q[/`d5			silent
+937	0937_bulve	937	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	K4e,NC{/jh	0937_bulve_sf2.jpg		silent
+938	0939_pakankamai	939	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	Bo:Towhk@w			silent
+939	0938_saldus	938	A1	picture	adjective	savybes	Lietuvių GO	Ls&y!*Eb_W	0938_saldus_sf2.jpg		silent
+940	0940_noriu_gerti	940	A1	phrase		frazes	Lietuvių GO	eUJVfuSN<t	0940_noriu_gerti_sf2.jpg		silent
+941	0941_aktorius	941	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	x[n[{x[Hn,	0941_aktorius_sf2.jpg	0941_aktorius.mp3	human
+942	0942_liesti	942	A1	picture	verb	veiksmai	Lietuvių GO	qXspwNT?oP	0942_liesti_sf2.jpg	0942_liesti.mp3	human
+943	0943_dantu_sepetelis	943	A1	picture	noun	namai	Lietuvių GO	G^tGjR$(@?	0943_dantu_sepetelis_sf2.jpg		silent
+944	0944_smelis	944	A1	picture	noun	gamta	Lietuvių GO	y7B:KpflzB	0944_smelis_sf2.jpg	0944_smelis.mp3	human
+945	0945_turtingas	945	A1	picture	adjective	savybes	Lietuvių GO	e[,nEnhY%c	0945_turtingas_sf2.jpg	0945_turtingas.mp3	human
+946	0946_neturtingas	946	A1	picture	adjective	savybes	Lietuvių GO	N&lk5>)Nef	0946_neturtingas_sf2.jpg	0946_neturtingas.mp3	human
+947	0947_sakute	947	A1	picture	noun	maistas	Lietuvių GO	H)s[d*q7j6	0947_sakute_sf2.jpg	0947_sakute.mp3	human
+948	0948_anglas	948	A1	cloze	noun	zmones	Lietuvių GO Cloze	eQRnzwmbuB			silent
+949	0952_kioskas	952	A1	picture	noun	vietos	Lietuvių GO	q&`[7qyNo9	0952_kioskas_sf2.jpg	0952_kioskas.mp3	human
+950	0949_noreciau_sumoketi	949	A1	phrase		frazes	Lietuvių GO	F95xj:e.v!	0949_noreciau_sumoketi_sf2.jpg		silent
+951	0950_gaudyti	950	A1	picture	verb	veiksmai	Lietuvių GO	A#vCTN{v/l	0950_gaudyti_sf2.jpg	0950_gaudyti.mp3	human
+952	0951_gelezinkelis	951	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	J(z[jCjJ[n	0951_gelezinkelis_sf2.jpg		silent
+953	0953_arklys	953	A1	picture	noun	gyvunai	Lietuvių GO	hM04!IWb8M	0953_arklys_sf2.jpg	0953_arklys.mp3	human
+954	0955_valtis	955	A1	picture	noun	transportas	Lietuvių GO	gzLk>w1bg_	0955_valtis_sf2.jpg	0955_valtis.mp3	human
+955	0954_velai	954	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	h~|5[!=#C#			silent
+956	0956_trylika	956	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	tga_a#?%u,	0956_trylika_sf2.jpg	0956_trylika.mp3	human
+957	0957_salikas	957	A1	picture	noun	drabuziai	Lietuvių GO	dj-}M^rq@g	0957_salikas_sf2.jpg		silent
+958	0958_kepti	958	A1	picture	verb	veiksmai	Lietuvių GO	c--#;Fc0NU	0958_kepti_sf2.jpg		silent
+959	0959_makaronai	959	A1	picture	noun	maistas	Lietuvių GO	r_jyPJk486	0959_makaronai_sf2.jpg		silent
+960	0960_moneta	960	A1	picture	noun	visuomene	Lietuvių GO	zJ{UrO~9bC	0960_moneta_sf2.jpg		silent
+961	0961_iki_rytojaus	961	A1	phrase		frazes	Lietuvių GO	L+TIlev-:V	0961_iki_rytojaus_sf2.jpg	0961_iki_rytojaus.mp3	human
+962	0963_stogas	963	A1	picture	noun	namai	Lietuvių GO	Ay)_N@O#g!	0963_stogas_sf2.jpg	0963_stogas.mp3	human
+963	0962_svesti	962	A1	picture	verb	veiksmai	Lietuvių GO	QrcDIgg.0f	0962_svesti_sf2.jpg		silent
+964	0964_prezidentas	964	A1	picture	noun	zmones	Lietuvių GO	k>3$,%Vj9&	0964_prezidentas_sf2.jpg	0964_prezidentas.mp3	human
+965	0965_desertas	965	A1	picture	noun	maistas	Lietuvių GO	d3~OHPY:=t	0965_desertas_sf2.jpg	0965_desertas.mp3	human
+966	0968_rasytojas	968	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	kxd3-SWgKA	0968_rasytojas_sf2.jpg		silent
+967	0966_iki_greito	966	A1	phrase		frazes	Lietuvių GO	m.7t)q,z;z	0966_iki_greito_sf2.jpg		silent
+968	0967_degti	967	A1	picture	verb	veiksmai	Lietuvių GO	bHN6^ir~{c	0967_degti_sf2.jpg	0967_degti.mp3	human
+969	0969_biblioteka	969	A1	picture	noun	vietos	Lietuvių GO	Fc>pE&zW?n	0969_biblioteka_sf2.jpg	0969_biblioteka.mp3	human
+970	0970_saka	970	A1	picture	noun	gamta	Lietuvių GO	O|N@;|s6mx	0970_saka_sf2.jpg		silent
+971	0971_gyvas	971	A1	picture	adjective	savybes	Lietuvių GO	f5CI:~xo|4	0971_gyvas_sf2.jpg	0971_gyvas.mp3	human
+972	0972_negyvas	972	A1	picture	adjective	savybes	Lietuvių GO	cGwewr=pZa	0972_negyvas_sf2.jpg	0972_negyvas.mp3	human
+973	0973_saukti	973	A1	picture	verb	veiksmai	Lietuvių GO	G:oMO7LN0*	0973_saukti_sf2.jpg		silent
+974	0974_link	974	A1	cloze	preposition	pagalbiniai_zodziai	Lietuvių GO Cloze	uk0[shh#Xh			silent
+975	0975_stikline	975	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	wx=x|}+9D#	0975_stikline_sf2.jpg		silent
+976	0976_kaklas	976	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	qyNCo1r5l+	0976_kaklas_sf2.jpg	0976_kaklas.mp3	human
+977	0977_valyti	977	A1	picture	verb	veiksmai	Lietuvių GO	j|EgB(lr$J	0977_valyti_sf2.jpg	0977_valyti.mp3	human
+978	0978_kunigas	978	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	Czk6,QNU!7	0978_kunigas_sf2.jpg	0978_kunigas.mp3	human
+979	0979_visur	979	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	A7dseTL>iW			silent
+980	0980_klubas	980	A1	picture	noun	vietos	Lietuvių GO	k,!c|D*V=?	0980_klubas_sf2.jpg	0980_klubas.mp3	human
+981	0981_vokietis	981	A1	cloze	noun	zmones	Lietuvių GO Cloze	u4s})Xqz9&			silent
+982	0983_keturiolika	983	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	i73$0}89I^	0983_keturiolika_sf2.jpg	0983_keturiolika.mp3	human
+983	0982_dovanoti	982	A1	picture	verb	veiksmai	Lietuvių GO	et[|b-+_k3	0982_dovanoti_sf2.jpg		silent
+984	0984_bite	984	A1	picture	noun	gamta	Lietuvių GO	Hd-2?W!6C=	0984_bite_sf2.jpg		silent
+985	0986_kiaule	986	A1	picture	noun	gyvunai	Lietuvių GO	M&:I<7He-J	0986_kiaule_sf2.jpg	0986_kiaule.mp3	human
+986	0985_kavine	985	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	OpVXi.c<v-	0985_kavine_sf2.jpg		silent
+987	0988_ekranas	988	A1	picture	noun	namai	Lietuvių GO	eB-TL~W*eI	0988_ekranas_sf2.jpg	0988_ekranas.mp3	human
+988	0987_atsiprasau_ka_sakete	987	A1	phrase		frazes	Lietuvių GO	OcweiNbnF=	0987_atsiprasau_ka_sakete_sf2.jpg		silent
+989	0989_klausytis	989	A1	picture	verb	veiksmai	Lietuvių GO	mI4t]!n#0/	0989_klausytis_sf2.jpg	0989_klausytis.mp3	human
+990	0990_bananas	990	A1	picture	noun	maistas	Lietuvių GO	vwZ[`zLj3i	0990_bananas_sf2.jpg	0990_bananas.mp3	human
+991	0991_baseinas	991	A1	picture	noun	namai	Lietuvių GO	FAPiF0&(7w	0991_baseinas_sf2.jpg	0991_baseinas.mp3	human
+992	0992_penkiolika	992	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	qxxxc_l8pz	0992_penkiolika_sf2.jpg	0992_penkiolika.mp3	human
+993	0993_papildomas	993	A1	cloze	adjective	savybes	Lietuvių GO Cloze	fvnsvH^Fvu			silent
+994	0994_sala	994	A1	picture	noun	gamta	Lietuvių GO	hyo|:Ne?C%	0994_sala_sf2.jpg	0994_sala.mp3	human
+995	0996_reiksme	996	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	gwmV771[PC			silent
+996	0995_deveti	995	A1	picture	verb	veiksmai	Lietuvių GO	lBwP<Oyu|!	0995_deveti_sf2.jpg	0995_deveti.mp3	human
+997	0997_sekretorius	997	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	Leptk2m70a	0997_sekretorius_sf2.jpg	0997_sekretorius.mp3	human
+998	0999_sesiolika	999	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	F4mJp$(LWP	0999_sesiolika_sf2.jpg	0999_sesiolika.mp3	human
+999	0998_sviezias	998	A1	picture	adjective	savybes	Lietuvių GO	O`P3H62gf`	0998_sviezias_sf2.jpg		silent
+1000	1001_deimantas	1001	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	N!z6x>D;[0	1001_deimantas_sf2.jpg	1001_deimantas.mp3	human
+1001	1000_man_nepatinka	1000	A1	phrase		frazes	Lietuvių GO	zL]~[;M{=S	1000_man_nepatinka_sf2.jpg		silent
+1002	1002_pereja	1002	A1	picture	noun	vietos	Lietuvių GO	x54es*o%u7	1002_pereja_sf2.jpg		silent
+1003	1003_asmuo	1003	A1	picture	noun	zmones	Lietuvių GO	C]A:dwGG[J	1003_asmuo_sf2.jpg	1003_asmuo.mp3	human
+1004	1004_pasto_zenklas	1004	A1	picture	noun	visuomene	Lietuvių GO	FvLU[b:[8:	1004_pasto_zenklas_sf2.jpg	1004_pasto_zenklas.mp3	human
+1005	1005_lauke	1005	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	E=gzm&@Tn,			silent
+1006	1007_kaulas	1007	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	Oe`k.U?GB~	1007_kaulas_sf2.jpg	1007_kaulas.mp3	human
+1007	1008_septyniolika	1008	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	{>~)&1K,o	1008_septyniolika_sf2.jpg	1008_septyniolika.mp3	human
+1008	1009_zudyti	1009	A1	picture	verb	veiksmai	Lietuvių GO	PYt9-OTtaa	1009_zudyti_sf2.jpg	1009_zudyti.mp3	human
+1009	1010_gyvate	1010	A1	picture	noun	gamta	Lietuvių GO	B!8NO!{Ubf	1010_gyvate_sf2.jpg		silent
+1010	1011_braskes	1011	A1	picture	noun	maistas	Lietuvių GO	td+!5@yLZO	1011_braskes_sf2.jpg		silent
+1011	1022_puodas	1022	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	nonsg`K5L5	1022_puodas_sf2.jpg		silent
+1012	1012_as_gyvenu_vilniuje	1012	A1	phrase		frazes	Lietuvių GO	BS1t%=ptO7	1012_as_gyvenu_vilniuje_sf2.jpg	1012_as_gyvenu_vilniuje.mp3	human
+1013	1013_sostine	1013	A1	cloze	noun	vietos	Lietuvių GO Cloze	H}n9}qcmO|			silent
+1014	1014_piesti	1014	A1	picture	verb	veiksmai	Lietuvių GO	n@!@9:B93h	1014_piesti_sf2.jpg	1014_piesti.mp3	human
+1015	1015_vaikai_zaidzia_kieme	1015	A1	sentence		sakiniai	Lietuvių GO Cloze	B`pwi=?;yV	1015_vaikai_zaidzia_kieme_sf2.jpg		silent
+1016	1016_astuoniolika	1016	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	txqFt2Bw_:	1016_astuoniolika_sf2.jpg	1016_astuoniolika.mp3	human
+1017	1017_platus	1017	A1	picture	adjective	savybes	Lietuvių GO	tm0,xlu,+,	1017_platus_sf2.jpg	1017_platus.mp3	human
+1018	1018_siauras	1018	A1	picture	adjective	savybes	Lietuvių GO	xQj&dKzhhv	1018_siauras_sf2.jpg	1018_siauras.mp3	human
+1019	1019_vynuoges	1019	A1	picture	noun	maistas	Lietuvių GO	s!)EHt)vhD	1019_vynuoges_sf2.jpg		silent
+1020	1020_sakinys	1020	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	Cm7ycU0u1|			silent
+1021	1021_sauti	1021	A1	picture	verb	veiksmai	Lietuvių GO	Gn8>{Y$w!k	1021_sauti_sf2.jpg	1021_sauti.mp3	human
+1022	1023_koks_jusu_adresas	1023	A1	phrase		frazes	Lietuvių GO	vcRF_c^yLl	1023_koks_jusu_adresas_sf2.jpg		silent
+1023	1024_retai	1024	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	go^R1W}=_t			silent
+1024	1025_vakarieniauti	1025	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	s)NAW:HA9{			silent
+1025	1037_popiete	1037	A1	picture	noun	skaiciai_ir_laikas	Lietuvių GO	h?2Vx,4w|~	1037_popiete_sf2.jpg	1037_popiete.mp3	human
+1026	1027_irankis	1027	A1	picture	noun	namai	Lietuvių GO	w8:(72#fj|	1027_irankis_sf2.jpg	1027_irankis.mp3	human
+1027	1026_sekla	1026	A1	picture	noun	maistas	Lietuvių GO	Pb9YQ3P>KI	1026_sekla_sf2.jpg	1026_sekla.mp3	human
+1028	1028_pasirasyti	1028	A1	picture	verb	veiksmai	Lietuvių GO	_<d`+2@C!	1028_pasirasyti_sf2.jpg	1028_pasirasyti.mp3	human
+1029	1030_veliava	1030	A1	picture	noun	visuomene	Lietuvių GO	7{6aN/:Gg	1030_veliava_sf2.jpg		silent
+1030	1029_prasom_sestis	1029	A1	phrase		frazes	Lietuvių GO	B&RFs*{2>x	1029_prasom_sestis_sf2.jpg		silent
+1031	1031_sidabras	1031	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	s9P0)[~/B_	1031_sidabras_sf2.jpg	1031_sidabras.mp3	human
+1032	1032_lauke_lyja	1032	A1	sentence		sakiniai	Lietuvių GO Cloze	lelU|M@^,W	1032_lauke_lyja_sf2.jpg		silent
+1033	1033_ukininkas	1033	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	nSPAt8o]zr	1033_ukininkas_sf2.jpg		silent
+1034	1034_pjauti	1034	A1	picture	verb	veiksmai	Lietuvių GO	GcC7EXv4@	1034_pjauti_sf2.jpg	1034_pjauti.mp3	human
+1035	1035_karve	1035	A1	picture	noun	gyvunai	Lietuvių GO	C6,~;~>H!J	1035_karve_sf2.jpg	1035_karve.mp3	human
+1036	1036_klaidingas	1036	A1	picture	adjective	savybes	Lietuvių GO	jabV&gW<ZZ	1036_klaidingas_sf2.jpg		silent
+1037	1038_desineje	1038	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	hQHWJy.G+$			silent
+1038	1039_vysnios	1039	A1	picture	noun	maistas	Lietuvių GO	H)/S4W;v~Q	1039_vysnios_sf2.jpg		silent
+1039	1041_lokys	1041	A1	picture	noun	gamta	Lietuvių GO	bexW)I0AJr	1041_lokys_sf2.jpg		silent
+1040	1040_uzrakinti	1040	A1	picture	verb	veiksmai	Lietuvių GO	B3%tMb<]7U	1040_uzrakinti_sf2.jpg		silent
+1041	1043_sviesoforas	1043	A1	picture	noun	vietos	Lietuvių GO	C7t`[teh6p	1043_sviesoforas_sf2.jpg		silent
+1042	1042_buvo_labai_skanu	1042	A1	phrase		frazes	Lietuvių GO	A%uJ!?gql+	1042_buvo_labai_skanu_sf2.jpg		silent
+1043	1044_menininkas	1044	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	rn:JEVTmqJ	1044_menininkas_sf2.jpg	1044_menininkas.mp3	human
+1044	1052_vaisiai	1052	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	xdU7^nN1&Z	1052_vaisiai_sf2.jpg		silent
+1045	1045_zirkles	1045	A1	picture	noun	namai	Lietuvių GO	lc8=dEB3e.	1045_zirkles_sf2.jpg		silent
+1046	1047_sesiasdesimt	1047	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	p{K/Lk`Gqr	1047_sesiasdesimt_sf2.jpg	1047_sesiasdesimt.mp3	human
+1047	1046_kasti	1046	A1	picture	verb	veiksmai	Lietuvių GO	mJ_.z@~bv&	1046_kasti_sf2.jpg	1046_kasti.mp3	human
+1048	1048_petys	1048	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	DasTVT&oL!	1048_petys_sf2.jpg	1048_petys.mp3	human
+1049	1049_pele	1049	A1	picture	noun	gyvunai	Lietuvių GO	G-/[*1@zDW	1049_pele_sf2.jpg	1049_pele.mp3	human
+1050	1050_lenkas	1050	A1	cloze	noun	zmones	Lietuvių GO Cloze	oW>Bp.z5A`			silent
+1051	1051_uostyti	1051	A1	picture	verb	veiksmai	Lietuvių GO	s/6OJ<4Fp*	1051_uostyti_sf2.jpg	1051_uostyti.mp3	human
+1052	1053_man_reikia_gydytojo	1053	A1	phrase		frazes	Lietuvių GO	Dxe+)Yc}8r	1053_man_reikia_gydytojo_sf2.jpg		silent
+1053	1054_laisvas	1054	A1	picture	adjective	savybes	Lietuvių GO	twzAD-.fPS	1054_laisvas_sf2.jpg	1054_laisvas.mp3	human
+1054	1055_ankstas	1055	A1	picture	adjective	savybes	Lietuvių GO	M.*9Ru9Xgt	1055_ankstas_sf2.jpg	1055_ankstas.mp3	human
+1055	1056_koldunas	1056	A1	picture	noun	maistas	Lietuvių GO	CS&Y^LmmVX	1056_koldunas_sf2.jpg		silent
+1056	1057_voras	1057	A1	picture	noun	gamta	Lietuvių GO	K`3>*%+kSE	1057_voras_sf2.jpg		silent
+1057	1006_uzsiemimas	1006	A1	cloze	noun	daiktai_ir_savokos	Lietuvių GO Cloze	IPek3|UFZe			silent
+1058	1058_kaip_lietuviskai	1058	A1	phrase		frazes	Lietuvių GO	JpsYW}mkw0	1058_kaip_lietuviskai_sf2.jpg	1058_kaip_lietuviskai.mp3	human
+1059	1059_apibudinti	1059	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	MCVn5XL+CQ			silent
+1060	1060_muzikantas	1060	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	oG8r0@7IRC	1060_muzikantas_sf2.jpg		silent
+1061	1061_septyniasdesimt	1061	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	NwKjTOizg~	1061_septyniasdesimt_sf2.jpg	1061_septyniasdesimt.mp3	human
+1062	1062_pastatas	1062	A1	picture	noun	vietos	Lietuvių GO	C7Kh=kX*=c	1062_pastatas_sf2.jpg	1062_pastatas.mp3	human
+1063	1063_troleibusas	1063	A1	picture	noun	transportas	Lietuvių GO	k(_>)THRPn	1063_troleibusas_sf2.jpg		silent
+1064	1064_gitara	1064	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	D8!0spMDgU	1064_gitara_sf2.jpg		silent
+1065	1065_triusis	1065	A1	picture	noun	gamta	Lietuvių GO	ND+g[hLKfB	1065_triusis_sf2.jpg		silent
+1066	1066_pietauti	1066	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	s9`d2W0s0V			silent
+1067	1067_nuolaida	1067	A1	picture	noun	visuomene	Lietuvių GO	C@m>r*4cd;	1067_nuolaida_sf2.jpg	1067_nuolaida.mp3	human
+1068	1068_sausas	1068	A1	picture	adjective	savybes	Lietuvių GO	kS8>IF7bY5	1068_sausas_sf2.jpg	1068_sausas.mp3	human
+1069	1069_slapias	1069	A1	picture	adjective	savybes	Lietuvių GO	DFr{;)k7iX	1069_slapias_sf2.jpg	1069_slapias.mp3	human
+1070	1070_spyna	1070	A1	picture	noun	namai	Lietuvių GO	Efs*,xA3(K	1070_spyna_sf2.jpg	1070_spyna.mp3	human
+1071	1071_jautiena	1071	A1	picture	noun	maistas	Lietuvių GO	mr3]cmgZf`	1071_jautiena_sf2.jpg	1071_jautiena.mp3	human
+1072	1072_sekti	1072	A1	picture	verb	veiksmai	Lietuvių GO	O{ywLg=cm9	1072_sekti_sf2.jpg	1072_sekti.mp3	human
+1073	1073_devyniolika	1073	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	z6Mv/yVVMS	1073_devyniolika_sf2.jpg	1073_devyniolika.mp3	human
+1074	1074_ukis	1074	A1	picture	noun	vietos	Lietuvių GO	Jxe90.c-N	1074_ukis_sf2.jpg	1074_ukis.mp3	human
+1075	1075_slepetes	1075	A1	picture	noun	drabuziai	Lietuvių GO	v-Jyo~`%+~	1075_slepetes_sf2.jpg		silent
+1076	1076_sviesti	1076	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	kSn$Dte!~Z			silent
+1077	1077_adata	1077	A1	picture	noun	namai	Lietuvių GO	GM9@lj]Ox)	1077_adata_sf2.jpg	1077_adata.mp3	human
+1078	1078_darzoves	1078	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	Ae#7o(nAa^	1078_darzoves_sf2.jpg		silent
+1079	1079_instrumentas	1079	A1	picture	noun	visuomene	Lietuvių GO	IXOrYn{:sB	1079_instrumentas_sf2.jpg	1079_instrumentas.mp3	human
+1080	1080_karalius	1080	A1	picture	noun	zmones	Lietuvių GO	xyBT):nZ-W	1080_karalius_sf2.jpg	1080_karalius.mp3	human
+1081	1081_viena_kava_prasau	1081	A1	phrase		frazes	Lietuvių GO	G8M3Rt!HE=	1081_viena_kava_prasau_sf2.jpg		silent
+1082	1082_mobilusis_telefonas	1082	A1	picture	noun	namai	Lietuvių GO	xck<bU/M;V	1082_mobilusis_telefonas_sf2.jpg		silent
+1083	1083_megstamiausias	1083	A1	cloze	adjective	savybes	Lietuvių GO Cloze	m7G<bT0vNn			silent
+1084	1084_uoga	1084	A1	picture	noun	maistas	Lietuvių GO	z^V;p:X|.V	1084_uoga_sf2.jpg		silent
+1085	1085_vaziuoti_dviraciu	1085	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	iqoB.}lYpr			silent
+1086	1086_astuoniasdesimt	1086	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	pxIHk%LK>H	1086_astuoniasdesimt_sf2.jpg	1086_astuoniasdesimt.mp3	human
+1087	1087_valgykla	1087	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	q50h^Gx[n8	1087_valgykla_sf2.jpg		silent
+1088	1088_pavargau	1088	A1	phrase		frazes	Lietuvių GO	zk{q^6Xii(	1088_pavargau_sf2.jpg		silent
+1089	1089_maitinti	1089	A1	picture	verb	veiksmai	Lietuvių GO	n2rf%{C=<0	1089_maitinti_sf2.jpg	1089_maitinti.mp3	human
+1090	1090_gamta	1090	A1	picture	noun	gamta	Lietuvių GO	Q;JmiS>x1F	1090_gamta_sf2.jpg	1090_gamta.mp3	human
+1091	1091_nemokamai	1091	A1	phrase		frazes	Lietuvių GO	x2YB#2;,_F	1091_nemokamai_sf2.jpg		silent
+1092	1092_dazai	1092	A1	picture	noun	namai	Lietuvių GO	p61.4Oc^.)	1092_dazai_sf2.jpg	1092_dazai.mp3	human
+1093	1093_universitetas	1093	A1	picture	noun	vietos	Lietuvių GO	r/56+?mWUN	1093_universitetas_sf2.jpg	1093_universitetas.mp3	human
+1094	1094_nuobodus	1094	A1	cloze	adjective	savybes	Lietuvių GO Cloze	wLK7Jqaet%			silent
+1095	1095_man_salta	1095	A1	phrase		frazes	Lietuvių GO	QRA?9f{RQK	1095_man_salta_sf2.jpg		silent
+1096	1096_variklis	1096	A1	picture	noun	transportas	Lietuvių GO	q|oAr+W`&Q	1096_variklis_sf2.jpg	1096_variklis.mp3	human
+1097	1097_aliejus	1097	A1	picture	noun	maistas	Lietuvių GO	w81&~_Li6}	1097_aliejus_sf2.jpg	1097_aliejus.mp3	human
+1098	1098_tuoktis	1098	A1	picture	verb	veiksmai	Lietuvių GO	cj5Z8>tN7a	1098_tuoktis_sf2.jpg	1098_tuoktis.mp3	human
+1099	1099_desineje	1099	A1	phrase		frazes	Lietuvių GO	qFh5W$4sCY	1099_desineje_sf2.jpg		silent
+1100	1100_gyvunas	1100	A1	picture	noun	gyvunai	Lietuvių GO	AHiLy$8OCC	1100_gyvunas_sf2.jpg	1100_gyvunas.mp3	human
+1101	1101_pianinas	1101	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	wZGLwEjMH~	1101_pianinas_sf2.jpg		silent
+1102	1102_rastelis	1102	A1	picture	noun	namai	Lietuvių GO	D@+Oj4`|=t	1102_rastelis_sf2.jpg	1102_rastelis.mp3	human
+1103	1103_mediena	1103	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	m{(@rZu!NU	1103_mediena_sf2.jpg	1103_mediena.mp3	human
+1104	1104_avis	1104	A1	picture	noun	gamta	Lietuvių GO	s-c*&v0h>&	1104_avis_sf2.jpg		silent
+1105	1105_smegenys	1105	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	t6T^O,=I>B	1105_smegenys_sf2.jpg	1105_smegenys.mp3	human
+1106	1106_pilti	1106	A1	picture	verb	veiksmai	Lietuvių GO	d_OH4?!2/e	1106_pilti_sf2.jpg		silent
+1107	1107_mergaite_piesia_gele	1107	A1	sentence		sakiniai	Lietuvių GO Cloze	O=$a</26oV	1107_mergaite_piesia_gele_sf2.jpg		silent
+1108	1108_tepalas	1108	A1	picture	noun	maistas	Lietuvių GO	P3$fAwjGqW	1108_tepalas_sf2.jpg	1108_tepalas.mp3	human
+1109	1109_lubos	1109	A1	picture	noun	namai	Lietuvių GO	iGlv4I-;K8	1109_lubos_sf2.jpg	1109_lubos.mp3	human
+1110	1110_vadovelis	1110	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	qjskrA3xJO	1110_vadovelis_sf2.jpg		silent
+1111	1111_oro_uostas	1111	A1	picture	noun	vietos	Lietuvių GO	KR#`,6iBHK	1111_oro_uostas_sf2.jpg	1111_oro_uostas.mp3	human
+1112	1112_sestis	1112	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	uBUl8%Hfk4			silent
+1113	1113_devyniasdesimt	1113	A1	picture	numeral	skaiciai_ir_laikas	Lietuvių GO	v2_#yc&.|`	1113_devyniasdesimt_sf2.jpg	1113_devyniasdesimt.mp3	human
+1114	1114_sasiuvinis	1114	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	rWE)Y-H<>Q	1114_sasiuvinis_sf2.jpg		silent
+1115	1115_kiauliena	1115	A1	picture	noun	maistas	Lietuvių GO	-e7ttsf:N	1115_kiauliena_sf2.jpg	1115_kiauliena.mp3	human
+1116	1116_surus	1116	A1	picture	adjective	savybes	Lietuvių GO	O#~Epnss6l	1116_surus_sf2.jpg		silent
+1117	1117_stumti	1117	A1	picture	verb	veiksmai	Lietuvių GO	vE)c-sSO:A	1117_stumti_sf2.jpg	1117_stumti.mp3	human
+1118	1118_varis	1118	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	Cy~E[g6qf(	1118_varis_sf2.jpg	1118_varis.mp3	human
+1119	1119_vandenynas	1119	A1	picture	noun	gamta	Lietuvių GO	skvuuM-{Td	1119_vandenynas_sf2.jpg	1119_vandenynas.mp3	human
+1120	1120_ar_nori_arbatos	1120	A1	phrase		frazes	Lietuvių GO	D^p2@193/P	1120_ar_nori_arbatos_sf2.jpg		silent
+1121	1121_maisyti	1121	A1	picture	verb	veiksmai	Lietuvių GO	t9`2tWrZD6	1121_maisyti_sf2.jpg	1121_maisyti.mp3	human
+1122	1122_ugniagesys	1122	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	E;l#!en`oQ	1122_ugniagesys_sf2.jpg		silent
+1123	1123_graza	1123	A1	picture	noun	visuomene	Lietuvių GO	e[>]LkREI7	1123_graza_sf2.jpg	1123_graza.mp3	human
+1124	1124_lupos	1124	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	Ed!2yTjMt2	1124_lupos_sf2.jpg		silent
+1125	1125_apelsinas	1125	A1	picture	noun	maistas	Lietuvių GO	eg5;ieFv?T	1125_apelsinas_sf2.jpg	1125_apelsinas.mp3	human
+1126	1126_lauzyti	1126	A1	picture	verb	veiksmai	Lietuvių GO	N]&2r*#DQx	1126_lauzyti_sf2.jpg	1126_lauzyti.mp3	human
+1127	1127_nemokamas	1127	A1	cloze	adjective	savybes	Lietuvių GO Cloze	D$N}%X9@2V			silent
+1128	1128_transportas	1128	A1	picture	noun	transportas	Lietuvių GO	C*K5}VliDN	1128_transportas_sf2.jpg	1128_transportas.mp3	human
+1129	1129_kostiumas	1129	A1	picture	noun	drabuziai	Lietuvių GO	IxH?+#->W.	1129_kostiumas_sf2.jpg	1129_kostiumas.mp3	human
+1130	1130_koseti	1130	A1	picture	verb	veiksmai	Lietuvių GO	QQpz$QJ5Ou	1130_koseti_sf2.jpg		silent
+1131	1131_kojos_pirstas	1131	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	BMFX=$q)hG	1131_kojos_pirstas_sf2.jpg	1131_kojos_pirstas.mp3	human
+1132	1132_auka	1132	A1	picture	noun	zmones	Lietuvių GO	g`X#Dp!)%j	1132_auka_sf2.jpg	1132_auka.mp3	human
+1133	1133_dulkes	1133	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	y}sHb25Ow#	1133_dulkes_sf2.jpg	1133_dulkes.mp3	human
+1134	1134_virykle	1134	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	I~6Kv9CHlt	1134_virykle_sf2.jpg		silent
+1135	1135_saule_sviecia	1135	A1	sentence		sakiniai	Lietuvių GO Cloze	AO!-/sFRIL	1135_saule_sviecia_sf2.jpg		silent
+1136	1136_atskirai	1136	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	ESIfG-bcZ.			silent
+1137	1137_atidaryta	1137	A1	phrase		frazes	Lietuvių GO	C,qzy:Hz<S	1137_atidaryta_sf2.jpg		silent
+1138	1138_antis	1138	A1	picture	noun	gamta	Lietuvių GO	z(AJ|Ngojh	1138_antis_sf2.jpg		silent
+1139	1139_morka	1139	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	mh#a!vkAg:	1139_morka_sf2.jpg		silent
+1140	1140_lietuva	1140	A1	picture	noun	vietos	Lietuvių GO	mbz^BZdRGK	1140_lietuva_sf2.jpg		silent
+1141	1141_pusryciauti	1141	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	n,>#=f)jwd			silent
+1142	1142_lenta	1142	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	w>Jd<DA>NI	1142_lenta_sf2.jpg		silent
+1143	1143_drabuziai	1143	A1	picture	noun	drabuziai	Lietuvių GO	qId:(/?3iP	1143_drabuziai_sf2.jpg	1143_drabuziai.mp3	human
+1144	1144_suauges	1144	A1	picture	noun	zmones	Lietuvių GO	sVJ$1.~YJ#	1144_suauges_sf2.jpg	1144_suauges.mp3	human
+1145	1145_atvirukas	1145	A1	picture	noun	visuomene	Lietuvių GO	x~:n/llv0e	1145_atvirukas_sf2.jpg	1145_atvirukas.mp3	human
+1146	1146_plastikas	1146	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	NU/N0;%D.N	1146_plastikas_sf2.jpg	1146_plastikas.mp3	human
+1147	1147_egle	1147	A1	picture	noun	gamta	Lietuvių GO	f:`B,|g9X(	1147_egle_sf2.jpg		silent
+1148	1148_uzimtas	1148	A1	cloze	adjective	savybes	Lietuvių GO Cloze	gevgIvobn>			silent
+1149	1149_mano_vardas_dainius	1149	A1	phrase		frazes	Lietuvių GO	I4%KUh$$m-	1149_mano_vardas_dainius_sf2.jpg	1149_mano_vardas_dainius.mp3	human
+1150	1150_rasomasis_stalas	1150	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	pbp2;|i.TW	1150_rasomasis_stalas_sf2.jpg		silent
+1151	1151_raktu_pakabukas	1151	A1	picture	noun	namai	Lietuvių GO	kkcnW+ZV,!	1151_raktu_pakabukas_sf2.jpg	1151_raktu_pakabukas.mp3	human
+1152	1152_citrina	1152	A1	picture	noun	maistas	Lietuvių GO	x!.eSj]NyB	1152_citrina_sf2.jpg	1152_citrina.mp3	human
+1153	1153_marskineliai	1153	A1	picture	noun	drabuziai	Lietuvių GO	y}<&N%TAhM	1153_marskineliai_sf2.jpg	1153_marskineliai.mp3	human
+1154	1154_varle	1154	A1	picture	noun	gamta	Lietuvių GO	JxW_mb]A2a	1154_varle_sf2.jpg		silent
+1155	1155_tramvajus	1155	A1	picture	noun	transportas	Lietuvių GO	LY-;ZjFeD=	1155_tramvajus_sf2.jpg		silent
+1156	1156_atrakinti	1156	A1	picture	verb	veiksmai	Lietuvių GO	uLW^^$Mh~k	1156_atrakinti_sf2.jpg		silent
+1157	1157_suolas	1157	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	Ggq8|HrVS/	1157_suolas_sf2.jpg		silent
+1158	1158_liezuvis	1158	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	c&=*h{DKyV	1158_liezuvis_sf2.jpg	1158_liezuvis.mp3	human
+1159	1159_karaliene	1159	A1	picture	noun	zmones	Lietuvių GO	Jl5;Bw`x8D	1159_karaliene_sf2.jpg	1159_karaliene.mp3	human
+1160	1160_praustis	1160	A1	picture	verb	veiksmai	Lietuvių GO	mMp@%roTtP	1160_praustis_sf2.jpg		silent
+1161	1161_krumas	1161	A1	picture	noun	gamta	Lietuvių GO	P-<$%KxS=)	1161_krumas_sf2.jpg		silent
+1162	1162_molis	1162	A1	picture	noun	spalvos_ir_medziagos	Lietuvių GO	h||l#{DGsQ	1162_molis_sf2.jpg	1162_molis.mp3	human
+1163	1163_keptuve	1163	A1	picture	noun	daiktai_ir_savokos	Lietuvių GO	F=D3G<CWaA	1163_keptuve_sf2.jpg		silent
+1164	1164_stovykla	1164	A1	picture	noun	vietos	Lietuvių GO	P=i>0jpoVX	1164_stovykla_sf2.jpg	1164_stovykla.mp3	human
+1165	1165_vovere	1165	A1	picture	noun	gamta	Lietuvių GO	i^t0@*Ny,E	1165_vovere_sf2.jpg		silent
+1166	1166_siuksliadeze	1166	A1	picture	noun	namai	Lietuvių GO	r_>A8;q|Zd	1166_siuksliadeze_sf2.jpg		silent
+1167	1167_ragauti	1167	A1	picture	verb	veiksmai	Lietuvių GO	Hw@/+16Bjz	1167_ragauti_sf2.jpg	1167_ragauti.mp3	human
+1168	1168_kukuruzai	1168	A1	picture	noun	maistas	Lietuvių GO	tXr9EE@`O=	1168_kukuruzai_sf2.jpg	1168_kukuruzai.mp3	human
+1169	1169_greitai_pasveik	1169	A1	phrase		frazes	Lietuvių GO	Be~LKwPC!G	1169_greitai_pasveik_sf2.jpg	1169_greitai_pasveik.mp3	human
+1170	1170_kisene	1170	A1	picture	noun	drabuziai	Lietuvių GO	e&*=IDyist	1170_kisene_sf2.jpg	1170_kisene.mp3	human
+1171	1171_lape	1171	A1	picture	noun	gamta	Lietuvių GO	VI=/)8_|t	1171_lape_sf2.jpg		silent
+1172	1172_snigti	1172	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	E<Y#Bkdgan			silent
+1173	1173_padanga	1173	A1	picture	noun	transportas	Lietuvių GO	NkUoK#Y.,k	1173_padanga_sf2.jpg	1173_padanga.mp3	human
+1174	1174_gultis	1174	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	fer~#T$Z1&			silent
+1175	1175_ozka	1175	A1	picture	noun	gamta	Lietuvių GO	t56`O`H8.L	1175_ozka_sf2.jpg		silent
+1176	1176_benzinas	1176	A1	picture	noun	transportas	Lietuvių GO	uip;o<g@0w	1176_benzinas_sf2.jpg	1176_benzinas.mp3	human
+1177	1177_ryziai	1177	A1	picture	noun	maistas	Lietuvių GO	F]9/@jX)gC	1177_ryziai_sf2.jpg	1177_ryziai.mp3	human
+1178	1178_vabzdys	1178	A1	picture	noun	gamta	Lietuvių GO	zETvz`^FTH	1178_vabzdys_sf2.jpg		silent
+1179	1179_as_esu_is_lietuvos	1179	A1	phrase		frazes	Lietuvių GO	o>zGzP{AGx	1179_as_esu_is_lietuvos_sf2.jpg	1179_as_esu_is_lietuvos.mp3	human
+1180	1180_rugstus	1180	A1	picture	adjective	savybes	Lietuvių GO	Cq(6rFB.4v	1180_rugstus_sf2.jpg		silent
+1181	1181_barzda	1181	A1	picture	noun	kunas_ir_sveikata	Lietuvių GO	qI#^C&p@Yd	1181_barzda_sf2.jpg	1181_barzda.mp3	human
+1182	1182_drugelis	1182	A1	picture	noun	gamta	Lietuvių GO	MAIiq]3&eO	1182_drugelis_sf2.jpg		silent
+1183	1183_statybininkas	1183	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	B^kU61rl%&	1183_statybininkas_sf2.jpg		silent
+1184	1184_praktikuotis	1184	A1	cloze	verb	veiksmai	Lietuvių GO Cloze	F>;Ggl?Z|f			silent
+1185	1185_latvis	1185	A1	cloze	noun	zmones	Lietuvių GO Cloze	AJ;Mp)MXx/			silent
+1186	1186_pomegis	1186	A1	cloze	noun	darbas_ir_mokykla	Lietuvių GO Cloze	g.3{$zW=>t			silent
+1187	1187_nesiojamasis_kompiuteris	1187	A1	picture	noun	namai	Lietuvių GO	cb0l)F}Aw]	1187_nesiojamasis_kompiuteris_sf2.jpg	1187_nesiojamasis_kompiuteris.mp3	human
+1188	1188_liniuote	1188	A1	picture	noun	darbas_ir_mokykla	Lietuvių GO	mK!ZyWn.Z{	1188_liniuote_sf2.jpg		silent
+1189	1189_lietuviskai	1189	A1	cloze	adverb	pagalbiniai_zodziai	Lietuvių GO Cloze	bJ.rZq&_#/			silent
+1190	1190_sukuotis	1190	A1	picture	verb	veiksmai	Lietuvių GO	zXEzmcHbL5	1190_sukuotis_sf2.jpg		silent
+1191	1191_auliniai_batai	1191	A1	picture	noun	drabuziai	Lietuvių GO	tw&:r-O3J=	1191_auliniai_batai_sf2.jpg		silent

@@ -146,3 +146,50 @@ under the new keys (`superseded/`, `off_list/` included), `manifest.tsv` with ne
 8. Before opening the new recorder, the owner should press **Export all** once in the old sheet as a safety copy.
    The tested migration should make this unnecessary, but it costs nothing.
 9. AnkiWeb: the v3.0 A1 upload is a delete-and-reimport (all GUIDs changed once).
+
+## rc3 (2026-10-20, later the same day)
+
+Commits: 33ecbd2 (fixes, order, `AUDIT_v3_3.txt`), e469585 (rc2 manifest renames; its message also describes the
+recorder, which went in separately as 2590a77 because the files were left unstaged), 2590a77 (recorder), then the
+build commit that adds this section.
+
+- **1130_koseti, forms withdrawn.** en.wiktionary (`/wiki/kos%C4%97ti`) and kirtis.info could not be fetched:
+  the permission prompts went unanswered, and neither page was fetched any other way. So `pres3`/`past3` (`{{l`/`lt`) are
+  cleared and `check` ends "forms withdrawn 2026-10-20: parse artefact; principal parts to be sourced". The back
+  now shows *kosėti · kósėti · to cough* with no forms line (the template's `{{#pres3}}` section is skipped). The stress
+  *kósėti* (Wiktionary = kirtis.info, as recorded) is unchanged.
+- **Residue scan** (every tracked .csv/.tsv/.json outside `_archive/`; `{{ }} [[ ]] |lt lang= <ref &nbsp; '''`
+  and lone `l`/`lt` fields; plus a check of every pres3/past3/gen_sg/fem/pron value for characters outside
+  Lithuanian letters, accents and punctuation): the koseti row was the only card-field residue. Its echoes:
+  `recording_list.csv` `say` (regenerated, now "kósėti") and `a2_build/audio/recorder_A2_afb2ebe2_script.json`, the
+  2026-10-12 sheet's historical script, left as it is because the recorder uses it to recognise stale clips. Everything else
+  was a false positive: cloze `{{c1::…}}`, note templates in `STYLE_LOCK.json`, image-edit masks `[[…]]` in the
+  `ledger.csv` prompts, random GUIDs in the rc2 keys list, and the corpus lemma "lt" in `opensubtitles_lt_lemmas.csv`.
+- **0331_kelinta_valanda 1,069 → 366**, straight after 0366_kiek_valandu (365): hand edit of `study_order.csv`
+  and `recording_order_v3.csv` (cards formerly at 366–1,068 move down one), and a `PIN_AFTER` entry in
+  `build_study_order_v3.py` so later regenerations keep the pair (a full regeneration would move 455 positions, so
+  it was not used). `AUDIT_v3_3.txt` (before/after, `--audit`): 0 A1 cards needing an A2-only word; the same 6 forward
+  dependencies, none involving 0331; 0 pins or pairs out of place. Recorded in `REPORT_order_v3.md`. Key numbers unchanged.
+- **Recorder** regenerated (take order changed): 2,849 takes (A1 988, A2 1,861), IndexedDB
+  `lt_recorder_A2_afb2ebe2` and KEY_MAP (4,878) unchanged, migration code untouched; 0331's take 910 → 291
+  (after 0366 at 290), 620 takes renumbered. Only the WORDS data line of `recorder_A2.html` differs.
+- **rc2** = `_archive/builds/Lietuviu_Flashcards_v3.0_A1_rc2.apkg` on the Mac (sha256 baf5ba41…, checked after the move);
+  manifests `v3.0_A1_rc2.json`, `v3.0_A1_rc2.verify.json`.
+- **`Lietuviu_Flashcards_v3.0_A1.apkg` (rc3)**, Proton folder root, not committed: **147,602,124 bytes, sha256
+  07275424b886ae5766b029a223841f0baebabcccdba52df646c6283947635b3f**; built from 2590a77 (clean tree, style lock
+  0885ded5e583, no drift override, spec 3.4.0); 1,191 notes, 1,427 media (media hash unchanged). The byte size equals rc2's
+  because the collection is stored uncompressed with the same page count (634,880 bytes).
+- `verify_apkg.py --against …rc2.apkg --key-map key_map_v1.csv`: **ok, 0 FAIL**. GUIDs: 1,191 in both, 0 changed,
+  0 new, 0 missing. Fields: **1 note, 2 fields differ: 1130_koseti pres3 `{{l`→``, past3 `lt`→``**, nothing else.
+  Refs 1,424 (567 sounds), 0 missing; names ASCII; identity 0/0/0/0/0. Due positions: 704 changed (0331 1069→366;
+  703 cards +1), positions 1…1,191, no gaps.
+- Anki import test (anki 26.09.3): 1,191 notes / 1,191 cards new, Lietuvių Flashcards::A1; 5 renders (2 picture, 3 cloze)
+  with every file resolved, no unresolved braces; koseti and 0331 backs rendered and checked by hand.
+- `build_reports/builds/v3.0_A1_keys_rc3.tsv` by the new `tools/apkg_keys_list.py` (it reproduces the rc2 list byte for
+  byte from the rc2 package). Against rc2 only `due` differs (704 rows). Counts unchanged: 687 picture + 135 phrase +
+  334 cloze + 35 sentence; audio 547 human, 20 azure-neural, 624 silent. The AnkiWeb .md provenance line now cites rc3; the
+  .html carries no hash or counts that changed.
+
+Leftovers 1 and 3 above are resolved (0331 back early; koseti forms withdrawn). The koseti forms still need sourcing:
+*kósėti* · pres3 · past3 from Wiktionary or kirtis.info, entered in a2_wordlist.csv with the URL in `check`.
+`_TO_DELETE/rc3_transfer/rc3_fixes.patch` (the cloud → Mac transfer of 33ecbd2) can be deleted.
