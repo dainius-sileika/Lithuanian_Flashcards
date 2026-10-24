@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,949 tracked files in 704 rows.
+1,951 tracked files in 706 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -145,6 +145,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `docs/decisions/PRASOM_SWITCH_2026-10-18.md` | history | Owner decision: postposed prašau -> prašom + infinitive | people |
 | `docs/decisions/RESTAGE_PROPOSAL_2026-10-17.md` | history | The proposal that replaced speech bubbles with situation pictures (superseded by spec §4; cited by code comments) | people |
 | `docs/decisions/merges_2026-10-19.md` | history | Owner merges of 2026-10-19, exact data changes (applied by rounds/2026-10-19_fixes_round3/apply_round3.py) | people |
+| `docs/showcase/Lietuviu_Flashcards_showcase_A1.pdf` | generated | Showcase for others: 24 A1 cards, front and back, as Anki renders them (A4 landscape, 32 pages) | written by tools/build_showcase.py from the release package |
 | `docs/spec_history/DESIGN_SPEC_v3.0.0.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 | `docs/spec_history/DESIGN_SPEC_v3.0.1.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 | `docs/spec_history/DESIGN_SPEC_v3.1.0.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
@@ -576,6 +577,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | path | status | purpose | read / written by |
 |---|---|---|---|
 | `tools/apkg_keys_list.py` | live | Per-card list of a package (key -> fields and media) for the release record | run by people |
+| `tools/build_showcase.py` | live | Builds the showcase PDF from a released .apkg: renders chosen cards with Anki, screenshots, lays out A4 pages | run by hand; reads a package; writes docs/showcase/ |
 | `tools/build_situations.py` | live | Regenerates code/situations.py from data/restage_bubbles.csv | run by people after editing the CSV |
 | `tools/check_layout.py` | live | Checks the working directory against spec §13 / INDEX.md (root, folders, media, old homes, index) | pre-commit hook (--strict); build_apkg.py at the start of every build |
 | `tools/golden_set.py` | live | Builds / checks the golden reference set (style/golden/) from the ledgers | run by people (--status) |
