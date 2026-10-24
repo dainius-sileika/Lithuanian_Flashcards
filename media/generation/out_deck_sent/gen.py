@@ -19,17 +19,27 @@ until "remaining 0".
 Ledger: out_deck_sent/ledger.csv (append-only copy kept in ~/sent_work, outside the
 Proton-synced tree); re-rolls append a new row, so the LAST row per key is the
 current picture. gen_log.jsonl records seconds and token usage per image.
+
+Layout since the tidy of 2026-10-24 (spec §13, INDEX.md): this driver lives in media/generation/out_deck_sent/
+with its ledger, plan and QA sheets; pictures go to media/images/<key>.png (the one current picture
+per card, where build_apkg looks) and a re-roll moves the old picture to
+media/images/_history/out_deck_sent/_rerolled/<key>.r<n>.png. Run it from the project root as before:
+    python3 media/generation/out_deck_sent/gen.py ...
 """
 import csv, json, os, sys, time, base64, threading
 from concurrent.futures import ThreadPoolExecutor
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))              # media/generation/out_deck_sent
+ROOT = os.path.dirname(os.path.dirname(HERE))
 os.chdir(ROOT); sys.path.insert(0, ROOT)
 import go_generator as g
-sys.path.insert(0, os.path.join(ROOT, "out_deck_a2")); import a2_adapter as A
+sys.path.insert(0, os.path.join(ROOT, "media", "generation", "out_deck_a2")); import a2_adapter as A
 from openai import OpenAI
 os.environ.setdefault("OPENAI_API_KEY", open(".openai_key.txt").read().strip())
 
-OUT = "out_deck_sent"
+BATCH = "out_deck_sent"
+OUT = "media/images"                                   # the current pictures (build_apkg.IMAGE_DIR)
+HIST = f"media/images/_history/{BATCH}/_rerolled"        # previous versions, <key>.r<n>.png
+META = f"media/generation/{BATCH}"                       # plan.json, cards.csv, ledger.csv, gen_log.jsonl
 MODEL = g.OPENAI_MODEL          # gpt-image-2.5-sunburst
 SIZE, QUALITY = "1536x1024", g.OPENAI_QUALITY
 BUDGET = float(sys.argv[1]) if len(sys.argv) > 1 else 15
@@ -58,8 +68,8 @@ for r in rows:
                  "exact_text": kw.get("exact_text", ""),
                  "prompt": g.build_prompt(backend="openai", **kw)})
 json.dump({"model": MODEL, "size": SIZE, "quality": QUALITY, "n": len(jobs), "skipped": skipped,
-           "card_text_rewrites": A.CARD_TEXT_FIXES, "jobs": jobs}, open(f"{OUT}/plan.json", "w"), indent=1, ensure_ascii=False)
-with open(f"{OUT}/cards.csv", "w", newline="", encoding="utf-8") as f:
+           "card_text_rewrites": A.CARD_TEXT_FIXES, "jobs": jobs}, open(f"{META}/plan.json", "w"), indent=1, ensure_ascii=False)
+with open(f"{META}/cards.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["key", "lithuanian", "english", "lt_pron", "gender", "number", "category", "image_file"])
     for j in jobs:
@@ -67,14 +77,15 @@ with open(f"{OUT}/cards.csv", "w", newline="", encoding="utf-8") as f:
 if "--plan" in sys.argv:
     print(len(jobs), "planned; plan.json + cards.csv written"); sys.exit()
 
+os.makedirs(OUT, exist_ok=True)
 if REROLL:
-    os.makedirs(f"{OUT}/_rerolled", exist_ok=True)
+    os.makedirs(HIST, exist_ok=True)
     for k in REROLL:
         p = f"{OUT}/{k}.png"
         if os.path.exists(p):
             i = 1
-            while os.path.exists(f"{OUT}/_rerolled/{k}.r{i}.png"): i += 1
-            os.replace(p, f"{OUT}/_rerolled/{k}.r{i}.png")
+            while os.path.exists(f"{HIST}/{k}.r{i}.png"): i += 1
+            os.replace(p, f"{HIST}/{k}.r{i}.png")
     todo = [j for j in jobs if j["key"] in REROLL]
 else:
     todo = [j for j in jobs if not os.path.exists(f"{OUT}/{j['key']}.png")]
@@ -132,7 +143,7 @@ import shutil
 for name in ("ledger.csv", "gen_log.jsonl"):
     for w_try in range(6):
         try:
-            shutil.copyfile(f"{LOCAL}/{name}", f"{OUT}/{name}"); break
+            shutil.copyfile(f"{LOCAL}/{name}", f"{META}/{name}"); break
         except OSError:
             time.sleep(2 * (w_try + 1))
 print("remaining", len([j for j in jobs if not os.path.exists(f"{OUT}/{j['key']}.png")]), flush=True)

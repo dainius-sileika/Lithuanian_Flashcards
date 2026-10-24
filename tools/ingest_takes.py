@@ -7,11 +7,12 @@ For each ZIP exported by recorder_A2.html ("Export all" / "Export new"):
   * reads manifest.tsv (key, dest, level, status, said, english, file);
   * maps `key` through tools/keymap.py, so a ZIP exported before the key rename of 2026-10-20
     (A2-0348.webm, 001_suo.webm, A2-0002_s.webm) lands under the current key
-    (audio_a2/0021_labas.mp3 ...);
+    (media/audio/0021_labas.mp3 ...);
   * takes the destination from the CURRENT a2_build/recording_list.csv by the canonical take key,
     never from the manifest (its `dest` may predate the rename or a re-tier);
   * converts with ffmpeg (-codec:a libmp3lame -q:a 4) to that dest; an existing file there moves to
-    <dir>/_superseded/<key>.<ms>.mp3 first (a take is never deleted);
+    media/audio/_history/<key>.<ms>.mp3 first (a take is never deleted; tidy of 2026-10-24, before
+    that <dir>/_superseded/);
   * appends `key  human  <dest>  <said>` to audio_source.tsv (said = the manifest's `said`), so the next
     `build_recorder.py A2` drops the take from the sheet;
   * clips under off_list/ and superseded/ (and takes no longer on the sheet) are copied to
@@ -93,7 +94,7 @@ def ingest(zpath, dry):
         raw = os.path.join(tmp, os.path.basename(name))
         open(raw, "wb").write(z.read(name))
         if os.path.exists(dest):
-            sup = os.path.join(os.path.dirname(dest), "_superseded")
+            sup = os.path.join(os.path.dirname(dest), "_history")
             os.makedirs(sup, exist_ok=True)
             shutil.move(dest, os.path.join(sup, f"{take}.{int(time.time() * 1000)}.mp3"))
         os.makedirs(os.path.dirname(dest), exist_ok=True)

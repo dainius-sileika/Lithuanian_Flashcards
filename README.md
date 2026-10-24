@@ -4,7 +4,10 @@ An illustrated Lithuanian Anki deck (A0 → A2+), every picture drawn as a page 
 civil-defence training album. Two subdecks (`Lietuvių Flashcards::A1`, `::A2`), picture cards, phrase
 cards, cloze and sentence cards, human-recorded audio for the A1 core.
 
-**Start here:** `docs/DESIGN_SPEC_CURRENT.md` — the one authoritative statement of the design parameters
+**Where is what:** [`INDEX.md`](INDEX.md) — the map of this working directory (every top-level item, where a
+card's picture and audio are, how to build, record and verify, the Proton/git rules, the current release).
+
+**Start here for the design:** `docs/DESIGN_SPEC_CURRENT.md` — the one authoritative statement of the design parameters
 in force (image engine, lettering and emblem rules, card front/back, study order, versioning, ways of
 working), sourced to the code and versioned (spec 3.0.0; `style/STYLE_LOCK.json` is its fingerprint,
 `docs/HOW_TO_CHANGE_THE_LOOK.md` the procedure for touching the aesthetic). Once per clone:
@@ -16,36 +19,29 @@ with it. The owner's open decisions live on the Review Desk (`review_desk/`).
 ```bash
 pip install genanki pillow openai
 python3 build_study_order_v3.py                  # -> study_order.csv (v2 kept as history)
-APKG_LEVELS=A1 python3 build_apkg.py             # -> Lietuviu_Flashcards_v2.1_A1.apkg (APKG_VERSION to bump)
-APKG_LEVELS=A2 python3 build_apkg.py
+APKG_VERSION=3.0 APKG_LEVELS=A1 python3 build_apkg.py     # -> Lietuviu_Flashcards_v3.0_A1.apkg
+APKG_VERSION=3.0 APKG_LEVELS=A2 python3 build_apkg.py
 ```
-Generating or re-rolling pictures: the `gen.py` in each image folder (`out_deck_f62/gen.py`,
-`out_deck_a2/gen.py`, `out_deck_sent/gen.py`, `out_phrases_v3/gen.py`), then `python3 qa_images.py <folder>`,
-then a review page for the owner. Nothing ships without his verdict.
+Generating or re-rolling pictures: the `gen.py` of each render batch (`media/generation/out_deck_f62/gen.py`,
+`out_deck_a2/gen.py`, `out_deck_sent/gen.py`, `out_phrases_v3/gen.py`) writes into `media/images/`; then
+`python3 qa_images.py media/images`, then a review page for the owner. Nothing ships without his verdict.
 
 ## Map of the repository
 
+The full map is **`INDEX.md`**. In one breath (layout of 2026-10-24, spec §13):
+
 | top level | what it is |
 |---|---|
-| **Pipeline code (root)** | `build_apkg.py` (the package), `card_frame.py` + `frame_crop.py` (standard bands, caption, section labels, cropping), `build_study_order_v3.py` (learning order; v2 kept as history), `go_generator.py` (prompt engine and rules), `go_grammars.py` (per-category grammars), `deck_builder.py` + `verb_flashcards.py` (A1 staging, used by the gen scripts), `situations.py` (generated bubble-free phrase staging), `gen_phrases.py`, `go_settings.py` (real places), `historical.py` (precedents/likenesses), `qa_images.py` (QA gate), `frame_preview.py` (screenshots), `build_recorder.py` (recording sheets) |
-| **Data (root)** | `cards_anki.csv` (A1 cards), `master_wordlist.csv` + `card_notes.json` (A1 wordlist and staging), `study_order.csv`, `wordlist_a2_pending.csv` (A2 queue), `audio_source.tsv`, `accents_todo_kirtis.csv` (open stress item), `recorder_A2.html` (the owner's recording sheet) |
-| `a2_build/` | The A2 list and everything built around it: `a2_wordlist.csv`, `id_map.csv`, `merged_keys.csv`, `deferred_B1.csv`, `context_notes.csv` (usage lines), `restage_bubbles.csv`, `sentences/`, `study_order/`, `historical/`, `src/` (list builders and apply scripts), one folder per review round (`pilot_round2/`, `rollout*/`, `hand_fixes/`, `round3/` …) with its page builder, and the plans (`A1_WRAPUP.md` is current) |
-| `a2_rebase/` | The 2026-10-10 rebase of the A2 queue against the official lists; `a2_build/src/build_a2.py` reads it |
-| `sources/` | Frequency and lexicon sources (PERLSI 3000, VU A1/A2); PDFs not committed |
-| **Images by stage** | `images/` 1.x WebP masters (A1 fallback) · `out_deck_f62/` F6.2 A1 renders (current) · `out_deck_a2/` A2 pictures · `out_phrases_v3/` (+ `round2/`) bubble-free phrase and situation renders · `out_deck_sent/` sentence pictures · `out_phrases_a2/` the few remaining A2 phrase pictures. Each holds its `gen.py`, `ledger.csv` (every prompt), `plan.json`, QA csv and `_rerolled/` (previous versions, `<key>.r<n>.png`). PNGs are not committed. |
-| `audio/` | A1 mp3 (human-recorded core, Azure elsewhere); `audio_a2/` appears when the owner records |
-| `fonts/` | Brygada 1918 shipped as media; `_superseded/` the retired pair |
-| `anki/` | Card CSS (`go_theme.css`, `frame_standard.css`, `back_proposed.css`) and `templates.md` (v2.0 reference) |
-| `review_desk/` | The owner's Review Desk SOP, items and builder |
-| `build_reports/` | Build-time reports (frame flags, hand-scan results, previews used in reviews) |
-| `style_lab/` | The style experiments that settled F6.2 (dated folders with NOTES and analyses) and `research/` (location bank and settings assignments read by `go_settings.py`) |
-| `docs/` | `DESIGN_SPEC_CURRENT.md` (versioned, `**Spec version X.Y.Z**`), `spec_history/` (frozen copies, tags `spec-vX.Y.Z`), `HOW_TO_CHANGE_THE_LOOK.md`, `VERSIONS.md` (deck ↔ spec ↔ style register), `SPEC_RECONCILIATION_2026-10-19.md`, `PLAYBOOK_flashcard_language_system.md` (method, reusable) |
-| `style/` | `STYLE_LOCK.json` (the look's fingerprint, hash per constant + one style hash) and `golden/` (the 28 reference pictures with their prompts) |
-| `tools/` | `style_lock.py` (check / update), `spec_release.py` (bump + snapshot + lock + tag), `golden_set.py`, `hooks/pre-commit` + `install_hooks.sh` |
-| `_archive/` | Kept history: `deprecated/` (1.6/1.7 code, specs, raw recording masters), `docs/` (superseded GO_STYLE_SPEC, ROADMAP, NEEDS_YOUR_REVIEW), `code/` (driver, build_review, bubbles), `review_packs/`, `out_deck_1.5/` (ledger of the 1.x masters), `recent_versions/` (the bubble pictures replaced on 2026-10-18) |
-| `_TO_DELETE/` | Everything judged an orphan on 2026-10-19, with `MANIFEST.csv` (path, size, category, reason). The owner deletes it; git-ignored. |
-| `_apkg_media/`, `_qa/`, `__pycache__/` | Caches (transcoded media, QA results); regenerate freely |
-| root | `CHANGELOG.md`, `VERSIONS.md` (release history), `ANKIWEB_DESCRIPTION.md`, `LICENSE` (CC BY-NC 4.0), the current `Lietuviu_Flashcards_v2.1_*.apkg` (not committed) |
+| **Pipeline code (root)** | `build_apkg.py` (the package), `build_recorder.py` (recording sheet), `build_study_order_v3.py` (learning order), `card_frame.py` + `frame_crop.py` (standard bands, cropping), `go_generator.py` / `go_grammars.py` / `go_settings.py` / `deck_builder.py` / `verb_flashcards.py` / `situations.py` / `gen_phrases.py` / `historical.py` (the picture engine), `qa_images.py` (QA gate), `frame_preview.py` |
+| **Live data (root)** | `cards_anki.csv` (A1 cards), `master_wordlist.csv` + `card_notes.json`, `study_order.csv`, `audio_source.tsv`, `wordlist_a2_pending.csv`, `recorder_A2.html` (the owner's recording sheet) |
+| `media/` | **`images/<key>.png`** — the one current picture of every card; **`audio/<key>.mp3`** (+ `<key>_s.mp3`) — its audio; `images/_history/<old batch path>/` and `audio/_history/` — every other version; `generation/<batch>/` — each render batch's ledger, plan, QA sheets and `gen.py`. Pictures are not committed. |
+| `a2_build/` | The A2 list (`a2_wordlist.csv`), sentences, usage notes, key maps (`rename/`), recording list and guide, review rounds, plans, the 2026-10-24 move table (`tidy/`) |
+| `docs/` | `DESIGN_SPEC_CURRENT.md` (versioned), `spec_history/`, `HOW_TO_CHANGE_THE_LOOK.md`, `VERSIONS.md` (deck ↔ spec ↔ style register), `CHANGELOG.md`, the AnkiWeb description, the playbook |
+| `style/`, `tools/`, `anki/`, `fonts/` | Style lock + golden set; `check_layout.py`, `style_lock.py`, `spec_release.py`, `verify_apkg.py`, `rename_keys.py`, `keymap.py`, `ingest_takes.py`, hooks; card CSS; Brygada 1918 |
+| `build_reports/`, `review_desk/` | Build manifests and verify reports; the owner's Review Desk sources |
+| `a2_rebase/`, `sources/`, `style_lab/` | A2 queue rebase; frequency/lexicon sources; the style experiments (kept as a record) |
+| `_archive/`, `_TO_DELETE/` | Kept history (old code, docs, packages); junk for the owner to delete |
+| caches | `_apkg_media/`, `_qa/`, `__pycache__/` — regenerate freely |
 
 ## License
 

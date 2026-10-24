@@ -1,51 +1,58 @@
-"""A2 picture cards (2026-10-11): every IMG row of a2_build/a2_wordlist.csv drawn by
-the production prompt path (a2_adapter.build_call_a2 -> go_generator.build_prompt,
-the A2 twin of deck_builder.build_call) on the production model
-(gpt-image-2.5-sunburst, medium, 1536x1024) into out_deck_a2/<id>.png, where
-build_apkg.find_a2_image looks (A2_IMAGE_DIRS).
+"""F6.2 full re-render (2026-10-11): every eligible deck card drawn by the
+production path (deck_builder.build_call -> go_generator.build_prompt) on the
+production model (gpt-image-2.5-sunburst, medium, 1536x1024) into out_deck_f62/.
+Never touches out_deck/ (the shipped 1.5 masters).
 
 Resumable: a card is done when out_deck_f62/<key>.png exists. Each device call is
 capped at ~180 s, so jobs launch only in the first BUDGET seconds; repeat the call
 until "remaining 0".
 
-    timeout 178 python -u out_deck_a2/gen.py 15 30          # launch window, workers
-    python out_deck_a2/gen.py 0 0 --plan                     # (re)write plan + cards.csv only
-    REROLL=key1,key2 timeout 178 python -u out_deck_a2/gen.py 15 10   # re-roll: moves old png to _rerolled/
+    timeout 178 python -u out_deck_f62/gen.py 15 30          # launch window, workers
+    python out_deck_f62/gen.py 0 0 --plan                     # (re)write plan + cards.csv only
+    REROLL=key1,key2 timeout 178 python -u out_deck_f62/gen.py 15 10   # re-roll: moves old png to _rerolled/
 
 Ledger: out_deck_f62/ledger.csv, same columns as deck_builder (key, subject, seed,
 backend, size, file, prompt); re-rolls append a new row, so the LAST row per key is
 the current picture. gen_log.jsonl records seconds and token usage per image.
+
+Layout since the tidy of 2026-10-24 (spec §13, INDEX.md): this driver lives in media/generation/out_deck_f62/
+with its ledger, plan and QA sheets; pictures go to media/images/<key>.png (the one current picture
+per card, where build_apkg looks) and a re-roll moves the old picture to
+media/images/_history/out_deck_f62/_rerolled/<key>.r<n>.png. Run it from the project root as before:
+    python3 media/generation/out_deck_f62/gen.py ...
 """
 import csv, json, os, sys, time, base64, threading
 from concurrent.futures import ThreadPoolExecutor
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))              # media/generation/out_deck_f62
+ROOT = os.path.dirname(os.path.dirname(HERE))
 os.chdir(ROOT); sys.path.insert(0, ROOT)
-import go_generator as g
-sys.path.insert(0, os.path.join(ROOT, "out_deck_a2")); import a2_adapter as A
+import deck_builder as db, go_generator as g
 from openai import OpenAI
 os.environ.setdefault("OPENAI_API_KEY", open(".openai_key.txt").read().strip())
 
-OUT = "out_deck_a2"
+BATCH = "out_deck_f62"
+OUT = "media/images"                                   # the current pictures (build_apkg.IMAGE_DIR)
+HIST = f"media/images/_history/{BATCH}/_rerolled"        # previous versions, <key>.r<n>.png
+META = f"media/generation/{BATCH}"                       # plan.json, cards.csv, ledger.csv, gen_log.jsonl
 MODEL = g.OPENAI_MODEL          # gpt-image-2.5-sunburst
 SIZE, QUALITY = "1536x1024", g.OPENAI_QUALITY
 BUDGET = float(sys.argv[1]) if len(sys.argv) > 1 else 15
 W = int(sys.argv[2]) if len(sys.argv) > 2 else 30
 REROLL = [k for k in os.environ.get("REROLL", "").split(",") if k]
 
-rows, staging = A.load_rows(); skipped = []
+rows = db.load_rows(db.WORDLIST); work, skipped = db.eligible(rows); db.prepare_settings(work)
 jobs = []
-for r in rows:
-    key = r["id"]
-    kw, cls = A.build_call_a2(r, staging); kw.pop("filename")
-    jobs.append({"key": key, "n": key, "cls": cls, "subject": kw["subject"], "phase": r["phase"],
+for key, r, cls in work:
+    kw = db.build_call(key, r, cls); kw.pop("filename")
+    jobs.append({"key": key, "n": int(r["#"]), "cls": cls, "subject": kw["subject"],
                  "lt": r["lithuanian_TARGET"], "en": r["english"], "lt_pron": r["lt_pron"],
-                 "gender": r["gender"], "category": r["category"], "staged": key in staging,
+                 "gender": r["gender"], "category": r["category"],
                  "composition": kw.get("composition"), "setting": kw.get("setting", ""),
                  "exact_text": kw.get("exact_text", ""),
                  "prompt": g.build_prompt(backend="openai", **kw)})
 json.dump({"model": MODEL, "size": SIZE, "quality": QUALITY, "n": len(jobs), "skipped": skipped,
-           "card_text_rewrites": A.CARD_TEXT_FIXES, "jobs": jobs}, open(f"{OUT}/plan.json", "w"), indent=1, ensure_ascii=False)
-with open(f"{OUT}/cards.csv", "w", newline="", encoding="utf-8") as f:
+           "jobs": jobs}, open(f"{META}/plan.json", "w"), indent=1, ensure_ascii=False)
+with open(f"{META}/cards.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["key", "lithuanian", "english", "lt_pron", "gender", "number", "category", "image_file"])
     for j in jobs:
@@ -53,14 +60,15 @@ with open(f"{OUT}/cards.csv", "w", newline="", encoding="utf-8") as f:
 if "--plan" in sys.argv:
     print(len(jobs), "planned; plan.json + cards.csv written"); sys.exit()
 
+os.makedirs(OUT, exist_ok=True)
 if REROLL:
-    os.makedirs(f"{OUT}/_rerolled", exist_ok=True)
+    os.makedirs(HIST, exist_ok=True)
     for k in REROLL:
         p = f"{OUT}/{k}.png"
         if os.path.exists(p):
             i = 1
-            while os.path.exists(f"{OUT}/_rerolled/{k}.r{i}.png"): i += 1
-            os.replace(p, f"{OUT}/_rerolled/{k}.r{i}.png")
+            while os.path.exists(f"{HIST}/{k}.r{i}.png"): i += 1
+            os.replace(p, f"{HIST}/{k}.r{i}.png")
     todo = [j for j in jobs if j["key"] in REROLL]
 else:
     todo = [j for j in jobs if not os.path.exists(f"{OUT}/{j['key']}.png")]
@@ -71,7 +79,7 @@ t0 = time.time(); lock = threading.Lock()
 # append-only files are written OUTSIDE the Proton-synced folder (Proton forks
 # "(# Edit conflict ...)" copies and locks files with EDEADLK when a file is
 # appended to while it syncs); they are copied into OUT once per call, below
-LOCAL = os.path.expanduser("~/a2_work"); os.makedirs(LOCAL, exist_ok=True)
+LOCAL = os.path.expanduser("~/f62_work"); os.makedirs(LOCAL, exist_ok=True)
 log = open(f"{LOCAL}/gen_log.jsonl", "a")
 lf, lw = g.GOGenerator.open_ledger(f"{LOCAL}/ledger.csv")
 
@@ -118,7 +126,7 @@ import shutil
 for name in ("ledger.csv", "gen_log.jsonl"):
     for w_try in range(6):
         try:
-            shutil.copyfile(f"{LOCAL}/{name}", f"{OUT}/{name}"); break
+            shutil.copyfile(f"{LOCAL}/{name}", f"{META}/{name}"); break
         except OSError:
             time.sleep(2 * (w_try + 1))
 print("remaining", len([j for j in jobs if not os.path.exists(f"{OUT}/{j['key']}.png")]), flush=True)

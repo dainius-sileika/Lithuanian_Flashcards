@@ -1,13 +1,14 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.4.0** · dated 2026-10-20 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.4.1** · dated 2026-10-24 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
 when a doc and the code disagree, the code and the most recent owner decision win
 (`docs/SPEC_RECONCILIATION_2026-10-19.md` lists the disagreements found). Older specs
 (`_archive/docs/GO_STYLE_SPEC.md`, `ROADMAP.md`, `VERSIONS.md`, the `a2_build/*.md` plans) are history.
-Read this file first in a new session; change the code, then this file, in the same commit.
+Read this file first in a new session; change the code, then this file, in the same commit. The map of the
+working directory — where every file is, how to build, record, verify — is `INDEX.md` at the root (§13).
 
 ## 1. Image engine
 - **Model / quality / size:** `gpt-image-2.5-sunburst`, quality `medium`, 1536×1024 (ratio 4:3).
@@ -100,9 +101,10 @@ Read this file first in a new session; change the code, then this file, in the s
   rows keep the house gaze. Situation cards use `ANATOMY_PROPS_RULE`.
 - **Insets stay** on single-scene cards for beauty (owner, Oct 2026) and are bound by
   `PANEL_CONTINUITY_RULE` where they repeat the scene.
-- Production drivers: `out_phrases_v3/gen.py` (imports `gen_phrases.build_situation_call`);
-  renders in `out_phrases_v3/` (pilot round 1 + roll-out) and `out_phrases_v3/round2/` (pilot round 2).
-  The replaced bubble pictures are in `_archive/recent_versions/` (moved 2026-10-19).
+- Production drivers: `media/generation/out_phrases_v3/gen.py` (imports `gen_phrases.build_situation_call`;
+  was `out_phrases_v3/gen.py` until 2026-10-24); its ledgers in `media/generation/out_phrases_v3/` (pilot round 1
+  + roll-out) and `media/generation/out_phrases_v3/round2/` (pilot round 2, `V3_BATCH=out_phrases_v3/round2`);
+  the pictures in `media/images/` (§13). The replaced bubble pictures are in `_archive/recent_versions/` (moved 2026-10-19).
 
 ## 5. QA gate
 - `qa_images.py`, model `gpt-5.6-luna` (`MODEL`, env `GO_QA_MODEL`), cache `_qa/qa_cache.json` keyed by
@@ -141,10 +143,14 @@ Read this file first in a new session; change the code, then this file, in the s
   `ff_no` column is the Fluent Forever row, a data join only). A2 list: `a2_build/a2_wordlist.csv` (first built
   by `build_a2.py`, edited directly since 2026-10-11; the builder is retired to `_archive/deprecated/a2_src_2026-10/`;
   `a2_build/id_map.csv` registers the current keys). Sentences: `a2_build/sentences/sentences.csv`. Keys: §12.
-- **Image resolution order** (`build_apkg.A1_IMAGE_DIRS` / `A2_IMAGE_DIRS` / `SENT_IMAGE_DIRS`, first hit wins):
-  A1 `out_phrases_v3, out_deck_f62, images`; A2 `out_phrases_v3/round2, out_phrases_v3, out_deck_a2,
-  out_phrases_a2, images_a2, out_phrases`; sentences `out_phrases_v3, out_deck_sent, images_sent`.
-  `images/` holds the 1.x WebP masters as the A1 fallback; the pre-F6.2 PNGs are in `_TO_DELETE/out_deck/`.
+- **Image resolution** (`build_apkg.IMAGE_DIR`, default `media/images`; since 2026-10-24, §13): the picture of
+  card `<key>` is `media/images/<key>.png|webp|jpg` — one folder, one file per key, no search order. (Until
+  2026-10-24 the build searched six batch folders first-hit — A1 `out_phrases_v3, out_deck_f62, images`; A2
+  `out_phrases_v3/round2, out_phrases_v3, out_deck_a2, out_phrases_a2, …`; sentences `out_phrases_v3,
+  out_deck_sent, …` — and the winners were moved into `media/images/` by `a2_build/tidy/moves_2026-10-24.csv`,
+  so no package content changed.) The 1.x WebP masters are history (`media/images/_history/images/`); the
+  pre-F6.2 PNGs are in `_TO_DELETE/out_deck/`. Audio: `media/audio/<key>.mp3` and `<key>_s.mp3`
+  (`build_apkg.AUDIO_DIR`; `audio/` + `audio_a2/` merged 2026-10-24).
 - **Merges** (owner 2026-10-19, `a2_build/merged_keys.csv`): A2-1187 Sudie → A2-0354 Viso gero (now
   `0047_viso_gero`, back note), A2-1149 atsargiai → A2-0385 Atsargiai! (`0344_atsargiai`), A2-1944 → A2-1995
   (`2221_kaip_rasoma`), A2-1958 → A2-1991 (`1727_man_labiau_patinka_arbata`). The absorbed id stays reserved
@@ -190,14 +196,16 @@ Read this file first in a new session; change the code, then this file, in the s
 - Version scheme: packages `Lietuviu_Flashcards_v<APKG_VERSION>_<level>.apkg` (`APKG_VERSION` default
   `"2.1"`, env; `APKG_LEVELS=A1` or `A2`, one package per level under AnkiWeb's 250 MB cap);
   `versioned_out()` never overwrites — a repeat build gets `-1`, `-2`. Engine/data history uses
-  `files X.Y.Z / wordlist N.M` (`CHANGELOG.md`, `VERSIONS.md`). Current packages: `Lietuviu_Flashcards_v2.1_A1.apkg`,
-  `_A2.apkg`; v1 and v2.0 are in `_TO_DELETE/`. The A1 release is **v3.0** (major, delete-and-reimport; card keys and GUIDs lock once A1 and A2 are both signed off), built 2026-10-19 as `Lietuviu_Flashcards_v3.0_A1.apkg`; see `docs/VERSIONS.md`.
+  `files X.Y.Z / wordlist N.M` (`docs/CHANGELOG.md`, `_archive/docs/VERSIONS.md`). The v2.1 packages
+  (`Lietuviu_Flashcards_v2.1_A1.apkg`, `_A2.apkg`) are in `_archive/builds/` with the v3.0 release candidates;
+  v1 and v2.0 are in `_TO_DELETE/`. The A1 release is **v3.0** (major, delete-and-reimport; card keys and GUIDs lock once A1 and A2 are both signed off), built 2026-10-19 as `Lietuviu_Flashcards_v3.0_A1.apkg`; see `docs/VERSIONS.md`.
 - **Release plan (owner 2026-10-19):** release **A1 now, audio later**; because the note types changed
   (usage field, backs, frame) this release is **delete-and-reimport** for existing users — deck coherence
   over old study history. A2 follows (`A1_WRAPUP.md` "A2 — the shorter list").
-- **Image versioning:** a re-roll moves the old render to `<dir>/_rerolled/<key>.r<n>.png` (the gen.py
-  scripts, `edit_inset.py`, `restore_before.py`); a design change moves replaced pictures to
-  `<dir>/_superseded/`. Nothing is overwritten or deleted; clean-ups go to `_TO_DELETE/` for the owner.
+- **Image versioning:** a re-roll moves the old render to `media/images/_history/<batch>/_rerolled/<key>.r<n>.png`
+  (the gen.py drivers in `media/generation/<batch>/`; until 2026-10-24 `<dir>/_rerolled/`); a design change moves
+  replaced pictures under `media/images/_history/` too (until 2026-10-24 `<dir>/_superseded/`). A replaced audio
+  take goes to `media/audio/_history/`. Nothing is overwritten or deleted; clean-ups go to `_TO_DELETE/` for the owner.
 - Media is distributed via GitHub Releases / AnkiWeb, not committed (`.gitignore`).
 
 ## 10. Ways of working
@@ -211,7 +219,7 @@ Read this file first in a new session; change the code, then this file, in the s
 - **Fix by whole re-roll, not masked edits, unless the owner asks for an edit** (owner 2026-10-19, round 5: "this
   patching of images isn't working"). A faulty picture is re-rolled whole from its staging (changed where needed);
   masked/inpainted edits (`edit_inset.py`) and composites are used only when the owner asks for an edit. Every
-  version is kept in `_rerolled/`.
+  version is kept (`media/images/_history/`, §9).
 
 ## 11. Versioning of this spec and of the look
 - **Spec version** (header line, semantic): **major** = the look or the card format changes; **minor** = a
@@ -250,8 +258,9 @@ Read this file first in a new session; change the code, then this file, in the s
   records (ledgers, gen logs, QA sheets, build manifests, reports, round folders, the spec history, the
   proofreading sheet sent before the rename) are never rewritten; they are read through `tools/keymap.py`
   (`canonical`, `canonical_take`, `aliases`, `lookup`). Live data carries the current key only.
-- **Media names follow the key**: `<key>.png|webp|jpg`, `<key>.mp3`, `<key>_s.mp3` (example sentence),
-  `<key>_sf<v>.jpg` (cropped copy), `_rerolled/<key>.r<n>.png`, `style/golden/<key>.jpg` + `.prompt.txt`.
+- **Media names follow the key**: `media/images/<key>.png|webp|jpg`, `media/audio/<key>.mp3`, `<key>_s.mp3` (example
+  sentence), `_apkg_media/<key>_sf<v>.jpg` (cropped copy), `media/images/_history/<batch>/_rerolled/<key>.r<n>.png`,
+  `style/golden/<key>.jpg` + `.prompt.txt`.
   Recorder take keys are `<key>` and `<key>_s`; the recorder page carries the key map and re-keys stored
   clips on start (move, never delete); `tools/ingest_takes.py` maps exported file names the same way.
 - **Plate number.** `pav. N` in the bottom band is the key's number, for every note type
@@ -272,7 +281,39 @@ Read this file first in a new session; change the code, then this file, in the s
   compares a package with one built before a rename (GUIDs changed exactly as mapped; fields modulo key,
   number, media names and tags) and checks plate = key number and the tags on every note.
 
+## 13. Layout of the working directory (2026-10-24; `INDEX.md`, `tools/check_layout.py`)
+Owner 2026-10-24: "why do we have batches of images over several directories … write an index of where what is."
+The layout is part of the spec so that it is versioned with the look and a future reader finds things.
+- **One home per medium, named by key.** The current picture of every card is `media/images/<key>.<ext>` and
+  nothing else; its audio is `media/audio/<key>.mp3` (+ `<key>_s.mp3`). The build (`build_apkg.IMAGE_DIR`,
+  `AUDIO_DIR`), the recorder, the ingest tool and the QA gate read these two folders and no other.
+- **History beside it, never mixed in.** Every other version of a picture is under `media/images/_history/` at
+  its old path (`<batch>/<key>.png` for a render another batch outranked, `<batch>/_rerolled/<key>.r<n>.png`,
+  `<batch>/_superseded/…`, `images/<key>.webp` for the 1.x masters); every replaced take is in
+  `media/audio/_history/`. The build never reads `_history/`. A folder named `_history`, `_rerolled` or
+  `_superseded` anywhere else under `media/` or at the root is a layout error (`fonts/_superseded/`, the retired
+  font pair, predates this rule and stays).
+- **Generation records separate from pictures.** Each render batch keeps its text in
+  `media/generation/<batch>/`: `ledger.csv` (every prompt; last row per key = the render that batch considers
+  current), `plan.json`, `cards.csv`, `gen_log.jsonl`, QA sheets, README, and its `gen.py` driver, which writes
+  new pictures straight to `media/images/` and re-rolls to `_history/<batch>/_rerolled/`. The batch names are the
+  historical ones (`out_deck_f62`, `out_deck_a2`, `out_deck_sent`, `out_phrases_v3`, `out_phrases_v3/round2`,
+  `out_phrases_a2`), so every older document still reads; `a2_build/tidy/moves_2026-10-24.csv` is the old→new map.
+- **The root holds entry points, live code and live data only**: `build_apkg.py`, `build_recorder.py`,
+  `build_study_order_v3.py`, the pipeline modules they import, the live data files (`cards_anki.csv`,
+  `master_wordlist.csv`, `card_notes.json`, `study_order.csv`, `audio_source.tsv`, `wordlist_a2_pending.csv`),
+  `recorder_A2.html`, the current release package, `README.md`, `INDEX.md`, `LICENSE`, `.gitignore`, the secret
+  key files (gitignored, never shared) and the caches `_apkg_media/`, `_qa/`, `__pycache__/`. Superseded code and
+  data go to `_archive/`, junk to `_TO_DELETE/<reason>/` for the owner to delete. Everything else lives in a
+  named top-level folder (`media/`, `docs/`, `a2_build/`, `tools/`, `anki/`, `fonts/`, `style/`, `build_reports/`,
+  `review_desk/`, `a2_rebase/`, `sources/`, `style_lab/`, `_archive/`, `_TO_DELETE/`), each described in `INDEX.md`.
+- **The index is kept current.** `INDEX.md` describes every top-level item; `tools/check_layout.py` (run by the
+  pre-commit hook and at the start of `build_apkg.py`) warns when a file appears at the root or in `media/` that
+  the layout does not expect, and when `INDEX.md` is older than a top-level change. A new top-level item means a
+  new line in `INDEX.md` in the same commit.
+
 ## Spec changelog
+- **3.4.1 — 2026-10-24.** paths only: media/ layout (one home per medium, history beside it, generation records separate), §13 layout of the working directory, INDEX.md and tools/check_layout.py; §4/§7/§9/§10/§12 path wording; no look-defining value changed
 - **3.4.0 — 2026-10-20.** §12 added: one NNNN_slug key namespace (numbers from the study order at the rename of 2026-10-20, slugs from the headword), plate number = key number for all note types, hierarchical lt:: tags with the 20-section topic map (topic = the section shown), key history in a2_build/rename/key_map_v1.csv read through tools/keymap.py; SECTIONS gains Functions, ROUTE_SECTIONS keyed by lt::kind tags; §7/§8 updated for the rename and dep37 (owner decision 2026-10-19: rename everything so it's consistent)
 - **3.3.0 — 2026-10-19.** Key/GUID freeze moved: keys lock once A1 and A2 are both signed off, not at v3.0 (owner, 2026-10-19)
 - **3.2.1 — 2026-10-19.** §9: the A1 release is v3.0 (major), not v2.2

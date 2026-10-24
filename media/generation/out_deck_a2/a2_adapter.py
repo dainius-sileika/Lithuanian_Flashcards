@@ -21,7 +21,7 @@ Differences from the A1 wordlist, handled here and nowhere else:
   - no bank Setting line (settings_assignments.csv knows only A1 keys).
 """
 import csv, json, os, re, sys
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # media/generation/out_deck_a2 -> project root (tidy 2026-10-24)
 sys.path.insert(0, ROOT)
 import deck_builder as db
 from go_grammars import route, compose_class, SCENE_TAIL

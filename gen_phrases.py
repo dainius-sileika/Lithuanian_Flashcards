@@ -24,10 +24,10 @@ rows with declared card_text get one.
 
     python3 gen_phrases.py [count] [budget_seconds]                  # A1 phrase pack (wordlist_a2_pending)
     A2_LIST=a2_build/a2_wordlist.csv python3 gen_phrases.py 8 60      # the A2 list's phrase rows
-    PHRASES_OUT=out_phrases_v3 (default) — never over the bubble renders in out_phrases*/
+    PHRASES_OUT=media/images (default since the tidy of 2026-10-24: the one home of the current pictures)
 
-The production driver for the pilot / roll-out is out_phrases_v3/gen.py, which imports
-build_situation_call() from here so both paths build the same prompt.
+The production driver for the pilot / roll-out is media/generation/out_phrases_v3/gen.py (was
+out_phrases_v3/gen.py), which imports build_situation_call() from here so both paths build the same prompt.
 """
 import csv, os, re, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -38,7 +38,7 @@ from go_grammars import NOUN_GRAMMARS, SCENE_TAIL
 import deck_builder as db
 from situations import SITUATIONS, BY_ID
 
-OUT = os.environ.get("PHRASES_OUT", "out_phrases_v3")
+OUT = os.environ.get("PHRASES_OUT", "media/images")
 
 
 def situation_for(row):

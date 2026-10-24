@@ -15,18 +15,30 @@ NOT touched; they move to _superseded/ only after the owner passes the pilot.
 
 Append-only ledger/gen_log are kept in ~/a2_work/v3_* (outside the Proton-synced tree) and
 copied in once per call. Last ledger row per key = current picture.
+
+Layout since the tidy of 2026-10-24 (spec §13, INDEX.md): this driver lives in media/generation/out_phrases_v3/
+with its ledger, plan and QA sheets (round 2's under round2/); pictures go to media/images/<key>.png (the one
+current picture per card, where build_apkg looks) and a re-roll moves the old picture to
+media/images/_history/<batch>/_rerolled/<key>.r<n>.png. V3_BATCH=out_phrases_v3/round2 (was V3_OUT) selects
+round 2's ledger, plan and history folder. Run it from the project root as before:
+    python3 media/generation/out_phrases_v3/gen.py ...
 """
 import csv, json, os, sys, time, base64, threading
 from concurrent.futures import ThreadPoolExecutor
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))              # media/generation/out_phrases_v3
+ROOT = os.path.dirname(os.path.dirname(HERE))
 os.chdir(ROOT); sys.path.insert(0, ROOT)
 import go_generator as g, deck_builder as db, gen_phrases as gp
 from situations import SITUATIONS, BY_ID, renders
 
-# V3_OUT=out_phrases_v3/round2 (pilot round 2, 2026-10-17): renders go to a subfolder and
-# never over round 1; its append-only logs are ~/a2_work/v3_round2_* (TAG below).
-OUT = os.environ.get("V3_OUT", "out_phrases_v3")
-TAG = "v3" if OUT == "out_phrases_v3" else "v3_" + os.path.basename(OUT.rstrip("/"))
+# V3_BATCH=out_phrases_v3/round2 (pilot round 2, 2026-10-17; was V3_OUT before the tidy of 2026-10-24):
+# round 2 keeps its own ledger, plan and _history folder and never writes over round 1's records; its
+# append-only logs are ~/a2_work/v3_round2_* (TAG below). Pictures of both rounds go to media/images/.
+BATCH = os.environ.get("V3_BATCH", os.environ.get("V3_OUT", "out_phrases_v3"))
+OUT = "media/images"                                   # the current pictures (build_apkg.IMAGE_DIR)
+HIST = f"media/images/_history/{BATCH}/_rerolled"       # previous versions, <key>.r<n>.png
+META = f"media/generation/{BATCH}"                      # plan.json, ledger.csv, gen_log.jsonl
+TAG = "v3" if BATCH == "out_phrases_v3" else "v3_" + os.path.basename(BATCH.rstrip("/"))
 MODEL = g.OPENAI_MODEL
 SIZE, QUALITY = "1536x1024", g.OPENAI_QUALITY
 BUDGET = float(sys.argv[1]) if len(sys.argv) > 1 else 15
@@ -65,20 +77,21 @@ for en, s in SITUATIONS.items():
     jobs.append({"key": key, "en": en, "lt": row.get("lithuanian_TARGET", ""), "format": s["format"],
                  "staging": s["scene"], "cue": s["cue"], "confusables": s["confusables"],
                  "subject": kw["subject"], "prompt": g.build_prompt(backend="openai", **kw)})
-os.makedirs(OUT, exist_ok=True)
+os.makedirs(OUT, exist_ok=True); os.makedirs(META, exist_ok=True)
 json.dump({"model": MODEL, "size": SIZE, "quality": QUALITY, "n": len(jobs), "pilot": PILOT, "jobs": jobs},
-          open(f"{OUT}/plan.json", "w"), indent=1, ensure_ascii=False)
+          open(f"{META}/plan.json", "w"), indent=1, ensure_ascii=False)
 if "--plan" in sys.argv:
     print(len(jobs), "planned; plan.json written"); sys.exit()
 
+os.makedirs(OUT, exist_ok=True)
 if REROLL:
-    os.makedirs(f"{OUT}/_rerolled", exist_ok=True)
+    os.makedirs(HIST, exist_ok=True)
     for k in REROLL:
         p = f"{OUT}/{k}.png"
         if os.path.exists(p):
             n = 1
-            while os.path.exists(f"{OUT}/_rerolled/{k}.r{n}.png"): n += 1
-            os.replace(p, f"{OUT}/_rerolled/{k}.r{n}.png")
+            while os.path.exists(f"{HIST}/{k}.r{n}.png"): n += 1
+            os.replace(p, f"{HIST}/{k}.r{n}.png")
     todo = [j for j in jobs if j["key"] in REROLL]
 else:
     todo = [j for j in jobs if (not ONLY or j["key"] in ONLY) and not os.path.exists(f"{OUT}/{j['key']}.png")]
@@ -135,7 +148,7 @@ import shutil
 for name in (f"{TAG}_ledger.csv", f"{TAG}_gen_log.jsonl"):
     for w_try in range(6):
         try:
-            shutil.copyfile(f"{LOCAL}/{name}", f"{OUT}/{name.replace(TAG + '_', '')}"); break
+            shutil.copyfile(f"{LOCAL}/{name}", f"{META}/{name.replace(TAG + '_', '')}"); break
         except OSError:
             time.sleep(2 * (w_try + 1))
 left = [j["key"] for j in jobs if (not ONLY or j["key"] in ONLY) and not os.path.exists(f"{OUT}/{j['key']}.png")]

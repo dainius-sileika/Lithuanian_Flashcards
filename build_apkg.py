@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build the importable Anki deck (Lietuviu_Flashcards.apkg) from cards_anki.csv
-+ images/ (webp) + audio/ (mp3) + anki/go_theme.css.
++ media/images/ (one picture per card key) + media/audio/ (mp3) + anki/go_theme.css.
 
     pip install genanki
     python3 build_apkg.py
@@ -12,7 +12,7 @@ and the English gloss. Media (webp + mp3) is bundled into the .apkg.
 A2 (2026-10-11): the same build also reads the A2 list (A2_LIST, default
 a2_build/a2_wordlist.csv; set A2_LIST="" to skip it). Its IMG and PHRASE rows become
 picture cards of the same note type once their image exists (looked up by id in
-A2_IMAGE_DIRS: images_a2/<id>.webp, out_phrases/<id>.png, ...); its CLOZE and PAIR
+A2_IMAGE_DIRS, since 2026-10-24 the single folder media/images/); its CLOZE and PAIR
 rows become native Anki cloze notes ("Lietuvių GO Cloze") built from example_lt,
 where the {braces} mark the blank — these need no image. Every note carries the lt:: tags
 (tags_for below) and goes to the A1/A2 subdeck by its level.
@@ -140,19 +140,23 @@ def set_frame(mode, back=None):
         cloze_model.css = CLOZE_CSS
 
 A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
-# Image sources, first hit wins. The A1 deck prefers the F6.2 re-render (out_deck_f62) and
-# falls back to the 1.5 masters in images/; override with comma-separated env vars, e.g.
-# A1_IMAGE_DIRS=_cloud_media/f62,images  A2_IMAGE_DIRS=_cloud_media/a2,_cloud_media/phrases
-# 2026-10-18 roll-out: the bubble-free situation renders come first (out_phrases_v3/round2 =
-# pilot round 2, out_phrases_v3 = pilot round 1 + roll-out); the bubble pictures they replace
-# moved to <dir>/_superseded/ (a2_build/rollout/README.md).
-A1_IMAGE_DIRS = os.environ.get("A1_IMAGE_DIRS", "out_phrases_v3,out_deck_f62,images").split(",")
-A2_IMAGE_DIRS = os.environ.get("A2_IMAGE_DIRS",
-                               "out_phrases_v3/round2,out_phrases_v3,out_deck_a2,out_phrases_a2,images_a2,out_phrases").split(",")
-A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", "audio_a2")
+# Media layout (tidy of 2026-10-24, spec §13, INDEX.md): ONE home for the current picture of every card
+# and ONE for its audio, named by card key — media/images/<key>.png|webp|jpg, media/audio/<key>.mp3 and
+# <key>_s.mp3. Every other version (shadowed renders, _rerolled/, _superseded/, the 1.x WebP masters) is
+# under media/images/_history/<old batch path>/ and media/audio/_history/, which the build never reads.
+# Until 2026-10-24 the pictures were resolved first-hit over six batch folders (out_phrases_v3/round2,
+# out_phrases_v3, out_deck_f62, out_deck_a2, out_phrases_a2, out_deck_sent, images); the winners were moved
+# into media/images/ (a2_build/tidy/moves_2026-10-24.csv), so the package content did not change. The
+# *_IMAGE_DIRS names stay (build_recorder.py, tools/golden_set.py read them) and still accept a
+# comma-separated override, e.g. A1_IMAGE_DIRS=_cloud_media/f62 for a cloud clone without the Mac media.
+IMAGE_DIR = os.environ.get("IMAGE_DIR", "media/images")
+AUDIO_DIR = os.environ.get("AUDIO_DIR", "media/audio")
+A1_IMAGE_DIRS = os.environ.get("A1_IMAGE_DIRS", IMAGE_DIR).split(",")
+A2_IMAGE_DIRS = os.environ.get("A2_IMAGE_DIRS", IMAGE_DIR).split(",")
+A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", AUDIO_DIR)      # A2-list and sentence audio (same folder since 2026-10-24)
 # Sentence cards (picture + cloze), see a2_build/sentences/design.md
 SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
-SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", "out_phrases_v3,out_deck_sent,images_sent").split(",")
+SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", IMAGE_DIR).split(",")
 # Back-of-card usage notes (pilot round 2, a2_build/pilot_round2/CONTEXT_NOTES.md; owner
 # 2026-10-17: on the backs now). One line under the gloss: the register / near-synonym note,
 # then the tu/jus variant as a second line. Only rows the planner verified against a read
@@ -555,6 +559,7 @@ _TOOLS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools")
 if _TOOLS not in sys.path:
     sys.path.insert(0, _TOOLS)
 import style_lock  # noqa: E402
+import check_layout  # noqa: E402   (spec §13: warn, never block, when the working directory drifts from INDEX.md)
 
 
 def git_commit():
@@ -638,6 +643,8 @@ def main(frame="standard", back=None, limit=0):
     """limit > 0: a smoke build of only the first `limit` A1 rows that have a picture (A2 and
     sentences still read their lists); for testing the stamp and manifest path without the media."""
     stamp = style_gate()
+    for line in sum(check_layout.check(strict=False), []):
+        print("layout:", line)
     set_frame(frame, back)
     FRAME_FLAGS.clear()
     os.makedirs(TMP, exist_ok=True)
@@ -655,7 +662,7 @@ def main(frame="standard", back=None, limit=0):
     n_a1 = 0
     a1_pos = a1_types()
     for r in csv.DictReader(open("cards_anki.csv", encoding="utf-8")):
-        k = r['key']; aud = f"audio/{k}.mp3"
+        k = r['key']; aud = f"{AUDIO_DIR}/{k}.mp3"
         if limit and n_a1 >= limit:
             break
         img_path, img_name = media_image(k)

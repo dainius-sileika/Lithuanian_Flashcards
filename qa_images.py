@@ -27,10 +27,11 @@ The guessability check is deliberately blind: the model is never shown the targe
 word before it guesses. Only afterwards is the guess compared to the gloss. A
 model that was told the answer would confirm it every time.
 
-    python3 qa_images.py out_phrases                 # QA a folder
-    python3 qa_images.py out_phrases --csv qa.csv     # write a report
-    python3 qa_images.py images --budget 300          # stop after 5 minutes
-    python3 qa_images.py out_phrases --recheck        # ignore the cache
+    python3 qa_images.py media/images                # QA the current pictures (the default folder)
+    python3 qa_images.py media/images --csv qa.csv    # write a report
+    python3 qa_images.py media/images --budget 300    # stop after 5 minutes
+    python3 qa_images.py media/images --recheck       # ignore the cache
+    (before the tidy of 2026-10-24 the folders were out_phrases*, out_deck_*, images)
 
 Results are cached in `_qa/qa_cache.json`, keyed by file content hash, so a
 re-run only pays for images that actually changed. Exit code is non-zero if any
@@ -501,7 +502,7 @@ def judge(seen, row):
 
 def main():
     args = sys.argv[1:]
-    folder = next((a for a in args if not a.startswith("--")), "out_phrases")
+    folder = next((a for a in args if not a.startswith("--")), "media/images")
     out_csv = args[args.index("--csv") + 1] if "--csv" in args else None
     budget = float(args[args.index("--budget") + 1]) if "--budget" in args else 1e9
     recheck = "--recheck" in args

@@ -36,9 +36,11 @@ WHAT --apply REWRITES (and nothing else; see LIVE_TEXT below)
   the bare FF number in a2_build/restage_bubbles.csv `ids` (374 = galvoti) becomes the card's key.
   History (reports, audits, round folders, ledgers, gen logs, QA sheets, build manifests, _archive, the
   spec history) is NEVER rewritten: the map is how those names are read (tools/keymap.py).
-  Tracked media (images/, audio/, audio_a2/, style/golden/, their _superseded/) move with `git mv`.
-  The untracked render folders live only on the owner's Mac: run --apply-media there, after `git pull`,
-  with Proton Drive sync paused (PLAN §8).
+  Tracked media (media/audio/, its _history/, the WebP masters under media/images/_history/images/,
+  style/golden/) move with `git mv`. The untracked pictures (media/images/ and the rest of
+  media/images/_history/) live only on the owner's Mac: run --apply-media there, after `git pull`,
+  with Proton Drive sync paused (PLAN §8). (Before the tidy of 2026-10-24 the media sat in images/,
+  audio/, audio_a2/ and six out_* batch folders; a2_build/tidy/moves_2026-10-24.csv maps old to new.)
 
 GUARDS
   study_order.csv must be 1..N contiguous and its keys must equal cards_anki ∪ a2_wordlist ∪ sentences;
@@ -100,7 +102,8 @@ LIVE_TEXT = [
     # code with hand-listed keys
     "build_apkg.py", "build_study_order_v3.py", "deck_builder.py", "frame_crop.py", "frame_preview.py",
     "qa_images.py", "situations.py", "a2_build/src/build_situations.py",
-    "out_phrases_v3/gen.py", "out_deck_sent/gen.py", "out_deck_a2/a2_adapter.py",
+    "media/generation/out_phrases_v3/gen.py", "media/generation/out_deck_sent/gen.py",
+    "media/generation/out_deck_a2/a2_adapter.py",
     "card_frame.py", "anki/templates.md", "a2_build/RECORDING_GUIDE.md",
     "style/golden/README.md",
 ] + sorted(glob.glob("style/golden/*.prompt.txt"))     # golden prompts carry `key:` and `file:` lines
@@ -119,33 +122,48 @@ HISTORY_PREFIXES = (
     "a2_build/backs_audit/", "a2_build/historical/", "a2_build/audio/reconciliation_", "a2_build/a1_redo/",
     "a2_build/src/", "a2_build/study_order/AUDIT", "a2_build/study_order/REPORT", "a2_build/study_order/dep37",
     "a2_build/audio/backfill_", "a2_rebase/", "style_lab/", "tools/",
-    "out_deck_f62/", "out_deck_a2/", "out_deck_sent/", "out_phrases_v3/", "out_phrases_a2/",
+    "media/generation/",     # ledgers, plans, QA sheets and gen logs of every render batch (was out_*/)
     "a2_build/rename/",
+    "a2_build/tidy/",        # the 2026-10-24 move table names files by whatever name they had
     "a2_build/proofread/",   # sheet out with the owner under the old keys; the returned sheet is mapped via keymap.py
 )
 HISTORY_FILES = {
-    "CHANGELOG.md", "VERSIONS.md", "docs/VERSIONS.md", "docs/ANKIWEB_DESCRIPTION_A1_v3.0.md",
+    "docs/CHANGELOG.md", "docs/VERSIONS.md", "docs/ANKIWEB_DESCRIPTION_A1_v3.0.md", "INDEX.md",
     "docs/DESIGN_SPEC_CURRENT.md",      # prose edited by hand in the spec release, not by regex
     "a2_build/A1_WRAPUP.md", "a2_build/BACKS_AUDIT.md", "a2_build/CLOUD_ROUND_2026-10-11.md", "a2_build/PILOT_24.md",
     "a2_build/PLAN_A2_completion.md", "a2_build/PRASOM_SWITCH_2026-10-18.md", "a2_build/README.md",
     "a2_build/RESTAGE_PROPOSAL.md", "a2_build/merges_2026-10-19.md", "a2_build/data_checks_A1.md",
     "a2_build/sentences/design.md", "a2_build/deck_fixes_applied.csv",
-    "accents_todo_kirtis.csv", "wordlist_a2_pending.csv",       # inputs of the retired build_a2.py
-    "build_study_order_v2.py",                                  # superseded generator, kept as history
+    "wordlist_a2_pending.csv",                                  # input of the retired build_a2.py (accents_todo_kirtis.csv
+                                                                # and build_study_order_v2.py are in _archive/ since 2026-10-24)
     DEFERRED,                                                   # pre-rename ids by design (status deferred in the map)
 }
 # Live exceptions inside history prefixes (they are read by live code):
 LIVE_IN_HISTORY = {"a2_build/historical/implementation/likeness_args.json", "style_lab/research/settings_assignments.csv",
-                   "out_phrases_v3/gen.py", "out_deck_sent/gen.py", "out_deck_a2/a2_adapter.py",
+                   "media/generation/out_phrases_v3/gen.py", "media/generation/out_deck_sent/gen.py",
+                   "media/generation/out_deck_a2/a2_adapter.py",
                    "a2_build/src/build_situations.py"}
 
-# Tracked media folders (git mv). The untracked render folders are --apply-media's job on the Mac.
-TRACKED_MEDIA_DIRS = ["images", "audio", "audio/_superseded", "audio_a2", "audio_a2/_superseded", "style/golden"]
-# Untracked media folders, as build_apkg resolves them (first hit wins) plus their version folders.
-UNTRACKED_MEDIA_DIRS = ["out_phrases_v3/round2", "out_phrases_v3", "out_deck_f62", "out_deck_a2", "out_phrases_a2",
-                        "images_a2", "out_phrases", "out_deck_sent", "images_sent",
-                        "_cloud_media/f62", "_cloud_media/a2", "_cloud_media/phrases"]
+# Tracked media folders (git mv). The untracked pictures are --apply-media's job on the Mac.
+# Layout since 2026-10-24 (spec §13, INDEX.md): media/images/<key>.<ext> is the one current picture,
+# media/images/_history/<old batch path>/ every other version, media/audio/<key>.mp3 the one current take.
+IMAGE_DIR = "media/images"
+AUDIO_DIR = "media/audio"
+TRACKED_MEDIA_DIRS = [AUDIO_DIR, f"{AUDIO_DIR}/_history", f"{IMAGE_DIR}/_history/images", "style/golden"]
 VERSION_SUBDIRS = ["_rerolled", "_superseded"]
+
+
+def _history_dirs():
+    """Every folder under media/images/_history (the old batch paths), so old names are found wherever they sit."""
+    out = []
+    for dp, dns, _ in os.walk(f"{IMAGE_DIR}/_history"):
+        dns.sort()
+        out.append(dp.replace(os.sep, "/"))
+    return out
+
+
+UNTRACKED_MEDIA_DIRS = [IMAGE_DIR] + [d for d in _history_dirs() if d != f"{IMAGE_DIR}/_history/images"] + \
+                       ["_cloud_media/f62", "_cloud_media/a2", "_cloud_media/phrases"]   # 1024 px copies in a cloud clone
 
 
 # ---------------------------------------------------------------------------------------------
@@ -550,7 +568,7 @@ def verify(rows, media_dirs=None, quiet=False):
             continue
         k = r["new_key"]; counted.add(k)
         img = any(os.path.exists(os.path.join(d, f"{k}.{e}")) for d in dirs if os.path.isdir(d) for e in exts[:3])
-        aud = any(os.path.exists(os.path.join(d, f"{k}.mp3")) for d in ("audio", "audio_a2"))
+        aud = os.path.exists(os.path.join(AUDIO_DIR, f"{k}.mp3"))
         present["image" if img else "no image here"] += 1
         present["audio" if aud else "no audio here"] += 1
     rep.append("media under the new names in this checkout: " + ", ".join(f"{k} {v}" for k, v in sorted(present.items())))
@@ -619,7 +637,7 @@ def report(rows, errors, changes, tracked_moves, untracked_moves, out):
     w(f"  {len(untracked_moves)} files here\n")
     w("\nEXPECTED ON THE MAC (from the ledgers' last row per key; one picture per picture card):\n")
     for d in ("out_deck_f62", "out_deck_a2", "out_phrases_v3", "out_phrases_v3/round2", "out_deck_sent"):
-        p = f"{d}/ledger.csv"
+        p = f"media/generation/{d}/ledger.csv"
         if os.path.exists(p):
             keys = {r["key"] for r in rd(p)}
             w(f"  {len(keys & set(rows)):6d}  {d}/  (ledger keys that are cards: {len(keys & set(rows))} of {len(keys)})\n")

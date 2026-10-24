@@ -19,7 +19,7 @@ are reconstructed from git and carry no style hash (there was no lock).
 
 Engine tags before the first package (`legacy-0.1 … legacy-1.7.1`, `v1.7.2`, `v1.7.4`) mark prompt-engine
 states, not decks; their story is `_archive/docs/GO_STYLE_SPEC.md` ("File batches ledger") and the root
-`VERSIONS.md` (production notes 0.1 → 1.9.2, superseded 2026-10-19).
+`_archive/docs/VERSIONS.md` (production notes 0.1 → 1.9.2, superseded 2026-10-19; at the root until 2026-10-24).
 
 ## Spec releases
 | spec | date | tag | note |
@@ -31,3 +31,4 @@ states, not decks; their story is `_archive/docs/GO_STYLE_SPEC.md` ("File batche
 | 3.2.1 | 2026-10-19 | `spec-v3.2.1` | patch: §9 the A1 release is v3.0 (major) — row added 2026-10-20 |
 | 3.3.0 | 2026-10-19 | `spec-v3.3.0` | minor: key/GUID freeze moved to the A1+A2 sign-off — row added 2026-10-20 |
 | 3.4.0 | 2026-10-20 | `spec-v3.4.0` | minor, style `0885ded5e583` (106 items; `frame.SECTIONS`, `frame.ROUTE_SECTIONS`, `frame.section_css` changed, no visible change on any card): §12 one `NNNN_slug` key namespace (key rename of 2026-10-20, `a2_build/rename/key_map_v1.csv`, 2,433 cards), plate number = key number for every note type, hierarchical `lt::` tags (level, kind, pos, topic = the section shown), `Functions` → XIX, `ROUTE_SECTIONS` keyed by `lt::kind::phrase` / `lt::kind::sentence`; §7/§8 updated for the rename and dep37 |
+| 3.4.1 | 2026-10-24 | `spec-v3.4.1` | patch, style `0885ded5e583` unchanged (106 items): paths only — the tidy of the working directory (a2_build/tidy/): one home per medium (`media/images/<key>`, `media/audio/<key>.mp3`), history beside it (`media/images/_history/<old batch path>/`, `media/audio/_history/`), generation records in `media/generation/<batch>/`; new §13 (layout, `INDEX.md`, `tools/check_layout.py`); §4/§7/§9/§10/§12 path wording. A1 and A2 rebuilt and verified identical in content to rc4 and to the pre-tidy A2 build (0 field differences, same media hashes, same GUIDs); no package released |

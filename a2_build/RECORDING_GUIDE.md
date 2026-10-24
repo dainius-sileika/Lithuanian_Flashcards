@@ -51,6 +51,6 @@ The proofreading return of 2026-10-20 changed 26 sentences or headwords (`a2_bui
 - **Export all** is the safety copy. It holds every take in the browser, plus older clips the sheet has set aside (`superseded/`, `off_list/`). Use it once at the end, or before clearing the browser.
 
 ## What happens next (executor)
-1. The executor converts each clip to the `dest` path in `recording_list.csv` (`audio/` for the 520-word base, `audio_a2/` for the rest) and writes the key's row in `audio_source.tsv`, including what was said.
+1. The executor converts each clip to the `dest` path in `recording_list.csv` (`media/audio/<key>.mp3` for every card since the tidy of 2026-10-24; before that `audio/` for the 520-word base and `audio_a2/` for the rest) and writes the key's row in `audio_source.tsv`, including what was said. A take it replaces moves to `media/audio/_history/`.
 2. When the sheet is regenerated, recorded takes drop off it. The browser storage name stays fixed (`lt_recorder_A2_afb2ebe2`), so regenerating never loses a take.
 3. If a card's words change later, its stored take is set aside, not deleted, and the card comes back as a re-take.

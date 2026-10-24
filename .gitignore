@@ -23,8 +23,18 @@ probe.log
 # local download bundles (distribute image sets via Releases instead)
 *.zip
 
-# card images are distributed via GitHub Releases, not committed to the repo.
-# The text ledgers (ledger.csv / prompts, cards.csv / Anki fields) ARE kept.
+# card pictures are distributed via GitHub Releases, not committed to the repo.
+# Layout since 2026-10-24 (spec §13, INDEX.md): media/images/<key>.png is the one current picture of a card,
+# media/images/_history/<old batch path>/ every other version. The WebP masters under
+# media/images/_history/images/ and the audio under media/audio/ ARE tracked, as before the tidy;
+# the text records of every render batch (media/generation/<batch>/: ledger.csv, plan.json, cards.csv,
+# gen logs, QA sheets) ARE kept.
+media/images/*.png
+media/images/*.jpg
+media/images/_history/**/*.png
+media/images/_history/**/*.jpg
+media/generation/**/__pycache__/
+# (pre-2026-10-24 folders, kept so an old checkout still ignores them)
 out_deck/*.png
 out_deck_f62/*.png
 out_deck_f62/review/media/

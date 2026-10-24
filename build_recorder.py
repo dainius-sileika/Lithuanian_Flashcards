@@ -8,9 +8,9 @@ IndexedDB (so a session can be resumed), and exports a ZIP of clips named by tak
         package still needs, A1 subdeck first, then A2, each in study order (study_order.csv).
         The set is derived from what build_apkg.py emits (same lists, same inclusion rules,
         same audio paths), never from a hand-kept list:
-          * one take per note, key = card key: cards_anki.csv rows -> audio/<key>.mp3,
-            A2-list rows and sentence cards (sentences.csv) -> audio_a2/<key>.mp3;
-          * cloze/pair A2-list rows also take their example sentence, key <id>_s -> audio_a2/;
+          * one take per note, key = card key: every row -> media/audio/<key>.mp3 (one folder for
+            A1, A2-list and sentence cards since the tidy of 2026-10-24; build_apkg.AUDIO_DIR);
+          * cloze/pair A2-list rows also take their example sentence, key <id>_s -> media/audio/;
           * a take is listed when audio_source.tsv has no human take for the key ("new"),
             the key still has the synthesized voice ("replace-tts"), or the human take's
             recorded words (`said`) no longer match the card's script, accent-blind ("retake";
@@ -24,7 +24,7 @@ IndexedDB (so a session can be resumed), and exports a ZIP of clips named by tak
 
 Ingest (owner ZIP -> package): python3 tools/ingest_takes.py <zip> — converts each clip to the
 `dest` path in recording_list.csv (ffmpeg ... -codec:a libmp3lame -q:a 4), moves a replaced take to
-<dir>/_superseded/, and writes the key's audio_source.tsv row as  key  human  <dest>  <said>
+media/audio/_history/, and writes the key's audio_source.tsv row as  key  human  <dest>  <said>
 (said = the ZIP manifest's `said` column), so the next run of this script drops the take from
 the sheet. ZIPs exported before the key rename (2026-10-20) name clips by the old keys; the
 script maps them through tools/keymap.py. The page itself moves stored clips to their new keys
@@ -187,7 +187,7 @@ def deck_takes():
         level = (r.get("level") or "A1").strip() or "A1"
         pron = r.get("pron", "") or r["lithuanian"]
         add(k, "word", level, 0, r["lithuanian"], r["english"], r.get("pron", ""),
-            read_script(pron, r), f"audio/{k}.mp3", r["category"], key_number(k))
+            read_script(pron, r), f"{B.AUDIO_DIR}/{k}.mp3", r["category"], key_number(k))
     # 2. the A2 list (IMG/PHRASE with a picture, CLOZE/PAIR with a cloze sentence)
     for r in csv.DictReader(open(B.A2_LIST, encoding="utf-8")):
         k, route = r["id"], r.get("route", "")

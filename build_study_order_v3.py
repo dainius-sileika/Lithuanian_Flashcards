@@ -18,8 +18,8 @@ edited by hand (new cards append). `--audit` stays valid on any order file.
 
 Deck v3.0 (2026-10-19). build_apkg.py reads study_order.csv and gives every note its `order` as the
 new-card position (Anki `due`). Keys and GUIDs never change; v3.0 is a delete-and-reimport release, so
-the whole order may move; from v3.0 on keys and GUIDs are frozen. build_study_order_v2.py stays in the
-tree as history (adopted 2026-10-17, superseded by this file); the v2 order is in git.
+the whole order may move; from v3.0 on keys and GUIDs are frozen. build_study_order_v2.py is kept as
+history in _archive/deprecated/ (adopted 2026-10-17, superseded by this file; moved there 2026-10-24); the v2 order is in git.
 
 WHAT V3 CHANGES (the audit of the v2 order is reproducible: `--audit` on any order file)
   1. Dependencies. A reading card (cloze, pair, sentence) waits until every word of its sentence has

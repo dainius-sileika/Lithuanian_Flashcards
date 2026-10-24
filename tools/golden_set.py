@@ -21,13 +21,36 @@ GOLD = os.path.join(ROOT, "style", "golden")
 MANIFEST = os.path.join(GOLD, "manifest.csv")
 WIDTH, QUALITY = 800, 85
 
-# image dirs, first hit wins: the build's order (build_apkg.A1/A2/SENT_IMAGE_DIRS), then the cloud copies
-# Ledgers in the build's resolution order (build_apkg.*_IMAGE_DIRS); the picture is taken ONLY from
-# the folder of the ledger that holds the key's current row, or from that folder's 1024 px cloud
-# mirror (_cloud_media) when the key was never re-rolled after the mirror was made (one ledger row).
-# Never images/ (the 1.x masters) nor the bubble-era out_phrases_a2 / _cloud_media/phrases.
-LEDGERS = ["out_phrases_v3/round2", "out_phrases_v3", "out_deck_f62", "out_deck_a2", "out_deck_sent"]
+# Ledgers in the build's old resolution order (the batch folders build_apkg searched first-hit until
+# 2026-10-24); since the tidy of 2026-10-24 (spec §13) they live under media/generation/<batch>/ and the
+# pictures under media/images/ (the one current picture per key) and media/images/_history/<batch>/
+# (every other version). The picture is taken ONLY if it is the render the ledger row describes: the
+# current picture when it came from that batch (a2_build/tidy/moves_2026-10-24.csv records where each
+# current picture came from; a picture rendered after the tidy has no row and belongs to the ledger that
+# holds it), else that batch's shadowed render in _history/, else the batch's 1024 px cloud mirror
+# (_cloud_media) when the key was never re-rolled after the mirror was made (one ledger row).
+# Never the 1.x WebP masters (_history/images/) nor the bubble-era out_phrases_a2 / _cloud_media/phrases.
+GEN = "media/generation"
+IMAGES = "media/images"
+HISTORY = f"{IMAGES}/_history"
+BATCHES = ["out_phrases_v3/round2", "out_phrases_v3", "out_deck_f62", "out_deck_a2", "out_deck_sent"]
+LEDGERS = [f"{GEN}/{b}" for b in BATCHES]
 MIRROR = {"out_deck_f62": "_cloud_media/f62", "out_deck_a2": "_cloud_media/a2"}
+MOVES = os.path.join(ROOT, "a2_build", "tidy", "moves_2026-10-24.csv")
+_ORIGIN = None
+
+
+def origin_batch(rel_path):
+    """The batch folder a current picture was moved from on 2026-10-24 (e.g. 'out_deck_f62'), or None."""
+    global _ORIGIN
+    if _ORIGIN is None:
+        _ORIGIN = {}
+        if os.path.exists(MOVES):
+            for r in csv.DictReader(open(MOVES, encoding="utf-8")):
+                if r["new_path"].startswith(IMAGES + "/") and "/" not in r["new_path"][len(IMAGES) + 1:]:
+                    old = r["old_path"]
+                    _ORIGIN[r["new_path"]] = old.rsplit("/", 1)[0] if "/" in old else ""
+    return _ORIGIN.get(rel_path)
 
 
 def ledger_row(key):
@@ -52,17 +75,23 @@ def ledger_row(key):
 
 
 def find_image(key, led, nrows):
-    """The render in the ledger's own folder, else its cloud mirror if the key has one ledger row."""
+    """The render the ledger row describes: the current picture if it came from that batch, else the
+    batch's shadowed render in _history/, else its cloud mirror if the key has one ledger row."""
     if not led:
         return None, ""
-    dirs = [led["_dir"]]
-    if led["_dir"] in MIRROR:
+    batch = led["_dir"][len(GEN) + 1:]
+    cur = _first(key, [IMAGES])
+    if cur and origin_batch(os.path.relpath(cur[0], ROOT).replace(os.sep, "/")) in (None, batch):
+        return cur
+    hist = _first(key, [f"{HISTORY}/{batch}"])
+    if hist:
+        return hist
+    if batch in MIRROR:
         if nrows == 1:
-            dirs.append(MIRROR[led["_dir"]])
-        else:
-            return _first(key, dirs) or (None, f"{key} was re-rolled ({nrows} ledger rows); the cloud mirror may be "
-                                                "stale, so only the local render is accepted")
-    return _first(key, dirs) or (None, "")
+            return _first(key, [MIRROR[batch]]) or (None, "")
+        return None, (f"{key} was re-rolled ({nrows} ledger rows); the cloud mirror may be "
+                      "stale, so only the local render is accepted")
+    return None, ""
 
 
 def _first(key, dirs):
