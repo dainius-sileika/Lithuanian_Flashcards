@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Verify a built .apkg (A1_WRAPUP §E2/E3) and import it into a throw-away collection.
 
-    python3 tools/verify_apkg.py <new.apkg> [--against <old.apkg> [--key-map a2_build/rename/key_map_v1.csv]]
+    python3 tools/verify_apkg.py <new.apkg> [--against <old.apkg> [--key-map data/key_maps/key_map_v1.csv]]
                                  [--json out.json] [--render 5]
 
 Checks, read straight from the package (zip + its SQLite collection):

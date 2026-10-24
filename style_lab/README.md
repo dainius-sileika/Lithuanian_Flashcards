@@ -15,5 +15,6 @@ The 1.5 originals they are compared against are the shipped masters in `out_deck
 | `2026-10-10_04_levers_A_B` | does an explicit style paragraph (A) or reference images (B) stop the drift? |
 | `2026-10-10_05_fable_F1-F3` | Fable's diagnosis and three prompt candidates on 15 cards |
 | `scripts/` | the probe scripts as they were run (paths then pointed at `_proto/`) |
+| `research/` | Fable's research notes on Lithuanian appearance, iconography and locations, plus `settings_candidates.csv`. The two tables the engine reads, `location_bank.json` and `settings_assignments.csv`, moved to `data/` on 2026-10-24 (deep tidy). |
 
 Total measured spend on 2026-10-10 experiments 01–05: ~$3.90.

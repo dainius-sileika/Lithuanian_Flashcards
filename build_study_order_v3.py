@@ -5,8 +5,8 @@
     python3 build_study_order_v3.py                  # regenerates study_order.csv (and the recording order)
     python3 build_study_order_v3.py --report         # also prints the audit tables for the new order
     python3 build_study_order_v3.py --audit [FILE]   # audits an existing order file (default study_order.csv), writes nothing
-    python3 build_study_order_v3.py --apply-retier   # writes the `level` of a2_build/study_order/retier_v3.csv into
-                                                     # cards_anki.csv, master_wordlist.csv and a2_build/a2_wordlist.csv
+    python3 build_study_order_v3.py --apply-retier   # writes the `level` of data/retier_v3.csv into
+                                                     # cards_anki.csv, master_wordlist.csv and data/a2_wordlist.csv
     python3 build_study_order_v3.py --rebuild-subs <lt_full.txt>   # re-derives the subtitle lemma list
 
 AFTER THE RENAME (2026-10-20, spec §12): study_order.csv is the AUTHORITY, not this builder. Every key
@@ -27,7 +27,7 @@ WHAT V3 CHANGES (the audit of the v2 order is reproducible: `--audit` on any ord
      had 193 of 1,981 in-deck dependencies pointing forward (a cloze at 144 used manyti, taught at
      1254). Words are matched by surface form and by simplemma lemma against every card's headword and
      listed forms; ne- + a known verb counts as known; sentence-internal capitalised names are ignored.
-  2. The A1/A2 split. a2_build/study_order/retier_v3.csv moves a small set of cards between the
+  2. The A1/A2 split. data/retier_v3.csv moves a small set of cards between the
      subdecks: A2 words that A1 sentences depend on and that are themselves A1 (manyti, vėluoti, likti …),
      antonym partners split across the subdecks (piktas, abi, linksmas, šiemet), and the rare
      Fluent-Forever leftovers that sat at the A1 tail (plaštaka, lydyti, išlenktas …) which are A2 by any
@@ -49,7 +49,7 @@ WHAT V3 CHANGES (the audit of the v2 order is reproducible: `--audit` on any ord
 THE SCORE (lower = earlier) is v2's, unchanged:
   score = 0.6·ln(subtitle rank) + 0.4·ln(press rank) + tier offset − 0.3 if in the VU A1/A2 lexicon.
   Subtitle rank: OpenSubtitles 2018 Lithuanian (hermitdave/FrequencyWords, CC-BY-SA 4.0) lemmatised with
-  simplemma (a2_build/study_order/opensubtitles_lt_lemmas.csv), missing = 30000. Press rank: PERLSI 3000
+  simplemma (sources/opensubtitles_lt_lemmas.csv), missing = 30000. Press rank: PERLSI 3000
   (sources/lt_3000_frequency.csv), missing = not penalised. A phrase or sentence ranks as its rarest word.
   Tiers: T0 survival −3.0 (the hand-ORDERED SURVIVAL list and SURVIVAL_PHRASES are placed outright),
   T1 daily −1.5, T2 0, T3 demoted +1.5; +1.0 "Extended patterns", +0.8 phase P-K.
@@ -63,19 +63,19 @@ THE SCHEDULE (per subdeck: A1 then A2; greedy, best eligible first)
   - deadlock at the tail: relax everything except pins and pairs, never place a pinned card before its anchor
 Output columns: order, key, block, lithuanian, category, lane, route, tier, sub_rank, press_rank, score,
 old_order (position in the study_order.csv this run replaces).
-Also written: a2_build/study_order/recording_order_v3.csv — the recorder's order: A1 first, then A2, each
+Also written: data/recording_order_v3.csv — the recorder's order: A1 first, then A2, each
 in study order, with the example sentence for cloze cards.
 """
 import csv, math, os, re, sys, unicodedata
 from collections import defaultdict, Counter
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
-SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
-SUBS_LEMMAS = "a2_build/study_order/opensubtitles_lt_lemmas.csv"
-RETIER = "a2_build/study_order/retier_v3.csv"
-OUT = os.environ.get("STUDY_ORDER_OUT", "study_order.csv")
-RECORDING_OUT = "a2_build/study_order/recording_order_v3.csv"
+A2_LIST = os.environ.get("A2_LIST", "data/a2_wordlist.csv")
+SENTENCES = os.environ.get("SENTENCES", "data/sentences/sentences.csv")
+SUBS_LEMMAS = "sources/opensubtitles_lt_lemmas.csv"
+RETIER = "data/retier_v3.csv"
+OUT = os.environ.get("STUDY_ORDER_OUT", "data/study_order.csv")
+RECORDING_OUT = "data/recording_order_v3.csv"
 
 W_SUB, W_PRESS = 0.6, 0.4
 MISSING_SUB = 30000
@@ -300,7 +300,7 @@ def load_retier():
 
 def load_cards(old, retier):
     cards = []
-    for r in rd("cards_anki.csv"):
+    for r in rd("data/cards_anki.csv"):
         cards.append({"key": r["key"], "lt": r["lithuanian"], "en": r["english"], "category": r["category"],
                       "number": int(r["ff_no"]), "level": (r.get("level") or "A1"), "route": "IMG", "source": "deck",
                       "phase": "", "type": "", "ex": "", "words": "",
@@ -848,7 +848,7 @@ def write_recording_order(out, path):
 def apply_retier(retier):
     """Write the levels of RETIER into the three data files' `level` columns (nothing else changes)."""
     changed = Counter()
-    for path, keycol in (("cards_anki.csv", "key"), (A2_LIST, "id")):
+    for path, keycol in (("data/cards_anki.csv", "key"), (A2_LIST, "id")):
         rows = rd(path); fields = list(rows[0].keys())
         for r in rows:
             if r[keycol] in retier and r["level"] != retier[r[keycol]]:
@@ -857,12 +857,12 @@ def apply_retier(retier):
             w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
     # master_wordlist.csv is keyed by the A1 number
     # master_wordlist.csv carries the card key in its `key` column since the rename (2026-10-20)
-    rows = rd("master_wordlist.csv"); fields = list(rows[0].keys())
+    rows = rd("data/master_wordlist.csv"); fields = list(rows[0].keys())
     for r in rows:
         k = (r.get("key") or "").strip()
         if k in retier and r["level"] != retier[k]:
             r["level"] = retier[k]; changed["master_wordlist.csv"] += 1
-    with open(os.path.join(ROOT, "master_wordlist.csv"), "w", encoding="utf-8", newline="") as f:
+    with open(os.path.join(ROOT, "data", "master_wordlist.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
     sent_ids = {r["id"] for r in rd(SENTENCES)} if os.path.exists(os.path.join(ROOT, SENTENCES)) else set()
     sent_keys = {k: v for k, v in retier.items() if k in sent_ids}
@@ -882,7 +882,7 @@ def main():
     retier = load_retier()
     if "--apply-retier" in sys.argv:
         apply_retier(retier); return
-    old_path = os.environ.get("OLD_ORDER", "study_order.csv")      # the order this run replaces (for the comparison)
+    old_path = os.environ.get("OLD_ORDER", "data/study_order.csv")      # the order this run replaces (for the comparison)
     old_rows = rd(old_path) if os.path.exists(os.path.join(ROOT, old_path)) else []
     old = {r["key"]: int(r["order"]) for r in old_rows}
     # the previous order is audited with the subdeck split it was built for (its block column), not today's levels

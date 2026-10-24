@@ -1,5 +1,5 @@
-"""Bubble-free situation renders (2026-10-17, a2_build/RESTAGE_PROPOSAL.md + PILOT_24.md):
-every restaged card of situations.py (generated from a2_build/restage_bubbles.csv) drawn
+"""Bubble-free situation renders (2026-10-17, docs/decisions/RESTAGE_PROPOSAL_2026-10-17.md + PILOT_24.md):
+every restaged card of situations.py (generated from data/restage_bubbles.csv) drawn
 by gen_phrases.build_situation_call -> go_generator.build_prompt(situation=True) on the
 production model (gpt-image-2.5-sunburst, medium, 1536x1024) into out_phrases_v3/<id>.png.
 374 galvoti goes through its own A1 production path (deck_builder.build_call, which now
@@ -27,7 +27,7 @@ import csv, json, os, sys, time, base64, threading
 from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))              # media/generation/out_phrases_v3
 ROOT = os.path.dirname(os.path.dirname(HERE))
-os.chdir(ROOT); sys.path.insert(0, ROOT)
+os.chdir(ROOT); sys.path[:0] = [os.path.join(ROOT, "code"), ROOT]      # modules in code/ since 2026-10-24 (spec §13)
 import go_generator as g, deck_builder as db, gen_phrases as gp
 from situations import SITUATIONS, BY_ID, renders
 
@@ -52,8 +52,8 @@ _only = os.environ.get("ONLY", "")
 ONLY = PILOT if _only == "pilot" else [k for k in _only.split(",") if k]
 
 # --- rows: the A2 list, the sentence cards, the A1 phrase pack, and 374 via deck_builder
-a2 = {r["id"]: r for r in csv.DictReader(open("a2_build/a2_wordlist.csv", encoding="utf-8"))}
-sent = {r["id"]: r for r in csv.DictReader(open("a2_build/sentences/sentences.csv", encoding="utf-8")) if r.get("id")}
+a2 = {r["id"]: r for r in csv.DictReader(open("data/a2_wordlist.csv", encoding="utf-8"))}
+sent = {r["id"]: r for r in csv.DictReader(open("data/sentences/sentences.csv", encoding="utf-8")) if r.get("id")}
 jobs = []
 for en, s in SITUATIONS.items():
     if not renders(en):

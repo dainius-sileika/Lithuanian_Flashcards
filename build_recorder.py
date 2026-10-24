@@ -3,7 +3,7 @@
 time, records one clip per take key from the microphone, keeps the clips in the browser's
 IndexedDB (so a session can be resumed), and exports a ZIP of clips named by take key.
 
-    python3 build_recorder.py A2   ->  recorder_A2.html + a2_build/recording_list.csv   (THE sheet)
+    python3 build_recorder.py A2   ->  recorder_A2.html + data/recording_list.csv   (THE sheet)
         Despite the historical name this is the whole-deck sheet: every take the CURRENT
         package still needs, A1 subdeck first, then A2, each in study order (study_order.csv).
         The set is derived from what build_apkg.py emits (same lists, same inclusion rules,
@@ -15,10 +15,10 @@ IndexedDB (so a session can be resumed), and exports a ZIP of clips named by tak
             the key still has the synthesized voice ("replace-tts"), or the human take's
             recorded words (`said`) no longer match the card's script, accent-blind ("retake";
             source "superseded" = the old take is withdrawn from the package).
-        Merged-away keys (a2_build/merged_keys.csv) and B1 deferrals (a2_build/deferred_B1.csv)
+        Merged-away keys (data/merged_keys.csv) and B1 deferrals (data/deferred_B1.csv)
         are not in the lists build_apkg reads; they are checked and skipped here as a guard.
         The page's IndexedDB name is fixed (DECK_SHEET_ID) so takes already in the browser
-        survive every regeneration; see a2_build/RECORDING_GUIDE.md.
+        survive every regeneration; see docs/RECORDING_GUIDE.md.
     python3 build_recorder.py          ->  recorder_all.html   (legacy: cards_anki.csv only)
     python3 build_recorder.py A1 [new] ->  recorder_A1[_new].html (legacy July sheets)
 
@@ -28,7 +28,7 @@ media/audio/_history/, and writes the key's audio_source.tsv row as  key  human 
 (said = the ZIP manifest's `said` column), so the next run of this script drops the take from
 the sheet. ZIPs exported before the key rename (2026-10-20) name clips by the old keys; the
 script maps them through tools/keymap.py. The page itself moves stored clips to their new keys
-on start (migrateKeys, KEY_MAP from a2_build/rename/key_map_v*.csv).
+on start (migrateKeys, KEY_MAP from data/key_maps/key_map_v*.csv).
 """
 import csv
 import hashlib
@@ -38,15 +38,17 @@ import re
 import sys
 import unicodedata
 
-SRC = "cards_anki.csv"
-QUEUE = "wordlist_a2_pending.csv"
-AUDIO_SOURCE = "audio_source.tsv"
-LIST_OUT = "a2_build/recording_list.csv"
-MERGED = "a2_build/merged_keys.csv"
-DEFERRED = "a2_build/deferred_B1.csv"
+ROOT = os.path.dirname(os.path.abspath(__file__))      # layout of 2026-10-24 (spec §13): data in data/, modules in code/
+SRC = "data/cards_anki.csv"
+QUEUE = "data/wordlist_a2_pending.csv"
+AUDIO_SOURCE = "data/audio_source.tsv"
+LIST_OUT = os.environ.get("RECORDING_LIST_OUT", "data/recording_list.csv")   # env overrides: the smoke test writes to scratch
+RECORDER_OUT = os.environ.get("RECORDER_OUT", "recorder_A2.html")
+MERGED = "data/merged_keys.csv"
+DEFERRED = "data/deferred_B1.csv"
 # The sheet the owner may already have recorded with (2026-10-12): its per-key script, so a
 # clip stored in the browser without a script stamp can be recognised as stale.
-LEGACY_SHEET = "a2_build/audio/recorder_A2_afb2ebe2_script.json"
+LEGACY_SHEET = "data/recorder_A2_afb2ebe2_script.json"
 # IndexedDB name of the deck sheet = 'lt_recorder_' + DECK_SHEET_ID. NEVER change it: the
 # browser keeps the owner's takes under this name, keyed by take key; a new name would hide
 # them. (Until 2026-10-19 the id was a hash of the key list and changed on every regeneration.)
@@ -59,7 +61,7 @@ def key_number(k):
 
 
 def key_map_for_page():
-    """old take key -> current take key, over every a2_build/rename/key_map_v*.csv (chains followed):
+    """old take key -> current take key, over every data/key_maps/key_map_v*.csv (chains followed):
     '<old>' -> '<new>' and '<old>_s' -> '<new>_s' for every renamed card and media alias. Embedded in
     the page so clips stored under a pre-rename key move to their new key on start (migrateKeys)."""
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
@@ -343,7 +345,7 @@ TEMPLATE = r"""<!doctype html>
 
   <div id="setup" class="card">
     <p style="font-size:1.1rem">For each card, read <b>every form shown in the dashed box</b> — the headword, then its genitive / principal parts — one clear breath apart.<br>One clip is saved per card; no editing needed.</p>
-    <p class="hint">Your recordings are saved in this browser as you go, so you can close the tab and resume later: same computer, same browser. When finished (or partway), click <b>Export new takes</b> and put the ZIP where the guide says (a2_build/RECORDING_GUIDE.md).</p>
+    <p class="hint">Your recordings are saved in this browser as you go, so you can close the tab and resume later: same computer, same browser. When finished (or partway), click <b>Export new takes</b> and put the ZIP where the guide says (docs/RECORDING_GUIDE.md).</p>
     <div class="controls"><button class="rec big" id="start">Enable microphone &amp; start</button></div>
     <p class="status" id="setupStatus"></p>
   </div>
@@ -390,7 +392,7 @@ TEMPLATE = r"""<!doctype html>
 <script>
 const WORDS = __WORDS__;
 const SHEET_ID = "__SHEET_ID__";        // IndexedDB name suffix; fixed for the deck sheet (never change)
-// old take key -> current take key (the key rename of 2026-10-20, a2_build/rename/key_map_v*.csv)
+// old take key -> current take key (the key rename of 2026-10-20, data/key_maps/key_map_v*.csv)
 const KEY_MAP = __KEY_MAP__;
 document.getElementById('count').textContent = "0 / " + WORDS.length;
 
@@ -646,8 +648,8 @@ def main(argv):
                 w["ls"] = 1          # a clip from the 2026-10-12 sheet is stale for this take
             words.append(w)
         kmap = key_map_for_page()
-        size = write_html(words, DECK_SHEET_ID, "recorder_A2.html", kmap)
-        print(f"wrote recorder_A2.html ({size // 1024} KB) + {LIST_OUT}: {len(takes)} takes, "
+        size = write_html(words, DECK_SHEET_ID, RECORDER_OUT, kmap)
+        print(f"wrote {RECORDER_OUT} ({size // 1024} KB) + {LIST_OUT}: {len(takes)} takes, "
               f"IndexedDB lt_recorder_{DECK_SHEET_ID}; key map {len(kmap)} old take keys")
         for lv in ("A1", "A2"):
             parts = {s: n for (l, s), n in stats.items() if l == lv}

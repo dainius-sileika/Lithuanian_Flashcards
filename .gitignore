@@ -74,7 +74,7 @@ out_phrases/
 # recorder sheets are build artifacts — regenerate with build_recorder.py
 recorder*.html
 
-# third-party source documents (URLs in a2_rebase/README.md)
+# third-party source documents (URLs in rounds/2026-10-10_a2_rebase/README.md)
 sources/*.pdf
 
 # style experiments: notes/prompts/manifest tracked, images not
@@ -105,17 +105,30 @@ out_phrases_v3/*.png
 out_phrases_v3/_rerolled/
 out_phrases_v3/_sheets/
 out_phrases_v3/review_pub/*/media/
-a2_build/review_2026-10-17/*/media/
+rounds/2026-10-17_review_pages/*/media/
 fonts/review/
 out_phrases_v3/round2/*.png
 out_phrases_v3/round2/_rerolled/
-a2_build/pilot_round2/page/media/
+rounds/2026-10-17_pilot_round2/page/media/
 _handscan/
-a2_build/additions_round2/page/media/
+rounds/2026-10-17_additions_round2/page/media/
 
 # superseded bubble pictures (2026-10-18 roll-out), kept on disk, not in git
 **/_superseded/*.png
-a2_build/rollout/page/media/
+rounds/2026-10-18_rollout/page/media/
 
 # tidy 2026-10-19: files staged for the owner to delete (see _TO_DELETE/MANIFEST.csv)
 _TO_DELETE/
+
+# deep tidy 2026-10-24 (spec §13): the review rounds live in rounds/<date>_<name>/; their page media, work
+# folders and previews stay on the Mac (each round folder has its own .gitignore too). Review Desk and
+# frame-preview outputs are build artifacts. The audio inbox holds recorder ZIPs (*.zip is ignored above).
+rounds/*/page/media/
+rounds/*/work/
+rounds/*/_chk/
+review_desk/review_desk.html
+review_desk/img/
+reports/frame_preview/html/
+# (pre-2026-10-24 paths, kept so an old checkout still ignores them)
+a2_build/*/page/media/
+a2_build/review_2026-10-17/*/media/

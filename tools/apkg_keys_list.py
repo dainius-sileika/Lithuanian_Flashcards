@@ -1,5 +1,5 @@
 """Per-card list of an A1 package: due key plate level kind pos topic note_type guid image audio audio_source.
-usage: python3 tools/apkg_keys_list.py <pkg.apkg> audio_source.tsv build_reports/builds/<name>.tsv
+usage: python3 tools/apkg_keys_list.py <pkg.apkg> audio_source.tsv reports/builds/<name>.tsv
 (2026-10-20; reproduces v3.0_A1_keys_rc2.tsv byte for byte from the rc2 package.)"""
 import zipfile, sqlite3, tempfile, json, re, csv, sys
 pkg, asrc, out = sys.argv[1:4]

@@ -13,6 +13,8 @@ stored with its value and a SHA-256 per item, and folded into one overall style 
   frame.*      anki/*.css (text), the band colour and widths parsed from frame_standard.css,
                card_frame templates and backs, SECTIONS / ROUTE_SECTIONS, frame_crop constants,
                build_apkg frame/back/media defaults
+  (the modules are in code/ since 2026-10-24; an item's `source` names the file it was read from, and is not
+   part of the style hash, which is computed from the item names and values only)
   font.*       the shipped font files (SHA-256 + size)
 
 Usage
@@ -35,7 +37,8 @@ SPEC = os.path.join(ROOT, "docs", "DESIGN_SPEC_CURRENT.md")
 SPEC_VERSION_RE = re.compile(r"^\*\*Spec version (\d+\.\d+\.\d+)", re.M)
 
 # the files whose text feeds the lock (used by the hook and spec_release to stage them)
-SOURCE_FILES = ["go_generator.py", "go_grammars.py", "qa_images.py", "card_frame.py", "frame_crop.py", "build_apkg.py",
+SOURCE_FILES = ["code/go_generator.py", "code/go_grammars.py", "code/qa_images.py", "code/card_frame.py", "code/frame_crop.py",
+                "code/deck_builder.py", "build_apkg.py",
                 "anki/go_theme.css", "anki/frame_standard.css", "anki/back_proposed.css",
                 "fonts/_Brygada1918-Regular.ttf", "fonts/_Brygada1918-Italic.ttf", "fonts/_Brygada1918-Bold.ttf"]
 
@@ -76,8 +79,9 @@ def spec_version(path=SPEC) -> str:
 # ---------------------------------------------------------------------------------------
 def extract() -> dict:
     """name -> {"value": str, "source": file} for every look-defining constant."""
-    if ROOT not in sys.path:
-        sys.path.insert(0, ROOT)
+    for d in (os.path.join(ROOT, "code"), ROOT):      # the pipeline modules live in code/ (layout of 2026-10-24, spec §13)
+        if d not in sys.path:
+            sys.path.insert(0, d)
     import go_generator as g
     import card_frame as cf
     import frame_crop as fc
@@ -92,7 +96,7 @@ def extract() -> dict:
         items[name] = {"value": value, "source": source}
 
     # --- prompt texts -------------------------------------------------------------------
-    gsrc = "go_generator.py"
+    gsrc = "code/go_generator.py"
     for name in ("CONCEPT_LEAD", "CONCEPT_LEAD_SCENE", "STYLE_SUFFIX", "STYLE_SUFFIX_SCENE"):
         put(f"prompt.{name}", getattr(g, name), gsrc)
     for name in sorted(vars(g)):
@@ -129,7 +133,7 @@ def extract() -> dict:
         put(f"prompt.assembly.{name}", g.build_prompt(**kw), gsrc)
 
     # --- category grammars (go_grammars.py; added to the lock in spec 3.0.1) -----------------
-    ggsrc = "go_grammars.py"
+    ggsrc = "code/go_grammars.py"
     put("prompt.grammar.SCENE_TAIL", gg.SCENE_TAIL, ggsrc)
     put("prompt.grammar.NOUN_GRAMMARS", gg.NOUN_GRAMMARS, ggsrc)
     put("prompt.grammar.CAT2CLASS", gg.CAT2CLASS, ggsrc)
@@ -143,10 +147,10 @@ def extract() -> dict:
     put("engine.OPENAI_MODEL.default", _source_default(gsrc, "OPENAI_MODEL"), gsrc)
     put("engine.OPENAI_QUALITY", g.OPENAI_QUALITY, gsrc)
     put("engine.OPENAI_SIZES", g.OPENAI_SIZES, gsrc)
-    put("engine.deck_builder.RATIO", _source_default("deck_builder.py", "RATIO"), "deck_builder.py")
+    put("engine.deck_builder.RATIO", _source_default("code/deck_builder.py", "RATIO"), "code/deck_builder.py")
 
     # --- QA ------------------------------------------------------------------------------
-    qsrc = "qa_images.py"
+    qsrc = "code/qa_images.py"
     put("qa.MODEL.default", _source_default(qsrc, "MODEL"), qsrc)
     for name in ("PROMPT", "SIT_PROMPT", "NEIGHBOUR_PROMPT", "FIT_PROMPT", "LIMBS_PROMPT", "CONVERSATION_LINE"):
         put(f"qa.{name}", getattr(qa, name), qsrc)
@@ -169,17 +173,18 @@ def extract() -> dict:
     m = re.search(r":root\s*\{(.*?)\}", gt, re.S)
     put("frame.palette.go_theme_root", m.group(1).strip() if m else "<<missing>>", "anki/go_theme.css")
 
-    put("frame.SECTIONS", cf.SECTIONS, "card_frame.py")
-    put("frame.ROUTE_SECTIONS", cf.ROUTE_SECTIONS, "card_frame.py")
-    put("frame.FONT_FILES", cf.FONT_FILES, "card_frame.py")
-    put("frame.section_css", cf.section_css(), "card_frame.py")
+    cfsrc = "code/card_frame.py"
+    put("frame.SECTIONS", cf.SECTIONS, cfsrc)
+    put("frame.ROUTE_SECTIONS", cf.ROUTE_SECTIONS, cfsrc)
+    put("frame.FONT_FILES", cf.FONT_FILES, cfsrc)
+    put("frame.section_css", cf.section_css(), cfsrc)
     for name in ("FRONT", "BACK", "CLOZE_FRONT", "CLOZE_BACK", "FIT_JS", "PB_BOLD_JS"):
-        put(f"frame.template.{name}", getattr(cf, name), "card_frame.py")
+        put(f"frame.template.{name}", getattr(cf, name), cfsrc)
     pb, pc = cf.proposed_backs("thumb")
-    put("frame.template.PROPOSED_BACK_thumb", pb, "card_frame.py")
-    put("frame.template.PROPOSED_CLOZE_BACK_thumb", pc, "card_frame.py")
+    put("frame.template.PROPOSED_BACK_thumb", pb, cfsrc)
+    put("frame.template.PROPOSED_CLOZE_BACK_thumb", pc, cfsrc)
     for name in ("FRAME_CROP_VERSION", "PAD_PX", "BAND_MIN", "BAND_MAX", "SIDE_MAX", "SIDE_RUN_MAX", "FALLBACK"):
-        put(f"frame.crop.{name}", getattr(fc, name), "frame_crop.py")
+        put(f"frame.crop.{name}", getattr(fc, name), "code/frame_crop.py")
     bsrc = "build_apkg.py"
     put("frame.build.FRAME.default", _source_default(bsrc, "FRAME"), bsrc)
     put("frame.build.BACK_STYLE.default", _source_default(bsrc, "BACK_STYLE"), bsrc)

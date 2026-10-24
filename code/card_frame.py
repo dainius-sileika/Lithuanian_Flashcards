@@ -1,0 +1,263 @@
+#!/usr/bin/env python3
+"""The "standard bands" card frame: note-type templates, CSS and section labels.
+
+build_apkg.py --frame standard (the default) uses this module; --frame drawn keeps the
+pictures' own drawn frame and the old templates. The look is anki/frame_standard.css
+(appended to anki/go_theme.css); the pictures are cropped by frame_crop.py.
+
+Nothing here changes a note type's FIELDS (that would break updating in place on
+re-import): the section label is worked out in CSS from the note's existing Category
+field and its tags, via attribute selectors generated from SECTIONS below.
+
+SECTIONS is the one place to edit the running heads. Each entry: numeral, Lithuanian label
+(shown in small caps), and the Category values (A1 cards_anki.csv / A2 a2_wordlist.csv /
+sentences) it covers. ROUTE_SECTIONS overrides by note tag: every phrase note (tag
+lt::kind::phrase) is a phrase whatever its category, every sentence card (lt::kind::sentence)
+a sentence (spec §12, 2026-10-20; until 3.3.0 the tags were PHRASE and SENT). A category
+missing from SECTIONS is shown as it is (build_apkg prints a warning listing them).
+"""
+import os
+
+# 2026-10-18: labels in Lithuanian (rounds/2026-10-18_section_labels/section_labels_lt.csv; owner 2026-10-17
+# "a bit more passive Lithuanian"). XVIII and XVI are the planner's first choices, still open with
+# the owner: XVIII "pagalbiniai žodžiai" (alt. "smulkieji žodžiai"), XVI "daiktai ir sąvokos"
+# (alt. "daiktai ir idėjos"). The English labels were: people, animals, places, transport, home,
+# food, clothing, body & health, nature, work & school, society, colours & materials, numbers &
+# time, actions, qualities, things & ideas, feelings & opinions, small words, phrases, sentences.
+SECTIONS = [
+    ("I", "žmonės", ["People", "Nationalities", "Languages"]),
+    ("II", "gyvūnai", ["Animal"]),
+    ("III", "vietos", ["Location", "Travel"]),
+    ("IV", "transportas", ["Transportation"]),
+    ("V", "namai", ["Home", "Electronics", "Technology"]),
+    ("VI", "maistas", ["Food", "Beverages"]),
+    ("VII", "drabužiai", ["Clothing"]),
+    ("VIII", "kūnas ir sveikata", ["Body", "Health"]),
+    ("IX", "gamta", ["Nature"]),
+    ("X", "darbas ir mokykla", ["Job", "Jobs", "Work & school", "Work & culture"]),
+    ("XI", "visuomenė", ["Society", "Money & admin", "Shopping", "Art"]),
+    ("XII", "spalvos ir medžiagos", ["Color", "Materials"]),
+    ("XIII", "skaičiai ir laikas", ["Numbers", "Math", "Time"]),
+    ("XIV", "veiksmai", ["Verbs", "Modal & core verbs"]),
+    ("XV", "savybės", ["Adjectives"]),
+    ("XVI", "daiktai ir sąvokos", ["Nouns", "Abstract", "Misc"]),
+    ("XVII", "jausmai ir nuomonės", ["Feelings", "Opinion & discourse"]),
+    ("XVIII", "pagalbiniai žodžiai", ["Pronouns", "Question words", "Prepositions", "Conjunctions", "Adverbs"]),
+    ("XIX", "frazės", ["Phrases", "Greetings", "Politeness", "Basics", "Getting by", "Formulas",
+                        "Transactions", "Core patterns", "Extended patterns", "Functions"]),
+    ("XX", "sakiniai", ["Sakiniai"]),
+]
+ROUTE_SECTIONS = {"lt::kind::phrase": "XIX", "lt::kind::sentence": "XX"}     # note tag -> numeral
+
+# Brygada 1918 throughout (owner 2026-10-18); PT Serif + Old Standard TT are in fonts/_superseded/
+FONT_FILES = ["_Brygada1918-Regular.ttf", "_Brygada1918-Italic.ttf", "_Brygada1918-Bold.ttf"]
+FONT_DIR = "fonts"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))    # code/ -> the working directory
+
+# Plate numbers ("pav. N" in the bottom band) = the key's number for every note type (spec §12,
+# 2026-10-20: 0021_labas -> pav. 21); build_apkg.plate_number() fills the Number field. (2026-10-18
+# to 3.3.0: A1 1-531 by wordlist row, A2 from 1001, sentences from 4001.)
+
+
+def _css_str(s):
+    return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+def section_of(category, tags=()):
+    """(numeral, label) for a note, or None if unmapped; mirrors the generated CSS."""
+    by_num = {n: (n, lab) for n, lab, _ in SECTIONS}
+    for t in tags:
+        if t in ROUTE_SECTIONS:
+            return by_num[ROUTE_SECTIONS[t]]
+    for n, lab, cats in SECTIONS:
+        if category in cats:
+            return (n, lab)
+    return None
+
+
+def section_css():
+    """Attribute-selector rules that print 'N skyrius ·' and the label in the top band."""
+    out = ["/* --- section labels, generated from card_frame.SECTIONS --- */"]
+    by_num = {n: lab for n, lab, _ in SECTIONS}
+    for n, lab, cats in SECTIONS:
+        for c in cats:
+            sel = f'.sf-sec[data-cat={_css_str(c)}]'
+            out.append(f'{sel}::before{{content:{_css_str(f"{n} skyrius ·")}}}'
+                       f'{sel}::after{{content:{_css_str(lab)}}}')
+    for tag, n in ROUTE_SECTIONS.items():
+        sel = f'.sf[data-tags~={_css_str(tag)}] .sf-sec'
+        out.append(f'{sel}::before{{content:{_css_str(f"{n} skyrius ·")}}}'
+                   f'{sel}::after{{content:{_css_str(by_num[n])}}}')
+    return "\n".join(out) + "\n"
+
+
+def standard_css(base_css):
+    frame = open(os.path.join(ROOT, "anki", "frame_standard.css"), encoding="utf-8").read()
+    return base_css + "\n" + frame + "\n" + section_css()
+
+
+def font_media():
+    return [os.path.join(ROOT, FONT_DIR, f) for f in FONT_FILES]
+
+
+# Caption fit: shrink a long English caption to fit one line (down to 72 % of its size),
+# else let it wrap to two smaller lines (.sf-wrap, clamped to two). Re-runs once the embedded
+# fonts have loaded and on resize. Without JS the caption ends in an ellipsis.
+FIT_JS = """<script>
+(function () {
+  function px(v) { v = parseFloat(v); return isNaN(v) ? 0 : v; }
+  function fit() {
+    var els = document.querySelectorAll('.sf-en');
+    for (var i = 0; i < els.length; i++) {
+      var e = els[i], band = e.parentNode;
+      e.classList.remove('sf-wrap'); e.style.fontSize = '';
+      var cs = getComputedStyle(band), gap = px(cs.columnGap);
+      // room for the caption: the band minus its padding, the plate number, the
+      // leader at its minimum width and the gaps
+      var avail = band.clientWidth - px(cs.paddingLeft) - px(cs.paddingRight);
+      for (var j = 0; j < band.children.length; j++) {
+        var c = band.children[j];
+        if (c === e) continue;
+        avail -= gap + (c.className.indexOf('sf-lead') >= 0 ? px(getComputedStyle(c).minWidth)
+                                                            : c.getBoundingClientRect().width);
+      }
+      // the caption's natural one-line width (fractional, unlike scrollWidth)
+      e.style.flex = 'none'; e.style.maxWidth = 'none';
+      var w = e.getBoundingClientRect().width;
+      e.style.flex = ''; e.style.maxWidth = '';
+      if (!w || w <= avail - 1) continue;
+      var s = px(getComputedStyle(e).fontSize), ns = s * (avail - 2) / w;
+      if (ns >= s * 0.72) e.style.fontSize = ns + 'px';
+      else e.classList.add('sf-wrap');
+    }
+  }
+  window.__sfFit = fit;
+  if (!window.__sfFitBound) {
+    window.__sfFitBound = true;
+    window.addEventListener('resize', function () { window.__sfFit && window.__sfFit(); });
+  }
+  fit();
+  setTimeout(fit, 60);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>"""
+
+
+def _frame(cat, num, cap, pic):
+    return ('<div class="sf" data-tags="{{Tags}}">'
+            f'<div class="sf-top"><span class="sf-sec" data-cat="{{{{text:{cat}}}}}"></span></div>'
+            f'{pic}'
+            f'<div class="sf-bot"><span class="sf-pav">pav. {{{{{num}}}}}</span>'
+            f'<span class="sf-lead"></span><span class="sf-en">{{{{{cap}}}}}</span></div>'
+            '</div>')
+
+
+# --- picture note ("Lietuvių GO"): A1/A2 pictures and A2 phrases ----------------------
+_PIC_FRAME = _frame("category", "number", "english", '<div class="sf-pic">{{image}}</div>')
+FRONT = f'<div class="sf-card">{_PIC_FRAME}</div>{FIT_JS}'
+BACK = (f'<div class="sf-card">{_PIC_FRAME}'
+        '<div class="answer"><div class="word">{{lithuanian}}</div>'
+        '{{#pron}}<div class="pron">{{pron}}</div>{{/pron}}{{audio}}'
+        '{{#gender}}<div class="gender">{{gender}}</div>{{/gender}}'
+        '{{#gen_sg}}<div class="forms">{{lithuanian}} · {{gen_sg}}</div>{{/gen_sg}}'
+        '{{#pres3}}<div class="forms">{{lithuanian}} · {{pres3}} · {{past3}}</div>{{/pres3}}'
+        '{{#fem}}<div class="forms">{{fem}}</div>{{/fem}}'   # adjectives: "m ♂ · f ♀" (build_apkg)
+        '<hr id="answer"><div class="gloss">{{english}}</div>{{#usage}}<div class="usage">{{usage}}</div>{{/usage}}</div>'
+        f'</div>{FIT_JS}')
+
+# --- cloze note ("Lietuvių GO Cloze"): A2 cloze/pair rows and sentence cards ----------
+# With a picture (sentence cards) the sentence sits under the frame; without one it sits
+# on a paper panel inside the frame. The caption is the target word's English gloss
+# (hidden on sentence cards by CSS, whose Gloss field holds the grammar point).
+_CLOZE_PIC = ('{{#Image}}<div class="sf-pic">{{Image}}</div>{{/Image}}'
+              '{{^Image}}<div class="sf-panel"><div class="cloze-text">{{cloze:Text}}</div>'
+              '<div class="hint">{{SentenceEN}}</div></div>{{/Image}}')
+_CLOZE_FRAME = _frame("Category", "Number", "Gloss", _CLOZE_PIC)
+CLOZE_FRONT = (f'<div class="sf-card sf-cloze-front">{_CLOZE_FRAME}'
+               '{{#Image}}<div class="cloze-text">{{cloze:Text}}</div>{{/Image}}'
+               f'</div>{FIT_JS}')
+CLOZE_BACK = (f'<div class="sf-card">{_CLOZE_FRAME}'
+              '{{#Image}}<div class="cloze-text">{{cloze:Text}}</div>'
+              '<div class="hint">{{SentenceEN}}</div>{{/Image}}'
+              '<div class="answer word-line"><div class="word">{{Word}}</div>'
+              '{{#Pron}}<div class="pron">{{Pron}}</div>{{/Pron}}{{Audio}}{{SentenceAudio}}'
+              '{{#Gender}}<div class="gender">{{Gender}}</div>{{/Gender}}'
+              '{{#Forms}}<div class="forms">{{Forms}}</div>{{/Forms}}'
+              '<hr id="answer"><div class="gloss">{{Gloss}}</div>{{#Usage}}<div class="usage">{{Usage}}</div>{{/Usage}}</div>'
+              f'</div>{FIT_JS}')
+
+
+# --- PROPOSED back (rounds/2026-10-17_backs_audit/BACKS_AUDIT.md §2) — the DEFAULT back since 2026-10-18 ---------
+# build_apkg.set_frame() uses proposed_backs("thumb") + anki/back_proposed.css for both note types
+# (owner: "proposed" + "thumb"); BACK above stays reachable with build_apkg.py --back current.
+# frame_preview.py renders whatever the package carries; its --back proposed re-applies these.
+# Same fields as today, so adopting it later would be a template/CSS change only.
+# pic: "thumb" (picture at ~56 % width, the audit's proposal) or "full" (full plate width).
+# The forms line bolds the taught form: in the template for gen_sg / pres3 / past3, in CSS
+# for the adjective pair (the feminine), and by a small script for the cloze Forms field,
+# which is plain text "laikas · laiko" (everything after the first " · " is bolded).
+PB_BOLD_JS = """<script>
+(function () {
+  var els = document.querySelectorAll('.pb-forms');
+  for (var i = 0; i < els.length; i++) {
+    var e = els[i];
+    if (e.querySelector('b, .fp')) continue;
+    var p = e.innerHTML.split(' \\u00b7 ');
+    if (p.length < 2) continue;
+    e.innerHTML = p[0] + ' \\u00b7 ' + p.slice(1).map(function (s) { return '<b>' + s + '</b>'; }).join(' \\u00b7 ');
+  }
+})();
+</script>"""
+
+
+def _pb_open(cat, pic):
+    return (f'<div class="sf-card pb pb-{pic}"><div class="sf" data-tags="{{{{Tags}}}}">'
+            f'<div class="sf-top"><span class="sf-sec" data-cat="{{{{text:{cat}}}}}"></span></div>'
+            '<hr id="answer"><div class="pb-body">')
+
+
+def _pb_close(num, cap):
+    return ('</div>'
+            f'<div class="sf-bot"><span class="sf-pav">pav. {{{{{num}}}}}</span>'
+            f'<span class="sf-lead"></span><span class="sf-en">{{{{{cap}}}}}</span></div>'
+            '</div></div>')
+
+
+def proposed_backs(pic="thumb"):
+    """(picture-note back, cloze-note back) of the proposed design; pic = thumb | full."""
+    if pic not in ("thumb", "full"):
+        raise ValueError(f"pic: expected thumb or full, got {pic!r}")
+    back = (_pb_open("category", pic)
+            + '<div class="answer"><div class="word">{{lithuanian}}</div>'
+            '<div class="pb-say">{{#pron}}<span class="pron">{{pron}}</span>{{/pron}}{{audio}}</div>'
+            '<div class="pb-gram">{{#gender}}<span class="gender">{{gender}}</span>{{/gender}}'
+            '{{#gen_sg}}<span class="forms">{{lithuanian}} · <b>{{gen_sg}}</b></span>{{/gen_sg}}'
+            '{{#pres3}}<span class="forms">{{lithuanian}} · <b>{{pres3}}</b> · <b>{{past3}}</b></span>{{/pres3}}'
+            '{{#fem}}<span class="forms pb-adj">{{fem}}</span>{{/fem}}</div>'
+            '<div class="gloss">{{english}}</div>{{#usage}}<div class="usage">{{usage}}</div>{{/usage}}</div>'
+            '<div class="sf-pic pb-pic">{{image}}</div>'
+            + _pb_close("number", "english") + FIT_JS)
+    cloze = (_pb_open("Category", pic)
+             + '<div class="cloze-text">{{cloze:Text}}</div>'
+             '<div class="answer"><div class="word">{{Word}}</div>'
+             '<div class="pb-say">{{#Pron}}<span class="pron">{{Pron}}</span>{{/Pron}}{{Audio}}{{SentenceAudio}}</div>'
+             '<div class="pb-gram">{{#Gender}}<span class="gender">{{Gender}}</span>{{/Gender}}'
+             '{{#Forms}}<span class="forms pb-forms">{{Forms}}</span>{{/Forms}}</div>'
+             '<div class="gloss">{{Gloss}}</div>{{#Usage}}<div class="usage">{{Usage}}</div>{{/Usage}}'
+             '<div class="hint">{{SentenceEN}}</div></div>'
+             '{{#Image}}<div class="sf-pic pb-pic">{{Image}}</div>{{/Image}}'
+             + _pb_close("Number", "Gloss") + FIT_JS + PB_BOLD_JS)
+    return back, cloze
+
+
+def proposed_css():
+    return open(os.path.join(ROOT, "anki", "back_proposed.css"), encoding="utf-8").read()
+
+
+def unmapped(categories_with_tags):
+    """[(category, tags)] -> sorted categories that no section covers."""
+    return sorted({c for c, t in categories_with_tags if c and section_of(c, t) is None})
+
+
+if __name__ == "__main__":
+    print(section_css())

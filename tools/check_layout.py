@@ -7,14 +7,19 @@
                                              # a top-level item (the pre-commit hook runs this)
 
 What it checks (nothing is moved or deleted; this script only reports):
-  root      every file at the root is one of the expected entry points, modules, live data files or caches
-            (ROOT_FILES / ROOT_PATTERNS below); anything else is clutter: a Proton "Edit conflict" copy, a
-            stray export, a document that belongs in docs/ or _archive/
-  media     media/images holds only <key>.<ext> pictures (NNNN_slug) and the _history/ folder;
-            media/audio holds only <key>.mp3 / <key>_s.mp3 and _history/; media/generation holds no pictures;
+  root      the root holds the three entry points, recorder_A2.html, the current release package(s), README.md,
+            INDEX.md, FILES.md, LICENSE, .gitignore and the secret key files — nothing else (ROOT_FILES /
+            ROOT_PATTERNS below). A file at the root that is not one of these is clutter: a Proton "Edit conflict"
+            copy, a stray export, a module that belongs in code/, a data file that belongs in data/.
+  folders   every top-level folder is one of TOP_DIRS (each described in INDEX.md); code/ holds only Python
+            modules, data/ only data files (no code), media/ only images/, audio/, generation/
+  media     media/images holds only <key>.<ext> pictures (NNNN_slug) and the _history/ folder; media/audio only
+            <key>.mp3 / <key>_s.mp3, _history/ and _inbox/ (recorder ZIPs); media/generation holds no pictures;
             no _history/, _rerolled/ or _superseded/ folder outside media/images/_history and media/audio/_history
-  old homes the pre-2026-10-24 folders (images/, audio/, audio_a2/, out_*) must not come back
-  index     every top-level item on disk is named in INDEX.md (so the map cannot silently go stale)
+  old homes the pre-2026-10-24 folders (images/, audio/, audio_a2/, out_*, a2_build/ beyond the inbox stub,
+            a2_rebase/, build_reports/) must not come back, nor the root copies of the moved modules and data files
+  index     every top-level item on disk is named in INDEX.md (so the map cannot silently go stale);
+            FILES.md, the generated inventory, exists (tools/make_index.py --check keeps it current)
 build_apkg.py runs the non-strict form at the start of every build.
 """
 from __future__ import annotations
@@ -24,27 +29,54 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEY_RE = re.compile(r"^\d{4}_[a-z][a-z0-9_]*$")
 
 ROOT_FILES = {
-    # entry points
+    # entry points and the owner's recording sheet
     "build_apkg.py", "build_recorder.py", "build_study_order_v3.py", "recorder_A2.html",
-    "README.md", "INDEX.md", "LICENSE", ".gitignore",
-    # pipeline modules imported by the entry points and the gen.py drivers
-    "card_frame.py", "frame_crop.py", "frame_preview.py", "go_generator.py", "go_grammars.py", "go_settings.py",
-    "deck_builder.py", "verb_flashcards.py", "situations.py", "gen_phrases.py", "historical.py", "qa_images.py",
-    # live data
-    "cards_anki.csv", "master_wordlist.csv", "card_notes.json", "study_order.csv", "audio_source.tsv",
-    "wordlist_a2_pending.csv",
+    # the front page, the map, the inventory, the licence, git
+    "README.md", "INDEX.md", "FILES.md", "LICENSE", ".gitignore",
     # secrets (gitignored; scripts read them from the root; never share, never move)
     ".azure_key.txt", ".openai_key.txt", ".github_token", ".huggingface_token",
     # OS / editor noise that is not worth a warning
     ".DS_Store",
 }
 ROOT_PATTERNS = ["Lietuviu_Flashcards_v*.apkg"]      # the current release package(s); older ones -> _archive/builds/
+# every top-level folder, and the one line that says what it is (INDEX.md §1 has the long form)
+TOP_DIRS = {
+    "code": "the pipeline modules (Python only)",
+    "data": "the live data files (no code)",
+    "docs": "the design spec, registers, guides, plans, decisions",
+    "media": "card media: images/, audio/, generation/",
+    "reports": "build manifests, verify reports, audits, QA results",
+    "rounds": "one dated folder per round of work (YYYY-MM-DD_<name>)",
+    "review_desk": "the owner's Review Desk sources",
+    "sources": "external word lists and frequency tables",
+    "tools": "maintenance tools and the hooks",
+    "anki": "card CSS and the note-type notes",
+    "fonts": "the shipped font files",
+    "style": "the style lock and the golden set",
+    "style_lab": "the style experiments (owner: kept as a record)",
+    "_archive": "kept history: retired code, documents, data, packages",
+    "_TO_DELETE": "junk sorted by reason, for the owner to delete",
+    "a2_build": "forwarding stub for the old audio inbox (a2_build/audio/inbox/README.md) — remove after the current recording session",
+}
 ROOT_DIRS_IGNORED = {".git", "__pycache__", "_apkg_media", "_qa", "_cloud_media", "_cloud_out", "_transfer"}  # caches and cloud scratch
 OLD_HOMES = ["images", "audio", "audio_a2", "out_deck", "out_deck_f62", "out_deck_a2", "out_deck_sent",
-             "out_phrases", "out_phrases_v3", "out_phrases_a2", "images_a2", "images_sent"]
+             "out_phrases", "out_phrases_v3", "out_phrases_a2", "images_a2", "images_sent",
+             "a2_rebase", "build_reports"]
+# root files that moved on 2026-10-24 (deep tidy): a copy coming back at the root is a mistake, not a new file
+MOVED_FROM_ROOT = {
+    "card_frame.py": "code/", "frame_crop.py": "code/", "frame_preview.py": "code/", "go_generator.py": "code/",
+    "go_grammars.py": "code/", "go_settings.py": "code/", "deck_builder.py": "code/", "verb_flashcards.py": "code/",
+    "situations.py": "code/", "gen_phrases.py": "code/", "historical.py": "code/", "qa_images.py": "code/",
+    "cards_anki.csv": "data/", "master_wordlist.csv": "data/", "card_notes.json": "data/", "study_order.csv": "data/",
+    "audio_source.tsv": "data/", "wordlist_a2_pending.csv": "data/",
+}
+A2_BUILD_STUB = {"a2_build/audio/inbox/README.md"}      # the only tracked file a2_build/ may still hold
 IMG_EXT = {".png", ".webp", ".jpg", ".jpeg"}
+DATA_EXT = {".csv", ".tsv", ".json", ".txt", ".md"}
 VERSION_DIRS = {"_history", "_rerolled", "_superseded"}
+ROUND_RE = re.compile(r"^\d{4}-\d{2}-\d{2}_[a-z0-9_]+$")
 INDEX = os.path.join(ROOT, "INDEX.md")
+FILES_MD = os.path.join(ROOT, "FILES.md")
 
 
 def tracked():
@@ -62,21 +94,82 @@ def check(strict=False):
     def report(path, msg):
         (fail if (strict and path in tr) else warn).append(f"{path}: {msg}")
 
+    def report_dir(rel, msg):
+        """a folder-level problem: strict-fail when any tracked file sits under it"""
+        if strict and any(t.startswith(rel.rstrip("/") + "/") for t in tr):
+            fail.append(f"{rel}: {msg}")
+        else:
+            warn.append(f"{rel}: {msg}")
+
     # --- root ---------------------------------------------------------------------------------
     for name in sorted(os.listdir(ROOT)):
         p = os.path.join(ROOT, name)
         if os.path.isdir(p):
+            if name in ROOT_DIRS_IGNORED:
+                continue
             if name in OLD_HOMES and any(True for _ in os.scandir(p)):
-                report(name + "/", "a pre-2026-10-24 media folder is back; pictures belong in media/images/, audio in "
-                                   "media/audio/, batch records in media/generation/<batch>/ (spec §13)")
+                report_dir(name + "/", "a pre-2026-10-24 folder is back; pictures belong in media/images/, audio in "
+                                       "media/audio/, batch records in media/generation/<batch>/, reports in reports/, "
+                                       "rounds in rounds/ (spec §13)")
+            elif name not in TOP_DIRS:
+                report_dir(name + "/", "unexpected top-level folder (spec §13: every top-level folder is one of the "
+                                       "named ones; a new one needs a line in INDEX.md and in tools/check_layout.TOP_DIRS)")
             continue
-        if name in ROOT_FILES or any(fnmatch.fnmatch(name, pat) for pat in ROOT_PATTERNS):
+        if name in MOVED_FROM_ROOT:
+            report(name, f"moved to {MOVED_FROM_ROOT[name]} on 2026-10-24; the copy at the root is stale")
+        elif name in ROOT_FILES or any(fnmatch.fnmatch(name, pat) for pat in ROOT_PATTERNS):
             continue
-        if "Edit conflict" in name:
+        elif "Edit conflict" in name:
             report(name, "a Proton Drive 'Edit conflict' copy; compare with the original, then move it to _TO_DELETE/")
         else:
-            report(name, "unexpected file at the root (INDEX.md says what belongs here; docs -> docs/, "
-                         "superseded -> _archive/, junk -> _TO_DELETE/<reason>/)")
+            report(name, "unexpected file at the root (INDEX.md says what belongs here; code -> code/, data -> data/, "
+                         "docs -> docs/, superseded -> _archive/, junk -> _TO_DELETE/<reason>/)")
+
+    # --- code/ and data/ ---------------------------------------------------------------------
+    code = os.path.join(ROOT, "code")
+    if os.path.isdir(code):
+        for name in sorted(os.listdir(code)):
+            if name in ("__pycache__", ".DS_Store", "README.md"):
+                continue
+            if not name.endswith(".py"):
+                report(f"code/{name}", "code/ holds Python modules only (data -> data/, documents -> docs/)")
+    data = os.path.join(ROOT, "data")
+    if os.path.isdir(data):
+        for dp, dns, fns in os.walk(data):
+            dns[:] = [d for d in dns if d not in ("__pycache__",)]
+            rel = os.path.relpath(dp, ROOT).replace(os.sep, "/")
+            for f in fns:
+                if f == ".DS_Store":
+                    continue
+                if os.path.splitext(f)[1].lower() not in DATA_EXT:
+                    report(f"{rel}/{f}", "data/ holds data files only (csv, tsv, json, txt, md); code -> code/ or tools/")
+
+    # --- a2_build/ stub -----------------------------------------------------------------------
+    stub = os.path.join(ROOT, "a2_build")
+    if os.path.isdir(stub):
+        for dp, dns, fns in os.walk(stub):
+            rel = os.path.relpath(dp, ROOT).replace(os.sep, "/")
+            for f in fns:
+                q = f"{rel}/{f}"
+                if q in A2_BUILD_STUB or f == ".DS_Store":
+                    continue
+                if f.lower().endswith(".zip") and rel == "a2_build/audio/inbox":
+                    warn.append(f"{q}: a recorder ZIP in the OLD inbox; ingest it (python3 tools/ingest_takes.py {q}); "
+                                "the inbox is media/audio/_inbox/ since 2026-10-24")
+                else:
+                    report(q, "a2_build/ was dissolved on 2026-10-24 (data -> data/, rounds -> rounds/, docs -> docs/, "
+                              "reports -> reports/); only the inbox forwarding note may stay here")
+
+    # --- rounds/ ------------------------------------------------------------------------------
+    rounds = os.path.join(ROOT, "rounds")
+    if os.path.isdir(rounds):
+        for name in sorted(os.listdir(rounds)):
+            if name == ".DS_Store":
+                continue
+            if not os.path.isdir(os.path.join(rounds, name)):
+                report(f"rounds/{name}", "rounds/ holds dated folders only (YYYY-MM-DD_<name>/)")
+            elif not ROUND_RE.match(name):
+                report_dir(f"rounds/{name}/", "a round folder is named YYYY-MM-DD_<lower_snake_name>")
 
     # --- media --------------------------------------------------------------------------------
     media = os.path.join(ROOT, "media")
@@ -112,8 +205,15 @@ def check(strict=False):
             for name in sorted(os.listdir(aud)):
                 p = os.path.join(aud, name)
                 if os.path.isdir(p):
-                    if name != "_history":
-                        report(f"media/audio/{name}/", "only _history/ may be a folder under media/audio/")
+                    if name == "_inbox":
+                        for z in sorted(os.listdir(p)):
+                            if z.lower().endswith(".zip"):
+                                warn.append(f"media/audio/_inbox/{z}: a recorder ZIP waiting to be ingested "
+                                            f"(python3 tools/ingest_takes.py media/audio/_inbox/{z})")
+                            elif z not in (".gitkeep", "README.md", ".DS_Store"):
+                                report(f"media/audio/_inbox/{z}", "the inbox holds recorder ZIPs only")
+                    elif name != "_history":
+                        report(f"media/audio/{name}/", "only _history/ and _inbox/ may be folders under media/audio/")
                     continue
                 if name == ".DS_Store":
                     continue
@@ -156,6 +256,8 @@ def check(strict=False):
                                 "means a new line in the index, in the same commit)")
             elif name in ROOT_FILES and name != ".DS_Store" and f"`{name}`" not in text:
                 warn.append(f"INDEX.md: root file `{name}` is not mentioned in INDEX.md")
+    if not os.path.exists(FILES_MD):
+        fail.append("FILES.md: missing at the root (the generated inventory; python3 tools/make_index.py writes it)")
     return warn, fail
 
 

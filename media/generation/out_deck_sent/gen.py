@@ -1,10 +1,10 @@
 """Sentence-card pictures (2026-10-12): one picture per row of
-a2_build/sentences/sentences.csv (0102_vyras_geria_kava...), drawn by the production prompt path
+data/sentences/sentences.csv (0102_vyras_geria_kava...), drawn by the production prompt path
 (a2_adapter.build_call_a2 -> go_generator.build_prompt) on the production model
 (gpt-image-2.5-sunburst, medium, 1536x1024) into out_deck_sent/<id>.png, where
 build_apkg looks (SENT_IMAGE_DIRS). Copied from out_deck_a2/gen.py; only the row
 source differs: each sentence becomes an adapter row with subject_phrase_EN = the
-English sentence, staging = a2_build/sentences/staging.json["notes"][id] (every line
+English sentence, staging = data/sentences/staging.json["notes"][id] (every line
 starts "Main picture:", so it replaces the composition clause), category
 "Sakiniai", route IMG, card_text from the CSV, dress civilian.
 
@@ -30,7 +30,7 @@ import csv, json, os, sys, time, base64, threading
 from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))              # media/generation/out_deck_sent
 ROOT = os.path.dirname(os.path.dirname(HERE))
-os.chdir(ROOT); sys.path.insert(0, ROOT)
+os.chdir(ROOT); sys.path[:0] = [os.path.join(ROOT, "code"), ROOT]      # modules in code/ since 2026-10-24 (spec §13)
 import go_generator as g
 sys.path.insert(0, os.path.join(ROOT, "media", "generation", "out_deck_a2")); import a2_adapter as A
 from openai import OpenAI
@@ -46,8 +46,8 @@ BUDGET = float(sys.argv[1]) if len(sys.argv) > 1 else 15
 W = int(sys.argv[2]) if len(sys.argv) > 2 else 30
 REROLL = [k for k in os.environ.get("REROLL", "").split(",") if k]
 
-SENT_CSV = "a2_build/sentences/sentences.csv"
-SENT_STAGING = "a2_build/sentences/staging.json"
+SENT_CSV = "data/sentences/sentences.csv"
+SENT_STAGING = "data/sentences/staging.json"
 staging = json.load(open(SENT_STAGING, encoding="utf-8"))["notes"]; skipped = []
 rows = []
 for s in csv.DictReader(open(SENT_CSV, encoding="utf-8")):

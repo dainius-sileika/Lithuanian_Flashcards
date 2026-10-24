@@ -1,15 +1,17 @@
 import json, shutil, os
-L = "/home/claude/lt"
+HERE = os.path.dirname(os.path.abspath(__file__))
+L = os.path.dirname(HERE)          # the working directory (review_desk/ -> root); run from review_desk/
+os.chdir(HERE)
 # Reference documents shown under "Documents for review": (id, title, path). Keep ONLY documents
 # the owner still has to read; settled ones go (they stay in the repo). Empty list = no section.
 docs = []
 D = {k: open(p, encoding="utf-8").read() for k, _, p in docs}
-# Screenshots (path under build_reports/, caption); same rule: only what is still under review.
+# Screenshots (path under reports/, caption); same rule: only what is still under review.
 shots = []
 os.makedirs("img", exist_ok=True)
 fig = []
 for p, cap in shots:
-    name = os.path.basename(p); shutil.copy(f"{L}/build_reports/{p}", f"img/{name}")
+    name = os.path.basename(p); shutil.copy(f"{L}/reports/{p}", f"img/{name}")
     fig.append(f'<figure><img src="img/{name}" alt="{cap}" loading="lazy"><figcaption>{cap}</figcaption></figure>')
 t = open("template.html", encoding="utf-8").read()
 parts = [f'  <details class="doc" id="doc-{k}"><summary>{title}</summary><div class="body" data-md="{k}"></div></details>' for k, title, _ in docs]

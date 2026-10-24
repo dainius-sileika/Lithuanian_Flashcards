@@ -1,0 +1,266 @@
+pattern,status,collapse,purpose,io
+# tools/make_index.py reads this table to write FILES.md. One row per file, or per family of files:
+#   pattern   an exact path; a folder prefix ending in "/" (everything under it); or a glob with * (fnmatch on the
+#             whole path, * also matches /). The most specific rule wins: exact > glob > prefix, then the most
+#             literal characters (so a family glob such as rounds/*/README.md beats the round folder's prefix rule).
+#   status    live (hand-kept or code), generated (made by a tool; do not edit), history (closed record, append-only
+#             or frozen), cache (regenerate freely), secret (never shared), source (third-party input)
+#   collapse  1 = list the family as one row with a file count instead of one row per file (media, golden set)
+#   purpose   one line; io = who reads / writes it
+# A tracked file without a matching rule FAILS make_index --check (and so the pre-commit hook).
+#
+# ---- root -------------------------------------------------------------------------------------------------
+README.md,live,,"Front page (GitHub): what the deck is, how to build, the one-breath map, the licence",people
+INDEX.md,live,,"The 5-minute map of this working directory (spec §13): every top-level item, where a card's media is, how to build / record / verify",people; tools/check_layout.py checks every top-level item is named
+FILES.md,generated,,"The complete inventory: every tracked file with purpose, status and readers; untracked folders by count",written by tools/make_index.py; checked by the pre-commit hook
+LICENSE,live,,CC BY-NC 4.0,people
+.gitignore,live,,"What stays on the Mac only: pictures, packages, caches, secrets, round page media, recorder ZIPs",git
+build_apkg.py,live,,"ENTRY POINT: builds the Anki package from data/ + media/ (+ anki/ CSS, fonts/), writes the manifest to reports/builds/",run by people; imported by build_recorder.py and tools/rename_keys.py (shared lists); reads data/cards_anki.csv a2_wordlist.csv sentences context_notes study_order key_maps/topic_map_v1.csv master_wordlist.csv
+build_recorder.py,live,,ENTRY POINT: writes recorder_A2.html (the owner's recording sheet) and data/recording_list.csv from what the build still needs,run by people; imports build_apkg and tools/keymap; reads data/cards_anki.csv wordlist_a2_pending.csv audio_source.tsv merged_keys.csv deferred_B1.csv recorder_A2_afb2ebe2_script.json key_maps/
+build_study_order_v3.py,live,,ENTRY POINT: computes data/study_order.csv (the order new cards are learned) and data/recording_order_v3.csv; --audit re-runs the checks,run by people; reads data/cards_anki.csv a2_wordlist.csv sentences/sentences.csv retier_v3.csv sources/*.csv
+recorder_A2.html,generated,,The owner's recording sheet (self-contained page; takes live in the browser's IndexedDB lt_recorder_A2_afb2ebe2). Stays at the root under this name,written by build_recorder.py A2; opened by the owner in Chrome
+# ---- code/: the pipeline modules (importable by bare name; code/ is put on sys.path by the entry points and tools) ---
+code/card_frame.py,live,,"Card front/back templates of the standard frame (bands, plate numbers, section labels, proposed backs), font list",imported by build_apkg.py frame_preview.py; hashed by tools/style_lock.py; reads anki/*.css fonts/
+code/frame_crop.py,live,,Detects and crops the drawn frame of a picture for the package; writes reports/frame_bands.csv and frame_flags.csv,imported by build_apkg.py; hashed by tools/style_lock.py
+code/frame_preview.py,live,,Screenshots of cards from a package (phone/desktop) for review pages; fetches review fonts,run by people (python3 code/frame_preview.py PKG.apkg); writes reports/frame_preview/
+code/go_generator.py,live,,"The picture engine: house-style prompt rules, prompt assembly, OpenAI image calls, ledger writing",imported by deck_builder gen_phrases verb_flashcards historical qa_images and the media/generation/*/gen.py drivers; hashed by tools/style_lock.py
+code/go_grammars.py,live,,"Per-category picture grammars (NOUN_GRAMMARS, compose_class, SCENE_TAIL)",imported by deck_builder.py gen_phrases.py a2_adapter.py; hashed by tools/style_lock.py
+code/go_settings.py,live,,Real Lithuanian settings for scene cards: the location bank and the curated assignments,imported by deck_builder.py; reads data/location_bank.json data/settings_assignments.csv
+code/deck_builder.py,live,,"A1 staging: wordlist row -> prompt (subject, staging line, setting, insets); the 1.x builder's logic kept as the production prompt path",imported by gen_phrases.py qa_images.py a2_adapter.py gen.py drivers; reads data/master_wordlist.csv data/card_notes.json
+code/verb_flashcards.py,live,,Verb scenes and inset text for the A1 verbs,imported by deck_builder.py
+code/situations.py,generated,,"The bubble-free situation staging of every former speech-bubble card (SITUATIONS, BY_ID)",written by tools/build_situations.py from data/restage_bubbles.csv; imported by gen_phrases.py qa_images.py out_phrases_v3/gen.py
+code/gen_phrases.py,live,,Situation-grammar phrase cards: build_situation_call() and a driver for the phrase rows,imported by media/generation/out_phrases_v3/gen.py; reads data/wordlist_a2_pending.csv (or A2_LIST)
+code/historical.py,live,,Per-card precedent / likeness arguments for the historical places and figures (hist_args),imported by deck_builder.py a2_adapter.py; reads data/likeness_args.json
+code/qa_images.py,live,,The QA gate for pictures: reads each picture back with a vision model against the card's declared text and rules,run by people (python3 code/qa_images.py media/images); hashed by tools/style_lock.py; reads data/a2_wordlist.csv wordlist_a2_pending.csv master_wordlist.csv cards_anki.csv; writes _qa/
+# ---- data/: the live data ----------------------------------------------------------------------------------
+data/cards_anki.csv,live,,"The 521 A1 base cards: key, Lithuanian, English, gender, forms, pron, level, category",read by build_apkg.py build_recorder.py build_study_order_v3.py qa_images.py tools/rename_keys.py
+data/master_wordlist.csv,live,,"The A1 wordlist (Fluent Forever 625 + additions): type, category, level, staging source",read by build_apkg.py (part of speech) deck_builder.py build_study_order_v3.py (--apply-retier writes level) qa_images.py
+data/card_notes.json,live,,"Per-card staging lines the A1 pictures were drawn from (notes, _settings_embedded)",read by deck_builder.py
+data/a2_wordlist.csv,live,,"The A2 list (1,700+ rows): id, lithuanian, english, route IMG/CLOZE/PAIR/PHRASE, card_text, example_lt/en, forms, level, phase",read by build_apkg.py build_study_order_v3.py qa_images.py a2_adapter.py out_phrases_v3/gen.py tools/rename_keys.py
+data/a2_staging.json,live,,Staging lines for the hard A2 picture rows (same shape as card_notes.json),read by media/generation/out_deck_a2/a2_adapter.py
+data/wordlist_a2_pending.csv,live,,The 2026-09 A2 queue (984 proposed rows) the A2 list was built from; still read for lettering text and the legacy phrase driver,read by build_recorder.py qa_images.py gen_phrases.py
+data/sentences/sentences.csv,live,,"The 55 sentence cards (picture + cloze): id, lithuanian, english, cloze span",read by build_apkg.py build_study_order_v3.py out_deck_sent/gen.py out_phrases_v3/gen.py tools/rename_keys.py
+data/sentences/staging.json,live,,Staging lines of the sentence pictures,read by media/generation/out_deck_sent/gen.py
+data/context_notes.csv,live,,"Usage lines shown on the backs (key, context_line, variant_tu_jus, confidence)",read by build_apkg.py
+data/restage_bubbles.csv,live,,"The owner-decided situation staging of every former bubble card (ids, render, new_staging, gaze); the source of code/situations.py",read by tools/build_situations.py tools/rename_keys.py
+data/study_order.csv,generated,,key -> learning position 1…2433 (study order v3),written by build_study_order_v3.py; read by build_apkg.py build_recorder.py tools/rename_keys.py
+data/recording_order_v3.csv,generated,,"The recorder's order: A1 first, then A2, each in study order",written by build_study_order_v3.py
+data/recording_list.csv,generated,,"Every take the recorder sheet asks for: take key, file_name, dest (media/audio/<key>.mp3), level, kind, status, words",written by build_recorder.py A2; read by tools/ingest_takes.py
+data/audio_source.tsv,live,,"For every audio file: key, who made it (human / azure-neural / superseded), file, what was said",read by build_recorder.py build_apkg.py; appended by tools/ingest_takes.py
+data/merged_keys.csv,live,,Keys merged into another card (merged_into); their takes are not asked for,read by build_recorder.py tools/rename_keys.py
+data/deferred_B1.csv,live,,A2-list rows deferred to B1 (pre-rename ids by design; status deferred in the key map),read by build_recorder.py tools/rename_keys.py
+data/id_map.csv,live,,"A2 list: queue row -> frozen id (the 2026-10-11 freeze), now carrying the current keys",read by tools/rename_keys.py (verify)
+data/key_maps/key_map_v1.csv,history,,"THE key rename of 2026-10-20: every old card name (001_suo, A2-0348, S-0001, media aliases) -> current NNNN_slug key; append-only",read by tools/keymap.py (and through it build_recorder.py tools/ingest_takes.py tools/golden_set.py tools/verify_apkg.py)
+data/key_maps/key_map_v2.csv,history,,Amendment of 2026-10-20: five cards re-slugged after the proofreading return; append-only,read by tools/keymap.py
+data/key_maps/topic_map_v1.csv,live,,category -> section slug for the lt::topic:: tag (spec §12),read by build_apkg.py
+data/retier_v3.csv,live,,"Cards moved between A1 and A2 by the study-order v3 re-tier (key, from, to, why)",read by build_study_order_v3.py tools/rename_keys.py
+data/retag_A1.csv,live,,"A1 re-tagging decisions of 2026-10-17 (key, category changes)",read by tools/rename_keys.py (verify); applied 2026-10-17
+data/recorder_A2_afb2ebe2_script.json,live,,"The July recording sheet's script (what each early take said), keyed by take; the recorder's legacy source",read by build_recorder.py (LEGACY_SHEET) tools/rename_keys.py
+data/likeness_args.json,live,,Historical precedent / likeness arguments per card (active list + cards),read by code/historical.py
+data/location_bank.json,live,,"The bank of real Lithuanian locations for scene cards (name, period, description, sources)",read by code/go_settings.py
+data/settings_assignments.csv,live,,"Curated card -> location assignments (key, location, note)",read by code/go_settings.py tools/rename_keys.py
+# ---- media/ ------------------------------------------------------------------------------------------------
+media/audio/*_s.mp3,live,1,"The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv",read by build_apkg.py; written by tools/ingest_takes.py
+media/audio/*.mp3,live,1,"The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv",read by build_apkg.py; written by tools/ingest_takes.py
+media/audio/_history/*,history,1,Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build,written by tools/ingest_takes.py
+media/audio/_inbox/README.md,live,,Where the owner drops the recorder ZIPs; what happens next,people
+media/audio/_inbox/.gitkeep,live,,keeps the inbox folder in git,git
+media/images/_history/images/*,history,1,"The 1.x WebP masters (<key>.webp, 520 files): the pictures the deck shipped before the F6.2 re-render; tracked",read by nothing live (history)
+media/generation/*/ledger.csv,history,,"Every prompt ever sent for that batch, one row per render (last row per key = the batch's current render); append-only",written by the batch's gen.py; read by tools/golden_set.py tools/rename_keys.py (names of their time)
+media/generation/*/gen_log.jsonl,history,,"Per-render log of the batch (timings, costs, errors)",written by gen.py
+media/generation/*/plan.json,history,,The batch's job plan (every key and prompt it was asked to render),written by gen.py
+media/generation/*/cards.csv,history,,The card rows the batch rendered (as given to the engine),written by gen.py
+media/generation/*/README.md,history,,What the batch was and how it went,people
+media/generation/*/gen.py,live,,"The batch's render driver: imports code/, writes new pictures to media/images/, re-rolls to media/images/_history/<batch>/_rerolled/, records to its own folder",run by people (REROLL=key1;key2 python3 media/generation/<batch>/gen.py); reads .openai_key.txt
+media/generation/*/qa_*.csv,history,,QA sheets of the batch (code/qa_images.py results of their time),written by qa_images.py
+media/generation/*/paper_tone_strict.json,history,,Paper-tone post-processing settings used by the batch,read by gen.py
+media/generation/out_deck_a2/a2_adapter.py,live,,Adapter from an A2-list IMG row to deck_builder's prompt path (build_call_a2); card_text fixes,imported by out_deck_a2/gen.py out_deck_sent/gen.py; reads data/a2_wordlist.csv data/a2_staging.json
+media/generation/out_deck_a2/build_review_a2.py,history,,Review-page builder of the A2 batch (2026-10-11),history
+media/generation/out_deck_f62/build_review_f62.py,history,,Review-page builder of the F6.2 A1 re-render (2026-10-11),history
+media/generation/out_deck_f62/build_review_pub.py,history,,Public review page builder (owner review of the F6.2 renders),history
+media/generation/out_deck_f62/review_pub/owner_review_2026-10-11.json,history,,"The owner's F6.2 verdicts (461 OK / 60 Redo), 2026-10-11",read by rounds/2026-10-12_a1_redo/staging_a1_redo.py (then)
+media/generation/out_phrases_v3/picks.jsonl,history,,Which render was picked per key in the bubble-free roll-out,written by gen.py
+# ---- docs/ -------------------------------------------------------------------------------------------------
+docs/DESIGN_SPEC_CURRENT.md,live,,"THE design spec: every design parameter in force, versioned (**Spec version X.Y.Z**), §13 = this layout",people; tools/style_lock.py reads the version; tools/spec_release.py bumps it
+docs/spec_history/,history,,Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited,written by tools/spec_release.py
+docs/VERSIONS.md,live,,"Register: package version <-> spec version <-> style hash <-> commit, one row per package; spec release log",people (one row per release)
+docs/CHANGELOG.md,history,,The pre-3.0 changelog (1.x and 2.x),people
+docs/HOW_TO_CHANGE_THE_LOOK.md,live,,"The procedure for touching the aesthetic: spec first, lock, golden set, build",people
+docs/PLAYBOOK_flashcard_language_system.md,live,,"The method, written to be reusable for another language",people
+docs/SPEC_RECONCILIATION_2026-10-19.md,history,,Where the older documents disagreed with the spec when it was frozen (2026-10-19),people
+docs/ANKIWEB_DESCRIPTION_A1_v3.0.md,live,,The AnkiWeb description of the A1 v3.0 release (source),people
+docs/ANKIWEB_DESCRIPTION_A1_v3.0.html,generated,,The same as pasted into AnkiWeb,people
+docs/RECORDING_GUIDE.md,live,,"The owner's one-page recording guide: the sheet, sessions, export, the inbox",people
+docs/A1_WRAPUP.md,live,,The A1 wrap-up plan and log (what remained before the A1 release; items ticked as done),people
+docs/PLAN_A2_completion.md,live,,"The plan for finishing A2 (2026-10-12, header says the spec overrides it)",people
+docs/decisions/PRASOM_SWITCH_2026-10-18.md,history,,Owner decision: postposed prašau -> prašom + infinitive,people
+docs/decisions/merges_2026-10-19.md,history,,"Owner merges of 2026-10-19, exact data changes (applied by rounds/2026-10-19_fixes_round3/apply_round3.py)",people
+docs/decisions/RESTAGE_PROPOSAL_2026-10-17.md,history,,The proposal that replaced speech bubbles with situation pictures (superseded by spec §4; cited by code comments),people
+docs/decisions/PILOT_24_2026-10-17.md,history,,The 24-render bubble-free pilot and its rubric (superseded by the spec; cited by code comments),people
+# ---- reports/ ----------------------------------------------------------------------------------------------
+reports/builds/*.verify.json,generated,,"verify_apkg report of a package against the previous one (field diffs, GUIDs, media)",written by tools/verify_apkg.py
+reports/builds/*_keys*.tsv,generated,,Per-card list of a package (key -> what it carries),written by tools/apkg_keys_list.py
+reports/builds/*.json,generated,,"Build manifest of a package: spec version, style hash, commit, counts, media hash, package sha256",written by build_apkg.py
+reports/frame_bands.csv,generated,,Frame detection result for every picture of the last build,written by build_apkg.py (frame_crop.write_reports)
+reports/frame_flags.csv,generated,,The pictures whose frame detection fell back to the fixed crop in the last build,written by build_apkg.py
+reports/frame_preview/,history,,Phone/desktop screenshots of cards in the standard frame (2026-10-17) and the preview .gitignore,written by code/frame_preview.py
+reports/backs_preview/,history,,Back-of-card previews (2026-10-17 backs audit),history
+reports/backs_type_review/,history,,"The Backs and Type review (A current vs proposed, B thumbnail, C typefaces) and its builder make_review.py",history
+reports/backs_default_2026-10-18/,history,,Screenshots when the proposed back became the default (2026-10-18),history
+reports/labels_plates_2026-10-18/,history,,Screenshots of the Lithuanian section labels and plate numbers (2026-10-18) and their README,history
+reports/hand_scan/,history,,"The hand-glitch scan of 2026-10-18: brief, batches, results, flagged list, fix plan",read then by rounds/2026-10-18_hand_fixes/
+reports/study_order/,history,,"Study-order audits (AUDIT_v3*.txt, AUDIT_tables.txt) and reports (v3 adopted 2026-10-19; the 2026-10-17 proposal superseded)",written by build_study_order_v3.py --audit (then)
+# ---- rounds/: one dated folder per round of work; everything in them is a closed record -----------------------
+rounds/*/README.md,history,,"The round's own account: what was asked, what was done, the owner's verdicts",people
+rounds/*/page/index.html,history,,The review page as published (a private claude.ai artifact; verdicts in its database),built by the round's build_page.py
+rounds/*/page/build_page.py,history,,Builder of the round's review page,history
+rounds/*/build_page.py,history,,Builder of the round's review page,history
+rounds/*/page/media_list.json,history,,The pictures the review page showed (paths of their time),history
+rounds/*/page/README.md,history,,Notes on the round's review page,people
+rounds/*/page/template*.html,history,,The review page template of the round,history
+rounds/*/.gitignore,history,,keeps the round's page media / work folders out of git,git
+rounds/*/page/.gitignore,history,,keeps the page media out of git,git
+rounds/*/work/.gitignore,history,,keeps the round's working files out of git,git
+rounds/*/qa_*.csv,history,,QA sheet of the round (code/qa_images.py results of their time),written by qa_images.py
+rounds/*/qa_*.py,history,,Extra QA questions asked in that round,history
+rounds/*/edit_regions.json,history,,Masked-edit regions used in the round (before the whole-re-roll rule of round 5),read by rounds/2026-10-17_additions_round2/edit_inset.py
+rounds/*/edit_log.txt,history,,Log of the masked-edit calls of the round,history
+rounds/*/restore_log.txt,history,,Log of pictures put back from _rerolled/ in the round,history
+rounds/*/restore_*.py,history,,The round's restore script (puts an earlier render back),history
+rounds/*/data_applied.csv,history,,Log of the data changes the round applied,written by the round's apply_round*.py
+rounds/*/old_staging*.json,history,,The staging values the round replaced (for an exact revert),written by apply_round*.py
+rounds/*/apply_round*.py,history,,"The round's data patch (idempotent, applied once; run after the previous round's)",history
+rounds/*/restage.csv,history,,The round's re-staging proposal rows (in data/restage_bubbles.csv's columns),history
+rounds/*/redraw_list.csv,history,,The cards the owner sent back for redrawing,history
+rounds/*/plan.csv,history,,The round's plan rows,history
+rounds/*/answers.md,history,,The planner's answers to the executor's questions,people
+rounds/2026-10-10_a2_rebase/,history,,"The A2 queue re-based against the official VU A1/A2 list (coverage.py, frequency.py, overlap.py, triage sheets, the 2026-10-11 backup)",history (the URLs of the official lists are in its README.md)
+rounds/2026-10-11_cloud_round/CLOUD_ROUND_2026-10-11.md,history,,Log of the cloud round of 2026-10-11 (branch cloud-2026-10-11),people
+rounds/2026-10-12_a1_redo/,history,,Staging for the 60 A1 cards the owner marked Redo in the F6.2 review and the script that applied it,history
+rounds/2026-10-17_review_pages/,history,,"Review pages of 2026-10-17 (bubble-free pilot, A2 additions): template, builder, published pages",history
+rounds/2026-10-17_pilot_round2/,history,,"Pilot round 2: diagnosis, the four rule changes (RULES.md), usage notes, backs, redraw list, review page",history
+rounds/2026-10-17_additions_round2/,history,,Additions round 2: redraws from the owner's 2026-10-17 review; edit_inset.py = the masked-edit tool of the time,history
+rounds/2026-10-17_benchmark_en/,history,,"The English A1–A2 benchmark comparison: coverage, gaps, proposed additions and deferrals (verified)",history
+rounds/2026-10-17_backs_audit/,history,,"Audit of the card backs (BACKS_AUDIT.md), data errors found, fixes applied (fix_backs_data.py), rendered samples png/",history
+rounds/2026-10-17_historical/,history,,"Historical places and figures: research (REPORT, real_places, likenesses, president card), implementation plan, the six-render test",history (its live table became data/likeness_args.json)
+rounds/2026-10-18_hand_fixes/,history,,"Fixes of the 40 cards flagged by the hand scan: masked edits, before/after, QA, review page",history
+rounds/2026-10-18_phrase_additions/,history,,Staging and QA of the 69 PHRASE-route benchmark additions,history
+rounds/2026-10-18_rollout/,history,,"The bubble-free roll-out: six redraws, QA, which superseded pictures moved where, the review page",history
+rounds/2026-10-18_rollout_round2/,history,,Roll-out round 2: re-staging proposal for the QA failures,history
+rounds/2026-10-18_section_labels/,history,,The Lithuanian section labels proposal (now card_frame.SECTIONS),history
+rounds/2026-10-18_data_checks/,history,,"A1 data checks B1–B3 (genders, stress, phrase stress): scripts, results, fixes applied, report",history
+rounds/2026-10-18_review_template/,history,,The generic review-page template of 2026-10-18,history
+rounds/2026-10-19_rollout_round3/,history,,Roll-out round 3 planning for the owner's review of 2026-10-19,history
+rounds/2026-10-19_fixes_round3/,history,,"Fixes round 3: owner verdicts on roll-out, phrase additions, hand fixes, historical test; the 58 resolved stresses; merges applied",history
+rounds/2026-10-19_fixes_round4/,history,,Fixes round 4 (plan + answers; 22 prompts changed),history
+rounds/2026-10-19_fixes_round5/,history,,Fixes round 5: the whole-re-roll rule begins; pick_413.py chose the 413 render,history
+rounds/2026-10-19_fixes_round6/,history,,Fixes round 6: A2-0359 Labai ačiū final panel (gen_0359.py),history
+rounds/2026-10-20_fixes_round7/,history,,Fixes round 7: A2-0359 inset 1 without the flowers,history
+rounds/2026-10-19_dep37/,history,,dep37: the 37 A1 reading cards that used an A2-only word — plan and dry-run (applied via round 3 / proofreading),history
+rounds/2026-10-19_audio_backfill/,history,,One-off of 2026-10-19: audio_source.tsv gained file and said columns; the reconciliation sheet,history
+rounds/2026-10-20_proofread/,history,,"Sentence proofreading round-trip: exports v1/v2, the returned plan and the script that applied it",history
+rounds/2026-10-20_rename/,history,,"The key rename of 2026-10-20: plan, dry-runs, applied record, media logs, the v2 amendment script, the recorder migration test (the maps themselves: data/key_maps/)",history
+rounds/2026-10-24_tidy/,history,,"The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py",history
+rounds/2026-10-24_deep_tidy/PLAN.md,history,,"The deep tidy of 2026-10-24: design of this layout, what moved and why, what was left alone",people
+rounds/2026-10-24_deep_tidy/APPLIED.md,history,,"What was run and verified in the deep tidy (packages identical, smoke test)",people
+rounds/2026-10-24_deep_tidy/move_rules.csv,history,,"The move rules (old, new, why) the plan was expanded from",read by tools/move_files.py plan
+rounds/2026-10-24_deep_tidy/moves.csv,history,,"The move table: 1,274 files, old path -> new path, tracked, bytes, sha1",read by tools/move_files.py apply / verify
+rounds/2026-10-24_deep_tidy/move_log_*.tsv,history,,"What actually moved, per host (append-only)",written by tools/move_files.py
+rounds/2026-10-24_deep_tidy/path_map.py,history,,Rewrote old path mentions in live code and docs to the new ones (and checks none are left),history
+rounds/2026-10-24_deep_tidy/verify/,history,,Build manifests and verify reports of the post-tidy A1 and A2 rebuilds,written by build_apkg.py tools/verify_apkg.py
+# ---- review_desk/ ------------------------------------------------------------------------------------------
+review_desk/README.md,live,,The Review Desk SOP (the owner decides on one page; answers in its database),people
+review_desk/items.json,live,,"The open items (id, group, title, question, options, links)",read by review_desk/build.py; edited each round
+review_desk/template.html,live,,The Review Desk page template,read by review_desk/build.py
+review_desk/build.py,live,,Fills the template with the items and screenshots -> review_desk.html (then published as the artifact),run by people from review_desk/
+# ---- sources/ ----------------------------------------------------------------------------------------------
+sources/lt_3000_frequency.csv,source,,PERLSI 3000: Lithuanian press frequency ranks,read by build_study_order_v3.py
+sources/vu_a1a2_lexicon.csv,source,,The official VU A1/A2 lexicon entries,read by build_study_order_v3.py
+sources/opensubtitles_lt_lemmas.csv,source,,Lemma frequencies from Lithuanian subtitles (simplemma),read by build_study_order_v3.py
+# ---- tools/ ------------------------------------------------------------------------------------------------
+tools/check_layout.py,live,,"Checks the working directory against spec §13 / INDEX.md (root, folders, media, old homes, index)",pre-commit hook (--strict); build_apkg.py at the start of every build
+tools/make_index.py,live,,Writes FILES.md from git ls-files + this folder's index_descriptions.csv; --check fails when a tracked file has no description or FILES.md is stale,pre-commit hook (--check); people (python3 tools/make_index.py [--untracked])
+tools/index_descriptions.csv,live,,The hand-kept purpose / status / readers of every tracked file (one row per file or family),read by tools/make_index.py
+tools/style_lock.py,live,,"The style lock: extracts every look-defining constant from code/ + anki/ + fonts/, compares with style/STYLE_LOCK.json",pre-commit hook; build_apkg.py (refuses on drift); tools/spec_release.py
+tools/spec_release.py,live,,"Releases a spec version: bump, changelog line, frozen snapshot, lock update, tag",run by people
+tools/golden_set.py,live,,Builds / checks the golden reference set (style/golden/) from the ledgers,run by people (--status)
+tools/verify_apkg.py,live,,"Proves what changed between two packages: field differences through the key maps, GUIDs, media by sha256",run by people after every build
+tools/apkg_keys_list.py,live,,Per-card list of a package (key -> fields and media) for the release record,run by people
+tools/rename_keys.py,live,,The key namespace tool: --verify checks every live file carries NNNN_slug keys; --apply renames (append-only maps),run by people
+tools/keymap.py,live,,canonical() / aliases() / lookup(): every name a card has ever had and the one it has now,imported by build_recorder.py tools/ingest_takes.py tools/golden_set.py tools/verify_apkg.py; reads data/key_maps/key_map_v*.csv
+tools/ingest_takes.py,live,,"Brings the recorder ZIPs in: converts with ffmpeg to media/audio/<key>.mp3, archives replaced takes, appends data/audio_source.tsv",run by people (--inbox); reads data/recording_list.csv
+tools/build_situations.py,live,,Regenerates code/situations.py from data/restage_bubbles.csv,run by people after editing the CSV
+tools/move_files.py,live,,Moves files by a rules table with a sha1 per file (plan / apply --tracked|--untracked / verify); used by the 2026-10-24 deep tidy,run by people
+tools/smoke_test.sh,live,,"Runs every tool once (lock, layout, index, keys, golden set, builds, recorder, review desk) and stops at the first failure",run by people after any change of layout or tooling
+tools/install_hooks.sh,live,,Links tools/hooks/pre-commit into .git/hooks (once per clone),run by people
+tools/hooks/pre-commit,live,,"The pre-commit hook: style lock, layout (strict), inventory (check), lock staged",git
+# ---- anki/, fonts/, style/ ---------------------------------------------------------------------------------
+anki/go_theme.css,live,,The card CSS (base theme) shipped in the package,read by build_apkg.py; hashed by tools/style_lock.py
+anki/frame_standard.css,live,,"The standard-bands frame CSS (band colour, widths)",read by card_frame.py; hashed by tools/style_lock.py
+anki/back_proposed.css,live,,The proposed back's CSS (the default back since 2026-10-18),read by card_frame.py; hashed by tools/style_lock.py
+anki/templates.md,history,,Notes on the note types and fields as they were documented in 2026-10 (superseded by the spec §6/§7),people
+fonts/_Brygada1918-*.ttf,live,,"The shipped font (regular, italic, bold), bundled in the package as media",read by card_frame.font_media(); hashed by tools/style_lock.py
+fonts/OFL_Brygada1918.txt,live,,The font's licence,people
+fonts/README.md,live,,Which fonts ship and why; the retired pair,people
+fonts/_superseded/,history,,The retired PT Serif + Old Standard TT pair and their licences (used until 2026-10-18),read by code/frame_preview.py for comparisons
+style/STYLE_LOCK.json,generated,,"The fingerprint of the look: 106 look-defining constants with a sha256 each and the overall style hash, plus the spec version",written by tools/style_lock.py update (via spec_release); read by style_lock check / build_apkg.py
+style/golden/manifest.csv,live,,The golden set's list of record: 28 keys with what each one shows of the style,read by tools/golden_set.py tools/rename_keys.py
+style/golden/README.md,live,,What the golden set is for and how it is refreshed,people
+style/golden/*.jpg,generated,1,~800 px copies of the golden pictures for comparison,written by tools/golden_set.py
+style/golden/*.prompt.txt,generated,1,The exact prompt each golden picture was rendered with,written by tools/golden_set.py
+# ---- style_lab/ (owner: kept as a record) ------------------------------------------------------------------
+style_lab/README.md,history,,The style experiments of 2026-10-10/11 that settled the F6.2 look: what each dated folder asked,people
+style_lab/MANIFEST.csv,history,,"Every experiment image: experiment, card, model, prompt variant, quality, cost",people
+style_lab/2026-*/*,history,,"One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac)",people
+style_lab/research/,history,,"Fable's research notes on Lithuanian appearance, iconography and locations (the two live tables moved to data/ on 2026-10-24)",people
+style_lab/scripts/,history,,The probe scripts as they were run in 2026-10-10 experiments,history
+style_lab/tools/papertone2.py,history,,Paper-tone post-processing experiment,history
+# ---- _archive/ ---------------------------------------------------------------------------------------------
+_archive/code/,history,,"Retired code of the bubble era: bubbles.py (speech-bubble tables), build_review.py, driver.py",history
+_archive/data/,history,,"Closed data records: accents_todo_kirtis.csv (no FILL_ME left), deck_fixes.csv (2026-10-11 proposals) and deck_fixes_applied.csv",history
+_archive/docs/,history,,"Superseded documents: GO_STYLE_SPEC, ROADMAP, NEEDS_YOUR_REVIEW, the pre-3.0 VERSIONS and AnkiWeb text, the A2 build README of 2026-10-11, the sentence-card design note",people
+_archive/deprecated/README.md,history,,What is in _archive/deprecated/ and why it was retired,people
+_archive/deprecated/a2_src_2026-10/,history,,"The retired A2-list builder (build_a2.py) and its decision modules (queue/official overrides, additions, lettering, examples_N, staging_N, bubbles_a2), its warnings file and README",history
+_archive/deprecated/build_study_order_v1.py,history,,Study order v1 (2026-10-17),history
+_archive/deprecated/build_study_order_v2.py,history,,Study order v2 (2026-10-17; superseded by v3 on 2026-10-19),history
+_archive/deprecated/code_1.6.1/,history,,The 1.6.1 pipeline modules as shipped,history
+_archive/deprecated/code_1.7/,history,,The 1.7 pipeline modules as shipped,history
+_archive/deprecated/docs_superseded/,history,,Drafts and diffs of the 1.7 era,people
+_archive/deprecated/noun_flashcards.py,history,,The 1.x noun card generator,history
+_archive/deprecated/review_packs_done/,history,,"Review sheets already acted on (A1 priority, P-A)",history
+_archive/deprecated/spec_1.6.1/,history,,The GO style spec of files 1.6.1,people
+_archive/deprecated/wordlist_2.2/master_wordlist.csv,history,,The wordlist as of 2.2,history
+_archive/out_deck_1.5/,history,,Cards and ledger of the 1.5 deck render,history
+_archive/review_packs/,history,,"Review sheets of 2026-10 (A1, duplicates, genders)",history
+# ---- the inbox forwarding stub -----------------------------------------------------------------------------
+a2_build/audio/inbox/README.md,live,,Forwarding note: the inbox is media/audio/_inbox/ (remove this stub after the current recording session),people
+# ---- untracked families (only on the owner's Mac; counted, not listed) -------------------------------------
+media/images/,live,1,The ONE current picture of every card (<key>.png|webp|jpg); not committed (GitHub Releases / AnkiWeb),read by build_apkg.py build_recorder.py qa_images.py tools/golden_set.py; written by the gen.py drivers
+media/images/_history/,history,1,"Every other version of every picture, at its old batch path (shadowed renders, _rerolled/, _superseded/); never read by the build",written by the gen.py drivers (re-rolls)
+media/audio/_inbox/,live,1,Recorder ZIPs waiting to be ingested,read by tools/ingest_takes.py --inbox
+_apkg_media/,cache,1,"Transcoded card pictures for the package, keyed by source hash (<key>_sf2.jpg); regenerate freely",written and read by build_apkg.py
+_qa/,cache,1,The QA gate's cache of model read-backs,written and read by code/qa_images.py
+__pycache__/,cache,1,Python bytecode,python
+_TO_DELETE/,cache,1,"Junk sorted by reason (MANIFEST.csv); the owner deletes, nobody else",people
+_archive/deprecated/recordings_raw/,history,1,Raw recording sessions (masters kept locally; not committed),history
+_archive/deprecated/backups/,history,1,Old backups (not committed),history
+_archive/deprecated/inbox_done/,history,1,Ingested inbox material of the July recordings (not committed),history
+_archive/deprecated/recorders_old/,history,1,Old recorder sheets (not committed),history
+_archive/recent_versions/,history,1,"The bubble pictures replaced on 2026-10-18 (out_phrases_a2, out_phrases), kept on disk",history
+_archive/builds/,history,1,Old packages and release candidates (*.apkg; not committed),history
+_archive/takes/,history,1,"Leftover clips of each ingested recorder ZIP (off_list, superseded) with their manifest rows and the ingest log",written by tools/ingest_takes.py
+rounds/*/page/media/,history,1,The pictures a review page showed (not committed),history
+rounds/*/work/,history,1,A round's working files (not committed),history
+rounds/*/_chk/,history,1,A round's check images (not committed),history
+rounds/*/test/,history,1,Test renders of the round (not committed),history
+reports/frame_preview/html/,cache,1,HTML and media the frame previews were screenshotted from,written by code/frame_preview.py
+style_lab/*/,history,1,Experiment images and sheets kept on the Mac only,people
+fonts/review/,cache,1,Review faces fetched by frame_preview.py --fetch-fonts,written by code/frame_preview.py
+sources/*.pdf,source,1,The source PDFs of the word lists (not committed),people
+_cloud_media/,cache,1,Cloud clone only: 1024 px mirrors of the F6.2 and A2 renders (no pictures on the clone otherwise),read by tools/golden_set.py as a last resort
+_cloud_out/,cache,1,Cloud clone only: scratch output,cache
+.azure_key.txt,secret,,Azure TTS key,read by the azure-neural scripts of 2026-07 (archived); never shared
+.openai_key.txt,secret,,OpenAI key,read by code/go_generator.py code/qa_images.py and the gen.py drivers; never shared
+.github_token,secret,,GitHub token (push from the Mac),read by the git credential helper on the Mac; never shared
+.huggingface_token,secret,,Hugging Face token,never shared
+*.apkg,generated,1,A built package at the root (the current release stays here; older ones go to _archive/builds/),written by build_apkg.py

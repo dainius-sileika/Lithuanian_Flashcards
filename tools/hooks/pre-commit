@@ -14,6 +14,12 @@ if ! python3 tools/check_layout.py --strict --quiet; then
   echo "pre-commit: refused (layout). Put the file where INDEX.md says, or add the new top-level item to INDEX.md." >&2
   exit 1
 fi
+# the inventory (FILES.md, spec §13): every tracked file has a description in tools/index_descriptions.csv and
+# FILES.md is what tools/make_index.py would write now; otherwise the commit is refused
+if ! python3 tools/make_index.py --check; then
+  echo "pre-commit: refused (inventory). Add the file's row to tools/index_descriptions.csv, run python3 tools/make_index.py, git add FILES.md." >&2
+  exit 1
+fi
 # a lock changed in the working tree but not staged would leave the commit with a stale lock
 if ! git diff --quiet -- style/STYLE_LOCK.json; then
   echo "pre-commit: style/STYLE_LOCK.json is modified but not staged; git add it." >&2

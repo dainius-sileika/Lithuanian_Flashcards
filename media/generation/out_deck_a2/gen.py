@@ -1,4 +1,4 @@
-"""A2 picture cards (2026-10-11): every IMG row of a2_build/a2_wordlist.csv drawn by
+"""A2 picture cards (2026-10-11): every IMG row of data/a2_wordlist.csv drawn by
 the production prompt path (a2_adapter.build_call_a2 -> go_generator.build_prompt,
 the A2 twin of deck_builder.build_call) on the production model
 (gpt-image-2.5-sunburst, medium, 1536x1024) into out_deck_a2/<id>.png, where
@@ -26,7 +26,7 @@ import csv, json, os, sys, time, base64, threading
 from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))              # media/generation/out_deck_a2
 ROOT = os.path.dirname(os.path.dirname(HERE))
-os.chdir(ROOT); sys.path.insert(0, ROOT)
+os.chdir(ROOT); sys.path[:0] = [os.path.join(ROOT, "code"), ROOT]      # modules in code/ since 2026-10-24 (spec §13)
 import go_generator as g
 sys.path.insert(0, os.path.join(ROOT, "media", "generation", "out_deck_a2")); import a2_adapter as A
 from openai import OpenAI

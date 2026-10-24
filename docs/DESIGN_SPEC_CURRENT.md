@@ -6,7 +6,7 @@ This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
 when a doc and the code disagree, the code and the most recent owner decision win
 (`docs/SPEC_RECONCILIATION_2026-10-19.md` lists the disagreements found). Older specs
-(`_archive/docs/GO_STYLE_SPEC.md`, `ROADMAP.md`, `VERSIONS.md`, the `a2_build/*.md` plans) are history.
+(`_archive/docs/GO_STYLE_SPEC.md`, `ROADMAP.md`, `VERSIONS.md`, the 2026-10 plans now in `docs/` and `docs/decisions/`) are history.
 Read this file first in a new session; change the code, then this file, in the same commit. The map of the
 working directory — where every file is, how to build, record, verify — is `INDEX.md` at the root (§13).
 
@@ -41,7 +41,7 @@ working directory — where every file is, how to build, record, verify — is `
   each a clearly different moment), `INSET_MEANING_RULE` (an inset never votes for a neighbouring word),
   `PANEL_CONTINUITY_RULE` (deck-wide since 2026-10-17: repeated scenes keep people, clothes, positions and
   fixtures). Walking/running: `MOTION_STRIP_RULE` (`deck_builder.MOTION_STRIP_ROWS`).
-- **Direction of movement** (owner 2026-10-19, "Yes, as drafted" — `a2_build/round4/answers.md` §4; spec 3.1.0):
+- **Direction of movement** (owner 2026-10-19, "Yes, as drafted" — `rounds/2026-10-19_fixes_round4/answers.md` §4; spec 3.1.0):
   `DIRECTION_RULE` — when the **main figures** walk, run, ride, drive or carry something from one place to another
   they travel from the viewer's LEFT toward the RIGHT, the way a page is read; figures who stand, sit or talk are not
   affected, and it **applies to the main actors only, never to background figures** (owner: "it applies only to the
@@ -54,12 +54,12 @@ working directory — where every file is, how to build, record, verify — is `
   `a2_adapter.build_call_a2`, `gen_phrases.build_situation_call`). **New renders only:** no card is re-rolled for
   this rule ("No need to retcon old cards").
 - **Real places** (F6.1): a `Setting:` line from `go_settings.assign()` —
-  `style_lab/research/settings_assignments.csv` over `style_lab/research/location_bank.json`
+  `data/settings_assignments.csv` over `data/location_bank.json`
   (free Lithuania, 1981; anachronisms tolerated where the GO theme holds — owner, Oct 2026).
 
 ## 2. Lettering and emblems
 - **No text by default** (`NO_TEXT_RULE`). Lettering is allowed **only** where a row declares it in its
-  `card_text` column (`master_wordlist.csv`: 22 A1 rows; `a2_build/a2_wordlist.csv`: 98 rows), rendered
+  `card_text` column (`master_wordlist.csv`: 22 A1 rows; `data/a2_wordlist.csv`: 98 rows), rendered
   through `go_generator._exact_text_rule()` (unconditional spec, the target word excluded), and
   **verified by QA rule 3** (`qa_images.py`: every quoted string must read back exactly). Prices are in
   **litai** (`"2 Lt 40 ct"`), never roubles. Glyph cards (letter/consonant/vowel) use `GLYPH_RULE`.
@@ -68,7 +68,7 @@ working directory — where every file is, how to build, record, verify — is `
   could plausibly show (no Soviet-convention titles) — with its title **declared** in the row's `card_text`
   and **read back exactly by QA rule 3**. Blank posters and empty frames are avoided. First uses: A2-1191
   *šiaip sau* — `"VELNIO NUOTAKA"` (Žebriūnas, 1974); A2-1360 *spektaklis* — `"MILŽINO PAUNKSMĖ"` (Sruoga,
-  1932) (`a2_build/round4/answers.md`, appendix).
+  1932) (`rounds/2026-10-19_fixes_round4/answers.md`, appendix).
 - **Emblems:** default `FLAG_RULE` — at most a small tricolour, not on every card, no heraldry.
   `FLAG_RULES["eu"]` / `["imperial"]` on the measurement cards 334–339 (`deck_builder.FLAG_OVERRIDE`).
   `FLAG_RULES["emblem"]` (Cross of Vytis / Vytis allowed) is routed to **097 prezidentas only**
@@ -81,18 +81,18 @@ working directory — where every file is, how to build, record, verify — is `
 ## 3. Historical precedents and likenesses (2026-10-18/19)
 - `PRECEDENT_RULE` evokes a real Lithuanian thing by features only (never a name or plaque);
   `LIKENESS_RULE` asks for a named face at a named period on listed cards only. Per-card values:
-  `historical.py` reading `a2_build/historical/implementation/likeness_args.json` (`active`:
+  `historical.py` reading `data/likeness_args.json` (`active`:
   012 lėktuvas = the Lituanica with Darius and Girėnas, 035 teismas, A2-1297, A2-1769, 113 gydytojas,
   122 menininkas (Čiurlionis), A2-0782, 138 komanda (1939 team); 123 autorius and **097 prezidentas**
   kept as shipped and inactive — 097's Adamkus test render was withdrawn by the owner in round 4,
-  2026-10-19). 26 real A2 places adopted (`a2_build/historical/real_places.md`, `settings_rows.csv`);
+  2026-10-19). 26 real A2 places adopted (`rounds/2026-10-17_historical/real_places.md`, `settings_rows.csv`);
   round 4 reverted four of the roll-out's place rows at the owner's word (106, 107 State Stadium,
-  A2-1326 post-office inset, A2-0085 railway station hall — rows marked REVERTED). Rules text: `a2_build/historical/implementation/RULES_precedent_likeness.md`
+  A2-1326 post-office inset, A2-0085 railway station hall — rows marked REVERTED). Rules text: `rounds/2026-10-17_historical/implementation/RULES_precedent_likeness.md`
   (applied; the code is the truth).
 
 ## 4. Situation grammar (bubble-free phrase cards, 2026-10-17)
 - Every former speech-bubble card is routed by `situations.py` (GENERATED by
-  `a2_build/src/build_situations.py` from `a2_build/restage_bubbles.csv`; never hand-edited) to one of
+  `tools/build_situations.py` from `data/restage_bubbles.csv`; never hand-edited) to one of
   three layouts: `situation` (one calm scene), `situation_2` (two panels, ask → visible answer, same two
   people), `sequence` (the one three-panel strip). `generate(..., situation=True)` swaps `NO_TEXT_RULE`
   for `NO_TEXT_RULE_SITUATION` + `NO_BUBBLE_RULE`; **no bubbles, no "?"**, no `exclude` word.
@@ -118,7 +118,7 @@ working directory — where every file is, how to build, record, verify — is `
 
 ## 6. Card front and back (v2.1 "standard bands", `card_frame.py`, `anki/frame_standard.css`)
 - The drawn frame is cropped off a copy of each picture (`frame_crop.py`, `FRAME_CROP_VERSION = "2"`;
-  sources never written; failures → `build_reports/frame_flags.csv`) and redrawn in CSS at one width.
+  sources never written; failures → `reports/frame_flags.csv`) and redrawn in CSS at one width.
 - **Top band:** Lithuanian section label `"N skyrius · <label>"` from `card_frame.SECTIONS` (I žmonės … XX
   sakiniai; XVI *daiktai ir sąvokos*, XVIII *pagalbiniai žodžiai* — owner 2026-10-19), chosen by the
   note's Category field and `ROUTE_SECTIONS` tags (`lt::kind::phrase` → XIX frazės, `lt::kind::sentence` → XX
@@ -129,7 +129,7 @@ working directory — where every file is, how to build, record, verify — is `
   cloze sentence sits on a paper panel inside the frame (or under the picture on sentence cards).
 - **Back (default since 2026-10-18):** `card_frame.proposed_backs("thumb")` + `anki/back_proposed.css`
   — thumbnail picture, word, stressed `pron`, audio, gender, forms, gloss, then the **usage line**
-  (field `usage`/`Usage`, from `a2_build/context_notes.csv`, confidence high/medium/owner-approved,
+  (field `usage`/`Usage`, from `data/context_notes.csv`, confidence high/medium/owner-approved,
   `build_apkg.USAGE_CONFIDENCE`). **Adjectives** show both forms as `didelis ♂ · didelė ♀`
   (`build_apkg.adjective_forms`). `--back current` and `--frame drawn` keep the older looks reachable.
 - **Typography:** Brygada 1918 regular/italic/bold throughout, shipped as media `fonts/_Brygada1918-*.ttf`
@@ -140,27 +140,27 @@ working directory — where every file is, how to build, record, verify — is `
 
 ## 7. Content and data
 - A1 base: `cards_anki.csv` (521 cards, built from `master_wordlist.csv` + `card_notes.json` staging; its
-  `ff_no` column is the Fluent Forever row, a data join only). A2 list: `a2_build/a2_wordlist.csv` (first built
+  `ff_no` column is the Fluent Forever row, a data join only). A2 list: `data/a2_wordlist.csv` (first built
   by `build_a2.py`, edited directly since 2026-10-11; the builder is retired to `_archive/deprecated/a2_src_2026-10/`;
-  `a2_build/id_map.csv` registers the current keys). Sentences: `a2_build/sentences/sentences.csv`. Keys: §12.
+  `data/id_map.csv` registers the current keys). Sentences: `data/sentences/sentences.csv`. Keys: §12.
 - **Image resolution** (`build_apkg.IMAGE_DIR`, default `media/images`; since 2026-10-24, §13): the picture of
   card `<key>` is `media/images/<key>.png|webp|jpg` — one folder, one file per key, no search order. (Until
   2026-10-24 the build searched six batch folders first-hit — A1 `out_phrases_v3, out_deck_f62, images`; A2
   `out_phrases_v3/round2, out_phrases_v3, out_deck_a2, out_phrases_a2, …`; sentences `out_phrases_v3,
-  out_deck_sent, …` — and the winners were moved into `media/images/` by `a2_build/tidy/moves_2026-10-24.csv`,
+  out_deck_sent, …` — and the winners were moved into `media/images/` by `rounds/2026-10-24_tidy/moves_2026-10-24.csv`,
   so no package content changed.) The 1.x WebP masters are history (`media/images/_history/images/`); the
   pre-F6.2 PNGs are in `_TO_DELETE/out_deck/`. Audio: `media/audio/<key>.mp3` and `<key>_s.mp3`
   (`build_apkg.AUDIO_DIR`; `audio/` + `audio_a2/` merged 2026-10-24).
-- **Merges** (owner 2026-10-19, `a2_build/merged_keys.csv`): A2-1187 Sudie → A2-0354 Viso gero (now
+- **Merges** (owner 2026-10-19, `data/merged_keys.csv`): A2-1187 Sudie → A2-0354 Viso gero (now
   `0047_viso_gero`, back note), A2-1149 atsargiai → A2-0385 Atsargiai! (`0344_atsargiai`), A2-1944 → A2-1995
   (`2221_kaip_rasoma`), A2-1958 → A2-1991 (`1727_man_labiau_patinka_arbata`). The absorbed id stays reserved
   under its old name (`id_map.csv` `merged_into`; `status=merged` in the key map). **B1 deferrals:** 31 rows in
-  `a2_build/deferred_B1.csv`, out of the A2 build.
-- **Prašom + infinitive** (owner 2026-10-18, `a2_build/PRASOM_SWITCH_2026-10-18.md`): the four postposed
+  `data/deferred_B1.csv`, out of the A2 build.
+- **Prašom + infinitive** (owner 2026-10-18, `docs/decisions/PRASOM_SWITCH_2026-10-18.md`): the four postposed
   *prašau* phrases (`0521_prasom_pakartoti`, `0565_prasom_uzrasyti`, `0203_prasom_kalbeti_leciau`,
   `1029_prasom_sestis`; formerly A2-0902/0903/0375/1166) and two cloze examples now read *Prašom pakartoti* etc.
 - `2136_ar_galite_ka_nors` (formerly A2-0964): *Ar galite ką nors parekomenduoti?* (owner 2026-10-19).
-- Stress marks are sourced (Wiktionary / kirtis.info / LKŽ), never generated; `a2_build/stress_58_resolved.csv`.
+- Stress marks are sourced (Wiktionary / kirtis.info / LKŽ), never generated; `rounds/2026-10-19_fixes_round3/stress_58_resolved.csv`.
 
 ## 8. Study order v3 (`build_study_order_v3.py` → `study_order.csv`, adopted 2026-10-19; v2 2026-10-17 is history)
 - Usefulness first, as v2: a hand-ordered `SURVIVAL` list, then score = 0.6·ln(subtitle rank) + 0.4·ln(press rank)
@@ -175,19 +175,19 @@ working directory — where every file is, how to build, record, verify — is `
 - **Pairs:** `PIN_AFTER` (batonas after duona, the family pairs …), the Fluent Forever adjective pairs and the
   list's "pair with" `PAIRS` sit adjacent. **Confusables:** same headword `SEPARATION 60`, look-alikes (edit
   distance 1, ≥ 4 letters, paradigms exempt) `LOOKALIKE_SEPARATION 30`. Sequences keep order.
-- **Re-tiers** `a2_build/study_order/retier_v3.csv` (49 cards, one reason each; `--apply-retier` writes the
-  `level` into `cards_anki.csv`, `master_wordlist.csv` (by its `key` column), `a2_build/a2_wordlist.csv`): 21 A2 → A1
+- **Re-tiers** `data/retier_v3.csv` (49 cards, one reason each; `--apply-retier` writes the
+  `level` into `cards_anki.csv`, `master_wordlist.csv` (by its `key` column), `data/a2_wordlist.csv`): 21 A2 → A1
   (words A1 sentences need: manyti, vėluoti, likti …, and dep37 of 2026-10-20: muzika, keltis, tiesa, teisus,
   šviesti; split antonym partners piktas, abi, linksmas, šiemet), 28 A1 → A2 (rare Fluent Forever leftovers:
   plaštaka, lydyti, išlenktas …). The 62-item retag of 2026-10-17 stands.
 - **Audit as code:** `--audit FILE` measures any order (coverage, forward dependencies, pairs, confusables,
   pacing, Spearman vs the corpora); `--report` compares the new order with the one it replaces
-  (`a2_build/study_order/AUDIT_v3.txt`, `REPORT_order_v3.md`). v2 → v3: forward dependencies 172 → 43 (37 left
+  (`reports/study_order/AUDIT_v3.txt`, `REPORT_order_v3.md`). v2 → v3: forward dependencies 172 → 43 (37 left
   are A1 sentences needing an A2-only word), pairs apart 14 → 0, longest tail run 119 → 11. dep37 (2026-10-20,
-  `a2_build/study_order/dep37_plan.md`, `AUDIT_v3_1.txt`): 5 words to A1 and 27 example sentences reworded →
+  `rounds/2026-10-19_dep37/dep37_plan.md`, `AUDIT_v3_1.txt`): 5 words to A1 and 27 example sentences reworded →
   **0 A1 cards need an A2-only word**, 6 forward dependencies left (4 A1-internal cycle cases, 2 A2).
-- **Recording order** `a2_build/study_order/recording_order_v3.csv`: A1 first, then A2, each in study order.
-- Deck v3.0 is delete-and-reimport. Keys and GUIDs are **not yet frozen**: they lock once both A1 and A2 are signed off by the owner (owner, 2026-10-19: "day 0 of release"). Until then a key may change when that gives a cleaner deck; record every change in `a2_build/merged_keys.csv`, a key map (§12) or the plan that made it. After the lock, keys and GUIDs never move.
+- **Recording order** `data/recording_order_v3.csv`: A1 first, then A2, each in study order.
+- Deck v3.0 is delete-and-reimport. Keys and GUIDs are **not yet frozen**: they lock once both A1 and A2 are signed off by the owner (owner, 2026-10-19: "day 0 of release"). Until then a key may change when that gives a cleaner deck; record every change in `data/merged_keys.csv`, a key map (§12) or the plan that made it. After the lock, keys and GUIDs never move.
 - **Since the rename (2026-10-20) `study_order.csv` is the authority**, not the builder: the key numbers were
   taken from it, and the builder now breaks ties on those numbers, so a regeneration need not reproduce it.
   `build_apkg` writes the position to `due`.
@@ -213,7 +213,7 @@ working directory — where every file is, how to build, record, verify — is `
   `items.json` → `build.py` → republish; answers in the page db; **every message to the owner ends with a
   link to the Review Desk** and to any page he must open. Nothing ships without his verdict on a review page.
 - **Planner / executor split:** Fable plans and judges (staging, rules, spec, review pages); Opus executes
-  (renders, edits, builds) from written plans (`a2_build/PLAN_*.md`, `A1_WRAPUP.md` tags owner/planner/executor).
+  (renders, edits, builds) from written plans (`docs/PLAN_*.md`, `docs/A1_WRAPUP.md` tags owner/planner/executor).
 - Positive prompting (state what to draw; never a condition in a prompt), audit before scale, one canonical
   spec (this file), version-track instead of overwrite.
 - **Fix by whole re-roll, not masked edits, unless the owner asks for an edit** (owner 2026-10-19, round 5: "this
@@ -237,11 +237,11 @@ working directory — where every file is, how to build, record, verify — is `
 - **Golden set** `style/golden/` (24 exemplars + prompts): any new model or engine must reproduce them to
   the owner's satisfaction before adoption (`style/golden/README.md`).
 - **Linkage:** each package build records APKG version, spec version, style hash, commit, counts and a
-  media hash in `build_reports/builds/<package>.json` and in the deck description; `docs/VERSIONS.md` is the
+  media hash in `reports/builds/<package>.json` and in the deck description; `docs/VERSIONS.md` is the
   register deck ↔ spec ↔ style; every ledger row written since 3.0.0 carries `spec_version` and `style_hash`.
 - Procedure for any change to the aesthetic: `docs/HOW_TO_CHANGE_THE_LOOK.md`.
 
-## 12. Keys, plate numbers and tags (2026-10-20; `tools/rename_keys.py`, `a2_build/rename/`)
+## 12. Keys, plate numbers and tags (2026-10-20; `tools/rename_keys.py`, `rounds/2026-10-20_rename/`)
 - **One key namespace.** Every card key is `NNNN_slug`: a four-digit number and the ASCII-folded headword
   (phrases and sentences: their first words, ≤ 4 words / 32 characters; `rename_keys.slug`). The number is
   the card's study-order position when the key was minted (`study_order.csv`, A1 block 0001–1191 then A2 block
@@ -254,7 +254,7 @@ working directory — where every file is, how to build, record, verify — is `
   gives max number in use + 1 and the slug; the card is scheduled wherever the order puts it, so after
   additions the number is a stable name, not a position.
 - **History of names.** Every earlier name of a card (`001_suo`, `A2-0348`, `S-0001`, media aliases such as
-  `265_lupos`) is in `a2_build/rename/key_map_v<N>.csv` (append-only; never edited or deleted). Append-only
+  `265_lupos`) is in `data/key_maps/key_map_v<N>.csv` (append-only; never edited or deleted). Append-only
   records (ledgers, gen logs, QA sheets, build manifests, reports, round folders, the spec history, the
   proofreading sheet sent before the rename) are never rewritten; they are read through `tools/keymap.py`
   (`canonical`, `canonical_take`, `aliases`, `lookup`). Live data carries the current key only.
@@ -270,7 +270,7 @@ working directory — where every file is, how to build, record, verify — is `
 - **Tags.** Hierarchical tags per note: `lt::level::A1|A2`; `lt::kind::picture|phrase|cloze|sentence`;
   `lt::pos::noun|verb|adjective|adverb|pronoun|numeral|preposition|conjunction|question` (words only; phrases
   and sentences have none); `lt::topic::<section slug>` — one of the twenty top-band sections, ASCII-slugged
-  (`zmones` … `sakiniai`), from `a2_build/rename/topic_map_v1.csv` (category → topic; an unmapped category
+  (`zmones` … `sakiniai`), from `data/key_maps/topic_map_v1.csv` (category → topic; an unmapped category
   fails the build). The topic is always the section the card's top band shows: the label is chosen by the
   Category field, overridden to XIX/XX by `lt::kind::phrase` / `lt::kind::sentence` (`card_frame.ROUTE_SECTIONS`),
   so phrase notes are tagged `lt::topic::frazes` and sentence notes `lt::topic::sakiniai` whatever their category.
@@ -281,36 +281,74 @@ working directory — where every file is, how to build, record, verify — is `
   compares a package with one built before a rename (GUIDs changed exactly as mapped; fields modulo key,
   number, media names and tags) and checks plate = key number and the tags on every note.
 
-## 13. Layout of the working directory (2026-10-24; `INDEX.md`, `tools/check_layout.py`)
-Owner 2026-10-24: "why do we have batches of images over several directories … write an index of where what is."
-The layout is part of the spec so that it is versioned with the look and a future reader finds things.
-- **One home per medium, named by key.** The current picture of every card is `media/images/<key>.<ext>` and
-  nothing else; its audio is `media/audio/<key>.mp3` (+ `<key>_s.mp3`). The build (`build_apkg.IMAGE_DIR`,
-  `AUDIO_DIR`), the recorder, the ingest tool and the QA gate read these two folders and no other.
-- **History beside it, never mixed in.** Every other version of a picture is under `media/images/_history/` at
-  its old path (`<batch>/<key>.png` for a render another batch outranked, `<batch>/_rerolled/<key>.r<n>.png`,
-  `<batch>/_superseded/…`, `images/<key>.webp` for the 1.x masters); every replaced take is in
-  `media/audio/_history/`. The build never reads `_history/`. A folder named `_history`, `_rerolled` or
-  `_superseded` anywhere else under `media/` or at the root is a layout error (`fonts/_superseded/`, the retired
-  font pair, predates this rule and stays).
-- **Generation records separate from pictures.** Each render batch keeps its text in
-  `media/generation/<batch>/`: `ledger.csv` (every prompt; last row per key = the render that batch considers
-  current), `plan.json`, `cards.csv`, `gen_log.jsonl`, QA sheets, README, and its `gen.py` driver, which writes
-  new pictures straight to `media/images/` and re-rolls to `_history/<batch>/_rerolled/`. The batch names are the
-  historical ones (`out_deck_f62`, `out_deck_a2`, `out_deck_sent`, `out_phrases_v3`, `out_phrases_v3/round2`,
-  `out_phrases_a2`), so every older document still reads; `a2_build/tidy/moves_2026-10-24.csv` is the old→new map.
-- **The root holds entry points, live code and live data only**: `build_apkg.py`, `build_recorder.py`,
-  `build_study_order_v3.py`, the pipeline modules they import, the live data files (`cards_anki.csv`,
-  `master_wordlist.csv`, `card_notes.json`, `study_order.csv`, `audio_source.tsv`, `wordlist_a2_pending.csv`),
-  `recorder_A2.html`, the current release package, `README.md`, `INDEX.md`, `LICENSE`, `.gitignore`, the secret
-  key files (gitignored, never shared) and the caches `_apkg_media/`, `_qa/`, `__pycache__/`. Superseded code and
-  data go to `_archive/`, junk to `_TO_DELETE/<reason>/` for the owner to delete. Everything else lives in a
-  named top-level folder (`media/`, `docs/`, `a2_build/`, `tools/`, `anki/`, `fonts/`, `style/`, `build_reports/`,
-  `review_desk/`, `a2_rebase/`, `sources/`, `style_lab/`, `_archive/`, `_TO_DELETE/`), each described in `INDEX.md`.
-- **The index is kept current.** `INDEX.md` describes every top-level item; `tools/check_layout.py` (run by the
-  pre-commit hook and at the start of `build_apkg.py`) warns when a file appears at the root or in `media/` that
-  the layout does not expect, and when `INDEX.md` is older than a top-level change. A new top-level item means a
-  new line in `INDEX.md` in the same commit.
+## 13. Layout of the working directory (2026-10-24; `INDEX.md`, `FILES.md`, `tools/check_layout.py`, `tools/make_index.py`)
+Owner 2026-10-24: "why do we have batches of images over several directories … write an index of where what is";
+then "go do a deeper tidy, for complete coherency; make a total index." The layout is part of the spec so that it
+is versioned with the look and a future reader finds things. Two tidies that day: the morning one gave the media
+one home; the afternoon one (the "deep tidy") gave everything else one.
+- **The root holds the programs you run and the things you ship, nothing else**: the three entry points
+  `build_apkg.py`, `build_recorder.py`, `build_study_order_v3.py`; `recorder_A2.html` (the owner's sheet, this name,
+  this place); the current release package; `README.md`, `INDEX.md`, `FILES.md`, `LICENSE`, `.gitignore`; the secret
+  key files (gitignored, never shared); and the caches `_apkg_media/`, `_qa/`, `__pycache__/`. Every other file
+  lives in one of the named top-level folders below, each described in `INDEX.md` §1.
+- **`code/`** — the pipeline modules (`card_frame.py`, `frame_crop.py`, `frame_preview.py`, `go_generator.py`,
+  `go_grammars.py`, `go_settings.py`, `deck_builder.py`, `verb_flashcards.py`, `situations.py`, `gen_phrases.py`,
+  `historical.py`, `qa_images.py`), Python only. They are imported by bare name: the entry points, the tools and the
+  `gen.py` drivers put `code/` (and `tools/`) on `sys.path`. A module finds the working directory as the parent of
+  its own folder and reads data from `data/`; nothing depends on the current directory except the entry points,
+  which are run from the root.
+- **`data/`** — every live data file, no code: the card lists (`cards_anki.csv`, `a2_wordlist.csv`,
+  `sentences/sentences.csv`), their staging (`master_wordlist.csv`, `card_notes.json`, `a2_staging.json`,
+  `sentences/staging.json`, `restage_bubbles.csv`), the backs (`context_notes.csv`), the order (`study_order.csv`,
+  generated), the audio record (`audio_source.tsv`, `recording_list.csv` generated, `recorder_A2_afb2ebe2_script.json`),
+  the list bookkeeping (`merged_keys.csv`, `deferred_B1.csv`, `id_map.csv`, `retier_v3.csv`, `retag_A1.csv`,
+  `recording_order_v3.csv` generated, `wordlist_a2_pending.csv`), the key history **`key_maps/`** (§12, append-only, +
+  `topic_map_v1.csv`), and the engine's tables (`likeness_args.json`, `location_bank.json`, `settings_assignments.csv`).
+- **`media/`** — one home per medium, named by key. The current picture of every card is `media/images/<key>.<ext>`
+  and nothing else; its audio is `media/audio/<key>.mp3` (+ `<key>_s.mp3`). The build (`build_apkg.IMAGE_DIR`,
+  `AUDIO_DIR`), the recorder, the ingest tool and the QA gate read these two folders and no other. **History
+  beside it, never mixed in:** every other version of a picture is under `media/images/_history/` at its old path
+  (`<batch>/<key>.png` for a render another batch outranked, `<batch>/_rerolled/<key>.r<n>.png`,
+  `<batch>/_superseded/…`, `images/<key>.webp` for the 1.x masters); every replaced take is in `media/audio/_history/`.
+  The build never reads `_history/`. **The inbox** for the owner's recorder ZIPs is `media/audio/_inbox/`
+  (`tools/ingest_takes.py --inbox`). **Generation records separate from pictures:** each render batch keeps its text
+  in `media/generation/<batch>/` (`ledger.csv` — every prompt, last row per key = that batch's current render —
+  `plan.json`, `cards.csv`, `gen_log.jsonl`, QA sheets, README, its `gen.py` driver, which writes new pictures
+  straight to `media/images/` and re-rolls to `_history/<batch>/_rerolled/`). The batch names are the historical
+  ones (`out_deck_f62`, `out_deck_a2`, `out_deck_sent`, `out_phrases_v3`, `out_phrases_v3/round2`, `out_phrases_a2`).
+  A folder named `_history`, `_rerolled` or `_superseded` anywhere else under `media/` or at the root is a layout
+  error (`fonts/_superseded/`, the retired font pair, predates this rule and stays).
+- **`docs/`** — this spec and its frozen history (`spec_history/`), `VERSIONS.md`, `HOW_TO_CHANGE_THE_LOOK.md`,
+  the playbook, `RECORDING_GUIDE.md`, the plans (`A1_WRAPUP.md`, `PLAN_A2_completion.md`), the AnkiWeb text, the old
+  changelog, the reconciliation, and `decisions/` (dated owner decisions and the superseded proposals the code's
+  comments still cite). **`reports/`** — what the tools report: `builds/` (manifest, verify report and per-card list
+  of every package), the frame-detection results, the study-order audits, screenshot sets, the hand scan.
+  **`rounds/`** — one dated folder per round of work, `YYYY-MM-DD_<lower_snake_name>/`, each with its README: review
+  pages, QA sheets, applied data patches, logs, plans, verify reports of that round. Everything in `rounds/` is a
+  closed record. **`tools/`** — maintenance tools and the hooks. **`sources/`** — third-party lists. `review_desk/`,
+  `anki/`, `fonts/`, `style/`, `style_lab/` as before. **`_archive/`** — retired code, documents, data and packages;
+  **`_TO_DELETE/<reason>/`** — junk for the owner to delete. An underscore marks what is not part of the live tree.
+- **Names.** Folders are `lower_snake_case`; dated folders are `YYYY-MM-DD_<name>`; no folder shares a stem with
+  a file beside it (there is no `data/study_order/` next to `data/study_order.csv`). A file keeps its name when it
+  moves, so every older document still names it.
+- **Records keep the paths of their time.** Ledgers, QA sheets, round folders, build manifests and the dated
+  rows of the registers are not rewritten when something moves (as with keys, §12); the move tables are the map:
+  `rounds/2026-10-24_tidy/moves_2026-10-24.csv` (3,239 media files) and `rounds/2026-10-24_deep_tidy/moves.csv`
+  (1,274 files), one row per file with its sha1, written by `tools/move_files.py`. Live code and live documents
+  are rewritten to the new paths in the same commit.
+- **Three guards keep it so**, all run by the pre-commit hook (`sh tools/install_hooks.sh` once per clone):
+  `tools/style_lock.py check` (§11); `tools/check_layout.py --strict` (a tracked file in the wrong place, an old
+  folder coming back, an undated round, a top-level item `INDEX.md` does not name); and `tools/make_index.py
+  --check` — **`FILES.md`, the complete inventory**, generated from `git ls-files` and the hand-kept table
+  `tools/index_descriptions.csv` (path, status live / generated / history / cache / secret / source, purpose, who
+  reads and writes it; untracked folders by count), is refused stale, and a tracked file without a description
+  refuses the commit. `build_apkg.py` prints the layout warnings at the start of every build. A new top-level item
+  means a new line in `INDEX.md` §1 and in `check_layout.TOP_DIRS`, in the same commit.
+- **A move goes through `tools/move_files.py`** (plan from a rules table → one row per file with sha1 → `git mv`
+  for tracked files in a clone outside Proton, `os.rename` for untracked files on the Mac → `verify`), then the
+  path mentions in live code and documents, then this section through `tools/spec_release.py` (a patch bump: paths
+  are not the look; the style hash does not change). Nothing is deleted; a file whose time is over goes to
+  `_archive/`, junk to `_TO_DELETE/<reason>/`.
 
 ## Spec changelog
 - **3.4.1 — 2026-10-24.** paths only: media/ layout (one home per medium, history beside it, generation records separate), §13 layout of the working directory, INDEX.md and tools/check_layout.py; §4/§7/§9/§10/§12 path wording; no look-defining value changed

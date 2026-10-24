@@ -1,7 +1,7 @@
 # VERSIONS — deck ↔ spec ↔ style register
 
 One row per package version. From spec 3.0.0 on, every build writes its row's facts into
-`build_reports/builds/<package>.json` (date, commit, spec version, style hash, counts, media hash) and
+`reports/builds/<package>.json` (date, commit, spec version, style hash, counts, media hash) and
 into the deck description inside the `.apkg`; copy them here when a package is released. The style hash
 is the short form of `style/STYLE_LOCK.json` → `style_hash` (`python3 tools/style_lock.py show`).
 Spec versions are tagged `spec-vX.Y.Z`; frozen copies live in `docs/spec_history/`. Rows before 3.0.0

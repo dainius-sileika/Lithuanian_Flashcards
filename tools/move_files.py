@@ -211,10 +211,13 @@ def cmd_verify(a):
             continue
         hn = sha1(new)
         if hn != h:
-            blob = subprocess.run(["git", "show", f"HEAD:{new}"], cwd=ROOT, capture_output=True).stdout if int(r["tracked"]) else b""
-            if int(r["tracked"]) and blob and hashlib.sha1(blob).hexdigest() == hn:
+            # a tracked file edited for the new layout: fine when the file is exactly what git holds at the new
+            # path (committed, HEAD) or what is staged for the commit being prepared (the index)
+            blobs = [subprocess.run(["git", "show", f"{ref}{new}"], cwd=ROOT, capture_output=True).stdout
+                     for ref in ("HEAD:", ":")] if int(r["tracked"]) else []
+            if any(b and hashlib.sha1(b).hexdigest() == hn for b in blobs):
                 ok += 1
-                print("EDITED (matches git HEAD at the new path)", new)
+                print("EDITED (matches git at the new path)", new)
             else:
                 bad += 1
                 print("BYTES DIFFER", new)

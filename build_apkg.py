@@ -10,7 +10,7 @@ grammatical forms (noun genitive / verb principal parts / adjective feminine),
 and the English gloss. Media (webp + mp3) is bundled into the .apkg.
 
 A2 (2026-10-11): the same build also reads the A2 list (A2_LIST, default
-a2_build/a2_wordlist.csv; set A2_LIST="" to skip it). Its IMG and PHRASE rows become
+data/a2_wordlist.csv; set A2_LIST="" to skip it). Its IMG and PHRASE rows become
 picture cards of the same note type once their image exists (looked up by id in
 A2_IMAGE_DIRS, since 2026-10-24 the single folder media/images/); its CLOZE and PAIR
 rows become native Anki cloze notes ("Lietuvių GO Cloze") built from example_lt,
@@ -23,7 +23,7 @@ COPY of each picture (frame_crop.py; the sources are never written) and the note
 redraw the frame in CSS at one fixed width (card_frame.py + anki/frame_standard.css):
 top band = section label, bottom band = "pav. N" · leader · English caption. Brygada 1918
 (regular, italic, bold; 2026-10-18) ships as media (fonts/). Pictures where detection fails fall back
-to a fixed-percentage crop and are listed in build_reports/frame_flags.csv.
+to a fixed-percentage crop and are listed in reports/frame_flags.csv.
 
     python3 build_apkg.py                    # --frame standard (default)
     python3 build_apkg.py --frame drawn      # the pictures' own frame, v2.0 templates
@@ -37,8 +37,14 @@ deck ids and GUIDs are unchanged; the field change is a schema change, so existi
 delete the deck and import the new package (owner: deck coherence over old study history).
 """
 import argparse, genanki, csv, hashlib, html, json, os, sys
-import card_frame
-import frame_crop
+# Layout (spec §13, INDEX.md): this entry point sits at the root; the pipeline modules are in code/, the
+# maintenance tools in tools/, the live data in data/. Run from the root (paths below are root-relative).
+ROOT = os.path.dirname(os.path.abspath(__file__))
+for _d in ("code", "tools"):
+    if os.path.join(ROOT, _d) not in sys.path:
+        sys.path.insert(0, os.path.join(ROOT, _d))
+import card_frame   # noqa: E402
+import frame_crop   # noqa: E402
 
 CSS = open("anki/go_theme.css", encoding="utf-8").read()
 FRONT = ('<div class="page"><div class="bar"><span class="plate">LIETUVIŲ KALBA</span>'
@@ -100,7 +106,7 @@ cloze_model = genanki.Model(
 # FIELDS either way: only templates/CSS change, so a re-import updates notes in place.
 FRAME = "standard"
 # 2026-10-18 (owner, Backs and Type review: "proposed" + "thumb"): the standard frame's backs are
-# the proposed design (card_frame.proposed_backs, a2_build/BACKS_AUDIT.md §2) with the picture
+# the proposed design (card_frame.proposed_backs, rounds/2026-10-17_backs_audit/BACKS_AUDIT.md §2) with the picture
 # as a thumbnail; --back current (or BACK_STYLE=current) keeps the previous standard back.
 BACK_STYLE = os.environ.get("BACK_STYLE", "proposed")
 BACK_PIC = os.environ.get("BACK_PIC", "thumb")
@@ -139,14 +145,14 @@ def set_frame(mode, back=None):
         cloze_model.templates = [{'name': 'Cloze', 'qfmt': CLOZE_FRONT, 'afmt': CLOZE_BACK}]
         cloze_model.css = CLOZE_CSS
 
-A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
+A2_LIST = os.environ.get("A2_LIST", "data/a2_wordlist.csv")
 # Media layout (tidy of 2026-10-24, spec §13, INDEX.md): ONE home for the current picture of every card
 # and ONE for its audio, named by card key — media/images/<key>.png|webp|jpg, media/audio/<key>.mp3 and
 # <key>_s.mp3. Every other version (shadowed renders, _rerolled/, _superseded/, the 1.x WebP masters) is
 # under media/images/_history/<old batch path>/ and media/audio/_history/, which the build never reads.
 # Until 2026-10-24 the pictures were resolved first-hit over six batch folders (out_phrases_v3/round2,
 # out_phrases_v3, out_deck_f62, out_deck_a2, out_phrases_a2, out_deck_sent, images); the winners were moved
-# into media/images/ (a2_build/tidy/moves_2026-10-24.csv), so the package content did not change. The
+# into media/images/ (rounds/2026-10-24_tidy/moves_2026-10-24.csv), so the package content did not change. The
 # *_IMAGE_DIRS names stay (build_recorder.py, tools/golden_set.py read them) and still accept a
 # comma-separated override, e.g. A1_IMAGE_DIRS=_cloud_media/f62 for a cloud clone without the Mac media.
 IMAGE_DIR = os.environ.get("IMAGE_DIR", "media/images")
@@ -154,16 +160,16 @@ AUDIO_DIR = os.environ.get("AUDIO_DIR", "media/audio")
 A1_IMAGE_DIRS = os.environ.get("A1_IMAGE_DIRS", IMAGE_DIR).split(",")
 A2_IMAGE_DIRS = os.environ.get("A2_IMAGE_DIRS", IMAGE_DIR).split(",")
 A2_AUDIO_DIR = os.environ.get("A2_AUDIO_DIR", AUDIO_DIR)      # A2-list and sentence audio (same folder since 2026-10-24)
-# Sentence cards (picture + cloze), see a2_build/sentences/design.md
-SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
+# Sentence cards (picture + cloze), see _archive/docs/sentences_design.md
+SENTENCES = os.environ.get("SENTENCES", "data/sentences/sentences.csv")
 SENT_IMAGE_DIRS = os.environ.get("SENT_IMAGE_DIRS", IMAGE_DIR).split(",")
-# Back-of-card usage notes (pilot round 2, a2_build/pilot_round2/CONTEXT_NOTES.md; owner
+# Back-of-card usage notes (pilot round 2, rounds/2026-10-17_pilot_round2/CONTEXT_NOTES.md; owner
 # 2026-10-17: on the backs now). One line under the gloss: the register / near-synonym note,
 # then the tu/jus variant as a second line. Only rows the planner verified against a read
 # source (high) or marked medium go on a back, and so do the rows the owner approved
 # as written ("owner-approved", 2026-10-18: the ten former "unverified" rows, whose list
 # a2_build/context_notes_unverified.csv was retired once they moved into context_notes.csv).
-CONTEXT_NOTES = os.environ.get("CONTEXT_NOTES", "a2_build/context_notes.csv")
+CONTEXT_NOTES = os.environ.get("CONTEXT_NOTES", "data/context_notes.csv")
 USAGE_CONFIDENCE = {"high", "medium", "owner-approved"}
 
 
@@ -196,7 +202,7 @@ def usage_for(k):
 
 # Study order (new-card position): study_order.csv, made by build_study_order_v3.py (2026-10-19;
 # v2 of 2026-10-17 kept as history, the v1 generator is in _archive/deprecated/).
-STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
+STUDY_ORDER = os.environ.get("STUDY_ORDER", "data/study_order.csv")
 
 # IDENTITY — what keeps a learner's history across deck versions:
 #  * note GUID = genanki.guid_for(<card key>) — the permanent key (0027_suo, 0215_kas),
@@ -206,7 +212,7 @@ STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
 #    constants; changing any of them would make Anki treat the notes as new.
 #  * keys are NNNN_slug (spec §12): the number is the card's study-order position when the
 #    key was minted (the rename of 2026-10-20 renamed every card once, pre-lock; history in
-#    a2_build/rename/key_map_v1.csv, read through tools/keymap.py). Once A1 and A2 are signed
+#    data/key_maps/key_map_v1.csv, read through tools/keymap.py). Once A1 and A2 are signed
 #    off a key is never reused or renamed; a card that changes meaning keeps its key
 #    (1124_lupos teaches lūpos; its slug was taken from the headword at the rename). A row that moves
 #    between note types (picture ↔ cloze) cannot be updated in place — Anki will report a
@@ -245,16 +251,16 @@ APKG_OUT = os.environ.get("APKG_OUT",
                           f"Lietuviu_Flashcards_v{APKG_VERSION}_{APKG_LEVELS[0]}.apkg" if len(APKG_LEVELS) == 1
                           else f"Lietuviu_Flashcards_v{APKG_VERSION}.apkg")   # never the old file
 # (IMAGE_ALIAS, the lūpa -> lūpos render stem, retired with the rename of 2026-10-20: every media
-# file is named by its card key; the old render stem is an `alias` row in a2_build/rename/key_map_v1.csv.)
+# file is named by its card key; the old render stem is an `alias` row in data/key_maps/key_map_v1.csv.)
 
 # --- tags (spec §12, 2026-10-20) ------------------------------------------------------------
 # Four hierarchical tags per note: lt::level::A1|A2, lt::kind::picture|phrase|cloze|sentence,
 # lt::pos::<part of speech> (words only) and lt::topic::<section slug>. The topic is the section
-# the card's top band shows: category -> topic from a2_build/rename/topic_map_v1.csv, except that
+# the card's top band shows: category -> topic from data/key_maps/topic_map_v1.csv, except that
 # phrase and sentence notes show XIX/XX whatever their category (card_frame.ROUTE_SECTIONS), so
 # their topic is frazes/sakiniai and the tag never disagrees with the running head.
 # An unmapped category fails the build.
-TOPIC_MAP = "a2_build/rename/topic_map_v1.csv"
+TOPIC_MAP = "data/key_maps/topic_map_v1.csv"
 TOPIC = {r["category"]: r["topic"] for r in csv.DictReader(open(TOPIC_MAP, encoding="utf-8"))}
 POS = {"N": "noun", "V": "verb", "A": "adjective", "ADV": "adverb", "P": "pronoun", "NUM": "numeral",
        "PREP": "preposition", "CONJ": "conjunction", "Q": "question"}
@@ -277,7 +283,7 @@ def tags_for(level, kind, pos_code, category):
 
 def a1_types():
     """A1 picture rows' part of speech: master_wordlist.csv `type`, joined on its `key` column."""
-    return {r["key"]: r["type"] for r in csv.DictReader(open("master_wordlist.csv", encoding="utf-8"))
+    return {r["key"]: r["type"] for r in csv.DictReader(open("data/master_wordlist.csv", encoding="utf-8"))
             if (r.get("key") or "").strip()}
 
 def gender_mark(g):
@@ -516,7 +522,7 @@ def add_a2_notes(DECKS, media, order=None):
 
 
 def add_sentence_notes(DECKS, media, order=None):
-    """Picture + cloze sentence cards from SENTENCES (design: a2_build/sentences/design.md).
+    """Picture + cloze sentence cards from SENTENCES (design: _archive/docs/sentences_design.md, superseded by the spec).
     Front: picture + Lithuanian sentence with the blank, no English; back adds the English.
     A sentence without a picture is still built (as a plain cloze with the English hint)."""
     counts = {"sentence": 0, "sentence_with_image": 0}
@@ -549,15 +555,12 @@ def add_sentence_notes(DECKS, media, order=None):
     return counts
 
 
-REPORT_DIR = os.environ.get("REPORT_DIR", "build_reports")
+REPORT_DIR = os.environ.get("REPORT_DIR", "reports")
 
 # --- deck <-> spec <-> style linkage (spec 3.0.0, 2026-10-19; docs/DESIGN_SPEC_CURRENT.md §11) ----
 # A build refuses to run when the code has drifted from style/STYLE_LOCK.json, so no package can
 # ship an unrecorded look. GO_ALLOW_STYLE_DRIFT=1 overrides, and the drift is written into the
-# build manifest (build_reports/builds/<package>.json) and the deck description.
-_TOOLS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools")
-if _TOOLS not in sys.path:
-    sys.path.insert(0, _TOOLS)
+# build manifest (reports/builds/<package>.json) and the deck description.
 import style_lock  # noqa: E402
 import check_layout  # noqa: E402   (spec §13: warn, never block, when the working directory drifts from INDEX.md)
 
@@ -661,7 +664,7 @@ def main(frame="standard", back=None, limit=0):
     skipped = []
     n_a1 = 0
     a1_pos = a1_types()
-    for r in csv.DictReader(open("cards_anki.csv", encoding="utf-8")):
+    for r in csv.DictReader(open("data/cards_anki.csv", encoding="utf-8")):
         k = r['key']; aud = f"{AUDIO_DIR}/{k}.mp3"
         if limit and n_a1 >= limit:
             break

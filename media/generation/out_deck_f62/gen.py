@@ -25,7 +25,7 @@ import csv, json, os, sys, time, base64, threading
 from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))              # media/generation/out_deck_f62
 ROOT = os.path.dirname(os.path.dirname(HERE))
-os.chdir(ROOT); sys.path.insert(0, ROOT)
+os.chdir(ROOT); sys.path[:0] = [os.path.join(ROOT, "code"), ROOT]      # modules in code/ since 2026-10-24 (spec §13)
 import deck_builder as db, go_generator as g
 from openai import OpenAI
 os.environ.setdefault("OPENAI_API_KEY", open(".openai_key.txt").read().strip())

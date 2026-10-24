@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""rename_keys.py — one namespace for every card: NNNN_slug (a2_build/rename/PLAN_rename_v1.md).
+"""rename_keys.py — one namespace for every card: NNNN_slug (rounds/2026-10-20_rename/PLAN_rename_v1.md).
 
     python3 tools/rename_keys.py                         # DRY RUN (default): derive the map, report, write nothing
-    python3 tools/rename_keys.py --dry-run --out a2_build/rename/dryrun_v1.txt
-    python3 tools/rename_keys.py --apply                 # write a2_build/rename/key_map_v<N>.csv, rewrite the live
+    python3 tools/rename_keys.py --dry-run --out rounds/2026-10-20_rename/dryrun_v1.txt
+    python3 tools/rename_keys.py --apply                 # write data/key_maps/key_map_v<N>.csv, rewrite the live
                                                          # files, `git mv` the tracked media, then run --verify
     python3 tools/rename_keys.py --apply-media DIR [DIR ...]
                                                          # rename UNTRACKED media on disk (the Mac render folders)
@@ -12,7 +12,7 @@
     python3 tools/rename_keys.py --verify                # fail loudly on any old-format key outside history,
                                                          # on data files whose keys are not all new-format, and on
                                                          # media missing under the new name
-    python3 tools/rename_keys.py --map a2_build/rename/key_map_v1.csv --verify   # against a given map
+    python3 tools/rename_keys.py --map data/key_maps/key_map_v1.csv --verify   # against a given map
                                                          # (no --map: every key_map_v*.csv composed, so an amendment
                                                          #  map such as key_map_v2 is checked together with v1)
     python3 tools/rename_keys.py --mint "šaukštelis"   # the key a new card gets: next free number + slug
@@ -24,7 +24,7 @@ WHAT THE MAP IS
   slug is a reading aid, never an identifier: two cards may share a slug, the number tells them apart, and
   a slug is not re-derived when a headword is later corrected (after the lock a key never changes).
   Rows for cards NOT in the order are carried with an empty new_key and a status: merged-away ids
-  (a2_build/merged_keys.csv), B1 deferrals (a2_build/deferred_B1.csv) and media-only aliases
+  (data/merged_keys.csv), B1 deferrals (data/deferred_B1.csv) and media-only aliases
   (build_apkg.IMAGE_ALIAS, e.g. 265_lupos -> the same new key as 265_lupa).
 
 WHAT --apply REWRITES (and nothing else; see LIVE_TEXT below)
@@ -33,14 +33,14 @@ WHAT --apply REWRITES (and nothing else; see LIVE_TEXT below)
   master_wordlist.csv gains a `key` column. The Fluent Forever row number stays where it is (`#` in
   master_wordlist.csv, `number` in cards_anki.csv): the generator tables, the study-order pairs and the QA
   join are keyed by it. It is NOT the plate number any more — build_apkg takes that from the key (PLAN §6);
-  the bare FF number in a2_build/restage_bubbles.csv `ids` (374 = galvoti) becomes the card's key.
+  the bare FF number in data/restage_bubbles.csv `ids` (374 = galvoti) becomes the card's key.
   History (reports, audits, round folders, ledgers, gen logs, QA sheets, build manifests, _archive, the
   spec history) is NEVER rewritten: the map is how those names are read (tools/keymap.py).
   Tracked media (media/audio/, its _history/, the WebP masters under media/images/_history/images/,
   style/golden/) move with `git mv`. The untracked pictures (media/images/ and the rest of
   media/images/_history/) live only on the owner's Mac: run --apply-media there, after `git pull`,
   with Proton Drive sync paused (PLAN §8). (Before the tidy of 2026-10-24 the media sat in images/,
-  audio/, audio_a2/ and six out_* batch folders; a2_build/tidy/moves_2026-10-24.csv maps old to new.)
+  audio/, audio_a2/ and six out_* batch folders; rounds/2026-10-24_tidy/moves_2026-10-24.csv maps old to new.)
 
 GUARDS
   study_order.csv must be 1..N contiguous and its keys must equal cards_anki ∪ a2_wordlist ∪ sentences;
@@ -64,14 +64,14 @@ from collections import Counter, OrderedDict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
-STUDY_ORDER = os.environ.get("STUDY_ORDER", "study_order.csv")
-A1_CARDS = "cards_anki.csv"
-MASTER = "master_wordlist.csv"
-A2_LIST = os.environ.get("A2_LIST", "a2_build/a2_wordlist.csv")
-SENTENCES = os.environ.get("SENTENCES", "a2_build/sentences/sentences.csv")
-MERGED = "a2_build/merged_keys.csv"
-DEFERRED = "a2_build/deferred_B1.csv"
-RENAME_DIR = "a2_build/rename"
+STUDY_ORDER = os.environ.get("STUDY_ORDER", "data/study_order.csv")
+A1_CARDS = "data/cards_anki.csv"
+MASTER = "data/master_wordlist.csv"
+A2_LIST = os.environ.get("A2_LIST", "data/a2_wordlist.csv")
+SENTENCES = os.environ.get("SENTENCES", "data/sentences/sentences.csv")
+MERGED = "data/merged_keys.csv"
+DEFERRED = "data/deferred_B1.csv"
+RENAME_DIR = "data/key_maps"          # key_map_v<N>.csv, append-only; the rename round itself is rounds/2026-10-20_rename/
 WIDTH = 4                      # NNNN; 9,999 cards is far above any plan for this deck
 SLUG_WORDS, SLUG_CHARS = 4, 32
 
@@ -89,60 +89,51 @@ MEDIA_EXT = r"\.(png|jpg|jpeg|webp|mp3|m4a|webm|ogg|txt|src)"
 LIVE_TEXT = [
     # data
     A1_CARDS, MASTER, A2_LIST, SENTENCES, STUDY_ORDER,
-    MERGED, "a2_build/id_map.csv",
-    "audio_source.tsv", "a2_build/context_notes.csv",
-    "a2_build/study_order/retag_A1.csv", "a2_build/study_order/retier_v3.csv",
-    "a2_build/restage_bubbles.csv", "a2_build/a2_staging.json", "card_notes.json",
-    "a2_build/sentences/staging.json", "a2_build/audio/recorder_A2_afb2ebe2_script.json",
-    "a2_build/stress_58_resolved.csv", "a2_build/deck_fixes.csv",
-    "a2_build/historical/implementation/likeness_args.json",
-    "style_lab/research/settings_assignments.csv",
+    MERGED, "data/id_map.csv",
+    "data/audio_source.tsv", "data/context_notes.csv",
+    "data/retag_A1.csv", "data/retier_v3.csv",
+    "data/restage_bubbles.csv", "data/a2_staging.json", "data/card_notes.json",
+    "data/sentences/staging.json", "data/recorder_A2_afb2ebe2_script.json",
+    "data/likeness_args.json",
+    "data/settings_assignments.csv",
     "style/golden/manifest.csv",
     "review_desk/items.json",
     # code with hand-listed keys
-    "build_apkg.py", "build_study_order_v3.py", "deck_builder.py", "frame_crop.py", "frame_preview.py",
-    "qa_images.py", "situations.py", "a2_build/src/build_situations.py",
+    "build_apkg.py", "build_study_order_v3.py", "code/deck_builder.py", "code/frame_crop.py", "code/frame_preview.py",
+    "code/qa_images.py", "code/situations.py", "tools/build_situations.py",
     "media/generation/out_phrases_v3/gen.py", "media/generation/out_deck_sent/gen.py",
     "media/generation/out_deck_a2/a2_adapter.py",
-    "card_frame.py", "anki/templates.md", "a2_build/RECORDING_GUIDE.md",
+    "code/card_frame.py", "anki/templates.md", "docs/RECORDING_GUIDE.md",
     "style/golden/README.md",
 ] + sorted(glob.glob("style/golden/*.prompt.txt"))     # golden prompts carry `key:` and `file:` lines
 # Regenerated after --apply by their own tools (listed so --verify does not flag them as unclassified):
 GENERATED = [
-    "a2_build/recording_list.csv",                 # build_recorder.py A2
-    "a2_build/study_order/recording_order_v3.csv", # build_study_order_v3.py
+    "data/recording_list.csv",                 # build_recorder.py A2
+    "data/recording_order_v3.csv", # build_study_order_v3.py
     "recorder_A2.html",                            # build_recorder.py A2 (gitignored)
-    "build_reports/frame_bands.csv", "build_reports/frame_flags.csv",   # next build_apkg run
+    "reports/frame_bands.csv", "reports/frame_flags.csv",   # next build_apkg run
 ]
 # Append-only / closed records: never rewritten, read through tools/keymap.py.
 HISTORY_PREFIXES = (
-    "_archive/", "docs/spec_history/", "build_reports/", "a2_build/round", "a2_build/rollout",
-    "a2_build/pilot_round2/", "a2_build/additions_round2/", "a2_build/hand_fixes/", "a2_build/phrase_additions/",
-    "a2_build/review_", "a2_build/review_template/", "a2_build/data_checks", "a2_build/benchmark_en/",
-    "a2_build/backs_audit/", "a2_build/historical/", "a2_build/audio/reconciliation_", "a2_build/a1_redo/",
-    "a2_build/src/", "a2_build/study_order/AUDIT", "a2_build/study_order/REPORT", "a2_build/study_order/dep37",
-    "a2_build/audio/backfill_", "a2_rebase/", "style_lab/", "tools/",
+    "_archive/", "docs/spec_history/", "reports/",
+    "rounds/",               # one dated folder per round of work (review pages, QA sheets, applied patches, logs)
+    "style_lab/", "tools/",
     "media/generation/",     # ledgers, plans, QA sheets and gen logs of every render batch (was out_*/)
-    "a2_build/rename/",
-    "a2_build/tidy/",        # the 2026-10-24 move table names files by whatever name they had
-    "a2_build/proofread/",   # sheet out with the owner under the old keys; the returned sheet is mapped via keymap.py
+    "docs/decisions/",       # dated decision records and superseded proposals
+    "data/key_maps/",        # the key maps themselves: old name -> new name, append-only by design
 )
 HISTORY_FILES = {
-    "docs/CHANGELOG.md", "docs/VERSIONS.md", "docs/ANKIWEB_DESCRIPTION_A1_v3.0.md", "INDEX.md",
+    "docs/CHANGELOG.md", "docs/VERSIONS.md", "docs/ANKIWEB_DESCRIPTION_A1_v3.0.md", "INDEX.md", "FILES.md",
     "docs/DESIGN_SPEC_CURRENT.md",      # prose edited by hand in the spec release, not by regex
-    "a2_build/A1_WRAPUP.md", "a2_build/BACKS_AUDIT.md", "a2_build/CLOUD_ROUND_2026-10-11.md", "a2_build/PILOT_24.md",
-    "a2_build/PLAN_A2_completion.md", "a2_build/PRASOM_SWITCH_2026-10-18.md", "a2_build/README.md",
-    "a2_build/RESTAGE_PROPOSAL.md", "a2_build/merges_2026-10-19.md", "a2_build/data_checks_A1.md",
-    "a2_build/sentences/design.md", "a2_build/deck_fixes_applied.csv",
-    "wordlist_a2_pending.csv",                                  # input of the retired build_a2.py (accents_todo_kirtis.csv
+    "docs/A1_WRAPUP.md", "docs/PLAN_A2_completion.md",
+    "data/wordlist_a2_pending.csv",                            # input of the retired build_a2.py (accents_todo_kirtis.csv
                                                                 # and build_study_order_v2.py are in _archive/ since 2026-10-24)
     DEFERRED,                                                   # pre-rename ids by design (status deferred in the map)
 }
 # Live exceptions inside history prefixes (they are read by live code):
-LIVE_IN_HISTORY = {"a2_build/historical/implementation/likeness_args.json", "style_lab/research/settings_assignments.csv",
-                   "media/generation/out_phrases_v3/gen.py", "media/generation/out_deck_sent/gen.py",
+LIVE_IN_HISTORY = {"media/generation/out_phrases_v3/gen.py", "media/generation/out_deck_sent/gen.py",
                    "media/generation/out_deck_a2/a2_adapter.py",
-                   "a2_build/src/build_situations.py"}
+                   "tools/build_situations.py"}     # (likeness_args.json and settings_assignments.csv are in data/ since 2026-10-24)
 
 # Tracked media folders (git mv). The untracked pictures are --apply-media's job on the Mac.
 # Layout since 2026-10-24 (spec §13, INDEX.md): media/images/<key>.<ext> is the one current picture,
@@ -388,7 +379,7 @@ def rewrite_master(text, rows, a1_rows):
 
 
 def rewrite_restage_ids(text, rows, a1_rows):
-    """a2_build/restage_bubbles.csv `ids`: a bare Fluent Forever number (374) is an A1 card -> its key."""
+    """data/restage_bubbles.csv `ids`: a bare Fluent Forever number (374) is an A1 card -> its key."""
     bynum = {}
     for r in a1_rows:
         m = rows.get(r["key"])
@@ -419,7 +410,7 @@ def plan_text_changes(rows, a1_rows):
         sp = 0
         if p == MASTER:
             new, sp = rewrite_master(new, rows, a1_rows)
-        elif p == "a2_build/restage_bubbles.csv":
+        elif p == "data/restage_bubbles.csv":
             new, sp = rewrite_restage_ids(new, rows, a1_rows)
         if new != text:
             out.append((p, new, n, sp))
@@ -511,8 +502,8 @@ def verify(rows, media_dirs=None, quiet=False):
     allowed_old |= {k for k, r in rows.items() if r["status"] in ("merged", "deferred")}
     # 1. live data files: every key new-format
     checks = [(A1_CARDS, "key"), (A2_LIST, "id"), (SENTENCES, "id"), (STUDY_ORDER, "key"),
-              ("audio_source.tsv", "key"), ("a2_build/context_notes.csv", "key"), (MERGED, "merged_into"),
-              ("a2_build/id_map.csv", "id"), ("style_lab/research/settings_assignments.csv", "key"),
+              ("data/audio_source.tsv", "key"), ("data/context_notes.csv", "key"), (MERGED, "merged_into"),
+              ("data/id_map.csv", "id"), ("data/settings_assignments.csv", "key"),
               ("style/golden/manifest.csv", "key")]
     for p, col in checks:
         if not os.path.exists(p):
@@ -652,7 +643,7 @@ def main(argv=None):
     ap.add_argument("--apply", action="store_true", help="write the map, rewrite LIVE files, git mv tracked media, verify")
     ap.add_argument("--apply-media", nargs="+", metavar="DIR", help="rename untracked media under DIR(s) from --map")
     ap.add_argument("--verify", action="store_true", help="check for dangling old keys and missing media")
-    ap.add_argument("--map", help="an existing key map (default: the newest a2_build/rename/key_map_v*.csv)")
+    ap.add_argument("--map", help="an existing key map (default: the newest data/key_maps/key_map_v*.csv)")
     ap.add_argument("--out", help="write the dry-run report here as well as to stdout")
     ap.add_argument("--allow-dirty", action="store_true")
     ap.add_argument("--mint", metavar="HEADWORD", help="print the key a NEW card gets: the next free number + slug "

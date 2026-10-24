@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""a2_adapter.py — thin adapter from an a2_build/a2_wordlist.csv IMG row to the
+"""a2_adapter.py — thin adapter from an data/a2_wordlist.csv IMG row to the
 kwargs deck_builder.build_call would produce, so the A2 pictures go through the
 SAME production prompt path (go_generator.build_prompt) as the A1 deck.
 
@@ -22,12 +22,12 @@ Differences from the A1 wordlist, handled here and nowhere else:
 """
 import csv, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # media/generation/out_deck_a2 -> project root (tidy 2026-10-24)
-sys.path.insert(0, ROOT)
+sys.path[:0] = [os.path.join(ROOT, "code"), ROOT]      # modules in code/ since 2026-10-24 (spec §13)
 import deck_builder as db
 from go_grammars import route, compose_class, SCENE_TAIL
 
-A2_LIST = os.path.join(ROOT, "a2_build", "a2_wordlist.csv")
-A2_STAGING = os.path.join(ROOT, "a2_build", "a2_staging.json")
+A2_LIST = os.path.join(ROOT, "data", "a2_wordlist.csv")
+A2_STAGING = os.path.join(ROOT, "data", "a2_staging.json")
 
 CATMAP = {"Nouns": "Misc", "Home": "Home", "Time": "Misc", "Nature": "Nature", "Food": "Food",
           "Location": "Location", "Work & culture": "Misc", "Clothing": "Clothing",
@@ -147,7 +147,7 @@ def build_call_a2(r, staging):
 
 
 # 2026-10-18 historical places and figures: precedent= / likeness= for the A2 cards active in
-# a2_build/historical/implementation/likeness_args.json (historical.py); others unchanged.
+# data/likeness_args.json (historical.py); others unchanged.
 import historical as _hist
 _build_call_a2_base = build_call_a2
 

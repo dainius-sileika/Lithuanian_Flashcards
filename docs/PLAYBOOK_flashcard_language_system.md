@@ -162,7 +162,7 @@ Keep concrete, picturable words even when English rates them B1 by frequency. Ke
 **Lithuanian result (2026-10-17):**
 - Our deck covers 85.6% of Oxford A1, 56.9% of Oxford A2 and 67.9% of Cambridge Key.
 - The A2 gaps are abstract and relational words, adverbs, quantifiers and about 12 communicative functions.
-- Details in a2_build/benchmark_en/.
+- Details in rounds/2026-10-17_benchmark_en/.
 - Licence note: store only the gap subsets, never the copyrighted lists themselves.
 
 ## 5. Sources

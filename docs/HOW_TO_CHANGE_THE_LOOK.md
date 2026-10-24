@@ -13,7 +13,7 @@ this page applies. (Content changes — a staging line, a word, a merge — do n
 | 4. Update the spec | planner | Edit the prose of `docs/DESIGN_SPEC_CURRENT.md` to say what the code now does (file + constant), with the owner's date. |
 | 5. Release the spec | executor | `python3 tools/spec_release.py --bump <major\|minor\|patch> --note "<one line>"` — **major** = the look or card format changes, **minor** = a rule added, **patch** = wording. It bumps the header, adds the changelog line, freezes `docs/spec_history/DESIGN_SPEC_v<X.Y.Z>.md`, runs `style_lock.py update` (which refuses without the bump), commits the spec + snapshot + lock + the changed style-source files, and tags `spec-v<X.Y.Z>`. Dry-run first: add `--dry-run`. Then `git push origin HEAD --tags`. |
 | 6. Golden comparison | executor → owner | Render the 28 keys of `style/golden/manifest.csv` with the new code (same prompts and settings) into a scratch folder; Review Desk page golden vs new. Owner judges the *set*. On a pass, `tools/golden_set.py --refresh` from the new renders and commit; on a fail, revert the code and release a patch that records the rejection. |
-| 7. Build | executor | `build_apkg.py` refuses on drift; after step 5 it passes and stamps the package with APKG version, spec version and style hash (deck description + `build_reports/builds/<package>.json`). Add the row to `docs/VERSIONS.md`. |
+| 7. Build | executor | `build_apkg.py` refuses on drift; after step 5 it passes and stamps the package with APKG version, spec version and style hash (deck description + `reports/builds/<package>.json`). Add the row to `docs/VERSIONS.md`. |
 
 **Rules that hold throughout**
 - The lock must match the code at every commit (`tools/hooks/pre-commit`; `sh tools/install_hooks.sh` once per

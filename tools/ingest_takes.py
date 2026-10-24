@@ -2,13 +2,15 @@
 """ingest_takes.py — bring the owner's recorder exports (ZIP) into the deck's audio.
 
     python3 tools/ingest_takes.py lt_A2_takes_2026-10-21-09-30_all.zip [more.zip ...] [--dry-run]
+    python3 tools/ingest_takes.py --inbox [--dry-run]        # every ZIP in media/audio/_inbox/ (and in the old
+                                                              # a2_build/audio/inbox/, kept as a forwarding stub)
 
 For each ZIP exported by recorder_A2.html ("Export all" / "Export new"):
   * reads manifest.tsv (key, dest, level, status, said, english, file);
   * maps `key` through tools/keymap.py, so a ZIP exported before the key rename of 2026-10-20
     (A2-0348.webm, 001_suo.webm, A2-0002_s.webm) lands under the current key
     (media/audio/0021_labas.mp3 ...);
-  * takes the destination from the CURRENT a2_build/recording_list.csv by the canonical take key,
+  * takes the destination from the CURRENT data/recording_list.csv by the canonical take key,
     never from the manifest (its `dest` may predate the rename or a re-tier);
   * converts with ffmpeg (-codec:a libmp3lame -q:a 4) to that dest; an existing file there moves to
     media/audio/_history/<key>.<ms>.mp3 first (a take is never deleted; tidy of 2026-10-24, before
@@ -35,9 +37,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import keymap  # noqa: E402
 
-LIST = os.path.join(ROOT, "a2_build", "recording_list.csv")
-AUDIO_SOURCE = os.path.join(ROOT, "audio_source.tsv")
+LIST = os.path.join(ROOT, "data", "recording_list.csv")
+AUDIO_SOURCE = os.path.join(ROOT, "data", "audio_source.tsv")
 KEEP = os.path.join(ROOT, "_archive", "takes")
+INBOXES = [os.path.join(ROOT, "media", "audio", "_inbox"),          # since 2026-10-24 (spec §13)
+           os.path.join(ROOT, "a2_build", "audio", "inbox")]        # the old path; a ZIP dropped there is still found
 
 
 def said_key(s):
@@ -128,6 +132,12 @@ def ingest(zpath, dry):
 def main(argv):
     dry = "--dry-run" in argv
     zips = [a for a in argv[1:] if not a.startswith("--")]
+    if "--inbox" in argv:
+        for d in INBOXES:
+            if os.path.isdir(d):
+                zips += sorted(os.path.join(d, z) for z in os.listdir(d) if z.lower().endswith(".zip"))
+        if not zips:
+            print("no ZIP in", " or ".join(os.path.relpath(d, ROOT) for d in INBOXES)); return 0
     if not zips:
         print(__doc__); return 2
     if not dry and not shutil.which("ffmpeg"):

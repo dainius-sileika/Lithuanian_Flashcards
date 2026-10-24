@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """keymap.py — every name a card has ever had, and the one it has now.
 
-The rename of 2026-10 (a2_build/rename/PLAN_rename_v1.md) gave every card one key of the form
-NNNN_slug. The maps written by tools/rename_keys.py (a2_build/rename/key_map_v<N>.csv) are the
+The rename of 2026-10 (rounds/2026-10-20_rename/PLAN_rename_v1.md) gave every card one key of the form
+NNNN_slug. The maps written by tools/rename_keys.py (data/key_maps/key_map_v<N>.csv) are the
 only record linking the older names (001_suo, A2-0348, S-0001, and media-only aliases such as
 265_lupos) to the current key. They are never deleted or edited; a later rename appends a new
 map, and this module follows the chain.
@@ -21,7 +21,7 @@ import glob
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MAP_GLOB = os.path.join(ROOT, "a2_build", "rename", "key_map_v*.csv")
+MAP_GLOB = os.path.join(ROOT, "data", "key_maps", "key_map_v*.csv")
 
 _FORWARD = None     # old -> new, over every map in version order
 _BACK = None        # new -> [old, ...]

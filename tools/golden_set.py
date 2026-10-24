@@ -25,7 +25,7 @@ WIDTH, QUALITY = 800, 85
 # 2026-10-24); since the tidy of 2026-10-24 (spec §13) they live under media/generation/<batch>/ and the
 # pictures under media/images/ (the one current picture per key) and media/images/_history/<batch>/
 # (every other version). The picture is taken ONLY if it is the render the ledger row describes: the
-# current picture when it came from that batch (a2_build/tidy/moves_2026-10-24.csv records where each
+# current picture when it came from that batch (rounds/2026-10-24_tidy/moves_2026-10-24.csv records where each
 # current picture came from; a picture rendered after the tidy has no row and belongs to the ledger that
 # holds it), else that batch's shadowed render in _history/, else the batch's 1024 px cloud mirror
 # (_cloud_media) when the key was never re-rolled after the mirror was made (one ledger row).
@@ -36,7 +36,7 @@ HISTORY = f"{IMAGES}/_history"
 BATCHES = ["out_phrases_v3/round2", "out_phrases_v3", "out_deck_f62", "out_deck_a2", "out_deck_sent"]
 LEDGERS = [f"{GEN}/{b}" for b in BATCHES]
 MIRROR = {"out_deck_f62": "_cloud_media/f62", "out_deck_a2": "_cloud_media/a2"}
-MOVES = os.path.join(ROOT, "a2_build", "tidy", "moves_2026-10-24.csv")
+MOVES = os.path.join(ROOT, "rounds", "2026-10-24_tidy", "moves_2026-10-24.csv")
 _ORIGIN = None
 
 
