@@ -1,0 +1,58 @@
+
+== 1a style lock
+style lock OK  style 0885ded5e583  spec 3.4.1
+
+== 1b layout (strict)
+layout OK (spec §13 / INDEX.md)
+
+== 1c inventory
+inventory OK (1,941 tracked files described, FILES.md current)
+
+== 2a compile every live .py
+36 files compile
+
+== 2b import code/ and tools/ modules
+24 modules import; fonts, card notes, wordlist, location bank, assignments found
+
+== 2c gen.py drivers: imports resolve (parsed, not run)
+60 imports resolve in the drivers and the adapter
+
+== 3a keymap
+A2-0348 -> 0021_labas | maps: ['key_map_v1.csv', 'key_map_v2.csv']
+
+== 3b rename_keys --verify (no FAIL; the recorder WARN is expected)
+10 ok lines; no FAIL
+
+== 3c golden_set --status
+0747_mama_gamina_vakariene jpg prompt  src=media/images/0747_mama_gamina_vakariene.png  ledger=media/generation/out_deck_sent/ledger.csv rows=1
+
+== 4a build_study_order_v3 --audit (live order)
+lydyti              melt (sth)                  2426  A2
+antis               duck                        1138  A1
+
+== 4b build_recorder A2 to scratch == live sheet
+wrote /sessions/rcw-01de2ejuunqpbsen29gom8zw/mnt/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/_qa/smoke_20261024_144038/recorder_A2.html (1134 KB) + /sessions/rcw-01de2ejuunqpbsen29gom8zw/mnt/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/_qa/smoke_20261024_144038/recording_list.csv: 2849 takes, IndexedDB lt_recorder_A2_afb2ebe2; key map 4878 old take keys
+IndexedDB lt_recorder_A2_afb2ebe2 and migrateKeys present in the regenerated sheet
+recorder and recording list: identical to a fresh regeneration
+
+== 5a smoke build (--limit 3) to scratch
+standard frame: 934 pictures cropped, 10 flagged (fixed-percentage fallback) -> /sessions/rcw-01de2ejuunqpbsen29gom8zw/mnt/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/_qa/smoke_20261024_144038/reports/frame_flags.csv
+built /sessions/rcw-01de2ejuunqpbsen29gom8zw/mnt/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/_qa/smoke_20261024_144038/smoke.apkg — 596 media files | subdecks: {'A1': 774} | A1 rows without image: 0 | A2 list: {'image': 876, 'cloze': 981, 'skipped_no_image': 0, 'skipped_no_sentence': 0} | sentences: {'sentence': 55, 'sentence_with_image': 55} | study order: 2433 positions | usage notes: 78 of 78
+manifest /sessions/rcw-01de2ejuunqpbsen29gom8zw/mnt/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/_qa/smoke_20261024_144038/reports/builds/smoke.json | spec 3.4.1 | style 0885ded5e583 | 453caea+dirty
+
+== 5b verify_apkg (the smoke package against itself)
+verify_apkg ran: 774 notes, 0 field differences, GUIDs unchanged, Anki import ok; fail list [] (a smoke package without pictures fails the picture check by design)
+
+== 5c apkg_keys_list
+775 lines in the per-card list
+
+== 6a ingest_takes --inbox --dry-run
+no ZIP in media/audio/_inbox or a2_build/audio/inbox
+
+== 6b review_desk build
+review_desk/review_desk.html written (27714 bytes; gitignored)
+
+== 6c move_files verify (deep tidy plan)
+verify: 1274 ok, 0 missing, 0 old paths still present, 0 wrong, 0 skipped
+
+SMOKE TEST GREEN

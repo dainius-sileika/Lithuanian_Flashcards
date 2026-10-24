@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,943 tracked files in 698 rows.
+1,949 tracked files in 704 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -533,9 +533,15 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-24_deep_tidy/APPLIED.md` | history | What was run and verified in the deep tidy (packages identical, smoke test) | people |
 | `rounds/2026-10-24_deep_tidy/PLAN.md` | history | The deep tidy of 2026-10-24: design of this layout, what moved and why, what was left alone | people |
 | `rounds/2026-10-24_deep_tidy/move_log_tracked_vm.tsv` | history | What actually moved, per host (append-only) | written by tools/move_files.py |
+| `rounds/2026-10-24_deep_tidy/move_log_untracked_claude.tsv` | history | What actually moved, per host (append-only) | written by tools/move_files.py |
 | `rounds/2026-10-24_deep_tidy/move_rules.csv` | history | The move rules (old, new, why) the plan was expanded from | read by tools/move_files.py plan |
 | `rounds/2026-10-24_deep_tidy/moves.csv` | history | The move table: 1,274 files, old path -> new path, tracked, bytes, sha1 | read by tools/move_files.py apply / verify |
 | `rounds/2026-10-24_deep_tidy/path_map.py` | history | Rewrote old path mentions in live code and docs to the new ones (and checks none are left) | history |
+| `rounds/2026-10-24_deep_tidy/verify/A1_deep.json` | history | Build manifests and verify reports of the post-tidy A1 and A2 rebuilds | written by build_apkg.py tools/verify_apkg.py |
+| `rounds/2026-10-24_deep_tidy/verify/A1_deep.verify.json` | history | Build manifests and verify reports of the post-tidy A1 and A2 rebuilds | written by build_apkg.py tools/verify_apkg.py |
+| `rounds/2026-10-24_deep_tidy/verify/A2_deep.json` | history | Build manifests and verify reports of the post-tidy A1 and A2 rebuilds | written by build_apkg.py tools/verify_apkg.py |
+| `rounds/2026-10-24_deep_tidy/verify/A2_deep.verify.json` | history | Build manifests and verify reports of the post-tidy A1 and A2 rebuilds | written by build_apkg.py tools/verify_apkg.py |
+| `rounds/2026-10-24_deep_tidy/verify/smoke_test_mac.txt` | history | Build manifests and verify reports of the post-tidy A1 and A2 rebuilds | written by build_apkg.py tools/verify_apkg.py |
 | `rounds/2026-10-24_tidy/APPLIED_tidy_2026-10-24.md` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/PLAN_tidy_2026-10-24.md` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/move_log_tracked_cloud-clone_2026-10-24.tsv` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
@@ -790,4 +796,71 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 
 ## Untracked, only on the owner's Mac (counts per folder)
 
-*(not counted yet: run `python3 tools/make_index.py --untracked` on the Mac)*
+Counted on 2026-10-24 on host `claude` (files not in git, `.DS_Store` ignored). Only the owner's Mac has all of these; a clone has none of the pictures.
+
+| folder or file | files | size | status | purpose |
+|---|---:|---:|---|---|
+| `.azure_key.txt` | 1 | 133 B | secret | Azure TTS key |
+| `.github_token` | 1 | 93 B | secret | GitHub token (push from the Mac) |
+| `.huggingface_token` | 1 | 37 B | secret | Hugging Face token |
+| `.openai_key.txt` | 1 | 165 B | secret | OpenAI key |
+| `Lietuviu_Flashcards_v3.0_A1.apkg` | 1 | 140.8 MB | generated | A built package at the root (the current release stays here; older ones go to _archive/builds/) |
+| `_TO_DELETE/_apkg_media_pre_rename_2026-10-20/` | 5,618 | 419.2 MB | cache | Junk sorted by reason (MANIFEST.csv); the owner deletes, nobody else |
+| `_TO_DELETE/junk_2026-10-24/a2_build/a1_redo/__pycache__/` | 1 | 22.9 KB | cache | Python bytecode (wherever it sits) |
+| `_TO_DELETE/junk_2026-10-24/a2_build/src/__pycache__/` | 18 | 367.9 KB | cache | Python bytecode (wherever it sits) |
+| `_TO_DELETE/junk_2026-10-24/out_deck_a2/__pycache__/` | 1 | 8.3 KB | cache | Python bytecode (wherever it sits) |
+| `_TO_DELETE/rc3_transfer/` | 1 | 200.4 KB | cache | Junk sorted by reason (MANIFEST.csv); the owner deletes, nobody else |
+| `_TO_DELETE/round7_scratch/` | 7 | 762.9 KB | cache | Junk sorted by reason (MANIFEST.csv); the owner deletes, nobody else |
+| `__pycache__/` | 15 | 442.2 KB | cache | Python bytecode (wherever it sits) |
+| `_apkg_media/` | 2,904 | 210.7 MB | cache | Transcoded card pictures for the package, keyed by source hash (<key>_sf2.jpg); regenerate freely |
+| `_archive/builds/Lietuviu_Flashcards_v2.1_A1.apkg` | 1 | 136.9 MB | generated | A built package at the root (the current release stays here; older ones go to _archive/builds/) |
+| `_archive/builds/Lietuviu_Flashcards_v2.1_A2.apkg` | 1 | 80.9 MB | generated | A built package at the root (the current release stays here; older ones go to _archive/builds/) |
+| `_archive/builds/Lietuviu_Flashcards_v3.0_A1_rc1.apkg` | 1 | 140.4 MB | generated | A built package at the root (the current release stays here; older ones go to _archive/builds/) |
+| `_archive/builds/Lietuviu_Flashcards_v3.0_A1_rc2.apkg` | 1 | 140.8 MB | generated | A built package at the root (the current release stays here; older ones go to _archive/builds/) |
+| `_archive/builds/Lietuviu_Flashcards_v3.0_A1_rc3.apkg` | 1 | 140.8 MB | generated | A built package at the root (the current release stays here; older ones go to _archive/builds/) |
+| `_archive/deprecated/backups/` | 13 | 516.3 KB | history | Old backups (not committed) |
+| `_archive/deprecated/inbox_done/` | 3 | 32.3 MB | history | Ingested inbox material of the July recordings (not committed) |
+| `_archive/deprecated/recorders_old/` | 2 | 132.2 KB | history | Old recorder sheets (not committed) |
+| `_archive/deprecated/recordings_raw/` | 583 | 32.3 MB | history | Raw recording sessions (masters kept locally; not committed) |
+| `_archive/recent_versions/out_deck_f62/` | 1 | 2.8 MB | history | The bubble pictures replaced on 2026-10-18 (out_phrases_a2, out_phrases), kept on disk |
+| `_archive/recent_versions/out_phrases/` | 57 | 160.2 MB | history | The bubble pictures replaced on 2026-10-18 (out_phrases_a2, out_phrases), kept on disk |
+| `_archive/recent_versions/out_phrases_a2/` | 147 | 414.8 MB | history | The bubble pictures replaced on 2026-10-18 (out_phrases_a2, out_phrases), kept on disk |
+| `_qa/` | 1 | 550.5 KB | cache | The QA gate's cache of model read-backs |
+| `code/__pycache__/` | 12 | 327.7 KB | cache | Python bytecode (wherever it sits) |
+| `media/generation/out_deck_a2/__pycache__/` | 3 | 32.1 KB | cache | Python bytecode (wherever it sits) |
+| `media/generation/out_deck_f62/__pycache__/` | 3 | 38.7 KB | cache | Python bytecode (wherever it sits) |
+| `media/generation/out_deck_sent/__pycache__/` | 1 | 7.2 KB | cache | Python bytecode (wherever it sits) |
+| `media/generation/out_phrases_v3/__pycache__/` | 1 | 8.6 KB | cache | Python bytecode (wherever it sits) |
+| `media/images/` | 1,452 | 4.1 GB | live | The ONE current picture of every card (<key>.png\|webp\|jpg); not committed (GitHub Releases / AnkiWeb) |
+| `media/images/_history/` | 535 | 1.4 GB | history | Every other version of every picture, at its old batch path (shadowed renders, _rerolled/, _superseded/); never read by the build |
+| `review_desk/__pycache__/` | 1 | 1.8 KB | cache | Python bytecode (wherever it sits) |
+| `review_desk/review_desk.html` | 1 | 27.1 KB | generated | The Review Desk page as last built (then published as the artifact); gitignored |
+| `rounds/2026-10-17_additions_round2/page/` | 41 | 5.1 MB | history | Additions round 2: redraws from the owner's 2026-10-17 review; edit_inset.py = the masked-edit tool of the time |
+| `rounds/2026-10-17_historical/test/` | 18 | 18.8 MB | history | Test renders of the round (not committed) |
+| `rounds/2026-10-17_pilot_round2/page/` | 43 | 6.3 MB | history | Pilot round 2: diagnosis, the four rule changes (RULES.md), usage notes, backs, redraw list, review page |
+| `rounds/2026-10-18_hand_fixes/_chk/` | 16 | 2.0 MB | history | A round's check images (not committed) |
+| `rounds/2026-10-18_hand_fixes/page/` | 107 | 8.1 MB | history | Fixes of the 40 cards flagged by the hand scan: masked edits, before/after, QA, review page |
+| `rounds/2026-10-18_phrase_additions/page/` | 64 | 4.6 MB | history | Staging and QA of the 69 PHRASE-route benchmark additions |
+| `rounds/2026-10-18_rollout/page/` | 145 | 11.5 MB | history | The bubble-free roll-out: six redraws, QA, which superseded pictures moved where, the review page |
+| `rounds/2026-10-19_fixes_round3/page/` | 211 | 17.3 MB | history | Fixes round 3: owner verdicts on roll-out, phrase additions, hand fixes, historical test; the 58 resolved stresses; merges applied |
+| `rounds/2026-10-19_fixes_round4/page/` | 62 | 4.8 MB | history | Fixes round 4 (plan + answers; 22 prompts changed) |
+| `rounds/2026-10-19_fixes_round4/work/` | 44 | 15.5 MB | history | A round's working files (not committed) |
+| `rounds/2026-10-19_fixes_round5/page/` | 26 | 2.1 MB | history | Fixes round 5: the whole-re-roll rule begins; pick_413.py chose the 413 render |
+| `rounds/2026-10-19_fixes_round5/work/` | 18 | 2.2 MB | history | A round's working files (not committed) |
+| `rounds/2026-10-19_fixes_round6/page/` | 4 | 288.4 KB | history | Fixes round 6: A2-0359 Labai ačiū final panel (gen_0359.py) |
+| `rounds/2026-10-19_fixes_round6/work/` | 3 | 559.3 KB | history | A round's working files (not committed) |
+| `rounds/2026-10-24_deep_tidy/move_log_untracked_claude.tsv` | 1 | 145.1 KB | history | What actually moved, per host (append-only) |
+| `sources/A2_2_lygis_VU_A1A2_lexicon.pdf` | 1 | 431.8 KB | source | The source PDFs of the word lists (not committed) |
+| `sources/LT_3000_most_frequent_PERLSI.pdf` | 1 | 1.3 MB | source | The source PDFs of the word lists (not committed) |
+| `style_lab/2026-10-10_01_gpt-image-2_probe/` | 14 | 35.6 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-10_02_engine_check/` | 2 | 2.7 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-10_03_model_comparison/` | 9 | 18.0 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-10_04_levers_A_B/` | 21 | 49.4 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-10_05_fable_F1-F3/` | 110 | 324.5 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-10_06_blind_survey/` | 167 | 192.6 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-10_07_confirmation/` | 74 | 103.3 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-10_08_F6_roll/` | 86 | 121.0 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-11_09_F6.1_spotcheck/` | 126 | 206.1 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/2026-10-11_10_F6.2_check/` | 55 | 102.8 MB | history | One dated experiment: NOTES.md, prompts, logs, results (images stay on the Mac) |
+| `style_lab/tools/__pycache__/` | 1 | 2.3 KB | cache | Python bytecode (wherever it sits) |
+| `tools/__pycache__/` | 12 | 128.1 KB | cache | Python bytecode (wherever it sits) |

@@ -1,0 +1,172 @@
+{
+ "package": "A2_deep.apkg",
+ "bytes": 94670441,
+ "checks": {
+  "refs": {
+   "referenced": 696,
+   "missing_from_media_map": [],
+   "n_missing": 0,
+   "sound_files": 101
+  },
+  "media_in_zip": {
+   "missing": [],
+   "n_missing": 0
+  },
+  "ascii_names": {
+   "non_ascii": [],
+   "n": 0
+  },
+  "size": {
+   "bytes": 94670441,
+   "MB": 90.3,
+   "under_250MB": true
+  },
+  "identity": {
+   "keys_not_NNNN_slug": [],
+   "n_bad_keys": 0,
+   "plate_not_key_number": [],
+   "n_bad_plates": 0,
+   "bad_tags": [],
+   "n_bad_tags": 0,
+   "level_tag_not_subdeck": [],
+   "n_bad_level": 0,
+   "without_image": [],
+   "n_without_image": 0,
+   "kinds": {
+    "picture": 491,
+    "cloze": 647,
+    "phrase": 84,
+    "sentence": 20
+   }
+  },
+  "guids": {
+   "against": "A2_post_tidy.apkg",
+   "key_map": true,
+   "old_notes": 1242,
+   "keys_in_both_after_mapping": 1242,
+   "changed_as_mapped": 0,
+   "changed_unexpectedly": [],
+   "n_changed_unexpectedly": 0,
+   "only_new": [],
+   "n_only_new": 0,
+   "only_old": [],
+   "n_only_old": 0,
+   "old_keys_not_in_map": [
+    "1192_ir_jums",
+    "1193_ar_galetumete_man_padeti",
+    "1194_pasaulis",
+    "1195_puse",
+    "1196_rukyti",
+    "1197_pora",
+    "1198_imsiu_sita",
+    "1199_puse_triju",
+    "1200_oras",
+    "1201_kelione",
+    "1202_keliauti",
+    "1203_negali_buti",
+    "1204_daina",
+    "1205_naujieji_metai",
+    "1206_sportas",
+    "1207_liga",
+    "1208_mokyti",
+    "1209_metras",
+    "1210_klausti",
+    "1211_kuo_galiu_padeti"
+   ]
+  },
+  "fields_modulo_rename": {
+   "n_notes_differing": 0,
+   "n_field_diffs": 0,
+   "by_field": {},
+   "examples": []
+  }
+ },
+ "fail": [],
+ "notes": 1242,
+ "cards": 1242,
+ "media_files": 699,
+ "deck_descriptions": {
+  "Lietuvių Flashcards::A2": "Lietuvių Flashcards v3.0 · design spec 3.4.1 · style 0885ded5e583 · built 2026-10-24 · 453caea"
+ },
+ "import_test": {
+  "anki_version": "26.09.3",
+  "notes": 1242,
+  "cards": 1242,
+  "import_log_new": 1242,
+  "decks": [
+   "Default",
+   "Lietuvių Flashcards",
+   "Lietuvių Flashcards::A2"
+  ],
+  "rendered": [
+   {
+    "card": 1792852779053,
+    "note_type": "Lietuvių GO",
+    "key": "2271_sparnas",
+    "q_len": 21045,
+    "a_len": 21399,
+    "files": [
+     "2271_sparnas.mp3",
+     "2271_sparnas_sf2.jpg"
+    ],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "pav. 2271    wing",
+    "a_text": "sparnas   spar̃nas [anki:play:a:0]    ♂   sparnas ·  sparno    wing        pav. 2271    wing"
+   },
+   {
+    "card": 1792852780141,
+    "note_type": "Lietuvių GO",
+    "key": "2242_kirpykla",
+    "q_len": 21065,
+    "a_len": 21418,
+    "files": [
+     "2242_kirpykla_sf2.jpg"
+    ],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "pav. 2242    hairdresser's",
+    "a_text": "kirpykla   kirpyklà     ♀   kirpykla ·  kirpyklos    hairdresser's        pav. 2242    hairdresser's"
+   },
+   {
+    "card": 1792852779255,
+    "note_type": "Lietuvių GO Cloze",
+    "key": "1887_aiskiai",
+    "q_len": 21502,
+    "a_len": 22062,
+    "files": [],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "Kalbėkite  [...] .  Speak clearly.    pav. 1887    clearly",
+    "a_text": "Kalbėkite  aiškiai .   aiškiai   áiškiai     clearly  Speak clearly.     pav. 1887    clearly"
+   },
+   {
+    "card": 1792852780543,
+    "note_type": "Lietuvių GO Cloze",
+    "key": "1519_keliones_draudimas",
+    "q_len": 21536,
+    "a_len": 22176,
+    "files": [],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "Ar turite  [...] ?  Do you have travel insurance?    pav. 1519    travel insurance",
+    "a_text": "Ar turite  kelionės draudimą ?   kelionės draudimas   keliõnės draudìmas     ♂    travel insurance  Do you have travel insurance?     pav. 1519    travel insurance"
+   },
+   {
+    "card": 1792852781497,
+    "note_type": "Lietuvių GO Cloze",
+    "key": "1754_zuvis_plaukia_upeje",
+    "q_len": 21498,
+    "a_len": 22112,
+    "files": [
+     "1754_zuvis_plaukia_upeje_sf2.jpg"
+    ],
+    "missing": [],
+    "unresolved_braces": false,
+    "q_text": "pav. 1754    locative    Žuvis  [...]  upėje.",
+    "a_text": "Žuvis  plaukia  upėje.         locative  The fish is swimming in the river.        pav. 1754    locative"
+   }
+  ]
+ },
+ "ok": true
+}
