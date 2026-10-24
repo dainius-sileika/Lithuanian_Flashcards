@@ -1,6 +1,6 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.4.1** · dated 2026-10-24 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.4.2** · dated 2026-10-24 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
@@ -351,6 +351,7 @@ one home; the afternoon one (the "deep tidy") gave everything else one.
   `_archive/`, junk to `_TO_DELETE/<reason>/`.
 
 ## Spec changelog
+- **3.4.2 — 2026-10-24.** paths only: the deep tidy of the working directory — code/ (modules), data/ (live data), rounds/ (one dated folder per round), reports/, docs/decisions/, media/audio/_inbox/; §13 rewritten; FILES.md (generated inventory, tools/make_index.py) and tools/smoke_test.sh added to the guards; the lock's source paths follow the modules into code/; no look-defining value changed
 - **3.4.1 — 2026-10-24.** paths only: media/ layout (one home per medium, history beside it, generation records separate), §13 layout of the working directory, INDEX.md and tools/check_layout.py; §4/§7/§9/§10/§12 path wording; no look-defining value changed
 - **3.4.0 — 2026-10-20.** §12 added: one NNNN_slug key namespace (numbers from the study order at the rename of 2026-10-20, slugs from the headword), plate number = key number for all note types, hierarchical lt:: tags with the 20-section topic map (topic = the section shown), key history in a2_build/rename/key_map_v1.csv read through tools/keymap.py; SECTIONS gains Functions, ROUTE_SECTIONS keyed by lt::kind tags; §7/§8 updated for the rename and dep37 (owner decision 2026-10-19: rename everything so it's consistent)
 - **3.3.0 — 2026-10-19.** Key/GUID freeze moved: keys lock once A1 and A2 are both signed off, not at v3.0 (owner, 2026-10-19)

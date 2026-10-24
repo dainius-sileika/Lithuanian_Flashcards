@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,941 tracked files in 696 rows.
+1,942 tracked files in 697 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -153,6 +153,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `docs/spec_history/DESIGN_SPEC_v3.3.0.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 | `docs/spec_history/DESIGN_SPEC_v3.4.0.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 | `docs/spec_history/DESIGN_SPEC_v3.4.1.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
+| `docs/spec_history/DESIGN_SPEC_v3.4.2.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 
 ### reports/
 
