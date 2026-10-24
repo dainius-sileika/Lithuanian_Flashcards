@@ -29,7 +29,7 @@ TOP_ORDER = ["(root)", "code", "data", "media", "docs", "reports", "rounds", "re
              "fonts", "style", "style_lab", "_archive", "a2_build"]
 # untracked folders are counted at these depths (deeper files are folded into the nearest listed ancestor)
 UNTRACKED_GROUP_DEPTH = {"media/images/_history": 3, "rounds": 3, "style_lab": 2, "_TO_DELETE": 2, "_archive": 3,
-                         "reports": 2, "media/audio": 2, "media/images": 2}
+                         "reports": 2, "media/audio": 2, "media/images": 2, "review_desk": 2, "sources": 2}
 
 
 class Rule:
@@ -150,10 +150,12 @@ def untracked_section(rules):
             for pre, d in UNTRACKED_GROUP_DEPTH.items():
                 if p.startswith(pre + "/"):
                     depth = max(depth, d)
-            if len(parts) == 1:
-                key = p                              # a loose file at the root (the release package, a secret)
+            if "__pycache__" in parts:
+                key = "/".join(parts[:parts.index("__pycache__") + 1]) + "/"      # bytecode, wherever it sits
+            elif depth >= len(parts):
+                key = p                              # a loose file (the release package, a secret, a log)
             else:
-                key = "/".join(parts[:min(depth, len(parts) - 1)]) + "/"
+                key = "/".join(parts[:depth]) + "/"
             g = groups.setdefault(key, [0, 0])
             g[0] += 1
             g[1] += size

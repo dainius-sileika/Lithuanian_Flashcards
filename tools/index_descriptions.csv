@@ -172,6 +172,8 @@ rounds/2026-10-24_deep_tidy/verify/,history,,Build manifests and verify reports 
 review_desk/README.md,live,,The Review Desk SOP (the owner decides on one page; answers in its database),people
 review_desk/items.json,live,,"The open items (id, group, title, question, options, links)",read by review_desk/build.py; edited each round
 review_desk/template.html,live,,The Review Desk page template,read by review_desk/build.py
+review_desk/review_desk.html,generated,,The Review Desk page as last built (then published as the artifact); gitignored,written by review_desk/build.py
+review_desk/img/,cache,1,Screenshots copied into the Review Desk page,written by review_desk/build.py
 review_desk/build.py,live,,Fills the template with the items and screenshots -> review_desk.html (then published as the artifact),run by people from review_desk/
 # ---- sources/ ----------------------------------------------------------------------------------------------
 sources/lt_3000_frequency.csv,source,,PERLSI 3000: Lithuanian press frequency ranks,read by build_study_order_v3.py
@@ -240,7 +242,7 @@ media/images/_history/,history,1,"Every other version of every picture, at its o
 media/audio/_inbox/,live,1,Recorder ZIPs waiting to be ingested,read by tools/ingest_takes.py --inbox
 _apkg_media/,cache,1,"Transcoded card pictures for the package, keyed by source hash (<key>_sf2.jpg); regenerate freely",written and read by build_apkg.py
 _qa/,cache,1,The QA gate's cache of model read-backs,written and read by code/qa_images.py
-__pycache__/,cache,1,Python bytecode,python
+*__pycache__/*,cache,1,Python bytecode (wherever it sits),python
 _TO_DELETE/,cache,1,"Junk sorted by reason (MANIFEST.csv); the owner deletes, nobody else",people
 _archive/deprecated/recordings_raw/,history,1,Raw recording sessions (masters kept locally; not committed),history
 _archive/deprecated/backups/,history,1,Old backups (not committed),history
