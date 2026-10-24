@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,942 tracked files in 697 rows.
+1,943 tracked files in 698 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -530,6 +530,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-20_rename/media_log_key_map_v2_claude_2026-10-20.tsv` | history | The key rename of 2026-10-20: plan, dry-runs, applied record, media logs, the v2 amendment script, the recorder migration test (the maps themselves: data/key_maps/) | history |
 | `rounds/2026-10-20_rename/recorder_migration_test_v2.py` | history | The key rename of 2026-10-20: plan, dry-runs, applied record, media logs, the v2 amendment script, the recorder migration test (the maps themselves: data/key_maps/) | history |
 | `rounds/2026-10-20_rename/recorder_migration_test_v2.txt` | history | The key rename of 2026-10-20: plan, dry-runs, applied record, media logs, the v2 amendment script, the recorder migration test (the maps themselves: data/key_maps/) | history |
+| `rounds/2026-10-24_deep_tidy/APPLIED.md` | history | What was run and verified in the deep tidy (packages identical, smoke test) | people |
 | `rounds/2026-10-24_deep_tidy/PLAN.md` | history | The deep tidy of 2026-10-24: design of this layout, what moved and why, what was left alone | people |
 | `rounds/2026-10-24_deep_tidy/move_log_tracked_vm.tsv` | history | What actually moved, per host (append-only) | written by tools/move_files.py |
 | `rounds/2026-10-24_deep_tidy/move_rules.csv` | history | The move rules (old, new, why) the plan was expanded from | read by tools/move_files.py plan |
