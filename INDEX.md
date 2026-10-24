@@ -29,6 +29,7 @@ Owner: Dainius Sileika. The design is stated in **`docs/DESIGN_SPEC_CURRENT.md`*
 | `media/` | **All card media.** §2 and §3. |
 | `docs/` | The design spec and its history, the version register, how to change the look, the AnkiWeb description, the changelog, the method playbook. §6. |
 | `a2_build/` | Everything built around the A2 list: `a2_wordlist.csv`, `sentences/sentences.csv`, `context_notes.csv` (usage lines on the backs), `id_map.csv`, `merged_keys.csv`, `deferred_B1.csv`, `recording_list.csv` (the recorder's take list), `RECORDING_GUIDE.md`, `rename/` (the key maps, §8), `tidy/` (the 2026-10-24 move table, §14), `study_order/` (audits), `src/` (list builders), one folder per review round (`round3/` … `round7/`, `rollout*/`, `pilot_round2/`, `hand_fixes/`…), the plans (`A1_WRAPUP.md`, `PLAN_A2_completion.md`), `audio/inbox/` (where the owner drops exported takes). |
+| `rounds/` | **Being created (deep tidy of 2026-10-24):** one dated folder per round of work; plan and move table in `rounds/2026-10-24_deep_tidy/`. This index is rewritten for the new layout in the same tidy. |
 | `tools/` | `check_layout.py` (this layout), `style_lock.py`, `spec_release.py`, `golden_set.py`, `verify_apkg.py`, `apkg_keys_list.py`, `rename_keys.py`, `keymap.py`, `ingest_takes.py`, `hooks/pre-commit` + `install_hooks.sh`. |
 | `anki/` | Card CSS (`go_theme.css`, `frame_standard.css`, `back_proposed.css`) and `templates.md`. |
 | `fonts/` | Brygada 1918 (shipped inside the package as media); `_superseded/` the retired pair; `review/` preview fonts. |
