@@ -34,8 +34,8 @@ Spec: `docs/DESIGN_SPEC_CURRENT.md` (§1, §4, §6, §11). Lock: `style/STYLE_LO
 | sentence cards | 0747_mama_gamina_vakariene * | a sentence picture for a cloze card |
 
 \* **Pending pictures (4).** The cloud clone holds only the 2026-10-11 renders; the bubble-free situation
-cards (`out_phrases_v3/`, 2026-10-18) and the sentence pictures (`out_deck_sent/`) exist on the owner's
-machine. Their prompts are already here. To complete the set, on the machine with the renders:
+cards (batch `out_phrases_v3`, 2026-10-18) and the sentence pictures (batch `out_deck_sent`) exist on the owner's
+machine (since 2026-10-24 all current pictures are in `media/images/`, the ledgers in `media/generation/<batch>/`). Their prompts are already here. To complete the set, on the machine with the renders:
 `python3 tools/golden_set.py` then commit the four JPEGs.
 
 All 24 present pictures are single-row ledger keys (drawn once, never re-rolled or edited), so each JPEG is

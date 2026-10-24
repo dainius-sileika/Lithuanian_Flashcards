@@ -286,8 +286,15 @@ def cmd_verify(a):
                 print("MISSING", new)
             continue
         if sha1(new) != h:
-            bad += 1
-            print("BYTES DIFFER", new)
+            # a tracked source edited for the new layout in the same commit (gen.py drivers, a2_adapter.py):
+            # fine when the file is exactly what git holds at the new path
+            blob = subprocess.run(["git", "show", f"HEAD:{new}"], cwd=ROOT, capture_output=True).stdout if int(r["tracked"]) else b""
+            if int(r["tracked"]) and blob and hashlib.sha1(blob).hexdigest() == sha1(new):
+                ok += 1
+                print("EDITED (matches git HEAD at the new path)", new)
+            else:
+                bad += 1
+                print("BYTES DIFFER", new)
         else:
             ok += 1
         if int(r["tracked"]) and new not in tr:
