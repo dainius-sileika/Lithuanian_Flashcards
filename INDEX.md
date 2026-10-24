@@ -38,7 +38,7 @@ Owner: Dainius Sileika. The design is stated in **`docs/DESIGN_SPEC_CURRENT.md`*
 | `a2_rebase/` | The 2026-10-10 rebase of the A2 queue against the official lists (`README.md` has the source URLs). |
 | `sources/` | Frequency and lexicon sources (PERLSI 3000, VU A1/A2); the PDFs are not committed. |
 | `style_lab/` | The style experiments that settled the F6.2 look (dated folders with notes); kept as a record (owner). `research/` is still read by `go_settings.py`. |
-| `_archive/` | Kept history: `deprecated/` (old code and specs), `docs/` (superseded GO_STYLE_SPEC, ROADMAP, the pre-3.0 VERSIONS.md and AnkiWeb text), `builds/` (old packages and release candidates), `data/`, `code/`, `review_packs/`, `takes/` (ingested recorder ZIP leftovers), `recent_versions/`. |
+| `_archive/` | Kept history: `deprecated/` (old code and specs), `docs/` (superseded GO_STYLE_SPEC, ROADMAP, the pre-3.0 VERSIONS.md and AnkiWeb text), `builds/` (old packages and release candidates), `data/`, `code/`, `review_packs/`, `recent_versions/` (the bubble pictures replaced on 2026-10-18); `takes/` appears at the first audio ingest (leftover clips of each recorder ZIP). |
 | `_TO_DELETE/` | Things judged junk, sorted by reason (`MANIFEST.csv`; `junk_2026-10-24/` = `.DS_Store` and a stray `__pycache__`). **The owner deletes; nobody else.** Gitignored. |
 | `_apkg_media/`, `_qa/`, `__pycache__/` | Caches: transcoded card pictures for the package (keyed by source hash), QA results, Python bytecode. Safe to delete; regenerate on the next run. Gitignored. |
 | `.azure_key.txt`, `.openai_key.txt`, `.github_token`, `.huggingface_token` | **Secrets.** Gitignored, read from the root by the scripts, never shared, never moved, never printed. |
