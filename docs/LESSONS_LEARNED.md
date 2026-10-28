@@ -51,6 +51,11 @@ not repeated here.
   verb forms shipped unmarked in every package until the owner noticed while recording. Rule: every Lithuanian
   form shown on a card carries a sourced mark; an unsourced one is listed for the owner. Audits check every
   displayed field, not just the headword. Enforced: spec (minor release 2026-10-28), `rounds/2026-10-28_stress_forms/`.
+- **2026-10-28 · Homographs passed earlier checks.** The stress sweep found *antis* "duck" filed with the gender
+  and genitive of *añtis* m "bosom" (ančio; its check said "kirtis.info confirmed"), and *kaltas* "guilty" with
+  the stress of the noun *káltas* "chisel". The old checks matched the spelling, not the word. Rule: a check
+  against a source matches the sense (gloss), part of speech and gender too, not just the letters.
+  Enforced: `rounds/2026-10-28_stress_forms/match_kaikki_v2.py` reports headword conflicts; fixed in commit 72af6a2.
 - **2026-10-20 · A parse artefact shipped on a card back** (*kosėti* showed "{{l" and "lt" as its forms).
   Rule: before a build, scan every displayed field for wiki-template residue and empty-but-expected forms.
   Enforced: by hand in the rc3 round; candidate for a build check.
