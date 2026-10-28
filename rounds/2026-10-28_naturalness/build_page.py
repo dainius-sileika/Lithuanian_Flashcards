@@ -92,7 +92,7 @@ textarea{{width:100%;box-sizing:border-box;margin-top:8px;min-height:38px;font:1
 .sum{{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin-top:8px}}
 </style>
 <header class="band"><div class="wrap"><h1>Naturalness review: what changes</h1>
-<p>Three reviewers read all 1,255 sentences and phrases for what a native speaker would naturally say; a fourth reviewed requests for politeness. 1,183 stay as they are. These {len(items)} need a decision or are proposed for change. The taught word is underlined.</p>
+<p>Three reviewers read all 1,255 sentences and phrases for what a native speaker would naturally say; a fourth reviewed requests for politeness. 1,176 stay as they are. These {len(items)} need a decision or are proposed for change. The taught word is underlined.</p>
 <div class="sum"><span>Your corrections challenged: {counts["own"]}</span><span>Your call: {counts["call"]}</span><span>Proposed changes: {counts["change"]}</span><span id="done"></span></div></div></header>
 <main class="wrap">{"".join(rows_html)}
 <div class="status" id="status">Connecting…</div></main>
