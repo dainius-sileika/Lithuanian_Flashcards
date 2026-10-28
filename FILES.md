@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,578 tracked files in 727 rows.
+2,580 tracked files in 729 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -561,6 +561,8 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-28_naturalness/packet_A.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_B.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_C.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
+| `rounds/2026-10-28_politeness/PROPOSAL.md` | history | Plan only (Fable, 2026-10-28): register of requests in the deck's sentences — noriu vs norėčiau, galiu vs ar galiu, imperatives to strangers; the answer on #616, 5 changes, 4 owner's calls, 38 keeps, the evidence (Hilbig 2009, Klaas 2004, course dialogues) and the re-take cost | people; the lead applies what the owner approves |
+| `rounds/2026-10-28_politeness/proposals.csv` | history | One row per sentence examined (47): key, level, route, current, English, setting (who to whom), verdict, proposed sentence (same cloze target), proposed English, reason, evidence URLs, dependency check, recorded already, take file | written by hand from the analysis; read by whoever applies the round |
 | `rounds/2026-10-28_stress_forms/OWNER_LIST.csv` | history | The 355 forms the owner must stress himself (not in the source, ambiguous with an identical headword, or the source's headword contradicts ours), A1 first in study order, with the reason and the source's options; spec §7 | written by match_kaikki_v2.py; people |
 | `rounds/2026-10-28_stress_forms/OWNER_SHEET_v1.csv` | live | The owner's round-trip sheet: forms the source could not stress (A1 first), with an empty column for his stressed form | owner fills it in; the lead applies it |
 | `rounds/2026-10-28_stress_forms/README.md` | history | The round's own account: what was asked, what was done, the owner's verdicts | people |
