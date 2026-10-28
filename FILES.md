@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,680 tracked files in 829 rows.
+2,684 tracked files in 833 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -559,6 +559,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.verify.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_pre_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
+| `rounds/2026-10-28_naturalness/APPLIED_v1.md` | history | What the apply of the naturalness round changed: counts, re-slugs, new cards, re-takes, the recorder, the audit, pictures to re-roll, what was not applied and why | people |
 | `rounds/2026-10-28_naturalness/OWNER_STRESS_v1.csv` | live | The owner's stress sheet for this round: 7 forms on retargeted / new cards with no sourced mark (Sveik!, Minutėlę!, spūstis ×3, pasinaudoti, vieta prie praėjimo); same columns as the stress-forms OWNER_SHEET_v1 | owner fills it in; the lead applies it |
 | `rounds/2026-10-28_naturalness/RUBRIC.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/SECOND_CHECK.md` | history | Second check (Fable, 2026-10-28): each owner note resolved, the dependency / duplicate / English re-check of all 79 rows, the 6 retargets, the 34 pre-existing identical-sentence pairs for the lead, and the 5 stress marks left for the owner | people |
@@ -569,6 +570,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-28_naturalness/final_v1.csv` | history | Second check (Fable, 2026-10-28), ready to apply: one row per card that changes after the owner's answers (75: 67 EDIT, 6 RETARGET, 2 NEW_CARD) — key, field(s), old, new (braces), new English, action, source, recorded, extra_fields (headword/gloss/stress/forms for retargets), reason | written by hand from the analysis; read by the apply step |
 | `rounds/2026-10-28_naturalness/make_owner_stress_v1.py` | history | Writes OWNER_STRESS_v1.csv (the forms of this round no source gives a stress mark for) | history |
 | `rounds/2026-10-28_naturalness/media_log_key_map_v3_cloud_2026-10-28.tsv` | history | Hash logs of the key_map_v3 media renames (tracked audio in the cloud clone; the cloud's 1024 px picture copies; the pictures on the Mac) | written by rename_keys.apply_media_moves |
+| `rounds/2026-10-28_naturalness/media_log_key_map_v3_mac_2026-10-28.tsv` | history | Hash logs of the key_map_v3 media renames (tracked audio in the cloud clone; the cloud's 1024 px picture copies; the pictures on the Mac) | written by rename_keys.apply_media_moves |
 | `rounds/2026-10-28_naturalness/media_log_key_map_v3_tracked.tsv` | history | Hash logs of the key_map_v3 media renames (tracked audio in the cloud clone; the cloud's 1024 px picture copies; the pictures on the Mac) | written by rename_keys.apply_media_moves |
 | `rounds/2026-10-28_naturalness/merged_v1.json` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/owner_answers/0043_atsiprasau.json` | history | The owner's answers on the Naturalness Review page (one JSON per card: choice nat/pol/keep, note), exported 2026-10-28 23:05 | read by the second check and the apply step |
@@ -653,6 +655,8 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-28_naturalness/packet_A.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_B.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_C.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
+| `rounds/2026-10-28_naturalness/recorder_test_v1.py` | history | Headless test (playwright, fake microphone) of the recorder regenerated after the round: v3 key migration, stale clips set aside, take count, console errors | run by people |
+| `rounds/2026-10-28_naturalness/recorder_test_v1.txt` | history | Output of recorder_test_v1.py on the sheet of 2026-10-28 (PASS) | written by recorder_test_v1.py |
 | `rounds/2026-10-28_naturalness/retakes_v1.tsv` | history | The 20 re-takes: take, card, old said, new words, old and new file, bytes, sha1 | written by supersede_v1.py |
 | `rounds/2026-10-28_naturalness/review_A.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/review_A.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |

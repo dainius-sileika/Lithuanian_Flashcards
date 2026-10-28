@@ -1,0 +1,28 @@
+WORDS (takes on the sheet): 2336
+KEY_MAP 0239_orai_s / 1169_greitai_pasveik / 1482_ar_yra_laisvas_staliukas -> ['0239_oras_s', '1169_sveik', '1482_ar_yra_laisvu_staliuku']
+STOREINFO: 3 takes carried over from the old card keys. 3 takes already in this browser. 3 older clips were recorded for words that have since changed: set aside (in Export all).
+ZIP: {
+ "0263_tik.webm": "clip-of-0263_tik",
+ "1482_ar_yra_laisvu_staliuku.webm": "clip-of-1482_ar_yra_laisvas_staliukas",
+ "2435_spustis_s.webm": "clip-of-2435_spustis_s",
+ "superseded/0162_jai_s.1793224134466.webm": "clip-of-0162_jai_s",
+ "superseded/0239_oras_s.1793224134467.webm": "clip-of-0239_orai_s",
+ "superseded/1169_sveik.1793224134534.webm": "clip-of-1169_greitai_pasveik"
+}
+MANIFEST:
+key	dest	level	status	said	english	file
+0263_tik	media/audio/0263_tik.mp3	A1	new	tìk	only	0263_tik.webm
+1482_ar_yra_laisvu_staliuku	media/audio/1482_ar_yra_laisvu_staliuku.mp3	A2	new	Ar yra laisvų staliukų?	Are there any free tables?	1482_ar_yra_laisvu_staliuku.webm
+2435_spustis_s	media/audio/2435_spustis_s.mp3	A2	new	Centre spūstys.	There are traffic jams in the centre.	2435_spustis_s.webm
+0162_jai_s			superseded	Padovanojau jai gėlių.		superseded/0162_jai_s.1793224134466.webm
+0239_oras_s			superseded	Kokie šiandien orai?		superseded/0239_oras_s.1793224134467.webm
+1169_sveik			superseded	Greitai pasveik!		superseded/1169_sveik.1793224134534.webm
+
+CONSOLE ERRORS: none
+CHECK 0239_orai_s                      -> superseded/0239_oras_s.1793224134467.webm                    ok
+CHECK 1169_greitai_pasveik             -> superseded/1169_sveik.1793224134534.webm                     ok
+CHECK 0162_jai_s                       -> superseded/0162_jai_s.1793224134466.webm                     ok
+CHECK 1482_ar_yra_laisvas_staliukas    -> 1482_ar_yra_laisvu_staliuku.webm                             ok
+CHECK 0263_tik                         -> 0263_tik.webm                                                ok
+CHECK 2435_spustis_s                   -> 2435_spustis_s.webm                                          ok
+RESULT: PASS
