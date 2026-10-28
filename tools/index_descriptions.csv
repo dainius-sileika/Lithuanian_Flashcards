@@ -170,6 +170,7 @@ rounds/2026-10-24_deep_tidy/moves.csv,history,,"The move table: 1,274 files, old
 rounds/2026-10-24_deep_tidy/move_log_*.tsv,history,,"What actually moved, per host (append-only)",written by tools/move_files.py
 rounds/2026-10-24_deep_tidy/path_map.py,history,,Rewrote old path mentions in live code and docs to the new ones (and checks none are left),history
 rounds/2026-10-24_deep_tidy/verify/,history,,Build manifests and verify reports of the post-tidy A1 and A2 rebuilds,written by build_apkg.py tools/verify_apkg.py
+rounds/2026-10-28_naturalness/owner_answers/,history,,"The owner's answers on the Naturalness Review page (one JSON per card: choice nat/pol/keep, note), exported 2026-10-28 23:05",read by the second check and the apply step
 rounds/2026-10-28_naturalness/,history,,"The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge",people; the reviewers write review_*.csv
 rounds/2026-10-28_stress_forms/OWNER_SHEET_v1.csv,live,,"The owner's round-trip sheet: forms the source could not stress (A1 first), with an empty column for his stressed form",owner fills it in; the lead applies it
 rounds/2026-10-28_stress_forms/match_kaikki_v1.py,history,,"The lead's first matcher of the backs' forms (gen_sg, fem, pres3, past3) against the kaikki.org Wiktextract dump of en.wiktionary: 896 unique, 23 ambiguous, 377 not found",history
