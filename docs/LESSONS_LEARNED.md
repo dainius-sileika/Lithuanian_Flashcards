@@ -121,6 +121,11 @@ not repeated here.
 
 ## Working with the owner
 
+- **2026-10-28 · Choosing the agent (owner).** "Be judicious when you call a subagent: if Opus or another agent is good
+  enough to do a job, use it; Fable should be for the hardest or most necessary work." Rule: execution, data
+  plumbing, builds, audio processing, tidies with a clear plan → Opus (or a cheaper model); Fable only for hard
+  judgement (aesthetic and image-prompt design, Lithuanian decisions sources can't settle, plans with real risk)
+  or when the owner asks for it by name.
 - One Review Desk for everything he must see or decide; every message ends with its link; settled items and
   settled reference documents leave the desk (a stale "card backs" document made a settled question look open).
 - He is a native speaker: Lithuanian judgement calls that sources can't settle go to him as a short list, with
