@@ -1,0 +1,356 @@
+key,level,word,pron,field,form,why,source_options,file
+0007_batonas,A1,batonas,batònas,gen_sg,batono,not in source,,data/cards_anki.csv
+0023_batai,A1,batai,bãtai,gen_sg,batų,not in source,,data/cards_anki.csv
+0084_pirmadienis,A1,pirmadienis,pirmãdienis,gen_sg,pirmadienio,conflict: source headword pirmadiẽnis ≠ card pron pirmãdienis,pirmadiẽnio,data/a2_wordlist.csv
+0212_maistas,A1,maistas,maĩstas,gen_sg,maisto,not in source,,data/cards_anki.csv
+0222_tetis,A1,tėtis,tė̃tis,gen_sg,tėčio,not in source,,data/a2_wordlist.csv
+0350_pasakyti,A1,pasakyti,pasakýti,past3,pasakė,not in source,,data/a2_wordlist.csv
+0350_pasakyti,A1,pasakyti,pasakýti,pres3,pasako,not in source,,data/a2_wordlist.csv
+0422_suknele,A1,suknelė,suknẽlė,gen_sg,suknelės,not in source,,data/cards_anki.csv
+0487_purvinas,A1,purvinas,pur̃vinas,fem,purvina,not in source,,data/cards_anki.csv
+0506_puodelis,A1,puodelis,puodẽlis,gen_sg,puodelio,not in source,,data/cards_anki.csv
+0508_pinigine,A1,piniginė,pinigìnė,gen_sg,piniginės,not in source,,data/a2_wordlist.csv
+0555_uzdarytas,A1,uždarytas,uždarýtas,fem,uždaryta,not in source,,data/a2_wordlist.csv
+0566_nuotrauka,A1,nuotrauka,núotrauka,gen_sg,nuotraukos,not in source,,data/cards_anki.csv
+0561_sekunde,A1,sekundė,sekùndė,gen_sg,sekundės,not in source,,data/a2_wordlist.csv
+0575_druska,A1,druska,druskà,gen_sg,druskos,not in source,,data/cards_anki.csv
+0617_raudonas,A1,raudonas,raudónas,fem,raudona,ambiguous in source; headword identical for both,raudóna / raudonà,data/cards_anki.csv
+0619_melynas,A1,mėlynas,mė́lynas,fem,mėlyna,not in source,,data/cards_anki.csv
+0620_geltonas,A1,geltonas,geltónas,fem,geltona,ambiguous in source; headword identical for both,geltóna / geltonà,data/cards_anki.csv
+0622_rozinis,A1,rožinis,rõžinis,fem,rožinė,not in source,,data/cards_anki.csv
+0603_ponia,A1,ponia,ponià,gen_sg,ponios,not in source,,data/a2_wordlist.csv
+0635_pagalve,A1,pagalvė,pagálvė,gen_sg,pagalvės,not in source,,data/a2_wordlist.csv
+0646_treciadienis,A1,trečiadienis,trečiãdienis,gen_sg,trečiadienio,conflict: source headword trečiãdiẽnis ≠ card pron trečiãdienis,trečiãdiẽnio,data/a2_wordlist.csv
+0662_svente,A1,šventė,šveñtė,gen_sg,šventės,not in source,,data/a2_wordlist.csv
+0649_juokingas,A1,juokingas,juokìngas,fem,juokinga,not in source,,data/a2_wordlist.csv
+0681_tylus,A1,tylus,tylùs,fem,tyli,not in source,,data/cards_anki.csv
+0686_vidurnaktis,A1,vidurnaktis,vidùrnaktis,gen_sg,vidurnakčio,not in source,,data/a2_wordlist.csv
+0689_rasiklis,A1,rašiklis,rašìklis,gen_sg,rašiklio,not in source,,data/cards_anki.csv
+0691_uzkandis,A1,užkandis,ùžkandis,gen_sg,užkandžio,not in source,,data/a2_wordlist.csv
+0700_striuke,A1,striukė,striùkė,gen_sg,striukės,not in source,,data/a2_wordlist.csv
+0704_miegamasis,A1,miegamasis,miegamàsis,gen_sg,miegamojo,not in source,,data/cards_anki.csv
+0713_padavejas,A1,padavėjas,padavė́jas,gen_sg,padavėjo,not in source,,data/cards_anki.csv
+0725_pasiruoses,A1,pasiruošęs,pasiruõšęs,fem,pasiruošusi,not in source,,data/a2_wordlist.csv
+0736_ne_vienas,A1,nė vienas,nė víenas,pron,nė víenas,nė: not in source,,data/a2_wordlist.csv
+0741_megztinis,A1,megztinis,megztìnis,gen_sg,megztinio,not in source,,data/a2_wordlist.csv
+0759_reklama,A1,reklama,reklamà,gen_sg,reklamos,not in source,,data/a2_wordlist.csv
+0760_kopustas,A1,kopūstas,kopū̃stas,gen_sg,kopūsto,not in source,,data/a2_wordlist.csv
+0771_kortele,A1,kortelė,kortẽlė,gen_sg,kortelės,not in source,,data/cards_anki.csv
+0790_lentyna,A1,lentyna,lentýna,gen_sg,lentynos,not in source,,data/a2_wordlist.csv
+0805_degaline,A1,degalinė,degalìnė,gen_sg,degalinės,not in source,,data/a2_wordlist.csv
+0815_seklus,A1,seklus,seklùs,fem,sekli,not in source,,data/cards_anki.csv
+0836_rugsejis,A1,rugsėjis,rugsė́jis,gen_sg,rugsėjo,not in source,,data/a2_wordlist.csv
+0828_teatras,A1,teatras,teãtras,gen_sg,teatro,not in source,,data/cards_anki.csv
+0867_tobulas,A1,tobulas,tóbulas,fem,tobula,ambiguous in source; headword identical for both,tobulà / tóbula,data/a2_wordlist.csv
+0892_prisijungti,A1,prisijungti (prie),prisijùngti,past3,prisijungė,not in source,,data/a2_wordlist.csv
+0892_prisijungti,A1,prisijungti (prie),prisijùngti,pres3,prisijungia,not in source,,data/a2_wordlist.csv
+0923_cekis,A1,čekis,čẽkis,gen_sg,čekio,conflict: source headword čèkis ≠ card pron čẽkis,čèkio,data/a2_wordlist.csv
+0926_sedyne,A1,sėdynė,sėdỹnė,gen_sg,sėdynės,not in source,,data/a2_wordlist.csv
+0932_blynai,A1,blynai,blynaĩ,gen_sg,blynų,not in source,,data/a2_wordlist.csv
+0946_neturtingas,A1,neturtingas,neturtìngas,fem,neturtinga,not in source,,data/cards_anki.csv
+0947_sakute,A1,šakutė,šakùtė,gen_sg,šakutės,not in source,,data/cards_anki.csv
+0952_kioskas,A1,kioskas,kiòskas,gen_sg,kiosko,not in source,,data/a2_wordlist.csv
+0965_desertas,A1,desertas,desèrtas,gen_sg,deserto,not in source,,data/a2_wordlist.csv
+0972_negyvas,A1,negyvas,negývas,fem,negyva,not in source,,data/cards_anki.csv
+0993_papildomas,A1,papildomas,papìldomas,fem,papildoma,not in source,,data/a2_wordlist.csv
+0997_sekretorius,A1,sekretorius,sekretõrius,gen_sg,sekretoriaus,not in source,,data/cards_anki.csv
+1002_pereja,A1,perėja,pérėja,gen_sg,perėjos,not in source,,data/a2_wordlist.csv
+1003_asmuo,A1,asmuo,asmuõ,gen_sg,asmens,ambiguous in source; headword identical for both,asmeñs / asmẽns,data/cards_anki.csv
+1013_sostine,A1,sostinė,sóstinė,gen_sg,sostinės,conflict: source headword sõstinė ≠ card pron sóstinė,sõstinės,data/a2_wordlist.csv
+1048_petys,A1,petys,petỹs,gen_sg,peties,not in source,,data/cards_anki.csv
+1006_uzsiemimas,A1,užsiėmimas,užsiėmìmas,gen_sg,užsiėmimo,not in source,,data/a2_wordlist.csv
+1059_apibudinti,A1,apibūdinti,apibū̃dinti,past3,apibūdino,not in source,,data/a2_wordlist.csv
+1059_apibudinti,A1,apibūdinti,apibū̃dinti,pres3,apibūdina,not in source,,data/a2_wordlist.csv
+1060_muzikantas,A1,muzikantas,muzikántas,gen_sg,muzikanto,not in source,,data/a2_wordlist.csv
+1071_jautiena,A1,jautiena,jáutiena,gen_sg,jautienos,not in source,,data/cards_anki.csv
+1082_mobilusis_telefonas,A1,mobilusis telefonas,mobilùsis telefònas,gen_sg,mobiliojo telefono,mobiliojo: not in source; telefono: headword agrees,telefòno,data/cards_anki.csv
+1083_megstamiausias,A1,mėgstamiausias,mėgstamiáusias,fem,mėgstamiausia,not in source,,data/a2_wordlist.csv
+1102_rastelis,A1,raštelis,raštẽlis,gen_sg,raštelio,not in source,,data/cards_anki.csv
+1108_tepalas,A1,tepalas,tẽpalas,gen_sg,tepalo,not in source,,data/cards_anki.csv
+1114_sasiuvinis,A1,sąsiuvinis,są́siuvinis,gen_sg,sąsiuvinio,not in source,,data/a2_wordlist.csv
+1116_surus,A1,sūrus,sūrùs,fem,sūri,not in source,,data/a2_wordlist.csv
+1129_kostiumas,A1,kostiumas,kostiùmas,gen_sg,kostiumo,not in source,,data/cards_anki.csv
+1138_antis,A1,antis,ántis,gen_sg,ančio,conflict: source headword añtis ≠ card pron ántis,añčio,data/a2_wordlist.csv
+1145_atvirukas,A1,atvirukas,atvirùkas,gen_sg,atviruko,not in source,,data/a2_wordlist.csv
+1146_plastikas,A1,plastikas,plãstikas,gen_sg,plastiko,not in source,,data/cards_anki.csv
+1148_uzimtas,A1,užimtas,ùžimtas,fem,užimta,not in source,,data/a2_wordlist.csv
+1150_rasomasis_stalas,A1,rašomasis stalas,rãšomasis stãlas,gen_sg,rašomojo stalo,rašomojo: not in source; stalo: headword agrees,stãlo,data/a2_wordlist.csv
+1151_raktu_pakabukas,A1,raktų pakabukas,rãktų pakabùkas,gen_sg,raktų pakabuko,raktų: headword agrees; pakabuko: not in source,rãktų,data/a2_wordlist.csv
+1153_marskineliai,A1,marškinėliai,marškinė̃liai,gen_sg,marškinėlių,not in source,,data/cards_anki.csv
+1157_suolas,A1,suolas,súolas,gen_sg,suolo,not in source,,data/a2_wordlist.csv
+1159_karaliene,A1,karalienė,karalíenė,gen_sg,karalienės,not in source,,data/cards_anki.csv
+1162_molis,A1,molis,mólis,gen_sg,molio,not in source,,data/cards_anki.csv
+1163_keptuve,A1,keptuvė,keptùvė,gen_sg,keptuvės,not in source,,data/a2_wordlist.csv
+1166_siuksliadeze,A1,šiukšliadėžė,šiukšliãdėžė,gen_sg,šiukšliadėžės,not in source,,data/a2_wordlist.csv
+1173_padanga,A1,padanga,padangà,gen_sg,padangos,not in source,,data/cards_anki.csv
+1175_ozka,A1,ožka,ožkà,gen_sg,ožkos,not in source,,data/a2_wordlist.csv
+1184_praktikuotis,A1,praktikuotis,praktikúotis,past3,praktikavosi,not in source,,data/a2_wordlist.csv
+1184_praktikuotis,A1,praktikuotis,praktikúotis,pres3,praktikuojasi,not in source,,data/a2_wordlist.csv
+1186_pomegis,A1,pomėgis,pómėgis,gen_sg,pomėgio,not in source,,data/a2_wordlist.csv
+1187_nesiojamasis_kompiuteris,A1,nešiojamasis kompiuteris,nešiójamasis kompiùteris,gen_sg,nešiojamojo kompiuterio,nešiojamojo: not in source; kompiuterio: headword agrees,kompiùterio,data/cards_anki.csv
+1188_liniuote,A1,liniuotė,liniuõtė,gen_sg,liniuotės,not in source,,data/a2_wordlist.csv
+1191_auliniai_batai,A1,auliniai batai,aulìniai bãtai,gen_sg,aulinių batų,aulinių: not in source; batų: not in source,,data/a2_wordlist.csv
+1213_alkanas,A2,alkanas,alkãnas,fem,alkana,conflict: source headword álkanas ≠ card pron alkãnas,alkanà,data/a2_wordlist.csv
+1214_sotus,A2,sotus,sótus,fem,soti,not in source,,data/a2_wordlist.csv
+1243_minutele,A2,minutėlė,minutė̃lė,gen_sg,minutėlės,not in source,,data/a2_wordlist.csv
+1254_data,A2,data,datà,gen_sg,datos,not in source,,data/cards_anki.csv
+1255_galimas,A2,galimas,gãlimas,fem,galima,not in source,,data/a2_wordlist.csv
+1270_panele,A2,panelė,panẽlė,gen_sg,panelės,not in source,,data/a2_wordlist.csv
+1279_leidimas,A2,leidimas,leidìmas,gen_sg,leidimo,not in source,,data/a2_wordlist.csv
+1286_pakelis,A2,pakelis,pakẽlis,gen_sg,pakelio,not in source,,data/a2_wordlist.csv
+1297_kabinetas,A2,kabinetas,kabinètas,gen_sg,kabineto,not in source,,data/a2_wordlist.csv
+1309_apacia,A2,apačia,apačià,gen_sg,apačios,not in source,,data/a2_wordlist.csv
+1319_saunuolis,A2,šaunuolis,šaunuõlis,gen_sg,šaunuolio,not in source,,data/a2_wordlist.csv
+1325_pasimatymas,A2,pasimatymas,pasimãtymas,gen_sg,pasimatymo,not in source,,data/a2_wordlist.csv
+1327_parasas,A2,parašas,pãrašas,gen_sg,parašo,not in source,,data/a2_wordlist.csv
+1355_padetis,A2,padėtis,padėtìs,gen_sg,padėties,not in source,,data/a2_wordlist.csv
+1363_iranga,A2,įranga,į́ranga,gen_sg,įrangos,not in source,,data/a2_wordlist.csv
+1406_turistas,A2,turistas,turìstas,gen_sg,turisto,not in source,,data/a2_wordlist.csv
+1418_remontas,A2,remontas,remòntas,gen_sg,remonto,not in source,,data/a2_wordlist.csv
+1419_spektaklis,A2,spektaklis,spektãklis,gen_sg,spektaklio,not in source,,data/a2_wordlist.csv
+1430_vamzdis,A2,vamzdis,vam̃zdis,gen_sg,vamzdžio,not in source,,data/a2_wordlist.csv
+1439_banko_kortele,A2,banko kortelė,,gen_sg,banko kortelės,banko: not in source; kortelės: not in source,,data/a2_wordlist.csv
+1453_atidarytas,A2,atidarytas,atidarýtas,fem,atidaryta,not in source,,data/a2_wordlist.csv
+1461_tablete,A2,tabletė,tablètė,gen_sg,tabletės,not in source,,data/a2_wordlist.csv
+1463_dujos,A2,dujos,dùjos,gen_sg,dujų,ambiguous in source; headword identical for both,dùjų / dujų̃,data/a2_wordlist.csv
+1469_mintis,A2,mintis,mintìs,gen_sg,minties,not in source,,data/a2_wordlist.csv
+1475_bauda,A2,bauda,baudà,gen_sg,baudos,not in source,,data/a2_wordlist.csv
+1480_normalus,A2,normalus,normalùs,fem,normali,not in source,,data/a2_wordlist.csv
+1495_meistras,A2,meistras,méistras,gen_sg,meistro,not in source,,data/a2_wordlist.csv
+1497_kursas,A2,kursas,kùrsas,gen_sg,kurso,not in source,,data/a2_wordlist.csv
+1501_veikiantis,A2,veikiantis,veĩkiantis,fem,veikianti,not in source,,data/a2_wordlist.csv
+1505_paauglys,A2,paauglys,paauglỹs,gen_sg,paauglio,not in source,,data/a2_wordlist.csv
+1511_testas,A2,testas,tèstas,gen_sg,testo,not in source,,data/a2_wordlist.csv
+1514_eismas,A2,eismas,eĩsmas,gen_sg,eismo,not in source,,data/a2_wordlist.csv
+1522_netiesa,A2,netiesa,netiesà,gen_sg,netiesos,not in source,,data/a2_wordlist.csv
+1529_kibiras,A2,kibiras,kìbiras,gen_sg,kibiro,not in source,,data/a2_wordlist.csv
+1539_svarkas,A2,švarkas,švar̃kas,gen_sg,švarko,not in source,,data/a2_wordlist.csv
+1540_slepti,A2,slėpti(s),slė̃pti,pres3,slepia,not in source,,data/a2_wordlist.csv
+1550_medalis,A2,medalis,medãlis,gen_sg,medalio,not in source,,data/a2_wordlist.csv
+1555_para,A2,para,parà,gen_sg,paros,not in source,,data/a2_wordlist.csv
+1558_priezastis,A2,priežastis,príežastis,gen_sg,priežasties,conflict: source headword priežastìs ≠ card pron príežastis,priežastiẽs,data/a2_wordlist.csv
+1561_sandelis,A2,sandėlis,sándėlis,gen_sg,sandėlio,not in source,,data/a2_wordlist.csv
+1572_uniforma,A2,uniforma,unifòrma,gen_sg,uniformos,not in source,,data/a2_wordlist.csv
+1573_paminklas,A2,paminklas,pamiñklas,gen_sg,paminklo,not in source,,data/a2_wordlist.csv
+1575_registracija,A2,registracija,registrãcija,gen_sg,registracijos,not in source,,data/a2_wordlist.csv
+1611_atstumas,A2,atstumas,atstùmas,gen_sg,atstumo,not in source,,data/a2_wordlist.csv
+1616_salmas,A2,šalmas,šálmas,gen_sg,šalmo,not in source,,data/a2_wordlist.csv
+1630_sustabdyti,A2,sustabdyti,sustabdýti,past3,sustabdė,not in source,,data/a2_wordlist.csv
+1630_sustabdyti,A2,sustabdyti,sustabdýti,pres3,sustabdo,not in source,,data/a2_wordlist.csv
+1631_kaltas,A2,kaltas,káltas,fem,kalta,conflict: source headword kal̃tas ≠ card pron káltas,kaltà,data/a2_wordlist.csv
+1632_pertrauka,A2,pertrauka,pértrauka,gen_sg,pertraukos,not in source,,data/a2_wordlist.csv
+1634_tikslas,A2,tikslas,tìkslas,gen_sg,tikslo,not in source,,data/a2_wordlist.csv
+1638_nugaletojas,A2,nugalėtojas,nugalė́tojas,gen_sg,nugalėtojo,not in source,,data/a2_wordlist.csv
+1639_zurnalas,A2,žurnalas,žurnãlas,gen_sg,žurnalo,not in source,,data/cards_anki.csv
+1649_maiselis,A2,maišelis,maišẽlis,gen_sg,maišelio,not in source,,data/a2_wordlist.csv
+1650_pizama,A2,pižama,pižamà,gen_sg,pižamos,not in source,,data/a2_wordlist.csv
+1670_gidas,A2,gidas,gìdas,gen_sg,gido,not in source,,data/a2_wordlist.csv
+1687_mada,A2,mada,madà,gen_sg,mados,not in source,,data/a2_wordlist.csv
+1696_padarytas,A2,padarytas,padarýtas,fem,padaryta,not in source,,data/a2_wordlist.csv
+1700_atvykimas,A2,atvykimas,atvykìmas,gen_sg,atvykimo,not in source,,data/a2_wordlist.csv
+1704_prizas,A2,prizas,prìzas,gen_sg,prizo,not in source,,data/a2_wordlist.csv
+1710_sudetingas,A2,sudėtingas,sudėtìngas,fem,sudėtinga,not in source,,data/a2_wordlist.csv
+1711_beda,A2,bėda,bėdà,gen_sg,bėdos,not in source,,data/a2_wordlist.csv
+1722_receptas,A2,receptas,recèptas,gen_sg,recepto,not in source,,data/a2_wordlist.csv
+1733_nesveikas,A2,nesveikas,nesveĩkas,fem,nesveika,not in source,,data/a2_wordlist.csv
+1750_pestysis,A2,pėstysis,pėstỹsis,gen_sg,pėsčiojo,not in source,,data/a2_wordlist.csv
+1751_vedes,A2,vedęs,vẽdęs,fem,vedusi,not in source,,data/a2_wordlist.csv
+1756_drausti,A2,drausti,draũsti,past3,draudė,not in source,,data/a2_wordlist.csv
+1756_drausti,A2,drausti,draũsti,pres3,draudžia,not in source,,data/a2_wordlist.csv
+1757_akimirka,A2,akimirka,akìmirka,gen_sg,akimirkos,not in source,,data/a2_wordlist.csv
+1758_kepsnys,A2,kepsnys,kepsnỹs,gen_sg,kepsnio,not in source,,data/a2_wordlist.csv
+1765_patenkintas,A2,patenkintas,paténkintas,fem,patenkinta,not in source,,data/a2_wordlist.csv
+1766_isspresti,A2,išspręsti,išsprę́sti,past3,išsprendė,not in source,,data/a2_wordlist.csv
+1766_isspresti,A2,išspręsti,išsprę́sti,pres3,išsprendžia,not in source,,data/a2_wordlist.csv
+1767_skelbimas,A2,skelbimas,skelbìmas,gen_sg,skelbimo,not in source,,data/a2_wordlist.csv
+1770_ivartis,A2,įvartis,į́vartis,gen_sg,įvarčio,not in source,,data/a2_wordlist.csv
+1771_issigandes,A2,išsigandęs,išsigañdęs,fem,išsigandusi,not in source,,data/a2_wordlist.csv
+1774_internetas,A2,internetas,internètas,gen_sg,interneto,not in source,,data/a2_wordlist.csv
+1778_destytojas,A2,dėstytojas,dė́stytojas,gen_sg,dėstytojo,not in source,,data/a2_wordlist.csv
+1781_piesinys,A2,piešinys,piešinỹs,gen_sg,piešinio,not in source,,data/a2_wordlist.csv
+1784_iprastas,A2,įprastas,į̃prastas,fem,įprasta,not in source,,data/a2_wordlist.csv
+1788_uzaugti,A2,užaugti,užáugti,past3,užaugo,not in source,,data/a2_wordlist.csv
+1788_uzaugti,A2,užaugti,užáugti,pres3,užauga,not in source,,data/a2_wordlist.csv
+1790_naturalus,A2,natūralus,natūralùs,fem,natūrali,not in source,,data/a2_wordlist.csv
+1791_kontrolierius,A2,kontrolierius,kontroliẽrius,gen_sg,kontrolieriaus,not in source,,data/a2_wordlist.csv
+1792_rankine,A2,rankinė,rañkinė,gen_sg,rankinės,not in source,,data/a2_wordlist.csv
+1804_susituokti,A2,susituokti,susituõkti,past3,susituokė,not in source,,data/a2_wordlist.csv
+1804_susituokti,A2,susituokti,susituõkti,pres3,susituokia,not in source,,data/a2_wordlist.csv
+1805_ijungtas,A2,įjungtas,įjùngtas,fem,įjungta,not in source,,data/a2_wordlist.csv
+1806_isjungtas,A2,išjungtas,išjùngtas,fem,išjungta,not in source,,data/a2_wordlist.csv
+1808_vizitas,A2,vizitas,vizìtas,gen_sg,vizito,not in source,,data/a2_wordlist.csv
+1817_nuovada,A2,nuovada,núovada,gen_sg,nuovados,not in source,,data/a2_wordlist.csv
+1828_uztrauktukas,A2,užtrauktukas,užtrauktùkas,gen_sg,užtrauktuko,not in source,,data/a2_wordlist.csv
+1843_pasirinkimas,A2,pasirinkimas,pasirinkìmas,gen_sg,pasirinkimo,not in source,,data/a2_wordlist.csv
+1847_automatas,A2,automatas,automãtas,gen_sg,automato,not in source,,data/a2_wordlist.csv
+1848_tvarstis,A2,tvarstis,tvárstis,gen_sg,tvarsčio,not in source,,data/a2_wordlist.csv
+1852_dinges,A2,dingęs,diñgęs,fem,dingusi,not in source,,data/a2_wordlist.csv
+1860_ekskursija,A2,ekskursija,ekskùrsija,gen_sg,ekskursijos,not in source,,data/a2_wordlist.csv
+1866_viza,A2,viza,víza,gen_sg,vizos,not in source,,data/a2_wordlist.csv
+1883_uzpildyti,A2,užpildyti (anketą),užpìldyti,past3,užpildė,not in source,,data/a2_wordlist.csv
+1883_uzpildyti,A2,užpildyti (anketą),užpìldyti,pres3,užpildo,not in source,,data/a2_wordlist.csv
+1886_realus,A2,realus,realùs,fem,reali,not in source,,data/a2_wordlist.csv
+1891_uzuolaida,A2,užuolaida,užúolaida,gen_sg,užuolaidos,not in source,,data/a2_wordlist.csv
+1893_galerija,A2,galerija,galèrija,gen_sg,galerijos,not in source,,data/a2_wordlist.csv
+1896_gerbiamas,A2,gerbiamas,ger̃biamas,fem,gerbiama,not in source,,data/a2_wordlist.csv
+1901_matematika,A2,matematika,matemãtika,gen_sg,matematikos,not in source,,data/a2_wordlist.csv
+1902_pleistras,A2,pleistras,pléistras,gen_sg,pleistro,not in source,,data/a2_wordlist.csv
+1910_atpazinti,A2,atpažinti,atpažìnti,past3,atpažino,not in source,,data/a2_wordlist.csv
+1910_atpazinti,A2,atpažinti,atpažìnti,pres3,atpažįsta,not in source,,data/a2_wordlist.csv
+1911_draugiskas,A2,draugiškas,draũgiškas,fem,draugiška,not in source,,data/a2_wordlist.csv
+1912_gebejimas,A2,gebėjimas,gebė́jimas,gen_sg,gebėjimo,not in source,,data/a2_wordlist.csv
+1914_pyragaitis,A2,pyragaitis,pyragáitis,gen_sg,pyragaičio,not in source,,data/a2_wordlist.csv
+1921_neiprastas,A2,neįprastas,neįprãstas,fem,neįprasta,conflict: source headword neį̃prastas ≠ card pron neįprãstas,neįprastà,data/a2_wordlist.csv
+1925_paklode,A2,paklodė,paklõdė,gen_sg,paklodės,not in source,,data/a2_wordlist.csv
+1934_akademija,A2,akademija,akadèmija,gen_sg,akademijos,conflict: source headword akàdemija ≠ card pron akadèmija,akàdemijos,data/a2_wordlist.csv
+1936_keltas,A2,keltas,kéltas,gen_sg,kelto,not in source,,data/a2_wordlist.csv
+1938_grotuvas,A2,grotuvas,grotùvas,gen_sg,grotuvo,not in source,,data/a2_wordlist.csv
+1944_nepazistamasis,A2,nepažįstamasis,nepažįstamàsis,gen_sg,nepažįstamojo,not in source,,data/a2_wordlist.csv
+1949_ciuzinys,A2,čiužinys,čiužinỹs,gen_sg,čiužinio,not in source,,data/a2_wordlist.csv
+1956_trecdalis,A2,trečdalis,trẽčdalis,gen_sg,trečdalio,not in source,,data/a2_wordlist.csv
+1961_netikras,A2,netikras,netìkras,fem,netikra,not in source,,data/a2_wordlist.csv
+1963_sunenas,A2,sūnėnas,sūnė́nas,gen_sg,sūnėno,not in source,,data/a2_wordlist.csv
+1966_pagamintas,A2,pagamintas,pagamìntas,fem,pagaminta,not in source,,data/a2_wordlist.csv
+1969_atidarytuvas,A2,atidarytuvas,,gen_sg,atidarytuvo,not in source,,data/a2_wordlist.csv
+1970_riesas,A2,riešas,ríešas,gen_sg,riešo,not in source,,data/a2_wordlist.csv
+1971_chemija,A2,chemija,chèmija,gen_sg,chemijos,not in source,,data/a2_wordlist.csv
+1978_gripas,A2,gripas,grìpas,gen_sg,gripo,not in source,,data/a2_wordlist.csv
+1979_virtas,A2,virtas,vìrtas,fem,virta,not in source,,data/a2_wordlist.csv
+1981_saga,A2,saga,sagà,gen_sg,sagos,ambiguous in source; headword identical for both,sagõs / sãgos,data/a2_wordlist.csv
+1989_valiuta,A2,valiuta,valiutà,gen_sg,valiutos,not in source,,data/a2_wordlist.csv
+1991_sildymas,A2,šildymas,šìldymas,gen_sg,šildymo,not in source,,data/a2_wordlist.csv
+1994_paroda,A2,paroda,parodà,gen_sg,parodos,not in source,,data/a2_wordlist.csv
+2004_pratimas,A2,pratimas,pratìmas,gen_sg,pratimo,not in source,,data/a2_wordlist.csv
+2007_paveikti,A2,paveikti,paveĩkti,past3,paveikė,not in source,,data/a2_wordlist.csv
+2007_paveikti,A2,paveikti,paveĩkti,pres3,paveikia,not in source,,data/a2_wordlist.csv
+2010_modernus,A2,modernus,modernùs,fem,moderni,not in source,,data/a2_wordlist.csv
+2011_seansas,A2,seansas,seánsas,gen_sg,seanso,not in source,,data/a2_wordlist.csv
+2012_lempute,A2,lemputė,lempùtė,gen_sg,lemputės,not in source,,data/a2_wordlist.csv
+2015_gimnazija,A2,gimnazija,gimnãzija,gen_sg,gimnazijos,not in source,,data/a2_wordlist.csv
+2022_fizika,A2,fizika,fìzika,gen_sg,fizikos,not in source,,data/a2_wordlist.csv
+2023_keptas,A2,keptas,kẽptas,fem,kepta,not in source,,data/a2_wordlist.csv
+2029_dukterecia,A2,dukterėčia,dukterė́čia,gen_sg,dukterėčios,not in source,,data/a2_wordlist.csv
+2033_injekcija,A2,injekcija,injèkcija,gen_sg,injekcijos,not in source,,data/a2_wordlist.csv
+2044_kiausiniene,A2,kiaušinienė,kiaušiniẽnė,gen_sg,kiaušinienės,not in source,,data/a2_wordlist.csv
+2053_vietinis,A2,vietinis,viẽtinis,fem,vietinė,not in source,,data/a2_wordlist.csv
+2056_pokytis,A2,pokytis,pókytis,gen_sg,pokyčio,not in source,,data/a2_wordlist.csv
+2057_aleja,A2,alėja,alė́ja,gen_sg,alėjos,not in source,,data/a2_wordlist.csv
+2063_stalcius,A2,stalčius,stálčius,gen_sg,stalčiaus,not in source,,data/a2_wordlist.csv
+2064_aptarnauti,A2,aptarnauti,aptarnáuti,past3,aptarnavo,not in source,,data/a2_wordlist.csv
+2064_aptarnauti,A2,aptarnauti,aptarnáuti,pres3,aptarnauja,not in source,,data/a2_wordlist.csv
+2067_kulksnis,A2,kulkšnis,kulkšnìs,gen_sg,kulkšnies,not in source,,data/a2_wordlist.csv
+2068_sluoste,A2,šluostė,šluõstė,gen_sg,šluostės,not in source,,data/a2_wordlist.csv
+2070_diplomas,A2,diplomas,diplòmas,gen_sg,diplomo,not in source,,data/a2_wordlist.csv
+2071_privalumas,A2,privalumas,privalùmas,gen_sg,privalumo,not in source,,data/a2_wordlist.csv
+2072_krautuvele,A2,krautuvėlė,krautuvė̃lė,gen_sg,krautuvėlės,not in source,,data/a2_wordlist.csv
+2076_nepatenkintas,A2,nepatenkintas,nepaténkintas,fem,nepatenkinta,not in source,,data/a2_wordlist.csv
+2079_rentgenas,A2,rentgenas,reñtgenas,gen_sg,rentgeno,not in source,,data/a2_wordlist.csv
+2082_auditorija,A2,auditorija,auditòrija,gen_sg,auditorijos,not in source,,data/a2_wordlist.csv
+2083_karstis,A2,karštis,kar̃štis,gen_sg,karščio,not in source,,data/cards_anki.csv
+2085_popierinis,A2,popierinis,popierìnis,fem,popierinė,not in source,,data/a2_wordlist.csv
+2095_nemandagus,A2,nemandagus,nemandagùs,fem,nemandagi,not in source,,data/a2_wordlist.csv
+2098_tvarkarastis,A2,tvarkaraštis,tvarkãraštis,gen_sg,tvarkaraščio,not in source,,data/a2_wordlist.csv
+2100_persalimas,A2,peršalimas,péršalimas,gen_sg,peršalimo,not in source,,data/a2_wordlist.csv
+2101_lasisa,A2,lašiša,lašišà,gen_sg,lašišos,not in source,,data/a2_wordlist.csv
+2112_kastuvas,A2,kastuvas,kastùvas,gen_sg,kastuvo,not in source,,data/a2_wordlist.csv
+2114_gaisrine,A2,gaisrinė,gaĩsrinė,gen_sg,gaisrinės,not in source,,data/a2_wordlist.csv
+2115_vaza,A2,vaza,vazà,gen_sg,vazos,not in source,,data/a2_wordlist.csv
+2123_stiklainis,A2,stiklainis,stiklaĩnis,gen_sg,stiklainio,not in source,,data/a2_wordlist.csv
+2130_israsti,A2,išrasti,išràsti,past3,išrado,not in source,,data/a2_wordlist.csv
+2130_israsti,A2,išrasti,išràsti,pres3,išranda,not in source,,data/a2_wordlist.csv
+2133_madingas,A2,madingas,madìngas,fem,madinga,not in source,,data/a2_wordlist.csv
+2140_sluoti,A2,šluoti,šlúoti,past3,šlavo,not in source,,data/a2_wordlist.csv
+2140_sluoti,A2,šluoti,šlúoti,pres3,šluoja,not in source,,data/a2_wordlist.csv
+2142_susirupines,A2,susirūpinęs,susirū́pinęs,fem,susirūpinusi,not in source,,data/a2_wordlist.csv
+2149_burokelis,A2,burokėlis,burokė̃lis,gen_sg,burokėlio,not in source,,data/a2_wordlist.csv
+2154_daugiabutis,A2,daugiabutis,daugiabùtis,gen_sg,daugiabučio,not in source,,data/a2_wordlist.csv
+2158_suzalojimas,A2,sužalojimas,sužalójimas,gen_sg,sužalojimo,not in source,,data/cards_anki.csv
+2159_kraujospudis,A2,kraujospūdis,kraujóspūdis,gen_sg,kraujospūdžio,not in source,,data/a2_wordlist.csv
+2160_plastikinis,A2,plastikinis,plastikìnis,fem,plastikinė,not in source,,data/a2_wordlist.csv
+2164_odontologas,A2,odontologas,odontològas,gen_sg,odontologo,not in source,,data/a2_wordlist.csv
+2165_valgis,A2,valgis,val̃gis,gen_sg,valgio,not in source,,data/a2_wordlist.csv
+2167_autoservisas,A2,autoservisas,autosèrvisas,gen_sg,autoserviso,not in source,,data/a2_wordlist.csv
+2174_zmogzudyste,A2,žmogžudystė,žmogžudỹstė,gen_sg,žmogžudystės,not in source,,data/cards_anki.csv
+2178_registratura,A2,registratūra,registratūrà,gen_sg,registratūros,not in source,,data/a2_wordlist.csv
+2181_ispardavimas,A2,išpardavimas,išpardavìmas,gen_sg,išpardavimo,not in source,,data/a2_wordlist.csv
+2184_nepatogus,A2,nepatogus,nepatogùs,fem,nepatogi,not in source,,data/a2_wordlist.csv
+2188_neislaikyti,A2,neišlaikyti (egzamino),neišlaikýti,past3,neišlaikė,not in source,,data/a2_wordlist.csv
+2188_neislaikyti,A2,neišlaikyti (egzamino),neišlaikýti,pres3,neišlaiko,not in source,,data/a2_wordlist.csv
+2192_zadintuvas,A2,žadintuvas,žadintùvas,gen_sg,žadintuvo,not in source,,data/a2_wordlist.csv
+2195_taika,A2,taika,taikà,gen_sg,taikos,not in source,,data/cards_anki.csv
+2200_plansete,A2,planšetė,planšètė,gen_sg,planšetės,not in source,,data/a2_wordlist.csv
+2205_pagyvenes,A2,pagyvenęs,pagyvẽnęs,fem,pagyvenusi,not in source,,data/a2_wordlist.csv
+2207_technologija,A2,technologija,technològija,gen_sg,technologijos,not in source,,data/cards_anki.csv
+2209_sildytuvas,A2,šildytuvas,šildytùvas,gen_sg,šildytuvo,not in source,,data/a2_wordlist.csv
+2213_nevedes,A2,nevedęs,nevẽdęs,fem,nevedusi,not in source,,data/a2_wordlist.csv
+2217_kugelis,A2,kugelis,kùgelis,gen_sg,kugelio,not in source,,data/a2_wordlist.csv
+2218_slaugytoja,A2,slaugytoja,slaugýtoja,gen_sg,slaugytojos,not in source,,data/a2_wordlist.csv
+2220_kombinezonas,A2,kombinezonas,kombinezònas,gen_sg,kombinezono,not in source,,data/a2_wordlist.csv
+2222_elektrikas,A2,elektrikas,elèktrikas,gen_sg,elektriko,not in source,,data/a2_wordlist.csv
+2229_slenis,A2,slėnis,slė̃nis,gen_sg,slėnio,not in source,,data/cards_anki.csv
+2232_basutes,A2,basutės,basùtės,gen_sg,basučių,not in source,,data/a2_wordlist.csv
+2236_krepselis,A2,krepšelis,krepšẽlis,gen_sg,krepšelio,not in source,,data/a2_wordlist.csv
+2240_kurcias,A2,kurčias,kur̃čias,fem,kurčia,not in source,,data/cards_anki.csv
+2247_ketvirtadalis,A2,ketvirtadalis,ketvirtãdalis,gen_sg,ketvirtadalio,not in source,,data/a2_wordlist.csv
+2248_belstis,A2,belstis,bélstis,past3,beldėsi,not in source,,data/a2_wordlist.csv
+2248_belstis,A2,belstis,bélstis,pres3,beldžiasi,not in source,,data/a2_wordlist.csv
+2253_prieskambaris,A2,prieškambaris,príeškambaris,gen_sg,prieškambario,not in source,,data/a2_wordlist.csv
+2255_poliklinika,A2,poliklinika,poliklìnika,gen_sg,poliklinikos,not in source,,data/a2_wordlist.csv
+2260_sonine,A2,šoninė,šóninė,gen_sg,šoninės,not in source,,data/a2_wordlist.csv
+2261_suluzes,A2,sulūžęs,sulū́žęs,fem,sulūžusi,not in source,,data/a2_wordlist.csv
+2268_neskanus,A2,neskanus,neskanùs,fem,neskani,not in source,,data/a2_wordlist.csv
+2277_valgomasis,A2,valgomasis,válgomasis,gen_sg,valgomojo,conflict: source headword valgomàsis ≠ card pron válgomasis,válgomojo,data/a2_wordlist.csv
+2279_puolimas,A2,puolimas,puolìmas,gen_sg,puolimo,not in source,,data/cards_anki.csv
+2286_minia,A2,minia,minià,gen_sg,minios,not in source,,data/cards_anki.csv
+2288_augintinis,A2,augintinis,augìntinis,gen_sg,augintinio,not in source,,data/a2_wordlist.csv
+2294_ventiliatorius,A2,ventiliatorius,ventiliãtorius,gen_sg,ventiliatoriaus,not in source,,data/cards_anki.csv
+2296_bala,A2,bala,balà,gen_sg,balos,ambiguous in source; headword identical for both,bãlos / balõs,data/a2_wordlist.csv
+2298_rukytas,A2,rūkytas,rūkýtas,fem,rūkyta,not in source,,data/a2_wordlist.csv
+2300_manksta,A2,mankšta,mankštà,gen_sg,mankštos,not in source,,data/cards_anki.csv
+2303_avalyne,A2,avalynė,ãvalynė,gen_sg,avalynės,not in source,,data/a2_wordlist.csv
+2309_karsciavimas,A2,karščiavimas,karščiãvimas,gen_sg,karščiavimo,not in source,,data/a2_wordlist.csv
+2310_staltiese,A2,staltiesė,stáltiesė,gen_sg,staltiesės,not in source,,data/a2_wordlist.csv
+2313_tautybe,A2,tautybė,tautýbė,gen_sg,tautybės,not in source,,data/a2_wordlist.csv
+2319_nuostaba,A2,nuostaba,núostaba,gen_sg,nuostabos,not in source,,data/a2_wordlist.csv
+2322_pasenes,A2,pasenęs,pasẽnęs,fem,pasenusi,not in source,,data/a2_wordlist.csv
+2325_arbatinis,A2,arbatinis,arbãtinis,gen_sg,arbatinio,not in source,,data/a2_wordlist.csv
+2333_termometras,A2,termometras,termomètras,gen_sg,termometro,not in source,,data/a2_wordlist.csv
+2335_atmintukas,A2,atmintukas,atmintùkas,gen_sg,atmintuko,not in source,,data/a2_wordlist.csv
+2336_aukletojas,A2,auklėtojas,áuklėtojas,gen_sg,auklėtojo,not in source,,data/a2_wordlist.csv
+2337_paslaugus,A2,paslaugus,paslaugùs,fem,paslaugi,not in source,,data/a2_wordlist.csv
+2339_rase,A2,rasė,rãsė,gen_sg,rasės,not in source,,data/cards_anki.csv
+2344_drabuzine,A2,drabužinė,drabužìnė,gen_sg,drabužinės,not in source,,data/a2_wordlist.csv
+2343_tingus,A2,tingus,tingùs,fem,tingi,not in source,,data/a2_wordlist.csv
+2346_indaplove,A2,indaplovė,indãplovė,gen_sg,indaplovės,not in source,,data/a2_wordlist.csv
+2347_vaistininkas,A2,vaistininkas,váistininkas,gen_sg,vaistininko,not in source,,data/a2_wordlist.csv
+2348_sirgalius,A2,sirgalius,sirgãlius,gen_sg,sirgaliaus,not in source,,data/cards_anki.csv
+2350_slaugytojas,A2,slaugytojas,slaugýtojas,gen_sg,slaugytojo,not in source,,data/a2_wordlist.csv
+2353_kvadratas,A2,kvadratas,kvadrãtas,gen_sg,kvadrato,not in source,,data/cards_anki.csv
+2355_atestatas,A2,atestatas,atestãtas,gen_sg,atestato,not in source,,data/a2_wordlist.csv
+2357_droztukas,A2,drožtukas,drožtùkas,gen_sg,drožtuko,not in source,,data/a2_wordlist.csv
+2358_flomasteris,A2,flomasteris,flomãsteris,gen_sg,flomasterio,not in source,,data/a2_wordlist.csv
+2361_prakaitas,A2,prakaitas,prãkaitas,gen_sg,prakaito,not in source,,data/cards_anki.csv
+2362_trintukas,A2,trintukas,trintùkas,gen_sg,trintuko,not in source,,data/a2_wordlist.csv
+2368_gelynas,A2,gėlynas,gėlýnas,gen_sg,gėlyno,not in source,,data/a2_wordlist.csv
+2369_kamsciatraukis,A2,kamščiatraukis,kamščiãtraukis,gen_sg,kamščiatraukio,not in source,,data/a2_wordlist.csv
+2370_perkunija,A2,perkūnija,perkū́nija,gen_sg,perkūnijos,not in source,,data/a2_wordlist.csv
+2377_muitininkas,A2,muitininkas,muĩtininkas,gen_sg,muitininko,not in source,,data/a2_wordlist.csv
+2379_optika,A2,optika,òptika,gen_sg,optikos,not in source,,data/a2_wordlist.csv
+2380_respiratorius,A2,respiratorius,respirãtorius,gen_sg,respiratoriaus,not in source,,data/a2_wordlist.csv
+2383_perpildytas,A2,perpildytas,pérpildytas,fem,perpildyta,not in source,,data/a2_wordlist.csv
+2387_dvivietis,A2,dvivietis (kambarys),dviviẽtis,fem,dvivietė,not in source,,data/a2_wordlist.csv
+2388_vienvietis,A2,vienvietis (kambarys),vienviẽtis,fem,vienvietė,not in source,,data/a2_wordlist.csv
+2391_samtis,A2,samtis,sámtis,gen_sg,samčio,not in source,,data/a2_wordlist.csv
+2399_darbstus,A2,darbštus,darbštùs,fem,darbšti,not in source,,data/a2_wordlist.csv
+2401_skalbykle,A2,skalbyklė,skalbỹklė,gen_sg,skalbyklės,not in source,,data/a2_wordlist.csv
+2402_tusinukas,A2,tušinukas,tušinùkas,gen_sg,tušinuko,not in source,,data/a2_wordlist.csv
+2403_apskritimas,A2,apskritimas,apskritìmas,gen_sg,apskritimo,not in source,,data/cards_anki.csv
+2407_plokscias,A2,plokščias,plókščias,fem,plokščia,not in source,,data/cards_anki.csv
+2408_islenktas,A2,išlenktas,ìšlenktas,fem,išlenkta,not in source,,data/cards_anki.csv
+2411_sakotis,A2,šakotis,šakõtis,gen_sg,šakočio,not in source,,data/a2_wordlist.csv
+2413_dziovykle,A2,džiovyklė,džiovỹklė,gen_sg,džiovyklės,not in source,,data/a2_wordlist.csv
+2417_kroviklis,A2,kroviklis,krovìklis,gen_sg,kroviklio,not in source,,data/a2_wordlist.csv
+2422_puslitris,A2,puslitris,pùslitris,gen_sg,puslitrio,not in source,,data/a2_wordlist.csv
+2420_plastaka,A2,plaštaka,plãštaka,gen_sg,plaštakos,not in source,,data/cards_anki.csv
+2428_saldiklis,A2,šaldiklis,šaldìklis,gen_sg,šaldiklio,not in source,,data/a2_wordlist.csv
+2433_greblys,A2,grėblys,grėblỹs,gen_sg,grėblio,not in source,,data/a2_wordlist.csv

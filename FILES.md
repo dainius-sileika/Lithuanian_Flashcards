@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,952 tracked files in 707 rows.
+1,961 tracked files in 716 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -156,6 +156,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `docs/spec_history/DESIGN_SPEC_v3.4.0.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 | `docs/spec_history/DESIGN_SPEC_v3.4.1.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 | `docs/spec_history/DESIGN_SPEC_v3.4.2.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
+| `docs/spec_history/DESIGN_SPEC_v3.5.0.md` | history | Frozen copy of the spec at each released version (tags spec-vX.Y.Z); never edited | written by tools/spec_release.py |
 
 ### reports/
 
@@ -555,6 +556,14 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.verify.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_pre_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
+| `rounds/2026-10-28_stress_forms/OWNER_LIST.csv` | history | The 355 forms the owner must stress himself (not in the source, ambiguous with an identical headword, or the source's headword contradicts ours), A1 first in study order, with the reason and the source's options; spec §7 | written by match_kaikki_v2.py; people |
+| `rounds/2026-10-28_stress_forms/README.md` | history | The round's own account: what was asked, what was done, the owner's verdicts | people |
+| `rounds/2026-10-28_stress_forms/applied.csv` | history | What apply_v2.py changed: key, file, field, before, after, how (949 fields) | written by apply_v2.py |
+| `rounds/2026-10-28_stress_forms/apply_v2.py` | history | Wrote the sourced forms into data/cards_anki.csv and data/a2_wordlist.csv (only gen_sg / fem / pres3 / past3 and five prons) and the source note into each row's notes / check column; CSV quoting and CRLF kept | history |
+| `rounds/2026-10-28_stress_forms/match_kaikki_v1.py` | history | The lead's first matcher of the backs' forms (gen_sg, fem, pres3, past3) against the kaikki.org Wiktextract dump of en.wiktionary: 896 unique, 23 ambiguous, 377 not found | history |
+| `rounds/2026-10-28_stress_forms/match_kaikki_v2.py` | history | The matcher that was applied: headword groups, tables, form-of entries, paradigm neighbours, multi-word lemmas; chooses between sourced variants by the card's own pron (its docstring says how); the dump itself (83 MB) is not committed | run by people with the dump's path |
+| `rounds/2026-10-28_stress_forms/proposals_v1.csv` | history | What match_kaikki_v1.py proposed (superseded by proposals_v2.csv) | written by match_kaikki_v1.py |
+| `rounds/2026-10-28_stress_forms/proposals_v2.csv` | history | Every unstressed form of the backs (1,304 rows): current, proposed, how (unique / chosen-by-headword / project-pron / owner), en.wiktionary page, where in the page it was read, the source's options, the reason | written by match_kaikki_v2.py; read by apply_v2.py |
 
 ### review_desk/
 

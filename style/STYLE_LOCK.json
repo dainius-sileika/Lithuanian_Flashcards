@@ -2,10 +2,10 @@
  "_": "GO style lock — the look-defining constants of the Lietuvių Flashcards pipeline, recorded by tools/style_lock.py. Do not edit by hand; `tools/style_lock.py update` after a spec bump.",
  "style_hash": "0885ded5e583e2fbd47885a53dc7c80070b3f93835761697364dbe0c8252c56f",
  "style_hash_short": "0885ded5e583",
- "spec_version": "3.4.2",
- "updated": "2026-10-24",
+ "spec_version": "3.5.0",
+ "updated": "2026-10-28",
  "forced": false,
- "note": "spec 3.4.2: paths only: the deep tidy of the working directory — code/ (modules), data/ (live data), rounds/ (one dated folder per round), reports/, docs/decisions/, media/audio/_inbox/; §13 rewritten; FILES.md (generated inventory, tools/make_index.py) and tools/smoke_test.sh added to the guards; the lock's source paths follow the modules into code/; no look-defining value changed",
+ "note": "spec 3.5.0: Every form shown on a back (gen_sg, fem, pres3, past3) carries a sourced stress mark; unsourced forms stay unmarked and go on rounds/2026-10-28_stress_forms/OWNER_LIST.csv",
  "item_count": 106,
  "items": {
   "engine.OPENAI_MODEL.default": {

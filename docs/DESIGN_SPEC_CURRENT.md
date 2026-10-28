@@ -1,6 +1,6 @@
 # Lietuvių Flashcards — current design spec (de facto)
 
-**Spec version 3.4.2** · dated 2026-10-24 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
+**Spec version 3.5.0** · dated 2026-10-28 · style lock `style/STYLE_LOCK.json` · history `docs/spec_history/`
 
 This is the one authoritative statement of the design parameters the pipeline
 actually uses today. Every line is sourced to the code (file + constant) or to a dated owner decision;
@@ -161,6 +161,14 @@ working directory — where every file is, how to build, record, verify — is `
   `1029_prasom_sestis`; formerly A2-0902/0903/0375/1166) and two cloze examples now read *Prašom pakartoti* etc.
 - `2136_ar_galite_ka_nors` (formerly A2-0964): *Ar galite ką nors parekomenduoti?* (owner 2026-10-19).
 - Stress marks are sourced (Wiktionary / kirtis.info / LKŽ), never generated; `rounds/2026-10-19_fixes_round3/stress_58_resolved.csv`.
+  **Every form shown on a back — genitive (`gen_sg`), feminine (`fem`), present and past (`pres3`, `past3`) —
+  carries a sourced stress mark, like the headword** (2026-10-28, `rounds/2026-10-28_stress_forms/`: read from
+  en.wiktionary via the kaikki.org Wiktextract dump; where the source offers two accentuations, the one whose
+  headword matches the card's own sourced `pron` is taken — a selection among sourced forms, not a derivation).
+  A form the source does not give is shown unmarked and listed, with the reason, in
+  `rounds/2026-10-28_stress_forms/OWNER_LIST.csv` until the owner supplies it; the build and the recorder show
+  the fields as the data has them (`build_apkg.adjective_forms`, `build_recorder.read_script`), and the
+  recorder's stale-take check is stress-blind (`said_key`), so adding a mark never invalidates a take.
 
 ## 8. Study order v3 (`build_study_order_v3.py` → `study_order.csv`, adopted 2026-10-19; v2 2026-10-17 is history)
 - Usefulness first, as v2: a hand-ordered `SURVIVAL` list, then score = 0.6·ln(subtitle rank) + 0.4·ln(press rank)
@@ -351,6 +359,7 @@ one home; the afternoon one (the "deep tidy") gave everything else one.
   `_archive/`, junk to `_TO_DELETE/<reason>/`.
 
 ## Spec changelog
+- **3.5.0 — 2026-10-28.** Every form shown on a back (gen_sg, fem, pres3, past3) carries a sourced stress mark; unsourced forms stay unmarked and go on rounds/2026-10-28_stress_forms/OWNER_LIST.csv
 - **3.4.2 — 2026-10-24.** paths only: the deep tidy of the working directory — code/ (modules), data/ (live data), rounds/ (one dated folder per round), reports/, docs/decisions/, media/audio/_inbox/; §13 rewritten; FILES.md (generated inventory, tools/make_index.py) and tools/smoke_test.sh added to the guards; the lock's source paths follow the modules into code/; no look-defining value changed
 - **3.4.1 — 2026-10-24.** paths only: media/ layout (one home per medium, history beside it, generation records separate), §13 layout of the working directory, INDEX.md and tools/check_layout.py; §4/§7/§9/§10/§12 path wording; no look-defining value changed
 - **3.4.0 — 2026-10-20.** §12 added: one NNNN_slug key namespace (numbers from the study order at the rename of 2026-10-20, slugs from the headword), plate number = key number for all note types, hierarchical lt:: tags with the 20-section topic map (topic = the section shown), key history in a2_build/rename/key_map_v1.csv read through tools/keymap.py; SECTIONS gains Functions, ROUTE_SECTIONS keyed by lt::kind tags; §7/§8 updated for the rename and dep37 (owner decision 2026-10-19: rename everything so it's consistent)

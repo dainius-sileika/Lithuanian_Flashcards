@@ -327,8 +327,9 @@ def adjective_forms(word, pron, fem):
     """Owner 2026-10-17: an adjective's back shows both forms, each beside its own symbol,
     "didelis ♂ · didelė ♀", in place of the bare ♂♀ pair. The masculine carries its stress
     mark from pron where the data has one (pron must be the same word, or the headword
-    minus a bracketed note: "dvivietis (kambarys)" -> "dviviẽtis"); the feminine has no
-    stressed form in the data and is shown plain. Returns HTML for the fem/Forms field."""
+    minus a bracketed note: "dvivietis (kambarys)" -> "dviviẽtis"); the feminine is shown as the
+    data has it, which since 2026-10-28 is the sourced stressed form where the source gives one
+    (spec §7; rounds/2026-10-28_stress_forms/). Returns HTML for the fem/Forms field."""
     word, pron, fem = (word or "").strip(), (pron or "").strip(), (fem or "").strip()
     bare = word.split(" (")[0].strip()
     masc = pron if pron and _unstressed(pron) in (word, bare) else word

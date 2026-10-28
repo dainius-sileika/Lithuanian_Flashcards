@@ -170,6 +170,13 @@ rounds/2026-10-24_deep_tidy/moves.csv,history,,"The move table: 1,274 files, old
 rounds/2026-10-24_deep_tidy/move_log_*.tsv,history,,"What actually moved, per host (append-only)",written by tools/move_files.py
 rounds/2026-10-24_deep_tidy/path_map.py,history,,Rewrote old path mentions in live code and docs to the new ones (and checks none are left),history
 rounds/2026-10-24_deep_tidy/verify/,history,,Build manifests and verify reports of the post-tidy A1 and A2 rebuilds,written by build_apkg.py tools/verify_apkg.py
+rounds/2026-10-28_stress_forms/match_kaikki_v1.py,history,,"The lead's first matcher of the backs' forms (gen_sg, fem, pres3, past3) against the kaikki.org Wiktextract dump of en.wiktionary: 896 unique, 23 ambiguous, 377 not found",history
+rounds/2026-10-28_stress_forms/proposals_v1.csv,history,,What match_kaikki_v1.py proposed (superseded by proposals_v2.csv),written by match_kaikki_v1.py
+rounds/2026-10-28_stress_forms/match_kaikki_v2.py,history,,"The matcher that was applied: headword groups, tables, form-of entries, paradigm neighbours, multi-word lemmas; chooses between sourced variants by the card's own pron (its docstring says how); the dump itself (83 MB) is not committed",run by people with the dump's path
+rounds/2026-10-28_stress_forms/proposals_v2.csv,history,,"Every unstressed form of the backs (1,304 rows): current, proposed, how (unique / chosen-by-headword / project-pron / owner), en.wiktionary page, where in the page it was read, the source's options, the reason",written by match_kaikki_v2.py; read by apply_v2.py
+rounds/2026-10-28_stress_forms/OWNER_LIST.csv,history,,"The 355 forms the owner must stress himself (not in the source, ambiguous with an identical headword, or the source's headword contradicts ours), A1 first in study order, with the reason and the source's options; spec §7",written by match_kaikki_v2.py; people
+rounds/2026-10-28_stress_forms/apply_v2.py,history,,"Wrote the sourced forms into data/cards_anki.csv and data/a2_wordlist.csv (only gen_sg / fem / pres3 / past3 and five prons) and the source note into each row's notes / check column; CSV quoting and CRLF kept",history
+rounds/2026-10-28_stress_forms/applied.csv,history,,"What apply_v2.py changed: key, file, field, before, after, how (949 fields)",written by apply_v2.py
 # ---- review_desk/ ------------------------------------------------------------------------------------------
 review_desk/README.md,live,,The Review Desk SOP (the owner decides on one page; answers in its database),people
 review_desk/items.json,live,,"The open items (id, group, title, question, options, links)",read by review_desk/build.py; edited each round

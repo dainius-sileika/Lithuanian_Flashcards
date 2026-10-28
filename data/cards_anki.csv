@@ -1,367 +1,367 @@
 key,lithuanian,english,gender,gen_sg,pres3,past3,fem,ff_no,category,image_file,notes,pron,pron_src,level
-0027_suo,šuo,dog,M,šuns,,,,1,Animal,0027_suo.webp,forms machine-generated — (accents & irregulars),šuõ,wiktionary,A1
-0030_kate,katė,cat,F,katės,,,,2,Animal,0030_kate.webp,forms machine-generated — (accents & irregulars),katė̃,wiktionary,A1
-0456_zuvis,žuvis,fish,F,žuvies,,,,3,Animal,0456_zuvis.webp,forms machine-generated — (accents & irregulars),žuvìs,wiktionary,A1
-0534_paukstis,paukštis,bird,M,paukščio,,,,4,Animal,0534_paukstis.webp,forms machine-generated — (accents & irregulars),paũkštis,wiktionary,A1
-1035_karve,karvė,cow,F,karvės,,,,5,Animal,1035_karve.webp,forms machine-generated — (accents & irregulars),kárvė,wiktionary,A1
-0986_kiaule,kiaulė,pig,F,kiaulės,,,,6,Animal,0986_kiaule.webp,forms machine-generated — (accents & irregulars),kiaũlė,wiktionary,A1
-1049_pele,pelė,mouse,F,pelės,,,,7,Animal,1049_pele.webp,forms machine-generated — (accents & irregulars),pelė̃,wiktionary,A1
-0953_arklys,arklys,horse,M,arklio,,,,8,Animal,0953_arklys.webp,forms machine-generated — (accents & irregulars),arklỹs,wiktionary,A1
-2271_sparnas,sparnas,wing,M,sparno,,,,9,Animal,2271_sparnas.webp,forms machine-generated — (accents & irregulars),spar̃nas,wiktionary,A2
-1100_gyvunas,gyvūnas,animal,M,gyvūno,,,,10,Animal,1100_gyvunas.webp,forms machine-generated — (accents & irregulars),gyvū̃nas,wiktionary,A1
-0451_traukinys,traukinys,train,M,traukinio,,,,11,Transportation,0451_traukinys.webp,forms machine-generated — (accents & irregulars),traukinỹs,wiktionary,A1
-0335_lektuvas,lėktuvas,plane,M,lėktuvo,,,,12,Transportation,0335_lektuvas.webp,forms machine-generated — (accents & irregulars),lėktùvas,wiktionary,A1
-0190_automobilis,automobilis,car,M,automobilio,,,,13,Transportation,0190_automobilis.webp,forms machine-generated — (accents & irregulars),automobìlis,wiktionary,A1
-0905_sunkvezimis,sunkvežimis,truck,M,sunkvežimio,,,,14,Transportation,0905_sunkvezimis.webp,forms machine-generated — (accents & irregulars),suñkvežimis,wiktionary,A1
-0554_dviratis,dviratis,bicycle,M,dviračio,,,,15,Transportation,0554_dviratis.webp,forms machine-generated — (accents & irregulars),dvirãtis,wiktionary,A1
-0024_autobusas,autobusas,bus,M,autobuso,,,,16,Transportation,0024_autobusas.webp,forms machine-generated — (accents & irregulars),autobùsas,wiktionary,A1
-0955_valtis,valtis,boat,F,valties,,,,17,Transportation,0955_valtis.webp,forms machine-generated — (accents & irregulars),váltis,wiktionary,A1
-0517_laivas,laivas,ship,M,laivo,,,,18,Transportation,0517_laivas.webp,forms machine-generated — (accents & irregulars),laĩvas,wiktionary,A1
+0027_suo,šuo,dog,M,šuñs,,,,1,Animal,0027_suo.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,šuõ,wiktionary,A1
+0030_kate,katė,cat,F,katė̃s,,,,2,Animal,0030_kate.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,katė̃,wiktionary,A1
+0456_zuvis,žuvis,fish,F,žuviẽs,,,,3,Animal,0456_zuvis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žuvìs,wiktionary,A1
+0534_paukstis,paukštis,bird,M,paũkščio,,,,4,Animal,0534_paukstis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,paũkštis,wiktionary,A1
+1035_karve,karvė,cow,F,kárvės,,,,5,Animal,1035_karve.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kárvė,wiktionary,A1
+0986_kiaule,kiaulė,pig,F,kiaũlės,,,,6,Animal,0986_kiaule.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kiaũlė,wiktionary,A1
+1049_pele,pelė,mouse,F,pelė̃s,,,,7,Animal,1049_pele.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pelė̃,wiktionary,A1
+0953_arklys,arklys,horse,M,árklio,,,,8,Animal,0953_arklys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,arklỹs,wiktionary,A1
+2271_sparnas,sparnas,wing,M,spar̃no,,,,9,Animal,2271_sparnas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,spar̃nas,wiktionary,A2
+1100_gyvunas,gyvūnas,animal,M,gyvū̃no,,,,10,Animal,1100_gyvunas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,gyvū̃nas,wiktionary,A1
+0451_traukinys,traukinys,train,M,tráukinio,,,,11,Transportation,0451_traukinys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,traukinỹs,wiktionary,A1
+0335_lektuvas,lėktuvas,plane,M,lėktùvo,,,,12,Transportation,0335_lektuvas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lėktùvas,wiktionary,A1
+0190_automobilis,automobilis,car,M,automobìlio,,,,13,Transportation,0190_automobilis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,automobìlis,wiktionary,A1
+0905_sunkvezimis,sunkvežimis,truck,M,suñkvežimio,,,,14,Transportation,0905_sunkvezimis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,suñkvežimis,wiktionary,A1
+0554_dviratis,dviratis,bicycle,M,dvirãčio,,,,15,Transportation,0554_dviratis.webp,"forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary, chosen by headword 2026-10-28",dvirãtis,wiktionary,A1
+0024_autobusas,autobusas,bus,M,autobùso,,,,16,Transportation,0024_autobusas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,autobùsas,wiktionary,A1
+0955_valtis,valtis,boat,F,válties,,,,17,Transportation,0955_valtis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,váltis,wiktionary,A1
+0517_laivas,laivas,ship,M,laĩvo,,,,18,Transportation,0517_laivas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,laĩvas,wiktionary,A1
 1173_padanga,padanga,tire,F,padangos,,,,19,Transportation,1173_padanga.webp,forms machine-generated — (accents & irregulars),padangà,wiktionary,A1
-1176_benzinas,benzinas,gasoline,M,benzino,,,,20,Transportation,1176_benzinas.webp,forms machine-generated — (accents & irregulars),benzìnas,wiktionary-html,A1
-1096_variklis,variklis,engine,M,variklio,,,,21,Transportation,1096_variklis.webp,forms machine-generated — (accents & irregulars),varìklis,wiktionary,A1
-0097_bilietas,bilietas,train ticket,M,bilieto,,,,22,Transportation,0097_bilietas.webp,forms machine-generated — (accents & irregulars),bìlietas,wiktionary,A1
-1128_transportas,transportas,transportation,M,transporto,,,,23,Transportation,1128_transportas.webp,forms machine-generated — (accents & irregulars),transpòrtas,wiktionary,A1
-0022_miestas,miestas,city,M,miesto,,,,24,Location,0022_miestas.webp,forms machine-generated — (accents & irregulars),miẽstas,wiktionary,A1
-0013_namas,namas,house,M,namo,,,,25,Location,0013_namas.webp,forms machine-generated — (accents & irregulars),nãmas,wiktionary,A1
-0332_butas,butas,apartment,M,buto,,,,26,Location,0332_butas.webp,forms machine-generated — (accents & irregulars),bùtas,wiktionary,A1
-0175_gatve,gatvė,street,F,gatvės,,,,27,Location,0175_gatve.webp,forms machine-generated — (accents & irregulars),gãtvė,wiktionary,A1
-0197_kelias,kelias,road,M,kelio,,,,28,Location,0197_kelias.webp,forms machine-generated — (accents & irregulars),kẽlias,wiktionary,A1
-1111_oro_uostas,oro uostas,airport,M,oro uosto,,,,29,Location,1111_oro_uostas.webp,forms machine-generated — (accents & irregulars),óro úostas,kirtis.info,A1
-0074_stotis,stotis,train station,F,stoties,,,,30,Location,0074_stotis.webp,forms machine-generated — (accents & irregulars),stotìs,wiktionary,A1
-0071_tiltas,tiltas,bridge,M,tilto,,,,31,Location,0071_tiltas.webp,forms machine-generated — (accents & irregulars),tìltas,wiktionary,A1
-0511_viesbutis,viešbutis,hotel,M,viešbučio,,,,32,Location,0511_viesbutis.webp,forms machine-generated — (accents & irregulars),viẽšbutis,wiktionary,A1
-0421_restoranas,restoranas,restaurant,M,restorano,,,,33,Location,0421_restoranas.webp,forms machine-generated — (accents & irregulars),restorãnas,wiktionary,A1
-1074_ukis,ūkis,farm,M,ūkio,,,,34,Location,1074_ukis.webp,forms machine-generated — (accents & irregulars),ū́kis,wiktionary,A1
-0880_teismas,teismas,court,M,teismo,,,,35,Location,0880_teismas.webp,forms machine-generated — (accents & irregulars),teĩsmas,wiktionary,A1
-0130_mokykla,mokykla,school,F,mokyklos,,,,36,Location,0130_mokykla.webp,forms machine-generated — (accents & irregulars),mokyklà,wiktionary,A1
-0862_biuras,biuras,office,M,biuro,,,,37,Location,0862_biuras.webp,forms machine-generated — (accents & irregulars),biùras,wiktionary,A1
-0310_kambarys,kambarys,room,M,kambario,,,,38,Location,0310_kambarys.webp,forms machine-generated — (accents & irregulars),kambarỹs,wiktionary,A1
-0600_miestelis,miestelis,town,M,miestelio,,,,39,Location,0600_miestelis.webp,forms machine-generated — (accents & irregulars),miestẽlis,wiktionary,A1
-1093_universitetas,universitetas,university,M,universiteto,,,,40,Location,1093_universitetas.webp,forms machine-generated — (accents & irregulars),universitètas,wiktionary,A1
-0980_klubas,klubas,club,M,klubo,,,,41,Location,0980_klubas.webp,forms machine-generated — (accents & irregulars),klùbas,wiktionary,A1
-0495_baras,baras,bar,M,baro,,,,42,Location,0495_baras.webp,forms machine-generated — (accents & irregulars),bãras,wiktionary,A1
-0465_parkas,parkas,park,M,parko,,,,43,Location,0465_parkas.webp,forms machine-generated — (accents & irregulars),párkas,wiktionary,A1
-1164_stovykla,stovykla,camp,F,stovyklos,,,,44,Location,1164_stovykla.webp,forms machine-generated — (accents & irregulars),stovyklà,wiktionary,A1
-0015_parduotuve,parduotuvė,store/shop,F,parduotuvės,,,,45,Location,0015_parduotuve.webp,forms machine-generated — (accents & irregulars),parduotùvė,wiktionary,A1
+1176_benzinas,benzinas,gasoline,M,benzìno,,,,20,Transportation,1176_benzinas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,benzìnas,wiktionary-html,A1
+1096_variklis,variklis,engine,M,varìklio,,,,21,Transportation,1096_variklis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,varìklis,wiktionary,A1
+0097_bilietas,bilietas,train ticket,M,bìlieto,,,,22,Transportation,0097_bilietas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bìlietas,wiktionary,A1
+1128_transportas,transportas,transportation,M,transpòrto,,,,23,Transportation,1128_transportas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,transpòrtas,wiktionary,A1
+0022_miestas,miestas,city,M,miẽsto,,,,24,Location,0022_miestas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,miẽstas,wiktionary,A1
+0013_namas,namas,house,M,nãmo,,,,25,Location,0013_namas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,nãmas,wiktionary,A1
+0332_butas,butas,apartment,M,bùto,,,,26,Location,0332_butas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bùtas,wiktionary,A1
+0175_gatve,gatvė,street,F,gãtvės,,,,27,Location,0175_gatve.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,gãtvė,wiktionary,A1
+0197_kelias,kelias,road,M,kẽlio,,,,28,Location,0197_kelias.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kẽlias,wiktionary,A1
+1111_oro_uostas,oro uostas,airport,M,óro úosto,,,,29,Location,1111_oro_uostas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,óro úostas,kirtis.info,A1
+0074_stotis,stotis,train station,F,stotiẽs,,,,30,Location,0074_stotis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,stotìs,wiktionary,A1
+0071_tiltas,tiltas,bridge,M,tìlto,,,,31,Location,0071_tiltas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,tìltas,wiktionary,A1
+0511_viesbutis,viešbutis,hotel,M,viẽšbučio,,,,32,Location,0511_viesbutis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,viẽšbutis,wiktionary,A1
+0421_restoranas,restoranas,restaurant,M,restorãno,,,,33,Location,0421_restoranas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,restorãnas,wiktionary,A1
+1074_ukis,ūkis,farm,M,ū́kio,,,,34,Location,1074_ukis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ū́kis,wiktionary,A1
+0880_teismas,teismas,court,M,teĩsmo,,,,35,Location,0880_teismas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,teĩsmas,wiktionary,A1
+0130_mokykla,mokykla,school,F,mokỹklos,,,,36,Location,0130_mokykla.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mokyklà,wiktionary,A1
+0862_biuras,biuras,office,M,biùro,,,,37,Location,0862_biuras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,biùras,wiktionary,A1
+0310_kambarys,kambarys,room,M,kam̃bario,,,,38,Location,0310_kambarys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kambarỹs,wiktionary,A1
+0600_miestelis,miestelis,town,M,miestẽlio,,,,39,Location,0600_miestelis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,miestẽlis,wiktionary,A1
+1093_universitetas,universitetas,university,M,universitèto,,,,40,Location,1093_universitetas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,universitètas,wiktionary,A1
+0980_klubas,klubas,club,M,klùbo,,,,41,Location,0980_klubas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,klùbas,wiktionary,A1
+0495_baras,baras,bar,M,bãro,,,,42,Location,0495_baras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bãras,wiktionary,A1
+0465_parkas,parkas,park,M,párko,,,,43,Location,0465_parkas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,párkas,wiktionary,A1
+1164_stovykla,stovykla,camp,F,stovỹklos,,,,44,Location,1164_stovykla.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,stovyklà,wiktionary,A1
+0015_parduotuve,parduotuvė,store/shop,F,parduotùvės,,,,45,Location,0015_parduotuve.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,parduotùvė,wiktionary,A1
 0828_teatras,teatras,theater,M,teatro,,,,46,Location,0828_teatras.webp,forms machine-generated — (accents & irregulars),teãtras,wiktionary,A1
-0969_biblioteka,biblioteka,library,F,bibliotekos,,,,47,Location,0969_biblioteka.webp,forms machine-generated — (accents & irregulars),bibliotekà,wiktionary,A1
-0049_ligonine,ligoninė,hospital,F,ligoninės,,,,48,Location,0049_ligonine.webp,forms machine-generated — (accents & irregulars),ligóninė,wiktionary,A1
-0134_baznycia,bažnyčia,church,F,bažnyčios,,,,49,Location,0134_baznycia.webp,forms machine-generated — (accents & irregulars),bažnýčia,wiktionary,A1
-0730_turgus,turgus,market,M,turgaus,,,,50,Location,0730_turgus.webp,forms machine-generated — (accents & irregulars),tur̃gus,wiktionary,A1
-0843_salis,šalis,country,F,šalies,,,,51,Location,0843_salis.webp,forms machine-generated — (accents & irregulars),šalìs,wiktionary,A1
-1062_pastatas,pastatas,building,M,pastato,,,,52,Location,1062_pastatas.webp,forms machine-generated — (accents & irregulars),pãstatas,wiktionary,A1
-0454_zeme,žemė,ground,F,žemės,,,,53,Location,0454_zeme.webp,forms machine-generated — (accents & irregulars),žẽmė,wiktionary,A1
-2287_kosmosas,kosmosas,space,M,kosmoso,,,,54,Location,2287_kosmosas.webp,forms machine-generated — (accents & irregulars),kòsmosas,wiktionary,A2
-0287_bankas,bankas,bank,M,banko,,,,55,Location,0287_bankas.webp,forms machine-generated — (accents & irregulars),bánkas,wiktionary,A1
-0610_vieta,vieta,location,F,vietos,,,,56,Location,0610_vieta.webp,forms machine-generated — (accents & irregulars),vietà,wiktionary,A1
-0556_kepure,kepurė,hat,F,kepurės,,,,57,Clothing,0556_kepure.webp,forms machine-generated — (accents & irregulars),kepùrė,wiktionary,A1
+0969_biblioteka,biblioteka,library,F,bibliotèkos,,,,47,Location,0969_biblioteka.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bibliotekà,wiktionary,A1
+0049_ligonine,ligoninė,hospital,F,ligóninės,,,,48,Location,0049_ligonine.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ligóninė,wiktionary,A1
+0134_baznycia,bažnyčia,church,F,bažnýčios,,,,49,Location,0134_baznycia.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bažnýčia,wiktionary,A1
+0730_turgus,turgus,market,M,tur̃gaus,,,,50,Location,0730_turgus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,tur̃gus,wiktionary,A1
+0843_salis,šalis,country,F,šaliẽs,,,,51,Location,0843_salis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,šalìs,wiktionary,A1
+1062_pastatas,pastatas,building,M,pãstato,,,,52,Location,1062_pastatas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pãstatas,wiktionary,A1
+0454_zeme,žemė,ground,F,žẽmės,,,,53,Location,0454_zeme.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žẽmė,wiktionary,A1
+2287_kosmosas,kosmosas,space,M,kòsmoso,,,,54,Location,2287_kosmosas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kòsmosas,wiktionary,A2
+0287_bankas,bankas,bank,M,bánko,,,,55,Location,0287_bankas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bánkas,wiktionary,A1
+0610_vieta,vieta,location,F,viẽtos,,,,56,Location,0610_vieta.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vietà,wiktionary,A1
+0556_kepure,kepurė,hat,F,kepùrės,,,,57,Clothing,0556_kepure.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kepùrė,wiktionary,A1
 0422_suknele,suknelė,dress,F,suknelės,,,,58,Clothing,0422_suknele.webp,forms machine-generated — (accents & irregulars),suknẽlė,kirtis.info,A1
 1129_kostiumas,kostiumas,suit,M,kostiumo,,,,59,Clothing,1129_kostiumas.webp,forms machine-generated — (accents & irregulars),kostiùmas,kirtis.info,A1
-0793_sijonas,sijonas,skirt,M,sijono,,,,60,Clothing,0793_sijonas.webp,forms machine-generated — (accents & irregulars),sijõnas,wiktionary,A1
-0668_marskiniai,marškiniai,shirt,M pl,marškinių,,,,61,Clothing,0668_marskiniai.webp,forms machine-generated — (accents & irregulars),marškiniaĩ,wiktionary,A1
+0793_sijonas,sijonas,skirt,M,sijõno,,,,60,Clothing,0793_sijonas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sijõnas,wiktionary,A1
+0668_marskiniai,marškiniai,shirt,M pl,marškinių̃,,,,61,Clothing,0668_marskiniai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,marškiniaĩ,wiktionary,A1
 1153_marskineliai,marškinėliai,T-shirt,M pl,marškinėlių,,,,62,Clothing,1153_marskineliai.webp,forms machine-generated — (accents & irregulars),marškinė̃liai,kirtis.info,A1
-0353_kelnes,kelnės,pants,F pl,kelnių,,,,63,Clothing,0353_kelnes.webp,forms machine-generated — (accents & irregulars),kélnės,wiktionary,A1
+0353_kelnes,kelnės,pants,F pl,kélnių,,,,63,Clothing,0353_kelnes.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kélnės,wiktionary,A1
 0023_batai,batai,shoes,M pl,batų,,,,64,Clothing,0023_batai.webp,forms machine-generated — (accents & irregulars),bãtai,kirtis.info,A1
-1170_kisene,kišenė,pocket,F,kišenės,,,,65,Clothing,1170_kisene.webp,forms machine-generated — (accents & irregulars),kišẽnė,wiktionary,A1
-0397_paltas,paltas,coat,M,palto,,,,66,Clothing,0397_paltas.webp,forms machine-generated — (accents & irregulars),páltas,wiktionary,A1
-2334_deme,dėmė,stain,F,dėmės,,,,67,Clothing,2334_deme.webp,forms machine-generated — (accents & irregulars),dėmė̃,wiktionary,A2
-1143_drabuziai,drabužiai,clothing,M pl,drabužių,,,,68,Clothing,1143_drabuziai.webp,forms machine-generated — (accents & irregulars),drabùžiai,kirtis.info,A1
+1170_kisene,kišenė,pocket,F,kišẽnės,,,,65,Clothing,1170_kisene.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kišẽnė,wiktionary,A1
+0397_paltas,paltas,coat,M,pálto,,,,66,Clothing,0397_paltas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,páltas,wiktionary,A1
+2334_deme,dėmė,stain,F,dėmė̃s,,,,67,Clothing,2334_deme.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dėmė̃,wiktionary,A2
+1143_drabuziai,drabužiai,clothing,M pl,drabùžių,,,,68,Clothing,1143_drabuziai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,drabùžiai,kirtis.info,A1
 0617_raudonas,raudonas,red,M/F,,,,raudona,69,Color,0617_raudonas.webp,forms machine-generated — (accents & irregulars),raudónas,wiktionary,A1
-0618_zalias,žalias,green,M/F,,,,žalia,70,Color,0618_zalias.webp,forms machine-generated — (accents & irregulars),žãlias,wiktionary,A1
+0618_zalias,žalias,green,M/F,,,,žalià,70,Color,0618_zalias.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,žãlias,wiktionary,A1
 0619_melynas,mėlynas,blue,M/F,,,,mėlyna,71,Color,0619_melynas.webp,forms machine-generated — (accents & irregulars),mė́lynas,wiktionary,A1
 0620_geltonas,geltonas,yellow,M/F,,,,geltona,72,Color,0620_geltonas.webp,forms machine-generated — (accents & irregulars),geltónas,wiktionary,A1
-0621_rudas,rudas,brown,M/F,,,,ruda,73,Color,0621_rudas.webp,forms machine-generated — (accents & irregulars),rùdas,wiktionary,A1
+0621_rudas,rudas,brown,M/F,,,,rudà,73,Color,0621_rudas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,rùdas,wiktionary,A1
 0622_rozinis,rožinis,pink,M/F,,,,rožinė,74,Color,0622_rozinis.webp,forms machine-generated — (accents & irregulars),rõžinis,kirtis.info,A1
-0623_oranzinis,oranžinis,orange (color),M/F,,,,oranžinė,75,Color,0623_oranzinis.webp,forms machine-generated — (accents & irregulars),oránžinis,wiktionary,A1
-0624_juodas,juodas,black,M/F,,,,juoda,76,Color,0624_juodas.webp,forms machine-generated — (accents & irregulars),júodas,wiktionary,A1
-0625_baltas,baltas,white,M/F,,,,balta,77,Color,0625_baltas.webp,forms machine-generated — (accents & irregulars),báltas,wiktionary,A1
-0626_pilkas,pilkas,gray,M/F,,,,pilka,78,Color,0626_pilkas.webp,forms machine-generated — (accents & irregulars),pìlkas,wiktionary,A1
-0627_spalva,spalva,color,F,spalvos,,,,79,Color,0627_spalva.webp,forms machine-generated — (accents & irregulars),spalvà,wiktionary,A1
-0311_sunus,sūnus,son,M,sūnaus,,,,80,People,0311_sunus.webp,forms machine-generated — (accents & irregulars),sūnùs,wiktionary,A1
-0312_dukra,dukra,daughter,F,dukros,,,,81,People,0312_dukra.webp,forms machine-generated — (accents & irregulars),dukrà,wiktionary,A1
-0400_motina,motina,mother,F,motinos,,,,82,People,0400_motina.webp,forms machine-generated — (accents & irregulars),mótina,wiktionary,A1
-0221_tevas,tėvas,father,M,tėvo,,,,83,People,0221_tevas.webp,forms machine-generated — (accents & irregulars),tė́vas,wiktionary,A1
-0257_tevai,tėvai,parent,M pl,tėvų,,,,84,People,0257_tevai.webp,forms machine-generated — (accents & irregulars),tėvaĩ,wiktionary,A1
-0611_kudikis,kūdikis,baby,M,kūdikio,,,,85,People,0611_kudikis.webp,forms machine-generated — (accents & irregulars),kū̃dikis,wiktionary,A1
-0002_vyras,vyras,man,M,vyro,,,,86,People,0002_vyras.webp,forms machine-generated — (accents & irregulars),výras,wiktionary,A1
-0004_moteris,moteris,woman,F,moters,,,,87,People,0004_moteris.webp,forms machine-generated — (accents & irregulars),móteris,wiktionary,A1
-0050_brolis,brolis,brother,M,brolio,,,,88,People,0050_brolis.webp,forms machine-generated — (accents & irregulars),brólis,wiktionary,A1
-0051_sesuo,sesuo,sister,F,sesers,,,,89,People,0051_sesuo.webp,forms machine-generated — (accents & irregulars),sesuõ,wiktionary,A1
-0020_seima,šeima,family,F,šeimos,,,,90,People,0020_seima.webp,forms machine-generated — (accents & irregulars),šeimà,wiktionary,A1
-0522_senelis,senelis,grandfather,M,senelio,,,,91,People,0522_senelis.webp,forms machine-generated — (accents & irregulars),senẽlis,wiktionary,A1
-0523_senele,senelė,grandmother,F,senelės,,,,92,People,0523_senele.webp,forms machine-generated — (accents & irregulars),senẽlė,wiktionary,A1
-0822_vyras,vyras,husband,M,vyro,,,,93,People,0822_vyras.webp,forms machine-generated — (accents & irregulars),výras,wiktionary,A1
-0823_zmona,žmona,wife,F,žmonos,,,,94,People,0823_zmona.webp,forms machine-generated — (accents & irregulars),žmonà,wiktionary,A1
-1080_karalius,karalius,king,M,karaliaus,,,,95,People,1080_karalius.webp,forms machine-generated — (accents & irregulars),karãlius,wiktionary,A1
+0623_oranzinis,oranžinis,orange (color),M/F,,,,oránžinė,75,Color,0623_oranzinis.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,oránžinis,wiktionary,A1
+0624_juodas,juodas,black,M/F,,,,juodà,76,Color,0624_juodas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,júodas,wiktionary,A1
+0625_baltas,baltas,white,M/F,,,,baltà,77,Color,0625_baltas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,báltas,wiktionary,A1
+0626_pilkas,pilkas,gray,M/F,,,,pilkà,78,Color,0626_pilkas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,pìlkas,wiktionary,A1
+0627_spalva,spalva,color,F,spalvõs,,,,79,Color,0627_spalva.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,spalvà,wiktionary,A1
+0311_sunus,sūnus,son,M,sūnaũs,,,,80,People,0311_sunus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sūnùs,wiktionary,A1
+0312_dukra,dukra,daughter,F,dùkros,,,,81,People,0312_dukra.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dukrà,wiktionary,A1
+0400_motina,motina,mother,F,mótinos,,,,82,People,0400_motina.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mótina,wiktionary,A1
+0221_tevas,tėvas,father,M,tė́vo,,,,83,People,0221_tevas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,tė́vas,wiktionary,A1
+0257_tevai,tėvai,parent,M pl,tėvų̃,,,,84,People,0257_tevai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,tėvaĩ,wiktionary,A1
+0611_kudikis,kūdikis,baby,M,kū̃dikio,,,,85,People,0611_kudikis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kū̃dikis,wiktionary,A1
+0002_vyras,vyras,man,M,výro,,,,86,People,0002_vyras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,výras,wiktionary,A1
+0004_moteris,moteris,woman,F,móters,,,,87,People,0004_moteris.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,móteris,wiktionary,A1
+0050_brolis,brolis,brother,M,brólio,,,,88,People,0050_brolis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,brólis,wiktionary,A1
+0051_sesuo,sesuo,sister,F,seser̃s,,,,89,People,0051_sesuo.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sesuõ,wiktionary,A1
+0020_seima,šeima,family,F,šeimõs,,,,90,People,0020_seima.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,šeimà,wiktionary,A1
+0522_senelis,senelis,grandfather,M,senẽlio,,,,91,People,0522_senelis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,senẽlis,wiktionary,A1
+0523_senele,senelė,grandmother,F,senẽlės,,,,92,People,0523_senele.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,senẽlė,wiktionary,A1
+0822_vyras,vyras,husband,M,výro,,,,93,People,0822_vyras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,výras,wiktionary,A1
+0823_zmona,žmona,wife,F,žmonõs,,,,94,People,0823_zmona.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žmonà,wiktionary,A1
+1080_karalius,karalius,king,M,karãliaus,,,,95,People,1080_karalius.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,karãlius,wiktionary,A1
 1159_karaliene,karalienė,queen,F,karalienės,,,,96,People,1159_karaliene.webp,forms machine-generated — (accents & irregulars),karalíenė,wiktionary,A1
-0964_prezidentas,prezidentas,president,M/F,prezidento,,,,97,People,0964_prezidentas.webp,forms machine-generated — (accents & irregulars),prezideñtas,wiktionary,A1
-0060_kaimynas,kaimynas,neighbor,M/F,kaimyno,,,,98,People,0060_kaimynas.webp,forms machine-generated — (accents & irregulars),kaimýnas,wiktionary,A1
-0430_berniukas,berniukas,boy,M,berniuko,,,,99,People,0430_berniukas.webp,forms machine-generated — (accents & irregulars),berniùkas,wiktionary,A1
-0367_mergaite,mergaitė,girl,F,mergaitės,,,,100,People,0367_mergaite.webp,forms machine-generated — (accents & irregulars),mergáitė,wiktionary,A1
-0012_vaikas,vaikas,child,M,vaiko,,,,101,People,0012_vaikas.webp,forms machine-generated — (accents & irregulars),vaĩkas,wiktionary,A1
-1144_suauges,suaugęs,adult,M/F,suaugusio,,,,102,People,1144_suauges.webp,forms machine-generated — (accents & irregulars),suáugęs,wiktionary,A1
-0001_zmogus,žmogus,human,M,žmogaus,,,,103,People,0001_zmogus.webp,forms machine-generated — (accents & irregulars),žmogùs,wiktionary,A1
-0016_draugas,draugas,friend,M/F,draugo,,,,104,People,0016_draugas.webp,forms machine-generated — (accents & irregulars),draũgas,wiktionary,A1
-1132_auka,auka,victim,F,aukos,,,,105,People,1132_auka.webp,forms machine-generated — (accents & irregulars),aukà,wiktionary,A1
-2256_zaidejas,žaidėjas,player,M/F,žaidėjo,,,,106,People,2256_zaidejas.webp,forms machine-generated — (accents & irregulars),žaidė́jas,wiktionary,A2
+0964_prezidentas,prezidentas,president,M/F,prezideñto,,,,97,People,0964_prezidentas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,prezideñtas,wiktionary,A1
+0060_kaimynas,kaimynas,neighbor,M/F,kaimýno,,,,98,People,0060_kaimynas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kaimýnas,wiktionary,A1
+0430_berniukas,berniukas,boy,M,berniùko,,,,99,People,0430_berniukas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,berniùkas,wiktionary,A1
+0367_mergaite,mergaitė,girl,F,mergáitės,,,,100,People,0367_mergaite.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mergáitė,wiktionary,A1
+0012_vaikas,vaikas,child,M,vaĩko,,,,101,People,0012_vaikas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vaĩkas,wiktionary,A1
+1144_suauges,suaugęs,adult,M/F,suáugusio,,,,102,People,1144_suauges.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,suáugęs,wiktionary,A1
+0001_zmogus,žmogus,human,M,žmogaũs,,,,103,People,0001_zmogus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žmogùs,wiktionary,A1
+0016_draugas,draugas,friend,M/F,draũgo,,,,104,People,0016_draugas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,draũgas,wiktionary,A1
+1132_auka,auka,victim,F,aukõs,,,,105,People,1132_auka.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,aukà,wiktionary,A1
+2256_zaidejas,žaidėjas,player,M/F,žaidė́jo,,,,106,People,2256_zaidejas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žaidė́jas,wiktionary,A2
 2348_sirgalius,sirgalius,fan (sports),M/F,sirgaliaus,,,,107,People,2348_sirgalius.webp,forms machine-generated — (accents & irregulars),sirgãlius,kirtis.info,A2
 2286_minia,minia,crowd,F,minios,,,,108,People,2286_minia.webp,forms machine-generated — (accents & irregulars),minià,kirtis.info,A2
 1003_asmuo,asmuo,person,M,asmens,,,,109,People,1003_asmuo.webp,forms machine-generated — (accents & irregulars),asmuõ,wiktionary,A1
-0045_mokytojas,mokytojas,teacher,M/F,mokytojo,,,,110,Job,0045_mokytojas.webp,forms machine-generated — (accents & irregulars),mókytojas,wiktionary,A1
-0333_studentas,studentas,student,M/F,studento,,,,111,Job,0333_studentas.webp,forms machine-generated — (accents & irregulars),studeñtas,wiktionary,A1
-0692_advokatas,advokatas,lawyer,M/F,advokato,,,,112,Job,0692_advokatas.webp,forms machine-generated — (accents & irregulars),advokãtas,wiktionary,A1
-0245_gydytojas,gydytojas,doctor,M/F,gydytojo,,,,113,Job,0245_gydytojas.webp,forms machine-generated — (accents & irregulars),gýdytojas,wiktionary,A1
-0765_pacientas,pacientas,patient,M/F,paciento,,,,114,Job,0765_pacientas.webp,forms machine-generated — (accents & irregulars),pacieñtas,wiktionary,A1
+0045_mokytojas,mokytojas,teacher,M/F,mókytojo,,,,110,Job,0045_mokytojas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mókytojas,wiktionary,A1
+0333_studentas,studentas,student,M/F,studeñto,,,,111,Job,0333_studentas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,studeñtas,wiktionary,A1
+0692_advokatas,advokatas,lawyer,M/F,advokãto,,,,112,Job,0692_advokatas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,advokãtas,wiktionary,A1
+0245_gydytojas,gydytojas,doctor,M/F,gýdytojo,,,,113,Job,0245_gydytojas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,gýdytojas,wiktionary,A1
+0765_pacientas,pacientas,patient,M/F,pacieñto,,,,114,Job,0765_pacientas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pacieñtas,wiktionary,A1
 0713_padavejas,padavėjas,waiter,M/F,padavėjo,,,,115,Job,0713_padavejas.webp,forms machine-generated — (accents & irregulars),padavė́jas,wiktionary-html,A1
 0997_sekretorius,sekretorius,secretary,M/F,sekretoriaus,,,,116,Job,0997_sekretorius.webp,forms machine-generated — (accents & irregulars),sekretõrius,kirtis.info,A1
-0978_kunigas,kunigas,priest,M,kunigo,,,,117,Job,0978_kunigas.webp,forms machine-generated — (accents & irregulars),kùnigas,wiktionary,A1
-0407_policininkas,policininkas,police officer,M/F,policininko,,,,118,Job,0407_policininkas.webp,forms machine-generated — (accents & irregulars),polìcininkas,wiktionary,A1
-0368_policija,policija,police force,F,policijos,,,,119,Job,0368_policija.webp,forms machine-generated — (accents & irregulars),polìcija,wiktionary,A1
-0808_kariuomene,kariuomenė,army,F,kariuomenės,,,,120,Job,0808_kariuomene.webp,forms machine-generated — (accents & irregulars),kariúomenė,wiktionary,A1
-0777_kareivis,kareivis,soldier,M,kareivio,,,,121,Job,0777_kareivis.webp,forms machine-generated — (accents & irregulars),kareĩvis,wiktionary,A1
-1044_menininkas,menininkas,artist,M/F,menininko,,,,122,Job,1044_menininkas.webp,forms machine-generated — (accents & irregulars),mẽnininkas,wiktionary,A1
-0906_autorius,autorius,author,M/F,autoriaus,,,,123,Job,0906_autorius.webp,forms machine-generated — (accents & irregulars),áutorius,wiktionary,A1
-0574_vadovas,vadovas,manager,M/F,vadovo,,,,124,Job,0574_vadovas.webp,forms machine-generated — (accents & irregulars),vadõvas,wiktionary,A1
-0857_zurnalistas,žurnalistas,reporter,M/F,žurnalisto,,,,125,Job,0857_zurnalistas.webp,forms machine-generated — (accents & irregulars),žurnalìstas,wiktionary,A1
-0941_aktorius,aktorius,actor,M/F,aktoriaus,,,,126,Job,0941_aktorius.webp,forms machine-generated — (accents & irregulars),ãktorius,wiktionary,A1
-0080_darbas,darbas,job,M,darbo,,,,127,Job,0080_darbas.webp,forms machine-generated — (accents & irregulars),dárbas,wiktionary,A1
-2326_religija,religija,religion,F,religijos,,,,128,Society,2326_religija.webp,forms machine-generated — (accents & irregulars),relìgija,wiktionary,A2
-2041_dangus,dangus,heaven,M,dangaus,,,,129,Society,2041_dangus.webp,forms machine-generated — (accents & irregulars),dangùs,wiktionary,A2
-2119_pragaras,pragaras,hell,M,pragaro,,,,130,Society,2119_pragaras.webp,forms machine-generated — (accents & irregulars),prãgaras,wiktionary,A2
-1872_mirtis,mirtis,death,F,mirties,,,,131,Society,1872_mirtis.webp,forms machine-generated — (accents & irregulars),mirtìs,wiktionary,A2
-0510_vaistai,vaistai,medicine,M pl,vaistų,,,,132,Society,0510_vaistai.webp,forms machine-generated — (accents & irregulars),váistai,wiktionary,A1
-0040_pinigai,pinigai,money,M pl,pinigų,,,,133,Society,0040_pinigai.webp,forms machine-generated — (accents & irregulars),pinigaĩ,wiktionary,A1
-1924_doleris,doleris,dollar,M,dolerio,,,,134,Society,1924_doleris.webp,forms machine-generated — (accents & irregulars),dóleris,wiktionary,A2
-2393_banknotas,banknotas,bill,M,banknoto,,,,135,Society,2393_banknotas.webp,forms machine-generated — (accents & irregulars),banknòtas,wiktionary,A2
-2227_santuoka,santuoka,marriage,F,santuokos,,,,136,Society,2227_santuoka.webp,forms machine-generated — (accents & irregulars),sántuoka,wiktionary,A2
-0850_vestuves,vestuvės,wedding,F,vestuvių,,,,137,Society,0850_vestuves.webp,forms machine-generated — (accents & irregulars),vestùvės,wiktionary,A1
-1241_komanda,komanda,team,F,komandos,,,,138,Society,1241_komanda.webp,forms machine-generated — (accents & irregulars),kománda,wiktionary,A2
-2182_santykiai,santykiai,relationship,M pl,santykių,,,,139,Society,2182_santykiai.webp,forms machine-generated — (accents & irregulars),sántykiai,wiktionary-lt,A2
+0978_kunigas,kunigas,priest,M,kùnigo,,,,117,Job,0978_kunigas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kùnigas,wiktionary,A1
+0407_policininkas,policininkas,police officer,M/F,polìcininko,,,,118,Job,0407_policininkas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,polìcininkas,wiktionary,A1
+0368_policija,policija,police force,F,polìcijos,,,,119,Job,0368_policija.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,polìcija,wiktionary,A1
+0808_kariuomene,kariuomenė,army,F,kariúomenės,,,,120,Job,0808_kariuomene.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kariúomenė,wiktionary,A1
+0777_kareivis,kareivis,soldier,M,kareĩvio,,,,121,Job,0777_kareivis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kareĩvis,wiktionary,A1
+1044_menininkas,menininkas,artist,M/F,mẽnininko,,,,122,Job,1044_menininkas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mẽnininkas,wiktionary,A1
+0906_autorius,autorius,author,M/F,áutoriaus,,,,123,Job,0906_autorius.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,áutorius,wiktionary,A1
+0574_vadovas,vadovas,manager,M/F,vadõvo,,,,124,Job,0574_vadovas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vadõvas,wiktionary,A1
+0857_zurnalistas,žurnalistas,reporter,M/F,žurnalìsto,,,,125,Job,0857_zurnalistas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žurnalìstas,wiktionary,A1
+0941_aktorius,aktorius,actor,M/F,ãktoriaus,,,,126,Job,0941_aktorius.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ãktorius,wiktionary,A1
+0080_darbas,darbas,job,M,dárbo,,,,127,Job,0080_darbas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dárbas,wiktionary,A1
+2326_religija,religija,religion,F,relìgijos,,,,128,Society,2326_religija.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,relìgija,wiktionary,A2
+2041_dangus,dangus,heaven,M,dangaũs,,,,129,Society,2041_dangus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dangùs,wiktionary,A2
+2119_pragaras,pragaras,hell,M,prãgaro,,,,130,Society,2119_pragaras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,prãgaras,wiktionary,A2
+1872_mirtis,mirtis,death,F,mirtiẽs,,,,131,Society,1872_mirtis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mirtìs,wiktionary,A2
+0510_vaistai,vaistai,medicine,M pl,váistų,,,,132,Society,0510_vaistai.webp,"forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary, chosen by headword 2026-10-28",váistai,wiktionary,A1
+0040_pinigai,pinigai,money,M pl,pinigų̃,,,,133,Society,0040_pinigai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pinigaĩ,wiktionary,A1
+1924_doleris,doleris,dollar,M,dólerio,,,,134,Society,1924_doleris.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dóleris,wiktionary,A2
+2393_banknotas,banknotas,bill,M,banknòto,,,,135,Society,2393_banknotas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,banknòtas,wiktionary,A2
+2227_santuoka,santuoka,marriage,F,sántuokos,,,,136,Society,2227_santuoka.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sántuoka,wiktionary,A2
+0850_vestuves,vestuvės,wedding,F,vestùvių,,,,137,Society,0850_vestuves.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vestùvės,wiktionary,A1
+1241_komanda,komanda,team,F,komándos,,,,138,Society,1241_komanda.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kománda,wiktionary,A2
+2182_santykiai,santykiai,relationship,M pl,sántykių,,,,139,Society,2182_santykiai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sántykiai,wiktionary-lt,A2
 2339_rase,rasė,race ethnicity,F,rasės,,,,140,Society,2339_rase.webp,forms machine-generated — (accents & irregulars),rãsė,kirtis.info,A2
-2105_seksas,seksas,sex act,M,sekso,,,,141,Society,2105_seksas.webp,forms machine-generated — (accents & irregulars),sèksas,wiktionary,A2
-2365_lytis,lytis,sex gender,F,lyties,,,,142,Society,2365_lytis.webp,forms machine-generated — (accents & irregulars),lytìs,wiktionary,A2
+2105_seksas,seksas,sex act,M,sèkso,,,,141,Society,2105_seksas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sèksas,wiktionary,A2
+2365_lytis,lytis,sex gender,F,lytiẽs,,,,142,Society,2365_lytis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lytìs,wiktionary,A2
 2174_zmogzudyste,žmogžudystė,murder,F,žmogžudystės,,,,143,Society,2174_zmogzudyste.webp,forms machine-generated — (accents & irregulars),žmogžudỹstė,kirtis.info,A2
-1946_kalejimas,kalėjimas,prison,M,kalėjimo,,,,144,Society,1946_kalejimas.webp,forms machine-generated — (accents & irregulars),kalė́jimas,wiktionary,A2
+1946_kalejimas,kalėjimas,prison,M,kalė́jimo,,,,144,Society,1946_kalejimas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kalė́jimas,wiktionary,A2
 2207_technologija,technologija,technology,F,technologijos,,,,145,Society,2207_technologija.webp,forms machine-generated — (accents & irregulars),technològija,wiktionary-html,A2
-2016_energija,energija,energy,F,energijos,,,,146,Society,2016_energija.webp,forms machine-generated — (accents & irregulars),ener̃gija,wiktionary,A2
-1684_karas,karas,war,M,karo,,,,147,Society,1684_karas.webp,forms machine-generated — (accents & irregulars),kãras,wiktionary,A2
+2016_energija,energija,energy,F,ener̃gijos,,,,146,Society,2016_energija.webp,"forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary, chosen by headword 2026-10-28",ener̃gija,wiktionary,A2
+1684_karas,karas,war,M,kãro,,,,147,Society,1684_karas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kãras,wiktionary,A2
 2195_taika,taika,peace,F,taikos,,,,148,Society,2195_taika.webp,forms machine-generated — (accents & irregulars),taikà,kirtis.info,A2
 2279_puolimas,puolimas,attack,M,puolimo,,,,149,Society,2279_puolimas.webp,forms machine-generated — (accents & irregulars),puolìmas,kirtis.info,A2
-2144_rinkimai,rinkimai,election,M pl,rinkimų,,,,150,Society,2144_rinkimai.webp,forms machine-generated — (accents & irregulars),rinkìmai,wiktionary,A2
+2144_rinkimai,rinkimai,election,M pl,rinkìmų,,,,150,Society,2144_rinkimai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,rinkìmai,wiktionary,A2
 1639_zurnalas,žurnalas,magazine,M,žurnalo,,,,151,Society,1639_zurnalas.webp,forms machine-generated — (accents & irregulars),žurnãlas,wiktionary,A2
-1218_laikrastis,laikraštis,newspaper,M,laikraščio,,,,152,Society,1218_laikrastis.webp,forms machine-generated — (accents & irregulars),laĩkraštis,wiktionary,A2
-2376_nuodai,nuodai,poison,M pl,nuodų,,,,153,Society,2376_nuodai.webp,forms machine-generated — (accents & irregulars),nuodaĩ,wiktionary,A2
-1673_ginklas,ginklas,gun,M,ginklo,,,,154,Society,1673_ginklas.webp,forms machine-generated — (accents & irregulars),giñklas,wiktionary,A2
-1206_sportas,sportas,sport,M,sporto,,,,155,Society,1206_sportas.webp,forms machine-generated — (accents & irregulars),spòrtas,wiktionary,A2
-2246_lenktynes,lenktynės,race sport,F pl,lenktynių,,,,156,Society,2246_lenktynes.webp,forms machine-generated — (accents & irregulars),lenktỹnės,wiktionary,A2
+1218_laikrastis,laikraštis,newspaper,M,laĩkraščio,,,,152,Society,1218_laikrastis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,laĩkraštis,wiktionary,A2
+2376_nuodai,nuodai,poison,M pl,nuodų̃,,,,153,Society,2376_nuodai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,nuodaĩ,wiktionary,A2
+1673_ginklas,ginklas,gun,M,giñklo,,,,154,Society,1673_ginklas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,giñklas,wiktionary,A2
+1206_sportas,sportas,sport,M,spòrto,,,,155,Society,1206_sportas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,spòrtas,wiktionary,A2
+2246_lenktynes,lenktynės,race sport,F pl,lenktỹnių,,,,156,Society,2246_lenktynes.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lenktỹnės,wiktionary,A2
 2300_manksta,mankšta,exercise,F,mankštos,,,,157,Society,2300_manksta.webp,forms machine-generated — (accents & irregulars),mankštà,kirtis.info,A2
-1705_kamuolys,kamuolys,ball,M,kamuolio,,,,158,Society,1705_kamuolys.webp,forms machine-generated — (accents & irregulars),kamuolỹs,wiktionary,A2
-1318_zaidimas,žaidimas,game,M,žaidimo,,,,159,Society,1318_zaidimas.webp,forms machine-generated — (accents & irregulars),žaidìmas,wiktionary,A2
-0041_kaina,kaina,price,F,kainos,,,,160,Society,0041_kaina.webp,forms machine-generated — (accents & irregulars),káina,wiktionary,A1
-1837_sutartis,sutartis,contract,F,sutarties,,,,161,Society,1837_sutartis.webp,forms machine-generated — (accents & irregulars),sutartìs,wiktionary,A2
-2129_narkotikas,narkotikas,drug,M,narkotiko,,,,162,Society,2129_narkotikas.webp,forms machine-generated — (accents & irregulars),narkòtikas,wiktionary,A2
-0797_zenklas,ženklas,sign,M,ženklo,,,,163,Society,0797_zenklas.webp,forms machine-generated — (accents & irregulars),žénklas,wiktionary,A1
-1988_mokslas,mokslas,science,M,mokslo,,,,164,Society,1988_mokslas.webp,forms machine-generated — (accents & irregulars),mókslas,wiktionary,A2
-1518_dievas,Dievas,God,M,Dievo,,,,165,Society,1518_dievas.webp,forms machine-generated — (accents & irregulars),Diẽvas,wiktionary,A2
-0453_grupe,grupė,band,F,grupės,,,,166,Art,0453_grupe.webp,forms machine-generated — (accents & irregulars),grùpė,wiktionary,A1
-1204_daina,daina,song,F,dainos,,,,167,Art,1204_daina.webp,forms machine-generated — (accents & irregulars),dainà,wiktionary,A2
-1079_instrumentas,instrumentas,instrument,M,instrumento,,,,168,Art,1079_instrumentas.webp,forms machine-generated — (accents & irregulars),instrumeñtas,wiktionary,A1
-0299_muzika,muzika,music,F,muzikos,,,,169,Art,0299_muzika.webp,forms machine-generated — (accents & irregulars),mùzika,wiktionary,A1
-0141_filmas,filmas,movie,M,filmo,,,,170,Art,0141_filmas.webp,forms machine-generated — (accents & irregulars),fìlmas,wiktionary,A1
-2003_menas,menas,art,M,meno,,,,171,Art,2003_menas.webp,forms machine-generated — (accents & irregulars),mẽnas,wiktionary,A2
-0014_kava,kava,coffee,F,kavos,,,,172,Beverages,0014_kava.webp,forms machine-generated — (accents & irregulars),kavà,wiktionary,A1
-0017_arbata,arbata,tea,F,arbatos,,,,173,Beverages,0017_arbata.webp,forms machine-generated — (accents & irregulars),arbatà,wiktionary,A1
-0792_vynas,vynas,wine,M,vyno,,,,174,Beverages,0792_vynas.webp,forms machine-generated — (accents & irregulars),vỹnas,wiktionary,A1
-0026_alus,alus,beer,M,alaus,,,,175,Beverages,0026_alus.webp,forms machine-generated — (accents & irregulars),alùs,wiktionary,A1
-0532_sultys,sultys,juice,F pl,sulčių,,,,176,Beverages,0532_sultys.webp,forms machine-generated — (accents & irregulars),sùltys,wiktionary,A1
-0003_vanduo,vanduo,water,M,vandens,,,,177,Beverages,0003_vanduo.webp,forms machine-generated — (accents & irregulars),vanduõ,wiktionary,A1
-0018_pienas,pienas,milk,M,pieno,,,,178,Beverages,0018_pienas.webp,forms machine-generated — (accents & irregulars),píenas,wiktionary,A1
-0355_gerimas,gėrimas,beverage,M,gėrimo,,,,179,Beverages,0355_gerimas.webp,forms machine-generated — (accents & irregulars),gė́rimas,wiktionary,A1
-0452_kiausinis,kiaušinis,egg,M,kiaušinio,,,,180,Food,0452_kiausinis.webp,forms machine-generated — (accents & irregulars),kiaušìnis,wiktionary,A1
-0520_suris,sūris,cheese,M,sūrio,,,,181,Food,0520_suris.webp,forms machine-generated — (accents & irregulars),sū́ris,wiktionary,A1
-0006_duona,duona,bread,F,duonos,,,,182,Food,0006_duona.webp,forms machine-generated — (accents & irregulars),dúona,wiktionary,A1
+1705_kamuolys,kamuolys,ball,M,kãmuolio,,,,158,Society,1705_kamuolys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kamuolỹs,wiktionary,A2
+1318_zaidimas,žaidimas,game,M,žaidìmo,,,,159,Society,1318_zaidimas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žaidìmas,wiktionary,A2
+0041_kaina,kaina,price,F,káinos,,,,160,Society,0041_kaina.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,káina,wiktionary,A1
+1837_sutartis,sutartis,contract,F,sutartiẽs,,,,161,Society,1837_sutartis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sutartìs,wiktionary,A2
+2129_narkotikas,narkotikas,drug,M,narkòtiko,,,,162,Society,2129_narkotikas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,narkòtikas,wiktionary,A2
+0797_zenklas,ženklas,sign,M,žénklo,,,,163,Society,0797_zenklas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žénklas,wiktionary,A1
+1988_mokslas,mokslas,science,M,mókslo,,,,164,Society,1988_mokslas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mókslas,wiktionary,A2
+1518_dievas,Dievas,God,M,Diẽvo,,,,165,Society,1518_dievas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,Diẽvas,wiktionary,A2
+0453_grupe,grupė,band,F,grùpės,,,,166,Art,0453_grupe.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,grùpė,wiktionary,A1
+1204_daina,daina,song,F,dainõs,,,,167,Art,1204_daina.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dainà,wiktionary,A2
+1079_instrumentas,instrumentas,instrument,M,instrumeñto,,,,168,Art,1079_instrumentas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,instrumeñtas,wiktionary,A1
+0299_muzika,muzika,music,F,mùzikos,,,,169,Art,0299_muzika.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mùzika,wiktionary,A1
+0141_filmas,filmas,movie,M,fìlmo,,,,170,Art,0141_filmas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,fìlmas,wiktionary,A1
+2003_menas,menas,art,M,mẽno,,,,171,Art,2003_menas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mẽnas,wiktionary,A2
+0014_kava,kava,coffee,F,kavõs,,,,172,Beverages,0014_kava.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kavà,wiktionary,A1
+0017_arbata,arbata,tea,F,arbãtos,,,,173,Beverages,0017_arbata.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,arbatà,wiktionary,A1
+0792_vynas,vynas,wine,M,vỹno,,,,174,Beverages,0792_vynas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vỹnas,wiktionary,A1
+0026_alus,alus,beer,M,alaũs,,,,175,Beverages,0026_alus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,alùs,wiktionary,A1
+0532_sultys,sultys,juice,F pl,sùlčių,,,,176,Beverages,0532_sultys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sùltys,wiktionary,A1
+0003_vanduo,vanduo,water,M,vandeñs,,,,177,Beverages,0003_vanduo.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vanduõ,wiktionary,A1
+0018_pienas,pienas,milk,M,píeno,,,,178,Beverages,0018_pienas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,píenas,wiktionary,A1
+0355_gerimas,gėrimas,beverage,M,gė́rimo,,,,179,Beverages,0355_gerimas.webp,"forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary, chosen by headword 2026-10-28",gė́rimas,wiktionary,A1
+0452_kiausinis,kiaušinis,egg,M,kiaušìnio,,,,180,Food,0452_kiausinis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kiaušìnis,wiktionary,A1
+0520_suris,sūris,cheese,M,sū́rio,,,,181,Food,0520_suris.webp,"forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary, chosen by headword 2026-10-28",sū́ris,wiktionary,A1
+0006_duona,duona,bread,F,dúonos,,,,182,Food,0006_duona.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dúona,wiktionary,A1
 0007_batonas,batonas,white loaf (wheat bread),M,batono,,,,531,Food,0007_batonas.webp,added 2026-10-11 (owner F6 note); placed after 0006_duona so the study order keeps the pair together; image pending,batònas,kirtis.info,A1
-0033_sriuba,sriuba,soup,F,sriubos,,,,183,Food,0033_sriuba.webp,forms machine-generated — (accents & irregulars),sriubà,wiktionary,A1
-0870_tortas,tortas,cake,M,torto,,,,184,Food,0870_tortas.webp,forms machine-generated — (accents & irregulars),tòrtas,wiktionary,A1
-0607_vistiena,vištiena,chicken,F,vištienos,,,,185,Food,0607_vistiena.webp,forms machine-generated — (accents & irregulars),vištíena,wiktionary,A1
-1115_kiauliena,kiauliena,pork,F,kiaulienos,,,,186,Food,1115_kiauliena.webp,forms machine-generated — (accents & irregulars),kiaulíena,wiktionary,A1
+0033_sriuba,sriuba,soup,F,sriubõs,,,,183,Food,0033_sriuba.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sriubà,wiktionary,A1
+0870_tortas,tortas,cake,M,tòrto,,,,184,Food,0870_tortas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,tòrtas,wiktionary,A1
+0607_vistiena,vištiena,chicken,F,vištíenos,,,,185,Food,0607_vistiena.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vištíena,wiktionary,A1
+1115_kiauliena,kiauliena,pork,F,kiaulíenos,,,,186,Food,1115_kiauliena.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kiaulíena,wiktionary,A1
 1071_jautiena,jautiena,beef,F,jautienos,,,,187,Food,1071_jautiena.webp,forms machine-generated — (accents & irregulars),jáutiena,wiktionary,A1
-0028_obuolys,obuolys,apple,M,obuolio,,,,188,Food,0028_obuolys.webp,forms machine-generated — (accents & irregulars),obuolỹs,wiktionary,A1
-0990_bananas,bananas,banana,M,banano,,,,189,Food,0990_bananas.webp,forms machine-generated — (accents & irregulars),banãnas,wiktionary,A1
-1125_apelsinas,apelsinas,orange (fruit),M,apelsino,,,,190,Food,1125_apelsinas.webp,forms machine-generated — (accents & irregulars),apelsìnas,wiktionary,A1
-1152_citrina,citrina,lemon,F,citrinos,,,,191,Food,1152_citrina.webp,forms machine-generated — (accents & irregulars),citrinà,wiktionary,A1
-1168_kukuruzai,kukurūzai,corn,M pl,kukurūzų,,,,192,Food,1168_kukuruzai.webp,forms machine-generated — (accents & irregulars),kukurū̃zai,wiktionary,A1
-1177_ryziai,ryžiai,rice,M pl,ryžių,,,,193,Food,1177_ryziai.webp,forms machine-generated — (accents & irregulars),rỹžiai,kirtis.info,A1
-1097_aliejus,aliejus,oil,M,aliejaus,,,,194,Food,1097_aliejus.webp,forms machine-generated — (accents & irregulars),aliẽjus,wiktionary,A1
+0028_obuolys,obuolys,apple,M,óbuolio,,,,188,Food,0028_obuolys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,obuolỹs,wiktionary,A1
+0990_bananas,bananas,banana,M,banãno,,,,189,Food,0990_bananas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,banãnas,wiktionary,A1
+1125_apelsinas,apelsinas,orange (fruit),M,apelsìno,,,,190,Food,1125_apelsinas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,apelsìnas,wiktionary,A1
+1152_citrina,citrina,lemon,F,citrìnos,,,,191,Food,1152_citrina.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,citrinà,wiktionary,A1
+1168_kukuruzai,kukurūzai,corn,M pl,kukurū̃zų,,,,192,Food,1168_kukuruzai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kukurū̃zai,wiktionary,A1
+1177_ryziai,ryžiai,rice,M pl,rỹžių,,,,193,Food,1177_ryziai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,rỹžiai,kirtis.info,A1
+1097_aliejus,aliejus,oil,M,aliẽjaus,,,,194,Food,1097_aliejus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,aliẽjus,wiktionary,A1
 1108_tepalas,tepalas,oil (machine),M,tepalo,,,,195,Food,1108_tepalas.webp,forms machine-generated — (accents & irregulars),tẽpalas,kirtis.info,A1
-1026_sekla,sėkla,seed,F,sėklos,,,,196,Food,1026_sekla.webp,forms machine-generated — (accents & irregulars),sė́kla,wiktionary,A1
-0489_peilis,peilis,knife,M,peilio,,,,197,Food,0489_peilis.webp,forms machine-generated — (accents & irregulars),peĩlis,wiktionary,A1
-0882_saukstas,šaukštas,spoon,M,šaukšto,,,,198,Food,0882_saukstas.webp,forms machine-generated — (accents & irregulars),šáukštas,wiktionary,A1
+1026_sekla,sėkla,seed,F,sė́klos,,,,196,Food,1026_sekla.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sė́kla,wiktionary,A1
+0489_peilis,peilis,knife,M,peĩlio,,,,197,Food,0489_peilis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,peĩlis,wiktionary,A1
+0882_saukstas,šaukštas,spoon,M,šáukšto,,,,198,Food,0882_saukstas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,šáukštas,wiktionary,A1
 0947_sakute,šakutė,fork,F,šakutės,,,,199,Food,0947_sakute.webp,forms machine-generated — (accents & irregulars),šakùtė,wiktionary-html,A1
-0717_lekste,lėkštė,plate,F,lėkštės,,,,200,Food,0717_lekste.webp,forms machine-generated — (accents & irregulars),lėkštė̃,wiktionary,A1
+0717_lekste,lėkštė,plate,F,lėkštė̃s,,,,200,Food,0717_lekste.webp,"forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary, chosen by headword 2026-10-28",lėkštė̃,wiktionary,A1
 0506_puodelis,puodelis,cup,M,puodelio,,,,201,Food,0506_puodelis.webp,forms machine-generated — (accents & irregulars),puodẽlis,wiktionary-html,A1
-0586_pusryciai,pusryčiai,breakfast,M pl,pusryčių,,,,202,Food,0586_pusryciai.webp,forms machine-generated — (accents & irregulars),pùsryčiai,wiktionary,A1
-0301_pietus,pietūs,lunch,M pl,pietų,,,,203,Food,0301_pietus.webp,forms machine-generated — (accents & irregulars),piẽtūs,wiktionary,A1
-0330_vakariene,vakarienė,dinner,F,vakarienės,,,,204,Food,0330_vakariene.webp,forms machine-generated — (accents & irregulars),vakariẽnė,wiktionary,A1
-0243_cukrus,cukrus,sugar,M,cukraus,,,,205,Food,0243_cukrus.webp,forms machine-generated — (accents & irregulars),cùkrus,wiktionary,A1
+0586_pusryciai,pusryčiai,breakfast,M pl,pùsryčių,,,,202,Food,0586_pusryciai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pùsryčiai,wiktionary,A1
+0301_pietus,pietūs,lunch,M pl,pietų̃,,,,203,Food,0301_pietus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,piẽtūs,wiktionary,A1
+0330_vakariene,vakarienė,dinner,F,vakariẽnės,,,,204,Food,0330_vakariene.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vakariẽnė,wiktionary,A1
+0243_cukrus,cukrus,sugar,M,cùkraus,,,,205,Food,0243_cukrus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,cùkrus,wiktionary,A1
 0575_druska,druska,salt,F,druskos,,,,206,Food,0575_druska.webp,forms machine-generated — (accents & irregulars),druskà,wiktionary,A1
-0464_butelis,butelis,bottle,M,butelio,,,,207,Food,0464_butelis.webp,forms machine-generated — (accents & irregulars),bùtelis,wiktionary,A1
+0464_butelis,butelis,bottle,M,bùtelio,,,,207,Food,0464_butelis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bùtelis,wiktionary,A1
 0212_maistas,maistas,food,M,maisto,,,,208,Food,0212_maistas.webp,forms machine-generated — (accents & irregulars),maĩstas,wiktionary,A1
-0063_stalas,stalas,table,M,stalo,,,,209,Home,0063_stalas.webp,forms machine-generated — (accents & irregulars),stãlas,wiktionary,A1
-0244_kede,kėdė,chair,F,kėdės,,,,210,Home,0244_kede.webp,forms machine-generated — (accents & irregulars),kėdė̃,wiktionary,A1
-0343_lova,lova,bed,F,lovos,,,,211,Home,0343_lova.webp,forms machine-generated — (accents & irregulars),lóva,wiktionary,A1
-1617_sapnas,sapnas,dream,M,sapno,,,,212,Home,1617_sapnas.webp,forms machine-generated — (accents & irregulars),sãpnas,wiktionary,A2
-0346_langas,langas,window,M,lango,,,,213,Home,0346_langas.webp,forms machine-generated — (accents & irregulars),lángas,wiktionary,A1
-0210_durys,durys,door,F pl,durų,,,,214,Home,0210_durys.webp,forms machine-generated — (accents & irregulars),dùrys,wiktionary,A1
+0063_stalas,stalas,table,M,stãlo,,,,209,Home,0063_stalas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,stãlas,wiktionary,A1
+0244_kede,kėdė,chair,F,kėdė̃s,,,,210,Home,0244_kede.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kėdė̃,wiktionary,A1
+0343_lova,lova,bed,F,lóvos,,,,211,Home,0343_lova.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lóva,wiktionary,A1
+1617_sapnas,sapnas,dream,M,sãpno,,,,212,Home,1617_sapnas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sãpnas,wiktionary,A2
+0346_langas,langas,window,M,lángo,,,,213,Home,0346_langas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lángas,wiktionary,A1
+0210_durys,durys,door,F pl,dùrų,,,,214,Home,0210_durys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dùrys,wiktionary,A1
 0704_miegamasis,miegamasis,bedroom,M,miegamojo,,,,215,Home,0704_miegamasis.webp,forms machine-generated — (accents & irregulars),miegamàsis,wiktionary,A1
-0443_virtuve,virtuvė,kitchen,F,virtuvės,,,,216,Home,0443_virtuve.webp,forms machine-generated — (accents & irregulars),virtùvė,wiktionary,A1
-0412_vonia,vonia,bathroom,F,vonios,,,,217,Home,0412_vonia.webp,forms machine-generated — (accents & irregulars),vonià,wiktionary,A1
-0801_piestukas,pieštukas,pencil,M,pieštuko,,,,218,Home,0801_piestukas.webp,forms machine-generated — (accents & irregulars),pieštùkas,wiktionary,A1
+0443_virtuve,virtuvė,kitchen,F,virtùvės,,,,216,Home,0443_virtuve.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,virtùvė,wiktionary,A1
+0412_vonia,vonia,bathroom,F,voniõs,,,,217,Home,0412_vonia.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vonià,wiktionary,A1
+0801_piestukas,pieštukas,pencil,M,pieštùko,,,,218,Home,0801_piestukas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pieštùkas,wiktionary,A1
 0689_rasiklis,rašiklis,pen,M,rašiklio,,,,219,Home,0689_rasiklis.webp,forms machine-generated — (accents & irregulars),rašìklis,kirtis.info,A1
 0566_nuotrauka,nuotrauka,photograph,F,nuotraukos,,,,220,Home,0566_nuotrauka.webp,forms machine-generated — (accents & irregulars),núotrauka,wiktionary-html,A1
-0827_muilas,muilas,soap,M,muilo,,,,221,Home,0827_muilas.webp,forms machine-generated — (accents & irregulars),muĩlas,wiktionary,A1
-0062_knyga,knyga,book,F,knygos,,,,222,Home,0062_knyga.webp,forms machine-generated — (accents & irregulars),knygà,wiktionary,A1
-0935_puslapis,puslapis,page,M,puslapio,,,,223,Home,0935_puslapis.webp,forms machine-generated — (accents & irregulars),pùslapis,wiktionary,A1
-0133_raktas,raktas,key,M,rakto,,,,224,Home,0133_raktas.webp,forms machine-generated — (accents & irregulars),rãktas,wiktionary,A1
-1092_dazai,dažai,paint,M pl,dažų,,,,225,Home,1092_dazai.webp,forms machine-generated — (accents & irregulars),dažaĩ,wiktionary,A1
-0166_laiskas,laiškas,letter (mail),M,laiško,,,,226,Home,0166_laiskas.webp,forms machine-generated — (accents & irregulars),láiškas,wiktionary,A1
-2275_raide,raidė,letter (alphabet),F,raidės,,,,227,Misc,2275_raide.webp,forms machine-generated — (accents & irregulars),raĩdė,wiktionary,A2
+0827_muilas,muilas,soap,M,muĩlo,,,,221,Home,0827_muilas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,muĩlas,wiktionary,A1
+0062_knyga,knyga,book,F,knỹgos,,,,222,Home,0062_knyga.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,knygà,wiktionary,A1
+0935_puslapis,puslapis,page,M,pùslapio,,,,223,Home,0935_puslapis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pùslapis,wiktionary,A1
+0133_raktas,raktas,key,M,rãkto,,,,224,Home,0133_raktas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,rãktas,wiktionary,A1
+1092_dazai,dažai,paint,M pl,dažų̃,,,,225,Home,1092_dazai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dažaĩ,wiktionary,A1
+0166_laiskas,laiškas,letter (mail),M,láiško,,,,226,Home,0166_laiskas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,láiškas,wiktionary,A1
+2275_raide,raidė,letter (alphabet),F,raĩdės,,,,227,Misc,2275_raide.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,raĩdė,wiktionary,A2
 1102_rastelis,raštelis,note,M,raštelio,,,,228,Home,1102_rastelis.webp,forms machine-generated — (accents & irregulars),raštẽlis,kirtis.info,A1
-0577_siena,siena,wall,F,sienos,,,,229,Home,0577_siena.webp,forms machine-generated — (accents & irregulars),síena,wiktionary,A1
-0375_popierius,popierius,paper,M,popieriaus,,,,230,Home,0375_popierius.webp,forms machine-generated — (accents & irregulars),põpierius,wiktionary,A1
-0839_grindys,grindys,floor,F pl,grindų,,,,231,Home,0839_grindys.webp,forms machine-generated — (accents & irregulars),griñdys,wiktionary,A1
-1109_lubos,lubos,ceiling,F pl,lubų,,,,232,Home,1109_lubos.webp,forms machine-generated — (accents & irregulars),lùbos,wiktionary,A1
-0963_stogas,stogas,roof,M,stogo,,,,233,Home,0963_stogas.webp,forms machine-generated — (accents & irregulars),stógas,wiktionary,A1
-0991_baseinas,baseinas,pool,M,baseino,,,,234,Home,0991_baseinas.webp,forms machine-generated — (accents & irregulars),baseĩnas,wiktionary,A1
-1070_spyna,spyna,lock,F,spynos,,,,235,Home,1070_spyna.webp,forms machine-generated — (accents & irregulars),spynà,wiktionary,A1
-0056_telefonas,telefonas,telephone,M,telefono,,,,236,Home,0056_telefonas.webp,forms machine-generated — (accents & irregulars),telefònas,wiktionary,A1
-0868_sodas,sodas,garden,M,sodo,,,,237,Home,0868_sodas.webp,forms machine-generated — (accents & irregulars),sõdas,wiktionary,A1
-0920_kiemas,kiemas,yard,M,kiemo,,,,238,Home,0920_kiemas.webp,forms machine-generated — (accents & irregulars),kiẽmas,wiktionary,A1
-1077_adata,adata,needle,F,adatos,,,,239,Home,1077_adata.webp,forms machine-generated — (accents & irregulars),ãdata,wiktionary,A1
-0475_krepsys,krepšys,bag,M,krepšio,,,,240,Home,0475_krepsys.webp,forms machine-generated — (accents & irregulars),krepšỹs,wiktionary,A1
-0752_deze,dėžė,box,F,dėžės,,,,241,Home,0752_deze.webp,forms machine-generated — (accents & irregulars),dėžė̃,wiktionary,A1
-0431_dovana,dovana,gift,F,dovanos,,,,242,Home,0431_dovana.webp,forms machine-generated — (accents & irregulars),dovanà,wiktionary,A1
+0577_siena,siena,wall,F,síenos,,,,229,Home,0577_siena.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,síena,wiktionary,A1
+0375_popierius,popierius,paper,M,põpieriaus,,,,230,Home,0375_popierius.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,põpierius,wiktionary,A1
+0839_grindys,grindys,floor,F pl,grindų̃,,,,231,Home,0839_grindys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,griñdys,wiktionary,A1
+1109_lubos,lubos,ceiling,F pl,lubų̃,,,,232,Home,1109_lubos.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lùbos,wiktionary,A1
+0963_stogas,stogas,roof,M,stógo,,,,233,Home,0963_stogas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,stógas,wiktionary,A1
+0991_baseinas,baseinas,pool,M,baseĩno,,,,234,Home,0991_baseinas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,baseĩnas,wiktionary,A1
+1070_spyna,spyna,lock,F,spỹnos,,,,235,Home,1070_spyna.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,spynà,wiktionary,A1
+0056_telefonas,telefonas,telephone,M,telefòno,,,,236,Home,0056_telefonas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,telefònas,wiktionary,A1
+0868_sodas,sodas,garden,M,sõdo,,,,237,Home,0868_sodas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sõdas,wiktionary,A1
+0920_kiemas,kiemas,yard,M,kiẽmo,,,,238,Home,0920_kiemas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kiẽmas,wiktionary,A1
+1077_adata,adata,needle,F,ãdatos,,,,239,Home,1077_adata.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ãdata,wiktionary,A1
+0475_krepsys,krepšys,bag,M,krẽpšio,,,,240,Home,0475_krepsys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,krepšỹs,wiktionary,A1
+0752_deze,dėžė,box,F,dėžė̃s,,,,241,Home,0752_deze.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dėžė̃,wiktionary,A1
+0431_dovana,dovana,gift,F,dovanõs,,,,242,Home,0431_dovana.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dovanà,wiktionary,A1
 0771_kortele,kortelė,card,F,kortelės,,,,243,Home,0771_kortele.webp,forms machine-generated — (accents & irregulars),kortẽlė,kirtis.info,A1
-0900_ziedas,žiedas,ring,M,žiedo,,,,244,Home,0900_ziedas.webp,forms machine-generated — (accents & irregulars),žíedas,wiktionary,A1
-1027_irankis,įrankis,tool,M,įrankio,,,,245,Home,1027_irankis.webp,forms machine-generated — (accents & irregulars),į́rankis,wiktionary,A1
-0485_laikrodis,laikrodis,clock,M,laikrodžio,,,,246,Electronics,0485_laikrodis.webp,forms machine-generated — (accents & irregulars),laĩkrodis,wiktionary,A1
-0754_lempa,lempa,lamp,F,lempos,,,,247,Electronics,0754_lempa.webp,forms machine-generated — (accents & irregulars),lémpa,wiktionary,A1
+0900_ziedas,žiedas,ring,M,žíedo,,,,244,Home,0900_ziedas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žíedas,wiktionary,A1
+1027_irankis,įrankis,tool,M,į́rankio,,,,245,Home,1027_irankis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,į́rankis,wiktionary,A1
+0485_laikrodis,laikrodis,clock,M,laĩkrodžio,,,,246,Electronics,0485_laikrodis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,laĩkrodis,wiktionary,A1
+0754_lempa,lempa,lamp,F,lémpos,,,,247,Electronics,0754_lempa.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lémpa,wiktionary,A1
 2294_ventiliatorius,ventiliatorius,fan (electric),M,ventiliatoriaus,,,,248,Electronics,2294_ventiliatorius.webp,forms machine-generated — (accents & irregulars),ventiliãtorius,kirtis.info,A2
 1082_mobilusis_telefonas,mobilusis telefonas,cell phone,M,mobiliojo telefono,,,,249,Electronics,1082_mobilusis_telefonas.webp,forms machine-generated — (accents & irregulars),mobilùsis telefònas,kirtis.info,A1
-2094_tinklas,tinklas,network,M,tinklo,,,,250,Electronics,2094_tinklas.webp,forms machine-generated — (accents & irregulars),tiñklas,wiktionary,A2
-0398_kompiuteris,kompiuteris,computer,M,kompiuterio,,,,251,Electronics,0398_kompiuteris.webp,forms machine-generated — (accents & irregulars),kompiùteris,wiktionary,A1
-1253_programa,programa,program,F,programos,,,,252,Electronics,1253_programa.webp,forms machine-generated — (accents & irregulars),programà,wiktionary,A2
+2094_tinklas,tinklas,network,M,tiñklo,,,,250,Electronics,2094_tinklas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,tiñklas,wiktionary,A2
+0398_kompiuteris,kompiuteris,computer,M,kompiùterio,,,,251,Electronics,0398_kompiuteris.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kompiùteris,wiktionary,A1
+1253_programa,programa,program,F,progrãmos,,,,252,Electronics,1253_programa.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,programà,wiktionary,A2
 1187_nesiojamasis_kompiuteris,nešiojamasis kompiuteris,laptop,M,nešiojamojo kompiuterio,,,,253,Electronics,1187_nesiojamasis_kompiuteris.webp,forms machine-generated — (accents & irregulars),nešiójamasis kompiùteris,kirtis.info,A1
-0988_ekranas,ekranas,screen,M,ekrano,,,,254,Electronics,0988_ekranas.webp,forms machine-generated — (accents & irregulars),ekrãnas,wiktionary,A1
-0804_fotoaparatas,fotoaparatas,camera,M,fotoaparato,,,,255,Electronics,0804_fotoaparatas.webp,forms machine-generated — (accents & irregulars),fotoaparãtas,wiktionary,A1
-0588_televizorius,televizorius,television,M,televizoriaus,,,,256,Electronics,0588_televizorius.webp,forms machine-generated — (accents & irregulars),televìzorius,wiktionary,A1
-0432_radijas,radijas,radio,M,radijo,,,,257,Electronics,0432_radijas.webp,forms machine-generated — (accents & irregulars),rãdijas,wiktionary,A1
-0174_galva,galva,head,F,galvos,,,,258,Body,0174_galva.webp,forms machine-generated — (accents & irregulars),galvà,wiktionary,A1
-0976_kaklas,kaklas,neck,M,kaklo,,,,259,Body,0976_kaklas.webp,forms machine-generated — (accents & irregulars),kãklas,wiktionary,A1
-0309_veidas,veidas,face,M,veido,,,,260,Body,0309_veidas.webp,forms machine-generated — (accents & irregulars),véidas,wiktionary,A1
-1181_barzda,barzda,beard,F,barzdos,,,,261,Body,1181_barzda.webp,forms machine-generated — (accents & irregulars),barzdà,wiktionary,A1
-0783_plaukai,plaukai,hair,M pl,plaukų,,,,262,Body,0783_plaukai.webp,forms machine-generated — (accents & irregulars),plaukaĩ,wiktionary,A1
-0200_akis,akis,eye,F,akies,,,,263,Body,0200_akis.webp,forms machine-generated — (accents & irregulars),akìs,wiktionary,A1
-0673_burna,burna,mouth,F,burnos,,,,264,Body,0673_burna.webp,forms machine-generated — (accents & irregulars),burnà,wiktionary,A1
-1124_lupos,lūpos,lips,F pl,lūpų,,,,265,Body,1124_lupos.webp,"forms machine-generated — (accents & irregulars); retargeted lūpa→lūpos (plural is the usual word; owner 2026-10-11, decided by Fable); key and GUID unchanged; Wiktionary lūpa: lū́pa (1), pl. lū́pos; audio 1124_lupos.mp3 still says the singular paradigm — re-record",lū́pos,wiktionary,A1
-0544_nosis,nosis,nose,F,nosies,,,,266,Body,0544_nosis.webp,forms machine-generated — (accents & irregulars),nósis,wiktionary,A1
-0478_dantis,dantis,tooth,M,danties,,,,267,Body,0478_dantis.webp,forms machine-generated — (accents & irregulars),dantìs,wiktionary,A1
-0576_ausis,ausis,ear,F,ausies,,,,268,Body,0576_ausis.webp,forms machine-generated — (accents & irregulars),ausìs,wiktionary,A1
-2329_asara,ašara,tear,F,ašaros,,,,269,Body,2329_asara.webp,forms machine-generated — (accents & irregulars),ãšara,wiktionary,A2
-1158_liezuvis,liežuvis,tongue,M,liežuvio,,,,270,Body,1158_liezuvis.webp,forms machine-generated — (accents & irregulars),liežùvis,wiktionary,A1
-0860_nugara,nugara,back,F,nugaros,,,,271,Body,0860_nugara.webp,forms machine-generated — (accents & irregulars),nùgara,wiktionary,A1
-1131_kojos_pirstas,kojos pirštas,toe,M,kojos piršto,,,,272,Body,1131_kojos_pirstas.webp,forms machine-generated — (accents & irregulars),kójos pir̃štas,kirtis.info,A1
-0518_pirstas,pirštas,finger,M,piršto,,,,273,Body,0518_pirstas.webp,forms machine-generated — (accents & irregulars),pir̃štas,wiktionary,A1
-0918_peda,pėda,foot,F,pėdos,,,,274,Body,0918_peda.webp,forms machine-generated — (accents & irregulars),pėdà,wiktionary,A1
+0988_ekranas,ekranas,screen,M,ekrãno,,,,254,Electronics,0988_ekranas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ekrãnas,wiktionary,A1
+0804_fotoaparatas,fotoaparatas,camera,M,fotoaparãto,,,,255,Electronics,0804_fotoaparatas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,fotoaparãtas,wiktionary,A1
+0588_televizorius,televizorius,television,M,televìzoriaus,,,,256,Electronics,0588_televizorius.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,televìzorius,wiktionary,A1
+0432_radijas,radijas,radio,M,rãdijo,,,,257,Electronics,0432_radijas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,rãdijas,wiktionary,A1
+0174_galva,galva,head,F,galvõs,,,,258,Body,0174_galva.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,galvà,wiktionary,A1
+0976_kaklas,kaklas,neck,M,kãklo,,,,259,Body,0976_kaklas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kãklas,wiktionary,A1
+0309_veidas,veidas,face,M,véido,,,,260,Body,0309_veidas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,véidas,wiktionary,A1
+1181_barzda,barzda,beard,F,barzdõs,,,,261,Body,1181_barzda.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,barzdà,wiktionary,A1
+0783_plaukai,plaukai,hair,M pl,plaukų̃,,,,262,Body,0783_plaukai.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,plaukaĩ,wiktionary,A1
+0200_akis,akis,eye,F,akiẽs,,,,263,Body,0200_akis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,akìs,wiktionary,A1
+0673_burna,burna,mouth,F,burnõs,,,,264,Body,0673_burna.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,burnà,wiktionary,A1
+1124_lupos,lūpos,lips,F pl,lū́pų,,,,265,Body,1124_lupos.webp,"forms machine-generated — (accents & irregulars); retargeted lūpa→lūpos (plural is the usual word; owner 2026-10-11, decided by Fable); key and GUID unchanged; Wiktionary lūpa: lū́pa (1), pl. lū́pos; audio 1124_lupos.mp3 still says the singular paradigm — re-record; gen_sg stress: en.wiktionary 2026-10-28",lū́pos,wiktionary,A1
+0544_nosis,nosis,nose,F,nósies,,,,266,Body,0544_nosis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,nósis,wiktionary,A1
+0478_dantis,dantis,tooth,M,dantiẽs,,,,267,Body,0478_dantis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dantìs,wiktionary,A1
+0576_ausis,ausis,ear,F,ausiẽs,,,,268,Body,0576_ausis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ausìs,wiktionary,A1
+2329_asara,ašara,tear,F,ãšaros,,,,269,Body,2329_asara.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ãšara,wiktionary,A2
+1158_liezuvis,liežuvis,tongue,M,liežùvio,,,,270,Body,1158_liezuvis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,liežùvis,wiktionary,A1
+0860_nugara,nugara,back,F,nùgaros,,,,271,Body,0860_nugara.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,nùgara,wiktionary,A1
+1131_kojos_pirstas,kojos pirštas,toe,M,kójos pir̃što,,,,272,Body,1131_kojos_pirstas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kójos pir̃štas,kirtis.info,A1
+0518_pirstas,pirštas,finger,M,pir̃što,,,,273,Body,0518_pirstas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pir̃štas,wiktionary,A1
+0918_peda,pėda,foot,F,pėdõs,,,,274,Body,0918_peda.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pėdà,wiktionary,A1
 2420_plastaka,plaštaka,hand,F,plaštakos,,,,275,Body,2420_plastaka.webp,forms machine-generated — (accents & irregulars),plãštaka,kirtis.info,A2
-0321_koja,koja,leg,F,kojos,,,,276,Body,0321_koja.webp,forms machine-generated — (accents & irregulars),kója,wiktionary,A1
-0145_ranka,ranka,arm,F,rankos,,,,277,Body,0145_ranka.webp,forms machine-generated — (accents & irregulars),rankà,wiktionary,A1
+0321_koja,koja,leg,F,kójos,,,,276,Body,0321_koja.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kója,wiktionary,A1
+0145_ranka,ranka,arm,F,rañkos,,,,277,Body,0145_ranka.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,rankà,wiktionary,A1
 1048_petys,petys,shoulder,M,peties,,,,278,Body,1048_petys.webp,forms machine-generated — (accents & irregulars),petỹs,wiktionary,A1
-0278_sirdis,širdis,heart,F,širdies,,,,279,Body,0278_sirdis.webp,forms machine-generated — (accents & irregulars),širdìs,wiktionary,A1
-0712_kraujas,kraujas,blood,M,kraujo,,,,280,Body,0712_kraujas.webp,forms machine-generated — (accents & irregulars),kraũjas,wiktionary,A1
-1105_smegenys,smegenys,brain,F pl,smegenų,,,,281,Body,1105_smegenys.webp,forms machine-generated — (accents & irregulars),smẽgenys,wiktionary,A1
-0599_kelis,kelis,knee,M,kelio,,,,282,Body,0599_kelis.webp,forms machine-generated — (accents & irregulars),kẽlis,wiktionary,A1
+0278_sirdis,širdis,heart,F,širdiẽs,,,,279,Body,0278_sirdis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,širdìs,wiktionary,A1
+0712_kraujas,kraujas,blood,M,kraũjo,,,,280,Body,0712_kraujas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kraũjas,wiktionary,A1
+1105_smegenys,smegenys,brain,F pl,smegenų̃,,,,281,Body,1105_smegenys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,smẽgenys,wiktionary,A1
+0599_kelis,kelis,knee,M,kẽlio,,,,282,Body,0599_kelis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kẽlis,wiktionary,A1
 2361_prakaitas,prakaitas,sweat,M,prakaito,,,,283,Body,2361_prakaitas.webp,forms machine-generated — (accents & irregulars),prãkaitas,wiktionary,A2
-1207_liga,liga,disease,F,ligos,,,,284,Body,1207_liga.webp,forms machine-generated — (accents & irregulars),ligà,wiktionary,A2
-1007_kaulas,kaulas,bone,M,kaulo,,,,285,Body,1007_kaulas.webp,forms machine-generated — (accents & irregulars),káulas,wiktionary,A1
-1427_balsas,balsas,voice,M,balso,,,,286,Body,1427_balsas.webp,forms machine-generated — (accents & irregulars),bal̃sas,wiktionary,A2
-0874_oda,oda,skin,F,odos,,,,287,Body,0874_oda.webp,forms machine-generated — (accents & irregulars),óda,wiktionary,A1
-0266_kunas,kūnas,body,M,kūno,,,,288,Body,0266_kunas.webp,forms machine-generated — (accents & irregulars),kū́nas,wiktionary,A1
-0254_jura,jūra,sea,F,jūros,,,,289,Nature,0254_jura.webp,forms machine-generated — (accents & irregulars),jū́ra,wiktionary,A1
-1119_vandenynas,vandenynas,ocean,M,vandenyno,,,,290,Nature,1119_vandenynas.webp,forms machine-generated — (accents & irregulars),vandenýnas,wiktionary,A1
-0095_upe,upė,river,F,upės,,,,291,Nature,0095_upe.webp,forms machine-generated — (accents & irregulars),ùpė,wiktionary,A1
-0714_kalnas,kalnas,mountain,M,kalno,,,,292,Nature,0714_kalnas.webp,forms machine-generated — (accents & irregulars),kálnas,wiktionary,A1
-0085_lietus,lietus,rain,M,lietaus,,,,293,Nature,0085_lietus.webp,forms machine-generated — (accents & irregulars),lietùs,wiktionary,A1
-0319_sniegas,sniegas,snow,M,sniego,,,,294,Nature,0319_sniegas.webp,forms machine-generated — (accents & irregulars),sniẽgas,wiktionary,A1
-0341_medis,medis,tree,M,medžio,,,,295,Nature,0341_medis.webp,forms machine-generated — (accents & irregulars),mẽdis,wiktionary,A1
-0324_saule,saulė,sun,F,saulės,,,,296,Nature,0324_saule.webp,forms machine-generated — (accents & irregulars),sáulė,wiktionary,A1
-0419_menulis,mėnulis,moon,M,mėnulio,,,,297,Nature,0419_menulis.webp,forms machine-generated — (accents & irregulars),mėnùlis,wiktionary,A1
-1194_pasaulis,pasaulis,world,M,pasaulio,,,,298,Nature,1194_pasaulis.webp,forms machine-generated — (accents & irregulars),pasáulis,wiktionary,A2
-0667_zeme,Žemė,Earth,F,Žemės,,,,299,Nature,0667_zeme.webp,forms machine-generated — (accents & irregulars),Žẽmė,wiktionary,A1
-0111_miskas,miškas,forest,M,miško,,,,300,Nature,0111_miskas.webp,forms machine-generated — (accents & irregulars),mìškas,wiktionary,A1
-0376_dangus,dangus,sky,M,dangaus,,,,301,Nature,0376_dangus.webp,forms machine-generated — (accents & irregulars),dangùs,wiktionary,A1
-0835_augalas,augalas,plant,M,augalo,,,,302,Nature,0835_augalas.webp,forms machine-generated — (accents & irregulars),áugalas,wiktionary,A1
-0433_vejas,vėjas,wind,M,vėjo,,,,303,Nature,0433_vejas.webp,forms machine-generated — (accents & irregulars),vė́jas,wiktionary,A1
-0727_zeme,žemė,soil,F,žemės,,,,304,Nature,0727_zeme.webp,forms machine-generated — (accents & irregulars),žẽmė,wiktionary,A1
-0064_gele,gėlė,flower,F,gėlės,,,,305,Nature,0064_gele.webp,forms machine-generated — (accents & irregulars),gėlė̃,wiktionary,A1
+1207_liga,liga,disease,F,ligõs,,,,284,Body,1207_liga.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ligà,wiktionary,A2
+1007_kaulas,kaulas,bone,M,káulo,,,,285,Body,1007_kaulas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,káulas,wiktionary,A1
+1427_balsas,balsas,voice,M,bal̃so,,,,286,Body,1427_balsas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bal̃sas,wiktionary,A2
+0874_oda,oda,skin,F,ódos,,,,287,Body,0874_oda.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,óda,wiktionary,A1
+0266_kunas,kūnas,body,M,kū́no,,,,288,Body,0266_kunas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kū́nas,wiktionary,A1
+0254_jura,jūra,sea,F,jū́ros,,,,289,Nature,0254_jura.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,jū́ra,wiktionary,A1
+1119_vandenynas,vandenynas,ocean,M,vandenýno,,,,290,Nature,1119_vandenynas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vandenýnas,wiktionary,A1
+0095_upe,upė,river,F,ùpės,,,,291,Nature,0095_upe.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ùpė,wiktionary,A1
+0714_kalnas,kalnas,mountain,M,kálno,,,,292,Nature,0714_kalnas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kálnas,wiktionary,A1
+0085_lietus,lietus,rain,M,lietaũs,,,,293,Nature,0085_lietus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lietùs,wiktionary,A1
+0319_sniegas,sniegas,snow,M,sniẽgo,,,,294,Nature,0319_sniegas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sniẽgas,wiktionary,A1
+0341_medis,medis,tree,M,mẽdžio,,,,295,Nature,0341_medis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mẽdis,wiktionary,A1
+0324_saule,saulė,sun,F,sáulės,,,,296,Nature,0324_saule.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sáulė,wiktionary,A1
+0419_menulis,mėnulis,moon,M,mėnùlio,,,,297,Nature,0419_menulis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mėnùlis,wiktionary,A1
+1194_pasaulis,pasaulis,world,M,pasáulio,,,,298,Nature,1194_pasaulis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pasáulis,wiktionary,A2
+0667_zeme,Žemė,Earth,F,Žẽmės,,,,299,Nature,0667_zeme.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,Žẽmė,wiktionary,A1
+0111_miskas,miškas,forest,M,mìško,,,,300,Nature,0111_miskas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mìškas,wiktionary,A1
+0376_dangus,dangus,sky,M,dangaũs,,,,301,Nature,0376_dangus.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dangùs,wiktionary,A1
+0835_augalas,augalas,plant,M,áugalo,,,,302,Nature,0835_augalas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,áugalas,wiktionary,A1
+0433_vejas,vėjas,wind,M,vė́jo,,,,303,Nature,0433_vejas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vė́jas,wiktionary,A1
+0727_zeme,žemė,soil,F,žẽmės,,,,304,Nature,0727_zeme.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žẽmė,wiktionary,A1
+0064_gele,gėlė,flower,F,gėlė̃s,,,,305,Nature,0064_gele.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,gėlė̃,wiktionary,A1
 2229_slenis,slėnis,valley,M,slėnio,,,,306,Nature,2229_slenis.webp,forms machine-generated — (accents & irregulars),slė̃nis,wiktionary-html,A2
-2342_saknis,šaknis,root,F,šaknies,,,,307,Nature,2342_saknis.webp,forms machine-generated — (accents & irregulars),šaknìs,wiktionary,A2
-0496_ezeras,ežeras,lake,M,ežero,,,,308,Nature,0496_ezeras.webp,forms machine-generated — (accents & irregulars),ẽžeras,wiktionary,A1
-0279_zvaigzde,žvaigždė,star,F,žvaigždės,,,,309,Nature,0279_zvaigzde.webp,forms machine-generated — (accents & irregulars),žvaigždė̃,wiktionary,A1
-0551_zole,žolė,grass,F,žolės,,,,310,Nature,0551_zole.webp,forms machine-generated — (accents & irregulars),žolė̃,wiktionary,A1
-0785_lapas,lapas,leaf,M,lapo,,,,311,Nature,0785_lapas.webp,forms machine-generated — (accents & irregulars),lãpas,wiktionary,A1
-1200_oras,oras,air,M,oro,,,,312,Nature,1200_oras.webp,forms machine-generated — (accents & irregulars),óras,wiktionary,A2
-0944_smelis,smėlis,sand,M,smėlio,,,,313,Nature,0944_smelis.webp,forms machine-generated — (accents & irregulars),smė̃lis,wiktionary,A1
-0883_papludimys,paplūdimys,beach,M,paplūdimio,,,,314,Nature,0883_papludimys.webp,forms machine-generated — (accents & irregulars),paplūdimỹs,wiktionary,A1
-2152_banga,banga,wave,F,bangos,,,,315,Nature,2152_banga.webp,forms machine-generated — (accents & irregulars),bangà,wiktionary,A2
-0445_ugnis,ugnis,fire,F,ugnies,,,,316,Nature,0445_ugnis.webp,forms machine-generated — (accents & irregulars),ugnìs,wiktionary,A1
-0648_ledas,ledas,ice,M,ledo,,,,317,Nature,0648_ledas.webp,forms machine-generated — (accents & irregulars),lẽdas,wiktionary,A1
-0994_sala,sala,island,F,salos,,,,318,Nature,0994_sala.webp,forms machine-generated — (accents & irregulars),salà,wiktionary,A1
-2208_kalva,kalva,hill,F,kalvos,,,,319,Nature,2208_kalva.webp,forms machine-generated — (accents & irregulars),kalvà,wiktionary,A2
+2342_saknis,šaknis,root,F,šakniẽs,,,,307,Nature,2342_saknis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,šaknìs,wiktionary,A2
+0496_ezeras,ežeras,lake,M,ẽžero,,,,308,Nature,0496_ezeras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ẽžeras,wiktionary,A1
+0279_zvaigzde,žvaigždė,star,F,žvaigždė̃s,,,,309,Nature,0279_zvaigzde.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žvaigždė̃,wiktionary,A1
+0551_zole,žolė,grass,F,žolė̃s,,,,310,Nature,0551_zole.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žolė̃,wiktionary,A1
+0785_lapas,lapas,leaf,M,lãpo,,,,311,Nature,0785_lapas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lãpas,wiktionary,A1
+1200_oras,oras,air,M,óro,,,,312,Nature,1200_oras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,óras,wiktionary,A2
+0944_smelis,smėlis,sand,M,smė̃lio,,,,313,Nature,0944_smelis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,smė̃lis,wiktionary,A1
+0883_papludimys,paplūdimys,beach,M,páplūdimio,,,,314,Nature,0883_papludimys.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,paplūdimỹs,wiktionary,A1
+2152_banga,banga,wave,F,bangõs,,,,315,Nature,2152_banga.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bangà,wiktionary,A2
+0445_ugnis,ugnis,fire,F,ugniẽs,,,,316,Nature,0445_ugnis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,ugnìs,wiktionary,A1
+0648_ledas,ledas,ice,M,lẽdo,,,,317,Nature,0648_ledas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,lẽdas,wiktionary,A1
+0994_sala,sala,island,F,salõs,,,,318,Nature,0994_sala.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,salà,wiktionary,A1
+2208_kalva,kalva,hill,F,kalvõs,,,,319,Nature,2208_kalva.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kalvà,wiktionary,A2
 2083_karstis,karštis,heat,M,karščio,,,,320,Nature,2083_karstis.webp,forms machine-generated — (accents & irregulars),kar̃štis,kirtis.info,A2
-1090_gamta,gamta,nature,F,gamtos,,,,321,Nature,1090_gamta.webp,forms machine-generated — (accents & irregulars),gamtà,wiktionary,A1
-0928_stiklas,stiklas,glass,M,stiklo,,,,322,Materials,0928_stiklas.webp,forms machine-generated — (accents & irregulars),stìklas,wiktionary,A1
-0913_metalas,metalas,metal,M,metalo,,,,323,Materials,0913_metalas.webp,forms machine-generated — (accents & irregulars),metãlas,wiktionary,A1
+1090_gamta,gamta,nature,F,gamtõs,,,,321,Nature,1090_gamta.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,gamtà,wiktionary,A1
+0928_stiklas,stiklas,glass,M,stìklo,,,,322,Materials,0928_stiklas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,stìklas,wiktionary,A1
+0913_metalas,metalas,metal,M,metãlo,,,,323,Materials,0913_metalas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,metãlas,wiktionary,A1
 1146_plastikas,plastikas,plastic,M,plastiko,,,,324,Materials,1146_plastikas.webp,forms machine-generated — (accents & irregulars),plãstikas,kirtis.info,A1
-1103_mediena,mediena,wood,F,medienos,,,,325,Materials,1103_mediena.webp,forms machine-generated — (accents & irregulars),medíena,wiktionary,A1
-0809_akmuo,akmuo,stone,M,akmens,,,,326,Materials,0809_akmuo.webp,forms machine-generated — (accents & irregulars),akmuõ,wiktionary,A1
-1001_deimantas,deimantas,diamond,M,deimanto,,,,327,Materials,1001_deimantas.webp,forms machine-generated — (accents & irregulars),deĩmantas,wiktionary,A1
+1103_mediena,mediena,wood,F,medíenos,,,,325,Materials,1103_mediena.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,medíena,wiktionary,A1
+0809_akmuo,akmuo,stone,M,akmeñs,,,,326,Materials,0809_akmuo.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,akmuõ,wiktionary,A1
+1001_deimantas,deimantas,diamond,M,deĩmanto,,,,327,Materials,1001_deimantas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,deĩmantas,wiktionary,A1
 1162_molis,molis,clay,M,molio,,,,328,Materials,1162_molis.webp,forms machine-generated — (accents & irregulars),mólis,wiktionary,A1
-1133_dulkes,dulkės,dust,F pl,dulkių,,,,329,Materials,1133_dulkes.webp,forms machine-generated — (accents & irregulars),dùlkės,kirtis.info,A1
-0705_auksas,auksas,gold,M,aukso,,,,330,Materials,0705_auksas.webp,forms machine-generated — (accents & irregulars),áuksas,wiktionary,A1
-1118_varis,varis,copper,M,vario,,,,331,Materials,1118_varis.webp,forms machine-generated — (accents & irregulars),vãris,wiktionary,A1
-1031_sidabras,sidabras,silver,M,sidabro,,,,332,Materials,1031_sidabras.webp,forms machine-generated — (accents & irregulars),sidãbras,wiktionary,A1
-0563_medziaga,medžiaga,material,F,medžiagos,,,,333,Materials,0563_medziaga.webp,forms machine-generated — (accents & irregulars),mẽdžiaga,wiktionary,A1
-1209_metras,metras,meter,M,metro,,,,334,Math,1209_metras.webp,forms machine-generated — (accents & irregulars),mètras,wiktionary,A2
-2074_centimetras,centimetras,centimeter,M,centimetro,,,,335,Math,2074_centimetras.webp,forms machine-generated — (accents & irregulars),centimètras,wiktionary,A2
-1362_kilogramas,kilogramas,kilogram,M,kilogramo,,,,336,Math,1362_kilogramas.webp,forms machine-generated — (accents & irregulars),kilogrãmas,wiktionary,A2
-2328_colis,colis,inch,M,colio,,,,337,Math,2328_colis.webp,forms machine-generated — (accents & irregulars),cólis,wiktionary,A2
-2139_peda,pėda,foot,F,pėdos,,,,338,Math,2139_peda.webp,forms machine-generated — (accents & irregulars),pėdà,wiktionary,A2
-2196_svaras,svaras,pound,M,svaro,,,,339,Math,2196_svaras.webp,forms machine-generated — (accents & irregulars),svàras,wiktionary,A2
-1195_puse,pusė,half,F,pusės,,,,340,Math,1195_puse.webp,forms machine-generated — (accents & irregulars),pùsė,wiktionary,A2
+1133_dulkes,dulkės,dust,F pl,dùlkių,,,,329,Materials,1133_dulkes.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,dùlkės,kirtis.info,A1
+0705_auksas,auksas,gold,M,áukso,,,,330,Materials,0705_auksas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,áuksas,wiktionary,A1
+1118_varis,varis,copper,M,vãrio,,,,331,Materials,1118_varis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vãris,wiktionary,A1
+1031_sidabras,sidabras,silver,M,sidãbro,,,,332,Materials,1031_sidabras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,sidãbras,wiktionary,A1
+0563_medziaga,medžiaga,material,F,mẽdžiagos,,,,333,Materials,0563_medziaga.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mẽdžiaga,wiktionary,A1
+1209_metras,metras,meter,M,mètro,,,,334,Math,1209_metras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,mètras,wiktionary,A2
+2074_centimetras,centimetras,centimeter,M,centimètro,,,,335,Math,2074_centimetras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,centimètras,wiktionary,A2
+1362_kilogramas,kilogramas,kilogram,M,kilogrãmo,,,,336,Math,1362_kilogramas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kilogrãmas,wiktionary,A2
+2328_colis,colis,inch,M,cólio,,,,337,Math,2328_colis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,cólis,wiktionary,A2
+2139_peda,pėda,foot,F,pėdõs,,,,338,Math,2139_peda.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pėdà,wiktionary,A2
+2196_svaras,svaras,pound,M,svàro,,,,339,Math,2196_svaras.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,svàras,wiktionary,A2
+1195_puse,pusė,half,F,pùsės,,,,340,Math,1195_puse.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,pùsė,wiktionary,A2
 2403_apskritimas,apskritimas,circle,M,apskritimo,,,,341,Math,2403_apskritimas.webp,forms machine-generated — (accents & irregulars),apskritìmas,kirtis.info,A2
 2353_kvadratas,kvadratas,square,M,kvadrato,,,,342,Math,2353_kvadratas.webp,forms machine-generated — (accents & irregulars),kvadrãtas,kirtis.info,A2
-1295_temperatura,temperatūra,temperature,F,temperatūros,,,,343,Math,1295_temperatura.webp,forms machine-generated — (accents & irregulars),temperatūrà,wiktionary,A2
+1295_temperatura,temperatūra,temperature,F,temperatū̃ros,,,,343,Math,1295_temperatura.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,temperatūrà,wiktionary,A2
 1254_data,data,date,F,datos,,,,344,Math,1254_data.webp,forms machine-generated — (accents & irregulars),datà,kirtis.info,A2
-1717_svoris,svoris,weight,M,svorio,,,,345,Math,1717_svoris.webp,forms machine-generated — (accents & irregulars),svõris,wiktionary,A2
-2106_krastas,kraštas,edge,M,krašto,,,,346,Math,2106_krastas.webp,forms machine-generated — (accents & irregulars),krãštas,wiktionary,A2
-2124_kampas,kampas,corner,M,kampo,,,,347,Math,2124_kampas.webp,forms machine-generated — (accents & irregulars),kam̃pas,wiktionary,A2
-0863_zemelapis,žemėlapis,map,M,žemėlapio,,,,348,Misc,0863_zemelapis.webp,forms machine-generated — (accents & irregulars),žemė́lapis,wiktionary,A1
-0671_taskas,taškas,dot,M,taško,,,,349,Misc,0671_taskas.webp,forms machine-generated — (accents & irregulars),tãškas,wiktionary,A1
-2419_priebalsis,priebalsis,consonant,M,priebalsio,,,,350,Misc,2419_priebalsis.webp,forms machine-generated — (accents & irregulars),príebalsis,wiktionary,A2
-2421_balsis,balsis,vowel,M,balsio,,,,351,Misc,2421_balsis.webp,forms machine-generated — (accents & irregulars),bal̃sis,wiktionary,A2
-1397_sviesa,šviesa,light,F,šviesos,,,,352,Misc,1397_sviesa.webp,forms machine-generated — (accents & irregulars),šviesà,wiktionary,A2
-1516_garsas,garsas,sound,M,garso,,,,353,Misc,1516_garsas.webp,forms machine-generated — (accents & irregulars),gar̃sas,wiktionary,A2
+1717_svoris,svoris,weight,M,svõrio,,,,345,Math,1717_svoris.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,svõris,wiktionary,A2
+2106_krastas,kraštas,edge,M,krãšto,,,,346,Math,2106_krastas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,krãštas,wiktionary,A2
+2124_kampas,kampas,corner,M,kam̃po,,,,347,Math,2124_kampas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,kam̃pas,wiktionary,A2
+0863_zemelapis,žemėlapis,map,M,žemė́lapio,,,,348,Misc,0863_zemelapis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žemė́lapis,wiktionary,A1
+0671_taskas,taškas,dot,M,tãško,,,,349,Misc,0671_taskas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,tãškas,wiktionary,A1
+2419_priebalsis,priebalsis,consonant,M,príebalsio,,,,350,Misc,2419_priebalsis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,príebalsis,wiktionary,A2
+2421_balsis,balsis,vowel,M,bal̃sio,,,,351,Misc,2421_balsis.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,bal̃sis,wiktionary,A2
+1397_sviesa,šviesa,light,F,šviesõs,,,,352,Misc,1397_sviesa.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,šviesà,wiktionary,A2
+1516_garsas,garsas,sound,M,gar̃so,,,,353,Misc,1516_garsas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,gar̃sas,wiktionary,A2
 0029_taip,taip,yes,,,,,,354,Misc,0029_taip.webp,forms machine-generated — (accents & irregulars),taĩp,wiktionary,A1
 0034_ne,ne,no,,,,,,355,Misc,0034_ne.webp,forms machine-generated — (accents & irregulars),nè,wiktionary-html,A1
-1460_gabalas,gabalas,piece,M,gabalo,,,,356,Misc,1460_gabalas.webp,forms machine-generated — (accents & irregulars),gãbalas,wiktionary,A2
-1615_skausmas,skausmas,pain,M,skausmo,,,,357,Misc,1615_skausmas.webp,forms machine-generated — (accents & irregulars),skaũsmas,wiktionary,A2
+1460_gabalas,gabalas,piece,M,gãbalo,,,,356,Misc,1460_gabalas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,gãbalas,wiktionary,A2
+1615_skausmas,skausmas,pain,M,skaũsmo,,,,357,Misc,1615_skausmas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,skaũsmas,wiktionary,A2
 2158_suzalojimas,sužalojimas,injury,M,sužalojimo,,,,358,Misc,2158_suzalojimas.webp,forms machine-generated — (accents & irregulars),sužalójimas,kirtis.info,A2
-0800_zaizda,žaizda,wound,F,žaizdos,,,,359,Misc,0800_zaizda.webp,forms machine-generated — (accents & irregulars),žaizdà,wiktionary,A1
-0816_skyle,skylė,hole,F,skylės,,,,360,Misc,0816_skyle.webp,forms machine-generated — (accents & irregulars),skylė̃,wiktionary,A1
-0606_vaizdas,vaizdas,image,M,vaizdo,,,,361,Misc,0606_vaizdas.webp,forms machine-generated — (accents & irregulars),vaĩzdas,wiktionary,A1
-2241_rastas,raštas,"writing, script",M,rašto,,,,362,Misc,2241_rastas.webp,raštas = writing/script (primary sense); owner-confirmed 1.7.8,rãštas,wiktionary,A2
+0800_zaizda,žaizda,wound,F,žaizdõs,,,,359,Misc,0800_zaizda.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,žaizdà,wiktionary,A1
+0816_skyle,skylė,hole,F,skylė̃s,,,,360,Misc,0816_skyle.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,skylė̃,wiktionary,A1
+0606_vaizdas,vaizdas,image,M,vaĩzdo,,,,361,Misc,0606_vaizdas.webp,forms machine-generated — (accents & irregulars); gen_sg stress: en.wiktionary 2026-10-28,vaĩzdas,wiktionary,A1
+2241_rastas,raštas,"writing, script",M,rãšto,,,,362,Misc,2241_rastas.webp,raštas = writing/script (primary sense); owner-confirmed 1.7.8; gen_sg stress: en.wiktionary 2026-10-28,rãštas,wiktionary,A2
 0019_dirbti,dìrbti,work,,,dìrba,dìrbo,,363,Verbs,0019_dirbti.webp,forms machine-generated — (accents & irregulars),dìrbti,wiktionary,A1
 0256_zaisti,žaĩsti,play (a game),V,,žaĩdžia,žaĩdė,,364,Verbs,0256_zaisti.webp,forms machine-generated — (accents & irregulars),žaĩsti,wiktionary,A1
 0540_groti,gróti,play (an instrument),V,,grója,grójo,,365,Verbs,0540_groti.webp,forms machine-generated — (accents & irregulars),gróti,wiktionary,A1
@@ -445,70 +445,70 @@ key,lithuanian,english,gender,gen_sg,pres3,past3,fem,ff_no,category,image_file,n
 1028_pasirasyti,pasirašýti,sign,,,pasìrašo,pasìrašė,,443,Verbs,1028_pasirasyti.webp,forms machine-generated — (accents & irregulars),pasirašýti,verb-generation,A1
 0840_musti,mùšti,beat,,,mùša,mùšė,,444,Verbs,0840_musti.webp,forms machine-generated — (accents & irregulars),mùšti,wiktionary,A1
 0701_kelti,kélti,lift,,,kẽlia,kė́lė,,445,Verbs,0701_kelti.webp,forms machine-generated — (accents & irregulars),kélti,wiktionary,A1
-0363_ilgas,ilgas,long,M/F,,,,ilga,446,Adjectives,0363_ilgas.webp,forms machine-generated — (accents & irregulars),ìlgas,wiktionary,A1
-0364_trumpas,trumpas,short-long,M/F,,,,trumpa,447,Adjectives,0364_trumpas.webp,forms machine-generated — (accents & irregulars),trum̃pas,wiktionary,A1
-0178_aukstas,aukštas,tall,M/F,,,,aukšta,448,Adjectives,0178_aukstas.webp,forms machine-generated — (accents & irregulars),áukštas,wiktionary,A1
-0179_zemas,žemas,short-tall,M/F,,,,žema,449,Adjectives,0179_zemas.webp,forms machine-generated — (accents & irregulars),žẽmas,wiktionary,A1
-1017_platus,platus,wide,M/F,,,,plati,450,Adjectives,1017_platus.webp,forms machine-generated — (accents & irregulars),platùs,wiktionary,A1
-1018_siauras,siauras,narrow,M/F,,,,siaura,451,Adjectives,1018_siauras.webp,forms machine-generated — (accents & irregulars),siaũras,wiktionary,A1
-0009_didelis,didelis,big,M/F,,,,didelė,452,Adjectives,0009_didelis.webp,forms machine-generated — (accents & irregulars),dìdelis,wiktionary,A1
-0010_mazas,mažas,small,M/F,,,,maža,453,Adjectives,0010_mazas.webp,forms machine-generated — (accents & irregulars),mãžas,wiktionary,A1
-0290_letas,lėtas,slow,M/F,,,,lėta,454,Adjectives,0290_letas.webp,forms machine-generated — (accents & irregulars),lė̃tas,kirtis.info,A1
-0289_greitas,greitas,fast,M/F,,,,greita,455,Adjectives,0289_greitas.webp,forms machine-generated — (accents & irregulars),greĩtas,wiktionary,A1
-0068_karstas,karštas,hot,M/F,,,,karšta,456,Adjectives,0068_karstas.webp,forms machine-generated — (accents & irregulars),kárštas,wiktionary,A1
-0067_saltas,šaltas,cold,M/F,,,,šalta,457,Adjectives,0067_saltas.webp,forms machine-generated — (accents & irregulars),šáltas,wiktionary,A1
-0122_siltas,šiltas,warm,M/F,,,,šilta,458,Adjectives,0122_siltas.webp,forms machine-generated — (accents & irregulars),šil̃tas,wiktionary,A1
-0123_vesus,vėsus,cool,M/F,,,,vėsi,459,Adjectives,0123_vesus.webp,forms machine-generated — (accents & irregulars),vėsùs,wiktionary,A1
-0108_naujas,naujas,new,M/F,,,,nauja,460,Adjectives,0108_naujas.webp,forms machine-generated — (accents & irregulars),naũjas,wiktionary,A1
-0109_senas,senas,old-new,M/F,,,,sena,461,Adjectives,0109_senas.webp,forms machine-generated — (accents & irregulars),sẽnas,wiktionary,A1
-0202_jaunas,jaunas,young,M/F,,,,jauna,462,Adjectives,0202_jaunas.webp,forms machine-generated — (accents & irregulars),jáunas,wiktionary,A1
-0201_senas,senas,old-young,M/F,,,,sena,463,Adjectives,0201_senas.webp,forms machine-generated — (accents & irregulars),sẽnas,wiktionary,A1
-0038_geras,geras,good,M/F,,,,gera,464,Adjectives,0038_geras.webp,forms machine-generated — (accents & irregulars),gẽras,wiktionary,A1
-0039_blogas,blogas,bad,M/F,,,,bloga,465,Adjectives,0039_blogas.webp,forms machine-generated — (accents & irregulars),blõgas,wiktionary,A1
-1069_slapias,šlapias,wet,M/F,,,,šlapia,466,Adjectives,1069_slapias.webp,forms machine-generated — (accents & irregulars),šlãpias,wiktionary,A1
-1068_sausas,sausas,dry,M/F,,,,sausa,467,Adjectives,1068_sausas.webp,forms machine-generated — (accents & irregulars),saũsas,wiktionary,A1
-0233_sergantis,sergantis,sick,M/F,,,,serganti,468,Adjectives,0233_sergantis.webp,forms machine-generated — (accents & irregulars),ser̃gantis,wiktionary,A1
-0232_sveikas,sveikas,healthy,M/F,,,,sveika,469,Adjectives,0232_sveikas.webp,forms machine-generated — (accents & irregulars),sveĩkas,wiktionary,A1
-0682_garsus,garsus,loud,M/F,,,,garsi,470,Adjectives,0682_garsus.webp,forms machine-generated — (accents & irregulars),garsùs,wiktionary-html,A1
+0363_ilgas,ilgas,long,M/F,,,,ilgà,446,Adjectives,0363_ilgas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,ìlgas,wiktionary,A1
+0364_trumpas,trumpas,short-long,M/F,,,,trumpà,447,Adjectives,0364_trumpas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,trum̃pas,wiktionary,A1
+0178_aukstas,aukštas,tall,M/F,,,,aukštà,448,Adjectives,0178_aukstas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,áukštas,wiktionary,A1
+0179_zemas,žemas,short-tall,M/F,,,,žemà,449,Adjectives,0179_zemas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,žẽmas,wiktionary,A1
+1017_platus,platus,wide,M/F,,,,platì,450,Adjectives,1017_platus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,platùs,wiktionary,A1
+1018_siauras,siauras,narrow,M/F,,,,siaurà,451,Adjectives,1018_siauras.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,siaũras,wiktionary,A1
+0009_didelis,didelis,big,M/F,,,,dìdelė,452,Adjectives,0009_didelis.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,dìdelis,wiktionary,A1
+0010_mazas,mažas,small,M/F,,,,mažà,453,Adjectives,0010_mazas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,mãžas,wiktionary,A1
+0290_letas,lėtas,slow,M/F,,,,lėtà,454,Adjectives,0290_letas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,lė̃tas,kirtis.info,A1
+0289_greitas,greitas,fast,M/F,,,,greità,455,Adjectives,0289_greitas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,greĩtas,wiktionary,A1
+0068_karstas,karštas,hot,M/F,,,,karštà,456,Adjectives,0068_karstas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,kárštas,wiktionary,A1
+0067_saltas,šaltas,cold,M/F,,,,šaltà,457,Adjectives,0067_saltas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,šáltas,wiktionary,A1
+0122_siltas,šiltas,warm,M/F,,,,šiltà,458,Adjectives,0122_siltas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,šil̃tas,wiktionary,A1
+0123_vesus,vėsus,cool,M/F,,,,vėsì,459,Adjectives,0123_vesus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,vėsùs,wiktionary,A1
+0108_naujas,naujas,new,M/F,,,,naujà,460,Adjectives,0108_naujas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,naũjas,wiktionary,A1
+0109_senas,senas,old-new,M/F,,,,senà,461,Adjectives,0109_senas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,sẽnas,wiktionary,A1
+0202_jaunas,jaunas,young,M/F,,,,jaunà,462,Adjectives,0202_jaunas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,jáunas,wiktionary,A1
+0201_senas,senas,old-young,M/F,,,,senà,463,Adjectives,0201_senas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,sẽnas,wiktionary,A1
+0038_geras,geras,good,M/F,,,,gerà,464,Adjectives,0038_geras.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,gẽras,wiktionary,A1
+0039_blogas,blogas,bad,M/F,,,,blogà,465,Adjectives,0039_blogas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,blõgas,wiktionary,A1
+1069_slapias,šlapias,wet,M/F,,,,šlapià,466,Adjectives,1069_slapias.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,šlãpias,wiktionary,A1
+1068_sausas,sausas,dry,M/F,,,,sausà,467,Adjectives,1068_sausas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,saũsas,wiktionary,A1
+0233_sergantis,sergantis,sick,M/F,,,,ser̃ganti,468,Adjectives,0233_sergantis.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,ser̃gantis,wiktionary,A1
+0232_sveikas,sveikas,healthy,M/F,,,,sveikà,469,Adjectives,0232_sveikas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,sveĩkas,wiktionary,A1
+0682_garsus,garsus,loud,M/F,,,,garsì,470,Adjectives,0682_garsus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,garsùs,wiktionary-html,A1
 0681_tylus,tylus,quiet,M/F,,,,tyli,471,Adjectives,0681_tylus.webp,forms machine-generated — (accents & irregulars),tylùs,kirtis.info,A1
-0385_laimingas,laimingas,happy,M/F,,,,laiminga,472,Adjectives,0385_laimingas.webp,forms machine-generated — (accents & irregulars),laimìngas,wiktionary,A1
-0386_liudnas,liūdnas,sad,M/F,,,,liūdna,473,Adjectives,0386_liudnas.webp,forms machine-generated — (accents & irregulars),liū̃dnas,wiktionary,A1
-0075_grazus,gražus,beautiful,M/F,,,,graži,474,Adjectives,0075_grazus.webp,forms machine-generated — (accents & irregulars),gražùs,wiktionary,A1
-0076_bjaurus,bjaurus,ugly,M/F,,,,bjauri,475,Adjectives,0076_bjaurus.webp,forms machine-generated — (accents & irregulars),bjaurùs,wiktionary,A1
+0385_laimingas,laimingas,happy,M/F,,,,laimìnga,472,Adjectives,0385_laimingas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,laimìngas,wiktionary,A1
+0386_liudnas,liūdnas,sad,M/F,,,,liūdnà,473,Adjectives,0386_liudnas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,liū̃dnas,wiktionary,A1
+0075_grazus,gražus,beautiful,M/F,,,,gražì,474,Adjectives,0075_grazus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,gražùs,wiktionary,A1
+0076_bjaurus,bjaurus,ugly,M/F,,,,bjaurì,475,Adjectives,0076_bjaurus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,bjaurùs,wiktionary,A1
 2240_kurcias,kurčias,deaf,M/F,,,,kurčia,476,Adjectives,2240_kurcias.webp,forms machine-generated — (accents & irregulars),kur̃čias,kirtis.info,A2
-2239_aklas,aklas,blind,M/F,,,,akla,477,Adjectives,2239_aklas.webp,forms machine-generated — (accents & irregulars),ãklas,wiktionary,A2
-0499_malonus,malonus,nice,M/F,,,,maloni,478,Adjectives,0499_malonus.webp,forms machine-generated — (accents & irregulars),malonùs,wiktionary,A1
-0498_piktas,piktas,mean,M/F,,,,pikta,479,Adjectives,0498_piktas.webp,forms machine-generated — (accents & irregulars),pìktas,wiktionary,A1
-0945_turtingas,turtingas,rich,M/F,,,,turtinga,480,Adjectives,0945_turtingas.webp,forms machine-generated — (accents & irregulars),turtìngas,wiktionary,A1
+2239_aklas,aklas,blind,M/F,,,,aklà,477,Adjectives,2239_aklas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,ãklas,wiktionary,A2
+0499_malonus,malonus,nice,M/F,,,,malonì,478,Adjectives,0499_malonus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,malonùs,wiktionary,A1
+0498_piktas,piktas,mean,M/F,,,,piktà,479,Adjectives,0498_piktas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,pìktas,wiktionary,A1
+0945_turtingas,turtingas,rich,M/F,,,,turtìnga,480,Adjectives,0945_turtingas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,turtìngas,wiktionary,A1
 0946_neturtingas,neturtingas,poor,M/F,,,,neturtinga,481,Adjectives,0946_neturtingas.webp,forms machine-generated — (accents & irregulars),neturtìngas,kirtis.info,A1
-0848_storas,storas,fat,M/F,,,,stora,482,Adjectives,0848_storas.webp,forms machine-generated — (accents & irregulars); gloss thick→fat (owner 2026-10-11),stóras,wiktionary,A1
-0849_plonas,plonas,thin,M/F,,,,plona,483,Adjectives,0849_plonas.webp,forms machine-generated — (accents & irregulars),plónas,wiktionary,A1
-0267_brangus,brangus,expensive,M/F,,,,brangi,484,Adjectives,0267_brangus.webp,forms machine-generated — (accents & irregulars),brangùs,wiktionary,A1
-0268_pigus,pigus,cheap,M/F,,,,pigi,485,Adjectives,0268_pigus.webp,forms machine-generated — (accents & irregulars),pigùs,wiktionary,A1
+0848_storas,storas,fat,M/F,,,,storà,482,Adjectives,0848_storas.webp,forms machine-generated — (accents & irregulars); gloss thick→fat (owner 2026-10-11); fem stress: en.wiktionary 2026-10-28,stóras,wiktionary,A1
+0849_plonas,plonas,thin,M/F,,,,plonà,483,Adjectives,0849_plonas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,plónas,wiktionary,A1
+0267_brangus,brangus,expensive,M/F,,,,brangì,484,Adjectives,0267_brangus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,brangùs,wiktionary,A1
+0268_pigus,pigus,cheap,M/F,,,,pigì,485,Adjectives,0268_pigus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,pigùs,wiktionary,A1
 2407_plokscias,plokščias,flat,M/F,,,,plokščia,486,Adjectives,2407_plokscias.webp,forms machine-generated — (accents & irregulars),plókščias,kirtis.info,A2
 2408_islenktas,išlenktas,curved,M/F,,,,išlenkta,487,Adjectives,2408_islenktas.webp,forms machine-generated — (accents & irregulars),ìšlenktas,kirtis.info,A2
-2311_vyriskas,vyriškas,male,M/F,,,,vyriška,488,Adjectives,2311_vyriskas.webp,forms machine-generated — (accents & irregulars),výriškas,wiktionary,A2
-2312_moteriskas,moteriškas,female,M/F,,,,moteriška,489,Adjectives,2312_moteriskas.webp,forms machine-generated — (accents & irregulars),móteriškas,wiktionary,A2
-1055_ankstas,ankštas,tight,M/F,,,,ankšta,490,Adjectives,1055_ankstas.webp,forms machine-generated — (accents & irregulars),añkštas,wiktionary,A1
-1054_laisvas,laisvas,loose,M/F,,,,laisva,491,Adjectives,1054_laisvas.webp,forms machine-generated — (accents & irregulars),laĩsvas,wiktionary,A1
-0831_aukstas,aukštas,high,M/F,,,,aukšta,492,Adjectives,0831_aukstas.webp,forms machine-generated — (accents & irregulars),áukštas,wiktionary,A1
-0832_zemas,žemas,low,M/F,,,,žema,493,Adjectives,0832_zemas.webp,forms machine-generated — (accents & irregulars),žẽmas,wiktionary,A1
-0734_minkstas,minkštas,soft,M/F,,,,minkšta,494,Adjectives,0734_minkstas.webp,forms machine-generated — (accents & irregulars),mìnkštas,wiktionary,A1
-0733_kietas,kietas,hard,M/F,,,,kieta,495,Adjectives,0733_kietas.webp,forms machine-generated — (accents & irregulars),kíetas,wiktionary,A1
-0814_gilus,gilus,deep,M/F,,,,gili,496,Adjectives,0814_gilus.webp,forms machine-generated — (accents & irregulars),gilùs,wiktionary,A1
+2311_vyriskas,vyriškas,male,M/F,,,,výriška,488,Adjectives,2311_vyriskas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,výriškas,wiktionary,A2
+2312_moteriskas,moteriškas,female,M/F,,,,móteriška,489,Adjectives,2312_moteriskas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,móteriškas,wiktionary,A2
+1055_ankstas,ankštas,tight,M/F,,,,ankštà,490,Adjectives,1055_ankstas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,añkštas,wiktionary,A1
+1054_laisvas,laisvas,loose,M/F,,,,laisvà,491,Adjectives,1054_laisvas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,laĩsvas,wiktionary,A1
+0831_aukstas,aukštas,high,M/F,,,,aukštà,492,Adjectives,0831_aukstas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,áukštas,wiktionary,A1
+0832_zemas,žemas,low,M/F,,,,žemà,493,Adjectives,0832_zemas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,žẽmas,wiktionary,A1
+0734_minkstas,minkštas,soft,M/F,,,,minkštà,494,Adjectives,0734_minkstas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,mìnkštas,wiktionary,A1
+0733_kietas,kietas,hard,M/F,,,,kietà,495,Adjectives,0733_kietas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,kíetas,wiktionary,A1
+0814_gilus,gilus,deep,M/F,,,,gilì,496,Adjectives,0814_gilus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,gilùs,wiktionary,A1
 0815_seklus,seklus,shallow,M/F,,,,sekli,497,Adjectives,0815_seklus.webp,forms machine-generated — (accents & irregulars),seklùs,kirtis.info,A1
-0486_svarus,švarus,clean,M/F,,,,švari,498,Adjectives,0486_svarus.webp,forms machine-generated — (accents & irregulars),švarùs,wiktionary,A1
+0486_svarus,švarus,clean,M/F,,,,švarì,498,Adjectives,0486_svarus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,švarùs,wiktionary,A1
 0487_purvinas,purvinas,dirty,M/F,,,,purvina,499,Adjectives,0487_purvinas.webp,forms machine-generated — (accents & irregulars),pur̃vinas,kirtis.info,A1
-0596_stiprus,stiprus,strong,M/F,,,,stipri,500,Adjectives,0596_stiprus.webp,forms machine-generated — (accents & irregulars),stiprùs,wiktionary,A1
-0597_silpnas,silpnas,weak,M/F,,,,silpna,501,Adjectives,0597_silpnas.webp,forms machine-generated — (accents & irregulars),sil̃pnas,wiktionary,A1
+0596_stiprus,stiprus,strong,M/F,,,,stiprì,500,Adjectives,0596_stiprus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,stiprùs,wiktionary,A1
+0597_silpnas,silpnas,weak,M/F,,,,silpnà,501,Adjectives,0597_silpnas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,sil̃pnas,wiktionary,A1
 0972_negyvas,negyvas,dead,M/F,,,,negyva,502,Adjectives,0972_negyvas.webp,forms machine-generated — (accents & irregulars),negývas,kirtis.info,A1
-0971_gyvas,gyvas,alive,M/F,,,,gyva,503,Adjectives,0971_gyvas.webp,forms machine-generated — (accents & irregulars),gývas,wiktionary,A1
-0473_sunkus,sunkus,heavy,M/F,,,,sunki,504,Adjectives,0473_sunkus.webp,forms machine-generated — (accents & irregulars),sunkùs,wiktionary,A1
-0474_lengvas,lengvas,light-heavy,M/F,,,,lengva,505,Adjectives,0474_lengvas.webp,forms machine-generated — (accents & irregulars),leñgvas,wiktionary,A1
-0898_tamsus,tamsus,dark,M/F,,,,tamsi,506,Adjectives,0898_tamsus.webp,forms machine-generated — (accents & irregulars),tamsùs,wiktionary,A1
-0899_sviesus,šviesus,light-dark,M/F,,,,šviesi,507,Adjectives,0899_sviesus.webp,forms machine-generated — (accents & irregulars),šviesùs,wiktionary,A1
-2276_branduolinis,branduolinis,nuclear,M/F,,,,branduolinė,508,Adjectives,2276_branduolinis.webp,forms machine-generated — (accents & irregulars),branduolìnis,wiktionary,A2
-1340_garsus,garsus,famous,M/F,,,,garsi,509,Adjectives,1340_garsus.webp,forms machine-generated — (accents & irregulars),garsùs,wiktionary-html,A2
+0971_gyvas,gyvas,alive,M/F,,,,gyvà,503,Adjectives,0971_gyvas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,gývas,wiktionary,A1
+0473_sunkus,sunkus,heavy,M/F,,,,sunkì,504,Adjectives,0473_sunkus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,sunkùs,wiktionary,A1
+0474_lengvas,lengvas,light-heavy,M/F,,,,lengvà,505,Adjectives,0474_lengvas.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,leñgvas,wiktionary,A1
+0898_tamsus,tamsus,dark,M/F,,,,tamsì,506,Adjectives,0898_tamsus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,tamsùs,wiktionary,A1
+0899_sviesus,šviesus,light-dark,M/F,,,,šviesì,507,Adjectives,0899_sviesus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,šviesùs,wiktionary,A1
+2276_branduolinis,branduolinis,nuclear,M/F,,,,branduolìnė,508,Adjectives,2276_branduolinis.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,branduolìnis,wiktionary,A2
+1340_garsus,garsus,famous,M/F,,,,garsì,509,Adjectives,1340_garsus.webp,forms machine-generated — (accents & irregulars); fem stress: en.wiktionary 2026-10-28,garsùs,wiktionary-html,A2
 0031_as,aš,I,,,,,,510,Pronouns,0031_as.webp,forms machine-generated — (accents & irregulars),àš,wiktionary,A1
 0035_tu,tu,you sg,,,,,,511,Pronouns,0035_tu.webp,forms machine-generated — (accents & irregulars),tù,wiktionary,A1
 0037_jis,jis,he,,,,,,512,Pronouns,0037_jis.webp,forms machine-generated — (accents & irregulars),jìs,wiktionary,A1
