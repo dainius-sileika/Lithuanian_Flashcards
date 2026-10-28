@@ -316,7 +316,7 @@ TEMPLATE = r"""<!doctype html>
   .status{margin-top:8px;font-size:.9rem;color:var(--teal);min-height:1.2em}
   .row{display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap}
   label.chk{font-size:.9rem;color:var(--ink)}
-  .grid{display:flex;flex-wrap:wrap;gap:4px;margin-top:16px}
+  .grid{display:flex;flex-wrap:wrap;gap:4px;margin-top:16px;position:relative;max-height:28vh;overflow-y:auto;align-content:flex-start;padding:3px}
   .cell{width:26px;height:22px;font-size:.62rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--dun);
         background:var(--paper2);cursor:pointer;color:var(--dun)}
   .cell.done{background:var(--green);color:#fff;border-color:var(--green)}
@@ -563,7 +563,13 @@ async function render(){
   if(clip){ recBtn.textContent='● Re-record'; setPlayer(clip); document.getElementById('status').textContent="Recorded ✓"; }
   else { recBtn.textContent='● Record'; player.style.display='none'; playBtn.disabled=true; document.getElementById('status').textContent="Not recorded yet"; }
   document.querySelectorAll('.cell').forEach((c,i)=>c.classList.toggle('cur',i===idx));
-  const curCell=document.querySelectorAll('.cell')[idx]; if(curCell) curCell.scrollIntoView({block:'nearest'});
+  // 2026-10-28: the take grid scrolls inside its own box; the page itself never scrolls away from the word
+  // (scrollIntoView on the page pushed the word off screen as the grid grew).
+  const curCell=document.querySelectorAll('.cell')[idx], grid=document.getElementById('grid');
+  if(curCell&&grid){ const top=curCell.offsetTop, h=curCell.offsetHeight;
+    if(top<grid.scrollTop||top+h>grid.scrollTop+grid.clientHeight) grid.scrollTop=Math.max(0,top-grid.clientHeight/2); }
+  const word=document.getElementById('lt'); if(word){ const r=word.getBoundingClientRect();
+    if(r.top<0||r.bottom>window.innerHeight) window.scrollTo({top:Math.max(0,window.scrollY+r.top-80)}); }
 }
 function go(d){ if(rec&&rec.state==='recording') return; idx=Math.min(WORDS.length-1,Math.max(0,idx+d)); render(); }
 const NA1=WORDS.filter(w=>w.level==='A1').length;
