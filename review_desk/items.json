@@ -12,6 +12,22 @@
   "links": []
  },
  {
+  "id": "audio-b1",
+  "group": "Your own tasks",
+  "title": "Listen: your first 54 takes, original vs processed",
+  "ask": "All 54 are processed and in the deck: start clicks removed with 250 ms of silence kept before your voice, end clicks removed where safely possible, nothing cut within 250 ms of your speech, the original of every take kept. No re-recordings needed. Listen at least to the 10 marked takes at the top of the page (8 keep a short sound just after the words: a final consonant or the stop click, taip most likely to matter; 2 had the closing click lowered instead of cut). Two decisions in the note: (1) loudness: your new takes come out about 2 dB quieter than July, because July was evidently peak-limited and this processing uses plain gain only; matching July needs a gentle limiter (2–5 dB on peaks). (2) 63 of the July takes (mostly numbers and question words: trys, kaip, kodėl…) are 20–30 dB quieter than the rest of the deck; their raw masters exist, so they can be re-processed the same safe way.",
+  "options": [
+   "Sounds right",
+   "Some takes need changes (note)"
+  ],
+  "links": [
+   {
+    "label": "Open Audio batch 1 check",
+    "href": "https://claude.ai/artifact/SACJXgxDRTXzcGrW88Ep9H"
+   }
+  ]
+ },
+ {
   "id": "stress-sheet",
   "group": "Your own tasks",
   "title": "Stress 353 forms the dictionaries couldn't (90 in A1)",
