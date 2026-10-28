@@ -28,14 +28,14 @@ One rule: the root holds the programs you run and the things you ship; everythin
 | `docs/` | The design spec (`DESIGN_SPEC_CURRENT.md`) and its frozen history (`spec_history/`), `VERSIONS.md` (deck ↔ spec ↔ style register), `HOW_TO_CHANGE_THE_LOOK.md`, `PLAYBOOK_flashcard_language_system.md`, `RECORDING_GUIDE.md`, the plans (`A1_WRAPUP.md`, `PLAN_A2_completion.md`), `decisions/` (dated owner decisions and superseded proposals the code still cites), the AnkiWeb description, `CHANGELOG.md` (pre-3.0), `SPEC_RECONCILIATION_2026-10-19.md`. §6. |
 | `reports/` | What the tools report: `builds/` (build manifests, verify reports, per-card lists of every package), `frame_bands.csv` + `frame_flags.csv` (frame detection of the last build), `study_order/` (the order audits), `hand_scan/`, the backs / type / labels screenshot sets, `frame_preview/`. |
 | `rounds/` | **One dated folder per round of work** (`YYYY-MM-DD_<name>/`), each with its README: the A2 re-base (10-10), the cloud round (10-11), the A1 redo (10-12), the review pages, pilot round 2, additions, benchmark, backs audit, historical places (10-17), hand fixes, phrase additions, roll-outs, section labels, data checks (10-18), fixes rounds 3–7, dep37, the audio backfill (10-19/20), the proofreading round-trip and the key rename (10-20), the two tidies (10-24), the stress marks on the backs' forms (10-28). Everything in them is a closed record; the pictures their pages showed stay on the Mac. |
-| `tools/` | Maintenance tools: `check_layout.py` (this layout), `make_index.py` + `index_descriptions.csv` (→ `FILES.md`), `style_lock.py`, `spec_release.py`, `golden_set.py`, `verify_apkg.py`, `apkg_keys_list.py`, `rename_keys.py`, `keymap.py`, `ingest_takes.py`, `build_situations.py`, `move_files.py`, `smoke_test.sh` (runs them all), `hooks/pre-commit` + `install_hooks.sh`. |
+| `tools/` | Maintenance tools: `check_layout.py` (this layout), `make_index.py` + `index_descriptions.csv` (→ `FILES.md`), `style_lock.py`, `spec_release.py`, `golden_set.py`, `verify_apkg.py`, `apkg_keys_list.py`, `rename_keys.py`, `keymap.py`, `ingest_takes.py` + `process_take.py` + `audio_review_page.py`, `build_situations.py`, `move_files.py`, `smoke_test.sh` (runs them all), `hooks/pre-commit` + `install_hooks.sh`. |
 | `review_desk/` | The owner's Review Desk: `items.json` (open decisions), `build.py`, `template.html`, `README.md` (the SOP). §7. |
 | `sources/` | Third-party word lists: PERLSI 3000 frequency, the VU A1/A2 lexicon, subtitle lemma frequencies (the PDFs are not committed). |
 | `anki/` | Card CSS (`go_theme.css`, `frame_standard.css`, `back_proposed.css`) and `templates.md` (superseded notes). |
 | `fonts/` | Brygada 1918 (shipped inside the package as media); `_superseded/` the retired pair; `review/` preview fonts (not committed). |
 | `style/` | `STYLE_LOCK.json` (the fingerprint of the look) and `golden/` (28 reference pictures with their prompts). §6. |
 | `style_lab/` | The style experiments that settled the F6.2 look (dated folders with notes); kept as a record (owner). |
-| `_archive/` | Kept history: `deprecated/` (old code, specs, the retired A2-list builder), `docs/` (superseded documents), `data/` (closed records), `code/`, `review_packs/`, `builds/` (old packages, not committed), `recent_versions/` (the bubble pictures replaced on 2026-10-18), `takes/` (leftover clips of each ingested ZIP). |
+| `_archive/` | Kept history: `deprecated/` (old code, specs, the retired A2-list builder), `docs/` (superseded documents), `data/` (closed records), `code/`, `review_packs/`, `builds/` (old packages, not committed), `recent_versions/` (the bubble pictures replaced on 2026-10-18), `takes/` (one folder per ingested ZIP: logs tracked; the raw clips and the ZIP on the Mac only). |
 | `_TO_DELETE/` | Things judged junk, sorted by reason (`MANIFEST.csv`; `junk_2026-10-24/` = `.DS_Store` files and stray `__pycache__`). **The owner deletes; nobody else.** Gitignored. |
 | `a2_build/` | **A forwarding stub only**: `audio/inbox/README.md` says the inbox moved to `media/audio/_inbox/`. Remove after the current recording session. |
 | `_apkg_media/`, `_qa/`, `__pycache__/` | Caches: transcoded card pictures for the package (keyed by source hash), QA results, Python bytecode. Safe to delete; regenerate on the next run. Gitignored. |
@@ -101,9 +101,14 @@ Pictures cost money (OpenAI); the drivers read `.openai_key.txt` from the root.
    Takes live in the browser's IndexedDB `lt_recorder_A2_afb2ebe2`, which survives regeneration of the page.
 2. He clicks **Export new takes** and drops the ZIP into `media/audio/_inbox/` (a ZIP dropped in the old
    `a2_build/audio/inbox/` is found too).
-3. `python3 tools/ingest_takes.py --inbox` converts each clip with ffmpeg to the `dest` in
-   `data/recording_list.csv` (`media/audio/<key>.mp3`), moves any take it replaces to `media/audio/_history/`,
-   and appends the key's row to `data/audio_source.tsv`. Leftover clips go to `_archive/takes/<zip>/`.
+3. Review first: `python3 tools/ingest_takes.py <zip> --process-only OUT/proc`, then
+   `python3 tools/audio_review_page.py <zip> OUT/proc OUT/page` and publish OUT/page for the owner.
+   Then `python3 tools/ingest_takes.py --inbox` processes each clip with `tools/process_take.py` (key clicks
+   removed with ≥ 250 ms margins to speech, never a silence gate; self-check; linear EBU R128 gain to the July
+   level) to the `dest` in `data/recording_list.csv` (`media/audio/<key>.mp3`), moves any take it replaces to
+   `media/audio/_history/`, appends the key's row to `data/audio_source.tsv`, keeps every raw clip in
+   `_archive/takes/<zip>/raw/` (Mac only) with `process_log.csv`, and moves the ZIP there. Processing needs scipy
+   and a recent ffmpeg: run it in the cloud clone and sync (the Mac's VM has neither).
 4. `python3 build_recorder.py A2` regenerates the sheet without the recorded takes (keeps the IndexedDB name and
    the key-migration code). Then rebuild the package (§4).
 

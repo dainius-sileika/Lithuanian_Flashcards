@@ -34,6 +34,18 @@ not repeated here.
   ingest tool converted to mp3 without normalising: new takes would have shipped ~15 dB quieter (−32 vs −17 LUFS).
   Rule: every processing step is code in `tools/`, with its parameters, and new output is measured against the
   shipped material before it ships. Enforced: `tools/process_take.py` / `tools/ingest_takes.py` (2026-10-28).
+- **2026-10-28 · A key click is not "under 50 ms above the floor".** In the first batch every Space press was a
+  spike whose acoustic decay stayed above floor + 10 dB for 100–300 ms, and key-down and key-up often merged into
+  one event; a duration rule would have called them speech (no cut) or, loosened, eaten short words. A click
+  within 250 ms after the words cannot be told from a word-final release (*taĩp*). Rule: judge clicks by their
+  core (frames within 15 dB of their peak) and their position (first 250 ms; ≥ 250 ms after the words); anything
+  closer is kept and flagged; cuts never come within 250 ms of any non-click sound; the kept span must be
+  sample-identical to the raw take around the words. Enforced: `tools/process_take.py` self-check.
+- **2026-10-28 · The July takes are true-peak limited, and 63 of them were never normalised.** All 512 normalised
+  human takes sit at −1.85 dBTP (median −16.7 LUFS): a limiter's signature. Linear gain alone brings the new,
+  peakier takes to a median −18.8 LUFS. Separately, 63 shipped human takes (numbers, question words: 0079_trys,
+  0150_kaip …) measure −36 to −48 LUFS. Rule: measure new audio against the shipped set before it ships, and
+  measure the shipped set too. Enforced: `tools/process_take.py` logs loudness; the 63 are reported, not fixed.
 - **2026-10-28 · The recorder mixed two takes.** A fast stop → start poured the end of one take into the next
   (one shared chunk list). Rule: per-take state; no new take while one is being saved; ignore key auto-repeat;
   no navigation while recording; pause playback while recording. Reproduce every recorder bug in headless

@@ -42,7 +42,7 @@ import importlib, sys, os
 sys.path[:0] = ["code", "tools", "."]
 mods = ["card_frame", "frame_crop", "frame_preview", "go_generator", "go_grammars", "go_settings", "deck_builder",
         "verb_flashcards", "situations", "gen_phrases", "historical", "qa_images",
-        "keymap", "style_lock", "check_layout", "golden_set", "verify_apkg", "ingest_takes", "spec_release",
+        "keymap", "style_lock", "check_layout", "golden_set", "verify_apkg", "ingest_takes", "process_take", "audio_review_page", "spec_release",
         "rename_keys", "move_files", "make_index", "build_apkg", "build_recorder"]
 for m in mods:
     importlib.import_module(m)

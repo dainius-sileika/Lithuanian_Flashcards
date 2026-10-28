@@ -1,0 +1,56 @@
+# 2026-10-28T18:22:19	/home/claude/lt_audio/media/audio/_inbox/lt_A2_takes_2026-10-28-15-55_batch.zip
+manifest_key	take_key	zip_file	dest	action
+0007_batonas	0007_batonas	0007_batonas.webm	media/audio/0007_batonas.mp3	ingest [flag: transient 45 ms after the words kept (word-final release or key click?): listen]
+0021_labas	0021_labas	0021_labas.webm	media/audio/0021_labas.mp3	ingest
+0025_aciu	0025_aciu	0025_aciu.webm	media/audio/0025_aciu.mp3	ingest
+0029_taip	0029_taip	0029_taip.webm	media/audio/0029_taip.mp3	ingest [flag: transient 190 ms after the words kept (word-final release or key click?): listen]
+0031_as	0031_as	0031_as.webm	media/audio/0031_as.mp3	ingest
+0032_prasau	0032_prasau	0032_prasau.webm	media/audio/0032_prasau.mp3	ingest
+0034_ne	0034_ne	0034_ne.webm	media/audio/0034_ne.mp3	ingest
+0035_tu	0035_tu	0035_tu.webm	media/audio/0035_tu.mp3	ingest
+0036_laba_diena	0036_laba_diena	0036_laba_diena.webm	media/audio/0036_laba_diena.mp3	ingest
+0037_jis	0037_jis	0037_jis.webm	media/audio/0037_jis.mp3	ingest
+0038_geras	0038_geras	0038_geras.webm	media/audio/0038_geras.mp3	ingest
+0039_blogas	0039_blogas	0039_blogas.webm	media/audio/0039_blogas.mp3	ingest
+0040_pinigai	0040_pinigai	0040_pinigai.webm	media/audio/0040_pinigai.mp3	ingest
+0041_kaina	0041_kaina	0041_kaina.webm	media/audio/0041_kaina.mp3	ingest
+0042_ji	0042_ji	0042_ji.webm	media/audio/0042_ji.mp3	ingest
+0046_mes	0046_mes	0046_mes.webm	media/audio/0046_mes.mp3	ingest [flag: tail: click 250 ms after the words: no tail cut, click attenuated]
+0047_viso_gero	0047_viso_gero	0047_viso_gero.webm	media/audio/0047_viso_gero.mp3	ingest
+0048_jus	0048_jus	0048_jus.webm	media/audio/0048_jus.mp3	ingest
+0053_jie	0053_jie	0053_jie.webm	media/audio/0053_jie.mp3	ingest
+0054_iki	0054_iki	0054_iki.webm	media/audio/0054_iki.mp3	ingest [flag: transient 65 ms after the words kept (word-final release or key click?): listen]
+0057_tai	0057_tai	0057_tai.webm	media/audio/0057_tai.mp3	ingest
+0058_nesuprantu	0058_nesuprantu	0058_nesuprantu.webm	media/audio/0058_nesuprantu.mp3	ingest
+0061_vaziuoti	0061_vaziuoti	0061_vaziuoti.webm	media/audio/0061_vaziuoti.mp3	ingest [flag: transient 125 ms after the words kept (word-final release or key click?): listen]
+0065_kiek_kainuoja	0065_kiek_kainuoja	0065_kiek_kainuoja.webm	media/audio/0065_kiek_kainuoja.mp3	ingest
+0069_kur_yra	0069_kur_yra	0069_kur_yra.webm	media/audio/0069_kur_yra.mp3	ingest
+0072_kalbeti	0072_kalbeti	0072_kalbeti.webm	media/audio/0072_kalbeti.mp3	ingest [flag: tail: click 250 ms after the words: no tail cut, click attenuated]
+0077_labas_rytas	0077_labas_rytas	0077_labas_rytas.webm	media/audio/0077_labas_rytas.mp3	ingest
+0078_padeti	0078_padeti	0078_padeti.webm	media/audio/0078_padeti.mp3	ingest [flag: transient 220 ms after the words kept (word-final release or key click?): listen]
+0081_labas_vakaras	0081_labas_vakaras	0081_labas_vakaras.webm	media/audio/0081_labas_vakaras.mp3	ingest
+0082_myleti	0082_myleti	0082_myleti.webm	media/audio/0082_myleti.mp3	ingest
+0083_laukti	0083_laukti	0083_laukti.webm	media/audio/0083_laukti.mp3	ingest
+0088_sveiki	0088_sveiki	0088_sveiki.webm	media/audio/0088_sveiki.mp3	ingest
+0092_labai_aciu	0092_labai_aciu	0092_labai_aciu.webm	media/audio/0092_labai_aciu.mp3	ingest
+0093_duoti	0093_duoti	0093_duoti.webm	media/audio/0093_duoti.mp3	ingest
+0099_nera_uz_ka	0099_nera_uz_ka	0099_nera_uz_ka.webm	media/audio/0099_nera_uz_ka.mp3	ingest
+0100_mokytis	0100_mokytis	0100_mokytis.webm	media/audio/0100_mokytis.mp3	ingest
+0101_moteris_valgo_duona	0101_moteris_valgo_duona	0101_moteris_valgo_duona.webm	media/audio/0101_moteris_valgo_duona.mp3	ingest [flag: transient 45 ms after the words kept (word-final release or key click?): listen]
+0102_vyras_geria_kava	0102_vyras_geria_kava	0102_vyras_geria_kava.webm	media/audio/0102_vyras_geria_kava.mp3	ingest
+0104_kiek_kainuoja_duona	0104_kiek_kainuoja_duona	0104_kiek_kainuoja_duona.webm	media/audio/0104_kiek_kainuoja_duona.mp3	ingest
+0105_ir	0105_ir	0105_ir.webm	media/audio/0105_ir.mp3	ingest
+0105_ir_s	0105_ir_s	0105_ir_s.webm	media/audio/0105_ir_s.mp3	ingest [flag: transient 125 ms after the words kept (word-final release or key click?): listen]
+0106_buti	0106_buti	0106_buti.webm	media/audio/0106_buti.mp3	ingest [flag: transient 150 ms after the words kept (word-final release or key click?): listen]
+0106_buti_s	0106_buti_s	0106_buti_s.webm	media/audio/0106_buti_s.mp3	ingest
+0107_veluoti	0107_veluoti	0107_veluoti.webm	media/audio/0107_veluoti.mp3	ingest
+0112_mes_einame_namo	0112_mes_einame_namo	0112_mes_einame_namo.webm	media/audio/0112_mes_einame_namo.mp3	ingest
+0113_mano	0113_mano	0113_mano.webm	media/audio/0113_mano.mp3	ingest
+0113_mano_s	0113_mano_s	0113_mano_s.webm	media/audio/0113_mano_s.mp3	ingest
+0114_saskaita_prasau	0114_saskaita_prasau	0114_saskaita_prasau.webm	media/audio/0114_saskaita_prasau.mp3	ingest
+0115_tas	0115_tas	0115_tas.webm	media/audio/0115_tas.mp3	ingest
+0115_tas_s	0115_tas_s	0115_tas_s.webm	media/audio/0115_tas_s.mp3	ingest
+0116_i	0116_i	0116_i.webm	media/audio/0116_i.mp3	ingest
+0116_i_s	0116_i_s	0116_i_s.webm	media/audio/0116_i_s.mp3	ingest
+0117_mes_perkame_piena	0117_mes_perkame_piena	0117_mes_perkame_piena.webm	media/audio/0117_mes_perkame_piena.mp3	ingest
+0118_iseiti	0118_iseiti	0118_iseiti.webm	media/audio/0118_iseiti.mp3	ingest

@@ -1,0 +1,55 @@
+key	dest	level	status	said	english	file
+0007_batonas	media/audio/0007_batonas.mp3	A1	new	batònas · batono	white loaf (wheat bread)	0007_batonas.webm
+0021_labas	media/audio/0021_labas.mp3	A1	new	Lãbas	Hello (informal)	0021_labas.webm
+0025_aciu	media/audio/0025_aciu.mp3	A1	new	Ãčiū	Thank you	0025_aciu.webm
+0029_taip	media/audio/0029_taip.mp3	A1	replace-tts	taĩp	yes	0029_taip.webm
+0031_as	media/audio/0031_as.mp3	A1	replace-tts	àš	I	0031_as.webm
+0032_prasau	media/audio/0032_prasau.mp3	A1	new	Prašaũ	Please / you're welcome	0032_prasau.webm
+0034_ne	media/audio/0034_ne.mp3	A1	replace-tts	nè	no	0034_ne.webm
+0035_tu	media/audio/0035_tu.mp3	A1	replace-tts	tù	you sg	0035_tu.webm
+0036_laba_diena	media/audio/0036_laba_diena.mp3	A1	new	Labà dienà	Good day	0036_laba_diena.webm
+0037_jis	media/audio/0037_jis.mp3	A1	replace-tts	jìs	he	0037_jis.webm
+0038_geras	media/audio/0038_geras.mp3	A1	replace-tts	gẽras · gera	good	0038_geras.webm
+0039_blogas	media/audio/0039_blogas.mp3	A1	replace-tts	blõgas · bloga	bad	0039_blogas.webm
+0040_pinigai	media/audio/0040_pinigai.mp3	A1	replace-tts	pinigaĩ · pinigų	money	0040_pinigai.webm
+0041_kaina	media/audio/0041_kaina.mp3	A1	replace-tts	káina · kainos	price	0041_kaina.webm
+0042_ji	media/audio/0042_ji.mp3	A1	replace-tts	jì	she	0042_ji.webm
+0046_mes	media/audio/0046_mes.mp3	A1	replace-tts	mẽs	we	0046_mes.webm
+0047_viso_gero	media/audio/0047_viso_gero.mp3	A1	new	Vìso gẽro	Goodbye	0047_viso_gero.webm
+0048_jus	media/audio/0048_jus.mp3	A1	replace-tts	jū̃s	you pl	0048_jus.webm
+0053_jie	media/audio/0053_jie.mp3	A1	replace-tts	jiẽ	they	0053_jie.webm
+0054_iki	media/audio/0054_iki.mp3	A1	new	Ikì	Bye (informal)	0054_iki.webm
+0057_tai	media/audio/0057_tai.mp3	A1	replace-tts	taĩ	it	0057_tai.webm
+0058_nesuprantu	media/audio/0058_nesuprantu.mp3	A1	new	Nesuprantù	I don't understand	0058_nesuprantu.webm
+0061_vaziuoti	media/audio/0061_vaziuoti.mp3	A1	new	važiúoti · važiúoja · važiãvo	to go (by vehicle)	0061_vaziuoti.webm
+0065_kiek_kainuoja	media/audio/0065_kiek_kainuoja.mp3	A1	new	Kiek kainúoja?	How much does it cost?	0065_kiek_kainuoja.webm
+0069_kur_yra	media/audio/0069_kur_yra.mp3	A1	new	Kur̃ yrà…?	Where is…?	0069_kur_yra.webm
+0072_kalbeti	media/audio/0072_kalbeti.mp3	A1	new	kalbė́ti	to speak	0072_kalbeti.webm
+0077_labas_rytas	media/audio/0077_labas_rytas.mp3	A1	new	Lãbas rýtas	Good morning	0077_labas_rytas.webm
+0078_padeti	media/audio/0078_padeti.mp3	A1	new	padė́ti	to help	0078_padeti.webm
+0081_labas_vakaras	media/audio/0081_labas_vakaras.mp3	A1	new	Lãbas vãkaras	Good evening	0081_labas_vakaras.webm
+0082_myleti	media/audio/0082_myleti.mp3	A1	replace-tts	mylė́ti · mýli · mylė́jo	love	0082_myleti.webm
+0083_laukti	media/audio/0083_laukti.mp3	A1	new	láukti	to wait	0083_laukti.webm
+0088_sveiki	media/audio/0088_sveiki.mp3	A1	new	Sveikì	Hello (formal/plural)	0088_sveiki.webm
+0092_labai_aciu	media/audio/0092_labai_aciu.mp3	A1	new	Labaĩ ãčiū	Thank you very much	0092_labai_aciu.webm
+0093_duoti	media/audio/0093_duoti.mp3	A1	new	dúoti · dúoda · dãvė	to give	0093_duoti.webm
+0099_nera_uz_ka	media/audio/0099_nera_uz_ka.mp3	A1	new	Nėrà už ką̃	You're welcome (not at all)	0099_nera_uz_ka.webm
+0100_mokytis	media/audio/0100_mokytis.mp3	A1	replace-tts	mókytis · mókosi · mókėsi	learn	0100_mokytis.webm
+0101_moteris_valgo_duona	media/audio/0101_moteris_valgo_duona.mp3	A1	new	Moteris valgo duoną.	The woman is eating bread.	0101_moteris_valgo_duona.webm
+0102_vyras_geria_kava	media/audio/0102_vyras_geria_kava.mp3	A1	new	Vyras geria kavą.	The man is drinking coffee.	0102_vyras_geria_kava.webm
+0104_kiek_kainuoja_duona	media/audio/0104_kiek_kainuoja_duona.mp3	A1	new	Kiek kainuoja duona?	How much does the bread cost?	0104_kiek_kainuoja_duona.webm
+0105_ir	media/audio/0105_ir.mp3	A1	new	ir̃	and	0105_ir.webm
+0105_ir_s	media/audio/0105_ir_s.mp3	A1	new	Perku duoną ir pieną.	I am buying bread and milk.	0105_ir_s.webm
+0106_buti	media/audio/0106_buti.mp3	A1	new	bū́ti	to be	0106_buti.webm
+0106_buti_s	media/audio/0106_buti_s.mp3	A1	new	Aš esu mokytojas.	I am a teacher.	0106_buti_s.webm
+0107_veluoti	media/audio/0107_veluoti.mp3	A1	new	vėlúoti · vėlúoja · vėlãvo	to be late	0107_veluoti.webm
+0112_mes_einame_namo	media/audio/0112_mes_einame_namo.mp3	A1	new	Mes einame namo.	We are going home.	0112_mes_einame_namo.webm
+0113_mano	media/audio/0113_mano.mp3	A1	new	màno	my	0113_mano.webm
+0113_mano_s	media/audio/0113_mano_s.mp3	A1	new	Tai mano brolis.	This is my brother.	0113_mano_s.webm
+0114_saskaita_prasau	media/audio/0114_saskaita_prasau.mp3	A1	new	Są́skaitą, prašaũ	The bill, please	0114_saskaita_prasau.webm
+0115_tas	media/audio/0115_tas.mp3	A1	new	tàs	that	0115_tas.webm
+0115_tas_s	media/audio/0115_tas_s.mp3	A1	new	Tas vyras yra mano kaimynas.	That man is my neighbour.	0115_tas_s.webm
+0116_i	media/audio/0116_i.mp3	A1	new	į̃	in, into	0116_i.webm
+0116_i_s	media/audio/0116_i_s.mp3	A1	new	Einu į parduotuvę.	I am going to the shop.	0116_i_s.webm
+0117_mes_perkame_piena	media/audio/0117_mes_perkame_piena.mp3	A1	new	Mes perkame pieną.	We are buying milk.	0117_mes_perkame_piena.webm
+0118_iseiti	media/audio/0118_iseiti.mp3	A1	new	išeĩti	to exit	0118_iseiti.webm

@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,962 tracked files in 717 rows.
+2,021 tracked files in 721 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -122,8 +122,9 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `media/generation/out_phrases_v3/round2/ledger.csv` | history | Every prompt ever sent for that batch, one row per render (last row per key = the batch's current render); append-only | written by the batch's gen.py; read by tools/golden_set.py tools/rename_keys.py (names of their time) |
 | `media/generation/out_phrases_v3/round2/plan.json` | history | The batch's job plan (every key and prompt it was asked to render) | written by gen.py |
 | `media/generation/out_phrases_v3/round2/qa_round2.csv` | history | QA sheets of the batch (code/qa_images.py results of their time) | written by qa_images.py |
-| `media/audio/*.mp3` (668 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/_history/*` (6 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
+| `media/audio/*.mp3` (701 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/*_s.mp3` (5 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/_history/*` (22 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
 | `media/images/_history/images/*` (520 files) | history | The 1.x WebP masters (<key>.webp, 520 files): the pictures the deck shipped before the F6.2 re-render; tracked | read by nothing live (history) |
 
 ### docs/
@@ -588,17 +589,19 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | path | status | purpose | read / written by |
 |---|---|---|---|
 | `tools/apkg_keys_list.py` | live | Per-card list of a package (key -> fields and media) for the release record | run by people |
+| `tools/audio_review_page.py` | live | Builds the owner's listening page for a processed batch: original vs processed players and before/after waveforms, flagged takes first | run by people after ingest_takes.py --process-only; output is published as an artifact |
 | `tools/build_showcase.py` | live | Builds the showcase PDF from a released .apkg: renders chosen cards with Anki, screenshots, lays out A4 pages | run by hand; reads a package; writes docs/showcase/ |
 | `tools/build_situations.py` | live | Regenerates code/situations.py from data/restage_bubbles.csv | run by people after editing the CSV |
 | `tools/check_layout.py` | live | Checks the working directory against spec §13 / INDEX.md (root, folders, media, old homes, index) | pre-commit hook (--strict); build_apkg.py at the start of every build |
 | `tools/golden_set.py` | live | Builds / checks the golden reference set (style/golden/) from the ledgers | run by people (--status) |
 | `tools/hooks/pre-commit` | live | The pre-commit hook: style lock, layout (strict), inventory (check), lock staged | git |
 | `tools/index_descriptions.csv` | live | The hand-kept purpose / status / readers of every tracked file (one row per file or family) | read by tools/make_index.py |
-| `tools/ingest_takes.py` | live | Brings the recorder ZIPs in: converts with ffmpeg to media/audio/<key>.mp3, archives replaced takes, appends data/audio_source.tsv | run by people (--inbox); reads data/recording_list.csv |
+| `tools/ingest_takes.py` | live | Brings the recorder ZIPs in: keeps every raw clip, processes each take (tools/process_take.py) to media/audio/<key>.mp3, archives replaced takes, appends data/audio_source.tsv, moves the ZIP to _archive/takes/ | run by people (--inbox; --process-only DIR for a review first); reads data/recording_list.csv |
 | `tools/install_hooks.sh` | live | Links tools/hooks/pre-commit into .git/hooks (once per clone) | run by people |
 | `tools/keymap.py` | live | canonical() / aliases() / lookup(): every name a card has ever had and the one it has now | imported by build_recorder.py tools/ingest_takes.py tools/golden_set.py tools/verify_apkg.py; reads data/key_maps/key_map_v*.csv |
 | `tools/make_index.py` | live | Writes FILES.md from git ls-files + this folder's index_descriptions.csv; --check fails when a tracked file has no description or FILES.md is stale | pre-commit hook (--check); people (python3 tools/make_index.py [--untracked]) |
 | `tools/move_files.py` | live | Moves files by a rules table with a sha1 per file (plan / apply --tracked\|--untracked / verify); used by the 2026-10-24 deep tidy | run by people |
+| `tools/process_take.py` | live | One raw take -> the deck mp3: key clicks removed at both ends with >= 250 ms margins to speech (never a silence gate), self-check (identity + 99.5 % speech energy), linear EBU R128 gain to the July level, 24 kHz 64 kbit/s | imported by tools/ingest_takes.py; runnable on one file |
 | `tools/rename_keys.py` | live | The key namespace tool: --verify checks every live file carries NNNN_slug keys; --apply renames (append-only maps) | run by people |
 | `tools/smoke_test.sh` | live | Runs every tool once (lock, layout, index, keys, golden set, builds, recorder, review desk) and stops at the first failure | run by people after any change of layout or tooling |
 | `tools/spec_release.py` | live | Releases a spec version: bump, changelog line, frozen snapshot, lock update, tag | run by people |
@@ -800,6 +803,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `_archive/review_packs/review_A1.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_A1_duplicates.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_genders_2026-10-10.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
+| `_archive/takes/` (3 files) | history | One folder per ingested recorder ZIP: its manifest, manifest_kept.tsv (clips not shipped), ingest_log.tsv and process_log.csv (cuts, margins, loudness, flags per take); the raw clips (raw/) and the ZIP stay on the Mac (gitignored) | written by tools/ingest_takes.py |
 
 ### a2_build/
 

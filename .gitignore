@@ -132,3 +132,7 @@ reports/frame_preview/html/
 # (pre-2026-10-24 paths, kept so an old checkout still ignores them)
 a2_build/*/page/media/
 a2_build/review_2026-10-17/*/media/
+
+# raw recorder takes (2026-10-28): every clip of every ingested ZIP, untouched, beside the ZIP itself, on the owner's
+# Mac only (like the July masters in _archive/deprecated/recordings_raw/); the logs next to them ARE tracked
+_archive/takes/*/raw/
