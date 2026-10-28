@@ -151,6 +151,11 @@ def main(argv):
     items = []
     for r in rows:
         k = r["take"]
+        r["no_words"] = r.get("onset_ms", "") == ""            # "no speech found": the tool measured nothing more
+        for c, v in (("head_cut_ms", "0"), ("tail_cut_ms", r["dur_ms"]), ("onset_ms", "0"), ("offset_ms", "0"),
+                     ("head_margin_ms", "0"), ("tail_margin_ms", "0")):
+            if r.get(c, "") == "":
+                r[c] = v
         raw = os.path.join(tmp, os.path.basename(r["file"]))
         open(raw, "wb").write(z.read(r["file"]))
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-ar", "48000", "-ac", "1", "-codec:a", "libmp3lame",
@@ -244,9 +249,9 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
   </div>
   <img src="media/{k}.png" alt="Waveform of {k} before and after processing" loading="lazy">
   <dl class="nums">
-    <div><dt>Words</dt><dd>{r["onset_ms"]}–{r["offset_ms"]} ms of {r["dur_ms"]}</dd></div>
-    <div><dt>Head</dt><dd>{head}</dd></div>
-    <div><dt>Tail</dt><dd>{tail}</dd></div>
+    <div><dt>Words</dt><dd>{"none found by the tool in " + r["dur_ms"] + " ms" if r.get("no_words") else r["onset_ms"] + "–" + r["offset_ms"] + " ms of " + r["dur_ms"]}</dd></div>
+    <div><dt>Head</dt><dd>{"–" if r.get("no_words") else head}</dd></div>
+    <div><dt>Tail</dt><dd>{"–" if r.get("no_words") else tail}</dd></div>
     <div><dt>Clicks</dt><dd>{html.escape((r["head_clicks"] + " | " + r["tail_clicks"]).strip(" |") or "none")}{(" · attenuated " + html.escape(r["attenuated"])) if r["attenuated"] else ""}</dd></div>
     <div><dt>Loudness</dt><dd>{f(r["raw_I"])} → {f(r["out_I"])} LUFS · peak {f(r["out_TP"])} dBTP</dd></div>
     <div><dt>Speech energy kept</dt><dd>{f(r["energy_kept_pct"], 3)} %</dd></div>
@@ -355,7 +360,7 @@ audio {{ width: 100%; max-width: 100%; height: 36px; }}
 <main>
   <div>
     <h1>{html.escape(title)}</h1>
-    <p class="lede">{len(items)} takes from <span class="k">{html.escape(stem)}.zip</span>. Each card has the take as you recorded it and as it will ship. Takes marked <b>listen</b> come first: the tool kept a sound it could not safely call a click.</p>
+    <p class="lede">{len(items)} takes from <span class="k">{html.escape(stem)}.zip</span>. Each card has the take as you recorded it and as it will ship. Takes marked <b>re-record</b> (two recordings in one take) or <b>not processed</b> come first, then <b>listen</b>: the tool kept a sound it could not safely call a click.{(' The second section, <a href="#july">July takes re-levelled</a>, has ' + str(len(rel_items)) + ' older takes as they shipped before and as they ship now.') if rel_items else ''}</p>
   </div>
   <section class="summary" aria-label="Batch summary">
     <div class="stat"><b>{len(ok)} / {len(items)}</b><span>passed the self-check</span></div>

@@ -65,6 +65,12 @@ not repeated here.
   one take (a Space press and silence) matched the start of another at 0.92. Rule: a copy is proven by the noise
   floor too (≥ 0.98 over the pre-roll), not by the click; whole-take containment uses 0.9. Enforced:
   `tools/check_mixed_takes.py`.
+- **2026-10-28 · The shortest words are not "speech" to the click tool.** In audio batch 2, *tìk* and *šì* failed
+  with "no speech found": their loudest stretch (core) lasted 60 and 75 ms, under the 80 ms a speech seed needs. The
+  rule held (a FAIL is not ingested; both stay on the sheet), but it means a crisp monosyllable can never pass. Rule:
+  a failing take is never forced through by hand; either the owner re-records it a little longer, or the seed rule is
+  changed in `tools/process_take.py` and tested against a control set of clicks and short words first. Enforced: the
+  self-check in `process_take.py`, the FAIL path in `ingest_takes.py`.
 - **2026-10-19 · Takes and the deck drifted apart.** Recorded words changed on the card after recording (lūpa →
   lūpos, wrong genitives). Rule: every take stores what was said; a changed card turns its take into a re-take
   and the old take is set aside, never deleted. Enforced: `audio_source.tsv` `said` column, recorder.

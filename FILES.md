@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,089 tracked files in 723 rows.
+2,574 tracked files in 723 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -122,9 +122,9 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `media/generation/out_phrases_v3/round2/ledger.csv` | history | Every prompt ever sent for that batch, one row per render (last row per key = the batch's current render); append-only | written by the batch's gen.py; read by tools/golden_set.py tools/rename_keys.py (names of their time) |
 | `media/generation/out_phrases_v3/round2/plan.json` | history | The batch's job plan (every key and prompt it was asked to render) | written by gen.py |
 | `media/generation/out_phrases_v3/round2/qa_round2.csv` | history | QA sheets of the batch (code/qa_images.py results of their time) | written by qa_images.py |
-| `media/audio/*.mp3` (701 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/*_s.mp3` (5 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/_history/*` (85 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
+| `media/audio/*.mp3` (975 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/*_s.mp3` (207 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/_history/*` (90 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
 | `media/images/_history/images/*` (520 files) | history | The 1.x WebP masters (<key>.webp, 520 files): the pictures the deck shipped before the F6.2 re-render; tracked | read by nothing live (history) |
 
 ### docs/
@@ -805,7 +805,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `_archive/review_packs/review_A1.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_A1_duplicates.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_genders_2026-10-10.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
-| `_archive/takes/` (6 files) | history | One folder per ingested recorder ZIP: its manifest, manifest_kept.tsv (clips not shipped), ingest_log.tsv, process_log.csv (cuts, margins, loudness, flags per take) and mixed_check.tsv; the raw clips (raw/) and the ZIP stay on the Mac (gitignored). relevel_<name>_<date>/: a re-level run (loudness_before.tsv, relevel_log.tsv, process_log.csv) | written by tools/ingest_takes.py tools/check_mixed_takes.py tools/relevel_takes.py |
+| `_archive/takes/` (10 files) | history | One folder per ingested recorder ZIP: its manifest, manifest_kept.tsv (clips not shipped), ingest_log.tsv, process_log.csv (cuts, margins, loudness, flags per take) and mixed_check.tsv; the raw clips (raw/) and the ZIP stay on the Mac (gitignored). relevel_<name>_<date>/: a re-level run (loudness_before.tsv, relevel_log.tsv, process_log.csv) | written by tools/ingest_takes.py tools/check_mixed_takes.py tools/relevel_takes.py |
 
 ### a2_build/
 

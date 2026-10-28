@@ -790,3 +790,484 @@ key	source	file	said
 0810_sveikinu	human:relevel_july_2026-10-28	media/audio/0810_sveikinu.mp3	Sveikinu!
 0204_kur	human:relevel_july_2026-10-28	media/audio/0204_kur.mp3	kur
 0180_skanaus	human:relevel_july_2026-10-28	media/audio/0180_skanaus.mp3	Skanaus
+0120_grizti	human	media/audio/0120_grizti.mp3	grį̃žti
+0121_noreciau	human	media/audio/0121_noreciau.mp3	Norė́čiau…
+0124_as_noriu_arbatos	human	media/audio/0124_as_noriu_arbatos.mp3	Aš noriu arbatos.
+0125_ar_kalbate_angliskai	human	media/audio/0125_ar_kalbate_angliskai.mp3	Ar kal̃bate ángliškai?
+0126_su	human	media/audio/0126_su.mp3	sù
+0126_su_s	human	media/audio/0126_su_s.mp3	Geriu kavą su pienu.
+0127_as_esu_mokytojas	human	media/audio/0127_as_esu_mokytojas.mp3	Aš esu mokytojas.
+0128_tureti	human	media/audio/0128_tureti.mp3	turė́ti
+0128_tureti_s	human	media/audio/0128_tureti_s.mp3	Aš turiu du vaikus.
+0129_is	human	media/audio/0129_is.mp3	ìš
+0129_is_s	human	media/audio/0129_is_s.mp3	Jis yra iš Kauno.
+0132_kaip_sekasi	human	media/audio/0132_kaip_sekasi.mp3	Kaip sẽkasi?
+0135_cia	human	media/audio/0135_cia.mp3	čià
+0135_cia_s	human	media/audio/0135_cia_s.mp3	Čia yra mano namas.
+0136_man_gerai	human	media/audio/0136_man_gerai.mp3	Mán geraĩ
+0137_galeti	human	media/audio/0137_galeti.mp3	galė́ti
+0137_galeti_s	human	media/audio/0137_galeti_s.mp3	Ar galite man padėti?
+0138_kieno_s	human	media/audio/0138_kieno_s.mp3	Kieno tai knyga?
+0139_kam	human	media/audio/0139_kam.mp3	kám
+0139_kam_s	human	media/audio/0139_kam_s.mp3	Kam tu skambini?
+0140_ko	human	media/audio/0140_ko.mp3	kõ
+0140_ko_s	human	media/audio/0140_ko_s.mp3	Ko norite, arbatos ar kavos?
+0143_nezinau	human	media/audio/0143_nezinau.mp3	Nežinaũ
+0146_jis_dirba_ligonineje	human	media/audio/0146_jis_dirba_ligonineje.mp3	Jis dirba ligoninėje.
+0147_mano_vardas	human	media/audio/0147_mano_vardas.mp3	Mãno var̃das…
+0148_mano_vardas_yra_jonas	human	media/audio/0148_mano_vardas_yra_jonas.mp3	Mano vardas yra Jonas.
+0149_jos	human	media/audio/0149_jos.mp3	jõs
+0149_jos_s	human	media/audio/0149_jos_s.mp3	Jos vardas Rūta.
+0150_kaip_s	human	media/audio/0150_kaip_s.mp3	Kaip tau sekasi?
+0151_ar	human	media/audio/0151_ar.mp3	ar̃
+0151_ar_s	human	media/audio/0151_ar_s.mp3	Ar tu kalbi angliškai?
+0153_sirgti	human	media/audio/0153_sirgti.mp3	sir̃gti
+0154_as_esu_is	human	media/audio/0154_as_esu_is.mp3	Àš esù ìš…
+0155_saskaita	human	media/audio/0155_saskaita.mp3	są́skaita · sąskaitos
+0157_as_turiu_broli	human	media/audio/0157_as_turiu_broli.mp3	Aš turiu brolį.
+0158_labanakt	human	media/audio/0158_labanakt.mp3	Labãnakt
+0159_jau	human	media/audio/0159_jau.mp3	jaũ
+0159_jau_s	human	media/audio/0159_jau_s.mp3	Vaikas jau miega.
+0160_ju	human	media/audio/0160_ju.mp3	jų̃
+0160_ju_s	human	media/audio/0160_ju_s.mp3	Jų vaikai jau dideli.
+0161_noreti	human	media/audio/0161_noreti.mp3	norė́ti
+0161_noreti_s	human	media/audio/0161_noreti_s.mp3	Noriu valgyti.
+0162_jai	human	media/audio/0162_jai.mp3	jái
+0162_jai_s	human	media/audio/0162_jai_s.mp3	Padovanojau jai gėlių.
+0165_iki_pasimatymo	human	media/audio/0165_iki_pasimatymo.mp3	Ikì pasimãtymo
+0167_susitikti	human	media/audio/0167_susitikti.mp3	susitìkti
+0168_ji	human	media/audio/0168_ji.mp3	jį̃
+0168_ji_s	human	media/audio/0168_ji_s.mp3	Aš jį matau.
+0169_atleiskite	human	media/audio/0169_atleiskite.mp3	Atléiskite
+0170_dabar_s	human	media/audio/0170_dabar_s.mp3	Dabar esu namie.
+0171_kad	human	media/audio/0171_kad.mp3	kàd
+0171_kad_s	human	media/audio/0171_kad_s.mp3	Manau, kad jis namie.
+0172_diena_s	human	media/audio/0172_diena_s.mp3	Gražios dienos!
+0173_man	human	media/audio/0173_man.mp3	mán
+0173_man_s	human	media/audio/0173_man_s.mp3	Man šalta.
+0176_malonu_susipazinti	human	media/audio/0176_malonu_susipazinti.mp3	Malonù susipažìnti
+0181_mane	human	media/audio/0181_mane.mp3	manè
+0181_mane_s	human	media/audio/0181_mane_s.mp3	Ar mane girdi?
+0182_zinoti	human	media/audio/0182_zinoti.mp3	žinóti
+0182_zinoti_s	human	media/audio/0182_zinoti_s.mp3	Aš nežinau.
+0183_jis_vaziuoja_autobusu	human	media/audio/0183_jis_vaziuoja_autobusu.mp3	Jis važiuoja autobusu.
+0184_lietuviu_kalba	human	media/audio/0184_lietuviu_kalba.mp3	lietùvių kalbà
+0184_lietuviu_kalba_s	human	media/audio/0184_lietuviu_kalba_s.mp3	Mokausi lietuvių kalbos.
+0185_dar	human	media/audio/0185_dar.mp3	dár
+0185_dar_s	human	media/audio/0185_dar_s.mp3	Aš dar nevalgiau.
+0188_skaityti	human	media/audio/0188_skaityti.mp3	skaitýti · skaĩto · skaĩtė
+0191_ar_galite_man_padeti	human	media/audio/0191_ar_galite_man_padeti.mp3	Ar̃ gãlite mán padė́ti?
+0192_per	human	media/audio/0192_per.mp3	pèr
+0192_per_s	human	media/audio/0192_per_s.mp3	Einame per tiltą.
+0193_sis	human	media/audio/0193_sis.mp3	šìs
+0193_sis_s	human	media/audio/0193_sis_s.mp3	Šis stalas per mažas.
+0194_ten	human	media/audio/0194_ten.mp3	teñ
+0194_ten_s	human	media/audio/0194_ten_s.mp3	Stotis yra ten.
+0195_suprasti	human	media/audio/0195_suprasti.mp3	supràsti
+0195_suprasti_s	human	media/audio/0195_suprasti_s.mp3	Ar supranti?
+0196_manyti	human	media/audio/0196_manyti.mp3	manýti · mãno · mãnė
+0196_manyti_s	human	media/audio/0196_manyti_s.mp3	Manau, kad taip.
+0198_ar_galite_pakartoti	human	media/audio/0198_ar_galite_pakartoti.mp3	Ar gãlite pakartóti?
+0203_prasom_kalbeti_leciau	human	media/audio/0203_prasom_kalbeti_leciau.mp3	Prãšom kalbė́ti lėčiaũ
+0204_kur_s	human	media/audio/0204_kur_s.mp3	Kur yra stotis?
+0205_daug	human	media/audio/0205_daug.mp3	daũg
+0205_daug_s	human	media/audio/0205_daug_s.mp3	Turiu daug darbo.
+0206_siandien_s	human	media/audio/0206_siandien_s.mp3	Šiandien pirmadienis.
+0207_labai	human	media/audio/0207_labai.mp3	labaĩ
+0207_labai_s	human	media/audio/0207_labai_s.mp3	Šiandien labai šalta.
+0208_gyventi	human	media/audio/0208_gyventi.mp3	gyvénti
+0208_gyventi_s	human	media/audio/0208_gyventi_s.mp3	Aš gyvenu Vilniuje.
+0209_kur_gyvenate	human	media/audio/0209_kur_gyvenate.mp3	Kur gyvẽnate?
+0213_sauleta	human	media/audio/0213_sauleta.mp3	saulė́ta
+0214_cia_mano_draugas	human	media/audio/0214_cia_mano_draugas.mp3	Čià (yrà) màno draũgas. / Susipažìnkite — taĩ…
+0215_kas_s	human	media/audio/0215_kas_s.mp3	Kas čia gyvena?
+0216_centras	human	media/audio/0216_centras.mp3	ceñtras · centro
+0216_centras_s	human	media/audio/0216_centras_s.mp3	Gyvenu miesto centre.
+0217_kuris_s	human	media/audio/0217_kuris_s.mp3	Kuris autobusas važiuoja į centrą?
+0218_mes_gyvename_vilniuje	human	media/audio/0218_mes_gyvename_vilniuje.mp3	Mes gyvename Vilniuje.
+0219_as_gyvenu_name	human	media/audio/0219_as_gyvenu_name.mp3	Aš gyvenu name.
+0220_ar_yra	human	media/audio/0220_ar_yra.mp3	Ar̃ yrà…?
+0222_tetis	human	media/audio/0222_tetis.mp3	tė̃tis · tėčio
+0223_galvoti	human	media/audio/0223_galvoti.mp3	galvóti · galvója · galvójo
+0225_ar_turite	human	media/audio/0225_ar_turite.mp3	Ar tùrite…?
+0226_tave	human	media/audio/0226_tave.mp3	tavè
+0226_tave_s	human	media/audio/0226_tave_s.mp3	Aš tave myliu.
+0227_tie	human	media/audio/0227_tie.mp3	tiẽ
+0227_tie_s	human	media/audio/0227_tie_s.mp3	Tie žmonės laukia autobuso.
+0228_ta	human	media/audio/0228_ta.mp3	tà
+0228_ta_s	human	media/audio/0228_ta_s.mp3	Ta moteris – mano mokytoja.
+0229_metai_s	human	media/audio/0229_metai_s.mp3	Man trisdešimt metų.
+0230_as_nesuprantu	human	media/audio/0230_as_nesuprantu.mp3	Aš nesuprantu.
+0234_kinas	human	media/audio/0234_kinas.mp3	kìnas · kino
+0236_koks_tavo	human	media/audio/0236_koks_tavo.mp3	Kóks tàvo / jū́sų telefòno nùmeris?
+0237_jusu	human	media/audio/0237_jusu.mp3	jū́sų
+0237_jusu_s	human	media/audio/0237_jusu_s.mp3	Koks jūsų telefono numeris?
+0238_koks_s	human	media/audio/0238_koks_s.mp3	Koks tavo adresas?
+0239_orai	human	media/audio/0239_orai.mp3	oraĩ
+0239_orai_s	human	media/audio/0239_orai_s.mp3	Kokie šiandien orai?
+0240_patikti	human	media/audio/0240_patikti.mp3	patìkti
+0240_patikti_s	human	media/audio/0240_patikti_s.mp3	Man patinka šis miestas.
+0241_o	human	media/audio/0241_o.mp3	õ
+0241_o_s	human	media/audio/0241_o_s.mp3	Aš dirbu, o jis mokosi.
+0248_reiketi	human	media/audio/0248_reiketi.mp3	reikė́ti
+0248_reiketi_s	human	media/audio/0248_reiketi_s.mp3	Man reikia pagalbos.
+0249_jam	human	media/audio/0249_jam.mp3	jám
+0249_jam_s	human	media/audio/0249_jam_s.mp3	Jam reikia pagalbos.
+0250_dar	human	media/audio/0250_dar.mp3	dár
+0250_dar_s	human	media/audio/0250_dar_s.mp3	Ką dar norėtumėte?
+0251_man_reikia_vandens	human	media/audio/0251_man_reikia_vandens.mp3	Man reikia vandens.
+0252_jums	human	media/audio/0252_jums.mp3	jùms
+0252_jums_s	human	media/audio/0252_jums_s.mp3	Ko jums reikia?
+0258_is_kur_jus	human	media/audio/0258_is_kur_jus.mp3	Ìš kur jū̃s?
+0259_bet	human	media/audio/0259_bet.mp3	bèt
+0259_bet_s	human	media/audio/0259_bet_s.mp3	Noriu eiti, bet neturiu laiko.
+0260_siandien_salta	human	media/audio/0260_siandien_salta.mp3	Šiandien šalta.
+0261_valanda_s	human	media/audio/0261_valanda_s.mp3	Laukiu autobuso jau vieną valandą.
+0262_euras	human	media/audio/0262_euras.mp3	eũras · euro
+0262_euras_s	human	media/audio/0262_euras_s.mp3	Tai kainuoja du eurus.
+0263_tik_s	human	media/audio/0263_tik_s.mp3	Turiu tik penkis eurus.
+0264_viskas_gerai	human	media/audio/0264_viskas_gerai.mp3	Vìskas geraĩ
+0270_gerai	human	media/audio/0270_gerai.mp3	geraĩ
+0270_gerai_s	human	media/audio/0270_gerai_s.mp3	Jis gerai kalba lietuviškai.
+0271_ar_tu_kalbi_lietuviskai	human	media/audio/0271_ar_tu_kalbi_lietuviskai.mp3	Ar tu kalbi lietuviškai?
+0272_visas	human	media/audio/0272_visas.mp3	vìsas
+0272_visas_s	human	media/audio/0272_visas_s.mp3	Aš dirbau visą dieną.
+0273_megti	human	media/audio/0273_megti.mp3	mė́gti
+0273_megti_s	human	media/audio/0273_megti_s.mp3	Mėgstu skaityti.
+0274_kodel_s	human	media/audio/0274_kodel_s.mp3	Kodėl tu vėluoji?
+0276_ieskoti	human	media/audio/0276_ieskoti.mp3	ieškóti · íeško · ieškójo
+0277_pavarges	human	media/audio/0277_pavarges.mp3	pavar̃gęs · pavar̃gusi
+0280_ka_veiki	human	media/audio/0280_ka_veiki.mp3	Ką̃ veikì?
+0281_tau	human	media/audio/0281_tau.mp3	táu
+0281_tau_s	human	media/audio/0281_tau_s.mp3	Ar tau patinka?
+0282_paskambinti	human	media/audio/0282_paskambinti.mp3	paskam̃binti
+0282_paskambinti_s	human	media/audio/0282_paskambinti_s.mp3	Paskambink man vakare.
+0283_ka	human	media/audio/0283_ka.mp3	ką̃
+0283_ka_s	human	media/audio/0283_ka_s.mp3	Ką tu veiki?
+0284_kur_yra_stotis	human	media/audio/0284_kur_yra_stotis.mp3	Kur yra stotis?
+0285_atsakymas	human	media/audio/0285_atsakymas.mp3	atsãkymas · atsãkymo
+0285_atsakymas_s	human	media/audio/0285_atsakymas_s.mp3	Teisingas atsakymas!
+0286_suprantu	human	media/audio/0286_suprantu.mp3	Suprantù
+0288_keltis	human	media/audio/0288_keltis.mp3	kéltis
+0292_zmones	human	media/audio/0292_zmones.mp3	žmónės
+0292_zmones_s	human	media/audio/0292_zmones_s.mp3	Gatvėje daug žmonių.
+0293_gauti	human	media/audio/0293_gauti.mp3	gáuti · gáuna · gãvo
+0293_gauti_s	human	media/audio/0293_gauti_s.mp3	Gavau laišką.
+0294_bet_kas	human	media/audio/0294_bet_kas.mp3	bèt kàs
+0294_bet_kas_s	human	media/audio/0294_bet_kas_s.mp3	Tai gali padaryti bet kas.
+0295_rytoj_s	human	media/audio/0295_rytoj_s.mp3	Rytoj nedirbu.
+0296_idomus	human	media/audio/0296_idomus.mp3	įdomùs · įdomì
+0296_idomus_s	human	media/audio/0296_idomus_s.mp3	Knyga labai įdomi.
+0297_padekite	human	media/audio/0297_padekite.mp3	Padė́kite!
+0299_muzika	human	media/audio/0299_muzika.mp3	mùzika · mùzikos
+0302_koks_jusu_vardas	human	media/audio/0302_koks_jusu_vardas.mp3	Kóks jū́sų var̃das?
+0303_stotis_yra_ten	human	media/audio/0303_stotis_yra_ten.mp3	Stotis yra ten.
+0304_savo	human	media/audio/0304_savo.mp3	sàvo
+0304_savo_s	human	media/audio/0304_savo_s.mp3	Aš myliu savo šeimą.
+0305_ateiti	human	media/audio/0305_ateiti.mp3	ateĩti · ateĩna · atė̃jo
+0305_ateiti_s	human	media/audio/0305_ateiti_s.mp3	Ateik rytoj.
+0306_tikrai	human	media/audio/0306_tikrai.mp3	tikraĩ
+0306_tikrai_s	human	media/audio/0306_tikrai_s.mp3	Aš tikrai ateisiu.
+0307_daryti	human	media/audio/0307_daryti.mp3	darýti · dãro · dãrė
+0307_daryti_s	human	media/audio/0307_daryti_s.mp3	Ką darai?
+0308_kiek_jums_metu	human	media/audio/0308_kiek_jums_metu.mp3	Kíek jùms mẽtų?
+0313_kuo_dirbate	human	media/audio/0313_kuo_dirbate.mp3	Kuõ dìrbate?
+0314_visai	human	media/audio/0314_visai.mp3	vìsai
+0314_visai_s	human	media/audio/0314_visai_s.mp3	Visai nešalta.
+0315_del	human	media/audio/0315_del.mp3	dė̃l
+0315_del_s	human	media/audio/0315_del_s.mp3	Vėluoju dėl lietaus.
+0316_vakar_s	human	media/audio/0316_vakar_s.mp3	Vakar buvau kine.
+0317_prasyti	human	media/audio/0317_prasyti.mp3	prašýti · prãšo · prãšė
+0317_prasyti_s	human	media/audio/0317_prasyti_s.mp3	Prašau pagalbos.
+0318_laikas_s	human	media/audio/0318_laikas_s.mp3	Neturiu laiko.
+0320_klausimas	human	media/audio/0320_klausimas.mp3	kláusimas · kláusimo
+0322_tualetas	human	media/audio/0322_tualetas.mp3	tualètas · tualèto
+0325_apie	human	media/audio/0325_apie.mp3	apiẽ
+0325_apie_s	human	media/audio/0325_apie_s.mp3	Kalbame apie orą.
+0326_kai	human	media/audio/0326_kai.mp3	kaĩ
+0326_kai_s	human	media/audio/0326_kai_s.mp3	Kai grįšiu, paskambinsiu.
+0327_per	human	media/audio/0327_per.mp3	pèr
+0327_per_s	human	media/audio/0327_per_s.mp3	Einame per tiltą.
+0328_atrodyti	human	media/audio/0328_atrodyti.mp3	atródyti
+0328_atrodyti_s	human	media/audio/0328_atrodyti_s.mp3	Tu atrodai pavargęs.
+0329_kai_kas	human	media/audio/0329_kai_kas.mp3	kaĩ kàs
+0329_kai_kas_s	human	media/audio/0329_kai_kas_s.mp3	Kai kas jau išėjo.
+0334_galima	human	media/audio/0334_galima.mp3	Gãlima. / Prãšom.
+0337_kai_kuris	human	media/audio/0337_kai_kuris.mp3	kaĩ kurìs
+0337_kai_kuris_s	human	media/audio/0337_kai_kuris_s.mp3	Kai kurie žmonės mėgsta žiemą.
+0338_svarbus	human	media/audio/0338_svarbus.mp3	svarbùs · svarbì
+0338_svarbus_s	human	media/audio/0338_svarbus_s.mp3	Tai labai svarbu.
+0339_bet_kur	human	media/audio/0339_bet_kur.mp3	bèt kur̃
+0339_bet_kur_s	human	media/audio/0339_bet_kur_s.mp3	Galime susitikti bet kur.
+0336_aukstas	human	media/audio/0336_aukstas.mp3	áukštas · áukšto
+0336_aukstas_s	human	media/audio/0336_aukstas_s.mp3	Gyvenu trečiame aukšte.
+0340_padaryti	human	media/audio/0340_padaryti.mp3	padarýti · padãro · padãrė
+0340_padaryti_s	human	media/audio/0340_padaryti_s.mp3	Ką padaryti?
+0344_atsargiai	human	media/audio/0344_atsargiai.mp3	Atsargiaĩ!
+0347_kiek_s	human	media/audio/0347_kiek_s.mp3	Kiek kainuoja bilietas?
+0348_kitas	human	media/audio/0348_kitas.mp3	kìtas
+0348_kitas_s	human	media/audio/0348_kitas_s.mp3	Iki kito karto!
+0349_tiesa	human	media/audio/0349_tiesa.mp3	tiesà · tiesõs
+0349_tiesa_s	human	media/audio/0349_tiesa_s.mp3	Tai tiesa.
+0351_kai_kur	human	media/audio/0351_kai_kur.mp3	kaĩ kur̃
+0351_kai_kur_s	human	media/audio/0351_kai_kur_s.mp3	Kai kur dar yra sniego.
+0350_pasakyti	human	media/audio/0350_pasakyti.mp3	pasakýti · pasako · pasakė
+0350_pasakyti_s	human	media/audio/0350_pasakyti_s.mp3	Pasakyk man tiesą.
+0352_dekui	human	media/audio/0352_dekui.mp3	dė̃kui
+0358_toks	human	media/audio/0358_toks.mp3	tóks
+0358_toks_s	human	media/audio/0358_toks_s.mp3	Toks geras oras!
+0359_visada	human	media/audio/0359_visada.mp3	visadà
+0359_visada_s	human	media/audio/0359_visada_s.mp3	Ji visada vėluoja.
+0360_kainuoti	human	media/audio/0360_kainuoti.mp3	kainúoti
+0360_kainuoti_s	human	media/audio/0360_kainuoti_s.mp3	Kiek kainuoja duona?
+0361_sie	human	media/audio/0361_sie.mp3	šiẽ
+0361_sie_s	human	media/audio/0361_sie_s.mp3	Šie batai man patinka.
+0362_gyvenimas	human	media/audio/0362_gyvenimas.mp3	gyvẽnimas · gyvẽnimo
+0362_gyvenimas_s	human	media/audio/0362_gyvenimas_s.mp3	Gyvenimas gražus.
+0366_kiek_valandu	human	media/audio/0366_kiek_valandu.mp3	Kiek valandų̃?
+0331_kelinta_valanda	human	media/audio/0331_kelinta_valanda.mp3	Kelintà valandà?
+0369_si_s	human	media/audio/0369_si_s.mp3	Ši knyga įdomi.
+0371_niekada	human	media/audio/0371_niekada.mp3	niekadà
+0371_niekada_s	human	media/audio/0371_niekada_s.mp3	Aš niekada negeriu kavos.
+0370_kurti	human	media/audio/0370_kurti.mp3	kùrti · kùria · kū́rė
+0370_kurti_s	human	media/audio/0370_kurti_s.mp3	Ji kuria muziką.
+0372_ja	human	media/audio/0372_ja.mp3	ją̃
+0372_ja_s	human	media/audio/0372_ja_s.mp3	Mačiau ją vakar.
+0380_jei	human	media/audio/0380_jei.mp3	jéi
+0380_jei_s	human	media/audio/0380_jei_s.mp3	Jei bus šilta, eisime į mišką.
+0379_vairuotojas	human	media/audio/0379_vairuotojas.mp3	vairúotojas · vairúotojo
+0373_baigti	human	media/audio/0373_baigti.mp3	baĩgti
+0373_baigti_s	human	media/audio/0373_baigti_s.mp3	Darbą baigiu penktą valandą.
+0392_vel	human	media/audio/0392_vel.mp3	vė̃l
+0392_vel_s	human	media/audio/0392_vel_s.mp3	Jis vėl pavėlavo.
+0383_vardas_s	human	media/audio/0383_vardas_s.mp3	Mano vardas Jonas.
+0381_lyti	human	media/audio/0381_lyti.mp3	lýti · lỹja · lìjo
+0381_lyti_s	human	media/audio/0381_lyti_s.mp3	Šiandien lyja.
+0382_gal	human	media/audio/0382_gal.mp3	gál
+0382_gal_s	human	media/audio/0382_gal_s.mp3	Gal rytoj lis.
+0387_linksmas	human	media/audio/0387_linksmas.mp3	liñksmas · linksmà
+0388_vaistine	human	media/audio/0388_vaistine.mp3	váistinė · váistinės
+0389_ar_galima	human	media/audio/0389_ar_galima.mp3	Ar̃ gãlima?
+0390_kaimas	human	media/audio/0390_kaimas.mp3	káimas · káimo
+0384_likti	human	media/audio/0384_likti.mp3	lìkti · liẽka · lìko
+0384_likti_s	human	media/audio/0384_likti_s.mp3	Šiandien lieku namie.
+0391_namai	human	media/audio/0391_namai.mp3	namaĩ
+0391_namai_s	human	media/audio/0391_namai_s.mp3	Mano namai – Vilniuje.
+0393_uz	human	media/audio/0393_uz.mp3	ùž
+0393_uz_s	human	media/audio/0393_uz_s.mp3	Mokykla yra už bažnyčios.
+0394_menuo_s	human	media/audio/0394_menuo_s.mp3	Dirbu čia vieną mėnesį.
+0395_ji_eina_i_mokykla	human	media/audio/0395_ji_eina_i_mokykla.mp3	Ji eina į mokyklą.
+0399_ka_reiskia	human	media/audio/0399_ka_reiskia.mp3	Ką̃ réiškia…?
+0401_mama	human	media/audio/0401_mama.mp3	mamà · mamõs
+0402_visi	human	media/audio/0402_visi.mp3	visì
+0402_visi_s	human	media/audio/0402_visi_s.mp3	Visi jau atėjo.
+0403_imti	human	media/audio/0403_imti.mp3	im̃ti · ìma · ė̃mė
+0403_imti_s	human	media/audio/0403_imti_s.mp3	Imk obuolį.
+0404_kur_nors	human	media/audio/0404_kur_nors.mp3	kur̃ nórs
+0404_kur_nors_s	human	media/audio/0404_kur_nors_s.mp3	Eikime kur nors valgyti.
+0405_privaleti	human	media/audio/0405_privaleti.mp3	privalė́ti
+0405_privaleti_s	human	media/audio/0405_privaleti_s.mp3	Tu privalai eiti į mokyklą.
+0406_po	human	media/audio/0406_po.mp3	põ
+0406_po_s	human	media/audio/0406_po_s.mp3	Katė miega po stalu.
+0410_ratas	human	media/audio/0410_ratas.mp3	rãtas · rãto
+0418_pilnas	human	media/audio/0418_pilnas.mp3	pìlnas · pilnà
+0413_sestas	human	media/audio/0413_sestas.mp3	šẽštas · šeštà
+0413_sestas_s	human	media/audio/0413_sestas_s.mp3	Šiandien kovo šešta.
+0414_septintas	human	media/audio/0414_septintas.mp3	septiñtas · septintà
+0414_septintas_s	human	media/audio/0414_septintas_s.mp3	Gyvenu septintame aukšte.
+0415_astuntas	human	media/audio/0415_astuntas.mp3	aštuñtas · aštuntà
+0415_astuntas_s	human	media/audio/0415_astuntas_s.mp3	Dabar aštunta valanda.
+0416_pradeti	human	media/audio/0416_pradeti.mp3	pradė́ti
+0416_pradeti_s	human	media/audio/0416_pradeti_s.mp3	Pradedu dirbti aštuntą valandą.
+0417_prasideti	human	media/audio/0417_prasideti.mp3	prasidė́ti
+0417_prasideti_s	human	media/audio/0417_prasideti_s.mp3	Filmas prasideda aštuntą.
+0424_nuo	human	media/audio/0424_nuo.mp3	nuõ
+0424_nuo_s	human	media/audio/0424_nuo_s.mp3	Dirbu nuo aštuntos valandos.
+0425_ponas	human	media/audio/0425_ponas.mp3	põnas · põno
+0425_ponas_s	human	media/audio/0425_ponas_s.mp3	Laba diena, pone!
+0426_devintas	human	media/audio/0426_devintas.mp3	deviñtas · devintà
+0426_devintas_s	human	media/audio/0426_devintas_s.mp3	Autobusas devintą valandą.
+0427_tapti	human	media/audio/0427_tapti.mp3	tàpti
+0427_tapti_s	human	media/audio/0427_tapti_s.mp3	Jis tapo gydytoju.
+0435_desimtas	human	media/audio/0435_desimtas.mp3	dešim̃tas · dešimtà
+0435_desimtas_s	human	media/audio/0435_desimtas_s.mp3	Šiandien gegužės dešimta.
+0429_pastas	human	media/audio/0429_pastas.mp3	pãštas · pãšto
+0441_sumustinis	human	media/audio/0441_sumustinis.mp3	sumuštìnis · sumuštìnio
+0428_kada_s	human	media/audio/0428_kada_s.mp3	Kada prasideda filmas?
+0436_daznai	human	media/audio/0436_daznai.mp3	dažnaĩ
+0436_daznai_s	human	media/audio/0436_daznai_s.mp3	Mes dažnai einame į kiną.
+0437_toks_pat	human	media/audio/0437_toks_pat.mp3	tóks pàt · tokià pàt
+0437_toks_pat_s	human	media/audio/0437_toks_pat_s.mp3	Mano paltas toks pat kaip tavo.
+0438_planas	human	media/audio/0438_planas.mp3	plãnas · plãno
+0438_planas_s	human	media/audio/0438_planas_s.mp3	Koks tavo planas?
+0439_jaustis	human	media/audio/0439_jaustis.mp3	jaũstis
+0439_jaustis_s	human	media/audio/0439_jaustis_s.mp3	Kaip jautiesi?
+0446_tavo	human	media/audio/0446_tavo.mp3	tàvo
+0446_tavo_s	human	media/audio/0446_tavo_s.mp3	Kur tavo raktai?
+0447_dalykas	human	media/audio/0447_dalykas.mp3	dalỹkas · dalỹko
+0447_dalykas_s	human	media/audio/0447_dalykas_s.mp3	Tai svarbus dalykas.
+0448_bandyti	human	media/audio/0448_bandyti.mp3	bandýti
+0448_bandyti_s	human	media/audio/0448_bandyti_s.mp3	Bandau kalbėti lietuviškai.
+0449_dokumentas	human	media/audio/0449_dokumentas.mp3	dokumèntas · dokumènto
+0449_dokumentas_s	human	media/audio/0449_dokumentas_s.mp3	Jūsų dokumentus, prašau.
+0457_savaite_s	human	media/audio/0457_savaite_s.mp3	Kitą savaitę važiuoju į Kauną.
+0450_niekas	human	media/audio/0450_niekas.mp3	niẽkas
+0450_niekas_s	human	media/audio/0450_niekas_s.mp3	Niekas nežino atsakymo.
+0458_kalba	human	media/audio/0458_kalba.mp3	kalbà · kalbõs
+0458_kalba_s	human	media/audio/0458_kalba_s.mp3	Lietuvių kalba sena.
+0459_viskas	human	media/audio/0459_viskas.mp3	vìskas
+0459_viskas_s	human	media/audio/0459_viskas_s.mp3	Viskas gerai.
+0460_tiek	human	media/audio/0460_tiek.mp3	tiẽk
+0460_tiek_s	human	media/audio/0460_tiek_s.mp3	Kodėl tiek brangu?
+0461_pats	human	media/audio/0461_pats.mp3	pàts
+0461_pats_s	human	media/audio/0461_pats_s.mp3	Aš pats tai padarysiu.
+0466_svecias	human	media/audio/0466_svecias.mp3	svẽčias · svẽčio
+0468_atvaziuoti	human	media/audio/0468_atvaziuoti.mp3	atvažiúoti
+0468_atvaziuoti_s	human	media/audio/0468_atvaziuoti_s.mp3	Rytoj atvažiuoja svečiai.
+0469_po	human	media/audio/0469_po.mp3	põ
+0469_po_s	human	media/audio/0469_po_s.mp3	Katė miega po stalu.
+0470_zodis	human	media/audio/0470_zodis.mp3	žõdis · žõdžio
+0470_zodis_s	human	media/audio/0470_zodis_s.mp3	Ką reiškia šis žodis?
+0471_iki	human	media/audio/0471_iki.mp3	ikì
+0471_iki_s	human	media/audio/0471_iki_s.mp3	Parduotuvė dirba iki dešimtos.
+0472_saves	human	media/audio/0472_saves.mp3	savę̃s
+0472_saves_s	human	media/audio/0472_saves_s.mp3	Pažiūrėk į save.
+0477_labai_gerai	human	media/audio/0477_labai_gerai.mp3	labaĩ geraĩ
+0479_tada	human	media/audio/0479_tada.mp3	tadà
+0479_tada_s	human	media/audio/0479_tada_s.mp3	Tada aš buvau vaikas.
+0480_tevas_skaito_knyga	human	media/audio/0480_tevas_skaito_knyga.mp3	Tėvas skaito knygą.
+0481_keli	human	media/audio/0481_keli.mp3	kelì
+0481_keli_s	human	media/audio/0481_keli_s.mp3	Turiu kelis klausimus.
+0482_daiktas	human	media/audio/0482_daiktas.mp3	dáiktas · dáikto
+0482_daiktas_s	human	media/audio/0482_daiktas_s.mp3	Kas tai per daiktas?
+0483_dalis	human	media/audio/0483_dalis.mp3	dalìs · daliẽs
+0483_dalis_s	human	media/audio/0483_dalis_s.mp3	Tai tik dalis darbo.
+0490_net	human	media/audio/0490_net.mp3	nèt
+0490_net_s	human	media/audio/0490_net_s.mp3	Net vaikas tai supranta.
+0491_prie	human	media/audio/0491_prie.mp3	priẽ
+0491_prie_s	human	media/audio/0491_prie_s.mp3	Susitinkame prie stoties.
+0492_musu	human	media/audio/0492_musu.mp3	mū́sų
+0492_musu_s	human	media/audio/0492_musu_s.mp3	Mūsų namas yra prie upės.
+0494_mergina	human	media/audio/0494_mergina.mp3	merginà · mergìnos
+0494_mergina_s	human	media/audio/0494_mergina_s.mp3	Jo mergina – studentė.
+0501_nors	human	media/audio/0501_nors.mp3	nórs
+0501_nors_s	human	media/audio/0501_nors_s.mp3	Jis atėjo, nors sirgo.
+0498_piktas	human	media/audio/0498_piktas.mp3	pìktas · piktà
+0503_mazai	human	media/audio/0503_mazai.mp3	mažaĩ
+0503_mazai_s	human	media/audio/0503_mazai_s.mp3	Ji valgo mažai.
+0502_nes	human	media/audio/0502_nes.mp3	nès
+0502_nes_s	human	media/audio/0502_nes_s.mp3	Likau namie, nes lijo.
+0504_taip_pat	human	media/audio/0504_taip_pat.mp3	taĩp pàt
+0504_taip_pat_s	human	media/audio/0504_taip_pat_s.mp3	Aš taip pat mokausi lietuvių kalbos.
+0493_ketinti	human	media/audio/0493_ketinti.mp3	ketìnti
+0493_ketinti_s	human	media/audio/0493_ketinti_s.mp3	Vasarą ketinu važiuoti į Kauną.
+0512_tas_pats	human	media/audio/0512_tas_pats.mp3	tàs pàts
+0512_tas_pats_s	human	media/audio/0512_tas_pats_s.mp3	Mes gyvename tame pačiame name.
+0509_viena_bilieta_i_kauna	human	media/audio/0509_viena_bilieta_i_kauna.mp3	Víeną bìlietą į̃ Kaũną, prašaũ.
+0510_vaistai	human	media/audio/0510_vaistai.mp3	váistai · váistų
+0513_mums	human	media/audio/0513_mums.mp3	mùms
+0513_mums_s	human	media/audio/0513_mums_s.mp3	Mums patinka Vilnius.
+0515_mus	human	media/audio/0515_mus.mp3	mùs
+0515_mus_s	human	media/audio/0515_mus_s.mp3	Ar matai mus?
+0505_istorija	human	media/audio/0505_istorija.mp3	istòrija · istòrijos
+0505_istorija_s	human	media/audio/0505_istorija_s.mp3	Skaitau įdomią istoriją.
+0525_arba	human	media/audio/0525_arba.mp3	arbà
+0525_arba_s	human	media/audio/0525_arba_s.mp3	Arbatos arba kavos?
+0516_kartu	human	media/audio/0516_kartu.mp3	kartù
+0516_kartu_s	human	media/audio/0516_kartu_s.mp3	Gyvename kartu su tėvais.
+0521_prasom_pakartoti	human	media/audio/0521_prasom_pakartoti.mp3	Prãšom pakartóti
+0533_dirzas	human	media/audio/0533_dirzas.mp3	dir̃žas · dir̃žo
+0524_pries	human	media/audio/0524_pries.mp3	priẽš
+0524_pries_s	human	media/audio/0524_pries_s.mp3	Nusiplauk rankas prieš valgį.
+0526_numeris	human	media/audio/0526_numeris.mp3	nùmeris · nùmerio
+0526_numeris_s	human	media/audio/0526_numeris_s.mp3	Koks tavo telefono numeris?
+0527_kas_nors	human	media/audio/0527_kas_nors.mp3	kàs nórs
+0527_kas_nors_s	human	media/audio/0527_kas_nors_s.mp3	Ar kas nors skambino?
+0535_taciau	human	media/audio/0535_taciau.mp3	tačiaũ
+0535_taciau_s	human	media/audio/0535_taciau_s.mp3	Buvo šalta, tačiau saulėta.
+0539_paskui	human	media/audio/0539_paskui.mp3	paskuĩ
+0539_paskui_s	human	media/audio/0539_paskui_s.mp3	Pavalgysime, o paskui eisime.
+0530_atsiprasau_ar_cia_laisva	human	media/audio/0530_atsiprasau_ar_cia_laisva.mp3	Atsiprašaũ, ar̃ čià laĩsva?
+0541_veidrodis	human	media/audio/0541_veidrodis.mp3	véidrodis · véidrodžio
+0543_tuscias	human	media/audio/0543_tuscias.mp3	tùščias · tuščià
+0536_ant	human	media/audio/0536_ant.mp3	añt
+0536_ant_s	human	media/audio/0536_ant_s.mp3	Knyga yra ant stalo.
+0548_dede	human	media/audio/0548_dede.mp3	dė̃dė · dė̃dės
+0548_dede_s	human	media/audio/0548_dede_s.mp3	Dėdė atvažiuoja rytoj.
+0549_teta	human	media/audio/0549_teta.mp3	tetà · tetõs
+0549_teta_s	human	media/audio/0549_teta_s.mp3	Mano teta gyvena Kaune.
+0537_vis_dar	human	media/audio/0537_vis_dar.mp3	vìs dár
+0537_vis_dar_s	human	media/audio/0537_vis_dar_s.mp3	Aš vis dar laukiu.
+0528_atleisti	human	media/audio/0528_atleisti.mp3	atléisti · atléidžia · atléido
+0528_atleisti_s	human	media/audio/0528_atleisti_s.mp3	Atleiskite, kur čia paštas?
+0542_dar_ko_nors	human	media/audio/0542_dar_ko_nors.mp3	Dar kõ nors?
+0545_atrodo	human	media/audio/0545_atrodo.mp3	atródo
+0553_patiekalas	human	media/audio/0553_patiekalas.mp3	pãtiekalas · pãtiekalo
+0538_kokia	human	media/audio/0538_kokia.mp3	kokià
+0538_kokia_s	human	media/audio/0538_kokia_s.mp3	Kokia šiandien diena?
+0546_jeigu	human	media/audio/0546_jeigu.mp3	jéigu
+0546_jeigu_s	human	media/audio/0546_jeigu_s.mp3	Jeigu nori, ateik.
+0547_nieko	human	media/audio/0547_nieko.mp3	niẽko
+0547_nieko_s	human	media/audio/0547_nieko_s.mp3	Nieko nematau.
+0557_palikti	human	media/audio/0557_palikti.mp3	palìkti · paliẽka · palìko
+0557_palikti_s	human	media/audio/0557_palikti_s.mp3	Palikau raktus namie.
+0550_bet_kada	human	media/audio/0550_bet_kada.mp3	bèt kadà
+0550_bet_kada_s	human	media/audio/0550_bet_kada_s.mp3	Skambink bet kada.
+0555_uzdarytas	human	media/audio/0555_uzdarytas.mp3	uždarýtas · uždaryta
+0562_pilvas	human	media/audio/0562_pilvas.mp3	pil̃vas · pil̃vo
+0561_sekunde_s	human	media/audio/0561_sekunde_s.mp3	Tik vieną sekundę!
+0558_pagalba	human	media/audio/0558_pagalba.mp3	pagálba · pagálbos
+0558_pagalba_s	human	media/audio/0558_pagalba_s.mp3	Man reikia pagalbos.
+0559_puikus	human	media/audio/0559_puikus.mp3	puikùs · puikì
+0559_puikus_s	human	media/audio/0559_puikus_s.mp3	Puikus oras!
+0560_kada_nors	human	media/audio/0560_kada_nors.mp3	kadà nórs
+0560_kada_nors_s	human	media/audio/0560_kada_nors_s.mp3	Ar buvai kada nors Nidoje?
+0568_kate_sedi_ant_stalo	human	media/audio/0568_kate_sedi_ant_stalo.mp3	Katė sėdi ant stalo.
+0564_ieiti	human	media/audio/0564_ieiti.mp3	įeĩti
+0565_prasom_uzrasyti	human	media/audio/0565_prasom_uzrasyti.mp3	Prãšom užrašýti
+0567_aikste	human	media/audio/0567_aikste.mp3	aikštė̃ · aikštė̃s
+0569_be	human	media/audio/0569_be.mp3	bè
+0569_be_s	human	media/audio/0569_be_s.mp3	Arbata be cukraus, prašau.
+0748_skaicius	human	media/audio/0748_skaicius.mp3	skaĩčius · skaĩčiaus
+0748_skaicius_s	human	media/audio/0748_skaicius_s.mp3	Tai didelis skaičius.
+0514_amzius_s	human	media/audio/0514_amzius_s.mp3	Amžius – tik skaičius.
+0570_nei	human	media/audio/0570_nei.mp3	neĩ
+0570_nei_s	human	media/audio/0570_nei_s.mp3	Kaunas mažesnis nei Vilnius.
+0571_todel	human	media/audio/0571_todel.mp3	todė̃l
+0571_todel_s	human	media/audio/0571_todel_s.mp3	Lijo, todėl likau namie.
+0584_palaukite_minutele	human	media/audio/0584_palaukite_minutele.mp3	Palaukite minutėlę.
+0585_centas	human	media/audio/0585_centas.mp3	ceñtas · ceñto
+0598_laipsnis	human	media/audio/0598_laipsnis.mp3	láipsnis · láipsnio
+0590_minute_s	human	media/audio/0590_minute_s.mp3	Palaukite penkias minutes.
+0592_keletas	human	media/audio/0592_keletas.mp3	kẽletas
+0592_keletas_s	human	media/audio/0592_keletas_s.mp3	Laukiau keletą minučių.
+0579_testi	human	media/audio/0579_testi.mp3	tę̃sti
+0579_testi_s	human	media/audio/0579_testi_s.mp3	Tęskite, prašau.
+0572_berniukas_raso_laiska	human	media/audio/0572_berniukas_raso_laiska.mp3	Berniukas rašo laišką.
+0581_toli	human	media/audio/0581_toli.mp3	tõli
+0581_toli_s	human	media/audio/0581_toli_s.mp3	Stotis toli?
+0582_arti	human	media/audio/0582_arti.mp3	árti
+0582_arti_s	human	media/audio/0582_arti_s.mp3	Stotis arti.
+0589_klase	human	media/audio/0589_klase.mp3	klãsė · klãsės
+0591_pries	human	media/audio/0591_pries.mp3	priẽš
+0591_pries_s	human	media/audio/0591_pries_s.mp3	Atvažiavau prieš metus.
+0594_parodyti	human	media/audio/0594_parodyti.mp3	paródyti
+0594_parodyti_s	human	media/audio/0594_parodyti_s.mp3	Parodyk man nuotraukas.
+0580_kaire	human	media/audio/0580_kaire.mp3	kairė̃ · kairė̃s
+0580_kaire_s	human	media/audio/0580_kaire_s.mp3	Eikite į kairę.
+0593_man_patinka_muzika	human	media/audio/0593_man_patinka_muzika.mp3	Man patinka muzika.
+0601_reiksti	human	media/audio/0601_reiksti.mp3	réikšti
+0601_reiksti_s	human	media/audio/0601_reiksti_s.mp3	Ką tai reiškia?
+0609_litas	human	media/audio/0609_litas.mp3	lìtas · lìto
+0602_ar_galetumete	human	media/audio/0602_ar_galetumete.mp3	Ar̃ galė́tumėte…?
+0602_ar_galetumete_s	human	media/audio/0602_ar_galetumete_s.mp3	Ar galėtumėte man padėti?
+0604_stai	human	media/audio/0604_stai.mp3	štaĩ
+0604_stai_s	human	media/audio/0604_stai_s.mp3	Štai tavo raktai.
+0583_informacija	human	media/audio/0583_informacija.mp3	informãcija · informãcijos
+0583_informacija_s	human	media/audio/0583_informacija_s.mp3	Kur gauti informacijos?
+0612_moketi	human	media/audio/0612_moketi.mp3	mokė́ti · móka · mokė́jo
+0612_moketi_s	human	media/audio/0612_moketi_s.mp3	Aš moku plaukti.
+0605_sita	human	media/audio/0605_sita.mp3	šità
+0605_sita_s	human	media/audio/0605_sita_s.mp3	Šita kėdė laisva.
+0670_mokinys	human	media/audio/0670_mokinys.mp3	mokinỹs · mókinio
+0617_raudonas	human	media/audio/0617_raudonas.mp3	raudónas · raudona

@@ -1,0 +1,484 @@
+key	dest	level	status	said	english	file
+0120_grizti	media/audio/0120_grizti.mp3	A1	new	grį̃žti	to return	0120_grizti.webm
+0121_noreciau	media/audio/0121_noreciau.mp3	A1	new	Norė́čiau…	I would like…	0121_noreciau.webm
+0124_as_noriu_arbatos	media/audio/0124_as_noriu_arbatos.mp3	A1	new	Aš noriu arbatos.	I want (some) tea.	0124_as_noriu_arbatos.webm
+0125_ar_kalbate_angliskai	media/audio/0125_ar_kalbate_angliskai.mp3	A1	new	Ar kal̃bate ángliškai?	Do you speak English?	0125_ar_kalbate_angliskai.webm
+0126_su	media/audio/0126_su.mp3	A1	new	sù	with	0126_su.webm
+0126_su_s	media/audio/0126_su_s.mp3	A1	new	Geriu kavą su pienu.	I drink coffee with milk.	0126_su_s.webm
+0127_as_esu_mokytojas	media/audio/0127_as_esu_mokytojas.mp3	A1	new	Aš esu mokytojas.	I am a teacher.	0127_as_esu_mokytojas.webm
+0128_tureti	media/audio/0128_tureti.mp3	A1	new	turė́ti	to have	0128_tureti.webm
+0128_tureti_s	media/audio/0128_tureti_s.mp3	A1	new	Aš turiu du vaikus.	I have two children.	0128_tureti_s.webm
+0129_is	media/audio/0129_is.mp3	A1	new	ìš	from, out of	0129_is.webm
+0129_is_s	media/audio/0129_is_s.mp3	A1	new	Jis yra iš Kauno.	He is from Kaunas.	0129_is_s.webm
+0132_kaip_sekasi	media/audio/0132_kaip_sekasi.mp3	A1	new	Kaip sẽkasi?	How are you?	0132_kaip_sekasi.webm
+0135_cia	media/audio/0135_cia.mp3	A1	new	čià	here	0135_cia.webm
+0135_cia_s	media/audio/0135_cia_s.mp3	A1	new	Čia yra mano namas.	Here is my house.	0135_cia_s.webm
+0136_man_gerai	media/audio/0136_man_gerai.mp3	A1	new	Mán geraĩ	I'm fine	0136_man_gerai.webm
+0137_galeti	media/audio/0137_galeti.mp3	A1	new	galė́ti	to be able, can	0137_galeti.webm
+0137_galeti_s	media/audio/0137_galeti_s.mp3	A1	new	Ar galite man padėti?	Can you help me?	0137_galeti_s.webm
+0138_kieno_s	media/audio/0138_kieno_s.mp3	A1	new	Kieno tai knyga?	Whose book is this?	0138_kieno_s.webm
+0139_kam	media/audio/0139_kam.mp3	A1	new	kám	to whom; what for (dat. of kas)	0139_kam.webm
+0139_kam_s	media/audio/0139_kam_s.mp3	A1	new	Kam tu skambini?	Who are you calling? (to whom)	0139_kam_s.webm
+0140_ko	media/audio/0140_ko.mp3	A1	new	kõ	of what, what (gen. of kas)	0140_ko.webm
+0140_ko_s	media/audio/0140_ko_s.mp3	A1	new	Ko norite, arbatos ar kavos?	What would you like, tea or coffee?	0140_ko_s.webm
+0143_nezinau	media/audio/0143_nezinau.mp3	A1	new	Nežinaũ	I don't know	0143_nezinau.webm
+0146_jis_dirba_ligonineje	media/audio/0146_jis_dirba_ligonineje.mp3	A1	new	Jis dirba ligoninėje.	He works in the hospital.	0146_jis_dirba_ligonineje.webm
+0147_mano_vardas	media/audio/0147_mano_vardas.mp3	A1	new	Mãno var̃das…	My name is…	0147_mano_vardas.webm
+0148_mano_vardas_yra_jonas	media/audio/0148_mano_vardas_yra_jonas.mp3	A1	new	Mano vardas yra Jonas.	My name is Jonas.	0148_mano_vardas_yra_jonas.webm
+0149_jos	media/audio/0149_jos.mp3	A1	new	jõs	her	0149_jos.webm
+0149_jos_s	media/audio/0149_jos_s.mp3	A1	new	Jos vardas Rūta.	Her name is Rūta.	0149_jos_s.webm
+0150_kaip_s	media/audio/0150_kaip_s.mp3	A1	new	Kaip tau sekasi?	How are you doing?	0150_kaip_s.webm
+0151_ar	media/audio/0151_ar.mp3	A1	new	ar̃	whether	0151_ar.webm
+0151_ar_s	media/audio/0151_ar_s.mp3	A1	new	Ar tu kalbi angliškai?	Do you speak English?	0151_ar_s.webm
+0153_sirgti	media/audio/0153_sirgti.mp3	A1	new	sir̃gti	to be ill	0153_sirgti.webm
+0154_as_esu_is	media/audio/0154_as_esu_is.mp3	A1	new	Àš esù ìš…	I am from…	0154_as_esu_is.webm
+0155_saskaita	media/audio/0155_saskaita.mp3	A1	new	są́skaita · sąskaitos	bill (restaurant); account (bank)	0155_saskaita.webm
+0157_as_turiu_broli	media/audio/0157_as_turiu_broli.mp3	A1	new	Aš turiu brolį.	I have a brother.	0157_as_turiu_broli.webm
+0158_labanakt	media/audio/0158_labanakt.mp3	A1	new	Labãnakt	Good night	0158_labanakt.webm
+0159_jau	media/audio/0159_jau.mp3	A1	new	jaũ	already	0159_jau.webm
+0159_jau_s	media/audio/0159_jau_s.mp3	A1	new	Vaikas jau miega.	The child is already asleep.	0159_jau_s.webm
+0160_ju	media/audio/0160_ju.mp3	A1	new	jų̃	their	0160_ju.webm
+0160_ju_s	media/audio/0160_ju_s.mp3	A1	new	Jų vaikai jau dideli.	Their children are already grown up.	0160_ju_s.webm
+0161_noreti	media/audio/0161_noreti.mp3	A1	new	norė́ti	to want	0161_noreti.webm
+0161_noreti_s	media/audio/0161_noreti_s.mp3	A1	new	Noriu valgyti.	I want to eat.	0161_noreti_s.webm
+0162_jai	media/audio/0162_jai.mp3	A1	new	jái	to her (dative)	0162_jai.webm
+0162_jai_s	media/audio/0162_jai_s.mp3	A1	new	Padovanojau jai gėlių.	I gave her flowers.	0162_jai_s.webm
+0165_iki_pasimatymo	media/audio/0165_iki_pasimatymo.mp3	A1	new	Ikì pasimãtymo	See you	0165_iki_pasimatymo.webm
+0167_susitikti	media/audio/0167_susitikti.mp3	A1	new	susitìkti	to meet	0167_susitikti.webm
+0168_ji	media/audio/0168_ji.mp3	A1	new	jį̃	him, it (accusative)	0168_ji.webm
+0168_ji_s	media/audio/0168_ji_s.mp3	A1	new	Aš jį matau.	I see him.	0168_ji_s.webm
+0169_atleiskite	media/audio/0169_atleiskite.mp3	A1	new	Atléiskite	Excuse me (formal)	0169_atleiskite.webm
+0170_dabar_s	media/audio/0170_dabar_s.mp3	A1	new	Dabar esu namie.	I am at home now.	0170_dabar_s.webm
+0171_kad	media/audio/0171_kad.mp3	A1	new	kàd	that (conj)	0171_kad.webm
+0171_kad_s	media/audio/0171_kad_s.mp3	A1	new	Manau, kad jis namie.	I think that he is at home.	0171_kad_s.webm
+0172_diena_s	media/audio/0172_diena_s.mp3	A1	new	Gražios dienos!	Have a nice day!	0172_diena_s.webm
+0173_man	media/audio/0173_man.mp3	A1	new	mán	to me (dative)	0173_man.webm
+0173_man_s	media/audio/0173_man_s.mp3	A1	new	Man šalta.	I am cold. (to me it is cold)	0173_man_s.webm
+0176_malonu_susipazinti	media/audio/0176_malonu_susipazinti.mp3	A1	new	Malonù susipažìnti	Nice to meet you	0176_malonu_susipazinti.webm
+0181_mane	media/audio/0181_mane.mp3	A1	new	manè	me (accusative)	0181_mane.webm
+0181_mane_s	media/audio/0181_mane_s.mp3	A1	new	Ar mane girdi?	Can you hear me?	0181_mane_s.webm
+0182_zinoti	media/audio/0182_zinoti.mp3	A1	new	žinóti	to know (a fact)	0182_zinoti.webm
+0182_zinoti_s	media/audio/0182_zinoti_s.mp3	A1	new	Aš nežinau.	I do not know.	0182_zinoti_s.webm
+0183_jis_vaziuoja_autobusu	media/audio/0183_jis_vaziuoja_autobusu.mp3	A1	new	Jis važiuoja autobusu.	He is going by bus.	0183_jis_vaziuoja_autobusu.webm
+0184_lietuviu_kalba	media/audio/0184_lietuviu_kalba.mp3	A1	new	lietùvių kalbà	Lithuanian (language)	0184_lietuviu_kalba.webm
+0184_lietuviu_kalba_s	media/audio/0184_lietuviu_kalba_s.mp3	A1	new	Mokausi lietuvių kalbos.	I am learning Lithuanian.	0184_lietuviu_kalba_s.webm
+0185_dar	media/audio/0185_dar.mp3	A1	new	dár	still, yet	0185_dar.webm
+0185_dar_s	media/audio/0185_dar_s.mp3	A1	new	Aš dar nevalgiau.	I have not eaten yet.	0185_dar_s.webm
+0188_skaityti	media/audio/0188_skaityti.mp3	A1	new	skaitýti · skaĩto · skaĩtė	to read	0188_skaityti.webm
+0191_ar_galite_man_padeti	media/audio/0191_ar_galite_man_padeti.mp3	A1	new	Ar̃ gãlite mán padė́ti?	Can you help me?	0191_ar_galite_man_padeti.webm
+0192_per	media/audio/0192_per.mp3	A1	new	pèr	through, during	0192_per.webm
+0192_per_s	media/audio/0192_per_s.mp3	A1	new	Einame per tiltą.	We are walking across the bridge.	0192_per_s.webm
+0193_sis	media/audio/0193_sis.mp3	A1	new	šìs	this	0193_sis.webm
+0193_sis_s	media/audio/0193_sis_s.mp3	A1	new	Šis stalas per mažas.	This table is too small.	0193_sis_s.webm
+0194_ten	media/audio/0194_ten.mp3	A1	new	teñ	there	0194_ten.webm
+0194_ten_s	media/audio/0194_ten_s.mp3	A1	new	Stotis yra ten.	The station is over there.	0194_ten_s.webm
+0195_suprasti	media/audio/0195_suprasti.mp3	A1	new	supràsti	to understand	0195_suprasti.webm
+0195_suprasti_s	media/audio/0195_suprasti_s.mp3	A1	new	Ar supranti?	Do you understand?	0195_suprasti_s.webm
+0196_manyti	media/audio/0196_manyti.mp3	A1	new	manýti · mãno · mãnė	to think; reckon	0196_manyti.webm
+0196_manyti_s	media/audio/0196_manyti_s.mp3	A1	new	Manau, kad taip.	I think so.	0196_manyti_s.webm
+0198_ar_galite_pakartoti	media/audio/0198_ar_galite_pakartoti.mp3	A1	new	Ar gãlite pakartóti?	Could you repeat?	0198_ar_galite_pakartoti.webm
+0203_prasom_kalbeti_leciau	media/audio/0203_prasom_kalbeti_leciau.mp3	A1	new	Prãšom kalbė́ti lėčiaũ	Speak more slowly, please	0203_prasom_kalbeti_leciau.webm
+0204_kur_s	media/audio/0204_kur_s.mp3	A1	new	Kur yra stotis?	Where is the station?	0204_kur_s.webm
+0205_daug	media/audio/0205_daug.mp3	A1	new	daũg	a lot	0205_daug.webm
+0205_daug_s	media/audio/0205_daug_s.mp3	A1	new	Turiu daug darbo.	I have a lot of work.	0205_daug_s.webm
+0206_siandien_s	media/audio/0206_siandien_s.mp3	A1	new	Šiandien pirmadienis.	Today is Monday.	0206_siandien_s.webm
+0207_labai	media/audio/0207_labai.mp3	A1	new	labaĩ	very	0207_labai.webm
+0207_labai_s	media/audio/0207_labai_s.mp3	A1	new	Šiandien labai šalta.	It is very cold today.	0207_labai_s.webm
+0208_gyventi	media/audio/0208_gyventi.mp3	A1	new	gyvénti	to live (reside)	0208_gyventi.webm
+0208_gyventi_s	media/audio/0208_gyventi_s.mp3	A1	new	Aš gyvenu Vilniuje.	I live in Vilnius.	0208_gyventi_s.webm
+0209_kur_gyvenate	media/audio/0209_kur_gyvenate.mp3	A1	new	Kur gyvẽnate?	Where do you live?	0209_kur_gyvenate.webm
+0213_sauleta	media/audio/0213_sauleta.mp3	A1	new	saulė́ta	sunny	0213_sauleta.webm
+0214_cia_mano_draugas	media/audio/0214_cia_mano_draugas.mp3	A1	new	Čià (yrà) màno draũgas. / Susipažìnkite — taĩ…	This is… (introducing someone)	0214_cia_mano_draugas.webm
+0215_kas_s	media/audio/0215_kas_s.mp3	A1	new	Kas čia gyvena?	Who lives here?	0215_kas_s.webm
+0216_centras	media/audio/0216_centras.mp3	A1	new	ceñtras · centro	centre	0216_centras.webm
+0216_centras_s	media/audio/0216_centras_s.mp3	A1	new	Gyvenu miesto centre.	I live in the city centre.	0216_centras_s.webm
+0217_kuris_s	media/audio/0217_kuris_s.mp3	A1	new	Kuris autobusas važiuoja į centrą?	Which bus goes to the centre?	0217_kuris_s.webm
+0218_mes_gyvename_vilniuje	media/audio/0218_mes_gyvename_vilniuje.mp3	A1	new	Mes gyvename Vilniuje.	We live in Vilnius.	0218_mes_gyvename_vilniuje.webm
+0219_as_gyvenu_name	media/audio/0219_as_gyvenu_name.mp3	A1	new	Aš gyvenu name.	I live in a house.	0219_as_gyvenu_name.webm
+0220_ar_yra	media/audio/0220_ar_yra.mp3	A1	new	Ar̃ yrà…?	Is there…?	0220_ar_yra.webm
+0222_tetis	media/audio/0222_tetis.mp3	A1	new	tė̃tis · tėčio	dad	0222_tetis.webm
+0223_galvoti	media/audio/0223_galvoti.mp3	A1	replace-tts	galvóti · galvója · galvójo	think	0223_galvoti.webm
+0225_ar_turite	media/audio/0225_ar_turite.mp3	A1	new	Ar tùrite…?	Do you have…?	0225_ar_turite.webm
+0226_tave	media/audio/0226_tave.mp3	A1	new	tavè	you (accusative, sg)	0226_tave.webm
+0226_tave_s	media/audio/0226_tave_s.mp3	A1	new	Aš tave myliu.	I love you.	0226_tave_s.webm
+0227_tie	media/audio/0227_tie.mp3	A1	new	tiẽ	those	0227_tie.webm
+0227_tie_s	media/audio/0227_tie_s.mp3	A1	new	Tie žmonės laukia autobuso.	Those people are waiting for the bus.	0227_tie_s.webm
+0228_ta	media/audio/0228_ta.mp3	A1	new	tà	that (fem)	0228_ta.webm
+0228_ta_s	media/audio/0228_ta_s.mp3	A1	new	Ta moteris – mano mokytoja.	That woman is my teacher.	0228_ta_s.webm
+0229_metai_s	media/audio/0229_metai_s.mp3	A1	new	Man trisdešimt metų.	I am thirty years old.	0229_metai_s.webm
+0230_as_nesuprantu	media/audio/0230_as_nesuprantu.mp3	A1	new	Aš nesuprantu.	I do not understand.	0230_as_nesuprantu.webm
+0234_kinas	media/audio/0234_kinas.mp3	A1	new	kìnas · kino	cinema	0234_kinas.webm
+0236_koks_tavo	media/audio/0236_koks_tavo.mp3	A1	new	Kóks tàvo / jū́sų telefòno nùmeris?	What is your phone number?	0236_koks_tavo.webm
+0237_jusu	media/audio/0237_jusu.mp3	A1	new	jū́sų	your (pl)	0237_jusu.webm
+0237_jusu_s	media/audio/0237_jusu_s.mp3	A1	new	Koks jūsų telefono numeris?	What is your phone number?	0237_jusu_s.webm
+0238_koks_s	media/audio/0238_koks_s.mp3	A1	new	Koks tavo adresas?	What is your address?	0238_koks_s.webm
+0239_orai	media/audio/0239_orai.mp3	A1	new	oraĩ	weather (NB oras = air, weather)	0239_orai.webm
+0239_orai_s	media/audio/0239_orai_s.mp3	A1	new	Kokie šiandien orai?	What is the weather like today?	0239_orai_s.webm
+0240_patikti	media/audio/0240_patikti.mp3	A1	new	patìkti	to like	0240_patikti.webm
+0240_patikti_s	media/audio/0240_patikti_s.mp3	A1	new	Man patinka šis miestas.	I like this city.	0240_patikti_s.webm
+0241_o	media/audio/0241_o.mp3	A1	new	õ	and; but	0241_o.webm
+0241_o_s	media/audio/0241_o_s.mp3	A1	new	Aš dirbu, o jis mokosi.	I work, and (whereas) he studies.	0241_o_s.webm
+0248_reiketi	media/audio/0248_reiketi.mp3	A1	new	reikė́ti	to need (impersonal)	0248_reiketi.webm
+0248_reiketi_s	media/audio/0248_reiketi_s.mp3	A1	new	Man reikia pagalbos.	I need help.	0248_reiketi_s.webm
+0249_jam	media/audio/0249_jam.mp3	A1	new	jám	to him (dative)	0249_jam.webm
+0249_jam_s	media/audio/0249_jam_s.mp3	A1	new	Jam reikia pagalbos.	He needs help.	0249_jam_s.webm
+0250_dar	media/audio/0250_dar.mp3	A1	new	dár	else (something else)	0250_dar.webm
+0250_dar_s	media/audio/0250_dar_s.mp3	A1	new	Ką dar norėtumėte?	What else would you like?	0250_dar_s.webm
+0251_man_reikia_vandens	media/audio/0251_man_reikia_vandens.mp3	A1	new	Man reikia vandens.	I need water.	0251_man_reikia_vandens.webm
+0252_jums	media/audio/0252_jums.mp3	A1	new	jùms	to you (dative, pl/formal)	0252_jums.webm
+0252_jums_s	media/audio/0252_jums_s.mp3	A1	new	Ko jums reikia?	What do you need?	0252_jums_s.webm
+0258_is_kur_jus	media/audio/0258_is_kur_jus.mp3	A1	new	Ìš kur jū̃s?	Where are you from?	0258_is_kur_jus.webm
+0259_bet	media/audio/0259_bet.mp3	A1	new	bèt	but	0259_bet.webm
+0259_bet_s	media/audio/0259_bet_s.mp3	A1	new	Noriu eiti, bet neturiu laiko.	I want to go, but I have no time.	0259_bet_s.webm
+0260_siandien_salta	media/audio/0260_siandien_salta.mp3	A1	new	Šiandien šalta.	It is cold today.	0260_siandien_salta.webm
+0261_valanda_s	media/audio/0261_valanda_s.mp3	A1	new	Laukiu autobuso jau vieną valandą.	I have been waiting for the bus for an hour already.	0261_valanda_s.webm
+0262_euras	media/audio/0262_euras.mp3	A1	new	eũras · euro	euro	0262_euras.webm
+0262_euras_s	media/audio/0262_euras_s.mp3	A1	new	Tai kainuoja du eurus.	That costs two euros.	0262_euras_s.webm
+0263_tik	media/audio/0263_tik.mp3	A1	new	tìk	only	0263_tik.webm
+0263_tik_s	media/audio/0263_tik_s.mp3	A1	new	Turiu tik penkis eurus.	I have only five euros.	0263_tik_s.webm
+0264_viskas_gerai	media/audio/0264_viskas_gerai.mp3	A1	new	Vìskas geraĩ	Everything is fine / all good	0264_viskas_gerai.webm
+0270_gerai	media/audio/0270_gerai.mp3	A1	new	geraĩ	well	0270_gerai.webm
+0270_gerai_s	media/audio/0270_gerai_s.mp3	A1	new	Jis gerai kalba lietuviškai.	He speaks Lithuanian well.	0270_gerai_s.webm
+0271_ar_tu_kalbi_lietuviskai	media/audio/0271_ar_tu_kalbi_lietuviskai.mp3	A1	new	Ar tu kalbi lietuviškai?	Do you speak Lithuanian?	0271_ar_tu_kalbi_lietuviskai.webm
+0272_visas	media/audio/0272_visas.mp3	A1	new	vìsas	all/every	0272_visas.webm
+0272_visas_s	media/audio/0272_visas_s.mp3	A1	new	Aš dirbau visą dieną.	I worked all day.	0272_visas_s.webm
+0273_megti	media/audio/0273_megti.mp3	A1	new	mė́gti	to love/like doing	0273_megti.webm
+0273_megti_s	media/audio/0273_megti_s.mp3	A1	new	Mėgstu skaityti.	I like reading.	0273_megti_s.webm
+0274_kodel_s	media/audio/0274_kodel_s.mp3	A1	new	Kodėl tu vėluoji?	Why are you late?	0274_kodel_s.webm
+0276_ieskoti	media/audio/0276_ieskoti.mp3	A1	new	ieškóti · íeško · ieškójo	to look for (+gen)	0276_ieskoti.webm
+0277_pavarges	media/audio/0277_pavarges.mp3	A1	new	pavar̃gęs · pavar̃gusi	tired	0277_pavarges.webm
+0280_ka_veiki	media/audio/0280_ka_veiki.mp3	A1	new	Ką̃ veikì?	What are you doing? / What are you up to?	0280_ka_veiki.webm
+0281_tau	media/audio/0281_tau.mp3	A1	new	táu	to you (dative, sg)	0281_tau.webm
+0281_tau_s	media/audio/0281_tau_s.mp3	A1	new	Ar tau patinka?	Do you like it?	0281_tau_s.webm
+0282_paskambinti	media/audio/0282_paskambinti.mp3	A1	new	paskam̃binti	to phone (perf.)	0282_paskambinti.webm
+0282_paskambinti_s	media/audio/0282_paskambinti_s.mp3	A1	new	Paskambink man vakare.	Call me in the evening.	0282_paskambinti_s.webm
+0283_ka	media/audio/0283_ka.mp3	A1	new	ką̃	what (acc)	0283_ka.webm
+0283_ka_s	media/audio/0283_ka_s.mp3	A1	new	Ką tu veiki?	What are you doing?	0283_ka_s.webm
+0284_kur_yra_stotis	media/audio/0284_kur_yra_stotis.mp3	A1	new	Kur yra stotis?	Where is the station?	0284_kur_yra_stotis.webm
+0285_atsakymas	media/audio/0285_atsakymas.mp3	A1	new	atsãkymas · atsãkymo	answer	0285_atsakymas.webm
+0285_atsakymas_s	media/audio/0285_atsakymas_s.mp3	A1	new	Teisingas atsakymas!	Correct answer!	0285_atsakymas_s.webm
+0286_suprantu	media/audio/0286_suprantu.mp3	A1	new	Suprantù	I understand	0286_suprantu.webm
+0288_keltis	media/audio/0288_keltis.mp3	A1	new	kéltis	to wake up	0288_keltis.webm
+0292_zmones	media/audio/0292_zmones.mp3	A1	new	žmónės	people (pl. of žmogus)	0292_zmones.webm
+0292_zmones_s	media/audio/0292_zmones_s.mp3	A1	new	Gatvėje daug žmonių.	There are many people in the street.	0292_zmones_s.webm
+0293_gauti	media/audio/0293_gauti.mp3	A1	new	gáuti · gáuna · gãvo	to get; receive	0293_gauti.webm
+0293_gauti_s	media/audio/0293_gauti_s.mp3	A1	new	Gavau laišką.	I received a letter.	0293_gauti_s.webm
+0294_bet_kas	media/audio/0294_bet_kas.mp3	A1	new	bèt kàs	anything; anyone	0294_bet_kas.webm
+0294_bet_kas_s	media/audio/0294_bet_kas_s.mp3	A1	new	Tai gali padaryti bet kas.	Anyone can do that.	0294_bet_kas_s.webm
+0295_rytoj_s	media/audio/0295_rytoj_s.mp3	A1	new	Rytoj nedirbu.	Tomorrow I am not working.	0295_rytoj_s.webm
+0296_idomus	media/audio/0296_idomus.mp3	A1	new	įdomùs · įdomì	interesting	0296_idomus.webm
+0296_idomus_s	media/audio/0296_idomus_s.mp3	A1	new	Knyga labai įdomi.	The book is very interesting.	0296_idomus_s.webm
+0297_padekite	media/audio/0297_padekite.mp3	A1	new	Padė́kite!	Help!	0297_padekite.webm
+0299_muzika	media/audio/0299_muzika.mp3	A1	replace-tts	mùzika · mùzikos	music	0299_muzika.webm
+0302_koks_jusu_vardas	media/audio/0302_koks_jusu_vardas.mp3	A1	new	Kóks jū́sų var̃das?	What is your name?	0302_koks_jusu_vardas.webm
+0303_stotis_yra_ten	media/audio/0303_stotis_yra_ten.mp3	A1	new	Stotis yra ten.	The station is over there.	0303_stotis_yra_ten.webm
+0304_savo	media/audio/0304_savo.mp3	A1	new	sàvo	one's own	0304_savo.webm
+0304_savo_s	media/audio/0304_savo_s.mp3	A1	new	Aš myliu savo šeimą.	I love my (own) family.	0304_savo_s.webm
+0305_ateiti	media/audio/0305_ateiti.mp3	A1	new	ateĩti · ateĩna · atė̃jo	to come (on foot)	0305_ateiti.webm
+0305_ateiti_s	media/audio/0305_ateiti_s.mp3	A1	new	Ateik rytoj.	Come tomorrow.	0305_ateiti_s.webm
+0306_tikrai	media/audio/0306_tikrai.mp3	A1	new	tikraĩ	really	0306_tikrai.webm
+0306_tikrai_s	media/audio/0306_tikrai_s.mp3	A1	new	Aš tikrai ateisiu.	I will definitely come.	0306_tikrai_s.webm
+0307_daryti	media/audio/0307_daryti.mp3	A1	new	darýti · dãro · dãrė	to do, make	0307_daryti.webm
+0307_daryti_s	media/audio/0307_daryti_s.mp3	A1	new	Ką darai?	What are you doing?	0307_daryti_s.webm
+0308_kiek_jums_metu	media/audio/0308_kiek_jums_metu.mp3	A1	new	Kíek jùms mẽtų?	How old are you? (formal)	0308_kiek_jums_metu.webm
+0313_kuo_dirbate	media/audio/0313_kuo_dirbate.mp3	A1	new	Kuõ dìrbate?	What do you do (for work)?	0313_kuo_dirbate.webm
+0314_visai	media/audio/0314_visai.mp3	A1	new	vìsai	completely; quite	0314_visai.webm
+0314_visai_s	media/audio/0314_visai_s.mp3	A1	new	Visai nešalta.	It is not cold at all.	0314_visai_s.webm
+0315_del	media/audio/0315_del.mp3	A1	new	dė̃l	because of	0315_del.webm
+0315_del_s	media/audio/0315_del_s.mp3	A1	new	Vėluoju dėl lietaus.	I am late because of the rain.	0315_del_s.webm
+0316_vakar_s	media/audio/0316_vakar_s.mp3	A1	new	Vakar buvau kine.	Yesterday I was at the cinema.	0316_vakar_s.webm
+0317_prasyti	media/audio/0317_prasyti.mp3	A1	new	prašýti · prãšo · prãšė	to ask for; request	0317_prasyti.webm
+0317_prasyti_s	media/audio/0317_prasyti_s.mp3	A1	new	Prašau pagalbos.	I ask for help.	0317_prasyti_s.webm
+0318_laikas_s	media/audio/0318_laikas_s.mp3	A1	new	Neturiu laiko.	I have no time.	0318_laikas_s.webm
+0320_klausimas	media/audio/0320_klausimas.mp3	A1	new	kláusimas · kláusimo	question	0320_klausimas.webm
+0322_tualetas	media/audio/0322_tualetas.mp3	A1	new	tualètas · tualèto	toilet	0322_tualetas.webm
+0325_apie	media/audio/0325_apie.mp3	A1	new	apiẽ	about	0325_apie.webm
+0325_apie_s	media/audio/0325_apie_s.mp3	A1	new	Kalbame apie orą.	We are talking about the weather.	0325_apie_s.webm
+0326_kai	media/audio/0326_kai.mp3	A1	new	kaĩ	when (conj)	0326_kai.webm
+0326_kai_s	media/audio/0326_kai_s.mp3	A1	new	Kai grįšiu, paskambinsiu.	When I get back, I will call.	0326_kai_s.webm
+0327_per	media/audio/0327_per.mp3	A1	new	pèr	too (excessively)	0327_per.webm
+0327_per_s	media/audio/0327_per_s.mp3	A1	new	Einame per tiltą.	We are walking across the bridge.	0327_per_s.webm
+0328_atrodyti	media/audio/0328_atrodyti.mp3	A1	new	atródyti	to seem	0328_atrodyti.webm
+0328_atrodyti_s	media/audio/0328_atrodyti_s.mp3	A1	new	Tu atrodai pavargęs.	You look tired.	0328_atrodyti_s.webm
+0329_kai_kas	media/audio/0329_kai_kas.mp3	A1	new	kaĩ kàs	something; some people	0329_kai_kas.webm
+0329_kai_kas_s	media/audio/0329_kai_kas_s.mp3	A1	new	Kai kas jau išėjo.	Some people have already left.	0329_kai_kas_s.webm
+0334_galima	media/audio/0334_galima.mp3	A1	new	Gãlima. / Prãšom.	Yes, you may. / Go ahead.	0334_galima.webm
+0337_kai_kuris	media/audio/0337_kai_kuris.mp3	A1	new	kaĩ kurìs	some (masc)	0337_kai_kuris.webm
+0337_kai_kuris_s	media/audio/0337_kai_kuris_s.mp3	A1	new	Kai kurie žmonės mėgsta žiemą.	Some people like winter.	0337_kai_kuris_s.webm
+0338_svarbus	media/audio/0338_svarbus.mp3	A1	new	svarbùs · svarbì	important	0338_svarbus.webm
+0338_svarbus_s	media/audio/0338_svarbus_s.mp3	A1	new	Tai labai svarbu.	That is very important.	0338_svarbus_s.webm
+0339_bet_kur	media/audio/0339_bet_kur.mp3	A1	new	bèt kur̃	anywhere	0339_bet_kur.webm
+0339_bet_kur_s	media/audio/0339_bet_kur_s.mp3	A1	new	Galime susitikti bet kur.	We can meet anywhere.	0339_bet_kur_s.webm
+0336_aukstas	media/audio/0336_aukstas.mp3	A1	new	áukštas · áukšto	storey, floor (of a building)	0336_aukstas.webm
+0336_aukstas_s	media/audio/0336_aukstas_s.mp3	A1	new	Gyvenu trečiame aukšte.	I live on the third floor.	0336_aukstas_s.webm
+0340_padaryti	media/audio/0340_padaryti.mp3	A1	new	padarýti · padãro · padãrė	to do; make (perf.)	0340_padaryti.webm
+0340_padaryti_s	media/audio/0340_padaryti_s.mp3	A1	new	Ką padaryti?	What is to be done?	0340_padaryti_s.webm
+0344_atsargiai	media/audio/0344_atsargiai.mp3	A1	new	Atsargiaĩ!	Be careful!	0344_atsargiai.webm
+0347_kiek_s	media/audio/0347_kiek_s.mp3	A1	new	Kiek kainuoja bilietas?	How much does the ticket cost?	0347_kiek_s.webm
+0348_kitas	media/audio/0348_kitas.mp3	A1	new	kìtas	other; next	0348_kitas.webm
+0348_kitas_s	media/audio/0348_kitas_s.mp3	A1	new	Iki kito karto!	Until next time!	0348_kitas_s.webm
+0349_tiesa	media/audio/0349_tiesa.mp3	A1	new	tiesà · tiesõs	truth	0349_tiesa.webm
+0349_tiesa_s	media/audio/0349_tiesa_s.mp3	A1	new	Tai tiesa.	That is true. (the truth)	0349_tiesa_s.webm
+0351_kai_kur	media/audio/0351_kai_kur.mp3	A1	new	kaĩ kur̃	in some places	0351_kai_kur.webm
+0351_kai_kur_s	media/audio/0351_kai_kur_s.mp3	A1	new	Kai kur dar yra sniego.	In some places there is still snow.	0351_kai_kur_s.webm
+0350_pasakyti	media/audio/0350_pasakyti.mp3	A1	new	pasakýti · pasako · pasakė	to say (perf.)	0350_pasakyti.webm
+0350_pasakyti_s	media/audio/0350_pasakyti_s.mp3	A1	new	Pasakyk man tiesą.	Tell me the truth.	0350_pasakyti_s.webm
+0352_dekui	media/audio/0352_dekui.mp3	A1	new	dė̃kui	thanks	0352_dekui.webm
+0358_toks	media/audio/0358_toks.mp3	A1	new	tóks	such (masc)	0358_toks.webm
+0358_toks_s	media/audio/0358_toks_s.mp3	A1	new	Toks geras oras!	Such good weather!	0358_toks_s.webm
+0359_visada	media/audio/0359_visada.mp3	A1	new	visadà	always	0359_visada.webm
+0359_visada_s	media/audio/0359_visada_s.mp3	A1	new	Ji visada vėluoja.	She is always late.	0359_visada_s.webm
+0360_kainuoti	media/audio/0360_kainuoti.mp3	A1	new	kainúoti	to cost	0360_kainuoti.webm
+0360_kainuoti_s	media/audio/0360_kainuoti_s.mp3	A1	new	Kiek kainuoja duona?	How much does the bread cost?	0360_kainuoti_s.webm
+0361_sie	media/audio/0361_sie.mp3	A1	new	šiẽ	these	0361_sie.webm
+0361_sie_s	media/audio/0361_sie_s.mp3	A1	new	Šie batai man patinka.	I like these shoes.	0361_sie_s.webm
+0362_gyvenimas	media/audio/0362_gyvenimas.mp3	A1	new	gyvẽnimas · gyvẽnimo	life	0362_gyvenimas.webm
+0362_gyvenimas_s	media/audio/0362_gyvenimas_s.mp3	A1	new	Gyvenimas gražus.	Life is beautiful.	0362_gyvenimas_s.webm
+0366_kiek_valandu	media/audio/0366_kiek_valandu.mp3	A1	new	Kiek valandų̃?	What time is it?	0366_kiek_valandu.webm
+0331_kelinta_valanda	media/audio/0331_kelinta_valanda.mp3	A1	new	Kelintà valandà?	What time is it? (alternative)	0331_kelinta_valanda.webm
+0369_si	media/audio/0369_si.mp3	A1	new	šì	this (fem)	0369_si.webm
+0369_si_s	media/audio/0369_si_s.mp3	A1	new	Ši knyga įdomi.	This book is interesting.	0369_si_s.webm
+0371_niekada	media/audio/0371_niekada.mp3	A1	new	niekadà	never	0371_niekada.webm
+0371_niekada_s	media/audio/0371_niekada_s.mp3	A1	new	Aš niekada negeriu kavos.	I never drink coffee.	0371_niekada_s.webm
+0370_kurti	media/audio/0370_kurti.mp3	A1	new	kùrti · kùria · kū́rė	to create	0370_kurti.webm
+0370_kurti_s	media/audio/0370_kurti_s.mp3	A1	new	Ji kuria muziką.	She creates music.	0370_kurti_s.webm
+0372_ja	media/audio/0372_ja.mp3	A1	new	ją̃	her, it (accusative)	0372_ja.webm
+0372_ja_s	media/audio/0372_ja_s.mp3	A1	new	Mačiau ją vakar.	I saw her yesterday.	0372_ja_s.webm
+0380_jei	media/audio/0380_jei.mp3	A1	new	jéi	if	0380_jei.webm
+0380_jei_s	media/audio/0380_jei_s.mp3	A1	new	Jei bus šilta, eisime į mišką.	If it is warm, we will go to the forest.	0380_jei_s.webm
+0379_vairuotojas	media/audio/0379_vairuotojas.mp3	A1	new	vairúotojas · vairúotojo	driver	0379_vairuotojas.webm
+0373_baigti	media/audio/0373_baigti.mp3	A1	new	baĩgti	to finish	0373_baigti.webm
+0373_baigti_s	media/audio/0373_baigti_s.mp3	A1	new	Darbą baigiu penktą valandą.	I finish work at five.	0373_baigti_s.webm
+0392_vel	media/audio/0392_vel.mp3	A1	new	vė̃l	again	0392_vel.webm
+0392_vel_s	media/audio/0392_vel_s.mp3	A1	new	Jis vėl pavėlavo.	He was late again.	0392_vel_s.webm
+0383_vardas_s	media/audio/0383_vardas_s.mp3	A1	new	Mano vardas Jonas.	My name is Jonas.	0383_vardas_s.webm
+0381_lyti	media/audio/0381_lyti.mp3	A1	new	lýti · lỹja · lìjo	to rain	0381_lyti.webm
+0381_lyti_s	media/audio/0381_lyti_s.mp3	A1	new	Šiandien lyja.	It is raining today.	0381_lyti_s.webm
+0382_gal	media/audio/0382_gal.mp3	A1	new	gál	maybe	0382_gal.webm
+0382_gal_s	media/audio/0382_gal_s.mp3	A1	new	Gal rytoj lis.	Maybe it will rain tomorrow.	0382_gal_s.webm
+0387_linksmas	media/audio/0387_linksmas.mp3	A1	new	liñksmas · linksmà	cheerful	0387_linksmas.webm
+0388_vaistine	media/audio/0388_vaistine.mp3	A1	new	váistinė · váistinės	pharmacy	0388_vaistine.webm
+0389_ar_galima	media/audio/0389_ar_galima.mp3	A1	new	Ar̃ gãlima?	May I? / Is it allowed?	0389_ar_galima.webm
+0390_kaimas	media/audio/0390_kaimas.mp3	A1	new	káimas · káimo	village	0390_kaimas.webm
+0384_likti	media/audio/0384_likti.mp3	A1	new	lìkti · liẽka · lìko	to stay, remain	0384_likti.webm
+0384_likti_s	media/audio/0384_likti_s.mp3	A1	new	Šiandien lieku namie.	Today I am staying at home.	0384_likti_s.webm
+0391_namai	media/audio/0391_namai.mp3	A1	new	namaĩ	home (namie = at home, namo = homewards)	0391_namai.webm
+0391_namai_s	media/audio/0391_namai_s.mp3	A1	new	Mano namai – Vilniuje.	My home is in Vilnius.	0391_namai_s.webm
+0393_uz	media/audio/0393_uz.mp3	A1	new	ùž	behind, for	0393_uz.webm
+0393_uz_s	media/audio/0393_uz_s.mp3	A1	new	Mokykla yra už bažnyčios.	The school is behind the church.	0393_uz_s.webm
+0394_menuo_s	media/audio/0394_menuo_s.mp3	A1	new	Dirbu čia vieną mėnesį.	I have been working here for one month.	0394_menuo_s.webm
+0395_ji_eina_i_mokykla	media/audio/0395_ji_eina_i_mokykla.mp3	A1	new	Ji eina į mokyklą.	She is going to school.	0395_ji_eina_i_mokykla.webm
+0399_ka_reiskia	media/audio/0399_ka_reiskia.mp3	A1	new	Ką̃ réiškia…?	What does … mean?	0399_ka_reiskia.webm
+0401_mama	media/audio/0401_mama.mp3	A1	new	mamà · mamõs	mum; mom	0401_mama.webm
+0402_visi	media/audio/0402_visi.mp3	A1	new	visì	everyone	0402_visi.webm
+0402_visi_s	media/audio/0402_visi_s.mp3	A1	new	Visi jau atėjo.	Everyone has already come.	0402_visi_s.webm
+0403_imti	media/audio/0403_imti.mp3	A1	new	im̃ti · ìma · ė̃mė	to take	0403_imti.webm
+0403_imti_s	media/audio/0403_imti_s.mp3	A1	new	Imk obuolį.	Take an apple.	0403_imti_s.webm
+0404_kur_nors	media/audio/0404_kur_nors.mp3	A1	new	kur̃ nórs	somewhere	0404_kur_nors.webm
+0404_kur_nors_s	media/audio/0404_kur_nors_s.mp3	A1	new	Eikime kur nors valgyti.	Let us go somewhere to eat.	0404_kur_nors_s.webm
+0405_privaleti	media/audio/0405_privaleti.mp3	A1	new	privalė́ti	must, have to	0405_privaleti.webm
+0405_privaleti_s	media/audio/0405_privaleti_s.mp3	A1	new	Tu privalai eiti į mokyklą.	You must go to school.	0405_privaleti_s.webm
+0406_po	media/audio/0406_po.mp3	A1	new	põ	under	0406_po.webm
+0406_po_s	media/audio/0406_po_s.mp3	A1	new	Katė miega po stalu.	The cat is sleeping under the table.	0406_po_s.webm
+0410_ratas	media/audio/0410_ratas.mp3	A1	new	rãtas · rãto	wheel	0410_ratas.webm
+0418_pilnas	media/audio/0418_pilnas.mp3	A1	new	pìlnas · pilnà	full	0418_pilnas.webm
+0413_sestas	media/audio/0413_sestas.mp3	A1	new	šẽštas · šeštà	sixth	0413_sestas.webm
+0413_sestas_s	media/audio/0413_sestas_s.mp3	A1	new	Šiandien kovo šešta.	Today is the sixth of March.	0413_sestas_s.webm
+0414_septintas	media/audio/0414_septintas.mp3	A1	new	septiñtas · septintà	seventh	0414_septintas.webm
+0414_septintas_s	media/audio/0414_septintas_s.mp3	A1	new	Gyvenu septintame aukšte.	I live on the seventh floor.	0414_septintas_s.webm
+0415_astuntas	media/audio/0415_astuntas.mp3	A1	new	aštuñtas · aštuntà	eighth	0415_astuntas.webm
+0415_astuntas_s	media/audio/0415_astuntas_s.mp3	A1	new	Dabar aštunta valanda.	It is eight o'clock now.	0415_astuntas_s.webm
+0416_pradeti	media/audio/0416_pradeti.mp3	A1	new	pradė́ti	to begin	0416_pradeti.webm
+0416_pradeti_s	media/audio/0416_pradeti_s.mp3	A1	new	Pradedu dirbti aštuntą valandą.	I start work at eight.	0416_pradeti_s.webm
+0417_prasideti	media/audio/0417_prasideti.mp3	A1	new	prasidė́ti	to begin (intrans.)	0417_prasideti.webm
+0417_prasideti_s	media/audio/0417_prasideti_s.mp3	A1	new	Filmas prasideda aštuntą.	The film begins at eight.	0417_prasideti_s.webm
+0424_nuo	media/audio/0424_nuo.mp3	A1	new	nuõ	from (since)	0424_nuo.webm
+0424_nuo_s	media/audio/0424_nuo_s.mp3	A1	new	Dirbu nuo aštuntos valandos.	I work from eight o'clock.	0424_nuo_s.webm
+0425_ponas	media/audio/0425_ponas.mp3	A1	new	põnas · põno	Mr; sir	0425_ponas.webm
+0425_ponas_s	media/audio/0425_ponas_s.mp3	A1	new	Laba diena, pone!	Good day, sir!	0425_ponas_s.webm
+0426_devintas	media/audio/0426_devintas.mp3	A1	new	deviñtas · devintà	ninth	0426_devintas.webm
+0426_devintas_s	media/audio/0426_devintas_s.mp3	A1	new	Autobusas devintą valandą.	The bus is at nine o'clock.	0426_devintas_s.webm
+0427_tapti	media/audio/0427_tapti.mp3	A1	new	tàpti	to become	0427_tapti.webm
+0427_tapti_s	media/audio/0427_tapti_s.mp3	A1	new	Jis tapo gydytoju.	He became a doctor.	0427_tapti_s.webm
+0435_desimtas	media/audio/0435_desimtas.mp3	A1	new	dešim̃tas · dešimtà	tenth	0435_desimtas.webm
+0435_desimtas_s	media/audio/0435_desimtas_s.mp3	A1	new	Šiandien gegužės dešimta.	Today is the tenth of May.	0435_desimtas_s.webm
+0429_pastas	media/audio/0429_pastas.mp3	A1	new	pãštas · pãšto	post office	0429_pastas.webm
+0441_sumustinis	media/audio/0441_sumustinis.mp3	A1	new	sumuštìnis · sumuštìnio	sandwich	0441_sumustinis.webm
+0428_kada_s	media/audio/0428_kada_s.mp3	A1	new	Kada prasideda filmas?	When does the film start?	0428_kada_s.webm
+0436_daznai	media/audio/0436_daznai.mp3	A1	new	dažnaĩ	often	0436_daznai.webm
+0436_daznai_s	media/audio/0436_daznai_s.mp3	A1	new	Mes dažnai einame į kiną.	We often go to the cinema.	0436_daznai_s.webm
+0437_toks_pat	media/audio/0437_toks_pat.mp3	A1	new	tóks pàt · tokià pàt	same	0437_toks_pat.webm
+0437_toks_pat_s	media/audio/0437_toks_pat_s.mp3	A1	new	Mano paltas toks pat kaip tavo.	My coat is the same as yours.	0437_toks_pat_s.webm
+0438_planas	media/audio/0438_planas.mp3	A1	new	plãnas · plãno	plan	0438_planas.webm
+0438_planas_s	media/audio/0438_planas_s.mp3	A1	new	Koks tavo planas?	What is your plan?	0438_planas_s.webm
+0439_jaustis	media/audio/0439_jaustis.mp3	A1	new	jaũstis	to feel	0439_jaustis.webm
+0439_jaustis_s	media/audio/0439_jaustis_s.mp3	A1	new	Kaip jautiesi?	How do you feel?	0439_jaustis_s.webm
+0446_tavo	media/audio/0446_tavo.mp3	A1	new	tàvo	your (sg)	0446_tavo.webm
+0446_tavo_s	media/audio/0446_tavo_s.mp3	A1	new	Kur tavo raktai?	Where are your keys?	0446_tavo_s.webm
+0447_dalykas	media/audio/0447_dalykas.mp3	A1	new	dalỹkas · dalỹko	thing; matter; subject	0447_dalykas.webm
+0447_dalykas_s	media/audio/0447_dalykas_s.mp3	A1	new	Tai svarbus dalykas.	That is an important matter.	0447_dalykas_s.webm
+0448_bandyti	media/audio/0448_bandyti.mp3	A1	new	bandýti	to try	0448_bandyti.webm
+0448_bandyti_s	media/audio/0448_bandyti_s.mp3	A1	new	Bandau kalbėti lietuviškai.	I am trying to speak Lithuanian.	0448_bandyti_s.webm
+0449_dokumentas	media/audio/0449_dokumentas.mp3	A1	new	dokumèntas · dokumènto	document	0449_dokumentas.webm
+0449_dokumentas_s	media/audio/0449_dokumentas_s.mp3	A1	new	Jūsų dokumentus, prašau.	Your documents, please.	0449_dokumentas_s.webm
+0457_savaite_s	media/audio/0457_savaite_s.mp3	A1	new	Kitą savaitę važiuoju į Kauną.	Next week I am going to Kaunas.	0457_savaite_s.webm
+0450_niekas	media/audio/0450_niekas.mp3	A1	new	niẽkas	nobody	0450_niekas.webm
+0450_niekas_s	media/audio/0450_niekas_s.mp3	A1	new	Niekas nežino atsakymo.	Nobody knows the answer.	0450_niekas_s.webm
+0458_kalba	media/audio/0458_kalba.mp3	A1	new	kalbà · kalbõs	language; speech	0458_kalba.webm
+0458_kalba_s	media/audio/0458_kalba_s.mp3	A1	new	Lietuvių kalba sena.	The Lithuanian language is old.	0458_kalba_s.webm
+0459_viskas	media/audio/0459_viskas.mp3	A1	new	vìskas	everything	0459_viskas.webm
+0459_viskas_s	media/audio/0459_viskas_s.mp3	A1	new	Viskas gerai.	Everything is fine.	0459_viskas_s.webm
+0460_tiek	media/audio/0460_tiek.mp3	A1	new	tiẽk	so much	0460_tiek.webm
+0460_tiek_s	media/audio/0460_tiek_s.mp3	A1	new	Kodėl tiek brangu?	Why so expensive?	0460_tiek_s.webm
+0461_pats	media/audio/0461_pats.mp3	A1	new	pàts	himself; self (masc)	0461_pats.webm
+0461_pats_s	media/audio/0461_pats_s.mp3	A1	new	Aš pats tai padarysiu.	I will do it myself.	0461_pats_s.webm
+0466_svecias	media/audio/0466_svecias.mp3	A1	new	svẽčias · svẽčio	guest	0466_svecias.webm
+0468_atvaziuoti	media/audio/0468_atvaziuoti.mp3	A1	new	atvažiúoti	to arrive (by vehicle)	0468_atvaziuoti.webm
+0468_atvaziuoti_s	media/audio/0468_atvaziuoti_s.mp3	A1	new	Rytoj atvažiuoja svečiai.	Guests are arriving tomorrow.	0468_atvaziuoti_s.webm
+0469_po	media/audio/0469_po.mp3	A1	new	põ	after	0469_po.webm
+0469_po_s	media/audio/0469_po_s.mp3	A1	new	Katė miega po stalu.	The cat is sleeping under the table.	0469_po_s.webm
+0470_zodis	media/audio/0470_zodis.mp3	A1	new	žõdis · žõdžio	word	0470_zodis.webm
+0470_zodis_s	media/audio/0470_zodis_s.mp3	A1	new	Ką reiškia šis žodis?	What does this word mean?	0470_zodis_s.webm
+0471_iki	media/audio/0471_iki.mp3	A1	new	ikì	until, up to	0471_iki.webm
+0471_iki_s	media/audio/0471_iki_s.mp3	A1	new	Parduotuvė dirba iki dešimtos.	The shop is open until ten.	0471_iki_s.webm
+0472_saves	media/audio/0472_saves.mp3	A1	new	savę̃s	oneself (gen)	0472_saves.webm
+0472_saves_s	media/audio/0472_saves_s.mp3	A1	new	Pažiūrėk į save.	Look at yourself.	0472_saves_s.webm
+0477_labai_gerai	media/audio/0477_labai_gerai.mp3	A1	new	labaĩ geraĩ	very good	0477_labai_gerai.webm
+0479_tada	media/audio/0479_tada.mp3	A1	new	tadà	then	0479_tada.webm
+0479_tada_s	media/audio/0479_tada_s.mp3	A1	new	Tada aš buvau vaikas.	Then I was a child.	0479_tada_s.webm
+0480_tevas_skaito_knyga	media/audio/0480_tevas_skaito_knyga.mp3	A1	new	Tėvas skaito knygą.	Father is reading a book.	0480_tevas_skaito_knyga.webm
+0481_keli	media/audio/0481_keli.mp3	A1	new	kelì	several (masc)	0481_keli.webm
+0481_keli_s	media/audio/0481_keli_s.mp3	A1	new	Turiu kelis klausimus.	I have several questions.	0481_keli_s.webm
+0482_daiktas	media/audio/0482_daiktas.mp3	A1	new	dáiktas · dáikto	thing; object	0482_daiktas.webm
+0482_daiktas_s	media/audio/0482_daiktas_s.mp3	A1	new	Kas tai per daiktas?	What kind of thing is that?	0482_daiktas_s.webm
+0483_dalis	media/audio/0483_dalis.mp3	A1	new	dalìs · daliẽs	part	0483_dalis.webm
+0483_dalis_s	media/audio/0483_dalis_s.mp3	A1	new	Tai tik dalis darbo.	That is only part of the work.	0483_dalis_s.webm
+0490_net	media/audio/0490_net.mp3	A1	new	nèt	even (particle)	0490_net.webm
+0490_net_s	media/audio/0490_net_s.mp3	A1	new	Net vaikas tai supranta.	Even a child understands that.	0490_net_s.webm
+0491_prie	media/audio/0491_prie.mp3	A1	new	priẽ	near, by	0491_prie.webm
+0491_prie_s	media/audio/0491_prie_s.mp3	A1	new	Susitinkame prie stoties.	We meet by the station.	0491_prie_s.webm
+0492_musu	media/audio/0492_musu.mp3	A1	new	mū́sų	our	0492_musu.webm
+0492_musu_s	media/audio/0492_musu_s.mp3	A1	new	Mūsų namas yra prie upės.	Our house is by the river.	0492_musu_s.webm
+0494_mergina	media/audio/0494_mergina.mp3	A1	new	merginà · mergìnos	girl; young woman	0494_mergina.webm
+0494_mergina_s	media/audio/0494_mergina_s.mp3	A1	new	Jo mergina – studentė.	His girlfriend is a student.	0494_mergina_s.webm
+0501_nors	media/audio/0501_nors.mp3	A1	new	nórs	although	0501_nors.webm
+0501_nors_s	media/audio/0501_nors_s.mp3	A1	new	Jis atėjo, nors sirgo.	He came although he was ill.	0501_nors_s.webm
+0498_piktas	media/audio/0498_piktas.mp3	A1	replace-tts	pìktas · piktà	mean	0498_piktas.webm
+0503_mazai	media/audio/0503_mazai.mp3	A1	new	mažaĩ	a little	0503_mazai.webm
+0503_mazai_s	media/audio/0503_mazai_s.mp3	A1	new	Ji valgo mažai.	She eats little.	0503_mazai_s.webm
+0502_nes	media/audio/0502_nes.mp3	A1	new	nès	because	0502_nes.webm
+0502_nes_s	media/audio/0502_nes_s.mp3	A1	new	Likau namie, nes lijo.	I stayed home because it was raining.	0502_nes_s.webm
+0504_taip_pat	media/audio/0504_taip_pat.mp3	A1	new	taĩp pàt	also	0504_taip_pat.webm
+0504_taip_pat_s	media/audio/0504_taip_pat_s.mp3	A1	new	Aš taip pat mokausi lietuvių kalbos.	I am also learning Lithuanian.	0504_taip_pat_s.webm
+0493_ketinti	media/audio/0493_ketinti.mp3	A1	new	ketìnti	to intend	0493_ketinti.webm
+0493_ketinti_s	media/audio/0493_ketinti_s.mp3	A1	new	Vasarą ketinu važiuoti į Kauną.	In summer I intend to go to Kaunas.	0493_ketinti_s.webm
+0512_tas_pats	media/audio/0512_tas_pats.mp3	A1	new	tàs pàts	same	0512_tas_pats.webm
+0512_tas_pats_s	media/audio/0512_tas_pats_s.mp3	A1	new	Mes gyvename tame pačiame name.	We live in the same house.	0512_tas_pats_s.webm
+0509_viena_bilieta_i_kauna	media/audio/0509_viena_bilieta_i_kauna.mp3	A1	new	Víeną bìlietą į̃ Kaũną, prašaũ.	One ticket to Kaunas, please	0509_viena_bilieta_i_kauna.webm
+0510_vaistai	media/audio/0510_vaistai.mp3	A1	replace-tts	váistai · váistų	medicine	0510_vaistai.webm
+0513_mums	media/audio/0513_mums.mp3	A1	new	mùms	to us (dative)	0513_mums.webm
+0513_mums_s	media/audio/0513_mums_s.mp3	A1	new	Mums patinka Vilnius.	We like Vilnius.	0513_mums_s.webm
+0515_mus	media/audio/0515_mus.mp3	A1	new	mùs	us (accusative)	0515_mus.webm
+0515_mus_s	media/audio/0515_mus_s.mp3	A1	new	Ar matai mus?	Do you see us?	0515_mus_s.webm
+0505_istorija	media/audio/0505_istorija.mp3	A1	new	istòrija · istòrijos	story	0505_istorija.webm
+0505_istorija_s	media/audio/0505_istorija_s.mp3	A1	new	Skaitau įdomią istoriją.	I am reading an interesting story.	0505_istorija_s.webm
+0525_arba	media/audio/0525_arba.mp3	A1	new	arbà	or	0525_arba.webm
+0525_arba_s	media/audio/0525_arba_s.mp3	A1	new	Arbatos arba kavos?	Tea or coffee?	0525_arba_s.webm
+0516_kartu	media/audio/0516_kartu.mp3	A1	new	kartù	together	0516_kartu.webm
+0516_kartu_s	media/audio/0516_kartu_s.mp3	A1	new	Gyvename kartu su tėvais.	We live together with our parents.	0516_kartu_s.webm
+0521_prasom_pakartoti	media/audio/0521_prasom_pakartoti.mp3	A1	retake	Prãšom pakartóti	Please repeat	0521_prasom_pakartoti.webm
+0533_dirzas	media/audio/0533_dirzas.mp3	A1	new	dir̃žas · dir̃žo	belt	0533_dirzas.webm
+0524_pries	media/audio/0524_pries.mp3	A1	new	priẽš	before	0524_pries.webm
+0524_pries_s	media/audio/0524_pries_s.mp3	A1	new	Nusiplauk rankas prieš valgį.	Wash your hands before the meal.	0524_pries_s.webm
+0526_numeris	media/audio/0526_numeris.mp3	A1	new	nùmeris · nùmerio	number (phone, house, hotel room)	0526_numeris.webm
+0526_numeris_s	media/audio/0526_numeris_s.mp3	A1	new	Koks tavo telefono numeris?	What is your phone number?	0526_numeris_s.webm
+0527_kas_nors	media/audio/0527_kas_nors.mp3	A1	new	kàs nórs	somebody; someone	0527_kas_nors.webm
+0527_kas_nors_s	media/audio/0527_kas_nors_s.mp3	A1	new	Ar kas nors skambino?	Did anybody call?	0527_kas_nors_s.webm
+0535_taciau	media/audio/0535_taciau.mp3	A1	new	tačiaũ	however	0535_taciau.webm
+0535_taciau_s	media/audio/0535_taciau_s.mp3	A1	new	Buvo šalta, tačiau saulėta.	It was cold, however sunny.	0535_taciau_s.webm
+0539_paskui	media/audio/0539_paskui.mp3	A1	new	paskuĩ	afterwards, then	0539_paskui.webm
+0539_paskui_s	media/audio/0539_paskui_s.mp3	A1	new	Pavalgysime, o paskui eisime.	We will eat, and then we will go.	0539_paskui_s.webm
+0530_atsiprasau_ar_cia_laisva	media/audio/0530_atsiprasau_ar_cia_laisva.mp3	A1	new	Atsiprašaũ, ar̃ čià laĩsva?	Excuse me, is this seat free?	0530_atsiprasau_ar_cia_laisva.webm
+0541_veidrodis	media/audio/0541_veidrodis.mp3	A1	new	véidrodis · véidrodžio	mirror	0541_veidrodis.webm
+0543_tuscias	media/audio/0543_tuscias.mp3	A1	new	tùščias · tuščià	empty	0543_tuscias.webm
+0536_ant	media/audio/0536_ant.mp3	A1	new	añt	on	0536_ant.webm
+0536_ant_s	media/audio/0536_ant_s.mp3	A1	new	Knyga yra ant stalo.	The book is on the table.	0536_ant_s.webm
+0548_dede	media/audio/0548_dede.mp3	A1	new	dė̃dė · dė̃dės	uncle	0548_dede.webm
+0548_dede_s	media/audio/0548_dede_s.mp3	A1	new	Dėdė atvažiuoja rytoj.	Uncle is coming tomorrow.	0548_dede_s.webm
+0549_teta	media/audio/0549_teta.mp3	A1	new	tetà · tetõs	aunt	0549_teta.webm
+0549_teta_s	media/audio/0549_teta_s.mp3	A1	new	Mano teta gyvena Kaune.	My aunt lives in Kaunas.	0549_teta_s.webm
+0537_vis_dar	media/audio/0537_vis_dar.mp3	A1	new	vìs dár	still (continuing)	0537_vis_dar.webm
+0537_vis_dar_s	media/audio/0537_vis_dar_s.mp3	A1	new	Aš vis dar laukiu.	I am still waiting.	0537_vis_dar_s.webm
+0528_atleisti	media/audio/0528_atleisti.mp3	A1	new	atléisti · atléidžia · atléido	to forgive; to dismiss	0528_atleisti.webm
+0528_atleisti_s	media/audio/0528_atleisti_s.mp3	A1	new	Atleiskite, kur čia paštas?	Excuse me, where is the post office?	0528_atleisti_s.webm
+0542_dar_ko_nors	media/audio/0542_dar_ko_nors.mp3	A1	new	Dar kõ nors?	Anything else?	0542_dar_ko_nors.webm
+0545_atrodo	media/audio/0545_atrodo.mp3	A1	new	atródo	it seems; looks	0545_atrodo.webm
+0553_patiekalas	media/audio/0553_patiekalas.mp3	A1	new	pãtiekalas · pãtiekalo	meal	0553_patiekalas.webm
+0538_kokia	media/audio/0538_kokia.mp3	A1	new	kokià	what kind (fem)	0538_kokia.webm
+0538_kokia_s	media/audio/0538_kokia_s.mp3	A1	new	Kokia šiandien diena?	What day is it today?	0538_kokia_s.webm
+0546_jeigu	media/audio/0546_jeigu.mp3	A1	new	jéigu	if	0546_jeigu.webm
+0546_jeigu_s	media/audio/0546_jeigu_s.mp3	A1	new	Jeigu nori, ateik.	If you want, come.	0546_jeigu_s.webm
+0547_nieko	media/audio/0547_nieko.mp3	A1	new	niẽko	nothing (gen)	0547_nieko.webm
+0547_nieko_s	media/audio/0547_nieko_s.mp3	A1	new	Nieko nematau.	I see nothing.	0547_nieko_s.webm
+0557_palikti	media/audio/0557_palikti.mp3	A1	new	palìkti · paliẽka · palìko	to leave (something)	0557_palikti.webm
+0557_palikti_s	media/audio/0557_palikti_s.mp3	A1	new	Palikau raktus namie.	I left the keys at home.	0557_palikti_s.webm
+0550_bet_kada	media/audio/0550_bet_kada.mp3	A1	new	bèt kadà	any time	0550_bet_kada.webm
+0550_bet_kada_s	media/audio/0550_bet_kada_s.mp3	A1	new	Skambink bet kada.	Call any time.	0550_bet_kada_s.webm
+0555_uzdarytas	media/audio/0555_uzdarytas.mp3	A1	new	uždarýtas · uždaryta	closed	0555_uzdarytas.webm
+0562_pilvas	media/audio/0562_pilvas.mp3	A1	new	pil̃vas · pil̃vo	stomach	0562_pilvas.webm
+0561_sekunde_s	media/audio/0561_sekunde_s.mp3	A1	new	Tik vieną sekundę!	Just one second!	0561_sekunde_s.webm
+0558_pagalba	media/audio/0558_pagalba.mp3	A1	new	pagálba · pagálbos	help (noun)	0558_pagalba.webm
+0558_pagalba_s	media/audio/0558_pagalba_s.mp3	A1	new	Man reikia pagalbos.	I need help.	0558_pagalba_s.webm
+0559_puikus	media/audio/0559_puikus.mp3	A1	new	puikùs · puikì	excellent	0559_puikus.webm
+0559_puikus_s	media/audio/0559_puikus_s.mp3	A1	new	Puikus oras!	Excellent weather!	0559_puikus_s.webm
+0560_kada_nors	media/audio/0560_kada_nors.mp3	A1	new	kadà nórs	ever; some time	0560_kada_nors.webm
+0560_kada_nors_s	media/audio/0560_kada_nors_s.mp3	A1	new	Ar buvai kada nors Nidoje?	Have you ever been to Nida?	0560_kada_nors_s.webm
+0568_kate_sedi_ant_stalo	media/audio/0568_kate_sedi_ant_stalo.mp3	A1	new	Katė sėdi ant stalo.	The cat is sitting on the table.	0568_kate_sedi_ant_stalo.webm
+0564_ieiti	media/audio/0564_ieiti.mp3	A1	new	įeĩti	to enter	0564_ieiti.webm
+0565_prasom_uzrasyti	media/audio/0565_prasom_uzrasyti.mp3	A1	retake	Prãšom užrašýti	Write it down, please	0565_prasom_uzrasyti.webm
+0567_aikste	media/audio/0567_aikste.mp3	A1	new	aikštė̃ · aikštė̃s	town square	0567_aikste.webm
+0569_be	media/audio/0569_be.mp3	A1	new	bè	without	0569_be.webm
+0569_be_s	media/audio/0569_be_s.mp3	A1	new	Arbata be cukraus, prašau.	Tea without sugar, please.	0569_be_s.webm
+0748_skaicius	media/audio/0748_skaicius.mp3	A1	new	skaĩčius · skaĩčiaus	number (figure)	0748_skaicius.webm
+0748_skaicius_s	media/audio/0748_skaicius_s.mp3	A1	new	Tai didelis skaičius.	That is a big number.	0748_skaicius_s.webm
+0514_amzius_s	media/audio/0514_amzius_s.mp3	A1	new	Amžius – tik skaičius.	Age is just a number.	0514_amzius_s.webm
+0570_nei	media/audio/0570_nei.mp3	A1	new	neĩ	than; nor	0570_nei.webm
+0570_nei_s	media/audio/0570_nei_s.mp3	A1	new	Kaunas mažesnis nei Vilnius.	Kaunas is smaller than Vilnius.	0570_nei_s.webm
+0571_todel	media/audio/0571_todel.mp3	A1	new	todė̃l	therefore	0571_todel.webm
+0571_todel_s	media/audio/0571_todel_s.mp3	A1	new	Lijo, todėl likau namie.	It was raining, therefore I stayed home.	0571_todel_s.webm
+0584_palaukite_minutele	media/audio/0584_palaukite_minutele.mp3	A1	new	Palaukite minutėlę.	Hold on a moment (phone)	0584_palaukite_minutele.webm
+0585_centas	media/audio/0585_centas.mp3	A1	new	ceñtas · ceñto	cent	0585_centas.webm
+0598_laipsnis	media/audio/0598_laipsnis.mp3	A1	new	láipsnis · láipsnio	degree	0598_laipsnis.webm
+0590_minute_s	media/audio/0590_minute_s.mp3	A1	new	Palaukite penkias minutes.	Wait five minutes.	0590_minute_s.webm
+0592_keletas	media/audio/0592_keletas.mp3	A1	new	kẽletas	several	0592_keletas.webm
+0592_keletas_s	media/audio/0592_keletas_s.mp3	A1	new	Laukiau keletą minučių.	I waited several minutes.	0592_keletas_s.webm
+0579_testi	media/audio/0579_testi.mp3	A1	new	tę̃sti	to continue	0579_testi.webm
+0579_testi_s	media/audio/0579_testi_s.mp3	A1	new	Tęskite, prašau.	Please continue.	0579_testi_s.webm
+0572_berniukas_raso_laiska	media/audio/0572_berniukas_raso_laiska.mp3	A1	new	Berniukas rašo laišką.	The boy is writing a letter.	0572_berniukas_raso_laiska.webm
+0581_toli	media/audio/0581_toli.mp3	A1	new	tõli	far	0581_toli.webm
+0581_toli_s	media/audio/0581_toli_s.mp3	A1	new	Stotis toli?	Is the station far?	0581_toli_s.webm
+0582_arti	media/audio/0582_arti.mp3	A1	new	árti	near; close	0582_arti.webm
+0582_arti_s	media/audio/0582_arti_s.mp3	A1	new	Stotis arti.	The station is near.	0582_arti_s.webm
+0589_klase	media/audio/0589_klase.mp3	A1	new	klãsė · klãsės	classroom	0589_klase.webm
+0591_pries	media/audio/0591_pries.mp3	A1	new	priẽš	ago	0591_pries.webm
+0591_pries_s	media/audio/0591_pries_s.mp3	A1	new	Atvažiavau prieš metus.	I came a year ago.	0591_pries_s.webm
+0594_parodyti	media/audio/0594_parodyti.mp3	A1	new	paródyti	to show (perf.)	0594_parodyti.webm
+0594_parodyti_s	media/audio/0594_parodyti_s.mp3	A1	new	Parodyk man nuotraukas.	Show me the photos.	0594_parodyti_s.webm
+0580_kaire	media/audio/0580_kaire.mp3	A1	new	kairė̃ · kairė̃s	left (side)	0580_kaire.webm
+0580_kaire_s	media/audio/0580_kaire_s.mp3	A1	new	Eikite į kairę.	Go left.	0580_kaire_s.webm
+0593_man_patinka_muzika	media/audio/0593_man_patinka_muzika.mp3	A1	new	Man patinka muzika.	I like music.	0593_man_patinka_muzika.webm
+0601_reiksti	media/audio/0601_reiksti.mp3	A1	new	réikšti	to mean	0601_reiksti.webm
+0601_reiksti_s	media/audio/0601_reiksti_s.mp3	A1	new	Ką tai reiškia?	What does that mean?	0601_reiksti_s.webm
+0609_litas	media/audio/0609_litas.mp3	A1	new	lìtas · lìto	litas (currency, 1981 counterfactual)	0609_litas.webm
+0602_ar_galetumete	media/audio/0602_ar_galetumete.mp3	A1	new	Ar̃ galė́tumėte…?	could (polite request)	0602_ar_galetumete.webm
+0602_ar_galetumete_s	media/audio/0602_ar_galetumete_s.mp3	A1	new	Ar galėtumėte man padėti?	Could you help me?	0602_ar_galetumete_s.webm
+0604_stai	media/audio/0604_stai.mp3	A1	new	štaĩ	here is, look (presentative)	0604_stai.webm
+0604_stai_s	media/audio/0604_stai_s.mp3	A1	new	Štai tavo raktai.	Here are your keys.	0604_stai_s.webm
+0583_informacija	media/audio/0583_informacija.mp3	A1	new	informãcija · informãcijos	information	0583_informacija.webm
+0583_informacija_s	media/audio/0583_informacija_s.mp3	A1	new	Kur gauti informacijos?	Where can I get information?	0583_informacija_s.webm
+0612_moketi	media/audio/0612_moketi.mp3	A1	new	mokė́ti · móka · mokė́jo	to know how to, can (skill)	0612_moketi.webm
+0612_moketi_s	media/audio/0612_moketi_s.mp3	A1	new	Aš moku plaukti.	I can swim. (I know how to)	0612_moketi_s.webm
+0605_sita	media/audio/0605_sita.mp3	A1	new	šità	this (fem; colloquial)	0605_sita.webm
+0605_sita_s	media/audio/0605_sita_s.mp3	A1	new	Šita kėdė laisva.	This chair is free.	0605_sita_s.webm
+0670_mokinys	media/audio/0670_mokinys.mp3	A1	new	mokinỹs · mókinio	pupil	0670_mokinys.webm
+0617_raudonas	media/audio/0617_raudonas.mp3	A1	retake	raudónas · raudona	red	0617_raudonas.webm
