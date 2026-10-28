@@ -154,6 +154,12 @@ not repeated here.
   plumbing, builds, audio processing, tidies with a clear plan → Opus (or a cheaper model); Fable only for hard
   judgement (aesthetic and image-prompt design, Lithuanian decisions sources can't settle, plans with real risk)
   or when the owner asks for it by name.
+- **2026-10-28 · A review page he could not answer on (owner).** "The audio check interface in the review desk isn't
+  clear to me – i don't see an option to select the original recording or the fixed one, or to add review comments."
+  Both audio check pages played the two versions but had no way to reply. Rule: every page that asks the owner for a
+  verdict has, per item, the choices spelled out as buttons, a note field, the default for an unanswered item stated
+  at the top, a count of answered items, and answers saved where Claude can read them (artifact db, localStorage
+  fallback). Enforced: `tools/audio_review_page.py --db` (answer block, tested headless at 390 and 1280 px).
 - One Review Desk for everything he must see or decide; every message ends with its link; settled items and
   settled reference documents leave the desk (a stale "card backs" document made a settled question look open).
 - He is a native speaker: Lithuanian judgement calls that sources can't settle go to him as a short list, with

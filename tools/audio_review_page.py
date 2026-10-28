@@ -5,6 +5,7 @@
     python3 tools/audio_review_page.py <zip> OUT/proc OUT/page [--july 0027_suo,1035_karve,0953_arklys]
             [--title "Audio batch 2 check"] [--section "Batch 2"] [--mixed mixed.tsv]
             [--relevel _archive/takes/<relevel run> [--relevel-proc DIR] [--masters-root PROJECT_ROOT]] [--pack MB]
+            [--db audio_b2] [--html-only [--packs-from PUBLISHED_PAGE_DIR]]
 
 Writes OUT/page/index.html and OUT/page/media/: for every take the original as recorded (an mp3 listening copy of
 the webm, 48 kHz 128 kbit/s, no other change, so Safari plays it too) and the processed mp3 exactly as it will ship,
@@ -20,6 +21,16 @@ references. Publish the folder as an artifact (index.html + media/ as files).
                 it shipped before (media/audio/_history/...) and as re-processed (its dest, or --relevel-proc/<key>.mp3
                 before --apply), both drawn on the raw master's time axis, so the owner hears that only the loudness
                 changed and sees that nothing was cut into the words.
+  --db NAME     the owner answers on the page: every take gets three buttons (processed is good / use the original
+                instead: the raw take with loudness only, no cuts / re-record) and a note. Answers are saved in the
+                artifact's database, collection NAME, one document per take key {choice, note, updatedAt}, with
+                choice "processed" | "original" | "rerecord" | "" (unanswered = ships as processed). Publish with
+                capabilities {db: {}, user: {}}; without them (or in a plain browser) answers stay in localStorage.
+                Read them back with ArtifactData list on NAME. Default collection: audio_review.
+  --html-only   rewrite index.html only, for a page whose media are already published: no ffmpeg, no media copied.
+                <zip> may then be the batch's archived manifest.tsv. With --packs-from DIR, the clips are mapped to
+                the packs already in DIR/media/pack_NN.json (names read from the packs, nothing re-packed), so the
+                page can be republished without its 19 packs.
 """
 import csv
 import html
@@ -185,10 +196,34 @@ def pack_media(out, mb):
     os.makedirs(keep, exist_ok=True)
     for name in names:
         shutil.move(os.path.join(media, name), os.path.join(keep, name))
+    return map_to_packs(out, where), len(names)
+
+
+def map_to_packs(out, where):
+    """Point every media/<file> of index.html at the pack that holds it (where: name -> pack number)."""
+    import re
+    page = open(os.path.join(out, "index.html"), encoding="utf-8").read()
+    pat = re.compile(r'(<(?:audio|img)\b[^>]*?) src="media/([^"]+)"')
+    missing = sorted({m.group(2) for m in pat.finditer(page)} - set(where))
+    if missing:
+        raise SystemExit(f"not in any pack: {', '.join(missing[:10])}{' …' if len(missing) > 10 else ''}")
     page = pat.sub(lambda m: f'{m.group(1)} data-pack="{where[m.group(2)]:02d}" data-name="{m.group(2)}"', page)
     page = page.replace("</main>", "</main>\n" + PACK_JS, 1)
     open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(page)
-    return n, len(names)
+    return len(set(where.values()))
+
+
+def packs_in(page_dir):
+    """name -> pack number, read from the packs already built in page_dir/media/pack_NN.json."""
+    import glob
+    where = {}
+    for p in sorted(glob.glob(os.path.join(page_dir, "media", "pack_*.json"))):
+        n = int(os.path.basename(p)[5:-5])
+        for name in json.load(open(p)):
+            where[name] = n
+    if not where:
+        raise SystemExit(f"no media/pack_NN.json in {page_dir}")
+    return where
 
 
 def opt(argv, name, default=None):
@@ -203,14 +238,23 @@ def main(argv):
     july = opt(argv, "--july", "0027_suo,1035_karve,0953_arklys").split(",")
     title = opt(argv, "--title", "Audio batch check")
     section = opt(argv, "--section", "Takes")
+    dbname = opt(argv, "--db", "audio_review")
+    html_only = "--html-only" in argv
     mixed = {}
     if "--mixed" in argv:
         for m in csv.DictReader(open(opt(argv, "--mixed"), encoding="utf-8"), delimiter="\t"):
             mixed.setdefault(m["mixed_take"], []).append(m)
     media = os.path.join(out, "media")
     os.makedirs(media, exist_ok=True)
-    z = zipfile.ZipFile(zpath)
-    man = {m["key"]: m for m in csv.DictReader(io.StringIO(z.read("manifest.tsv").decode("utf-8")), delimiter="\t")}
+    if zpath.endswith(".tsv"):                                  # the archived manifest of an ingested batch
+        z, stem = None, os.path.basename(os.path.dirname(os.path.abspath(zpath)))
+        mtext = open(zpath, encoding="utf-8").read()
+    else:
+        z, stem = zipfile.ZipFile(zpath), os.path.splitext(os.path.basename(zpath))[0]
+        mtext = z.read("manifest.tsv").decode("utf-8")
+    if z is None and not html_only:
+        raise SystemExit("a manifest.tsv instead of the ZIP works with --html-only only")
+    man = {m["key"]: m for m in csv.DictReader(io.StringIO(mtext), delimiter="\t")}
     rows = list(csv.DictReader(open(os.path.join(proc_dir, "process_log.csv"), encoding="utf-8")))
     tmp = os.path.join(out, "_tmp")
     os.makedirs(tmp, exist_ok=True)
@@ -222,6 +266,12 @@ def main(argv):
                      ("head_margin_ms", "0"), ("tail_margin_ms", "0")):
             if r.get(c, "") == "":
                 r[c] = v
+        if k in mixed:
+            r["mixed"] = "; ".join(f"contains the take {m['contains']} at {m['at_ms']} ms (r = {m['r']}): "
+                                   "two recordings in one take (recorder bug before the fix), re-record" for m in mixed[k])
+        if html_only:
+            items.append(r)
+            continue
         raw = os.path.join(tmp, os.path.basename(r["file"]))
         open(raw, "wb").write(z.read(r["file"]))
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-ar", "48000", "-ac", "1", "-codec:a", "libmp3lame",
@@ -231,15 +281,13 @@ def main(argv):
         if ok:
             shutil.copyfile(pm, os.path.join(media, k + ".mp3"))
         waveform(dec(raw), dec(pm) if ok else np.zeros(0, np.float32), r, os.path.join(media, k + ".png"))
-        if k in mixed:
-            r["mixed"] = "; ".join(f"contains the take {m['contains']} at {m['at_ms']} ms (r = {m['r']}): "
-                                   "two recordings in one take (recorder bug before the fix), re-record" for m in mixed[k])
         items.append(r)
     jl = []
     for k in july:
         src = os.path.join(ROOT, "media", "audio", k + ".mp3")
         if os.path.exists(src):
-            shutil.copyfile(src, os.path.join(media, "july_" + k + ".mp3"))
+            if not html_only:
+                shutil.copyfile(src, os.path.join(media, "july_" + k + ".mp3"))
             i, tp = loud(src)
             jl.append((k, i, tp))
     items.sort(key=lambda r: (not r.get("mixed"), r["status"] == "ok", not r["flags"], r["take"]))
@@ -250,6 +298,9 @@ def main(argv):
             if r["status"] != "ok":
                 continue
             k = r["take"]
+            if html_only:
+                rel_items.append(r)
+                continue
             old = os.path.join(ROOT, r["history"] or r["dest"])
             new = os.path.join(rproc, k + ".mp3") if rproc else os.path.join(ROOT, r["dest"])
             shutil.copyfile(old, os.path.join(media, "rl_" + k + ".old.mp3"))
@@ -261,8 +312,13 @@ def main(argv):
             rel_items.append(r)
         rel_items.sort(key=lambda r: (not r["flags"], float(r["shipped_I"])))
     shutil.rmtree(tmp, ignore_errors=True)
-    write_html(out, os.path.splitext(os.path.basename(zpath))[0], items, man, jl, title, section, rel_items)
-    if "--pack" in argv:
+    write_html(out, stem, items, man, jl, title, section, rel_items, dbname)
+    if html_only and "--packs-from" in argv:
+        npk = map_to_packs(out, packs_in(opt(argv, "--packs-from")))
+        print(f"clips mapped to the {npk} packs already in {opt(argv, '--packs-from')}/media (not re-packed)")
+    elif html_only and "--pack" in argv:
+        raise SystemExit("--html-only with --pack needs --packs-from (the published page's folder)")
+    elif "--pack" in argv:
         npk, nf = pack_media(out, float(opt(argv, "--pack")))
         print(f"packed {nf} media files into {npk} packs (media/pack_NN.json)")
     print(f"{out}/index.html: {len(items)} takes ({sum(1 for r in items if r['flags'])} flagged, "
@@ -277,7 +333,200 @@ def f(x, nd=1):
         return "–"
 
 
-def write_html(out, stem, items, man, jl, title="Audio batch check", section="Takes", rel_items=()):
+CHOICES = (("processed", "Processed is good"), ("original", "Use the original instead"), ("rerecord", "Re-record"))
+
+
+def answer_block(k, said, can_process=True, july=False):
+    """The owner's answer for one take: three buttons and a note. ANSWER_JS saves it."""
+    labels = dict(CHOICES)
+    if july:
+        labels["processed"] = "Re-levelled is good"
+    btns = "".join(
+        f'<button type="button" data-choice="{c}" aria-pressed="false"'
+        f'{" disabled" if c == "processed" and not can_process else ""}>{labels[c]}</button>' for c, _ in CHOICES)
+    default = ("ships re-levelled" if july else "ships as processed") if can_process else \
+        "the take has no processed file, so it stays on the recording sheet"
+    return f"""<div class="answer" data-default="{html.escape(default)}">
+    <div class="choices" role="group" aria-label="Your answer for {html.escape(k)}">{btns}</div>
+    <label class="notelab">Note (optional)<textarea rows="2" placeholder="e.g. click still audible at the end" aria-label="Note for {html.escape(k)} {html.escape(said)}"></textarea></label>
+    <p class="astate" aria-live="polite">Not answered: {html.escape(default)}.</p>
+  </div>"""
+
+
+ANSWER_CSS = """
+/* Answers: three plain buttons and a note per take; a sticky bar with the count and the filter. */
+.bar { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line);
+  margin: 0 -4px; padding: 8px 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+.bar .count { font-weight: 600; font-variant-numeric: tabular-nums; }
+.bar .count small { font-weight: 400; color: var(--muted); }
+.bar .mode { font-size: .8rem; color: var(--muted); flex: 1 1 100%; }
+.take, h2 { scroll-margin-top: 8rem; }
+.filter { display: flex; flex-wrap: wrap; gap: 4px; }
+.filter button { font: 500 .82rem var(--body); padding: 4px 10px; border-radius: 99px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--fg); cursor: pointer; }
+.filter button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.howto { background: var(--surface); border: 1px solid var(--accent); border-radius: 6px; padding: 12px 16px; display: grid; gap: 6px; }
+.howto p { max-width: none; }
+.howto dl { margin: 0; display: grid; gap: 2px; font-size: .9rem; }
+.howto dt { display: inline; font-weight: 600; }
+.howto dd { display: inline; margin: 0; color: var(--muted); }
+.answer { display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 10px; }
+.choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.choices button { flex: 1 1 10em; min-height: 40px; padding: 8px 12px; border-radius: 6px; cursor: pointer;
+  font: 600 .9rem var(--body); color: var(--fg); background: var(--bg); border: 1px solid var(--line); }
+.choices button:hover:not(:disabled) { border-color: var(--accent); }
+.choices button:disabled { opacity: .45; cursor: not-allowed; }
+.take:not([data-answered]) .choices button[data-choice="processed"]:not(:disabled) { border: 1px dashed var(--accent); }
+.choices button[aria-pressed="true"] { color: var(--surface); }
+.choices button[data-choice="processed"][aria-pressed="true"] { background: var(--ok); border-color: var(--ok); }
+.choices button[data-choice="original"][aria-pressed="true"] { background: var(--flag); border-color: var(--flag); }
+.choices button[data-choice="rerecord"][aria-pressed="true"] { background: var(--fail); border-color: var(--fail); }
+.notelab { display: grid; gap: 4px; font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.notelab textarea { width: 100%; box-sizing: border-box; resize: vertical; min-height: 2.8em; padding: 6px 8px;
+  font: 400 .92rem/1.4 var(--body); text-transform: none; letter-spacing: 0; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 4px; }
+.astate { font-size: .82rem; color: var(--muted); }
+.take[data-answered] .astate { color: var(--fg); }
+.take[hidden] { display: none; }
+"""
+
+
+ANSWER_JS = r"""<script>
+/* Answers. One document per take in the artifact's database (collection COL, id = take key):
+   {choice: "processed"|"original"|"rerecord"|"", note, updatedAt}. localStorage keeps a copy on this device and is
+   the only store when the database is not available (a plain browser, or a viewer who cannot write). */
+(() => {
+  const COL = __COL__, LS = "audio_review:" + COL, LSF = LS + ":filter";
+  const NAMES = {processed: "Processed is good", original: "Use the original instead", rerecord: "Re-record"};
+  const cards = [...document.querySelectorAll("article.take[data-key]")];
+  const byKey = new Map(cards.map(c => [c.dataset.key, c]));
+  const $ = id => document.getElementById(id);
+  let answers = {};
+  try { answers = JSON.parse(localStorage.getItem(LS) || "{}") || {}; } catch (e) { answers = {}; }
+  const saveLocal = () => { try { localStorage.setItem(LS, JSON.stringify(answers)); } catch (e) { /* private mode */ } };
+  let db = null, mode = "connecting";
+  const setMode = (m, extra) => {
+    mode = m;
+    $("ans-mode").textContent = {
+      connecting: "Connecting to the page's storage…",
+      db: "Answers are saved with this page.",
+      local: "Answers are saved in this browser only: the page's own storage is not available here.",
+      readonly: "You cannot save answers to this page; they are kept in this browser only.",
+    }[m] + (extra ? " " + extra : "");
+  };
+  const ser = a => JSON.stringify([a.choice || "", a.note || ""]);
+  const written = {}, chain = {}, timers = {};
+
+  function render(key) {
+    const card = byKey.get(key), a = answers[key] || {}, choice = a.choice || "";
+    card.querySelectorAll(".choices button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.choice === choice)));
+    const ta = card.querySelector("textarea");
+    if (document.activeElement !== ta && ta.value !== (a.note || "")) ta.value = a.note || "";
+    if (choice) card.dataset.answered = choice; else delete card.dataset.answered;
+    const btn = card.querySelector(`.choices button[data-choice="${choice}"]`);
+    card.querySelector(".astate").textContent = choice
+      ? "Your answer: " + (btn ? btn.textContent : NAMES[choice]) + "." + (a.note ? " Note saved." : "")
+      : "Not answered: " + card.querySelector(".answer").dataset.default + "." + (a.note ? " Note saved." : "");
+  }
+
+  function count() {
+    let n = 0; const by = {processed: 0, original: 0, rerecord: 0};
+    for (const k of byKey.keys()) { const c = (answers[k] || {}).choice; if (c) { n++; by[c] = (by[c] || 0) + 1; } }
+    $("ans-n").textContent = n;
+    $("ans-by").textContent = n ? ` (${by.processed} good · ${by.original} original · ${by.rerecord} re-record)` : "";
+    applyFilter();
+  }
+
+  function push(key) {                      // one write at a time per take, only when the answer changed
+    if (!db) return;
+    chain[key] = (chain[key] || Promise.resolve()).then(async () => {
+      const a = answers[key]; if (!a || written[key] === ser(a)) return;
+      const body = {choice: a.choice || "", note: a.note || "", updatedAt: a.updatedAt || new Date().toISOString()};
+      try {
+        await db.collection(COL).doc(key).set(body);
+        written[key] = ser(body);
+      } catch (e) {
+        if (e && e.code === "unavailable") {      // transient: one retry after a short pause
+          await new Promise(r => setTimeout(r, 400 + Math.random() * 600));
+          try { await db.collection(COL).doc(key).set(body); written[key] = ser(body); return; } catch (e2) { e = e2; }
+        }
+        if (e && e.code === "invalid_argument") { db = null; setMode("readonly"); }
+        else setMode(mode, "Last answer not saved to the page (" + ((e && e.code) || "error") + "); it is kept in this browser.");
+      }
+    });
+  }
+
+  function change(key, patch) {
+    answers[key] = Object.assign({choice: "", note: ""}, answers[key], patch, {updatedAt: new Date().toISOString()});
+    saveLocal(); render(key); count();
+  }
+
+  document.addEventListener("click", e => {
+    const b = e.target.closest(".choices button"); if (!b || b.disabled) return;
+    const key = b.closest("article.take").dataset.key, cur = (answers[key] || {}).choice || "";
+    change(key, {choice: cur === b.dataset.choice ? "" : b.dataset.choice});   // pressing the chosen one again clears it
+    push(key);
+  });
+  document.addEventListener("input", e => {
+    if (!e.target.matches(".answer textarea")) return;
+    const key = e.target.closest("article.take").dataset.key;
+    change(key, {note: e.target.value});
+    clearTimeout(timers[key]); timers[key] = setTimeout(() => push(key), 900);
+  });
+  document.addEventListener("focusout", e => {
+    if (!e.target.matches(".answer textarea")) return;
+    const key = e.target.closest("article.take").dataset.key;
+    if (timers[key]) { clearTimeout(timers[key]); timers[key] = null; push(key); }
+  });
+
+  let filter = "all";
+  try { filter = localStorage.getItem(LSF) || "all"; } catch (e) { /* ignore */ }
+  function applyFilter() {
+    let shown = 0;
+    for (const [k, card] of byKey) {
+      const ans = !!(answers[k] || {}).choice;
+      const show = filter === "all" || (filter === "flagged" && card.dataset.flagged === "1") ||
+                   (filter === "answered" && ans) || (filter === "unanswered" && !ans);
+      card.hidden = !show; if (show) shown++;
+    }
+    document.querySelectorAll(".filter button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.filter === filter)));
+    $("ans-shown").textContent = filter === "all" ? "" : ` · ${shown} shown`;
+  }
+  document.querySelectorAll(".filter button").forEach(b => b.addEventListener("click", () => {
+    filter = b.dataset.filter; try { localStorage.setItem(LSF, filter); } catch (e) { /* ignore */ }
+    applyFilter();
+  }));
+
+  cards.forEach(c => render(c.dataset.key)); count(); setMode("connecting");
+
+  (async () => {
+    let d = null, user = null;
+    try { d = window.claude && typeof window.claude.use === "function" ? await window.claude.use("db") : null; } catch (e) { d = null; }
+    if (!d) { setMode("local"); return; }
+    try { user = await window.claude.use("user"); } catch (e) { user = null; }
+    try {
+      const snap = await d.collection(COL).get();
+      for (const doc of snap.docs) {
+        if (!byKey.has(doc.id)) continue;
+        const v = doc.data() || {}, mine = answers[doc.id];
+        const theirs = {choice: v.choice || "", note: v.note || "", updatedAt: v.updatedAt || ""};
+        written[doc.id] = ser(theirs);
+        if (!mine || String(theirs.updatedAt) >= String(mine.updatedAt || "")) answers[doc.id] = theirs;
+      }
+    } catch (e) { setMode("local"); return; }
+    let canWrite = null;
+    try { canWrite = user && user.can ? await user.can("data.write") : null; } catch (e) { canWrite = null; }
+    saveLocal(); cards.forEach(c => render(c.dataset.key)); count();
+    if (canWrite === false) { setMode("readonly"); return; }
+    db = d; setMode("db");
+    for (const k of Object.keys(answers)) if (byKey.has(k) && written[k] !== ser(answers[k])) push(k);   // answered before the page connected
+  })();
+})();
+</script>
+"""
+
+
+def write_html(out, stem, items, man, jl, title="Audio batch check", section="Takes", rel_items=(), dbname="audio_review"):
     ok = [r for r in items if r["status"] == "ok"]
     flagged = [r for r in items if r["flags"]]
     med = lambda v: float(np.median(v)) if v else float("nan")
@@ -305,7 +554,7 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
         proc_audio = (f'<audio controls preload="none" src="media/{k}.mp3"></audio>' if r["status"] == "ok"
                       else '<p class="na">No processed file: the take failed the self-check.</p>')
         cards.append(f"""
-<article class="take {state}" id="t{k}">
+<article class="take {state}" id="t{k}" data-key="{k}"{' data-flagged="1"' if state != "ok" else ''}>
   <header>
     <h3><span class="k">{k}</span> <span class="said" lang="lt">{html.escape(said)}</span></h3>
     <span class="pill {state}">{label}</span>
@@ -313,8 +562,8 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
   <p class="eng">{html.escape(eng)}</p>
   {('<ul class="flags">' + flags + '</ul>') if flags else ''}
   <div class="players">
-    <div><span class="lab">Original, as recorded</span><audio controls preload="none" src="media/{k}.orig.mp3"></audio></div>
-    <div><span class="lab">Processed, as it will ship</span>{proc_audio}</div>
+    <div><span class="lab">Original (as recorded)</span><audio controls preload="none" src="media/{k}.orig.mp3"></audio></div>
+    <div><span class="lab">Processed (what ships)</span>{proc_audio}</div>
   </div>
   <img src="media/{k}.png" alt="Waveform of {k} before and after processing" loading="lazy">
   <dl class="nums">
@@ -326,6 +575,7 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
     <div><dt>Speech energy kept</dt><dd>{f(r["energy_kept_pct"], 3)} %</dd></div>
   </dl>
   {note}
+  {answer_block(k, said, can_process=r["status"] == "ok")}
 </article>""")
     rel_cards = []
     for r in rel_items:
@@ -340,7 +590,7 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
         tail = (f'cut at {r["tail_cut_ms"]} ms · {r["tail_margin_ms"]} ms after the words'
                 if int(r["tail_cut_ms"]) < int(r["dur_ms"]) else f'no tail cut · the recording ends {r["tail_margin_ms"]} ms after the words')
         rel_cards.append(f"""
-<article class="take {state}" id="r{k}">
+<article class="take {state}" id="r{k}" data-key="{k}"{' data-flagged="1"' if state != "ok" else ''}>
   <header>
     <h3><span class="k">{k}</span> <span class="said" lang="lt">{html.escape(r["said"])}</span></h3>
     <span class="pill {state}">{"listen" if r["flags"] else "level only"}</span>
@@ -348,8 +598,8 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
   <p class="eng">Raw master {html.escape(r["master"])} (same recording as the shipped take: r = {html.escape(r["identity_r"])})</p>
   {('<ul class="flags">' + flags + '</ul>') if flags else ''}
   <div class="players">
-    <div><span class="lab">As shipped before ({f(r["shipped_I"])} LUFS)</span><audio controls preload="none" src="media/rl_{k}.old.mp3"></audio></div>
-    <div><span class="lab">Re-levelled ({f(r["out_I"])} LUFS)</span><audio controls preload="none" src="media/rl_{k}.new.mp3"></audio></div>
+    <div><span class="lab">Before (shipped until now)</span><audio controls preload="none" src="media/rl_{k}.old.mp3"></audio></div>
+    <div><span class="lab">Re-levelled (what ships)</span><audio controls preload="none" src="media/rl_{k}.new.mp3"></audio></div>
   </div>
   <img src="media/rl_{k}.png" alt="Waveform of {k} as shipped before and re-levelled" loading="lazy">
   <dl class="nums">
@@ -361,6 +611,7 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
     <div><dt>Gain</dt><dd>{f(r["gain_db"])} dB, one fixed gain</dd></div>
   </dl>
   {enote}
+  {answer_block(k, r["said"], july=True)}
 </article>""")
     rel_section = ""
     if rel_items:
@@ -369,7 +620,7 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
         rel_section = f"""
   <h2 id="july">July takes re-levelled</h2>
   <section class="how">
-    <p>{len(rel_items)} July takes had shipped {f(min(rb))} to {f(max(rb))} LUFS (median {f(med(rb))}), 20–30 dB below the rest of the deck. Each was re-processed from its raw master exactly like a new take: one fixed gain, no limiter, the start click cut away only where 250 ms of silence stays before the words. Median now {f(med(ra))} LUFS. Compare the two players: the words should sound the same, only louder. Takes marked <b>listen</b> first: {sum(1 for r in rel_items if r["flags"])} keep a sound the tool could not safely call a click (the July processing had simply cut the first 150 ms of every take; the new one never cuts within 250 ms of the words, so a start click that close now stays). In {sum(1 for r in rel_items if int(r["offset_ms"]) >= int(r["dur_ms"]) - 10)} the raw recording itself ends while the word still sounds.</p>
+    <p>{len(rel_items)} July takes had shipped {f(min(rb))} to {f(max(rb))} LUFS (median {f(med(rb))}), 20–30 dB below the rest of the deck. Each was re-processed from its raw master exactly like a new take: one fixed gain, no limiter, the start click cut away only where 250 ms of silence stays before the words. Median now {f(med(ra))} LUFS. Compare the two players: the words should sound the same, only louder. Here <b>Re-levelled is good</b> keeps the new file; <b>Use the original instead</b> ships the raw July recording with its loudness raised only, no cuts at all. Takes marked <b>listen</b> first: {sum(1 for r in rel_items if r["flags"])} keep a sound the tool could not safely call a click (the July processing had simply cut the first 150 ms of every take; the new one never cuts within 250 ms of the words, so a start click that close now stays). In {sum(1 for r in rel_items if int(r["offset_ms"]) >= int(r["dur_ms"]) - 10)} the raw recording itself ends while the word still sounds.</p>
   </section>
   {''.join(rel_cards)}"""
     page = f"""<meta charset="utf-8">
@@ -431,11 +682,28 @@ audio {{ width: 100%; max-width: 100%; height: 36px; }}
 .note, .na {{ font-size: .82rem; color: var(--muted); }}
 .legend {{ font-size: .85rem; color: var(--muted); }}
 .sw {{ display: inline-block; width: .9em; height: .9em; vertical-align: -.1em; border-radius: 2px; margin-right: 3px; }}
+{ANSWER_CSS}
 </style>
 <main>
   <div>
     <h1>{html.escape(title)}</h1>
     <p class="lede">{len(items)} takes from <span class="k">{html.escape(stem)}.zip</span>. Each card has the take as you recorded it and as it will ship. Takes marked <b>re-record</b> (two recordings in one take) or <b>not processed</b> come first, then <b>listen</b>: the tool kept a sound it could not safely call a click.{(' The second section, <a href="#july">July takes re-levelled</a>, has ' + str(len(rel_items)) + ' older takes as they shipped before and as they ship now.') if rel_items else ''}</p>
+  </div>
+  <section class="howto" aria-label="How to use this page">
+    <p><b>How to use this page.</b> For each take: listen to both, then pick one. Unanswered takes ship as processed.</p>
+    <dl>
+      <div><dt>Processed is good</dt> <dd>— ship the processed take (the default for every take you leave unanswered).</dd></div>
+      <div><dt>Use the original instead</dt> <dd>— ship the raw take with its loudness raised only, no cuts.</dd></div>
+      <div><dt>Re-record</dt> <dd>— the take goes back on the recording sheet.</dd></div>
+    </dl>
+    <p class="legend">Add a note if something needs saying. Your answers are saved as you go; press a chosen button again to clear it.</p>
+  </section>
+  <div class="bar" role="region" aria-label="Answers">
+    <span class="count">Answered <span id="ans-n">0</span> of {len(items) + len(rel_items)}<small id="ans-by"></small><small id="ans-shown"></small></span>
+    <span class="filter" role="group" aria-label="Show">
+      <button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="flagged" aria-pressed="false">Flagged</button><button type="button" data-filter="answered" aria-pressed="false">Answered</button><button type="button" data-filter="unanswered" aria-pressed="false">Unanswered</button>
+    </span>
+    <span class="mode" id="ans-mode">Answers are saved in this browser.</span>
   </div>
   <section class="summary" aria-label="Batch summary">
     <div class="stat"><b>{len(ok)} / {len(items)}</b><span>passed the self-check</span></div>
@@ -463,7 +731,7 @@ audio {{ width: 100%; max-width: 100%; height: 36px; }}
   <h2 id="batch">{html.escape(section)}</h2>
   {''.join(cards)}{rel_section}
 </main>
-"""
+{ANSWER_JS.replace("__COL__", json.dumps(dbname))}"""
     open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(page)
 
 

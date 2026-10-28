@@ -103,8 +103,10 @@ Pictures cost money (OpenAI); the drivers read `.openai_key.txt` from the root.
    `a2_build/audio/inbox/` is found too).
 3. Review first: `python3 tools/ingest_takes.py <zip> --process-only OUT/proc`, then
    `python3 tools/check_mixed_takes.py <zip> <previous zip> --out OUT/mixed.tsv` (two recordings in one take, the recorder
-   bug fixed at 4832e9b), then `python3 tools/audio_review_page.py <zip> OUT/proc OUT/page --mixed OUT/mixed.tsv` and
-   publish OUT/page for the owner. A mixed take is not ingested (`--hold OUT/mixed.tsv`): it stays on the sheet.
+   bug fixed at 4832e9b), then `python3 tools/audio_review_page.py <zip> OUT/proc OUT/page --mixed OUT/mixed.tsv --db audio_bN` and
+   publish OUT/page for the owner with capabilities `{db: {}, user: {}}`; he answers per take (processed is good /
+   use the original / re-record, plus a note) and his answers are read back with ArtifactData `list` on `audio_bN`.
+   A mixed take is not ingested (`--hold OUT/mixed.tsv`): it stays on the sheet.
    Then `python3 tools/ingest_takes.py --inbox` processes each clip with `tools/process_take.py` (key clicks
    removed with ≥ 250 ms margins to speech, never a silence gate; self-check; linear EBU R128 gain to the July
    level) to the `dest` in `data/recording_list.csv` (`media/audio/<key>.mp3`), moves any take it replaces to

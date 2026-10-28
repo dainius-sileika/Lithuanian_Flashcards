@@ -682,7 +682,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | path | status | purpose | read / written by |
 |---|---|---|---|
 | `tools/apkg_keys_list.py` | live | Per-card list of a package (key -> fields and media) for the release record | run by people |
-| `tools/audio_review_page.py` | live | Builds the owner's listening page for a processed batch: original vs processed players and before/after waveforms, flagged and mixed takes first; --relevel adds a section for re-levelled takes (old shipped vs re-processed) | run by people after ingest_takes.py --process-only; output is published as an artifact |
+| `tools/audio_review_page.py` | live | Builds the owner's listening page for a processed batch: original vs processed players and before/after waveforms, flagged and mixed takes first; --relevel adds a section for re-levelled takes (old shipped vs re-processed); every take has an answer block (processed is good / use the original / re-record, plus a note) saved to the artifact db collection named by --db; --html-only rewrites the page alone for republishing | run by people after ingest_takes.py --process-only; output is published as an artifact |
 | `tools/build_showcase.py` | live | Builds the showcase PDF from a released .apkg: renders chosen cards with Anki, screenshots, lays out A4 pages | run by hand; reads a package; writes docs/showcase/ |
 | `tools/build_situations.py` | live | Regenerates code/situations.py from data/restage_bubbles.csv | run by people after editing the CSV |
 | `tools/check_layout.py` | live | Checks the working directory against spec §13 / INDEX.md (root, folders, media, old homes, index) | pre-commit hook (--strict); build_apkg.py at the start of every build |
