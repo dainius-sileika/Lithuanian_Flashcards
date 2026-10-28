@@ -140,12 +140,20 @@ function storeKeys(s){return new Promise(res=>{const t=db.transaction(s,'readonl
    Stamped clips ('said:<key>') compare the stamp; an unstamped clip comes from the 2026-10-12
    sheet and is stale when that sheet's words differed (w.ls). Stale clips move to meta
    'superseded:<key>:<ms>' and leave with "Export all" (folder superseded/). */
+/* Same comparison as said_key() in build_recorder.py: blind to stress marks (and the soft dot i/j
+   carry under one), case, punctuation and parenthetical glosses, so adding a stress mark to a form on
+   the sheet never makes an existing take stale; only a change of the words does (2026-10-28). */
+function saidKey(s){
+  s=(s||'').normalize('NFD').replace(/[\u0300\u0301\u0303]/g,'').replace(/([iIjJ])\u0307/g,'$1').normalize('NFC');
+  s=s.replace(/\([^)]*\)/g,' ').toLowerCase().replace(/[.,!?;:„“”"«»—–\-·]/g,' ');
+  return s.replace(/\s+/g,' ').trim();
+}
 async function setAsideStale(){
   let n=0;
   for(const w of WORDS){
     const b=await getClip(w.key); if(!b) continue;
     const said=await getMeta('said:'+w.key);
-    const stale = said==null ? !!w.ls : said!==w.say;
+    const stale = said==null ? !!w.ls : saidKey(said)!==saidKey(w.say);
     if(stale){ await putMeta('superseded:'+w.key+':'+Date.now(), {blob:b, said:said||'(sheet of 2026-10-12)'});
       await delClip(w.key); n++; }
   }
