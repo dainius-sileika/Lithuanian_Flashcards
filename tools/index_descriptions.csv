@@ -91,6 +91,7 @@ docs/SPEC_RECONCILIATION_2026-10-19.md,history,,Where the older documents disagr
 docs/ANKIWEB_DESCRIPTION_A1_v3.0.md,live,,The AnkiWeb description of the A1 v3.0 release (source),people
 docs/ANKIWEB_DESCRIPTION_A1_v3.0.html,generated,,The same as pasted into AnkiWeb,people
 docs/showcase/Lietuviu_Flashcards_showcase_A1.pdf,generated,,"Showcase for others: 24 A1 cards, front and back, as Anki renders them (A4 landscape, 32 pages)",written by tools/build_showcase.py from the release package
+docs/LESSONS_LEARNED.md,live,,"Lessons learned: what each costly mistake taught us, the rule now and where it is enforced; read at every session start, append the same day",people and every agent brief
 docs/RECORDING_GUIDE.md,live,,"The owner's one-page recording guide: the sheet, sessions, export, the inbox",people
 docs/A1_WRAPUP.md,live,,The A1 wrap-up plan and log (what remained before the A1 release; items ticked as done),people
 docs/PLAN_A2_completion.md,live,,"The plan for finishing A2 (2026-10-12, header says the spec overrides it)",people

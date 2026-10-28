@@ -8,6 +8,7 @@ morning tidy of the same day gathered the pictures into `media/`).*
 **The project:** an illustrated Lithuanian Anki deck, A0 → A2+, every picture drawn as a page from a 1981
 civil-defence training album. Two subdecks (A1, A2), picture / phrase / cloze / sentence cards, human audio.
 Owner: Dainius Sileika. The design is stated in **`docs/DESIGN_SPEC_CURRENT.md`** — read that second.
+**Then read `docs/LESSONS_LEARNED.md`** — what our mistakes taught us; add to it the day something goes wrong, and give its short list to every agent.
 
 ## 1. The top level
 

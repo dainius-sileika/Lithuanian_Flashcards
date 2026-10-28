@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,951 tracked files in 706 rows.
+1,952 tracked files in 707 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -136,6 +136,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `docs/CHANGELOG.md` | history | The pre-3.0 changelog (1.x and 2.x) | people |
 | `docs/DESIGN_SPEC_CURRENT.md` | live | THE design spec: every design parameter in force, versioned (**Spec version X.Y.Z**), §13 = this layout | people; tools/style_lock.py reads the version; tools/spec_release.py bumps it |
 | `docs/HOW_TO_CHANGE_THE_LOOK.md` | live | The procedure for touching the aesthetic: spec first, lock, golden set, build | people |
+| `docs/LESSONS_LEARNED.md` | live | Lessons learned: what each costly mistake taught us, the rule now and where it is enforced; read at every session start, append the same day | people and every agent brief |
 | `docs/PLAN_A2_completion.md` | live | The plan for finishing A2 (2026-10-12, header says the spec overrides it) | people |
 | `docs/PLAYBOOK_flashcard_language_system.md` | live | The method, written to be reusable for another language | people |
 | `docs/RECORDING_GUIDE.md` | live | The owner's one-page recording guide: the sheet, sessions, export, the inbox | people |
