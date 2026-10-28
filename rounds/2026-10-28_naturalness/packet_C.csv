@@ -1,0 +1,322 @@
+position,key,level,kind,headword,gloss,sentence,english,category,recorded
+1813,1813_pilietybe,A2,cloze,pilietybė,citizenship,Kokia jūsų {pilietybė}?,What is your citizenship?,Money & admin,no
+1816,1816_pietu_pertrauka,A2,phrase,pietų pertrauka,lunch break,pietų pertrauka,lunch break,Phrases,no
+1818,1818_nedaug,A2,cloze,nedaug,not much; a little,Turiu {nedaug} laiko.,I have little time.,Adverbs,no
+1819,1819_moketi_kortele,A2,cloze,mokėti kortele,to pay by card,Ar galiu {mokėti kortele}?,Can I pay by card?,Verbs,no
+1820,1820_visokia,A2,cloze,visokia,all kinds (fem),Parduoda {visokias} prekes.,They sell all kinds of goods.,Pronouns,no
+1821,1821_rusis,A2,cloze,rūšis,"kind, type",Kokios {rūšies} sūris?,What kind of cheese?,Abstract,no
+1822,1822_bankomatas,A2,cloze,bankomatas,cash machine,Kur čia {bankomatas}?,Where is a cash machine here?,Nouns,no
+1823,1823_neimanomas,A2,cloze,neįmanomas,impossible,Tai {neįmanoma}.,That is impossible.,Adjectives,no
+1824,1824_iskart,A2,cloze,iškart,"at once, immediately",Ateik {iškart}.,Come at once.,Adverbs,no
+1829,1829_smirdeti,A2,cloze,smirdėti,to stink,Šiukšlės {smirda}.,The rubbish stinks.,Verbs,no
+1830,1830_kvepeti,A2,cloze,kvepėti,to smell (good),Gėlės gražiai {kvepia}.,The flowers smell nice.,Verbs,no
+1831,1831_mano_nuomone,A2,cloze,Mano nuomone,In my opinion,"{Mano nuomone}, filmas geras.","In my opinion, the film is good.",Opinion & discourse,no
+1832,1832_rytoj_dirbsiu,A2,cloze,Rytoj dirbsiu,Tomorrow I will work,Rytoj {dirbsiu}.,Tomorrow I will work.,Extended patterns,no
+1833,1833_ruosti,A2,cloze,ruošti,to prepare,Mama {ruošia} vakarienę.,Mum is preparing dinner.,Verbs,no
+1834,1834_interneto_svetaine,A2,cloze,interneto svetainė,website,Žiūrėk mūsų {interneto svetainėje}.,Look on our website.,Nouns,no
+1835,1835_patirtis,A2,cloze,patirtis,experience,Turiu darbo {patirties}.,I have work experience.,Work & school,no
+1840,1840_vazineti,A2,cloze,važinėti,to drive around,{Važinėju} dviračiu.,I ride a bicycle (regularly).,Verbs,no
+1841,1841_mazdaug,A2,cloze,maždaug,"approximately, about",Tai kainuoja {maždaug} dešimt eurų.,It costs about ten euros.,Adverbs,no
+1842,1842_zinute,A2,cloze,žinutė,message,Parašyk man {žinutę}.,Write me a message.,Technology,no
+1843,1843_pasirinkimas,A2,cloze,pasirinkimas,choice,Geras {pasirinkimas}!,Good choice!,Abstract,no
+1844,1844_nuleisti,A2,cloze,nuleisti,to lower,{Nuleisk} rankas.,Lower your hands.,Verbs,no
+1845,1845_instrukcija,A2,cloze,instrukcija,instructions (leaflet),Perskaityk {instrukciją}.,Read the instructions.,Nouns,no
+1846,1846_nuotaika,A2,cloze,nuotaika,mood,Šiandien esu geros {nuotaikos}.,I am in a good mood today.,Feelings,no
+1851,1851_organizuoti,A2,cloze,organizuoti,to organise,Kas {organizuoja} šventę?,Who is organising the party?,Verbs,no
+1852,1852_dinges,A2,cloze,dingęs,missing; lost (object),Mano piniginė {dingo}.,My wallet is missing.,Adjectives,no
+1853,1853_prancuzas,A2,cloze,prancūzas,Frenchman,Ji – {prancūzė}.,She is French.,Nationalities,no
+1854,1854_jungti,A2,cloze,jungti,to connect; switch on,{Įjunk} šviesą.,Switch on the light.,Verbs,no
+1855,1855_netycia,A2,cloze,netyčia,by accident,"Atsiprašau, {netyčia}.","Sorry, it was an accident.",Adverbs,no
+1856,1856_tycia,A2,cloze,tyčia,on purpose,Jis tai padarė {tyčia}.,He did it on purpose.,Adverbs,no
+1857,1857_laisvalaikis,A2,cloze,laisvalaikis,free time,Ką veiki {laisvalaikiu}?,What do you do in your free time?,Nouns,no
+1858,1858_sustokite_cia_prasau,A2,phrase,"Sustokite čia, prašau.","Stop here, please (taxi)","Sustokite čia, prašau.","Stop here, please (taxi)",Functions,no
+1862,1862_auginti,A2,cloze,auginti,to raise (children),Jie {augina} tris vaikus.,They are raising three children.,Verbs,no
+1863,1863_pamirsti,A2,cloze,pamiršti,to forget,{Pamiršau} raktus.,I forgot my keys.,Work & school,no
+1864,1864_skirtis,A2,cloze,skirtis,to divorce,Jie {išsiskyrė} pernai.,They divorced last year.,Verbs,no
+1865,1865_ji_paklause_kur_as,A2,cloze,"Ji paklausė, kur aš gyvenu",She asked me where I live,"Ji paklausė, {kur} aš gyvenu.",She asked where I live.,Extended patterns,no
+1866,1866_viza,A2,cloze,viza,visa,Man reikia {vizos}.,I need a visa.,Travel,no
+1867,1867_atvezti,A2,cloze,atvežti,to bring (by vehicle) (perf.),{Atvežiau} bulvių iš kaimo.,I brought potatoes from the countryside.,Verbs,no
+1868,1868_gimimo_data,A2,cloze,gimimo data,date of birth,Jūsų {gimimo data}?,Your date of birth?,Nouns,no
+1873,1873_gesti,A2,cloze,gesti,to break down; go off,Mašina dažnai {genda}.,The car often breaks down.,Verbs,no
+1874,1874_staiga,A2,cloze,staiga,suddenly,{Staiga} pradėjo lyti.,Suddenly it started to rain.,Adverbs,no
+1875,1875_sis_didesnis_nei_tas,A2,cloze,Šis didesnis nei tas,This is bigger than that,Šis {didesnis} nei tas.,This one is bigger than that one.,Extended patterns,no
+1876,1876_populiarus,A2,cloze,populiarus,popular,Krepšinis Lietuvoje labai {populiarus}.,Basketball is very popular in Lithuania.,Adjectives,no
+1877,1877_noras,A2,cloze,noras,"wish, desire",Turiu vieną {norą}.,I have one wish.,Abstract,no
+1878,1878_alga,A2,cloze,alga,salary,Mano {alga} nedidelė.,My salary is not big.,Work & school,no
+1879,1879_gimimo_vieta,A2,cloze,gimimo vieta,place of birth,{Gimimo vieta} – Vilnius.,Place of birth: Vilnius.,Nouns,no
+1880,1880_esu_alergiskas,A2,phrase,Esu alergiškas…,I'm allergic to…,Esu alergiškas…,I'm allergic to…,Transactions,no
+1884,1884_persikelti,A2,cloze,persikelti,to move (house),{Persikėlėme} į Vilnių.,We moved to Vilnius.,Verbs,no
+1885,1885_kelintas,A2,cloze,kelintas,which (ordinal; masc),{Kelintas} aukštas?,Which floor?,Pronouns,no
+1886,1886_realus,A2,cloze,realus,real,Tai {realus} planas.,It is a realistic plan.,Adjectives,no
+1887,1887_aiskiai,A2,cloze,aiškiai,clearly,Kalbėkite {aiškiai}.,Speak clearly.,Adverbs,no
+1888,1888_uzsirasyti,A2,cloze,užsirašyti,to make an appointment; sign up; note down,{Užsirašiau} pas gydytoją.,I made an appointment with the doctor.,Verbs,no
+1889,1889_laikotarpis,A2,cloze,laikotarpis,period,Tai sunkus {laikotarpis}.,It is a difficult period.,Abstract,no
+1890,1890_deklaracija,A2,cloze,deklaracija,declaration (tax/customs),Užpildžiau {deklaraciją}.,I filled in the declaration.,Nouns,no
+1894,1894_atsiprasau_kad_veluoju,A2,phrase,"Atsiprašau, kad vėluoju.",I'm late / sorry I'm late,"Atsiprašau, kad vėluoju.",I'm late / sorry I'm late,Functions,no
+1895,1895_dometis,A2,cloze,domėtis,to be interested in (+instr.),{Domiuosi} istorija.,I am interested in history.,Verbs,no
+1896,1896_gerbiamas,A2,cloze,gerbiamas,respected; Dear (in letters),"{Gerbiamas} direktoriau,","Dear Director,",Adjectives,no
+1897,1897_buti_skolingas,A2,cloze,būti skolingas,to owe (be in debt),Aš tau {skolingas} dešimt eurų.,I owe you ten euros.,Verbs,no
+1898,1898_tyliai,A2,cloze,tyliai,quietly,"Kalbėkite {tyliai}, vaikas miega.","Speak quietly, the child is sleeping.",Adverbs,no
+1899,1899_garsiai,A2,cloze,garsiai,loudly,Nekalbėk taip {garsiai}.,Don't talk so loudly.,Adverbs,no
+1900,1900_vokieciu_kalba,A2,cloze,vokiečių kalba,German (language),Mokausi {vokiečių kalbos}.,I am learning German.,Languages,no
+1901,1901_matematika,A2,cloze,matematika,mathematics,{Matematika} man sunki.,Mathematics is hard for me.,Nouns,no
+1906,1906_pirmiausia,A2,cloze,Pirmiausia,First of all,{Pirmiausia} nusiplauk rankas.,"First of all, wash your hands.",Opinion & discourse,no
+1907,1907_isvezti,A2,cloze,išvežti,to take away (by vehicle),Šiukšles {išveža} pirmadieniais.,The rubbish is collected on Mondays.,Verbs,no
+1908,1908_egzaminas,A2,cloze,egzaminas,exam,Rytoj laikau {egzaminą}.,Tomorrow I am taking an exam.,Work & school,no
+1909,1909_smulkus,A2,cloze,smulkus,"small, fine (smulkūs pinigai = small change)",Ar turite {smulkių} pinigų?,Do you have small change?,Adjectives,no
+1910,1910_atpazinti,A2,cloze,atpažinti,to recognise,Aš jo {neatpažinau}.,I didn't recognise him.,Verbs,no
+1911,1911_draugiskas,A2,cloze,draugiškas,friendly,Kaimynai labai {draugiški}.,The neighbours are very friendly.,Feelings,no
+1912,1912_gebejimas,A2,cloze,gebėjimas,ability; skill,Svarbus {gebėjimas} – klausytis.,An important skill is listening.,Nouns,no
+1915,1915_esu_uzsiregistraves_pas_gydytoja,A2,phrase,Esu užsiregistravęs pas gydytoją,I have an appointment (with the doctor),Esu užsiregistravęs pas gydytoją,I have an appointment (with the doctor),Transactions,no
+1917,1917_vezti,A2,cloze,vežti,"to carry, transport (by vehicle)",Autobusas {veža} keleivius.,The bus carries passengers.,Verbs,no
+1918,1918_vienuoliktas,A2,cloze,vienuoliktas,eleventh,Susitinkame {vienuoliktą} valandą.,We meet at eleven o'clock.,Numbers,no
+1919,1919_svajone,A2,cloze,svajonė,dream,Mano {svajonė} – pamatyti jūrą.,My dream is to see the sea.,Abstract,no
+1920,1920_perspeti,A2,cloze,perspėti,to warn,Aš tave {perspėjau}.,I warned you.,Verbs,no
+1921,1921_neiprastas,A2,cloze,neįprastas,unusual; strange,Tai {neįprastas} vardas.,That is an unusual name.,Adjectives,no
+1922,1922_trumpai,A2,cloze,trumpai,briefly,Papasakok {trumpai}.,Tell it briefly.,Adverbs,no
+1923,1923_pussesere,A2,cloze,pusseserė,cousin (female),Ji mano {pusseserė}.,She is my cousin (f).,Nouns,no
+1926,1926_ar_turite_kitos_spalvos,A2,phrase,Ar turite kitos spalvos? / kito dydžio?,Do you have it in another colour / size?,Ar turite kitos spalvos? / kito dydžio?,Do you have it in another colour / size?,Functions,no
+1928,1928_nervintis,A2,cloze,nervintis,to be nervous,{Nesinervink}.,Do not be nervous.,Verbs,no
+1929,1929_atideti,A2,cloze,atidėti,to postpone,Susitikimą {atidėjome}.,We postponed the meeting.,Verbs,no
+1930,1930_drasus,A2,cloze,drąsus,brave,Jis {drąsus} žmogus.,He is a brave man.,Feelings,no
+1931,1931_studijuoti,A2,cloze,studijuoti,to study,{Studijuoju} universitete.,I study at university.,Work & school,no
+1932,1932_begioti,A2,cloze,bėgioti,to jog; run about,Rytais {bėgioju} parke.,In the mornings I jog in the park.,Verbs,no
+1933,1933_prancuzu_kalba,A2,cloze,prancūzų kalba,French (language),Ji moka {prancūzų kalbą}.,She knows French.,Languages,no
+1934,1934_akademija,A2,cloze,akademija,academy,Ji studijuoja Muzikos {akademijoje}.,She studies at the Music Academy.,Nouns,no
+1939,1939_susirgti,A2,cloze,susirgti,to fall ill (perf.),Vaikas {susirgo}.,The child fell ill.,Verbs,no
+1940,1940_atsipalaiduoti,A2,cloze,atsipalaiduoti,to relax,Vakare noriu {atsipalaiduoti}.,In the evening I want to relax.,Verbs,no
+1941,1941_atsiminti,A2,cloze,atsiminti,to remember,{Atsimenu} tavo vardą.,I remember your name.,Work & school,no
+1942,1942_paskambinsiu_tau_veliau,A2,cloze,Paskambinsiu tau vėliau,I will call you later,{Paskambinsiu} tau vėliau.,I will call you later.,Extended patterns,no
+1943,1943_vidutinio_amziaus,A2,cloze,vidutinio amžiaus,middle-aged,Ji – {vidutinio amžiaus} moteris.,She is a middle-aged woman.,Adjectives,no
+1944,1944_nepazistamasis,A2,cloze,nepažįstamasis,stranger,Prie durų stovėjo {nepažįstamasis}.,A stranger stood at the door.,People,no
+1945,1945_gyvenimo_aprasymas,A2,cloze,gyvenimo aprašymas,CV,Atsiųskite {gyvenimo aprašymą}.,Send your CV.,Nouns,no
+1950,1950_siryt,A2,cloze,šįryt,this morning,{Šįryt} lijo.,This morning it rained.,Adverbs,no
+1951,1951_patarimas,A2,cloze,patarimas,advice,Ačiū už {patarimą}.,Thanks for the advice.,Abstract,no
+1952,1952_naudingas,A2,cloze,naudingas,useful,Tai {naudingas} patarimas.,That is useful advice.,Adjectives,no
+1953,1953_pasukti_i_desine,A2,cloze,pasukti į dešinę / dešinėn,to turn right,Prie banko {pasukite į dešinę}.,At the bank turn right.,Verbs,no
+1954,1954_slaptazodis,A2,cloze,slaptažodis,password,Pamiršau {slaptažodį}.,I forgot the password.,Technology,no
+1955,1955_letai,A2,cloze,lėtai,slowly,Kalbėkite {lėtai}.,Speak slowly.,Adverbs,no
+1956,1956_trecdalis,A2,cloze,trečdalis,a third,{Trečdalis} klasės serga.,A third of the class is ill.,Nouns,no
+1957,1957_kiek_laiko_uztrunka,A2,phrase,Kiek laiko užtrunka?,How long does it take?,Kiek laiko užtrunka?,How long does it take?,Functions,no
+1961,1961_netikras,A2,cloze,netikras,false,Šis auksas {netikras}.,This gold is fake.,Adjectives,no
+1962,1962_pasukti_i_kaire,A2,cloze,pasukti į kairę / kairėn,to turn left,Prie pašto {pasukite į kairę}.,At the post office turn left.,Verbs,no
+1963,1963_sunenas,A2,cloze,sūnėnas,nephew,Mano {sūnėnas} mokosi mokykloje.,My nephew is at school.,People,no
+1964,1964_netoli,A2,cloze,netoli,not far,Gyvenu {netoli} stoties.,I live not far from the station.,Adverbs,no
+1965,1965_lyginti,A2,cloze,lyginti,to compare,{Lyginu} kainas.,I am comparing prices.,Verbs,no
+1966,1966_pagamintas,A2,cloze,pagamintas,made (manufactured),{Pagaminta} Lietuvoje.,Made in Lithuania.,Adjectives,no
+1967,1967_bedarbis,A2,cloze,bedarbis,unemployed person,Jis dabar {bedarbis}.,He is unemployed now.,Nouns,no
+1968,1968_vieta_prie_tako,A2,phrase,vieta prie tako,aisle seat,vieta prie tako,aisle seat,Phrases,no
+1972,1972_naujienos,A2,cloze,naujienos,news,Kokios {naujienos}?,What is the news?,Society,no
+1973,1973_laikyti_egzamina,A2,cloze,laikyti egzaminą,to sit an exam,Rytoj {laikau egzaminą}.,Tomorrow I sit an exam.,Verbs,no
+1975,1975_prognoze,A2,cloze,prognozė,forecast,Kokia orų {prognozė} rytoj?,What is the weather forecast for tomorrow?,Nature,no
+1976,1976_negalima,A2,cloze,negalima / galima,must not (prohibition) / may (permission),Čia {galima} rūkyti?,May one smoke here?,Extended patterns,no
+1977,1977_vogti,A2,cloze,vogti,to steal,{Vogti} negalima.,Stealing is not allowed.,Verbs,no
+1978,1978_gripas,A2,cloze,gripas,flu,Sergu {gripu}.,I have the flu.,Nouns,no
+1980,1980_kompiuterinis_zaidimas,A2,cloze,kompiuterinis žaidimas,video game,Sūnus žaidžia {kompiuterinius žaidimus}.,My son plays video games.,Nouns,no
+1984,1984_niekaip,A2,cloze,niekaip,in no way,{Niekaip} negaliu užmigti.,I cannot fall asleep at all.,Adverbs,no
+1985,1985_nesutinku,A2,cloze,Nesutinku,I don't agree,Aš {nesutinku} su tavimi.,I do not agree with you.,Opinion & discourse,no
+1986,1986_detale,A2,cloze,detalė,detail,Tai smulki {detalė}.,That is a small detail.,Abstract,no
+1987,1987_plaukioti,A2,cloze,plaukioti,to swim (around),Vaikai {plaukioja} ežere.,The children are swimming about in the lake.,Verbs,no
+1989,1989_valiuta,A2,cloze,valiuta,currency,Kokia čia {valiuta}?,What is the currency here?,Nouns,no
+1991,1991_sildymas,A2,cloze,šildymas,heating,{Šildymas} brangus.,Heating is expensive.,Nouns,no
+1992,1992_zymeti,A2,cloze,žymėti,to mark,{Pažymėk} teisingą atsakymą.,Mark the correct answer.,Verbs,no
+1995,1995_traukinys_isvaziuoja_devinta,A2,sentence card,,accusative of clock time,Traukinys {išvažiuoja} devintą valandą.,The train leaves at nine.,sentence,no
+1996,1996_leistis,A2,cloze,leistis,to descend,{Leidžiamės} laiptais žemyn.,We are going down the stairs.,Verbs,no
+1997,1997_be_abejo,A2,phrase,be abejo,undoubtedly,be abejo,undoubtedly,Phrases,no
+1998,1998_uzsienio,A2,cloze,užsienio,foreign,Mokausi {užsienio} kalbų.,I am learning foreign languages.,Adjectives,no
+1999,1999_neseniai,A2,cloze,neseniai,recently,{Neseniai} persikėliau į Vilnių.,I recently moved to Vilnius.,Adverbs,no
+2000,2000_gelezinkelio_stotis,A2,cloze,geležinkelio stotis,railway station,Kaip nuvykti į {geležinkelio stotį}?,How do I get to the railway station?,Nouns,no
+2002,2002_pensininkas,A2,cloze,pensininkas,pensioner,Senelis – {pensininkas}.,Grandfather is a pensioner.,Nouns,no
+2004,2004_pratimas,A2,cloze,pratimas,exercise (task),Padaryk {pratimą}.,Do the exercise.,Nouns,no
+2006,2006_dvyliktas,A2,cloze,dvyliktas,twelfth,Pietūs {dvyliktą} valandą.,Lunch is at twelve o'clock.,Numbers,no
+2007,2007_paveikti,A2,cloze,paveikti,to affect; influence,Oras {paveikė} mano nuotaiką.,The weather affected my mood.,Verbs,no
+2009,2009_tai_geriausias_restoranas_mieste,A2,cloze,Tai geriausias restoranas mieste,It is the best restaurant in the city,Tai {geriausias} restoranas mieste.,It is the best restaurant in the city.,Extended patterns,no
+2010,2010_modernus,A2,cloze,modernus,modern,Tai {modernus} pastatas.,It is a modern building.,Adjectives,no
+2011,2011_seansas,A2,cloze,seansas,showing (film),Vakarinis {seansas} – aštuntą.,The evening showing is at eight.,Nouns,no
+2013,2013_asmens_tapatybes_kortele,A2,cloze,asmens tapatybės kortelė,identity card,Turiu {asmens tapatybės kortelę}.,I have an identity card.,Nouns,no
+2015,2015_gimnazija,A2,cloze,gimnazija,gymnasium (upper secondary school),Sūnus mokosi {gimnazijoje}.,My son studies at the gymnasium.,Nouns,no
+2017,2017_kazkada,A2,cloze,kažkada,once; some time,{Kažkada} čia buvo mokykla.,Once there was a school here.,Adverbs,no
+2018,2018_uzsiregistruoti,A2,cloze,užsiregistruoti,to register (perf.),{Užsiregistravau} pas gydytoją.,I registered with the doctor.,Verbs,no
+2019,2019_truko_vamzdis,A2,phrase,trūko vamzdis,a pipe has burst,trūko vamzdis,a pipe has burst,Phrases,no
+2020,2020_atmintis,A2,cloze,atmintis,memory,Turiu gerą {atmintį}.,I have a good memory.,Abstract,no
+2021,2021_kelinta,A2,cloze,kelinta,which (ordinal; fem),{Kelinta} šiandien?,What is the date today?,Pronouns,no
+2022,2022_fizika,A2,cloze,fizika,physics,Mėgstu {fiziką}.,I like physics.,Nouns,no
+2024,2024_semestras,A2,cloze,semestras,term; semester,Kitas {semestras} prasideda rugsėjį.,The next semester starts in September.,Nouns,no
+2026,2026_stebetis,A2,cloze,stebėtis,to be surprised,"Aš {stebiuosi}, kad jis atėjo.",I am surprised that he came.,Verbs,no
+2028,2028_nerimauti,A2,cloze,nerimauti,to worry,"Mama {nerimauja}, kai vėluoju.",Mum worries when I am late.,Verbs,no
+2029,2029_dukterecia,A2,cloze,dukterėčia,niece,{Dukterėčiai} penki metai.,My niece is five.,People,no
+2030,2030_leiskite_prisistatyti,A2,phrase,Leiskite prisistatyti.,Let me introduce myself,Leiskite prisistatyti.,Let me introduce myself,Functions,no
+2031,2031_i_lauka,A2,cloze,į lauką,outside (direction),Vaikai išbėgo {į lauką}.,The children ran outside.,Adverbs,no
+2032,2032_kantrus,A2,cloze,kantrus,patient,Mokytojas turi būti {kantrus}.,A teacher has to be patient.,Feelings,no
+2034,2034_laimei,A2,cloze,Laimei,Luckily,"{Laimei}, autobusas dar neišvažiavo.","Luckily, the bus had not left yet.",Opinion & discourse,no
+2035,2035_puse_kilogramo,A2,cloze,pusė kilogramo,half a kilogram,"{Pusę kilogramo} sūrio, prašau.","Half a kilo of cheese, please.",Nouns,no
+2037,2037_nakti_sviecia_menulis,A2,sentence card,,accusative of time,Naktį {šviečia} mėnulis.,At night the moon shines.,sentence,no
+2039,2039_tiksliai,A2,cloze,tiksliai,exactly,Nežinau {tiksliai}.,I do not know exactly.,Adverbs,no
+2040,2040_internetinis,A2,cloze,internetinis,online,Tai {internetinė} parduotuvė.,It is an online shop.,Adjectives,no
+2042,2042_atostogauti,A2,cloze,atostogauti,to be on holiday,Vasarą {atostogauju} prie jūros.,In summer I holiday by the sea.,Verbs,no
+2043,2043_gimtoji_kalba,A2,cloze,gimtoji kalba,native language,Mano {gimtoji kalba} – lietuvių.,My native language is Lithuanian.,Languages,no
+2045,2045_megautis,A2,cloze,mėgautis,to enjoy,{Mėgaujuosi} saule.,I am enjoying the sun.,Verbs,no
+2046,2046_alergija,A2,cloze,alergija,allergy,Turiu {alergiją} riešutams.,I have an allergy to nuts.,Nouns,no
+2047,2047_skauda_pilva,A2,phrase,skauda pilvą,stomach ache,skauda pilvą,stomach ache,Functions,no
+2048,2048_medinis,A2,cloze,medinis,wooden,{Medinis} namas.,A wooden house.,Adjectives,no
+2050,2050_sutaupyti,A2,cloze,sutaupyti,to save up (perf.),{Sutaupiau} šimtą eurų.,I saved a hundred euros.,Verbs,no
+2051,2051_dukart,A2,cloze,dukart,twice,Skambinau tau {dukart}.,I called you twice.,Adverbs,no
+2053,2053_vietinis,A2,cloze,vietinis,local,Tai {vietinis} alus.,It is a local beer.,Adjectives,no
+2054,2054_susizeisti,A2,cloze,susižeisti,to get hurt,{Susižeidžiau} koją.,I hurt my leg.,Verbs,no
+2056,2056_pokytis,A2,cloze,pokytis,change (noun),Tai didelis {pokytis}.,That is a big change.,Abstract,no
+2058,2058_anketa,A2,cloze,anketa,form (to fill),Užpildykite {anketą}.,Fill in the form.,Money & admin,no
+2059,2059_issiskyres,A2,cloze,išsiskyręs,divorced,Jis {išsiskyręs}.,He is divorced.,Adjectives,no
+2062,2062_karsciuoju,A2,phrase,Karščiuoju. / Peršalau.,I have a temperature / a cold,Karščiuoju. / Peršalau.,I have a temperature / a cold,Functions,no
+2064,2064_aptarnauti,A2,cloze,aptarnauti,to serve (in a restaurant),Padavėja mus greitai {aptarnavo}.,The waitress served us quickly.,Verbs,no
+2065,2065_pyktis,A2,cloze,pyktis,anger,{Pyktis} nepadeda.,Anger does not help.,Feelings,no
+2069,2069_varzytis,A2,cloze,varžytis,to compete,"Vaikai {varžosi}, kas greitesnis.",The children compete to see who is faster.,Verbs,no
+2071,2071_privalumas,A2,cloze,privalumas,advantage,Didelis {privalumas} — centras arti.,A big advantage is that the centre is near.,Nouns,no
+2076,2076_nepatenkintas,A2,cloze,nepatenkintas,dissatisfied,Klientas {nepatenkintas}.,The customer is dissatisfied.,Adjectives,no
+2077,2077_kvadratinis_metras,A2,cloze,kvadratinis metras,square metre,Butas – penkiasdešimt {kvadratinių metrų}.,The flat is fifty square metres.,Nouns,no
+2078,2078_jus_ne_ten_pataikete,A2,phrase,Jūs ne ten pataikėte.,Wrong number,Jūs ne ten pataikėte.,Wrong number,Functions,no
+2080,2080_nesioti,A2,cloze,nešioti,to wear; carry about,Ji {nešioja} akinius.,She wears glasses.,Verbs,no
+2081,2081_naudinga,A2,cloze,naudinga,useful,Tai {naudinga} žinoti.,That is useful to know.,Adverbs,no
+2084,2084_pareiti,A2,cloze,pareiti,to come back home,{Parėjau} namo vėlai.,I came home late.,Verbs,no
+2085,2085_popierinis,A2,cloze,popierinis,paper (adj.),{Popierinis} maišelis.,A paper bag.,Adjectives,no
+2086,2086_ispanu_kalba,A2,cloze,ispanų kalba,Spanish (language),Ji gerai moka {ispanų kalbą}.,She knows Spanish well.,Languages,no
+2087,2087_skustis,A2,cloze,skųstis,to complain,Jis visada {skundžiasi}.,He always complains.,Verbs,no
+2089,2089_ketinu_aplankyti_mociute,A2,cloze,Ketinu aplankyti močiutę,I am going to visit my grandmother,{Ketinu} aplankyti močiutę.,I am going to visit my grandmother.,Extended patterns,no
+2091,2091_priziureti,A2,cloze,prižiūrėti,"to look after, supervise",Močiutė {prižiūri} vaikus.,Grandmother looks after the children.,Verbs,no
+2092,2092_zemiau,A2,cloze,žemiau,lower; below,Pakabink paveikslą {žemiau}.,Hang the picture lower.,Adverbs,no
+2096,2096_gerai_sutarta,A2,phrase,"Gerai, sutarta.","Good idea / OK, agreed","Gerai, sutarta.","Good idea / OK, agreed",Functions,no
+2097,2097_diskutuoti,A2,cloze,diskutuoti,to discuss,Mes ilgai {diskutavome}.,We discussed for a long time.,Verbs,no
+2100,2100_persalimas,A2,cloze,peršalimas,cold (illness),Tai tik {peršalimas}.,It's just a cold.,Health,no
+2103,2103_melas,A2,cloze,melas,lie (untruth),Tai {melas}!,That is a lie!,Abstract,no
+2108,2108_ar_galite_mus_nufotografuoti,A2,phrase,Ar galite mus nufotografuoti?,Can you take a photo of us?,Ar galite mus nufotografuoti?,Can you take a photo of us?,Functions,no
+2109,2109_darbdavys,A2,cloze,darbdavys,employer,Mano {darbdavys} geras žmogus.,My employer is a good person.,Work & culture,no
+2116,2116_tamsiai,A2,cloze,tamsiai,dark (of colours),{Tamsiai} žalias paltas.,A dark green coat.,Adverbs,no
+2117,2117_palydeti,A2,cloze,palydėti,to accompany,{Palydėsiu} tave iki stoties.,I will accompany you to the station.,Verbs,no
+2118,2118_cia_negalima_rukyti,A2,cloze,Čia negalima rūkyti,You must not smoke here,Čia {negalima} rūkyti.,You must not smoke here.,Extended patterns,no
+2125,2125_istekejusi,A2,cloze,ištekėjusi,married (of a woman),Ji {ištekėjusi}.,She is married.,Adjectives,no
+2126,2126_oro_kondicionierius,A2,cloze,oro kondicionierius,air conditioner,Kambaryje yra {oro kondicionierius}.,There is an air conditioner in the room.,Nouns,no
+2127,2127_susitikime_sesta,A2,phrase,Susitikime šeštą. / Gal susitinkam rytoj?,Shall we meet at…? (arranging),Susitikime šeštą. / Gal susitinkam rytoj?,Shall we meet at…? (arranging),Functions,no
+2128,2128_neislaikyti_egzamino,A2,cloze,neišlaikyti egzamino,to fail an exam,Jis {neišlaikė egzamino}.,He failed the exam.,Verbs,no
+2130,2130_israsti,A2,cloze,išrasti,to invent,Kas {išrado} telefoną?,Who invented the telephone?,Verbs,no
+2133,2133_madingas,A2,cloze,madingas,fashionable,Tai {madingas} paltas.,That is a fashionable coat.,Adjectives,no
+2134,2134_salygos,A2,cloze,sąlygos,conditions,Geros darbo {sąlygos}.,Good working conditions.,Nouns,no
+2136,2136_ar_galite_ka_nors,A2,phrase,Ar galite ką nors parekomenduoti?,Can you recommend something?,Ar galite ką nors parekomenduoti?,Can you recommend something?,Transactions,no
+2137,2137_mineralinis_vanduo,A2,cloze,mineralinis vanduo,mineral water,"Butelį {mineralinio vandens}, prašau.","A bottle of mineral water, please.",Nouns,no
+2141,2141_nuobodu,A2,cloze,nuobodu,bored; boring (it is boring),Man {nuobodu}.,I am bored.,Feelings,no
+2146,2146_maudyti,A2,cloze,maudyti,to bathe (someone),Mama {maudo} kūdikį.,Mum is bathing the baby.,Verbs,no
+2147,2147_gero_poilsio,A2,phrase,Gero poilsio! / Smagiai praleisti laiką!,Enjoy! / Have fun!,Gero poilsio! / Smagiai praleisti laiką!,Enjoy! / Have fun!,Functions,no
+2150,2150_destyti,A2,cloze,dėstyti,to teach,Ji {dėsto} istoriją.,She teaches (lectures in) history.,Work & school,no
+2151,2151_prausti,A2,cloze,prausti,to wash (someone),Mama {prausia} vaiką.,Mum is washing the child.,Verbs,no
+2153,2153_man_sriubos_prasau,A2,phrase,"Man sriubos, prašau.",I'll have the soup (ordering),"Man sriubos, prašau.",I'll have the soup (ordering),Functions,no
+2159,2159_kraujospudis,A2,cloze,kraujospūdis,blood pressure,Man aukštas {kraujospūdis}.,I have high blood pressure.,Nouns,no
+2160,2160_plastikinis,A2,cloze,plastikinis,plastic,{Plastikinis} maišelis.,A plastic bag.,Adjectives,no
+2161,2161_treniruotis,A2,cloze,treniruotis,to practise,{Treniruojuosi} tris kartus per savaitę.,I train three times a week.,Verbs,no
+2165,2165_valgis,A2,cloze,valgis,dish; meal,Skanus {valgis}.,A tasty dish.,Nouns,no
+2166,2166_mandagus,A2,cloze,mandagus,polite,Pardavėja labai {mandagi}.,The shop assistant is very polite.,Feelings,no
+2169,2169_sviesiai,A2,cloze,šviesiai,light (of colours),{Šviesiai} mėlynas dangus.,A light blue sky.,Adverbs,no
+2171,2171_ar_galetume_gauti_meniu,A2,phrase,Ar galėtume gauti meniu?,Could we have the menu?,Ar galėtume gauti meniu?,Could we have the menu?,Functions,no
+2173,2173_deklaruoti,A2,cloze,deklaruoti,to declare,Ar turite ką {deklaruoti}?,Do you have anything to declare?,Verbs,no
+2175,2175_rezervuoti,A2,cloze,rezervuoti,"to book, reserve",Noriu {rezervuoti} kambarį.,I want to reserve a room.,Travel,no
+2177,2177_apsisukti,A2,cloze,apsisukti,to turn around,{Apsisuk} ir eik atgal.,Turn around and go back.,Verbs,no
+2179,2179_lengviau_nei_maniau,A2,cloze,"Lengviau, nei maniau",It is easier than I thought,"{Lengviau}, nei maniau.",It is easier than I thought.,Extended patterns,no
+2183,2183_artintis,A2,cloze,artintis,to approach,{Artinasi} žiema.,Winter is approaching.,Verbs,no
+2184,2184_nepatogus,A2,cloze,nepatogus,uncomfortable,Kėdė {nepatogi}.,The chair is uncomfortable.,Adjectives,no
+2185,2185_kur_reikia_persesti,A2,phrase,Kur reikia persėsti?,Where do I have to change?,Kur reikia persėsti?,Where do I have to change?,Transactions,no
+2188,2188_neislaikyti,A2,cloze,neišlaikyti (egzamino),to fail (exam),Jis {neišlaikė} egzamino.,He failed the exam.,Verbs,no
+2190,2190_trukti,A2,cloze,trūkti,to be lacking (Man trūksta +gen),Man {trūksta} laiko.,I lack time.,Verbs,no
+2193,2193_poryt,A2,cloze,poryt,the day after tomorrow,{Poryt} – šeštadienis.,The day after tomorrow is Saturday.,Adverbs,no
+2194,2194_noreciau_rezervuoti_kambari,A2,phrase,Norėčiau rezervuoti kambarį,I would like to book a room,Norėčiau rezervuoti kambarį,I would like to book a room,Transactions,no
+2199,2199_tradicinis,A2,cloze,tradicinis,traditional,Cepelinai – {tradicinis} patiekalas.,Cepelinai are a traditional dish.,Adjectives,no
+2200,2200_plansete,A2,cloze,planšetė,tablet (device),Vaikas žaidžia žaidimus {planšetėje}.,The child is playing games on the tablet.,Nouns,no
+2201,2201_gerinti,A2,cloze,gerinti,to improve,Noriu {pagerinti} savo lietuvių kalbos žinias.,I want to improve my Lithuanian.,Verbs,no
+2202,2202_ka_rekomenduotumete,A2,phrase,Ką rekomenduotumėte?,What would you recommend?,Ką rekomenduotumėte?,What would you recommend?,Functions,no
+2204,2204_dalintis,A2,cloze,dalintis,to share,{Dalinamės} kambariu.,We share a room.,Verbs,no
+2205,2205_pagyvenes,A2,cloze,pagyvenęs,elderly,Atėjo {pagyvenęs} vyras.,An elderly man came.,Adjectives,no
+2206,2206_deginti,A2,cloze,deginti,to burn,Rudenį {deginame} lapus.,In autumn we burn leaves.,Verbs,no
+2210,2210_vakar_nuejau_i_parduotuve,A2,cloze,Vakar nuėjau į parduotuvę,Yesterday I went to the shop,Vakar {nuėjau} į parduotuvę.,Yesterday I went to the shop.,Extended patterns,no
+2211,2211_baigiamasis_egzaminas,A2,cloze,baigiamasis egzaminas,final exam,Laikau {baigiamąjį egzaminą}.,I am taking the final exam.,Nouns,no
+2212,2212_uzlieti_kaimynus,A2,cloze,užlieti kaimynus,to flood the neighbours,{Užliejau kaimynus}.,I flooded the neighbours.,Verbs,no
+2213,2213_nevedes,A2,cloze,nevedęs,unmarried (man),Jis {nevedęs}.,He is unmarried.,Adjectives,no
+2215,2215_klaidingai,A2,cloze,klaidingai,wrongly,Parašei {klaidingai}.,You wrote it wrongly.,Adverbs,no
+2216,2216_kopijuoti,A2,cloze,kopijuoti,to copy,{Nukopijuokite} dokumentą.,Copy the document.,Verbs,no
+2221,2221_kaip_rasoma,A2,phrase,"Kaip rašoma? / Paraidžiui, prašau.","How do you spell it? / Spell it, please","Kaip rašoma? / Paraidžiui, prašau.","How do you spell it? / Spell it, please",Functions,no
+2224,2224_nuomotis,A2,cloze,nuomotis,to rent,{Nuomojuosi} butą centre.,I rent a flat in the centre.,Verbs,no
+2226,2226_kazkuri,A2,cloze,kažkuri,some one (fem),{Kažkuri} iš jų žino.,One of them (fem.) knows.,Pronouns,no
+2228,2228_gauti_viza,A2,cloze,gauti vizą,to get a visa,Reikia {gauti vizą}.,One needs to get a visa.,Verbs,no
+2230,2230_mes_mokomes_lietuviu_kalbos,A2,sentence card,,reflexive verb + genitive,Mes {mokomės} lietuvių kalbos.,We are learning Lithuanian.,sentence,no
+2234,2234_pasimatuoti,A2,cloze,pasimatuoti,to try on (perf.),Galiu {pasimatuoti}?,May I try it on?,Verbs,no
+2238,2238_veztis,A2,cloze,vežtis,to take along (by vehicle),{Vežuosi} lagaminą.,I am taking a suitcase along.,Verbs,no
+2243,2243_gultis_i_ligonine,A2,cloze,gultis į ligoninę,to go into hospital,Jam reikia {gultis į ligoninę}.,He needs to go into hospital.,Verbs,no
+2245,2245_ar_galeciau_kalbeti_su,A2,phrase,Ar galėčiau kalbėti su Jonu?,Could I speak to…? (phone),Ar galėčiau kalbėti su Jonu?,Could I speak to…? (phone),Functions,no
+2247,2247_ketvirtadalis,A2,cloze,ketvirtadalis,quarter,{Ketvirtadalis} valandos.,A quarter of an hour.,Nouns,no
+2249,2249_charakteris,A2,cloze,charakteris,character,Ji turi gerą {charakterį}.,She has a good character.,Feelings,no
+2250,2250_issinesti,A2,cloze,išsinešti,to take away,"Kavą {išsinešti}, prašau.","Coffee to take away, please.",Verbs,no
+2251,2251_kazkiek,A2,cloze,kažkiek,some amount,Dar turiu {kažkiek} pinigų.,I still have some money.,Adverbs,no
+2254,2254_tolti,A2,cloze,tolti,to move away,Traukinys {tolsta}.,The train is moving away.,Verbs,no
+2255,2255_poliklinika,A2,cloze,poliklinika,outpatient clinic,Einu į {polikliniką}.,I am going to the clinic.,Nouns,no
+2257,2257_el_pastas,A2,cloze,el. paštas,e-mail,Koks tavo {el. paštas}?,What is your e-mail?,Technology,no
+2259,2259_negazuotas_vanduo,A2,cloze,negazuotas vanduo,still water,"{Negazuoto vandens}, prašau.","Still water, please.",Nouns,no
+2262,2360_apsidrausti,A2,cloze,apsidrausti,to take out insurance; to get insured (perf.),Prieš kelionę reikia {apsidrausti}.,One should take out insurance before a trip.,Verbs,no
+2264,2264_liudesys,A2,cloze,liūdesys,sadness,Jos akyse buvo {liūdesys}.,There was sadness in her eyes.,Feelings,no
+2265,2265_linksmu_velyku,A2,phrase,Linksmų Velykų!,Happy holidays / Happy Easter,Linksmų Velykų!,Happy holidays / Happy Easter,Functions,no
+2268,2268_neskanus,A2,cloze,neskanus,tasteless,Sriuba {neskani}.,The soup is not tasty.,Adjectives,no
+2271,2267_dziuti,A2,cloze,džiūti,to dry (intrans.),Skalbiniai {džiūsta} lauke.,The washing is drying outside.,Verbs,no
+2273,2273_iprotis,A2,cloze,įprotis,habit,Tai blogas {įprotis}.,That is a bad habit.,Abstract,no
+2281,2281_gramatika,A2,cloze,gramatika,grammar,Lietuvių {gramatika} sunki.,Lithuanian grammar is hard.,Nouns,no
+2283,2283_susitinkame_sesta_valanda,A2,cloze,Susitinkame šeštą valandą,We are meeting at six,Susitinkame {šeštą valandą}.,We are meeting at six o'clock.,Extended patterns,no
+2290,2290_ar_galiu_pasimatuoti,A2,phrase,Ar galiu pasimatuoti?,Can I try it on?,Ar galiu pasimatuoti?,Can I try it on?,Functions,no
+2293,2293_uzvakar,A2,cloze,užvakar,the day before yesterday,{Užvakar} buvo šventė.,The day before yesterday was a holiday.,Adverbs,no
+2296,2295_nervingas,A2,cloze,nervingas,nervous,Prieš egzaminą esu {nervingas}.,Before an exam I am nervous.,Feelings,no
+2297,2297_domiuosi_istorija,A2,cloze,Domiuosi istorija,I am interested in history,Domiuosi {istorija}.,I am interested in history. (instrumental),Extended patterns,no
+2299,2299_sloga,A2,cloze,sloga,head cold; runny nose,Turiu {slogą}.,I have a cold (runny nose).,Nouns,no
+2304,2304_minus,A2,cloze,minus,minus,Lauke {minus} penki.,It is minus five outside.,Adverbs,no
+2306,2306_pagarbiai,A2,cloze,pagarbiai,respectfully (letter closing),"{Pagarbiai}, Jonas","Respectfully, Jonas",Adverbs,no
+2307,2307_jei_lis_liksiu_namie,A2,cloze,"Jei lis, liksiu namie","If it rains, I will stay home","Jei {lis}, liksiu namie.","If it rains, I will stay home.",Extended patterns,no
+2309,2309_karsciavimas,A2,cloze,karščiavimas,fever,Reikia vaistų nuo {karščiavimo}.,We need medicine for the fever.,Health,no
+2313,2313_tautybe,A2,cloze,tautybė,nationality,Kokia jūsų {tautybė}?,What is your nationality?,Nouns,no
+2318,2316_dziovinti,A2,cloze,džiovinti,to dry (trans.),{Džiovinu} plaukus.,I am drying my hair.,Verbs,no
+2320,2319_nuostaba,A2,cloze,nuostaba,surprise,Jis pažiūrėjo į mane su {nuostaba}.,He looked at me with surprise.,Feelings,no
+2323,2322_pasenes,A2,cloze,pasenęs,stale,Duona {pasenusi}.,The bread is stale.,Adjectives,no
+2326,2323_uzdengti,A2,cloze,uždengti,to cover,{Uždenk} puodą.,Cover the pot.,Verbs,no
+2331,2327_liepti,A2,cloze,liepti,to order (command),Gydytojas {liepė} gulėti.,The doctor ordered (me) to stay in bed.,Verbs,no
+2333,2331_reikia_rezervuoti_is_anksto,A2,cloze,Reikia rezervuoti iš anksto,It is necessary to book in advance,{Reikia} rezervuoti iš anksto.,It is necessary to book in advance.,Extended patterns,no
+2334,2332_registruotis,A2,cloze,registruotis,to register; book in,Reikia {registruotis} iš anksto.,One must register in advance.,Verbs,no
+2335,2335_atmintukas,A2,cloze,atmintukas,USB stick,Įrašyk failą į {atmintuką}.,Save the file onto a USB stick.,Nouns,no
+2336,2336_aukletojas,A2,cloze,auklėtojas,kindergarten teacher; class teacher,Darželio {auklėtoja} labai gera.,The kindergarten teacher is very good.,Nouns,no
+2340,2340_grazos_nereikia,A2,phrase,Grąžos nereikia.,Keep the change,Grąžos nereikia.,Keep the change,Functions,no
+2344,2341_kirptis,A2,cloze,kirptis,to get a haircut,Einu {kirptis}.,I am going to get a haircut.,Verbs,no
+2346,2346_indaplove,A2,cloze,indaplovė,dishwasher,Sudėk indus į {indaplovę}.,Put the dishes in the dishwasher.,Nouns,no
+2348,2345_nudegti,A2,cloze,nudegti,to get burnt,{Nudegiau} ranką.,I burnt my hand.,Verbs,no
+2354,2355_atestatas,A2,cloze,atestatas,school-leaving certificate,Gavau brandos {atestatą}.,I received my school-leaving certificate.,Nouns,no
+2355,2352_skolintis,A2,cloze,skolintis,to borrow,Galiu {pasiskolinti} tavo knygą?,Can I borrow your book?,Verbs,no
+2356,2354_netekejusi,A2,cloze,netekėjusi,unmarried (woman),Ji {netekėjusi}.,She is unmarried.,Adjectives,no
+2360,2359_knyga_parase_lietuvis,A2,cloze,Knygą parašė lietuvis,The book was written by a Lithuanian,{Knygą} parašė lietuvis.,The book was written by a Lithuanian. (object first),Extended patterns,no
+2362,2363_slapti,A2,cloze,šlapti,to get wet,Be skėčio {sušlapsi}.,Without an umbrella you will get wet.,Verbs,no
+2364,2364_ar_aptarnavimas_iskaiciuotas,A2,phrase,Ar aptarnavimas įskaičiuotas?,Is service included?,Ar aptarnavimas įskaičiuotas?,Is service included?,Functions,no
+2371,2372_uzpernai,A2,cloze,užpernai,the year before last,{Užpernai} buvau Latvijoje.,The year before last I was in Latvia.,Adverbs,no
+2373,2374_snabzdeti,A2,cloze,šnabždėti,to whisper,Ji {šnabžda} man į ausį.,She whispers in my ear.,Verbs,no
+2374,2373_su_vardadieniu,A2,phrase,Su vardadieniu!,Happy name day,Su vardadieniu!,Happy name day,Functions,no
+2375,2375_estas,A2,cloze,estas,Estonian,Jis {estas} iš Talino.,He is an Estonian from Tallinn.,Nationalities,no
+2378,2381_turiu_rezervacija,A2,phrase,Turiu rezervaciją.,I have a reservation,Turiu rezervaciją.,I have a reservation,Functions,no
+2383,2383_perpildytas,A2,cloze,perpildytas,crowded,Autobusas {perpildytas}.,The bus is overcrowded.,Adjectives,no
+2384,2384_atsisiusti,A2,cloze,atsisiųsti,to download,{Atsisiunčiu} nuotraukas.,I am downloading the photos.,Technology,no
+2385,2382_skolinti,A2,cloze,skolinti,to lend,{Paskolink} man dešimt eurų.,Lend me ten euros.,Verbs,no
+2386,2386_kuris_peronas,A2,phrase,Kuris peronas?,Which platform?,Kuris peronas?,Which platform?,Functions,no
+2388,2387_dvivietis,A2,cloze,dvivietis (kambarys),double,Norėčiau {dviviečio} kambario.,I would like a double room.,Adjectives,no
+2389,2388_vienvietis,A2,cloze,vienvietis (kambarys),single (room),Ar turite {vienvietį} kambarį?,Do you have a single room?,Adjectives,no
+2392,2392_rakinti,A2,cloze,rakinti,to lock,"Kai {rakino} duris, atėjo kaimynas.","While he was locking the door, the neighbour came.",Verbs,no
+2394,2394_programele,A2,cloze,programėlė,app,Atsisiųsk šią {programėlę}.,Download this app.,Technology,no
+2395,2395_taisyklinga,A2,cloze,taisyklinga,correct(ly),Kalbėk {taisyklingai}.,Speak correctly.,Adverbs,no
+2396,2396_matuoti,A2,cloze,matuoti,to measure,Gydytojas {matuoja} temperatūrą.,The doctor is measuring the temperature.,Verbs,no
+2400,2399_darbstus,A2,cloze,darbštus,hard-working,Lietuviai – {darbštūs} žmonės.,Lithuanians are hard-working people.,Feelings,no
+2405,2405_davo,A2,cloze,-davo (frequentative past),used to (habitual past),Vaikystėje {žaisdavau} kieme.,As a child I used to play in the yard.,Extended patterns,no
+2411,2410_jau_metus_mokausi_lietuviu,A2,cloze,Jau metus mokausi lietuvių kalbos,I have been learning Lithuanian for a year,Jau {metus} mokausi lietuvių kalbos.,I have been learning Lithuanian for a year already.,Extended patterns,no
+2413,2413_dziovykle,A2,cloze,džiovyklė,clothes dryer,{Džiovyklė} sugedo.,The dryer broke down.,Nouns,no
+2415,2415_saldyti,A2,cloze,šaldyti,to freeze,Mėsą {šaldome} šaldiklyje.,We freeze the meat in the freezer.,Verbs,no
+2416,2416_niekada_nebuvau_latvijoje,A2,cloze,Niekada nebuvau Latvijoje,I have never been to Latvia,Niekada {nebuvau} Latvijoje.,I have never been to Latvia.,Extended patterns,no
+2417,2417_kroviklis,A2,cloze,kroviklis,charger,Ar turi telefono {kroviklį}?,Do you have a phone charger?,Technology,no
+2418,2418_esnis,A2,cloze,-esnis / -iausias,comparative / superlative pattern,Kaunas {mažesnis} už Vilnių.,Kaunas is smaller than Vilnius.,Extended patterns,no
+2420,2422_puslitris,A2,cloze,puslitris,half a litre,"{Puslitrį} pieno, prašau.","Half a litre of milk, please.",Nouns,no
+2423,2423_valiutos_keitykla,A2,cloze,valiutos keitykla,currency exchange,Kur yra {valiutos keitykla}?,Where is the currency exchange?,Nouns,no
+2424,2424_nuolaidu_kortele,A2,cloze,nuolaidų kortelė,discount card,Ar turite {nuolaidų kortelę}?,Do you have a discount card?,Nouns,no
+2427,2427_anksciau_gyvendavau_kaune,A2,cloze,Anksčiau gyvendavau Kaune,I used to live in Kaunas,Anksčiau {gyvendavau} Kaune.,I used to live in Kaunas.,Extended patterns,no
+2431,2431_belaidis_internetas,A2,cloze,belaidis internetas,wireless internet,Ar čia yra {belaidis internetas}?,Is there wi-fi here?,Nouns,no

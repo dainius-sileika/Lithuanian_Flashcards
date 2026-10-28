@@ -1,0 +1,505 @@
+position,key,level,kind,headword,gloss,sentence,english,category,recorded
+21,0021_labas,A1,phrase,Labas,Hello (informal),Labas,Hello (informal),Greetings,yes
+25,0025_aciu,A1,phrase,Ačiū,Thank you,Ačiū,Thank you,Politeness,yes
+32,0032_prasau,A1,phrase,Prašau,Please / you're welcome,Prašau,Please / you're welcome,Politeness,yes
+36,0036_laba_diena,A1,phrase,Laba diena,Good day,Laba diena,Good day,Greetings,yes
+43,0043_atsiprasau,A1,phrase,Atsiprašau…,"Excuse me, please…",Atsiprašau…,"Excuse me, please…",Formulas,yes
+47,0047_viso_gero,A1,phrase,Viso gero,Goodbye,Viso gero,Goodbye,Greetings,yes
+54,0054_iki,A1,phrase,Iki,Bye (informal),Iki,Bye (informal),Greetings,yes
+58,0058_nesuprantu,A1,phrase,Nesuprantu,I don't understand,Nesuprantu,I don't understand,Basics,yes
+65,0065_kiek_kainuoja,A1,phrase,Kiek kainuoja?,How much does it cost?,Kiek kainuoja?,How much does it cost?,Getting by,yes
+69,0069_kur_yra,A1,phrase,Kur yra…?,Where is…?,Kur yra…?,Where is…?,Getting by,yes
+77,0077_labas_rytas,A1,phrase,Labas rytas,Good morning,Labas rytas,Good morning,Greetings,yes
+81,0081_labas_vakaras,A1,phrase,Labas vakaras,Good evening,Labas vakaras,Good evening,Greetings,yes
+88,0088_sveiki,A1,phrase,Sveiki,Hello (formal/plural),Sveiki,Hello (formal/plural),Greetings,yes
+92,0092_labai_aciu,A1,phrase,Labai ačiū,Thank you very much,Labai ačiū,Thank you very much,Politeness,yes
+99,0099_nera_uz_ka,A1,phrase,Nėra už ką,You're welcome (not at all),Nėra už ką,You're welcome (not at all),Politeness,yes
+101,0101_moteris_valgo_duona,A1,sentence card,,present 3sg; accusative,Moteris {valgo} duoną.,The woman is eating bread.,sentence,yes
+102,0102_vyras_geria_kava,A1,sentence card,,present 3sg; accusative object,Vyras {geria} kavą.,The man is drinking coffee.,sentence,yes
+103,0103_atsiprasau,A1,phrase,Atsiprašau,I'm sorry,Atsiprašau,I'm sorry,Formulas,yes
+104,0104_kiek_kainuoja_duona,A1,sentence card,,question with kiek,Kiek {kainuoja} duona?,How much does the bread cost?,sentence,yes
+105,0105_ir,A1,cloze,ir,and,Perku duoną {ir} pieną.,I am buying bread and milk.,Conjunctions,yes
+106,0106_buti,A1,cloze,būti,to be,Aš {esu} mokytojas.,I am a teacher.,Modal & core verbs,yes
+110,0110_kur_yra_tualetas,A1,phrase,Kur yra tualetas?,Where is the toilet?,Kur yra tualetas?,Where is the toilet?,Getting by,yes
+112,0112_mes_einame_namo,A1,sentence card,,adverb namo,Mes {einame} namo.,We are going home.,sentence,yes
+113,0113_mano,A1,cloze,mano,my,Tai {mano} brolis.,This is my brother.,Pronouns,yes
+114,0114_saskaita_prasau,A1,phrase,"Sąskaitą, prašau","The bill, please","Sąskaitą, prašau","The bill, please",Getting by,yes
+115,0115_tas,A1,cloze,tas,that,{Tas} vyras yra mano kaimynas.,That man is my neighbour.,Pronouns,yes
+116,0116_i,A1,cloze,į,"in, into",Einu {į} parduotuvę.,I am going to the shop.,Prepositions,yes
+117,0117_mes_perkame_piena,A1,sentence card,,present 1pl; accusative,Mes {perkame} pieną.,We are buying milk.,sentence,yes
+121,0121_noreciau,A1,phrase,Norėčiau…,I would like…,Norėčiau…,I would like…,Getting by,yes
+124,0124_as_noriu_arbatos,A1,sentence card,,genitive after norėti (partitive),Aš {noriu} arbatos.,I want (some) tea.,sentence,yes
+125,0125_ar_kalbate_angliskai,A1,phrase,Ar kalbate angliškai?,Do you speak English?,Ar kalbate angliškai?,Do you speak English?,Basics,yes
+126,0126_su,A1,cloze,su,with,Geriu kavą {su} pienu.,I drink coffee with milk.,Prepositions,yes
+127,0127_as_esu_mokytojas,A1,sentence card,,copula + nominative profession,Aš {esu} mokytojas.,I am a teacher.,sentence,yes
+128,0128_tureti,A1,cloze,turėti,to have,Aš {turiu} du vaikus.,I have two children.,Modal & core verbs,yes
+129,0129_is,A1,cloze,iš,"from, out of",Jis yra {iš} Kauno.,He is from Kaunas.,Prepositions,yes
+132,0132_kaip_sekasi,A1,phrase,Kaip sekasi?,How are you?,Kaip sekasi?,How are you?,Basics,yes
+135,0135_cia,A1,cloze,čia,here,{Čia} yra mano namas.,Here is my house.,Adverbs,yes
+136,0136_man_gerai,A1,phrase,Man gerai,I'm fine,Man gerai,I'm fine,Basics,yes
+137,0137_galeti,A1,cloze,galėti,"to be able, can",Ar {galite} man padėti?,Can you help me?,Modal & core verbs,yes
+138,0138_kieno,A1,cloze,kieno,whose,{Kieno} tai knyga?,Whose book is this?,Question words,yes
+139,0139_kam,A1,cloze,kam,to whom; what for (dat. of kas),{Kam} tu skambini?,Who are you calling? (to whom),Question words,yes
+140,0140_ko,A1,cloze,ko,"of what, what (gen. of kas)","{Ko} norite, arbatos ar kavos?","What would you like, tea or coffee?",Question words,yes
+143,0143_nezinau,A1,phrase,Nežinau,I don't know,Nežinau,I don't know,Basics,yes
+146,0146_jis_dirba_ligonineje,A1,sentence card,,locative,Jis {dirba} ligoninėje.,He works in the hospital.,sentence,yes
+147,0147_mano_vardas,A1,phrase,Mano vardas…,My name is…,Mano vardas…,My name is…,Basics,yes
+148,0148_mano_vardas_yra_jonas,A1,sentence card,,copula; nominative,Mano vardas {yra} Jonas.,My name is Jonas.,sentence,yes
+149,0149_jos,A1,cloze,jos,her,{Jos} vardas Rūta.,Her name is Rūta.,Pronouns,yes
+150,0150_kaip,A1,cloze,kaip,how,{Kaip} tau sekasi?,How are you doing?,Question words,yes
+151,0151_ar,A1,cloze,ar,whether,{Ar} tu kalbi angliškai?,Do you speak English?,Conjunctions,yes
+154,0154_as_esu_is,A1,phrase,Aš esu iš…,I am from…,Aš esu iš…,I am from…,Basics,yes
+157,0157_as_turiu_broli,A1,sentence card,,turėti + accusative,Aš {turiu} brolį.,I have a brother.,sentence,yes
+158,0158_labanakt,A1,phrase,Labanakt,Good night,Labanakt,Good night,Greetings,yes
+159,0159_jau,A1,cloze,jau,already,Vaikas {jau} miega.,The child is already asleep.,Adverbs,yes
+160,0160_ju,A1,cloze,jų,their,{Jų} vaikai jau dideli.,Their children are already grown up.,Pronouns,yes
+161,0161_noreti,A1,cloze,norėti,to want,{Noriu} valgyti.,I want to eat.,Modal & core verbs,yes
+162,0162_jai,A1,cloze,jai,to her (dative),Padovanojau {jai} gėlių.,I gave her flowers.,Pronouns,yes
+165,0165_iki_pasimatymo,A1,phrase,Iki pasimatymo,See you,Iki pasimatymo,See you,Greetings,yes
+168,0168_ji,A1,cloze,jį,"him, it (accusative)",Aš {jį} matau.,I see him.,Pronouns,yes
+169,0169_atleiskite,A1,phrase,Atleiskite,Excuse me (formal),Atleiskite,Excuse me (formal),Politeness,yes
+170,0170_dabar,A1,cloze,dabar,now,{Dabar} esu namie.,I am at home now.,Time,yes
+171,0171_kad,A1,cloze,kad,that (conj),"Manau, {kad} jis namie.",I think that he is at home.,Conjunctions,yes
+172,0172_diena,A1,cloze,diena,day,Gražios {dienos}!,Have a nice day!,Time,yes
+173,0173_man,A1,cloze,man,to me (dative),{Man} šalta.,I am cold. (to me it is cold),Pronouns,yes
+176,0176_malonu_susipazinti,A1,phrase,Malonu susipažinti,Nice to meet you,Malonu susipažinti,Nice to meet you,Politeness,yes
+180,0180_skanaus,A1,phrase,Skanaus,Bon appétit,Skanaus,Bon appétit,Formulas,yes
+181,0181_mane,A1,cloze,mane,me (accusative),Ar {mane} girdi?,Can you hear me?,Pronouns,yes
+182,0182_zinoti,A1,cloze,žinoti,to know (a fact),Aš {nežinau}.,I do not know.,Verbs,yes
+183,0183_jis_vaziuoja_autobusu,A1,sentence card,,instrumental of means,Jis {važiuoja} autobusu.,He is going by bus.,sentence,yes
+184,0184_lietuviu_kalba,A1,cloze,lietuvių kalba,Lithuanian (language),Mokausi {lietuvių kalbos}.,I am learning Lithuanian.,Languages,yes
+185,0185_dar,A1,cloze,dar,"still, yet",Aš {dar} nevalgiau.,I have not eaten yet.,Adverbs,yes
+187,0187_i_sveikata,A1,phrase,Į sveikatą!,Cheers!,Į sveikatą!,Cheers!,Formulas,yes
+191,0191_ar_galite_man_padeti,A1,phrase,Ar galite man padėti?,Can you help me?,Ar galite man padėti?,Can you help me?,Getting by,yes
+192,0192_per,A1,cloze,per,"through, during",Einame {per} tiltą.,We are walking across the bridge.,Prepositions,yes
+193,0193_sis,A1,cloze,šis,this,{Šis} stalas per mažas.,This table is too small.,Pronouns,yes
+194,0194_ten,A1,cloze,ten,there,Stotis yra {ten}.,The station is over there.,Adverbs,yes
+195,0195_suprasti,A1,cloze,suprasti,to understand,Ar {supranti}?,Do you understand?,Verbs,yes
+196,0196_manyti,A1,cloze,manyti,to think; reckon,"{Manau}, kad taip.",I think so.,Verbs,yes
+198,0198_ar_galite_pakartoti,A1,phrase,Ar galite pakartoti?,Could you repeat?,Ar galite pakartoti?,Could you repeat?,Basics,yes
+203,0203_prasom_kalbeti_leciau,A1,phrase,Prašom kalbėti lėčiau,"Speak more slowly, please",Prašom kalbėti lėčiau,"Speak more slowly, please",Basics,yes
+204,0204_kur,A1,cloze,kur,where,{Kur} yra stotis?,Where is the station?,Question words,yes
+205,0205_daug,A1,cloze,daug,a lot,Turiu {daug} darbo.,I have a lot of work.,Adverbs,yes
+206,0206_siandien,A1,cloze,šiandien,today,{Šiandien} pirmadienis.,Today is Monday.,Time,yes
+207,0207_labai,A1,cloze,labai,very,Šiandien {labai} šalta.,It is very cold today.,Adverbs,yes
+208,0208_gyventi,A1,cloze,gyventi,to live (reside),Aš {gyvenu} Vilniuje.,I live in Vilnius.,Verbs,yes
+209,0209_kur_gyvenate,A1,phrase,Kur gyvenate?,Where do you live?,Kur gyvenate?,Where do you live?,Basics,yes
+214,0214_cia_mano_draugas,A1,phrase,Čia (yra) mano draugas. / Susipažinkite — tai…,This is… (introducing someone),Čia (yra) mano draugas. / Susipažinkite — tai…,This is… (introducing someone),Functions,yes
+215,0215_kas,A1,cloze,kas,who,{Kas} čia gyvena?,Who lives here?,Question words,yes
+216,0216_centras,A1,cloze,centras,centre,Gyvenu miesto {centre}.,I live in the city centre.,Nouns,yes
+217,0217_kuris,A1,cloze,kuris,which,{Kuris} autobusas važiuoja į centrą?,Which bus goes to the centre?,Question words,yes
+218,0218_mes_gyvename_vilniuje,A1,sentence card,,locative of a place name,Mes {gyvename} Vilniuje.,We live in Vilnius.,sentence,yes
+219,0219_as_gyvenu_name,A1,sentence card,,locative -e,Aš {gyvenu} name.,I live in a house.,sentence,yes
+220,0220_ar_yra,A1,phrase,Ar yra…?,Is there…?,Ar yra…?,Is there…?,Getting by,yes
+225,0225_ar_turite,A1,phrase,Ar turite…?,Do you have…?,Ar turite…?,Do you have…?,Getting by,yes
+226,0226_tave,A1,cloze,tave,"you (accusative, sg)",Aš {tave} myliu.,I love you.,Pronouns,yes
+227,0227_tie,A1,cloze,tie,those,{Tie} žmonės laukia autobuso.,Those people are waiting for the bus.,Pronouns,yes
+228,0228_ta,A1,cloze,ta,that (fem),{Ta} moteris – mano mokytoja.,That woman is my teacher.,Pronouns,yes
+229,0229_metai,A1,cloze,metai,year,Man trisdešimt {metų}.,I am thirty years old.,Time,yes
+230,0230_as_nesuprantu,A1,sentence card,,negation prefix ne-,Aš {nesuprantu}.,I do not understand.,sentence,yes
+231,0231_kas_tai,A1,phrase,Kas tai?,What is this?,Kas tai?,What is this?,Getting by,yes
+236,0236_koks_tavo,A1,phrase,Koks tavo / jūsų telefono numeris?,What is your phone number?,Koks tavo / jūsų telefono numeris?,What is your phone number?,Functions,yes
+237,0237_jusu,A1,cloze,jūsų,your (pl),Koks {jūsų} telefono numeris?,What is your phone number?,Pronouns,yes
+238,0238_koks,A1,cloze,koks,what kind of,{Koks} tavo adresas?,What is your address?,Question words,yes
+239,0239_orai,A1,cloze,orai,"weather (NB oras = air, weather)",Kokie šiandien {orai}?,What is the weather like today?,Nouns,yes
+240,0240_patikti,A1,cloze,patikti,to like,Man {patinka} šis miestas.,I like this city.,Modal & core verbs,yes
+241,0241_o,A1,cloze,o,and; but,"Aš dirbu, {o} jis mokosi.","I work, and (whereas) he studies.",Conjunctions,yes
+242,0242_kas_tas_zmogus,A1,phrase,Kas tas žmogus?,Who is that?,Kas tas žmogus?,Who is that?,Getting by,yes
+247,0247_man_reikia_pagalbos,A1,phrase,Man reikia pagalbos,I need help,Man reikia pagalbos,I need help,Getting by,yes
+248,0248_reiketi,A1,cloze,reikėti,to need (impersonal),Man {reikia} pagalbos.,I need help.,Modal & core verbs,yes
+249,0249_jam,A1,cloze,jam,to him (dative),{Jam} reikia pagalbos.,He needs help.,Pronouns,yes
+250,0250_dar,A1,cloze,dar,else (something else),Ką {dar} norėtumėte?,What else would you like?,Adverbs,yes
+251,0251_man_reikia_vandens,A1,sentence card,,dative + reikia + genitive,Man {reikia} vandens.,I need water.,sentence,yes
+252,0252_jums,A1,cloze,jums,"to you (dative, pl/formal)",Ko {jums} reikia?,What do you need?,Pronouns,yes
+253,0253_neturiu_laiko,A1,phrase,Neturiu laiko,I don't have time,Neturiu laiko,I don't have time,Core patterns,yes
+258,0258_is_kur_jus,A1,phrase,Iš kur jūs?,Where are you from?,Iš kur jūs?,Where are you from?,Basics,yes
+259,0259_bet,A1,cloze,bet,but,"Noriu eiti, {bet} neturiu laiko.","I want to go, but I have no time.",Conjunctions,yes
+260,0260_siandien_salta,A1,sentence card,,impersonal weather,Šiandien {šalta}.,It is cold today.,sentence,yes
+261,0261_valanda,A1,cloze,valanda,hour,Laukiu autobuso jau vieną {valandą}.,I have been waiting for the bus for an hour already.,Time,yes
+262,0262_euras,A1,cloze,euras,euro,Tai kainuoja du {eurus}.,That costs two euros.,Money & admin,yes
+263,0263_tik,A1,cloze,tik,only,Turiu {tik} penkis eurus.,I have only five euros.,Adverbs,yes
+264,0264_viskas_gerai,A1,phrase,Viskas gerai,Everything is fine / all good,Viskas gerai,Everything is fine / all good,Basics,yes
+269,0269_nekalbu_lietuviskai,A1,phrase,Nekalbu lietuviškai,I don't speak Lithuanian,Nekalbu lietuviškai,I don't speak Lithuanian,Getting by,yes
+270,0270_gerai,A1,cloze,gerai,well,Jis {gerai} kalba lietuviškai.,He speaks Lithuanian well.,Adverbs,yes
+271,0271_ar_tu_kalbi_lietuviskai,A1,sentence card,,ar question; adverb -iškai,Ar tu {kalbi} lietuviškai?,Do you speak Lithuanian?,sentence,yes
+272,0272_visas,A1,cloze,visas,all/every,Aš dirbau {visą} dieną.,I worked all day.,Pronouns,yes
+273,0273_megti,A1,cloze,mėgti,to love/like doing,{Mėgstu} skaityti.,I like reading.,Modal & core verbs,yes
+274,0274_kodel,A1,cloze,kodėl,why,{Kodėl} tu vėluoji?,Why are you late?,Question words,yes
+275,0275_man_patinka_sis_miestas,A1,phrase,Man patinka šis miestas,I like this city,Man patinka šis miestas,I like this city,Core patterns,yes
+280,0280_ka_veiki,A1,phrase,Ką veiki?,What are you doing? / What are you up to?,Ką veiki?,What are you doing? / What are you up to?,Basics,yes
+281,0281_tau,A1,cloze,tau,"to you (dative, sg)",Ar {tau} patinka?,Do you like it?,Pronouns,yes
+282,0282_paskambinti,A1,cloze,paskambinti,to phone (perf.),{Paskambink} man vakare.,Call me in the evening.,Verbs,yes
+283,0283_ka,A1,cloze,ką,what (acc),{Ką} tu veiki?,What are you doing?,Pronouns,yes
+284,0284_kur_yra_stotis,A1,sentence card,,question with kur,Kur {yra} stotis?,Where is the station?,sentence,yes
+285,0285_atsakymas,A1,cloze,atsakymas,answer,Teisingas {atsakymas}!,Correct answer!,Work & culture,yes
+286,0286_suprantu,A1,phrase,Suprantu,I understand,Suprantu,I understand,Basics,yes
+291,0291_kur_galiu_rasti,A1,phrase,Kur galiu rasti…?,Where can I find…?,Kur galiu rasti…?,Where can I find…?,Getting by,yes
+292,0292_zmones,A1,cloze,žmonės,people (pl. of žmogus),Gatvėje daug {žmonių}.,There are many people in the street.,People,yes
+293,0293_gauti,A1,cloze,gauti,to get; receive,{Gavau} laišką.,I received a letter.,Verbs,yes
+294,0294_bet_kas,A1,cloze,bet kas,anything; anyone,Tai gali padaryti {bet kas}.,Anyone can do that.,Pronouns,yes
+295,0295_rytoj,A1,cloze,rytoj,tomorrow,{Rytoj} nedirbu.,Tomorrow I am not working.,Time,yes
+296,0296_idomus,A1,cloze,įdomus,interesting,Knyga labai {įdomi}.,The book is very interesting.,Adjectives,yes
+297,0297_padekite,A1,phrase,Padėkite!,Help!,Padėkite!,Help!,Getting by,yes
+302,0302_koks_jusu_vardas,A1,phrase,Koks jūsų vardas?,What is your name?,Koks jūsų vardas?,What is your name?,Basics,yes
+303,0303_stotis_yra_ten,A1,sentence card,,adverb of place,Stotis {yra} ten.,The station is over there.,sentence,yes
+304,0304_savo,A1,cloze,savo,one's own,Aš myliu {savo} šeimą.,I love my (own) family.,Pronouns,yes
+305,0305_ateiti,A1,cloze,ateiti,to come (on foot),{Ateik} rytoj.,Come tomorrow.,Verbs,yes
+306,0306_tikrai,A1,cloze,tikrai,really,Aš {tikrai} ateisiu.,I will definitely come.,Adverbs,yes
+307,0307_daryti,A1,cloze,daryti,"to do, make",Ką {darai}?,What are you doing?,Verbs,yes
+308,0308_kiek_jums_metu,A1,phrase,Kiek jums metų?,How old are you? (formal),Kiek jums metų?,How old are you? (formal),Basics,yes
+313,0313_kuo_dirbate,A1,phrase,Kuo dirbate?,What do you do (for work)?,Kuo dirbate?,What do you do (for work)?,Basics,yes
+314,0314_visai,A1,cloze,visai,completely; quite,{Visai} nešalta.,It is not cold at all.,Adverbs,yes
+315,0315_del,A1,cloze,dėl,because of,Vėluoju {dėl} lietaus.,I am late because of the rain.,Prepositions,yes
+316,0316_vakar,A1,cloze,vakar,yesterday,{Vakar} buvau kine.,Yesterday I was at the cinema.,Time,yes
+317,0317_prasyti,A1,cloze,prašyti,to ask for; request,{Prašau} pagalbos.,I ask for help.,Verbs,yes
+318,0318_laikas,A1,cloze,laikas,time,Neturiu {laiko}.,I have no time.,Time,yes
+325,0325_apie,A1,cloze,apie,about,Kalbame {apie} orą.,We are talking about the weather.,Prepositions,yes
+326,0326_kai,A1,cloze,kai,when (conj),"{Kai} grįšiu, paskambinsiu.","When I get back, I will call.",Conjunctions,yes
+327,0327_per,A1,cloze,per,too (excessively),Einame {per} tiltą.,We are walking across the bridge.,Adverbs,yes
+328,0328_atrodyti,A1,cloze,atrodyti,to seem,Tu {atrodai} pavargęs.,You look tired.,Modal & core verbs,yes
+329,0329_kai_kas,A1,cloze,kai kas,something; some people,{Kai kas} jau išėjo.,Some people have already left.,Pronouns,yes
+334,0334_galima,A1,phrase,Galima. / Prašom.,"Yes, you may. / Go ahead.",Galima. / Prašom.,"Yes, you may. / Go ahead.",Functions,yes
+336,0337_kai_kuris,A1,cloze,kai kuris,some (masc),{Kai kurie} žmonės mėgsta žiemą.,Some people like winter.,Pronouns,yes
+337,0338_svarbus,A1,cloze,svarbus,important,Tai labai {svarbu}.,That is very important.,Adjectives,yes
+338,0339_bet_kur,A1,cloze,bet kur,anywhere,Galime susitikti {bet kur}.,We can meet anywhere.,Adverbs,yes
+339,0336_aukstas,A1,cloze,aukštas,"storey, floor (of a building)",Gyvenu trečiame {aukšte}.,I live on the third floor.,Home,yes
+340,0340_padaryti,A1,cloze,padaryti,to do; make (perf.),Ką {padaryti}?,What is to be done?,Verbs,yes
+343,0344_atsargiai,A1,phrase,Atsargiai!,Be careful!,Atsargiai!,Be careful!,Getting by,yes
+347,0347_kiek,A1,cloze,kiek,how much/many,{Kiek} kainuoja bilietas?,How much does the ticket cost?,Question words,yes
+348,0348_kitas,A1,cloze,kitas,other; next,Iki {kito} karto!,Until next time!,Pronouns,yes
+349,0349_tiesa,A1,cloze,tiesa,truth,Tai {tiesa}.,That is true. (the truth),Abstract,yes
+350,0351_kai_kur,A1,cloze,kai kur,in some places,{Kai kur} dar yra sniego.,In some places there is still snow.,Adverbs,yes
+351,0350_pasakyti,A1,cloze,pasakyti,to say (perf.),{Pasakyk} man tiesą.,Tell me the truth.,Verbs,yes
+352,0352_dekui,A1,phrase,dėkui,thanks,dėkui,thanks,Phrases,yes
+356,0356_nieko_tokio,A1,phrase,Nieko tokio,No problem,Nieko tokio,No problem,Formulas,yes
+359,0358_toks,A1,cloze,toks,such (masc),{Toks} geras oras!,Such good weather!,Pronouns,yes
+360,0359_visada,A1,cloze,visada,always,Ji {visada} vėluoja.,She is always late.,Adverbs,yes
+361,0360_kainuoti,A1,cloze,kainuoti,to cost,Kiek {kainuoja} duona?,How much does the bread cost?,Shopping,yes
+362,0361_sie,A1,cloze,šie,these,{Šie} batai man patinka.,I like these shoes.,Pronouns,yes
+363,0362_gyvenimas,A1,cloze,gyvenimas,life,{Gyvenimas} gražus.,Life is beautiful.,Nouns,yes
+365,0366_kiek_valandu,A1,phrase,Kiek valandų?,What time is it?,Kiek valandų?,What time is it?,Getting by,yes
+366,0331_kelinta_valanda,A1,phrase,Kelinta valanda?,What time is it? (alternative),Kelinta valanda?,What time is it? (alternative),Time,yes
+371,0369_si,A1,cloze,ši,this (fem),{Ši} knyga įdomi.,This book is interesting.,Pronouns,yes
+372,0371_niekada,A1,cloze,niekada,never,Aš {niekada} negeriu kavos.,I never drink coffee.,Adverbs,yes
+373,0370_kurti,A1,cloze,kurti,to create,Ji {kuria} muziką.,She creates music.,Verbs,yes
+374,0372_ja,A1,cloze,ją,"her, it (accusative)",Mačiau {ją} vakar.,I saw her yesterday.,Pronouns,yes
+375,0380_jei,A1,cloze,jei,if,"{Jei} bus šilta, eisime į mišką.","If it is warm, we will go to the forest.",Conjunctions,yes
+376,0374_zinoma,A1,phrase,Žinoma,Of course,Žinoma,Of course,Formulas,yes
+382,0373_baigti,A1,cloze,baigti,to finish,Darbą {baigiu} penktą valandą.,I finish work at five.,Modal & core verbs,yes
+383,0392_vel,A1,cloze,vėl,again,Jis {vėl} pavėlavo.,He was late again.,Adverbs,yes
+384,0383_vardas,A1,cloze,vardas,name,Mano {vardas} Jonas.,My name is Jonas.,People,yes
+385,0381_lyti,A1,cloze,lyti,to rain,Šiandien {lyja}.,It is raining today.,Verbs,yes
+386,0382_gal,A1,cloze,gal,maybe,{Gal} rytoj lis.,Maybe it will rain tomorrow.,Adverbs,yes
+391,0389_ar_galima,A1,phrase,Ar galima?,May I? / Is it allowed?,Ar galima?,May I? / Is it allowed?,Functions,yes
+393,0384_likti,A1,cloze,likti,"to stay, remain",Šiandien {lieku} namie.,Today I am staying at home.,Verbs,yes
+394,0391_namai,A1,cloze,namai,"home (namie = at home, namo = homewards)",Mano {namai} – Vilniuje.,My home is in Vilnius.,Nouns,yes
+395,0393_uz,A1,cloze,už,"behind, for",Mokykla yra {už} bažnyčios.,The school is behind the church.,Prepositions,yes
+396,0394_menuo,A1,cloze,mėnuo,month,Dirbu čia vieną {mėnesį}.,I have been working here for one month.,Time,yes
+397,0395_ji_eina_i_mokykla,A1,sentence card,,į + accusative,Ji {eina} į mokyklą.,She is going to school.,sentence,yes
+400,0399_ka_reiskia,A1,phrase,Ką reiškia…?,What does … mean?,Ką reiškia…?,What does … mean?,Basics,yes
+404,0402_visi,A1,cloze,visi,everyone,{Visi} jau atėjo.,Everyone has already come.,Pronouns,yes
+405,0403_imti,A1,cloze,imti,to take,{Imk} obuolį.,Take an apple.,Verbs,yes
+406,0404_kur_nors,A1,cloze,kur nors,somewhere,Eikime {kur nors} valgyti.,Let us go somewhere to eat.,Adverbs,yes
+407,0405_privaleti,A1,cloze,privalėti,"must, have to",Tu {privalai} eiti į mokyklą.,You must go to school.,Modal & core verbs,yes
+408,0406_po,A1,cloze,po,under,Katė miega {po} stalu.,The cat is sleeping under the table.,Prepositions,yes
+409,0408_ka_tai_reiskia,A1,phrase,Ką tai reiškia?,What does it mean?,Ką tai reiškia?,What does it mean?,Getting by,yes
+415,0413_sestas,A1,cloze,šeštas,sixth,Šiandien kovo {šešta}.,Today is the sixth of March.,Numbers,yes
+416,0414_septintas,A1,cloze,septintas,seventh,Gyvenu {septintame} aukšte.,I live on the seventh floor.,Numbers,yes
+417,0415_astuntas,A1,cloze,aštuntas,eighth,Dabar {aštunta} valanda.,It is eight o'clock now.,Numbers,yes
+418,0416_pradeti,A1,cloze,pradėti,to begin,{Pradedu} dirbti aštuntą valandą.,I start work at eight.,Modal & core verbs,yes
+419,0417_prasideti,A1,cloze,prasidėti,to begin (intrans.),Filmas {prasideda} aštuntą.,The film begins at eight.,Verbs,yes
+421,0420_tai_mano_namas,A1,phrase,Tai mano namas,This is my house,Tai mano namas,This is my house,Core patterns,yes
+426,0424_nuo,A1,cloze,nuo,from (since),Dirbu {nuo} aštuntos valandos.,I work from eight o'clock.,Prepositions,yes
+427,0425_ponas,A1,cloze,ponas,Mr; sir,"Laba diena, {pone}!","Good day, sir!",Nouns,yes
+428,0426_devintas,A1,cloze,devintas,ninth,Autobusas {devintą} valandą.,The bus is at nine o'clock.,Numbers,yes
+429,0427_tapti,A1,cloze,tapti,to become,Jis {tapo} gydytoju.,He became a doctor.,Modal & core verbs,yes
+430,0435_desimtas,A1,cloze,dešimtas,tenth,Šiandien gegužės {dešimta}.,Today is the tenth of May.,Numbers,yes
+436,0440_kur_tu_eini,A1,phrase,Kur tu eini?,Where are you going?,Kur tu eini?,Where are you going?,Core patterns,yes
+437,0428_kada,A1,cloze,kada,when,{Kada} prasideda filmas?,When does the film start?,Question words,yes
+438,0436_daznai,A1,cloze,dažnai,often,Mes {dažnai} einame į kiną.,We often go to the cinema.,Adverbs,yes
+439,0437_toks_pat,A1,cloze,toks pat,same,Mano paltas {toks pat} kaip tavo.,My coat is the same as yours.,Adjectives,yes
+440,0438_planas,A1,cloze,planas,plan,Koks tavo {planas}?,What is your plan?,Abstract,yes
+441,0439_jaustis,A1,cloze,jaustis,to feel,Kaip {jautiesi}?,How do you feel?,Health,yes
+444,0444_geros_dienos,A1,phrase,Geros dienos,Have a nice day,Geros dienos,Have a nice day,Formulas,yes
+448,0446_tavo,A1,cloze,tavo,your (sg),Kur {tavo} raktai?,Where are your keys?,Pronouns,yes
+449,0447_dalykas,A1,cloze,dalykas,thing; matter; subject,Tai svarbus {dalykas}.,That is an important matter.,Nouns,yes
+450,0448_bandyti,A1,cloze,bandyti,to try,{Bandau} kalbėti lietuviškai.,I am trying to speak Lithuanian.,Modal & core verbs,yes
+451,0449_dokumentas,A1,cloze,dokumentas,document,"Jūsų {dokumentus}, prašau.","Your documents, please.",Money & admin,yes
+452,0457_savaite,A1,cloze,savaitė,week,Kitą {savaitę} važiuoju į Kauną.,Next week I am going to Kaunas.,Time,yes
+455,0455_truputi,A1,phrase,Truputį,A little,Truputį,A little,Getting by,yes
+459,0450_niekas,A1,cloze,niekas,nobody,{Niekas} nežino atsakymo.,Nobody knows the answer.,Pronouns,yes
+460,0458_kalba,A1,cloze,kalba,language; speech,Lietuvių {kalba} sena.,The Lithuanian language is old.,Nouns,yes
+461,0459_viskas,A1,cloze,viskas,everything,{Viskas} gerai.,Everything is fine.,Pronouns,yes
+462,0460_tiek,A1,cloze,tiek,so much,Kodėl {tiek} brangu?,Why so expensive?,Adverbs,yes
+463,0461_pats,A1,cloze,pats,himself; self (masc),Aš {pats} tai padarysiu.,I will do it myself.,Pronouns,yes
+464,0463_prasom,A1,phrase,Prašom,Here you are,Prašom,Here you are,Formulas,yes
+471,0468_atvaziuoti,A1,cloze,atvažiuoti,to arrive (by vehicle),Rytoj {atvažiuoja} svečiai.,Guests are arriving tomorrow.,Verbs,yes
+472,0469_po,A1,cloze,po,after,Katė miega {po} stalu.,The cat is sleeping under the table.,Prepositions,yes
+473,0470_zodis,A1,cloze,žodis,word,Ką reiškia šis {žodis}?,What does this word mean?,Work & culture,yes
+474,0471_iki,A1,cloze,iki,"until, up to",Parduotuvė dirba {iki} dešimtos.,The shop is open until ten.,Prepositions,yes
+475,0472_saves,A1,cloze,savęs,oneself (gen),Pažiūrėk į {save}.,Look at yourself.,Pronouns,yes
+478,0477_labai_gerai,A1,phrase,labai gerai,very good,labai gerai,very good,Phrases,yes
+482,0479_tada,A1,cloze,tada,then,{Tada} aš buvau vaikas.,Then I was a child.,Adverbs,yes
+483,0480_tevas_skaito_knyga,A1,sentence card,,accusative,Tėvas {skaito} knygą.,Father is reading a book.,sentence,yes
+484,0481_keli,A1,cloze,keli,several (masc),Turiu {kelis} klausimus.,I have several questions.,Numbers,yes
+485,0482_daiktas,A1,cloze,daiktas,thing; object,Kas tai per {daiktas}?,What kind of thing is that?,Nouns,yes
+486,0483_dalis,A1,cloze,dalis,part,Tai tik {dalis} darbo.,That is only part of the work.,Abstract,yes
+489,0488_einu_namo,A1,phrase,Einu namo,I am going home,Einu namo,I am going home,Core patterns,yes
+493,0490_net,A1,cloze,net,even (particle),{Net} vaikas tai supranta.,Even a child understands that.,Adverbs,yes
+494,0491_prie,A1,cloze,prie,"near, by",Susitinkame {prie} stoties.,We meet by the station.,Prepositions,yes
+495,0492_musu,A1,cloze,mūsų,our,{Mūsų} namas yra prie upės.,Our house is by the river.,Pronouns,yes
+496,0494_mergina,A1,cloze,mergina,girl; young woman,Jo {mergina} – studentė.,His girlfriend is a student.,Nouns,yes
+497,0501_nors,A1,cloze,nors,although,"Jis atėjo, {nors} sirgo.",He came although he was ill.,Conjunctions,yes
+504,0503_mazai,A1,cloze,mažai,a little,Ji valgo {mažai}.,She eats little.,Adverbs,yes
+505,0502_nes,A1,cloze,nes,because,"Likau namie, {nes} lijo.",I stayed home because it was raining.,Conjunctions,yes
+506,0504_taip_pat,A1,cloze,taip pat,also,Aš {taip pat} mokausi lietuvių kalbos.,I am also learning Lithuanian.,Conjunctions,yes
+507,0493_ketinti,A1,cloze,ketinti,to intend,Vasarą {ketinu} važiuoti į Kauną.,In summer I intend to go to Kaunas.,Modal & core verbs,yes
+508,0512_tas_pats,A1,cloze,tas pats,same,Mes gyvename {tame pačiame} name.,We live in the same house.,Pronouns,yes
+509,0509_viena_bilieta_i_kauna,A1,phrase,"Vieną bilietą į Kauną, prašau.","One ticket to Kaunas, please","Vieną bilietą į Kauną, prašau.","One ticket to Kaunas, please",Functions,yes
+516,0513_mums,A1,cloze,mums,to us (dative),{Mums} patinka Vilnius.,We like Vilnius.,Pronouns,yes
+517,0515_mus,A1,cloze,mus,us (accusative),Ar matai {mus}?,Do you see us?,Pronouns,yes
+518,0505_istorija,A1,cloze,istorija,story,Skaitau įdomią {istoriją}.,I am reading an interesting story.,Work & culture,yes
+519,0525_arba,A1,cloze,arba,or,Arbatos {arba} kavos?,Tea or coffee?,Conjunctions,yes
+520,0516_kartu,A1,cloze,kartu,together,Gyvename {kartu} su tėvais.,We live together with our parents.,Adverbs,yes
+523,0521_prasom_pakartoti,A1,phrase,Prašom pakartoti,Please repeat,Prašom pakartoti,Please repeat,Getting by,yes
+527,0524_pries,A1,cloze,prieš,before,Nusiplauk rankas {prieš} valgį.,Wash your hands before the meal.,Prepositions,yes
+528,0526_numeris,A1,cloze,numeris,"number (phone, house, hotel room)",Koks tavo telefono {numeris}?,What is your phone number?,Nouns,yes
+529,0527_kas_nors,A1,cloze,kas nors,somebody; someone,Ar {kas nors} skambino?,Did anybody call?,Pronouns,yes
+530,0535_taciau,A1,cloze,tačiau,however,"Buvo šalta, {tačiau} saulėta.","It was cold, however sunny.",Conjunctions,yes
+531,0539_paskui,A1,cloze,paskui,"afterwards, then","Pavalgysime, o {paskui} eisime.","We will eat, and then we will go.",Time,yes
+532,0530_atsiprasau_ar_cia_laisva,A1,phrase,"Atsiprašau, ar čia laisva?","Excuse me, is this seat free?","Atsiprašau, ar čia laisva?","Excuse me, is this seat free?",Functions,yes
+538,0536_ant,A1,cloze,ant,on,Knyga yra {ant} stalo.,The book is on the table.,Prepositions,yes
+539,0548_dede,A1,cloze,dėdė,uncle,{Dėdė} atvažiuoja rytoj.,Uncle is coming tomorrow.,People,yes
+540,0549_teta,A1,cloze,teta,aunt,Mano {teta} gyvena Kaune.,My aunt lives in Kaunas.,People,yes
+541,0537_vis_dar,A1,cloze,vis dar,still (continuing),Aš {vis dar} laukiu.,I am still waiting.,Adverbs,yes
+542,0528_atleisti,A1,cloze,atleisti,to forgive; to dismiss,"{Atleiskite}, kur čia paštas?","Excuse me, where is the post office?",Verbs,yes
+543,0542_dar_ko_nors,A1,phrase,Dar ko nors?,Anything else?,Dar ko nors?,Anything else?,Functions,yes
+545,0545_atrodo,A1,phrase,atrodo,it seems; looks,atrodo,it seems; looks,Verbs,yes
+549,0538_kokia,A1,cloze,kokia,what kind (fem),{Kokia} šiandien diena?,What day is it today?,Pronouns,yes
+550,0546_jeigu,A1,cloze,jeigu,if,"{Jeigu} nori, ateik.","If you want, come.",Conjunctions,yes
+551,0547_nieko,A1,cloze,nieko,nothing (gen),{Nieko} nematau.,I see nothing.,Pronouns,yes
+552,0557_palikti,A1,cloze,palikti,to leave (something),{Palikau} raktus namie.,I left the keys at home.,Verbs,yes
+553,0550_bet_kada,A1,cloze,bet kada,any time,Skambink {bet kada}.,Call any time.,Adverbs,yes
+554,0552_nesuprantu_atsiprasau,A1,phrase,"Nesuprantu, atsiprašau","I don't understand, sorry","Nesuprantu, atsiprašau","I don't understand, sorry",Core patterns,yes
+560,0561_sekunde,A1,cloze,sekundė,second,Tik vieną {sekundę}!,Just one second!,Time,yes
+561,0558_pagalba,A1,cloze,pagalba,help (noun),Man reikia {pagalbos}.,I need help.,Abstract,yes
+562,0559_puikus,A1,cloze,puikus,excellent,{Puikus} oras!,Excellent weather!,Adjectives,yes
+563,0560_kada_nors,A1,cloze,kada nors,ever; some time,Ar buvai {kada nors} Nidoje?,Have you ever been to Nida?,Adverbs,yes
+564,0568_kate_sedi_ant_stalo,A1,sentence card,,ant + genitive,Katė {sėdi} ant stalo.,The cat is sitting on the table.,sentence,yes
+566,0565_prasom_uzrasyti,A1,phrase,Prašom užrašyti,"Write it down, please",Prašom užrašyti,"Write it down, please",Getting by,yes
+570,0573_kiek_tai_kainuoja,A1,phrase,Kiek tai kainuoja?,How much is it?,Kiek tai kainuoja?,How much is it?,Getting by,yes
+571,0569_be,A1,cloze,be,without,"Arbata {be} cukraus, prašau.","Tea without sugar, please.",Prepositions,yes
+572,0748_skaicius,A1,cloze,skaičius,number (figure),Tai didelis {skaičius}.,That is a big number.,Abstract,yes
+573,0514_amzius,A1,cloze,amžius,age,{Amžius} – tik skaičius.,Age is just a number.,People,yes
+574,0570_nei,A1,cloze,nei,than; nor,Kaunas mažesnis {nei} Vilnius.,Kaunas is smaller than Vilnius.,Conjunctions,yes
+575,0571_todel,A1,cloze,todėl,therefore,"Lijo, {todėl} likau namie.","It was raining, therefore I stayed home.",Conjunctions,yes
+579,0584_palaukite_minutele,A1,phrase,Palaukite minutėlę.,Hold on a moment (phone),Palaukite minutėlę.,Hold on a moment (phone),Functions,yes
+582,0590_minute,A1,cloze,minutė,minute,Palaukite penkias {minutes}.,Wait five minutes.,Time,yes
+583,0592_keletas,A1,cloze,keletas,several,Laukiau {keletą} minučių.,I waited several minutes.,Numbers,yes
+584,0579_testi,A1,cloze,tęsti,to continue,"{Tęskite}, prašau.",Please continue.,Modal & core verbs,yes
+585,0572_berniukas_raso_laiska,A1,sentence card,,accusative,Berniukas {rašo} laišką.,The boy is writing a letter.,sentence,yes
+586,0581_toli,A1,cloze,toli,far,Stotis {toli}?,Is the station far?,Adverbs,yes
+587,0582_arti,A1,cloze,arti,near; close,Stotis {arti}.,The station is near.,Adverbs,yes
+592,0595_man_reikia_vandens,A1,phrase,Man reikia vandens,I need water,Man reikia vandens,I need water,Core patterns,yes
+595,0591_pries,A1,cloze,prieš (+acc),ago,Atvažiavau {prieš} metus.,I came a year ago.,Prepositions,yes
+596,0594_parodyti,A1,cloze,parodyti,to show (perf.),{Parodyk} man nuotraukas.,Show me the photos.,Verbs,yes
+597,0580_kaire,A1,cloze,kairė,left (side),Eikite į {kairę}.,Go left.,Nouns,yes
+598,0593_man_patinka_muzika,A1,sentence card,,dative experiencer + nominative,Man {patinka} muzika.,I like music.,sentence,yes
+599,0601_reiksti,A1,cloze,reikšti,to mean,Ką tai {reiškia}?,What does that mean?,Verbs,yes
+606,0602_ar_galetumete,A1,cloze,Ar galėtumėte…?,could (polite request),{Ar galėtumėte} man padėti?,Could you help me?,Extended patterns,yes
+607,0604_stai,A1,cloze,štai,"here is, look (presentative)",{Štai} tavo raktai.,Here are your keys.,Adverbs,yes
+608,0583_informacija,A1,cloze,informacija,information,Kur gauti {informacijos}?,Where can I get information?,Abstract,yes
+609,0612_moketi,A1,cloze,mokėti (plaukti),"to know how to, can (skill)",Aš {moku} plaukti.,I can swim. (I know how to),Verbs,yes
+610,0605_sita,A1,cloze,šita,this (fem; colloquial),{Šita} kėdė laisva.,This chair is free.,Pronouns,yes
+626,0616_pakeisti,A1,cloze,pakeisti,to change (perf.),Noriu {pakeisti} bilietą.,I want to change the ticket.,Verbs,no
+627,0603_ponia,A1,cloze,ponia,Mrs; madam,"Laba diena, {ponia}!","Good day, madam!",People,no
+628,0615_anksti,A1,cloze,anksti,early,Keliuosi {anksti}.,I get up early.,Adverbs,no
+629,0613_uzsienis,A1,cloze,užsienis,abroad,Mano brolis gyvena {užsienyje}.,My brother lives abroad.,Nouns,no
+630,0614_joks,A1,cloze,joks,no; none (masc),Neturiu {jokio} plano.,I have no plan whatsoever.,Pronouns,no
+631,0633_viskas_aciu,A1,phrase,"Viskas, ačiū.","That's all, thanks","Viskas, ačiū.","That's all, thanks",Functions,no
+636,0637_noriu_valgyti,A1,phrase,Noriu valgyti,I want to eat,Noriu valgyti,I want to eat,Core patterns,yes
+637,0628_kiekvienas,A1,cloze,kiekvienas,every; each,{Kiekvienas} turi vardą.,Everyone has a name.,Pronouns,no
+638,0629_pagal,A1,cloze,pagal,according to,Viskas {pagal} planą.,Everything according to plan.,Prepositions,no
+639,0630_atsiprasyti,A1,cloze,atsiprašyti,to apologise,"{Atsiprašau}, kad vėluoju.",I apologise for being late.,Verbs,no
+640,0639_galbut,A1,cloze,galbūt,perhaps,{Galbūt} rytoj.,Perhaps tomorrow.,Adverbs,no
+641,0632_pas,A1,cloze,pas,to (a person),Einu {pas} gydytoją.,I am going to the doctor's.,Prepositions,no
+647,0647_iskvieskite_gydytoja,A1,phrase,Iškvieskite gydytoją!,Call a doctor!,Iškvieskite gydytoją!,Call a doctor!,Getting by,yes
+648,0631_sekme,A1,cloze,sėkmė,success,Linkiu {sėkmės}!,I wish you success!,Nouns,no
+649,0641_pavarde,A1,cloze,pavardė,surname,Kokia jūsų {pavardė}?,What is your surname?,People,no
+650,0643_kol,A1,cloze,kol,while; until,"Palauk, {kol} grįšiu.",Wait until I come back.,Conjunctions,no
+651,0650_greitai,A1,cloze,greitai,soon,Autobusas atvažiuos {greitai}.,The bus will come soon.,Adverbs,no
+652,0640_klaida,A1,cloze,klaida,mistake,Padariau {klaidą}.,I made a mistake.,Work & culture,no
+655,0660_gelbekit,A1,phrase,Gelbėkit!,Help!,Gelbėkit!,Help!,Phrases,no
+659,0642_desine,A1,cloze,dešinė,right (side),Eikite į {dešinę}.,Go right.,Nouns,no
+660,0651_vaikas_miega_lovoje,A1,sentence card,,locative -oje,Vaikas {miega} lovoje.,The child is sleeping in the bed.,sentence,no
+661,0652_kazkas,A1,cloze,kažkas,someone,{Kažkas} skambina į duris.,Someone is ringing the doorbell.,Pronouns,no
+662,0653_na,A1,cloze,na,well,"{Na}, einam!","Well, let us go!",Phrases,no
+663,0664_savaitgalis,A1,cloze,savaitgalis,weekend,Ką veiki {savaitgalį}?,What are you doing at the weekend?,Time,no
+670,0654_pradzia,A1,cloze,pradžia,beginning,Filmo {pradžia} – aštuntą.,The start of the film is at eight.,Abstract,no
+671,0661_prasme,A1,cloze,prasmė,point (what's the point?) / sense,Nėra {prasmės} laukti.,There is no point in waiting.,Nouns,no
+672,0669_suo_bega_parke,A1,sentence card,,locative,Šuo {bėga} parke.,The dog is running in the park.,sentence,no
+675,0674_cia_yra_parduotuve,A1,phrase,Čia yra parduotuvė,There is a shop here,Čia yra parduotuvė,There is a shop here,Core patterns,yes
+678,0676_ilgai,A1,cloze,ilgai,for a long time,Laukiau {ilgai}.,I waited for a long time.,Adverbs,no
+680,0678_tarp,A1,cloze,tarp,between,Bankas yra {tarp} pašto ir vaistinės.,The bank is between the post office and the pharmacy.,Prepositions,no
+681,0680_noreciau,A1,cloze,norėčiau,would like (noun / infinitive),{Norėčiau} eiti namo.,I would like to go home.,Extended patterns,no
+685,0695_kartais,A1,cloze,kartais,sometimes,{Kartais} dirbu šeštadieniais.,Sometimes I work on Saturdays.,Adverbs,no
+686,0684_nekesti,A1,cloze,nekęsti (+gen),to hate,Aš {nekenčiu} žiemos.,I hate winter.,Verbs,no
+691,0690_vyras_vairuoja_automobili,A1,sentence card,,accusative,Vyras {vairuoja} automobilį.,The man is driving a car.,sentence,no
+694,0693_aciu_ne,A1,phrase,"Ačiū, ne.","No, thank you (declining)","Ačiū, ne.","No, thank you (declining)",Functions,no
+697,0687_beveik,A1,cloze,beveik,almost,Jau {beveik} vidurnaktis.,It is almost midnight.,Adverbs,no
+698,0697_jus,A1,cloze,jus,"you (accusative, pl)",Malonu {jus} matyti.,Nice to see you.,Pronouns,no
+700,0699_teisus,A1,cloze,teisus,right (correct),Tu {teisus}.,You are right.,Adjectives,no
+707,0706_parasyti,A1,cloze,parašyti,to write (perf.),{Parašiau} laišką.,I wrote a letter.,Verbs,no
+708,0707_as_turiu_broli,A1,phrase,Aš turiu brolį,I have a brother,Aš turiu brolį,I have a brother,Core patterns,yes
+709,0708_pabaiga,A1,cloze,pabaiga,end,Tai dar ne {pabaiga}.,That is not the end yet.,Abstract,no
+710,0710_alkoholis,A1,cloze,alkoholis,alcohol,Negeriu {alkoholio}.,I do not drink alcohol.,Nouns,no
+711,0711_aisku,A1,phrase,aišku,of course; clearly,aišku,of course; clearly,Adverbs,no
+717,0716_reiketu,A1,cloze,reikėtų / turėtum,should (ought to),Tau {reikėtų} daugiau miegoti.,You should sleep more.,Extended patterns,no
+723,0723_reikia,A1,cloze,reikia / turiu,have to (necessity),Man {reikia} eiti.,I have to go.,Extended patterns,no
+724,0724_irgi,A1,cloze,irgi,"also, too",Aš {irgi} noriu kavos.,I want coffee too.,Adverbs,no
+726,0725_pasiruoses,A1,cloze,pasiruošęs,ready,Aš {pasiruošęs}.,I am ready.,Adjectives,no
+728,0728_atsitikti,A1,cloze,atsitikti,to happen (Kas atsitiko?),Kas {atsitiko}?,What happened?,Verbs,no
+729,0726_lietuvis,A1,cloze,lietuvis,Lithuanian (man),"Aš {lietuvis}, o ji – lietuvė.","I am Lithuanian (m), and she is Lithuanian (f).",Nationalities,no
+734,0735_dydis,A1,cloze,dydis,size,Kokio {dydžio} jums reikia?,What size do you need?,Society,no
+735,0736_ne_vienas,A1,cloze,nė vienas,not a single one,{Nė vienas} neatėjo.,Not a single one came.,Pronouns,no
+737,0737_klientas,A1,cloze,klientas,customer,{Klientas} visada teisus.,The customer is always right.,Work & culture,no
+738,0740_ar_supranti,A1,phrase,Ar supranti? / Ar suprantate?,Do you understand? / Is that clear?,Ar supranti? / Ar suprantate?,Do you understand? / Is that clear?,Functions,no
+739,0738_gana,A1,cloze,gana,enough; quite; rather,Jau {gana}!,That is enough!,Adverbs,no
+740,0739_dekoti,A1,cloze,dėkoti,to thank,{Dėkoju} už pagalbą.,I thank you for the help.,Verbs,no
+745,0747_mama_gamina_vakariene,A1,sentence card,,accusative,Mama {gamina} vakarienę.,Mum is cooking dinner.,sentence,no
+746,0759_reklama,A1,cloze,reklama,advertisement,Per televizorių daug {reklamos}.,There is a lot of advertising on TV.,Nouns,no
+748,0749_abu,A1,cloze,abu,both (masc),{Abu} broliai dirba.,Both brothers work.,Pronouns,no
+749,0750_abi,A1,cloze,abi,both (fem),{Abi} seserys gyvena Kaune.,Both sisters live in Kaunas.,Pronouns,no
+750,0751_laimingu_naujuju_metu,A1,phrase,Laimingų Naujųjų metų!,Happy New Year!,Laimingų Naujųjų metų!,Happy New Year!,Formulas,no
+751,0753_sitas,A1,cloze,šitas,this (masc; colloquial),{Šitas} batas per mažas.,This shoe is too small.,Pronouns,no
+755,0755_sekmes,A1,phrase,Sėkmės!,Good luck!,Sėkmės!,Good luck!,Formulas,yes
+756,0758_pavojingas,A1,cloze,pavojingas,dangerous,Ledas {pavojingas}.,The ice is dangerous.,Adjectives,no
+761,0761_blogai,A1,cloze,blogai,badly,Šiandien {blogai} jaučiuosi.,I feel bad today.,Adverbs,no
+762,0762_kitoks,A1,cloze,kitoks,different,Šis butas {kitoks}.,This flat is different.,Adjectives,no
+763,0764_pasirinkti,A1,cloze,pasirinkti,to choose,{Pasirinkau} raudoną suknelę.,I chose the red dress.,Verbs,no
+764,0763_as_pasiklydau,A1,phrase,Aš pasiklydau,I'm lost,Aš pasiklydau,I'm lost,Getting by,no
+766,0769_partneris,A1,cloze,partneris,partner (life partner),Mano {partnerė} dirba ligoninėje.,My partner works at the hospital.,Nouns,no
+769,0770_rusas,A1,cloze,rusas,Russian (man),Jis {rusas}.,He is Russian.,Nationalities,no
+770,0768_geros_keliones,A1,phrase,Geros kelionės,Good luck on the trip,Geros kelionės,Good luck on the trip,Formulas,yes
+772,0772_paukstis_skrenda_danguje,A1,sentence card,,present 3sg; locative,Paukštis {skrenda} danguje.,The bird is flying in the sky.,sentence,no
+773,0773_saugus,A1,cloze,saugus,safe,Čia {saugu}.,It is safe here.,Adjectives,no
+779,0778_galiu_truputi_kalbeti,A1,phrase,Galiu truputį kalbėti,I can speak a little,Galiu truputį kalbėti,I can speak a little,Core patterns,yes
+782,0781_skirtingas,A1,cloze,skirtingas,different,Mes labai {skirtingi}.,We are very different.,Adjectives,no
+783,0782_sarasas,A1,cloze,sąrašas,list,Parašyk pirkinių {sąrašą}.,Write a shopping list.,Abstract,no
+787,0786_faktas,A1,cloze,faktas,fact,Tai įdomus {faktas}.,That is an interesting fact.,Nouns,no
+788,0787_nueiti,A1,cloze,nueiti,to go (on foot) to (perf.),{Nuėjau} į parduotuvę.,I went to the shop.,Verbs,no
+789,0788_kitoje_puseje,A1,cloze,kitoje pusėje,across; on the other side,Bankas yra {kitoje gatvės pusėje}.,The bank is across the street.,Adverbs,no
+790,0789_sveiki_atvyke,A1,phrase,Sveiki atvykę!,Welcome!,Sveiki atvykę!,Welcome!,Formulas,yes
+795,0795_naudoti,A1,cloze,naudoti,to use,{Naudoju} žodyną.,I use a dictionary.,Verbs,no
+796,0796_teisingas,A1,cloze,teisingas,correct,Atsakymas {teisingas}.,The answer is correct.,Adjectives,no
+798,0798_ar_toli,A1,phrase,Ar toli? / Netoli.,Is it far? / Not far,Ar toli? / Netoli.,Is it far? / Not far,Functions,no
+800,0799_turbut,A1,cloze,turbūt,probably,{Turbūt} lis.,It will probably rain.,Adverbs,no
+802,0802_senele_sedi_ant_kedes,A1,sentence card,,ant + genitive,Senelė {sėdi} ant kėdės.,Grandmother is sitting on the chair.,sentence,no
+806,0806_isgerti,A1,cloze,išgerti,to drink up (perf.),{Išgerk} arbatos.,Drink some tea.,Verbs,no
+810,0811_gaila,A1,phrase,gaila,a pity; sorry,gaila,a pity; sorry,Adverbs,no
+811,0810_sveikinu,A1,phrase,Sveikinu!,Congratulations!,Sveikinu!,Congratulations!,Formulas,yes
+814,0826_atostogos,A1,cloze,atostogos,holiday (vacation),Rugpjūtį turiu {atostogas}.,In August I have a holiday.,Work & culture,no
+815,0813_rinkti,A1,cloze,rinkti,to collect; choose; dial,Vaikai {renka} grybus.,The children are picking mushrooms.,Verbs,no
+819,0818_veliau,A1,cloze,vėliau,later,Paskambinsiu {vėliau}.,I will call later.,Adverbs,no
+820,0819_man_dvidesimt_metu,A1,phrase,Man dvidešimt metų,I am twenty years old,Man dvidešimt metų,I am twenty years old,Core patterns,yes
+824,0824_jo,A1,cloze,jo,his,{Jo} žmona dirba ligoninėje.,His wife works at the hospital.,Pronouns,no
+831,0817_kazkoks,A1,cloze,kažkoks,some kind of (masc),Atėjo {kažkoks} vyras.,Some man came.,Pronouns,no
+835,0834_nusipirkti,A1,cloze,nusipirkti,to buy (for oneself) (perf.),{Nusipirkau} naują paltą.,I bought myself a new coat.,Verbs,no
+839,0838_sale,A1,cloze,salė,hall,Koncertas bus didelėje {salėje}.,The concert will be in the big hall.,Nouns,no
+842,0841_su_sventemis,A1,phrase,Su šventėmis!,Happy holidays!,Su šventėmis!,Happy holidays!,Formulas,no
+843,0842_kazkur,A1,cloze,kažkur,somewhere,Raktai {kažkur} čia.,The keys are somewhere here.,Adverbs,no
+848,0847_akimirka,A1,phrase,Akimirką,Just a moment,Akimirką,Just a moment,Formulas,yes
+852,0851_verslininkas,A1,cloze,verslininkas,businessman,Mano brolis – {verslininkas}.,My brother is a businessman.,Nouns,no
+855,0854_ideja,A1,cloze,idėja,idea,Turiu {idėją}.,I have an idea.,Abstract,no
+856,0855_kiek_kainuoja_bilietas,A1,phrase,Kiek kainuoja bilietas?,How much does the ticket cost?,Kiek kainuoja bilietas?,How much does the ticket cost?,Core patterns,yes
+857,0856_duona_kainuoja_viena_lita,A1,sentence card,,numeral + accusative,Duona {kainuoja} vieną litą.,The bread costs one litas.,sentence,no
+859,0858_kalbetis,A1,cloze,kalbėtis,"to talk, converse (with +instr.)",{Kalbamės} su kaimynu.,We are talking with the neighbour.,Verbs,no
+860,0859_paprastai,A1,cloze,paprastai,usually,{Paprastai} keliuosi septintą.,I usually get up at seven.,Adverbs,no
+865,0864_trecia_valanda,A1,phrase,Trečia valanda,It is three o'clock,Trečia valanda,It is three o'clock,Core patterns,yes
+868,0867_tobulas,A1,cloze,tobulas,perfect; excellent,Oras šiandien {tobulas}.,The weather today is perfect.,Adjectives,no
+870,0869_sekme,A1,cloze,sėkmė,luck,{Sėkmės}!,Good luck!,Abstract,no
+872,0871_noreciau_kavos,A1,phrase,Norėčiau kavos,I would like coffee,Norėčiau kavos,I would like coffee,Core patterns,yes
+873,0873_lankyti,A1,cloze,lankyti,to visit,{Lankau} draugą ligoninėje.,I visit my friend in hospital.,Verbs,no
+877,0877_sivakar,A1,cloze,šįvakar,tonight,{Šįvakar} einame į kiną.,Tonight we are going to the cinema.,Adverbs,no
+878,0878_su_gimtadieniu,A1,phrase,Su gimtadieniu!,Happy birthday!,Su gimtadieniu!,Happy birthday!,Formulas,yes
+879,0879_sveikinti,A1,cloze,sveikinti,to greet,{Sveikinu} su gimtadieniu!,Happy birthday! (I congratulate you),Verbs,no
+885,0884_asmeninis,A1,cloze,asmeninis,personal,Tai {asmeninis} klausimas.,That is a personal question.,Adjectives,no
+888,0887_siandien_salta,A1,phrase,Šiandien šalta,It is cold today,Šiandien šalta,It is cold today,Core patterns,yes
+891,0891_kadangi,A1,cloze,kadangi,because; since,"{Kadangi} lijo, likome namie.","Since it was raining, we stayed home.",Conjunctions,no
+892,0893_pazymejimas,A1,cloze,pažymėjimas,certificate; ID card,Parodykite {pažymėjimą}.,Show your ID (certificate).,Nouns,no
+893,0892_prisijungti,A1,cloze,prisijungti (prie),to join; take part,Ar galiu {prisijungti} prie jūsų?,May I join you?,Verbs,no
+894,0897_amerikietis,A1,cloze,amerikietis,American,Mano draugas – {amerikietis}.,My friend is American.,Nationalities,no
+896,0895_linksmu_kaledu,A1,phrase,Linksmų Kalėdų!,Merry Christmas!,Linksmų Kalėdų!,Merry Christmas!,Formulas,no
+897,0896_niekur,A1,cloze,niekur,nowhere,Šiandien {niekur} neinu.,I am not going anywhere today.,Adverbs,no
+902,0910_siemet,A1,cloze,šiemet,this year,{Šiemet} žiema šilta.,This year the winter is warm.,Time,no
+903,0911_pernai,A1,cloze,pernai,last year,{Pernai} buvau Nidoje.,Last year I was in Nida.,Adverbs,no
+904,0902_ar_galiu_moketi_kortele,A1,phrase,Ar galiu mokėti kortele?,Can I pay by card?,Ar galiu mokėti kortele?,Can I pay by card?,Transactions,no
+906,0904_kelios,A1,cloze,kelios,several (fem),Praėjo {kelios} dienos.,A few days passed.,Numbers,no
+910,0908_politikas,A1,cloze,politikas,politician,Jis žinomas {politikas}.,He is a well-known politician.,Nouns,no
+911,0909_uzeikite,A1,phrase,Užeikite!,Come in!,Užeikite!,Come in!,Formulas,no
+916,0916_negu,A1,cloze,negu,than,Jis vyresnis {negu} aš.,He is older than me.,Conjunctions,no
+918,0917_kaip_nuvykti_i,A1,phrase,Kaip nuvykti į…?,How do I get to…?,Kaip nuvykti į…?,How do I get to…?,Transactions,no
+922,0922_tiesiai,A1,cloze,tiesiai,straight on,Eikite {tiesiai}.,Go straight ahead.,Adverbs,no
+924,0924_ar_tau_patinka,A1,phrase,Ar tau patinka…? / Ar jums patinka…?,Do you like…?,Ar tau patinka…? / Ar jums patinka…?,Do you like…?,Functions,no
+930,0931_pavojus,A1,cloze,pavojus,danger,{Pavojus}! Ledas plonas.,Danger! The ice is thin.,Abstract,no
+934,0934_gero_savaitgalio,A1,phrase,Gero savaitgalio!,Have a good weekend!,Gero savaitgalio!,Have a good weekend!,Formulas,no
+936,0936_paduoti,A1,cloze,paduoti,"to pass, hand (Paduok druską)",{Paduok} druską.,Pass the salt.,Verbs,no
+938,0939_pakankamai,A1,cloze,pakankamai,enough,Turime {pakankamai} laiko.,We have enough time.,Adverbs,no
+940,0940_noriu_gerti,A1,phrase,noriu gerti,thirsty (I am thirsty),noriu gerti,thirsty (I am thirsty),Functions,no
+948,0948_anglas,A1,cloze,anglas,Englishman,Jis {anglas}.,He is English.,Nationalities,no
+950,0949_noreciau_sumoketi,A1,phrase,Norėčiau sumokėti.,I'd like to pay,Norėčiau sumokėti.,I'd like to pay,Functions,no
+955,0954_velai,A1,cloze,vėlai,late,Vakar grįžau {vėlai}.,Yesterday I came back late.,Adverbs,no
+961,0961_iki_rytojaus,A1,phrase,Iki rytojaus,See you tomorrow,Iki rytojaus,See you tomorrow,Formulas,yes
+967,0966_iki_greito,A1,phrase,Iki greito! / Iki vėliau!,See you soon / later,Iki greito! / Iki vėliau!,See you soon / later,Functions,no
+974,0974_link,A1,cloze,link,towards,Eikite {link} upės.,Walk towards the river.,Prepositions,no
+979,0979_visur,A1,cloze,visur,everywhere,Sniego buvo {visur}.,There was snow everywhere.,Adverbs,no
+981,0981_vokietis,A1,cloze,vokietis,German,Ji ištekėjo už {vokiečio}.,She married a German.,Nationalities,no
+988,0987_atsiprasau_ka_sakete,A1,phrase,"Atsiprašau, ką sakėte?",Pardon? (didn't hear),"Atsiprašau, ką sakėte?",Pardon? (didn't hear),Functions,no
+993,0993_papildomas,A1,cloze,papildomas,extra; additional,Reikia {papildomos} lovos.,We need an extra bed.,Adjectives,no
+995,0996_reiksme,A1,cloze,reikšmė,meaning,Šis žodis turi dvi {reikšmes}.,This word has two meanings.,Nouns,no
+1001,1000_man_nepatinka,A1,phrase,Man nepatinka…,I don't like…,Man nepatinka…,I don't like…,Functions,no
+1005,1005_lauke,A1,cloze,lauke,outside (location),Vaikai žaidžia {lauke}.,The children are playing outside.,Adverbs,no
+1012,1012_as_gyvenu_vilniuje,A1,phrase,Aš gyvenu Vilniuje,I live in Vilnius,Aš gyvenu Vilniuje,I live in Vilnius,Core patterns,yes
+1013,1013_sostine,A1,cloze,sostinė,capital city,Vilnius – Lietuvos {sostinė}.,Vilnius is the capital of Lithuania.,Location,no
+1015,1015_vaikai_zaidzia_kieme,A1,sentence card,,plural subject; locative,Vaikai {žaidžia} kieme.,The children are playing in the yard.,sentence,no
+1020,1020_sakinys,A1,cloze,sakinys,sentence,Parašyk vieną {sakinį}.,Write one sentence.,Work & culture,no
+1022,1023_koks_jusu_adresas,A1,phrase,Koks jūsų adresas?,What is your address?,Koks jūsų adresas?,What is your address?,Functions,no
+1023,1024_retai,A1,cloze,retai,rarely,Jis {retai} valgo mėsą.,He rarely eats meat.,Adverbs,no
+1024,1025_vakarieniauti,A1,cloze,vakarieniauti,to have dinner,{Vakarieniaujame} kartu.,We have dinner together.,Verbs,no
+1030,1029_prasom_sestis,A1,phrase,Prašom sėstis,"Sit down, please",Prašom sėstis,"Sit down, please",Formulas,no
+1032,1032_lauke_lyja,A1,sentence card,,weather verb 3sg,Lauke {lyja}.,It is raining outside.,sentence,no
+1037,1038_desineje,A1,cloze,dešinėje,on the right,Bankas yra {dešinėje}.,The bank is on the right.,Adverbs,no
+1042,1042_buvo_labai_skanu,A1,phrase,Buvo labai skanu.,It was delicious,Buvo labai skanu.,It was delicious,Functions,no
+1050,1050_lenkas,A1,cloze,lenkas,Pole,Mano kaimynas – {lenkas}.,My neighbour is Polish.,Nationalities,no
+1052,1053_man_reikia_gydytojo,A1,phrase,Man reikia gydytojo. / Kur vaistinė?,I need a doctor / pharmacy,Man reikia gydytojo. / Kur vaistinė?,I need a doctor / pharmacy,Functions,no
+1057,1006_uzsiemimas,A1,cloze,užsiėmimas,"activity; pastime (also: class, session)",Mėgstu {užsiėmimus} lauke.,I like outdoor activities.,Nouns,no
+1058,1058_kaip_lietuviskai,A1,phrase,Kaip lietuviškai …?,How do you say … in Lithuanian?,Kaip lietuviškai …?,How do you say … in Lithuanian?,Getting by,yes
+1059,1059_apibudinti,A1,cloze,apibūdinti,to describe,Ar galite {apibūdinti} tą žmogų?,Can you describe that person?,Verbs,no
+1066,1066_pietauti,A1,cloze,pietauti,to have lunch,{Pietaujame} pirmą valandą.,We have lunch at one o'clock.,Verbs,no
+1076,1076_sviesti,A1,cloze,šviesti,to shine,Mėnulis {šviečia}.,The moon is shining.,Verbs,no
+1081,1081_viena_kava_prasau,A1,phrase,"Vieną kavą, prašau.","One coffee, please (ordering)","Vieną kavą, prašau.","One coffee, please (ordering)",Functions,no
+1083,1083_megstamiausias,A1,cloze,mėgstamiausias,favourite,Mano {mėgstamiausias} gėrimas — kava.,My favourite drink is coffee.,Adjectives,no
+1085,1085_vaziuoti_dviraciu,A1,cloze,važiuoti dviračiu,to ride (a bicycle),Į darbą {važiuoju dviračiu}.,I ride a bicycle to work.,Verbs,no
+1088,1088_pavargau,A1,phrase,Pavargau.,I'm tired,Pavargau.,I'm tired,Functions,no
+1091,1091_nemokamai,A1,phrase,nemokamai,free of charge,nemokamai,free of charge,Adverbs,no
+1094,1094_nuobodus,A1,cloze,nuobodus,boring,Filmas buvo {nuobodus}.,The film was boring.,Adjectives,no
+1095,1095_man_salta,A1,phrase,Man šalta. / Man karšta.,I'm cold / I'm hot,Man šalta. / Man karšta.,I'm cold / I'm hot,Functions,no
+1099,1099_desineje,A1,phrase,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,On the right / turn right / turn left,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,On the right / turn right / turn left,Functions,no
+1107,1107_mergaite_piesia_gele,A1,sentence card,,accusative,Mergaitė {piešia} gėlę.,The girl is drawing a flower.,sentence,no
+1112,1112_sestis,A1,cloze,sėstis,to sit down,Prašom {sėstis}.,"Sit down, please.",Verbs,no
+1120,1120_ar_nori_arbatos,A1,phrase,Ar nori arbatos? / Ar norite arbatos?,Would you like…? (offering),Ar nori arbatos? / Ar norite arbatos?,Would you like…? (offering),Functions,no
+1127,1127_nemokamas,A1,cloze,nemokamas,free (no cost),Įėjimas {nemokamas}.,Admission is free.,Adjectives,no
+1135,1135_saule_sviecia,A1,sentence card,,present 3sg,Saulė {šviečia}.,The sun is shining.,sentence,no
+1136,1136_atskirai,A1,cloze,atskirai,separately,Mokame {atskirai}.,We are paying separately.,Adverbs,no
+1137,1137_atidaryta,A1,phrase,atidaryta,open (sign on a door),atidaryta,open (sign on a door),Adjectives,no
+1141,1141_pusryciauti,A1,cloze,pusryčiauti,to have breakfast,{Pusryčiauju} septintą valandą.,I have breakfast at seven o'clock.,Verbs,no
+1148,1148_uzimtas,A1,cloze,užimtas,busy,Šiandien esu {užimtas}.,Today I am busy.,Adjectives,no
+1149,1149_mano_vardas_dainius,A1,phrase,Mano vardas Dainius,My name is Dainius,Mano vardas Dainius,My name is Dainius,Core patterns,yes
+1169,1169_greitai_pasveik,A1,phrase,Greitai pasveik!,Get well soon,Greitai pasveik!,Get well soon,Formulas,yes
+1172,1172_snigti,A1,cloze,snigti,to snow,Žiemą {sninga}.,In winter it snows.,Verbs,no
+1174,1174_gultis,A1,cloze,gultis,to lie down,Einu {gultis}.,I am going to lie down (to bed).,Verbs,no
+1179,1179_as_esu_is_lietuvos,A1,phrase,Aš esu iš Lietuvos,I am from Lithuania,Aš esu iš Lietuvos,I am from Lithuania,Core patterns,yes
+1184,1184_praktikuotis,A1,cloze,praktikuotis,to practise,Reikia daugiau {praktikuotis}.,I need to practise more.,Verbs,no
+1185,1185_latvis,A1,cloze,latvis,Latvian,Jis {latvis} iš Rygos.,He is a Latvian from Riga.,Nationalities,no
+1186,1186_pomegis,A1,cloze,pomėgis,hobby,Mano {pomėgis} – žvejyba.,My hobby is fishing.,Work & culture,no
+1189,1189_lietuviskai,A1,cloze,lietuviškai,in Lithuanian,Ar kalbate {lietuviškai}?,Do you speak Lithuanian?,Adverbs,no
