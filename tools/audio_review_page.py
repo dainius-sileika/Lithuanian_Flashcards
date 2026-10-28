@@ -4,7 +4,7 @@
     python3 tools/ingest_takes.py <zip> --process-only OUT/proc          # process, touch nothing else
     python3 tools/audio_review_page.py <zip> OUT/proc OUT/page [--july 0027_suo,1035_karve,0953_arklys]
             [--title "Audio batch 2 check"] [--section "Batch 2"] [--mixed mixed.tsv]
-            [--relevel _archive/takes/<relevel run> [--relevel-proc DIR] [--masters-root PROJECT_ROOT]]
+            [--relevel _archive/takes/<relevel run> [--relevel-proc DIR] [--masters-root PROJECT_ROOT]] [--pack MB]
 
 Writes OUT/page/index.html and OUT/page/media/: for every take the original as recorded (an mp3 listening copy of
 the webm, 48 kHz 128 kbit/s, no other change, so Safari plays it too) and the processed mp3 exactly as it will ship,
@@ -12,6 +12,10 @@ plus one before/after waveform PNG (original on top with the removed parts shade
 processed take below, on the same time axis). Flagged takes come first. A few July takes are added as loudness
 references. Publish the folder as an artifact (index.html + media/ as files).
   --mixed       the table of tools/check_mixed_takes.py: those takes are marked "re-record" (two recordings in one).
+  --pack MB     pack the media into media/pack_NN.json files of about MB megabytes each (base64; the page loads a
+                pack when a card scrolls near and plays the clips from blob URLs). A published artifact holds at most 511
+                files, so a batch of hundreds of takes (three files each) must be packed; batch 2 (483 takes + 63
+                re-levelled) was. The unpacked files are kept in OUT/media_files/.
   --relevel     a run folder of tools/relevel_takes.py: a second section, "July takes re-levelled", with the take as
                 it shipped before (media/audio/_history/...) and as re-processed (its dest, or --relevel-proc/<key>.mp3
                 before --apply), both drawn on the raw master's time axis, so the owner hears that only the loudness
@@ -125,6 +129,68 @@ def waveform_relevel(master, old, new, r, png):
     plt.close(fig)
 
 
+PACK_JS = """<script>
+/* media packs: each card's clips and picture are fetched with the pack that holds them, when the card nears the view */
+(() => {
+  const packs = {};
+  const pack = n => packs[n] || (packs[n] = fetch("media/pack_" + n + ".json").then(r => r.json()));
+  const load = card => card.querySelectorAll("[data-pack]").forEach(el => {
+    pack(el.dataset.pack).then(p => {
+      const b64 = p[el.dataset.name];
+      if (!b64) return;
+      const bin = atob(b64), u = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+      el.src = URL.createObjectURL(new Blob([u], {type: el.tagName === "IMG" ? "image/png" : "audio/mpeg"}));
+      el.removeAttribute("data-pack");
+    });
+  });
+  const cards = document.querySelectorAll(".take, .ref");
+  if (!("IntersectionObserver" in window)) { cards.forEach(load); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { io.unobserve(e.target); load(e.target); } }),
+                                      {rootMargin: "1200px 0px"});
+  cards.forEach(c => io.observe(c));
+})();
+</script>
+"""
+
+
+def pack_media(out, mb):
+    """Rewrite index.html so every media/<file> it plays or shows comes from media/pack_NN.json (base64), in page
+    order, about mb MB per pack; the single files move to OUT/media_files/."""
+    import base64
+    import re
+    page = open(os.path.join(out, "index.html"), encoding="utf-8").read()
+    pat = re.compile(r'(<(?:audio|img)\b[^>]*?) src="media/([^"]+)"')
+    names = []
+    for m in pat.finditer(page):
+        if m.group(2) not in names:
+            names.append(m.group(2))
+    where, cur, size, n = {}, {}, 0, 0
+    media = os.path.join(out, "media")
+
+    def flush():
+        nonlocal cur, size, n
+        if cur:
+            json.dump(cur, open(os.path.join(media, f"pack_{n:02d}.json"), "w"), separators=(",", ":"))
+            n, cur, size = n + 1, {}, 0
+    for name in names:
+        data = open(os.path.join(media, name), "rb").read()
+        if size and size + len(data) > mb * 1e6:
+            flush()
+        cur[name] = base64.b64encode(data).decode("ascii")
+        where[name] = n
+        size += len(data)
+    flush()
+    keep = os.path.join(out, "media_files")
+    os.makedirs(keep, exist_ok=True)
+    for name in names:
+        shutil.move(os.path.join(media, name), os.path.join(keep, name))
+    page = pat.sub(lambda m: f'{m.group(1)} data-pack="{where[m.group(2)]:02d}" data-name="{m.group(2)}"', page)
+    page = page.replace("</main>", "</main>\n" + PACK_JS, 1)
+    open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(page)
+    return n, len(names)
+
+
 def opt(argv, name, default=None):
     return argv[argv.index(name) + 1] if name in argv else default
 
@@ -196,6 +262,9 @@ def main(argv):
         rel_items.sort(key=lambda r: (not r["flags"], float(r["shipped_I"])))
     shutil.rmtree(tmp, ignore_errors=True)
     write_html(out, os.path.splitext(os.path.basename(zpath))[0], items, man, jl, title, section, rel_items)
+    if "--pack" in argv:
+        npk, nf = pack_media(out, float(opt(argv, "--pack")))
+        print(f"packed {nf} media files into {npk} packs (media/pack_NN.json)")
     print(f"{out}/index.html: {len(items)} takes ({sum(1 for r in items if r['flags'])} flagged, "
           f"{sum(1 for r in items if r.get('mixed'))} mixed), {len(rel_items)} re-levelled, {len(jl)} July references")
     return 0
@@ -263,6 +332,9 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
         k = r["take"]
         flags = "".join(f"<li>{html.escape(x)}</li>" for x in r["flags"].split("; ") if x)
         state = "flag" if r["flags"] else "ok"
+        ends = int(r["offset_ms"]) >= int(r["dur_ms"]) - 10
+        enote = ('<p class="note">The raw recording ends while the words still sound (the July recorder stopped there); '
+                 'the old file only had silence added after it. Listen whether the end of the word is clipped.</p>') if ends else ""
         head = (f'cut {r["head_cut_ms"]} ms · {r["head_margin_ms"]} ms before the words' if int(r["head_cut_ms"]) > 0
                 else "no head cut")
         tail = (f'cut at {r["tail_cut_ms"]} ms · {r["tail_margin_ms"]} ms after the words'
@@ -288,6 +360,7 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
     <div><dt>Speech energy kept</dt><dd>{f(r["energy_kept_pct"], 3)} %</dd></div>
     <div><dt>Gain</dt><dd>{f(r["gain_db"])} dB, one fixed gain</dd></div>
   </dl>
+  {enote}
 </article>""")
     rel_section = ""
     if rel_items:
@@ -296,10 +369,11 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
         rel_section = f"""
   <h2 id="july">July takes re-levelled</h2>
   <section class="how">
-    <p>{len(rel_items)} July takes had shipped {f(min(rb))} to {f(max(rb))} LUFS (median {f(med(rb))}), 20–30 dB below the rest of the deck. Each was re-processed from its raw master exactly like a new take: one fixed gain, no limiter, the start click cut away only where 250 ms of silence stays before the words. Median now {f(med(ra))} LUFS. Compare the two players: the words should sound the same, only louder. Takes marked <b>listen</b> first.</p>
+    <p>{len(rel_items)} July takes had shipped {f(min(rb))} to {f(max(rb))} LUFS (median {f(med(rb))}), 20–30 dB below the rest of the deck. Each was re-processed from its raw master exactly like a new take: one fixed gain, no limiter, the start click cut away only where 250 ms of silence stays before the words. Median now {f(med(ra))} LUFS. Compare the two players: the words should sound the same, only louder. Takes marked <b>listen</b> first: {sum(1 for r in rel_items if r["flags"])} keep a sound the tool could not safely call a click (the July processing had simply cut the first 150 ms of every take; the new one never cuts within 250 ms of the words, so a start click that close now stays). In {sum(1 for r in rel_items if int(r["offset_ms"]) >= int(r["dur_ms"]) - 10)} the raw recording itself ends while the word still sounds.</p>
   </section>
   {''.join(rel_cards)}"""
-    page = f"""<title>{html.escape(title)}</title>
+    page = f"""<meta charset="utf-8">
+<title>{html.escape(title)}</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -340,7 +414,8 @@ p {{ margin: 0; max-width: 68ch; }}
 .take h3 {{ margin: 0; font-size: 1.1rem; font-weight: 600; }}
 .k {{ font: 500 .85em var(--mono); color: var(--muted); }}
 .said {{ font-weight: 700; }}
-.eng {{ color: var(--muted); font-size: .9rem; margin-top: -6px; }}
+.eng {{ color: var(--muted); font-size: .9rem; margin-top: -6px; overflow-wrap: anywhere; }}
+.take > * {{ min-width: 0; }}
 .pill {{ font: 600 .72rem var(--body); text-transform: uppercase; letter-spacing: .07em; padding: 2px 8px; border-radius: 99px; border: 1px solid currentColor; }}
 .pill.ok {{ color: var(--ok); }} .pill.flag {{ color: var(--flag); }} .pill.fail {{ color: var(--fail); }}
 .flags {{ margin: 0; padding: 8px 12px 8px 28px; background: var(--flag-bg); border-radius: 4px; color: var(--fg); font-size: .9rem; }}
