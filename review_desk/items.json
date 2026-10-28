@@ -1,5 +1,20 @@
 [
  {
+  "id": "naturalness",
+  "group": "Lithuanian",
+  "title": "Naturalness review: 79 sentences to decide (1,183 stay as they are)",
+  "ask": "Three reviewers read every sentence and phrase for what a native speaker would naturally say; a fourth looked at requests for politeness (your #616 becomes Norėčiau pakeisti bilietą). On the page: 3 of your own proofreading corrections that a reviewer challenges (unanswered = yours stays), 17 for your call (unanswered = current stays), 59 proposed changes (unanswered = applied; 'Keep current' refuses one). 24 of the 79 are already recorded, so a change means a re-take. When you're done, say so here; Opus then applies the answers, checks that no A1 card needs an A2 word, puts the re-takes on your sheet and rebuilds.",
+  "options": [
+   "Done on that page"
+  ],
+  "links": [
+   {
+    "label": "Open the Naturalness Review",
+    "href": "https://claude.ai/artifact/XGgPJorkFvaTtcsi9wsGAw"
+   }
+  ]
+ },
+ {
   "id": "t-audio-ready",
   "group": "Your own tasks",
   "title": "Record the audio: the new recorder is ready",

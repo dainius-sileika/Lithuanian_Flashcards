@@ -1,0 +1,1639 @@
+[
+ {
+  "key": "0043_atsiprasau",
+  "level": "A1",
+  "pos": 43,
+  "current": "Atsiprašau…",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Atsiprašau…",
+    "en": "Excuse me…",
+    "who": "naturalness review A",
+    "reason": "6: 'please' adds nothing and is not in the Lithuanian. Lithuanian unchanged.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0148_mano_vardas_yra_jonas",
+  "level": "A1",
+  "pos": 148,
+  "current": "Mano vardas {yra} Jonas.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Aš {esu} Jonas.",
+    "en": "I am Jonas.",
+    "who": "naturalness review A",
+    "reason": "1/2: 'Mano vardas yra Jonas' is textbook and understood, but in speech the copula is dropped ('Mano vardas Jonas' — already 0384 and 1149) or one says 'Aš (esu) Jonas'. The card's point is yra. Keep yra for the copula, or change to 'Aš {esu} Jonas.'? Recorded.",
+    "evidence": "native-speaker judgement",
+    "verdict": "owner",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0162_jai",
+  "level": "A1",
+  "pos": 162,
+  "current": "Padovanojau {jai} gėlių.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Aš {jai} padedu.",
+    "en": "I am helping her.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: padovanoti is taught by no card (padovanojau = NONE). 'Aš jai padedu' is natural and uses padėti @78.",
+    "evidence": "native-speaker judgement; build_study_order_v3 dependency check",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0171_kad",
+  "level": "A1",
+  "pos": 171,
+  "current": "Manau, {kad} jis namie.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Gerai, {kad} esi namie.",
+    "en": "It's good that you are at home.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: manyti is taught at 196, 25 cards after this card (the audit lists it as a forward dependency). 'Gerai, kad …' is a very common spoken frame; gerai @136, būti @69, namie @13. Keep the current line if the lead accepts the 25-card lag — it is otherwise natural.",
+    "evidence": "native-speaker judgement; build_study_order_v3.py --audit forward list",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0214_cia_mano_draugas",
+  "level": "A1",
+  "pos": 214,
+  "current": "Čia (yra) mano draugas. / Susipažinkite — tai…",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Čia mano draugas. / Susipažinkite, tai mano draugas.",
+    "en": "This is my friend. (introducing someone)",
+    "who": "naturalness review A",
+    "reason": "7: '(yra)' in brackets and a dangling 'tai…' are notes, not something one says or records. 'Čia mano draugas' (informal) and 'Susipažinkite, tai mano draugas' (formal) are the two real lines. Phrase card.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0237_jusu",
+  "level": "A1",
+  "pos": 237,
+  "current": "Koks {jūsų} telefono numeris?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ar tai {jūsų} knyga?",
+    "en": "Is this your book?",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: numeris is taught at 528 (audit: forward by 291). The phone-number question is already covered by phrase 0236 and by 0526. 'Ar tai jūsų knyga?' is a natural line to a stranger; knyga @62.",
+    "evidence": "native-speaker judgement; build_study_order_v3.py --audit forward list",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0239_orai",
+  "level": "A1",
+  "pos": 239,
+  "current": "Kokie šiandien {orai}?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Koks šiandien {oras}?",
+    "en": "What is the weather like today?",
+    "who": "naturalness review A",
+    "reason": "4: 'Kokie šiandien orai?' is said, but 'Koks šiandien oras?' is the everyday question; orai (pl.) leans towards forecasts ('orų prognozė'). The headword is orai, so a change is a retarget (oras is already modelled by 0358 'Toks geras oras!' and 0559 'Puikus oras!'). Owner decides headword.",
+    "evidence": "native-speaker judgement",
+    "verdict": "owner",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0261_valanda",
+  "level": "A1",
+  "pos": 261,
+  "current": "Laukiu autobuso jau vieną {valandą}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Laukiu autobuso jau {valandą}.",
+    "en": "I have been waiting for the bus for an hour already.",
+    "who": "naturalness review A",
+    "reason": "2/4: 'jau vieną valandą' reads as counted-out textbook Lithuanian; natives say 'laukiu jau valandą' (or 'jau visą valandą'). Drop vieną.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0285_atsakymas",
+  "level": "A1",
+  "pos": 285,
+  "current": "Teisingas {atsakymas}!",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Nežinau {atsakymo}.",
+    "en": "I don't know the answer.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: teisingas is taught at 796, 511 cards later (audit: forward). 'Nežinau atsakymo' is natural and models the genitive of negation already used in 0371; nežinau @143.",
+    "evidence": "native-speaker judgement; build_study_order_v3.py --audit forward list",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0294_bet_kas",
+  "level": "A1",
+  "pos": 294,
+  "current": "Tai gali padaryti {bet kas}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Tai supranta {bet kas}.",
+    "en": "Anyone understands that.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: padaryti is taught at 340, after this card (audit: forward). 'Tai supranta bet kas' is a natural colloquial line; suprasti @195.",
+    "evidence": "native-speaker judgement; build_study_order_v3.py --audit forward list",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0327_per",
+  "level": "A1",
+  "pos": 327,
+  "current": "Einame {per} tiltą.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Kava {per} karšta.",
+    "en": "The coffee is too hot.",
+    "who": "naturalness review A",
+    "reason": "7/6: card teaches per = 'too (excessively)' but reuses 0192's sentence 'Einame per tiltą' (preposition 'across'); the sentence must show the adverb. 'Kava per karšta' is a plain everyday line; kava @14, karštas @68.",
+    "evidence": "native-speaker judgement: 'per + adjective' is the only way to say 'too X' (0193 'Šis stalas per mažas', 0753 'Šitas batas per mažas')",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0340_padaryti",
+  "level": "A1",
+  "pos": 340,
+  "current": "Ką {padaryti}?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ką tu {padarei}?",
+    "en": "What have you done?",
+    "who": "naturalness review A",
+    "reason": "4: 'Ką padaryti?' is not something people say (the idiom for 'what to do?' is 'Ką daryti?', imperfective). 'Ką padarei?' is natural and pairs with 0307 'Ką darai?' to show the perfective contrast.",
+    "evidence": "native-speaker judgement: 'Ką daryti?' vs 'Ką (tu) padarei?' are both stock lines; 'Ką padaryti?' standalone is not",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0392_vel",
+  "level": "A1",
+  "pos": 383,
+  "current": "Jis {vėl} pavėlavo.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Jis {vėl} vėluoja.",
+    "en": "He is late again.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: pavėluoti is taught by no card (pavėlavo = NONE); vėluoti @107. 'Jis vėl vėluoja' is at least as natural.",
+    "evidence": "native-speaker judgement; dependency check",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0394_menuo",
+  "level": "A1",
+  "pos": 396,
+  "current": "Dirbu čia vieną {mėnesį}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Čia dirbu jau {mėnesį}.",
+    "en": "I have been working here for a month already.",
+    "who": "naturalness review A",
+    "reason": "2/4: 'Dirbu čia vieną mėnesį' is stiff; the natural duration frame is 'jau mėnesį' (as in 0261). Topic 'čia' first.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0469_po",
+  "level": "A1",
+  "pos": 472,
+  "current": "Katė miega {po} stalu.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Po} darbo einu namo.",
+    "en": "After work I go home.",
+    "who": "naturalness review A",
+    "reason": "7/6: card teaches po = 'after' but reuses 0406's sentence 'Katė miega po stalu' ('under'); the sentence must show po + genitive. 'Po darbo einu namo' is the standard collocation; darbas @80, eiti @11, namo @13.",
+    "evidence": "native-speaker judgement: 'po darbo', 'po pamokų', 'po pietų' are the textbook po+gen time phrases",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0525_arba",
+  "level": "A1",
+  "pos": 519,
+  "current": "Arbatos {arba} kavos?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ateik šiandien {arba} rytoj.",
+    "en": "Come today or tomorrow.",
+    "who": "naturalness review A",
+    "reason": "4: in an alternative question Lithuanian uses 'ar', not 'arba' ('Arbatos ar kavos?'); 'Arbatos arba kavos?' sounds translated. The deck itself already models the question with ar (0140 'Ko norite, arbatos ar kavos?'). arba belongs in a statement/imperative. ateiti @305, šiandien @206, rytoj @77.",
+    "evidence": "https://www.lituanistika.lt/content/42466 (ar carries the question nuance, arba the strict either/or in statements); deck row 0140; native-speaker judgement",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0524_pries",
+  "level": "A1",
+  "pos": 527,
+  "current": "Nusiplauk rankas {prieš} valgį.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Prieš} darbą geriu kavą.",
+    "en": "Before work I drink coffee.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: nusiplauti and valgis (valgį) are taught by no card. 'Prieš darbą geriu kavą' is a plain, natural line; darbas @80, gerti @8, kava @14. (0591 'prieš = ago' is unaffected.)",
+    "evidence": "native-speaker judgement; dependency check",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0535_taciau",
+  "level": "A1",
+  "pos": 530,
+  "current": "Buvo šalta, {tačiau} saulėta.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Buvo šalta, {tačiau} saulėta.",
+    "en": "It was cold, but sunny.",
+    "who": "naturalness review A",
+    "reason": "6: 'It was cold, however sunny' is not English; 'but' is the natural rendering of tačiau here. Lithuanian unchanged.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0569_be",
+  "level": "A1",
+  "pos": 571,
+  "current": "Arbata {be} cukraus, prašau.",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Arbatos {be} cukraus, prašau.",
+    "en": "Tea without sugar, please.",
+    "who": "politeness review",
+    "reason": "Not politeness: case. When ordering, the deck's other rows use the partitive genitive or the accusative ('Negazuoto vandens, prašau', 'Vieną kavą, prašau', 'Man sriubos, prašau'); the nominative 'Arbata be cukraus' reads as a menu line. Native owner decides between 'Arbatos be cukraus, prašau' and 'Arbatą be cukraus, prašau'. Already recorded: a change is a re-take.",
+    "evidence": "Internal consistency with 2259, 2153, 1081; no external source read for this point (unverified)",
+    "verdict": "owner's call"
+   },
+   {
+    "id": "nat",
+    "text": "Arbatą {be} cukraus, prašau.",
+    "en": "Tea without sugar, please.",
+    "who": "naturalness review A",
+    "reason": "5: when ordering, the item is accusative ('Sąskaitą, prašau' 0114, 'Vieną kavą, prašau' 1081) or partitive genitive ('Arbatos'); the nominative 'Arbata be cukraus' reads as a menu label. See politeness: either case is fine, nominative is the least natural.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0581_toli",
+  "level": "A1",
+  "pos": 586,
+  "current": "Stotis {toli}?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ar {toli} stotis?",
+    "en": "Is the station far?",
+    "who": "naturalness review A",
+    "reason": "2: 'Stotis toli?' relies on intonation alone; the normal spoken question is 'Ar toli stotis?' (0798 phrase 'Ar toli?' agrees). Pair 0582 'Stotis arti.' stays a statement.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0583_informacija",
+  "level": "A1",
+  "pos": 608,
+  "current": "Kur gauti {informacijos}?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Kur galiu gauti {informacijos}?",
+    "en": "Where can I get information?",
+    "who": "naturalness review A",
+    "reason": "2/7: the bare infinitive question 'Kur gauti informacijos?' is elliptical; the English already says 'can I'. galėti @137, gauti @293.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0616_pakeisti",
+  "level": "A1",
+  "pos": 626,
+  "current": "Noriu {pakeisti} bilietą.",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Norėčiau {pakeisti} bilietą.",
+    "en": "I would like to change the ticket.",
+    "who": "politeness review",
+    "reason": "A want-statement to a clerk is the direct strategy; the ordinary polite form at a counter is the conditional norėčiau (or 'Ar galima pakeisti bilietą?'). Phrasebook dialogue for the same situation uses 'Norėčiau pakeisti užsakymą'.",
+    "evidence": "50languages/Goethe-Verlag LT lesson 35 'Oro uoste': 'Norėčiau pakeisti užsakymą' https://www.goethe-verlag.com/book2/EN/ENLT/ENLT037.HTM ; Hilbig 2009 (hedged performative 'Norėčiau … paprašyti', 64% of LT requests conventionally indirect) https://www.zurnalai.vu.lt/lietuviu-kalba/article/download/22872/22150/42651 ; Klaas 2004 conditional = politeness https://www.lituanistika.lt/content/74645",
+    "verdict": "change"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "0759_reklama",
+  "level": "A1",
+  "pos": 746,
+  "current": "Per televizorių daug {reklamos}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Per televiziją daug {reklamos}.",
+    "en": "There is a lot of advertising on TV.",
+    "who": "naturalness review A",
+    "reason": "4/5: 'Per televizorių daug reklamos' — natives say both 'per televiziją' and 'per televizorių', and both the mass 'daug reklamos' and count 'daug reklamų'. Fine as is; owner picks the register he wants taught.",
+    "evidence": "native-speaker judgement",
+    "verdict": "owner",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "0768_geros_keliones",
+  "level": "A1",
+  "pos": 770,
+  "current": "Geros kelionės",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Geros kelionės",
+    "en": "Have a good trip!",
+    "who": "naturalness review A",
+    "reason": "6: 'Good luck on the trip' is not what Geros kelionės means; it is 'Have a good trip / safe travels'. Lithuanian unchanged.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0778_galiu_truputi_kalbeti",
+  "level": "A1",
+  "pos": 779,
+  "current": "Galiu truputį kalbėti",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Truputį kalbu lietuviškai.",
+    "en": "I speak a little Lithuanian.",
+    "who": "naturalness review A",
+    "reason": "3/7: 'Galiu truputį kalbėti' is an English calque of 'I can speak a little' and is incomplete without an object. Natives say 'Truputį / šiek tiek kalbu lietuviškai'. Phrase card: headword changes with the sentence. truputį @455, kalbėti @72, lietuviškai @269.",
+    "evidence": "native-speaker judgement: the standard beginner line in every course is 'Aš truputį kalbu lietuviškai'",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "0795_naudoti",
+  "level": "A1",
+  "pos": 795,
+  "current": "{Naudoju} žodyną.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Cukraus {nenaudoju}.",
+    "en": "I don't use sugar.",
+    "who": "naturalness review A",
+    "reason": "4: with a tool like a dictionary the idiomatic verb is reflexive naudotis + instrumental ('naudojuosi žodynu'); transitive 'naudoju žodyną' is heard and correct but less idiomatic. Target is naudoti, so keeping it needs an object that takes transitive naudoti naturally — e.g. 'Cukraus {nenaudoju}.' (cukrus @243). Owner decides.",
+    "evidence": "native-speaker judgement",
+    "verdict": "owner",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "0856_duona_kainuoja_viena_lita",
+  "level": "A1",
+  "pos": 857,
+  "current": "Duona {kainuoja} vieną litą.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Duona {kainuoja} vieną eurą.",
+    "en": "The bread costs one euro.",
+    "who": "naturalness review A",
+    "reason": "6/7: the litas has not existed since 1 January 2015; an A1 learner must hear prices in euros. euras @262.",
+    "evidence": "https://www.ecb.europa.eu/euro/changeover/lithuania/html/index.en.html",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "0966_iki_greito",
+  "level": "A1",
+  "pos": 967,
+  "current": "Iki greito! / Iki vėliau!",
+  "opts": [],
+  "group": "call",
+  "recorded": false,
+  "note_owner": "7: 'Iki greito!' (short for 'Iki greito pasimatymo') and 'Iki vėliau!' are both common in speech; 'Iki vėliau' is sometimes called a calque of 'see you later'. I could not read a VLKK ruling (unverified). Owner says whether to teach both, or 'Iki greito pasimatymo!' only."
+ },
+ {
+  "key": "0981_vokietis",
+  "level": "A1",
+  "pos": 981,
+  "current": "Ji ištekėjo už {vokiečio}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Jos vyras – {vokietis}.",
+    "en": "Her husband is German.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: ištekėti is taught by no card (ištekėjo = NONE). 'Jos vyras – vokietis' is natural and parallels 0770 'Jis rusas', 1050 'Mano kaimynas – lenkas'; vyras @2, jos @37.",
+    "evidence": "native-speaker judgement; dependency check",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1006_uzsiemimas",
+  "level": "A1",
+  "pos": 1057,
+  "current": "Mėgstu {užsiėmimus} lauke.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Šiandien turiu du {užsiėmimus}.",
+    "en": "I have two classes today.",
+    "who": "naturalness review A",
+    "reason": "3: 'Mėgstu užsiėmimus lauke' is a calque of 'outdoor activities'; natives say 'mėgstu būti lauke / veiklą lauke'. In daily speech užsiėmimas is a class/session (būrelio, sporto užsiėmimas). The proposal uses that sense; the card's gloss order ('activity; pastime (also: class, session)') should follow — retarget note for the lead.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1169_greitai_pasveik",
+  "level": "A1",
+  "pos": 1169,
+  "current": "Greitai pasveik!",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Greitai sveik!",
+    "en": "Get well soon!",
+    "who": "naturalness review A",
+    "reason": "7: 'Greitai pasveik!' is used, but the more frequent well-wish is 'Sveik!' / 'Greitai sveik!' (imperfective). omniglot's phrase list could not be fetched (robots). Owner picks. Recorded.",
+    "evidence": "unverified (omniglot.com refused); native-speaker judgement",
+    "verdict": "owner",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": true,
+  "note_owner": ""
+ },
+ {
+  "key": "1186_pomegis",
+  "level": "A1",
+  "pos": 1186,
+  "current": "Mano {pomėgis} – žvejyba.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Mano {pomėgis} – muzika.",
+    "en": "My hobby is music.",
+    "who": "naturalness review A",
+    "reason": "A1 dependency: žvejyba is taught by no card. muzika @299. Same natural frame.",
+    "evidence": "native-speaker judgement; dependency check",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1237_darbo_vieta",
+  "level": "A2",
+  "pos": 1237,
+  "current": "Mano {darbo vieta} – centre.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Naujoje {darbo vietoje} man patinka.",
+    "en": "I like it at my new workplace.",
+    "who": "naturalness review B",
+    "reason": "4 collocation. 'Mano darbo vieta – centre' is form-filling Lithuanian; nobody says it about where they work ('Dirbu centre'). 'darbo vieta' lives naturally in 'naujoje darbo vietoje', 'ieško darbo vietos'.",
+    "evidence": "native-speaker judgement: 'Mano darbo vieta – centre' is form-filling Lithuanian; nobody says it about where they work ('Dirbu centre'). 'darbo vieta' lives naturally in 'naujoje darbo vietoje', 'ieško darbo vietos'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1243_minutele",
+  "level": "A2",
+  "pos": 1243,
+  "current": "minutėlė",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Minutėlę!",
+    "en": "Just a minute!",
+    "who": "naturalness review B",
+    "reason": "7 phrase. For this function people say the accusative 'Minutėlę!' (what one asks for), never the bare nominative; the card is filed as a phrase, so the form should be the one used.",
+    "evidence": "native-speaker judgement: 'Minutėlę!' / 'Minutėlę, prašau' is the fixed form; nominative 'minutėlė' only names the noun",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1255_galimas",
+  "level": "A2",
+  "pos": 1255,
+  "current": "Ar tai {galima}?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Rytoj {galimas} lietus.",
+    "en": "Rain is possible tomorrow.",
+    "who": "naturalness review B",
+    "reason": "6/4 meaning. 'Ar tai galima?' means 'Is that allowed?' and repeats card 1225 (galima) word for word; it does not teach the adjective galimas 'possible'. 'Galimas lietus' is the everyday forecast phrase.",
+    "evidence": "native-speaker judgement: 'galima' = permitted/one may; 'įmanoma' = possible; 'galimas lietus / galimos spūstys' = forecast register",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1270_panele",
+  "level": "A2",
+  "pos": 1270,
+  "current": "{Panele}, atsiprašau!",
+  "opts": [],
+  "group": "call",
+  "recorded": false,
+  "note_owner": "1 register. Addressing a stranger as 'Panele' is heard but increasingly dated/patronising to younger women; many would just say 'Atsiprašau!'. The order 'Atsiprašau, panele!' is also the more natural one. Native call: keep the vocative on the card, or teach panelė as a noun only."
+ },
+ {
+  "key": "1367_greitis",
+  "level": "A2",
+  "pos": 1367,
+  "current": "Koks {greitis} leidžiamas?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Koks čia leidžiamas {greitis}?",
+    "en": "What is the speed limit here?",
+    "who": "naturalness review B",
+    "reason": "2 word order. Attribute before noun: 'leidžiamas greitis' (the official term is 'leistinas greitis'); 'Koks greitis leidžiamas?' is English order.",
+    "evidence": "native-speaker judgement: Attribute before noun: 'leidžiamas greitis' (the official term is 'leistinas greitis'); 'Koks greitis leidžiamas?' is English order.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1371_suzinoti",
+  "level": "A2",
+  "pos": 1371,
+  "current": "Noriu {sužinoti} kainą.",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Norėčiau {sužinoti} kainą.",
+    "en": "I would like to know the price.",
+    "who": "politeness review",
+    "reason": "'Norėčiau sužinoti …' is the stock opener of a Lithuanian enquiry to a business; 'Noriu sužinoti kainą' reads as a demand. Web search for either exact string found no dialogue use (only shop and crypto price pages), so this rests on the general pattern, not on a corpus count.",
+    "evidence": "Hilbig 2009 (want-statements are the direct strategy; 'Norėčiau' hedges) https://www.zurnalai.vu.lt/lietuviu-kalba/article/download/22872/22150/42651 ; 50languages lesson 72 renders every 'I want to …' with norėčiau https://www.goethe-verlag.com/book2/EN/ENLT/ENLT072.HTM",
+    "verdict": "change"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1378_pasiekti",
+  "level": "A2",
+  "pos": 1378,
+  "current": "Traukinys {pasiekė} Klaipėdą vidurdienį.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Vakare {pasiekėme} Klaipėdą.",
+    "en": "In the evening we reached Klaipėda.",
+    "who": "naturalness review B",
+    "reason": "1 register. 'Traukinys pasiekė Klaipėdą vidurdienį' is newspaper prose (spoken: 'traukinys atvyko'); people do say 'pasiekėme Klaipėdą' of their own journey. Also drops the untaught 'vidurdienį'.",
+    "evidence": "native-speaker judgement: 'Traukinys pasiekė Klaipėdą vidurdienį' is newspaper prose (spoken: 'traukinys atvyko'); people do say 'pasiekėme Klaipėdą' of their own journey. Also drops the untaught 'vidurdienį'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1399_tvarka",
+  "level": "A2",
+  "pos": 1399,
+  "current": "Viskas {tvarkoje}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Kambaryje {tvarka}.",
+    "en": "The room is tidy (in order).",
+    "who": "naturalness review B",
+    "reason": "3/5 calque. 'Viskas tvarkoje' is the Russian 'всё в порядке' locative; VLKK lists 'tvarkoje' among non-standard adverbialised locatives, recommending 'viskas gerai' or 'tvarka'. Very common in speech, but the deck should not teach it as the model.",
+    "evidence": "https://mokslai.lietuviuzodynas.lt/lietuviu-kalba/linksniu-vartojimo-klaidos (§4.6 nevartotini suprieveiksmėję vietininkai: 'Viskas tvarkoje (= Viskas gerai, Tvarka)')",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1410_draugas_skambina_man",
+  "level": "A2",
+  "pos": 1410,
+  "current": "Draugas {skambina} man.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Man {skambina} draugas.",
+    "en": "A friend is calling me.",
+    "who": "naturalness review B",
+    "reason": "2 information structure. Neutral Lithuanian puts the known 'man' first and the new subject last; 'Draugas skambina man' stresses 'man' (as in 'me, not you'). The dative-object point of the card survives.",
+    "evidence": "native-speaker judgement: Neutral Lithuanian puts the known 'man' first and the new subject last; 'Draugas skambina man' stresses 'man' (as in 'me, not you'). The dative-object point of the card survives.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1414_priklausyti",
+  "level": "A2",
+  "pos": 1414,
+  "current": "Tai {priklauso} nuo oro.",
+  "opts": [],
+  "group": "call",
+  "recorded": false,
+  "note_owner": "Duplicate: the same sentence 'Tai {priklauso} nuo oro.' is card 1354 (same headword, same gloss). One of the two should be merged or given a different sentence (e.g. 'Viskas {priklauso} nuo tavęs.')."
+ },
+ {
+  "key": "1426_paklausti",
+  "level": "A2",
+  "pos": 1426,
+  "current": "Galiu {paklausti}?",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Ar galiu {paklausti}?",
+    "en": "May I ask?",
+    "who": "politeness review",
+    "reason": "'Galiu paklausti?' is a set phrase, neutral for friends and strangers alike, and arguably the more natural spoken form; 'Ar galiu paklausti?' is the textbook form. Change only if the owner wants every ability question in the deck to carry 'Ar' (as 2234 and 2290 would).",
+    "evidence": "50languages lesson 73: 'Ar galiu kai ko paklausti?' https://www.goethe-verlag.com/book2/EM/EMLT/EMLT075.HTM ; sublearn.com (learner site, weaker): 'Galiu paklausti?' = neutral, 'use it with both friends and strangers' https://sublearn.com/learn/lt/phrases/galiu-paklausti",
+    "verdict": "owner's call"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1466_sutinku",
+  "level": "A2",
+  "pos": 1466,
+  "current": "– Eime į kiną? – {Sutinku}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "– Per brangu. – {Sutinku}.",
+    "en": "– Too expensive. – I agree.",
+    "who": "naturalness review B",
+    "reason": "1/4 register. Answering an invitation 'Eime į kiną?' with 'Sutinku' sounds like signing a contract; natives say 'Gerai!', 'Einam!'. 'Sutinku' is the reply to an opinion.",
+    "evidence": "native-speaker judgement: Answering an invitation 'Eime į kiną?' with 'Sutinku' sounds like signing a contract; natives say 'Gerai!', 'Einam!'. 'Sutinku' is the reply to an opinion.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1467_galvos_skausmas",
+  "level": "A2",
+  "pos": 1467,
+  "current": "Turiu {galvos skausmą}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ar turite vaistų nuo {galvos skausmo}?",
+    "en": "Do you have anything for a headache?",
+    "who": "naturalness review B",
+    "reason": "3 calque. 'Turiu galvos skausmą' is English 'I have a headache' in Lithuanian words; the native sentence is 'Man skauda galvą' (card 1357). The noun lives in 'vaistai nuo galvos skausmo' – a pharmacy exchange.",
+    "evidence": "native-speaker judgement: 'turėti skausmą' is not said; 'skauda' + accusative is",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1482_ar_yra_laisvas_staliukas",
+  "level": "A2",
+  "pos": 1482,
+  "current": "Ar yra laisvas staliukas?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ar yra laisvų staliukų?",
+    "en": "Is there a table free?",
+    "who": "naturalness review B",
+    "reason": "5 partitive genitive. Asking whether any exist takes the genitive plural ('Ar yra laisvų vietų / staliukų?'); the nominative singular asks about one specific table. 'Ar turite laisvą staliuką?' is the other natural form – see politeness.",
+    "evidence": "native-speaker judgement: Asking whether any exist takes the genitive plural ('Ar yra laisvų vietų / staliukų?'); the nominative singular asks about one specific table. 'Ar turite laisvą staliuką?' is the other natural form – see politeness.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1487_pavyzdys",
+  "level": "A2",
+  "pos": 1487,
+  "current": "Duok man {pavyzdį}.",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Ar galite duoti {pavyzdį}?",
+    "en": "Could you give an example?",
+    "who": "politeness review",
+    "reason": "The tu-imperative is natural between peers and from a teacher to a pupil, and Lithuanian requests are more direct than English ones (Hilbig). It is wrong only if the learner says it upward (pupil -> teacher, customer -> clerk). Keep as peer register, or switch to the jūs ability question; the English stays peer-level if kept.",
+    "evidence": "Hilbig 2009: LT direct requests 26.9% vs EN 10.9%, imperatives among them https://www.zurnalai.vu.lt/lietuviu-kalba/article/download/22872/22150/42651 ; 'Nė dienos be lietuvių kalbos' answer key: 'Mindaugai, paduok cukraus!' (tu-imperative at table) https://www.vu.lt/leidyba/images/eknygos/Ne_dienos/Ne_dienos_be_lietuviu_kalbos_Uzduociu_atsakymai.pdf",
+    "verdict": "owner's call"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1498_dalyvauti",
+  "level": "A2",
+  "pos": 1498,
+  "current": "{Dalyvauju} kursuose.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Rytoj {dalyvauju} varžybose.",
+    "en": "Tomorrow I am taking part in a competition.",
+    "who": "naturalness review B",
+    "reason": "4 collocation. One 'lanko kursus' (card 1743 says exactly that); 'dalyvauju kursuose' is understood but odd. dalyvauti collocates with varžybos, konkursas, rinkimai.",
+    "evidence": "native-speaker judgement: One 'lanko kursus' (card 1743 says exactly that); 'dalyvauju kursuose' is understood but odd. dalyvauti collocates with varžybos, konkursas, rinkimai.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1501_veikiantis",
+  "level": "A2",
+  "pos": 1501,
+  "current": "Liftas {veikiantis}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Veikiantis liftas – kairėje.",
+    "en": "The working lift is on the left.",
+    "who": "naturalness review B",
+    "reason": "4 usage. 'Liftas veikiantis.' is not said; the predicate is 'Liftas veikia' (card 1324). The participle is attributive: 'veikiantis liftas / bankomatas', as on a sign. Alternative for the lead: retarget/merge into 1324 veikti.",
+    "evidence": "native-speaker judgement: 'Liftas veikiantis.' is not said; the predicate is 'Liftas veikia' (card 1324). The participle is attributive: 'veikiantis liftas / bankomatas', as on a sign. Alternative for the lead: retarget/merge into 1324 veikti.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1503_isivaizduoti",
+  "level": "A2",
+  "pos": 1503,
+  "current": "{Įsivaizduok}, kad esi jūroje.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Įsivaizduok}, kad esi prie jūros.",
+    "en": "Imagine you are at the seaside.",
+    "who": "naturalness review B",
+    "reason": "6 meaning. 'esi jūroje' = you are in the sea (swimming or on a boat); the relaxation image is 'prie jūros'.",
+    "evidence": "native-speaker judgement: 'esi jūroje' = you are in the sea (swimming or on a boat); the relaxation image is 'prie jūros'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1514_eismas",
+  "level": "A2",
+  "pos": 1514,
+  "current": "Centre intensyvus {eismas}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Centre didelis {eismas}.",
+    "en": "There is heavy traffic in the centre.",
+    "who": "naturalness review B",
+    "reason": "1/4 register. 'intensyvus eismas' is traffic-report language and 'intensyvus' is untaught; spoken Lithuanian: 'didelis eismas', 'spūstys'.",
+    "evidence": "native-speaker judgement: 'intensyvus eismas' is traffic-report language and 'intensyvus' is untaught; spoken Lithuanian: 'didelis eismas', 'spūstys'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "own",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1533_skonis",
+  "level": "A2",
+  "pos": 1533,
+  "current": "Geras {skonis}!",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ji turi gerą {skonį}.",
+    "en": "She has good taste.",
+    "who": "naturalness review B",
+    "reason": "4 collocation. Bare 'Geras skonis!' is neither what one says of food ('Skanu!') nor of style; the fixed expression is 'turėti gerą skonį'.",
+    "evidence": "native-speaker judgement: Bare 'Geras skonis!' is neither what one says of food ('Skanu!') nor of style; the fixed expression is 'turėti gerą skonį'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1581_viesas",
+  "level": "A2",
+  "pos": 1581,
+  "current": "Tai {viešas} parkas.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Kur čia {viešas} tualetas?",
+    "en": "Where is there a public toilet here?",
+    "who": "naturalness review B",
+    "reason": "4 collocation. 'viešas parkas' is not a Lithuanian collocation (parks are public by default); viešas lives in 'viešas tualetas', 'vieša vieta', 'viešasis transportas'.",
+    "evidence": "native-speaker judgement: 'viešas parkas' is not a Lithuanian collocation (parks are public by default); viešas lives in 'viešas tualetas', 'vieša vieta', 'viešasis transportas'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1589_naudotis",
+  "level": "A2",
+  "pos": 1589,
+  "current": "Galiu {pasinaudoti} telefonu?",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Ar galiu {pasinaudoti} telefonu?",
+    "en": "May I use the phone?",
+    "who": "politeness review",
+    "reason": "Asking a stranger for a favour: 'Ar galiu …?' is the taught neutral form; 'Ar galėčiau pasinaudoti telefonu?' would be the most deferential but galėčiau is only taught at 2245 (after this card @1589), so not proposed. Pre-existing audit note: no card teaches the token 'pasinaudoti' (the headword is naudotis), unchanged by this proposal.",
+    "evidence": "50languages lesson 73: 'Ar galiu paskambinti?' https://www.goethe-verlag.com/book2/EM/EMLT/EMLT075.HTM ; Hilbig 2009 ability queries = the ordinary polite request https://www.zurnalai.vu.lt/lietuviu-kalba/article/download/22872/22150/42651",
+    "verdict": "change"
+   },
+   {
+    "id": "nat",
+    "text": "Nemoku {naudotis} šiuo telefonu.",
+    "en": "I don't know how to use this phone.",
+    "who": "naturalness review B",
+    "reason": "Target mismatch. The braced word 'pasinaudoti' is not the headword 'naudotis' (different lemma, perfective). The imperfective is natural in 'nemoku / mokausi naudotis'. If the request form is wanted, 'Ar galiu pasinaudoti jūsų telefonu?' needs its own card.",
+    "evidence": "native-speaker judgement: the cloze must show the taught lemma",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1687_mada",
+  "level": "A2",
+  "pos": 1687,
+  "current": "Tai dabar {mada}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Dabar tokia {mada}.",
+    "en": "That's the fashion now.",
+    "who": "naturalness review B",
+    "reason": "2/4 idiom. 'Tai dabar mada' is understandable but the set phrase is 'Dabar tokia mada' / 'Tokia mada'.",
+    "evidence": "native-speaker judgement: 'Tai dabar mada' is understandable but the set phrase is 'Dabar tokia mada' / 'Tokia mada'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1706_ar_sis_autobusas_vaziuoja",
+  "level": "A2",
+  "pos": 1706,
+  "current": "Ar šis autobusas važiuoja į centrą?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ar šis autobusas važiuoja į centrą?",
+    "en": "Does this bus go to the centre?",
+    "who": "naturalness review B",
+    "reason": "6 English line. The Lithuanian names the destination ('į centrą'); the English leaves it as '…'. Lithuanian unchanged.",
+    "evidence": "native-speaker judgement: English only",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1709_jausti",
+  "level": "A2",
+  "pos": 1709,
+  "current": "{Jaučiu} šaltį.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Jaučiu}, kad lis.",
+    "en": "I feel it's going to rain.",
+    "who": "naturalness review B",
+    "reason": "3/4 calque. 'Jaučiu šaltį' is English 'I feel the cold'; a Lithuanian says 'Man šalta'. jausti is natural with a clause ('jaučiu, kad…') or 'jaučiu skausmą / kvapą'.",
+    "evidence": "native-speaker judgement: 'Jaučiu šaltį' is English 'I feel the cold'; a Lithuanian says 'Man šalta'. jausti is natural with a clause ('jaučiu, kad…') or 'jaučiu skausmą / kvapą'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1733_nesveikas",
+  "level": "A2",
+  "pos": 1733,
+  "current": "Jis {nesveikas}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Tai {nesveikas} maistas.",
+    "en": "That is unhealthy food.",
+    "who": "naturalness review B",
+    "reason": "4/6 meaning. 'Jis nesveikas' about a person is heard as 'he is not right in the head'; for unwell one says 'Jis serga', 'Jam negera'. The adjective's everyday use is 'nesveikas maistas / nesveika'. Gloss should become 'unhealthy'.",
+    "evidence": "native-speaker judgement: 'Jis nesveikas' about a person is heard as 'he is not right in the head'; for unwell one says 'Jis serga', 'Jam negera'. The adjective's everyday use is 'nesveikas maistas / nesveika'. Gloss should become 'unhealthy'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1745_kita_vertus",
+  "level": "A2",
+  "pos": 1745,
+  "current": "Pigu, {kita vertus}, toli.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Pigu, bet, {kita vertus}, toli.",
+    "en": "It is cheap, but on the other hand it is far.",
+    "who": "naturalness review B",
+    "reason": "2 connective. Without 'viena vertus' (card 1720) or 'bet', 'Pigu, kita vertus, toli' reads as two dropped clauses. Minor.",
+    "evidence": "native-speaker judgement: Without 'viena vertus' (card 1720) or 'bet', 'Pigu, kita vertus, toli' reads as two dropped clauses. Minor.",
+    "verdict": "change",
+    "conf": "low"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1786_sunkiai",
+  "level": "A2",
+  "pos": 1786,
+  "current": "Jis {sunkiai} dirba.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Senelis {sunkiai} vaikšto.",
+    "en": "Grandfather walks with difficulty.",
+    "who": "naturalness review B",
+    "reason": "6 gloss match. 'Jis sunkiai dirba' means his work is heavy, not 'he works hard' ('Jis daug dirba'); the gloss 'with difficulty' is shown by 'sunkiai vaikšto / sunkiai kalba'.",
+    "evidence": "native-speaker judgement: 'Jis sunkiai dirba' means his work is heavy, not 'he works hard' ('Jis daug dirba'); the gloss 'with difficulty' is shown by 'sunkiai vaikšto / sunkiai kalba'.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1793_eime_i_kavine",
+  "level": "A2",
+  "pos": 1793,
+  "current": "Eime į kavinę! / Gal eikime į kavinę?",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Eime į kavinę! / Gal einam į kavinę?",
+    "en": "Let's go to the café! / Shall we go to the café?",
+    "who": "naturalness review B",
+    "reason": "1 register. 'Gal eikime…?' is grammatical but stiff; the spoken suggestion is 'Gal einam…?' (present as hortative). First half unchanged.",
+    "evidence": "native-speaker judgement: 'Gal eikime…?' is grammatical but stiff; the spoken suggestion is 'Gal einam…?' (present as hortative). First half unchanged.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1812_pasalinti",
+  "level": "A2",
+  "pos": 1812,
+  "current": "{Pašalinkite} klaidą.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Pašalinkite} nuotrauką.",
+    "en": "Remove the photo.",
+    "who": "naturalness review B",
+    "reason": "4 collocation. A mistake is 'ištaisoma', not 'pašalinama' (that is software-log language). pašalinti collocates with dėmė, nuotrauka, failas, dantis – 'Pašalinti' is the Delete button everyone sees.",
+    "evidence": "native-speaker judgement: A mistake is 'ištaisoma', not 'pašalinama' (that is software-log language). pašalinti collocates with dėmė, nuotrauka, failas, dantis – 'Pašalinti' is the Delete button everyone sees.",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1824_iskart",
+  "level": "A2",
+  "pos": 1824,
+  "current": "Ateik {iškart}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Iškart} supratau.",
+    "en": "I understood at once.",
+    "who": "naturalness review C",
+    "reason": "4 collocation: iškart = 'straight away, at once (after something)' — iškart supratau, iškart pastebėjau; for the command 'come at once' a native says Ateik tuoj pat / dabar pat, not Ateik iškart.",
+    "evidence": "tv3.lt dictionary entry 'iškart prv. iš karto, iš sykio' https://www.tv3.lt/zodynas/terminu-zodynas/I/iskart ; native-speaker judgement on the command use",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1834_interneto_svetaine",
+  "level": "A2",
+  "pos": 1834,
+  "current": "Žiūrėk mūsų {interneto svetainėje}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Daugiau informacijos rasite mūsų {interneto svetainėje}.",
+    "en": "You will find more information on our website.",
+    "who": "naturalness review C",
+    "reason": "3 calque: 'Žiūrėk mūsų interneto svetainėje' mirrors English 'look on our website'; the Lithuanian stock line is Daugiau informacijos rasite mūsų (interneto) svetainėje / Apsilankykite mūsų svetainėje.",
+    "evidence": "native-speaker judgement; the formula is a stock line on Lithuanian institutional pages (search hits on europa.eu and continental-tires.com/lt — pages not read, unverified)",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1852_dinges",
+  "level": "A2",
+  "pos": 1852,
+  "current": "Mano piniginė {dingo}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Ieškau {dingusio} šuns.",
+    "en": "I am looking for a missing dog.",
+    "who": "naturalness review C",
+    "reason": "retarget: the card teaches the adjective dingęs, but the cloze shows the verb dingo — the verb dingti is already its own card (1389_dingti). The sentence is natural; it just teaches the wrong card. Alternative: merge 1852 into 1389.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1955_letai",
+  "level": "A2",
+  "pos": 1955,
+  "current": "Kalbėkite {lėtai}.",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Kalbėkite {lėtai}, prašau.",
+    "en": "Speak slowly, please.",
+    "who": "politeness review",
+    "reason": "Not a politeness problem but a naturalness one: when asking someone to slow down, natives use the comparative 'lėčiau' ('Prašom kalbėti lėčiau', deck 0203), not 'lėtai'. The bare 'Kalbėkite lėtai' is a teacher's or director's instruction. Options: add ', prašau' (minimal), or make it a statement where lėtai is at home: 'Jis kalba {lėtai} ir aiškiai.' Sister cards 1887 'Kalbėkite aiškiai' and 1898 'Kalbėkite tyliai, vaikas miega' read as instructions and are fine.",
+    "evidence": "Deck's own 0203 'Prašom kalbėti lėčiau'; 50languages has no 'kalbėkite lėtai' (unverified against a corpus)",
+    "verdict": "owner's call"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "1968_vieta_prie_tako",
+  "level": "A2",
+  "pos": 1968,
+  "current": "vieta prie tako",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "vieta prie praėjimo",
+    "en": "aisle seat",
+    "who": "naturalness review C",
+    "reason": "7 phrase: airlines and travellers say vieta prie praėjimo; takas is a footpath / garden path, so 'prie tako' is a calque of 'aisle'. Phrase card: the picture (an aisle seat) is unaffected.",
+    "evidence": "airBaltic LT seat page: 'vietų prie lango, vidurinėje sėdynėje ir prie praėjimo'; '8D (vieta prie praėjimo su pirmenybe)' https://www.airbaltic.com/lt/vieto-uzsakymas",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "own",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2015_gimnazija",
+  "level": "A2",
+  "pos": 2015,
+  "current": "Sūnus mokosi {gimnazijoje}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Sūnus mokosi {gimnazijoje}.",
+    "en": "My son is at gimnazija (upper secondary school).",
+    "who": "naturalness review C",
+    "reason": "6 English only: 'gymnasium' is a sports hall to an English reader; Lithuanian is fine.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2039_tiksliai",
+  "level": "A2",
+  "pos": 2039,
+  "current": "Nežinau {tiksliai}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Tiksliai} nežinau.",
+    "en": "I don't know exactly.",
+    "who": "naturalness review C",
+    "reason": "2 word order: the idiomatic answer is Tiksliai nežinau (adverb first, like Tikrai nežinau); Nežinau tiksliai is heard but is the marked order.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2147_gero_poilsio",
+  "level": "A2",
+  "pos": 2147,
+  "current": "Gero poilsio! / Smagiai praleisti laiką!",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Gero poilsio! / Smagiai praleiskite laiką!",
+    "en": "Have a good rest! / Have fun!",
+    "who": "naturalness review C",
+    "reason": "7 phrase: a bare infinitive wish (Smagiai praleisti laiką!) is an ellipsis of 'Linkiu smagiai praleisti laiką'; said on its own, people use the imperative (Smagiai praleiskite laiką!) or a genitive wish (Smagaus vakaro! / Smagaus savaitgalio!). Owner to choose; sources could not settle it.",
+    "evidence": "native-speaker judgement (web search found no usage evidence either way)",
+    "verdict": "owner",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2175_rezervuoti",
+  "level": "A2",
+  "pos": 2175,
+  "current": "Noriu {rezervuoti} kambarį.",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Norėčiau {rezervuoti} kambarį.",
+    "en": "I would like to book a room.",
+    "who": "politeness review",
+    "reason": "Same encounter as phrase 2194 'Norėčiau rezervuoti kambarį'; the deck would otherwise teach two registers for one situation. Alternative if the owner wants variety: 'Norėčiau {rezervuoti} staliuką.' (restaurant; staliukas taught @1482).",
+    "evidence": "50languages lesson 27 'Viešbutyje': '(Aš) norėčiau kambario su vonia', 'Ar galiu pamatyti kambarį?' https://www.goethe-verlag.com/book2/EN/ENLT/ENLT029.HTM ; lesson 35: 'Norėčiau užsakyti bilietą į Atėnus' https://www.goethe-verlag.com/book2/EN/ENLT/ENLT037.HTM",
+    "verdict": "change"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2200_plansete",
+  "level": "A2",
+  "pos": 2200,
+  "current": "Vaikas žaidžia žaidimus {planšetėje}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Vaikas žaidžia {planšete}.",
+    "en": "The child is playing on the tablet.",
+    "who": "naturalness review C",
+    "reason": "5 case/idiom: parents say žaisti planšete / telefonu (instrumental); 'žaidžia žaidimus planšetėje' is redundant and bookish.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "own",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2204_dalintis",
+  "level": "A2",
+  "pos": 2204,
+  "current": "{Dalinamės} kambariu.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Dalijamės} kambariu.",
+    "en": "We share a room.",
+    "who": "naturalness review C",
+    "reason": "5 form: the normative verb is dalytis (dalijasi, dalijosi); dalintis / dalinamės is the everyday variant that most speakers use. Headword and cloze both use the variant. Owner decides whether the deck teaches dalytis/dalijamės (normative) or keeps dalintis (what is said).",
+    "evidence": "unverified: VLKK consultation bank refused (https://www.vlkk.lt/konsultacijos?search=dalintis); DLKŽ lists dalintis as a variant pointing to dalytis (from memory, unverified)",
+    "verdict": "owner",
+    "conf": "medium"
+   }
+  ],
+  "group": "call",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2215_klaidingai",
+  "level": "A2",
+  "pos": 2215,
+  "current": "Parašei {klaidingai}.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Tu mane {klaidingai} supratai.",
+    "en": "You misunderstood me.",
+    "who": "naturalness review C",
+    "reason": "4 collocation: klaidingai pairs with suprasti / manyti / nurodyti; for a misspelt word people say neteisingai parašei or parašei su klaida.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2234_pasimatuoti",
+  "level": "A2",
+  "pos": 2234,
+  "current": "Galiu {pasimatuoti}?",
+  "opts": [
+   {
+    "id": "pol",
+    "text": "Ar galiu {pasimatuoti}?",
+    "en": "May I try it on?",
+    "who": "politeness review",
+    "reason": "Both forms are natural in speech (Hilbig's own examples drop 'Ar': 'Galite išrašyti man …?'); the written/neutral form taught by textbooks and by the deck's own phrase 2290 'Ar galiu pasimatuoti?' has 'Ar'. Consistency, not correctness.",
+    "evidence": "50languages lesson 54 'Pirkiniai': 'Ar galiu šitą pasižiūrėti?' https://goethe-verlag.com/book2/EN/ENLT/ENLT056.HTM ; lesson 73: 'Ar galiu kai ko paklausti?' https://www.goethe-verlag.com/book2/EM/EMLT/EMLT075.HTM ; Hilbig 2009 example without 'Ar' https://www.zurnalai.vu.lt/lietuviu-kalba/article/download/22872/22150/42651",
+    "verdict": "change"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2247_ketvirtadalis",
+  "level": "A2",
+  "pos": 2247,
+  "current": "{Ketvirtadalis} valandos.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Suvalgiau {ketvirtadalį} pyrago.",
+    "en": "I ate a quarter of the cake.",
+    "who": "naturalness review C",
+    "reason": "4 collocation: clock time uses ketvirtis (ketvirtis valandos, ketvirtis po dešimtos, be ketvirčio penkios), never ketvirtadalis; ketvirtadalis is the fraction of a quantity or group. Keeps the fraction frame of 1956 Trečdalis klasės serga.",
+    "evidence": "linguapedia telling-time: 'Ketvirtis po dešimtos', 'Be ketvirčio penkios' https://linguapedia.info/en/lithuanian/phrases/telling-time ; native-speaker judgement",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2265_linksmu_velyku",
+  "level": "A2",
+  "pos": 2265,
+  "current": "Linksmų Velykų!",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "Linksmų Velykų!",
+    "en": "Happy Easter!",
+    "who": "naturalness review C",
+    "reason": "6 English only: Linksmų Velykų is Easter only; 'happy holidays' is Linksmų švenčių (0841_su_sventemis covers that).",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "high"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2345_nudegti",
+  "level": "A2",
+  "pos": 2348,
+  "current": "{Nudegiau} ranką.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Nudegiau} saulėje.",
+    "en": "I got sunburnt.",
+    "who": "naturalness review C",
+    "reason": "4 collocation: nudegti is first of all sunburn (nudegiau saulėje); for a hand on a hot pan people say nusideginau ranką. Nudegiau ranką is possible but second choice.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ },
+ {
+  "key": "2422_puslitris",
+  "level": "A2",
+  "pos": 2420,
+  "current": "{Puslitrį} pieno, prašau.",
+  "opts": [
+   {
+    "id": "nat",
+    "text": "{Puslitrį} alaus, prašau.",
+    "en": "Half a litre of beer, please.",
+    "who": "naturalness review C",
+    "reason": "4 collocation: puslitris is the bar / bottle measure (puslitris alaus; also the half-litre bottle itself); milk is bought by the pakelis or as pusę litro pieno.",
+    "evidence": "native-speaker judgement",
+    "verdict": "change",
+    "conf": "medium"
+   }
+  ],
+  "group": "change",
+  "recorded": false,
+  "note_owner": ""
+ }
+]

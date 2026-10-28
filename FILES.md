@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,586 tracked files in 735 rows.
+2,588 tracked files in 737 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -558,6 +558,8 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.verify.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_pre_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-28_naturalness/RUBRIC.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
+| `rounds/2026-10-28_naturalness/build_page.py` | history | Builder of the round's review page | history |
+| `rounds/2026-10-28_naturalness/merged_v1.json` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_A.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_B.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_C.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
