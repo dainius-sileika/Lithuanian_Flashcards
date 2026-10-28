@@ -222,28 +222,38 @@ async function start(){
   render();
 }
 
+/* 2026-10-28 fix: each take has its OWN chunk list (a fast stop -> start used to pour the end of the
+   previous take into the next one, so a take could contain two recordings); no new take starts while
+   the previous one is still being saved; a held key's auto-repeat is ignored; a pending auto-advance is
+   cancelled when a take starts; playback is paused so the speakers are not recorded. */
+let saving=false, advTimer=null;
 function startRec(){
-  chunks=[]; rec=new MediaRecorder(stream, MIME?{mimeType:MIME}:undefined);
+  if(saving) return;
+  if(advTimer){ clearTimeout(advTimer); advTimer=null; }
+  try{ player.pause(); }catch(e){}
+  const parts=[]; const r=new MediaRecorder(stream, MIME?{mimeType:MIME}:undefined); rec=r;
   const w=WORDS[idx];
-  rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};
-  rec.onstop=async()=>{
-    const blob=new Blob(chunks,{type:MIME||'audio/webm'});
-    await putClip(w.key, blob); await putMeta('said:'+w.key, w.say); done.add(w.key);
-    // a re-recorded take must leave with the next "Export new" even if its key went before
-    const ex=new Set((await getMeta('exported'))||[]); if(ex.delete(w.key)) await putMeta('exported',[...ex]);
-    updateCell(POS[w.key]); if(WORDS[idx]===w) setPlayer(blob); setCount();
-    document.getElementById('status').textContent="Recorded ✓ ("+Math.round(blob.size/1024)+" KB)";
-    recBtn.classList.remove('recording'); recBtn.textContent='● Re-record';
-    if(document.getElementById('auto').checked&&WORDS[idx]===w) setTimeout(()=>go(1),350);
+  r.ondataavailable=e=>{if(e.data.size)parts.push(e.data);};
+  r.onstop=async()=>{
+    try{
+      const blob=new Blob(parts,{type:MIME||'audio/webm'});
+      await putClip(w.key, blob); await putMeta('said:'+w.key, w.say); done.add(w.key);
+      // a re-recorded take must leave with the next "Export new" even if its key went before
+      const ex=new Set((await getMeta('exported'))||[]); if(ex.delete(w.key)) await putMeta('exported',[...ex]);
+      updateCell(POS[w.key]); if(WORDS[idx]===w) setPlayer(blob); setCount();
+      document.getElementById('status').textContent="Recorded ✓ ("+Math.round(blob.size/1024)+" KB)";
+      recBtn.classList.remove('recording'); recBtn.textContent='● Re-record';
+      if(document.getElementById('auto').checked&&WORDS[idx]===w) advTimer=setTimeout(()=>{advTimer=null;go(1);},350);
+    } finally { saving=false; }
   };
-  rec.start(); recBtn.classList.add('recording'); recBtn.textContent='■ Stop';
+  r.start(); recBtn.classList.add('recording'); recBtn.textContent='■ Stop';
   // pre-roll: the mic is live but we ask for silence first, so every take begins
   // with clean lead-in and no plosive onset is clipped at capture.
   document.getElementById('status').textContent="… wait …";
-  setTimeout(()=>{ if(rec&&rec.state==='recording')
+  setTimeout(()=>{ if(rec===r&&r.state==='recording')
       document.getElementById('status').textContent="SPEAK NOW"; }, 400);
 }
-function toggleRec(){ if(rec&&rec.state==='recording'){rec.stop();} else {startRec();} }
+function toggleRec(){ if(saving) return; if(rec&&rec.state==='recording'){saving=true; rec.stop();} else {startRec();} }
 
 /* ---------- UI ---------- */
 const recBtn=document.getElementById('recBtn'), playBtn=document.getElementById('playBtn'), player=document.getElementById('player');
@@ -274,7 +284,7 @@ async function render(){
   document.querySelectorAll('.cell').forEach((c,i)=>c.classList.toggle('cur',i===idx));
   const curCell=document.querySelectorAll('.cell')[idx]; if(curCell) curCell.scrollIntoView({block:'nearest'});
 }
-function go(d){ idx=Math.min(WORDS.length-1,Math.max(0,idx+d)); render(); }
+function go(d){ if(rec&&rec.state==='recording') return; idx=Math.min(WORDS.length-1,Math.max(0,idx+d)); render(); }
 const NA1=WORDS.filter(w=>w.level==='A1').length;
 function setCount(){ document.getElementById('count').textContent=done.size+" / "+WORDS.length;
   document.getElementById('progress').style.width=(100*done.size/WORDS.length)+"%";
@@ -283,11 +293,12 @@ function setCount(){ document.getElementById('count').textContent=done.size+" / 
     (NA1?" · A1: "+a1+" of "+NA1:""); }
 function buildGrid(){ const g=document.getElementById('grid'); g.innerHTML='';
   WORDS.forEach((w,i)=>{ const c=document.createElement('div'); c.className='cell'+(done.has(w.key)?' done':'');
-    c.textContent=w.n||(i+1); c.title=w.key+' '+w.lt; c.onclick=()=>{idx=i;render();}; g.appendChild(c); });
+    c.textContent=w.n||(i+1); c.title=w.key+' '+w.lt; c.onclick=()=>{ if(rec&&rec.state==='recording') return; idx=i;render();}; g.appendChild(c); });
   setCount(); }
 function updateCell(i){ const c=document.querySelectorAll('.cell')[i]; if(c)c.classList.add('done'); setCount(); }
 
 document.getElementById('start').onclick=start;
+document.addEventListener('keyup',e=>{ if(e.code==='Space'&&document.getElementById('app').style.display!=='none') e.preventDefault(); });
 recBtn.onclick=toggleRec;
 playBtn.onclick=()=>{player.currentTime=0;player.play();};
 document.getElementById('next').onclick=()=>go(1);
@@ -295,7 +306,7 @@ document.getElementById('prev').onclick=()=>go(-1);
 document.addEventListener('keydown',e=>{
   if(document.getElementById('app').style.display==='none')return;
   if(e.target&&e.target.tagName==='INPUT')return;
-  if(e.code==='Space'){e.preventDefault();toggleRec();}
+  if(e.code==='Space'){e.preventDefault(); if(!e.repeat) toggleRec();}
   else if(e.key==='p'||e.key==='P'){if(!playBtn.disabled){player.currentTime=0;player.play();}}
   else if(e.key==='ArrowRight'){go(1);} else if(e.key==='ArrowLeft'){go(-1);}
 });
