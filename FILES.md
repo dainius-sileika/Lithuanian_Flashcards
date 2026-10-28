@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,667 tracked files in 816 rows.
+2,669 tracked files in 818 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -558,7 +558,9 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.verify.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_pre_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-28_naturalness/RUBRIC.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
+| `rounds/2026-10-28_naturalness/SECOND_CHECK.md` | history | Second check (Fable, 2026-10-28): each owner note resolved, the dependency / duplicate / English re-check of all 79 rows, the 6 retargets, the 34 pre-existing identical-sentence pairs for the lead, and the 5 stress marks left for the owner | people |
 | `rounds/2026-10-28_naturalness/build_page.py` | history | Builder of the round's review page | history |
+| `rounds/2026-10-28_naturalness/final_v1.csv` | history | Second check (Fable, 2026-10-28), ready to apply: one row per card that changes after the owner's answers (75: 67 EDIT, 6 RETARGET, 2 NEW_CARD) — key, field(s), old, new (braces), new English, action, source, recorded, extra_fields (headword/gloss/stress/forms for retargets), reason | written by hand from the analysis; read by the apply step |
 | `rounds/2026-10-28_naturalness/merged_v1.json` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/owner_answers/0043_atsiprasau.json` | history | The owner's answers on the Naturalness Review page (one JSON per card: choice nat/pol/keep, note), exported 2026-10-28 23:05 | read by the second check and the apply step |
 | `rounds/2026-10-28_naturalness/owner_answers/0148_mano_vardas_yra_jonas.json` | history | The owner's answers on the Naturalness Review page (one JSON per card: choice nat/pol/keep, note), exported 2026-10-28 23:05 | read by the second check and the apply step |
