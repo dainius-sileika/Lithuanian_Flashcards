@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-1,961 tracked files in 716 rows.
+1,962 tracked files in 717 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -557,6 +557,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.verify.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_pre_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-28_stress_forms/OWNER_LIST.csv` | history | The 355 forms the owner must stress himself (not in the source, ambiguous with an identical headword, or the source's headword contradicts ours), A1 first in study order, with the reason and the source's options; spec §7 | written by match_kaikki_v2.py; people |
+| `rounds/2026-10-28_stress_forms/OWNER_SHEET_v1.csv` | live | The owner's round-trip sheet: forms the source could not stress (A1 first), with an empty column for his stressed form | owner fills it in; the lead applies it |
 | `rounds/2026-10-28_stress_forms/README.md` | history | The round's own account: what was asked, what was done, the owner's verdicts | people |
 | `rounds/2026-10-28_stress_forms/applied.csv` | history | What apply_v2.py changed: key, file, field, before, after, how (949 fields) | written by apply_v2.py |
 | `rounds/2026-10-28_stress_forms/apply_v2.py` | history | Wrote the sourced forms into data/cards_anki.csv and data/a2_wordlist.csv (only gen_sg / fem / pres3 / past3 and five prons) and the source note into each row's notes / check column; CSV quoting and CRLF kept | history |

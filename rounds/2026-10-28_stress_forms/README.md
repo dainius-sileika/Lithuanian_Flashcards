@@ -81,3 +81,12 @@ Also seen, not applied: the source's *rugsė́jio* (our *rugsėjo*), *pẽčio* 
   commit 363b5fd). The live `recorder_A2.html` is regenerated on the Mac, not here.
 - Spec 3.5.0 (§7): every form on a back carries a sourced stress mark; an unsourced form is shown unmarked and
   listed in `OWNER_LIST.csv` until the owner supplies it.
+
+## Lead, 2026-10-28 (after v2)
+
+- Two conflicts were wrong data, confirmed in the dump and fixed in `data/a2_wordlist.csv`:
+  **1138_antis** (A1 picture card "duck") had gender M and gen *ančio*, which belong to *añtis* m "bosom":
+  now F, gen *ánties* (en.wiktionary antis, ántis f (1)). **1631_kaltas** had the pron of the noun *káltas*
+  "chisel": now *kal̃tas*, fem *kaltà* (adjective, pattern 4; agrees with kirtis.info).
+- `OWNER_SHEET_v1.csv` is the owner's round-trip sheet: the 353 remaining forms (90 A1, 263 A2), A1 first in
+  study order, with an empty "YOUR stressed form" column. `OWNER_LIST.csv` stays as written by v2.
