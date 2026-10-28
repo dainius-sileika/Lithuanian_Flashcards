@@ -1,0 +1,322 @@
+key,verdict,current,proposed,proposed_english,reason,evidence,a1_dependency_ok,recorded,confidence
+1813_pilietybe,keep,Kokia jūsų {pilietybė}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1816_pietu_pertrauka,keep,pietų pertrauka,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1818_nedaug,keep,Turiu {nedaug} laiko.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1819_moketi_kortele,keep,Ar galiu {mokėti kortele}?,,,keep; see politeness — Ar galiu mokėti kortele? is what shoppers say (Ar galima mokėti kortele? equally common),native-speaker judgement,A2 (no A1 constraint),no,high
+1820_visokia,keep,Parduoda {visokias} prekes.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1821_rusis,keep,Kokios {rūšies} sūris?,,,keep; Kokios rūšies sūris? is a usable shop question; Koks čia sūris? is the plainer one,native-speaker judgement,A2 (no A1 constraint),no,medium
+1822_bankomatas,keep,Kur čia {bankomatas}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1823_neimanomas,keep,Tai {neįmanoma}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1824_iskart,change,Ateik {iškart}.,{Iškart} supratau.,I understood at once.,"4 collocation: iškart = 'straight away, at once (after something)' — iškart supratau, iškart pastebėjau; for the command 'come at once' a native says Ateik tuoj pat / dabar pat, not Ateik iškart.","tv3.lt dictionary entry 'iškart prv. iš karto, iš sykio' https://www.tv3.lt/zodynas/terminu-zodynas/I/iskart ; native-speaker judgement on the command use",A2 (no A1 constraint); suprasti taught @195,no,medium
+1829_smirdeti,keep,Šiukšlės {smirda}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1830_kvepeti,keep,Gėlės gražiai {kvepia}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1831_mano_nuomone,keep,"{Mano nuomone}, filmas geras.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1832_rytoj_dirbsiu,keep,Rytoj {dirbsiu}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1833_ruosti,keep,Mama {ruošia} vakarienę.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1834_interneto_svetaine,change,Žiūrėk mūsų {interneto svetainėje}.,Daugiau informacijos rasite mūsų {interneto svetainėje}.,You will find more information on our website.,3 calque: 'Žiūrėk mūsų interneto svetainėje' mirrors English 'look on our website'; the Lithuanian stock line is Daugiau informacijos rasite mūsų (interneto) svetainėje / Apsilankykite mūsų svetainėje.,"native-speaker judgement; the formula is a stock line on Lithuanian institutional pages (search hits on europa.eu and continental-tires.com/lt — pages not read, unverified)","A2 (no A1 constraint); daug @205, informacija @608, rasti @177, mūsų @495",no,high
+1835_patirtis,keep,Turiu darbo {patirties}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1840_vazineti,keep,{Važinėju} dviračiu.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1841_mazdaug,keep,Tai kainuoja {maždaug} dešimt eurų.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1842_zinute,keep,Parašyk man {žinutę}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1843_pasirinkimas,keep,Geras {pasirinkimas}!,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1844_nuleisti,keep,{Nuleisk} rankas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1845_instrukcija,keep,Perskaityk {instrukciją}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1846_nuotaika,keep,Šiandien esu geros {nuotaikos}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1851_organizuoti,keep,Kas {organizuoja} šventę?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1852_dinges,change,Mano piniginė {dingo}.,Ieškau {dingusio} šuns.,I am looking for a missing dog.,"retarget: the card teaches the adjective dingęs, but the cloze shows the verb dingo — the verb dingti is already its own card (1389_dingti). The sentence is natural; it just teaches the wrong card. Alternative: merge 1852 into 1389.",native-speaker judgement,"A2 (no A1 constraint); ieškoti @276, šuo @27",no,medium
+1853_prancuzas,keep,Ji – {prancūzė}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1854_jungti,keep,{Įjunk} šviesą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1855_netycia,keep,"Atsiprašau, {netyčia}.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1856_tycia,keep,Jis tai padarė {tyčia}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1857_laisvalaikis,keep,Ką veiki {laisvalaikiu}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1858_sustokite_cia_prasau,keep,"Sustokite čia, prašau.",,,"keep; see politeness — taxi: Sustokite čia, prašau is exactly it",native-speaker judgement,A2 (no A1 constraint),no,high
+1862_auginti,keep,Jie {augina} tris vaikus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1863_pamirsti,keep,{Pamiršau} raktus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1864_skirtis,keep,Jie {išsiskyrė} pernai.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1865_ji_paklause_kur_as,keep,"Ji paklausė, {kur} aš gyvenu.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1866_viza,keep,Man reikia {vizos}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1867_atvezti,keep,{Atvežiau} bulvių iš kaimo.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1868_gimimo_data,keep,Jūsų {gimimo data}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1873_gesti,keep,Mašina dažnai {genda}.,,,"keep; mašina is the colloquial car word and natural here, but no card teaches it (automobilis @190 does): accept as information, or Automobilis dažnai genda.",native-speaker judgement,A2 (no A1 constraint); mašina 'car' untaught (automobilis @190),no,high
+1874_staiga,keep,{Staiga} pradėjo lyti.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1875_sis_didesnis_nei_tas,keep,Šis {didesnis} nei tas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1876_populiarus,keep,Krepšinis Lietuvoje labai {populiarus}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1877_noras,keep,Turiu vieną {norą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1878_alga,keep,Mano {alga} nedidelė.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1879_gimimo_vieta,keep,{Gimimo vieta} – Vilnius.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1880_esu_alergiskas,keep,Esu alergiškas…,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1884_persikelti,keep,{Persikėlėme} į Vilnių.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1885_kelintas,keep,{Kelintas} aukštas?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1886_realus,keep,Tai {realus} planas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1887_aiskiai,keep,Kalbėkite {aiškiai}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1888_uzsirasyti,keep,{Užsirašiau} pas gydytoją.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1889_laikotarpis,keep,Tai sunkus {laikotarpis}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1890_deklaracija,keep,Užpildžiau {deklaraciją}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1894_atsiprasau_kad_veluoju,keep,"Atsiprašau, kad vėluoju.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1895_dometis,keep,{Domiuosi} istorija.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1896_gerbiamas,keep,"{Gerbiamas} direktoriau,",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1897_buti_skolingas,keep,Aš tau {skolingas} dešimt eurų.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1898_tyliai,keep,"Kalbėkite {tyliai}, vaikas miega.",,,"keep; in this situation Kalbėkite tyliau (comparative) is the more idiomatic request, but tyliai is the taught word and the sentence is natural enough",native-speaker judgement,A2 (no A1 constraint),no,medium
+1899_garsiai,keep,Nekalbėk taip {garsiai}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1900_vokieciu_kalba,keep,Mokausi {vokiečių kalbos}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1901_matematika,keep,{Matematika} man sunki.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1906_pirmiausia,keep,{Pirmiausia} nusiplauk rankas.,,,keep,native-speaker judgement,A2 (no A1 constraint); untaught form nusiplauti (plauti @718),no,high
+1907_isvezti,keep,Šiukšles {išveža} pirmadieniais.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1908_egzaminas,keep,Rytoj laikau {egzaminą}.,,,keep; identical sentence to 1973_laikyti_egzamina (different brace span),native-speaker judgement,A2 (no A1 constraint),no,high
+1909_smulkus,keep,Ar turite {smulkių} pinigų?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1910_atpazinti,keep,Aš jo {neatpažinau}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1911_draugiskas,keep,Kaimynai labai {draugiški}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1912_gebejimas,keep,Svarbus {gebėjimas} – klausytis.,,,keep; slightly slogan-like (Svarbus gebėjimas – klausytis); Mokėti klausytis – svarbus gebėjimas would be the fuller form,native-speaker judgement,A2 (no A1 constraint),no,medium
+1915_esu_uzsiregistraves_pas_gydytoja,keep,Esu užsiregistravęs pas gydytoją,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1917_vezti,keep,Autobusas {veža} keleivius.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1918_vienuoliktas,keep,Susitinkame {vienuoliktą} valandą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1919_svajone,keep,Mano {svajonė} – pamatyti jūrą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1920_perspeti,keep,Aš tave {perspėjau}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1921_neiprastas,keep,Tai {neįprastas} vardas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1922_trumpai,keep,Papasakok {trumpai}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1923_pussesere,keep,Ji mano {pusseserė}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1926_ar_turite_kitos_spalvos,keep,Ar turite kitos spalvos? / kito dydžio?,,,keep; see politeness — standard shop questions,native-speaker judgement,A2 (no A1 constraint),no,high
+1928_nervintis,keep,{Nesinervink}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1929_atideti,keep,Susitikimą {atidėjome}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1930_drasus,keep,Jis {drąsus} žmogus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1931_studijuoti,keep,{Studijuoju} universitete.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1932_begioti,keep,Rytais {bėgioju} parke.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1933_prancuzu_kalba,keep,Ji moka {prancūzų kalbą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1934_akademija,keep,Ji studijuoja Muzikos {akademijoje}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1939_susirgti,keep,Vaikas {susirgo}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1940_atsipalaiduoti,keep,Vakare noriu {atsipalaiduoti}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1941_atsiminti,keep,{Atsimenu} tavo vardą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1942_paskambinsiu_tau_veliau,keep,{Paskambinsiu} tau vėliau.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1943_vidutinio_amziaus,keep,Ji – {vidutinio amžiaus} moteris.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1944_nepazistamasis,keep,Prie durų stovėjo {nepažįstamasis}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1945_gyvenimo_aprasymas,keep,Atsiųskite {gyvenimo aprašymą}.,,,keep; job-ad register,native-speaker judgement,A2 (no A1 constraint); untaught form atsiųsti (siųsti @1471),no,high
+1950_siryt,keep,{Šįryt} lijo.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1951_patarimas,keep,Ačiū už {patarimą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1952_naudingas,keep,Tai {naudingas} patarimas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1953_pasukti_i_desine,keep,Prie banko {pasukite į dešinę}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1954_slaptazodis,keep,Pamiršau {slaptažodį}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1955_letai,keep,Kalbėkite {lėtai}.,,,keep; Kalbėkite lėčiau is the usual request (A1 0203 has it); lėtai is the taught word,native-speaker judgement,A2 (no A1 constraint),no,high
+1956_trecdalis,keep,{Trečdalis} klasės serga.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1957_kiek_laiko_uztrunka,keep,Kiek laiko užtrunka?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1961_netikras,keep,Šis auksas {netikras}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1962_pasukti_i_kaire,keep,Prie pašto {pasukite į kairę}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1963_sunenas,keep,Mano {sūnėnas} mokosi mokykloje.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1964_netoli,keep,Gyvenu {netoli} stoties.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1965_lyginti,keep,{Lyginu} kainas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1966_pagamintas,keep,{Pagaminta} Lietuvoje.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1967_bedarbis,keep,Jis dabar {bedarbis}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1968_vieta_prie_tako,change,vieta prie tako,vieta prie praėjimo,aisle seat,"7 phrase: airlines and travellers say vieta prie praėjimo; takas is a footpath / garden path, so 'prie tako' is a calque of 'aisle'. Phrase card: the picture (an aisle seat) is unaffected.","airBaltic LT seat page: 'vietų prie lango, vidurinėje sėdynėje ir prie praėjimo'; '8D (vieta prie praėjimo su pirmenybe)' https://www.airbaltic.com/lt/vieto-uzsakymas",A2 (no A1 constraint); praėjimas has no card (phrase is the unit; the pair card is 1683_vieta_prie_lango),no,high
+1972_naujienos,keep,Kokios {naujienos}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1973_laikyti_egzamina,keep,Rytoj {laikau egzaminą}.,,,keep; identical sentence to 1908_egzaminas (different brace span),native-speaker judgement,A2 (no A1 constraint),no,high
+1975_prognoze,keep,Kokia orų {prognozė} rytoj?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1976_negalima,keep,Čia {galima} rūkyti?,,,keep; see politeness — intonation question without Ar is colloquial; Ar čia galima rūkyti? is the neutral form,native-speaker judgement,A2 (no A1 constraint),no,high
+1977_vogti,keep,{Vogti} negalima.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1978_gripas,keep,Sergu {gripu}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1980_kompiuterinis_zaidimas,keep,Sūnus žaidžia {kompiuterinius žaidimus}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1984_niekaip,keep,{Niekaip} negaliu užmigti.,,,keep,native-speaker judgement,A2 (no A1 constraint); užmigti has no card (miegoti @89),no,high
+1985_nesutinku,keep,Aš {nesutinku} su tavimi.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1986_detale,keep,Tai smulki {detalė}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1987_plaukioti,keep,Vaikai {plaukioja} ežere.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1989_valiuta,keep,Kokia čia {valiuta}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1991_sildymas,keep,{Šildymas} brangus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1992_zymeti,keep,{Pažymėk} teisingą atsakymą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1995_traukinys_isvaziuoja_devinta,keep,Traukinys {išvažiuoja} devintą valandą.,,,keep; sentence card — išvažiuoja is natural speech (station announcements say išvyksta); matches the picture,native-speaker judgement,A2 (no A1 constraint),no,high
+1996_leistis,keep,{Leidžiamės} laiptais žemyn.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1997_be_abejo,keep,be abejo,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1998_uzsienio,keep,Mokausi {užsienio} kalbų.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+1999_neseniai,keep,{Neseniai} persikėliau į Vilnių.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2000_gelezinkelio_stotis,keep,Kaip nuvykti į {geležinkelio stotį}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2002_pensininkas,keep,Senelis – {pensininkas}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2004_pratimas,keep,Padaryk {pratimą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2006_dvyliktas,keep,Pietūs {dvyliktą} valandą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2007_paveikti,keep,Oras {paveikė} mano nuotaiką.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2009_tai_geriausias_restoranas_mieste,keep,Tai {geriausias} restoranas mieste.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2010_modernus,keep,Tai {modernus} pastatas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2011_seansas,keep,Vakarinis {seansas} – aštuntą.,,,keep,native-speaker judgement,A2 (no A1 constraint); vakarinis (vakaras @199) is the card's own modifier,no,high
+2013_asmens_tapatybes_kortele,keep,Turiu {asmens tapatybės kortelę}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2015_gimnazija,change,Sūnus mokosi {gimnazijoje}.,Sūnus mokosi {gimnazijoje}.,My son is at gimnazija (upper secondary school).,6 English only: 'gymnasium' is a sports hall to an English reader; Lithuanian is fine.,native-speaker judgement,A2 (no A1 constraint),no,high
+2017_kazkada,keep,{Kažkada} čia buvo mokykla.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2018_uzsiregistruoti,keep,{Užsiregistravau} pas gydytoją.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2019_truko_vamzdis,keep,trūko vamzdis,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2020_atmintis,keep,Turiu gerą {atmintį}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2021_kelinta,keep,{Kelinta} šiandien?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2022_fizika,keep,Mėgstu {fiziką}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2024_semestras,keep,Kitas {semestras} prasideda rugsėjį.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2026_stebetis,keep,"Aš {stebiuosi}, kad jis atėjo.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2028_nerimauti,keep,"Mama {nerimauja}, kai vėluoju.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2029_dukterecia,keep,{Dukterėčiai} penki metai.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2030_leiskite_prisistatyti,keep,Leiskite prisistatyti.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2031_i_lauka,keep,Vaikai išbėgo {į lauką}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2032_kantrus,keep,Mokytojas turi būti {kantrus}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2034_laimei,keep,"{Laimei}, autobusas dar neišvažiavo.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2035_puse_kilogramo,keep,"{Pusę kilogramo} sūrio, prašau.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2037_nakti_sviecia_menulis,keep,Naktį {šviečia} mėnulis.,,,keep; sentence card,native-speaker judgement,A2 (no A1 constraint),no,high
+2039_tiksliai,change,Nežinau {tiksliai}.,{Tiksliai} nežinau.,I don't know exactly.,"2 word order: the idiomatic answer is Tiksliai nežinau (adverb first, like Tikrai nežinau); Nežinau tiksliai is heard but is the marked order.",native-speaker judgement,A2 (no A1 constraint),no,medium
+2040_internetinis,keep,Tai {internetinė} parduotuvė.,,,keep; internetinė parduotuvė is natural; elektroninė parduotuvė / e. parduotuvė is the more frequent term,native-speaker judgement,A2 (no A1 constraint),no,high
+2042_atostogauti,keep,Vasarą {atostogauju} prie jūros.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2043_gimtoji_kalba,keep,Mano {gimtoji kalba} – lietuvių.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2045_megautis,keep,{Mėgaujuosi} saule.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2046_alergija,keep,Turiu {alergiją} riešutams.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2047_skauda_pilva,keep,skauda pilvą,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2048_medinis,keep,{Medinis} namas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2050_sutaupyti,keep,{Sutaupiau} šimtą eurų.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2051_dukart,keep,Skambinau tau {dukart}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2053_vietinis,keep,Tai {vietinis} alus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2054_susizeisti,keep,{Susižeidžiau} koją.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2056_pokytis,keep,Tai didelis {pokytis}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2058_anketa,keep,Užpildykite {anketą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2059_issiskyres,keep,Jis {išsiskyręs}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2062_karsciuoju,keep,Karščiuoju. / Peršalau.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2064_aptarnauti,keep,Padavėja mus greitai {aptarnavo}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2065_pyktis,keep,{Pyktis} nepadeda.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2069_varzytis,keep,"Vaikai {varžosi}, kas greitesnis.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2071_privalumas,keep,Didelis {privalumas} — centras arti.,,,"keep; typographic: this row uses an em dash (—), every other row an en dash (–)",native-speaker judgement,A2 (no A1 constraint),no,high
+2076_nepatenkintas,keep,Klientas {nepatenkintas}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2077_kvadratinis_metras,keep,Butas – penkiasdešimt {kvadratinių metrų}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2078_jus_ne_ten_pataikete,keep,Jūs ne ten pataikėte.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2080_nesioti,keep,Ji {nešioja} akinius.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2081_naudinga,keep,Tai {naudinga} žinoti.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2084_pareiti,keep,{Parėjau} namo vėlai.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2085_popierinis,keep,{Popierinis} maišelis.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2086_ispanu_kalba,keep,Ji gerai moka {ispanų kalbą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2087_skustis,keep,Jis visada {skundžiasi}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2089_ketinu_aplankyti_mociute,keep,{Ketinu} aplankyti močiutę.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2091_priziureti,keep,Močiutė {prižiūri} vaikus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2092_zemiau,keep,Pakabink paveikslą {žemiau}.,,,keep,native-speaker judgement,A2 (no A1 constraint); pakabinti: kabinti is taught later (@2219) — forward dependency,no,high
+2096_gerai_sutarta,keep,"Gerai, sutarta.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2097_diskutuoti,keep,Mes ilgai {diskutavome}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2100_persalimas,keep,Tai tik {peršalimas}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2103_melas,keep,Tai {melas}!,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2108_ar_galite_mus_nufotografuoti,keep,Ar galite mus nufotografuoti?,,,keep; see politeness — agree if it proposes Ar galėtumėte mus nufotografuoti? (either is fine to a stranger),native-speaker judgement,A2 (no A1 constraint),no,high
+2109_darbdavys,keep,Mano {darbdavys} geras žmogus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2116_tamsiai,keep,{Tamsiai} žalias paltas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2117_palydeti,keep,{Palydėsiu} tave iki stoties.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2118_cia_negalima_rukyti,keep,Čia {negalima} rūkyti.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2125_istekejusi,keep,Ji {ištekėjusi}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2126_oro_kondicionierius,keep,Kambaryje yra {oro kondicionierius}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2127_susitikime_sesta,keep,Susitikime šeštą. / Gal susitinkam rytoj?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2128_neislaikyti_egzamino,keep,Jis {neišlaikė egzamino}.,,,"keep; DUPLICATE of 2188_neislaikyti — same sentence Jis neišlaikė egzamino, only the brace span differs: merge or re-sentence one",native-speaker judgement,A2 (no A1 constraint); forward: neišlaikė <- 2188 @2188,no,high
+2130_israsti,keep,Kas {išrado} telefoną?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2133_madingas,keep,Tai {madingas} paltas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2134_salygos,keep,Geros darbo {sąlygos}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2136_ar_galite_ka_nors,keep,Ar galite ką nors parekomenduoti?,,,keep; see politeness — Ar galėtumėte ką nors parekomenduoti? is the softer form; 2202 Ką rekomenduotumėte? already covers it,native-speaker judgement,A2 (no A1 constraint),no,high
+2137_mineralinis_vanduo,keep,"Butelį {mineralinio vandens}, prašau.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2141_nuobodu,keep,Man {nuobodu}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2146_maudyti,keep,Mama {maudo} kūdikį.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2147_gero_poilsio,owner,Gero poilsio! / Smagiai praleisti laiką!,Gero poilsio! / Smagiai praleiskite laiką!,Have a good rest! / Have fun!,"7 phrase: a bare infinitive wish (Smagiai praleisti laiką!) is an ellipsis of 'Linkiu smagiai praleisti laiką'; said on its own, people use the imperative (Smagiai praleiskite laiką!) or a genitive wish (Smagaus vakaro! / Smagaus savaitgalio!). Owner to choose; sources could not settle it.",native-speaker judgement (web search found no usage evidence either way),A2 (no A1 constraint),no,medium
+2150_destyti,keep,Ji {dėsto} istoriją.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2151_prausti,keep,Mama {prausia} vaiką.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2153_man_sriubos_prasau,keep,"Man sriubos, prašau.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2159_kraujospudis,keep,Man aukštas {kraujospūdis}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2160_plastikinis,keep,{Plastikinis} maišelis.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2161_treniruotis,keep,{Treniruojuosi} tris kartus per savaitę.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2165_valgis,keep,Skanus {valgis}.,,,keep; valgis is fine; patiekalas is the usual word for 'dish' (taught @548),native-speaker judgement,A2 (no A1 constraint),no,high
+2166_mandagus,keep,Pardavėja labai {mandagi}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2169_sviesiai,keep,{Šviesiai} mėlynas dangus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2171_ar_galetume_gauti_meniu,keep,Ar galėtume gauti meniu?,,,keep; see politeness,native-speaker judgement,A2 (no A1 constraint),no,high
+2173_deklaruoti,keep,Ar turite ką {deklaruoti}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2175_rezervuoti,keep,Noriu {rezervuoti} kambarį.,,,"keep; see politeness — it proposes Norėčiau {rezervuoti} kambarį; agree on register, but that makes 2175 word-for-word identical to phrase 2194 Norėčiau rezervuoti kambarį — if accepted, re-sentence one (e.g. Norėčiau {rezervuoti} staliuką dviem.)",native-speaker judgement,A2 (no A1 constraint),no,high
+2177_apsisukti,keep,{Apsisuk} ir eik atgal.,,,keep,native-speaker judgement,A2 (no A1 constraint); atgal has no card,no,high
+2179_lengviau_nei_maniau,keep,"{Lengviau}, nei maniau.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2183_artintis,keep,{Artinasi} žiema.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2184_nepatogus,keep,Kėdė {nepatogi}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2185_kur_reikia_persesti,keep,Kur reikia persėsti?,,,keep; see politeness,native-speaker judgement,A2 (no A1 constraint),no,high
+2188_neislaikyti,keep,Jis {neišlaikė} egzamino.,,,"keep; DUPLICATE of 2128_neislaikyti_egzamino (same sentence); merge or re-sentence one, e.g. Jis {neišlaikė} vairavimo egzamino",native-speaker judgement,A2 (no A1 constraint),no,high
+2190_trukti,keep,Man {trūksta} laiko.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2193_poryt,keep,{Poryt} – šeštadienis.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2194_noreciau_rezervuoti_kambari,keep,Norėčiau rezervuoti kambarį,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2199_tradicinis,keep,Cepelinai – {tradicinis} patiekalas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2200_plansete,change,Vaikas žaidžia žaidimus {planšetėje}.,Vaikas žaidžia {planšete}.,The child is playing on the tablet.,5 case/idiom: parents say žaisti planšete / telefonu (instrumental); 'žaidžia žaidimus planšetėje' is redundant and bookish.,native-speaker judgement,A2 (no A1 constraint),no,medium
+2201_gerinti,keep,Noriu {pagerinti} savo lietuvių kalbos žinias.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2202_ka_rekomenduotumete,keep,Ką rekomenduotumėte?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2204_dalintis,owner,{Dalinamės} kambariu.,{Dalijamės} kambariu.,We share a room.,"5 form: the normative verb is dalytis (dalijasi, dalijosi); dalintis / dalinamės is the everyday variant that most speakers use. Headword and cloze both use the variant. Owner decides whether the deck teaches dalytis/dalijamės (normative) or keeps dalintis (what is said).","unverified: VLKK consultation bank refused (https://www.vlkk.lt/konsultacijos?search=dalintis); DLKŽ lists dalintis as a variant pointing to dalytis (from memory, unverified)",A2 (no A1 constraint),no,medium
+2205_pagyvenes,keep,Atėjo {pagyvenęs} vyras.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2206_deginti,keep,Rudenį {deginame} lapus.,,,"keep; counter-hypothesis checked: burning raked leaves is permitted under conditions in Lithuania, so the sentence is both natural and not an illegal act",alkas.lt 2023-09-16: 'leidžiama deginti tik surinktas (sugrėbtas) į krūvas' https://alkas.lt/2023/09/16/kaip-teisingai-tvarkyti-zaliasias-atliekas,A2 (no A1 constraint),no,high
+2210_vakar_nuejau_i_parduotuve,keep,Vakar {nuėjau} į parduotuvę.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2211_baigiamasis_egzaminas,keep,Laikau {baigiamąjį egzaminą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2212_uzlieti_kaimynus,keep,{Užliejau kaimynus}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2213_nevedes,keep,Jis {nevedęs}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2215_klaidingai,change,Parašei {klaidingai}.,Tu mane {klaidingai} supratai.,You misunderstood me.,4 collocation: klaidingai pairs with suprasti / manyti / nurodyti; for a misspelt word people say neteisingai parašei or parašei su klaida.,native-speaker judgement,A2 (no A1 constraint); suprasti @195,no,medium
+2216_kopijuoti,keep,{Nukopijuokite} dokumentą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2221_kaip_rasoma,keep,"Kaip rašoma? / Paraidžiui, prašau.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2224_nuomotis,keep,{Nuomojuosi} butą centre.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2226_kazkuri,keep,{Kažkuri} iš jų žino.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2228_gauti_viza,keep,Reikia {gauti vizą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2230_mes_mokomes_lietuviu_kalbos,keep,Mes {mokomės} lietuvių kalbos.,,,keep; sentence card,native-speaker judgement,A2 (no A1 constraint),no,high
+2234_pasimatuoti,keep,Galiu {pasimatuoti}?,,,"keep; DISAGREE with politeness: it proposes Ar galiu {pasimatuoti}?, which makes 2234 word-for-word identical to phrase 2290 Ar galiu pasimatuoti? Galiu pasimatuoti? is natural shop speech (politeness itself notes Hilbig drops Ar); keep the spoken variant here, as politeness did for 1976 beside 1225",native-speaker judgement,A2 (no A1 constraint),no,high
+2238_veztis,keep,{Vežuosi} lagaminą.,,,keep; Vežuosi lagaminą is acceptable; with a destination it reads more naturally (Į kelionę vežuosi du lagaminus),native-speaker judgement,A2 (no A1 constraint),no,medium
+2243_gultis_i_ligonine,keep,Jam reikia {gultis į ligoninę}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2245_ar_galeciau_kalbeti_su,keep,Ar galėčiau kalbėti su Jonu?,,,keep; see politeness,native-speaker judgement,A2 (no A1 constraint),no,high
+2247_ketvirtadalis,change,{Ketvirtadalis} valandos.,Suvalgiau {ketvirtadalį} pyrago.,I ate a quarter of the cake.,"4 collocation: clock time uses ketvirtis (ketvirtis valandos, ketvirtis po dešimtos, be ketvirčio penkios), never ketvirtadalis; ketvirtadalis is the fraction of a quantity or group. Keeps the fraction frame of 1956 Trečdalis klasės serga.","linguapedia telling-time: 'Ketvirtis po dešimtos', 'Be ketvirčio penkios' https://linguapedia.info/en/lithuanian/phrases/telling-time ; native-speaker judgement","A2 (no A1 constraint); valgyti @5 (suvalgyti = prefixed form), pyragas @1441",no,high
+2249_charakteris,keep,Ji turi gerą {charakterį}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2250_issinesti,keep,"Kavą {išsinešti}, prašau.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2251_kazkiek,keep,Dar turiu {kažkiek} pinigų.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2254_tolti,keep,Traukinys {tolsta}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2255_poliklinika,keep,Einu į {polikliniką}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2257_el_pastas,keep,Koks tavo {el. paštas}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2259_negazuotas_vanduo,keep,"{Negazuoto vandens}, prašau.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2360_apsidrausti,keep,Prieš kelionę reikia {apsidrausti}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2264_liudesys,keep,Jos akyse buvo {liūdesys}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2265_linksmu_velyku,change,Linksmų Velykų!,Linksmų Velykų!,Happy Easter!,6 English only: Linksmų Velykų is Easter only; 'happy holidays' is Linksmų švenčių (0841_su_sventemis covers that).,native-speaker judgement,A2 (no A1 constraint),no,high
+2268_neskanus,keep,Sriuba {neskani}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2267_dziuti,keep,Skalbiniai {džiūsta} lauke.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2273_iprotis,keep,Tai blogas {įprotis}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2281_gramatika,keep,Lietuvių {gramatika} sunki.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2283_susitinkame_sesta_valanda,keep,Susitinkame {šeštą valandą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2290_ar_galiu_pasimatuoti,keep,Ar galiu pasimatuoti?,,,keep; see politeness,native-speaker judgement,A2 (no A1 constraint),no,high
+2293_uzvakar,keep,{Užvakar} buvo šventė.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2295_nervingas,keep,Prieš egzaminą esu {nervingas}.,,,"keep; nervingas as a state (Šiandien jis kažkoks nervingas) is natural; before an exam natives more often say jaudinuosi, but the sentence passes",native-speaker judgement,A2 (no A1 constraint),no,medium
+2297_domiuosi_istorija,keep,Domiuosi {istorija}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2299_sloga,keep,Turiu {slogą}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2304_minus,keep,Lauke {minus} penki.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2306_pagarbiai,keep,"{Pagarbiai}, Jonas",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2307_jei_lis_liksiu_namie,keep,"Jei {lis}, liksiu namie.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2309_karsciavimas,keep,Reikia vaistų nuo {karščiavimo}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2313_tautybe,keep,Kokia jūsų {tautybė}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2316_dziovinti,keep,{Džiovinu} plaukus.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2319_nuostaba,keep,Jis pažiūrėjo į mane su {nuostaba}.,,,keep; literary but natural,native-speaker judgement,A2 (no A1 constraint); pažiūrėti (žiūrėti @211),no,high
+2322_pasenes,keep,Duona {pasenusi}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2323_uzdengti,keep,{Uždenk} puodą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2327_liepti,keep,Gydytojas {liepė} gulėti.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2331_reikia_rezervuoti_is_anksto,keep,{Reikia} rezervuoti iš anksto.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2332_registruotis,keep,Reikia {registruotis} iš anksto.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2335_atmintukas,keep,Įrašyk failą į {atmintuką}.,,,keep,native-speaker judgement,A2 (no A1 constraint); įrašyti and failas have no card,no,high
+2336_aukletojas,keep,Darželio {auklėtoja} labai gera.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2340_grazos_nereikia,keep,Grąžos nereikia.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2341_kirptis,keep,Einu {kirptis}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2346_indaplove,keep,Sudėk indus į {indaplovę}.,,,keep,native-speaker judgement,A2 (no A1 constraint); sudėti (dėti @912),no,high
+2345_nudegti,change,{Nudegiau} ranką.,{Nudegiau} saulėje.,I got sunburnt.,4 collocation: nudegti is first of all sunburn (nudegiau saulėje); for a hand on a hot pan people say nusideginau ranką. Nudegiau ranką is possible but second choice.,native-speaker judgement,A2 (no A1 constraint); saulė @324,no,medium
+2355_atestatas,keep,Gavau brandos {atestatą}.,,,keep; brandos atestatas is the fixed term,native-speaker judgement,A2 (no A1 constraint); branda has no card (fixed term),no,high
+2352_skolintis,keep,Galiu {pasiskolinti} tavo knygą?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2354_netekejusi,keep,Ji {netekėjusi}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2359_knyga_parase_lietuvis,keep,{Knygą} parašė lietuvis.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2363_slapti,keep,Be skėčio {sušlapsi}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2364_ar_aptarnavimas_iskaiciuotas,keep,Ar aptarnavimas įskaičiuotas?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2372_uzpernai,keep,{Užpernai} buvau Latvijoje.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2374_snabzdeti,keep,Ji {šnabžda} man į ausį.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2373_su_vardadieniu,keep,Su vardadieniu!,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2375_estas,keep,Jis {estas} iš Talino.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2381_turiu_rezervacija,keep,Turiu rezervaciją.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2383_perpildytas,keep,Autobusas {perpildytas}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2384_atsisiusti,keep,{Atsisiunčiu} nuotraukas.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2382_skolinti,keep,{Paskolink} man dešimt eurų.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2386_kuris_peronas,keep,Kuris peronas?,,,keep; Kuris peronas? works; Iš kurio perono? is the fuller question,native-speaker judgement,A2 (no A1 constraint),no,high
+2387_dvivietis,keep,Norėčiau {dviviečio} kambario.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2388_vienvietis,keep,Ar turite {vienvietį} kambarį?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2392_rakinti,keep,"Kai {rakino} duris, atėjo kaimynas.",,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2394_programele,keep,Atsisiųsk šią {programėlę}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2395_taisyklinga,keep,Kalbėk {taisyklingai}.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2396_matuoti,keep,Gydytojas {matuoja} temperatūrą.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2399_darbstus,keep,Lietuviai – {darbštūs} žmonės.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2405_davo,keep,Vaikystėje {žaisdavau} kieme.,,,keep,native-speaker judgement,A2 (no A1 constraint); vaikystė has no card,no,high
+2410_jau_metus_mokausi_lietuviu,keep,Jau {metus} mokausi lietuvių kalbos.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2413_dziovykle,keep,{Džiovyklė} sugedo.,,,keep,native-speaker judgement,A2 (no A1 constraint); sugesti (gesti @1873),no,high
+2415_saldyti,keep,Mėsą {šaldome} šaldiklyje.,,,"keep; Mėsą laikome šaldiklyje is the everyday line, but šaldome is the taught verb and natural",native-speaker judgement,A2 (no A1 constraint); šaldiklis taught later (@2428) — forward dependency,no,high
+2416_niekada_nebuvau_latvijoje,keep,Niekada {nebuvau} Latvijoje.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2417_kroviklis,keep,Ar turi telefono {kroviklį}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2418_esnis,keep,Kaunas {mažesnis} už Vilnių.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2422_puslitris,change,"{Puslitrį} pieno, prašau.","{Puslitrį} alaus, prašau.","Half a litre of beer, please.",4 collocation: puslitris is the bar / bottle measure (puslitris alaus; also the half-litre bottle itself); milk is bought by the pakelis or as pusę litro pieno.,native-speaker judgement,A2 (no A1 constraint); alus @26,no,medium
+2423_valiutos_keitykla,keep,Kur yra {valiutos keitykla}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2424_nuolaidu_kortele,keep,Ar turite {nuolaidų kortelę}?,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2427_anksciau_gyvendavau_kaune,keep,Anksčiau {gyvendavau} Kaune.,,,keep,native-speaker judgement,A2 (no A1 constraint),no,high
+2431_belaidis_internetas,keep,Ar čia yra {belaidis internetas}?,,,keep; belaidis internetas is the correct term; in speech people ask Ar čia yra wifi?,native-speaker judgement,A2 (no A1 constraint),no,high
