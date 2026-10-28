@@ -139,6 +139,11 @@ not repeated here.
 
 ## Working with the owner
 
+- **2026-10-28 · Natural, not merely correct (owner).** "What the user learns proliferates the more users use this
+  deck; it's essential that we nail down the best and most natural, and correct, Lithuanian, instead of just the
+  technically correct form. I'm OK to re-record for the greater good." Rule: every Lithuanian sentence is judged
+  by what a native speaker would naturally say in that setting (register, word order, no calques); a recorded
+  take is never a reason to keep a stiff sentence. Evidence is cited (sources, real usage), not assumed.
 - **2026-10-28 · Choosing the agent (owner).** "Be judicious when you call a subagent: if Opus or another agent is good
   enough to do a job, use it; Fable should be for the hardest or most necessary work." Rule: execution, data
   plumbing, builds, audio processing, tidies with a clear plan → Opus (or a cheaper model); Fable only for hard
