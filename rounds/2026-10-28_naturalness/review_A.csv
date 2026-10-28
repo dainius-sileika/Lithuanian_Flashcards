@@ -1,0 +1,505 @@
+key,verdict,current,proposed,proposed_english,reason,evidence,a1_dependency_ok,recorded,confidence
+0021_labas,keep,Labas,,,keep,native-speaker judgement,yes,yes,high
+0025_aciu,keep,Ačiū,,,keep,native-speaker judgement,yes,yes,high
+0032_prasau,keep,Prašau,,,keep,native-speaker judgement,yes,yes,high
+0036_laba_diena,keep,Laba diena,,,keep,native-speaker judgement,yes,yes,high
+0043_atsiprasau,change,Atsiprašau…,Atsiprašau…,Excuse me…,6: 'please' adds nothing and is not in the Lithuanian. Lithuanian unchanged.,native-speaker judgement,yes,yes,medium
+0047_viso_gero,keep,Viso gero,,,keep,native-speaker judgement,yes,yes,high
+0054_iki,keep,Iki,,,keep,native-speaker judgement,yes,yes,high
+0058_nesuprantu,keep,Nesuprantu,,,keep,native-speaker judgement,yes,yes,high
+0065_kiek_kainuoja,keep,Kiek kainuoja?,,,keep,native-speaker judgement,yes,yes,high
+0069_kur_yra,keep,Kur yra…?,,,keep,native-speaker judgement,yes,yes,high
+0077_labas_rytas,keep,Labas rytas,,,keep,native-speaker judgement,yes,yes,high
+0081_labas_vakaras,keep,Labas vakaras,,,keep,native-speaker judgement,yes,yes,high
+0088_sveiki,keep,Sveiki,,,keep,native-speaker judgement,yes,yes,high
+0092_labai_aciu,keep,Labai ačiū,,,keep,native-speaker judgement,yes,yes,high
+0099_nera_uz_ka,keep,Nėra už ką,,,keep,native-speaker judgement,yes,yes,high
+0101_moteris_valgo_duona,keep,Moteris {valgo} duoną.,,,keep,native-speaker judgement,yes,yes,high
+0102_vyras_geria_kava,keep,Vyras {geria} kavą.,,,keep,native-speaker judgement,yes,yes,high
+0103_atsiprasau,keep,Atsiprašau,,,keep,native-speaker judgement,yes,yes,high
+0104_kiek_kainuoja_duona,keep,Kiek {kainuoja} duona?,,,keep,native-speaker judgement,yes,yes,high
+0105_ir,keep,Perku duoną {ir} pieną.,,,keep,native-speaker judgement,yes,yes,high
+0106_buti,keep,Aš {esu} mokytojas.,,,Natural. Same sentence as 0127 (sentence card) — by design.,native-speaker judgement,yes,yes,high
+0110_kur_yra_tualetas,keep,Kur yra tualetas?,,,keep,native-speaker judgement,yes,yes,high
+0112_mes_einame_namo,keep,Mes {einame} namo.,,,keep,native-speaker judgement,yes,yes,high
+0113_mano,keep,Tai {mano} brolis.,,,keep,native-speaker judgement,yes,yes,high
+0114_saskaita_prasau,keep,"Sąskaitą, prašau",,,keep,native-speaker judgement,yes,yes,high
+0115_tas,keep,{Tas} vyras yra mano kaimynas.,,,keep,native-speaker judgement,yes,yes,high
+0116_i,keep,Einu {į} parduotuvę.,,,keep,native-speaker judgement,yes,yes,high
+0117_mes_perkame_piena,keep,Mes {perkame} pieną.,,,keep,native-speaker judgement,yes,yes,high
+0121_noreciau,keep,Norėčiau…,,,keep,native-speaker judgement,yes,yes,high
+0124_as_noriu_arbatos,keep,Aš {noriu} arbatos.,,,keep,native-speaker judgement,yes,yes,high
+0125_ar_kalbate_angliskai,keep,Ar kalbate angliškai?,,,keep,native-speaker judgement,yes,yes,high
+0126_su,keep,Geriu kavą {su} pienu.,,,keep,native-speaker judgement,yes,yes,high
+0127_as_esu_mokytojas,keep,Aš {esu} mokytojas.,,,keep,native-speaker judgement,yes,yes,high
+0128_tureti,keep,Aš {turiu} du vaikus.,,,keep,native-speaker judgement,yes,yes,high
+0129_is,keep,Jis yra {iš} Kauno.,,,keep,native-speaker judgement,yes,yes,high
+0132_kaip_sekasi,keep,Kaip sekasi?,,,keep,native-speaker judgement,yes,yes,high
+0135_cia,keep,{Čia} yra mano namas.,,,keep,native-speaker judgement,yes,yes,high
+0136_man_gerai,keep,Man gerai,,,keep,native-speaker judgement,yes,yes,high
+0137_galeti,keep,Ar {galite} man padėti?,,,Natural; the card's point is the present form galite. See politeness.,native-speaker judgement,yes,yes,high
+0138_kieno,keep,{Kieno} tai knyga?,,,keep,native-speaker judgement,yes,yes,high
+0139_kam,keep,{Kam} tu skambini?,,,keep,native-speaker judgement,yes,yes,high
+0140_ko,keep,"{Ko} norite, arbatos ar kavos?",,,Natural; note it correctly uses 'ar' in the alternative question (contrast 0525).,native-speaker judgement,yes,yes,high
+0143_nezinau,keep,Nežinau,,,keep,native-speaker judgement,yes,yes,high
+0146_jis_dirba_ligonineje,keep,Jis {dirba} ligoninėje.,,,keep,native-speaker judgement,yes,yes,high
+0147_mano_vardas,keep,Mano vardas…,,,keep,native-speaker judgement,yes,yes,high
+0148_mano_vardas_yra_jonas,owner,Mano vardas {yra} Jonas.,Aš {esu} Jonas.,I am Jonas.,"1/2: 'Mano vardas yra Jonas' is textbook and understood, but in speech the copula is dropped ('Mano vardas Jonas' — already 0384 and 1149) or one says 'Aš (esu) Jonas'. The card's point is yra. Keep yra for the copula, or change to 'Aš {esu} Jonas.'? Recorded.",native-speaker judgement,yes,yes,medium
+0149_jos,keep,{Jos} vardas Rūta.,,,keep,native-speaker judgement,yes,yes,high
+0150_kaip,keep,{Kaip} tau sekasi?,,,keep,native-speaker judgement,yes,yes,high
+0151_ar,keep,{Ar} tu kalbi angliškai?,,,"Natural; natives often drop 'tu' ('Ar kalbi angliškai?'), but explicit pronouns are fine at A1.",native-speaker judgement,yes,yes,high
+0154_as_esu_is,keep,Aš esu iš…,,,keep,native-speaker judgement,yes,yes,high
+0157_as_turiu_broli,keep,Aš {turiu} brolį.,,,keep,native-speaker judgement,yes,yes,high
+0158_labanakt,keep,Labanakt,,,keep,native-speaker judgement,yes,yes,high
+0159_jau,keep,Vaikas {jau} miega.,,,keep,native-speaker judgement,yes,yes,high
+0160_ju,keep,{Jų} vaikai jau dideli.,,,keep,native-speaker judgement,yes,yes,high
+0161_noreti,keep,{Noriu} valgyti.,,,keep,native-speaker judgement,yes,yes,high
+0162_jai,change,Padovanojau {jai} gėlių.,Aš {jai} padedu.,I am helping her.,A1 dependency: padovanoti is taught by no card (padovanojau = NONE). 'Aš jai padedu' is natural and uses padėti @78.,native-speaker judgement; build_study_order_v3 dependency check,yes,yes,high
+0165_iki_pasimatymo,keep,Iki pasimatymo,,,keep,native-speaker judgement,yes,yes,high
+0168_ji,keep,Aš {jį} matau.,,,keep,native-speaker judgement,yes,yes,high
+0169_atleiskite,keep,Atleiskite,,,keep,native-speaker judgement,yes,yes,high
+0170_dabar,keep,{Dabar} esu namie.,,,keep,native-speaker judgement,yes,yes,high
+0171_kad,change,"Manau, {kad} jis namie.","Gerai, {kad} esi namie.",It's good that you are at home.,"A1 dependency: manyti is taught at 196, 25 cards after this card (the audit lists it as a forward dependency). 'Gerai, kad …' is a very common spoken frame; gerai @136, būti @69, namie @13. Keep the current line if the lead accepts the 25-card lag — it is otherwise natural.",native-speaker judgement; build_study_order_v3.py --audit forward list,yes,yes,medium
+0172_diena,keep,Gražios {dienos}!,,,keep,native-speaker judgement,yes,yes,high
+0173_man,keep,{Man} šalta.,,,keep,native-speaker judgement,yes,yes,high
+0176_malonu_susipazinti,keep,Malonu susipažinti,,,keep,native-speaker judgement,yes,yes,high
+0180_skanaus,keep,Skanaus,,,keep,native-speaker judgement,yes,yes,high
+0181_mane,keep,Ar {mane} girdi?,,,keep,native-speaker judgement,yes,yes,high
+0182_zinoti,keep,Aš {nežinau}.,,,keep,native-speaker judgement,yes,yes,high
+0183_jis_vaziuoja_autobusu,keep,Jis {važiuoja} autobusu.,,,keep,native-speaker judgement,yes,yes,high
+0184_lietuviu_kalba,keep,Mokausi {lietuvių kalbos}.,,,keep,native-speaker judgement,yes,yes,high
+0185_dar,keep,Aš {dar} nevalgiau.,,,keep,native-speaker judgement,yes,yes,high
+0187_i_sveikata,keep,Į sveikatą!,,,keep,native-speaker judgement,yes,yes,high
+0191_ar_galite_man_padeti,keep,Ar galite man padėti?,,,Natural. See politeness.,native-speaker judgement,yes,yes,high
+0192_per,keep,Einame {per} tiltą.,,,keep,native-speaker judgement,yes,yes,high
+0193_sis,keep,{Šis} stalas per mažas.,,,keep,native-speaker judgement,yes,yes,high
+0194_ten,keep,Stotis yra {ten}.,,,keep,native-speaker judgement,yes,yes,high
+0195_suprasti,keep,Ar {supranti}?,,,keep,native-speaker judgement,yes,yes,high
+0196_manyti,keep,"{Manau}, kad taip.",,,keep,native-speaker judgement,yes,yes,high
+0198_ar_galite_pakartoti,keep,Ar galite pakartoti?,,,Natural. See politeness: 'Ar galėtumėte pakartoti?' is politer; 'Ar galite' is normal too.,native-speaker judgement,yes,yes,high
+0203_prasom_kalbeti_leciau,keep,Prašom kalbėti lėčiau,,,Natural. See politeness.,native-speaker judgement,yes,yes,high
+0204_kur,keep,{Kur} yra stotis?,,,keep,native-speaker judgement,yes,yes,high
+0205_daug,keep,Turiu {daug} darbo.,,,keep,native-speaker judgement,yes,yes,high
+0206_siandien,keep,{Šiandien} pirmadienis.,,,keep,native-speaker judgement,yes,yes,high
+0207_labai,keep,Šiandien {labai} šalta.,,,keep,native-speaker judgement,yes,yes,high
+0208_gyventi,keep,Aš {gyvenu} Vilniuje.,,,keep,native-speaker judgement,yes,yes,high
+0209_kur_gyvenate,keep,Kur gyvenate?,,,keep,native-speaker judgement,yes,yes,high
+0214_cia_mano_draugas,change,Čia (yra) mano draugas. / Susipažinkite — tai…,"Čia mano draugas. / Susipažinkite, tai mano draugas.",This is my friend. (introducing someone),"7: '(yra)' in brackets and a dangling 'tai…' are notes, not something one says or records. 'Čia mano draugas' (informal) and 'Susipažinkite, tai mano draugas' (formal) are the two real lines. Phrase card.",native-speaker judgement,yes,yes,medium
+0215_kas,keep,{Kas} čia gyvena?,,,keep,native-speaker judgement,yes,yes,high
+0216_centras,keep,Gyvenu miesto {centre}.,,,keep,native-speaker judgement,yes,yes,high
+0217_kuris,keep,{Kuris} autobusas važiuoja į centrą?,,,keep,native-speaker judgement,yes,yes,high
+0218_mes_gyvename_vilniuje,keep,Mes {gyvename} Vilniuje.,,,keep,native-speaker judgement,yes,yes,high
+0219_as_gyvenu_name,keep,Aš {gyvenu} name.,,,'Gyvenu name' is what one says in contrast to 'bute'; bare but natural.,native-speaker judgement,yes,yes,medium
+0220_ar_yra,keep,Ar yra…?,,,keep,native-speaker judgement,yes,yes,high
+0225_ar_turite,keep,Ar turite…?,,,keep,native-speaker judgement,yes,yes,high
+0226_tave,keep,Aš {tave} myliu.,,,keep,native-speaker judgement,yes,yes,high
+0227_tie,keep,{Tie} žmonės laukia autobuso.,,,keep,native-speaker judgement,yes,yes,high
+0228_ta,keep,{Ta} moteris – mano mokytoja.,,,Natural (dash predicate). mokytoja is the feminine of mokytojas @45 (M/F card).,native-speaker judgement,yes (mokytojas M/F),yes,high
+0229_metai,keep,Man trisdešimt {metų}.,,,Natural.,native-speaker judgement,yes,yes,high
+0230_as_nesuprantu,keep,Aš {nesuprantu}.,,,keep,native-speaker judgement,yes,yes,high
+0231_kas_tai,keep,Kas tai?,,,keep,native-speaker judgement,yes,yes,high
+0236_koks_tavo,keep,Koks tavo / jūsų telefono numeris?,,,keep,native-speaker judgement,yes,yes,high
+0237_jusu,change,Koks {jūsų} telefono numeris?,Ar tai {jūsų} knyga?,Is this your book?,A1 dependency: numeris is taught at 528 (audit: forward by 291). The phone-number question is already covered by phrase 0236 and by 0526. 'Ar tai jūsų knyga?' is a natural line to a stranger; knyga @62.,native-speaker judgement; build_study_order_v3.py --audit forward list,yes,yes,medium
+0238_koks,keep,{Koks} tavo adresas?,,,keep,native-speaker judgement,yes,yes,high
+0239_orai,owner,Kokie šiandien {orai}?,Koks šiandien {oras}?,What is the weather like today?,"4: 'Kokie šiandien orai?' is said, but 'Koks šiandien oras?' is the everyday question; orai (pl.) leans towards forecasts ('orų prognozė'). The headword is orai, so a change is a retarget (oras is already modelled by 0358 'Toks geras oras!' and 0559 'Puikus oras!'). Owner decides headword.",native-speaker judgement,yes,yes,medium
+0240_patikti,keep,Man {patinka} šis miestas.,,,keep,native-speaker judgement,yes,yes,high
+0241_o,keep,"Aš dirbu, {o} jis mokosi.",,,keep,native-speaker judgement,yes,yes,high
+0242_kas_tas_zmogus,keep,Kas tas žmogus?,,,keep,native-speaker judgement,yes,yes,high
+0247_man_reikia_pagalbos,keep,Man reikia pagalbos,,,keep,native-speaker judgement,yes,yes,high
+0248_reiketi,keep,Man {reikia} pagalbos.,,,keep,native-speaker judgement,yes,yes,high
+0249_jam,keep,{Jam} reikia pagalbos.,,,keep,native-speaker judgement,yes,yes,high
+0250_dar,keep,Ką {dar} norėtumėte?,,,keep,native-speaker judgement,yes,yes,high
+0251_man_reikia_vandens,keep,Man {reikia} vandens.,,,keep,native-speaker judgement,yes,yes,high
+0252_jums,keep,Ko {jums} reikia?,,,keep,native-speaker judgement,yes,yes,high
+0253_neturiu_laiko,keep,Neturiu laiko,,,keep,native-speaker judgement,yes,yes,high
+0258_is_kur_jus,keep,Iš kur jūs?,,,keep,native-speaker judgement,yes,yes,high
+0259_bet,keep,"Noriu eiti, {bet} neturiu laiko.",,,keep,native-speaker judgement,yes,yes,high
+0260_siandien_salta,keep,Šiandien {šalta}.,,,keep,native-speaker judgement,yes,yes,high
+0261_valanda,change,Laukiu autobuso jau vieną {valandą}.,Laukiu autobuso jau {valandą}.,I have been waiting for the bus for an hour already.,2/4: 'jau vieną valandą' reads as counted-out textbook Lithuanian; natives say 'laukiu jau valandą' (or 'jau visą valandą'). Drop vieną.,native-speaker judgement,yes,yes,medium
+0262_euras,keep,Tai kainuoja du {eurus}.,,,keep,native-speaker judgement,yes,yes,high
+0263_tik,keep,Turiu {tik} penkis eurus.,,,keep,native-speaker judgement,yes,yes,high
+0264_viskas_gerai,keep,Viskas gerai,,,keep,native-speaker judgement,yes,yes,high
+0269_nekalbu_lietuviskai,keep,Nekalbu lietuviškai,,,keep,native-speaker judgement,yes,yes,high
+0270_gerai,keep,Jis {gerai} kalba lietuviškai.,,,keep,native-speaker judgement,yes,yes,high
+0271_ar_tu_kalbi_lietuviskai,keep,Ar tu {kalbi} lietuviškai?,,,keep,native-speaker judgement,yes,yes,high
+0272_visas,keep,Aš dirbau {visą} dieną.,,,keep,native-speaker judgement,yes,yes,high
+0273_megti,keep,{Mėgstu} skaityti.,,,keep,native-speaker judgement,yes,yes,high
+0274_kodel,keep,{Kodėl} tu vėluoji?,,,keep,native-speaker judgement,yes,yes,high
+0275_man_patinka_sis_miestas,keep,Man patinka šis miestas,,,keep,native-speaker judgement,yes,yes,high
+0280_ka_veiki,keep,Ką veiki?,,,keep,native-speaker judgement,yes,yes,high
+0281_tau,keep,Ar {tau} patinka?,,,keep,native-speaker judgement,yes,yes,high
+0282_paskambinti,keep,{Paskambink} man vakare.,,,keep,native-speaker judgement,yes,yes,high
+0283_ka,keep,{Ką} tu veiki?,,,keep,native-speaker judgement,yes,yes,high
+0284_kur_yra_stotis,keep,Kur {yra} stotis?,,,keep,native-speaker judgement,yes,yes,high
+0285_atsakymas,change,Teisingas {atsakymas}!,Nežinau {atsakymo}.,I don't know the answer.,"A1 dependency: teisingas is taught at 796, 511 cards later (audit: forward). 'Nežinau atsakymo' is natural and models the genitive of negation already used in 0371; nežinau @143.",native-speaker judgement; build_study_order_v3.py --audit forward list,yes,yes,high
+0286_suprantu,keep,Suprantu,,,keep,native-speaker judgement,yes,yes,high
+0291_kur_galiu_rasti,keep,Kur galiu rasti…?,,,"Natural, slightly formal; 'Kur yra…?' is the everyday form (already 0069).",native-speaker judgement,yes,yes,high
+0292_zmones,keep,Gatvėje daug {žmonių}.,,,keep,native-speaker judgement,yes,yes,high
+0293_gauti,keep,{Gavau} laišką.,,,keep,native-speaker judgement,yes,yes,high
+0294_bet_kas,change,Tai gali padaryti {bet kas}.,Tai supranta {bet kas}.,Anyone understands that.,"A1 dependency: padaryti is taught at 340, after this card (audit: forward). 'Tai supranta bet kas' is a natural colloquial line; suprasti @195.",native-speaker judgement; build_study_order_v3.py --audit forward list,yes,yes,medium
+0295_rytoj,keep,{Rytoj} nedirbu.,,,keep,native-speaker judgement,yes,yes,high
+0296_idomus,keep,Knyga labai {įdomi}.,,,keep,native-speaker judgement,yes,yes,high
+0297_padekite,keep,Padėkite!,,,"Natural; 'Gelbėkit!' (0660) is the shout, 'Padėkite!' the appeal.",native-speaker judgement,yes,yes,high
+0302_koks_jusu_vardas,keep,Koks jūsų vardas?,,,keep,native-speaker judgement,yes,yes,high
+0303_stotis_yra_ten,keep,Stotis {yra} ten.,,,keep,native-speaker judgement,yes,yes,high
+0304_savo,keep,Aš myliu {savo} šeimą.,,,keep,native-speaker judgement,yes,yes,high
+0305_ateiti,keep,{Ateik} rytoj.,,,keep,native-speaker judgement,yes,yes,high
+0306_tikrai,keep,Aš {tikrai} ateisiu.,,,keep,native-speaker judgement,yes,yes,high
+0307_daryti,keep,Ką {darai}?,,,keep,native-speaker judgement,yes,yes,high
+0308_kiek_jums_metu,keep,Kiek jums metų?,,,keep,native-speaker judgement,yes,yes,high
+0313_kuo_dirbate,keep,Kuo dirbate?,,,keep,native-speaker judgement,yes,yes,high
+0314_visai,keep,{Visai} nešalta.,,,keep,native-speaker judgement,yes,yes,high
+0315_del,keep,Vėluoju {dėl} lietaus.,,,keep,native-speaker judgement,yes,yes,high
+0316_vakar,keep,{Vakar} buvau kine.,,,keep,native-speaker judgement,yes,yes,high
+0317_prasyti,keep,{Prašau} pagalbos.,,,'Prašau pagalbos' is a real plea; fine.,native-speaker judgement,yes,yes,high
+0318_laikas,keep,Neturiu {laiko}.,,,keep,native-speaker judgement,yes,yes,high
+0325_apie,keep,Kalbame {apie} orą.,,,keep,native-speaker judgement,yes,yes,high
+0326_kai,keep,"{Kai} grįšiu, paskambinsiu.",,,keep,native-speaker judgement,yes,yes,high
+0327_per,change,Einame {per} tiltą.,Kava {per} karšta.,The coffee is too hot.,"7/6: card teaches per = 'too (excessively)' but reuses 0192's sentence 'Einame per tiltą' (preposition 'across'); the sentence must show the adverb. 'Kava per karšta' is a plain everyday line; kava @14, karštas @68.","native-speaker judgement: 'per + adjective' is the only way to say 'too X' (0193 'Šis stalas per mažas', 0753 'Šitas batas per mažas')",yes,yes,high
+0328_atrodyti,keep,Tu {atrodai} pavargęs.,,,keep,native-speaker judgement,yes,yes,high
+0329_kai_kas,keep,{Kai kas} jau išėjo.,,,keep,native-speaker judgement,yes,yes,high
+0334_galima,keep,Galima. / Prašom.,,,keep,native-speaker judgement,yes,yes,high
+0337_kai_kuris,keep,{Kai kurie} žmonės mėgsta žiemą.,,,keep,native-speaker judgement,yes,yes,high
+0338_svarbus,keep,Tai labai {svarbu}.,,,keep,native-speaker judgement,yes,yes,high
+0339_bet_kur,keep,Galime susitikti {bet kur}.,,,keep,native-speaker judgement,yes,yes,high
+0336_aukstas,keep,Gyvenu trečiame {aukšte}.,,,keep,native-speaker judgement,yes,yes,high
+0340_padaryti,change,Ką {padaryti}?,Ką tu {padarei}?,What have you done?,"4: 'Ką padaryti?' is not something people say (the idiom for 'what to do?' is 'Ką daryti?', imperfective). 'Ką padarei?' is natural and pairs with 0307 'Ką darai?' to show the perfective contrast.",native-speaker judgement: 'Ką daryti?' vs 'Ką (tu) padarei?' are both stock lines; 'Ką padaryti?' standalone is not,yes,yes,high
+0344_atsargiai,keep,Atsargiai!,,,keep,native-speaker judgement,yes,yes,high
+0347_kiek,keep,{Kiek} kainuoja bilietas?,,,keep,native-speaker judgement,yes,yes,high
+0348_kitas,keep,Iki {kito} karto!,,,"Fixed phrase, natural. A1 dependency: kartas (karto) is taught by no card; the phrase is learnt as a chunk. If the lead wants strict compliance: 'Einu į {kitą} parduotuvę.' (I am going to another shop).",native-speaker judgement,no (kartas),yes,high
+0349_tiesa,keep,Tai {tiesa}.,,,keep,native-speaker judgement,yes,yes,high
+0351_kai_kur,keep,{Kai kur} dar yra sniego.,,,keep,native-speaker judgement,yes,yes,high
+0350_pasakyti,keep,{Pasakyk} man tiesą.,,,keep,native-speaker judgement,yes,yes,high
+0352_dekui,keep,dėkui,,,keep,native-speaker judgement,yes,yes,high
+0356_nieko_tokio,keep,Nieko tokio,,,Natural as the reply to an apology; gloss 'No problem / it's nothing' fine.,native-speaker judgement,yes,yes,high
+0358_toks,keep,{Toks} geras oras!,,,keep,native-speaker judgement,yes,yes,high
+0359_visada,keep,Ji {visada} vėluoja.,,,keep,native-speaker judgement,yes,yes,high
+0360_kainuoti,keep,Kiek {kainuoja} duona?,,,keep,native-speaker judgement,yes,yes,high
+0361_sie,keep,{Šie} batai man patinka.,,,keep,native-speaker judgement,yes,yes,high
+0362_gyvenimas,keep,{Gyvenimas} gražus.,,,keep,native-speaker judgement,yes,yes,high
+0366_kiek_valandu,keep,Kiek valandų?,,,keep,native-speaker judgement,yes,yes,high
+0331_kelinta_valanda,keep,Kelinta valanda?,,,keep,native-speaker judgement,yes,yes,high
+0369_si,keep,{Ši} knyga įdomi.,,,keep,native-speaker judgement,yes,yes,high
+0371_niekada,keep,Aš {niekada} negeriu kavos.,,,keep,native-speaker judgement,yes,yes,high
+0370_kurti,keep,Ji {kuria} muziką.,,,keep,native-speaker judgement,yes,yes,high
+0372_ja,keep,Mačiau {ją} vakar.,,,keep,native-speaker judgement,yes,yes,high
+0380_jei,keep,"{Jei} bus šilta, eisime į mišką.",,,keep,native-speaker judgement,yes,yes,high
+0374_zinoma,keep,Žinoma,,,keep,native-speaker judgement,yes,yes,high
+0373_baigti,keep,Darbą {baigiu} penktą valandą.,,,keep,native-speaker judgement,yes,yes,high
+0392_vel,change,Jis {vėl} pavėlavo.,Jis {vėl} vėluoja.,He is late again.,A1 dependency: pavėluoti is taught by no card (pavėlavo = NONE); vėluoti @107. 'Jis vėl vėluoja' is at least as natural.,native-speaker judgement; dependency check,yes,yes,high
+0383_vardas,keep,Mano {vardas} Jonas.,,,keep,native-speaker judgement,yes,yes,high
+0381_lyti,keep,Šiandien {lyja}.,,,keep,native-speaker judgement,yes,yes,high
+0382_gal,keep,{Gal} rytoj lis.,,,keep,native-speaker judgement,yes,yes,high
+0389_ar_galima,keep,Ar galima?,,,keep,native-speaker judgement,yes,yes,high
+0384_likti,keep,Šiandien {lieku} namie.,,,keep,native-speaker judgement,yes,yes,high
+0391_namai,keep,Mano {namai} – Vilniuje.,,,keep,native-speaker judgement,yes,yes,high
+0393_uz,keep,Mokykla yra {už} bažnyčios.,,,keep,native-speaker judgement,yes,yes,high
+0394_menuo,change,Dirbu čia vieną {mėnesį}.,Čia dirbu jau {mėnesį}.,I have been working here for a month already.,2/4: 'Dirbu čia vieną mėnesį' is stiff; the natural duration frame is 'jau mėnesį' (as in 0261). Topic 'čia' first.,native-speaker judgement,yes,yes,medium
+0395_ji_eina_i_mokykla,keep,Ji {eina} į mokyklą.,,,keep,native-speaker judgement,yes,yes,high
+0399_ka_reiskia,keep,Ką reiškia…?,,,keep,native-speaker judgement,yes,yes,high
+0402_visi,keep,{Visi} jau atėjo.,,,keep,native-speaker judgement,yes,yes,high
+0403_imti,keep,{Imk} obuolį.,,,keep,native-speaker judgement,yes,yes,high
+0404_kur_nors,keep,Eikime {kur nors} valgyti.,,,"Natural; 'Einam kur nors pavalgyti' is the colloquial variant (pavalgyti untaught), the current line is fine.",native-speaker judgement,yes,yes,high
+0405_privaleti,keep,Tu {privalai} eiti į mokyklą.,,,"privalėti is stronger than everyday 'turi eiti', but the card teaches privalėti; a parent's stern line, fine.",native-speaker judgement,yes,yes,high
+0406_po,keep,Katė miega {po} stalu.,,,keep,native-speaker judgement,yes,yes,high
+0408_ka_tai_reiskia,keep,Ką tai reiškia?,,,keep,native-speaker judgement,yes,yes,high
+0413_sestas,keep,Šiandien kovo {šešta}.,,,keep,native-speaker judgement,yes,yes,high
+0414_septintas,keep,Gyvenu {septintame} aukšte.,,,keep,native-speaker judgement,yes,yes,high
+0415_astuntas,keep,Dabar {aštunta} valanda.,,,keep,native-speaker judgement,yes,yes,high
+0416_pradeti,keep,{Pradedu} dirbti aštuntą valandą.,,,keep,native-speaker judgement,yes,yes,high
+0417_prasideti,keep,Filmas {prasideda} aštuntą.,,,keep,native-speaker judgement,yes,yes,high
+0420_tai_mano_namas,keep,Tai mano namas,,,keep,native-speaker judgement,yes,yes,high
+0424_nuo,keep,Dirbu {nuo} aštuntos valandos.,,,keep,native-speaker judgement,yes,yes,high
+0425_ponas,keep,"Laba diena, {pone}!",,,"'Laba diena, pone!' is used in service settings; with a surname ('pone Jonaiti') is the fuller form.",native-speaker judgement,yes,yes,medium
+0426_devintas,keep,Autobusas {devintą} valandą.,,,keep,native-speaker judgement,yes,yes,high
+0427_tapti,keep,Jis {tapo} gydytoju.,,,keep,native-speaker judgement,yes,yes,high
+0435_desimtas,keep,Šiandien gegužės {dešimta}.,,,keep,native-speaker judgement,yes,yes,high
+0440_kur_tu_eini,keep,Kur tu eini?,,,keep,native-speaker judgement,yes,yes,high
+0428_kada,keep,{Kada} prasideda filmas?,,,keep,native-speaker judgement,yes,yes,high
+0436_daznai,keep,Mes {dažnai} einame į kiną.,,,keep,native-speaker judgement,yes,yes,high
+0437_toks_pat,keep,Mano paltas {toks pat} kaip tavo.,,,keep,native-speaker judgement,yes,yes,high
+0438_planas,keep,Koks tavo {planas}?,,,keep,native-speaker judgement,yes,yes,high
+0439_jaustis,keep,Kaip {jautiesi}?,,,keep,native-speaker judgement,yes,yes,high
+0444_geros_dienos,keep,Geros dienos,,,keep,native-speaker judgement,yes,yes,high
+0446_tavo,keep,Kur {tavo} raktai?,,,keep,native-speaker judgement,yes,yes,high
+0447_dalykas,keep,Tai svarbus {dalykas}.,,,keep,native-speaker judgement,yes,yes,high
+0448_bandyti,keep,{Bandau} kalbėti lietuviškai.,,,keep,native-speaker judgement,yes,yes,high
+0449_dokumentas,keep,"Jūsų {dokumentus}, prašau.",,,Natural for an official. See politeness.,native-speaker judgement,yes,yes,high
+0457_savaite,keep,Kitą {savaitę} važiuoju į Kauną.,,,keep,native-speaker judgement,yes,yes,high
+0455_truputi,keep,Truputį,,,keep,native-speaker judgement,yes,yes,high
+0450_niekas,keep,{Niekas} nežino atsakymo.,,,keep,native-speaker judgement,yes,yes,high
+0458_kalba,keep,Lietuvių {kalba} sena.,,,'Lietuvių kalba sena.' is bare; 'labai sena' would flow better. Fine as is.,native-speaker judgement,yes,yes,medium
+0459_viskas,keep,{Viskas} gerai.,,,keep,native-speaker judgement,yes,yes,high
+0460_tiek,keep,Kodėl {tiek} brangu?,,,keep,native-speaker judgement,yes,yes,high
+0461_pats,keep,Aš {pats} tai padarysiu.,,,keep,native-speaker judgement,yes,yes,high
+0463_prasom,keep,Prašom,,,keep,native-speaker judgement,yes,yes,high
+0468_atvaziuoti,keep,Rytoj {atvažiuoja} svečiai.,,,keep,native-speaker judgement,yes,yes,high
+0469_po,change,Katė miega {po} stalu.,{Po} darbo einu namo.,After work I go home.,"7/6: card teaches po = 'after' but reuses 0406's sentence 'Katė miega po stalu' ('under'); the sentence must show po + genitive. 'Po darbo einu namo' is the standard collocation; darbas @80, eiti @11, namo @13.","native-speaker judgement: 'po darbo', 'po pamokų', 'po pietų' are the textbook po+gen time phrases",yes,yes,high
+0470_zodis,keep,Ką reiškia šis {žodis}?,,,keep,native-speaker judgement,yes,yes,high
+0471_iki,keep,Parduotuvė dirba {iki} dešimtos.,,,keep,native-speaker judgement,yes,yes,high
+0472_saves,keep,Pažiūrėk į {save}.,,,Natural. pažiūrėk = pa- + žiūrėti @211 (prefix the lemmatiser misses); transparent.,native-speaker judgement,yes (pažiūrėti via žiūrėti @211),yes,high
+0477_labai_gerai,keep,labai gerai,,,keep,native-speaker judgement,yes,yes,high
+0479_tada,keep,{Tada} aš buvau vaikas.,,,keep,native-speaker judgement,yes,yes,high
+0480_tevas_skaito_knyga,keep,Tėvas {skaito} knygą.,,,keep,native-speaker judgement,yes,yes,high
+0481_keli,keep,Turiu {kelis} klausimus.,,,keep,native-speaker judgement,yes,yes,high
+0482_daiktas,keep,Kas tai per {daiktas}?,,,keep,native-speaker judgement,yes,yes,high
+0483_dalis,keep,Tai tik {dalis} darbo.,,,keep,native-speaker judgement,yes,yes,high
+0488_einu_namo,keep,Einu namo,,,keep,native-speaker judgement,yes,yes,high
+0490_net,keep,{Net} vaikas tai supranta.,,,keep,native-speaker judgement,yes,yes,high
+0491_prie,keep,Susitinkame {prie} stoties.,,,keep,native-speaker judgement,yes,yes,high
+0492_musu,keep,{Mūsų} namas yra prie upės.,,,keep,native-speaker judgement,yes,yes,high
+0494_mergina,keep,Jo {mergina} – studentė.,,,keep,native-speaker judgement,yes,yes,high
+0501_nors,keep,"Jis atėjo, {nors} sirgo.",,,keep,native-speaker judgement,yes,yes,high
+0503_mazai,keep,Ji valgo {mažai}.,,,"Natural; 'Ji mažai valgo' is the default order, the end position focuses the target.",native-speaker judgement,yes,yes,high
+0502_nes,keep,"Likau namie, {nes} lijo.",,,keep,native-speaker judgement,yes,yes,high
+0504_taip_pat,keep,Aš {taip pat} mokausi lietuvių kalbos.,,,keep,native-speaker judgement,yes,yes,high
+0493_ketinti,keep,Vasarą {ketinu} važiuoti į Kauną.,,,keep,native-speaker judgement,yes,yes,high
+0512_tas_pats,keep,Mes gyvename {tame pačiame} name.,,,keep,native-speaker judgement,yes,yes,high
+0509_viena_bilieta_i_kauna,keep,"Vieną bilietą į Kauną, prašau.",,,keep,native-speaker judgement,yes,yes,high
+0513_mums,keep,{Mums} patinka Vilnius.,,,keep,native-speaker judgement,yes,yes,high
+0515_mus,keep,Ar matai {mus}?,,,keep,native-speaker judgement,yes,yes,high
+0505_istorija,keep,Skaitau įdomią {istoriją}.,,,keep,native-speaker judgement,yes,yes,high
+0525_arba,change,Arbatos {arba} kavos?,Ateik šiandien {arba} rytoj.,Come today or tomorrow.,"4: in an alternative question Lithuanian uses 'ar', not 'arba' ('Arbatos ar kavos?'); 'Arbatos arba kavos?' sounds translated. The deck itself already models the question with ar (0140 'Ko norite, arbatos ar kavos?'). arba belongs in a statement/imperative. ateiti @305, šiandien @206, rytoj @77.","https://www.lituanistika.lt/content/42466 (ar carries the question nuance, arba the strict either/or in statements); deck row 0140; native-speaker judgement",yes,yes,high
+0516_kartu,keep,Gyvename {kartu} su tėvais.,,,keep,native-speaker judgement,yes,yes,high
+0521_prasom_pakartoti,keep,Prašom pakartoti,,,Natural. See politeness.,native-speaker judgement,yes,yes,high
+0524_pries,change,Nusiplauk rankas {prieš} valgį.,{Prieš} darbą geriu kavą.,Before work I drink coffee.,"A1 dependency: nusiplauti and valgis (valgį) are taught by no card. 'Prieš darbą geriu kavą' is a plain, natural line; darbas @80, gerti @8, kava @14. (0591 'prieš = ago' is unaffected.)",native-speaker judgement; dependency check,yes,yes,high
+0526_numeris,keep,Koks tavo telefono {numeris}?,,,keep,native-speaker judgement,yes,yes,high
+0527_kas_nors,keep,Ar {kas nors} skambino?,,,keep,native-speaker judgement,yes,yes,high
+0535_taciau,change,"Buvo šalta, {tačiau} saulėta.","Buvo šalta, {tačiau} saulėta.","It was cold, but sunny.","6: 'It was cold, however sunny' is not English; 'but' is the natural rendering of tačiau here. Lithuanian unchanged.",native-speaker judgement,yes,yes,high
+0539_paskui,keep,"Pavalgysime, o {paskui} eisime.",,,Natural. pavalgysime = pa- + valgyti @5; the perfective is the right aspect here and transparent.,native-speaker judgement,yes (pavalgyti via valgyti),yes,high
+0530_atsiprasau_ar_cia_laisva,keep,"Atsiprašau, ar čia laisva?",,,keep,native-speaker judgement,yes,yes,high
+0536_ant,keep,Knyga yra {ant} stalo.,,,keep,native-speaker judgement,yes,yes,high
+0548_dede,keep,{Dėdė} atvažiuoja rytoj.,,,keep,native-speaker judgement,yes,yes,high
+0549_teta,keep,Mano {teta} gyvena Kaune.,,,keep,native-speaker judgement,yes,yes,high
+0537_vis_dar,keep,Aš {vis dar} laukiu.,,,keep,native-speaker judgement,yes,yes,high
+0528_atleisti,keep,"{Atleiskite}, kur čia paštas?",,,keep,native-speaker judgement,yes,yes,high
+0542_dar_ko_nors,keep,Dar ko nors?,,,keep,native-speaker judgement,yes,yes,high
+0545_atrodo,keep,atrodo,,,keep,native-speaker judgement,yes,yes,high
+0538_kokia,keep,{Kokia} šiandien diena?,,,keep,native-speaker judgement,yes,yes,high
+0546_jeigu,keep,"{Jeigu} nori, ateik.",,,keep,native-speaker judgement,yes,yes,high
+0547_nieko,keep,{Nieko} nematau.,,,keep,native-speaker judgement,yes,yes,high
+0557_palikti,keep,{Palikau} raktus namie.,,,keep,native-speaker judgement,yes,yes,high
+0550_bet_kada,keep,Skambink {bet kada}.,,,keep,native-speaker judgement,yes,yes,high
+0552_nesuprantu_atsiprasau,keep,"Nesuprantu, atsiprašau",,,"Said; 'Atsiprašau, nesuprantu' is the more usual order, both occur. Not worth a re-take.",native-speaker judgement,yes,yes,medium
+0561_sekunde,keep,Tik vieną {sekundę}!,,,keep,native-speaker judgement,yes,yes,high
+0558_pagalba,keep,Man reikia {pagalbos}.,,,keep,native-speaker judgement,yes,yes,high
+0559_puikus,keep,{Puikus} oras!,,,keep,native-speaker judgement,yes,yes,high
+0560_kada_nors,keep,Ar buvai {kada nors} Nidoje?,,,keep,native-speaker judgement,yes,yes,high
+0568_kate_sedi_ant_stalo,keep,Katė {sėdi} ant stalo.,,,keep,native-speaker judgement,yes,yes,high
+0565_prasom_uzrasyti,keep,Prašom užrašyti,,,"Natural; 'Užrašykite, prašau' equally. See politeness.",native-speaker judgement,yes,yes,high
+0573_kiek_tai_kainuoja,keep,Kiek tai kainuoja?,,,keep,native-speaker judgement,yes,yes,high
+0569_be,change,"Arbata {be} cukraus, prašau.","Arbatą {be} cukraus, prašau.","Tea without sugar, please.","5: when ordering, the item is accusative ('Sąskaitą, prašau' 0114, 'Vieną kavą, prašau' 1081) or partitive genitive ('Arbatos'); the nominative 'Arbata be cukraus' reads as a menu label. See politeness: either case is fine, nominative is the least natural.",native-speaker judgement,yes,yes,medium
+0748_skaicius,keep,Tai didelis {skaičius}.,,,keep,native-speaker judgement,yes,yes,high
+0514_amzius,keep,{Amžius} – tik skaičius.,,,keep,native-speaker judgement,yes,yes,high
+0570_nei,keep,Kaunas mažesnis {nei} Vilnius.,,,Natural. mažesnis is the comparative of mažas @10 (lemmatiser miss); comparatives are not taught as cards.,native-speaker judgement,partial (comparative of mažas),yes,high
+0571_todel,keep,"Lijo, {todėl} likau namie.",,,keep,native-speaker judgement,yes,yes,high
+0584_palaukite_minutele,keep,Palaukite minutėlę.,,,keep,native-speaker judgement,yes,yes,high
+0590_minute,keep,Palaukite penkias {minutes}.,,,keep,native-speaker judgement,yes,yes,high
+0592_keletas,keep,Laukiau {keletą} minučių.,,,keep,native-speaker judgement,yes,yes,high
+0579_testi,keep,"{Tęskite}, prašau.",,,keep,native-speaker judgement,yes,yes,high
+0572_berniukas_raso_laiska,keep,Berniukas {rašo} laišką.,,,keep,native-speaker judgement,yes,yes,high
+0581_toli,change,Stotis {toli}?,Ar {toli} stotis?,Is the station far?,2: 'Stotis toli?' relies on intonation alone; the normal spoken question is 'Ar toli stotis?' (0798 phrase 'Ar toli?' agrees). Pair 0582 'Stotis arti.' stays a statement.,native-speaker judgement,yes,yes,medium
+0582_arti,keep,Stotis {arti}.,,,'Stotis arti.' is fine; 'netoli' is more frequent as a predicate but arti is the target.,native-speaker judgement,yes,yes,high
+0595_man_reikia_vandens,keep,Man reikia vandens,,,keep,native-speaker judgement,yes,yes,high
+0591_pries,keep,Atvažiavau {prieš} metus.,,,keep,native-speaker judgement,yes,yes,high
+0594_parodyti,keep,{Parodyk} man nuotraukas.,,,keep,native-speaker judgement,yes,yes,high
+0580_kaire,keep,Eikite į {kairę}.,,,keep,native-speaker judgement,yes,yes,high
+0593_man_patinka_muzika,keep,Man {patinka} muzika.,,,keep,native-speaker judgement,yes,yes,high
+0601_reiksti,keep,Ką tai {reiškia}?,,,keep,native-speaker judgement,yes,yes,high
+0602_ar_galetumete,keep,{Ar galėtumėte} man padėti?,,,Natural. See politeness.,native-speaker judgement,yes,yes,high
+0604_stai,keep,{Štai} tavo raktai.,,,keep,native-speaker judgement,yes,yes,high
+0583_informacija,change,Kur gauti {informacijos}?,Kur galiu gauti {informacijos}?,Where can I get information?,"2/7: the bare infinitive question 'Kur gauti informacijos?' is elliptical; the English already says 'can I'. galėti @137, gauti @293.",native-speaker judgement,yes,yes,medium
+0612_moketi,keep,Aš {moku} plaukti.,,,keep,native-speaker judgement,yes,yes,high
+0605_sita,keep,{Šita} kėdė laisva.,,,keep,native-speaker judgement,yes,yes,high
+0616_pakeisti,keep,Noriu {pakeisti} bilietą.,,,Natural as the present-form card. See politeness: 'Norėčiau pakeisti bilietą' is what one says at the counter; I agree if proposed.,native-speaker judgement,yes,no,high
+0603_ponia,keep,"Laba diena, {ponia}!",,,As 0425.,native-speaker judgement,yes,no,medium
+0615_anksti,keep,Keliuosi {anksti}.,,,keep,native-speaker judgement,yes,no,high
+0613_uzsienis,keep,Mano brolis gyvena {užsienyje}.,,,keep,native-speaker judgement,yes,no,high
+0614_joks,keep,Neturiu {jokio} plano.,,,keep,native-speaker judgement,yes,no,high
+0633_viskas_aciu,keep,"Viskas, ačiū.",,,keep,native-speaker judgement,yes,no,high
+0637_noriu_valgyti,keep,Noriu valgyti,,,keep,native-speaker judgement,yes,yes,high
+0628_kiekvienas,keep,{Kiekvienas} turi vardą.,,,keep,native-speaker judgement,yes,no,high
+0629_pagal,keep,Viskas {pagal} planą.,,,keep,native-speaker judgement,yes,no,high
+0630_atsiprasyti,keep,"{Atsiprašau}, kad vėluoju.",,,keep,native-speaker judgement,yes,no,high
+0639_galbut,keep,{Galbūt} rytoj.,,,keep,native-speaker judgement,yes,no,high
+0632_pas,keep,Einu {pas} gydytoją.,,,keep,native-speaker judgement,yes,no,high
+0647_iskvieskite_gydytoja,keep,Iškvieskite gydytoją!,,,keep,native-speaker judgement,yes,yes,high
+0631_sekme,keep,Linkiu {sėkmės}!,,,"'Linkiu sėkmės!' is the idiom. A1 dependency: linkėti is taught by no card. Note for the lead: sėkmė appears three times (0631 'success', 0869 'luck' with the same '{Sėkmės}!', phrase 0755 'Sėkmės!'); 0869 duplicates 0755.",native-speaker judgement,no (linkėti),no,high
+0641_pavarde,keep,Kokia jūsų {pavardė}?,,,keep,native-speaker judgement,yes,no,high
+0643_kol,keep,"Palauk, {kol} grįšiu.",,,keep,native-speaker judgement,yes,no,high
+0650_greitai,keep,Autobusas atvažiuos {greitai}.,,,"Natural; 'Autobusas greitai atvažiuos' is the default order, end position focuses the target.",native-speaker judgement,yes,no,high
+0640_klaida,keep,Padariau {klaidą}.,,,keep,native-speaker judgement,yes,no,high
+0660_gelbekit,keep,Gelbėkit!,,,keep,native-speaker judgement,yes,no,high
+0642_desine,keep,Eikite į {dešinę}.,,,keep,native-speaker judgement,yes,no,high
+0651_vaikas_miega_lovoje,keep,Vaikas {miega} lovoje.,,,keep,native-speaker judgement,yes,no,high
+0652_kazkas,keep,{Kažkas} skambina į duris.,,,keep,native-speaker judgement,yes,no,high
+0653_na,keep,"{Na}, einam!",,,keep,native-speaker judgement,yes,no,high
+0664_savaitgalis,keep,Ką veiki {savaitgalį}?,,,keep,native-speaker judgement,yes,no,high
+0654_pradzia,keep,Filmo {pradžia} – aštuntą.,,,keep,native-speaker judgement,yes,no,high
+0661_prasme,keep,Nėra {prasmės} laukti.,,,keep,native-speaker judgement,yes,no,high
+0669_suo_bega_parke,keep,Šuo {bėga} parke.,,,keep,native-speaker judgement,yes,no,high
+0674_cia_yra_parduotuve,keep,Čia yra parduotuvė,,,keep,native-speaker judgement,yes,yes,high
+0676_ilgai,keep,Laukiau {ilgai}.,,,keep,native-speaker judgement,yes,no,high
+0678_tarp,keep,Bankas yra {tarp} pašto ir vaistinės.,,,keep,native-speaker judgement,yes,no,high
+0680_noreciau,keep,{Norėčiau} eiti namo.,,,keep,native-speaker judgement,yes,no,high
+0695_kartais,keep,{Kartais} dirbu šeštadieniais.,,,keep,native-speaker judgement,yes,no,high
+0684_nekesti,keep,Aš {nekenčiu} žiemos.,,,keep,native-speaker judgement,yes,no,high
+0690_vyras_vairuoja_automobili,keep,Vyras {vairuoja} automobilį.,,,keep,native-speaker judgement,yes,no,high
+0693_aciu_ne,keep,"Ačiū, ne.",,,keep,native-speaker judgement,yes,no,high
+0687_beveik,keep,Jau {beveik} vidurnaktis.,,,keep,native-speaker judgement,yes,no,high
+0697_jus,keep,Malonu {jus} matyti.,,,keep,native-speaker judgement,yes,no,high
+0699_teisus,keep,Tu {teisus}.,,,keep,native-speaker judgement,yes,no,high
+0706_parasyti,keep,{Parašiau} laišką.,,,keep,native-speaker judgement,yes,no,high
+0707_as_turiu_broli,keep,Aš turiu brolį,,,keep,native-speaker judgement,yes,yes,high
+0708_pabaiga,keep,Tai dar ne {pabaiga}.,,,keep,native-speaker judgement,yes,no,high
+0710_alkoholis,keep,Negeriu {alkoholio}.,,,keep,native-speaker judgement,yes,no,high
+0711_aisku,keep,aišku,,,keep,native-speaker judgement,yes,no,high
+0716_reiketu,keep,Tau {reikėtų} daugiau miegoti.,,,keep,native-speaker judgement,yes,no,high
+0723_reikia,keep,Man {reikia} eiti.,,,keep,native-speaker judgement,yes,no,high
+0724_irgi,keep,Aš {irgi} noriu kavos.,,,keep,native-speaker judgement,yes,no,high
+0725_pasiruoses,keep,Aš {pasiruošęs}.,,,keep,native-speaker judgement,yes,no,high
+0728_atsitikti,keep,Kas {atsitiko}?,,,keep,native-speaker judgement,yes,no,high
+0726_lietuvis,keep,"Aš {lietuvis}, o ji – lietuvė.",,,keep,native-speaker judgement,yes,no,high
+0735_dydis,keep,Kokio {dydžio} jums reikia?,,,keep,native-speaker judgement,yes,no,high
+0736_ne_vienas,keep,{Nė vienas} neatėjo.,,,keep,native-speaker judgement,yes,no,high
+0737_klientas,keep,{Klientas} visada teisus.,,,keep,native-speaker judgement,yes,no,high
+0740_ar_supranti,keep,Ar supranti? / Ar suprantate?,,,keep,native-speaker judgement,yes,no,high
+0738_gana,keep,Jau {gana}!,,,keep,native-speaker judgement,yes,no,high
+0739_dekoti,keep,{Dėkoju} už pagalbą.,,,keep,native-speaker judgement,yes,no,high
+0747_mama_gamina_vakariene,keep,Mama {gamina} vakarienę.,,,keep,native-speaker judgement,yes,no,high
+0759_reklama,owner,Per televizorių daug {reklamos}.,Per televiziją daug {reklamos}.,There is a lot of advertising on TV.,"4/5: 'Per televizorių daug reklamos' — natives say both 'per televiziją' and 'per televizorių', and both the mass 'daug reklamos' and count 'daug reklamų'. Fine as is; owner picks the register he wants taught.",native-speaker judgement,yes,no,medium
+0749_abu,keep,{Abu} broliai dirba.,,,keep,native-speaker judgement,yes,no,high
+0750_abi,keep,{Abi} seserys gyvena Kaune.,,,keep,native-speaker judgement,yes,no,high
+0751_laimingu_naujuju_metu,keep,Laimingų Naujųjų metų!,,,keep,native-speaker judgement,yes,no,high
+0753_sitas,keep,{Šitas} batas per mažas.,,,keep,native-speaker judgement,yes,no,high
+0755_sekmes,keep,Sėkmės!,,,keep,native-speaker judgement,yes,yes,high
+0758_pavojingas,keep,Ledas {pavojingas}.,,,keep,native-speaker judgement,yes,no,high
+0761_blogai,keep,Šiandien {blogai} jaučiuosi.,,,keep,native-speaker judgement,yes,no,high
+0762_kitoks,keep,Šis butas {kitoks}.,,,keep,native-speaker judgement,yes,no,high
+0764_pasirinkti,keep,{Pasirinkau} raudoną suknelę.,,,keep,native-speaker judgement,yes,no,high
+0763_as_pasiklydau,keep,Aš pasiklydau,,,keep,native-speaker judgement,yes,no,high
+0769_partneris,keep,Mano {partnerė} dirba ligoninėje.,,,keep,native-speaker judgement,yes,no,high
+0770_rusas,keep,Jis {rusas}.,,,keep,native-speaker judgement,yes,no,high
+0768_geros_keliones,change,Geros kelionės,Geros kelionės,Have a good trip!,6: 'Good luck on the trip' is not what Geros kelionės means; it is 'Have a good trip / safe travels'. Lithuanian unchanged.,native-speaker judgement,yes,yes,high
+0772_paukstis_skrenda_danguje,keep,Paukštis {skrenda} danguje.,,,keep,native-speaker judgement,yes,no,high
+0773_saugus,keep,Čia {saugu}.,,,keep,native-speaker judgement,yes,no,high
+0778_galiu_truputi_kalbeti,change,Galiu truputį kalbėti,Truputį kalbu lietuviškai.,I speak a little Lithuanian.,"3/7: 'Galiu truputį kalbėti' is an English calque of 'I can speak a little' and is incomplete without an object. Natives say 'Truputį / šiek tiek kalbu lietuviškai'. Phrase card: headword changes with the sentence. truputį @455, kalbėti @72, lietuviškai @269.",native-speaker judgement: the standard beginner line in every course is 'Aš truputį kalbu lietuviškai',yes,yes,high
+0781_skirtingas,keep,Mes labai {skirtingi}.,,,keep,native-speaker judgement,yes,no,high
+0782_sarasas,keep,Parašyk pirkinių {sąrašą}.,,,'pirkinių sąrašas' is the collocation for a shopping list. A1 dependency: pirkinys is taught by no card; strict alternative 'Parašyk {sąrašą}.',native-speaker judgement,no (pirkinys),no,high
+0786_faktas,keep,Tai įdomus {faktas}.,,,keep,native-speaker judgement,yes,no,high
+0787_nueiti,keep,{Nuėjau} į parduotuvę.,,,keep,native-speaker judgement,yes,no,high
+0788_kitoje_puseje,keep,Bankas yra {kitoje gatvės pusėje}.,,,keep,native-speaker judgement,yes,no,high
+0789_sveiki_atvyke,keep,Sveiki atvykę!,,,keep,native-speaker judgement,yes,yes,high
+0795_naudoti,owner,{Naudoju} žodyną.,Cukraus {nenaudoju}.,I don't use sugar.,"4: with a tool like a dictionary the idiomatic verb is reflexive naudotis + instrumental ('naudojuosi žodynu'); transitive 'naudoju žodyną' is heard and correct but less idiomatic. Target is naudoti, so keeping it needs an object that takes transitive naudoti naturally — e.g. 'Cukraus {nenaudoju}.' (cukrus @243). Owner decides.",native-speaker judgement,yes,no,medium
+0796_teisingas,keep,Atsakymas {teisingas}.,,,keep,native-speaker judgement,yes,no,high
+0798_ar_toli,keep,Ar toli? / Netoli.,,,keep,native-speaker judgement,yes,no,high
+0799_turbut,keep,{Turbūt} lis.,,,keep,native-speaker judgement,yes,no,high
+0802_senele_sedi_ant_kedes,keep,Senelė {sėdi} ant kėdės.,,,keep,native-speaker judgement,yes,no,high
+0806_isgerti,keep,{Išgerk} arbatos.,,,keep,native-speaker judgement,yes,no,high
+0811_gaila,keep,gaila,,,keep,native-speaker judgement,yes,no,high
+0810_sveikinu,keep,Sveikinu!,,,keep,native-speaker judgement,yes,yes,high
+0826_atostogos,keep,Rugpjūtį turiu {atostogas}.,,,keep,native-speaker judgement,yes,no,high
+0813_rinkti,keep,Vaikai {renka} grybus.,,,keep,native-speaker judgement,yes,no,high
+0818_veliau,keep,Paskambinsiu {vėliau}.,,,keep,native-speaker judgement,yes,no,high
+0819_man_dvidesimt_metu,keep,Man dvidešimt metų,,,keep,native-speaker judgement,yes,yes,high
+0824_jo,keep,{Jo} žmona dirba ligoninėje.,,,keep,native-speaker judgement,yes,no,high
+0817_kazkoks,keep,Atėjo {kažkoks} vyras.,,,keep,native-speaker judgement,yes,no,high
+0834_nusipirkti,keep,{Nusipirkau} naują paltą.,,,keep,native-speaker judgement,yes,no,high
+0838_sale,keep,Koncertas bus didelėje {salėje}.,,,keep,native-speaker judgement,yes,no,high
+0841_su_sventemis,keep,Su šventėmis!,,,keep,native-speaker judgement,yes,no,high
+0842_kazkur,keep,Raktai {kažkur} čia.,,,keep,native-speaker judgement,yes,no,high
+0847_akimirka,keep,Akimirką,,,keep,native-speaker judgement,yes,yes,high
+0851_verslininkas,keep,Mano brolis – {verslininkas}.,,,keep,native-speaker judgement,yes,no,high
+0854_ideja,keep,Turiu {idėją}.,,,keep,native-speaker judgement,yes,no,high
+0855_kiek_kainuoja_bilietas,keep,Kiek kainuoja bilietas?,,,keep,native-speaker judgement,yes,yes,high
+0856_duona_kainuoja_viena_lita,change,Duona {kainuoja} vieną litą.,Duona {kainuoja} vieną eurą.,The bread costs one euro.,6/7: the litas has not existed since 1 January 2015; an A1 learner must hear prices in euros. euras @262.,https://www.ecb.europa.eu/euro/changeover/lithuania/html/index.en.html,yes,no,high
+0858_kalbetis,keep,{Kalbamės} su kaimynu.,,,keep,native-speaker judgement,yes,no,high
+0859_paprastai,keep,{Paprastai} keliuosi septintą.,,,keep,native-speaker judgement,yes,no,high
+0864_trecia_valanda,keep,Trečia valanda,,,keep,native-speaker judgement,yes,yes,high
+0867_tobulas,keep,Oras šiandien {tobulas}.,,,keep,native-speaker judgement,yes,no,high
+0869_sekme,keep,{Sėkmės}!,,,"Natural. Duplicates phrase 0755 'Sėkmės!' exactly — for the lead, not a naturalness issue.",native-speaker judgement,yes,no,high
+0871_noreciau_kavos,keep,Norėčiau kavos,,,keep,native-speaker judgement,yes,yes,high
+0873_lankyti,keep,{Lankau} draugą ligoninėje.,,,keep,native-speaker judgement,yes,no,high
+0877_sivakar,keep,{Šįvakar} einame į kiną.,,,keep,native-speaker judgement,yes,no,high
+0878_su_gimtadieniu,keep,Su gimtadieniu!,,,keep,native-speaker judgement,yes,yes,high
+0879_sveikinti,keep,{Sveikinu} su gimtadieniu!,,,keep,native-speaker judgement,yes,no,high
+0884_asmeninis,keep,Tai {asmeninis} klausimas.,,,keep,native-speaker judgement,yes,no,high
+0887_siandien_salta,keep,Šiandien šalta,,,keep,native-speaker judgement,yes,yes,high
+0891_kadangi,keep,"{Kadangi} lijo, likome namie.",,,keep,native-speaker judgement,yes,no,high
+0893_pazymejimas,keep,Parodykite {pažymėjimą}.,,,"Plausible (conductor, student card). For ID officials say 'Parodykite dokumentus'; gloss fine.",native-speaker judgement,yes,no,medium
+0892_prisijungti,keep,Ar galiu {prisijungti} prie jūsų?,,,keep,native-speaker judgement,yes,no,high
+0897_amerikietis,keep,Mano draugas – {amerikietis}.,,,keep,native-speaker judgement,yes,no,high
+0895_linksmu_kaledu,keep,Linksmų Kalėdų!,,,keep,native-speaker judgement,yes,no,high
+0896_niekur,keep,Šiandien {niekur} neinu.,,,Natural. neinu = ne + einu (eiti @11); lemmatiser miss only.,native-speaker judgement,yes (eiti),no,high
+0910_siemet,keep,{Šiemet} žiema šilta.,,,keep,native-speaker judgement,yes,no,high
+0911_pernai,keep,{Pernai} buvau Nidoje.,,,keep,native-speaker judgement,yes,no,high
+0902_ar_galiu_moketi_kortele,keep,Ar galiu mokėti kortele?,,,Natural ('Ar galima mokėti kortele?' also). See politeness.,native-speaker judgement,yes,no,high
+0904_kelios,keep,Praėjo {kelios} dienos.,,,keep,native-speaker judgement,yes,no,high
+0908_politikas,keep,Jis žinomas {politikas}.,,,Natural. žinomas is the participle of žinoti @182; transparent.,native-speaker judgement,yes (žinoti),no,high
+0909_uzeikite,keep,Užeikite!,,,keep,native-speaker judgement,yes,no,high
+0916_negu,keep,Jis vyresnis {negu} aš.,,,"Natural. vyresnis (older) is taught by no card and is not transparent from vyras; strict alternative 'Vilnius didesnis {negu} Kaunas.' (didelis @9, comparative).",native-speaker judgement,no (vyresnis),no,high
+0917_kaip_nuvykti_i,keep,Kaip nuvykti į…?,,,keep,native-speaker judgement,yes,no,high
+0922_tiesiai,keep,Eikite {tiesiai}.,,,keep,native-speaker judgement,yes,no,high
+0924_ar_tau_patinka,keep,Ar tau patinka…? / Ar jums patinka…?,,,keep,native-speaker judgement,yes,no,high
+0931_pavojus,keep,{Pavojus}! Ledas plonas.,,,keep,native-speaker judgement,yes,no,high
+0934_gero_savaitgalio,keep,Gero savaitgalio!,,,keep,native-speaker judgement,yes,no,high
+0936_paduoti,keep,{Paduok} druską.,,,keep,native-speaker judgement,yes,no,high
+0939_pakankamai,keep,Turime {pakankamai} laiko.,,,keep,native-speaker judgement,yes,no,high
+0940_noriu_gerti,keep,noriu gerti,,,"Natural. Lower-case headword like 0352/0545/0711/0811; data style, not naturalness.",native-speaker judgement,yes,no,high
+0948_anglas,keep,Jis {anglas}.,,,keep,native-speaker judgement,yes,no,high
+0949_noreciau_sumoketi,keep,Norėčiau sumokėti.,,,Natural ('susimokėti' also common). See politeness.,native-speaker judgement,yes,no,high
+0954_velai,keep,Vakar grįžau {vėlai}.,,,keep,native-speaker judgement,yes,no,high
+0961_iki_rytojaus,keep,Iki rytojaus,,,keep,native-speaker judgement,yes,yes,high
+0966_iki_greito,owner,Iki greito! / Iki vėliau!,,,"7: 'Iki greito!' (short for 'Iki greito pasimatymo') and 'Iki vėliau!' are both common in speech; 'Iki vėliau' is sometimes called a calque of 'see you later'. I could not read a VLKK ruling (unverified). Owner says whether to teach both, or 'Iki greito pasimatymo!' only.",unverified (no VLKK page read); native-speaker judgement,yes,no,medium
+0974_link,keep,Eikite {link} upės.,,,keep,native-speaker judgement,yes,no,high
+0979_visur,keep,Sniego buvo {visur}.,,,keep,native-speaker judgement,yes,no,high
+0981_vokietis,change,Ji ištekėjo už {vokiečio}.,Jos vyras – {vokietis}.,Her husband is German.,"A1 dependency: ištekėti is taught by no card (ištekėjo = NONE). 'Jos vyras – vokietis' is natural and parallels 0770 'Jis rusas', 1050 'Mano kaimynas – lenkas'; vyras @2, jos @37.",native-speaker judgement; dependency check,yes,no,medium
+0987_atsiprasau_ka_sakete,keep,"Atsiprašau, ką sakėte?",,,keep,native-speaker judgement,yes,no,high
+0993_papildomas,keep,Reikia {papildomos} lovos.,,,keep,native-speaker judgement,yes,no,high
+0996_reiksme,keep,Šis žodis turi dvi {reikšmes}.,,,keep,native-speaker judgement,yes,no,high
+1000_man_nepatinka,keep,Man nepatinka…,,,keep,native-speaker judgement,yes,no,high
+1005_lauke,keep,Vaikai žaidžia {lauke}.,,,keep,native-speaker judgement,yes,no,high
+1012_as_gyvenu_vilniuje,keep,Aš gyvenu Vilniuje,,,keep,native-speaker judgement,yes,yes,high
+1013_sostine,keep,Vilnius – Lietuvos {sostinė}.,,,keep,native-speaker judgement,yes,no,high
+1015_vaikai_zaidzia_kieme,keep,Vaikai {žaidžia} kieme.,,,keep,native-speaker judgement,yes,no,high
+1020_sakinys,keep,Parašyk vieną {sakinį}.,,,keep,native-speaker judgement,yes,no,high
+1023_koks_jusu_adresas,keep,Koks jūsų adresas?,,,keep,native-speaker judgement,yes,no,high
+1024_retai,keep,Jis {retai} valgo mėsą.,,,keep,native-speaker judgement,yes,no,high
+1025_vakarieniauti,keep,{Vakarieniaujame} kartu.,,,keep,native-speaker judgement,yes,no,high
+1029_prasom_sestis,keep,Prašom sėstis,,,keep,native-speaker judgement,yes,no,high
+1032_lauke_lyja,keep,Lauke {lyja}.,,,keep,native-speaker judgement,yes,no,high
+1038_desineje,keep,Bankas yra {dešinėje}.,,,keep,native-speaker judgement,yes,no,high
+1042_buvo_labai_skanu,keep,Buvo labai skanu.,,,keep,native-speaker judgement,yes,no,high
+1050_lenkas,keep,Mano kaimynas – {lenkas}.,,,keep,native-speaker judgement,yes,no,high
+1053_man_reikia_gydytojo,keep,Man reikia gydytojo. / Kur vaistinė?,,,Two functions on one phrase card; both lines natural.,native-speaker judgement,yes,no,high
+1006_uzsiemimas,change,Mėgstu {užsiėmimus} lauke.,Šiandien turiu du {užsiėmimus}.,I have two classes today.,"3: 'Mėgstu užsiėmimus lauke' is a calque of 'outdoor activities'; natives say 'mėgstu būti lauke / veiklą lauke'. In daily speech užsiėmimas is a class/session (būrelio, sporto užsiėmimas). The proposal uses that sense; the card's gloss order ('activity; pastime (also: class, session)') should follow — retarget note for the lead.",native-speaker judgement,yes,no,medium
+1058_kaip_lietuviskai,keep,Kaip lietuviškai …?,,,keep,native-speaker judgement,yes,yes,high
+1059_apibudinti,keep,Ar galite {apibūdinti} tą žmogų?,,,keep,native-speaker judgement,yes,no,high
+1066_pietauti,keep,{Pietaujame} pirmą valandą.,,,keep,native-speaker judgement,yes,no,high
+1076_sviesti,keep,Mėnulis {šviečia}.,,,keep,native-speaker judgement,yes,no,high
+1081_viena_kava_prasau,keep,"Vieną kavą, prašau.",,,keep,native-speaker judgement,yes,no,high
+1083_megstamiausias,keep,Mano {mėgstamiausias} gėrimas — kava.,,,Natural. Uses an em dash '—' where the deck uses '–' elsewhere; typography for the lead.,native-speaker judgement,yes,no,high
+1085_vaziuoti_dviraciu,keep,Į darbą {važiuoju dviračiu}.,,,keep,native-speaker judgement,yes,no,high
+1088_pavargau,keep,Pavargau.,,,keep,native-speaker judgement,yes,no,high
+1091_nemokamai,keep,nemokamai,,,keep,native-speaker judgement,yes,no,high
+1094_nuobodus,keep,Filmas buvo {nuobodus}.,,,keep,native-speaker judgement,yes,no,high
+1095_man_salta,keep,Man šalta. / Man karšta.,,,keep,native-speaker judgement,yes,no,high
+1099_desineje,keep,Dešinėje. / Sukite į dešinę. / Sukite į kairę.,,,keep,native-speaker judgement,yes,no,high
+1107_mergaite_piesia_gele,keep,Mergaitė {piešia} gėlę.,,,keep,native-speaker judgement,yes,no,high
+1112_sestis,keep,Prašom {sėstis}.,,,keep,native-speaker judgement,yes,no,high
+1120_ar_nori_arbatos,keep,Ar nori arbatos? / Ar norite arbatos?,,,keep,native-speaker judgement,yes,no,high
+1127_nemokamas,keep,Įėjimas {nemokamas}.,,,keep,native-speaker judgement,yes,no,high
+1135_saule_sviecia,keep,Saulė {šviečia}.,,,keep,native-speaker judgement,yes,no,high
+1136_atskirai,keep,Mokame {atskirai}.,,,"Natural; 'Mokėsime atskirai' (future) is what one tells the waiter, present is fine.",native-speaker judgement,yes,no,high
+1137_atidaryta,keep,atidaryta,,,keep,native-speaker judgement,yes,no,high
+1141_pusryciauti,keep,{Pusryčiauju} septintą valandą.,,,keep,native-speaker judgement,yes,no,high
+1148_uzimtas,keep,Šiandien esu {užimtas}.,,,keep,native-speaker judgement,yes,no,high
+1149_mano_vardas_dainius,keep,Mano vardas Dainius,,,keep,native-speaker judgement,yes,yes,high
+1169_greitai_pasveik,owner,Greitai pasveik!,Greitai sveik!,Get well soon!,"7: 'Greitai pasveik!' is used, but the more frequent well-wish is 'Sveik!' / 'Greitai sveik!' (imperfective). omniglot's phrase list could not be fetched (robots). Owner picks. Recorded.",unverified (omniglot.com refused); native-speaker judgement,yes,yes,medium
+1172_snigti,keep,Žiemą {sninga}.,,,keep,native-speaker judgement,yes,no,high
+1174_gultis,keep,Einu {gultis}.,,,keep,native-speaker judgement,yes,no,high
+1179_as_esu_is_lietuvos,keep,Aš esu iš Lietuvos,,,keep,native-speaker judgement,yes,yes,high
+1184_praktikuotis,keep,Reikia daugiau {praktikuotis}.,,,keep,native-speaker judgement,yes,no,high
+1185_latvis,keep,Jis {latvis} iš Rygos.,,,keep,native-speaker judgement,yes,no,high
+1186_pomegis,change,Mano {pomėgis} – žvejyba.,Mano {pomėgis} – muzika.,My hobby is music.,A1 dependency: žvejyba is taught by no card. muzika @299. Same natural frame.,native-speaker judgement; dependency check,yes,no,medium
+1189_lietuviskai,keep,Ar kalbate {lietuviškai}?,,,keep,native-speaker judgement,yes,no,high
