@@ -12,6 +12,16 @@
   "links": []
  },
  {
+  "id": "stress-sheet",
+  "group": "Your own tasks",
+  "title": "Stress 353 forms the dictionaries couldn't (90 in A1)",
+  "ask": "949 genitives, feminines and verb forms now carry stress marks sourced from Wiktionary. 353 couldn't be sourced: missing from the dictionary, an unstressed table, or two variants the headword doesn't decide (e.g. raudóna / raudonà). The sheet is rounds/2026-10-28_stress_forms/OWNER_SHEET_v1.csv in the 51.04 folder (also attached in the chat), A1 first in study order. Fill in 'YOUR stressed form' and save it as OWNER_SHEET_v1_returned.csv in the same folder. Until then these forms stay unmarked; your recordings aren't affected. Also fixed from the source: antis 'duck' is feminine, gen ánties (the card had añtis 'bosom''s ančio); kaltas 'guilty' is kal̃tas, kaltà.",
+  "options": [
+   "Returned"
+  ],
+  "links": []
+ },
+ {
   "id": "release-a1-rc4",
   "group": "A1 v3.0 release",
   "title": "The final A1 package is ready: try it on your phone, then upload",
