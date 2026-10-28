@@ -12,9 +12,26 @@
   "links": []
  },
  {
+  "id": "audio-b2",
+  "group": "Your own tasks",
+  "title": "Listen: batch 2 (481 takes) and the 63 re-levelled July takes",
+  "ask": "Batch 2: 481 of your 483 takes are in the deck, and no take contains another one. Two didn't pass the safety check and stay on your sheet: tik and ši. They are so short and crisp that the tool can't be sure where speech is, so re-record them a touch longer. 26 takes are flagged to listen to: they come first on the page. The 63 quiet July takes (numbers, question words) are re-levelled from their originals, now around −18.5 LUFS like the rest; listen to the 15 flagged. 19 of those July originals stop while the word is still sounding (e.g. trys); the old files hid it with added silence. Say in the note if you want them back on the sheet as re-takes. Your sheet now has 2,314 takes left: A1 453 (315 words, 138 sentences), A2 1,861.",
+  "options": [
+   "Sounds right",
+   "Changes in my note",
+   "Put the 19 clipped July takes back on the sheet"
+  ],
+  "links": [
+   {
+    "label": "Open Audio batch 2 check",
+    "href": "https://claude.ai/artifact/RjxA8ucXkpW9QEi5W33keE"
+   }
+  ]
+ },
+ {
   "id": "audio-b1",
   "group": "Your own tasks",
-  "title": "Listen: your first 54 takes, original vs processed",
+  "title": "Listen: batch 1 (54 takes), original vs processed",
   "ask": "All 54 are processed and in the deck: start clicks removed with 250 ms of silence kept before your voice, end clicks removed where safely possible, nothing cut within 250 ms of your speech, the original of every take kept. No re-recordings needed. Listen at least to the 10 marked takes at the top of the page (8 keep a short sound just after the words: a final consonant or the stop click, taip most likely to matter; 2 had the closing click lowered instead of cut). Two decisions in the note: (1) loudness: your new takes come out about 2 dB quieter than July, because July was evidently peak-limited and this processing uses plain gain only; matching July needs a gentle limiter (2–5 dB on peaks). (2) 63 of the July takes (mostly numbers and question words: trys, kaip, kodėl…) are 20–30 dB quieter than the rest of the deck; their raw masters exist, so they can be re-processed the same safe way.",
   "options": [
    "Sounds right",

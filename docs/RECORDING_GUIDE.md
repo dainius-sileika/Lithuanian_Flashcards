@@ -3,12 +3,12 @@
 *Executor, 2026-10-19; counts updated 2026-10-20 after the key rename and the proofreading return. The sheet: `recorder_A2.html` at the repo root. Its list: `data/recording_list.csv`. Both come from `python3 build_recorder.py A2`.*
 
 ## What is on the sheet
-The sheet lists every take that the current deck still needs: **2,849 takes**. The A1 subdeck comes first, then A2, each in study order (`study_order.csv`, study order v3; same order as `data/recording_order_v3.csv`).
+The sheet lists every take that the current deck still needs: **2,314 takes** (28 Oct 2026, after audio batches 1 and 2; the sheet started at 2,849). The A1 subdeck comes first, then A2, each in study order (`study_order.csv`, study order v3; same order as `data/recording_order_v3.csv`).
 
 | | takes | of which |
 |---|---|---|
-| **A1** (takes 1–988) | **988** | 952 new · 20 replace the synthetic voice · 16 re-takes |
-| **A2** (takes 989–2,849) | **1,861** | 1,788 new · 73 replace the synthetic voice |
+| **A1** (takes 1–453) | **453** | 440 new · 13 re-takes (315 words, 138 sentences) |
+| **A2** (takes 454–2,314) | **1,861** | 1,788 new · 73 replace the synthetic voice |
 | kinds | | 1,813 words · 981 example sentences (`<key>_s`) · 55 sentence cards |
 
 By kind: **A1** 619 word takes · 334 example sentences · 35 sentence cards (369 sentence takes in all);
