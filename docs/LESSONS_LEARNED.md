@@ -89,6 +89,9 @@ not repeated here.
 - **2026-10-20 · A parse artefact shipped on a card back** (*kosėti* showed "{{l" and "lt" as its forms).
   Rule: before a build, scan every displayed field for wiki-template residue and empty-but-expected forms.
   Enforced: by hand in the rc3 round; candidate for a build check.
+- **2026-10-28 · Cards reused another card's sentence and never showed their own meaning** (*per* "too" with
+  "across the bridge", *po* "after" with "under the table"; 2128/2188 identical). Rule: no two cards share a
+  sentence; a build check should flag identical sentences with different glosses. Enforced: by hand (candidate check).
 - **2026-10-20 · Proofreading engines rewrite the taught word away** (*Kiek jums metų?* has no *amžius*).
   Rule: a correction that removes the cloze target is a decision (keep the word in a new sentence, retarget, or
   merge), not a paste. Enforced: `rounds/2026-10-20_proofread/` rules.
@@ -134,6 +137,8 @@ not repeated here.
 - **2026-10-24 · Six picture folders searched first-hit-wins.** Nobody could tell which picture a card used.
   Rule: one home per medium (`media/images/<key>`, `media/audio/<key>`); `INDEX.md` + generated `FILES.md`;
   the pre-commit hook fails on an undescribed file. Enforced: `tools/check_layout.py`, `tools/make_index.py`.
+- **2026-10-28 · Parallel agents share the session scratchpad.** One reviewer's helper script overwrote another's.
+  Rule: every parallel agent works in its own scratch subfolder (named in its brief) and its own git worktree.
 - **2026-10-24 · Sub-agents cannot write to the claude.ai Project.** The lead copies INDEX, FILES, the spec,
   VERSIONS, STYLE_LOCK and this file after each change.
 
