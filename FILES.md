@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,669 tracked files in 818 rows.
+2,680 tracked files in 829 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -55,6 +55,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `data/id_map.csv` | live | A2 list: queue row -> frozen id (the 2026-10-11 freeze), now carrying the current keys | read by tools/rename_keys.py (verify) |
 | `data/key_maps/key_map_v1.csv` | history | THE key rename of 2026-10-20: every old card name (001_suo, A2-0348, S-0001, media aliases) -> current NNNN_slug key; append-only | read by tools/keymap.py (and through it build_recorder.py tools/ingest_takes.py tools/golden_set.py tools/verify_apkg.py) |
 | `data/key_maps/key_map_v2.csv` | history | Amendment of 2026-10-20: five cards re-slugged after the proofreading return; append-only | read by tools/keymap.py |
+| `data/key_maps/key_map_v3.csv` | history | Amendment of 2026-10-28: nine cards re-slugged after the naturalness round (6 retargets, 3 re-worded headwords / sentences); numbers kept; append-only | read by tools/keymap.py |
 | `data/key_maps/topic_map_v1.csv` | live | category -> section slug for the lt::topic:: tag (spec §12) | read by build_apkg.py |
 | `data/likeness_args.json` | live | Historical precedent / likeness arguments per card (active list + cards) | read by code/historical.py |
 | `data/location_bank.json` | live | The bank of real Lithuanian locations for scene cards (name, period, description, sources) | read by code/go_settings.py |
@@ -122,9 +123,9 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `media/generation/out_phrases_v3/round2/ledger.csv` | history | Every prompt ever sent for that batch, one row per render (last row per key = the batch's current render); append-only | written by the batch's gen.py; read by tools/golden_set.py tools/rename_keys.py (names of their time) |
 | `media/generation/out_phrases_v3/round2/plan.json` | history | The batch's job plan (every key and prompt it was asked to render) | written by gen.py |
 | `media/generation/out_phrases_v3/round2/qa_round2.csv` | history | QA sheets of the batch (code/qa_images.py results of their time) | written by qa_images.py |
-| `media/audio/*.mp3` (975 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/*_s.mp3` (207 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/_history/*` (90 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
+| `media/audio/*.mp3` (971 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/*_s.mp3` (191 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/_history/*` (110 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
 | `media/images/_history/images/*` (520 files) | history | The 1.x WebP masters (<key>.webp, 520 files): the pictures the deck shipped before the F6.2 re-render; tracked | read by nothing live (history) |
 
 ### docs/
@@ -280,6 +281,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `reports/study_order/AUDIT_v3_1.txt` | history | Study-order audits (AUDIT_v3*.txt, AUDIT_tables.txt) and reports (v3 adopted 2026-10-19; the 2026-10-17 proposal superseded) | written by build_study_order_v3.py --audit (then) |
 | `reports/study_order/AUDIT_v3_2.txt` | history | Study-order audits (AUDIT_v3*.txt, AUDIT_tables.txt) and reports (v3 adopted 2026-10-19; the 2026-10-17 proposal superseded) | written by build_study_order_v3.py --audit (then) |
 | `reports/study_order/AUDIT_v3_3.txt` | history | Study-order audits (AUDIT_v3*.txt, AUDIT_tables.txt) and reports (v3 adopted 2026-10-19; the 2026-10-17 proposal superseded) | written by build_study_order_v3.py --audit (then) |
+| `reports/study_order/AUDIT_v3_4.txt` | history | Study-order audits (AUDIT_v3*.txt, AUDIT_tables.txt) and reports (v3 adopted 2026-10-19; the 2026-10-17 proposal superseded) | written by build_study_order_v3.py --audit (then) |
 | `reports/study_order/REPORT_order_v3.md` | history | Study-order audits (AUDIT_v3*.txt, AUDIT_tables.txt) and reports (v3 adopted 2026-10-19; the 2026-10-17 proposal superseded) | written by build_study_order_v3.py --audit (then) |
 | `reports/study_order/REPORT_study_order.md` | history | Study-order audits (AUDIT_v3*.txt, AUDIT_tables.txt) and reports (v3 adopted 2026-10-19; the 2026-10-17 proposal superseded) | written by build_study_order_v3.py --audit (then) |
 
@@ -557,10 +559,17 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_post_tidy.verify.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
 | `rounds/2026-10-24_tidy/verify/A2_pre_tidy.json` | history | The morning tidy of 2026-10-24: one home per medium (media/); plan, 3,239-row move table, logs, verify reports, tidy_moves.py | history |
+| `rounds/2026-10-28_naturalness/OWNER_STRESS_v1.csv` | live | The owner's stress sheet for this round: 7 forms on retargeted / new cards with no sourced mark (Sveik!, Minutėlę!, spūstis ×3, pasinaudoti, vieta prie praėjimo); same columns as the stress-forms OWNER_SHEET_v1 | owner fills it in; the lead applies it |
 | `rounds/2026-10-28_naturalness/RUBRIC.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/SECOND_CHECK.md` | history | Second check (Fable, 2026-10-28): each owner note resolved, the dependency / duplicate / English re-check of all 79 rows, the 6 retargets, the 34 pre-existing identical-sentence pairs for the lead, and the 5 stress marks left for the owner | people |
+| `rounds/2026-10-28_naturalness/amend_v3.py` | history | Wrote data/key_maps/key_map_v3.csv: nine cards re-slugged after the round (numbers kept), LIVE files rewritten by whole token, tracked audio git mv'd (hash-checked) | history |
+| `rounds/2026-10-28_naturalness/apply_v1.py` | history | Applied final_v1.csv to the live data (67 EDIT, 6 RETARGET, 2 NEW_CARD minted with rename_keys.mint and inserted in study_order.csv after their anchors; id_map, context note of 1169, study_order headwords); CSV quoting and CRLF kept; a note per changed row | history |
 | `rounds/2026-10-28_naturalness/build_page.py` | history | Builder of the round's review page | history |
+| `rounds/2026-10-28_naturalness/check_keys_v1.py` | history | Checks that every earlier key keeps its number through the key maps and lists the keys a later order adds | run by people; output in reports/study_order/AUDIT_v3_4.txt |
 | `rounds/2026-10-28_naturalness/final_v1.csv` | history | Second check (Fable, 2026-10-28), ready to apply: one row per card that changes after the owner's answers (75: 67 EDIT, 6 RETARGET, 2 NEW_CARD) — key, field(s), old, new (braces), new English, action, source, recorded, extra_fields (headword/gloss/stress/forms for retargets), reason | written by hand from the analysis; read by the apply step |
+| `rounds/2026-10-28_naturalness/make_owner_stress_v1.py` | history | Writes OWNER_STRESS_v1.csv (the forms of this round no source gives a stress mark for) | history |
+| `rounds/2026-10-28_naturalness/media_log_key_map_v3_cloud_2026-10-28.tsv` | history | Hash logs of the key_map_v3 media renames (tracked audio in the cloud clone; the cloud's 1024 px picture copies; the pictures on the Mac) | written by rename_keys.apply_media_moves |
+| `rounds/2026-10-28_naturalness/media_log_key_map_v3_tracked.tsv` | history | Hash logs of the key_map_v3 media renames (tracked audio in the cloud clone; the cloud's 1024 px picture copies; the pictures on the Mac) | written by rename_keys.apply_media_moves |
 | `rounds/2026-10-28_naturalness/merged_v1.json` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/owner_answers/0043_atsiprasau.json` | history | The owner's answers on the Naturalness Review page (one JSON per card: choice nat/pol/keep, note), exported 2026-10-28 23:05 | read by the second check and the apply step |
 | `rounds/2026-10-28_naturalness/owner_answers/0148_mano_vardas_yra_jonas.json` | history | The owner's answers on the Naturalness Review page (one JSON per card: choice nat/pol/keep, note), exported 2026-10-28 23:05 | read by the second check and the apply step |
@@ -644,12 +653,14 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-28_naturalness/packet_A.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_B.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/packet_C.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
+| `rounds/2026-10-28_naturalness/retakes_v1.tsv` | history | The 20 re-takes: take, card, old said, new words, old and new file, bytes, sha1 | written by supersede_v1.py |
 | `rounds/2026-10-28_naturalness/review_A.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/review_A.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/review_B.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/review_B.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/review_C.csv` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
 | `rounds/2026-10-28_naturalness/review_C.md` | history | The full naturalness review of every deck sentence and phrase (owner, 2026-10-28): rubric, packets A/B/C, the reviewers' verdicts and the lead's merge | people; the reviewers write review_*.csv |
+| `rounds/2026-10-28_naturalness/supersede_v1.py` | history | Set aside the 20 recorded takes whose words the round changed: mp3 -> media/audio/_history/<take>.<ms>.mp3 (git mv, sha1-checked), a superseded row appended to data/audio_source.tsv each, so the recorder lists them as re-takes | history |
 | `rounds/2026-10-28_politeness/PROPOSAL.md` | history | Plan only (Fable, 2026-10-28): register of requests in the deck's sentences — noriu vs norėčiau, galiu vs ar galiu, imperatives to strangers; the answer on #616, 5 changes, 4 owner's calls, 38 keeps, the evidence (Hilbig 2009, Klaas 2004, course dialogues) and the re-take cost | people; the lead applies what the owner approves |
 | `rounds/2026-10-28_politeness/proposals.csv` | history | One row per sentence examined (47): key, level, route, current, English, setting (who to whom), verdict, proposed sentence (same cloze target), proposed English, reason, evidence URLs, dependency check, recorded already, take file | written by hand from the analysis; read by whoever applies the round |
 | `rounds/2026-10-28_stress_forms/OWNER_LIST.csv` | history | The 355 forms the owner must stress himself (not in the source, ambiguous with an identical headword, or the source's headword contradicts ours), A1 first in study order, with the reason and the source's options; spec §7 | written by match_kaikki_v2.py; people |

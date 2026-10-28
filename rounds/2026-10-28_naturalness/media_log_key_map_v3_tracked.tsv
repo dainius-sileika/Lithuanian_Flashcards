@@ -1,0 +1,5 @@
+old_path	new_path	bytes	sha1	method
+media/audio/0239_orai.mp3	media/audio/0239_oras.mp3	11373	c0e9e90b6cd25f9d3ce6a16aef80d17576a1a1e9	git mv
+media/audio/0239_orai_s.mp3	media/audio/0239_oras_s.mp3	16557	b878312d345a4a45b887cc845d8f27804148db44	git mv
+media/audio/0778_galiu_truputi_kalbeti.mp3	media/audio/0778_truputi_kalbu_lietuviskai.mp3	31533	7329761192340e271338e422ffde76053644e4aa	git mv
+media/audio/1169_greitai_pasveik.mp3	media/audio/1169_sveik.mp3	25773	f1899c49c5d223a8689eee1c057947a68a761cf5	git mv

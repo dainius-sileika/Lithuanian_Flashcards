@@ -644,11 +644,11 @@ key	source	file	said
 0755_sekmes	human	media/audio/0755_sekmes.mp3	Sėkmės!
 0961_iki_rytojaus	human	media/audio/0961_iki_rytojaus.mp3	Iki rytojaus
 0428_kada	human	media/audio/0428_kada.mp3	kada
-0778_galiu_truputi_kalbeti	human	media/audio/0778_galiu_truputi_kalbeti.mp3	Galiu truputį kalbėti
+0778_truputi_kalbu_lietuviskai	human	media/audio/0778_truputi_kalbu_lietuviskai.mp3	Galiu truputį kalbėti
 0595_man_reikia_vandens	human	media/audio/0595_man_reikia_vandens.mp3	Man reikia vandens
 0864_trecia_valanda	human	media/audio/0864_trecia_valanda.mp3	Trečia valanda
 0204_kur	human	media/audio/0204_kur.mp3	kur
-1169_greitai_pasveik	human	media/audio/1169_greitai_pasveik.mp3	Greitai pasveik!
+1169_sveik	human	media/audio/1169_sveik.mp3	Greitai pasveik!
 0789_sveiki_atvyke	human	media/audio/0789_sveiki_atvyke.mp3	Sveiki atvykę!
 0855_kiek_kainuoja_bilietas	human	media/audio/0855_kiek_kainuoja_bilietas.mp3	Kiek kainuoja bilietas?
 0707_as_turiu_broli	human	media/audio/0707_as_turiu_broli.mp3	Aš turiu brolį
@@ -903,8 +903,8 @@ key	source	file	said
 0237_jusu	human	media/audio/0237_jusu.mp3	jū́sų
 0237_jusu_s	human	media/audio/0237_jusu_s.mp3	Koks jūsų telefono numeris?
 0238_koks_s	human	media/audio/0238_koks_s.mp3	Koks tavo adresas?
-0239_orai	human	media/audio/0239_orai.mp3	oraĩ
-0239_orai_s	human	media/audio/0239_orai_s.mp3	Kokie šiandien orai?
+0239_oras	human	media/audio/0239_oras.mp3	oraĩ
+0239_oras_s	human	media/audio/0239_oras_s.mp3	Kokie šiandien orai?
 0240_patikti	human	media/audio/0240_patikti.mp3	patìkti
 0240_patikti_s	human	media/audio/0240_patikti_s.mp3	Man patinka šis miestas.
 0241_o	human	media/audio/0241_o.mp3	õ
@@ -1271,3 +1271,23 @@ key	source	file	said
 0605_sita_s	human	media/audio/0605_sita_s.mp3	Šita kėdė laisva.
 0670_mokinys	human	media/audio/0670_mokinys.mp3	mokinỹs · mókinio
 0617_raudonas	human	media/audio/0617_raudonas.mp3	raudónas · raudona
+0162_jai_s	superseded	media/audio/_history/0162_jai_s.1793223807235.mp3	Padovanojau jai gėlių.
+0214_cia_mano_draugas	superseded	media/audio/_history/0214_cia_mano_draugas.1793223807235.mp3	Čià (yrà) màno draũgas. / Susipažìnkite — taĩ…
+0237_jusu_s	superseded	media/audio/_history/0237_jusu_s.1793223807235.mp3	Koks jūsų telefono numeris?
+0239_oras	superseded	media/audio/_history/0239_oras.1793223807235.mp3	oraĩ
+0239_oras_s	superseded	media/audio/_history/0239_oras_s.1793223807235.mp3	Kokie šiandien orai?
+0261_valanda_s	superseded	media/audio/_history/0261_valanda_s.1793223807235.mp3	Laukiu autobuso jau vieną valandą.
+0285_atsakymas_s	superseded	media/audio/_history/0285_atsakymas_s.1793223807235.mp3	Teisingas atsakymas!
+0294_bet_kas_s	superseded	media/audio/_history/0294_bet_kas_s.1793223807235.mp3	Tai gali padaryti bet kas.
+0327_per_s	superseded	media/audio/_history/0327_per_s.1793223807235.mp3	Einame per tiltą.
+0340_padaryti_s	superseded	media/audio/_history/0340_padaryti_s.1793223807235.mp3	Ką padaryti?
+0392_vel_s	superseded	media/audio/_history/0392_vel_s.1793223807235.mp3	Jis vėl pavėlavo.
+0394_menuo_s	superseded	media/audio/_history/0394_menuo_s.1793223807235.mp3	Dirbu čia vieną mėnesį.
+0469_po_s	superseded	media/audio/_history/0469_po_s.1793223807235.mp3	Katė miega po stalu.
+0525_arba_s	superseded	media/audio/_history/0525_arba_s.1793223807235.mp3	Arbatos arba kavos?
+0524_pries_s	superseded	media/audio/_history/0524_pries_s.1793223807235.mp3	Nusiplauk rankas prieš valgį.
+0569_be_s	superseded	media/audio/_history/0569_be_s.1793223807235.mp3	Arbata be cukraus, prašau.
+0581_toli_s	superseded	media/audio/_history/0581_toli_s.1793223807235.mp3	Stotis toli?
+0583_informacija_s	superseded	media/audio/_history/0583_informacija_s.1793223807235.mp3	Kur gauti informacijos?
+0778_truputi_kalbu_lietuviskai	superseded	media/audio/_history/0778_truputi_kalbu_lietuviskai.1793223807235.mp3	Galiu truputį kalbėti
+1169_sveik	superseded	media/audio/_history/1169_sveik.1793223807235.mp3	Greitai pasveik!
