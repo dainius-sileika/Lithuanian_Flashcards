@@ -53,6 +53,18 @@ not repeated here.
 - **2026-10-28 · Adding stress marks would have voided recorded takes.** The page compared the stored "said" text
   to the sheet text exactly. Rule: "is this take still current?" is decided on the words, blind to stress marks,
   case and punctuation, in Python and in the page alike. Enforced: `said_key()` / `saidKey()` (commit 363b5fd).
+- **2026-10-28 · Re-processing from the raw master brings back what the old processing hid.** The July processing
+  had cut a fixed 150 ms from the head of every take and appended 400 ms of silence (each of the 63 quiet shipped
+  takes = its master from 150 ms on, r ≥ 0.998). `process_take.py` cuts only with 250 ms margins, so 22 of the 63
+  re-levelled takes start earlier in the master than the old file, 7 now keep a start click the old file had cut
+  (flagged), and 19 end where the raw master ends with the words still sounding (the July recorder stopped early; the
+  appended silence hid it). Rule: before replacing a shipped take, prove it is the same recording (identity check)
+  and tell the owner what the new file contains that the old one did not. Enforced: `tools/relevel_takes.py`
+  (identity ≥ 0.99, words, logs), the review page's re-level section.
+- **2026-10-28 · Two Space presses look alike.** Looking for the recorder's two-takes-in-one bug, the first 400 ms of
+  one take (a Space press and silence) matched the start of another at 0.92. Rule: a copy is proven by the noise
+  floor too (≥ 0.98 over the pre-roll), not by the click; whole-take containment uses 0.9. Enforced:
+  `tools/check_mixed_takes.py`.
 - **2026-10-19 · Takes and the deck drifted apart.** Recorded words changed on the card after recording (lūpa →
   lūpos, wrong genitives). Rule: every take stores what was said; a changed card turns its take into a re-take
   and the old take is set aside, never deleted. Enforced: `audio_source.tsv` `said` column, recorder.

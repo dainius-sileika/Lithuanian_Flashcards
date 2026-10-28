@@ -31,6 +31,9 @@ Idempotent per take: skipped when audio_source.tsv already has the key as `human
 and the dest file exists.
     --process-only DIR   process every take of the ZIP into DIR/<take>.mp3 and write DIR/process_log.csv, touching
                          nothing else (for a review page before ingesting: tools/audio_review_page.py)
+    --hold FILE          takes NOT to ingest although they pass (they stay on the sheet, e.g. for a re-recording): a TSV
+                         with a `mixed_take` column (tools/check_mixed_takes.py) or a `take` column; logged as held and
+                         written to manifest_kept.tsv with the reason; their raw clips are archived like every other
 """
 import csv
 import datetime
@@ -116,7 +119,19 @@ def write_process_log(path, rows):
             w.writerow(dict(r, run=run))
 
 
-def ingest(zpath, dry, process_dir=None):
+def load_hold(path):
+    """take -> reason, from a check_mixed_takes.py table (mixed_take, contains) or any TSV with a `take` column."""
+    out = {}
+    if path:
+        for r in csv.DictReader(open(path, encoding="utf-8"), delimiter="\t"):
+            k = (r.get("mixed_take") or r.get("take") or "").strip()
+            if k:
+                why = f"two recordings in one take (contains {r['contains']}): re-record" if r.get("contains") else (r.get("reason") or "held")
+                out[k] = (out[k] + "; " + why) if k in out else why
+    return out
+
+
+def ingest(zpath, dry, process_dir=None, hold=None):
     stem = os.path.splitext(os.path.basename(zpath))[0]
     keep_dir = os.path.join(KEEP, stem)
     z = zipfile.ZipFile(zpath)
@@ -143,6 +158,10 @@ def ingest(zpath, dry, process_dir=None):
         if said and said_key(said) != said_key(row["say"]):
             kept.append(dict(m, canonical_key=take, reason=f"said '{said}' but the sheet now says '{row['say']}'"))
             log.append([old, take, name, row["dest"], "kept: script changed since recording"])
+            continue
+        if hold and take in hold and not process_dir:
+            kept.append(dict(m, canonical_key=take, reason="held: " + hold[take]))
+            log.append([old, take, name, row["dest"], "held (not ingested, stays on the sheet): " + hold[take]])
             continue
         if dry:
             log.append([old, take, name, row["dest"], "ingest" + (" (renamed from old key)" if take != old else "")])
@@ -198,6 +217,9 @@ def ingest(zpath, dry, process_dir=None):
     if flagged:
         print(f"  ingested with a flag (listen): {' '.join(flagged)}")
     renamed = sum(1 for l in log if "renamed" in l[4])
+    held = [l[1] for l in log if l[4].startswith("held")]
+    if held:
+        print(f"  held (not ingested, still on the sheet): {' '.join(held)}")
     print(f"{os.path.basename(zpath)}: {len(man)} manifest rows; ingested {done if not dry else sum(1 for l in log if l[4].startswith('ingest'))}"
           f" ({renamed} via the key map); kept aside {len(kept)}; skipped {sum(1 for l in log if l[4].startswith('skip'))}"
           + (" [dry run]" if dry else ""))
@@ -212,6 +234,11 @@ def main(argv):
         process_dir = argv[i + 1]
         argv = argv[:i] + argv[i + 2:]
         os.makedirs(process_dir, exist_ok=True)
+    hold = None
+    if "--hold" in argv:
+        i = argv.index("--hold")
+        hold = load_hold(argv[i + 1])
+        argv = argv[:i] + argv[i + 2:]
     zips = [a for a in argv[1:] if not a.startswith("--")]
     if "--inbox" in argv:
         for d in INBOXES:
@@ -224,7 +251,7 @@ def main(argv):
     if not dry and not shutil.which("ffmpeg"):
         raise SystemExit("ffmpeg not found")
     for zp in zips:
-        ingest(zp, dry, process_dir)
+        ingest(zp, dry, process_dir, hold)
     return 0
 
 

@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,021 tracked files in 721 rows.
+2,089 tracked files in 723 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -47,7 +47,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 |---|---|---|---|
 | `data/a2_staging.json` | live | Staging lines for the hard A2 picture rows (same shape as card_notes.json) | read by media/generation/out_deck_a2/a2_adapter.py |
 | `data/a2_wordlist.csv` | live | The A2 list (1,700+ rows): id, lithuanian, english, route IMG/CLOZE/PAIR/PHRASE, card_text, example_lt/en, forms, level, phase | read by build_apkg.py build_study_order_v3.py qa_images.py a2_adapter.py out_phrases_v3/gen.py tools/rename_keys.py |
-| `data/audio_source.tsv` | live | For every audio file: key, who made it (human / azure-neural / superseded), file, what was said | read by build_recorder.py build_apkg.py; appended by tools/ingest_takes.py |
+| `data/audio_source.tsv` | live | For every audio file: key, who made it (human / human:<re-level run folder in _archive/takes/> / azure-neural / superseded), file, what was said; append-only, the last row of a key wins | read by build_recorder.py build_apkg.py; appended by tools/ingest_takes.py |
 | `data/card_notes.json` | live | Per-card staging lines the A1 pictures were drawn from (notes, _settings_embedded) | read by deck_builder.py |
 | `data/cards_anki.csv` | live | The 521 A1 base cards: key, Lithuanian, English, gender, forms, pron, level, category | read by build_apkg.py build_recorder.py build_study_order_v3.py qa_images.py tools/rename_keys.py |
 | `data/context_notes.csv` | live | Usage lines shown on the backs (key, context_line, variant_tu_jus, confidence) | read by build_apkg.py |
@@ -124,7 +124,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `media/generation/out_phrases_v3/round2/qa_round2.csv` | history | QA sheets of the batch (code/qa_images.py results of their time) | written by qa_images.py |
 | `media/audio/*.mp3` (701 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
 | `media/audio/*_s.mp3` (5 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/_history/*` (22 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
+| `media/audio/_history/*` (85 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
 | `media/images/_history/images/*` (520 files) | history | The 1.x WebP masters (<key>.webp, 520 files): the pictures the deck shipped before the F6.2 re-render; tracked | read by nothing live (history) |
 
 ### docs/
@@ -589,10 +589,11 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | path | status | purpose | read / written by |
 |---|---|---|---|
 | `tools/apkg_keys_list.py` | live | Per-card list of a package (key -> fields and media) for the release record | run by people |
-| `tools/audio_review_page.py` | live | Builds the owner's listening page for a processed batch: original vs processed players and before/after waveforms, flagged takes first | run by people after ingest_takes.py --process-only; output is published as an artifact |
+| `tools/audio_review_page.py` | live | Builds the owner's listening page for a processed batch: original vs processed players and before/after waveforms, flagged and mixed takes first; --relevel adds a section for re-levelled takes (old shipped vs re-processed) | run by people after ingest_takes.py --process-only; output is published as an artifact |
 | `tools/build_showcase.py` | live | Builds the showcase PDF from a released .apkg: renders chosen cards with Anki, screenshots, lays out A4 pages | run by hand; reads a package; writes docs/showcase/ |
 | `tools/build_situations.py` | live | Regenerates code/situations.py from data/restage_bubbles.csv | run by people after editing the CSV |
 | `tools/check_layout.py` | live | Checks the working directory against spec §13 / INDEX.md (root, folders, media, old homes, index) | pre-commit hook (--strict); build_apkg.py at the start of every build |
+| `tools/check_mixed_takes.py` | live | Finds recorder takes that contain another take's audio (the two-recordings-in-one bug before commit 4832e9b): whole-clip and pre-roll containment by normalised cross-correlation | run by people on each recorder ZIP before ingest; its table feeds ingest_takes.py --hold and audio_review_page.py --mixed |
 | `tools/golden_set.py` | live | Builds / checks the golden reference set (style/golden/) from the ledgers | run by people (--status) |
 | `tools/hooks/pre-commit` | live | The pre-commit hook: style lock, layout (strict), inventory (check), lock staged | git |
 | `tools/index_descriptions.csv` | live | The hand-kept purpose / status / readers of every tracked file (one row per file or family) | read by tools/make_index.py |
@@ -602,6 +603,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `tools/make_index.py` | live | Writes FILES.md from git ls-files + this folder's index_descriptions.csv; --check fails when a tracked file has no description or FILES.md is stale | pre-commit hook (--check); people (python3 tools/make_index.py [--untracked]) |
 | `tools/move_files.py` | live | Moves files by a rules table with a sha1 per file (plan / apply --tracked\|--untracked / verify); used by the 2026-10-24 deep tidy | run by people |
 | `tools/process_take.py` | live | One raw take -> the deck mp3: key clicks removed at both ends with >= 250 ms margins to speech (never a silence gate), self-check (identity + 99.5 % speech energy), linear EBU R128 gain to the July level, 24 kHz 64 kbit/s | imported by tools/ingest_takes.py; runnable on one file |
+| `tools/relevel_takes.py` | live | Re-processes shipped human takes that are far too quiet (below -30 LUFS) from their raw masters with process_take.py: master found under any older name, words and identity checked, old take to media/audio/_history/, audio_source.tsv row appended as human:<run folder> | run by people; logs in _archive/takes/<run>/ (2026-10-28: relevel_july_2026-10-28) |
 | `tools/rename_keys.py` | live | The key namespace tool: --verify checks every live file carries NNNN_slug keys; --apply renames (append-only maps) | run by people |
 | `tools/smoke_test.sh` | live | Runs every tool once (lock, layout, index, keys, golden set, builds, recorder, review desk) and stops at the first failure | run by people after any change of layout or tooling |
 | `tools/spec_release.py` | live | Releases a spec version: bump, changelog line, frozen snapshot, lock update, tag | run by people |
@@ -803,7 +805,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `_archive/review_packs/review_A1.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_A1_duplicates.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_genders_2026-10-10.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
-| `_archive/takes/` (3 files) | history | One folder per ingested recorder ZIP: its manifest, manifest_kept.tsv (clips not shipped), ingest_log.tsv and process_log.csv (cuts, margins, loudness, flags per take); the raw clips (raw/) and the ZIP stay on the Mac (gitignored) | written by tools/ingest_takes.py |
+| `_archive/takes/` (6 files) | history | One folder per ingested recorder ZIP: its manifest, manifest_kept.tsv (clips not shipped), ingest_log.tsv, process_log.csv (cuts, margins, loudness, flags per take) and mixed_check.tsv; the raw clips (raw/) and the ZIP stay on the Mac (gitignored). relevel_<name>_<date>/: a re-level run (loudness_before.tsv, relevel_log.tsv, process_log.csv) | written by tools/ingest_takes.py tools/check_mixed_takes.py tools/relevel_takes.py |
 
 ### a2_build/
 

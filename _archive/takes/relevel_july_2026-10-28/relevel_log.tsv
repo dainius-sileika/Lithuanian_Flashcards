@@ -1,0 +1,65 @@
+# 2026-10-28T19:10:12	apply	below -30.0 LUFS	_archive/deprecated/recordings_raw/session_0726 _archive/deprecated/recordings_raw/session_0728
+key	master	action	detail
+0079_trys	_archive/deprecated/recordings_raw/session_0726/A2-0044.webm	re-levelled	-47.6 -> -18.19 LUFS
+0956_trylika	_archive/deprecated/recordings_raw/session_0726/A2-0054.webm	re-levelled	-46.3 -> -23.36 LUFS
+0300_septyni	_archive/deprecated/recordings_raw/session_0726/A2-0048.webm	re-levelled	-45.7 -> -21.45 LUFS
+0091_penki	_archive/deprecated/recordings_raw/session_0726/A2-0046.webm	re-levelled	-45.3 -> -18.01 LUFS
+0186_simtas	_archive/deprecated/recordings_raw/session_0726/A2-0069.webm	re-levelled	-45.0 -> -20.21 LUFS [flag: head: speech starts 150 ms in (< 250 ms): no head cut; click at 5 ms too close to the words to attenuate: left in, listen; head: sound at 150 ms kept as speech (key click too close to the words?): listen]
+0345_astuoni	_archive/deprecated/recordings_raw/session_0726/A2-0049.webm	re-levelled	-44.4 -> -18.57 LUFS
+1016_astuoniolika	_archive/deprecated/recordings_raw/session_0726/A2-0059.webm	re-levelled	-44.4 -> -20.0 LUFS
+0189_tukstantis	_archive/deprecated/recordings_raw/session_0726/A2-0070.webm	re-levelled	-44.3 -> -16.97 LUFS
+0131_dvidesimt	_archive/deprecated/recordings_raw/session_0726/A2-0061.webm	re-levelled	-44.2 -> -16.99 LUFS
+1008_septyniolika	_archive/deprecated/recordings_raw/session_0726/A2-0058.webm	re-levelled	-44.2 -> -17.0 LUFS
+1113_devyniasdesimt	_archive/deprecated/recordings_raw/session_0726/A2-0068.webm	re-levelled	-44.2 -> -19.61 LUFS
+0224_sesi	_archive/deprecated/recordings_raw/session_0726/A2-0047.webm	re-levelled	-44.1 -> -17.96 LUFS
+0590_minute	_archive/deprecated/recordings_raw/session_0726/A2-0003.webm	re-levelled	-44.1 -> -18.22 LUFS
+0229_metai	_archive/deprecated/recordings_raw/session_0726/A2-0008.webm	re-levelled	-44.0 -> -19.83 LUFS [flag: head: speech starts 120 ms in (< 250 ms): no head cut; click at 15 ms too close to the words to attenuate: left in, listen; head: sound at 120 ms kept as speech (key click too close to the words?): listen]
+0476_nulis	_archive/deprecated/recordings_raw/session_0726/A2-0041.webm	re-levelled	-44.0 -> -17.54 LUFS
+1073_devyniolika	_archive/deprecated/recordings_raw/session_0726/A2-0060.webm	re-levelled	-43.8 -> -17.01 LUFS
+0681_tylus	_archive/deprecated/recordings_raw/session_0726/471_tylus.webm	re-levelled	-43.7 -> -18.9 LUFS
+0357_devyni	_archive/deprecated/recordings_raw/session_0726/A2-0050.webm	re-levelled	-43.6 -> -18.9 LUFS
+1017_platus	_archive/deprecated/recordings_raw/session_0726/450_platus.webm	re-levelled	-43.6 -> -19.94 LUFS
+1061_septyniasdesimt	_archive/deprecated/recordings_raw/session_0726/A2-0066.webm	re-levelled	-43.4 -> -18.2 LUFS
+0316_vakar	_archive/deprecated/recordings_raw/session_0726/A2-0015.webm	re-levelled	-42.8 -> -18.86 LUFS
+0889_dvylika	_archive/deprecated/recordings_raw/session_0726/A2-0053.webm	re-levelled	-42.8 -> -23.05 LUFS
+0983_keturiolika	_archive/deprecated/recordings_raw/session_0726/A2-0055.webm	re-levelled	-42.7 -> -20.2 LUFS
+0142_trisdesimt	_archive/deprecated/recordings_raw/session_0726/A2-0062.webm	re-levelled	-42.6 -> -17.49 LUFS
+0999_sesiolika	_archive/deprecated/recordings_raw/session_0726/A2-0057.webm	re-levelled	-42.6 -> -20.41 LUFS [flag: head: speech starts 155 ms in (< 250 ms): no head cut; click at 15 ms too close to the words to attenuate: left in, listen; head: sound at 155 ms kept as speech (key click too close to the words?): listen]
+0068_karstas	_archive/deprecated/recordings_raw/session_0726/456_karstas.webm	re-levelled	-42.4 -> -18.84 LUFS
+0875_vienuolika	_archive/deprecated/recordings_raw/session_0726/A2-0052.webm	re-levelled	-42.4 -> -20.24 LUFS [flag: head: speech starts 125 ms in (< 250 ms): no head cut; click at 5 ms too close to the words to attenuate: left in, listen; head: sound at 125 ms kept as speech (key click too close to the words?): listen]
+0052_vienas	_archive/deprecated/recordings_raw/session_0726/A2-0042.webm	re-levelled	-42.3 -> -17.55 LUFS
+0318_laikas	_archive/deprecated/recordings_raw/session_0726/A2-0001.webm	re-levelled	-42.3 -> -20.18 LUFS
+0087_keturi	_archive/deprecated/recordings_raw/session_0726/A2-0045.webm	re-levelled	-42.2 -> -20.26 LUFS
+0925_penkiasdesimt	_archive/deprecated/recordings_raw/session_0726/A2-0064.webm	re-levelled	-42.2 -> -18.88 LUFS
+0144_antras	_archive/deprecated/recordings_raw/session_0726/A2-0073.webm	re-levelled	-42.1 -> -19.29 LUFS
+0455_truputi	_archive/deprecated/recordings_raw/session_0728/A2-0901.webm	re-levelled	-42.1 -> -19.42 LUFS
+0915_keturiasdesimt	_archive/deprecated/recordings_raw/session_0726/A2-0063.webm	re-levelled	-42.0 -> -18.94 LUFS
+1086_astuoniasdesimt	_archive/deprecated/recordings_raw/session_0726/A2-0067.webm	re-levelled	-42.0 -> -17.5 LUFS
+0474_lengvas	_archive/deprecated/recordings_raw/session_0726/505_lengvas.webm	re-levelled	-41.8 -> -20.15 LUFS [flag: head: speech starts 160 ms in (< 250 ms): no head cut; head: sound at 160 ms kept as speech (key click too close to the words?): listen]
+1047_sesiasdesimt	_archive/deprecated/recordings_raw/session_0726/A2-0065.webm	re-levelled	-41.1 -> -17.44 LUFS [flag: head: speech starts 225 ms in (< 250 ms): no head cut; head: sound at 225 ms kept as speech (key click too close to the words?): listen]
+0138_kieno	_archive/deprecated/recordings_raw/session_0728/A2-0117.webm	re-levelled	-41.0 -> -17.58 LUFS
+0164_penktas	_archive/deprecated/recordings_raw/session_0726/A2-0076.webm	re-levelled	-40.9 -> -19.0 LUFS [flag: head: speech starts 135 ms in (< 250 ms): no head cut; click at 15 ms too close to the words to attenuate: left in, listen; head: sound at 135 ms kept as speech (key click too close to the words?): listen]
+0206_siandien	_archive/deprecated/recordings_raw/session_0726/A2-0014.webm	re-levelled	-40.9 -> -17.75 LUFS
+0377_desimt	_archive/deprecated/recordings_raw/session_0726/A2-0051.webm	re-levelled	-40.8 -> -18.54 LUFS [flag: transient 90 ms after the words kept (word-final release or key click?): listen]
+0170_dabar	_archive/deprecated/recordings_raw/session_0726/A2-0017.webm	re-levelled	-40.6 -> -18.45 LUFS
+0217_kuris	_archive/deprecated/recordings_raw/session_0728/A2-0116.webm	re-levelled	-40.6 -> -18.37 LUFS
+0119_pirmas	_archive/deprecated/recordings_raw/session_0726/A2-0072.webm	re-levelled	-40.4 -> -17.0 LUFS [flag: transient 45 ms after the words kept (word-final release or key click?): listen]
+0274_kodel	_archive/deprecated/recordings_raw/session_0728/A2-0113.webm	re-levelled	-40.4 -> -18.41 LUFS [flag: transient 30 ms after the words kept (word-final release or key click?): listen]
+0428_kada	_archive/deprecated/recordings_raw/session_0728/A2-0111.webm	re-levelled	-40.2 -> -18.85 LUFS
+0755_sekmes	_archive/deprecated/recordings_raw/session_0728/A2-0887.webm	re-levelled	-40.1 -> -20.96 LUFS
+0374_zinoma	_archive/deprecated/recordings_raw/session_0728/A2-0883.webm	re-levelled	-40.0 -> -19.94 LUFS
+0238_koks	_archive/deprecated/recordings_raw/session_0728/A2-0115.webm	re-levelled	-39.8 -> -20.7 LUFS
+0152_trecias	_archive/deprecated/recordings_raw/session_0726/A2-0074.webm	re-levelled	-39.6 -> -18.55 LUFS
+0187_i_sveikata	_archive/deprecated/recordings_raw/session_0728/A2-0888.webm	re-levelled	-39.6 -> -17.02 LUFS
+0231_kas_tai	_archive/deprecated/recordings_raw/session_0728/A2-0896.webm	re-levelled	-39.6 -> -17.67 LUFS
+0215_kas	_archive/deprecated/recordings_raw/session_0728/A2-0108.webm	re-levelled	-39.4 -> -20.22 LUFS [flag: transient 175 ms after the words kept (word-final release or key click?): listen]
+0347_kiek	_archive/deprecated/recordings_raw/session_0728/A2-0114.webm	re-levelled	-39.1 -> -16.94 LUFS
+0295_rytoj	_archive/deprecated/recordings_raw/session_0726/A2-0016.webm	re-levelled	-38.9 -> -18.98 LUFS [flag: head: speech starts 140 ms in (< 250 ms): no head cut; click at 15 ms too close to the words to attenuate: left in, listen; head: sound at 140 ms kept as speech (key click too close to the words?): listen]
+0463_prasom	_archive/deprecated/recordings_raw/session_0728/A2-0885.webm	re-levelled	-38.9 -> -17.51 LUFS [flag: transient 45 ms after the words kept (word-final release or key click?): listen]
+0514_amzius	_archive/deprecated/recordings_raw/session_0726/A2-0080.webm	re-levelled	-38.6 -> -19.19 LUFS
+1058_kaip_lietuviskai	_archive/deprecated/recordings_raw/session_0728/A2-0905.webm	re-levelled	-38.2 -> -17.3 LUFS
+0150_kaip	_archive/deprecated/recordings_raw/session_0728/A2-0112.webm	re-levelled	-37.7 -> -19.85 LUFS [flag: transient 235 ms after the words kept (word-final release or key click?): listen]
+0356_nieko_tokio	_archive/deprecated/recordings_raw/session_0728/A2-0882.webm	re-levelled	-37.7 -> -18.51 LUFS
+0810_sveikinu	_archive/deprecated/recordings_raw/session_0728/A2-0891.webm	re-levelled	-37.0 -> -16.99 LUFS [flag: transient 145 ms after the words kept (word-final release or key click?): listen]
+0204_kur	_archive/deprecated/recordings_raw/session_0728/A2-0110.webm	re-levelled	-36.8 -> -17.78 LUFS
+0180_skanaus	_archive/deprecated/recordings_raw/session_0728/A2-0889.webm	re-levelled	-35.9 -> -17.59 LUFS
