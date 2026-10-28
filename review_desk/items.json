@@ -1,18 +1,14 @@
 [
  {
-  "id": "naturalness",
+  "id": "nat-followups",
   "group": "Lithuanian",
-  "title": "Naturalness review: 79 sentences to decide (1,176 stay as they are)",
-  "ask": "Three reviewers read every sentence and phrase for what a native speaker would naturally say; a fourth looked at requests for politeness (your #616 becomes Norėčiau pakeisti bilietą). On the page: 3 of your own proofreading corrections that a reviewer challenges (unanswered = yours stays), 17 for your call (unanswered = current stays), 59 proposed changes (unanswered = applied; 'Keep current' refuses one). 24 of the 79 are already recorded, so a change means a re-take. When you're done, say so here; Opus then applies the answers, checks that no A1 card needs an A2 word, puts the re-takes on your sheet and rebuilds.",
+  "title": "Naturalness review applied: 3 small things left for you",
+  "ask": "All 75 changes are in the data; 20 of your recorded takes are back on your sheet as re-takes (the old takes are kept). (1) Litas or euro? Card 0856 now says 'Duona kainuoja vieną eurą', but on 11 Oct you ruled that prices are in litai (the deck's 1981 world), and its picture shows '1 Lt'. Keep the litas (recommended: it fits the world and the picture), or switch to the euro and re-draw the picture? (2) Seven forms need your stress marks: rounds/2026-10-28_naturalness/OWNER_STRESS_v1.csv (Sveik!, Minutėlę!, spūstis with its genitive and plural, pasinaudoti, vieta prie praėjimo). (3) The new phrase card 'Ką daryti?' needs a picture before it can ship; I'll have one drawn with the next picture round unless you say otherwise.",
   "options": [
-   "Done on that page"
+   "Keep the litas",
+   "Switch to the euro (re-draw)"
   ],
-  "links": [
-   {
-    "label": "Open the Naturalness Review",
-    "href": "https://claude.ai/artifact/XGgPJorkFvaTtcsi9wsGAw"
-   }
-  ]
+  "links": []
  },
  {
   "id": "t-audio-ready",

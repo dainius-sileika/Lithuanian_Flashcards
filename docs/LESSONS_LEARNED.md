@@ -92,6 +92,14 @@ not repeated here.
 - **2026-10-28 · Cards reused another card's sentence and never showed their own meaning** (*per* "too" with
   "across the bridge", *po* "after" with "under the table"; 2128/2188 identical). Rule: no two cards share a
   sentence; a build check should flag identical sentences with different glosses. Enforced: by hand (candidate check).
+- **2026-10-28 · A proposed cloze sentence had no gap** ("Veikiantis liftas – kairėje." for 1501); the build would have
+  dropped the card silently. Rule: every cloze/pair sentence carries exactly one `{…}` around a form of the
+  headword; the apply step checks it. Enforced: by hand in apply_v1 (candidate build check).
+- **2026-10-28 · A form reported "unsourced" was in the dump** (*kalbù*, as a form-of entry). Rule: before sending a
+  form to the owner's stress sheet, search the dump's form-of entries too.
+- **2026-10-28 · A reviewer "corrected" the world, not the language.** *litas → euras* (0856) ignored that the deck
+  is set in a 1981 free Lithuania and the owner ruled on 2026-10-11 that prices are in litai. Rule: reviewers read
+  the decisions file and the spec's world rules before proposing content changes.
 - **2026-10-20 · Proofreading engines rewrite the taught word away** (*Kiek jums metų?* has no *amžius*).
   Rule: a correction that removes the cloze target is a decision (keep the word in a new sentence, retarget, or
   merge), not a paste. Enforced: `rounds/2026-10-20_proofread/` rules.
