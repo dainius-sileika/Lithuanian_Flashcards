@@ -100,6 +100,17 @@ not repeated here.
 - **2026-10-28 · A reviewer "corrected" the world, not the language.** *litas → euras* (0856) ignored that the deck
   is set in a 1981 free Lithuania and the owner ruled on 2026-10-11 that prices are in litai. Rule: reviewers read
   the decisions file and the spec's world rules before proposing content changes.
+- **2026-11-03 · Lithuanian adverb position changes meaning (owner).** 0650_greitai (gloss "soon") taught
+  *Autobusas atvažiuos {greitai}.*; the owner: "i'm pretty sure that means it will arrive 'fastly' as it were, whereas
+  I hear lithuanians saying 'greitai atvažios' to mean soon". *Greitai atvažiuos* = will come soon; *atvažiuos
+  greitai* (adverb in the final, focus position) = will drive fast. The sentence, its words checked and the naturalness
+  review all passed the wrong reading, because every word was right and only the order carried the meaning. Now
+  *Autobusas {greitai} atvažiuos.* (the English is unchanged). The take recorded with the old order (audio batch 3)
+  was not shipped: the ingest's said-vs-say check is word-order sensitive, and a never-shipped mismatched take now
+  gets a `superseded` row so the card returns as a re-take. Rule: when an adverb has more than one sense (*greitai*
+  soon / fast), check that the sentence's word order selects the sense the card's gloss teaches; the sentence-final
+  slot puts the adverb in focus. *Padavėja mus greitai {aptarnavo}.* (2064, "quickly", past
+  tense) is unaffected. Enforced: by hand (candidate for the naturalness rubric); `tools/ingest_takes.py` (re-take).
 - **2026-10-20 · Proofreading engines rewrite the taught word away** (*Kiek jums metų?* has no *amžius*).
   Rule: a correction that removes the cloze target is a decision (keep the word in a new sentence, retarget, or
   merge), not a paste. Enforced: `rounds/2026-10-20_proofread/` rules.

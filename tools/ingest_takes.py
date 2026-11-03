@@ -22,6 +22,10 @@ For each ZIP exported by recorder_A2.html ("Export all" / "Export new"):
     tidy of 2026-10-24, before that <dir>/_superseded/);
   * appends `key  human  <dest>  <said>` to audio_source.tsv (said = the manifest's `said`), so the next
     `build_recorder.py A2` drops the take from the sheet;
+  * a take whose recorded words (`said`) no longer match the sheet's `say` (accent-, case- and punctuation-blind,
+    word order counts) is not shipped either: its manifest row goes to manifest_kept.tsv, and when the key has no
+    audio at all yet, a `superseded` row (file = its raw clip in the archive, said = the old words) is appended to
+    audio_source.tsv, so the regenerated sheet shows the card as a re-take with the old words (since 2026-11-03);
   * clips under off_list/ and superseded/ (and takes no longer on the sheet) are not shipped; their manifest rows
     go to _archive/takes/<zip-stem>/manifest_kept.tsv (the clips themselves are in raw/ like every other);
   * writes _archive/takes/<zip-stem>/process_log.csv (one row per processed take: cuts and margins in ms,
@@ -157,7 +161,16 @@ def ingest(zpath, dry, process_dir=None, hold=None):
             continue
         if said and said_key(said) != said_key(row["say"]):
             kept.append(dict(m, canonical_key=take, reason=f"said '{said}' but the sheet now says '{row['say']}'"))
-            log.append([old, take, name, row["dest"], "kept: script changed since recording"])
+            action = "kept: script changed since recording"
+            if not a and not dry and not process_dir:
+                # never shipped: record the mismatched take as superseded (its raw clip is the file), so the next
+                # build_recorder.py A2 lists the card as a re-take showing the old words (2026-11-03, 0650_greitai_s)
+                raw_rel = os.path.relpath(os.path.join(keep_dir, "raw", name), ROOT)
+                with open(AUDIO_SOURCE, "a", encoding="utf-8", newline="") as fh:
+                    fh.write("\t".join([take, "superseded", raw_rel, said]) + "\n")
+                src[take] = {"key": take, "source": "superseded", "file": raw_rel, "said": said}
+                action += "; superseded row written (re-take)"
+            log.append([old, take, name, row["dest"], action])
             continue
         if hold and take in hold and not process_dir:
             kept.append(dict(m, canonical_key=take, reason="held: " + hold[take]))

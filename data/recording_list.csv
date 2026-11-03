@@ -60,7 +60,7 @@ take,file_name,dest,level,kind,status,study_order,lithuanian,english,pron,say,wa
 59,0643_kol.mp3,media/audio/0643_kol.mp3,A1,word,new,651,kol,while; until,kõl,kõl,
 60,0643_kol_s.mp3,media/audio/0643_kol_s.mp3,A1,sentence,new,651,"Palauk, kol grįšiu.",Wait until I come back.,,"Palauk, kol grįšiu.",
 61,0650_greitai.mp3,media/audio/0650_greitai.mp3,A1,word,new,652,greitai,soon,greĩtai,greĩtai,
-62,0650_greitai_s.mp3,media/audio/0650_greitai_s.mp3,A1,sentence,new,652,Autobusas atvažiuos greitai.,The bus will come soon.,,Autobusas atvažiuos greitai.,
+62,0650_greitai_s.mp3,media/audio/0650_greitai_s.mp3,A1,sentence,new,652,Autobusas greitai atvažiuos.,The bus will come soon.,,Autobusas greitai atvažiuos.,
 63,0640_klaida.mp3,media/audio/0640_klaida.mp3,A1,word,new,653,klaida,mistake,klaidà,klaidà · klaidõs,
 64,0640_klaida_s.mp3,media/audio/0640_klaida_s.mp3,A1,sentence,new,653,Padariau klaidą.,I made a mistake.,,Padariau klaidą.,
 65,0649_juokingas.mp3,media/audio/0649_juokingas.mp3,A1,word,new,654,juokingas,funny,juokìngas,juokìngas · juokinga,

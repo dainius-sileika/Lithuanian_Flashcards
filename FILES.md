@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,686 tracked files in 835 rows.
+2,687 tracked files in 836 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -678,6 +678,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-28_stress_forms/match_kaikki_v2.py` | history | The matcher that was applied: headword groups, tables, form-of entries, paradigm neighbours, multi-word lemmas; chooses between sourced variants by the card's own pron (its docstring says how); the dump itself (83 MB) is not committed | run by people with the dump's path |
 | `rounds/2026-10-28_stress_forms/proposals_v1.csv` | history | What match_kaikki_v1.py proposed (superseded by proposals_v2.csv) | written by match_kaikki_v1.py |
 | `rounds/2026-10-28_stress_forms/proposals_v2.csv` | history | Every unstressed form of the backs (1,304 rows): current, proposed, how (unique / chosen-by-headword / project-pron / owner), en.wiktionary page, where in the page it was read, the source's options, the reason | written by match_kaikki_v2.py; read by apply_v2.py |
+| `rounds/2026-11-03_audio_b3/fix_0650_greitai.py` | history | The owner's word-order fix of 2026-11-03 before audio batch 3: 0650_greitai's sentence to Autobusas {greitai} atvažiuos. (greitai before the verb = soon), its check note, and the take's say in data/recording_list.csv; --verify compares with a regeneration | history |
 
 ### review_desk/
 
