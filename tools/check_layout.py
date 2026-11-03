@@ -56,6 +56,7 @@ TOP_DIRS = {
     "style_lab": "the style experiments (owner: kept as a record)",
     "_archive": "kept history: retired code, documents, data, packages",
     "_TO_DELETE": "junk sorted by reason, for the owner to delete",
+    "Incoming": "the owner's own drop folder for recorder ZIPs (2026-11-03); an agent moves them to media/audio/_inbox/",
     "a2_build": "forwarding stub for the old audio inbox (a2_build/audio/inbox/README.md) — remove after the current recording session",
 }
 ROOT_DIRS_IGNORED = {".git", "__pycache__", "_apkg_media", "_qa", "_cloud_media", "_cloud_out", "_transfer"}  # caches and cloud scratch

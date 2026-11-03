@@ -24,10 +24,22 @@ ships. Live status of every owner question: the Review Desk (https://claude.ai/a
 - **Stress:** 949 forms sourced (spec 3.5.0); still unmarked until the owner supplies them: A1 rows of
   `rounds/2026-10-28_stress_forms/OWNER_SHEET_v1.csv` (90 A1 / 263 A2) and
   `rounds/2026-10-28_naturalness/OWNER_STRESS_v1.csv` (7).
-- **Audio:** batches 1–3 ingested (see the batch 3 section below for what is left).
+- **Audio:** batches 1–3 ingested. Batch 3 (2026-11-03): 499 of 501 takes shipped (471 A1, 28 A2), loudness
+  median −19.2 LUFS, true peak ≤ −1.51 dBTP, 0 mixed takes; page https://claude.ai/artifact/L9Q2KDUNwW4bRkihSp2Eib
+  (`audio_b3`; 133 flagged first, mostly a stop click kept inside the 250 ms guard). Record:
+  `rounds/2026-11-03_audio_b3/`.
+- **A1 takes left: 3.**
+  - `0263_tik` *tìk*: failed the self-check twice ("no speech found"). Say it a little longer, wait half a second
+    before Space.
+  - `0650_greitai_s` *Autobusas greitai atvažiuos.*: the new word order; the take in batch 3 had the old order and
+    was set aside, not shipped.
+  - `2434_ka_daryti` *Ką daryti?*: not on the sheet until its picture exists (2.3).
+  - Plus whatever the owner decides for the **19 clipped July takes** (1.3).
+- **A2 takes left: 1,835** (1,771 new, 64 replacing the synthetic voice). Parked.
 - **Pictures:** all shipped A1 picture cards have pictures except the new phrase card *Ką daryti?* (2434).
   Round 7 (0092 *Labai ačiū*) awaits the owner's verdict. 0856 keeps its "1 Lt" picture as an anachronism; the
-  sentence says *eurą* (owner 2026-11-03: prices in sentences are euro, litas may stay in pictures).
+  sentence says *eurą* (owner 2026-11-03: prices in sentences are euro, litas may stay in pictures as an
+  anachronism; the euro has its own A1 cards, 0262 *euras* and 0585 *centas*).
 - **Last package:** rc4 (2026-10-20, sha256 42e8456a…), built before the rename-era data changes of 10-28; it is
   out of date.
 
@@ -36,7 +48,7 @@ ships. Live status of every owner question: the Review Desk (https://claude.ai/a
 ### Phase 1: owner items (only he can do these; all on the Review Desk)
 | # | item | why it blocks A1 |
 |---|---|---|
-| 1.1 | **Record the remaining A1 takes** (re-takes and failures; list in the batch 3 section) | done = "every card has his voice" |
+| 1.1 | **Record the remaining A1 takes**: 0263 *tìk*, 0650 sentence, then 2434 once its picture exists (list above) | done = "every card has his voice" |
 | 1.2 | **Stress sheets**: the 90 A1 rows of `OWNER_SHEET_v1.csv` + the 7 of `OWNER_STRESS_v1.csv`; save as `…_returned.csv` | displayed forms without marks |
 | 1.3 | **19 clipped July takes** (recording stopped while the word was sounding; batch 2 page, "July" section): decide re-record (recommended for the A1 ones) | audible defect |
 | 1.4 | **Round 7** verdict (0092 *Labai ačiū*) | open picture |
@@ -53,6 +65,7 @@ ships. Live status of every owner question: the Review Desk (https://claude.ai/a
 | 2.4 | Fix the true duplicate sentences (after 1.7) | 1.7 | dependency audit after |
 | 2.5 | **Build checks** that make the lessons enforceable: one `{…}` gap per cloze sentence; no identical sentence on two cards of the same kind; every displayed form stressed or on the owner list; template residue; A1 dependency audit = 0 | — | add to `build_apkg.py` or `tools/smoke_test.sh` |
 | 2.6 | **Final A1 picture QA sweep** with the round-2 checks (cache keeps cost ≈ $3) | — | gate: zero hard FAIL |
+| 2.7 | **Freeze the study order in code.** `build_study_order_v3.py` no longer reproduces the committed `data/study_order.csv` (a re-run reorders 1,952 rows; found 2026-11-03, reverted). Make it read the frozen order (keys = order) and only refresh text columns; then regenerate the stale `data/recording_order_v3.csv` (still says 0857 *litą*) and check the diff is text only | — | do not run the old script before this; lessons "Keys, versions, releases" |
 
 ### Phase 3: release
 | # | item | who |

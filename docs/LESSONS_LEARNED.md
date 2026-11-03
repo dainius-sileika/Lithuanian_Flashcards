@@ -140,6 +140,12 @@ not repeated here.
   that ships, recounted after every rebuild.
 - **2026-10-19 · Release candidates.** A rebuilt package never overwrites the previous one: it becomes
   `_archive/builds/…_rcN.apkg` with its manifests renamed.
+- **2026-11-03 · A generator that no longer reproduces its committed output.** Re-running
+  `build_study_order_v3.py` on today's data reorders 1,952 of 2,435 rows of `data/study_order.csv`, which would
+  break "plate number = key number = study order". Its other output, `data/recording_order_v3.csv`, is therefore
+  stale (e.g. it still has 0857 *vieną litą*). Rule: before running any generator whose output carries keys or
+  order, diff its output against the committed file and stop on a large change; a frozen order must be frozen in
+  code (read `study_order.csv`, don't recompute it). Fix is plan item 2.7.
 
 ## Infrastructure
 

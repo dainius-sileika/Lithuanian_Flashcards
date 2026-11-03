@@ -37,6 +37,7 @@ One rule: the root holds the programs you run and the things you ship; everythin
 | `style_lab/` | The style experiments that settled the F6.2 look (dated folders with notes); kept as a record (owner). |
 | `_archive/` | Kept history: `deprecated/` (old code, specs, the retired A2-list builder), `docs/` (superseded documents), `data/` (closed records), `code/`, `review_packs/`, `builds/` (old packages, not committed), `recent_versions/` (the bubble pictures replaced on 2026-10-18), `takes/` (one folder per ingested ZIP: logs tracked; the raw clips and the ZIP on the Mac only). |
 | `_TO_DELETE/` | Things judged junk, sorted by reason (`MANIFEST.csv`; `junk_2026-10-24/` = `.DS_Store` files and stray `__pycache__`). **The owner deletes; nobody else.** Gitignored. |
+| `Incoming/` | **The owner's own drop folder** (made by him on 2026-11-03). Recorder ZIPs left here are moved by the next agent to `media/audio/_inbox/` and processed; the folder stays, empty. Not tracked by git. |
 | `a2_build/` | **A forwarding stub only**: `audio/inbox/README.md` says the inbox moved to `media/audio/_inbox/`. Remove after the current recording session. |
 | `_apkg_media/`, `_qa/`, `__pycache__/` | Caches: transcoded card pictures for the package (keyed by source hash), QA results, Python bytecode. Safe to delete; regenerate on the next run. Gitignored. |
 | `.azure_key.txt`, `.openai_key.txt`, `.github_token`, `.huggingface_token` | **Secrets.** Gitignored, read from the root by the scripts, never shared, never moved, never printed. |
