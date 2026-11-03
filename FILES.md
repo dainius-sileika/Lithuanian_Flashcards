@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,684 tracked files in 833 rows.
+2,686 tracked files in 835 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -137,8 +137,10 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `docs/ANKIWEB_DESCRIPTION_A1_v3.0.md` | live | The AnkiWeb description of the A1 v3.0 release (source) | people |
 | `docs/CHANGELOG.md` | history | The pre-3.0 changelog (1.x and 2.x) | people |
 | `docs/DESIGN_SPEC_CURRENT.md` | live | THE design spec: every design parameter in force, versioned (**Spec version X.Y.Z**), §13 = this layout | people; tools/style_lock.py reads the version; tools/spec_release.py bumps it |
+| `docs/HANDOVER_2026-11-03.md` | live | Start-here handover for a fresh session: read order, the owner's ways, procedures (Proton/git, audio, builds), page URLs, open items | every new session |
 | `docs/HOW_TO_CHANGE_THE_LOOK.md` | live | The procedure for touching the aesthetic: spec first, lock, golden set, build | people |
 | `docs/LESSONS_LEARNED.md` | live | Lessons learned: what each costly mistake taught us, the rule now and where it is enforced; read at every session start, append the same day | people and every agent brief |
+| `docs/PLAN_A1_FINISH.md` | live | The plan to finish A1 (2026-11-03): definition of done, state, phases (owner items, executor work, release), then A2 | people; the next sessions follow it |
 | `docs/PLAN_A2_completion.md` | live | The plan for finishing A2 (2026-10-12, header says the spec overrides it) | people |
 | `docs/PLAYBOOK_flashcard_language_system.md` | live | The method, written to be reusable for another language | people |
 | `docs/RECORDING_GUIDE.md` | live | The owner's one-page recording guide: the sheet, sessions, export, the inbox | people |
