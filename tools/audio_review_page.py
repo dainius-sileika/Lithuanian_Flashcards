@@ -5,7 +5,7 @@
     python3 tools/audio_review_page.py <zip> OUT/proc OUT/page [--july 0027_suo,1035_karve,0953_arklys]
             [--title "Audio batch 2 check"] [--section "Batch 2"] [--mixed mixed.tsv]
             [--relevel _archive/takes/<relevel run> [--relevel-proc DIR] [--masters-root PROJECT_ROOT]] [--pack MB]
-            [--db audio_b2] [--html-only [--packs-from PUBLISHED_PAGE_DIR]]
+            [--db audio_b2] [--kept _archive/takes/<zip-stem>/manifest_kept.tsv] [--html-only [--packs-from PUBLISHED_PAGE_DIR]]
 
 Writes OUT/page/index.html and OUT/page/media/: for every take the original as recorded (an mp3 listening copy of
 the webm, 48 kHz 128 kbit/s, no other change, so Safari plays it too) and the processed mp3 exactly as it will ship,
@@ -27,6 +27,9 @@ references. Publish the folder as an artifact (index.html + media/ as files).
                 choice "processed" | "original" | "rerecord" | "" (unanswered = ships as processed). Publish with
                 capabilities {db: {}, user: {}}; without them (or in a plain browser) answers stay in localStorage.
                 Read them back with ArtifactData list on NAME. Default collection: audio_review.
+  --kept FILE   the batch's manifest_kept.tsv (tools/ingest_takes.py): takes in the ZIP that were NOT processed or
+                shipped (e.g. recorded with words the card no longer has), each listed with its reason and the original
+                as recorded, no answer buttons (they are back on the recording sheet already). Since 2026-11-03.
   --html-only   rewrite index.html only, for a page whose media are already published: no ffmpeg, no media copied.
                 <zip> may then be the batch's archived manifest.tsv. With --packs-from DIR, the clips are mapped to
                 the packs already in DIR/media/pack_NN.json (names read from the packs, nothing re-packed), so the
@@ -312,7 +315,19 @@ def main(argv):
             rel_items.append(r)
         rel_items.sort(key=lambda r: (not r["flags"], float(r["shipped_I"])))
     shutil.rmtree(tmp, ignore_errors=True)
-    write_html(out, stem, items, man, jl, title, section, rel_items, dbname)
+    kept = []
+    if "--kept" in argv:
+        for m in csv.DictReader(open(opt(argv, "--kept"), encoding="utf-8"), delimiter="\t"):
+            k = m.get("canonical_key") or m["key"]
+            if not html_only:
+                raw = os.path.join(tmp, os.path.basename(m["file"]))
+                os.makedirs(tmp, exist_ok=True)
+                open(raw, "wb").write(z.read(m["file"]))
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-ar", "48000", "-ac", "1", "-codec:a",
+                                "libmp3lame", "-b:a", "128k", os.path.join(media, "kept_" + k + ".orig.mp3")], check=True)
+            kept.append(dict(m, take=k))
+        shutil.rmtree(tmp, ignore_errors=True)
+    write_html(out, stem, items, man, jl, title, section, rel_items, dbname, kept)
     if html_only and "--packs-from" in argv:
         npk = map_to_packs(out, packs_in(opt(argv, "--packs-from")))
         print(f"clips mapped to the {npk} packs already in {opt(argv, '--packs-from')}/media (not re-packed)")
@@ -526,7 +541,8 @@ ANSWER_JS = r"""<script>
 """
 
 
-def write_html(out, stem, items, man, jl, title="Audio batch check", section="Takes", rel_items=(), dbname="audio_review"):
+def write_html(out, stem, items, man, jl, title="Audio batch check", section="Takes", rel_items=(), dbname="audio_review",
+               kept=()):
     ok = [r for r in items if r["status"] == "ok"]
     flagged = [r for r in items if r["flags"]]
     med = lambda v: float(np.median(v)) if v else float("nan")
@@ -623,6 +639,18 @@ def write_html(out, stem, items, man, jl, title="Audio batch check", section="Ta
     <p>{len(rel_items)} July takes had shipped {f(min(rb))} to {f(max(rb))} LUFS (median {f(med(rb))}), 20–30 dB below the rest of the deck. Each was re-processed from its raw master exactly like a new take: one fixed gain, no limiter, the start click cut away only where 250 ms of silence stays before the words. Median now {f(med(ra))} LUFS. Compare the two players: the words should sound the same, only louder. Here <b>Re-levelled is good</b> keeps the new file; <b>Use the original instead</b> ships the raw July recording with its loudness raised only, no cuts at all. Takes marked <b>listen</b> first: {sum(1 for r in rel_items if r["flags"])} keep a sound the tool could not safely call a click (the July processing had simply cut the first 150 ms of every take; the new one never cuts within 250 ms of the words, so a start click that close now stays). In {sum(1 for r in rel_items if int(r["offset_ms"]) >= int(r["dur_ms"]) - 10)} the raw recording itself ends while the word still sounds.</p>
   </section>
   {''.join(rel_cards)}"""
+    kept_section = ""
+    if kept:
+        kept_rows = "".join(
+            f'<div class="ref"><span class="k">{html.escape(m["take"])}</span> <span lang="lt">{html.escape(m.get("said", ""))}</span>'
+            f'<span class="num">{html.escape(m.get("reason", ""))}</span>'
+            f'<audio controls preload="none" src="media/kept_{html.escape(m["take"])}.orig.mp3"></audio></div>' for m in kept)
+        kept_section = f"""
+  <section class="refs" id="kept">
+    <h2>Not shipped ({len(kept)})</h2>
+    <p class="legend">In the ZIP but not processed or shipped: nothing to answer here. Each is back on your recording sheet; the original as recorded is kept in the archive.</p>
+    {kept_rows}
+  </section>"""
     page = f"""<meta charset="utf-8">
 <title>{html.escape(title)}</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -687,7 +715,7 @@ audio {{ width: 100%; max-width: 100%; height: 36px; }}
 <main>
   <div>
     <h1>{html.escape(title)}</h1>
-    <p class="lede">{len(items)} takes from <span class="k">{html.escape(stem)}.zip</span>. Each card has the take as you recorded it and as it will ship. Takes marked <b>re-record</b> (two recordings in one take) or <b>not processed</b> come first, then <b>listen</b>: the tool kept a sound it could not safely call a click.{(' The second section, <a href="#july">July takes re-levelled</a>, has ' + str(len(rel_items)) + ' older takes as they shipped before and as they ship now.') if rel_items else ''}</p>
+    <p class="lede">{len(items)} takes from <span class="k">{html.escape(stem)}.zip</span>{(' (and <a href="#kept">' + str(len(kept)) + ' not shipped</a>)') if kept else ''}. Each card has the take as you recorded it and as it will ship. Takes marked <b>re-record</b> (two recordings in one take) or <b>not processed</b> come first, then <b>listen</b>: the tool kept a sound it could not safely call a click.{(' The second section, <a href="#july">July takes re-levelled</a>, has ' + str(len(rel_items)) + ' older takes as they shipped before and as they ship now.') if rel_items else ''}</p>
   </div>
   <section class="howto" aria-label="How to use this page">
     <p><b>How to use this page.</b> For each take: listen to both, then pick one. Unanswered takes ship as processed.</p>
@@ -728,6 +756,7 @@ audio {{ width: 100%; max-width: 100%; height: 36px; }}
     <h2>July takes, for loudness</h2>
     {july_rows}
   </section>
+  {kept_section}
   <h2 id="batch">{html.escape(section)}</h2>
   {''.join(cards)}{rel_section}
 </main>

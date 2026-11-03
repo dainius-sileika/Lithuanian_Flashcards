@@ -106,7 +106,9 @@ Pictures cost money (OpenAI); the drivers read `.openai_key.txt` from the root.
    bug fixed at 4832e9b), then `python3 tools/audio_review_page.py <zip> OUT/proc OUT/page --mixed OUT/mixed.tsv --db audio_bN` and
    publish OUT/page for the owner with capabilities `{db: {}, user: {}}`; he answers per take (processed is good /
    use the original / re-record, plus a note) and his answers are read back with ArtifactData `list` on `audio_bN`.
-   A mixed take is not ingested (`--hold OUT/mixed.tsv`): it stays on the sheet.
+   A mixed take is not ingested (`--hold OUT/mixed.tsv`): it stays on the sheet. A take whose recorded words differ
+   from the card's (word order counts) is not ingested either; with no audio yet for its key it gets a `superseded` row,
+   so the sheet shows it as a re-take; the page lists such takes under "Not shipped" with `--kept _archive/takes/<zip>/manifest_kept.tsv`.
    Then `python3 tools/ingest_takes.py --inbox` processes each clip with `tools/process_take.py` (key clicks
    removed with ≥ 250 ms margins to speech, never a silence gate; self-check; linear EBU R128 gain to the July
    level) to the `dest` in `data/recording_list.csv` (`media/audio/<key>.mp3`), moves any take it replaces to

@@ -1,0 +1,30 @@
+== 390 px
+ok   no horizontal scroll (scrollWidth 390 <= 390)
+ok   a flagged card comes first: 0263_tik
+ok   first card's clips and picture come from the pack: ['blob:', 'blob:']
+ok   a processed clip plays (duration 4.665)
+ok   waveform spans its card (305 of 342 px)
+ok   'Not shipped' section with its original clip: [1, 'blob:']
+ok   last card (1218_laikrastis, 500 cards) loads from its pack
+ok   choosing an answer counts it (Answered 1)
+ok   choosing it again clears it (Answered 0)
+ok   the Flagged filter shows only flagged cards (133 shown)
+ok   answer and note survive a reload (localStorage): ['rerecord', 'test note', '1']
+ok   no console errors ([])
+== 1280 px
+ok   no horizontal scroll (scrollWidth 1280 <= 1280)
+ok   a flagged card comes first: 0263_tik
+ok   first card's clips and picture come from the pack: ['blob:', 'blob:']
+ok   a processed clip plays (duration 4.665)
+ok   waveform spans its card (823 of 860 px)
+ok   'Not shipped' section with its original clip: [1, 'blob:']
+ok   last card (1218_laikrastis, 500 cards) loads from its pack
+ok   choosing an answer counts it (Answered 1)
+ok   choosing it again clears it (Answered 0)
+ok   the Flagged filter shows only flagged cards (133 shown)
+ok   answer and note survive a reload (localStorage): ['rerecord', 'test note', '1']
+ok   no console errors ([])
+== db (mock window.claude)
+ok   a seeded db answer is shown (0261_valanda_s: original); mode: Answers are saved with this page.
+ok   a click writes {choice, note, updatedAt} to audio_b3/0214_cia_mano_draugas: [{"col": "audio_b3", "id": "0214_cia_mano_draugas", "body": {"choice": "processed", "note": "", "updatedAt": "2026-11-03T19:56:20.528Z"}}]
+PASS

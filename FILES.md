@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-2,687 tracked files in 836 rows.
+3,193 tracked files in 838 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -123,9 +123,9 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `media/generation/out_phrases_v3/round2/ledger.csv` | history | Every prompt ever sent for that batch, one row per render (last row per key = the batch's current render); append-only | written by the batch's gen.py; read by tools/golden_set.py tools/rename_keys.py (names of their time) |
 | `media/generation/out_phrases_v3/round2/plan.json` | history | The batch's job plan (every key and prompt it was asked to render) | written by gen.py |
 | `media/generation/out_phrases_v3/round2/qa_round2.csv` | history | QA sheets of the batch (code/qa_images.py results of their time) | written by qa_images.py |
-| `media/audio/*.mp3` (971 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/*_s.mp3` (191 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
-| `media/audio/_history/*` (110 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
+| `media/audio/*.mp3` (1,309 files) | live | The current take of each card (<key>.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/*_s.mp3` (334 files) | live | The current take of each example sentence (<key>_s.mp3), human or azure-neural per data/audio_source.tsv | read by build_apkg.py; written by tools/ingest_takes.py |
+| `media/audio/_history/*` (128 files) | history | Replaced takes (<key>.<ms>.mp3 and the six 2026-10-24 _superseded clips); never read by the build | written by tools/ingest_takes.py |
 | `media/images/_history/images/*` (520 files) | history | The 1.x WebP masters (<key>.webp, 520 files): the pictures the deck shipped before the F6.2 re-render; tracked | read by nothing live (history) |
 
 ### docs/
@@ -679,6 +679,8 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-28_stress_forms/proposals_v1.csv` | history | What match_kaikki_v1.py proposed (superseded by proposals_v2.csv) | written by match_kaikki_v1.py |
 | `rounds/2026-10-28_stress_forms/proposals_v2.csv` | history | Every unstressed form of the backs (1,304 rows): current, proposed, how (unique / chosen-by-headword / project-pron / owner), en.wiktionary page, where in the page it was read, the source's options, the reason | written by match_kaikki_v2.py; read by apply_v2.py |
 | `rounds/2026-11-03_audio_b3/fix_0650_greitai.py` | history | The owner's word-order fix of 2026-11-03 before audio batch 3: 0650_greitai's sentence to Autobusas {greitai} atvažiuos. (greitai before the verb = soon), its check note, and the take's say in data/recording_list.csv; --verify compares with a regeneration | history |
+| `rounds/2026-11-03_audio_b3/review_page_test_v1.py` | history | Headless test (playwright, Chromium at 390 and 1280 px) of a packed audio review page with answers: no sideways scroll, packs load and clips play, Not shipped section, buttons / counter / filter / reload, db writes with a mock window.claude | run by people |
+| `rounds/2026-11-03_audio_b3/review_page_test_v1.txt` | history | Output of review_page_test_v1.py on the Audio batch 3 check page before it was published (PASS) | written by review_page_test_v1.py |
 
 ### review_desk/
 
@@ -918,7 +920,7 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `_archive/review_packs/review_A1.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_A1_duplicates.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
 | `_archive/review_packs/review_genders_2026-10-10.csv` | history | Review sheets of 2026-10 (A1, duplicates, genders) | history |
-| `_archive/takes/` (10 files) | history | One folder per ingested recorder ZIP: its manifest, manifest_kept.tsv (clips not shipped), ingest_log.tsv, process_log.csv (cuts, margins, loudness, flags per take) and mixed_check.tsv; the raw clips (raw/) and the ZIP stay on the Mac (gitignored). relevel_<name>_<date>/: a re-level run (loudness_before.tsv, relevel_log.tsv, process_log.csv) | written by tools/ingest_takes.py tools/check_mixed_takes.py tools/relevel_takes.py |
+| `_archive/takes/` (15 files) | history | One folder per ingested recorder ZIP: its manifest, manifest_kept.tsv (clips not shipped), ingest_log.tsv, process_log.csv (cuts, margins, loudness, flags per take) and mixed_check.tsv; the raw clips (raw/) and the ZIP stay on the Mac (gitignored). relevel_<name>_<date>/: a re-level run (loudness_before.tsv, relevel_log.tsv, process_log.csv) | written by tools/ingest_takes.py tools/check_mixed_takes.py tools/relevel_takes.py |
 
 ### a2_build/
 
