@@ -140,12 +140,14 @@ not repeated here.
   that ships, recounted after every rebuild.
 - **2026-10-19 · Release candidates.** A rebuilt package never overwrites the previous one: it becomes
   `_archive/builds/…_rcN.apkg` with its manifests renamed.
-- **2026-11-03 · A generator that no longer reproduces its committed output.** Re-running
-  `build_study_order_v3.py` on today's data reorders 1,952 of 2,435 rows of `data/study_order.csv`, which would
-  break "plate number = key number = study order". Its other output, `data/recording_order_v3.csv`, is therefore
-  stale (e.g. it still has 0857 *vieną litą*). Rule: before running any generator whose output carries keys or
-  order, diff its output against the committed file and stop on a large change; a frozen order must be frozen in
-  code (read `study_order.csv`, don't recompute it). Fix is plan item 2.7.
+- **2026-11-03 · A false alarm from running a builder the spec retired.** At the close of the session the lead
+  re-ran `build_study_order_v3.py`, saw it reorder 1,952 rows, and told the owner the generator was broken. It
+  is not: since the rename (spec §8, §12, and the builder's own header) `data/study_order.csv` is the
+  **authority**, edited by hand (the 0331 pin on 10-20, the two new cards on 10-28) and the builder is only a
+  proposal tool that is not expected to reproduce it. The committed order kept the Fable-built sequence exactly;
+  nothing changed (the re-run was reverted). Rules: read a script's header and the spec section before running
+  it; never re-run `build_study_order_v3.py` to refresh anything; check a "finding" against the spec before
+  telling the owner something is broken.
 
 ## Infrastructure
 

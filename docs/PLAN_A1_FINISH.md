@@ -65,7 +65,7 @@ ships. Live status of every owner question: the Review Desk (https://claude.ai/a
 | 2.4 | Fix the true duplicate sentences (after 1.7) | 1.7 | dependency audit after |
 | 2.5 | **Build checks** that make the lessons enforceable: one `{…}` gap per cloze sentence; no identical sentence on two cards of the same kind; every displayed form stressed or on the owner list; template residue; A1 dependency audit = 0 | — | add to `build_apkg.py` or `tools/smoke_test.sh` |
 | 2.6 | **Final A1 picture QA sweep** with the round-2 checks (cache keeps cost ≈ $3) | — | gate: zero hard FAIL |
-| 2.7 | **Freeze the study order in code.** `build_study_order_v3.py` no longer reproduces the committed `data/study_order.csv` (a re-run reorders 1,952 rows; found 2026-11-03, reverted). Make it read the frozen order (keys = order) and only refresh text columns; then regenerate the stale `data/recording_order_v3.csv` (still says 0857 *litą*) and check the diff is text only | — | do not run the old script before this; lessons "Keys, versions, releases" |
+| 2.7 | Small: `data/recording_order_v3.csv` is a derived listing nothing reads any more (the recorder uses `data/recording_list.csv`); its text is from before 10-28 (e.g. 0857 *litą*). Refresh its text from `study_order.csv` and the data, or retire it with a spec patch. **Never by re-running `build_study_order_v3.py`**: `study_order.csv` is the authority (spec §8) and the builder does not reproduce it by design | — | the order itself is fine (checked 2026-11-03: the Fable sequence is intact) |
 
 ### Phase 3: release
 | # | item | who |

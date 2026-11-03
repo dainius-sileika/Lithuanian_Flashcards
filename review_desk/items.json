@@ -3,7 +3,7 @@
   "id": "plan-a1",
   "group": "A1 v3.0 release",
   "title": "The plan to finish A1 (A2 parked until A1 ships)",
-  "ask": "docs/PLAN_A1_FINISH.md in the 51.04 folder. A1 is finished when every card has natural, stress-marked Lithuanian, your voice, an approved picture, and rc5 is built, checked on your phone and uploaded. Phase 1, yours: the 3 takes, the stress sheets (97 A1 forms), the 19 clipped July takes (batch 2 page), Round 7, the AnkiWeb description, and the duplicate-sentence policy. Phase 2, the next session's agents: apply your answers, draw Ką daryti?, fix the study-order generator (it no longer reproduces the frozen order; nothing changed, it was caught and reverted), add build checks, and a final picture QA sweep. Phase 3: rc5, verification, your phone check, upload. Duplicate sentences, my proposal: a phrase card and its cloze card may share a sentence on purpose; only true duplicates of the same kind get fixed (e.g. 0043/0103 Atsiprašau).",
+  "ask": "docs/PLAN_A1_FINISH.md in the 51.04 folder. A1 is finished when every card has natural, stress-marked Lithuanian, your voice, an approved picture, and rc5 is built, checked on your phone and uploaded. Phase 1, yours: the 3 takes, the stress sheets (97 A1 forms), the 19 clipped July takes (batch 2 page), Round 7, the AnkiWeb description, and the duplicate-sentence policy. Phase 2, the next session's agents: apply your answers, draw Ką daryti?, add build checks, and a final picture QA sweep. Phase 3: rc5, verification, your phone check, upload. Duplicate sentences, my proposal: a phrase card and its cloze card may share a sentence on purpose; only true duplicates of the same kind get fixed (e.g. 0043/0103 Atsiprašau).",
   "options": [
    "Plan is fine",
    "Changes in my note"
