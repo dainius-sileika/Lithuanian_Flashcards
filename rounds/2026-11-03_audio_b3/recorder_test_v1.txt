@@ -1,0 +1,23 @@
+WORDS (takes on the sheet): 1837
+KEY_MAP 0239_orai_s / 1169_greitai_pasveik / 1482_ar_yra_laisvas_staliukas -> ['0239_oras_s', '1169_sveik', '1482_ar_yra_laisvu_staliuku']
+STOREINFO: 1 takes carried over from the old card keys. 1 takes already in this browser. 1 older clips were recorded for words that have since changed: set aside (in Export all). 2 clips for cards no longer on the list are kept (in Export all).
+0650_greitai_s on the sheet: {"status": "retake", "was": "Autobusas atvažiuos greitai.", "say": "Autobusas greitai atvažiuos."}
+ZIP: {
+ "0263_tik.webm": "clip-of-0263_tik",
+ "off_list/0239_oras_s.webm": "clip-of-0239_orai_s",
+ "off_list/0650_greitai.webm": "clip-of-0650_greitai",
+ "superseded/0650_greitai_s.1793737211909.webm": "clip-of-0650_greitai_s"
+}
+MANIFEST:
+key	dest	level	status	said	english	file
+0263_tik	media/audio/0263_tik.mp3	A1	new	tìk	only	0263_tik.webm
+0239_oras_s			off-list	Kokie šiandien orai?		off_list/0239_oras_s.webm
+0650_greitai			off-list	greĩtai		off_list/0650_greitai.webm
+0650_greitai_s			superseded	Autobusas atvažiuos greitai.		superseded/0650_greitai_s.1793737211909.webm
+
+CONSOLE ERRORS: none
+CHECK 0650_greitai_s                   -> superseded/0650_greitai_s.1793737211909.webm                 ok
+CHECK 0263_tik                         -> 0263_tik.webm                                                ok
+CHECK 0650_greitai                     -> off_list/0650_greitai.webm                                   ok
+CHECK 0239_orai_s                      -> off_list/0239_oras_s.webm                                    ok
+RESULT: PASS

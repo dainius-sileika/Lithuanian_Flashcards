@@ -23,6 +23,22 @@
   "links": []
  },
  {
+  "id": "audio-b3",
+  "group": "Your own tasks",
+  "title": "Listen: batch 3 (499 takes); A1 has 3 takes left",
+  "ask": "Batch 3: 499 of your 501 takes are in the deck, and no take contains another one. All of A1 is recorded except three: (1) tik failed the safety check again (too short and crisp for the tool to find the word: say it a touch longer); (2) Autobusas greitai atvažiuos: you recorded it before the word-order fix (atvažiuos greitai), so that take was set aside and it is back on your sheet as a re-take; (3) Ką daryti? is not on the sheet yet because its card has no picture. ši passed this time. 132 takes are flagged to listen to (they come first on the page). In 111 of them you pressed Space within a quarter of a second of your last sound, so the stop click is still at the very end: the tool never cuts that close to your voice. Listen to a few; if the click bothers you, mark Re-record. For the A2 takes: wait about half a second after speaking before pressing Space. Each take has buttons: Processed is good (the default) / Use the original instead / Re-record, plus a note. Your sheet now has 1,837 takes left: A1 2, A2 1,835.",
+  "options": [
+   "Sounds right",
+   "Changes in my note"
+  ],
+  "links": [
+   {
+    "label": "Open Audio batch 3 check",
+    "href": "https://claude.ai/artifact/L9Q2KDUNwW4bRkihSp2Eib"
+   }
+  ]
+ },
+ {
   "id": "audio-b2",
   "group": "Your own tasks",
   "title": "Listen: batch 2 (481 takes) and the 63 re-levelled July takes",

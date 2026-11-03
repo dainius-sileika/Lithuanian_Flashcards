@@ -6,7 +6,7 @@ Layout of 2026-10-24 (spec §13): `code/` modules, `data/` live data, `media/` c
 
 ## Tracked files
 
-3,193 tracked files in 838 rows.
+3,195 tracked files in 840 rows.
 
 Status: **live** = hand-kept data or code; **generated** = made by a tool, do not edit; **history** = closed record (append-only or frozen); **cache** = regenerate freely; **secret** = never shared; **source** = third-party input. Paths are relative to the working directory. A family row (`*`) stands for every file it matches, with the count.
 
@@ -679,6 +679,8 @@ Status: **live** = hand-kept data or code; **generated** = made by a tool, do no
 | `rounds/2026-10-28_stress_forms/proposals_v1.csv` | history | What match_kaikki_v1.py proposed (superseded by proposals_v2.csv) | written by match_kaikki_v1.py |
 | `rounds/2026-10-28_stress_forms/proposals_v2.csv` | history | Every unstressed form of the backs (1,304 rows): current, proposed, how (unique / chosen-by-headword / project-pron / owner), en.wiktionary page, where in the page it was read, the source's options, the reason | written by match_kaikki_v2.py; read by apply_v2.py |
 | `rounds/2026-11-03_audio_b3/fix_0650_greitai.py` | history | The owner's word-order fix of 2026-11-03 before audio batch 3: 0650_greitai's sentence to Autobusas {greitai} atvažiuos. (greitai before the verb = soon), its check note, and the take's say in data/recording_list.csv; --verify compares with a regeneration | history |
+| `rounds/2026-11-03_audio_b3/recorder_test_v1.py` | history | Headless test (playwright, fake microphone) of the recorder regenerated after audio batch 3: 0650_greitai_s with the old words set aside and shown as a re-take, 0263_tik kept, ingested and v3-renamed clips kept under off_list/, take count, console errors | run by people |
+| `rounds/2026-11-03_audio_b3/recorder_test_v1.txt` | history | Output of recorder_test_v1.py on the sheet of 2026-11-03 (1837 takes; PASS) | written by recorder_test_v1.py |
 | `rounds/2026-11-03_audio_b3/review_page_test_v1.py` | history | Headless test (playwright, Chromium at 390 and 1280 px) of a packed audio review page with answers: no sideways scroll, packs load and clips play, Not shipped section, buttons / counter / filter / reload, db writes with a mock window.claude | run by people |
 | `rounds/2026-11-03_audio_b3/review_page_test_v1.txt` | history | Output of review_page_test_v1.py on the Audio batch 3 check page before it was published (PASS) | written by review_page_test_v1.py |
 
