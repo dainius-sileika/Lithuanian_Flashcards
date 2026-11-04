@@ -3,9 +3,20 @@
   "id": "plan-a1",
   "group": "A1 v3.0 release",
   "title": "The plan to finish A1 (A2 parked until A1 ships)",
-  "ask": "docs/PLAN_A1_FINISH.md in the 51.04 folder. A1 is finished when every card has natural, stress-marked Lithuanian, your voice, an approved picture, and rc5 is built, checked on your phone and uploaded. Phase 1, yours: the 3 takes, the stress sheets (97 A1 forms), the 19 clipped July takes (batch 2 page), Round 7, the AnkiWeb description, and the duplicate-sentence policy. Phase 2, the next session's agents: apply your answers, draw Ką daryti?, add build checks, and a final picture QA sweep. Phase 3: rc5, verification, your phone check, upload. Duplicate sentences, my proposal: a phrase card and its cloze card may share a sentence on purpose; only true duplicates of the same kind get fixed (e.g. 0043/0103 Atsiprašau).",
+  "ask": "docs/PLAN_A1_FINISH.md in the 51.04 folder. A1 is finished when every card has natural, stress-marked Lithuanian, your voice, an approved picture, and rc5 is built, checked on your phone and uploaded. Phase 1 is yours, one item each on this desk: the last takes, the stress sheets, the 19 clipped July takes, the limiter, Round 7, the AnkiWeb description, the duplicate-sentence policy. Phase 2 (agents, started 4 Nov): build checks, the Ką daryti? picture, a final picture QA sweep, then applying your answers as they come. Phase 3: rc5, verification, your phone check, upload.",
   "options": [
    "Plan is fine",
+   "Changes in my note"
+  ],
+  "links": []
+ },
+ {
+  "id": "dup-policy",
+  "group": "A1 v3.0 release",
+  "title": "Duplicate sentences: which pairs are allowed?",
+  "ask": "34 pairs of cards share a sentence word for word. 32 are a phrase card and a cloze (or sentence) card built on the same line on purpose, e.g. 0318 Neturiu laiko / 0253, 0137 Ar galite man padėti? / 0191. Two are true duplicates of the same kind: 0043 / 0103 Atsiprašau (A1, two phrase cards: 'Excuse me' / 'I'm sorry') and 2128 / 2188 Jis neišlaikė egzamino (A2). Proposal: allow the phrase + cloze pattern; give 0043 and 0103 each a line that shows its own meaning, and fix 2128/2188 with A2. The new build check then enforces 'no identical sentence within one card kind'. You would see the two new 0043/0103 lines before they go in.",
+  "options": [
+   "Agree with the proposal",
    "Changes in my note"
   ],
   "links": []
@@ -14,12 +25,11 @@
   "id": "t-audio-ready",
   "group": "Your own tasks",
   "title": "Recording: A1 is done except 3 takes; A2 comes after A1 ships",
-  "ask": "Thank you: batches 1–3 put all of A1 in your voice except three takes (see the batch 3 item): 0263 tìk, the sentence 'Autobusas greitai atvažiuos.' (your word-order fix is in), and 'Ką daryti?' once its picture exists. They are the first takes on recorder_A2.html. Then the sheet continues with A2 (1,835 takes); per the new plan those wait until A1 is released, though recording early does no harm. Tip: wait about half a second after speaking before pressing Space. Exported ZIPs go in media/audio/_inbox/ (or your Incoming/ folder; both work).",
+  "ask": "Batches 1–3 put all of A1 in your voice except: 0263 tìk (say it a touch longer, then wait half a second before Space) and the sentence 'Autobusas greitai atvažiuos.' (new word order). Both are the first takes on recorder_A2.html. 'Ką daryti?' joins the sheet once its picture is approved (being drawn now). A2 (1,835 takes) waits until A1 ships, though recording early does no harm. Export ZIPs to media/audio/_inbox/ or your Incoming/ folder.",
   "options": [
    "Recorded the last A1 takes",
    "Later"
   ],
-  "detail": "*Executor, 2026-10-19; counts updated 2026-10-20 after the key rename and the proofreading return. The sheet: `recorder_A2.html` at the repo root. Its list: `data/recording_list.csv`. Both come from `python3 build_recorder.py A2`.*\n\n## What is on the sheet\nThe sheet lists every take that the current deck still needs: **2,849 takes**. The A1 subdeck comes first, then A2, each in study order (`study_order.csv`, study order v3; same order as `data/recording_order_v3.csv`).\n\n| | takes | of which |\n|---|---|---|\n| **A1** (takes 1–988) | **988** | 952 new · 20 replace the synthetic voice · 16 re-takes |\n| **A2** (takes 989–2,849) | **1,861** | 1,788 new · 73 replace the synthetic voice |\n| kinds | | 1,813 words · 981 example sentences (`<key>_s`) · 55 sentence cards |\n\nBy kind: **A1** 619 word takes · 334 example sentences · 35 sentence cards (369 sentence takes in all);\n**A2** 1,194 word takes · 647 example sentences · 20 sentence cards (667 sentence takes).\nEvery take is named by its card key (`NNNN_slug`, spec §12); the number on the take is the card's plate number.\n\nThese takes are not on the sheet:\n- the 415 base-deck cards and 150 A2-list cards whose July takes still match the card;\n- the 31 B1-deferred rows and the 4 merged-away keys.\n\n**Re-takes (16, all A1; a red \"re-take\" badge shows the old words):**\n- The words are now wrong, so the old take has been withdrawn and the card is silent until you re-record it:\n  - 1124_lupos *lūpos* (was *lūpa*);\n  - 1082_mobilusis_telefonas *mobilusis telefonas · mobiliojo telefono* (the old genitive was wrong);\n  - 0836_rugsejis *rugsėjis · rugsėjo* (was *rugsėjio*);\n  - 0923_cekis *čekis* (was *kvitas*);\n  - 0521_prasom_pakartoti *Prašom pakartoti*;\n  - 0565_prasom_uzrasyti *Prašom užrašyti*.\n- The ten colours (0617_raudonas … 0626_pilkas) said the genitive (*raudonas · raudono*). The card now shows the feminine (*raudonas · raudona*). The old takes are correct Lithuanian and stay in the deck until you replace them.\n\nThe other wording changes were never recorded, so they appear as ordinary new takes in their new wording: 0203_prasom_kalbeti_leciau *Prašom kalbėti lėčiau*, 1029_prasom_sestis *Prašom sėstis*, 2136_ar_galite_ka_nors *…parekomenduoti?*, 1653_pakartoti_s, 1112_sestis_s.\n\nThe proofreading return of 2026-10-20 changed 26 sentences or headwords (`rounds/2026-10-20_proofread/returned_plan_v1.md`); none of them had been recorded, so they are ordinary new takes in the corrected wording (e.g. 0331_kelinta_valanda *Kelinta valanda?*, 1006_uzsiemimas *užsiėmimas*, 2360_apsidrausti *apsidrausti*, 2392_rakinti_s *Kai rakino duris, atėjo kaimynas.*).\n\n**Takes recorded under the old card names** (the A2-list ids, the three-digit base keys and the sentence ids of before the rename, and the five keys re-slugged on 2026-10-20; all listed in `data/key_maps/key_map_v*.csv`) are not lost: when you click *Enable microphone & start*, the regenerated sheet moves each stored clip to its new key together with the words it was recorded for, and says how many it carried over. A clip whose words have since changed is set aside (in *Export all*, folder `superseded/`); nothing is deleted. Tested headless on 2026-10-20 (`rounds/2026-10-20_rename/recorder_migration_test_v2.txt`). Still: press **Export all** once in the old sheet before opening the new one, as a safety copy.\n\n## How to record\n1. **On the Mac**, open this file in **Chrome**: `~/Library/CloudStorage/ProtonDrive-…/50-59 Languages & Learning Method/51 Lithuanian Language & Culture/51.04 Lithuanian Flashcard Project/recorder_A2.html`. You can double-click it in Finder and choose *Open With → Google Chrome*. Use the same browser every time, because your takes are kept in that browser's storage. Safari and Firefox are untested for local files.\n2. Click **Enable microphone & start**. The sheet jumps to the first take that has not been recorded yet.\n3. Read everything in the dashed box: the headword, then its forms, one breath apart. The *italic* line under the word is the stressed form; say it that way. For sentences, read the sentence once, naturally.\n4. Press **Space** to start. Wait for \"SPEAK NOW\" (0.4 s), speak, then press **Space** again. With auto-advance on, the sheet moves to the next take. **P** plays the take back; **←/→** move between takes.\n\n**Phone:** opening the file on a phone does not work, because the microphone and the stored takes need a web address. Record on the Mac.\n\n**Session size:** about **100 takes**, roughly 30 minutes at ~15 s a take. The A1 share is about 4 hours in all, so about 10 sessions. Stop when your voice tires; the sheet resumes where you left off.\n\n## After each session: Export new\n- Click **⬇ Export new takes**. You get one ZIP with only the takes recorded since the last export (`lt_A2_takes_<date>_batch.zip`). Batches add up; a re-recorded take goes out again in the next batch.\n- **Put the ZIP in** `media/audio/_inbox/` in the project folder (since the deep tidy of 2026-10-24; a ZIP dropped in the old `a2_build/audio/inbox/` is still found). ZIPs there are not committed to git. Then tell the executor: \"audio batch in the inbox\".\n- **Export all** is the safety copy. It holds every take in the browser, plus older clips the sheet has set aside (`superseded/`, `off_list/`). Use it once at the end, or before clearing the browser.\n\n## What happens next (executor)\n1. The executor (`python3 tools/ingest_takes.py --inbox`) converts each clip to the `dest` path in `data/recording_list.csv` (`media/audio/<key>.mp3` for every card since the tidy of 2026-10-24; before that `audio/` for the 520-word base and `audio_a2/` for the rest) and writes the key's row in `audio_source.tsv`, including what was said. A take it replaces moves to `media/audio/_history/`.\n2. When the sheet is regenerated, recorded takes drop off it. The browser storage name stays fixed (`lt_recorder_A2_afb2ebe2`), so regenerating never loses a take.\n3. If a card's words change later, its stored take is set aside, not deleted, and the card comes back as a re-take.",
   "links": []
  },
  {
@@ -42,11 +52,10 @@
   "id": "audio-b2",
   "group": "Your own tasks",
   "title": "Listen: batch 2 (481 takes) and the 63 re-levelled July takes",
-  "ask": "Batch 2: 481 of your 483 takes are in the deck, and no take contains another one. Two didn't pass the safety check and stay on your sheet: tik and ši. They are so short and crisp that the tool can't be sure where speech is, so re-record them a touch longer. Each take now has buttons: Processed is good (the default) / Use the original instead / Re-record, plus a note. 26 takes are flagged to listen to: they come first on the page. The 63 quiet July takes (numbers, question words) are re-levelled from their originals, now around −18.5 LUFS like the rest; listen to the 15 flagged. 19 of those July originals stop while the word is still sounding (e.g. trys); the old files hid it with added silence. Say in the note if you want them back on the sheet as re-takes. Your sheet now has 2,314 takes left: A1 453 (315 words, 138 sentences), A2 1,861.",
+  "ask": "Batch 2: 481 of your 483 takes are in the deck, and no take contains another one. Two didn't pass the safety check and stay on your sheet: tik and ši. They are so short and crisp that the tool can't be sure where speech is, so re-record them a touch longer. Each take now has buttons: Processed is good (the default) / Use the original instead / Re-record, plus a note. 26 takes are flagged to listen to: they come first on the page. The 63 quiet July takes (numbers, question words) are re-levelled from their originals, now around −18.5 LUFS like the rest; listen to the 15 flagged. 19 of those July originals stop while the word is still sounding (e.g. trys); the old files hid it with added silence. That decision now has its own item below. Your sheet now has 2,314 takes left: A1 453 (315 words, 138 sentences), A2 1,861.",
   "options": [
    "Sounds right",
-   "Changes in my note",
-   "Put the 19 clipped July takes back on the sheet"
+   "Changes in my note"
   ],
   "links": [
    {
@@ -59,7 +68,7 @@
   "id": "audio-b1",
   "group": "Your own tasks",
   "title": "Listen: batch 1 (54 takes), original vs processed",
-  "ask": "All 54 are processed and in the deck: start clicks removed with 250 ms of silence kept before your voice, end clicks removed where safely possible, nothing cut within 250 ms of your speech, the original of every take kept. No re-recordings needed. Listen at least to the 10 marked takes at the top of the page (8 keep a short sound just after the words: a final consonant or the stop click, taip most likely to matter; 2 had the closing click lowered instead of cut). Two decisions in the note: (1) loudness: your new takes come out about 2 dB quieter than July, because July was evidently peak-limited and this processing uses plain gain only; matching July needs a gentle limiter (2–5 dB on peaks). (2) 63 of the July takes (mostly numbers and question words: trys, kaip, kodėl…) are 20–30 dB quieter than the rest of the deck; their raw masters exist, so they can be re-processed the same safe way. Each take now has buttons: Processed is good (the default) / Use the original instead / Re-record, plus a note.",
+  "ask": "All 54 are processed and in the deck: start clicks removed with 250 ms of silence kept before your voice, end clicks removed where safely possible, nothing cut within 250 ms of your speech, the original of every take kept. No re-recordings needed. Listen at least to the 10 marked takes at the top of the page (8 keep a short sound just after the words: a final consonant or the stop click, taip most likely to matter; 2 had the closing click lowered instead of cut). (The 63 quiet July takes were re-levelled in batch 2; the limiter question has its own item below.) Each take now has buttons: Processed is good (the default) / Use the original instead / Re-record, plus a note.",
   "options": [
    "Sounds right",
    "Some takes need changes (note)"
@@ -70,6 +79,34 @@
     "href": "https://claude.ai/artifact/SACJXgxDRTXzcGrW88Ep9H"
    }
   ]
+ },
+ {
+  "id": "july19",
+  "group": "Your own tasks",
+  "title": "The 19 clipped July takes: re-record them?",
+  "ask": "19 of the 63 re-levelled July takes (e.g. trys) stop while the word is still sounding: the July recorder stopped early and the old files hid it with added silence. They are on the batch 2 page, section 'July'. My recommendation: put the A1 ones back on your sheet as re-takes (a few minutes of recording); their current takes stay in the deck until the new ones arrive, so nothing goes silent. Unanswered = they stay as they are.",
+  "options": [
+   "Re-record the A1 ones (recommended)",
+   "Re-record all 19",
+   "Keep them as they are"
+  ],
+  "links": [
+   {
+    "label": "Open Audio batch 2 check (July section)",
+    "href": "https://claude.ai/artifact/8KMwSBXU1JYYaQpkFy4fev"
+   }
+  ]
+ },
+ {
+  "id": "limiter",
+  "group": "Your own tasks",
+  "title": "Loudness: add a gentle limiter to the new takes?",
+  "ask": "Your July takes were peak-limited (median −16.7 LUFS); the new ones use plain gain only and sit about 2 dB quieter (median −18.8 to −19.2). Matching July needs a gentle limiter, 2–5 dB on peaks only. Plain gain is the safer, cleaner processing; 2 dB is a small step most listeners won't notice between cards. Unanswered = no limiter.",
+  "options": [
+   "No limiter (default)",
+   "Add the gentle limiter"
+  ],
+  "links": []
  },
  {
   "id": "stress-sheet",
@@ -95,7 +132,7 @@
   "id": "desc-a1",
   "group": "A1 v3.0 release",
   "title": "AnkiWeb description and the choices in it",
-  "ask": "The text is below, with the final counts (1,191 cards). Decide: (1) sign it with your name, or keep \"the author\"; (2) the share title; (3) the tags; (4) replace the old v2.0 share, or keep both; (5) licence CC BY-NC 4.0, as in the repo's LICENSE. Write your choices in the note.",
+  "ask": "The text is below, with the counts of rc4; every number (cards, audio) is recounted from rc5 before upload, so the audio paragraph will say nearly all of A1 is in your voice. Decide: (1) sign it with your name, or keep \"the author\"; (2) the share title; (3) the tags; (4) replace the old v2.0 share, or keep both; (5) licence CC BY-NC 4.0, as in the repo's LICENSE. Write your choices in the note.",
   "options": [
    "Approve the text as is",
    "Approve with the changes in my note"
